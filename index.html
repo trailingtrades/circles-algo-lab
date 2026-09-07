@@ -654,7 +654,7 @@ function renderStart() {
     <div style="max-width:760px">
       <div class="eyebrow">Circles Traders Club Exclusive</div>
       <h1 class="hero">${L("2 sawal - aur aapke algos saamne", "2 questions - and your algos appear")}</h1>
-      <p class="hi-line" style="font-size:15.5px">${L("36 ready-made algo strategies, har ek ka 8-18 saal ka <b>asli backtest</b> Indian costs ke saath. Jo kaam karti hai WOH BHI dikhate hain, jo nahi karti WOH BHI - taaki aap galtiyan yahan seekho, market mein nahi.", "36 ready-made algo strategies, each with an 8-18 year <b>real backtest</b> at Indian costs. We show what works AND what doesn't - so you learn the mistakes here, not in the market.")}</p>
+      <p class="hi-line" style="font-size:15.5px">${L("36 ready-made algo strategies - 29 par 12-18 saal ka <b>asli backtest</b> Indian costs ke saath, aur 7 evidence cards jinpe humne backtest NAHI kiya (har aise card pe saaf likha hai). Jo kaam karti hai WOH BHI dikhate hain, jo nahi karti WOH BHI - taaki aap galtiyan yahan seekho, market mein nahi.", "36 ready-made algo strategies - 29 carrying a 12-18 year <b>real backtest</b> at Indian costs, plus 7 evidence cards we did NOT backtest (each one is labelled as such). We show what works AND what doesn't - so you learn the mistakes here, not in the market.")}</p>
     </div>
     <div class="card" id="wizBox"></div>
     <div class="stats">
@@ -854,7 +854,7 @@ function drawBtCharts(body, c) {
     const m = r.metrics;
     const mets = [
       ["CAGR", pct(m.cagr, 1), cls(m.cagr)], ["Total Return", pct(m.total_return, 1), cls(m.total_return)],
-      ["Max Drawdown", pct(m.max_dd), "neg"], ["Sharpe", m.sharpe != null ? m.sharpe : "-", "neu"],
+      ["Max Drawdown", pct(m.max_dd), "neg"], ["Sharpe (vs 6% rf)", m.sharpe != null ? m.sharpe : "-", "neu"],
       ["Win Rate", m.win_rate != null ? m.win_rate + "%" : "-", "neu"], ["Profit Factor", m.profit_factor != null ? m.profit_factor : "-", "neu"],
       ["Trades", m.trades != null ? m.trades : "-", "neu"], ["Expectancy/Trade", m.expectancy != null ? m.expectancy + "%" : "-", cls(m.expectancy)],
       ["Period", r.period.frm.slice(0, 4) + "-" + r.period.to.slice(0, 4) + " (" + m.years + "y)", "neu"],
