@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "test:rls": "tsx tests/rls.test.ts",
-    "db:reset": "bash ../../scripts/ci/db_reset.sh"
+    "db:reset": "bash ../../scripts/ci/db_reset.sh",
+    "db:seed": "tsx scripts/seed.ts",
+    "test:gating": "tsx tests/gating.test.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.6",

@@ -1,0 +1,86 @@
+[
+ {
+  "level": "foundation",
+  "number": 1,
+  "title_en": "Foundations of the market",
+  "title_hi": "Bazaar Ki Neenv",
+  "theme_accent": "#00AEEF"
+ },
+ {
+  "level": "foundation",
+  "number": 2,
+  "title_en": "Company, share and price",
+  "title_hi": "Company Share aur Keemat",
+  "theme_accent": "#134A9A"
+ },
+ {
+  "level": "foundation",
+  "number": 3,
+  "title_en": "The maths of trading",
+  "title_hi": "Trading Ki Maths",
+  "theme_accent": "#f5a623"
+ },
+ {
+  "level": "foundation",
+  "number": 4,
+  "title_en": "AI, algos and loot-proofing",
+  "title_hi": "AI Algo aur Loot-Proofing",
+  "theme_accent": "#4caf50"
+ },
+ {
+  "level": "intermediate",
+  "number": 1,
+  "title_en": "Depth of valuation",
+  "title_hi": "Valuation Ki Gehrai",
+  "theme_accent": "#00AEEF"
+ },
+ {
+  "level": "intermediate",
+  "number": 2,
+  "title_en": "Charts, next level",
+  "title_hi": "Charts Ka Agla Level",
+  "theme_accent": "#134A9A"
+ },
+ {
+  "level": "intermediate",
+  "number": 3,
+  "title_en": "Engineering risk",
+  "title_hi": "Risk Ka Engineering",
+  "theme_accent": "#f5a623"
+ },
+ {
+  "level": "intermediate",
+  "number": 4,
+  "title_en": "AI power-user and capstone",
+  "title_hi": "AI Power-User & Capstone",
+  "theme_accent": "#4caf50"
+ },
+ {
+  "level": "advanced",
+  "number": 1,
+  "title_en": "Business forensics",
+  "title_hi": "Business Ki Forensics",
+  "theme_accent": "#00AEEF"
+ },
+ {
+  "level": "advanced",
+  "number": 2,
+  "title_en": "Valuation studio",
+  "title_hi": "Valuation Studio",
+  "theme_accent": "#134A9A"
+ },
+ {
+  "level": "advanced",
+  "number": 3,
+  "title_en": "Portfolio pro",
+  "title_hi": "Portfolio Pro",
+  "theme_accent": "#f5a623"
+ },
+ {
+  "level": "advanced",
+  "number": 4,
+  "title_en": "The professional's craft",
+  "title_hi": "Professional's Craft",
+  "theme_accent": "#4caf50"
+ }
+]

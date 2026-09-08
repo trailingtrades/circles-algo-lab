@@ -1,0 +1,502 @@
+[
+ {
+  "number": 21,
+  "level": "intermediate",
+  "week": 1,
+  "day": 1,
+  "title_en": "Range and assumptions",
+  "title_hi": "Range + assumptions",
+  "core_concept": "range+assumptions",
+  "ai_lab": "Assumption lister prompt",
+  "psychology": "False precision",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: range+assumptions. AI Lab mein Assumption lister prompt. Psychology angle: False precision.",
+  "prompts": [
+   {
+    "title": "Assumption lister prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 21 · Range and assumptions · Concept: range+assumptions\nTask: Assumption lister prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 22,
+  "level": "intermediate",
+  "week": 1,
+  "day": 2,
+  "title_en": "ROCE-pair and DuPont engines",
+  "title_hi": "ROCE-pair / DuPont",
+  "core_concept": "ROCE-pair/DuPont engines",
+  "ai_lab": "DuPont decomposer",
+  "psychology": "Complexity bias",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: ROCE-pair/DuPont engines. AI Lab mein DuPont decomposer. Psychology angle: Complexity bias.",
+  "prompts": [
+   {
+    "title": "DuPont decomposer",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 22 · ROCE-pair and DuPont engines · Concept: ROCE-pair/DuPont engines\nTask: DuPont decomposer\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 23,
+  "level": "intermediate",
+  "week": 1,
+  "day": 3,
+  "title_en": "Value traps",
+  "title_hi": "Value trap",
+  "core_concept": "value trap",
+  "ai_lab": "Value-trap screener prompt",
+  "psychology": "Bargain illusion",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: value trap. AI Lab mein Value-trap screener prompt. Psychology angle: Bargain illusion.",
+  "prompts": [
+   {
+    "title": "Value-trap screener prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 23 · Value traps · Concept: value trap\nTask: Value-trap screener prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 24,
+  "level": "intermediate",
+  "week": 1,
+  "day": 4,
+  "title_en": "Cyclical-PE inversion",
+  "title_hi": "Cyclical-PE inversion",
+  "core_concept": "cyclical-PE inversion",
+  "ai_lab": "Cycle mapper prompt",
+  "psychology": "Recency bias",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: cyclical-PE inversion. AI Lab mein Cycle mapper prompt. Psychology angle: Recency bias.",
+  "prompts": [
+   {
+    "title": "Cycle mapper prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 24 · Cyclical-PE inversion · Concept: cyclical-PE inversion\nTask: Cycle mapper prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 25,
+  "level": "intermediate",
+  "week": 1,
+  "day": 5,
+  "title_en": "Friday review: week 5",
+  "title_hi": "Friday review",
+  "core_concept": "process-grades",
+  "ai_lab": "Galti-log prompt",
+  "psychology": "Patience",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: process-grades. AI Lab mein Galti-log prompt. Psychology angle: Patience.",
+  "prompts": [
+   {
+    "title": "Galti-log prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 25 · Friday review: week 5 · Concept: process-grades\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 26,
+  "level": "intermediate",
+  "week": 2,
+  "day": 1,
+  "title_en": "The chart-note",
+  "title_hi": "Chart-note",
+  "core_concept": "chart-note",
+  "ai_lab": "Chart-note drafter",
+  "psychology": "Pattern seeking",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: chart-note. AI Lab mein Chart-note drafter. Psychology angle: Pattern seeking.",
+  "prompts": [
+   {
+    "title": "Chart-note drafter",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 26 · The chart-note · Concept: chart-note\nTask: Chart-note drafter\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 27,
+  "level": "intermediate",
+  "week": 2,
+  "day": 2,
+  "title_en": "A/B/C zones",
+  "title_hi": "A/B/C zones",
+  "core_concept": "A/B/C zones",
+  "ai_lab": "Zone labeller prompt",
+  "psychology": "Overtrading",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: A/B/C zones. AI Lab mein Zone labeller prompt. Psychology angle: Overtrading.",
+  "prompts": [
+   {
+    "title": "Zone labeller prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 27 · A/B/C zones · Concept: A/B/C zones\nTask: Zone labeller prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 28,
+  "level": "intermediate",
+  "week": 2,
+  "day": 3,
+  "title_en": "Breakout checklist",
+  "title_hi": "Breakout checklist",
+  "core_concept": "breakout checklist",
+  "ai_lab": "Checklist enforcer prompt",
+  "psychology": "FOMO",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: breakout checklist. AI Lab mein Checklist enforcer prompt. Psychology angle: FOMO.",
+  "prompts": [
+   {
+    "title": "Checklist enforcer prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 28 · Breakout checklist · Concept: breakout checklist\nTask: Checklist enforcer prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 29,
+  "level": "intermediate",
+  "week": 2,
+  "day": 4,
+  "title_en": "Heat-check",
+  "title_hi": "Heat-check",
+  "core_concept": "heat-check",
+  "ai_lab": "Heat-check prompt",
+  "psychology": "Euphoria",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: heat-check. AI Lab mein Heat-check prompt. Psychology angle: Euphoria.",
+  "prompts": [
+   {
+    "title": "Heat-check prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 29 · Heat-check · Concept: heat-check\nTask: Heat-check prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 30,
+  "level": "intermediate",
+  "week": 2,
+  "day": 5,
+  "title_en": "Friday review: week 6",
+  "title_hi": "Friday review",
+  "core_concept": "process-grades",
+  "ai_lab": "Galti-log prompt",
+  "psychology": "Discipline",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: process-grades. AI Lab mein Galti-log prompt. Psychology angle: Discipline.",
+  "prompts": [
+   {
+    "title": "Galti-log prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 30 · Friday review: week 6 · Concept: process-grades\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 31,
+  "level": "intermediate",
+  "week": 3,
+  "day": 1,
+  "title_en": "Drawdown pyramid",
+  "title_hi": "Drawdown pyramid",
+  "core_concept": "drawdown pyramid",
+  "ai_lab": "Drawdown simulator prompt",
+  "psychology": "Denial",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: drawdown pyramid. AI Lab mein Drawdown simulator prompt. Psychology angle: Denial.",
+  "prompts": [
+   {
+    "title": "Drawdown simulator prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 31 · Drawdown pyramid · Concept: drawdown pyramid\nTask: Drawdown simulator prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 32,
+  "level": "intermediate",
+  "week": 3,
+  "day": 2,
+  "title_en": "Circuit-breaker rules",
+  "title_hi": "Circuit-breaker",
+  "core_concept": "circuit-breaker",
+  "ai_lab": "Rule writer prompt",
+  "psychology": "Tilt",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: circuit-breaker. AI Lab mein Rule writer prompt. Psychology angle: Tilt.",
+  "prompts": [
+   {
+    "title": "Rule writer prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 32 · Circuit-breaker rules · Concept: circuit-breaker\nTask: Rule writer prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 33,
+  "level": "intermediate",
+  "week": 3,
+  "day": 3,
+  "title_en": "Expectancy",
+  "title_hi": "Expectancy",
+  "core_concept": "expectancy",
+  "ai_lab": "Expectancy calculator prompt",
+  "psychology": "Outcome bias",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: expectancy. AI Lab mein Expectancy calculator prompt. Psychology angle: Outcome bias.",
+  "prompts": [
+   {
+    "title": "Expectancy calculator prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 33 · Expectancy · Concept: expectancy\nTask: Expectancy calculator prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 34,
+  "level": "intermediate",
+  "week": 3,
+  "day": 4,
+  "title_en": "Process-grades A to F",
+  "title_hi": "Process-grades",
+  "core_concept": "process-grades",
+  "ai_lab": "Process grader prompt",
+  "psychology": "Result fixation",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: process-grades. AI Lab mein Process grader prompt. Psychology angle: Result fixation.",
+  "prompts": [
+   {
+    "title": "Process grader prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 34 · Process-grades A to F · Concept: process-grades\nTask: Process grader prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 35,
+  "level": "intermediate",
+  "week": 3,
+  "day": 5,
+  "title_en": "Friday review: week 7",
+  "title_hi": "Friday review",
+  "core_concept": "process-grades",
+  "ai_lab": "Galti-log prompt",
+  "psychology": "Honesty",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: process-grades. AI Lab mein Galti-log prompt. Psychology angle: Honesty.",
+  "prompts": [
+   {
+    "title": "Galti-log prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 35 · Friday review: week 7 · Concept: process-grades\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 36,
+  "level": "intermediate",
+  "week": 4,
+  "day": 1,
+  "title_en": "Prompt chains for research",
+  "title_hi": "Prompt chains",
+  "core_concept": "master prompt",
+  "ai_lab": "Chain builder prompt",
+  "psychology": "Automation bias",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: master prompt. AI Lab mein Chain builder prompt. Psychology angle: Automation bias.",
+  "prompts": [
+   {
+    "title": "Chain builder prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 36 · Prompt chains for research · Concept: master prompt\nTask: Chain builder prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 37,
+  "level": "intermediate",
+  "week": 4,
+  "day": 2,
+  "title_en": "Investor stories: Damani and Pabrai (qualitative)",
+  "title_hi": "Investor stories, sirf soch",
+  "core_concept": "\"aaj kharidta?\"",
+  "ai_lab": "Story extractor prompt",
+  "psychology": "Cloning trap",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: \"aaj kharidta?\". AI Lab mein Story extractor prompt. Psychology angle: Cloning trap.",
+  "prompts": [
+   {
+    "title": "Story extractor prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 37 · Investor stories: Damani and Pabrai (qualitative) · Concept: \"aaj kharidta?\"\nTask: Story extractor prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 38,
+  "level": "intermediate",
+  "week": 4,
+  "day": 3,
+  "title_en": "One-pager v3",
+  "title_hi": "One-pager v3",
+  "core_concept": "one-pager v3",
+  "ai_lab": "One-pager drafter",
+  "psychology": "Verbosity",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: one-pager v3. AI Lab mein One-pager drafter. Psychology angle: Verbosity.",
+  "prompts": [
+   {
+    "title": "One-pager drafter",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 38 · One-pager v3 · Concept: one-pager v3\nTask: One-pager drafter\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 39,
+  "level": "intermediate",
+  "week": 4,
+  "day": 4,
+  "title_en": "Capstone: valuation note + chart-note",
+  "title_hi": "Capstone",
+  "core_concept": "valuation note + chart-note",
+  "ai_lab": "Capstone reviewer prompt",
+  "psychology": "Perfectionism",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: valuation note + chart-note. AI Lab mein Capstone reviewer prompt. Psychology angle: Perfectionism.",
+  "prompts": [
+   {
+    "title": "Capstone reviewer prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 39 · Capstone: valuation note + chart-note · Concept: valuation note + chart-note\nTask: Capstone reviewer prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 40,
+  "level": "intermediate",
+  "week": 4,
+  "day": 5,
+  "title_en": "Final review",
+  "title_hi": "Final review",
+  "core_concept": "process-grades",
+  "ai_lab": "Galti-log prompt",
+  "psychology": "Ownership",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: process-grades. AI Lab mein Galti-log prompt. Psychology angle: Ownership.",
+  "prompts": [
+   {
+    "title": "Galti-log prompt",
+    "level": "intermediate",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 40 · Final review · Concept: process-grades\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ }
+]

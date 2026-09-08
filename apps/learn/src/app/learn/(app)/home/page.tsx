@@ -1,77 +1,76 @@
-"use client";
-import { useLang } from "@/lib/i18n/LangProvider";
+export const dynamic = "force-dynamic";
+import Link from "next/link";
+import { loadLearnerState } from "@/lib/progress/load";
+import { gate, nextSession, weekPct, isComplete, stateOf } from "@/lib/progress/gating";
+import { SESSIONS, WEEKS, weekOf, levelOf } from "@/lib/content/course";
+import { getViewer } from "@/lib/supabase/server";
+import { supabaseConfigured } from "@/lib/supabase/env";
 import { ProgressRing } from "@/components/ui/ProgressRing";
 import { SessionCard } from "@/components/ui/SessionCard";
-import { Target, Clock, Calendar, Lock, ArrowRight } from "@/components/ui/Icon";
+import { T } from "@/lib/i18n/strings";
+import { Target, Clock, Calendar, ArrowRight, CheckCircle } from "@/components/ui/Icon";
 
-/* Static demo data — Phase 1 only. Replaced by Supabase in Phase 3. */
-export default function HomePage() {
-  const { t, lang } = useLang();
+export default async function HomePage() {
+  const { state, demo, lang } = await loadLearnerState();
+  const v = supabaseConfigured() ? await getViewer() : null;
+  const t = (k: keyof typeof T) => T[k][lang];
+  const next = nextSession(state);
+  const focus = next ?? SESSIONS[SESSIONS.length - 1];
+  const week = weekOf(focus); const level = levelOf(focus.level);
+  const doneCount = SESSIONS.filter((s) => isComplete(stateOf(state, s.number))).length;
+  const weekSessions = SESSIONS.filter((s) => s.level === focus.level && s.week === focus.week);
+  const name = v?.full_name?.split(" ")[0] || (demo ? "Priya" : "");
   return (
     <>
-      <p className="col-eyebrow">Foundation · TDP-Foundation-Oct-2026 · Week 1</p>
-      <h1 className="lrn-title">{lang === "hi" ? "Namaste, Priya" : "Hello, Priya"}</h1>
+      <p className="col-eyebrow">{level.title_en} · Week {week.number} · {lang === "hi" ? week.title_hi : week.title_en}{demo && " · preview"}</p>
+      <h1 className="lrn-title">{lang === "hi" ? `Namaste${name ? ", " + name : ""}` : `Hello${name ? ", " + name : ""}`}</h1>
       <p className="lrn-muted" style={{ marginTop: 0 }}>{t("rankNote")}</p>
 
       <div className="lrn-grid mt-4">
         <section className="col-card" aria-labelledby="today">
-          <div className="flex items-center justify-between gap-2 mb-2">
-            <span className="col-eyebrow">{t("todayTask")}</span>
-            <span className="col-chip"><Clock size={14} strokeWidth={1.75} aria-hidden />Day 3</span>
-          </div>
-          <h2 id="today" className="lrn-session__title">Session 3 · Teen Batti — Fact, Guess, Kachra</h2>
-          <p className="lrn-session__sub">{t("todayTaskBody")}</p>
-          <button type="button" className="col-btn col-btn--primary mt-3">Open session <ArrowRight size={16} aria-hidden /></button>
+          <div className="flex items-center justify-between gap-2 mb-2"><span className="col-eyebrow">{t("todayTask")}</span><span className="col-chip"><Clock size={14} strokeWidth={1.75} aria-hidden />Day {focus.day}</span></div>
+          <h2 id="today" className="lrn-session__title">Session {focus.number} · {lang === "hi" ? focus.title_hi : focus.title_en}</h2>
+          <p className="lrn-session__sub">{next ? (lang === "hi" ? "Quiz submit kijiye aur journal mein ek line likhiye. Aaj ke liye itna kaafi hai." : "Submit the quiz and save one journal line. That is enough for today.") : (lang === "hi" ? "Saare sessions poore. Certificate page dekhiye." : "All sessions complete. Check the certificate page.")}</p>
+          <Link href={`/learn/session/${focus.number}`} className="col-btn col-btn--primary mt-3">Open session <ArrowRight size={16} aria-hidden /></Link>
         </section>
-
-        <section className="col-card" aria-label="Streak">
-          <span className="col-eyebrow">Streak</span>
-          <p className="lrn-num" style={{ fontSize: 40, fontWeight: 600, margin: "4px 0" }}>5 <span style={{ fontSize: 14, fontWeight: 500 }}>days</span></p>
+        <section className="col-card" aria-label="Sessions complete">
+          <span className="col-eyebrow">Sessions complete</span>
+          <p className="lrn-num" style={{ fontSize: 40, fontWeight: 600, margin: "4px 0" }}>{doneCount} <span style={{ fontSize: 14, fontWeight: 500 }}>/ 60</span></p>
           <p className="lrn-session__sub">{t("streakBody")}</p>
         </section>
-
         <section className="col-card" aria-label={t("weekProgress")}>
-          <span className="col-eyebrow">{t("weekProgress")}</span>
+          <span className="col-eyebrow">{t("weekProgress")} · {level.title_en}</span>
           <div className="flex flex-wrap gap-4 mt-3">
-            {[["W1", 40], ["W2", 0], ["W3", 0], ["W4", 0]].map(([w, v]) => (
-              <div key={w} className="flex flex-col items-center gap-1"><ProgressRing value={v as number} label={`Week ${w}`} /><span className="col-eyebrow">{w}</span></div>
+            {WEEKS.filter((w) => w.level === focus.level).map((w) => (
+              <div key={w.number} className="flex flex-col items-center gap-1"><ProgressRing value={weekPct(state, focus.level, w.number)} label={`Week ${w.number}`} /><span className="col-eyebrow">W{w.number}</span></div>
             ))}
           </div>
         </section>
-
         <section className="col-card" aria-label="Process Score">
-          <div className="flex items-center justify-between gap-2"><span className="col-eyebrow">5C Process Score</span><span className="col-chip"><Target size={14} strokeWidth={1.75} aria-hidden />Top 25%</span></div>
-          <p className="lrn-num" style={{ fontSize: 40, fontWeight: 600, margin: "4px 0" }}>112 <span style={{ fontSize: 14, fontWeight: 500 }}>/ 1000</span></p>
+          <div className="flex items-center justify-between gap-2"><span className="col-eyebrow">5C Process Score</span><span className="col-chip"><Target size={14} strokeWidth={1.75} aria-hidden />Phase 4</span></div>
+          <p className="lrn-num" style={{ fontSize: 40, fontWeight: 600, margin: "4px 0" }}>— <span style={{ fontSize: 14, fontWeight: 500 }}>/ 1000</span></p>
           <p className="lrn-session__sub">{t("rankNote")}</p>
         </section>
-
         <section className="col-card" aria-label={t("nextDeadline")}>
           <span className="col-eyebrow">{t("nextDeadline")}</span>
-          <p className="lrn-session__title mt-2"><Calendar size={16} aria-hidden /> Week 1 exam · Fri 10 Oct, 23:59 IST</p>
-          <p className="lrn-session__sub">50 pts · 20 questions · 30 min</p>
+          <p className="lrn-session__title mt-2"><Calendar size={16} aria-hidden /> Week {week.number} exam</p>
+          <p className="lrn-session__sub">Exam runner lands in Phase 4.</p>
         </section>
-
         <section className="col-card" aria-label={t("journalPrompt")}>
           <span className="col-eyebrow">{t("journalPrompt")}</span>
           <p className="lrn-session__sub mt-2">{t("journalBody")}</p>
-          <button type="button" className="col-btn col-btn--ghost col-btn--sm mt-3">Write one line</button>
+          <Link href={`/learn/session/${focus.number}`} className="col-btn col-btn--ghost col-btn--sm mt-3">Write one line</Link>
         </section>
       </div>
 
-      <h2 className="col-eyebrow mt-6 mb-3">This week · Bazaar Ki Neenv</h2>
+      <h2 className="col-eyebrow mt-6 mb-3">This week · {week.title_hi}</h2>
       <div className="lrn-grid">
-        <SessionCard lang={lang} n={1} day="1" titleEn="Why the market exists" titleHi="Bazaar kyun hai" concept="R-C-D-T-F" aiLab="Master prompt" psychology="Curiosity" status="complete" />
-        <SessionCard lang={lang} n={2} day="2" titleEn="What a share really is" titleHi="Share asli mein kya hai" concept="Full Why" aiLab="5 AI patterns" psychology="FOMO" status="complete" />
-        <SessionCard lang={lang} n={3} day="3" titleEn="Teen Batti: Fact, Guess, Kachra" titleHi="Teen batti" concept="Fact/Guess/Kachra" aiLab="LOOT-scan" psychology="Confirmation bias" status="in_progress" />
-        <SessionCard lang={lang} n={4} day="4" titleEn="The six-item gate" titleHi="Six-item gate" concept="six-item gate" aiLab="Master prompt v2" psychology="Impatience" status="locked" lockedWhy={t("lockedWhy")} />
-        <SessionCard lang={lang} n={5} day="5" titleEn="Friday review" titleHi="Friday review" concept="1% rule" aiLab="Galti-log" psychology="Ownership" status="locked" lockedWhy={t("lockedWhy")} />
+        {weekSessions.map((s) => { const g = gate(state, s); return (
+          <Link key={s.number} href={`/learn/session/${s.number}`} className="lrn-cardlink">
+            <SessionCard lang={lang} n={s.number} day={String(s.day)} titleEn={s.title_en} titleHi={s.title_hi} concept={s.core_concept} aiLab={s.ai_lab} psychology={s.psychology} status={g.status} lockedWhy={(lang === "hi" ? g.reasonHi : g.reason) ?? undefined} />
+          </Link>); })}
       </div>
-
-      <div className="col-card col-empty mt-6">
-        <Lock size={36} strokeWidth={1.5} aria-hidden />
-        <p className="col-empty__title">{t("emptyTitle")}</p>
-        <p style={{ margin: 0 }}>{t("emptyBody")}</p>
-      </div>
+      {doneCount === 60 && <div className="col-card col-empty mt-6"><CheckCircle size={36} strokeWidth={1.5} aria-hidden /><p className="col-empty__title">Course complete</p></div>}
     </>
   );
 }

@@ -1,0 +1,330 @@
+[
+ {
+  "level": "foundation",
+  "week": 1,
+  "kind": "deck",
+  "file_name": "5C_AITC_Foundation_W1_Deck_v1.1.pptx",
+  "note": "104 slides",
+  "storage_path": null
+ },
+ {
+  "level": "foundation",
+  "week": 1,
+  "kind": "handout",
+  "file_name": "5C_AITC_Foundation_W1_Handout.pdf",
+  "note": "11 pages",
+  "storage_path": null
+ },
+ {
+  "level": "foundation",
+  "week": 1,
+  "kind": "exam",
+  "file_name": "5C_AITC_Foundation_W1_Exam.pdf",
+  "note": "weekly exam paper",
+  "storage_path": null
+ },
+ {
+  "level": "foundation",
+  "week": 2,
+  "kind": "deck",
+  "file_name": "5C_AITC_Foundation_W2_Deck_v1.pptx",
+  "note": "90 slides",
+  "storage_path": null
+ },
+ {
+  "level": "foundation",
+  "week": 2,
+  "kind": "handout",
+  "file_name": "5C_AITC_Foundation_W2_Handout.pdf",
+  "note": "11 pages",
+  "storage_path": null
+ },
+ {
+  "level": "foundation",
+  "week": 2,
+  "kind": "exam",
+  "file_name": "5C_AITC_Foundation_W2_Exam.pdf",
+  "note": "weekly exam paper",
+  "storage_path": null
+ },
+ {
+  "level": "foundation",
+  "week": 3,
+  "kind": "deck",
+  "file_name": "5C_AITC_Foundation_W3_Deck_v1.pptx",
+  "note": "84 slides",
+  "storage_path": null
+ },
+ {
+  "level": "foundation",
+  "week": 3,
+  "kind": "handout",
+  "file_name": "5C_AITC_Foundation_W3_Handout.pdf",
+  "note": "11 pages",
+  "storage_path": null
+ },
+ {
+  "level": "foundation",
+  "week": 3,
+  "kind": "exam",
+  "file_name": "5C_AITC_Foundation_W3_Exam.pdf",
+  "note": "weekly exam paper",
+  "storage_path": null
+ },
+ {
+  "level": "foundation",
+  "week": 4,
+  "kind": "deck",
+  "file_name": "5C_AITC_Foundation_W4_Deck_v1.pptx",
+  "note": "76 slides",
+  "storage_path": null
+ },
+ {
+  "level": "foundation",
+  "week": 4,
+  "kind": "handout",
+  "file_name": "5C_AITC_Foundation_W4_Handout.pdf",
+  "note": "11 pages",
+  "storage_path": null
+ },
+ {
+  "level": "foundation",
+  "week": null,
+  "kind": "exam",
+  "file_name": "5C_AITC_Foundation_Final_Exam_36Q.pdf",
+  "note": "final exam, 36 questions",
+  "storage_path": null
+ },
+ {
+  "level": "foundation",
+  "week": null,
+  "kind": "workbook",
+  "file_name": "5C_AITC_Foundation_Workbook_12pp.pdf",
+  "note": "12-page workbook",
+  "storage_path": null
+ },
+ {
+  "level": "foundation",
+  "week": null,
+  "kind": "excel",
+  "file_name": "5C_AITC_MockPortfolio.xlsx",
+  "note": "virtual Rs 10 lakh mock portfolio",
+  "storage_path": null
+ },
+ {
+  "level": "intermediate",
+  "week": 1,
+  "kind": "deck",
+  "file_name": "5C_AITC_Intermediate_W1_Deck_v1.pptx",
+  "note": "70 slides",
+  "storage_path": null
+ },
+ {
+  "level": "intermediate",
+  "week": 1,
+  "kind": "handout",
+  "file_name": "5C_AITC_Intermediate_W1_Handout.pdf",
+  "note": "11 pages",
+  "storage_path": null
+ },
+ {
+  "level": "intermediate",
+  "week": 1,
+  "kind": "exam",
+  "file_name": "5C_AITC_Intermediate_W1_Exam.pdf",
+  "note": "weekly exam paper",
+  "storage_path": null
+ },
+ {
+  "level": "intermediate",
+  "week": 2,
+  "kind": "deck",
+  "file_name": "5C_AITC_Intermediate_W2_Deck_v1.pptx",
+  "note": "67 slides",
+  "storage_path": null
+ },
+ {
+  "level": "intermediate",
+  "week": 2,
+  "kind": "handout",
+  "file_name": "5C_AITC_Intermediate_W2_Handout.pdf",
+  "note": "11 pages",
+  "storage_path": null
+ },
+ {
+  "level": "intermediate",
+  "week": 2,
+  "kind": "exam",
+  "file_name": "5C_AITC_Intermediate_W2_Exam.pdf",
+  "note": "weekly exam paper",
+  "storage_path": null
+ },
+ {
+  "level": "intermediate",
+  "week": 3,
+  "kind": "deck",
+  "file_name": "5C_AITC_Intermediate_W3_Deck_v1.pptx",
+  "note": "68 slides",
+  "storage_path": null
+ },
+ {
+  "level": "intermediate",
+  "week": 3,
+  "kind": "handout",
+  "file_name": "5C_AITC_Intermediate_W3_Handout.pdf",
+  "note": "11 pages",
+  "storage_path": null
+ },
+ {
+  "level": "intermediate",
+  "week": 3,
+  "kind": "exam",
+  "file_name": "5C_AITC_Intermediate_W3_Exam.pdf",
+  "note": "weekly exam paper",
+  "storage_path": null
+ },
+ {
+  "level": "intermediate",
+  "week": 4,
+  "kind": "deck",
+  "file_name": "5C_AITC_Intermediate_W4_Deck_v1.pptx",
+  "note": "62 slides",
+  "storage_path": null
+ },
+ {
+  "level": "intermediate",
+  "week": 4,
+  "kind": "handout",
+  "file_name": "5C_AITC_Intermediate_W4_Handout.pdf",
+  "note": "11 pages",
+  "storage_path": null
+ },
+ {
+  "level": "intermediate",
+  "week": null,
+  "kind": "exam",
+  "file_name": "5C_AITC_Intermediate_Final_Exam_36Q.pdf",
+  "note": "final exam, 36 questions",
+  "storage_path": null
+ },
+ {
+  "level": "intermediate",
+  "week": null,
+  "kind": "workbook",
+  "file_name": "5C_AITC_Intermediate_Workbook_12pp.pdf",
+  "note": "12-page workbook",
+  "storage_path": null
+ },
+ {
+  "level": "advanced",
+  "week": 1,
+  "kind": "deck",
+  "file_name": "5C_AITC_Advanced_W1_Deck_v1.pptx",
+  "note": "69 slides",
+  "storage_path": null
+ },
+ {
+  "level": "advanced",
+  "week": 1,
+  "kind": "handout",
+  "file_name": "5C_AITC_Advanced_W1_Handout.pdf",
+  "note": "11 pages",
+  "storage_path": null
+ },
+ {
+  "level": "advanced",
+  "week": 1,
+  "kind": "exam",
+  "file_name": "5C_AITC_Advanced_W1_Exam.pdf",
+  "note": "weekly exam paper",
+  "storage_path": null
+ },
+ {
+  "level": "advanced",
+  "week": 2,
+  "kind": "deck",
+  "file_name": "5C_AITC_Advanced_W2_Deck_v1.pptx",
+  "note": "67 slides",
+  "storage_path": null
+ },
+ {
+  "level": "advanced",
+  "week": 2,
+  "kind": "handout",
+  "file_name": "5C_AITC_Advanced_W2_Handout.pdf",
+  "note": "11 pages",
+  "storage_path": null
+ },
+ {
+  "level": "advanced",
+  "week": 2,
+  "kind": "exam",
+  "file_name": "5C_AITC_Advanced_W2_Exam.pdf",
+  "note": "weekly exam paper",
+  "storage_path": null
+ },
+ {
+  "level": "advanced",
+  "week": 3,
+  "kind": "deck",
+  "file_name": "5C_AITC_Advanced_W3_Deck_v1.pptx",
+  "note": "67 slides",
+  "storage_path": null
+ },
+ {
+  "level": "advanced",
+  "week": 3,
+  "kind": "handout",
+  "file_name": "5C_AITC_Advanced_W3_Handout.pdf",
+  "note": "11 pages",
+  "storage_path": null
+ },
+ {
+  "level": "advanced",
+  "week": 3,
+  "kind": "exam",
+  "file_name": "5C_AITC_Advanced_W3_Exam.pdf",
+  "note": "weekly exam paper",
+  "storage_path": null
+ },
+ {
+  "level": "advanced",
+  "week": 4,
+  "kind": "deck",
+  "file_name": "5C_AITC_Advanced_W4_Deck_v1.pptx",
+  "note": "64 slides",
+  "storage_path": null
+ },
+ {
+  "level": "advanced",
+  "week": 4,
+  "kind": "handout",
+  "file_name": "5C_AITC_Advanced_W4_Handout.pdf",
+  "note": "11 pages",
+  "storage_path": null
+ },
+ {
+  "level": "advanced",
+  "week": null,
+  "kind": "exam",
+  "file_name": "5C_AITC_Advanced_Final_Exam_36Q.pdf",
+  "note": "final exam, 36 questions",
+  "storage_path": null
+ },
+ {
+  "level": "advanced",
+  "week": null,
+  "kind": "workbook",
+  "file_name": "5C_AITC_Advanced_Workbook_12pp.pdf",
+  "note": "12-page workbook",
+  "storage_path": null
+ },
+ {
+  "level": null,
+  "week": null,
+  "kind": "link",
+  "file_name": "Circles Algo Lab — AI Trading Command Centre",
+  "note": "existing dashboard, opens in a new tab",
+  "storage_path": "https://algo.circleoptionlab.com"
+ }
+]

@@ -1,0 +1,122 @@
+[
+ {
+  "level": "foundation",
+  "week": 1,
+  "title": "Foundation Week 1 exam",
+  "total_marks": 50,
+  "pass_marks": 30,
+  "distinction_marks": 42,
+  "time_limit_min": 30,
+  "attempts_allowed": 2
+ },
+ {
+  "level": "foundation",
+  "week": 2,
+  "title": "Foundation Week 2 exam",
+  "total_marks": 50,
+  "pass_marks": 30,
+  "distinction_marks": 42,
+  "time_limit_min": 30,
+  "attempts_allowed": 2
+ },
+ {
+  "level": "foundation",
+  "week": 3,
+  "title": "Foundation Week 3 exam",
+  "total_marks": 50,
+  "pass_marks": 30,
+  "distinction_marks": 42,
+  "time_limit_min": 30,
+  "attempts_allowed": 2
+ },
+ {
+  "level": "foundation",
+  "week": null,
+  "title": "Foundation Final exam",
+  "total_marks": 36,
+  "pass_marks": 22,
+  "distinction_marks": 30,
+  "time_limit_min": 60,
+  "attempts_allowed": 2
+ },
+ {
+  "level": "intermediate",
+  "week": 1,
+  "title": "Intermediate Week 1 exam",
+  "total_marks": 50,
+  "pass_marks": 30,
+  "distinction_marks": 42,
+  "time_limit_min": 30,
+  "attempts_allowed": 2
+ },
+ {
+  "level": "intermediate",
+  "week": 2,
+  "title": "Intermediate Week 2 exam",
+  "total_marks": 50,
+  "pass_marks": 30,
+  "distinction_marks": 42,
+  "time_limit_min": 30,
+  "attempts_allowed": 2
+ },
+ {
+  "level": "intermediate",
+  "week": 3,
+  "title": "Intermediate Week 3 exam",
+  "total_marks": 50,
+  "pass_marks": 30,
+  "distinction_marks": 42,
+  "time_limit_min": 30,
+  "attempts_allowed": 2
+ },
+ {
+  "level": "intermediate",
+  "week": null,
+  "title": "Intermediate Final exam",
+  "total_marks": 36,
+  "pass_marks": 22,
+  "distinction_marks": 30,
+  "time_limit_min": 60,
+  "attempts_allowed": 2
+ },
+ {
+  "level": "advanced",
+  "week": 1,
+  "title": "Advanced Week 1 exam",
+  "total_marks": 50,
+  "pass_marks": 30,
+  "distinction_marks": 42,
+  "time_limit_min": 30,
+  "attempts_allowed": 2
+ },
+ {
+  "level": "advanced",
+  "week": 2,
+  "title": "Advanced Week 2 exam",
+  "total_marks": 50,
+  "pass_marks": 30,
+  "distinction_marks": 42,
+  "time_limit_min": 30,
+  "attempts_allowed": 2
+ },
+ {
+  "level": "advanced",
+  "week": 3,
+  "title": "Advanced Week 3 exam",
+  "total_marks": 50,
+  "pass_marks": 30,
+  "distinction_marks": 42,
+  "time_limit_min": 30,
+  "attempts_allowed": 2
+ },
+ {
+  "level": "advanced",
+  "week": null,
+  "title": "Advanced Final exam",
+  "total_marks": 36,
+  "pass_marks": 22,
+  "distinction_marks": 30,
+  "time_limit_min": 60,
+  "attempts_allowed": 2
+ }
+]

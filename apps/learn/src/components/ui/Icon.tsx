@@ -531,3 +531,6 @@ export const ICONS = {
   Shield,
   ShieldCheck,
 } as const;
+
+/** circle — lucide-static (ISC), 51st glyph added for the session gate checklist. Same shell, not hand-drawn. */
+export const Circle = createIcon("Circle", <circle cx="12" cy="12" r="10" />);

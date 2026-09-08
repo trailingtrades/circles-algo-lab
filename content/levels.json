@@ -1,0 +1,23 @@
+[
+ {
+  "slug": "foundation",
+  "sequence": 1,
+  "title_en": "Foundation",
+  "title_hi": "Foundation",
+  "unlock_rule": "always"
+ },
+ {
+  "slug": "intermediate",
+  "sequence": 2,
+  "title_en": "Intermediate",
+  "title_hi": "Intermediate",
+  "unlock_rule": "previous_level_certificate"
+ },
+ {
+  "slug": "advanced",
+  "sequence": 3,
+  "title_en": "Advanced",
+  "title_hi": "Advanced",
+  "unlock_rule": "previous_level_certificate"
+ }
+]

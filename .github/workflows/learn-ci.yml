@@ -27,6 +27,10 @@ jobs:
       - run: npm run build
       - name: Apply migrations to a fresh Postgres
         run: npm run db:reset
+      - name: Gating rules + content integrity (60 sessions)
+        run: npm run test:gating
+      - name: Seed content into the fresh DB
+        run: npm run db:seed
       - name: RLS proof (student isolation, no client-side score/certificate writes)
         run: npm run test:rls
       - name: Contrast tokens
