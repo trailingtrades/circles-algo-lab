@@ -14,7 +14,10 @@
     "test:scoring": "tsx tests/scoring.test.ts",
     "test:rules": "tsx tests/rules.test.ts",
     "test:all": "npm run test:gating && npm run test:rules && npm run test:cert && npm run test:rls && npm run test:scoring",
-    "test:cert": "tsx tests/cert.test.ts && tsx tests/verify.test.ts"
+    "test:cert": "tsx tests/cert.test.ts && tsx tests/verify.test.ts",
+    "db:seed:demo": "tsx scripts/seed-demo.ts",
+    "audit:a11y": "node scripts/a11y.mjs",
+    "audit:lh": "node scripts/lh.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.6",
@@ -25,6 +28,7 @@
     "resend": "^6.26.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/pg": "^8.23.1",
@@ -32,6 +36,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
+    "lighthouse": "^13.4.1",
     "pg": "^8.23.0",
     "playwright": "^1.63.0",
     "server-only": "^0.0.1",

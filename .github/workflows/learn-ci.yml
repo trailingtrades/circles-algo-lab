@@ -47,3 +47,10 @@ jobs:
         run: python3 ../../scripts/ci/check_compliance.py src .next/server/app ../../content ../../supabase ../../certificates
       - name: Responsive gate (interim checker)
         run: python3 ../../scripts/ci/check_responsive.py src .next/server/app
+      - name: Accessibility audit (axe, WCAG 2.1 AA, both themes, all routes)
+        run: |
+          npx playwright install --with-deps chromium
+          (npx next start -p 3123 > /tmp/next.log 2>&1 &) && sleep 8
+          sed -i 's|executablePath: "/opt/pw-browsers/chromium", ||; s|proxy: { server: "per-context", bypass: "localhost,127.0.0.1" }||; s|proxy: { server: "http://127.0.0.1:1", bypass: "localhost,127.0.0.1" }, ||' scripts/a11y.mjs
+          node scripts/a11y.mjs | tee /tmp/axe.txt
+          grep -q "0 violation nodes" /tmp/axe.txt

@@ -1,0 +1,22 @@
+{
+ "scores": {
+  "route": "/learn/session/3",
+  "perf": 94,
+  "a11y": 100,
+  "bp": 100,
+  "seo": 91,
+  "lcp": 2919,
+  "cls": "0.000"
+ },
+ "failing": [
+  "largest-contentful-paint: Largest Contentful Paint",
+  "max-potential-fid: Max Potential First Input Delay",
+  "label-content-name-mismatch: Elements with visible text labels do not have matching accessible names.",
+  "unused-javascript: Reduce unused JavaScript",
+  "link-text: Links do not have descriptive text",
+  "bf-cache: Page prevented back/forward cache restoration",
+  "forced-reflow-insight: Forced reflow",
+  "network-dependency-tree-insight: Network dependency tree",
+  "render-blocking-insight: Render-blocking requests"
+ ]
+}

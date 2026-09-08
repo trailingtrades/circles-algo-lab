@@ -1,0 +1,17 @@
+{
+ "scores": {
+  "route": "/learn",
+  "perf": 97,
+  "a11y": 100,
+  "bp": 100,
+  "seo": 100,
+  "lcp": 2282,
+  "cls": "0.000"
+ },
+ "failing": [
+  "max-potential-fid: Max Potential First Input Delay",
+  "unused-javascript: Reduce unused JavaScript",
+  "network-dependency-tree-insight: Network dependency tree",
+  "render-blocking-insight: Render-blocking requests"
+ ]
+}

@@ -56,6 +56,11 @@ PAIRINGS = [
     ("Dark UP on dark base",            "#4caf50", "#050608"),
     ("Dark DOWN on dark base",          "#f23645", "#050608"),
     ("Dark UP on card",                 "#4caf50", "#0d0f13"),
+    ("Light tertiary (flagged: eyebrow text moves to secondary in light mode)", "#8792a6", "#f6f8fb"),
+    ("Light secondary text on ground",  "#4b5670", "#f6f8fb"),
+    ("Navy text on light nav tint",     "#134A9A", "#eaeff7"),
+    ("Dark amber VIRTUAL badge on white (light)", "#7a4f00", "#ffffff"),
+    ("Warn amber on dark base",          "#f5a623", "#050608"),
     ("Dark DOWN on card",               "#f23645", "#0d0f13"),
 ]
 

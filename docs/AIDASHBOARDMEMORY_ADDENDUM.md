@@ -1,0 +1,7 @@
+# Addendum for AIDASHBOARDMEMORY.md — 08-Sep-2026 (merge into §9 and the repo/branch notes)
+**Why:** master prompt §18 item 7. The "progress tracking / scoring across quizzes" upgrade listed in §9 is now delivered by a separate product, not by the AI Trading Command Centre page.
+
+- **5C Learn** (`apps/learn/` on `trailingtrades/circles-algo-lab`, branch `claude/5c-learn-dashboard-build-taxape`) owns: learner accounts, 60-session path, quizzes, exams, the 5C Process Score, cohort leaderboards, certificates and the public verify page. Remove "progress tracking/scoring across quizzes" from the Command Centre's wanted list.
+- The Command Centre stays as-is and is linked from 5C Learn → Resources ("Circles Algo Lab — AI Trading Command Centre", opens in a new tab). Do not absorb or rewrite it.
+- Shared conventions both dashboards must keep: `localStorage` keys `fc_lang` / `fc_theme`; the label **"Recommended answer"** for quiz explanations; Tier-1/2/3 disclaimer strings verbatim from `fivecircles-brand-kit-2/references/compliance.md`; credential line on every screen.
+- Known drift on the Command Centre page to fix on `main`: 87.7% stamped "FY25" (must read "SEBI FY26 study, Aug 2026"), two Devanagari typos (`usके`, `आधी`), body font Inter (design system bans Inter/Poppins/system-ui fallback in app UI).

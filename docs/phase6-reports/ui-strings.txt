@@ -1,0 +1,1734 @@
+Welcome back. Sign in to continue your course.
+Wapas aane ke liye shukriya. Sign in karke apna course continue kijiye.
+Need an invite link? Ask your mentor.
+Invite link chahiye? Apne mentor se poochhiye.
+One task for today
+Aaj ka ek kaam
+Finish Session 3 quiz and save one journal line. That is enough for today.
+Session 3 ka quiz poora kijiye aur journal mein ek line likhiye. Aaj ke liye itna kaafi hai.
+Days in a row with at least one session action.
+Lagataar din jab aapne kam se kam ek session action liya.
+This score is about your process, not your profit.
+Ye score aapke process ka hai — profit ka nahi.
+Week progress
+Week ki progress
+Next deadline
+Agli deadline
+Journal prompt
+What was the one Fact, one Guess and one Kachra in today's session?
+Aaj ke session mein ek Fact, ek Guess aur ek Kachra kya tha?
+VIRTUAL — no real money
+Unlocks after Session 3 quiz + journal are submitted.
+Session 3 ka quiz aur journal submit hone ke baad khulega.
+Nothing here yet
+Abhi yahan kuch nahi hai
+Your first session will appear once your cohort starts.
+Aapka pehla session cohort shuru hote hi yahan dikhega.
+or upload CSV
+1 && (
+Move to cohort
+Intermediate
+Create cohort
+TDP-Foundation-Oct-2026
+Leaderboard alias (optional)
+Teaching copy language
+Change password
+New password
+Update password
+Is device se sign out kijiye.
+Default: First name + last initial
+(null);
+  const [pending, start] = useTransition();
+  if (!questions.length) return
+Quiz coming soon
+Is session ka question bank abhi ban raha hai. Journal aur AI Lab abhi kar sakte hain.
+;
+  if (alreadySubmitted && !result) return
+Quiz submitted
+Ye quiz one-shot hai. Aapka attempt record ho chuka hai.
+answers[q.idx] !== undefined);
+  return (
+x.idx === q.idx);
+        return (
+Recommended answer:
+. Ab journal likhiye — tab session complete hoga.
+) : (
+correct
+incorrect
+*/
+
+import * as React from "react";
+
+export interface IconProps extends React.SVGProps
+);  // source: trending-up.svg
+
+export const TrendingDown = createIcon(
+  "TrendingDown",
+);  // source: trending-down.svg
+
+export const Activity = createIcon(
+  "Activity",
+);  // source: activity.svg
+
+export const BarChart = createIcon(
+  "BarChart",
+);  // source: bar-chart-3.svg
+
+export const LineChart = createIcon(
+  "LineChart",
+);  // source: line-chart.svg
+
+export const PieChart = createIcon(
+  "PieChart",
+);  // source: pie-chart.svg
+
+export const CandlestickChart = createIcon(
+  "CandlestickChart",
+);  // source: candlestick-chart.svg
+
+export const Target = createIcon(
+  "Target",
+);  // source: target.svg
+
+export const Percent = createIcon(
+  "Percent",
+);  // source: percent.svg
+
+export const IndianRupee = createIcon(
+  "IndianRupee",
+);  // source: indian-rupee.svg
+
+export const Check = createIcon(
+  "Check",
+);  // source: check.svg
+
+export const CheckCircle = createIcon(
+  "CheckCircle",
+);  // source: circle-check-big.svg
+
+export const XCircle = createIcon(
+  "XCircle",
+);  // source: circle-x.svg
+
+export const AlertCircle = createIcon(
+  "AlertCircle",
+);  // source: circle-alert.svg
+
+export const AlertTriangle = createIcon(
+  "AlertTriangle",
+);  // source: triangle-alert.svg
+
+export const Info = createIcon(
+  "Info",
+);  // source: info.svg
+
+export const HelpCircle = createIcon(
+  "HelpCircle",
+);  // source: circle-help.svg
+
+export const ChevronDown = createIcon(
+  "ChevronDown",
+);  // source: chevron-down.svg
+
+export const ChevronUp = createIcon(
+  "ChevronUp",
+);  // source: chevron-up.svg
+
+export const ChevronLeft = createIcon(
+  "ChevronLeft",
+);  // source: chevron-left.svg
+
+export const ChevronRight = createIcon(
+  "ChevronRight",
+);  // source: chevron-right.svg
+
+export const ArrowUp = createIcon(
+  "ArrowUp",
+);  // source: arrow-up.svg
+
+export const ArrowDown = createIcon(
+  "ArrowDown",
+);  // source: arrow-down.svg
+
+export const ArrowLeft = createIcon(
+  "ArrowLeft",
+);  // source: arrow-left.svg
+
+export const ArrowRight = createIcon(
+  "ArrowRight",
+);  // source: arrow-right.svg
+
+export const ArrowUpRight = createIcon(
+  "ArrowUpRight",
+);  // source: arrow-up-right.svg
+
+export const X = createIcon(
+  "X",
+);  // source: x.svg
+
+export const Plus = createIcon(
+  "Plus",
+);  // source: plus.svg
+
+export const Minus = createIcon(
+  "Minus",
+);  // source: minus.svg
+
+export const Menu = createIcon(
+  "Menu",
+);  // source: menu.svg
+
+export const MoreHorizontal = createIcon(
+  "MoreHorizontal",
+);  // source: more-horizontal.svg
+
+export const MoreVertical = createIcon(
+  "MoreVertical",
+);  // source: more-vertical.svg
+
+export const Search = createIcon(
+  "Search",
+);  // source: search.svg
+
+export const Filter = createIcon(
+  "Filter",
+);  // source: filter.svg
+
+export const Settings = createIcon(
+  "Settings",
+);  // source: settings.svg
+
+export const RefreshCw = createIcon(
+  "RefreshCw",
+);  // source: refresh-cw.svg
+
+export const ExternalLink = createIcon(
+  "ExternalLink",
+);  // source: external-link.svg
+
+export const Copy = createIcon(
+  "Copy",
+);  // source: copy.svg
+
+export const Download = createIcon(
+  "Download",
+);  // source: download.svg
+
+export const Share = createIcon(
+  "Share",
+);  // source: share-2.svg
+
+export const Clock = createIcon(
+  "Clock",
+);  // source: clock.svg
+
+export const Calendar = createIcon(
+  "Calendar",
+);  // source: calendar.svg
+
+export const History = createIcon(
+  "History",
+);  // source: history.svg
+
+export const User = createIcon(
+  "User",
+);  // source: user.svg
+
+export const Lock = createIcon(
+  "Lock",
+);  // source: lock.svg
+
+export const Eye = createIcon(
+  "Eye",
+);  // source: eye.svg
+
+export const EyeOff = createIcon(
+  "EyeOff",
+);  // source: eye-off.svg
+
+export const Bell = createIcon(
+  "Bell",
+);  // source: bell.svg
+
+export const Shield = createIcon(
+  "Shield",
+);  // source: shield.svg
+
+export const ShieldCheck = createIcon(
+  "ShieldCheck",
+(null);
+  return (
+e.kind === k); const isOpen = open === k;
+        return (
+true);
+  if (online) return null;
+  return
+Aap offline hain. Answers aur journal device par rehte hain; connection aate hi save hoga. Tab tak submit mat kijiye.
+Switch language
+Primary
+Page not found
+Ye page yahan nahi hai. Home par wapas chaliye.
+Something went wrong
+Kuch gadbad ho gayi. Ek baar dobara try kijiye; agar phir bhi na chale, apne mentor ko batayiye.
+Forgot password?
+Sign in
+Kuch gadbad ho gayi
+Skip to content
+Question bank pending
+Is exam ka paper abhi upload nahi hua. Runner tayyar hai; bank aate hi exam khul jayega.
+(null);
+  const [err, setErr] = useState
+(null);
+  const [answers, setAnswers] = useState
+(timeLimitMin * 60);
+  const [saved, setSaved] = useState
+("");
+  const [result, setResult] = useState
+Preview mode
+;
+  if (err) return
+;
+  if (!attempt) return
+Loading attempt…
+;
+  return (
+x.idx === q.idx); return (
+Content editor
+Certificates
+Compliance scan
+(
+) :
+Abhi koi cohort nahi. Pehla cohort banaiye, phir students import kijiye.
+Recent admin actions
+Audit log khali hai.
+Supabase project not connected
+Set NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY and SUPABASE_SERVICE_ROLE_KEY, then apply supabase/migrations.
+Run issuance check
+Issuance is automatic after each scoring event; this re-checks every active student for a level.
+Level override (audited)
+Unlock level
+Abhi koi certificate issue nahi hua.
+Reason (required)
+Supabase not connected.
+Admin · Certificates
+Admin · Compliance scan
+Compliance report
+Rules: banned assured-returns phrases (EN + Hinglish) · Devanagari · emoji · 87.7 without the FY26 stamp · old F&O stats. Distractor options and labelled scam examples are context-classed, same as CI.
+:
+!i.accepted_at);
+  return (
+Admin · Cohort
+Bulk import students
+Ek line mein ek student:
+Full Name, email
+. CSV upload bhi chalega. Har student ko 7-din ka single-use invite link email hoga.
+Abhi koi member nahi.
+Abhi koi invite nahi.
+Supabase not connected — the editor writes to the DB.
+(); for (const c of counts ?? []) if (c.session_id) qc.set(c.session_id, (qc.get(c.session_id) ?? 0) + 1);
+  return (
+Admin · Content editor
+Edit titles, video links, prompts and quiz banks. Changes are live immediately, compliance-scanned on save, and audited.
+Back to sessions
+Session fields
+Add a question
+Published (visible to learners)
+Draft chip shown
+Save session
+This question quotes scam language as a labelled example (skips the banned-phrase scan; Devanagari and emoji still blocked)
+Title (EN)
+Title (Hinglish, Roman script)
+Core concept
+AI Lab
+Psychology
+Video URL (YouTube unlisted)
+Duration (min)
+Summary (Hinglish)
+Prompts (JSON array of {title, level, platform, body})
+Stem (EN)
+Stem (Hinglish)
+Correct index (0-based)
+Difficulty 1–3
+Sequence
+Explanation (Hinglish, optional)
+This certifies course completion only. It is not a SEBI or NISM certification and confers no licence to advise.
+pending
+What the certificate is
+Download PDF
+Verify page
+Copy verify link
+Sign in to see your profile
+Naam, cohort, language aur password yahan manage honge.
+Process grade (scored)
+Outcome (shown, never scored)
+Mentor dashboard
+Supabase project connect hone ke baad cohort roster, ungraded artefacts aur at-risk list yahan dikhengi.
+Aapko abhi koi cohort assign nahi hai. Admin se kahiye cohort par mentor set kare.
+Koi nahi. Achha hai.
+Process Score
+Review point
+Mock portfolio
+Rs 10,00,000 virtual. Watchlist max 5 rows. Har row ko Full Why x2, top risk + answer, price-stop, Why-stop aur review point chahiye — tabhi wo artefact ginti hai. Koi live price nahi, koi P&L nahi: grading process ki hoti hai.
+Foundation artefact
+/ 5 complete rows
+Mentor grades each complete row on process (A–F). Outcome (+/−) is shown separately and never scored.
+Friday review journal
+Watchlist · VIRTUAL
+x.ref_id === r.id); return (
+Artefact progress
+New row
+Symbol (NSE)
+Entry date (virtual)
+Qty (virtual)
+Entry price you noted (virtual)
+Full Why 1 (business reason)
+Full Why 2 (independent reason)
+Top risk
+Your answer to that risk
+Price-stop
+Review point (date or trigger)
+Why-stop (thesis breaks when...)
+r.level === s.level && r.week === s.week && (r.kind === "deck" || r.kind === "handout"));
+  return (
+draft content
+: (
+("Watch");
+  const [watched, setWatched] = useState(state.watched_pct);
+  const [handout, setHandout] = useState(state.handout_opened);
+  const [journalSaved, setJournalSaved] = useState(state.journal_saved);
+  const [msg, setMsg] = useState
+Video abhi attach nahi hua
+Class recording (YouTube unlisted) admin editor se jodi jayegi. Tab tak Read aur AI Lab se shuru kijiye.
+Mark as watched
+Attendance points need 80%+ watched and the handout opened.
+Is week ke deck/handout abhi upload nahi hue.
+Open handout
+AI = analyst, human = trigger. Prompt copy kijiye, apne AI tool mein chalaiye, aur output ko Fact / Guess / Kachra mein baantiye. Prompts English mein hi rehte hain.
+Aaj ka ek Fact, ek Guess, ek Kachra. Ya ek galti jo process mein hui. Sirf ek line bhi kaafi hai.
+Friday review
+Journal saved for this session.
+Session complete gate
+= 80 && handout ?
+Next session
+Agla session tab khulega jab quiz aur journal dono ho jayein.
+Preview mode: Supabase project connect hone tak progress save nahi hoti.
+Session sections
+s.level === focus.level && s.week === focus.week);
+  const name = v?.full_name?.split(" ")[0] || (demo ? "Priya" : "");
+  return (
+Open session
+Sessions complete
+5C Process Score
+Write one line
+Course complete
+r.kind === "link");
+  return (
+r.level === lv.slug);
+        return (
+AI Trading Course
+l.sequence === lv.sequence - 1);
+        return (
+;
+                    return
+Sab kuch ho gaya. Certificate page dekhiye.
+t[0] === tab)![2];
+  return (
+Board abhi khali hai. Pehla quiz submit karte hi aap yahan dikhenge.
+Reset password
+Apna email dijiye. Agar account hai to reset link aayega. Link 1 ghante mein expire hota hai.
+Agar ye email registered hai, to reset link bhej diya gaya hai. Inbox aur spam dono check kijiye.
+Send reset link
+Back to sign in
+Choose a new password
+Repeat password
+Save password
+Apne mentor se naya invite link maangiye. Link 7 din tak aur sirf ek baar chalta hai.
+Set your password
+. Password sirf aap jaante hain — admin ko bhi nahi dikhta.
+Password (min 10 characters)
+I accept the learner code of conduct: this is an education platform with virtual money only; I will not treat any content as investment advice, and I will not share my login.
+; searchParams: Promise
+5C Learn · Certificate verification
+Certificate number
+Valid certificate
+No certificate with that number was issued by 5 Circles Pvt Ltd.
+This link does not match the certificate record. Type the number above to verify it directly.
+Too many lookups from this network. Please try again in a minute.
+Verification service is not configured on this deployment.
+Issuing entity
+Grievances: write to the Compliance Officer; unresolved matters may be escalated to SEBI SCORES (scores.sebi.gov.in) or the Online Dispute Resolution portal (smartodr.in).
+A 5C Learn certificate certifies course completion only. It is not a SEBI or NISM certification and confers no licence to advise.
+Certificate No.
+5C-FOUND-2026-XXXXXX
+T[k][lang], [lang]);
+  return
+foundation
+Foundation Week 1 exam
+Foundation Week 2 exam
+Foundation Week 3 exam
+Foundation Final exam
+intermediate
+Intermediate Week 1 exam
+Intermediate Week 2 exam
+Intermediate Week 3 exam
+Intermediate Final exam
+advanced
+Advanced Week 1 exam
+Advanced Week 2 exam
+Advanced Week 3 exam
+Advanced Final exam
+5C_AITC_Foundation_W1_Deck_v1.1.pptx
+104 slides
+handout
+5C_AITC_Foundation_W1_Handout.pdf
+11 pages
+5C_AITC_Foundation_W1_Exam.pdf
+weekly exam paper
+5C_AITC_Foundation_W2_Deck_v1.pptx
+90 slides
+5C_AITC_Foundation_W2_Handout.pdf
+5C_AITC_Foundation_W2_Exam.pdf
+5C_AITC_Foundation_W3_Deck_v1.pptx
+84 slides
+5C_AITC_Foundation_W3_Handout.pdf
+5C_AITC_Foundation_W3_Exam.pdf
+5C_AITC_Foundation_W4_Deck_v1.pptx
+76 slides
+5C_AITC_Foundation_W4_Handout.pdf
+5C_AITC_Foundation_Final_Exam_36Q.pdf
+final exam, 36 questions
+workbook
+5C_AITC_Foundation_Workbook_12pp.pdf
+12-page workbook
+5C_AITC_MockPortfolio.xlsx
+virtual Rs 10 lakh mock portfolio
+5C_AITC_Intermediate_W1_Deck_v1.pptx
+70 slides
+5C_AITC_Intermediate_W1_Handout.pdf
+5C_AITC_Intermediate_W1_Exam.pdf
+5C_AITC_Intermediate_W2_Deck_v1.pptx
+67 slides
+5C_AITC_Intermediate_W2_Handout.pdf
+5C_AITC_Intermediate_W2_Exam.pdf
+5C_AITC_Intermediate_W3_Deck_v1.pptx
+68 slides
+5C_AITC_Intermediate_W3_Handout.pdf
+5C_AITC_Intermediate_W3_Exam.pdf
+5C_AITC_Intermediate_W4_Deck_v1.pptx
+62 slides
+5C_AITC_Intermediate_W4_Handout.pdf
+5C_AITC_Intermediate_Final_Exam_36Q.pdf
+5C_AITC_Intermediate_Workbook_12pp.pdf
+5C_AITC_Advanced_W1_Deck_v1.pptx
+69 slides
+5C_AITC_Advanced_W1_Handout.pdf
+5C_AITC_Advanced_W1_Exam.pdf
+5C_AITC_Advanced_W2_Deck_v1.pptx
+5C_AITC_Advanced_W2_Handout.pdf
+5C_AITC_Advanced_W2_Exam.pdf
+5C_AITC_Advanced_W3_Deck_v1.pptx
+5C_AITC_Advanced_W3_Handout.pdf
+5C_AITC_Advanced_W3_Exam.pdf
+5C_AITC_Advanced_W4_Deck_v1.pptx
+64 slides
+5C_AITC_Advanced_W4_Handout.pdf
+5C_AITC_Advanced_Final_Exam_36Q.pdf
+5C_AITC_Advanced_Workbook_12pp.pdf
+Circles Algo Lab — AI Trading Command Centre
+existing dashboard, opens in a new tab
+https://algo.circleoptionlab.com
+R-C-D-T-F
+teen batti
+Full Why
+six-item gate
+1% rule
+price-stop / Why-stop
+50% trap
+"aaj kharidta?"
+Fact/Guess/Kachra
+LOOT-scan
+master prompt
+5 AI patterns
+"discipline nahi, design"
+range+assumptions
+ROCE-pair/DuPont engines
+value trap
+cyclical-PE inversion
+chart-note
+A/B/C zones
+breakout checklist
+heat-check
+drawdown pyramid / circuit-breaker
+expectancy
+process-grades
+one-pager v3
+two-stories rule
+cash-conversion
+three clocks
+five roads
+incremental ROCE
+fresh-₹100
+promise-ledger
+owner earnings
+FCF-yield
+reverse-DCF
+variant perception
+compare-card
+bear-ceiling
+evidence-tiers T0–T3
+honest mirror
+thesis-memo
+predict-first
+thesis-creep
+three-pass red-team
+Pehla Kadam
+the oath
+F&O = samjho, khelo mat (every level)
+Investor stories qualitative only: no returns, no picks (Kedia → Jhunjhunwala → Damani → Pabrai → Munger → Buffett)
+AI = analyst, human = trigger
+SEBI retail algo framework live since 01-Apr-2026: awareness only
+Return copy nahi hota, process hota hai
+Only F&O-loss stat permitted: SEBI FY26 study (Aug 2026) — 87.7% of individual F&O traders in net loss, aggregate net loss Rs 91,685 cr, avg Rs 1.17 lakh per loss-making trader
+Foundations of the market
+Bazaar Ki Neenv
+#00AEEF
+Company, share and price
+Company Share aur Keemat
+#134A9A
+The maths of trading
+Trading Ki Maths
+#f5a623
+AI, algos and loot-proofing
+AI Algo aur Loot-Proofing
+#4caf50
+Depth of valuation
+Valuation Ki Gehrai
+Charts, next level
+Charts Ka Agla Level
+Engineering risk
+Risk Ka Engineering
+AI power-user and capstone
+AI Power-User & Capstone
+Business forensics
+Business Ki Forensics
+Valuation studio
+Valuation Studio
+Portfolio pro
+Portfolio Pro
+The professional's craft
+Professional's Craft
+Foundation
+previous_level_certificate
+Advanced
+What does the 'R' in R-C-D-T-F stand for in this course?
+R-C-D-T-F mein 'R' kya hai?
+Check the Session 1 deck: R-C-D-T-F is the course's own frame for reading any market claim. Your notes carry the exact expansion.
+Who is the 'trigger' in this course's AI rule?
+Is course ke AI rule mein 'trigger' kaun hai?
+The AI model
+AI model
+The human
+The broker
+The news channel
+News channel
+AI = analyst, human = trigger. AI research karta hai; decision aap lete hain.
+Which of these is a course-approved way to describe F&O?
+F&O ke liye course ka approved line kaun sa hai?
+Samjho, khelo mat
+Quick doubling tool
+Paisa double karne ka tool
+Risk-free hedge
+Only for experts
+Sirf experts ke liye
+Course-wide law: F&O = samjho, khelo mat. Awareness only, every level.
+A 'Full Why' must contain at least how many independent reasons?
+'Full Why' mein kam se kam kitne independent reasons chahiye?
+Full Why x2 is the mock-portfolio gate: two independent reasons, each one you could defend to a stranger.
+Owning a share makes you:
+Share kharidne par aap ban jaate hain:
+A lender to the company
+Company ke lender
+A part-owner of the business
+Business ke part-owner
+A customer of the exchange
+Exchange ke customer
+A guaranteed earner
+Pakka kamaane wale
+A share is part-ownership. That is why the course asks for a business 'why', not a price 'why'.
+Which of the 5 AI patterns should you run FIRST on a new stock idea?
+Naye stock idea par sabse pehle kaun sa AI pattern?
+Summarise the annual report
+Annual report summarise
+Ask for a price target
+Price target maango
+Ask if it will go up
+Upar jayega kya, poochho
+Ask for a tip
+Tip maango
+Pattern 1 is always evidence-gathering. Targets and tips are never a pattern in this course.
+A broker's note says 'stock will double by Diwali'. Under teen batti this is:
+Broker note: 'Diwali tak double'. Teen batti mein ye kya hai?
+A promise with no evidence and a fixed return is Kachra. Guesses have reasoning; Kachra has only a claim.
+'Revenue grew 18% YoY per the audited annual report' is:
+'Audited report ke hisaab se revenue 18% badha' ye kya hai?
+Opinion
+Audited, sourced, past-tense: Fact. Fact does not mean 'buy'; it just means verified.
+What is LOOT-scan for?
+LOOT-scan kis kaam ka hai?
+Finding multibaggers
+Multibagger dhoondhna
+Spotting scam and loot patterns in a pitch
+Pitch mein scam/loot pattern pakadna
+Timing entries
+Entry time karna
+Ranking brokers
+Broker rank karna
+LOOT-scan is the course's scam detector. Run it on every unsolicited tip before you even read the stock name.
+How many items are in the six-item gate?
+Six-item gate mein kitne items hain?
+Six. The gate exists so a stock has to pass the same six checks every time, regardless of how good it feels.
+If a stock passes 5 of 6 gate items you should:
+Stock 6 mein se 5 pass kare to:
+Buy a small quantity
+Thoda kharido
+Wait until all six pass
+Chhe pass hone tak ruko
+Ask AI to override
+AI se override karwao
+Skip the gate
+Gate skip karo
+The gate is binary. 'Almost' is how the 50% trap starts.
+The six-item gate is applied:
+Six-item gate kab lagta hai?
+Only on IPOs
+Sirf IPO par
+Before every mock-portfolio entry
+Har mock-portfolio entry se pehle
+Only in Advanced level
+Sirf Advanced mein
+Once a year
+Saal mein ek baar
+Every entry, every time. Discipline nahi, design.
+The 1% rule limits:
+1% rule kis cheez ko limit karta hai?
+Profit per trade
+Har trade ka profit
+Risk per trade as a share of capital
+Capital ka kitna risk ek trade mein
+Number of trades per day
+Din mein trades
+Brokerage
+1% of capital is the maximum you allow one idea to cost you. It caps the damage, not the upside.
+A Friday review is about:
+Friday review kis baare mein hai?
+Counting profit
+Profit ginna
+Reviewing process and galti-log
+Process aur galti-log review
+Picking next week's winners
+Agle hafte ke winners
+Ranking classmates
+Classmates ki ranking
+Return copy nahi hota, process hota hai. Friday review grades the process, never the P&L.
+Your galti-log should record:
+Galti-log mein kya likhna hai?
+Only losing trades
+Sirf losing trades
+Every process mistake, win or lose
+Har process galti, jeet ya haar
+Broker complaints
+Market news
+A winning trade with a broken process is still a galti. Log the process, not the outcome.
+Why the market exists
+Bazaar kyun hai
+Master prompt: setup
+Curiosity vs FOMO
+youtube_unlisted
+Aaj ka core concept: R-C-D-T-F. AI Lab mein Master prompt: setup. Psychology angle: Curiosity vs FOMO.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 1 · Why the market exists · Concept: R-C-D-T-F
+Task: Master prompt: setup
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+What a share really is
+Share asli mein kya hai
+Ownership mindset
+Aaj ka core concept: Full Why. AI Lab mein 5 AI patterns. Psychology angle: Ownership mindset.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 2 · What a share really is · Concept: Full Why
+Task: 5 AI patterns
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Teen Batti: Fact, Guess, Kachra
+Teen batti
+Confirmation bias
+Aaj ka core concept: Fact/Guess/Kachra. AI Lab mein LOOT-scan. Psychology angle: Confirmation bias.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 3 · Teen Batti: Fact, Guess, Kachra · Concept: Fact/Guess/Kachra
+Task: LOOT-scan
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+The six-item gate
+Six-item gate
+Master prompt v2
+Impatience
+Aaj ka core concept: six-item gate. AI Lab mein Master prompt v2. Psychology angle: Impatience.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 4 · The six-item gate · Concept: six-item gate
+Task: Master prompt v2
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Friday review: your first week
+Galti-log prompt
+Ownership
+Aaj ka core concept: 1% rule. AI Lab mein Galti-log prompt. Psychology angle: Ownership.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 5 · Friday review: your first week · Concept: 1% rule
+Task: Galti-log prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+How a company makes money
+Company paisa kaise banati hai
+Annual report reader prompt
+Storytelling bias
+Aaj ka core concept: Full Why. AI Lab mein Annual report reader prompt. Psychology angle: Storytelling bias.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 6 · How a company makes money · Concept: Full Why
+Task: Annual report reader prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Price vs value
+Price aur value alag hain
+Fact/Guess/Kachra sorter
+Anchoring
+Aaj ka core concept: "aaj kharidta?". AI Lab mein Fact/Guess/Kachra sorter. Psychology angle: Anchoring.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 7 · Price vs value · Concept: "aaj kharidta?"
+Task: Fact/Guess/Kachra sorter
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Reading a simple P&L
+Simple P&L padhna
+Statement summariser
+Overconfidence
+Aaj ka core concept: Full Why. AI Lab mein Statement summariser. Psychology angle: Overconfidence.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 8 · Reading a simple P&L · Concept: Full Why
+Task: Statement summariser
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Investor stories: Kedia to Jhunjhunwala (qualitative)
+Investor stories, sirf soch
+Story extractor prompt
+Hero worship
+Aaj ka core concept: "aaj kharidta?". AI Lab mein Story extractor prompt. Psychology angle: Hero worship.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 9 · Investor stories: Kedia to Jhunjhunwala (qualitative) · Concept: "aaj kharidta?"
+Task: Story extractor prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Friday review: week 2
+Discipline nahi, design
+Aaj ka core concept: 1% rule. AI Lab mein Galti-log prompt. Psychology angle: Discipline nahi, design.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 10 · Friday review: week 2 · Concept: 1% rule
+Task: Galti-log prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Risk per trade and the 1% rule
+Position size calculator prompt
+Loss aversion
+Aaj ka core concept: 1% rule. AI Lab mein Position size calculator prompt. Psychology angle: Loss aversion.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 11 · Risk per trade and the 1% rule · Concept: 1% rule
+Task: Position size calculator prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Price-stop and Why-stop
+Price-stop / Why-stop
+Stop-logic checker
+Hope trading
+Aaj ka core concept: price-stop / Why-stop. AI Lab mein Stop-logic checker. Psychology angle: Hope trading.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 12 · Price-stop and Why-stop · Concept: price-stop / Why-stop
+Task: Stop-logic checker
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+The 50% trap
+Drawdown maths prompt
+Revenge trading
+Aaj ka core concept: 50% trap. AI Lab mein Drawdown maths prompt. Psychology angle: Revenge trading.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 13 · The 50% trap · Concept: 50% trap
+Task: Drawdown maths prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+F&O: samjho, khelo mat
+F&O awareness
+SEBI FY26 study reader
+Gambling loop
+Aaj ka core concept: F&O awareness. AI Lab mein SEBI FY26 study reader. Psychology angle: Gambling loop.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 14 · F&O: samjho, khelo mat · Concept: F&O awareness
+Task: SEBI FY26 study reader
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Friday review: week 3
+Consistency
+Aaj ka core concept: 1% rule. AI Lab mein Galti-log prompt. Psychology angle: Consistency.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 15 · Friday review: week 3 · Concept: 1% rule
+Task: Galti-log prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+AI as analyst, human as trigger
+AI analyst hai, trigger aap
+Master prompt: full
+Automation bias
+Aaj ka core concept: AI = analyst, human = trigger. AI Lab mein Master prompt: full. Psychology angle: Automation bias.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 16 · AI as analyst, human as trigger · Concept: AI = analyst, human = trigger
+Task: Master prompt: full
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+The 5 AI patterns
+Pattern drill prompt
+Over-reliance
+Aaj ka core concept: 5 AI patterns. AI Lab mein Pattern drill prompt. Psychology angle: Over-reliance.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 17 · The 5 AI patterns · Concept: 5 AI patterns
+Task: Pattern drill prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+LOOT-scan: spotting scams
+LOOT-scan prompt
+Aaj ka core concept: LOOT-scan. AI Lab mein LOOT-scan prompt. Psychology angle: Greed.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 18 · LOOT-scan: spotting scams · Concept: LOOT-scan
+Task: LOOT-scan prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+SEBI retail algo framework (awareness only)
+SEBI retail algo framework
+SEBI algo framework (01-Apr-2026)
+Framework explainer prompt
+Rule respect
+Aaj ka core concept: SEBI algo framework (01-Apr-2026). AI Lab mein Framework explainer prompt. Psychology angle: Rule respect.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 19 · SEBI retail algo framework (awareness only) · Concept: SEBI algo framework (01-Apr-2026)
+Task: Framework explainer prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Final review and mock-portfolio handover
+Final review
+Full Why x2
+Mock portfolio reviewer
+Aaj ka core concept: Full Why x2. AI Lab mein Mock portfolio reviewer. Psychology angle: Discipline nahi, design.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 20 · Final review and mock-portfolio handover · Concept: Full Why x2
+Task: Mock portfolio reviewer
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Two-stories rule
+Two-stories prompt
+Narrative bias
+Aaj ka core concept: two-stories rule. AI Lab mein Two-stories prompt. Psychology angle: Narrative bias.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 41 · Two-stories rule · Concept: two-stories rule
+Task: Two-stories prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Cash-conversion
+Cash-conversion checker
+Accrual blindness
+Aaj ka core concept: cash-conversion. AI Lab mein Cash-conversion checker. Psychology angle: Accrual blindness.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 42 · Cash-conversion · Concept: cash-conversion
+Task: Cash-conversion checker
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Three clocks, five roads
+Three clocks / five roads
+three clocks · five roads
+Clock mapper prompt
+Time blindness
+Aaj ka core concept: three clocks · five roads. AI Lab mein Clock mapper prompt. Psychology angle: Time blindness.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 43 · Three clocks, five roads · Concept: three clocks · five roads
+Task: Clock mapper prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Incremental ROCE and fresh-Rs100
+Incremental ROCE / fresh-₹100
+incremental ROCE · fresh-₹100
+Incremental ROCE prompt
+Headline bias
+Aaj ka core concept: incremental ROCE · fresh-₹100. AI Lab mein Incremental ROCE prompt. Psychology angle: Headline bias.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 44 · Incremental ROCE and fresh-Rs100 · Concept: incremental ROCE · fresh-₹100
+Task: Incremental ROCE prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Friday review: week 9
+Skepticism
+Aaj ka core concept: promise-ledger. AI Lab mein Galti-log prompt. Psychology angle: Skepticism.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 45 · Friday review: week 9 · Concept: promise-ledger
+Task: Galti-log prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Owner earnings and FCF-yield
+Owner earnings / FCF-yield
+owner earnings · FCF-yield
+Owner earnings prompt
+Precision illusion
+Aaj ka core concept: owner earnings · FCF-yield. AI Lab mein Owner earnings prompt. Psychology angle: Precision illusion.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 46 · Owner earnings and FCF-yield · Concept: owner earnings · FCF-yield
+Task: Owner earnings prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Reverse-DCF
+Reverse-DCF prompt
+Expectation gap
+Aaj ka core concept: reverse-DCF. AI Lab mein Reverse-DCF prompt. Psychology angle: Expectation gap.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 47 · Reverse-DCF · Concept: reverse-DCF
+Task: Reverse-DCF prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Variant perception
+Variant perception prompt
+Consensus comfort
+Aaj ka core concept: variant perception. AI Lab mein Variant perception prompt. Psychology angle: Consensus comfort.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 48 · Variant perception · Concept: variant perception
+Task: Variant perception prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Compare-card and bear-ceiling
+Compare-card / bear-ceiling
+compare-card · bear-ceiling
+Compare-card prompt
+Optimism
+Aaj ka core concept: compare-card · bear-ceiling. AI Lab mein Compare-card prompt. Psychology angle: Optimism.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 49 · Compare-card and bear-ceiling · Concept: compare-card · bear-ceiling
+Task: Compare-card prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Friday review: week 10
+Humility
+Aaj ka core concept: promise-ledger. AI Lab mein Galti-log prompt. Psychology angle: Humility.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 50 · Friday review: week 10 · Concept: promise-ledger
+Task: Galti-log prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Evidence tiers T0-T3
+Evidence-tiers T0–T3
+Evidence tier sorter
+Source blindness
+Aaj ka core concept: evidence-tiers T0–T3. AI Lab mein Evidence tier sorter. Psychology angle: Source blindness.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 51 · Evidence tiers T0-T3 · Concept: evidence-tiers T0–T3
+Task: Evidence tier sorter
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+The honest mirror
+Honest mirror
+Honest mirror prompt
+Self-deception
+Aaj ka core concept: honest mirror. AI Lab mein Honest mirror prompt. Psychology angle: Self-deception.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 52 · The honest mirror · Concept: honest mirror
+Task: Honest mirror prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Thesis-memo
+Thesis-memo drafter
+Thesis-creep
+Aaj ka core concept: thesis-memo. AI Lab mein Thesis-memo drafter. Psychology angle: Thesis-creep.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 53 · Thesis-memo · Concept: thesis-memo
+Task: Thesis-memo drafter
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Predict-first and thesis-creep
+Predict-first / thesis-creep
+predict-first · thesis-creep
+Predict-first logger
+Hindsight bias
+Aaj ka core concept: predict-first · thesis-creep. AI Lab mein Predict-first logger. Psychology angle: Hindsight bias.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 54 · Predict-first and thesis-creep · Concept: predict-first · thesis-creep
+Task: Predict-first logger
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Friday review: week 11
+Aaj ka core concept: promise-ledger. AI Lab mein Galti-log prompt. Psychology angle: Consistency.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 55 · Friday review: week 11 · Concept: promise-ledger
+Task: Galti-log prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Three-pass red-team
+Red-team prompt
+Aaj ka core concept: three-pass red-team. AI Lab mein Red-team prompt. Psychology angle: Ego.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 56 · Three-pass red-team · Concept: three-pass red-team
+Task: Red-team prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Investor stories: Munger and Buffett (qualitative)
+Idol copying
+Aaj ka core concept: "aaj kharidta?". AI Lab mein Story extractor prompt. Psychology angle: Idol copying.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 57 · Investor stories: Munger and Buffett (qualitative) · Concept: "aaj kharidta?"
+Task: Story extractor prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+The 8-page dossier
+8-page dossier
+dossier
+Dossier assembler prompt
+Scope creep
+Aaj ka core concept: dossier. AI Lab mein Dossier assembler prompt. Psychology angle: Scope creep.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 58 · The 8-page dossier · Concept: dossier
+Task: Dossier assembler prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+First-step planner prompt
+Paralysis
+Aaj ka core concept: Pehla Kadam. AI Lab mein First-step planner prompt. Psychology angle: Paralysis.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 59 · Pehla Kadam · Concept: Pehla Kadam
+Task: First-step planner prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+The oath and final review
+The oath
+Commitment
+Aaj ka core concept: the oath. AI Lab mein Galti-log prompt. Psychology angle: Commitment.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 60 · The oath and final review · Concept: the oath
+Task: Galti-log prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Range and assumptions
+Range + assumptions
+Assumption lister prompt
+False precision
+Aaj ka core concept: range+assumptions. AI Lab mein Assumption lister prompt. Psychology angle: False precision.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 21 · Range and assumptions · Concept: range+assumptions
+Task: Assumption lister prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+ROCE-pair and DuPont engines
+ROCE-pair / DuPont
+DuPont decomposer
+Complexity bias
+Aaj ka core concept: ROCE-pair/DuPont engines. AI Lab mein DuPont decomposer. Psychology angle: Complexity bias.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 22 · ROCE-pair and DuPont engines · Concept: ROCE-pair/DuPont engines
+Task: DuPont decomposer
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Value traps
+Value trap
+Value-trap screener prompt
+Bargain illusion
+Aaj ka core concept: value trap. AI Lab mein Value-trap screener prompt. Psychology angle: Bargain illusion.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 23 · Value traps · Concept: value trap
+Task: Value-trap screener prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Cyclical-PE inversion
+Cycle mapper prompt
+Recency bias
+Aaj ka core concept: cyclical-PE inversion. AI Lab mein Cycle mapper prompt. Psychology angle: Recency bias.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 24 · Cyclical-PE inversion · Concept: cyclical-PE inversion
+Task: Cycle mapper prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Friday review: week 5
+Patience
+Aaj ka core concept: process-grades. AI Lab mein Galti-log prompt. Psychology angle: Patience.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 25 · Friday review: week 5 · Concept: process-grades
+Task: Galti-log prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+The chart-note
+Chart-note
+Chart-note drafter
+Pattern seeking
+Aaj ka core concept: chart-note. AI Lab mein Chart-note drafter. Psychology angle: Pattern seeking.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 26 · The chart-note · Concept: chart-note
+Task: Chart-note drafter
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Zone labeller prompt
+Overtrading
+Aaj ka core concept: A/B/C zones. AI Lab mein Zone labeller prompt. Psychology angle: Overtrading.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 27 · A/B/C zones · Concept: A/B/C zones
+Task: Zone labeller prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Breakout checklist
+Checklist enforcer prompt
+Aaj ka core concept: breakout checklist. AI Lab mein Checklist enforcer prompt. Psychology angle: FOMO.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 28 · Breakout checklist · Concept: breakout checklist
+Task: Checklist enforcer prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Heat-check
+Heat-check prompt
+Euphoria
+Aaj ka core concept: heat-check. AI Lab mein Heat-check prompt. Psychology angle: Euphoria.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 29 · Heat-check · Concept: heat-check
+Task: Heat-check prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Friday review: week 6
+Discipline
+Aaj ka core concept: process-grades. AI Lab mein Galti-log prompt. Psychology angle: Discipline.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 30 · Friday review: week 6 · Concept: process-grades
+Task: Galti-log prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Drawdown pyramid
+drawdown pyramid
+Drawdown simulator prompt
+Aaj ka core concept: drawdown pyramid. AI Lab mein Drawdown simulator prompt. Psychology angle: Denial.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 31 · Drawdown pyramid · Concept: drawdown pyramid
+Task: Drawdown simulator prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Circuit-breaker rules
+Circuit-breaker
+circuit-breaker
+Rule writer prompt
+Aaj ka core concept: circuit-breaker. AI Lab mein Rule writer prompt. Psychology angle: Tilt.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 32 · Circuit-breaker rules · Concept: circuit-breaker
+Task: Rule writer prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Expectancy
+Expectancy calculator prompt
+Outcome bias
+Aaj ka core concept: expectancy. AI Lab mein Expectancy calculator prompt. Psychology angle: Outcome bias.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 33 · Expectancy · Concept: expectancy
+Task: Expectancy calculator prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Process-grades A to F
+Process-grades
+Process grader prompt
+Result fixation
+Aaj ka core concept: process-grades. AI Lab mein Process grader prompt. Psychology angle: Result fixation.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 34 · Process-grades A to F · Concept: process-grades
+Task: Process grader prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Friday review: week 7
+Honesty
+Aaj ka core concept: process-grades. AI Lab mein Galti-log prompt. Psychology angle: Honesty.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 35 · Friday review: week 7 · Concept: process-grades
+Task: Galti-log prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Prompt chains for research
+Prompt chains
+Chain builder prompt
+Aaj ka core concept: master prompt. AI Lab mein Chain builder prompt. Psychology angle: Automation bias.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 36 · Prompt chains for research · Concept: master prompt
+Task: Chain builder prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Investor stories: Damani and Pabrai (qualitative)
+Cloning trap
+Aaj ka core concept: "aaj kharidta?". AI Lab mein Story extractor prompt. Psychology angle: Cloning trap.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 37 · Investor stories: Damani and Pabrai (qualitative) · Concept: "aaj kharidta?"
+Task: Story extractor prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+One-pager v3
+One-pager drafter
+Verbosity
+Aaj ka core concept: one-pager v3. AI Lab mein One-pager drafter. Psychology angle: Verbosity.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 38 · One-pager v3 · Concept: one-pager v3
+Task: One-pager drafter
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Capstone: valuation note + chart-note
+Capstone
+valuation note + chart-note
+Capstone reviewer prompt
+Perfectionism
+Aaj ka core concept: valuation note + chart-note. AI Lab mein Capstone reviewer prompt. Psychology angle: Perfectionism.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 39 · Capstone: valuation note + chart-note · Concept: valuation note + chart-note
+Task: Capstone reviewer prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Aaj ka core concept: process-grades. AI Lab mein Galti-log prompt. Psychology angle: Ownership.
+You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
+Session 40 · Final review · Concept: process-grades
+Task: Galti-log prompt
+Rules:
+1. Separate every claim into Fact / Guess / Kachra and label it.
+2. Use only the data I paste below; if something is missing, say "missing" instead of guessing.
+3. No return forecasts, no targets, no "sure" language. Educational analysis only.
+4. End with three questions I should answer myself before acting.
+Data:
+<paste here>
+Under R-C-D-T-F, what must you do BEFORE forming a view on any market claim?
+R-C-D-T-F ke hisaab se kisi bhi market claim par view banane se PEHLE kya karna hai?
+Buy a small quantity to test
+Run the claim through the frame step by step
+Ask a broker
+Check the price target
+The frame exists so every claim is processed the same way, every time, before any opinion forms.
+A 'Full Why' is complete when:
+'Full Why' kab complete hota hai?
+It names a price target
+It has two independent business reasons you could defend to a stranger
+It quotes an analyst
+It predicts next quarter
+Full Why x2: two independent reasons, each defensible without the other.
+Teen batti sorts every statement into:
+Teen batti har statement ko kismein baantta hai?
+Buy / Hold / Sell
+Fact / Guess / Kachra
+Bull / Bear / Neutral
+Cheap / Fair / Expensive
+Fact (verified), Guess (reasoned), Kachra (claim without evidence).
+'This stock is a sure-shot multibagger' is:
+'Ye stock sure-shot multibagger hai' kya hai?
+A promise of return with no evidence is Kachra. The phrase itself is a LOOT-scan trigger.
+How many checks are in the six-item gate?
+Six-item gate mein kitne checks?
+Six. Passing five is a fail.
+The 1% rule caps:
+1% rule kya cap karta hai?
+Brokerage per trade
+Loss per idea as a share of total capital
+Number of stocks
+Time spent researching
+Risk per trade, not reward. It limits what one wrong idea can cost.
+Price-stop vs Why-stop: a Why-stop triggers when
+Why-stop kab trigger hota hai?
+Price falls 5%
+The business reason you bought for stops being true
+The index falls
+A friend sells
+Why-stop is tied to the thesis, price-stop to the price. Both are set BEFORE entry.
+The 50% trap says a 50% loss needs what gain to recover?
+50% loss ke baad recover hone ke liye kitna gain chahiye?
+From 100 to 50 is minus 50%; from 50 back to 100 is plus 100%. Losses compound against you.
+'Aaj kharidta?' is the question you ask:
+'Aaj kharidta?' kab poochhte hain?
+Only before buying
+About every stock you already hold, at each review
+Only during a crash
+If you would not buy it today with fresh money, you must explain why you still hold it.
+LOOT-scan is run on:
+LOOT-scan kis par chalate hain?
+Only penny stocks
+Every unsolicited tip or pitch before reading the stock name
+Only IPOs
+Only F&O
+Scam patterns live in the pitch, not the stock. Scan the pitch first.
+In this course, who is the trigger?
+Is course mein trigger kaun hai?
+The broker's algo
+The exchange
+AI = analyst, human = trigger. Always.
+The 5 AI patterns are for:
+5 AI patterns kis liye hain?
+Predicting prices
+Structuring research so the AI gathers evidence and you decide
+Placing orders
+Finding tips
+Patterns structure research. None of them asks the AI whether to buy.
+A master prompt must always:
+Master prompt mein hamesha kya hona chahiye?
+Ask for a target price
+Force Fact/Guess/Kachra labels and forbid return forecasts
+Promise accuracy
+Use Hindi only
+The master prompt hard-codes the course's rules into every AI conversation.
+Course law on F&O:
+F&O par course ka law:
+Best for beginners
+Risk-free with hedging
+Only on expiry day
+Every level. Awareness only.
+Per the SEBI FY26 study (Aug 2026), what share of individual F&O traders were in net loss?
+SEBI FY26 study (Aug 2026) ke hisaab se kitne individual F&O traders net loss mein the?
+87.7% (SEBI FY26 study, Aug 2026)
+87.7%, SEBI FY26 study, Aug 2026. Always quote the stamped figure, never an older one.
+Investor stories in this course (Kedia, Jhunjhunwala, etc.) are taught:
+Course mein investor stories kaise padhai jaati hain?
+With their exact returns
+With their stock picks to copy
+Qualitatively: their thinking, no returns, no picks
+As tips
+Return copy nahi hota, process hota hai. Stories teach the process.
+'Discipline nahi, design' means:
+'Discipline nahi, design' ka matlab?
+Willpower is enough
+Build rules and gates so the right action is the default
+Design a logo
+Skip the checklist when confident
+Systems beat willpower. The gate, the stops and the journal ARE the design.
+The mock portfolio in 5C Learn uses:
+5C Learn ka mock portfolio kya use karta hai?
+Real money via broker
+Virtual money only, no broker required
+Paper money plus one real trade
+Virtual only. No broker account is ever required.
+A galti-log entry should be written when:
+Galti-log kab likhna hai?
+Only after a loss
+After any process mistake, even on a winning trade
+Once a month
+Only if the mentor asks
+A winning trade with a broken process is still a galti.
+The SEBI retail algo framework (live since 01-Apr-2026) is covered in Foundation as:
+SEBI retail algo framework Foundation mein kaise cover hota hai?
+A setup guide for live algos
+Awareness only
+A broker comparison
+Not covered
+Awareness only. Building or running live algos is outside this course.
+Namaste ${fullName},
+Neeche wale link se apna password set kijiye. Ye link
+Link kaam na kare to apne mentor se dobara invite maangiye. Password kabhi email par nahi bheja jata.
+Badhai ho ${fullName},
+AI Trading Course · 5C Learn · Certificate of Completion
+5 Circles Pvt Ltd
+Changing Phase of Investment
+Certificate of Completion
+has completed all requirements of the
+level of the 5 Circles AI Trading Course
+      as part of cohort
+, the weekly and final examinations,
+      the practice artefact ladder and the Friday review discipline. Result band:
+Rahul Sarawgi
+Principal Officer &amp; Research Analyst, 5 Circles Pvt Ltd
+5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004
+Investment in securities market is subject to market risks. Read all related documents carefully before investing. Registration granted by SEBI and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors. Past performance is not indicative of future results. The analyst or dependents may hold positions in the securities discussed. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004
