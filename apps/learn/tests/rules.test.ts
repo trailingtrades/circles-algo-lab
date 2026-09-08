@@ -1,0 +1,15 @@
+import { quizPoints, examPoints, practicePoints, computeScore, nextActions } from "../src/lib/scoring/rules";
+let pass = 0, fail = 0; const ok = (n: string, c: boolean, d = "") => { if (c) pass++; else fail++; console.log(`${c ? "  ok  " : "  FAIL"} ${n} ${d}`); };
+ok("quiz 2/3 -> 6.67", quizPoints(2, 3) === 6.67);
+ok("weekly exam full marks -> 50", examPoints(20, 20, 1, false) === 50);
+ok("final exam 30/36 -> 83.33", examPoints(30, 36, 1, true) === 83.33);
+ok("retake capped at 80% (40 of 50)", examPoints(20, 20, 2, false) === 40);
+ok("retake below cap keeps its value", examPoints(10, 20, 2, false) === 25);
+ok("practice grade C on 250 -> 175", practicePoints("C", 250) === 175);
+ok("practice grade F -> 0", practicePoints("F", 100) === 0);
+const c = computeScore([{ kind: "attendance", points: 150 }, { kind: "attendance", points: 100 }, { kind: "quiz", points: 60 }, { kind: "override", points: -15 }]);
+ok("TS mirror caps attendance at 200 and applies override", c.attendance === 200 && c.total === 245, JSON.stringify(c));
+const na = nextActions({ components: c, openSession: 3, sessionsMissingAttendance: [2], pendingExam: { key: "foundation-w1", title: "Foundation Week 1 exam", isFinal: false }, fridayDue: true, portfolioRowsComplete: 1, level: "foundation" });
+ok("next actions: 3 items, exam first (50 pts)", na.length === 3 && na[0].points === 50 && na[0].href === "/learn/exam/foundation-w1");
+ok("next actions Hinglish has no Devanagari", na.every((a) => !/[ऀ-ॿ]/.test(a.labelHi)));
+console.log(`\n${pass} passed, ${fail} failed`); process.exit(fail ? 1 : 0);

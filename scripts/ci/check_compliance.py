@@ -33,7 +33,7 @@ def check_file(path):
     try:
       def walk(o):
         if isinstance(o, dict):
-          if o.get("distractor") is True: return
+          if o.get("distractor") is True or o.get("scam_example") is True: return  # quiz distractors and labelled scam examples are legitimate context
           for v in o.values(): walk(v)
         elif isinstance(o, list):
           for v in o: walk(v)

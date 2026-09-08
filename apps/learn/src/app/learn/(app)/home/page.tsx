@@ -8,10 +8,13 @@ import { supabaseConfigured } from "@/lib/supabase/env";
 import { ProgressRing } from "@/components/ui/ProgressRing";
 import { SessionCard } from "@/components/ui/SessionCard";
 import { T } from "@/lib/i18n/strings";
-import { Target, Clock, Calendar, ArrowRight, CheckCircle } from "@/components/ui/Icon";
+import { loadScore } from "@/lib/scoring/read";
+import { RankChip } from "@/components/ui/RankChip";
+import { Clock, Calendar, ArrowRight, CheckCircle } from "@/components/ui/Icon";
 
 export default async function HomePage() {
   const { state, demo, lang } = await loadLearnerState();
+  const score = await loadScore();
   const v = supabaseConfigured() ? await getViewer() : null;
   const t = (k: keyof typeof T) => T[k][lang];
   const next = nextSession(state);
@@ -47,14 +50,14 @@ export default async function HomePage() {
           </div>
         </section>
         <section className="col-card" aria-label="Process Score">
-          <div className="flex items-center justify-between gap-2"><span className="col-eyebrow">5C Process Score</span><span className="col-chip"><Target size={14} strokeWidth={1.75} aria-hidden />Phase 4</span></div>
-          <p className="lrn-num" style={{ fontSize: 40, fontWeight: 600, margin: "4px 0" }}>— <span style={{ fontSize: 14, fontWeight: 500 }}>/ 1000</span></p>
-          <p className="lrn-session__sub">{t("rankNote")}</p>
+          <div className="flex items-center justify-between gap-2"><span className="col-eyebrow">5C Process Score</span><RankChip rank={score.rank} band={score.band} /></div>
+          <p className="lrn-num" style={{ fontSize: 40, fontWeight: 600, margin: "4px 0" }}>{score.components.total} <span style={{ fontSize: 14, fontWeight: 500 }}>/ 1000</span></p>
+          <p className="lrn-session__sub">{t("rankNote")} <Link href="/learn/score" className="lrn-link">Breakdown</Link></p>
         </section>
         <section className="col-card" aria-label={t("nextDeadline")}>
           <span className="col-eyebrow">{t("nextDeadline")}</span>
-          <p className="lrn-session__title mt-2"><Calendar size={16} aria-hidden /> Week {week.number} exam</p>
-          <p className="lrn-session__sub">Exam runner lands in Phase 4.</p>
+          <p className="lrn-session__title mt-2"><Calendar size={16} aria-hidden /> {level.title_en} Week {week.number} exam</p>
+          <Link href={`/learn/exam/${focus.level}-w${Math.min(week.number, 3)}`} className="col-btn col-btn--ghost col-btn--sm mt-2">Open exam</Link>
         </section>
         <section className="col-card" aria-label={t("journalPrompt")}>
           <span className="col-eyebrow">{t("journalPrompt")}</span>

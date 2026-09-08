@@ -10,7 +10,10 @@
     "test:rls": "tsx tests/rls.test.ts",
     "db:reset": "bash ../../scripts/ci/db_reset.sh",
     "db:seed": "tsx scripts/seed.ts",
-    "test:gating": "tsx tests/gating.test.ts"
+    "test:gating": "tsx tests/gating.test.ts",
+    "test:scoring": "tsx tests/scoring.test.ts",
+    "test:rules": "tsx tests/rules.test.ts",
+    "test:all": "npm run test:gating && npm run test:rules && npm run test:rls && npm run test:scoring"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.6",

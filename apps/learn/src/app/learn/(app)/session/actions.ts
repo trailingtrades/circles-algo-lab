@@ -4,6 +4,7 @@ import { getViewer, createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { supabaseConfigured } from "@/lib/supabase/env";
 import { getSession, quizAnswerKey } from "@/lib/content/course";
+import { awardQuiz, awardAttendance, awardDiscipline } from "@/lib/scoring/award";
 
 export type ActState = { error?: string; ok?: string };
 export type QuizResult = { error?: string; score?: number; max?: number; results?: { idx: number; chosen: number; correct: number; right: boolean; explanation: string }[] };
@@ -25,6 +26,7 @@ export async function markWatched(n: number, pct: number): Promise<ActState> {
   const p = Math.max(0, Math.min(100, Math.round(pct)));
   const { error } = await c.sb.from("session_progress").upsert({ user_id: c.v.id, session_id: c.sessionId, watched_pct: p, status: "in_progress" }, { onConflict: "user_id,session_id", ignoreDuplicates: false });
   if (error) return { error: error.message };
+  await maybeAttendance(c.v.id, c.s.level, c.sessionId);
   return { ok: "saved" };
 }
 
@@ -32,6 +34,7 @@ export async function markHandoutOpened(n: number): Promise<ActState> {
   const c = await ctx(n); if ("error" in c) return c;
   const { error } = await c.sb.from("session_progress").upsert({ user_id: c.v.id, session_id: c.sessionId, handout_opened: true, status: "in_progress" }, { onConflict: "user_id,session_id" });
   if (error) return { error: error.message };
+  await maybeAttendance(c.v.id, c.s.level, c.sessionId);
   return { ok: "saved" };
 }
 
@@ -49,6 +52,7 @@ export async function submitQuiz(n: number, answers: Record<number, number>): Pr
   const { error } = await admin.from("attempts").insert({ user_id: c.v.id, session_id: c.sessionId, answers, score, max_score: max, passed: score / max >= 0.5, submitted_at: new Date().toISOString(), attempt_no: 1 });
   if (error) return { error: error.message };
   await c.sb.from("session_progress").upsert({ user_id: c.v.id, session_id: c.sessionId, status: "in_progress" }, { onConflict: "user_id,session_id" });
+  await awardQuiz(c.v.id, c.s.level, c.sessionId, score, max);
   await maybeComplete(c.v.id, c.sessionId, n);
   revalidatePath(`/learn/session/${n}`); revalidatePath("/learn/path"); revalidatePath("/learn/home");
   return { score, max, results };
@@ -59,8 +63,10 @@ export async function saveJournal(n: number, body: string, kind: "reflection" | 
   const text = body.trim();
   if (text.length < 10) return { error: "Kam se kam 10 characters likhiye." };
   if (text.length > 4000) return { error: "4000 characters se kam rakhiye." };
-  const { error } = await c.sb.from("journal_entries").insert({ user_id: c.v.id, session_id: c.sessionId, kind, body: text });
+  const { data: row, error } = await c.sb.from("journal_entries").insert({ user_id: c.v.id, session_id: c.sessionId, kind, body: text }).select("id").single();
   if (error) return { error: error.message };
+  if (kind === "galti_log") await awardDiscipline(c.v.id, c.s.level, "galti_log", c.sessionId, "galti-log entry");
+  if (kind === "friday_review" && c.s.day === 5) await awardDiscipline(c.v.id, c.s.level, "friday_on_time", c.sessionId, `friday review ${row.id}`);
   await c.sb.from("session_progress").upsert({ user_id: c.v.id, session_id: c.sessionId, status: "in_progress" }, { onConflict: "user_id,session_id" });
   await maybeComplete(c.v.id, c.sessionId, n);
   revalidatePath(`/learn/session/${n}`); revalidatePath("/learn/path"); revalidatePath("/learn/home");
@@ -78,4 +84,11 @@ async function maybeComplete(userId: string, sessionId: string, n: number) {
     await admin.from("session_progress").upsert({ user_id: userId, session_id: sessionId, status: "complete", completed_at: new Date().toISOString() }, { onConflict: "user_id,session_id" });
     void n;
   }
+}
+
+/** Attendance points (§9): video watched >= 80% AND handout opened. Idempotent via award()'s ref. */
+async function maybeAttendance(userId: string, level: string, sessionId: string) {
+  const admin = createAdminClient();
+  const { data } = await admin.from("session_progress").select("watched_pct,handout_opened").eq("user_id", userId).eq("session_id", sessionId).maybeSingle();
+  if (data && data.watched_pct >= 80 && data.handout_opened) await awardAttendance(userId, level, sessionId);
 }

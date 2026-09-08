@@ -107,3 +107,18 @@ select.col-input { padding-right: 28px; }
 .col-light .lrn-q__expl { color: var(--col-light-text-secondary); }
 .lrn-checks { list-style: none; padding: 0; margin: 12px 0; display: flex; flex-direction: column; gap: 8px; }
 .lrn-checks li { display: flex; align-items: center; gap: 8px; }
+
+/* ---- score / exam / boards ---- */
+.lrn-sticky { position: sticky; top: 8px; z-index: 5; }
+.lrn-bar { border: 1px solid var(--col-dark-border); padding: var(--col-space-3); }
+.col-light .lrn-bar { border-color: var(--col-light-border); }
+.lrn-bar__head { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 44px; background: none; border: none; color: inherit; font: inherit; font-weight: 600; cursor: pointer; text-align: left; padding: 0; }
+.lrn-bar__head > span:first-child { flex: 1 1 auto; }
+.lrn-bar__track { height: 6px; border-radius: 3px; background: rgba(255,255,255,.08); margin-top: 8px; overflow: hidden; }
+.col-light .lrn-bar__track { background: #e2e7f0; }
+.lrn-bar__fill { height: 100%; background: var(--col-button); border-radius: 3px; }
+.lrn-events { list-style: none; padding: 0; margin: 10px 0 0; display: flex; flex-direction: column; gap: 6px; font-size: var(--col-text-body-sm); }
+.lrn-dl { display: grid; grid-template-columns: minmax(90px, max-content) 1fr; gap: 4px 12px; margin: 12px 0 0; font-size: var(--col-text-body-sm); }
+.lrn-dl dt { color: var(--col-dark-text-tertiary); } .col-light .lrn-dl dt { color: var(--col-light-text-tertiary); }
+.lrn-dl dd { margin: 0; overflow-wrap: anywhere; }
+.lrn-row summary::-webkit-details-marker { display: none; }

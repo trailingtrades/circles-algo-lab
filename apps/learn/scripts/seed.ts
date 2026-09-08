@@ -50,6 +50,19 @@ async function main() {
         [sessionId[bank.session], qq.stem_en, qq.stem_hi, JSON.stringify(qq.options), qq.correct_index, qq.explanation_en, qq.explanation_hi, qq.marks, qq.difficulty, i]); q++;
     }
   }
+  // Exam banks: content/exams/*.json -> quiz_questions rows keyed by exam_id (bank replaced per exam).
+  let eq = 0;
+  const { readdirSync } = await import("node:fs");
+  for (const f of readdirSync(join(C, "exams")).filter((x) => x.endsWith(".json"))) for (const bank of J(`exams/${f}`)) {
+    const ex = await db.query("select id from exams where level_id=$1 and week_id is not distinct from $2", [levelId[bank.level], bank.week ? weekId[`${bank.level}-${bank.week}`] : null]);
+    if (!ex.rows[0]) continue;
+    await db.query("delete from quiz_questions where exam_id=$1", [ex.rows[0].id]);
+    for (const [i, qq] of bank.questions.entries()) {
+      await db.query(`insert into quiz_questions (exam_id,stem_en,stem_hi,options,correct_index,explanation_en,explanation_hi,marks,difficulty,sequence) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)`,
+        [ex.rows[0].id, qq.stem_en, qq.stem_hi, JSON.stringify(qq.options), qq.correct_index, qq.explanation_en, qq.explanation_hi, qq.marks, qq.difficulty, i]); eq++;
+    }
+  }
+  console.log(`exam questions: ${eq}`);
   await db.query("commit"); await db.end();
   console.log(`seeded: ${Object.keys(levelId).length} levels, ${Object.keys(weekId).length} weeks, ${n} sessions, ${q} quiz questions`);
 }

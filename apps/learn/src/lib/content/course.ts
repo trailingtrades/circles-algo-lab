@@ -6,6 +6,8 @@ import intermediate from "../../../../../content/sessions/intermediate.json";
 import advanced from "../../../../../content/sessions/advanced.json";
 import resourcesJson from "../../../../../content/resources.json";
 import quizW1 from "../../../../../content/quizzes/foundation-w1.json";
+import examsJson from "../../../../../content/exams.json";
+import examW1 from "../../../../../content/exams/foundation-w1.json";
 
 export type LevelSlug = "foundation" | "intermediate" | "advanced";
 export interface Level { slug: LevelSlug; sequence: number; title_en: string; title_hi: string; unlock_rule: string }
@@ -41,4 +43,20 @@ export function youtubeEmbed(url: string | null): string | null {
   if (!url) return null;
   const m = url.match(/(?:v=|youtu\.be\/|embed\/)([A-Za-z0-9_-]{6,})/) ?? url.match(/^([A-Za-z0-9_-]{6,})$/);
   return m ? `https://www.youtube-nocookie.com/embed/${m[1]}?rel=0&modestbranding=1` : null;
+}
+
+export interface ExamMeta { level: LevelSlug; week: number | null; title: string; total_marks: number; pass_marks: number; distinction_marks: number; time_limit_min: number; attempts_allowed: number }
+export const EXAMS = examsJson as ExamMeta[];
+/** Content key for an exam: "<level>-w<n>" or "<level>-final". */
+export const examKey = (e: ExamMeta) => `${e.level}-${e.week ? `w${e.week}` : "final"}`;
+export const getExam = (key: string) => EXAMS.find((e) => examKey(e) === key) ?? null;
+type Bank = { level: string; week: number | null; questions: { stem_en: string; stem_hi: string; options: QuizOption[]; correct_index: number; explanation_en: string; explanation_hi: string; marks: number }[] };
+const EXAM_BANKS = examW1 as Bank[];
+const bankFor = (key: string) => EXAM_BANKS.find((b) => `${b.level}-${b.week ? `w${b.week}` : "final"}` === key);
+export function examPublic(key: string): QuizQuestionPublic[] {
+  return (bankFor(key)?.questions ?? []).map((q, idx) => ({ idx, stem_en: q.stem_en, stem_hi: q.stem_hi, options: q.options, marks: q.marks }));
+}
+/** Server-only. */
+export function examAnswerKey(key: string) {
+  return (bankFor(key)?.questions ?? []).map((q) => ({ correct_index: q.correct_index, explanation_en: q.explanation_en, explanation_hi: q.explanation_hi, marks: q.marks }));
 }

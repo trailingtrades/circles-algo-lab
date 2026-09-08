@@ -1,0 +1,630 @@
+[
+ {
+  "level": "foundation",
+  "week": 1,
+  "title": "Foundation Week 1 exam",
+  "questions": [
+   {
+    "stem_en": "Under R-C-D-T-F, what must you do BEFORE forming a view on any market claim?",
+    "stem_hi": "R-C-D-T-F ke hisaab se kisi bhi market claim par view banane se PEHLE kya karna hai?",
+    "options": [
+     {
+      "en": "Buy a small quantity to test",
+      "hi": "Buy a small quantity to test",
+      "distractor": true
+     },
+     {
+      "en": "Run the claim through the frame step by step",
+      "hi": "Run the claim through the frame step by step",
+      "distractor": false
+     },
+     {
+      "en": "Ask a broker",
+      "hi": "Ask a broker",
+      "distractor": true
+     },
+     {
+      "en": "Check the price target",
+      "hi": "Check the price target",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "The frame exists so every claim is processed the same way, every time, before any opinion forms.",
+    "explanation_hi": "The frame exists so every claim is processed the same way, every time, before any opinion forms.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "A 'Full Why' is complete when:",
+    "stem_hi": "'Full Why' kab complete hota hai?",
+    "options": [
+     {
+      "en": "It names a price target",
+      "hi": "It names a price target",
+      "distractor": true
+     },
+     {
+      "en": "It has two independent business reasons you could defend to a stranger",
+      "hi": "It has two independent business reasons you could defend to a stranger",
+      "distractor": false
+     },
+     {
+      "en": "It quotes an analyst",
+      "hi": "It quotes an analyst",
+      "distractor": true
+     },
+     {
+      "en": "It predicts next quarter",
+      "hi": "It predicts next quarter",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "Full Why x2: two independent reasons, each defensible without the other.",
+    "explanation_hi": "Full Why x2: two independent reasons, each defensible without the other.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "Teen batti sorts every statement into:",
+    "stem_hi": "Teen batti har statement ko kismein baantta hai?",
+    "options": [
+     {
+      "en": "Buy / Hold / Sell",
+      "hi": "Buy / Hold / Sell",
+      "distractor": true
+     },
+     {
+      "en": "Fact / Guess / Kachra",
+      "hi": "Fact / Guess / Kachra",
+      "distractor": false
+     },
+     {
+      "en": "Bull / Bear / Neutral",
+      "hi": "Bull / Bear / Neutral",
+      "distractor": true
+     },
+     {
+      "en": "Cheap / Fair / Expensive",
+      "hi": "Cheap / Fair / Expensive",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "Fact (verified), Guess (reasoned), Kachra (claim without evidence).",
+    "explanation_hi": "Fact (verified), Guess (reasoned), Kachra (claim without evidence).",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "scam_example": true,
+   "stem_en": "'This stock is a sure-shot multibagger' is:",
+    "stem_hi": "'Ye stock sure-shot multibagger hai' kya hai?",
+    "options": [
+     {
+      "en": "Fact",
+      "hi": "Fact",
+      "distractor": true
+     },
+     {
+      "en": "Guess",
+      "hi": "Guess",
+      "distractor": true
+     },
+     {
+      "en": "Kachra",
+      "hi": "Kachra",
+      "distractor": false
+     },
+     {
+      "en": "Data",
+      "hi": "Data",
+      "distractor": true
+     }
+    ],
+    "correct_index": 2,
+    "explanation_en": "A promise of return with no evidence is Kachra. The phrase itself is a LOOT-scan trigger.",
+    "explanation_hi": "A promise of return with no evidence is Kachra. The phrase itself is a LOOT-scan trigger.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "How many checks are in the six-item gate?",
+    "stem_hi": "Six-item gate mein kitne checks?",
+    "options": [
+     {
+      "en": "Three",
+      "hi": "Three",
+      "distractor": true
+     },
+     {
+      "en": "Six",
+      "hi": "Six",
+      "distractor": false
+     },
+     {
+      "en": "Nine",
+      "hi": "Nine",
+      "distractor": true
+     },
+     {
+      "en": "Twelve",
+      "hi": "Twelve",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "Six. Passing five is a fail.",
+    "explanation_hi": "Six. Passing five is a fail.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "The 1% rule caps:",
+    "stem_hi": "1% rule kya cap karta hai?",
+    "options": [
+     {
+      "en": "Brokerage per trade",
+      "hi": "Brokerage per trade",
+      "distractor": true
+     },
+     {
+      "en": "Loss per idea as a share of total capital",
+      "hi": "Loss per idea as a share of total capital",
+      "distractor": false
+     },
+     {
+      "en": "Number of stocks",
+      "hi": "Number of stocks",
+      "distractor": true
+     },
+     {
+      "en": "Time spent researching",
+      "hi": "Time spent researching",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "Risk per trade, not reward. It limits what one wrong idea can cost.",
+    "explanation_hi": "Risk per trade, not reward. It limits what one wrong idea can cost.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "Price-stop vs Why-stop: a Why-stop triggers when",
+    "stem_hi": "Why-stop kab trigger hota hai?",
+    "options": [
+     {
+      "en": "Price falls 5%",
+      "hi": "Price falls 5%",
+      "distractor": true
+     },
+     {
+      "en": "The business reason you bought for stops being true",
+      "hi": "The business reason you bought for stops being true",
+      "distractor": false
+     },
+     {
+      "en": "The index falls",
+      "hi": "The index falls",
+      "distractor": true
+     },
+     {
+      "en": "A friend sells",
+      "hi": "A friend sells",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "Why-stop is tied to the thesis, price-stop to the price. Both are set BEFORE entry.",
+    "explanation_hi": "Why-stop is tied to the thesis, price-stop to the price. Both are set BEFORE entry.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "The 50% trap says a 50% loss needs what gain to recover?",
+    "stem_hi": "50% loss ke baad recover hone ke liye kitna gain chahiye?",
+    "options": [
+     {
+      "en": "50%",
+      "hi": "50%",
+      "distractor": true
+     },
+     {
+      "en": "75%",
+      "hi": "75%",
+      "distractor": true
+     },
+     {
+      "en": "100%",
+      "hi": "100%",
+      "distractor": false
+     },
+     {
+      "en": "25%",
+      "hi": "25%",
+      "distractor": true
+     }
+    ],
+    "correct_index": 2,
+    "explanation_en": "From 100 to 50 is minus 50%; from 50 back to 100 is plus 100%. Losses compound against you.",
+    "explanation_hi": "From 100 to 50 is minus 50%; from 50 back to 100 is plus 100%. Losses compound against you.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "'Aaj kharidta?' is the question you ask:",
+    "stem_hi": "'Aaj kharidta?' kab poochhte hain?",
+    "options": [
+     {
+      "en": "Only before buying",
+      "hi": "Only before buying",
+      "distractor": true
+     },
+     {
+      "en": "About every stock you already hold, at each review",
+      "hi": "About every stock you already hold, at each review",
+      "distractor": false
+     },
+     {
+      "en": "Only during a crash",
+      "hi": "Only during a crash",
+      "distractor": true
+     },
+     {
+      "en": "Never",
+      "hi": "Never",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "If you would not buy it today with fresh money, you must explain why you still hold it.",
+    "explanation_hi": "If you would not buy it today with fresh money, you must explain why you still hold it.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "LOOT-scan is run on:",
+    "stem_hi": "LOOT-scan kis par chalate hain?",
+    "options": [
+     {
+      "en": "Only penny stocks",
+      "hi": "Only penny stocks",
+      "distractor": true
+     },
+     {
+      "en": "Every unsolicited tip or pitch before reading the stock name",
+      "hi": "Every unsolicited tip or pitch before reading the stock name",
+      "distractor": false
+     },
+     {
+      "en": "Only IPOs",
+      "hi": "Only IPOs",
+      "distractor": true
+     },
+     {
+      "en": "Only F&O",
+      "hi": "Only F&O",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "Scam patterns live in the pitch, not the stock. Scan the pitch first.",
+    "explanation_hi": "Scam patterns live in the pitch, not the stock. Scan the pitch first.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "In this course, who is the trigger?",
+    "stem_hi": "Is course mein trigger kaun hai?",
+    "options": [
+     {
+      "en": "The AI",
+      "hi": "The AI",
+      "distractor": true
+     },
+     {
+      "en": "The human",
+      "hi": "The human",
+      "distractor": false
+     },
+     {
+      "en": "The broker's algo",
+      "hi": "The broker's algo",
+      "distractor": true
+     },
+     {
+      "en": "The exchange",
+      "hi": "The exchange",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "AI = analyst, human = trigger. Always.",
+    "explanation_hi": "AI = analyst, human = trigger. Always.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "The 5 AI patterns are for:",
+    "stem_hi": "5 AI patterns kis liye hain?",
+    "options": [
+     {
+      "en": "Predicting prices",
+      "hi": "Predicting prices",
+      "distractor": true
+     },
+     {
+      "en": "Structuring research so the AI gathers evidence and you decide",
+      "hi": "Structuring research so the AI gathers evidence and you decide",
+      "distractor": false
+     },
+     {
+      "en": "Placing orders",
+      "hi": "Placing orders",
+      "distractor": true
+     },
+     {
+      "en": "Finding tips",
+      "hi": "Finding tips",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "Patterns structure research. None of them asks the AI whether to buy.",
+    "explanation_hi": "Patterns structure research. None of them asks the AI whether to buy.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "A master prompt must always:",
+    "stem_hi": "Master prompt mein hamesha kya hona chahiye?",
+    "options": [
+     {
+      "en": "Ask for a target price",
+      "hi": "Ask for a target price",
+      "distractor": true
+     },
+     {
+      "en": "Force Fact/Guess/Kachra labels and forbid return forecasts",
+      "hi": "Force Fact/Guess/Kachra labels and forbid return forecasts",
+      "distractor": false
+     },
+     {
+      "en": "Promise accuracy",
+      "hi": "Promise accuracy",
+      "distractor": true
+     },
+     {
+      "en": "Use Hindi only",
+      "hi": "Use Hindi only",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "The master prompt hard-codes the course's rules into every AI conversation.",
+    "explanation_hi": "The master prompt hard-codes the course's rules into every AI conversation.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "Course law on F&O:",
+    "stem_hi": "F&O par course ka law:",
+    "options": [
+     {
+      "en": "Best for beginners",
+      "hi": "Best for beginners",
+      "distractor": true
+     },
+     {
+      "en": "Samjho, khelo mat",
+      "hi": "Samjho, khelo mat",
+      "distractor": false
+     },
+     {
+      "en": "Risk-free with hedging",
+      "hi": "Risk-free with hedging",
+      "distractor": true
+     },
+     {
+      "en": "Only on expiry day",
+      "hi": "Only on expiry day",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "Every level. Awareness only.",
+    "explanation_hi": "Every level. Awareness only.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "Per the SEBI FY26 study (Aug 2026), what share of individual F&O traders were in net loss?",
+    "stem_hi": "SEBI FY26 study (Aug 2026) ke hisaab se kitne individual F&O traders net loss mein the?",
+    "options": [
+     {
+      "en": "45%",
+      "hi": "45%",
+      "distractor": true
+     },
+     {
+      "en": "62%",
+      "hi": "62%",
+      "distractor": true
+     },
+     {
+      "en": "87.7% (SEBI FY26 study, Aug 2026)",
+      "hi": "87.7% (SEBI FY26 study, Aug 2026)",
+      "distractor": false
+     },
+     {
+      "en": "99%",
+      "hi": "99%",
+      "distractor": true
+     }
+    ],
+    "correct_index": 2,
+    "explanation_en": "87.7%, SEBI FY26 study, Aug 2026. Always quote the stamped figure, never an older one.",
+    "explanation_hi": "87.7%, SEBI FY26 study, Aug 2026. Always quote the stamped figure, never an older one.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "Investor stories in this course (Kedia, Jhunjhunwala, etc.) are taught:",
+    "stem_hi": "Course mein investor stories kaise padhai jaati hain?",
+    "options": [
+     {
+      "en": "With their exact returns",
+      "hi": "With their exact returns",
+      "distractor": true
+     },
+     {
+      "en": "With their stock picks to copy",
+      "hi": "With their stock picks to copy",
+      "distractor": true
+     },
+     {
+      "en": "Qualitatively: their thinking, no returns, no picks",
+      "hi": "Qualitatively: their thinking, no returns, no picks",
+      "distractor": false
+     },
+     {
+      "en": "As tips",
+      "hi": "As tips",
+      "distractor": true
+     }
+    ],
+    "correct_index": 2,
+    "explanation_en": "Return copy nahi hota, process hota hai. Stories teach the process.",
+    "explanation_hi": "Return copy nahi hota, process hota hai. Stories teach the process.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "'Discipline nahi, design' means:",
+    "stem_hi": "'Discipline nahi, design' ka matlab?",
+    "options": [
+     {
+      "en": "Willpower is enough",
+      "hi": "Willpower is enough",
+      "distractor": true
+     },
+     {
+      "en": "Build rules and gates so the right action is the default",
+      "hi": "Build rules and gates so the right action is the default",
+      "distractor": false
+     },
+     {
+      "en": "Design a logo",
+      "hi": "Design a logo",
+      "distractor": true
+     },
+     {
+      "en": "Skip the checklist when confident",
+      "hi": "Skip the checklist when confident",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "Systems beat willpower. The gate, the stops and the journal ARE the design.",
+    "explanation_hi": "Systems beat willpower. The gate, the stops and the journal ARE the design.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "The mock portfolio in 5C Learn uses:",
+    "stem_hi": "5C Learn ka mock portfolio kya use karta hai?",
+    "options": [
+     {
+      "en": "Real money via broker",
+      "hi": "Real money via broker",
+      "distractor": true
+     },
+     {
+      "en": "Virtual money only, no broker required",
+      "hi": "Virtual money only, no broker required",
+      "distractor": false
+     },
+     {
+      "en": "Paper money plus one real trade",
+      "hi": "Paper money plus one real trade",
+      "distractor": true
+     },
+     {
+      "en": "Crypto",
+      "hi": "Crypto",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "Virtual only. No broker account is ever required.",
+    "explanation_hi": "Virtual only. No broker account is ever required.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "A galti-log entry should be written when:",
+    "stem_hi": "Galti-log kab likhna hai?",
+    "options": [
+     {
+      "en": "Only after a loss",
+      "hi": "Only after a loss",
+      "distractor": true
+     },
+     {
+      "en": "After any process mistake, even on a winning trade",
+      "hi": "After any process mistake, even on a winning trade",
+      "distractor": false
+     },
+     {
+      "en": "Once a month",
+      "hi": "Once a month",
+      "distractor": true
+     },
+     {
+      "en": "Only if the mentor asks",
+      "hi": "Only if the mentor asks",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "A winning trade with a broken process is still a galti.",
+    "explanation_hi": "A winning trade with a broken process is still a galti.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "The SEBI retail algo framework (live since 01-Apr-2026) is covered in Foundation as:",
+    "stem_hi": "SEBI retail algo framework Foundation mein kaise cover hota hai?",
+    "options": [
+     {
+      "en": "A setup guide for live algos",
+      "hi": "A setup guide for live algos",
+      "distractor": true
+     },
+     {
+      "en": "Awareness only",
+      "hi": "Awareness only",
+      "distractor": false
+     },
+     {
+      "en": "A broker comparison",
+      "hi": "A broker comparison",
+      "distractor": true
+     },
+     {
+      "en": "Not covered",
+      "hi": "Not covered",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "Awareness only. Building or running live algos is outside this course.",
+    "explanation_hi": "Awareness only. Building or running live algos is outside this course.",
+    "marks": 1,
+    "difficulty": 1
+   }
+  ]
+ }
+]
