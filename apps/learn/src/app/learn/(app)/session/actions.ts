@@ -3,7 +3,8 @@ import { revalidatePath } from "next/cache";
 import { getViewer, createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { supabaseConfigured } from "@/lib/supabase/env";
-import { getSession, quizAnswerKey } from "@/lib/content/course";
+import { getSession } from "@/lib/content/course";
+import { liveQuizKey } from "@/lib/content/live";
 import { awardQuiz, awardAttendance, awardDiscipline } from "@/lib/scoring/award";
 
 export type ActState = { error?: string; ok?: string };
@@ -41,7 +42,7 @@ export async function markHandoutOpened(n: number): Promise<ActState> {
 /** Grades server-side against the answer key; the client never sees correct_index. One attempt per session (§12 QuizBlock: one-shot). */
 export async function submitQuiz(n: number, answers: Record<number, number>): Promise<QuizResult> {
   const c = await ctx(n); if ("error" in c) return c;
-  const key = quizAnswerKey(n);
+  const key = await liveQuizKey(n);
   if (!key.length) return { error: "Is session ka quiz abhi nahi bana." };
   const { data: prior } = await c.sb.from("attempts").select("id").eq("user_id", c.v.id).eq("session_id", c.sessionId).not("submitted_at", "is", null).maybeSingle();
   if (prior) return { error: "Quiz pehle hi submit ho chuka hai." };

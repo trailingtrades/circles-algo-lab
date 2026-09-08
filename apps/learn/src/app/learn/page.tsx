@@ -37,7 +37,7 @@ function LoginInner() {
           <p className="col-eyebrow mt-4 text-center">{CREDENTIAL_LINE}</p>
         </div>
       </main>
-      <ComplianceFooter tier={1} />
+      <ComplianceFooter tier={1} grievance />
     </div>
   );
 }

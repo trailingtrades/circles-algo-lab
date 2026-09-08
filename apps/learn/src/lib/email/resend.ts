@@ -31,3 +31,11 @@ async function send(to: string, subject: string, html: string) {
   if (error) throw new Error(`Resend: ${error.message}`);
   return { id: data?.id ?? null, skipped: false };
 }
+
+export async function sendCertificateEmail(to: string, fullName: string, levelTitle: string, certNo: string, link: string) {
+  const html = wrap(`<p>Badhai ho ${fullName},</p>
+<p>Aapka <strong>${levelTitle}</strong> level ka Certificate of Completion issue ho gaya hai. Certificate No. <strong>${certNo}</strong>.</p>
+<p><a href="${link}" style="display:inline-block;background:#134A9A;color:#ffffff;padding:10px 18px;border-radius:9999px;text-decoration:none;font-weight:600">Download from 5C Learn</a></p>
+<p style="font-size:13px;color:#4b5670">This certifies course completion only. It is not a SEBI or NISM certification and confers no licence to advise.</p>`);
+  return send(to, `Aapka ${levelTitle} certificate tayyar hai — 5C Learn`, html);
+}

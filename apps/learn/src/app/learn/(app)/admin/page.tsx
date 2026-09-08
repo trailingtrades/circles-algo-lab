@@ -16,6 +16,7 @@ export default async function AdminPage() {
     <>
       <p className="col-eyebrow">Admin</p>
       <h1 className="lrn-title">Cohorts</h1>
+      <p className="lrn-actions"><Link href="/learn/admin/content" className="col-btn col-btn--ghost col-btn--sm">Content editor</Link><Link href="/learn/admin/certificates" className="col-btn col-btn--ghost col-btn--sm">Certificates</Link><Link href="/learn/admin/compliance" className="col-btn col-btn--ghost col-btn--sm">Compliance scan</Link></p>
       <div className="lrn-grid mt-4">
         <section className="col-card" aria-labelledby="new">
           <h2 id="new" className="lrn-session__title">New cohort</h2>

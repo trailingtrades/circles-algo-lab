@@ -1,6 +1,12 @@
 import "server-only";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { quizPoints, examPoints, practicePoints, DISCIPLINE, PER_SESSION, type GRADE_FRACTION } from "./rules";
+import type { LevelSlug } from "@/lib/content/course";
+
+/** After any award that could complete the §11 criteria, try issuing the certificate (server-side, idempotent). */
+async function tryIssue(userId: string, levelSlug: string) {
+  try { const { maybeIssue } = await import("@/lib/cert/issue"); await maybeIssue(userId, levelSlug as LevelSlug); } catch (e) { console.error("[cert] issue check failed:", (e as Error).message); }
+}
 
 /** All awarding goes through the service role and app.award() — idempotent per (user, kind, ref). Never called from the client. */
 async function levelIdOf(admin: ReturnType<typeof createAdminClient>, slug: string) {
@@ -23,12 +29,15 @@ export async function awardExam(userId: string, levelSlug: string, examRowId: st
   const delta = Math.round((pts - earned) * 100) / 100;
   if (delta > 0) await admin.rpc("award", { p_user: userId, p_level: level, p_kind: "exam", p_points: delta, p_ref_type: "attempt", p_ref_id: attemptRowId, p_notes: `exam:${examRowId}` });
   if (onTime) await admin.rpc("award", { p_user: userId, p_level: level, p_kind: "discipline", p_points: DISCIPLINE.exam_on_time, p_ref_type: "exam_on_time", p_ref_id: examRowId, p_notes: "exam submitted within the time limit" });
+  await tryIssue(userId, levelSlug);
 }
 export async function awardPractice(userId: string, levelSlug: string, artefact: string, refId: string, grade: keyof typeof GRADE_FRACTION, artefactPoints: number, gradeRowId: string) {
   const admin = createAdminClient();
   await admin.rpc("award", { p_user: userId, p_level: await levelIdOf(admin, levelSlug), p_kind: "practice", p_points: practicePoints(grade, artefactPoints), p_ref_type: `practice_${artefact}`, p_ref_id: gradeRowId, p_notes: `process grade ${grade}` });
+  await tryIssue(userId, levelSlug);
 }
 export async function awardDiscipline(userId: string, levelSlug: string, refType: "friday_on_time" | "galti_log" | "journal_streak_week", refId: string, notes: string) {
   const admin = createAdminClient();
   await admin.rpc("award", { p_user: userId, p_level: await levelIdOf(admin, levelSlug), p_kind: "discipline", p_points: DISCIPLINE[refType], p_ref_type: refType, p_ref_id: refId, p_notes: notes });
+  if (refType === "friday_on_time") await tryIssue(userId, levelSlug);
 }

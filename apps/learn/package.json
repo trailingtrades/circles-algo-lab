@@ -13,7 +13,8 @@
     "test:gating": "tsx tests/gating.test.ts",
     "test:scoring": "tsx tests/scoring.test.ts",
     "test:rules": "tsx tests/rules.test.ts",
-    "test:all": "npm run test:gating && npm run test:rules && npm run test:rls && npm run test:scoring"
+    "test:all": "npm run test:gating && npm run test:rules && npm run test:cert && npm run test:rls && npm run test:scoring",
+    "test:cert": "tsx tests/cert.test.ts && tsx tests/verify.test.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.6",

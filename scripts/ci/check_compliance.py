@@ -65,6 +65,11 @@ def check_file(path):
   if path.endswith(".html") and "/.next/" in path and "/app/" in path and 'http-equiv="refresh"' not in raw and not path.endswith("_global-error.html"):  # _global-error.html is Next's internal pre-hydration shell; the custom src/app/global-error.tsx carries the footer at runtime
     if "INH000020004" not in raw: fails.append("rendered route missing INH000020004")
     if TIER1 not in raw and TIER1.replace("·", "&middot;") not in raw: fails.append("rendered route missing byte-identical Tier-1")
+  # 6b. certificate template must carry the byte-identical Tier-1 and the credential line, and the not-a-SEBI-certification line
+  if path.endswith("certificates/template.html"):
+    if TIER1 not in raw: fails.append("certificate template: Tier-1 not byte-identical")
+    if CRED not in raw: fails.append("certificate template: credential line missing")
+    if "not a SEBI or NISM certification" not in raw: fails.append("certificate template: missing 'not a SEBI or NISM certification' line")
   # 7. Tier-1 drift in source strings
   if path.endswith("compliance/strings.ts"):
     m = re.search(r'export const TIER1 =\s*"([^"]+)"', raw)
