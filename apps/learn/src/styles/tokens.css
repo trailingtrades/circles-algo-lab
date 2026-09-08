@@ -1,0 +1,382 @@
+/* ============================================================
+   CircleOptionLab / 5 Circles — design tokens
+   Framework-free. No build step. Import this file and go.
+
+   Verified 30 Aug 2026 against WCAG 2.1 AA contrast math — see
+   SKILL.md "Verified contrast ledger" for the numbers and the one
+   real accessibility gap found (light-mode UP green). This file
+   ships the AA-safe override as --col-up-light-safe; the raw brand
+   value stays available as --col-up-light for anywhere contrast
+   doesn't apply (large numerals, chart lines, non-text fills).
+   ============================================================ */
+
+/* ---------- Fonts ---------- */
+/* Variable weight axis 100-700 in one file — real IBM Plex Sans,
+   sourced from @fontsource-variable/ibm-plex-sans, SIL OFL 1.1. */
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/IBMPlexSans-Variable.woff2") format("woff2-variations"),
+       url("/fonts/IBMPlexSans-Variable.woff2") format("woff2");
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Plex Mono ships as static weights, not variable — three files,
+   sourced from @fontsource/ibm-plex-mono, SIL OFL 1.1. */
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/IBMPlexMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/IBMPlexMono-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/IBMPlexMono-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ---------- Font stacks ---------- */
+  --col-font-sans: "IBM Plex Sans", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --col-font-mono: "IBM Plex Mono", "SF Mono", "Roboto Mono", Consolas, monospace;
+  --col-weight-max: 700; /* never go past this — no black/900 anywhere in the system */
+
+  /* ---------- Brand blue ramp ---------- */
+  --col-brand: #00AEEF;   /* logo, links, accents on ink/navy. FAILS AA with white text (2.53:1) — never use as a text-on-fill button color */
+  --col-button: #0b74b8;  /* buttons. AA-safe with white text (4.99:1) */
+  --col-navy: #134A9A;    /* secondary fills, deep accents. AA-safe with white text (8.49:1) */
+  --col-ink: #0B1B33;     /* near-black text on light surfaces, and the "safe" text color on brand cyan */
+
+  /* ---------- Dark ground (default surface) ---------- */
+  --col-dark-base: #050608;
+  --col-dark-card: #0d0f13;      /* top of the card fade */
+  --col-dark-card-to: #050608;   /* card gradient settles back into base */
+  --col-dark-glow-white: rgba(255, 255, 255, 0.075); /* top-left glow */
+  --col-dark-glow-blue: rgba(0, 174, 239, 0.10);      /* top-right glow, uses --col-brand */
+  --col-dark-text-primary: #f2f5f9;
+  --col-dark-text-secondary: #97a1b3;
+  --col-dark-text-tertiary: #5b6577;
+  --col-dark-border: rgba(255, 255, 255, 0.08);
+
+  /* ---------- Light ground ---------- */
+  --col-light-base: #f6f8fb;
+  --col-light-card: #ffffff;
+  --col-light-card-tint: #f2f7ff; /* white card, faint brand tint */
+  --col-light-text-primary: var(--col-ink);
+  --col-light-text-secondary: #4b5670;
+  --col-light-text-tertiary: #8792a6;
+  --col-light-border: #e2e7f0;
+
+  /* ---------- Up / Down (price direction) ---------- */
+  /* Given values, exactly as specified. See note above on the light UP flag. */
+  --col-up-light: #388e3c;
+  --col-up-light-safe: #2e7d32;  /* AA-normal fix: 4.82:1 vs light ground, 5.13:1 vs white card. Same hue family (Material Green 700->800), one step darker. */
+  --col-down-light: #cc2f3c;     /* already AA-safe: 4.89:1 vs light ground */
+  --col-up-dark: #4caf50;        /* AA-safe: 7.29:1 vs dark base */
+  --col-down-dark: #f23645;      /* AA-safe: 5.20:1 vs dark base */
+
+  /* ---------- Type scale ---------- */
+  --col-text-hero: clamp(48px, 6vw, 72px);
+  --col-text-title: clamp(24px, 2.4vw, 30px);
+  --col-text-body: 14px;
+  --col-text-body-sm: 13px;
+  --col-text-dense: 12px;
+  --col-text-dense-sm: 10px;
+  --col-text-eyebrow: 11px;
+  --col-text-eyebrow-sm: 10px;
+  --col-line-tight: 1.2;
+  --col-line-body: 1.5;
+  --col-tracking-eyebrow: 0.06em;
+
+  /* ---------- Radius ---------- */
+  --col-radius-card: 16px;
+  --col-radius-inner: 12px;
+  --col-radius-input: 6px;
+  --col-radius-pill: 9999px; /* buttons, chips */
+
+  /* ---------- Spacing (8px base grid) ---------- */
+  --col-space-1: 4px;
+  --col-space-2: 8px;
+  --col-space-3: 12px;
+  --col-space-4: 16px;
+  --col-space-5: 24px;
+  --col-space-6: 32px;
+  --col-space-7: 48px;
+
+  /* ---------- Motion ---------- */
+  --col-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --col-duration-fast: 120ms;
+  --col-duration: 200ms;
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+
+.col-root {
+  font-family: var(--col-font-sans);
+  font-variant-numeric: tabular-nums lining-nums; /* numbers never jitter/misalign */
+  color: var(--col-dark-text-primary);
+  background: var(--col-dark-base);
+}
+
+.col-root.col-light {
+  color: var(--col-light-text-primary);
+  background: var(--col-light-base);
+}
+
+/* Dark ground: base + two soft glows + subtle top fade. Apply to the
+   outermost app/page wrapper once — not per-component. */
+.col-ground-dark {
+  background-color: var(--col-dark-base);
+  background-image:
+    radial-gradient(ellipse 900px 600px at 8% -10%, var(--col-dark-glow-white), transparent 60%),
+    radial-gradient(ellipse 900px 600px at 96% -10%, var(--col-dark-glow-blue), transparent 60%);
+  background-repeat: no-repeat;
+}
+
+.col-ground-light {
+  background-color: var(--col-light-base);
+}
+
+/* ============================================================
+   Card
+   ============================================================ */
+
+.col-card {
+  border-radius: var(--col-radius-card);
+  padding: var(--col-space-5);
+  border: 1px solid var(--col-dark-border);
+  background: linear-gradient(180deg, var(--col-dark-card) 0%, var(--col-dark-card-to) 100%);
+}
+
+.col-light .col-card {
+  border-color: var(--col-light-border);
+  background: linear-gradient(180deg, var(--col-light-card) 0%, var(--col-light-card-tint) 100%);
+}
+
+.col-card__inner {
+  border-radius: var(--col-radius-inner);
+}
+
+/* ============================================================
+   Button
+   ============================================================ */
+
+.col-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--col-space-2);
+  height: 38px;
+  padding: 0 var(--col-space-4);
+  border-radius: var(--col-radius-pill);
+  border: none;
+  font-family: var(--col-font-sans);
+  font-size: var(--col-text-body);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--col-duration-fast) var(--col-ease),
+              opacity var(--col-duration-fast) var(--col-ease);
+}
+
+.col-btn--primary {
+  background: var(--col-button);
+  color: #ffffff; /* only pairing verified AA-safe for this fill — never swap to --col-ink here */
+}
+.col-btn--primary:hover { opacity: 0.92; }
+.col-btn--primary:active { opacity: 0.85; }
+
+.col-btn--navy {
+  background: var(--col-navy);
+  color: #ffffff; /* 8.49:1 — also safe */
+}
+
+.col-btn--ghost {
+  background: transparent;
+  border: 1px solid var(--col-dark-border);
+  color: var(--col-dark-text-primary);
+}
+.col-light .col-btn--ghost {
+  border-color: var(--col-light-border);
+  color: var(--col-light-text-primary);
+}
+
+.col-btn--sm { height: 30px; padding: 0 var(--col-space-3); font-size: var(--col-text-body-sm); }
+.col-btn[disabled] { opacity: 0.4; cursor: not-allowed; }
+
+/* ============================================================
+   Chip
+   ============================================================ */
+
+.col-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--col-space-1);
+  height: 24px;
+  padding: 0 var(--col-space-2);
+  border-radius: var(--col-radius-pill);
+  font-family: var(--col-font-mono);
+  font-size: var(--col-text-dense);
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--col-dark-text-primary);
+}
+.col-light .col-chip {
+  background: var(--col-light-card-tint);
+  color: var(--col-light-text-primary);
+}
+
+.col-chip--up   { color: var(--col-up-dark); }
+.col-light .col-chip--up   { color: var(--col-up-light-safe); }
+.col-chip--down { color: var(--col-down-dark); }
+.col-light .col-chip--down { color: var(--col-down-light); }
+
+/* ============================================================
+   Eyebrow (small uppercase label above a title/value)
+   ============================================================ */
+
+.col-eyebrow {
+  font-family: var(--col-font-mono);
+  font-size: var(--col-text-eyebrow);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: var(--col-tracking-eyebrow);
+  color: var(--col-dark-text-tertiary);
+}
+.col-light .col-eyebrow { color: var(--col-light-text-tertiary); }
+
+/* ============================================================
+   Tab strip
+   ============================================================ */
+
+.col-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--col-dark-border);
+}
+.col-light .col-tabs { border-color: var(--col-light-border); }
+
+.col-tab {
+  padding: var(--col-space-3) var(--col-space-4);
+  font-size: var(--col-text-body);
+  font-weight: 500;
+  color: var(--col-dark-text-secondary);
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  background: none;
+  border-top: none; border-left: none; border-right: none;
+  font-family: var(--col-font-sans);
+}
+.col-tab[aria-selected="true"] {
+  color: var(--col-brand);
+  border-bottom-color: var(--col-button);
+  font-weight: 600;
+}
+.col-light .col-tab { color: var(--col-light-text-secondary); }
+.col-light .col-tab[aria-selected="true"] { color: var(--col-button); }
+
+/* ============================================================
+   Header
+   ============================================================ */
+
+.col-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0 var(--col-space-5);
+  border-bottom: 1px solid var(--col-dark-border);
+}
+.col-light .col-header { border-color: var(--col-light-border); }
+
+/* ============================================================
+   Input
+   ============================================================ */
+
+.col-input {
+  height: 38px;
+  padding: 0 var(--col-space-3);
+  border-radius: var(--col-radius-input);
+  border: 1px solid var(--col-dark-border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--col-dark-text-primary);
+  font-family: var(--col-font-sans);
+  font-size: var(--col-text-body);
+}
+.col-input:focus {
+  outline: none;
+  border-color: var(--col-brand);
+}
+.col-light .col-input {
+  border-color: var(--col-light-border);
+  background: #ffffff;
+  color: var(--col-light-text-primary);
+}
+
+/* ============================================================
+   Table — see SKILL.md "Table" recipe for the full rule set this
+   implements (sticky header+first col, cell borders not row borders,
+   right-align numbers, tabular-nums, direction color on delta only).
+   ============================================================ */
+
+.col-table { width: 100%; border-collapse: collapse; font-family: var(--col-font-sans); }
+.col-table thead th {
+  height: 50px;
+  padding: 0 var(--col-space-3);
+  font-size: var(--col-text-body);
+  font-weight: 700;
+  text-align: center;
+  position: sticky; top: 0;
+  background: var(--col-dark-card);
+  border-bottom: 1px solid var(--col-dark-border);
+}
+.col-light .col-table thead th { background: var(--col-light-card); border-color: var(--col-light-border); }
+
+.col-table tbody td {
+  height: 41px; /* 40px content + 1px border, box-sizing: border-box */
+  padding: 0 var(--col-space-3);
+  font-size: var(--col-text-body);
+  border-bottom: 1px solid var(--col-dark-border);
+}
+.col-light .col-table tbody td { border-color: var(--col-light-border); }
+
+.col-table td.col-num, .col-table th.col-num { text-align: end; font-variant-numeric: tabular-nums; }
+.col-table td.col-text { text-align: start; }
+.col-table tbody tr:hover { background: rgba(255, 255, 255, 0.04); }
+.col-light .col-table tbody tr:hover { background: #bbd9fb; } /* blue tint, not gray — gray disappears against zebra on white */
+.col-table tbody tr:nth-child(odd) { background: rgba(255, 255, 255, 0.02); }
+.col-light .col-table tbody tr:nth-child(odd) { background: #f9f9f9; }
+
+.col-up   { color: var(--col-up-dark); }
+.col-down { color: var(--col-down-dark); }
+.col-light .col-up   { color: var(--col-up-light-safe); }
+.col-light .col-down { color: var(--col-down-light); }
+
+/* ============================================================
+   Empty state
+   ============================================================ */
+
+.col-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--col-space-3);
+  padding: var(--col-space-7) var(--col-space-4);
+  text-align: center;
+  color: var(--col-dark-text-secondary);
+}
+.col-light .col-empty { color: var(--col-light-text-secondary); }
+.col-empty__title { font-size: var(--col-text-body); font-weight: 600; color: var(--col-dark-text-primary); }
+.col-light .col-empty__title { color: var(--col-light-text-primary); }

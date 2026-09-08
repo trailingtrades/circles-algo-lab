@@ -1,0 +1,115 @@
+/* ============================================================
+   CircleOptionLab / 5 Circles — Tailwind v4 theme
+   CSS-first @theme block (Tailwind v4 syntax — no tailwind.config.js).
+
+   Import order matters:
+     @import "tailwindcss";
+     @import "./tailwind-theme.css";
+
+   What this remaps:
+   - teal-*  -> the brand blue ramp (teal-500 = brand cyan, teal-600 = button
+     blue, teal-800 = navy, teal-950 = ink). Only 500/600/800/950 are the real
+     supplied hex values; 50/100/200/300/400/700/900 are linearly interpolated
+     to give a usable full ramp — treat those as generated, not brand-approved,
+     if a designer ever needs to sign off on an exact tint.
+   - green-*, red-* -> up/down direction colors, same interpolation policy
+     (500/600 are real; the rest are generated neighbours for tint/shade needs).
+   - font-sans / font-mono -> IBM Plex Sans (variable) / IBM Plex Mono.
+   - radius-card / radius-inner / radius-input -> the three radius tokens.
+   - Phone legibility fixes at the bottom — read that section before shipping
+     any screen a hand-held device will open. Pairs with the
+     `responsive-dashboard-layout` skill for the layout/breakpoint mechanics
+     this file does not cover (grid overflow, min-width:0, the 1536px
+     Windows-125%-scaling collision with Tailwind's own 2xl breakpoint).
+   ============================================================ */
+
+@theme {
+  /* ---------- Brand blue ramp (teal-*) ---------- */
+  --color-teal-50:  #D4F2FC;
+  --color-teal-100: #AAE4FA;
+  --color-teal-200: #80D6F7;
+  --color-teal-300: #4CC6F4;
+  --color-teal-400: #22B9F1;
+  --color-teal-500: #00AEEF; /* REAL — brand anchor cyan */
+  --color-teal-600: #0B74B8; /* REAL — button blue, AA-safe w/ white text (4.99:1) */
+  --color-teal-700: #0F5FA9;
+  --color-teal-800: #134A9A; /* REAL — navy, AA-safe w/ white text (8.49:1) */
+  --color-teal-900: #0F3061;
+  --color-teal-950: #0B1B33; /* REAL — ink */
+
+  /* ---------- Up ramp (green-*) ---------- */
+  --color-green-50:  #E1F2E2;
+  --color-green-100: #C3E4C5;
+  --color-green-200: #A0D4A2;
+  --color-green-300: #7CC47F;
+  --color-green-400: #64BA67;
+  --color-green-500: #4CAF50; /* REAL — dark-mode UP, 7.29:1 on dark base */
+  --color-green-600: #3E9842;
+  --color-green-700: #2E7D32; /* REAL — light-mode UP, AA-SAFE fix (4.82:1). The
+                                  originally-given #388E3C measures only 3.87:1 on
+                                  the light ground / 4.12:1 on white — fails AA for
+                                  normal-weight body text below 18px. Use 700 for
+                                  any UP text on a light background; keep 500 for
+                                  dark mode, chart lines, or large/bold numerals. */
+  --color-green-800: #225B32;
+  --color-green-900: #194233;
+
+  /* ---------- Down ramp (red-*) ---------- */
+  --color-red-50:  #FDDEE0;
+  --color-red-100: #FBBCC1;
+  --color-red-200: #F8949C;
+  --color-red-300: #F56C77;
+  --color-red-400: #F4515E;
+  --color-red-500: #F23645; /* REAL — dark-mode DOWN, 5.20:1 on dark base */
+  --color-red-600: #CC2F3C; /* REAL — light-mode DOWN, already AA-safe (4.89:1) */
+  --color-red-700: #7F2738;
+  --color-red-800: #582337;
+  --color-red-900: #351F35;
+
+  /* ---------- Fonts ---------- */
+  --font-sans: "IBM Plex Sans", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "SF Mono", "Roboto Mono", Consolas, monospace;
+
+  /* ---------- Type scale (mirrors tokens.css) ---------- */
+  --text-hero: clamp(48px, 6vw, 72px);
+  --text-title: clamp(24px, 2.4vw, 30px);
+  --text-dense: 12px;
+  --text-dense-sm: 10px;
+  --text-eyebrow: 11px;
+
+  /* ---------- Radius ---------- */
+  --radius-card: 16px;
+  --radius-inner: 12px;
+  --radius-input: 6px;
+}
+
+/* ============================================================
+   Phone legibility rules
+   Desktop "dense UI" (10-12px) is a deliberate density choice for
+   wide screens with a mouse. It does NOT survive a 360px Android
+   phone with a thumb. Two concrete fixes, both real bugs if skipped:
+   ============================================================ */
+
+@layer base {
+  /* 1. iOS Safari auto-zooms on focus if an input's font-size is below
+        16px, and there's no CSS property to disable that behaviour —
+        the only fix is to not trigger it. Every text input, textarea,
+        select on a phone must render at >= 16px. Confirmed real bug,
+        not a style preference. */
+  @media (width < 640px) {
+    input, textarea, select {
+      font-size: 16px !important;
+    }
+
+    /* 2. Raise the dense-UI floor. 10px eyebrow/dense text that's
+          comfortable at arm's length on a 27" monitor is sub-minimum
+          on a phone screen at reading distance. Bump the two smallest
+          steps; leave body/title alone since clamp() already scales
+          --text-title down gracefully. */
+    :root {
+      --text-dense: 13px;
+      --text-dense-sm: 11px;
+      --text-eyebrow: 11px;
+    }
+  }
+}
