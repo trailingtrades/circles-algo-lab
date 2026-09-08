@@ -51,7 +51,7 @@ Q1-A app lives in this repo under `apps/learn/`, Algo Lab `index.html` untouched
 9. Phone + laptop click-through: login → invite → session 1 → quiz → journal → exam → score → leaderboard → certificate → verify.
 
 ## 6. Open items still needing Rahul
-- Q8 domain · confirmation of the Compliance Officer's `@5circles.co` address (grievance block shows name + SCORES + ODR only until then) · second signatory (only Rahul's signature exists) · restore `responsive-dashboard-layout.zip` to the skill library · deprecate the older `fivecircles-brand-kit` · `index.html` (Algo Lab) carries 87.7% stamped FY25, two Devanagari typos and an Inter font — separate fix on `main`.
+- Q8 domain · confirmation of the Compliance Officer's `@5circles.co` address (grievance block shows name + SCORES + ODR only until then) · second signatory (only Rahul's signature exists) · restore `responsive-dashboard-layout.zip` to the skill library · deprecate the older `fivecircles-brand-kit` · `index.html` (Algo Lab) stamps the 87.7% figure as "FY25" where it must read "SEBI FY26 study, Aug 2026", plus two Devanagari typos and an Inter font — separate fix on `main`.
 
 ## 7. Course-wide laws encoded (do not regress)
 F&O = samjho, khelo mat · investor stories qualitative only · AI = analyst, human = trigger · SEBI retail algo framework awareness only (live since 01-Apr-2026) · return copy nahi hota, process hota hai · only SEBI FY26 (Aug 2026) F&O-loss figures, always stamped · Roman-script Hinglish only · no emoji in product UI · never white on `#00AEEF` · Tier-1 never clamped.
