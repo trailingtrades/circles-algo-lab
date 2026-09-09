@@ -107,9 +107,9 @@
   "level": "foundation",
   "week": null,
   "kind": "excel",
-  "file_name": "5C_AITC_MockPortfolio.xlsx",
-  "note": "virtual Rs 10 lakh mock portfolio",
-  "storage_path": null
+  "file_name": "5C_AITC_Foundation_MockPortfolio_Template_v1.xlsx",
+  "note": "virtual Rs 10 lakh mock portfolio template (Drive, 2 Sep 2026)",
+  "storage_path": "https://drive.google.com/file/d/1vGXOWT8KI59zSG43WC-CT0BvyYZQBLua/view"
  },
  {
   "level": "intermediate",
@@ -326,5 +326,13 @@
   "file_name": "Circles Algo Lab — AI Trading Command Centre",
   "note": "existing dashboard, opens in a new tab",
   "storage_path": "https://algo.circleoptionlab.com"
+ },
+ {
+  "level": null,
+  "week": null,
+  "kind": "link",
+  "file_name": "AI Trading Course — Master Curriculum v2 (PDF)",
+  "note": "course design document, 28 Aug 2026 (Drive)",
+  "storage_path": "https://drive.google.com/file/d/1MJsyuDyzMdXUTBBjojRQoA_G3_Z-pgWL/view"
  }
 ]
