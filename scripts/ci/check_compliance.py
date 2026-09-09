@@ -53,8 +53,9 @@ def check_file(path):
   if not path.endswith(("check_compliance.py",)):
     for m in EMOJI.finditer(s): fails.append(f"emoji U+{ord(m.group()):04X} outside compliance strings: {s[max(0,m.start()-20):m.end()+10]!r}"); break
   # 4. stat stamping
-  for m in re.finditer(r"87\.7", raw):
-    if "FY26" not in raw[max(0, m.start()-200):m.end()+200]: fails.append(f"87.7 at {m.start()} not within 200 chars of FY26")
+  # The stat is always written as a percentage; a bare 87.7 inside a price series (287.7, 87.72) is not the stat.
+  for m in re.finditer(r"(?<![\d.])87\.7\s*%", raw):
+    if "FY26" not in raw[max(0, m.start()-200):m.end()+200]: fails.append(f"87.7% at {m.start()} not within 200 chars of FY26")
   for o in OLD_STAT:
     for m in re.finditer(o, raw):
       if not re.search(r"historical|series|PoP", raw[max(0,m.start()-120):m.end()+120], re.I): fails.append(f"old F&O stat /{o}/ at {m.start()} without historical-series label")
