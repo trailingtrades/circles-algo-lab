@@ -13,7 +13,7 @@ import { LEVELS, EXAMS, type LevelSlug } from "@/lib/content/course";
 const exec = promisify(execFile);
 const CERT_DIR = join(process.cwd(), "..", "..", "certificates");
 const BUCKET = "certificates";
-const site = () => process.env.NEXT_PUBLIC_SITE_URL ?? "";
+import { siteUrl as site } from "@/lib/supabase/env";
 
 /** Gather the facts for §11 criteria — service role, one user, one level. */
 export async function gatherCriteria(userId: string, level: LevelSlug): Promise<CriteriaInput> {
@@ -60,16 +60,29 @@ export async function maybeIssue(userId: string, level: LevelSlug) {
   if (error) throw new Error(error.message);
   const verifyUrl = `${site()}/verify/${cert_no}?k=${shortKey(verify_hash)}`;
   try {
+    if (process.env.CERT_RENDER_MODE === "dispatch") throw new Error("dispatch");
     const pdf = await renderPdf({ learner_name: prof!.full_name, level_title: lv!.title_en, cohort_name: cohort, session_count: facts.sessionsTotal, band: ev.band, cert_no, issued_on, verify_url: verifyUrl });
     const path = `${userId}/${cert_no}.pdf`;
     await admin.storage.createBucket(BUCKET, { public: false }).catch(() => undefined);
     const up = await admin.storage.from(BUCKET).upload(path, pdf, { contentType: "application/pdf", upsert: true });
     if (!up.error) await admin.from("certificates").update({ pdf_storage_path: path }).eq("id", row.id);
-  } catch (e) { console.error("[cert] pdf render/upload failed:", (e as Error).message); }
+  } catch (e) {
+    // No WeasyPrint on this host (e.g. Vercel): hand the render to the GitHub Actions job. The row already exists; the PDF fills in within minutes.
+    const ok = await dispatchRender(row.id);
+    if (!ok) console.error("[cert] pdf render failed and no dispatch configured:", (e as Error).message);
+  }
   await admin.rpc("log_audit", { p_actor: null, p_action: "certificate.issue", p_target_type: "certificates", p_target_id: row.id, p_before: null, p_after: { user_id: userId, level, cert_no, band: ev.band } });
   const { data: u } = await admin.auth.admin.getUserById(userId);
   if (u?.user?.email) sendCertificateEmail(u.user.email, prof!.full_name, lv!.title_en, cert_no, `${site()}/learn/certificate`).catch(() => undefined);
   return row;
+}
+
+/** Fire the cert-render workflow via repository_dispatch. Needs GITHUB_DISPATCH_TOKEN (fine-grained PAT, contents:write on the repo) and GITHUB_REPO ("owner/name"). */
+async function dispatchRender(certificateId: string): Promise<boolean> {
+  const token = process.env.GITHUB_DISPATCH_TOKEN, repo = process.env.GITHUB_REPO;
+  if (!token || !repo) return false;
+  const res = await fetch(`https://api.github.com/repos/${repo}/dispatches`, { method: "POST", headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github+json", "Content-Type": "application/json" }, body: JSON.stringify({ event_type: "render-certificate", client_payload: { certificate_id: certificateId } }) });
+  if (!res.ok) console.error("[cert] dispatch failed:", res.status); return res.ok;
 }
 
 export async function renderPdf(data: Record<string, unknown>): Promise<Buffer> {

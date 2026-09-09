@@ -1,7 +1,7 @@
 "use server";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { supabaseConfigured } from "@/lib/supabase/env";
+import { supabaseConfigured, siteUrl } from "@/lib/supabase/env";
 
 export type AuthState = { error?: string };
 
@@ -31,8 +31,7 @@ export async function requestReset(_: AuthState, form: FormData): Promise<AuthSt
   const email = String(form.get("email") ?? "").trim().toLowerCase();
   if (!email) return { error: "Email chahiye." };
   const sb = await createClient();
-  const site = process.env.NEXT_PUBLIC_SITE_URL ?? "";
-  await sb.auth.resetPasswordForEmail(email, { redirectTo: `${site}/api/auth/callback?next=/learn/reset/confirm` });
+  await sb.auth.resetPasswordForEmail(email, { redirectTo: `${siteUrl()}/api/auth/callback?next=/learn/reset/confirm` });
   // Always the same answer: never reveal whether an address exists.
   return { error: "" };
 }

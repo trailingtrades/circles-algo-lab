@@ -6,7 +6,7 @@ import { INVITE_TTL_DAYS, newInviteToken } from "@/lib/auth/tokens";
 import { sendInviteEmail } from "@/lib/email/resend";
 
 export type AdminState = { error?: string; ok?: string };
-const site = () => process.env.NEXT_PUBLIC_SITE_URL ?? "";
+import { siteUrl as site } from "@/lib/supabase/env";
 
 async function audit(actor: string, action: string, targetType: string, targetId: string | null, before: unknown, after: unknown) {
   const admin = createAdminClient();

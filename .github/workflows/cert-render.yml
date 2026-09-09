@@ -1,0 +1,25 @@
+name: Render certificate PDF
+# Vercel's Node runtime cannot run WeasyPrint (needs Python + Pango/Cairo). The app inserts the certificate row and
+# fires a repository_dispatch; this job renders the PDF on Linux and uploads it to Supabase Storage.
+# Required repo secrets: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, CERT_SIGNING_SECRET, NEXT_PUBLIC_SITE_URL
+on:
+  repository_dispatch:
+    types: [render-certificate]
+  workflow_dispatch:
+    inputs: { certificate_id: { description: "certificates.id (uuid)", required: true } }
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q weasyprint qrcode[pil] requests
+      - name: Render + upload
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          CERT_SIGNING_SECRET: ${{ secrets.CERT_SIGNING_SECRET }}
+          SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
+          CERT_ID: ${{ github.event.client_payload.certificate_id || github.event.inputs.certificate_id }}
+        run: python3 certificates/render_from_db.py "$CERT_ID"
