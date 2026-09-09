@@ -1,0 +1,16 @@
+=== Compliance scan (deterministic, first pass only) ===
+
+Prohibited-language matches: 6
+  line 640: matched /risk[- ]free/ -> Risk-free hedge
+  line 655: matched /guarante/ -> A guaranteed earner
+  line 1619: matched /sure[- ]?shot/ -> 'This stock is a sure-shot multibagger' is:
+  line 1620: matched /sure[- ]?shot/ -> 'Ye stock sure-shot multibagger hai' kya hai?
+  line 1677: matched /risk[- ]free/ -> Risk-free with hedging
+  line 1734: matched /guarante/ -> Investment in securities market is subject to market risks. Read all related documents carefully before investing. Registration granted by SEBI and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors. Past performance is not indicative of future results. The analyst or dependents may hold positions in the securities discussed. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004
+
+SEBI Reg No. (INH000020004) present: yes
+Risk-warning phrase present: yes
+
+Reminder: this script only catches known phrasings. Always follow up
+with the judgment-based read-through in SKILL.md -- new marketing
+phrasing, Hinglish variants, and spoken-script promises won't show up here.

@@ -1,0 +1,492 @@
+[
+ {
+  "session": 1,
+  "questions": [
+   {
+    "stem_en": "What does the 'R' in R-C-D-T-F stand for in this course?",
+    "stem_hi": "R-C-D-T-F mein 'R' kya hai?",
+    "options": [
+     {
+      "en": "Risk",
+      "hi": "Risk",
+      "distractor": false
+     },
+     {
+      "en": "Return",
+      "hi": "Return",
+      "distractor": true
+     },
+     {
+      "en": "Rumour",
+      "hi": "Rumour",
+      "distractor": true
+     },
+     {
+      "en": "Ratio",
+      "hi": "Ratio",
+      "distractor": true
+     }
+    ],
+    "correct_index": 0,
+    "explanation_en": "Check the Session 1 deck: R-C-D-T-F is the course's own frame for reading any market claim. Your notes carry the exact expansion.",
+    "explanation_hi": "Check the Session 1 deck: R-C-D-T-F is the course's own frame for reading any market claim. Your notes carry the exact expansion.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "Who is the 'trigger' in this course's AI rule?",
+    "stem_hi": "Is course ke AI rule mein 'trigger' kaun hai?",
+    "options": [
+     {
+      "en": "The AI model",
+      "hi": "AI model",
+      "distractor": true
+     },
+     {
+      "en": "The human",
+      "hi": "Insaan",
+      "distractor": false
+     },
+     {
+      "en": "The broker",
+      "hi": "Broker",
+      "distractor": true
+     },
+     {
+      "en": "The news channel",
+      "hi": "News channel",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "AI = analyst, human = trigger. AI research karta hai; decision aap lete hain.",
+    "explanation_hi": "AI = analyst, human = trigger. AI research karta hai; decision aap lete hain.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "Which of these is a course-approved way to describe F&O?",
+    "stem_hi": "F&O ke liye course ka approved line kaun sa hai?",
+    "options": [
+     {
+      "en": "Samjho, khelo mat",
+      "hi": "Samjho, khelo mat",
+      "distractor": false
+     },
+     {
+      "en": "Quick doubling tool",
+      "hi": "Paisa double karne ka tool",
+      "distractor": true
+     },
+     {
+      "en": "Risk-free hedge",
+      "hi": "Risk-free hedge",
+      "distractor": true
+     },
+     {
+      "en": "Only for experts",
+      "hi": "Sirf experts ke liye",
+      "distractor": true
+     }
+    ],
+    "correct_index": 0,
+    "explanation_en": "Course-wide law: F&O = samjho, khelo mat. Awareness only, every level.",
+    "explanation_hi": "Course-wide law: F&O = samjho, khelo mat. Awareness only, every level.",
+    "marks": 1,
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "session": 2,
+  "questions": [
+   {
+    "stem_en": "A 'Full Why' must contain at least how many independent reasons?",
+    "stem_hi": "'Full Why' mein kam se kam kitne independent reasons chahiye?",
+    "options": [
+     {
+      "en": "One",
+      "hi": "Ek",
+      "distractor": true
+     },
+     {
+      "en": "Two",
+      "hi": "Do",
+      "distractor": false
+     },
+     {
+      "en": "Five",
+      "hi": "Paanch",
+      "distractor": true
+     },
+     {
+      "en": "Ten",
+      "hi": "Das",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "Full Why x2 is the mock-portfolio gate: two independent reasons, each one you could defend to a stranger.",
+    "explanation_hi": "Full Why x2 is the mock-portfolio gate: two independent reasons, each one you could defend to a stranger.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "Owning a share makes you:",
+    "stem_hi": "Share kharidne par aap ban jaate hain:",
+    "options": [
+     {
+      "en": "A lender to the company",
+      "hi": "Company ke lender",
+      "distractor": true
+     },
+     {
+      "en": "A part-owner of the business",
+      "hi": "Business ke part-owner",
+      "distractor": false
+     },
+     {
+      "en": "A customer of the exchange",
+      "hi": "Exchange ke customer",
+      "distractor": true
+     },
+     {
+      "en": "A guaranteed earner",
+      "hi": "Pakka kamaane wale",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "A share is part-ownership. That is why the course asks for a business 'why', not a price 'why'.",
+    "explanation_hi": "A share is part-ownership. That is why the course asks for a business 'why', not a price 'why'.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "Which of the 5 AI patterns should you run FIRST on a new stock idea?",
+    "stem_hi": "Naye stock idea par sabse pehle kaun sa AI pattern?",
+    "options": [
+     {
+      "en": "Summarise the annual report",
+      "hi": "Annual report summarise",
+      "distractor": false
+     },
+     {
+      "en": "Ask for a price target",
+      "hi": "Price target maango",
+      "distractor": true
+     },
+     {
+      "en": "Ask if it will go up",
+      "hi": "Upar jayega kya, poochho",
+      "distractor": true
+     },
+     {
+      "en": "Ask for a tip",
+      "hi": "Tip maango",
+      "distractor": true
+     }
+    ],
+    "correct_index": 0,
+    "explanation_en": "Pattern 1 is always evidence-gathering. Targets and tips are never a pattern in this course.",
+    "explanation_hi": "Pattern 1 is always evidence-gathering. Targets and tips are never a pattern in this course.",
+    "marks": 1,
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "session": 3,
+  "questions": [
+   {
+    "stem_en": "A broker's note says 'stock will double by Diwali'. Under teen batti this is:",
+    "stem_hi": "Broker note: 'Diwali tak double'. Teen batti mein ye kya hai?",
+    "options": [
+     {
+      "en": "Fact",
+      "hi": "Fact",
+      "distractor": true
+     },
+     {
+      "en": "Guess",
+      "hi": "Guess",
+      "distractor": true
+     },
+     {
+      "en": "Kachra",
+      "hi": "Kachra",
+      "distractor": false
+     },
+     {
+      "en": "Data",
+      "hi": "Data",
+      "distractor": true
+     }
+    ],
+    "correct_index": 2,
+    "explanation_en": "A promise with no evidence and a fixed return is Kachra. Guesses have reasoning; Kachra has only a claim.",
+    "explanation_hi": "A promise with no evidence and a fixed return is Kachra. Guesses have reasoning; Kachra has only a claim.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "'Revenue grew 18% YoY per the audited annual report' is:",
+    "stem_hi": "'Audited report ke hisaab se revenue 18% badha' ye kya hai?",
+    "options": [
+     {
+      "en": "Fact",
+      "hi": "Fact",
+      "distractor": false
+     },
+     {
+      "en": "Guess",
+      "hi": "Guess",
+      "distractor": true
+     },
+     {
+      "en": "Kachra",
+      "hi": "Kachra",
+      "distractor": true
+     },
+     {
+      "en": "Opinion",
+      "hi": "Opinion",
+      "distractor": true
+     }
+    ],
+    "correct_index": 0,
+    "explanation_en": "Audited, sourced, past-tense: Fact. Fact does not mean 'buy'; it just means verified.",
+    "explanation_hi": "Audited, sourced, past-tense: Fact. Fact does not mean 'buy'; it just means verified.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "What is LOOT-scan for?",
+    "stem_hi": "LOOT-scan kis kaam ka hai?",
+    "options": [
+     {
+      "en": "Finding multibaggers",
+      "hi": "Multibagger dhoondhna",
+      "distractor": true
+     },
+     {
+      "en": "Spotting scam and loot patterns in a pitch",
+      "hi": "Pitch mein scam/loot pattern pakadna",
+      "distractor": false
+     },
+     {
+      "en": "Timing entries",
+      "hi": "Entry time karna",
+      "distractor": true
+     },
+     {
+      "en": "Ranking brokers",
+      "hi": "Broker rank karna",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "LOOT-scan is the course's scam detector. Run it on every unsolicited tip before you even read the stock name.",
+    "explanation_hi": "LOOT-scan is the course's scam detector. Run it on every unsolicited tip before you even read the stock name.",
+    "marks": 1,
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "session": 4,
+  "questions": [
+   {
+    "stem_en": "How many items are in the six-item gate?",
+    "stem_hi": "Six-item gate mein kitne items hain?",
+    "options": [
+     {
+      "en": "Four",
+      "hi": "Chaar",
+      "distractor": true
+     },
+     {
+      "en": "Six",
+      "hi": "Chhe",
+      "distractor": false
+     },
+     {
+      "en": "Eight",
+      "hi": "Aath",
+      "distractor": true
+     },
+     {
+      "en": "Twelve",
+      "hi": "Baarah",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "Six. The gate exists so a stock has to pass the same six checks every time, regardless of how good it feels.",
+    "explanation_hi": "Six. The gate exists so a stock has to pass the same six checks every time, regardless of how good it feels.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "If a stock passes 5 of 6 gate items you should:",
+    "stem_hi": "Stock 6 mein se 5 pass kare to:",
+    "options": [
+     {
+      "en": "Buy a small quantity",
+      "hi": "Thoda kharido",
+      "distractor": true
+     },
+     {
+      "en": "Wait until all six pass",
+      "hi": "Chhe pass hone tak ruko",
+      "distractor": false
+     },
+     {
+      "en": "Ask AI to override",
+      "hi": "AI se override karwao",
+      "distractor": true
+     },
+     {
+      "en": "Skip the gate",
+      "hi": "Gate skip karo",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "The gate is binary. 'Almost' is how the 50% trap starts.",
+    "explanation_hi": "The gate is binary. 'Almost' is how the 50% trap starts.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "The six-item gate is applied:",
+    "stem_hi": "Six-item gate kab lagta hai?",
+    "options": [
+     {
+      "en": "Only on IPOs",
+      "hi": "Sirf IPO par",
+      "distractor": true
+     },
+     {
+      "en": "Before every mock-portfolio entry",
+      "hi": "Har mock-portfolio entry se pehle",
+      "distractor": false
+     },
+     {
+      "en": "Only in Advanced level",
+      "hi": "Sirf Advanced mein",
+      "distractor": true
+     },
+     {
+      "en": "Once a year",
+      "hi": "Saal mein ek baar",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "Every entry, every time. Discipline nahi, design.",
+    "explanation_hi": "Every entry, every time. Discipline nahi, design.",
+    "marks": 1,
+    "difficulty": 1
+   }
+  ]
+ },
+ {
+  "session": 5,
+  "questions": [
+   {
+    "stem_en": "The 1% rule limits:",
+    "stem_hi": "1% rule kis cheez ko limit karta hai?",
+    "options": [
+     {
+      "en": "Profit per trade",
+      "hi": "Har trade ka profit",
+      "distractor": true
+     },
+     {
+      "en": "Risk per trade as a share of capital",
+      "hi": "Capital ka kitna risk ek trade mein",
+      "distractor": false
+     },
+     {
+      "en": "Number of trades per day",
+      "hi": "Din mein trades",
+      "distractor": true
+     },
+     {
+      "en": "Brokerage",
+      "hi": "Brokerage",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "1% of capital is the maximum you allow one idea to cost you. It caps the damage, not the upside.",
+    "explanation_hi": "1% of capital is the maximum you allow one idea to cost you. It caps the damage, not the upside.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "A Friday review is about:",
+    "stem_hi": "Friday review kis baare mein hai?",
+    "options": [
+     {
+      "en": "Counting profit",
+      "hi": "Profit ginna",
+      "distractor": true
+     },
+     {
+      "en": "Reviewing process and galti-log",
+      "hi": "Process aur galti-log review",
+      "distractor": false
+     },
+     {
+      "en": "Picking next week's winners",
+      "hi": "Agle hafte ke winners",
+      "distractor": true
+     },
+     {
+      "en": "Ranking classmates",
+      "hi": "Classmates ki ranking",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "Return copy nahi hota, process hota hai. Friday review grades the process, never the P&L.",
+    "explanation_hi": "Return copy nahi hota, process hota hai. Friday review grades the process, never the P&L.",
+    "marks": 1,
+    "difficulty": 1
+   },
+   {
+    "stem_en": "Your galti-log should record:",
+    "stem_hi": "Galti-log mein kya likhna hai?",
+    "options": [
+     {
+      "en": "Only losing trades",
+      "hi": "Sirf losing trades",
+      "distractor": true
+     },
+     {
+      "en": "Every process mistake, win or lose",
+      "hi": "Har process galti, jeet ya haar",
+      "distractor": false
+     },
+     {
+      "en": "Broker complaints",
+      "hi": "Broker complaints",
+      "distractor": true
+     },
+     {
+      "en": "Market news",
+      "hi": "Market news",
+      "distractor": true
+     }
+    ],
+    "correct_index": 1,
+    "explanation_en": "A winning trade with a broken process is still a galti. Log the process, not the outcome.",
+    "explanation_hi": "A winning trade with a broken process is still a galti. Log the process, not the outcome.",
+    "marks": 1,
+    "difficulty": 1
+   }
+  ]
+ }
+]

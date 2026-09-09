@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+# Enable once per clone:  git config core.hooksPath .githooks
+set -e
+ROOT="$(git rev-parse --show-toplevel)"
+python3 "$ROOT/scripts/ci/check_compliance.py" "$ROOT/apps/learn/src" "$ROOT/content" 2>/dev/null || { echo "pre-commit: compliance gate failed"; exit 1; }
+python3 "$ROOT/scripts/ci/check_responsive.py" "$ROOT/apps/learn/src"

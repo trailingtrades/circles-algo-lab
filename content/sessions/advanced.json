@@ -1,0 +1,502 @@
+[
+ {
+  "number": 41,
+  "level": "advanced",
+  "week": 1,
+  "day": 1,
+  "title_en": "Two-stories rule",
+  "title_hi": "Two-stories rule",
+  "core_concept": "two-stories rule",
+  "ai_lab": "Two-stories prompt",
+  "psychology": "Narrative bias",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: two-stories rule. AI Lab mein Two-stories prompt. Psychology angle: Narrative bias.",
+  "prompts": [
+   {
+    "title": "Two-stories prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 41 · Two-stories rule · Concept: two-stories rule\nTask: Two-stories prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 42,
+  "level": "advanced",
+  "week": 1,
+  "day": 2,
+  "title_en": "Cash-conversion",
+  "title_hi": "Cash-conversion",
+  "core_concept": "cash-conversion",
+  "ai_lab": "Cash-conversion checker",
+  "psychology": "Accrual blindness",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: cash-conversion. AI Lab mein Cash-conversion checker. Psychology angle: Accrual blindness.",
+  "prompts": [
+   {
+    "title": "Cash-conversion checker",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 42 · Cash-conversion · Concept: cash-conversion\nTask: Cash-conversion checker\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 43,
+  "level": "advanced",
+  "week": 1,
+  "day": 3,
+  "title_en": "Three clocks, five roads",
+  "title_hi": "Three clocks / five roads",
+  "core_concept": "three clocks · five roads",
+  "ai_lab": "Clock mapper prompt",
+  "psychology": "Time blindness",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: three clocks · five roads. AI Lab mein Clock mapper prompt. Psychology angle: Time blindness.",
+  "prompts": [
+   {
+    "title": "Clock mapper prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 43 · Three clocks, five roads · Concept: three clocks · five roads\nTask: Clock mapper prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 44,
+  "level": "advanced",
+  "week": 1,
+  "day": 4,
+  "title_en": "Incremental ROCE and fresh-Rs100",
+  "title_hi": "Incremental ROCE / fresh-₹100",
+  "core_concept": "incremental ROCE · fresh-₹100",
+  "ai_lab": "Incremental ROCE prompt",
+  "psychology": "Headline bias",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: incremental ROCE · fresh-₹100. AI Lab mein Incremental ROCE prompt. Psychology angle: Headline bias.",
+  "prompts": [
+   {
+    "title": "Incremental ROCE prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 44 · Incremental ROCE and fresh-Rs100 · Concept: incremental ROCE · fresh-₹100\nTask: Incremental ROCE prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 45,
+  "level": "advanced",
+  "week": 1,
+  "day": 5,
+  "title_en": "Friday review: week 9",
+  "title_hi": "Friday review",
+  "core_concept": "promise-ledger",
+  "ai_lab": "Galti-log prompt",
+  "psychology": "Skepticism",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: promise-ledger. AI Lab mein Galti-log prompt. Psychology angle: Skepticism.",
+  "prompts": [
+   {
+    "title": "Galti-log prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 45 · Friday review: week 9 · Concept: promise-ledger\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 46,
+  "level": "advanced",
+  "week": 2,
+  "day": 1,
+  "title_en": "Owner earnings and FCF-yield",
+  "title_hi": "Owner earnings / FCF-yield",
+  "core_concept": "owner earnings · FCF-yield",
+  "ai_lab": "Owner earnings prompt",
+  "psychology": "Precision illusion",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: owner earnings · FCF-yield. AI Lab mein Owner earnings prompt. Psychology angle: Precision illusion.",
+  "prompts": [
+   {
+    "title": "Owner earnings prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 46 · Owner earnings and FCF-yield · Concept: owner earnings · FCF-yield\nTask: Owner earnings prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 47,
+  "level": "advanced",
+  "week": 2,
+  "day": 2,
+  "title_en": "Reverse-DCF",
+  "title_hi": "Reverse-DCF",
+  "core_concept": "reverse-DCF",
+  "ai_lab": "Reverse-DCF prompt",
+  "psychology": "Expectation gap",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: reverse-DCF. AI Lab mein Reverse-DCF prompt. Psychology angle: Expectation gap.",
+  "prompts": [
+   {
+    "title": "Reverse-DCF prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 47 · Reverse-DCF · Concept: reverse-DCF\nTask: Reverse-DCF prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 48,
+  "level": "advanced",
+  "week": 2,
+  "day": 3,
+  "title_en": "Variant perception",
+  "title_hi": "Variant perception",
+  "core_concept": "variant perception",
+  "ai_lab": "Variant perception prompt",
+  "psychology": "Consensus comfort",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: variant perception. AI Lab mein Variant perception prompt. Psychology angle: Consensus comfort.",
+  "prompts": [
+   {
+    "title": "Variant perception prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 48 · Variant perception · Concept: variant perception\nTask: Variant perception prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 49,
+  "level": "advanced",
+  "week": 2,
+  "day": 4,
+  "title_en": "Compare-card and bear-ceiling",
+  "title_hi": "Compare-card / bear-ceiling",
+  "core_concept": "compare-card · bear-ceiling",
+  "ai_lab": "Compare-card prompt",
+  "psychology": "Optimism",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: compare-card · bear-ceiling. AI Lab mein Compare-card prompt. Psychology angle: Optimism.",
+  "prompts": [
+   {
+    "title": "Compare-card prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 49 · Compare-card and bear-ceiling · Concept: compare-card · bear-ceiling\nTask: Compare-card prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 50,
+  "level": "advanced",
+  "week": 2,
+  "day": 5,
+  "title_en": "Friday review: week 10",
+  "title_hi": "Friday review",
+  "core_concept": "promise-ledger",
+  "ai_lab": "Galti-log prompt",
+  "psychology": "Humility",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: promise-ledger. AI Lab mein Galti-log prompt. Psychology angle: Humility.",
+  "prompts": [
+   {
+    "title": "Galti-log prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 50 · Friday review: week 10 · Concept: promise-ledger\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 51,
+  "level": "advanced",
+  "week": 3,
+  "day": 1,
+  "title_en": "Evidence tiers T0-T3",
+  "title_hi": "Evidence-tiers T0–T3",
+  "core_concept": "evidence-tiers T0–T3",
+  "ai_lab": "Evidence tier sorter",
+  "psychology": "Source blindness",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: evidence-tiers T0–T3. AI Lab mein Evidence tier sorter. Psychology angle: Source blindness.",
+  "prompts": [
+   {
+    "title": "Evidence tier sorter",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 51 · Evidence tiers T0-T3 · Concept: evidence-tiers T0–T3\nTask: Evidence tier sorter\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 52,
+  "level": "advanced",
+  "week": 3,
+  "day": 2,
+  "title_en": "The honest mirror",
+  "title_hi": "Honest mirror",
+  "core_concept": "honest mirror",
+  "ai_lab": "Honest mirror prompt",
+  "psychology": "Self-deception",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: honest mirror. AI Lab mein Honest mirror prompt. Psychology angle: Self-deception.",
+  "prompts": [
+   {
+    "title": "Honest mirror prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 52 · The honest mirror · Concept: honest mirror\nTask: Honest mirror prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 53,
+  "level": "advanced",
+  "week": 3,
+  "day": 3,
+  "title_en": "Thesis-memo",
+  "title_hi": "Thesis-memo",
+  "core_concept": "thesis-memo",
+  "ai_lab": "Thesis-memo drafter",
+  "psychology": "Thesis-creep",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: thesis-memo. AI Lab mein Thesis-memo drafter. Psychology angle: Thesis-creep.",
+  "prompts": [
+   {
+    "title": "Thesis-memo drafter",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 53 · Thesis-memo · Concept: thesis-memo\nTask: Thesis-memo drafter\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 54,
+  "level": "advanced",
+  "week": 3,
+  "day": 4,
+  "title_en": "Predict-first and thesis-creep",
+  "title_hi": "Predict-first / thesis-creep",
+  "core_concept": "predict-first · thesis-creep",
+  "ai_lab": "Predict-first logger",
+  "psychology": "Hindsight bias",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: predict-first · thesis-creep. AI Lab mein Predict-first logger. Psychology angle: Hindsight bias.",
+  "prompts": [
+   {
+    "title": "Predict-first logger",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 54 · Predict-first and thesis-creep · Concept: predict-first · thesis-creep\nTask: Predict-first logger\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 55,
+  "level": "advanced",
+  "week": 3,
+  "day": 5,
+  "title_en": "Friday review: week 11",
+  "title_hi": "Friday review",
+  "core_concept": "promise-ledger",
+  "ai_lab": "Galti-log prompt",
+  "psychology": "Consistency",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: promise-ledger. AI Lab mein Galti-log prompt. Psychology angle: Consistency.",
+  "prompts": [
+   {
+    "title": "Galti-log prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 55 · Friday review: week 11 · Concept: promise-ledger\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 56,
+  "level": "advanced",
+  "week": 4,
+  "day": 1,
+  "title_en": "Three-pass red-team",
+  "title_hi": "Three-pass red-team",
+  "core_concept": "three-pass red-team",
+  "ai_lab": "Red-team prompt",
+  "psychology": "Ego",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: three-pass red-team. AI Lab mein Red-team prompt. Psychology angle: Ego.",
+  "prompts": [
+   {
+    "title": "Red-team prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 56 · Three-pass red-team · Concept: three-pass red-team\nTask: Red-team prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 57,
+  "level": "advanced",
+  "week": 4,
+  "day": 2,
+  "title_en": "Investor stories: Munger and Buffett (qualitative)",
+  "title_hi": "Investor stories, sirf soch",
+  "core_concept": "\"aaj kharidta?\"",
+  "ai_lab": "Story extractor prompt",
+  "psychology": "Idol copying",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: \"aaj kharidta?\". AI Lab mein Story extractor prompt. Psychology angle: Idol copying.",
+  "prompts": [
+   {
+    "title": "Story extractor prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 57 · Investor stories: Munger and Buffett (qualitative) · Concept: \"aaj kharidta?\"\nTask: Story extractor prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 58,
+  "level": "advanced",
+  "week": 4,
+  "day": 3,
+  "title_en": "The 8-page dossier",
+  "title_hi": "8-page dossier",
+  "core_concept": "dossier",
+  "ai_lab": "Dossier assembler prompt",
+  "psychology": "Scope creep",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: dossier. AI Lab mein Dossier assembler prompt. Psychology angle: Scope creep.",
+  "prompts": [
+   {
+    "title": "Dossier assembler prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 58 · The 8-page dossier · Concept: dossier\nTask: Dossier assembler prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 59,
+  "level": "advanced",
+  "week": 4,
+  "day": 4,
+  "title_en": "Pehla Kadam",
+  "title_hi": "Pehla Kadam",
+  "core_concept": "Pehla Kadam",
+  "ai_lab": "First-step planner prompt",
+  "psychology": "Paralysis",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: Pehla Kadam. AI Lab mein First-step planner prompt. Psychology angle: Paralysis.",
+  "prompts": [
+   {
+    "title": "First-step planner prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 59 · Pehla Kadam · Concept: Pehla Kadam\nTask: First-step planner prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 60,
+  "level": "advanced",
+  "week": 4,
+  "day": 5,
+  "title_en": "The oath and final review",
+  "title_hi": "The oath",
+  "core_concept": "the oath",
+  "ai_lab": "Galti-log prompt",
+  "psychology": "Commitment",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: the oath. AI Lab mein Galti-log prompt. Psychology angle: Commitment.",
+  "prompts": [
+   {
+    "title": "Galti-log prompt",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 60 · The oath and final review · Concept: the oath\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ }
+]

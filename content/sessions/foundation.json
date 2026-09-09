@@ -1,0 +1,502 @@
+[
+ {
+  "number": 1,
+  "level": "foundation",
+  "week": 1,
+  "day": 1,
+  "title_en": "Why the market exists",
+  "title_hi": "Bazaar kyun hai",
+  "core_concept": "R-C-D-T-F",
+  "ai_lab": "Master prompt: setup",
+  "psychology": "Curiosity vs FOMO",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: R-C-D-T-F. AI Lab mein Master prompt: setup. Psychology angle: Curiosity vs FOMO.",
+  "prompts": [
+   {
+    "title": "Master prompt: setup",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 1 · Why the market exists · Concept: R-C-D-T-F\nTask: Master prompt: setup\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 2,
+  "level": "foundation",
+  "week": 1,
+  "day": 2,
+  "title_en": "What a share really is",
+  "title_hi": "Share asli mein kya hai",
+  "core_concept": "Full Why",
+  "ai_lab": "5 AI patterns",
+  "psychology": "Ownership mindset",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: Full Why. AI Lab mein 5 AI patterns. Psychology angle: Ownership mindset.",
+  "prompts": [
+   {
+    "title": "5 AI patterns",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 2 · What a share really is · Concept: Full Why\nTask: 5 AI patterns\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 3,
+  "level": "foundation",
+  "week": 1,
+  "day": 3,
+  "title_en": "Teen Batti: Fact, Guess, Kachra",
+  "title_hi": "Teen batti",
+  "core_concept": "Fact/Guess/Kachra",
+  "ai_lab": "LOOT-scan",
+  "psychology": "Confirmation bias",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: Fact/Guess/Kachra. AI Lab mein LOOT-scan. Psychology angle: Confirmation bias.",
+  "prompts": [
+   {
+    "title": "LOOT-scan",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 3 · Teen Batti: Fact, Guess, Kachra · Concept: Fact/Guess/Kachra\nTask: LOOT-scan\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 4,
+  "level": "foundation",
+  "week": 1,
+  "day": 4,
+  "title_en": "The six-item gate",
+  "title_hi": "Six-item gate",
+  "core_concept": "six-item gate",
+  "ai_lab": "Master prompt v2",
+  "psychology": "Impatience",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: six-item gate. AI Lab mein Master prompt v2. Psychology angle: Impatience.",
+  "prompts": [
+   {
+    "title": "Master prompt v2",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 4 · The six-item gate · Concept: six-item gate\nTask: Master prompt v2\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 5,
+  "level": "foundation",
+  "week": 1,
+  "day": 5,
+  "title_en": "Friday review: your first week",
+  "title_hi": "Friday review",
+  "core_concept": "1% rule",
+  "ai_lab": "Galti-log prompt",
+  "psychology": "Ownership",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: 1% rule. AI Lab mein Galti-log prompt. Psychology angle: Ownership.",
+  "prompts": [
+   {
+    "title": "Galti-log prompt",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 5 · Friday review: your first week · Concept: 1% rule\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 6,
+  "level": "foundation",
+  "week": 2,
+  "day": 1,
+  "title_en": "How a company makes money",
+  "title_hi": "Company paisa kaise banati hai",
+  "core_concept": "Full Why",
+  "ai_lab": "Annual report reader prompt",
+  "psychology": "Storytelling bias",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: Full Why. AI Lab mein Annual report reader prompt. Psychology angle: Storytelling bias.",
+  "prompts": [
+   {
+    "title": "Annual report reader prompt",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 6 · How a company makes money · Concept: Full Why\nTask: Annual report reader prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 7,
+  "level": "foundation",
+  "week": 2,
+  "day": 2,
+  "title_en": "Price vs value",
+  "title_hi": "Price aur value alag hain",
+  "core_concept": "\"aaj kharidta?\"",
+  "ai_lab": "Fact/Guess/Kachra sorter",
+  "psychology": "Anchoring",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: \"aaj kharidta?\". AI Lab mein Fact/Guess/Kachra sorter. Psychology angle: Anchoring.",
+  "prompts": [
+   {
+    "title": "Fact/Guess/Kachra sorter",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 7 · Price vs value · Concept: \"aaj kharidta?\"\nTask: Fact/Guess/Kachra sorter\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 8,
+  "level": "foundation",
+  "week": 2,
+  "day": 3,
+  "title_en": "Reading a simple P&L",
+  "title_hi": "Simple P&L padhna",
+  "core_concept": "Full Why",
+  "ai_lab": "Statement summariser",
+  "psychology": "Overconfidence",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: Full Why. AI Lab mein Statement summariser. Psychology angle: Overconfidence.",
+  "prompts": [
+   {
+    "title": "Statement summariser",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 8 · Reading a simple P&L · Concept: Full Why\nTask: Statement summariser\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 9,
+  "level": "foundation",
+  "week": 2,
+  "day": 4,
+  "title_en": "Investor stories: Kedia to Jhunjhunwala (qualitative)",
+  "title_hi": "Investor stories, sirf soch",
+  "core_concept": "\"aaj kharidta?\"",
+  "ai_lab": "Story extractor prompt",
+  "psychology": "Hero worship",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: \"aaj kharidta?\". AI Lab mein Story extractor prompt. Psychology angle: Hero worship.",
+  "prompts": [
+   {
+    "title": "Story extractor prompt",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 9 · Investor stories: Kedia to Jhunjhunwala (qualitative) · Concept: \"aaj kharidta?\"\nTask: Story extractor prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 10,
+  "level": "foundation",
+  "week": 2,
+  "day": 5,
+  "title_en": "Friday review: week 2",
+  "title_hi": "Friday review",
+  "core_concept": "1% rule",
+  "ai_lab": "Galti-log prompt",
+  "psychology": "Discipline nahi, design",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: 1% rule. AI Lab mein Galti-log prompt. Psychology angle: Discipline nahi, design.",
+  "prompts": [
+   {
+    "title": "Galti-log prompt",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 10 · Friday review: week 2 · Concept: 1% rule\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 11,
+  "level": "foundation",
+  "week": 3,
+  "day": 1,
+  "title_en": "Risk per trade and the 1% rule",
+  "title_hi": "1% rule",
+  "core_concept": "1% rule",
+  "ai_lab": "Position size calculator prompt",
+  "psychology": "Loss aversion",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: 1% rule. AI Lab mein Position size calculator prompt. Psychology angle: Loss aversion.",
+  "prompts": [
+   {
+    "title": "Position size calculator prompt",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 11 · Risk per trade and the 1% rule · Concept: 1% rule\nTask: Position size calculator prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 12,
+  "level": "foundation",
+  "week": 3,
+  "day": 2,
+  "title_en": "Price-stop and Why-stop",
+  "title_hi": "Price-stop / Why-stop",
+  "core_concept": "price-stop / Why-stop",
+  "ai_lab": "Stop-logic checker",
+  "psychology": "Hope trading",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: price-stop / Why-stop. AI Lab mein Stop-logic checker. Psychology angle: Hope trading.",
+  "prompts": [
+   {
+    "title": "Stop-logic checker",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 12 · Price-stop and Why-stop · Concept: price-stop / Why-stop\nTask: Stop-logic checker\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 13,
+  "level": "foundation",
+  "week": 3,
+  "day": 3,
+  "title_en": "The 50% trap",
+  "title_hi": "50% trap",
+  "core_concept": "50% trap",
+  "ai_lab": "Drawdown maths prompt",
+  "psychology": "Revenge trading",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: 50% trap. AI Lab mein Drawdown maths prompt. Psychology angle: Revenge trading.",
+  "prompts": [
+   {
+    "title": "Drawdown maths prompt",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 13 · The 50% trap · Concept: 50% trap\nTask: Drawdown maths prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 14,
+  "level": "foundation",
+  "week": 3,
+  "day": 4,
+  "title_en": "F&O: samjho, khelo mat",
+  "title_hi": "F&O: samjho, khelo mat",
+  "core_concept": "F&O awareness",
+  "ai_lab": "SEBI FY26 study reader",
+  "psychology": "Gambling loop",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: F&O awareness. AI Lab mein SEBI FY26 study reader. Psychology angle: Gambling loop.",
+  "prompts": [
+   {
+    "title": "SEBI FY26 study reader",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 14 · F&O: samjho, khelo mat · Concept: F&O awareness\nTask: SEBI FY26 study reader\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 15,
+  "level": "foundation",
+  "week": 3,
+  "day": 5,
+  "title_en": "Friday review: week 3",
+  "title_hi": "Friday review",
+  "core_concept": "1% rule",
+  "ai_lab": "Galti-log prompt",
+  "psychology": "Consistency",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: 1% rule. AI Lab mein Galti-log prompt. Psychology angle: Consistency.",
+  "prompts": [
+   {
+    "title": "Galti-log prompt",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 15 · Friday review: week 3 · Concept: 1% rule\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 16,
+  "level": "foundation",
+  "week": 4,
+  "day": 1,
+  "title_en": "AI as analyst, human as trigger",
+  "title_hi": "AI analyst hai, trigger aap",
+  "core_concept": "AI = analyst, human = trigger",
+  "ai_lab": "Master prompt: full",
+  "psychology": "Automation bias",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: AI = analyst, human = trigger. AI Lab mein Master prompt: full. Psychology angle: Automation bias.",
+  "prompts": [
+   {
+    "title": "Master prompt: full",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 16 · AI as analyst, human as trigger · Concept: AI = analyst, human = trigger\nTask: Master prompt: full\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 17,
+  "level": "foundation",
+  "week": 4,
+  "day": 2,
+  "title_en": "The 5 AI patterns",
+  "title_hi": "5 AI patterns",
+  "core_concept": "5 AI patterns",
+  "ai_lab": "Pattern drill prompt",
+  "psychology": "Over-reliance",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: 5 AI patterns. AI Lab mein Pattern drill prompt. Psychology angle: Over-reliance.",
+  "prompts": [
+   {
+    "title": "Pattern drill prompt",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 17 · The 5 AI patterns · Concept: 5 AI patterns\nTask: Pattern drill prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 18,
+  "level": "foundation",
+  "week": 4,
+  "day": 3,
+  "title_en": "LOOT-scan: spotting scams",
+  "title_hi": "LOOT-scan",
+  "core_concept": "LOOT-scan",
+  "ai_lab": "LOOT-scan prompt",
+  "psychology": "Greed",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: LOOT-scan. AI Lab mein LOOT-scan prompt. Psychology angle: Greed.",
+  "prompts": [
+   {
+    "title": "LOOT-scan prompt",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 18 · LOOT-scan: spotting scams · Concept: LOOT-scan\nTask: LOOT-scan prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 19,
+  "level": "foundation",
+  "week": 4,
+  "day": 4,
+  "title_en": "SEBI retail algo framework (awareness only)",
+  "title_hi": "SEBI retail algo framework",
+  "core_concept": "SEBI algo framework (01-Apr-2026)",
+  "ai_lab": "Framework explainer prompt",
+  "psychology": "Rule respect",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: SEBI algo framework (01-Apr-2026). AI Lab mein Framework explainer prompt. Psychology angle: Rule respect.",
+  "prompts": [
+   {
+    "title": "Framework explainer prompt",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 19 · SEBI retail algo framework (awareness only) · Concept: SEBI algo framework (01-Apr-2026)\nTask: Framework explainer prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 20,
+  "level": "foundation",
+  "week": 4,
+  "day": 5,
+  "title_en": "Final review and mock-portfolio handover",
+  "title_hi": "Final review",
+  "core_concept": "Full Why x2",
+  "ai_lab": "Mock portfolio reviewer",
+  "psychology": "Discipline nahi, design",
+  "duration_min": 60,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": true,
+  "summary_hi": "Aaj ka core concept: Full Why x2. AI Lab mein Mock portfolio reviewer. Psychology angle: Discipline nahi, design.",
+  "prompts": [
+   {
+    "title": "Mock portfolio reviewer",
+    "level": "foundation",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 20 · Final review and mock-portfolio handover · Concept: Full Why x2\nTask: Mock portfolio reviewer\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ }
+]

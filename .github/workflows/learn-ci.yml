@@ -1,0 +1,56 @@
+name: 5C Learn CI
+on:
+  push: { paths: ["apps/learn/**", "supabase/**", "scripts/ci/**", "content/**", ".github/workflows/learn-ci.yml"] }
+  pull_request: { paths: ["apps/learn/**", "supabase/**", "scripts/ci/**", "content/**"] }
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: apps/learn } }
+    services:
+      postgres:
+        image: postgres:16
+        env: { POSTGRES_HOST_AUTH_METHOD: trust }
+        ports: ["5499:5432"]
+        options: --health-cmd "pg_isready -U postgres" --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://postgres@localhost:5499/learn_test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: apps/learn/package-lock.json }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sudo apt-get install -y -q postgresql-client
+      - run: npm ci
+      - run: npx tsc --noEmit
+      - run: npm run lint
+      - run: npm run build
+      - name: Apply migrations to a fresh Postgres
+        run: npm run db:reset
+      - name: Gating rules + content integrity (60 sessions)
+        run: npm run test:gating
+      - name: Scoring rules (pure)
+        run: npm run test:rules
+      - name: Certificate number, criteria, HMAC forgery rejection
+        run: npm run test:cert
+      - name: Render the sample certificate PDF with WeasyPrint
+        run: pip install -q weasyprint qrcode[pil] pypdfium2 && python3 ../../certificates/build_cert.py '{"learner_name":"CI Test","level_title":"Foundation","cohort_name":"CI","session_count":20,"band":"pass","cert_no":"5C-FOUND-2026-CITEST","issued_on":"2026-09-08","verify_url":"https://example.invalid/verify/5C-FOUND-2026-CITEST"}' /tmp/ci-cert.pdf && python3 ../../scripts/ci/check_cert_pdf.py /tmp/ci-cert.pdf
+      - name: Seed content into the fresh DB
+        run: npm run db:seed
+      - name: RLS proof (student isolation, no client-side score/certificate writes)
+        run: npm run test:rls
+      - name: Scoring engine determinism + leaderboard rules (§9, §10)
+        run: npm run test:scoring
+      - name: Contrast tokens
+        run: python3 scripts/verify-contrast.py
+      - name: Compliance gate (SEBI number, Tier-1 bytes, Devanagari, emoji, banned phrases, stat stamps, cyan+white)
+        run: python3 ../../scripts/ci/check_compliance.py src .next/server/app ../../content ../../supabase ../../certificates
+      - name: Responsive gate (interim checker)
+        run: python3 ../../scripts/ci/check_responsive.py src .next/server/app
+      - name: Accessibility audit (axe, WCAG 2.1 AA, both themes, all routes)
+        run: |
+          npx playwright install --with-deps chromium
+          (npx next start -p 3123 > /tmp/next.log 2>&1 &) && sleep 8
+          sed -i 's|executablePath: "/opt/pw-browsers/chromium", ||; s|proxy: { server: "per-context", bypass: "localhost,127.0.0.1" }||; s|proxy: { server: "http://127.0.0.1:1", bypass: "localhost,127.0.0.1" }, ||' scripts/a11y.mjs
+          node scripts/a11y.mjs | tee /tmp/axe.txt
+          grep -q "0 violation nodes" /tmp/axe.txt
