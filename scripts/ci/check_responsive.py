@@ -26,7 +26,11 @@ TIER1 = open(os.path.join(os.path.dirname(__file__), "canonical", "tier1.txt"), 
 def scan(path):
   ext = ".html" if path.endswith((".html", ".htm")) else ".css" if path.endswith(".css") else None
   if not ext: return []
+  # _global-error.html is Next's internal pre-hydration shell (the custom global-error.tsx carries the footer at runtime);
+  # a meta-refresh page is a bare redirect stub. Neither is a learner-facing route. Same exclusions as check_compliance.py.
+  if path.endswith("_global-error.html"): return []
   s = open(path, encoding="utf-8", errors="replace").read()
+  if ext == ".html" and 'http-equiv="refresh"' in s: return []
   out = []
   for rid, sev, rx, msg, applies in RULES:
     if applies != ext: continue
@@ -45,7 +49,8 @@ def main(argv):
   for a in argv:
     if os.path.isdir(a):
       for r, _, fs in os.walk(a):
-        if "node_modules" in r or "/.next/" in r + "/" and "/server/app/" not in r: continue
+        if "node_modules" in r: continue
+        if "/.next/" in r + "/" and "/server/app/" not in r: continue
         files += [os.path.join(r, f) for f in fs if f.endswith((".html", ".css"))]
     else: files.append(a)
   worst = 0; total = 0
