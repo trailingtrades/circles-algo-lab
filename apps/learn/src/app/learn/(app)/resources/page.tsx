@@ -7,16 +7,16 @@ import { Download, ExternalLink, Lock } from "@/components/ui/Icon";
 /** Handouts, workbooks, exam papers, the mock-portfolio Excel, and the link out to the existing Algo Lab dashboard. Files are placeholders until uploaded (decision Q3-C). */
 export default async function ResourcesPage() {
   const { state } = await loadLearnerState();
-  const link = RESOURCES.find((r) => r.kind === "link");
+  const links = RESOURCES.filter((r) => r.kind === "link");
   return (
     <>
       <h1 className="lrn-title">Resources</h1>
-      {link && (
-        <a href={link.storage_path!} target="_blank" rel="noopener noreferrer" className="col-card flex items-center justify-between gap-3 mt-4" style={{ textDecoration: "none", color: "inherit" }}>
+      {links.map((link) => (
+        <a key={link.file_name} href={link.storage_path!} target="_blank" rel="noopener noreferrer" className="col-card flex items-center justify-between gap-3 mt-4" style={{ textDecoration: "none", color: "inherit" }}>
           <div><strong>{link.file_name}</strong><div className="lrn-muted" style={{ fontSize: "var(--col-text-body-sm)" }}>{link.note}</div></div>
           <ExternalLink size={18} aria-hidden />
         </a>
-      )}
+      ))}
       {LEVELS.map((lv) => {
         const open = levelOpen(state, lv.slug);
         const items = RESOURCES.filter((r) => r.level === lv.slug);
