@@ -1,501 +1,874 @@
 [
  {
-  "number": 41,
-  "level": "advanced",
-  "week": 1,
-  "day": 1,
-  "title_en": "Two-stories rule",
-  "title_hi": "Two-stories rule",
-  "core_concept": "two-stories rule",
-  "ai_lab": "Two-stories prompt",
-  "psychology": "Narrative bias",
-  "duration_min": 60,
-  "video_url": null,
-  "video_provider": "youtube_unlisted",
-  "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: two-stories rule. AI Lab mein Two-stories prompt. Psychology angle: Narrative bias.",
-  "prompts": [
-   {
-    "title": "Two-stories prompt",
-    "level": "advanced",
-    "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 41 · Two-stories rule · Concept: two-stories rule\nTask: Two-stories prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
-   }
-  ]
- },
- {
   "number": 42,
   "level": "advanced",
   "week": 1,
-  "day": 2,
-  "title_en": "Cash-conversion",
-  "title_hi": "Cash-conversion",
-  "core_concept": "cash-conversion",
-  "ai_lab": "Cash-conversion checker",
-  "psychology": "Accrual blindness",
-  "duration_min": 60,
+  "day": 1,
+  "course_day": null,
+  "title_en": "Python for traders (Claude Code assisted)",
+  "title_hi": "Python for Traders",
+  "core_concept": "Algo Level 3 setup",
+  "ai_lab": "Notebook: data + indicators",
+  "psychology": "Tool anxiety",
+  "strategy": null,
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: cash-conversion. AI Lab mein Cash-conversion checker. Psychology angle: Accrual blindness.",
+  "summary_hi": "Aap trading data Python mein handle kar paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P1 Foundation",
+     "p": "Python basics for trading, pandas OHLC, resampling, indicators from scratch, Jupyter; Claude Code as pair-programmer."
+    }
+   ],
+   "kaam": "Notebook: NIFTY data load + indicators plot.",
+   "outcome": "Aap trading data Python mein handle kar paoge.",
+   "tools": [
+    "Python",
+    "pandas",
+    "Claude Code"
+   ],
+   "fun": null,
+   "compliance": null,
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Cash-conversion checker",
+    "title": "Notebook: data + indicators",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 42 · Cash-conversion · Concept: cash-conversion\nTask: Cash-conversion checker\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Python for traders (Claude Code assisted) · Build: Notebook: NIFTY data load + indicators plot.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 43,
   "level": "advanced",
-  "week": 1,
-  "day": 3,
-  "title_en": "Three clocks, five roads",
-  "title_hi": "Three clocks / five roads",
-  "core_concept": "three clocks · five roads",
-  "ai_lab": "Clock mapper prompt",
-  "psychology": "Time blindness",
-  "duration_min": 60,
+  "week": 2,
+  "day": 1,
+  "course_day": null,
+  "title_en": "Broker API + data pipeline",
+  "title_hi": "Broker API + Data Pipeline",
+  "core_concept": "Algo Level 3",
+  "ai_lab": "Adapter pattern",
+  "psychology": "Vendor lock-in",
+  "strategy": null,
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: three clocks · five roads. AI Lab mein Clock mapper prompt. Psychology angle: Time blindness.",
+  "summary_hi": "Aapka data pipeline kisi bhi broker se chalega.",
+  "content": {
+   "topics": [
+    {
+     "h": "P1 Foundation",
+     "p": "Broker APIs (student's broker): auth, historical data, websocket ticks, order placement (sandbox/paper), rate limits; local data store (Parquet/SQLite)."
+    }
+   ],
+   "kaam": "Reusable data pipeline module (any-broker adapter).",
+   "outcome": "Aapka data pipeline kisi bhi broker se chalega.",
+   "tools": [
+    "Broker API",
+    "Python"
+   ],
+   "fun": null,
+   "compliance": "API pricing varies by broker; verify.",
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Clock mapper prompt",
+    "title": "Adapter pattern",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 43 · Three clocks, five roads · Concept: three clocks · five roads\nTask: Clock mapper prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Broker API + data pipeline · Build: Reusable data pipeline module (any-broker adapter).\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 44,
   "level": "advanced",
-  "week": 1,
-  "day": 4,
-  "title_en": "Incremental ROCE and fresh-Rs100",
-  "title_hi": "Incremental ROCE / fresh-₹100",
-  "core_concept": "incremental ROCE · fresh-₹100",
-  "ai_lab": "Incremental ROCE prompt",
-  "psychology": "Headline bias",
-  "duration_min": 60,
+  "week": 3,
+  "day": 1,
+  "course_day": null,
+  "title_en": "SEBI algo framework hands-on + AI disclosure",
+  "title_hi": "SEBI Algo Framework: Hands-On + AI Disclosure",
+  "core_concept": "Compliance L3",
+  "ai_lab": "Audit-log module",
+  "psychology": "Rule fatigue",
+  "strategy": null,
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: incremental ROCE · fresh-₹100. AI Lab mein Incremental ROCE prompt. Psychology angle: Headline bias.",
+  "summary_hi": "Aap apni algo ko compliant tarike se register/route kar paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P1 Foundation",
+     "p": "Circular (4 Feb 2025) in practice: broker-as-principal, exchange Algo-ID registration flow, order-rate threshold, static IP, 2FA, audit logs; RA AI-usage disclosure obligations."
+    }
+   ],
+   "kaam": "Compliance checklist + audit-log module in code.",
+   "outcome": "Aap apni algo ko compliant tarike se register/route kar paoge.",
+   "tools": [
+    "Broker portal",
+    "Python"
+   ],
+   "fun": null,
+   "compliance": "Verified circular; AI-disclosure line DRAFT.",
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Incremental ROCE prompt",
+    "title": "Audit-log module",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 44 · Incremental ROCE and fresh-Rs100 · Concept: incremental ROCE · fresh-₹100\nTask: Incremental ROCE prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · SEBI algo framework hands-on + AI disclosure · Build: Compliance checklist + audit-log module in code.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 45,
   "level": "advanced",
-  "week": 1,
-  "day": 5,
-  "title_en": "Friday review: week 9",
-  "title_hi": "Friday review",
-  "core_concept": "promise-ledger",
-  "ai_lab": "Galti-log prompt",
-  "psychology": "Skepticism",
-  "duration_min": 60,
+  "week": 4,
+  "day": 1,
+  "course_day": null,
+  "title_en": "Strategy Foundry + strategies #1-#3",
+  "title_hi": "Strategy Foundry + Strategies #1-#3",
+  "core_concept": "Strategies #1-#3",
+  "ai_lab": "Common interface",
+  "psychology": "Idea overload",
+  "strategy": "Systematic ORB · Donchian/ATR TF · Bollinger z-score MR",
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: promise-ledger. AI Lab mein Galti-log prompt. Psychology angle: Skepticism.",
+  "summary_hi": "Aap ek strategy factory pattern chala paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P2 Strategy Factory",
+     "p": "Hypothesis to independent testable layers; cheap spreadsheet screening. #1 Systematic ORB (ATR + vol filter), #2 Donchian/ATR trend-following on index futures, #3 Bollinger z-score mean reversion (stocks)."
+    }
+   ],
+   "kaam": "3 strategies as Python modules with a common interface.",
+   "outcome": "Aap ek strategy factory pattern chala paoge.",
+   "tools": [
+    "Python",
+    "vectorbt/backtrader"
+   ],
+   "fun": null,
+   "compliance": null,
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Galti-log prompt",
+    "title": "Common interface",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 45 · Friday review: week 9 · Concept: promise-ledger\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Strategy Foundry + strategies #1-#3 · Build: 3 strategies as Python modules with a common interface.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 46,
   "level": "advanced",
-  "week": 2,
+  "week": 5,
   "day": 1,
-  "title_en": "Owner earnings and FCF-yield",
-  "title_hi": "Owner earnings / FCF-yield",
-  "core_concept": "owner earnings · FCF-yield",
-  "ai_lab": "Owner earnings prompt",
-  "psychology": "Precision illusion",
-  "duration_min": 60,
+  "course_day": null,
+  "title_en": "Strategies #4-#5: cross-sectional momentum + pairs trading",
+  "title_hi": "Strategies #4-#5: Momentum + Pairs",
+  "core_concept": "Strategies #4-#5",
+  "ai_lab": "Universe handling",
+  "psychology": "Survivorship",
+  "strategy": "Cross-Sectional Momentum · Pairs Trading",
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: owner earnings · FCF-yield. AI Lab mein Owner earnings prompt. Psychology angle: Precision illusion.",
+  "summary_hi": "Aap portfolio-level stat strategies bana paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P2 Strategy Factory",
+     "p": "#4 Cross-sectional momentum NIFTY 500 (monthly, regime filter, turnover control); #5 Pairs: cointegration (Engle-Granger + Johansen), spread z-score, pair stability, half-life."
+    }
+   ],
+   "kaam": "Momentum + pairs modules; survivorship-free data.",
+   "outcome": "Aap portfolio-level stat strategies bana paoge.",
+   "tools": [
+    "Python",
+    "statsmodels"
+   ],
+   "fun": null,
+   "compliance": null,
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Owner earnings prompt",
+    "title": "Universe handling",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 46 · Owner earnings and FCF-yield · Concept: owner earnings · FCF-yield\nTask: Owner earnings prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Strategies #4-#5: cross-sectional momentum + pairs trading · Build: Momentum + pairs modules; survivorship-free data.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 47,
   "level": "advanced",
-  "week": 2,
-  "day": 2,
-  "title_en": "Reverse-DCF",
-  "title_hi": "Reverse-DCF",
-  "core_concept": "reverse-DCF",
-  "ai_lab": "Reverse-DCF prompt",
-  "psychology": "Expectation gap",
-  "duration_min": 60,
+  "week": 6,
+  "day": 1,
+  "course_day": null,
+  "title_en": "Strategies #6-#7: cash-futures basis + PEAD",
+  "title_hi": "Strategies #6-#7: Basis + PEAD",
+  "core_concept": "Strategies #6-#7",
+  "ai_lab": "Event dataset builder",
+  "psychology": "Data quality",
+  "strategy": "Cash-Futures Basis · PEAD",
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: reverse-DCF. AI Lab mein Reverse-DCF prompt. Psychology angle: Expectation gap.",
+  "summary_hi": "Aap calendar/event-driven edges quantify kar paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P2 Strategy Factory",
+     "p": "#6 Cash-futures basis/arbitrage & rollover dynamics; #7 Post-Earnings-Announcement Drift with results-review workflow."
+    }
+   ],
+   "kaam": "Basis monitor + earnings-event dataset builder.",
+   "outcome": "Aap calendar/event-driven edges quantify kar paoge.",
+   "tools": [
+    "Python",
+    "Results data"
+   ],
+   "fun": null,
+   "compliance": "Results content: educational, no calls.",
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Reverse-DCF prompt",
+    "title": "Event dataset builder",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 47 · Reverse-DCF · Concept: reverse-DCF\nTask: Reverse-DCF prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Strategies #6-#7: cash-futures basis + PEAD · Build: Basis monitor + earnings-event dataset builder.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 48,
   "level": "advanced",
-  "week": 2,
-  "day": 3,
-  "title_en": "Variant perception",
-  "title_hi": "Variant perception",
-  "core_concept": "variant perception",
-  "ai_lab": "Variant perception prompt",
-  "psychology": "Consensus comfort",
-  "duration_min": 60,
+  "week": 7,
+  "day": 1,
+  "course_day": null,
+  "title_en": "Strategies #8-#9: gap statistics + LLM sentiment signal",
+  "title_hi": "Strategies #8-#9: Gap Stats + LLM Sentiment",
+  "core_concept": "Strategies #8-#9",
+  "ai_lab": "Sentiment pipeline",
+  "psychology": "AI as oracle",
+  "strategy": "Opening Gap Model · LLM Sentiment Filter",
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: variant perception. AI Lab mein Variant perception prompt. Psychology angle: Consensus comfort.",
+  "summary_hi": "Aap AI ko signal layer ki tarah safely use kar paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P2 Strategy Factory",
+     "p": "#8 Opening gap model (fade vs continuation by gap size/VIX); #9 LLM news/sentiment scoring (structured JSON, guardrails, decay) used as a filter, not a trigger."
+    }
+   ],
+   "kaam": "Gap stats notebook + Claude sentiment pipeline with logging.",
+   "outcome": "Aap AI ko signal layer ki tarah safely use kar paoge.",
+   "tools": [
+    "Python",
+    "Claude API"
+   ],
+   "fun": null,
+   "compliance": "AI output logged; disclosure.",
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Variant perception prompt",
+    "title": "Sentiment pipeline",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 48 · Variant perception · Concept: variant perception\nTask: Variant perception prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Strategies #8-#9: gap statistics + LLM sentiment signal · Build: Gap stats notebook + Claude sentiment pipeline with logging.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 49,
   "level": "advanced",
-  "week": 2,
-  "day": 4,
-  "title_en": "Compare-card and bear-ceiling",
-  "title_hi": "Compare-card / bear-ceiling",
-  "core_concept": "compare-card · bear-ceiling",
-  "ai_lab": "Compare-card prompt",
-  "psychology": "Optimism",
-  "duration_min": 60,
+  "week": 8,
+  "day": 1,
+  "course_day": null,
+  "title_en": "Vol surface, IV rank, term structure + strategy #10",
+  "title_hi": "Vol Surface, IV Rank, Term Structure + Strategy #10",
+  "core_concept": "Strategy #10",
+  "ai_lab": "Options data loader",
+  "psychology": "Short-vol ka lalach",
+  "strategy": "Delta-Neutral Short Strangle",
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: compare-card · bear-ceiling. AI Lab mein Compare-card prompt. Psychology angle: Optimism.",
+  "summary_hi": "Aap volatility ko trade-able variable ki tarah dekh paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P3 Options Quant",
+     "p": "IV surface, skew, term structure, IV rank/percentile, VIX regimes; #10 delta-neutral short strangle with dynamic hedging + VIX regime filter + hard loss caps."
+    }
+   ],
+   "kaam": "Options data loader + strangle backtest.",
+   "outcome": "Aap volatility ko trade-able variable ki tarah dekh paoge.",
+   "tools": [
+    "Python",
+    "Options backtester"
+   ],
+   "fun": null,
+   "compliance": "NISM ground-truth; margin/risk explained.",
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Compare-card prompt",
+    "title": "Options data loader",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 49 · Compare-card and bear-ceiling · Concept: compare-card · bear-ceiling\nTask: Compare-card prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Vol surface, IV rank, term structure + strategy #10 · Build: Options data loader + strangle backtest.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 50,
   "level": "advanced",
-  "week": 2,
-  "day": 5,
-  "title_en": "Friday review: week 10",
-  "title_hi": "Friday review",
-  "core_concept": "promise-ledger",
-  "ai_lab": "Galti-log prompt",
-  "psychology": "Humility",
-  "duration_min": 60,
+  "week": 9,
+  "day": 1,
+  "course_day": null,
+  "title_en": "Strategies #11-#12: calendar/diagonal + expiry-day systematic",
+  "title_hi": "Strategies #11-#12: Calendar/Diagonal + 0DTE",
+  "core_concept": "Strategies #11-#12",
+  "ai_lab": "Intraday options backtest",
+  "psychology": "Gamma ka darr",
+  "strategy": "Calendar/Diagonal · Expiry-Day Theta",
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: promise-ledger. AI Lab mein Galti-log prompt. Psychology angle: Humility.",
+  "summary_hi": "Aap expiry dynamics ko rules mein convert kar paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P3 Options Quant",
+     "p": "#11 Calendar/diagonal term-structure spread; #12 expiry-day (0DTE) systematic theta with time-based entries, hard risk caps, no-trade on event days."
+    }
+   ],
+   "kaam": "Both strategies backtested with intraday options data.",
+   "outcome": "Aap expiry dynamics ko rules mein convert kar paoge.",
+   "tools": [
+    "Options backtester",
+    "Python"
+   ],
+   "fun": null,
+   "compliance": "Not 'safe income' language.",
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Galti-log prompt",
+    "title": "Intraday options backtest",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 50 · Friday review: week 10 · Concept: promise-ledger\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Strategies #11-#12: calendar/diagonal + expiry-day systematic · Build: Both strategies backtested with intraday options data.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 51,
   "level": "advanced",
-  "week": 3,
+  "week": 10,
   "day": 1,
-  "title_en": "Evidence tiers T0-T3",
-  "title_hi": "Evidence-tiers T0–T3",
-  "core_concept": "evidence-tiers T0–T3",
-  "ai_lab": "Evidence tier sorter",
-  "psychology": "Source blindness",
-  "duration_min": 60,
+  "course_day": null,
+  "title_en": "Strategy #13: volatility regime switching overlay",
+  "title_hi": "Strategy #13: Volatility Regime Overlay",
+  "core_concept": "Strategy #13",
+  "ai_lab": "Regime module",
+  "psychology": "Regime lag",
+  "strategy": "Vol Regime Overlay",
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: evidence-tiers T0–T3. AI Lab mein Evidence tier sorter. Psychology angle: Source blindness.",
+  "summary_hi": "Aap regime-aware sizing kar paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P3 Options Quant",
+     "p": "GARCH/GJR-t forecasts + VIX regimes as sizing/on-off overlay for all strategies; regime transition rules."
+    }
+   ],
+   "kaam": "Regime module plugged into strategy factory.",
+   "outcome": "Aap regime-aware sizing kar paoge.",
+   "tools": [
+    "Python (arch)"
+   ],
+   "fun": null,
+   "compliance": null,
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Evidence tier sorter",
+    "title": "Regime module",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 51 · Evidence tiers T0-T3 · Concept: evidence-tiers T0–T3\nTask: Evidence tier sorter\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Strategy #13: volatility regime switching overlay · Build: Regime module plugged into strategy factory.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 52,
   "level": "advanced",
-  "week": 3,
-  "day": 2,
-  "title_en": "The honest mirror",
-  "title_hi": "Honest mirror",
-  "core_concept": "honest mirror",
-  "ai_lab": "Honest mirror prompt",
-  "psychology": "Self-deception",
-  "duration_min": 60,
+  "week": 11,
+  "day": 1,
+  "course_day": null,
+  "title_en": "Options risk limits + Greeks-based kill rules",
+  "title_hi": "Options Risk Limits + Greeks-Based Kill Rules",
+  "core_concept": "Risk L3",
+  "ai_lab": "Greeks monitor",
+  "psychology": "Margin shock",
+  "strategy": null,
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: honest mirror. AI Lab mein Honest mirror prompt. Psychology angle: Self-deception.",
+  "summary_hi": "Aap options book ka risk real-time samjhoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P3 Options Quant",
+     "p": "Portfolio Greeks, gamma risk near expiry, margin shocks, Greeks-based limits and auto-flatten rules."
+    }
+   ],
+   "kaam": "Greeks risk monitor.",
+   "outcome": "Aap options book ka risk real-time samjhoge.",
+   "tools": [
+    "Python"
+   ],
+   "fun": null,
+   "compliance": null,
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Honest mirror prompt",
+    "title": "Greeks monitor",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 52 · The honest mirror · Concept: honest mirror\nTask: Honest mirror prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Options risk limits + Greeks-based kill rules · Build: Greeks risk monitor.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 53,
   "level": "advanced",
-  "week": 3,
-  "day": 3,
-  "title_en": "Thesis-memo",
-  "title_hi": "Thesis-memo",
-  "core_concept": "thesis-memo",
-  "ai_lab": "Thesis-memo drafter",
-  "psychology": "Thesis-creep",
-  "duration_min": 60,
+  "week": 12,
+  "day": 1,
+  "course_day": null,
+  "title_en": "Econometrics foundation",
+  "title_hi": "Econometrics Foundation",
+  "core_concept": "Validation L3",
+  "ai_lab": "Stat-test toolkit",
+  "psychology": "Spurious correlation",
+  "strategy": null,
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: thesis-memo. AI Lab mein Thesis-memo drafter. Psychology angle: Thesis-creep.",
+  "summary_hi": "Aap 'kya yeh correlation real hai' khud test kar paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P4 Validation Lab",
+     "p": "Stationarity (ADF x KPSS), variance ratios, autocorrelation, GARCH, spurious regression defence, Monte Carlo."
+    }
+   ],
+   "kaam": "Stat-test toolkit applied to all 13 strategies' returns.",
+   "outcome": "Aap 'kya yeh correlation real hai' khud test kar paoge.",
+   "tools": [
+    "Python",
+    "statsmodels"
+   ],
+   "fun": null,
+   "compliance": null,
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Thesis-memo drafter",
+    "title": "Stat-test toolkit",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 53 · Thesis-memo · Concept: thesis-memo\nTask: Thesis-memo drafter\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Econometrics foundation · Build: Stat-test toolkit applied to all 13 strategies' returns.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 54,
   "level": "advanced",
-  "week": 3,
-  "day": 4,
-  "title_en": "Predict-first and thesis-creep",
-  "title_hi": "Predict-first / thesis-creep",
-  "core_concept": "predict-first · thesis-creep",
-  "ai_lab": "Predict-first logger",
-  "psychology": "Hindsight bias",
-  "duration_min": 60,
+  "week": 13,
+  "day": 1,
+  "course_day": null,
+  "title_en": "ML validation + strategy #14: meta-labeling",
+  "title_hi": "ML Validation + Strategy #14: Meta-Labeling",
+  "core_concept": "Strategy #14 · ML L3",
+  "ai_lab": "Purged K-fold",
+  "psychology": "Leakage",
+  "strategy": "ML Meta-Labeling",
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: predict-first · thesis-creep. AI Lab mein Predict-first logger. Psychology angle: Hindsight bias.",
+  "summary_hi": "Aap ML ko leakage-free validate kar paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P4 Validation Lab",
+     "p": "Triple-barrier labels, meta-labeling on a base strategy, uniqueness weights, purged K-fold, walk-forward, CPCV path Sharpes; fractional differentiation."
+    }
+   ],
+   "kaam": "Meta-labeled version of one T3 strategy.",
+   "outcome": "Aap ML ko leakage-free validate kar paoge.",
+   "tools": [
+    "Python",
+    "scikit-learn"
+   ],
+   "fun": null,
+   "compliance": null,
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Predict-first logger",
+    "title": "Purged K-fold",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 54 · Predict-first and thesis-creep · Concept: predict-first · thesis-creep\nTask: Predict-first logger\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · ML validation + strategy #14: meta-labeling · Build: Meta-labeled version of one T3 strategy.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 55,
   "level": "advanced",
-  "week": 3,
-  "day": 5,
-  "title_en": "Friday review: week 11",
-  "title_hi": "Friday review",
-  "core_concept": "promise-ledger",
-  "ai_lab": "Galti-log prompt",
-  "psychology": "Consistency",
-  "duration_min": 60,
+  "week": 14,
+  "day": 1,
+  "course_day": null,
+  "title_en": "Overfit accounting",
+  "title_hi": "Overfit Accounting",
+  "core_concept": "Validation L3",
+  "ai_lab": "DSR verdict template",
+  "psychology": "Trials ka bhram",
+  "strategy": null,
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: promise-ledger. AI Lab mein Galti-log prompt. Psychology angle: Consistency.",
+  "summary_hi": "Aap har strategy ko DSR-adjusted judge kar paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P4 Validation Lab",
+     "p": "Trials ledger, PSR/DSR, minimum track record length, PBO; robustness heatmaps; 'kya yeh edge overfit hai' verdict template."
+    }
+   ],
+   "kaam": "Overfit report for all 14 strategies.",
+   "outcome": "Aap har strategy ko DSR-adjusted judge kar paoge.",
+   "tools": [
+    "Python"
+   ],
+   "fun": null,
+   "compliance": "'Past performance' on all reports.",
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Galti-log prompt",
+    "title": "DSR verdict template",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 55 · Friday review: week 11 · Concept: promise-ledger\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Overfit accounting · Build: Overfit report for all 14 strategies.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 56,
   "level": "advanced",
-  "week": 4,
+  "week": 15,
   "day": 1,
-  "title_en": "Three-pass red-team",
-  "title_hi": "Three-pass red-team",
-  "core_concept": "three-pass red-team",
-  "ai_lab": "Red-team prompt",
-  "psychology": "Ego",
-  "duration_min": 60,
+  "course_day": null,
+  "title_en": "India cost model + execution simulation",
+  "title_hi": "India Cost Model + Execution Simulation",
+  "core_concept": "Execution L3",
+  "ai_lab": "Cost model module",
+  "psychology": "Cost blindness",
+  "strategy": null,
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: three-pass red-team. AI Lab mein Red-team prompt. Psychology angle: Ego.",
+  "summary_hi": "Aap real-world cost impact quantify kar paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P4 Validation Lab",
+     "p": "Brokerage, STT, exchange/SEBI fees, GST, stamp duty (current rates verified in class, never printed); impact cost, slippage model, breakeven; execution sim."
+    }
+   ],
+   "kaam": "Cost model module; cost-adjusted rerun of all backtests.",
+   "outcome": "Aap real-world cost impact quantify kar paoge.",
+   "tools": [
+    "Python"
+   ],
+   "fun": null,
+   "compliance": "Tax and cost rates verified live in class.",
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Red-team prompt",
+    "title": "Cost model module",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 56 · Three-pass red-team · Concept: three-pass red-team\nTask: Red-team prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · India cost model + execution simulation · Build: Cost model module; cost-adjusted rerun of all backtests.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 57,
   "level": "advanced",
-  "week": 4,
-  "day": 2,
-  "title_en": "Investor stories: Munger and Buffett (qualitative)",
-  "title_hi": "Investor stories, sirf soch",
-  "core_concept": "\"aaj kharidta?\"",
-  "ai_lab": "Story extractor prompt",
-  "psychology": "Idol copying",
-  "duration_min": 60,
+  "week": 16,
+  "day": 1,
+  "course_day": null,
+  "title_en": "Strategy #15: multi-strategy portfolio allocation",
+  "title_hi": "Strategy #15: Multi-Strategy Portfolio Allocation",
+  "core_concept": "Strategy #15 · Risk L3",
+  "ai_lab": "Drawdown FSM",
+  "psychology": "Correlation spikes",
+  "strategy": "Multi-Strategy Allocation",
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: \"aaj kharidta?\". AI Lab mein Story extractor prompt. Psychology angle: Idol copying.",
+  "summary_hi": "Aap strategies ko ek portfolio ki tarah size kar paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P5 Risk & Deployment",
+     "p": "Risk parity, fractional Kelly, drawdown-control allocation, correlation of strategy returns, capital allocation across 14 strategies."
+    }
+   ],
+   "kaam": "Portfolio allocator + drawdown FSM.",
+   "outcome": "Aap strategies ko ek portfolio ki tarah size kar paoge.",
+   "tools": [
+    "Python"
+   ],
+   "fun": null,
+   "compliance": null,
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Story extractor prompt",
+    "title": "Drawdown FSM",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 57 · Investor stories: Munger and Buffett (qualitative) · Concept: \"aaj kharidta?\"\nTask: Story extractor prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Strategy #15: multi-strategy portfolio allocation · Build: Portfolio allocator + drawdown FSM.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 58,
   "level": "advanced",
-  "week": 4,
-  "day": 3,
-  "title_en": "The 8-page dossier",
-  "title_hi": "8-page dossier",
-  "core_concept": "dossier",
-  "ai_lab": "Dossier assembler prompt",
-  "psychology": "Scope creep",
-  "duration_min": 60,
+  "week": 17,
+  "day": 1,
+  "course_day": null,
+  "title_en": "Execution engine: order manager + kill-switch FSM",
+  "title_hi": "Execution Engine: Order Manager + Kill-Switch FSM",
+  "core_concept": "Algo L3",
+  "ai_lab": "Kill-switch FSM",
+  "psychology": "Runaway loop",
+  "strategy": null,
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: dossier. AI Lab mein Dossier assembler prompt. Psychology angle: Scope creep.",
+  "summary_hi": "Aap production-grade execution loop chala paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P5 Risk & Deployment",
+     "p": "Order manager, state machine (idle/armed/live/halt), kill-switch triggers (loss, latency, data gap), reconciliation, monitoring + Telegram alerts, audit logging."
+    }
+   ],
+   "kaam": "Execution engine (paper) with kill-switch.",
+   "outcome": "Aap production-grade execution loop chala paoge.",
+   "tools": [
+    "Python",
+    "Broker API",
+    "Telegram bot"
+   ],
+   "fun": null,
+   "compliance": "Static IP + audit-log compliance.",
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Dossier assembler prompt",
+    "title": "Kill-switch FSM",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 58 · The 8-page dossier · Concept: dossier\nTask: Dossier assembler prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Execution engine: order manager + kill-switch FSM · Build: Execution engine (paper) with kill-switch.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 59,
   "level": "advanced",
-  "week": 4,
-  "day": 4,
-  "title_en": "Pehla Kadam",
-  "title_hi": "Pehla Kadam",
-  "core_concept": "Pehla Kadam",
-  "ai_lab": "First-step planner prompt",
-  "psychology": "Paralysis",
-  "duration_min": 60,
+  "week": 18,
+  "day": 1,
+  "course_day": null,
+  "title_en": "Live paper deployment via broker API + AI ops",
+  "title_hi": "Live Paper Deployment via Broker API + AI Ops",
+  "core_concept": "Algo L3",
+  "ai_lab": "AI ops agent",
+  "psychology": "Deployment jitters",
+  "strategy": "2 strategies (paper-live)",
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: Pehla Kadam. AI Lab mein First-step planner prompt. Psychology angle: Paralysis.",
+  "summary_hi": "Aap compliant deployment pipeline end-to-end chala chuke honge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P5 Risk & Deployment",
+     "p": "2 strategies paper-live via broker API with Algo-ID; Claude as monitoring/analysis agent (daily report, anomaly flags); backtest to paper to live gates."
+    }
+   ],
+   "kaam": "2 strategies running paper-live for 2 weeks.",
+   "outcome": "Aap compliant deployment pipeline end-to-end chala chuke honge.",
+   "tools": [
+    "Broker API",
+    "Claude"
+   ],
+   "fun": null,
+   "compliance": "Paper only in course; live is the student's own decision.",
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "First-step planner prompt",
+    "title": "AI ops agent",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 59 · Pehla Kadam · Concept: Pehla Kadam\nTask: First-step planner prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Live paper deployment via broker API + AI ops · Build: 2 strategies running paper-live for 2 weeks.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  },
  {
   "number": 60,
   "level": "advanced",
-  "week": 4,
-  "day": 5,
-  "title_en": "The oath and final review",
-  "title_hi": "The oath",
-  "core_concept": "the oath",
-  "ai_lab": "Galti-log prompt",
-  "psychology": "Commitment",
-  "duration_min": 60,
+  "week": 19,
+  "day": 1,
+  "course_day": null,
+  "title_en": "Capstone: own strategy, build, validate, cost, deploy",
+  "title_hi": "Capstone: Apni Strategy",
+  "core_concept": "Capstone",
+  "ai_lab": "Peer code review",
+  "psychology": "Perfectionism",
+  "strategy": "Capstone",
+  "duration_min": 150,
   "video_url": null,
   "video_provider": "youtube_unlisted",
-  "is_published": true,
+  "is_published": false,
   "draft": true,
-  "summary_hi": "Aaj ka core concept: the oath. AI Lab mein Galti-log prompt. Psychology angle: Commitment.",
+  "summary_hi": "Aapki khud ki strategy launch-ready state mein hogi.",
+  "content": {
+   "topics": [
+    {
+     "h": "P6 Capstone",
+     "p": "Student's own idea through the full pipeline; peer code review; mentor checkpoint."
+    }
+   ],
+   "kaam": "Capstone repo + validation report.",
+   "outcome": "Aapki khud ki strategy launch-ready state mein hogi.",
+   "tools": [
+    "All"
+   ],
+   "fun": null,
+   "compliance": null,
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Galti-log prompt",
+    "title": "Peer code review",
     "level": "advanced",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 60 · The oath and final review · Concept: the oath\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Capstone: own strategy, build, validate, cost, deploy · Build: Capstone repo + validation report.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 61,
+  "level": "advanced",
+  "week": 20,
+  "day": 1,
+  "course_day": null,
+  "title_en": "Present, certify, ongoing research routine",
+  "title_hi": "Present, Certify, Research Routine",
+  "core_concept": "Capstone",
+  "ai_lab": "Routine doc",
+  "psychology": "Ownership",
+  "strategy": null,
+  "duration_min": 150,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": false,
+  "draft": true,
+  "summary_hi": "Aap ek running research desk ke saath niklo ge.",
+  "content": {
+   "topics": [
+    {
+     "h": "P6 Capstone",
+     "p": "Cohort presentation, DSR-honest results, feedback; certificate; weekly research routine template; alumni lab access."
+    }
+   ],
+   "kaam": "Final presentation + routine doc.",
+   "outcome": "Aap ek running research desk ke saath niklo ge.",
+   "tools": [],
+   "fun": null,
+   "compliance": "Certificate carries full disclaimer.",
+   "journal_prompt": "Aaj ke build mein sabse mushkil hissa kya tha aur kyun?"
+  },
+  "prompts": [
+   {
+    "title": "Routine doc",
+    "level": "advanced",
+    "platform": "any",
+    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nTier 3 · Present, certify, ongoing research routine · Build: Final presentation + routine doc.\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no certainty language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
    }
   ]
  }

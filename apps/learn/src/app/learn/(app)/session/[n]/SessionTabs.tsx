@@ -1,17 +1,19 @@
 "use client";
 import { useState, useTransition } from "react";
 import Link from "next/link";
-import type { Session, Resource, QuizQuestionPublic } from "@/lib/content/course";
+import { isWeekReviewDay, type Session, type Resource, type QuizQuestionPublic } from "@/lib/content/course";
 import type { SessionState } from "@/lib/progress/gating";
 import { PromptBlock } from "@/components/ui/PromptBlock";
 import { QuizBlock } from "@/components/ui/QuizBlock";
 import { markWatched, markHandoutOpened, saveJournal, type ActState } from "../actions";
 import { CheckCircle, Circle, Download, AlertCircle, Lock } from "@/components/ui/Icon";
 
-const TABS = ["Watch", "Read", "AI Lab", "Quiz", "Journal"] as const;
+const TABS = ["Learn", "Aaj Ka Kaam", "AI Lab", "Quiz", "Journal"] as const;
 
 export function SessionTabs({ s, embed, resources, quiz, state, lang, demo }: { s: Session; embed: string | null; resources: Resource[]; quiz: QuizQuestionPublic[]; state: SessionState; lang: "en" | "hi"; demo: boolean }) {
-  const [tab, setTab] = useState<(typeof TABS)[number]>("Watch");
+  const [tab, setTab] = useState<(typeof TABS)[number]>("Learn");
+  const c = s.content;
+  const review = isWeekReviewDay(s);
   const [watched, setWatched] = useState(state.watched_pct);
   const [handout, setHandout] = useState(state.handout_opened);
   const [journalSaved, setJournalSaved] = useState(state.journal_saved);
@@ -24,11 +26,24 @@ export function SessionTabs({ s, embed, resources, quiz, state, lang, demo }: { 
         {TABS.map((t) => <button key={t} role="tab" type="button" className="col-tab" aria-selected={tab === t} onClick={() => setTab(t)}>{t}</button>)}
       </div>
       <div className="mt-4" role="tabpanel">
-        {tab === "Watch" && (
+        {tab === "Learn" && (
           <div>
             {embed ? <div className="lrn-video"><iframe src={embed} title={s.title_en} allow="accelerometer; encrypted-media; picture-in-picture" allowFullScreen loading="lazy" /></div>
               : <div className="col-card col-empty"><Lock size={32} strokeWidth={1.5} aria-hidden /><p className="col-empty__title">Video abhi attach nahi hua</p><p style={{ margin: 0 }}>Class recording (YouTube unlisted) admin editor se jodi jayegi. Tab tak Read aur AI Lab se shuru kijiye.</p></div>}
-            <p className="lrn-muted mt-3" style={{ fontSize: "var(--col-text-body-sm)" }}>{lang === "hi" ? s.summary_hi : `Core concept: ${s.core_concept}. AI Lab: ${s.ai_lab}. Psychology: ${s.psychology}.`}</p>
+            <div className="lrn-topics mt-4">
+              {c.topics.map((t, i) => <section key={i} className="col-card lrn-topic"><span className="col-eyebrow">{String(i + 1).padStart(2, "0")}</span><h3 className="lrn-topic__h">{t.h}</h3><p className="lrn-topic__p">{t.p}</p></section>)}
+            </div>
+            <p className="lrn-muted mt-3" style={{ fontSize: "var(--col-text-body-sm)" }}>Outcome: {c.outcome}</p>
+            {resources.length > 0 && <ul className="lrn-list mt-4">
+              {resources.map((r) => (
+                <li key={r.file_name} className="col-card__inner lrn-res">
+                  <div><strong>{r.kind}</strong> · {r.file_name}<div className="lrn-muted" style={{ fontSize: "var(--col-text-dense)" }}>{r.note}{!r.storage_path && " · file pending upload"}</div></div>
+                  {r.kind === "handout" ? (
+                    <button type="button" className="col-btn col-btn--ghost col-btn--sm" disabled={pending} onClick={() => start(async () => { const x = await markHandoutOpened(s.number); setMsg(x); if (x.ok) setHandout(true); })}>{handout ? <><CheckCircle size={14} aria-hidden /> Opened</> : <><Download size={14} aria-hidden /> Open handout</>}</button>
+                  ) : <span className="col-chip"><Download size={14} aria-hidden /> pending</span>}
+                </li>
+              ))}
+            </ul>}
             <div className="flex items-center gap-3 mt-3 flex-wrap">
               <span className="col-chip">Watched: <span className="lrn-num">{watched}%</span></span>
               <button type="button" className="col-btn col-btn--ghost col-btn--sm" disabled={pending || watched >= 80} onClick={() => start(async () => { const r = await markWatched(s.number, 100); setMsg(r); if (r.ok) setWatched(100); })}>Mark as watched</button>
@@ -36,18 +51,16 @@ export function SessionTabs({ s, embed, resources, quiz, state, lang, demo }: { 
             </div>
           </div>
         )}
-        {tab === "Read" && (
-          <ul className="lrn-list">
-            {resources.length === 0 && <li className="lrn-muted">Is week ke deck/handout abhi upload nahi hue.</li>}
-            {resources.map((r) => (
-              <li key={r.file_name} className="col-card__inner lrn-res">
-                <div><strong>{r.kind}</strong> · {r.file_name}<div className="lrn-muted" style={{ fontSize: "var(--col-text-dense)" }}>{r.note}{!r.storage_path && " · file pending upload"}</div></div>
-                {r.kind === "handout" ? (
-                  <button type="button" className="col-btn col-btn--ghost col-btn--sm" disabled={pending} onClick={() => start(async () => { const x = await markHandoutOpened(s.number); setMsg(x); if (x.ok) setHandout(true); })}>{handout ? <><CheckCircle size={14} aria-hidden /> Opened</> : <><Download size={14} aria-hidden /> Open handout</>}</button>
-                ) : <span className="col-chip"><Download size={14} aria-hidden /> pending</span>}
-              </li>
-            ))}
-          </ul>
+        {tab === "Aaj Ka Kaam" && (
+          <div className="lrn-list">
+            <section className="col-card lrn-kaam"><span className="col-eyebrow">Aaj Ka Kaam · 15 min</span><p className="lrn-kaam__p">{c.kaam}</p></section>
+            <div className="lrn-grid">
+              <section className="col-card"><span className="col-eyebrow">Outcome</span><p style={{ margin: "6px 0 0" }}>{c.outcome}</p></section>
+              <section className="col-card"><span className="col-eyebrow">Tools</span><div className="lrn-tags mt-2">{c.tools.length ? c.tools.map((t) => <span key={t} className="col-chip">{t}</span>) : <span className="lrn-muted">Koi tool nahi, sirf soch.</span>}</div>{s.strategy && <p className="lrn-muted mt-2" style={{ fontSize: "var(--col-text-dense)" }}>Strategy: {s.strategy}</p>}</section>
+              {c.fun && <section className="col-card"><span className="col-eyebrow">Cohort</span><p style={{ margin: "6px 0 0" }}>{c.fun}</p></section>}
+            </div>
+            {c.compliance && <p className="lrn-muted" style={{ fontSize: "var(--col-text-dense)", margin: 0 }}>Compliance note: {c.compliance}</p>}
+          </div>
         )}
         {tab === "AI Lab" && (
           <div className="lrn-list">
@@ -58,9 +71,9 @@ export function SessionTabs({ s, embed, resources, quiz, state, lang, demo }: { 
         {tab === "Quiz" && <QuizBlock n={s.number} questions={quiz} lang={lang} alreadySubmitted={state.quiz_submitted} />}
         {tab === "Journal" && (
           <form className="lrn-list" onSubmit={(e) => { e.preventDefault(); const f = new FormData(e.currentTarget); start(async () => { const r = await saveJournal(s.number, String(f.get("body")), (f.get("kind") as "reflection" | "galti_log" | "friday_review") ?? "reflection"); setMsg(r); if (r.ok) setJournalSaved(true); }); }}>
-            <p className="lrn-muted" style={{ marginTop: 0 }}>Aaj ka ek Fact, ek Guess, ek Kachra. Ya ek galti jo process mein hui. Sirf ek line bhi kaafi hai.</p>
+            <p className="lrn-muted" style={{ marginTop: 0 }}>{c.journal_prompt} Sirf ek line bhi kaafi hai.</p>
             <div className="lrn-field"><label htmlFor="kind">Entry type</label>
-              <select id="kind" name="kind" className="col-input" defaultValue={s.day === 5 ? "friday_review" : "reflection"}><option value="reflection">Reflection</option><option value="galti_log">Galti-log</option><option value="friday_review">Friday review</option></select></div>
+              <select id="kind" name="kind" className="col-input" defaultValue={review ? "friday_review" : "reflection"}><option value="reflection">Reflection</option><option value="galti_log">Galti-log</option><option value="friday_review">Weekly review</option></select></div>
             <div className="lrn-field"><label htmlFor="body">Your note</label><textarea id="body" name="body" className="col-input lrn-textarea" minLength={10} maxLength={4000} required /></div>
             <button className="col-btn col-btn--primary" disabled={pending}>{pending ? "Saving" : "Save journal"}</button>
             {journalSaved && <p className="lrn-notice" role="status"><CheckCircle size={16} aria-hidden /> Journal saved for this session.</p>}

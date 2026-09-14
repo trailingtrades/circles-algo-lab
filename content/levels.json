@@ -2,22 +2,28 @@
  {
   "slug": "foundation",
   "sequence": 1,
-  "title_en": "Foundation",
-  "title_hi": "Foundation",
+  "title_en": "Tier 1 · Basic",
+  "title_hi": "Tier 1 · Basic",
+  "subtitle_en": "Market + AI Foundation · 21 days · 2 strategies · Algo Level 1",
+  "subtitle_hi": "Market + AI Foundation · 21 din · 2 strategies · Algo Level 1",
   "unlock_rule": "always"
  },
  {
   "slug": "intermediate",
   "sequence": 2,
-  "title_en": "Intermediate",
-  "title_hi": "Intermediate",
+  "title_en": "Tier 2 · Advanced",
+  "title_hi": "Tier 2 · Advanced",
+  "subtitle_en": "Systematic Trader · 10 weeks · 6 strategies paper-deployed · Algo Level 2",
+  "subtitle_hi": "Systematic Trader · 10 hafte · 6 strategies paper-deploy · Algo Level 2",
   "unlock_rule": "previous_level_certificate"
  },
  {
   "slug": "advanced",
   "sequence": 3,
-  "title_en": "Advanced",
-  "title_hi": "Advanced",
+  "title_en": "Tier 3 · Expert",
+  "title_hi": "Tier 3 · Expert",
+  "subtitle_en": "Quant Desk · 20 weeks · 15 strategies in Python · Algo Level 3",
+  "subtitle_hi": "Quant Desk · 20 hafte · 15 strategies Python mein · Algo Level 3",
   "unlock_rule": "previous_level_certificate"
  }
 ]

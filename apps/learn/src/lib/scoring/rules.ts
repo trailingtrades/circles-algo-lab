@@ -1,6 +1,6 @@
 /** Scoring constants and pure helpers (master prompt §9). Points are awarded server-side via award(); this file only computes amounts. */
 export const WEIGHTS = { attendance: 200, quiz: 200, exam: 250, practice: 250, discipline: 100 } as const;
-export const PER_SESSION = { attendance: 10, quiz: 10 } as const;           // 10 x 20 sessions per level
+export const PER_SESSION = { attendance: 10, quiz: 10 } as const;           // 10 per session; Tier 1 has 21 sessions, the 200 cap absorbs the extra
 export const EXAM_POINTS = { weekly: 50, final: 100 } as const;             // 3 x 50 + 100 = 250
 export const RETAKE_CAP = 0.8;                                             // a retake is capped at 80% of full marks
 export const GRADE_FRACTION: Record<"A" | "B" | "C" | "D" | "F", number> = { A: 1, B: 0.85, C: 0.7, D: 0.5, F: 0 };

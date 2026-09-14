@@ -8,7 +8,7 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { evaluate, type CriteriaInput } from "./criteria";
 import { verifyHash, newCertNo, shortKey } from "./hash";
 import { sendCertificateEmail } from "@/lib/email/resend";
-import { LEVELS, EXAMS, type LevelSlug } from "@/lib/content/course";
+import { LEVELS, EXAMS, type LevelSlug, WEEKS } from "@/lib/content/course";
 
 const exec = promisify(execFile);
 const CERT_DIR = join(process.cwd(), "..", "..", "certificates");
@@ -38,7 +38,8 @@ export async function gatherCriteria(userId: string, level: LevelSlug): Promise<
   // Foundation: 5 graded rows count as the ladder; other levels: one grade per artefact in the ladder.
   const required = level === "foundation" ? 5 : (ladder ?? []).length;
   const fridays = (journals ?? []).filter((j) => ids.has(j.session_id!)).length;
-  return { sessionsTotal: ids.size, sessionsComplete: complete, finalPct: finalBest, weeklyAttempted, weeklyTotal: weeklyIds.size, artefactsGraded: (grades ?? []).map((g) => ({ grade: g.process_grade })), artefactsRequired: required, fridayReviews: Math.min(4, fridays), suspended: prof?.status === "suspended" };
+  const weeksInLevel = WEEKS.filter((w) => w.level === level).length;
+  return { sessionsTotal: ids.size, sessionsComplete: complete, finalPct: finalBest, weeklyAttempted, weeklyTotal: weeklyIds.size, artefactsGraded: (grades ?? []).map((g) => ({ grade: g.process_grade })), artefactsRequired: required, fridayReviews: Math.min(weeksInLevel, fridays), fridayTotal: weeksInLevel, suspended: prof?.status === "suspended" };
 }
 
 /** Issue if (and only if) every criterion is true and no issued certificate exists. Server-side, service role. Returns the cert row or null. */

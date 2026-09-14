@@ -25,7 +25,7 @@ export default async function PortfolioPage() {
           <span className="col-eyebrow">Foundation artefact</span>
           <p className="lrn-num" style={{ fontSize: 32, fontWeight: 600, margin: "4px 0" }}>{done} <span style={{ fontSize: 14, fontWeight: 500 }}>/ 5 complete rows</span></p>
           <p className="lrn-session__sub">Mentor grades each complete row on process (A–F). Outcome (+/−) is shown separately and never scored.</p>
-          <Link href="/learn/session/5" className="col-btn col-btn--ghost col-btn--sm mt-3">Friday review journal</Link>
+          <Link href="/learn/session/7" className="col-btn col-btn--ghost col-btn--sm mt-3">Weekly review journal</Link>
         </section>
         <section className="col-card" aria-label="New row"><span className="col-eyebrow">{rows.length < 5 ? "Add a row" : "Watchlist full"}</span>{rows.length < 5 && <RowForm />}</section>
       </div>

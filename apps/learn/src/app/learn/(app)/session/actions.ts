@@ -3,7 +3,7 @@ import { revalidatePath } from "next/cache";
 import { getViewer, createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { supabaseConfigured } from "@/lib/supabase/env";
-import { getSession } from "@/lib/content/course";
+import { getSession, isWeekReviewDay } from "@/lib/content/course";
 import { liveQuizKey } from "@/lib/content/live";
 import { awardQuiz, awardAttendance, awardDiscipline } from "@/lib/scoring/award";
 
@@ -67,7 +67,7 @@ export async function saveJournal(n: number, body: string, kind: "reflection" | 
   const { data: row, error } = await c.sb.from("journal_entries").insert({ user_id: c.v.id, session_id: c.sessionId, kind, body: text }).select("id").single();
   if (error) return { error: error.message };
   if (kind === "galti_log") await awardDiscipline(c.v.id, c.s.level, "galti_log", c.sessionId, "galti-log entry");
-  if (kind === "friday_review" && c.s.day === 5) await awardDiscipline(c.v.id, c.s.level, "friday_on_time", c.sessionId, `friday review ${row.id}`);
+  if (kind === "friday_review" && isWeekReviewDay(c.s)) await awardDiscipline(c.v.id, c.s.level, "friday_on_time", c.sessionId, `friday review ${row.id}`);
   await c.sb.from("session_progress").upsert({ user_id: c.v.id, session_id: c.sessionId, status: "in_progress" }, { onConflict: "user_id,session_id" });
   await maybeComplete(c.v.id, c.sessionId, n);
   revalidatePath(`/learn/session/${n}`); revalidatePath("/learn/path"); revalidatePath("/learn/home");

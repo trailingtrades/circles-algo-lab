@@ -16,7 +16,7 @@ export default async function CertificatePage() {
   const { state, demo, lang } = await loadLearnerState();
   const level: LevelSlug = nextSession(state)?.level ?? "advanced";
   const lv = LEVELS.find((l) => l.slug === level)!;
-  let facts = { sessionsTotal: 20, sessionsComplete: 2, finalPct: null as number | null, weeklyAttempted: 0, weeklyTotal: 3, artefactsGraded: [] as { grade: string }[], artefactsRequired: 5, fridayReviews: 0, suspended: false };
+  let facts = { sessionsTotal: 21, sessionsComplete: 2, finalPct: null as number | null, weeklyAttempted: 0, weeklyTotal: 3, artefactsGraded: [] as { grade: string }[], artefactsRequired: 5, fridayReviews: 0, suspended: false };
   let certs: { id: string; cert_no: string; issued_on: string; band: string; status: string; level: string; pdf: boolean }[] = [];
   if (!demo && supabaseConfigured()) {
     const v = await getViewer();

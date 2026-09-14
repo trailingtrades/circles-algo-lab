@@ -2,7 +2,7 @@ import "server-only";
 import { createClient } from "@/lib/supabase/server";
 import { supabaseConfigured } from "@/lib/supabase/env";
 import { createAdminClient } from "@/lib/supabase/admin";
-import { getSession, quizPublic, quizAnswerKey, type Session, type QuizQuestionPublic, type Prompt } from "./course";
+import { getSession, quizPublic, quizAnswerKey, type Session, type QuizQuestionPublic, type Prompt, type SessionContent } from "./course";
 
 /** Content is data (§6): when a Supabase project is connected, editable fields come from the DB so Rahul can fix a typo without a redeploy.
  *  Structure (numbers, weeks, days) stays pinned to /content JSON. Falls back to JSON in preview mode. */
@@ -10,9 +10,10 @@ export async function liveSession(n: number): Promise<Session | null> {
   const base = getSession(n); if (!base) return null;
   if (!supabaseConfigured()) return base;
   const sb = await createClient();
-  const { data } = await sb.from("sessions").select("title_en,title_hi,core_concept,ai_lab,psychology,duration_min,video_url,is_published,is_draft,summary_hi,prompts").eq("number", n).maybeSingle();
+  const { data } = await sb.from("sessions").select("title_en,title_hi,core_concept,ai_lab,psychology,strategy,duration_min,video_url,is_published,is_draft,summary_hi,prompts,content").eq("number", n).maybeSingle();
   if (!data) return base;
-  return { ...base, ...data, draft: data.is_draft, prompts: (data.prompts as Prompt[]) ?? base.prompts };
+  const content = data.content && typeof data.content === "object" && Array.isArray((data.content as SessionContent).topics) ? (data.content as SessionContent) : base.content;
+  return { ...base, ...data, draft: data.is_draft, prompts: (data.prompts as Prompt[]) ?? base.prompts, content };
 }
 export async function liveQuizPublic(n: number): Promise<QuizQuestionPublic[]> {
   if (!supabaseConfigured()) return quizPublic(n);

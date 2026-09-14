@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { weekOf, levelOf, youtubeEmbed, RESOURCES } from "@/lib/content/course";
+import { weekOf, levelOf, youtubeEmbed, dayLabel, RESOURCES } from "@/lib/content/course";
 import { liveSession, liveQuizPublic } from "@/lib/content/live";
 import { loadLearnerState } from "@/lib/progress/load";
 import { gate, stateOf } from "@/lib/progress/gating";
@@ -22,10 +22,10 @@ export default async function SessionPage({ params }: { params: Promise<{ n: str
   return (
     <>
       <Link href="/learn/path" className="lrn-link" style={{ display: "inline-flex", alignItems: "center", gap: 4, fontSize: "var(--col-text-body-sm)" }}><ChevronLeft size={14} aria-hidden /> Path</Link>
-      <p className="col-eyebrow mt-2">{level.title_en} · Week {week.number} · {lang === "hi" ? week.title_hi : week.title_en} · Day {s.day} · S{String(s.number).padStart(2, "0")}</p>
+      <p className="col-eyebrow mt-2">{level.title_en} · Week {week.number} · {lang === "hi" ? week.title_hi : week.title_en} · {dayLabel(s)} · S{String(s.number).padStart(2, "0")}</p>
       <h1 className="lrn-title">{lang === "hi" ? s.title_hi : s.title_en}</h1>
       <p className="lrn-muted" style={{ marginTop: 0 }}>{lang === "hi" ? s.title_en : s.title_hi}</p>
-      <div className="lrn-tags mb-4"><span className="col-chip">Concept: {s.core_concept}</span><span className="col-chip">AI Lab: {s.ai_lab}</span><span className="col-chip">Psychology: {s.psychology}</span><span className="col-chip lrn-num">{s.duration_min} min</span>{s.draft && <span className="col-chip">draft content</span>}</div>
+      <div className="lrn-tags mb-4"><span className="col-chip">Concept: {s.core_concept}</span><span className="col-chip">AI Lab: {s.ai_lab}</span><span className="col-chip">Psychology: {s.psychology}</span>{s.strategy && <span className="col-chip col-chip--up">Strategy: {s.strategy}</span>}<span className="col-chip lrn-num">{s.duration_min} min</span>{s.draft && <span className="col-chip">draft content</span>}</div>
       {g.status === "locked" ? <LockedGate gate={g} lang={lang} /> : (
         <SessionTabs s={s} embed={youtubeEmbed(s.video_url)} resources={resources} quiz={quiz} state={stateOf(state, s.number)} lang={lang} demo={demo} />
       )}

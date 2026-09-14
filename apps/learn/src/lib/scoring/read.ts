@@ -18,7 +18,7 @@ export async function loadScore(): Promise<ScoreView> {
   if (demo || !supabaseConfigured()) {
     const events: EventRow[] = [{ id: "d1", kind: "attendance", points: 10, notes: "Session 1 complete", awarded_at: "2026-10-01", ref_type: "session_complete" }, { id: "d2", kind: "quiz", points: 10, notes: "quiz 3/3", awarded_at: "2026-10-01", ref_type: "session_quiz" }, { id: "d3", kind: "attendance", points: 10, notes: "Session 2 complete", awarded_at: "2026-10-02", ref_type: "session_complete" }, { id: "d4", kind: "quiz", points: 6.67, notes: "quiz 2/3", awarded_at: "2026-10-02", ref_type: "session_quiz" }];
     const components = computeScore(events.map((e) => ({ kind: e.kind as "quiz", points: e.points })));
-    return { ...base, components, events, rank: null, band: "Top 25%", actions: nextActions({ components, openSession: open?.number ?? null, sessionsMissingAttendance: missingAtt, pendingExam: { key: "foundation-w1", title: "Foundation Week 1 exam", isFinal: false }, fridayDue: true, portfolioRowsComplete: 0, level }) };
+    return { ...base, components, events, rank: null, band: "Top 25%", actions: nextActions({ components, openSession: open?.number ?? null, sessionsMissingAttendance: missingAtt, pendingExam: { key: "foundation-w1", title: "Tier 1 Weekend Quiz Game 1", isFinal: false }, fridayDue: true, portfolioRowsComplete: 0, level }) };
   }
   const v = (await getViewer())!; const sb = await createClient();
   const { data: lv } = await sb.from("levels").select("id").eq("slug", level).single();

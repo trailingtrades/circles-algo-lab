@@ -16,7 +16,7 @@ export function SessionCard(p: SessionCardProps) {
   return (
     <article className="col-card lrn-session" aria-label={`Session ${p.n}`}>
       <div className="flex items-center justify-between gap-2">
-        <span className="col-eyebrow">Day {p.day} · S{String(p.n).padStart(2, "0")}</span>
+        <span className="col-eyebrow">{p.day} · S{String(p.n).padStart(2, "0")}</span>
         <span className={`col-chip ${s.cls}`}><Glyph size={14} strokeWidth={1.75} aria-hidden />{s.label}</span>
       </div>
       <h3 className="lrn-session__title">{p.lang === "hi" ? p.titleHi : p.titleEn}</h3>

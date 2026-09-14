@@ -140,3 +140,11 @@ select.col-input { padding-right: 28px; }
 .col-light .lrn-link { color: var(--col-button); }
 .col-light .lrn-nav-item[aria-current="page"] { color: var(--col-navy); background: rgba(19,74,154,.08); }
 .col-light .lrn-virtual { color: #7a4f00; border-color: #7a4f00; }   /* amber text fails AA on light; dark amber 7.5:1 */
+
+/* Session · Learn tab topic blocks and Aaj Ka Kaam card (Curriculum v2). */
+.lrn-topics { display: grid; gap: var(--col-space-3); }
+.lrn-topic { padding: var(--col-space-4); }
+.lrn-topic__h { font-size: var(--col-text-h4, 16px); font-weight: 600; margin: 4px 0 6px; }
+.lrn-topic__p { margin: 0; line-height: 1.6; font-size: var(--col-text-body, 14px); }
+.lrn-kaam { border-color: var(--col-brand); }
+.lrn-kaam__p { margin: 8px 0 0; font-size: 16px; line-height: 1.6; font-weight: 500; }

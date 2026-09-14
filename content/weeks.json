@@ -2,85 +2,232 @@
  {
   "level": "foundation",
   "number": 1,
-  "title_en": "Foundations of the market",
-  "title_hi": "Bazaar Ki Neenv",
+  "title_en": "Market, maths and your AI co-pilot",
+  "title_hi": "Market, maths aur AI co-pilot",
   "theme_accent": "#00AEEF"
  },
  {
   "level": "foundation",
   "number": 2,
-  "title_en": "Company, share and price",
-  "title_hi": "Company Share aur Keemat",
+  "title_en": "Two strategies, one risk rule",
+  "title_hi": "Do strategies, ek risk rule",
   "theme_accent": "#134A9A"
  },
  {
   "level": "foundation",
   "number": 3,
-  "title_en": "The maths of trading",
-  "title_hi": "Trading Ki Maths",
+  "title_en": "Algo Level 1, backtest and your routine",
+  "title_hi": "Algo Level 1, backtest aur aapki routine",
   "theme_accent": "#f5a623"
- },
- {
-  "level": "foundation",
-  "number": 4,
-  "title_en": "AI, algos and loot-proofing",
-  "title_hi": "AI Algo aur Loot-Proofing",
-  "theme_accent": "#4caf50"
  },
  {
   "level": "intermediate",
   "number": 1,
-  "title_en": "Depth of valuation",
-  "title_hi": "Valuation Ki Gehrai",
+  "title_en": "Your systematic stack and prompts",
+  "title_hi": "Stack aur prompts",
   "theme_accent": "#00AEEF"
  },
  {
   "level": "intermediate",
   "number": 2,
-  "title_en": "Charts, next level",
-  "title_hi": "Charts Ka Agla Level",
+  "title_en": "Market structure and VWAP reversion",
+  "title_hi": "Structure aur VWAP reversion",
   "theme_accent": "#134A9A"
  },
  {
   "level": "intermediate",
   "number": 3,
-  "title_en": "Engineering risk",
-  "title_hi": "Risk Ka Engineering",
+  "title_en": "Options chain and credit spreads",
+  "title_hi": "Options chain aur credit spread",
   "theme_accent": "#f5a623"
  },
  {
   "level": "intermediate",
   "number": 4,
-  "title_en": "AI power-user and capstone",
-  "title_hi": "AI Power-User & Capstone",
+  "title_en": "Iron condor and hedging",
+  "title_hi": "Iron condor aur hedging",
   "theme_accent": "#4caf50"
+ },
+ {
+  "level": "intermediate",
+  "number": 5,
+  "title_en": "Swing system and NR7",
+  "title_hi": "Swing system aur NR7",
+  "theme_accent": "#00AEEF"
+ },
+ {
+  "level": "intermediate",
+  "number": 6,
+  "title_en": "Momentum rotation and portfolio risk",
+  "title_hi": "Momentum aur portfolio risk",
+  "theme_accent": "#134A9A"
+ },
+ {
+  "level": "intermediate",
+  "number": 7,
+  "title_en": "Algo Level 2 deployment",
+  "title_hi": "Algo Level 2 deploy",
+  "theme_accent": "#f5a623"
+ },
+ {
+  "level": "intermediate",
+  "number": 8,
+  "title_en": "Backtest Level 2 and overfitting",
+  "title_hi": "Backtest Level 2 aur overfitting",
+  "theme_accent": "#4caf50"
+ },
+ {
+  "level": "intermediate",
+  "number": 9,
+  "title_en": "Sprint review and events",
+  "title_hi": "Sprint review aur events",
+  "theme_accent": "#00AEEF"
+ },
+ {
+  "level": "intermediate",
+  "number": 10,
+  "title_en": "Business plan and capstone",
+  "title_hi": "Business plan aur capstone",
+  "theme_accent": "#134A9A"
  },
  {
   "level": "advanced",
   "number": 1,
-  "title_en": "Business forensics",
-  "title_hi": "Business Ki Forensics",
+  "title_en": "Week 1 · P1 Foundation",
+  "title_hi": "Hafta 1 · P1 Foundation",
   "theme_accent": "#00AEEF"
  },
  {
   "level": "advanced",
   "number": 2,
-  "title_en": "Valuation studio",
-  "title_hi": "Valuation Studio",
-  "theme_accent": "#134A9A"
+  "title_en": "Week 2 · P1 Foundation",
+  "title_hi": "Hafta 2 · P1 Foundation",
+  "theme_accent": "#00AEEF"
  },
  {
   "level": "advanced",
   "number": 3,
-  "title_en": "Portfolio pro",
-  "title_hi": "Portfolio Pro",
-  "theme_accent": "#f5a623"
+  "title_en": "Week 3 · P1 Foundation",
+  "title_hi": "Hafta 3 · P1 Foundation",
+  "theme_accent": "#00AEEF"
  },
  {
   "level": "advanced",
   "number": 4,
-  "title_en": "The professional's craft",
-  "title_hi": "Professional's Craft",
+  "title_en": "Week 4 · P2 Strategy Factory",
+  "title_hi": "Hafta 4 · P2 Strategy Factory",
+  "theme_accent": "#134A9A"
+ },
+ {
+  "level": "advanced",
+  "number": 5,
+  "title_en": "Week 5 · P2 Strategy Factory",
+  "title_hi": "Hafta 5 · P2 Strategy Factory",
+  "theme_accent": "#134A9A"
+ },
+ {
+  "level": "advanced",
+  "number": 6,
+  "title_en": "Week 6 · P2 Strategy Factory",
+  "title_hi": "Hafta 6 · P2 Strategy Factory",
+  "theme_accent": "#134A9A"
+ },
+ {
+  "level": "advanced",
+  "number": 7,
+  "title_en": "Week 7 · P2 Strategy Factory",
+  "title_hi": "Hafta 7 · P2 Strategy Factory",
+  "theme_accent": "#134A9A"
+ },
+ {
+  "level": "advanced",
+  "number": 8,
+  "title_en": "Week 8 · P3 Options Quant",
+  "title_hi": "Hafta 8 · P3 Options Quant",
+  "theme_accent": "#f5a623"
+ },
+ {
+  "level": "advanced",
+  "number": 9,
+  "title_en": "Week 9 · P3 Options Quant",
+  "title_hi": "Hafta 9 · P3 Options Quant",
+  "theme_accent": "#f5a623"
+ },
+ {
+  "level": "advanced",
+  "number": 10,
+  "title_en": "Week 10 · P3 Options Quant",
+  "title_hi": "Hafta 10 · P3 Options Quant",
+  "theme_accent": "#f5a623"
+ },
+ {
+  "level": "advanced",
+  "number": 11,
+  "title_en": "Week 11 · P3 Options Quant",
+  "title_hi": "Hafta 11 · P3 Options Quant",
+  "theme_accent": "#f5a623"
+ },
+ {
+  "level": "advanced",
+  "number": 12,
+  "title_en": "Week 12 · P4 Validation Lab",
+  "title_hi": "Hafta 12 · P4 Validation Lab",
   "theme_accent": "#4caf50"
+ },
+ {
+  "level": "advanced",
+  "number": 13,
+  "title_en": "Week 13 · P4 Validation Lab",
+  "title_hi": "Hafta 13 · P4 Validation Lab",
+  "theme_accent": "#4caf50"
+ },
+ {
+  "level": "advanced",
+  "number": 14,
+  "title_en": "Week 14 · P4 Validation Lab",
+  "title_hi": "Hafta 14 · P4 Validation Lab",
+  "theme_accent": "#4caf50"
+ },
+ {
+  "level": "advanced",
+  "number": 15,
+  "title_en": "Week 15 · P4 Validation Lab",
+  "title_hi": "Hafta 15 · P4 Validation Lab",
+  "theme_accent": "#4caf50"
+ },
+ {
+  "level": "advanced",
+  "number": 16,
+  "title_en": "Week 16 · P5 Risk & Deployment",
+  "title_hi": "Hafta 16 · P5 Risk & Deployment",
+  "theme_accent": "#00AEEF"
+ },
+ {
+  "level": "advanced",
+  "number": 17,
+  "title_en": "Week 17 · P5 Risk & Deployment",
+  "title_hi": "Hafta 17 · P5 Risk & Deployment",
+  "theme_accent": "#00AEEF"
+ },
+ {
+  "level": "advanced",
+  "number": 18,
+  "title_en": "Week 18 · P5 Risk & Deployment",
+  "title_hi": "Hafta 18 · P5 Risk & Deployment",
+  "theme_accent": "#00AEEF"
+ },
+ {
+  "level": "advanced",
+  "number": 19,
+  "title_en": "Week 19 · P6 Capstone",
+  "title_hi": "Hafta 19 · P6 Capstone",
+  "theme_accent": "#134A9A"
+ },
+ {
+  "level": "advanced",
+  "number": 20,
+  "title_en": "Week 20 · P6 Capstone",
+  "title_hi": "Hafta 20 · P6 Capstone",
+  "theme_accent": "#134A9A"
  }
 ]

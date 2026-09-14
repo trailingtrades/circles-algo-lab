@@ -1,26 +1,30 @@
 /** Pure gating rules — run: npx tsx tests/gating.test.ts */
 import { gate, nextSession, levelOpen, weekPct, type LearnerState } from "../src/lib/progress/gating";
-import { SESSIONS, getSession } from "../src/lib/content/course";
+import { SESSIONS, getSession, quizPublic, isWeekReviewDay } from "../src/lib/content/course";
 let pass = 0, fail = 0;
 const ok = (n: string, c: boolean, d = "") => { if (c) pass++; else fail++; console.log(`${c ? "  ok  " : "  FAIL"} ${n} ${c ? "" : d}`); };
 const done = { watched_pct: 100, handout_opened: true, quiz_submitted: true, journal_saved: true, completed_at: "x" };
 const fresh: LearnerState = { sessions: {}, certificates: [], overrides: [], suspended: false };
 
-ok("60 sessions in content", SESSIONS.length === 60);
-ok("numbers 1..60 unique and contiguous", SESSIONS.every((s, i) => s.number === i + 1));
+ok("61 sessions in content (21 + 20 + 20)", SESSIONS.length === 61);
+ok("numbers 1..61 unique and contiguous", SESSIONS.every((s, i) => s.number === i + 1));
+ok("Tier 1 = 21 published sessions across 3 weeks of 7", SESSIONS.filter((s) => s.level === "foundation").length === 21 && SESSIONS.filter((s) => s.level === "foundation").every((s) => s.is_published && s.day >= 1 && s.day <= 7));
+ok("every Tier 1 session has 5 quiz questions", SESSIONS.filter((s) => s.level === "foundation").every((s) => quizPublic(s.number).length === 5));
+ok("every Tier 1 session has structured content", SESSIONS.filter((s) => s.level === "foundation").every((s) => s.content.topics.length >= 4 && s.content.kaam.length > 40 && s.content.journal_prompt.length > 10));
+ok("week review days are 7/14/21 for Tier 1", [7, 14, 21].every((n) => isWeekReviewDay(getSession(n)!)) && ![1, 6, 8].some((n) => isWeekReviewDay(getSession(n)!)));
 ok("every session has a prompt", SESSIONS.every((s) => s.prompts.length > 0));
 ok("fresh learner: session 1 not_started", gate(fresh, getSession(1)!).status === "not_started");
 ok("fresh learner: session 2 locked with reason naming session 1", (() => { const g = gate(fresh, getSession(2)!); return g.status === "locked" && /Session 1/.test(g.reason!) && g.unlockHref === "/learn/session/1"; })());
-ok("fresh learner: session 21 locked by level", /Foundation certificate/.test(gate(fresh, getSession(21)!).reason!));
+ok("fresh learner: session 22 locked by level", /Tier 1 · Basic certificate/.test(gate(fresh, getSession(22)!).reason!));
 ok("fresh learner: next session is 1", nextSession(fresh)?.number === 1);
 const s1 = { ...fresh, sessions: { 1: done } };
 ok("after S1: S2 not_started, S3 locked", gate(s1, getSession(2)!).status === "not_started" && gate(s1, getSession(3)!).status === "locked");
 const half = { ...fresh, sessions: { 1: done, 2: { ...done, journal_saved: false } } };
 ok("quiz-only S2 is in_progress; S3 reason says journal", gate(half, getSession(2)!).status === "in_progress" && /journal/.test(gate(half, getSession(3)!).reason!));
-ok("week pct after S1 = 20", weekPct(s1, "foundation", 1) === 20);
-const allF: LearnerState = { ...fresh, sessions: Object.fromEntries(Array.from({ length: 20 }, (_, i) => [i + 1, done])) };
-ok("all Foundation done but no certificate: S21 still locked", gate(allF, getSession(21)!).status === "locked" && !levelOpen(allF, "intermediate"));
-ok("with Foundation certificate: S21 not_started", gate({ ...allF, certificates: ["foundation"] }, getSession(21)!).status === "not_started");
+ok("week pct after S1 = 14 (1 of 7)", weekPct(s1, "foundation", 1) === 14);
+const allF: LearnerState = { ...fresh, sessions: Object.fromEntries(Array.from({ length: 21 }, (_, i) => [i + 1, done])) };
+ok("all Tier 1 done but no certificate: S22 still locked", gate(allF, getSession(22)!).status === "locked" && !levelOpen(allF, "intermediate"));
+ok("with Tier 1 certificate: S22 locked only because it is unpublished (Tier 2 content pending)", gate({ ...allF, certificates: ["foundation"] }, getSession(22)!).reason === "Not published yet.");
 ok("admin override opens Intermediate without certificate", levelOpen({ ...fresh, overrides: ["intermediate"] }, "intermediate"));
 ok("Advanced needs Intermediate certificate, not Foundation", !levelOpen({ ...fresh, certificates: ["foundation"] }, "advanced") && levelOpen({ ...fresh, certificates: ["intermediate"] }, "advanced"));
 ok("suspended: everything locked", gate({ ...allF, suspended: true }, getSession(1)!).status === "locked");

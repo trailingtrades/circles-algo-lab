@@ -2,7 +2,7 @@ export const dynamic = "force-dynamic";
 import Link from "next/link";
 import { loadLearnerState } from "@/lib/progress/load";
 import { gate, nextSession, weekPct, isComplete, stateOf } from "@/lib/progress/gating";
-import { SESSIONS, WEEKS, weekOf, levelOf } from "@/lib/content/course";
+import { SESSIONS, WEEKS, weekOf, levelOf, dayLabel, examForWeek, examKey } from "@/lib/content/course";
 import { getViewer } from "@/lib/supabase/server";
 import { supabaseConfigured } from "@/lib/supabase/env";
 import { ProgressRing } from "@/components/ui/ProgressRing";
@@ -21,6 +21,7 @@ export default async function HomePage() {
   const focus = next ?? SESSIONS[SESSIONS.length - 1];
   const week = weekOf(focus); const level = levelOf(focus.level);
   const doneCount = SESSIONS.filter((s) => isComplete(stateOf(state, s.number))).length;
+  const nextExam = examForWeek(focus.level, week.number);
   const weekSessions = SESSIONS.filter((s) => s.level === focus.level && s.week === focus.week);
   const name = v?.full_name?.split(" ")[0] || (demo ? "Priya" : "");
   return (
@@ -31,14 +32,14 @@ export default async function HomePage() {
 
       <div className="lrn-grid mt-4">
         <section className="col-card" aria-labelledby="today">
-          <div className="flex items-center justify-between gap-2 mb-2"><span className="col-eyebrow">{t("todayTask")}</span><span className="col-chip"><Clock size={14} strokeWidth={1.75} aria-hidden />Day {focus.day}</span></div>
+          <div className="flex items-center justify-between gap-2 mb-2"><span className="col-eyebrow">{t("todayTask")}</span><span className="col-chip"><Clock size={14} strokeWidth={1.75} aria-hidden />{dayLabel(focus)}</span></div>
           <h2 id="today" className="lrn-session__title">Session {focus.number} · {lang === "hi" ? focus.title_hi : focus.title_en}</h2>
           <p className="lrn-session__sub">{next ? (lang === "hi" ? "Quiz submit kijiye aur journal mein ek line likhiye. Aaj ke liye itna kaafi hai." : "Submit the quiz and save one journal line. That is enough for today.") : (lang === "hi" ? "Saare sessions poore. Certificate page dekhiye." : "All sessions complete. Check the certificate page.")}</p>
           <Link href={`/learn/session/${focus.number}`} className="col-btn col-btn--primary mt-3">Open session <ArrowRight size={16} aria-hidden /></Link>
         </section>
         <section className="col-card" aria-label="Sessions complete">
           <span className="col-eyebrow">Sessions complete</span>
-          <p className="lrn-num" style={{ fontSize: 40, fontWeight: 600, margin: "4px 0" }}>{doneCount} <span style={{ fontSize: 14, fontWeight: 500 }}>/ 60</span></p>
+          <p className="lrn-num" style={{ fontSize: 40, fontWeight: 600, margin: "4px 0" }}>{doneCount} <span style={{ fontSize: 14, fontWeight: 500 }}>/ {SESSIONS.length}</span></p>
           <p className="lrn-session__sub">{t("streakBody")}</p>
         </section>
         <section className="col-card" aria-label={t("weekProgress")}>
@@ -56,8 +57,8 @@ export default async function HomePage() {
         </section>
         <section className="col-card" aria-label={t("nextDeadline")}>
           <span className="col-eyebrow">{t("nextDeadline")}</span>
-          <p className="lrn-session__title mt-2"><Calendar size={16} aria-hidden /> {level.title_en} Week {week.number} exam</p>
-          <Link href={`/learn/exam/${focus.level}-w${Math.min(week.number, 3)}`} className="col-btn col-btn--ghost col-btn--sm mt-2">Open exam</Link>
+          <p className="lrn-session__title mt-2"><Calendar size={16} aria-hidden /> {nextExam?.title ?? `${level.title_en} exam`}</p>
+          <Link href={`/learn/exam/${nextExam ? examKey(nextExam) : `${focus.level}-final`}`} className="col-btn col-btn--ghost col-btn--sm mt-2">Open exam</Link>
         </section>
         <section className="col-card" aria-label={t("journalPrompt")}>
           <span className="col-eyebrow">{t("journalPrompt")}</span>

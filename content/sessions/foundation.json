@@ -4,23 +4,58 @@
   "level": "foundation",
   "week": 1,
   "day": 1,
-  "title_en": "Why the market exists",
-  "title_hi": "Bazaar kyun hai",
-  "core_concept": "R-C-D-T-F",
-  "ai_lab": "Master prompt: setup",
-  "psychology": "Curiosity vs FOMO",
-  "duration_min": 60,
+  "course_day": 1,
+  "title_en": "Kick-off: how the market actually runs",
+  "title_hi": "Kick-off: Market Kaise Chalta Hai",
+  "core_concept": "Market structure",
+  "ai_lab": "Trading Personality quiz",
+  "psychology": "Beginner's overconfidence",
+  "strategy": null,
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: R-C-D-T-F. AI Lab mein Master prompt: setup. Psychology angle: Curiosity vs FOMO.",
+  "draft": false,
+  "summary_hi": "Aap market ka structure aur apna trading temperament jaan jaoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "NSE, BSE aur index kya hai",
+     "p": "NSE aur BSE do exchanges hain jahan shares ka lena-dena hota hai. NIFTY 50 NSE ke top 50 companies ka ek basket hai, SENSEX BSE ke 30 ka. Index ek thermometer hai: poora market garam hai ya thanda, ek number mein. BANKNIFTY sirf banks ka thermometer hai. Aap index ko seedha nahi kharid sakte, uske derivatives ya index funds hote hain."
+    },
+    {
+     "h": "Market mein kaun khel raha hai",
+     "p": "Teen bade players: FII (videshi institutions), DII (desi mutual funds, insurance), aur retail yaani aap. FII/DII ka paisa bada hai, isliye unka flow trend banata hai. Retail volume mein bada hai lekin paisa chhota, aur aksar sabse late aata hai. Yeh jaanna zaroori hai, kyunki aap kis ke against khel rahe ho, yeh samajhna pehla step hai."
+    },
+    {
+     "h": "Order types: market, limit, SL, GTT",
+     "p": "Market order: abhi, jo bhi price mile. Limit order: is price ya behtar par hi. Stop-loss (SL) order: agar price yahan tak gire to bech do. GTT: ek order jo dinon tak wait karta hai. Beginner ki sabse badi galti market order lagana jab stock illiquid ho, price kahin aur fill ho jaata hai."
+    },
+    {
+     "h": "'SEBI-registered' ka asli matlab",
+     "p": "SEBI registration ka matlab hai ki entity regulator ke rules follow karti hai, disclosures deti hai, aur complaint ka rasta hai. Iska matlab yeh bilkul nahi ki returns milenge. Koi bhi registered ya unregistered insaan jo return ka vada kare, wahi red flag hai. 5 Circles ka Reg. No. INH000020004 har screen par hai taaki aap verify kar sako."
+    },
+    {
+     "h": "Aaj se rule: paisa baad mein, samajh pehle",
+     "p": "Is course mein real paisa kabhi mandatory nahi hai. Poore 21 din paper-trade challenge chalta hai, virtual paise se, apne hi broker app ya Google Sheet mein. Leaderboard rule-adherence par hai, P&L par nahi. Jo rules follow karta hai woh jeet-ta hai, chahe uska paper P&L negative ho."
+    }
+   ],
+   "kaam": "Apne broker app mein 10-stock watchlist banao (koi bhi 10, jo naam aap jaante ho) aur NIFTY 50 index add karo. Phir neeche AI Lab wala 'Trading Personality' prompt chalao aur result (scalper / swing / investor) journal mein likho.",
+   "outcome": "Aap market ka structure aur apna trading temperament jaan jaoge.",
+   "tools": [
+    "Koi bhi broker app",
+    "Claude ya koi bhi LLM"
+   ],
+   "fun": "Trading Personality quiz: cohort mein kitne scalper nikle, kitne investor. Result Day 13 par dobara khulega.",
+   "compliance": "Educational content only. SEBI registration and NISM certification are not a promise of performance. AI-usage disclosure line is DRAFT pending Compliance Officer sign-off.",
+   "journal_prompt": "Mera Trading Personality result kya aaya, aur main isse agree karta hoon ya nahi? Ek line mein kyun."
+  },
   "prompts": [
    {
-    "title": "Master prompt: setup",
+    "title": "Trading Personality quiz",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 1 · Why the market exists · Concept: R-C-D-T-F\nTask: Master prompt: setup\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are a neutral trading-temperament interviewer. Ask me 8 short multiple-choice questions, one at a time, about: time I can give to markets daily, how I react to a 5% loss, patience with a 3-month holding, need for daily action, comfort with rules, and screen-time habits. After my answers, classify me as Scalper / Intraday / Swing / Positional / Investor with a 3-line reason, list 2 risks of my temperament, and end with 3 questions I should answer myself. Do not suggest any stock, strategy or return expectation."
    }
   ]
  },
@@ -29,23 +64,58 @@
   "level": "foundation",
   "week": 1,
   "day": 2,
-  "title_en": "What a share really is",
-  "title_hi": "Share asli mein kya hai",
-  "core_concept": "Full Why",
-  "ai_lab": "5 AI patterns",
-  "psychology": "Ownership mindset",
-  "duration_min": 60,
+  "course_day": 2,
+  "title_en": "Trader vs gambler: the maths most people never see",
+  "title_hi": "Trader vs Gambler: Math Jo Zyadatar Nahi Jaante",
+  "core_concept": "Expectancy",
+  "ai_lab": "Coin-flip simulation",
+  "psychology": "Tips ka lalach",
+  "strategy": null,
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: Full Why. AI Lab mein 5 AI patterns. Psychology angle: Ownership mindset.",
+  "draft": false,
+  "summary_hi": "Aap samjhoge ki edge = expectancy, tips nahi.",
+  "content": {
+   "topics": [
+    {
+     "h": "SEBI ka data: asli number",
+     "p": "SEBI FY26 study (Aug 2026) ke mutabik 87.7% individual F&O traders net loss mein rahe. Kul net loss lagbhag Rs 91,685 crore, aur har loss-making trader ka average nuksaan Rs 1.17 lakh. Yeh number is course mein sirf ek source se aata hai: SEBI FY26 study, Aug 2026. Koi purana ya sunaa-sunaya figure nahi."
+    },
+    {
+     "h": "Expectancy: ek trade ka average",
+     "p": "Expectancy = (win-rate x average jeet) minus (loss-rate x average haar). Agar 100 trades ke baad yeh number positive hai, aapke paas edge hai. Negative hai to aap gamble kar rahe ho, chahe kitne bhi trades jeeto. Tips-channel kabhi expectancy nahi batata, sirf jeeti hui calls dikhata hai."
+    },
+    {
+     "h": "Win-rate vs payoff: dono chahiye",
+     "p": "55% win-rate aur 1:1.5 risk-reward, dono saath mein positive expectancy dete hain. 80% win-rate lekin 1:0.3 payoff (chhoti jeet, badi haar) negative ho sakta hai. Isliye 'meri 8 mein se 7 call sahi' sunke impress mat ho, poochho ki haari hui 1 call mein kitna gaya."
+    },
+    {
+     "h": "R-multiple: har trade ko ek unit mein napo",
+     "p": "R = aapka planned risk per trade. Agar SL Rs 500 door hai, to 1R = Rs 500. Jeet Rs 1,000 hui to +2R, haar Rs 500 hui to -1R. R mein sochne se rupee ka emotion nikal jaata hai aur strategy compare karna aasan ho jaata hai. Journal mein aaj se har trade R mein likhna hai."
+    },
+    {
+     "h": "Risk-of-ruin: kab khel khatam",
+     "p": "Agar aap har trade mein capital ka 10% risk karte ho, to 7 lagataar haar (jo normal hai) aapka 52% capital uda degi. 1% risk par wahi 7 haar sirf 7% legi. Risk-of-ruin ka matlab hai woh probability jisme aap dobara khel hi nahi paoge. Chhota risk aapko game mein rakhta hai, yahi asli edge ka pehla hissa hai."
+    }
+   ],
+   "kaam": "Google Sheets mein 100-trade coin-flip simulation banao (AI Lab prompt se formula lo): 55% win-rate, 1:1.5 RR, 1% risk. Equity curve dekho. Phir wahi sheet 10% risk par chalao aur dono screenshots journal mein compare karo.",
+   "outcome": "Aap samjhoge ki edge = expectancy, tips nahi.",
+   "tools": [
+    "Google Sheets template",
+    "Claude ya koi bhi LLM"
+   ],
+   "fun": "Live 'Coin-Flip Casino' game: class mein 20 flips, sab ek hi coin par bet karte hain, lekin alag-alag risk size ke saath. Dekho kaun bachta hai.",
+   "compliance": "Statistic cited with source: SEBI FY26 study (Aug 2026). No return language. Simulation is educational, not a strategy.",
+   "journal_prompt": "1% risk aur 10% risk ki equity curve mein sabse bada fark kya dikha? Ek line: main aage kaunsa risk rakhunga aur kyun."
+  },
   "prompts": [
    {
-    "title": "5 AI patterns",
+    "title": "Coin-flip expectancy sheet",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 2 · What a share really is · Concept: Full Why\nTask: 5 AI patterns\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "Act as a spreadsheet tutor. Give me Google Sheets formulas for a 100-row trade simulation with these inputs in cells: starting capital, win-rate (default 55%), reward-to-risk (default 1.5), risk per trade as % of capital (default 1%). Each row: random outcome using RAND(), P&L in rupees, running equity. Then explain in 5 lines how to read the equity curve, and what changes if risk per trade becomes 10%. Do not recommend any real strategy or promise any result; this is a teaching simulation."
    }
   ]
  },
@@ -54,23 +124,69 @@
   "level": "foundation",
   "week": 1,
   "day": 3,
-  "title_en": "Teen Batti: Fact, Guess, Kachra",
-  "title_hi": "Teen batti",
-  "core_concept": "Fact/Guess/Kachra",
-  "ai_lab": "LOOT-scan",
-  "psychology": "Confirmation bias",
-  "duration_min": 60,
+  "course_day": 3,
+  "title_en": "Make AI your trading co-pilot (Level 0)",
+  "title_hi": "AI Ko Trading Co-Pilot Banao (Level 0)",
+  "core_concept": "Verify before trust",
+  "ai_lab": "Three starter prompts",
+  "psychology": "Automation bias",
+  "strategy": null,
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: Fact/Guess/Kachra. AI Lab mein LOOT-scan. Psychology angle: Confirmation bias.",
+  "draft": false,
+  "summary_hi": "Aap AI ko blindly follow nahi, verify karke use karoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "AI kya kar sakta hai, kya nahi",
+     "p": "Claude ya koi bhi LLM text ko samajhne, summarise karne, structure dene, aur checklist banane mein bahut achha hai. Woh future price nahi jaanta, live data nahi dekhta (jab tak aap paste na karo), aur confident galat bhi bol sakta hai. Isliye is course ka rule: AI = analyst, human = trigger. Decision hamesha aapka."
+    },
+    {
+     "h": "Hallucination: confident jhooth",
+     "p": "Hallucination tab hota hai jab AI aisi cheez bataye jo sach lagti hai lekin hai nahi: galat P/E, jhoothi news, na-hone wala circular. Bachne ka tareeka: AI ko sirf woh data do jo aapne verify kiya hai, aur usse bolo ki jo nahi pata woh 'missing' likhe, guess na kare."
+    },
+    {
+     "h": "Prompt structure: context, task, format",
+     "p": "Achha prompt teen hisson ka hota hai. Context: aap kaun ho, kya data hai. Task: exactly kya chahiye. Format: output kaise chahiye (table, 5 bullets, JSON). 'Is stock ka kya lagta hai' bura prompt hai. 'Yeh press release paste kar raha hoon, 3 facts, 2 guesses, 1 risk nikalo' achha prompt hai."
+    },
+    {
+     "h": "Verify-before-trust routine",
+     "p": "Har AI output par teen sawal: (1) Yeh claim kahan se aaya, source hai? (2) Kya main ise 30 second mein khud check kar sakta hoon? (3) Agar yeh galat hua to mera kya nuksaan? Jo claim in teen se nahi guzarta, woh decision mein nahi jaata."
+    },
+    {
+     "h": "AI-usage disclosure",
+     "p": "SEBI ke Research Analyst rules mein AI ke use ka disclosure zaroori hai. 5 Circles ka approved wording Compliance Officer se sign-off ke baad har material par aayega. Aapke liye seedha rule: jab bhi aap kisi ko AI-generated analysis bhejo, saaf likho ki AI ne banaya hai aur aapne verify kiya hai ya nahi."
+    }
+   ],
+   "kaam": "Teen prompts likho aur chalao: (1) apni watchlist ke ek stock ki aaj ki khabar summarise karwao (khabar khud paste karo), (2) RSI ya EMA ko 10-saal ke bachche ke level par explain karwao, (3) apna pre-trade checklist banwao. Har output mein ek galti ya missing cheez dhoondho.",
+   "outcome": "Aap AI ko blindly follow nahi, verify karke use karoge.",
+   "tools": [
+    "Claude (free ya paid), koi bhi LLM chalega"
+   ],
+   "fun": "'AI ne kya galat bola' round: mentor ek AI output dikhata hai jisme 2 planted galtiyan hain. Sabse pehle pakadne wale ko badge.",
+   "compliance": "AI-usage disclosure reinforced. AI output is educational analysis, never advice. Human remains the decision-maker.",
+   "journal_prompt": "Aaj ke teen AI outputs mein sabse convincing galti kaunsi thi, aur aapne use kaise pakda?"
+  },
   "prompts": [
    {
-    "title": "LOOT-scan",
+    "title": "News summariser (verified input only)",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 3 · Teen Batti: Fact, Guess, Kachra · Concept: Fact/Guess/Kachra\nTask: LOOT-scan\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my research analyst; I am the decision-maker. I will paste one news article about a listed Indian company. Return exactly: 3 Facts (each with the sentence from the article it comes from), 2 Guesses (clearly labelled as interpretation), 1 Kachra (any hype or unverifiable claim in the article). If a data point is not in the article, write 'missing'. No price view, no buy/sell language.\n\nArticle:\n<paste here>"
+   },
+   {
+    "title": "Indicator explainer",
+    "level": "foundation",
+    "platform": "any",
+    "body": "Explain the indicator I name below to a complete beginner in 6 short lines: what it measures, how it is calculated in one sentence, one situation where it helps, one situation where it fails, and one common misuse. No trading signals, no 'buy when' rules.\n\nIndicator: <EMA 20 / RSI / VWAP / ATR>"
+   },
+   {
+    "title": "Pre-trade checklist builder",
+    "level": "foundation",
+    "platform": "any",
+    "body": "Build me a 10-item pre-trade checklist for paper trading, ordered by importance, as yes/no questions. Cover: written rule for entry, exit and stop; position size from 1% risk; event calendar check; liquidity check; time-of-day rule; emotional state; journal ready. Keep each item under 12 words. Do not include any specific stock, price or target."
    }
   ]
  },
@@ -79,23 +195,58 @@
   "level": "foundation",
   "week": 1,
   "day": 4,
-  "title_en": "The six-item gate",
-  "title_hi": "Six-item gate",
-  "core_concept": "six-item gate",
-  "ai_lab": "Master prompt v2",
-  "psychology": "Impatience",
-  "duration_min": 60,
+  "course_day": 4,
+  "title_en": "Chart setup and reading charts with AI",
+  "title_hi": "Chart Setup + AI Se Chart Padhwana",
+  "core_concept": "Timeframes",
+  "ai_lab": "Chart screenshot cross-check",
+  "psychology": "Pattern illusion",
+  "strategy": null,
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: six-item gate. AI Lab mein Master prompt v2. Psychology angle: Impatience.",
+  "draft": false,
+  "summary_hi": "Aap chart ko AI se interpret karwa kar cross-check kar paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "Charting tool: koi bhi, free wala",
+     "p": "Aapko naya account nahi chahiye. Broker app ka chart, TradingView ka free chart (sirf charting ke liye), ya Chartink, teeno kaafi hain. Is course mein TradingView paper-trading use nahi hota. Chart sirf dekhne ka tool hai, order aap apne broker mein hi lagate ho."
+    },
+    {
+     "h": "Timeframe: ek candle kitna waqt",
+     "p": "Daily chart par ek candle ek din hai, 15-min chart par 15 minute. Swing trader daily aur weekly dekhta hai, intraday trader 5-min aur 15-min. Sabse badi beginner galti: 5-min chart par swing ka faisla. Pehle bada timeframe (trend), phir chhota (entry). Yeh rule Day 8 ki ORB strategy mein seedha kaam aayega."
+    },
+    {
+     "h": "Chart par kya dekhna hai: sirf teen cheezein",
+     "p": "Price kahan hai (upar ja raha, neeche, ya sideways), volume kya keh raha hai (move ke saath badha ya nahi), aur pichle important levels kahan hain. Baaki sab indicator baad mein. Agar in teen ka jawab nahi de sakte, to indicator bhi nahi bachayega."
+    },
+    {
+     "h": "AI se chart padhwana: screenshot method",
+     "p": "Chart ka screenshot lo, AI ko do, aur poochho: trend kya hai, key levels kahan, volume kya bol raha. AI ka jawab ek draft hai, final nahi. AI screenshot mein exact numbers galat padh sakta hai, aur woh pattern dekh lega jahan koi hai bhi nahi. Isliye aap khud chart par jaake har claim ko tick ya cross karo."
+    },
+    {
+     "h": "Pattern illusion",
+     "p": "Insaan ka dimaag aur AI dono random data mein bhi pattern dhoondh lete hain. 'Yahan head-and-shoulders ban raha hai' aksar wishful thinking hoti hai. Bachav: koi bhi pattern tab tak nahi jab tak uska rule pehle se likha na ho (kya dikhna chahiye, kab invalid hoga)."
+    }
+   ],
+   "kaam": "Apni watchlist ke ek stock ka daily chart screenshot lo, AI ko do, uska analysis lo. Phir chart khud kholo aur AI ke har claim ke aage likho: sahi / galat / verify nahi ho saka. Kam se kam ek galti dhoondni hai.",
+   "outcome": "Aap chart ko AI se interpret karwa kar cross-check kar paoge.",
+   "tools": [
+    "Broker chart / TradingView (sirf charting) / Chartink",
+    "Claude ya koi bhi LLM"
+   ],
+   "fun": null,
+   "compliance": "TradingView paper-trading is not used in this course. Charting tools are for observation only; all orders stay in the student's own broker.",
+   "journal_prompt": "AI ne chart mein kya dekha jo asal mein tha hi nahi? Aur aapne kya dekha jo AI ne miss kiya?"
+  },
   "prompts": [
    {
-    "title": "Master prompt v2",
+    "title": "Chart screenshot cross-check",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 4 · The six-item gate · Concept: six-item gate\nTask: Master prompt v2\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "I am attaching a screenshot of a daily price chart. Describe only what is visible: (1) overall direction over the visible window, (2) two or three price levels where price reversed more than once, (3) whether volume rose or fell on the last big move, (4) anything you cannot read clearly (say 'unclear'). Present each claim as a line I can tick or cross after checking the chart myself. Do not name any pattern unless you also state what would make it invalid. No forecast, no target, no buy/sell."
    }
   ]
  },
@@ -104,73 +255,179 @@
   "level": "foundation",
   "week": 1,
   "day": 5,
-  "title_en": "Friday review: your first week",
-  "title_hi": "Friday review",
-  "core_concept": "1% rule",
-  "ai_lab": "Galti-log prompt",
-  "psychology": "Ownership",
-  "duration_min": 60,
+  "course_day": 5,
+  "title_en": "Candles, trend, support and resistance",
+  "title_hi": "Candles, Trend, Support/Resistance",
+  "core_concept": "Price structure",
+  "ai_lab": "Chart-marking grader",
+  "psychology": "Level ka moh",
+  "strategy": null,
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: 1% rule. AI Lab mein Galti-log prompt. Psychology angle: Ownership.",
+  "draft": false,
+  "summary_hi": "Aap basic price structure confidently padh paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "Candle anatomy",
+     "p": "Ek candle mein chaar numbers: open, high, low, close. Body open aur close ke beech hai, wicks high aur low tak. Lambi body = conviction, lambi wick = rejection. Green/red se zyada important hai ki candle kahan bani: support par lambi neeche wali wick ka matlab alag hai, resistance par wahi wick ka matlab alag."
+    },
+    {
+     "h": "5 patterns jo kaam ke hain",
+     "p": "Sirf paanch yaad rakho: (1) Bullish engulfing, (2) Bearish engulfing, (3) Hammer / pin bar at support, (4) Shooting star at resistance, (5) Inside bar (compression). Baaki 40 naam bhool jao. Har pattern sirf context mein kaam karta hai: level par, trend ke saath, volume ke saath. Akela pattern koi signal nahi hai."
+    },
+    {
+     "h": "Trend: HH/HL aur LH/LL",
+     "p": "Uptrend = higher highs aur higher lows ki series. Downtrend = lower highs aur lower lows. Jab yeh series toot-ti hai, trend par sawal uthta hai. Chart par sirf swing highs aur lows mark karo aur khud dekho, indicator ke bina bhi trend saaf dikhega."
+    },
+    {
+     "h": "Support/Resistance: zones, lines nahi",
+     "p": "Support woh area hai jahan price baar-baar neeche jaane se ruki. Resistance jahan upar jaane se ruki. Yeh ek exact number nahi, ek zone hai. Jitni baar test hua aur jitna volume, utna strong. Jab support toot-ta hai, woh aksar resistance ban jaata hai, aur ulta."
+    },
+    {
+     "h": "Gap types",
+     "p": "Gap tab banta hai jab aaj ka open kal ke range se bahar ho. Common gap: sideways market mein, jaldi bhar jaata hai. Breakaway gap: level ke saath, volume ke saath, trend shuru. Exhaustion gap: lambe trend ke end par, akhri jhatka. Gap ka matlab tab tak nahi jab tak context na dekho."
+    }
+   ],
+   "kaam": "Paanch alag stocks ke daily charts par trend (HH/HL ya LH/LL) aur do-do S/R zones mark karo. Screenshots AI Lab ke grader prompt mein do aur apni marking ko grade karwao. Jahan AI disagree kare, wahan khud dobara dekho.",
+   "outcome": "Aap basic price structure confidently padh paoge.",
+   "tools": [
+    "Chart (koi bhi)",
+    "Claude"
+   ],
+   "fun": "Weekly chart-marking contest shuru: har hafte ek chart, sabki marking cohort vote karta hai. Winner ko 'Level Reader' badge.",
+   "compliance": "No signal is described in certainty language. Patterns are probabilities inside context, never certainties.",
+   "journal_prompt": "Paanch charts mein se kaunsa sabse mushkil tha aur kyun? Support ko zone ki tarah dekhne se kya badla?"
+  },
   "prompts": [
    {
-    "title": "Galti-log prompt",
+    "title": "Chart-marking grader",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 5 · Friday review: your first week · Concept: 1% rule\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "I am attaching a chart on which I have marked the trend (as HH/HL or LH/LL labels) and two support/resistance zones. Grade my marking on: (a) are the swing points I used the obvious ones, (b) are the zones drawn as areas not single lines, (c) did I miss a more-tested level, (d) is my trend label consistent with the swings. Give each a score out of 5 with one sentence, then one thing to redo. Do not add any forecast or trade idea."
    }
   ]
  },
  {
   "number": 6,
   "level": "foundation",
-  "week": 2,
-  "day": 1,
-  "title_en": "How a company makes money",
-  "title_hi": "Company paisa kaise banati hai",
-  "core_concept": "Full Why",
-  "ai_lab": "Annual report reader prompt",
-  "psychology": "Storytelling bias",
-  "duration_min": 60,
+  "week": 1,
+  "day": 6,
+  "course_day": 6,
+  "title_en": "Indicators that work (and the ones that do not)",
+  "title_hi": "Indicators Jo Kaam Ke Hain (aur Jo Nahi)",
+  "core_concept": "Four indicators",
+  "ai_lab": "'Kab use na karein' writer",
+  "psychology": "Indicator overload",
+  "strategy": null,
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: Full Why. AI Lab mein Annual report reader prompt. Psychology angle: Storytelling bias.",
+  "draft": false,
+  "summary_hi": "Aap 4 indicators ka sahi use aur limitations jaan jaoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "EMA 20/50: trend ka filter",
+     "p": "Exponential moving average recent prices ko zyada weight deta hai. 20 EMA short-term, 50 EMA medium-term trend. Jab 20 upar 50 ke, uptrend filter on. Yeh entry signal nahi hai, sirf 'kis taraf trade karna hai' ka filter. Sideways market mein EMA baar-baar cross hoke whipsaw deta hai, tab band kar do."
+    },
+    {
+     "h": "VWAP: intraday ka fair price",
+     "p": "Volume-weighted average price din ka woh average hai jahan sabse zyada volume traded hua. Institutions ise benchmark maante hain. Price VWAP ke upar = buyers control mein, neeche = sellers. Sirf intraday ke liye, daily chart par VWAP ka koi matlab nahi. Day 8 ki ORB strategy mein yeh confirmation ka kaam karega."
+    },
+    {
+     "h": "RSI: momentum, overbought/oversold nahi",
+     "p": "RSI 0 se 100 ke beech momentum napta hai. Sabse bada myth: 70 ke upar bech do, 30 ke neeche kharid lo. Strong trend mein RSI hafton tak 70 ke upar reh sakta hai. Sahi use: uptrend mein RSI 40-50 zone tak pullback = entry area (Day 10 ki EMA Pullback strategy yahi use karti hai)."
+    },
+    {
+     "h": "ATR: kitna hilta hai",
+     "p": "Average True Range batata hai stock din mein average kitna move karta hai. Yeh direction nahi batata, sirf volatility. Iska sabse achha use stop-loss mein hai: SL ko 1.5x ATR door rakho taaki normal noise mein na kate. Position size bhi ATR se nikalti hai. Yeh sabse underrated indicator hai."
+    },
+    {
+     "h": "Indicator-overload trap",
+     "p": "12 indicators wala chart aapko zyada nahi, kam batata hai: sab ek hi price se bane hain, to sab ek saath hi galat hote hain. Rule: chart par sirf 4, EMA 20, EMA 50, VWAP (intraday), RSI, aur ATR SL ke liye. Har indicator ke liye likha hona chahiye 'kab use nahi karna'. Jo indicator yeh nahi bata sakta, woh hatao."
+    }
+   ],
+   "kaam": "Apne chart se sab indicators hatao aur sirf 4 rakho: EMA 20, EMA 50, RSI, ATR (intraday par VWAP bhi). Phir AI Lab prompt se har ek ke liye 'kab use na karein' ki 3 lines likhwao aur unhe apne rule card mein paste karo.",
+   "outcome": "Aap 4 indicators ka sahi use aur limitations jaan jaoge.",
+   "tools": [
+    "Chart (koi bhi)",
+    "Claude"
+   ],
+   "fun": "'Indicator Graveyard': students apne purane 12-indicator charts share karte hain. Sabse bhara hua chart 'Christmas Tree' award jeet-ta hai.",
+   "compliance": null,
+   "journal_prompt": "Kaunsa indicator aapne aaj chart se hataya jo aapko sabse zyada pasand tha, aur woh asal mein kya bata raha tha?"
+  },
   "prompts": [
    {
-    "title": "Annual report reader prompt",
+    "title": "'When NOT to use it' writer",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 6 · How a company makes money · Concept: Full Why\nTask: Annual report reader prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "For each of these four indicators, EMA 20/50, VWAP, RSI, ATR, write exactly three lines under the heading 'When NOT to use it', each naming a market condition where the indicator misleads, and one line on what to look at instead in that condition. Keep it beginner-level and specific to Indian cash equities and index futures. No entry rules, no targets."
    }
   ]
  },
  {
   "number": 7,
   "level": "foundation",
-  "week": 2,
-  "day": 2,
-  "title_en": "Price vs value",
-  "title_hi": "Price aur value alag hain",
-  "core_concept": "\"aaj kharidta?\"",
-  "ai_lab": "Fact/Guess/Kachra sorter",
-  "psychology": "Anchoring",
-  "duration_min": 60,
+  "week": 1,
+  "day": 7,
+  "course_day": 7,
+  "title_en": "Weekend: Quiz Game 1, doubt hour, Shortcut Trap #1",
+  "title_hi": "Weekend: Quiz Game 1 + Doubt Hour + Shortcut Trap #1",
+  "core_concept": "Week 1 recap",
+  "ai_lab": "Tips-channel hit-rate audit",
+  "psychology": "Shortcut mindset",
+  "strategy": null,
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: \"aaj kharidta?\". AI Lab mein Fact/Guess/Kachra sorter. Psychology angle: Anchoring.",
+  "draft": false,
+  "summary_hi": "Aap tips-channel ka real math dekh loge.",
+  "content": {
+   "topics": [
+    {
+     "h": "Week 1 recap: paanch cheezein",
+     "p": "(1) Market structure aur order types. (2) Expectancy aur R-multiple, SEBI FY26 study (Aug 2026): 87.7% F&O traders net loss mein. (3) AI = analyst, human = trigger; verify-before-trust. (4) Timeframes aur chart ki teen cheezein. (5) Candles, HH/HL, S/R zones, aur sirf 4 indicators. Agar in paanch mein se koi ek dhundhla hai, aaj doubt hour mein poochho."
+    },
+    {
+     "h": "Shortcut mindset: fight nahi, redirect",
+     "p": "Shortcut chahiye? Theek hai. Sabse bada shortcut ek tested rule-set aur ek checklist hai. Tips-channel, 'sure' bot, marketplace strategy, yeh sab shortcut lagte hain lekin asal mein sabse lamba rasta hain, kyunki inme aap kabhi seekhte nahi. Aaj hum tips-channel ka math khud nikaalenge, lecture nahi."
+    },
+    {
+     "h": "Tips-channel ka math",
+     "p": "Koi bhi public Telegram/WhatsApp channel lo. Uske pichle 20 public posts (calls) nikaalo. Har call ke liye likho: entry, target, SL, aur kya hua (public chart se). Hit-rate nikaalo, phir R-multiple mein average. Zyadatar channels 'target hit' post karte hain lekin SL-hit delete kar dete hain. Jo channel SL nahi deta, uska hit-rate matlab-heen hai.",
+     "scam_example": true
+    },
+    {
+     "h": "Survivorship: jo dikhta hai woh poora nahi",
+     "p": "Channel sirf jeeti calls screenshot karta hai. Jo channel band ho gaye, unke results kabhi nahi dikhte. Isliye 'is bhai ki 10 mein se 9 call sahi' ka koi matlab nahi jab tak aapko 10 ki 10 na dikhein, SL ke saath. Yahi survivorship bias hai aur yeh har marketplace backtest mein bhi milega (Day 14)."
+    },
+    {
+     "h": "Aaj ka Quiz Game",
+     "p": "Kahoot-style 20 sawal, Week 1 ke topics se. Score leaderboard par jaata hai lekin yaad rakho: leaderboard process ka hai. Quiz mein galat jawab bhi seekhne ka mauka hai. Neeche Week 1 exam bhi khula hai, 30 minute, ek baar mein poora karo."
+    }
+   ],
+   "kaam": "Kisi bhi ek public tips-channel ke 20 purane public posts lo (channel ka naam course mein share mat karo). Sheet banao: call, entry, target, SL diya ya nahi, result. Hit-rate aur average R nikaalo. Sirf number journal mein likho, channel ka naam nahi.",
+   "outcome": "Aap tips-channel ka real math dekh loge.",
+   "tools": [
+    "Quiz tool",
+    "Google Sheets"
+   ],
+   "fun": "Leaderboard Week 1 + badges: 'Level Reader', 'Verify First', 'Coin-Flip Survivor'.",
+   "compliance": "Third-party channels are never named or targeted in class or in journals. The exercise is about the method, not any person or entity.",
+   "journal_prompt": "Aapke audit mein hit-rate kya nikla aur kitni calls mein SL tha hi nahi? Is number ke baad tips par aapka nazariya kya hai?"
+  },
   "prompts": [
    {
-    "title": "Fact/Guess/Kachra sorter",
+    "title": "Hit-rate audit sheet",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 7 · Price vs value · Concept: \"aaj kharidta?\"\nTask: Fact/Guess/Kachra sorter\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "Give me a Google Sheets layout to audit 20 public trading calls: columns for date, instrument, entry, target, stop (or 'not given'), outcome from the public chart, R-multiple, and a note. Add formulas for hit-rate, average R, and share of calls with no stop. Then list 5 questions I should ask about any call sample before trusting its hit-rate (survivorship, deleted posts, no stop, cherry-picked window, unclear entry). Do not evaluate or name any real channel."
    }
   ]
  },
@@ -178,24 +435,60 @@
   "number": 8,
   "level": "foundation",
   "week": 2,
-  "day": 3,
-  "title_en": "Reading a simple P&L",
-  "title_hi": "Simple P&L padhna",
-  "core_concept": "Full Why",
-  "ai_lab": "Statement summariser",
-  "psychology": "Overconfidence",
-  "duration_min": 60,
+  "day": 1,
+  "course_day": 8,
+  "title_en": "Strategy #1: Opening Range Breakout (ORB)",
+  "title_hi": "Strategy #1: Opening Range Breakout (ORB)",
+  "core_concept": "Rule card",
+  "ai_lab": "Pre-trade checklist generator",
+  "psychology": "Breakout FOMO",
+  "strategy": "ORB Intraday",
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: Full Why. AI Lab mein Statement summariser. Psychology angle: Overconfidence.",
+  "draft": false,
+  "summary_hi": "Aapke paas pehli poori rule-based strategy hogi.",
+  "content": {
+   "topics": [
+    {
+     "h": "ORB kya hai",
+     "p": "Opening Range Breakout: market ke pehle 15 minute (9:15 se 9:30) ka high aur low note karo. Yeh opening range hai. Agar price is range ke upar break kare (volume ke saath), long. Neeche break kare, short. Hypothesis: opening ka imbalance trend days par aage chalta hai. Choppy days par yeh fail hota hai, isliye rules sakht hain."
+    },
+    {
+     "h": "Entry rule",
+     "p": "Entry sirf tab jab 5-min candle range ke bahar close kare, sirf wick nahi. Confirmation: price VWAP ke usi taraf ho (long ke liye VWAP ke upar). Instrument: NIFTY/BANKNIFTY futures ka proxy (paper mein) ya liquid cash stocks. Ek din mein maximum ek ORB trade per instrument. Entry ka time window 9:30 se 11:00 tak, uske baad koi nayi entry nahi."
+    },
+    {
+     "h": "Stop-loss aur target",
+     "p": "SL = entry se 1 ATR (15-min) door, ya opening range ke doosre side, jo paas ho. Target = 2R, yaani jitna risk utna do guna. Time-stop: 2:30 pm tak jo bhi ho, position band. Yeh teen exits pehle se likhe hote hain, screen dekhke nahi badalte. Rule card par yeh teen line sabse upar."
+    },
+    {
+     "h": "Rule Card: ek page, koi exception nahi",
+     "p": "Har strategy ka ek one-page Rule Card hota hai: setup, entry, SL, target, time-stop, size (1% rule, Day 11), no-trade days (Day 19). Agar trade rule card se match nahi karta, woh trade nahi hai. Paper-trade challenge mein aapka score isi card ke adherence par hai."
+    },
+    {
+     "h": "Educational strategy, koi claim nahi",
+     "p": "ORB ek seekhne ka framework hai: rule-based sochne ka pehla practice. Iska koi performance claim nahi hai, na course mein, na bahar. Past performance future ka sabut nahi hota, yeh line har backtest ke saath rahegi. Aaj se paper-trade challenge officially shuru."
+    }
+   ],
+   "kaam": "ORB ka one-page Rule Card banao (template: setup, entry, SL, target, time-stop, size, no-trade). Phir AI Lab prompt se pre-trade checklist banwao aur rule card ke neeche paste karo. Kal se yahi card lekar paper-trade karna hai.",
+   "outcome": "Aapke paas pehli poori rule-based strategy hogi.",
+   "tools": [
+    "Chart (15-min + 5-min)",
+    "Claude checklist",
+    "Google Sheets journal"
+   ],
+   "fun": "Paper-Trade Challenge officially shuru. 3 hafte, rule-adherence leaderboard, P&L nahi.",
+   "compliance": "Educational strategy; no performance claim; past performance is not indicative of future results.",
+   "journal_prompt": "Rule card likhte waqt kaunsa rule sabse mushkil laga likhna, aur aapne use exact kaise banaya?"
+  },
   "prompts": [
    {
-    "title": "Statement summariser",
+    "title": "ORB pre-trade checklist",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 8 · Reading a simple P&L · Concept: Full Why\nTask: Statement summariser\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "I will paste my one-page Opening Range Breakout rule card (setup, entry, stop, target, time-stop, size, no-trade days). Convert it into a 12-item yes/no pre-trade checklist in the exact order I would check things between 9:15 and 11:00 IST, including: opening range recorded, 5-minute close outside range, VWAP side agrees, ATR stop computed, 2R target computed, position size from 1% rule, event calendar clear, max-one-trade rule, journal row opened. Flag any rule in my card that is ambiguous and suggest a stricter wording. No performance commentary.\n\nRule card:\n<paste here>"
    }
   ]
  },
@@ -203,24 +496,59 @@
   "number": 9,
   "level": "foundation",
   "week": 2,
-  "day": 4,
-  "title_en": "Investor stories: Kedia to Jhunjhunwala (qualitative)",
-  "title_hi": "Investor stories, sirf soch",
-  "core_concept": "\"aaj kharidta?\"",
-  "ai_lab": "Story extractor prompt",
-  "psychology": "Hero worship",
-  "duration_min": 60,
+  "day": 2,
+  "course_day": 9,
+  "title_en": "Paper-trade day 1 and the AI trade journal",
+  "title_hi": "Paper-Trade Day 1 + Trade Journal via AI",
+  "core_concept": "Journal habit",
+  "ai_lab": "Journal summariser",
+  "psychology": "Emotion tagging",
+  "strategy": "ORB Intraday (practice)",
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: \"aaj kharidta?\". AI Lab mein Story extractor prompt. Psychology angle: Hero worship.",
+  "draft": false,
+  "summary_hi": "Aap journal habit shuru kar doge.",
+  "content": {
+   "topics": [
+    {
+     "h": "Aaj live market ke saath ORB",
+     "p": "9:15 par chart kholo, 9:30 par range likho, checklist haath mein. Trade aaye ya na aaye, dono theek hai. 'No trade' bhi ek result hai aur journal mein jaata hai. Sabse badi jeet aaj yeh hai ki aapne rule card ke bahar kuch nahi kiya."
+    },
+    {
+     "h": "Journal template: 7 columns",
+     "p": "Date, instrument, setup (ORB), entry, SL, exit, R-multiple. Plus do aur: rule toda? (haan/nahi, kaunsa), aur emotion (1 shabd: calm, FOMO, darr, bore). Google Sheets mein hi rakho, koi fancy tool nahi. Har trade ek row, aur 'no trade' din bhi ek row."
+    },
+    {
+     "h": "Emotion tag kyun",
+     "p": "Do hafte baad aap dekhoge ki aapke sabse bure trades ek hi emotion ke saath aate hain. Zyadatar logon ke liye woh 'FOMO' ya 'revenge' hota hai. Emotion ko naam dena pehla step hai use pakadne ka. Yeh Day 20 ki psychology session ka data banega."
+    },
+    {
+     "h": "AI se journal summarise karwana",
+     "p": "Hafte ke end par apni journal sheet AI ko do aur poochho: kaunse rule sabse zyada toote, kis emotion ke saath, kis time par. AI pattern dhoondhne mein achha hai. Lekin AI se yeh mat poochho ki strategy badlo ya nahi, woh faisla 30 trades ke baad aapka hai."
+    },
+    {
+     "h": "Daily leaderboard: rule-adherence score",
+     "p": "Har trade par: rule follow = 1 point, tod diya = 0, 'no trade jab setup nahi tha' = 1 point. Din ka score = total / trades. Leaderboard is score par hai. Paper P&L dikhaya bhi nahi jaata. Jo insaan 3 hafte 100% adherence rakhe, uska nuksaan bhi seekh hai."
+    }
+   ],
+   "kaam": "Aaj ke ORB paper trades (ya 'no trade' entry) journal mein bharo, emotion tag ke saath. Phir AI Lab prompt se journal summarise karwao aur poochho 'aaj kaunsa rule toda'. Jawab ko journal ke neeche ek line mein likho.",
+   "outcome": "Aap journal habit shuru kar doge.",
+   "tools": [
+    "Google Sheets journal",
+    "Claude"
+   ],
+   "fun": "Daily leaderboard shuru: rule-adherence score, P&L nahi.",
+   "compliance": "Leaderboard ranks rule adherence, never returns.",
+   "journal_prompt": "Aaj ka rule-adherence score kya tha? Agar koi rule toota, to us waqt emotion kya tha?"
+  },
   "prompts": [
    {
-    "title": "Story extractor prompt",
+    "title": "Journal summariser",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 9 · Investor stories: Kedia to Jhunjhunwala (qualitative) · Concept: \"aaj kharidta?\"\nTask: Story extractor prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "I will paste rows from my paper-trade journal (date, instrument, setup, entry, stop, exit, R, rule broken?, emotion). Summarise in this order: (1) count of trades and no-trade days, (2) which rules were broken and how often, (3) which emotion tags co-occur with broken rules, (4) time-of-day when rules broke, (5) three questions I should ask myself. Do not comment on P&L, do not suggest changing the strategy, do not add any market view.\n\nJournal rows:\n<paste here>"
    }
   ]
  },
@@ -228,124 +556,300 @@
   "number": 10,
   "level": "foundation",
   "week": 2,
-  "day": 5,
-  "title_en": "Friday review: week 2",
-  "title_hi": "Friday review",
-  "core_concept": "1% rule",
-  "ai_lab": "Galti-log prompt",
-  "psychology": "Discipline nahi, design",
-  "duration_min": 60,
+  "day": 3,
+  "course_day": 10,
+  "title_en": "Strategy #2: EMA Pullback Swing (20/50 + RSI)",
+  "title_hi": "Strategy #2: EMA Pullback Swing (20/50 + RSI)",
+  "core_concept": "Screener conditions",
+  "ai_lab": "Chartink condition writer",
+  "psychology": "Patience",
+  "strategy": "EMA Pullback Swing",
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: 1% rule. AI Lab mein Galti-log prompt. Psychology angle: Discipline nahi, design.",
+  "draft": false,
+  "summary_hi": "Aapke paas pehla no-code screener + swing strategy hogi.",
+  "content": {
+   "topics": [
+    {
+     "h": "Setup: uptrend filter",
+     "p": "Daily chart par 20 EMA upar 50 EMA ke, aur dono upar ki taraf. Yeh filter hai: sirf in stocks ko dekho. Universe: NIFTY 500 ke cash stocks, liquid (daily turnover ka minimum rakho). Downtrend stocks par yeh strategy nahi chalti, chahe woh kitne bhi 'sasta' lage."
+    },
+    {
+     "h": "Entry: pullback to 20 EMA, RSI 40-50",
+     "p": "Uptrend mein price wapas 20 EMA ke paas aaye (touch ya thoda neeche), aur RSI(14) 40-50 zone mein ho. Entry jab ek daily candle wapas upar close kare (bullish close, ideally Day 5 wale patterns mein se koi). Yeh 'sasta kharido' nahi hai, yeh 'trend mein thodi saans lete waqt kharido' hai."
+    },
+    {
+     "h": "SL aur target",
+     "p": "SL = pullback ka swing low se thoda neeche. Target = 2.5R. Holding: 3 se 15 din. Agar 15 din mein target nahi aaya, review karo, exit ya trail. Position size Day 11 ke formula se. Ek waqt par maximum 5 open swing positions (paper mein bhi)."
+    },
+    {
+     "h": "Algo Level 1 shuru: screener",
+     "p": "Aaj se algo ladder ka pehla step: apne rules ko machine-readable banana. Chartink (free) par screener banao jisme yeh conditions hon: 20 EMA > 50 EMA, close 20 EMA ke 2% ke andar, RSI 40 se 50. Yeh koi order nahi lagata, sirf list deta hai. Screener = aapki aankhein, trigger = aap."
+    },
+    {
+     "h": "AI se condition likhwana, khud verify",
+     "p": "Chartink ki condition language thodi alag hai. AI Lab prompt se draft likhwao, phir Chartink mein daal ke dekho ki list samajh aati hai. Agar list mein downtrend stocks aa rahe hain, condition galat hai. Screener ki output ko 5 charts par manually verify karna zaroori hai."
+    }
+   ],
+   "kaam": "Chartink par EMA Pullback screener banao (AI se condition ka draft lo, khud paste aur fix karo). Aaj ki output list mein se 5 charts kholo aur verify karo ki setup sach mein hai. Screener ka link/screenshot journal mein.",
+   "outcome": "Aapke paas pehla no-code screener + swing strategy hogi.",
+   "tools": [
+    "Chartink (free)",
+    "Claude",
+    "Daily chart"
+   ],
+   "fun": "'Screener Race': kiska screener sabse clean list deta hai. Cohort 5 random stocks verify karta hai.",
+   "compliance": null,
+   "journal_prompt": "Screener ki pehli list mein kitne stocks asli setup the aur kitne galat aaye? Condition mein kya fix kiya?"
+  },
   "prompts": [
    {
-    "title": "Galti-log prompt",
+    "title": "Chartink condition writer",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 10 · Friday review: week 2 · Concept: 1% rule\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "Write a Chartink screener condition for Indian cash equities, daily timeframe, that returns stocks where: 20-day EMA is above 50-day EMA; both EMAs are higher than 5 days ago; latest close is within 2% of the 20-day EMA; RSI(14) is between 40 and 50; average daily volume over 20 days is above a threshold I will set. Give the condition in Chartink's syntax, then explain each clause in one line so I can verify it, and list 2 ways a wrong clause would show up in the output (for example downtrend stocks appearing). No stock names, no performance claims."
    }
   ]
  },
  {
   "number": 11,
   "level": "foundation",
-  "week": 3,
-  "day": 1,
-  "title_en": "Risk per trade and the 1% rule",
-  "title_hi": "1% rule",
+  "week": 2,
+  "day": 4,
+  "course_day": 11,
+  "title_en": "Risk management: the 1% rule and position sizing",
+  "title_hi": "Risk Management: 1% Rule aur Position Sizing",
   "core_concept": "1% rule",
-  "ai_lab": "Position size calculator prompt",
-  "psychology": "Loss aversion",
-  "duration_min": 60,
+  "ai_lab": "Sizing calculator sheet",
+  "psychology": "Size ka lalach",
+  "strategy": null,
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: 1% rule. AI Lab mein Position size calculator prompt. Psychology angle: Loss aversion.",
+  "draft": false,
+  "summary_hi": "Aap size formula se decide karoge, feeling se nahi.",
+  "content": {
+   "topics": [
+    {
+     "h": "1% rule: ek trade, ek percent",
+     "p": "Ek trade mein capital ka 1% se zyada risk nahi. Rs 5 lakh capital par ek trade ka max loss Rs 5,000. Yeh loss nahi, planned risk hai: agar SL hit ho to itna jaayega, bas. Day 2 ka risk-of-ruin yaad karo: 1% par aap 20 lagataar haar ke baad bhi 82% capital ke saath khade ho."
+    },
+    {
+     "h": "Position size ka formula",
+     "p": "Size (shares) = (Capital x 1%) / (Entry minus SL). Example: capital Rs 5 lakh, entry Rs 500, SL Rs 480. Risk per share Rs 20. Size = 5,000 / 20 = 250 shares. Yeh formula har trade se pehle chalta hai, feeling se size kabhi nahi. Formula pehle SL maangta hai, isliye bina SL trade ho hi nahi sakta."
+    },
+    {
+     "h": "SL ke types",
+     "p": "Price-stop: ek exact level (swing low, ATR-based). Time-stop: itne din/ghante mein kuch nahi hua to exit (ORB ka 2:30). Why-stop: jis wajah se liya tha woh wajah khatam (trend filter toot gaya). Har trade mein kam se kam price-stop aur ek aur. Bracket/cover orders broker mein SL ko automatic bana dete hain, use karo."
+    },
+    {
+     "h": "Max daily loss aur kill-switch",
+     "p": "Din ka max loss: 2R ya 2% capital, jo pehle aaye. Hit hua to screen band, koi 'recover' trade nahi. Yeh insaan ka kill-switch hai, Day 20 par isko routine banayenge. Hafte ka max loss bhi likho: 5R. Yeh numbers rule card par hote hain, dimaag mein nahi."
+    },
+    {
+     "h": "Leverage ka sach",
+     "p": "Leverage size badhata hai, edge nahi. 5x leverage par 1% rule ka matlab yeh nahi ki 5% risk karo; matlab wahi 1% hai, bas kam margin lagta hai. Zyadatar F&O loss (SEBI FY26 study, Aug 2026: 87.7% traders net loss mein) leverage se size badhane ka nateeja hai, strategy ka nahi."
+    }
+   ],
+   "kaam": "Google Sheets mein sizing calculator banao (inputs: capital, risk %, entry, SL; output: shares, rupee risk, R). Phir apne ab tak ke paper trades ko is formula se re-size karo aur dekho kitne oversized the.",
+   "outcome": "Aap size formula se decide karoge, feeling se nahi.",
+   "tools": [
+    "Google Sheets calculator"
+   ],
+   "fun": null,
+   "compliance": "Leverage is explained as a risk multiplier, not an opportunity. Statistic cited: SEBI FY26 study (Aug 2026).",
+   "journal_prompt": "Re-size karne ke baad aapke kitne paper trades oversized nikle? Sabse bada size kis emotion ke saath aaya tha?"
+  },
   "prompts": [
    {
-    "title": "Position size calculator prompt",
+    "title": "Sizing calculator sheet",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 11 · Risk per trade and the 1% rule · Concept: 1% rule\nTask: Position size calculator prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "Give me Google Sheets formulas for a position-size calculator: inputs capital, risk per trade (%), entry price, stop price, lot size (default 1 for cash equity). Outputs: rupee risk allowed, risk per share, shares to buy (rounded down to lot multiple), rupee value of the position, position as % of capital, and a warning cell that says 'OVERSIZED' if position value exceeds 25% of capital. Then explain in 3 lines why leverage does not change the risk-per-trade rule. No strategy or stock advice."
    }
   ]
  },
  {
   "number": 12,
   "level": "foundation",
-  "week": 3,
-  "day": 2,
-  "title_en": "Price-stop and Why-stop",
-  "title_hi": "Price-stop / Why-stop",
-  "core_concept": "price-stop / Why-stop",
-  "ai_lab": "Stop-logic checker",
-  "psychology": "Hope trading",
-  "duration_min": 60,
+  "week": 2,
+  "day": 5,
+  "course_day": 12,
+  "title_en": "Fundamental health-check with AI (one day)",
+  "title_hi": "Fundamental Health-Check via AI (1 Din)",
+  "core_concept": "5-check health filter",
+  "ai_lab": "Health-check prompt",
+  "psychology": "Story bias",
+  "strategy": null,
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: price-stop / Why-stop. AI Lab mein Stop-logic checker. Psychology angle: Hope trading.",
+  "draft": false,
+  "summary_hi": "Aap swing candidates ko fundamentally filter kar paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "Is course mein fundamentals ka role",
+     "p": "Fundamental analysis yahan sirf stock-selection filter hai: swing watchlist se kamzor companies hatao. DCF, fair value, target price, yeh sab is course mein nahi hain, alag Investing track ke liye hain. Aaj ka goal: 5 minute mein ek company ka health-check, red flags ke saath."
+    },
+    {
+     "h": "Check 1-2: revenue growth aur margins",
+     "p": "screener.in par company kholo. Revenue 3 saal mein badha ya ghata? Operating margin stable hai ya gir raha? Girta margin ke saath badhta revenue aksar 'growth khareed rahe hain' ka sign hai. Aapko number yaad nahi rakhne, sirf direction dekhni hai: upar, flat, neeche."
+    },
+    {
+     "h": "Check 3: debt",
+     "p": "Debt-to-equity dekho aur interest coverage. Bahut zyada debt wali company mein swing trade ka risk alag hota hai: ek bura quarter, rating cut, aur gap-down. Banks/NBFC ke liye yeh metric alag padhna padta hai, unhe aaj skip karo."
+    },
+    {
+     "h": "Check 4: promoter holding aur pledge",
+     "p": "Promoter holding gir rahi hai? Pledge zyada hai? Pledged shares ka matlab: promoter ne apne shares girvi rakhe hain. Price gire to lender bechta hai, aur gir-aawat aur badhti hai. High pledge = swing watchlist se bahar, chahe chart kitna bhi achha ho."
+    },
+    {
+     "h": "Check 5: cash flow",
+     "p": "Profit aur operating cash flow saath chalte hain ya nahi? Agar profit hai lekin cash nahi aa raha, sawal hai. AI se in paanch checks ka summary lo, lekin har number screener.in par khud verify karo. AI purana ya galat number bata sakta hai. Red flag mile to journal mein likho aur stock watchlist se hatao."
+    }
+   ],
+   "kaam": "Apni swing watchlist ke 5 stocks ka 5-check health-check karo: screener.in se numbers lo, AI Lab prompt mein paste karo, red flags note karo. Jo stock 2+ red flags de, use watchlist se hatao aur journal mein wajah likho.",
+   "outcome": "Aap swing candidates ko fundamentally filter kar paoge.",
+   "tools": [
+    "screener.in (free)",
+    "Claude"
+   ],
+   "fun": null,
+   "compliance": "No fair value, target or 'undervalued' language. This is a filter, not a valuation.",
+   "journal_prompt": "Kaunsa stock aapne watchlist se hataya aur kaunse do red flags the? Kya chart usse alag kahani keh raha tha?"
+  },
   "prompts": [
    {
-    "title": "Stop-logic checker",
+    "title": "5-check health-check",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 12 · Price-stop and Why-stop · Concept: price-stop / Why-stop\nTask: Stop-logic checker\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "I will paste numbers I copied from a public financial data page for one listed Indian company: 3-year revenue, operating margin by year, debt-to-equity, interest coverage, promoter holding trend, promoter pledge %, net profit vs operating cash flow for 3 years. For each of the 5 checks (growth, margins, debt, promoter/pledge, cash flow) give: direction (better / flat / worse), one-line reason from the pasted numbers only, and a red-flag Yes/No. Then count red flags. If a number is missing, write 'missing'. Do not give a valuation, fair value, target, or any buy/sell view.\n\nNumbers:\n<paste here>"
    }
   ]
  },
  {
   "number": 13,
   "level": "foundation",
-  "week": 3,
-  "day": 3,
-  "title_en": "The 50% trap",
-  "title_hi": "50% trap",
-  "core_concept": "50% trap",
-  "ai_lab": "Drawdown maths prompt",
-  "psychology": "Revenge trading",
-  "duration_min": 60,
+  "week": 2,
+  "day": 6,
+  "course_day": 13,
+  "title_en": "Intraday vs swing vs positional: what fits you?",
+  "title_hi": "Intraday vs Swing vs Positional: Aapke Liye Kya?",
+  "core_concept": "Style fit",
+  "ai_lab": "Scalping cost calculator",
+  "psychology": "Honest self-assessment",
+  "strategy": null,
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: 50% trap. AI Lab mein Drawdown maths prompt. Psychology angle: Revenge trading.",
+  "draft": false,
+  "summary_hi": "Aap honestly apna trading style choose kar paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "Chaar styles, chaar zindagi",
+     "p": "Scalping: minutes, poora din screen, cost sabse zyada. Intraday: ghante, subah 9:15 se 2:30 free chahiye (ORB). Swing: din-hafte, roz 20 minute (EMA Pullback). Positional: hafte-mahine, hafte mein ek review. Style aapke time, capital, aur temperament se decide hota hai, YouTube se nahi."
+    },
+    {
+     "h": "Cost ka sach: scalping ka math",
+     "p": "Har trade par brokerage, STT, exchange charges, GST, stamp duty, aur slippage lagti hai. Actual rates aapke broker ke contract note se lo (course mein rates print nahi hote, badalte rehte hain). Din mein 20 trades ka matlab 40 baar cost. Zyadatar scalpers cost ki wajah se haarte hain, strategy ki wajah se nahi."
+    },
+    {
+     "h": "Style Fit scorecard",
+     "p": "Paanch sawal, 1-5 score: (1) Roz kitna free time market hours mein? (2) Ek trade ka loss raat ki neend kharab karta hai? (3) Capital kitna (chhota capital + high cost = intraday mushkil)? (4) Rules follow karne ki aadat kitni? (5) Din mein bina action ke bore hote ho? Score aapko style ki taraf ishaara dega."
+    },
+    {
+     "h": "Day 1 ka result se compare",
+     "p": "Day 1 ke Trading Personality result ko aaj ke scorecard ke saath rakho. Agar dono alag bol rahe hain, to aap shayad woh style chun rahe ho jo aapko 'exciting' lagta hai, na ki jo fit hai. Yeh honest moment hai. Ek style chuno aur agle 2 hafte usi par paper trade karo."
+    },
+    {
+     "h": "'Sab ke liye nahi' framing",
+     "p": "Trading har kisi ke liye nahi hai, aur yeh kehna course ka hissa hai. Bahut logon ke liye sahi jawab hai: systematic investing, aur trading ko sirf seekhne ke liye paper mein rakhna. Yeh haar nahi, yeh clarity hai. SEBI FY26 study (Aug 2026) ka 87.7% number yahi keh raha hai."
+    }
+   ],
+   "kaam": "Style Fit scorecard bharo (5 sawal). Phir AI Lab prompt se scalping cost calculator banao: apne broker ke actual charges daalo aur dekho 20 trades/din par kitna cost banta hai. Dono result journal mein, aur ek style chuno.",
+   "outcome": "Aap honestly apna trading style choose kar paoge.",
+   "tools": [
+    "Cost calculator sheet",
+    "Claude"
+   ],
+   "fun": "Style-fit reveal: Day 1 quiz vs aaj ka scorecard. Kitne logon ka style badla?",
+   "compliance": "Explicit 'not for everyone' framing. Cost rates are never printed in course material; students use their own broker's contract note.",
+   "journal_prompt": "Aapka chuna hua style kya hai, aur Day 1 ke result se alag hai ya same? Cost calculator ne kya surprise diya?"
+  },
   "prompts": [
    {
-    "title": "Drawdown maths prompt",
+    "title": "Scalping cost calculator",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 13 · The 50% trap · Concept: 50% trap\nTask: Drawdown maths prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "Build a Google Sheets calculator for the all-in cost of intraday trading in Indian equities. Inputs I will fill from my own broker's contract note: brokerage per order, STT rate, exchange transaction charge, SEBI charge, GST rate, stamp duty rate, average slippage per trade in rupees, trades per day, average trade value. Outputs: cost per round trip, cost per day, cost per month (20 days), and the minimum average profit per trade needed just to cover costs. Do not state any rate yourself; leave every rate as an input cell with a note 'from your contract note'."
    }
   ]
  },
  {
   "number": 14,
   "level": "foundation",
-  "week": 3,
-  "day": 4,
-  "title_en": "F&O: samjho, khelo mat",
-  "title_hi": "F&O: samjho, khelo mat",
-  "core_concept": "F&O awareness",
-  "ai_lab": "SEBI FY26 study reader",
-  "psychology": "Gambling loop",
-  "duration_min": 60,
+  "week": 2,
+  "day": 7,
+  "course_day": 14,
+  "title_en": "Weekend: Quiz Game 2, paper-trade review, Shortcut Trap #2",
+  "title_hi": "Weekend: Quiz Game 2 + Paper-Trade Review + Shortcut Trap #2",
+  "core_concept": "Fake-backtest pattern",
+  "ai_lab": "Backtest page reader",
+  "psychology": "'Too good' ka lalach",
+  "strategy": null,
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: F&O awareness. AI Lab mein SEBI FY26 study reader. Psychology angle: Gambling loop.",
+  "draft": false,
+  "summary_hi": "Aap fake-backtest pattern pehchan paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "Week 2 recap",
+     "p": "ORB rule card, journal + emotion tag, EMA Pullback + Chartink screener (Algo Level 1 ka pehla step), 1% rule + sizing formula, 5-check health filter, style fit + cost. Paper-trade challenge ka pehla poora hafta khatam. Aaj cohort ke journals ka review, phir Shortcut Trap #2."
+    },
+    {
+     "h": "Paper-trade review: cohort ke saath",
+     "p": "Mentor 5 random journals (naam ke bina) screen par rakhta hai. Sawal sirf process ke: rule toota ya nahi, size formula se thi ya nahi, emotion tag kya tha. P&L ki baat nahi hoti. Sabse zyada seekh un trades se milti hai jo rule ke saath haare: woh sahi trades hain."
+    },
+    {
+     "h": "Shortcut Trap #2: 'sure return' bot aur marketplace strategy",
+     "p": "Online bahut se bot aur marketplace strategies 'fixed monthly return' ya '95% accuracy' ka daawa karte hain. Aaj hum inka backtest page padhna seekhenge, expose karne ke liye nahi, pehchaan ne ke liye. Sawal: cost included hai? Out-of-sample data hai? Max drawdown likha hai? Trade count kitna hai? Jo page in chaar mein se do ka jawab nahi deta, woh backtest nahi, brochure hai.",
+     "scam_example": true
+    },
+    {
+     "h": "Fake-backtest ke 5 pattern",
+     "p": "(1) Sirf equity curve, koi drawdown nahi. (2) Cost aur slippage ka zikr nahi. (3) Ek hi saal ka data, ya sirf bull market. (4) Trade count 30 se kam. (5) Parameters 'optimised' lekin out-of-sample test nahi. Day 17 par aap apna backtest banaoge aur yeh paanch cheezein khud likhoge."
+    },
+    {
+     "h": "SEBI framework: unregistered algo providers",
+     "p": "SEBI ke retail algo framework (4 Feb 2025 circular, 1 Apr 2026 se binding) ke tahat broker principal hai, har algo order par exchange ka Algo-ID hota hai, aur unregistered algo providers baar hain. Matlab: jo bhi 'humara bot lagao, hum chalayenge' bole aur registered na ho, woh framework ke bahar hai. Day 15 par poora framework."
+    }
+   ],
+   "kaam": "Kisi bhi marketplace strategy ya bot ka public backtest page kholo (naam course mein share mat karo). AI Lab prompt se checklist chalao: cost? OOS? drawdown? trade count? Jo missing hai woh journal mein list karo.",
+   "outcome": "Aap fake-backtest pattern pehchan paoge.",
+   "tools": [
+    "Quiz tool",
+    "Claude"
+   ],
+   "fun": "Leaderboard Week 2. Badges: 'Rule Keeper' (100% adherence), 'Screener Builder', 'Honest Style'.",
+   "compliance": "SEBI retail algo framework: unregistered algo providers barred; broker-as-principal. No platform or provider is named in class.",
+   "journal_prompt": "Backtest page mein kaunsi teen cheezein missing thi? Us page ko dekh kar pehle aapko kya laga tha, aur checklist ke baad kya laga?"
+  },
   "prompts": [
    {
-    "title": "SEBI FY26 study reader",
+    "title": "Backtest page reader",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 14 · F&O: samjho, khelo mat · Concept: F&O awareness\nTask: SEBI FY26 study reader\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "I will paste the text of a public backtest or performance page for a trading strategy or bot (name removed). Check it against this list and answer Present / Missing / Unclear for each: transaction costs and slippage, out-of-sample or forward-test period, maximum drawdown and its duration, number of trades, data period covering at least one down-market, parameter optimisation disclosed, past-performance disclaimer. Then list the three most important missing items and one question I should ask before believing any number. Do not judge the provider; judge the page.\n\nPage text:\n<paste here>"
    }
   ]
  },
@@ -353,149 +857,422 @@
   "number": 15,
   "level": "foundation",
   "week": 3,
-  "day": 5,
-  "title_en": "Friday review: week 3",
-  "title_hi": "Friday review",
-  "core_concept": "1% rule",
-  "ai_lab": "Galti-log prompt",
-  "psychology": "Consistency",
-  "duration_min": 60,
+  "day": 1,
+  "course_day": 15,
+  "title_en": "Algo Level 1: what an algo is, and your rules flowchart",
+  "title_hi": "Algo Level 1: Algo Kya Hai, Rules Flowchart",
+  "core_concept": "Rules engine",
+  "ai_lab": "Flowchart drafter",
+  "psychology": "Discretion ka moh",
+  "strategy": "ORB (as rules)",
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: 1% rule. AI Lab mein Galti-log prompt. Psychology angle: Consistency.",
+  "draft": false,
+  "summary_hi": "Aap apni strategy ko machine-readable rules mein likh paoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "Algo = rules engine, jaadu nahi",
+     "p": "Algo ka matlab hai: likhe hue rules jo ek machine bina emotion ke follow kare. Bas. Koi prediction nahi, koi secret nahi. Aapka ORB rule card pehle se ek algo hai, bas abhi aap use haath se chala rahe ho. Discretionary trader har baar naya faisla leta hai; systematic trader ek baar faisla leta hai aur phir follow karta hai."
+    },
+    {
+     "h": "Algo ladder: Level 0 se 3",
+     "p": "Level 0 (Day 3-6): AI research co-pilot. Level 1 (aaj aur Day 16-17): rules flowchart, screener + alerts, manual backtest. Level 2 (Tier 2): no-code platform par paper-mode deploy. Level 3 (Tier 3): Python + broker API + validation. Har level ek build artifact par khatam hota hai. Aaj ka artifact: flowchart."
+    },
+    {
+     "h": "SEBI retail algo framework: kya jaanna zaroori",
+     "p": "SEBI circular 4 Feb 2025, sab brokers par 1 Apr 2026 se binding. Chaar baatein: (1) Broker principal hai, algo ki zimmedari broker ki. (2) Har algo order par exchange ka Algo-ID. (3) 10 orders/second se kam par broker auto-tag karta hai; usse zyada par registration. (4) API ke liye static IP aur 2FA. Unregistered algo providers baar hain."
+    },
+    {
+     "h": "Flowchart: rule card ko machine-readable banana",
+     "p": "Flowchart mein har box ek sawal hai jiska jawab haan/na hai: 'Kya 9:30 ho gaya?' -> 'Kya 5-min close range ke upar hai?' -> 'Kya VWAP upar hai?' -> 'Size formula chalayi?' -> Entry. Agar aap flowchart ko bina 'shayad' ke nahi likh sakte, to rule abhi rule nahi hai."
+    },
+    {
+     "h": "AI se draft, khud fix",
+     "p": "AI Lab prompt aapke rule card se flowchart ka text draft banata hai. Uske baad aap draw.io ya kagaz par banao aur har box par sawal karo: yeh haan/na hai? Koi rule chhoot gaya? AI aksar time-stop ya no-trade-day box bhool jaata hai. Woh aap jodoge."
+    }
+   ],
+   "kaam": "Apni ORB strategy ka flowchart banao: AI se text draft lo, phir draw.io ya kagaz par khud banao. Har box haan/na sawal. Photo/screenshot journal mein. Bonus: EMA Pullback ka bhi.",
+   "outcome": "Aap apni strategy ko machine-readable rules mein likh paoge.",
+   "tools": [
+    "Claude",
+    "draw.io ya kagaz"
+   ],
+   "fun": "'Flowchart Duel': do students ke flowchart screen par, cohort judge karta hai kaunsa zyada complete aur clear hai.",
+   "compliance": "Only the compliant path is taught. SEBI circular dated 4 Feb 2025, binding from 1 Apr 2026, verified.",
+   "journal_prompt": "Flowchart banate waqt kaunsa rule 'shayad' wala nikla jo yes/no nahi tha? Aapne use kaise fix kiya?"
+  },
   "prompts": [
    {
-    "title": "Galti-log prompt",
+    "title": "Flowchart drafter",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 15 · Friday review: week 3 · Concept: 1% rule\nTask: Galti-log prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "I will paste my one-page strategy rule card. Convert it into a flowchart described as numbered nodes: each node is either a yes/no question or an action (record, compute, enter, exit, stop). Connect nodes with 'if yes go to N / if no go to M'. Include nodes for: time window open, no-trade day check, setup condition, confirmation, stop computed, target computed, position size from 1% rule, entry, time-stop, exit. After the list, name any rule in my card that cannot be turned into a yes/no question and suggest how to make it one. No performance commentary.\n\nRule card:\n<paste here>"
    }
   ]
  },
  {
   "number": 16,
   "level": "foundation",
-  "week": 4,
-  "day": 1,
-  "title_en": "AI as analyst, human as trigger",
-  "title_hi": "AI analyst hai, trigger aap",
-  "core_concept": "AI = analyst, human = trigger",
-  "ai_lab": "Master prompt: full",
-  "psychology": "Automation bias",
-  "duration_min": 60,
+  "week": 3,
+  "day": 2,
+  "course_day": 16,
+  "title_en": "No-code screener and alert lab",
+  "title_hi": "No-Code Screener + Alert Lab",
+  "core_concept": "Alerts are not orders",
+  "ai_lab": "Alert checklist",
+  "psychology": "Alert par jump",
+  "strategy": "ORB + EMA Pullback (alerts)",
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: AI = analyst, human = trigger. AI Lab mein Master prompt: full. Psychology angle: Automation bias.",
+  "draft": false,
+  "summary_hi": "Aapka pehla semi-automated setup chal raha hoga.",
+  "content": {
+   "topics": [
+    {
+     "h": "Semi-automation ka matlab",
+     "p": "Alert aata hai -> aap checklist chalate ho -> aap order lagate ho. Machine sirf dekhti hai, faisla aur order aapka. Yeh Level 1 hai aur Tier 1 mein yahi maximum automation hai. Koi order-routing nahi, koi bot nahi. Yeh SEBI framework ke andar hai kyunki order manual hai."
+    },
+    {
+     "h": "ORB alert: Chartink intraday",
+     "p": "Chartink par 15-min ya 5-min timeframe wala screener: close > pehle 15-min ka high (ya < low), volume > average. Chartink alerts email/app par bhej sakta hai. Free version mein delay ho sakta hai, isliye alert ko confirmation maano, trigger nahi. Alert aane par chart khud dekho, phir checklist."
+    },
+    {
+     "h": "EMA Pullback alert: daily",
+     "p": "Day 10 wala screener already bana hai. Ab usme alert lagao: roz 3:15 pm par list email. Kal subah aap 5 charts verify karo, size nikalo, aur agar setup hai to paper order. Swing ke liye yeh kaafi hai: din mein ek baar dekhna."
+    },
+    {
+     "h": "Broker price alerts",
+     "p": "Har broker app mein price alert hota hai: 'X ke upar jaaye to notify karo'. ORB ke liye 9:30 par range high/low par alert lagao. Yeh sabse simple semi-automation hai, koi platform nahi chahiye. Alert = 'ab dekho', order = aap."
+    },
+    {
+     "h": "Alert par jump karne ka trap",
+     "p": "Alert aate hi order lagana sabse common galti hai. Alert screener ki condition batata hai, poora rule card nahi. VWAP check, ATR stop, size, no-trade day, yeh alert nahi karta. Isliye alert ke baad checklist zaroori hai, aur checklist mein 60 second lagte hain. Woh 60 second aapko galat trades se bachate hain."
+    }
+   ],
+   "kaam": "Dono strategies ke liye alerts set karo: ORB ke liye broker price alert (kal subah 9:30 ke range par) aur EMA Pullback ke liye Chartink daily alert. AI Lab prompt se 'alert ke baad' checklist banao. Kal ke liye sab live rakho.",
+   "outcome": "Aapka pehla semi-automated setup chal raha hoga.",
+   "tools": [
+    "Chartink",
+    "Broker app alerts",
+    "Claude"
+   ],
+   "fun": null,
+   "compliance": "Alerts are not orders. Manual execution stays with the student. No order routing in Tier 1.",
+   "journal_prompt": "Aaj kitne alerts aaye aur kitne trade ban-ne layak nikle? Alert aur asli setup ke beech kya fark tha?"
+  },
   "prompts": [
    {
-    "title": "Master prompt: full",
+    "title": "After-the-alert checklist",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 16 · AI as analyst, human as trigger · Concept: AI = analyst, human = trigger\nTask: Master prompt: full\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "Write a 60-second checklist to run after a screener or price alert fires, for two strategies I will describe (an intraday opening-range breakout and a daily EMA pullback swing). For each: 6 yes/no items covering chart confirmation by eye, the rule the alert cannot check (VWAP side / candle close), stop computed, size from 1% rule, no-trade-day check, journal row opened. End each list with 'If any NO: no trade.' No performance commentary.\n\nStrategies:\n<paste rule cards>"
    }
   ]
  },
  {
   "number": 17,
   "level": "foundation",
-  "week": 4,
-  "day": 2,
-  "title_en": "The 5 AI patterns",
-  "title_hi": "5 AI patterns",
-  "core_concept": "5 AI patterns",
-  "ai_lab": "Pattern drill prompt",
-  "psychology": "Over-reliance",
-  "duration_min": 60,
+  "week": 3,
+  "day": 3,
+  "course_day": 17,
+  "title_en": "Backtest Level 1: by hand, with understanding",
+  "title_hi": "Backtest Level 1: Haath Se, Samajh Ke",
+  "core_concept": "30-trade log",
+  "ai_lab": "Backtest stats sheet",
+  "psychology": "Past = future ka bhram",
+  "strategy": "ORB or EMA Pullback (backtest)",
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: 5 AI patterns. AI Lab mein Pattern drill prompt. Psychology angle: Over-reliance.",
+  "draft": false,
+  "summary_hi": "Aap backtest report ka basic matlab samjhoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "Backtest kyun haath se",
+     "p": "Pehla backtest haath se isliye karte hain taaki aap samjho ki har number kahan se aata hai. Chart ko scroll-back ya bar-replay karo, apne rules exactly lagao, aur 30 past trades log karo. Yeh 2-3 ghante ka kaam hai aur yeh aapko har marketplace backtest se zyada sikhayega."
+    },
+    {
+     "h": "Kya log karna hai",
+     "p": "Har trade: date, entry, SL, exit, R. Sirf woh trades jo rule card se 100% match karte hain, 'yeh bhi chal jaata' wale nahi. Yahi sabse mushkil hissa hai: aap past mein bhi cheat kar sakte ho. Isliye entry rule flowchart ke hisaab se, bina aage ka chart dekhe."
+    },
+    {
+     "h": "Chaar numbers",
+     "p": "Win-rate = jeete trades / kul trades. Average R = sab R ka average (yahi expectancy hai, Day 2). Max drawdown = equity curve ke peak se sabse bada gir-aav, R mein. Equity curve = cumulative R ka chart. In chaar ke bina backtest adhoora hai, chahe curve kitna bhi sundar ho."
+    },
+    {
+     "h": "30 trades kaafi nahi, lekin shuruaat hai",
+     "p": "30 trades se aapko sirf itna pata chalega ki strategy 'bilkul bakwaas' hai ya 'shayad kaam karti hai'. Confidence ke liye 100+ chahiye, aur alag market conditions (up, down, sideways). Yeh Tier 2 ka Backtest Level 2 hai. Aaj sirf yeh samjho ki numbers padhne ka matlab kya hai."
+    },
+    {
+     "h": "'Past performance' clause",
+     "p": "Har backtest output ke saath yeh line rehti hai: past performance is not indicative of future results. Yeh sirf compliance nahi, sach hai. Backtest aapko batata hai strategy past mein kaisi thi; future mein market badalta hai, cost badalti hai, aap badalte ho."
+    }
+   ],
+   "kaam": "Apni ek strategy ka 30-trade manual backtest karo (chart scroll-back). Google Sheets mein log + win-rate, avg R, max DD, equity curve chart. AI Lab prompt se sheet ka structure lo. Curve ka screenshot journal mein, 'past performance' line ke saath.",
+   "outcome": "Aap backtest report ka basic matlab samjhoge.",
+   "tools": [
+    "Chart replay / scroll-back",
+    "Google Sheets",
+    "Claude"
+   ],
+   "fun": "'Equity Curve Gallery': sabki 30-trade curves ek wall par. Sabse honest (rule-strict) log ko badge, sabse sundar curve ko nahi.",
+   "compliance": "'Past performance is not indicative of future results' on every backtest output.",
+   "journal_prompt": "30 trades mein win-rate, avg R aur max drawdown kya nikla? Kitni baar aapne 'yeh bhi chal jaata' wala trade log karne ka man kiya?"
+  },
   "prompts": [
    {
-    "title": "Pattern drill prompt",
+    "title": "Backtest stats sheet",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 17 · The 5 AI patterns · Concept: 5 AI patterns\nTask: Pattern drill prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "Give me a Google Sheets layout and formulas for a 30-trade manual backtest log: columns date, instrument, entry, stop, exit, R-multiple (computed), cumulative R. Summary cells: number of trades, win-rate, average R (expectancy), largest losing streak, maximum drawdown in R computed from cumulative R and its running peak, and instructions to plot the equity curve. Add a cell containing the text 'Past performance is not indicative of future results.' Explain in 3 lines why 30 trades is only a first look."
    }
   ]
  },
  {
   "number": 18,
   "level": "foundation",
-  "week": 4,
-  "day": 3,
-  "title_en": "LOOT-scan: spotting scams",
-  "title_hi": "LOOT-scan",
-  "core_concept": "LOOT-scan",
-  "ai_lab": "LOOT-scan prompt",
-  "psychology": "Greed",
-  "duration_min": 60,
+  "week": 3,
+  "day": 4,
+  "course_day": 18,
+  "title_en": "Options and futures: only the basics (NISM-grounded)",
+  "title_hi": "Options & Futures: Sirf Basics (NISM-Grounded)",
+  "core_concept": "F&O: samjho, khelo mat",
+  "ai_lab": "Option chain explainer",
+  "psychology": "Lottery ticket ka lalach",
+  "strategy": null,
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: LOOT-scan. AI Lab mein LOOT-scan prompt. Psychology angle: Greed.",
+  "draft": false,
+  "summary_hi": "Aap F&O terminology aur risk samjhoge, bina trade kiye.",
+  "content": {
+   "topics": [
+    {
+     "h": "Futures: ek contract, ek expiry",
+     "p": "Future ek agreement hai kisi index ya stock ko fixed price par future date par lene/dene ka. Lot size fixed hota hai (exchange decide karta hai), margin lagta hai (poora paisa nahi), aur roz mark-to-market (MTM) hota hai: profit/loss roz account mein settle. Expiry par contract khatam. Tier 1 mein futures sirf samajhne ke liye, trade nahi."
+    },
+    {
+     "h": "Options: CE, PE, premium, strike",
+     "p": "Call (CE) = right to buy at strike. Put (PE) = right to sell at strike. Buyer premium deta hai, uska max loss premium hai. Seller premium leta hai, uska risk bada hai aur margin lagta hai. Strike woh price hai jis par right hai. Expiry weekly/monthly. Yeh sab NISM Series VIII material se aata hai, kisi YouTube se nahi."
+    },
+    {
+     "h": "Option buyers kyun haarte hain",
+     "p": "Teen wajah: (1) Time decay, premium roz ghat-ta hai agar price na hile. (2) Direction ke saath speed bhi chahiye, sirf sahi direction kaafi nahi. (3) Lottery mindset: sasta OTM option 'kam risk' lagta hai lekin usme haarne ki probability sabse zyada hai. SEBI FY26 study (Aug 2026) ka 87.7% number yahin se aata hai."
+    },
+    {
+     "h": "Option chain: ATM, OI, PCR",
+     "p": "Option chain ek table hai: har strike par CE aur PE ka premium, open interest (OI = kitne contracts khule hain), volume. ATM = jo strike current price ke sabse paas. OI zyada = us strike par zyada interest. PCR = put OI / call OI, sentiment ka ek rough indicator. Aaj sirf padhna seekho, interpret karna Tier 2 mein."
+    },
+    {
+     "h": "F&O ko Tier 2 tak wait",
+     "p": "Course ka law: F&O = samjho, khelo mat. Tier 1 mein koi F&O paper trade bhi nahi. Tier 2 mein defined-risk strategies (credit spread, iron condor) backtest aur paper-deploy hoti hain, proper Greeks aur IV samajhne ke baad. Jaldi karne ka koi inaam nahi, sirf SEBI ke number mein shaamil hone ka risk."
+    }
+   ],
+   "kaam": "Apne broker app mein NIFTY option chain kholo. ATM strike dhoondho, uske aas-paas sabse zyada OI wale CE aur PE strikes note karo, PCR calculate karo (put OI / call OI, kuch strikes ka). AI Lab prompt se explain karwao aur khud verify karo. Koi trade nahi, paper bhi nahi.",
+   "outcome": "Aap F&O terminology aur risk samjhoge, bina trade kiye.",
+   "tools": [
+    "Broker option chain",
+    "Claude"
+   ],
+   "fun": null,
+   "compliance": "Derivatives content grounded in NISM Series VIII. No F&O trades, not even paper, in Tier 1. Statistic cited: SEBI FY26 study (Aug 2026).",
+   "journal_prompt": "Option chain mein sabse zyada OI kis strike par tha, aur aapko lagta hai iska matlab kya hai? (Sirf soch, koi trade nahi.)"
+  },
   "prompts": [
    {
-    "title": "LOOT-scan prompt",
+    "title": "Option chain explainer",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 18 · LOOT-scan: spotting scams · Concept: LOOT-scan\nTask: LOOT-scan prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "I will paste a few rows from the NIFTY option chain (strike, CE premium, CE OI, PE premium, PE OI) and the current index level. Explain, for a beginner: which strike is ATM and why; what a high OI at a strike means and does not mean; how PCR is computed from what I pasted; what would change in the premiums if the index does not move for a week (time decay). Use only the pasted numbers. Do not suggest any option to buy or sell, no view on direction, no strategy.\n\nChain rows:\n<paste here>"
    }
   ]
  },
  {
   "number": 19,
   "level": "foundation",
-  "week": 4,
-  "day": 4,
-  "title_en": "SEBI retail algo framework (awareness only)",
-  "title_hi": "SEBI retail algo framework",
-  "core_concept": "SEBI algo framework (01-Apr-2026)",
-  "ai_lab": "Framework explainer prompt",
-  "psychology": "Rule respect",
-  "duration_min": 60,
+  "week": 3,
+  "day": 5,
+  "course_day": 19,
+  "title_en": "Hedging intro and the event calendar",
+  "title_hi": "Hedging Intro + Event Calendar",
+  "core_concept": "No-trade days",
+  "ai_lab": "Event calendar builder",
+  "psychology": "Event ka josh",
+  "strategy": null,
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: SEBI algo framework (01-Apr-2026). AI Lab mein Framework explainer prompt. Psychology angle: Rule respect.",
+  "draft": false,
+  "summary_hi": "Aap events ke around risk manage karoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "Hedge = insurance, profit nahi",
+     "p": "Hedge ek position hai jo aapki main position ke against chalti hai, taaki bade gir-aav mein nuksaan limited rahe. Jaise gaadi ka insurance: premium lagta hai, aur aap chahte ho ki kabhi claim na karna pade. Hedge se return nahi banta, hedge se aap game mein rehte ho."
+    },
+    {
+     "h": "Protective put: concept",
+     "p": "Agar aapke paas stocks ka portfolio hai aur aap bade event se darte ho, to index put kharidna ek protective put hai: market gira to put ka value badhega aur portfolio ka loss thoda cover hoga. Cost = premium. Tier 1 mein sirf concept, execution Tier 2 (W4) mein margin aur sizing ke saath."
+    },
+    {
+     "h": "Events jo strategy ko todte hain",
+     "p": "Quarterly results (stock-specific gap), RBI policy, Union Budget, monthly/weekly expiry days, US Fed meeting, bade global events. In dinon par ORB ka opening range bekaar ho sakta hai aur swing mein overnight gap risk badhta hai. Rule card ka 'no-trade days' section yahin se bharta hai."
+    },
+    {
+     "h": "PAUSE karna bhi ek rule hai",
+     "p": "Strategy ko event ke din band karna koi kamzori nahi, rule hai. Event ke ek din pehle nayi swing position nahi, event ke din ORB nahi, results wale stock mein results se pehle exit ya size aadha. Yeh sab flowchart mein ek box hai: 'Kya aaj no-trade day hai?'"
+    },
+    {
+     "h": "Calendar banana, AI se",
+     "p": "Agle 30 din ka event calendar: exchange holidays, expiry dates, RBI dates, apne watchlist stocks ke results dates, budget/fed agar hai. AI Lab prompt draft dega, lekin dates aap NSE/RBI ki official site se verify karoge. AI ki dates galat ho sakti hain, aur galat date par trade karna sabse mehnga hallucination hai."
+    }
+   ],
+   "kaam": "Agle 30 din ka event calendar banao (Google Calendar ya sheet): expiry, RBI, results (watchlist ke stocks), holidays. Har date official source se verify. Apni dono strategies ke 'no-trade days' mark karo aur rule card update karo.",
+   "outcome": "Aap events ke around risk manage karoge.",
+   "tools": [
+    "Google Calendar",
+    "Claude",
+    "NSE / RBI official pages"
+   ],
+   "fun": null,
+   "compliance": "Hedging taught as insurance, never as a return strategy. Event dates must be verified from official sources.",
+   "journal_prompt": "Agle 30 din mein kitne no-trade days nikle? Kaunsa event aapke liye sabse bada risk hai aur kyun?"
+  },
   "prompts": [
    {
-    "title": "Framework explainer prompt",
+    "title": "Event calendar builder",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 19 · SEBI retail algo framework (awareness only) · Concept: SEBI algo framework (01-Apr-2026)\nTask: Framework explainer prompt\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "Build a 30-day event calendar template for an Indian equity paper-trader. Rows: date, event type (exchange holiday / weekly expiry / monthly expiry / RBI policy / company results / Union Budget / US Fed / other), instrument affected, rule (no new swing entry day before / no ORB today / halve size / exit before). Leave the dates blank with a note 'verify on the official NSE, RBI or company page' and list which official page to check for each event type. Do not fill in any dates yourself."
    }
   ]
  },
  {
   "number": 20,
   "level": "foundation",
-  "week": 4,
-  "day": 5,
-  "title_en": "Final review and mock-portfolio handover",
-  "title_hi": "Final review",
-  "core_concept": "Full Why x2",
-  "ai_lab": "Mock portfolio reviewer",
-  "psychology": "Discipline nahi, design",
-  "duration_min": 60,
+  "week": 3,
+  "day": 6,
+  "course_day": 20,
+  "title_en": "Trading psychology and your daily routine",
+  "title_hi": "Trading Psychology + Daily Routine",
+  "core_concept": "Kill-switch for humans",
+  "ai_lab": "EOD review prompt",
+  "psychology": "FOMO, revenge, overtrading",
+  "strategy": null,
+  "duration_min": 90,
   "video_url": null,
   "video_provider": "youtube_unlisted",
   "is_published": true,
-  "draft": true,
-  "summary_hi": "Aaj ka core concept: Full Why x2. AI Lab mein Mock portfolio reviewer. Psychology angle: Discipline nahi, design.",
+  "draft": false,
+  "summary_hi": "Aap ek repeatable routine ke saath course khatam karoge.",
+  "content": {
+   "topics": [
+    {
+     "h": "Teen dushman: FOMO, revenge, overtrading",
+     "p": "FOMO: move chhoot gaya, ab bina setup ke ghusna. Revenge: loss ke baad 'wapas nikaalna'. Overtrading: bore hone par trade. Teeno ka ek hi ilaaj hai: rule card + checklist + kill-switch. Aapke Day 9 se ab tak ke emotion tags dekho, aapka dushman kaunsa hai woh journal bata dega."
+    },
+    {
+     "h": "Pre-market plan: 10 minute",
+     "p": "9:00 se 9:10: event calendar check (no-trade day?), watchlist ke alerts ready, kal ke journal ki ek line padho, aaj ka max loss likho, aur ek line: 'Aaj main sirf rule card follow karunga.' Yeh 10 minute din ka sabse zyada value wala kaam hai."
+    },
+    {
+     "h": "Post-market AI review: 10 minute",
+     "p": "3:30 ke baad: journal bharo, phir AI Lab ka EOD review prompt chalao: kya rule toota, kis emotion ke saath, kal ke liye ek sudhar. AI se 'kal kya kharidun' kabhi nahi poochna. Hafte mein ek baar (weekend) poora hafta review, Day 7 aur Day 14 jaise."
+    },
+    {
+     "h": "Kill-switch for humans: 3 loss = stop",
+     "p": "Din mein 3 lagataar loss (ya 2R / 2% max loss, jo pehle) = screen band, koi charcha nahi. Hafte mein 5R loss = hafte ke liye paper trading band, sirf review. Yeh Tier 3 ke algo kill-switch ka insaani version hai. Machine ko kill-switch chahiye, aapko bhi."
+    },
+    {
+     "h": "Daily Routine Card",
+     "p": "Ek card jo screen ke paas rahe: pre-market 10 min list, market hours mein sirf alerts + checklist, post-market 10 min list, kill-switch numbers, weekend review slot. Course khatam hone ke baad yahi card aapka mentor hai. Discipline nahi, design: routine aisa banao ki galti karna mushkil ho."
+    }
+   ],
+   "kaam": "Apna 'Daily Routine Card' likho (pre-market, market, post-market, kill-switch numbers, weekend slot). Apne 2 hafte ke emotion tags gino aur sabse bada dushman naam karo. AI Lab ka EOD review prompt aaj se roz chalao.",
+   "outcome": "Aap ek repeatable routine ke saath course khatam karoge.",
+   "tools": [
+    "Claude EOD review prompt",
+    "Routine card (kagaz ya note)"
+   ],
+   "fun": null,
+   "compliance": null,
+   "journal_prompt": "Do hafte ke emotion tags mein aapka sabse bada dushman kaunsa nikla? Routine card mein uske liye kaunsa rule rakha?"
+  },
   "prompts": [
    {
-    "title": "Mock portfolio reviewer",
+    "title": "EOD review",
     "level": "foundation",
     "platform": "any",
-    "body": "You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.\nSession 20 · Final review and mock-portfolio handover · Concept: Full Why x2\nTask: Mock portfolio reviewer\nRules:\n1. Separate every claim into Fact / Guess / Kachra and label it.\n2. Use only the data I paste below; if something is missing, say \"missing\" instead of guessing.\n3. No return forecasts, no targets, no \"sure\" language. Educational analysis only.\n4. End with three questions I should answer myself before acting.\nData:\n<paste here>"
+    "body": "You are my end-of-day process reviewer, not a market analyst. I will paste today's journal rows (setup, entry, stop, exit, R, rule broken?, emotion) and today's max-loss rule. Answer in exactly five lines: (1) rules followed vs broken, (2) the emotion most linked to any broken rule, (3) whether the kill-switch should have fired and when, (4) one specific behaviour change for tomorrow, (5) one thing I did right. Do not mention P&L totals, do not suggest trades or stocks for tomorrow.\n\nToday's journal:\n<paste here>"
+   }
+  ]
+ },
+ {
+  "number": 21,
+  "level": "foundation",
+  "week": 3,
+  "day": 7,
+  "course_day": 21,
+  "title_en": "Finale: challenge results, final quiz, certificate",
+  "title_hi": "Finale: Challenge Results + Final Quiz + Certificate",
+  "core_concept": "3-week journal review",
+  "ai_lab": "Journal summariser (3 weeks)",
+  "psychology": "Ownership",
+  "strategy": null,
+  "duration_min": 90,
+  "video_url": null,
+  "video_provider": "youtube_unlisted",
+  "is_published": true,
+  "draft": false,
+  "summary_hi": "Aap certificate + apna personal improvement plan leke niklo ge.",
+  "content": {
+   "topics": [
+    {
+     "h": "Paper-trade challenge results",
+     "p": "Results rule-adherence par: kisne 3 hafte card follow kiya, kisne 'no trade' days sahi pehchane, kiska journal sabse honest tha. P&L kabhi dikhaya nahi jaata. Awards: Discipline (highest adherence), Best Journal, Best Screener. Yeh teen cheezein hi Tier 2 mein kaam aayengi."
+    },
+    {
+     "h": "Aapka improvement plan",
+     "p": "Apna 3-hafte ka journal AI ko do aur nikaalo: top 3 mistakes (rule ke hisaab se), top 3 strengths, aur ek emotion jo sabse zyada rules ke saath toota. Yeh aapka personal improvement plan hai. Ise certificate ke saath rakho, certificate se zyada kaam ka hai."
+    },
+    {
+     "h": "Final quiz aur certificate",
+     "p": "Final exam 60 minute, poore Tier 1 se. Certificate tab issue hota hai jab 90% sessions complete, final pass, weekly exams attempt, aur Friday/weekend reviews hon. Certificate par unique number aur QR hai, koi bhi verify kar sakta hai. Yeh 5 Circles ka course certificate hai, SEBI ya NISM ka certification nahi."
+    },
+    {
+     "h": "Tier 2 roadmap",
+     "p": "Tier 2 (10 hafte): 6 strategies no-code platform par paper-deploy, options Greeks/IV/chain, Backtest Level 2 (Sharpe, drawdown, cost model), overfitting lab, 4-week paper sprint, trading business plan. Entry ke liye Tier 1 certificate chahiye. Jaldi nahi, jab routine 4 hafte chal jaaye tab."
+    },
+    {
+     "h": "Crypto appendix: sirf certificate ke baad, optional",
+     "p": "Ek 30-minute recorded appendix crypto ki mechanics par hai, certificate ke baad, optional. Yeh 5 Circles ke SEBI RA registration ke daayre mein nahi aata, alag disclaimer ke saath hai, aur non-advisory hai. Course ka koi hissa nahi."
+    }
+   ],
+   "kaam": "Apna poora 3-hafte ka journal AI Lab prompt mein do: top 3 mistakes, top 3 strengths, ek emotion. Improvement plan journal mein likho. Phir final exam do (60 min). Certificate page par criteria check karo.",
+   "outcome": "Aap certificate + apna personal improvement plan leke niklo ge.",
+   "tools": [
+    "Claude",
+    "Dashboard: exam + certificate"
+   ],
+   "fun": "Awards: Discipline, Best Journal, Best Screener. Leaderboard final (rule-adherence).",
+   "compliance": "Certificate carries the credential line and full disclaimer; it is not a SEBI or NISM certification. Crypto appendix: separate disclaimer, non-advisory, not covered by RA registration.",
+   "journal_prompt": "Aapke top 3 mistakes aur top 3 strengths kya hain? Agle 4 hafte ka ek habit jo aap pakka rakhoge."
+  },
+  "prompts": [
+   {
+    "title": "3-week journal summariser",
+    "level": "foundation",
+    "platform": "any",
+    "body": "I will paste three weeks of paper-trade journal rows and emotion tags. Produce: top 3 process mistakes (by rule broken, with counts), top 3 strengths (rules kept consistently, correct no-trade days), the emotion most associated with broken rules, and a 5-line personal improvement plan for the next 4 weeks written as habits, not outcomes. No P&L, no strategy changes, no stock or market view.\n\nJournal:\n<paste here>"
    }
   ]
  }
