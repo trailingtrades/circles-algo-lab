@@ -106,9 +106,9 @@ jobs:
           out=$(curl -s -w '\n%{http_code}' -H "apikey: $K" -H "Authorization: Bearer $K" -H "Content-Type: application/json" -X POST "$U/auth/v1/admin/generate_link" -d "{\"type\":\"recovery\",\"email\":\"$E\",\"options\":{\"redirect_to\":\"$SITE/api/auth/callback?next=/learn/reset/confirm\"}}")
           code=${out##*$'\n'}; body=${out%$'\n'*}
           [ "$code" = "200" ] || { echo "::error::generate_link -> HTTP $code: ${body:0:300}"; exit 1; }
-          link=$(printf '%s' "$body" | python3 -c "import json,sys; print(json.load(sys.stdin)['action_link'])")
-          echo "::notice::One-time set-password link for $E (valid ~1 hour, open it in a browser):"
-          echo ""; echo "$link"; echo ""
+          th=$(printf '%s' "$body" | python3 -c "import json,sys; print(json.load(sys.stdin)['hashed_token'])")
+          echo "::notice::One-time set-password link for $E (valid ~1 hour, open it once in a browser):"
+          echo ""; echo "$SITE/api/auth/callback?token_hash=$th&type=recovery&next=/learn/reset/confirm"; echo ""
       - name: Check
         if: env.STEP != 'link'
         run: |
