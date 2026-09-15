@@ -39,3 +39,5 @@ jobs:
             [ "$code" = "200" ] || { echo "::error::$p returned $code"; head -c 400 /tmp/body; exit 1; }
           done
           grep -q "INH000020004" /tmp/body && echo "SEBI registration number present" || { echo "::error::SEBI reg no missing on /verify/lookup"; exit 1; }
+          echo "health:"; curl -s --compressed "$u/api/health"; echo
+          curl -s --compressed "$u/api/health" | grep -q '"ok":true' || echo "::warning::/api/health reports a Supabase configuration problem (see above)"
