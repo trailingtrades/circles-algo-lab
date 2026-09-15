@@ -1,0 +1,39 @@
+name: Deploy 5C Learn (Vercel)
+# Builds apps/learn on Vercel and promotes it to production. Runs on every push to main that touches the app or
+# content, or manually from Actions -> "Deploy 5C Learn (Vercel)" -> Run workflow.
+# Required repo secret: VERCEL_TOKEN (Vercel -> Account -> Tokens). Project/team ids are fixed below (not secrets).
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["apps/learn/**", "content/**", ".github/workflows/deploy-learn.yml"]
+concurrency: { group: deploy-learn, cancel-in-progress: false }
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: team_zAmVNOZ45AuOCiuewGfmpTvT
+      VERCEL_PROJECT_ID: prj_7xYqX0IXME5JgB2LTcuz1goFJOEw
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Preflight
+        run: '[ -n "$VERCEL_TOKEN" ] || { echo "::error::secret VERCEL_TOKEN is not set (Vercel -> Account -> Tokens)"; exit 1; }'
+      - name: Deploy to production
+        id: deploy
+        run: |
+          npm i -g vercel@latest >/dev/null
+          # Build on Vercel with the project's stored settings (root apps/learn, env vars) and promote to production.
+          url=$(vercel deploy --prod --yes --token "$VERCEL_TOKEN" 2> >(tee /tmp/vercel.log >&2))
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+          echo "deployed: $url"
+      - name: Smoke test
+        run: |
+          u="${{ steps.deploy.outputs.url }}"
+          for p in /learn /verify/lookup; do
+            code=$(curl -s -o /tmp/body -w '%{http_code}' -L "$u$p"); echo "$p -> $code"
+            [ "$code" = "200" ] || { echo "::error::$p returned $code"; head -c 400 /tmp/body; exit 1; }
+          done
+          grep -q "INH000020004" /tmp/body && echo "SEBI registration number present" || { echo "::error::SEBI reg no missing on /verify/lookup"; exit 1; }
