@@ -23,10 +23,24 @@ jobs:
         with: { node-version: 22 }
       - name: Preflight
         run: '[ -n "$VERCEL_TOKEN" ] || { echo "::error::secret VERCEL_TOKEN is not set (Vercel -> Account -> Tokens)"; exit 1; }'
+      - name: Ensure public env vars on Vercel
+        # These are PUBLIC values (shipped to every browser), so they live here rather than in secrets.
+        # Re-setting them from a known-good source fixes hand-paste errors (hidden characters, wrong key).
+        env:
+          PUB_SUPABASE_URL: https://hcajzeykcdcxqidgmzep.supabase.co
+          PUB_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhjYWp6ZXlrY2RjeHFpZGdtemVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk0Mzg0OTEsImV4cCI6MjEwNTAxNDQ5MX0.NFO6ofobvDON2TfAGzE2b8tK8kymDUl5uxcUAyPFeHY
+        run: |
+          npm i -g vercel@latest >/dev/null
+          set_env() { # name value
+            vercel env rm "$1" production --yes --token "$VERCEL_TOKEN" >/dev/null 2>&1 || true
+            printf '%s' "$2" | vercel env add "$1" production --token "$VERCEL_TOKEN" >/dev/null && echo "set $1"
+          }
+          set_env NEXT_PUBLIC_SUPABASE_URL "$PUB_SUPABASE_URL"
+          set_env NEXT_PUBLIC_SUPABASE_ANON_KEY "$PUB_ANON_KEY"
+          set_env NEXT_PUBLIC_SITE_URL "$PROD_URL"
       - name: Deploy to production
         id: deploy
         run: |
-          npm i -g vercel@latest >/dev/null
           # Build on Vercel with the project's stored settings (root apps/learn, env vars) and promote to production.
           url=$(vercel deploy --prod --yes --token "$VERCEL_TOKEN" 2> >(tee /tmp/vercel.log >&2))
           echo "url=$url" >> "$GITHUB_OUTPUT"
