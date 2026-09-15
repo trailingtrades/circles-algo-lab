@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       step:
-        description: "all | migrate | seed | admin | check"
+        description: "all | migrate | seed | admin | check | link (print a one-time set-password link for the admin)"
         required: true
         default: "all"
 jobs:
@@ -27,6 +27,7 @@ jobs:
       FIRST_ADMIN_EMAIL: ${{ secrets.FIRST_ADMIN_EMAIL || vars.FIRST_ADMIN_EMAIL || 'trailingtrades@gmail.com' }}
       FIRST_ADMIN_NAME: ${{ secrets.FIRST_ADMIN_NAME || vars.FIRST_ADMIN_NAME || 'Rahul Sarawgi' }}
       STEP: ${{ github.event.inputs.step }}
+      SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL_LIVE || 'https://circles-algo-lab.vercel.app' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -94,7 +95,22 @@ jobs:
           psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -qc "select set_config('request.jwt.claims', '{\"role\":\"service_role\"}', false); insert into profiles (id, full_name) values ('$existing', '$FIRST_ADMIN_NAME') on conflict (id) do nothing; update profiles set role='admin', status='active', full_name=coalesce(nullif(full_name,''),'$FIRST_ADMIN_NAME') where id='$existing';"
           # Password: send a recovery link so the admin sets their own password (never stored in CI).
           if api POST "/auth/v1/recover" "{\"email\":\"$(echo "$FIRST_ADMIN_EMAIL" | tr -d '[:space:]')\"}" >/dev/null; then echo "password-reset email sent to $FIRST_ADMIN_EMAIL"; else echo "::warning::could not send reset email; use Supabase Auth -> Users -> Send password recovery"; fi
+      - name: Set-password link
+        if: env.STEP == 'link'
+        run: |
+          set -e
+          E="$(echo "$FIRST_ADMIN_EMAIL" | tr -s '[:space:]' '\n' | grep -E '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' | tail -1 | tr 'A-Z' 'a-z')"; E="${E:-trailingtrades@gmail.com}"
+          REF=$(echo "$DATABASE_URL" | grep -oE 'postgres\.[a-z0-9]{20}' | head -1 | sed 's/^postgres\.//'); U="https://$REF.supabase.co"
+          K="$(echo "$SUPABASE_SERVICE_ROLE_KEY" | tr -d '[:space:]')"
+          SITE="${SITE_URL:-https://circles-algo-lab.vercel.app}"
+          out=$(curl -s -w '\n%{http_code}' -H "apikey: $K" -H "Authorization: Bearer $K" -H "Content-Type: application/json" -X POST "$U/auth/v1/admin/generate_link" -d "{\"type\":\"recovery\",\"email\":\"$E\",\"options\":{\"redirect_to\":\"$SITE/api/auth/callback?next=/learn/reset/confirm\"}}")
+          code=${out##*$'\n'}; body=${out%$'\n'*}
+          [ "$code" = "200" ] || { echo "::error::generate_link -> HTTP $code: ${body:0:300}"; exit 1; }
+          link=$(printf '%s' "$body" | python3 -c "import json,sys; print(json.load(sys.stdin)['action_link'])")
+          echo "::notice::One-time set-password link for $E (valid ~1 hour, open it in a browser):"
+          echo ""; echo "$link"; echo ""
       - name: Check
+        if: env.STEP != 'link'
         run: |
           psql "$DATABASE_URL" -qtc "select 'levels='||(select count(*) from levels)||' weeks='||(select count(*) from weeks)||' sessions='||(select count(*) from sessions)||' published='||(select count(*) from sessions where is_published)||' quiz_q='||(select count(*) from quiz_questions where session_id is not null)||' exam_q='||(select count(*) from quiz_questions where exam_id is not null)||' exams='||(select count(*) from exams)||' admins='||(select count(*) from profiles where role='admin')"
           psql "$DATABASE_URL" -qtc "select 'rls tables without policy: '||coalesce(string_agg(c.relname, ','),'none') from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and c.relkind='r' and c.relrowsecurity and not exists (select 1 from pg_policy p where p.polrelid=c.oid)"
