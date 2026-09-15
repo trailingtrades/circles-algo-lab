@@ -23,8 +23,9 @@ GitHub → repo → Settings → Secrets and variables → **Actions** → New r
 
 Then tell Claude: **"secrets daal diye"**.
 
-## Step 3 · Database setup (Claude, 3 min)
+## Step 3 · Database setup (Claude, 3 min) — DONE 15 Sep 2026
 Claude runs Actions → **Go-live setup (Supabase)** with `step = all`. It applies the 7 migrations, seeds 61 sessions + 105 quiz + 75 exam questions, creates your admin user and emails you a set-password link. Claude then reads the check output and confirms counts.
+Result (run 12): levels=3 weeks=33 sessions=61 published=21 quiz_q=105 exam_q=75 exams=6 admins=1. The workflow derives the project URL from `SUPABASE_DB_URL` and tolerates a mis-pasted `FIRST_ADMIN_EMAIL`; only `SUPABASE_DB_URL` and `SUPABASE_SERVICE_ROLE_KEY` must be exact.
 
 ## Step 4 · Resend email (Rahul, 10 min)
 1. resend.com → Domains → Add `5circles.co` → add the DNS records it shows (at your domain registrar) → wait for Verified.
@@ -34,7 +35,7 @@ Claude runs Actions → **Go-live setup (Supabase)** with `step = all`. It appli
 1. vercel.com → Add New → Project → Import `trailingtrades/circles-algo-lab`.
 2. **Root Directory**: `apps/learn`. Turn ON "Include source files outside of the Root Directory".
 3. Framework: Next.js (auto). Node 22.
-4. Environment Variables (Production + Preview):
+4. Environment Variables (Production + Preview). Tip: click the first Key box and paste a whole `KEY=value` block; Vercel splits the lines.
 
 | Name | Value |
 |---|---|
