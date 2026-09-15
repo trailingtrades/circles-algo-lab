@@ -59,18 +59,24 @@ jobs:
         if: env.STEP == 'all' || env.STEP == 'admin'
         run: |
           set -e
-          H=(-H "apikey: $SUPABASE_SERVICE_ROLE_KEY" -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE_KEY" -H "Content-Type: application/json")
-          existing=$(curl -sf "${H[@]}" "$SUPABASE_URL/auth/v1/admin/users?page=1&per_page=1000" | python3 -c "import json,sys,os; u=[x for x in json.load(sys.stdin).get('users',[]) if x.get('email','').lower()==os.environ['FIRST_ADMIN_EMAIL'].lower()]; print(u[0]['id'] if u else '')")
+          SUPABASE_URL="$(echo "$SUPABASE_URL" | tr -d '[:space:]' | sed 's#/*$##')"
+          KEY="$(echo "$SUPABASE_SERVICE_ROLE_KEY" | tr -d '[:space:]')"
+          H=(-H "apikey: $KEY" -H "Authorization: Bearer $KEY" -H "Content-Type: application/json")
+          api() { # method path [body] -> prints body, fails with status+body on non-2xx
+            local out code; out=$(curl -s -w '\n%{http_code}' "${H[@]}" -X "$1" "$SUPABASE_URL$2" ${3:+-d "$3"}); code=${out##*$'\n'}; out=${out%$'\n'*}
+            case "$code" in 2*) printf '%s' "$out";; *) echo "::error::Supabase Auth API $1 $2 -> HTTP $code: $out"; return 1;; esac
+          }
+          existing=$(api GET "/auth/v1/admin/users?page=1&per_page=1000" | python3 -c "import json,sys,os; u=[x for x in json.load(sys.stdin).get('users',[]) if x.get('email','').lower()==os.environ['FIRST_ADMIN_EMAIL'].strip().lower()]; print(u[0]['id'] if u else '')")
           if [ -z "$existing" ]; then
-            body=$(python3 -c "import json,os; print(json.dumps({'email':os.environ['FIRST_ADMIN_EMAIL'],'email_confirm':True,'user_metadata':{'full_name':os.environ['FIRST_ADMIN_NAME']}}))")
-            existing=$(curl -sf "${H[@]}" -X POST "$SUPABASE_URL/auth/v1/admin/users" -d "$body" | python3 -c "import json,sys; print(json.load(sys.stdin)['id'])")
+            body=$(python3 -c "import json,os; print(json.dumps({'email':os.environ['FIRST_ADMIN_EMAIL'].strip(),'email_confirm':True,'user_metadata':{'full_name':os.environ['FIRST_ADMIN_NAME']}}))")
+            existing=$(api POST "/auth/v1/admin/users" "$body" | python3 -c "import json,sys; print(json.load(sys.stdin)['id'])")
             echo "created auth user $existing"
           else
             echo "auth user exists: $existing"
           fi
           psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -qc "insert into profiles (id, full_name) values ('$existing', '$FIRST_ADMIN_NAME') on conflict (id) do nothing; update profiles set role='admin', status='active', full_name=coalesce(nullif(full_name,''),'$FIRST_ADMIN_NAME') where id='$existing';"
           # Password: send a recovery link so the admin sets their own password (never stored in CI).
-          curl -sf "${H[@]}" -X POST "$SUPABASE_URL/auth/v1/recover" -d "{\"email\":\"$FIRST_ADMIN_EMAIL\"}" >/dev/null && echo "password-reset email sent to $FIRST_ADMIN_EMAIL" || echo "::warning::could not send reset email; use Supabase Auth → Users → Send password recovery"
+          if api POST "/auth/v1/recover" "{\"email\":\"$(echo "$FIRST_ADMIN_EMAIL" | tr -d '[:space:]')\"}" >/dev/null; then echo "password-reset email sent to $FIRST_ADMIN_EMAIL"; else echo "::warning::could not send reset email; use Supabase Auth -> Users -> Send password recovery"; fi
       - name: Check
         run: |
           psql "$DATABASE_URL" -qtc "select 'levels='||(select count(*) from levels)||' weeks='||(select count(*) from weeks)||' sessions='||(select count(*) from sessions)||' published='||(select count(*) from sessions where is_published)||' quiz_q='||(select count(*) from quiz_questions where session_id is not null)||' exam_q='||(select count(*) from quiz_questions where exam_id is not null)||' exams='||(select count(*) from exams)||' admins='||(select count(*) from profiles where role='admin')"
