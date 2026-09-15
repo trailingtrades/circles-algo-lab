@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       step:
-        description: "all | migrate | seed | admin | check | link (print a one-time set-password link for the admin)"
+        description: "all | migrate | seed | admin | check | link (one-time set-password link) | temp-password (set and print a temporary admin password)"
         required: true
         default: "all"
 jobs:
@@ -109,8 +109,23 @@ jobs:
           th=$(printf '%s' "$body" | python3 -c "import json,sys; print(json.load(sys.stdin)['hashed_token'])")
           echo "::notice::One-time set-password link for $E (valid ~1 hour, open it once in a browser):"
           echo ""; echo "$SITE/api/auth/callback?token_hash=$th&type=recovery&next=/learn/reset/confirm"; echo ""
+      - name: Temporary password
+        if: env.STEP == 'temp-password'
+        run: |
+          set -e
+          E="$(echo "$FIRST_ADMIN_EMAIL" | tr -s '[:space:]' '\n' | grep -E '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' | tail -1 | tr 'A-Z' 'a-z')"; E="${E:-trailingtrades@gmail.com}"
+          REF=$(echo "$DATABASE_URL" | grep -oE 'postgres\.[a-z0-9]{20}' | head -1 | sed 's/^postgres\.//'); U="https://$REF.supabase.co"
+          K="$(echo "$SUPABASE_SERVICE_ROLE_KEY" | tr -d '[:space:]')"
+          H=(-H "apikey: $K" -H "Authorization: Bearer $K" -H "Content-Type: application/json")
+          id=$(curl -sf "${H[@]}" "$U/auth/v1/admin/users?page=1&per_page=1000" | python3 -c "import json,sys,os; u=[x for x in json.load(sys.stdin).get('users',[]) if x.get('email','').lower()==os.environ['E']]; print(u[0]['id'] if u else '')" E="$E")
+          [ -n "$id" ] || { echo "::error::no auth user for $E; run step=admin first"; exit 1; }
+          PW="5C-$(openssl rand -hex 6)-Learn"
+          out=$(curl -s -w '\n%{http_code}' "${H[@]}" -X PUT "$U/auth/v1/admin/users/$id" -d "{\"password\":\"$PW\",\"email_confirm\":true}"); code=${out##*$'\n'}
+          [ "$code" = "200" ] || { echo "::error::set password -> HTTP $code: ${out:0:300}"; exit 1; }
+          echo "::notice::Temporary password set for $E. Sign in at ${SITE_URL:-https://circles-algo-lab.vercel.app}/learn and change it afterwards (Forgot password)."
+          echo ""; echo "email:    $E"; echo "password: $PW"; echo ""
       - name: Check
-        if: env.STEP != 'link'
+        if: env.STEP != 'link' && env.STEP != 'temp-password'
         run: |
           psql "$DATABASE_URL" -qtc "select 'levels='||(select count(*) from levels)||' weeks='||(select count(*) from weeks)||' sessions='||(select count(*) from sessions)||' published='||(select count(*) from sessions where is_published)||' quiz_q='||(select count(*) from quiz_questions where session_id is not null)||' exam_q='||(select count(*) from quiz_questions where exam_id is not null)||' exams='||(select count(*) from exams)||' admins='||(select count(*) from profiles where role='admin')"
           psql "$DATABASE_URL" -qtc "select 'rls tables without policy: '||coalesce(string_agg(c.relname, ','),'none') from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and c.relkind='r' and c.relrowsecurity and not exists (select 1 from pg_policy p where p.polrelid=c.oid)"
