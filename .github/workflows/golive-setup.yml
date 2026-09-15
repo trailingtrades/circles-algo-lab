@@ -17,12 +17,15 @@ on:
 jobs:
   setup:
     runs-on: ubuntu-latest
+    # Reads each value from Repository secrets, then the "production" Environment secrets, then Variables —
+    # whichever place it was saved in.
+    environment: production
     env:
-      DATABASE_URL: ${{ secrets.SUPABASE_DB_URL }}
-      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-      FIRST_ADMIN_EMAIL: ${{ secrets.FIRST_ADMIN_EMAIL }}
-      FIRST_ADMIN_NAME: ${{ secrets.FIRST_ADMIN_NAME || 'Rahul Sarawgi' }}
+      DATABASE_URL: ${{ secrets.SUPABASE_DB_URL || vars.SUPABASE_DB_URL }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL || vars.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || vars.SUPABASE_SERVICE_ROLE_KEY }}
+      FIRST_ADMIN_EMAIL: ${{ secrets.FIRST_ADMIN_EMAIL || vars.FIRST_ADMIN_EMAIL }}
+      FIRST_ADMIN_NAME: ${{ secrets.FIRST_ADMIN_NAME || vars.FIRST_ADMIN_NAME || 'Rahul Sarawgi' }}
       STEP: ${{ github.event.inputs.step }}
     steps:
       - uses: actions/checkout@v4
@@ -32,8 +35,9 @@ jobs:
       - name: Preflight
         run: |
           for v in DATABASE_URL SUPABASE_URL SUPABASE_SERVICE_ROLE_KEY FIRST_ADMIN_EMAIL; do
-            [ -n "${!v}" ] || { echo "::error::secret $v is not set"; exit 1; }
+            [ -n "${!v}" ] || { echo "::error::$v is empty. Add it at Settings → Secrets and variables → Actions → Repository secrets (tab 'Secrets', not 'Variables'; not Dependabot/Codespaces)."; missing=1; }
           done
+          [ -z "$missing" ] || exit 1
           case "$DATABASE_URL" in *supabase.co*|*supabase.com*|*pooler.supabase*) ;; *) echo "::error::SUPABASE_DB_URL does not look like a Supabase connection string"; exit 1;; esac
           psql "$DATABASE_URL" -qtc "select 'db ok: ' || current_database() || ' ' || version()"
       - name: Migrate
