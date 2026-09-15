@@ -35,7 +35,7 @@ The Algo Lab (`/index.html`, GitHub Pages at `algo.circleoptionlab.com`) is unaf
 Flow: learner meets all six criteria → app inserts the `certificates` row and emails → app POSTs `repository_dispatch` → job renders the PDF, verifies the HMAC, uploads to the private `certificates` bucket, sets `pdf_storage_path` (≈1–2 min) → Download button goes live. Manual re-render: Actions → "Render certificate PDF" → Run workflow with the certificate id.
 
 ## 4. Supabase (once)
-1. Apply `supabase/migrations/0001…0006` in order (SQL editor or `supabase db push`). Never the local auth shim.
+1. Run Actions → "Go-live setup (Supabase)" (applies `supabase/migrations/*.sql` 0001…0007, seeds content, creates the first admin). Never the local auth shim. Manual alternative: SQL editor, in order.
 2. Auth → URL configuration: Site URL = `NEXT_PUBLIC_SITE_URL`; Redirect URLs add `https://<domain>/api/auth/callback` and `https://*.vercel.app/api/auth/callback` for previews.
 3. Auth → Email: keep Supabase's built-in sender for password reset only (rate-limited; fine). Invites and certificate mails go through Resend.
 4. Storage: bucket `certificates` is created on first render (private). No public buckets.
