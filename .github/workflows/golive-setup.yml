@@ -24,7 +24,7 @@ jobs:
       DATABASE_URL: ${{ secrets.SUPABASE_DB_URL || vars.SUPABASE_DB_URL }}
       SUPABASE_URL: ${{ secrets.SUPABASE_URL || vars.SUPABASE_URL }}
       SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || vars.SUPABASE_SERVICE_ROLE_KEY }}
-      FIRST_ADMIN_EMAIL: ${{ secrets.FIRST_ADMIN_EMAIL || vars.FIRST_ADMIN_EMAIL }}
+      FIRST_ADMIN_EMAIL: ${{ secrets.FIRST_ADMIN_EMAIL || vars.FIRST_ADMIN_EMAIL || 'trailingtrades@gmail.com' }}
       FIRST_ADMIN_NAME: ${{ secrets.FIRST_ADMIN_NAME || vars.FIRST_ADMIN_NAME || 'Rahul Sarawgi' }}
       STEP: ${{ github.event.inputs.step }}
     steps:
@@ -60,6 +60,10 @@ jobs:
         run: |
           set -e
           # Project URL: derive from the DB connection string's project ref (postgres.<ref>@ or db.<ref>.supabase.co); fall back to the secret.
+          # Admin email: use the secret only if it looks like an email; otherwise the owner's address.
+          E="$(echo "$FIRST_ADMIN_EMAIL" | tr -d '[:space:]')"
+          case "$E" in *@*.*) FIRST_ADMIN_EMAIL="$E";; *) echo "::warning::FIRST_ADMIN_EMAIL secret is not a valid email; using trailingtrades@gmail.com"; FIRST_ADMIN_EMAIL="trailingtrades@gmail.com";; esac
+          export FIRST_ADMIN_EMAIL
           REF=$(echo "$DATABASE_URL" | grep -oE 'postgres\.[a-z0-9]{20}|db\.[a-z0-9]{20}\.supabase' | head -1 | sed -E 's/^(postgres|db)\.//; s/\.supabase$//')
           if [ -n "$REF" ]; then SUPABASE_URL="https://$REF.supabase.co"; else SUPABASE_URL="$(echo "$SUPABASE_URL" | tr -d '[:space:]' | sed 's#/*$##')"; fi
           case "$SUPABASE_URL" in https://*.supabase.co) ;; *) echo "::error::could not determine project URL"; exit 1;; esac
