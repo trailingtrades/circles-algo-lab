@@ -15,7 +15,7 @@ Repo: github.com/trailingtrades/circles-algo-lab (default branch `main`)
 Rule: a task on one product must not edit the other's files. Check `git diff --stat` before commit.
 
 ## 5C Learn — where everything lives
-- Course content (source of truth, JSON): `content/levels.json`, `content/weeks.json`, `content/sessions/{foundation,intermediate,advanced}.json` (60 sessions), `content/quizzes/foundation-w1.json`, `content/exams.json`, `content/exams/foundation-w1.json`, `content/resources.json`, `content/vocabulary.json`
+- Course content (source of truth, JSON): `content/levels.json`, `content/weeks.json`, `content/sessions/{foundation,intermediate,advanced}.json` (60 sessions), `content/quizzes/foundation.json`, `content/exams.json`, `content/exams/foundation-w1.json`, `content/resources.json`, `content/vocabulary.json`
 - Content generator: `scripts/gen_content.py` — DB seed: `apps/learn/scripts/seed.ts` — demo seed (never on prod): `apps/learn/scripts/seed-demo.ts`
 - App: `apps/learn/src/app/learn/...` (login, invite, home, path, session, exam, score, leaderboard, portfolio, certificate, resources, profile, mentor, admin)
 - DB: `supabase/migrations/20260908000001…0006` (RLS on every table). Test-only shim `supabase/tests/00_local_auth_shim.sql` — NEVER apply to real Supabase.

@@ -4,7 +4,7 @@
 
 ## Built
 **Content (`/content/`, source of truth — content is data, not code)**
-- `levels.json` (3) · `weeks.json` (12, Hinglish + EN titles, theme accents) · `sessions/{foundation,intermediate,advanced}.json` (60: EN title, Hinglish subtitle, core concept, AI Lab, psychology tag, Hinglish summary, one copy-ready master prompt each) · `resources.json` (41 placeholders: 12 decks incl. Foundation W1 pinned to **v1.1**, 12 handouts, 9 weekly + 3 final exam papers, 3 workbooks, MockPortfolio.xlsx, Algo Lab link) · `exams.json` (12; final = 36Q, pass 22, distinction 30 = ≥83%) · `vocabulary.json` (canonical terms + course-wide laws) · `quizzes/foundation-w1.json` (15 authored questions, distractors flagged).
+- `levels.json` (3) · `weeks.json` (12, Hinglish + EN titles, theme accents) · `sessions/{foundation,intermediate,advanced}.json` (60: EN title, Hinglish subtitle, core concept, AI Lab, psychology tag, Hinglish summary, one copy-ready master prompt each) · `resources.json` (41 placeholders: 12 decks incl. Foundation W1 pinned to **v1.1**, 12 handouts, 9 weekly + 3 final exam papers, 3 workbooks, MockPortfolio.xlsx, Algo Lab link) · `exams.json` (12; final = 36Q, pass 22, distinction 30 = ≥83%) · `vocabulary.json` (canonical terms + course-wide laws) · `quizzes/foundation.json` (15 authored questions, distractors flagged).
 - `scripts/gen_content.py` regenerates all of it; `apps/learn/scripts/seed.ts` upserts into Postgres by natural keys (idempotent, keeps admin-set video URLs).
 
 **Database** — `20260908000004_content_gating.sql`: `sessions.summary_hi/prompts/video_provider/is_draft`, `resources.note/external_url`, `level_unlocks` (admin per-student override, audited via `unlock_level()`), `app.level_open()`.

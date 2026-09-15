@@ -5,7 +5,7 @@ import foundation from "../../../../../content/sessions/foundation.json";
 import intermediate from "../../../../../content/sessions/intermediate.json";
 import advanced from "../../../../../content/sessions/advanced.json";
 import resourcesJson from "../../../../../content/resources.json";
-import quizW1 from "../../../../../content/quizzes/foundation-w1.json";
+import foundationQuizBanks from "../../../../../content/quizzes/foundation.json";
 import examsJson from "../../../../../content/exams.json";
 import examW1 from "../../../../../content/exams/foundation-w1.json";
 
@@ -30,12 +30,12 @@ export const levelOf = (slug: LevelSlug) => LEVELS.find((l) => l.slug === slug)!
 
 /** Public view of a quiz bank: no correct_index, no explanation. Grading and explanations are server-only (actions.ts). */
 export function quizPublic(n: number): QuizQuestionPublic[] {
-  const bank = (quizW1 as { session: number; questions: { stem_en: string; stem_hi: string; options: QuizOption[]; marks: number }[] }[]).find((b) => b.session === n);
+  const bank = (foundationQuizBanks as { session: number; questions: { stem_en: string; stem_hi: string; options: QuizOption[]; marks: number }[] }[]).find((b) => b.session === n);
   return (bank?.questions ?? []).map((q, idx) => ({ idx, stem_en: q.stem_en, stem_hi: q.stem_hi, options: q.options, marks: q.marks }));
 }
 /** Server-only helper (never import from a client component). */
 export function quizAnswerKey(n: number) {
-  const bank = (quizW1 as { session: number; questions: { correct_index: number; explanation_en: string; explanation_hi: string; marks: number }[] }[]).find((b) => b.session === n);
+  const bank = (foundationQuizBanks as { session: number; questions: { correct_index: number; explanation_en: string; explanation_hi: string; marks: number }[] }[]).find((b) => b.session === n);
   return (bank?.questions ?? []).map((q) => ({ correct_index: q.correct_index, explanation_en: q.explanation_en, explanation_hi: q.explanation_hi, marks: q.marks }));
 }
 /** YouTube unlisted (decision Q6-A): accept a watch URL, youtu.be URL, or bare id; return the privacy-enhanced embed URL. */

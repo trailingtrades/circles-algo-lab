@@ -171,6 +171,6 @@ w("levels.json", levels); w("weeks.json", weeks); w("resources.json", resources)
 by_level = {}
 for s in sessions: by_level.setdefault(s["level"], []).append(s)
 for lv, arr in by_level.items(): w(f"sessions/{lv}.json", arr)
-w("quizzes/foundation-w1.json", [q for q in quizzes if q["questions"]])
+w("quizzes/foundation.json", [q for q in quizzes if q["questions"]])
 w("quizzes/_empty-banks.json", [q["session"] for q in quizzes if not q["questions"]])
 print(len(levels), "levels,", len(weeks), "weeks,", len(sessions), "sessions,", len(resources), "resources,", len(exams), "exams,", sum(len(q["questions"]) for q in quizzes), "questions")

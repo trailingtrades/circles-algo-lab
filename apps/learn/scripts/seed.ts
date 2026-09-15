@@ -43,7 +43,7 @@ async function main() {
       [levelId[e.level], e.week ? weekId[`${e.level}-${e.week}`] : null, e.title, e.total_marks, e.pass_marks, e.distinction_marks, e.time_limit_min, e.attempts_allowed]);
   }
   let q = 0;
-  for (const bank of J("quizzes/foundation-w1.json")) {
+  for (const bank of J("quizzes/foundation.json")) {
     await db.query("delete from quiz_questions where session_id=$1", [sessionId[bank.session]]);
     for (const [i, qq] of bank.questions.entries()) {
       await db.query(`insert into quiz_questions (session_id,stem_en,stem_hi,options,correct_index,explanation_en,explanation_hi,marks,difficulty,sequence) values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10)`,
