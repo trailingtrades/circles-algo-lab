@@ -82,7 +82,7 @@ jobs:
           else
             echo "auth user exists: $existing"
           fi
-          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -qc "insert into profiles (id, full_name) values ('$existing', '$FIRST_ADMIN_NAME') on conflict (id) do nothing; update profiles set role='admin', status='active', full_name=coalesce(nullif(full_name,''),'$FIRST_ADMIN_NAME') where id='$existing';"
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -qc "select set_config('request.jwt.claims', '{\"role\":\"service_role\"}', false); insert into profiles (id, full_name) values ('$existing', '$FIRST_ADMIN_NAME') on conflict (id) do nothing; update profiles set role='admin', status='active', full_name=coalesce(nullif(full_name,''),'$FIRST_ADMIN_NAME') where id='$existing';"
           # Password: send a recovery link so the admin sets their own password (never stored in CI).
           if api POST "/auth/v1/recover" "{\"email\":\"$(echo "$FIRST_ADMIN_EMAIL" | tr -d '[:space:]')\"}" >/dev/null; then echo "password-reset email sent to $FIRST_ADMIN_EMAIL"; else echo "::warning::could not send reset email; use Supabase Auth -> Users -> Send password recovery"; fi
       - name: Check
