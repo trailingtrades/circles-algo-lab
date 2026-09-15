@@ -22,6 +22,9 @@ export async function GET(req: NextRequest) {
       ? await sb.auth.exchangeCodeForSession(code)
       : await sb.auth.verifyOtp({ token_hash: tokenHash!, type: type! });
     if (!error) return NextResponse.redirect(new URL(safeNext, req.url));
+    const u = new URL("/learn?error=link", req.url);
+    u.searchParams.set("reason", (error.code ?? error.message ?? "unknown").slice(0, 80));
+    return NextResponse.redirect(u);
   }
-  return NextResponse.redirect(new URL("/learn?error=link", req.url));
+  return NextResponse.redirect(new URL("/learn?error=link&reason=missing_params", req.url));
 }
