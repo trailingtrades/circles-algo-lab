@@ -2,7 +2,7 @@ import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { COOKIE_OPTIONS, SUPABASE_ANON_KEY, SUPABASE_URL, supabaseConfigured } from "@/lib/supabase/env";
 
-const PUBLIC = [/^\/learn$/, /^\/learn\/invite\//, /^\/learn\/reset/, /^\/verify\//, /^\/api\/auth\//, /^\/$/];
+const PUBLIC = [/^\/learn$/, /^\/learn\/invite\//, /^\/learn\/reset/, /^\/verify\//, /^\/api\/auth\//, /^\/api\/health$/, /^\/$/];
 
 /** Refreshes the session cookie on every request and bounces unauthenticated traffic off the app shell. Role checks live in lib/auth/guard.ts. */
 export async function proxy(req: NextRequest) {
