@@ -64,7 +64,7 @@ jobs:
           H=(-H "apikey: $KEY" -H "Authorization: Bearer $KEY" -H "Content-Type: application/json")
           api() { # method path [body] -> prints body, fails with status+body on non-2xx
             local out code; out=$(curl -s -w '\n%{http_code}' "${H[@]}" -X "$1" "$SUPABASE_URL$2" ${3:+-d "$3"}); code=${out##*$'\n'}; out=${out%$'\n'*}
-            case "$code" in 2*) printf '%s' "$out";; *) echo "::error::Supabase Auth API $1 $2 -> HTTP $code: $out"; return 1;; esac
+            case "$code" in 2*) printf '%s' "$out";; *) echo "::error::Supabase Auth API $1 $2 -> HTTP $code: ${out:0:400}" >&2; return 1;; esac
           }
           existing=$(api GET "/auth/v1/admin/users?page=1&per_page=1000" | python3 -c "import json,sys,os; u=[x for x in json.load(sys.stdin).get('users',[]) if x.get('email','').lower()==os.environ['FIRST_ADMIN_EMAIL'].strip().lower()]; print(u[0]['id'] if u else '')")
           if [ -z "$existing" ]; then
