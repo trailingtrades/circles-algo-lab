@@ -61,8 +61,9 @@ jobs:
           set -e
           # Project URL: derive from the DB connection string's project ref (postgres.<ref>@ or db.<ref>.supabase.co); fall back to the secret.
           # Admin email: use the secret only if it looks like an email; otherwise the owner's address.
-          E="$(echo "$FIRST_ADMIN_EMAIL" | tr -d '[:space:]')"
-          case "$E" in *@*.*) FIRST_ADMIN_EMAIL="$E";; *) echo "::warning::FIRST_ADMIN_EMAIL secret is not a valid email; using trailingtrades@gmail.com"; FIRST_ADMIN_EMAIL="trailingtrades@gmail.com";; esac
+          # Take the last whitespace-separated token that is an email (a pasted "NAME value" line still yields the value).
+          E="$(echo "$FIRST_ADMIN_EMAIL" | tr -s '[:space:]' '\n' | grep -E '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' | tail -1 | tr 'A-Z' 'a-z')"
+          if [ -n "$E" ]; then FIRST_ADMIN_EMAIL="$E"; else echo "::warning::FIRST_ADMIN_EMAIL secret is not a valid email; using trailingtrades@gmail.com"; FIRST_ADMIN_EMAIL="trailingtrades@gmail.com"; fi
           export FIRST_ADMIN_EMAIL
           REF=$(echo "$DATABASE_URL" | grep -oE 'postgres\.[a-z0-9]{20}|db\.[a-z0-9]{20}\.supabase' | head -1 | sed -E 's/^(postgres|db)\.//; s/\.supabase$//')
           if [ -n "$REF" ]; then SUPABASE_URL="https://$REF.supabase.co"; else SUPABASE_URL="$(echo "$SUPABASE_URL" | tr -d '[:space:]' | sed 's#/*$##')"; fi
@@ -74,7 +75,15 @@ jobs:
             local out code; out=$(curl -s -w '\n%{http_code}' "${H[@]}" -X "$1" "$SUPABASE_URL$2" ${3:+-d "$3"}); code=${out##*$'\n'}; out=${out%$'\n'*}
             case "$code" in 2*) printf '%s' "$out";; *) echo "::error::Supabase Auth API $1 $2 -> HTTP $code: ${out:0:400}" >&2; return 1;; esac
           }
-          existing=$(api GET "/auth/v1/admin/users?page=1&per_page=1000" | python3 -c "import json,sys,os; u=[x for x in json.load(sys.stdin).get('users',[]) if x.get('email','').lower()==os.environ['FIRST_ADMIN_EMAIL'].strip().lower()]; print(u[0]['id'] if u else '')")
+          users=$(api GET "/auth/v1/admin/users?page=1&per_page=1000")
+          existing=$(printf '%s' "$users" | python3 -c "import json,sys,os; u=[x for x in json.load(sys.stdin).get('users',[]) if x.get('email','').lower()==os.environ['FIRST_ADMIN_EMAIL']]; print(u[0]['id'] if u else '')")
+          # Repair a user created earlier with a mangled address (e.g. 'FIRST_ADMIN_EMAILme@x.com'): rename it to the correct email.
+          if [ -z "$existing" ]; then
+            bad=$(printf '%s' "$users" | python3 -c "import json,sys,os; e=os.environ['FIRST_ADMIN_EMAIL']; u=[x for x in json.load(sys.stdin).get('users',[]) if x.get('email','').lower().endswith(e) and x.get('email','').lower()!=e]; print(u[0]['id'] if u else '')")
+            if [ -n "$bad" ]; then
+              api PUT "/auth/v1/admin/users/$bad" "{\"email\":\"$FIRST_ADMIN_EMAIL\",\"email_confirm\":true}" >/dev/null && existing=$bad && echo "repaired email of auth user $bad"
+            fi
+          fi
           if [ -z "$existing" ]; then
             body=$(python3 -c "import json,os; print(json.dumps({'email':os.environ['FIRST_ADMIN_EMAIL'].strip(),'email_confirm':True,'user_metadata':{'full_name':os.environ['FIRST_ADMIN_NAME']}}))")
             existing=$(api POST "/auth/v1/admin/users" "$body" | python3 -c "import json,sys; print(json.load(sys.stdin)['id'])")
