@@ -59,7 +59,11 @@ jobs:
         if: env.STEP == 'all' || env.STEP == 'admin'
         run: |
           set -e
-          SUPABASE_URL="$(echo "$SUPABASE_URL" | tr -d '[:space:]' | sed 's#/*$##')"
+          # Project URL: derive from the DB connection string's project ref (postgres.<ref>@ or db.<ref>.supabase.co); fall back to the secret.
+          REF=$(echo "$DATABASE_URL" | grep -oE 'postgres\.[a-z0-9]{20}|db\.[a-z0-9]{20}\.supabase' | head -1 | sed -E 's/^(postgres|db)\.//; s/\.supabase$//')
+          if [ -n "$REF" ]; then SUPABASE_URL="https://$REF.supabase.co"; else SUPABASE_URL="$(echo "$SUPABASE_URL" | tr -d '[:space:]' | sed 's#/*$##')"; fi
+          case "$SUPABASE_URL" in https://*.supabase.co) ;; *) echo "::error::could not determine project URL"; exit 1;; esac
+          echo "project url: $SUPABASE_URL"
           KEY="$(echo "$SUPABASE_SERVICE_ROLE_KEY" | tr -d '[:space:]')"
           H=(-H "apikey: $KEY" -H "Authorization: Bearer $KEY" -H "Content-Type: application/json")
           api() { # method path [body] -> prints body, fails with status+body on non-2xx
