@@ -1,0 +1,73 @@
+name: Go-live setup (Supabase)
+# One-shot, idempotent production setup. Run from Actions → "Go-live setup (Supabase)" → Run workflow.
+#   1. Applies supabase/migrations/*.sql in order (never the local auth shim).
+#   2. Seeds course content from /content (npm run db:seed). Never the demo seed.
+#   3. Creates the first admin in Supabase Auth (if missing) and sets profiles.role='admin', status='active'.
+#   4. Prints a summary. Re-running is safe: migrations use IF NOT EXISTS, seed upserts, admin step is skipped if present.
+# Required repo secrets: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, SUPABASE_DB_URL (Postgres connection string from
+# Supabase → Project Settings → Database, "Session" pooler or direct), FIRST_ADMIN_EMAIL.
+# Optional: FIRST_ADMIN_NAME (default "Rahul Sarawgi").
+on:
+  workflow_dispatch:
+    inputs:
+      step:
+        description: "all | migrate | seed | admin | check"
+        required: true
+        default: "all"
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: ${{ secrets.SUPABASE_DB_URL }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      FIRST_ADMIN_EMAIL: ${{ secrets.FIRST_ADMIN_EMAIL }}
+      FIRST_ADMIN_NAME: ${{ secrets.FIRST_ADMIN_NAME || 'Rahul Sarawgi' }}
+      STEP: ${{ github.event.inputs.step }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: apps/learn/package-lock.json }
+      - run: sudo apt-get install -y -q postgresql-client >/dev/null
+      - name: Preflight
+        run: |
+          for v in DATABASE_URL SUPABASE_URL SUPABASE_SERVICE_ROLE_KEY FIRST_ADMIN_EMAIL; do
+            [ -n "${!v}" ] || { echo "::error::secret $v is not set"; exit 1; }
+          done
+          case "$DATABASE_URL" in *supabase.co*|*supabase.com*|*pooler.supabase*) ;; *) echo "::error::SUPABASE_DB_URL does not look like a Supabase connection string"; exit 1;; esac
+          psql "$DATABASE_URL" -qtc "select 'db ok: ' || current_database() || ' ' || version()"
+      - name: Migrate
+        if: env.STEP == 'all' || env.STEP == 'migrate'
+        run: |
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -qc "create table if not exists public._migrations (name text primary key, applied_at timestamptz not null default now())"
+          for f in supabase/migrations/*.sql; do
+            n=$(basename "$f")
+            if [ "$(psql "$DATABASE_URL" -qtAc "select 1 from public._migrations where name='$n'")" = "1" ]; then echo "== $n (already applied, skipped)"; continue; fi
+            echo "== $n"
+            psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -q -f "$f" || { echo "::error::migration $n failed; see log"; exit 1; }
+            psql "$DATABASE_URL" -qc "insert into public._migrations (name) values ('$n')"
+          done
+      - name: Seed content
+        if: env.STEP == 'all' || env.STEP == 'seed'
+        working-directory: apps/learn
+        run: npm ci --no-audit --no-fund >/dev/null && npm run db:seed
+      - name: First admin
+        if: env.STEP == 'all' || env.STEP == 'admin'
+        run: |
+          set -e
+          H=(-H "apikey: $SUPABASE_SERVICE_ROLE_KEY" -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE_KEY" -H "Content-Type: application/json")
+          existing=$(curl -sf "${H[@]}" "$SUPABASE_URL/auth/v1/admin/users?page=1&per_page=1000" | python3 -c "import json,sys,os; u=[x for x in json.load(sys.stdin).get('users',[]) if x.get('email','').lower()==os.environ['FIRST_ADMIN_EMAIL'].lower()]; print(u[0]['id'] if u else '')")
+          if [ -z "$existing" ]; then
+            body=$(python3 -c "import json,os; print(json.dumps({'email':os.environ['FIRST_ADMIN_EMAIL'],'email_confirm':True,'user_metadata':{'full_name':os.environ['FIRST_ADMIN_NAME']}}))")
+            existing=$(curl -sf "${H[@]}" -X POST "$SUPABASE_URL/auth/v1/admin/users" -d "$body" | python3 -c "import json,sys; print(json.load(sys.stdin)['id'])")
+            echo "created auth user $existing"
+          else
+            echo "auth user exists: $existing"
+          fi
+          psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -qc "insert into profiles (id, full_name) values ('$existing', '$FIRST_ADMIN_NAME') on conflict (id) do nothing; update profiles set role='admin', status='active', full_name=coalesce(nullif(full_name,''),'$FIRST_ADMIN_NAME') where id='$existing';"
+          # Password: send a recovery link so the admin sets their own password (never stored in CI).
+          curl -sf "${H[@]}" -X POST "$SUPABASE_URL/auth/v1/recover" -d "{\"email\":\"$FIRST_ADMIN_EMAIL\"}" >/dev/null && echo "password-reset email sent to $FIRST_ADMIN_EMAIL" || echo "::warning::could not send reset email; use Supabase Auth → Users → Send password recovery"
+      - name: Check
+        run: |
+          psql "$DATABASE_URL" -qtc "select 'levels='||(select count(*) from levels)||' weeks='||(select count(*) from weeks)||' sessions='||(select count(*) from sessions)||' published='||(select count(*) from sessions where is_published)||' quiz_q='||(select count(*) from quiz_questions where session_id is not null)||' exam_q='||(select count(*) from quiz_questions where exam_id is not null)||' exams='||(select count(*) from exams)||' admins='||(select count(*) from profiles where role='admin')"
+          psql "$DATABASE_URL" -qtc "select 'rls tables without policy: '||coalesce(string_agg(c.relname, ','),'none') from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and c.relkind='r' and c.relrowsecurity and not exists (select 1 from pg_policy p where p.polrelid=c.oid)"
