@@ -30,7 +30,7 @@ Rule: a task on one product must not edit the other's files. Check `git diff --s
 ## §1 Non-negotiables (always in force)
 1. SEBI Reg. No. INH000020004 on every screen. 2. Tier-1 disclaimer verbatim, never clamped/translated. 3. Never white text on #00AEEF. 4. No assured-returns language, EN or Hinglish. 5. Roman-script Hinglish only, zero Devanagari. 6. Leaderboard ranks PROCESS, never money. 7. No live market data/orders/advisory; virtual money only. 8. No emoji in product UI. 9. Broker-agnostic. 10. Only permitted F&O-loss stat: SEBI FY26 study (Aug 2026) 87.7% / Rs 91,685 cr / Rs 1.17 lakh, always stamped "SEBI FY26 study, Aug 2026". Never print repo rate, STT/cost rates, or the RBI reference rate (link to source instead).
 
-## Status (14 Sep 2026)
+## Build status (14 Sep 2026)
 - PR #1 (5C Learn build), PR #2 (Algo Lab fixes), PR #3 (Drive links, memory file) merged to `main`.
 - DECIDED: Curriculum v2 (Drive PDF) is canonical. Dashboard re-seeded: Tier 1 = 21 full sessions (topics, Aaj Ka Kaam, outcome, tools, AI Lab prompts, 5-Q quiz each), 3 weekend Quiz Games (15 Q x 2 marks) + final (30 Q). Tier 2/3 = structured drafts from the curriculum, unpublished until content + quizzes are written.
 - Curriculum v2 PDF still cites the retired ~91% FY25 stat; the dashboard uses only SEBI FY26 (Aug 2026) 87.7%. Fix the PDF before it goes to learners.
@@ -43,8 +43,28 @@ Rule: a task on one product must not edit the other's files. Check `git diff --s
 3. Admin session editor does not yet expose the `content` jsonb field; edit via the .py files + generator until it does.
 4. Upload decks/handouts/templates to Storage and point `content/resources.json` at them.
 
-## Go-live checklist (Rahul)
-Supabase project + env → run migrations → first admin invite → Resend domain → Vercel project (Root Directory `apps/learn`, region bom1) → GitHub secrets for cert-render → phone/laptop click-through.
+## Go-live status (16 Sep 2026) — LIVE
+- Site: https://circles-algo-lab.vercel.app (Vercel project `circles-algo-lab`, team `repo15`, root `apps/learn`). Domain `learn.5circles.co` NOT attached yet.
+- Supabase project `5c-learn`, ref `hcajzeykcdcxqidgmzep`, region ap-south-1. Migrations 0001-0007 applied; seeded: levels=3 weeks=33 sessions=61 published=21 quiz_q=105 exam_q=75 exams=6 admins=1.
+- Admin: trailingtrades@gmail.com (role admin, active). Password was set as a temporary one by the workflow; Rahul must change it via Forgot password.
+- Auth URL config in Supabase: Site URL = https://circles-algo-lab.vercel.app; redirect URLs include the vercel.app and learn.5circles.co callbacks.
+- GitHub Actions (all on `main`, run from Actions tab; Claude runs them via the GitHub MCP tools):
+  - `golive-setup.yml` input `step`: all | migrate | seed | admin | check | link (one-time set-password link) | temp-password (sets + prints a temp admin password, verified against the Auth password grant).
+  - `deploy-learn.yml`: on push to main touching apps/learn, content or itself, or manual. Re-sets the PUBLIC env vars on Vercel via REST API (NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY, NEXT_PUBLIC_SITE_URL), runs `vercel deploy --prod`, smoke-tests /learn and /verify/lookup, prints /api/health.
+- Vercel's own Git integration IGNORES commits that do not touch apps/learn (root directory rule); the Actions deploy bypasses it. Unique deployment URLs sit behind Vercel Authentication; always test the alias https://circles-algo-lab.vercel.app.
+- GitHub repo secrets: SUPABASE_URL (mis-pasted, unused), SUPABASE_SERVICE_ROLE_KEY, SUPABASE_DB_URL, FIRST_ADMIN_EMAIL (mis-pasted; workflow falls back to trailingtrades@gmail.com), CERT_SIGNING_SECRET (never rotate), NEXT_PUBLIC_SITE_URL, VERCEL_TOKEN. Workflows derive the project URL from SUPABASE_DB_URL.
+- `/api/health` (public) reports whether the app's Supabase settings are accepted; use it first when login fails.
+- App: `/api/auth/callback` accepts PKCE `code` OR `token_hash`+`type`; failure reason appears as `?error=link&reason=`.
+- Working style that worked: one baby step per message, exact copy-paste blocks, Claude runs everything it can via GitHub Actions; Rahul only does account-side clicks (Supabase, Vercel, GitHub secrets).
+
+## Go-live TODO (next session)
+1. Rahul: log in with the temp password, then Forgot password to set his own (Supabase free mailer: 2 emails/hour).
+2. Smoke test as admin: Admin → Cohorts → create `Tier1-Oct-2026` → invite self as student → Session 1: read, quiz, journal → Score.
+3. Domain: Vercel → Domains → add learn.5circles.co; registrar CNAME `learn` → cname.vercel-dns.com; then change PROD_URL in deploy-learn.yml and Site URL in Supabase.
+4. Resend: verify 5circles.co, add RESEND_API_KEY + EMAIL_FROM on Vercel (needed for invites/cert emails).
+5. Cert render: GITHUB_DISPATCH_TOKEN on Vercel (fine-grained token, Contents RW) + CERT_RENDER_MODE=dispatch.
+6. SECURITY: rotate the Supabase JWT secret (service_role key was pasted into chat on 15 Sep); then update SUPABASE_SERVICE_ROLE_KEY in GitHub secrets and on Vercel, and the anon key in deploy-learn.yml.
+7. Clean up GitHub secrets SUPABASE_URL and FIRST_ADMIN_EMAIL (re-enter correctly or delete).
 
 ## Known open items
 Q8 domain; Compliance Officer @5circles.co email; second signatory; quiz banks for sessions 6–60; 11 exam papers; videos; deck/handout uploads.
