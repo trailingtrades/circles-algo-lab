@@ -20,8 +20,8 @@ export function Header({ studentName }: { studentName?: string }) {
         <Link href="/learn/home" className="lrn-brand">
           <Image src="/brand/logo.png" alt="5 Circles" width={36} height={36} priority />
           <span className="min-w-0">
-            <span className="lrn-brand__name wm block" style={{ fontSize: 17 }}>5C LEARN</span>
-            <span className="lrn-brand__by">by 5 Circles</span>
+            <span className="lrn-brand__name wm block" style={{ fontSize: 17 }}>CIRCLE S.M.A.R.T</span>
+            <span className="lrn-brand__by">Level 1 · by 5 Circles</span>
           </span>
         </Link>
         <nav className="lrn-pillnav" aria-label="Primary">

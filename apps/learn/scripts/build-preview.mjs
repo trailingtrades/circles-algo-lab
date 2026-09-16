@@ -87,9 +87,9 @@ const out = [];
 const cssSet = new Set();
 for (const s of SCREENS) { const r = await screen(s); out.push(r); r.css.forEach((c) => cssSet.add(c)); console.log("rendered", s[2]); }
 let appCss = ""; for (const c of cssSet) appCss += await inlineCss(c);
-const bar = `<div class="pv-bar" role="tablist" aria-label="Screens"><strong>5C Learn · preview</strong>${out.map((s) => `<button class="pv-tab" role="tab" aria-selected="${s.id === "pv-home"}" data-target="${s.id}">${s.name}</button>`).join("")}<span class="pv-note">static preview · demo data · not deployed</span></div>`;
+const bar = `<div class="pv-bar" role="tablist" aria-label="Screens"><strong>CIRCLE S.M.A.R.T · preview</strong>${out.map((s) => `<button class="pv-tab" role="tab" aria-selected="${s.id === "pv-home"}" data-target="${s.id}">${s.name}</button>`).join("")}<span class="pv-note">static preview · demo data · not deployed</span></div>`;
 // data-theme must exist on <html> at parse time — the Winners tokens live on [data-theme=dark]/[data-theme=light], and dark is the default (no attribute-less state).
-const html = `<!doctype html>\n<html data-theme="dark">\n<title>5C Learn Preview</title>\n<style>${appCss}</style>\n<style>\n${PV_CSS}\n</style>\n${bar}\n${out.map((s) => s.body).join("\n")}\n${PV_SCRIPT}\n</html>\n`;
+const html = `<!doctype html>\n<html data-theme="dark">\n<title>Circle S.M.A.R.T Preview</title>\n<style>${appCss}</style>\n<style>\n${PV_CSS}\n</style>\n${bar}\n${out.map((s) => s.body).join("\n")}\n${PV_SCRIPT}\n</html>\n`;
 const dest = join(ROOT, "docs", "5C_LEARN_PREVIEW.html");
 writeFileSync(dest, html);
 console.log("wrote", dest, (html.length / 1e6).toFixed(2), "MB; skeletons left:", (html.match(/aria-busy="true"/g) || []).length, "; hidden payloads left:", (html.match(/<div hidden id="S:/g) || []).length);

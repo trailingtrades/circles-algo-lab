@@ -22,8 +22,9 @@ function LoginInner() {
         <div className="lrn-login">
           <div className="flex flex-col items-center gap-2 mb-6 text-center">
             <Image src="/brand/logo.png" alt="5 Circles" width={64} height={64} priority />
-            <h1 className="lrn-title wm">5C Learn</h1>
-            <p className="lrn-kicker">{COMPANY.tagline}</p>
+            <h1 className="lrn-title wm">CIRCLE S.M.A.R.T</h1>
+            <p className="lrn-kicker">Level 1 · 5 Circles Academy</p>
+            <p className="col-eyebrow">{COMPANY.tagline}</p>
             <p className="lrn-muted" style={{ margin: 0 }}>{t("welcome")}</p>
           </div>
           <form className="col-card" action={action} aria-label="Sign in">
