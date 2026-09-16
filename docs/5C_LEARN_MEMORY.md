@@ -66,5 +66,15 @@ Rule: a task on one product must not edit the other's files. Check `git diff --s
 6. SECURITY: rotate the Supabase JWT secret (service_role key was pasted into chat on 15 Sep); then update SUPABASE_SERVICE_ROLE_KEY in GitHub secrets and on Vercel, and the anon key in deploy-learn.yml.
 7. Clean up GitHub secrets SUPABASE_URL and FIRST_ADMIN_EMAIL (re-enter correctly or delete).
 
+## Re-skin to Winners design (decided 16 Sep 2026, in progress)
+- 5C Learn dashboard will be re-skinned to match CIRCLE W.I.N.N.E.R.S (5circles-dashboard). Presentation layer ONLY — no content/logic/scoring/gating/copy changes.
+- Source of truth for tokens: `C:\dev\ctc-tools\tools\5circles-dashboard\src\template.html` (Rahul's machine). Rahul to supply `template.html` + `app.js` (for MOD_ART) — cloud sessions cannot read that path. Until supplied, do NOT re-derive tokens from the summary values.
+- Winners tokens (summary, verify against file): dark --bg:#050608 --panel:#0f1520 --panel-2:#16233f --ink:#e2e8f0 --brand:#22b8f5 --brand-ink:#0b1b33; light --bg:#f4f7fb --brand:#0b74b8. Semantic --bull:#16a34a --bear:#f0554e --gold:#f5a524 (badges only). Never white on --brand cyan; no opacity-dimming for locked cards; text gradients stop at #0093D6.
+- Shared state: Winners uses `5cd.lang` for language; 5C Learn currently uses `fc_lang`/`fc_theme` (shared with Algo Lab). Key unification pending Winners' theme key name.
+- Languages: 5C Learn is EN + Roman Hinglish only (§1.5 zero Devanagari). Winners' 3-language (EN/Hinglish/Devanagari) test does not apply unless §1.5 is changed.
+- DOMAIN DECIDED: learn.optionlab.co.in (replaces earlier learn.5circles.co note). Update deploy-learn.yml PROD_URL, Supabase Site URL + redirect URLs, Vercel domain when attaching.
+- PPT/deck uploads: deferred — design first, uploads in a later step, then deploy in one go.
+- Work branch: claude/upbeat-archimedes-oei66i (contains all of claude/5c-learn-dashboard-build-taxape + PR #25).
+
 ## Known open items
 Q8 domain; Compliance Officer @5circles.co email; second signatory; quiz banks for sessions 6–60; 11 exam papers; videos; deck/handout uploads.
