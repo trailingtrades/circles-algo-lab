@@ -97,8 +97,16 @@ exams = [
 ]
 
 # ---- Resources ----
+# Drive course-pack audit, 16 Sep 2026: folder 1dtZn1iqD59sS_ujpa2NJ6if8glvhA0kk
+# (owner rsaraogi746@gmail.com, anyone-with-link). NOTE: the v1 packs are 4 weeks
+# per tier + 3 weekly exams + final; Curriculum v2 is 3/10/20 weeks — Week 4
+# files sit at level scope until the packs are re-cut. Newest version of each
+# file is linked; drafts (DRAFT_v0/SOURCE_v0) and older deck versions skipped.
+def drive(file_id):
+  return f"https://drive.google.com/file/d/{file_id}/view"
+
 resources = [
-  {"level": "foundation", "week": None, "kind": "excel", "file_name": "5C_AITC_Foundation_MockPortfolio_Template_v1.xlsx", "note": "virtual Rs 10 lakh mock portfolio (Google Drive)", "storage_path": "https://drive.google.com/file/d/1vGXOWT8KI59zSG43WC-CT0BvyYZQBLua/view"},
+  {"level": "foundation", "week": None, "kind": "excel", "file_name": "5C_AITC_Foundation_MockPortfolio_Template_v1.xlsx", "note": "virtual Rs 10 lakh mock portfolio (Google Drive, 4 Sep copy)", "storage_path": drive("1D03lWibwVrePE_iQHc_ae4LPnXI-y7HM")},
   {"level": "foundation", "week": None, "kind": "workbook", "file_name": "Tier 1 Rule Card + Journal + Sizing templates (Google Sheets)", "note": "templates pending upload", "storage_path": None},
   {"level": "intermediate", "week": None, "kind": "workbook", "file_name": "Tier 2 Capstone deck template", "note": "pending upload", "storage_path": None},
   {"level": "advanced", "week": None, "kind": "workbook", "file_name": "Tier 3 Strategy factory starter repo", "note": "pending upload", "storage_path": None},
@@ -111,9 +119,58 @@ resources = [
   {"level": None, "week": None, "kind": "link", "file_name": "5Circles_Complete_Question_Bank (Google Doc)", "note": "exam prep — full question bank, all tiers", "storage_path": "https://docs.google.com/document/d/1e5iLlkY0cGhRp9KoQsUsQgf77LkfX5vmedHRAEr3Jio/edit"},
   {"level": None, "week": None, "kind": "link", "file_name": "AI Trading Course — Curriculum Index (Google Sheet)", "note": "tier/week/session index of the curriculum", "storage_path": "https://docs.google.com/spreadsheets/d/1ZzMybEjVJpPpG6DFqsJyd5RceOJHgrCwNkYT1f8vIh4/edit"},
 ]
-for w in (1, 2, 3):
-  resources.append({"level": "foundation", "week": w, "kind": "deck", "file_name": f"5C_AITC_Tier1_W{w}_Deck.pptx", "note": "deck pending upload", "storage_path": None})
-  resources.append({"level": "foundation", "week": w, "kind": "handout", "file_name": f"5C_AITC_Tier1_W{w}_Handout.pdf", "note": "handout pending upload", "storage_path": None})
+
+# Foundation (Tier 1 Basic) — Week 1 deck: v1_1 is the newest of the three versions in the pack.
+FOUNDATION_PACK = [
+  (1, "deck", "5C_AITC_Foundation_Week1_Deck_v1_1.pptx", "Week 1 class deck", "1NDaZPAPzi5qGpku0QaNMXywM6-pjj0Ne"),
+  (1, "handout", "5C_AITC_Foundation_Handout1_v1.pdf", "Week 1 handout", "1KXPGM1iyOqSWpsXqdTWcUsl3brMgfF2z"),
+  (1, "exam", "5C_AITC_Foundation_Week1_Exam_v1.pdf", "Week 1 exam paper (print version of Quiz Game 1)", "1WO6q_3e_3QDcRGLQlZHAMy33vMuBoYLb"),
+  (2, "deck", "5C_AITC_Foundation_Week2_Deck_v1.pptx", "Week 2 class deck", "1TP7OgK3eG19wg__qh_W6AYQCbmj9lMXd"),
+  (2, "handout", "5C_AITC_Foundation_Handout2_v1.pdf", "Week 2 handout", "1NNnlWCRMH6JhkAWRHOE5U0B1bsGdHrq8"),
+  (2, "exam", "5C_AITC_Foundation_Week2_Exam_v1.pdf", "Week 2 exam paper (print version of Quiz Game 2)", "1BZum1cFmWcygQmGzOv5nRvkBHIi0Y6PQ"),
+  (3, "deck", "5C_AITC_Foundation_Week3_Deck_v1.pptx", "Week 3 class deck", "1zAmk7chCNGzUt_DWJpL13AH8JpZwUZfp"),
+  (3, "handout", "5C_AITC_Foundation_Handout3_v1.pdf", "Week 3 handout", "1S0oIzQuv_TsHp6n_uSnGdLQ4AkQcLrfu"),
+  (3, "exam", "5C_AITC_Foundation_Week3_Exam_v1.pdf", "Week 3 exam paper (print version of Quiz Game 3)", "1fiPKi5F6VSEIdKSzBJb-x6V_f4Qfo_Hv"),
+  (None, "deck", "5C_AITC_Foundation_Week4_Deck_v1.pptx", "v1 pack Week 4 — Curriculum v2 Tier 1 is 3 weeks; re-cut pending", "1sO3k2HP6OHIzxwJ9ngsWPtvKaYEWzbgK"),
+  (None, "handout", "5C_AITC_Foundation_Handout4_v1.pdf", "v1 pack Week 4 handout — re-cut pending", "1-RowkI8NqDXB2I9mBbFI3OcMMBSrbVJO"),
+  (None, "exam", "5C_AITC_Foundation_Final_Exam_v1.pdf", "Final exam paper (print version)", "1KL-UxbXK-kw-mSTyJdcvwQqo8fminjJe"),
+  (None, "workbook", "5C_AITC_Foundation_Workbook_v1.pdf", "Tier 1 workbook", "1cThjak0q4GXy_DXPXDSjzLOXZdjyX0Z-"),
+]
+# Intermediate (Tier 2 Advanced) — v1 pack is 4 weeks; Curriculum v2 spreads Tier 2 over 10 weeks.
+INTERMEDIATE_PACK = [
+  (1, "deck", "5C_AITC_Intermediate_Week1_Deck_v1.pptx", "v1 pack Week 1 deck", "1l22hxJ3Qtc3Bf2_y5NWI8zxv7dqZdDRU"),
+  (1, "handout", "5C_AITC_Intermediate_Handout1_v1.pdf", "v1 pack Week 1 handout", "1WQZ6DnPDLP3E8HK87DdUFevVDLADhq7y"),
+  (1, "exam", "5C_AITC_Intermediate_Week1_Exam_v1.pdf", "v1 pack Week 1 exam paper", "1wOucu6Qf6M2tIHlXotKFxGYFfZ0OJsOr"),
+  (2, "deck", "5C_AITC_Intermediate_Week2_Deck_v1.pptx", "v1 pack Week 2 deck", "1xtaN08sb-meqfLkgxLOyIbYLzWcq5A1p"),
+  (2, "handout", "5C_AITC_Intermediate_Handout2_v1.pdf", "v1 pack Week 2 handout", "1nAlzSyGS29rVJpVy6ex18Ihc6XYRzpjk"),
+  (2, "exam", "5C_AITC_Intermediate_Week2_Exam_v1.pdf", "v1 pack Week 2 exam paper", "1v5KZmXXAgXbmeBoSSDcX4Ty0Bxo7va-k"),
+  (3, "deck", "5C_AITC_Intermediate_Week3_Deck_v1.pptx", "v1 pack Week 3 deck", "19UHqFZA_jpDx0d24eFCDEjlwhWW97QE2"),
+  (3, "handout", "5C_AITC_Intermediate_Handout3_v1.pdf", "v1 pack Week 3 handout", "1BonAclVcC2x989qIcUAuflx0anOKCp21"),
+  (3, "exam", "5C_AITC_Intermediate_Week3_Exam_v1.pdf", "v1 pack Week 3 exam paper", "1Jo3Kpltg7pWHcL44ayO2OSPV7NUKQYgf"),
+  (4, "deck", "5C_AITC_Intermediate_Week4_Deck_v1.pptx", "v1 pack Week 4 deck", "1UUNRwxMTMdTf3Fy67dHhBuELgsSC-C9c"),
+  (4, "handout", "5C_AITC_Intermediate_Handout4_v1.pdf", "v1 pack Week 4 handout", "1DZT_c67JHV4F22Nf60go1Osj4_bELgrr"),
+  (None, "exam", "5C_AITC_Intermediate_Final_Exam_v1.pdf", "Final exam paper (print version)", "1gAqXujgxKxYDF6K4KD6FHudDjqjf2-UP"),
+  (None, "workbook", "5C_AITC_Intermediate_Workbook_v1.pdf", "Tier 2 workbook", "1nW1caJYEO8cPpq_pn8TJqakRvbSsjuKb"),
+]
+# Advanced (Tier 3 Expert) — v1 pack is 4 weeks; Curriculum v2 spreads Tier 3 over 20 weeks.
+ADVANCED_PACK = [
+  (1, "deck", "5C_AITC_Advanced_Week1_Deck_v1.pptx", "v1 pack Week 1 deck", "15CMDwls2n6wvVQRAK63Goteqy75jfaFi"),
+  (1, "handout", "5C_AITC_Advanced_Handout1_v1.pdf", "v1 pack Week 1 handout", "1OLtyermz0xP2ovtazaQMA6Yai5tgFmtY"),
+  (1, "exam", "5C_AITC_Advanced_Week1_Exam_v1.pdf", "v1 pack Week 1 exam paper", "1wWEthuY-7BwrTTOA5HOmIfBb3EYcxgQg"),
+  (2, "deck", "5C_AITC_Advanced_Week2_Deck_v1.pptx", "v1 pack Week 2 deck", "1A0PJLnLK_w5AQSIW-wvi-C1s2Nr9LTi_"),
+  (2, "handout", "5C_AITC_Advanced_Handout2_v1.pdf", "v1 pack Week 2 handout", "1bPR5i_SnzSOTiU9jFOxTx_F1iNKvshcf"),
+  (2, "exam", "5C_AITC_Advanced_Week2_Exam_v1.pdf", "v1 pack Week 2 exam paper", "1TotF6kDtcfuYaLz8wMey8GTDPl4ARGM8"),
+  (3, "deck", "5C_AITC_Advanced_Week3_Deck_v1.pptx", "v1 pack Week 3 deck", "1Pxp7OnG1NvzRHUzFzhy-F26-yXT7SlNu"),
+  (3, "handout", "5C_AITC_Advanced_Handout3_v1.pdf", "v1 pack Week 3 handout", "1x_u05Egcm64NBn8uMfWRcQTOu0qFCU9Q"),
+  (3, "exam", "5C_AITC_Advanced_Week3_Exam_v1.pdf", "v1 pack Week 3 exam paper", "1i8aAJMHs8FQoasafLht8Cr-eqlhio9Yx"),
+  (4, "deck", "5C_AITC_Advanced_Week4_Deck_v1.pptx", "v1 pack Week 4 deck", "1D2RluYLh0gORK6hGcGaRAPk4dz14TPFX"),
+  (4, "handout", "5C_AITC_Advanced_Handout4_v1.pdf", "v1 pack Week 4 handout", "130sqldaMef9F9GYCvSBTYtSEJpWn8RRr"),
+  (None, "exam", "5C_AITC_Advanced_Final_Exam_v1.pdf", "Final exam paper (print version)", "1-QPs0lYvONTvM1zq5KZYUZtnhiFDEug4"),
+  (None, "workbook", "5C_AITC_Advanced_Workbook_v1.pdf", "Tier 3 workbook", "1JwSxWTXH-rnXMvXeP1-3ztRekVhxB_gI"),
+]
+for level, pack in (("foundation", FOUNDATION_PACK), ("intermediate", INTERMEDIATE_PACK), ("advanced", ADVANCED_PACK)):
+  for wk, kind, fname, note, fid in pack:
+    resources.append({"level": level, "week": wk, "kind": kind, "file_name": fname, "note": note, "storage_path": drive(fid)})
 
 vocab = {
   "foundation": ["expectancy", "R-multiple", "risk-of-ruin", "verify-before-trust", "AI = analyst, human = trigger", "HH/HL", "S/R zones", "EMA 20/50", "VWAP", "RSI 40-50 pullback", "ATR stop", "Rule Card", "ORB", "EMA Pullback Swing", "1% rule", "position size formula", "5-check health filter", "Style Fit", "flowchart", "alerts are not orders", "30-trade backtest", "F&O = samjho, khelo mat", "no-trade days", "kill-switch for humans", "Daily Routine Card"],
