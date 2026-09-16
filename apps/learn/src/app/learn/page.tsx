@@ -8,6 +8,7 @@ import { ComplianceFooter } from "@/components/ui/ComplianceFooter";
 import { CREDENTIAL_LINE, COMPANY } from "@/lib/compliance/strings";
 import { signIn } from "./actions";
 import { AlertCircle } from "@/components/ui/Icon";
+import { RingsArt } from "@/components/ui/CourseArt";
 
 function LoginInner() {
   const { t, lang, setLang } = useLang();
@@ -15,13 +16,14 @@ function LoginInner() {
   const params = useSearchParams();
   const notice = params.get("suspended") ? "Ye account suspended hai. Apne mentor se sampark kijiye." : params.get("set") ? "Password set ho gaya. Ab sign in kijiye." : params.get("error") === "link" ? "Link expire ho gaya ya galat hai." : null;
   return (
-    <div className="lrn-shell">
+    <div className="lrn-shell lrn-gate">
+      <div className="lrn-gate__rings" aria-hidden><RingsArt /></div>
       <main className="lrn-main flex flex-col items-center justify-center" style={{ paddingTop: 48 }}>
         <div className="lrn-login">
           <div className="flex flex-col items-center gap-2 mb-6 text-center">
             <Image src="/brand/logo.png" alt="5 Circles" width={64} height={64} priority />
-            <h1 className="lrn-title">5C Learn</h1>
-            <p className="col-eyebrow">{COMPANY.tagline}</p>
+            <h1 className="lrn-title wm">5C Learn</h1>
+            <p className="lrn-kicker">{COMPANY.tagline}</p>
             <p className="lrn-muted" style={{ margin: 0 }}>{t("welcome")}</p>
           </div>
           <form className="col-card" action={action} aria-label="Sign in">

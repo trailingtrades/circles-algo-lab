@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "../styles/tokens.css";
 @import "../styles/tailwind-theme.css";
+@import "../styles/winners.css"; /* CIRCLE W.I.N.N.E.R.S skin — must come last so its bridge wins the cascade */
 
 /* ---- responsive foundations (responsive-dashboard-layout SKILL.md §2) ---- */
 *, *::before, *::after { box-sizing: border-box; }

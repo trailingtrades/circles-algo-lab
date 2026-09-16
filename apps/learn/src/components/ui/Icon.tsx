@@ -479,6 +479,14 @@ export const ShieldCheck = createIcon(
 
 
 /** Every icon in this file, for icon-picker UIs or tests. */
+export const BookOpen = createIcon(
+  "BookOpen",
+  <>
+      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+  </>
+);  // source: book-open.svg
+
 export const ICONS = {
   TrendingUp,
   TrendingDown,
@@ -530,6 +538,7 @@ export const ICONS = {
   Bell,
   Shield,
   ShieldCheck,
+  BookOpen,
 } as const;
 
 /** circle — lucide-static (ISC), 51st glyph added for the session gate checklist. Same shell, not hand-drawn. */
