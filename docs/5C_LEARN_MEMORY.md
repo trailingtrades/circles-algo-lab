@@ -1,4 +1,5 @@
-# 5C LEARN — MEMORY FILE (paste at the top of any new chat)
+# CIRCLE S.M.A.R.T (5C Learn) — MEMORY FILE (paste at the top of any new chat)
+Last updated: 16 Sep 2026, evening — after the Winners re-skin, S.M.A.R.T rebrand, course-pack wiring (all merged + deployed) and the Academy-landing 4-stage update.
 
 Owner: Rahul Sarawgi, 5 Circles Pvt Ltd, SEBI Registered Research Analyst, Reg. No. INH000020004.
 Chat language: Hinglish (Roman script). Regulatory/disclaimer text: English, verbatim.
@@ -65,7 +66,7 @@ Rule: a task on one product must not edit the other's files. Check `git diff --s
 ## Go-live TODO (next session)
 1. Rahul: log in with the temp password, then Forgot password to set his own (Supabase free mailer: 2 emails/hour).
 2. Smoke test as admin: Admin → Cohorts → create `Tier1-Oct-2026` → invite self as student → Session 1: read, quiz, journal → Score.
-3. Domain: Vercel → Domains → add learn.5circles.co; registrar CNAME `learn` → cname.vercel-dns.com; then change PROD_URL in deploy-learn.yml and Site URL in Supabase.
+3. Domain (DECIDED 16 Sep): students enter via learn.optionlab.co.in — `/smart/` redirect → vercel app for now. Later options: attach a real domain/subdomain to Vercel and update the redirect, deploy-learn.yml PROD_URL and Supabase Site URL + redirect URLs together. (Old learn.5circles.co plan dropped.)
 4. Resend: verify 5circles.co, add RESEND_API_KEY + EMAIL_FROM on Vercel (needed for invites/cert emails).
 5. Cert render: GITHUB_DISPATCH_TOKEN on Vercel (fine-grained token, Contents RW) + CERT_RENDER_MODE=dispatch.
 6. SECURITY: rotate the Supabase JWT secret (service_role key was pasted into chat on 15 Sep); then update SUPABASE_SERVICE_ROLE_KEY in GitHub secrets and on Vercel, and the anon key in deploy-learn.yml.
@@ -77,14 +78,19 @@ Rule: a task on one product must not edit the other's files. Check `git diff --s
 - Shared keys: `5cd.theme` / `5cd.lang`, values JSON-encoded ("dark" WITH quotes). 5C Learn maps 5cd.lang "hg" AND "hi" → its Roman Hinglish, and writes "hg" (never "hi", §1.5 zero Devanagari). Legacy fc_theme/fc_lang still mirrored for Algo Lab.
 - New components: `components/ui/CourseArt.tsx` (COURSE_ART map in MOD_ART shape + courseArt fallback, Cover strip, RingsArt gate backdrop verbatim geometry, SegmentedRing); header = pill nav + student chip (active pill --brand fill + --brand-ink, sidebar hidden ≥768px); LockedGate/SessionCard locked = recessed --bg-2 + hollow badge + padlock chip, no opacity dimming; login gate = rings + .wm wordmark; home = hero + segmented ring + stat tiles + continue card + horizontal roadmap + covers. BookOpen icon added to Icon.tsx (lucide-static).
 - Server pages render lang from the DB profile (v.lang), not localStorage — the header toggle switches client components; demo mode server copy stays EN. Pre-existing design, not a re-skin regression.
-- 5C Learn dashboard will be re-skinned to match CIRCLE W.I.N.N.E.R.S (5circles-dashboard). Presentation layer ONLY — no content/logic/scoring/gating/copy changes.
-- Source of truth for tokens: `C:\dev\ctc-tools\tools\5circles-dashboard\src\template.html` (Rahul's machine). Rahul to supply `template.html` + `app.js` (for MOD_ART) — cloud sessions cannot read that path. Until supplied, do NOT re-derive tokens from the summary values.
-- Winners tokens (summary, verify against file): dark --bg:#050608 --panel:#0f1520 --panel-2:#16233f --ink:#e2e8f0 --brand:#22b8f5 --brand-ink:#0b1b33; light --bg:#f4f7fb --brand:#0b74b8. Semantic --bull:#16a34a --bear:#f0554e --gold:#f5a524 (badges only). Never white on --brand cyan; no opacity-dimming for locked cards; text gradients stop at #0093D6.
-- Shared state: Winners uses `5cd.lang` for language; 5C Learn currently uses `fc_lang`/`fc_theme` (shared with Algo Lab). Key unification pending Winners' theme key name.
-- Languages: 5C Learn is EN + Roman Hinglish only (§1.5 zero Devanagari). Winners' 3-language (EN/Hinglish/Devanagari) test does not apply unless §1.5 is changed.
-- DOMAIN DECIDED: learn.optionlab.co.in (replaces earlier learn.5circles.co note). Update deploy-learn.yml PROD_URL, Supabase Site URL + redirect URLs, Vercel domain when attaching.
-- PPT/deck uploads: deferred — design first, uploads in a later step, then deploy in one go.
-- Work branch: claude/upbeat-archimedes-oei66i (contains all of claude/5c-learn-dashboard-build-taxape + PR #25).
+- Languages: EN + Roman Hinglish only (§1.5 zero Devanagari). We read Winners' `5cd.lang` "hg" AND "hi" as Hinglish and only ever write "hg".
+
+## Shipped 16 Sep 2026 (all on `main`, all deployed)
+- PR #26 (Winners re-skin + 37-file course pack) and PR #27 (rebrand to CIRCLE S.M.A.R.T) merged; `deploy-learn.yml` ran green both times (env vars → `vercel deploy --prod` → smoke test). Live: https://circles-algo-lab.vercel.app/learn — Winners look, "CIRCLE S.M.A.R.T / Level 1 · 5 Circles Academy" branding, Resources full.
+- Static preview artifact (dark + light, 12 screens): https://claude.ai/artifact/YTY9FZZJdq1skjc9qiwKhP ; repo copy `docs/5C_LEARN_PREVIEW.html`. Builder now emits `<html data-theme="dark">` and fails loudly on CSS fetch errors.
+- Rebrand surface: header lockup, gate wordmark + "Level 1 · 5 Circles Academy" kicker, page title, verify page, certificate band, resend.ts emails, preview labels. NOT renamed: repo paths, `5C_LEARN_*` docs, `5cd.*` keys, DB, course-internal tiers.
+
+## Academy landing (learn.optionlab.co.in) — separate codebase, Rahul's machine
+- Source: `C:\dev\ctc-tools\tools\5circles-academy\src\` (index.html + course.html template + course-data.js + icons.js + data/*.json; `node src/build.js` → `dist/`, guards INH000020004 + disclaimer + "Five Circles" ban). NOT on GitHub — cloud sessions must ask Rahul to upload files to chat.
+- 16 Sep: delivered `academy-smart-update.zip` — CIRCLE S.M.A.R.T card as Stage 1 (LIVE NOW) in all 3 languages, ladder renumbered to 4 stages (S.M.A.R.T 1, W.I.N.N.E.R.S 2, O.N.E 3, PRO 4), "Four stages" heading, stats 4/109+, enter-modal Stage-1 entry (email invite, not code), SMART export in course-data.js (auto-builds `/smart/about/` from data/smart-sessions.json = the dashboard's 21 sessions), `/smart/` redirect page → the vercel app (swap TARGET when domain moves).
+- Hosting: VPS `root@200.141.9.107`, key `~/.ssh/optionlab_vps`, nginx, webroot `/var/www/learn-5circles`; deploy = `bash deploy/deploy-academy.sh` in Git Bash from `tools/5circles-academy/` (uploads landing + winners-about/one-about + fonts + O.N.E; verifies with curl + sha256). nginx snippet `deploy/academy-paths.conf` has header-only locations for /winners/ /one/ /fonts/; default root serves other paths, so `/smart/` needs NO nginx change. `/one/` source: `../ctc-level2-mastery/CIRCLE1-ONE-Mastery-Program.html`; O.N.E guard: code prefix C1O1., "CMT" acronym banned.
+- Deploy script does NOT yet upload smart files — Rahul was given 3 Git Bash blocks (deploy-academy.sh, then tar-over-ssh of dist/smart-about + smart/ redirect, then curl checks of / /smart/ /smart/about/). STATUS: mid-deploy, /smart/ 200-check pending — VERIFY FIRST in the next session (this cloud env cannot reach learn.optionlab.co.in or vercel.app; egress-blocked — ask Rahul for screenshots/output instead).
+- Nice-to-have later: add /smart location blocks to academy-paths.conf for header parity; per-course access hint in course.html hero ("Access code needed" shows even for S.M.A.R.T's email invite).
 
 ## AITC course pack (wired 16 Sep 2026)
 - Drive folder `1dtZn1iqD59sS_ujpa2NJ6if8glvhA0kk` (owner rsaraogi746@gmail.com, anyone-with-link) = full v1 pack: per tier 4 weekly decks, 4 handouts, 3 weekly exams + final, workbook; plus Foundation mock portfolio (4 Sep copy). All 37 files linked in `scripts/gen_content.py` resources (regenerate with `python3 scripts/gen_content.py`).
