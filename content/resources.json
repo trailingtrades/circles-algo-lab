@@ -51,6 +51,38 @@
   "level": "foundation",
   "week": 1,
   "kind": "deck",
+  "file_name": "5Circles_Candlestick_Basics (Google Slides)",
+  "note": "candles, trend, S/R — pairs with Session 5",
+  "storage_path": "https://docs.google.com/presentation/d/1XUH2eezNFWBp_3UebzPCo4O6zdOMbes6Q2XKL1Q_P-0/edit"
+ },
+ {
+  "level": "foundation",
+  "week": 1,
+  "kind": "deck",
+  "file_name": "5Circles_Chart_Patterns (Google Slides)",
+  "note": "price structure and patterns — pairs with Sessions 5-6",
+  "storage_path": "https://docs.google.com/presentation/d/1OCWV7Yr-8n-UU5VyJrTJyIaMy7Qlt5iEzmKRpiqPDXE/edit"
+ },
+ {
+  "level": null,
+  "week": null,
+  "kind": "link",
+  "file_name": "5Circles_Complete_Question_Bank (Google Doc)",
+  "note": "exam prep — full question bank, all tiers",
+  "storage_path": "https://docs.google.com/document/d/1e5iLlkY0cGhRp9KoQsUsQgf77LkfX5vmedHRAEr3Jio/edit"
+ },
+ {
+  "level": null,
+  "week": null,
+  "kind": "link",
+  "file_name": "AI Trading Course — Curriculum Index (Google Sheet)",
+  "note": "tier/week/session index of the curriculum",
+  "storage_path": "https://docs.google.com/spreadsheets/d/1ZzMybEjVJpPpG6DFqsJyd5RceOJHgrCwNkYT1f8vIh4/edit"
+ },
+ {
+  "level": "foundation",
+  "week": 1,
+  "kind": "deck",
   "file_name": "5C_AITC_Tier1_W1_Deck.pptx",
   "note": "deck pending upload",
   "storage_path": null

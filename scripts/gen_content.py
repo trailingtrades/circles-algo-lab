@@ -104,6 +104,12 @@ resources = [
   {"level": "advanced", "week": None, "kind": "workbook", "file_name": "Tier 3 Strategy factory starter repo", "note": "pending upload", "storage_path": None},
   {"level": None, "week": None, "kind": "link", "file_name": "Circles Algo Lab — AI Trading Command Centre", "note": "existing dashboard, opens in a new tab", "storage_path": "https://algo.circleoptionlab.com"},
   {"level": None, "week": None, "kind": "link", "file_name": "AI Trading Course — Master Curriculum v2 (PDF)", "note": "full 3-tier curriculum, 23 strategies (Google Drive)", "storage_path": "https://drive.google.com/file/d/1MJsyuDyzMdXUTBBjojRQoA_G3_Z-pgWL/view"},
+  # Drive audit, 16 Sep 2026: files found in trailingtrades@gmail.com Drive and wired in.
+  # Newest copy of each is linked; older duplicates left untouched in Drive.
+  {"level": "foundation", "week": 1, "kind": "deck", "file_name": "5Circles_Candlestick_Basics (Google Slides)", "note": "candles, trend, S/R — pairs with Session 5", "storage_path": "https://docs.google.com/presentation/d/1XUH2eezNFWBp_3UebzPCo4O6zdOMbes6Q2XKL1Q_P-0/edit"},
+  {"level": "foundation", "week": 1, "kind": "deck", "file_name": "5Circles_Chart_Patterns (Google Slides)", "note": "price structure and patterns — pairs with Sessions 5-6", "storage_path": "https://docs.google.com/presentation/d/1OCWV7Yr-8n-UU5VyJrTJyIaMy7Qlt5iEzmKRpiqPDXE/edit"},
+  {"level": None, "week": None, "kind": "link", "file_name": "5Circles_Complete_Question_Bank (Google Doc)", "note": "exam prep — full question bank, all tiers", "storage_path": "https://docs.google.com/document/d/1e5iLlkY0cGhRp9KoQsUsQgf77LkfX5vmedHRAEr3Jio/edit"},
+  {"level": None, "week": None, "kind": "link", "file_name": "AI Trading Course — Curriculum Index (Google Sheet)", "note": "tier/week/session index of the curriculum", "storage_path": "https://docs.google.com/spreadsheets/d/1ZzMybEjVJpPpG6DFqsJyd5RceOJHgrCwNkYT1f8vIh4/edit"},
 ]
 for w in (1, 2, 3):
   resources.append({"level": "foundation", "week": w, "kind": "deck", "file_name": f"5C_AITC_Tier1_W{w}_Deck.pptx", "note": "deck pending upload", "storage_path": None})
