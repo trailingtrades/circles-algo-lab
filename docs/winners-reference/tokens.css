@@ -1,0 +1,64 @@
+/* IBM Plex Sans — the CircleOptionLab face, self-hosted at /fonts/ on the learn host.
+   The offline single file and the artifact have no /fonts/, and simply fall back to the
+   system stack below; nothing else depends on the file being there. */
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:100 700;font-display:swap;
+  src:url("/fonts/IBMPlexSans-var.woff2") format("woff2")}
+:root{
+  --bull:#16a34a; --bull-soft:#16a34a22;
+  --bear:#f0554e; --bear-soft:#f0554e22;
+  --gold:#f5a524; --gold-soft:#f5a52422;
+  --c1:#22d3ee; --c2:#2dd4bf; --c3:#38bdf8; --c4:#818cf8; --c5:#f5a524;
+  --r-sm:8px; --r-md:14px; --r-lg:22px; --r-xl:30px;
+  --ff:"IBM Plex Sans","Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",sans-serif;
+  --ff-d:"Nirmala UI","Segoe UI",system-ui,sans-serif;
+  --sp:clamp(16px,4vw,28px);
+  --maxw:1180px;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+[data-theme=dark]{
+  /* Navy family carried over from OptionLab so the card gradient below sits in the
+     same key as the rest of the product line. */
+  --bg:#050608; --bg-2:#0d0f13; --panel:#0f1520; --panel-2:#16233f;
+  --line:#1c2433; --line-2:#334155;
+  /* --ink-3 was #64748b: 3.7:1 on the panel, under AA for the small labels it is used
+     on. Lightened until it clears 4.5 on every surface here. */
+  --ink:#e2e8f0; --ink-2:#93a4b5; --ink-3:#7c8ca3;
+  --card-grad:linear-gradient(to bottom right,#16233f,#101a2e 52%,#0c1322);
+  --card-line:#1c2433;
+  /* brand cyan from the CircleOptionLab ramp (acc-400). 8.9:1 on --bg as text; the
+     --brand-ink navy is what sits ON it — never white on brand cyan (2.5:1). */
+  --brand:#22b8f5; --brand-soft:#22b8f526; --brand-ink:#0b1b33;
+  /* bull/bear/gold are fill colours; as TEXT they need their own values per
+     theme. On dark surfaces the fills already clear AA, so these just alias. */
+  --gold-text:#f5a524; --bull-text:#16a34a; --bear-text:#f0554e;
+  /* Library bias pills sit on a tint of their OWN hue, not on the panel, so they need
+     one more step of darkening than --*-text gives. On dark the tint is barely there
+     and these can alias; the light values below are where it actually matters. */
+  --pill-bull:var(--bull-text); --pill-bear:var(--bear-text); --pill-gold:var(--gold-text);
+  --chart-bg:#ffffff;
+  --shadow:0 18px 50px -12px #000000aa;
+  --glow:0 0 0 1px #ffffff08, 0 1px 0 #ffffff0a inset;
+}
+[data-theme=light]{
+  --bg:#f4f7fb; --bg-2:#ffffff; --panel:#ffffff; --panel-2:#eef3f9;
+  --line:#d3dee7; --line-2:#a9bccb;
+  /* --ink-3 was #7c8fa1 = 3.4:1 on white, under AA. #64748b clears white at 4.65 but
+     only reaches 4.32 on the page ground (#f4f7f9), which is where the eyebrow, stat
+     labels and library counts actually sit — one more step down puts it at 5.25. */
+  --ink:#18232f; --ink-2:#47596b; --ink-3:#57687a;
+  --card-grad:linear-gradient(to bottom right,#f2f7ff,#ffffff 52%,#f8fafc);
+  --card-line:#e2e8f0;
+  /* acc-600 from the CircleOptionLab ramp: the one blue that clears 4.5:1 with white
+     text (4.6). Never the brand cyan #00AEEF with white — 2.5:1. */
+  --brand:#0b74b8; --brand-soft:#0b74b81f; --brand-ink:#ffffff;
+  /* On white the display fills all fail AA as text: gold 2.04:1, green 3.30:1,
+     red 3.43:1. These darker -700 shades clear it while reading as the same
+     colours. Same trap as teal-600 above — check contrast, do not eyeball it. */
+  --gold-text:#b45309; --bull-text:#15803d; --bear-text:#b91c1c;
+  /* Measured on the composited pill, not on white: --bull-text over its own 13% tint
+     is 4.33:1, which misses AA for 10px text. One shade down clears it at 6.2:1.
+     Red and amber already passed; they move too so the three stay a set. */
+  --pill-bull:#166534; --pill-bear:#991b1b; --pill-gold:#92400e;
+  --chart-bg:#ffffff;
+  --shadow:0 14px 40px -14px #22304028;
+  --glow:0 0 0 1px #18232f0d;
