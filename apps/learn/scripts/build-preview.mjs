@@ -17,7 +17,11 @@ const SCREENS = [
   ["pv-locked", "Locked", "/learn/session/9"], ["pv-exam", "Exam", "/learn/exam/foundation-w1"], ["pv-score", "Score", "/learn/score"], ["pv-leaderboard", "Leaderboard", "/learn/leaderboard"],
   ["pv-portfolio", "Portfolio", "/learn/portfolio"], ["pv-certificate", "Certificate", "/learn/certificate"], ["pv-resources", "Resources", "/learn/resources"], ["pv-verify", "Verify", "/verify/lookup"],
 ];
-const PV_CSS = `.pv-bar{position:sticky;top:0;z-index:100;display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding:10px 12px;background:#0d0f13;border-bottom:1px solid rgba(255,255,255,.09)}
+const PV_CSS = `body{padding-top:88px}
+html{scroll-padding-top:88px} /* the deferred #pv-* fragment scroll lands sections below the fixed bar */
+/* fixed, not sticky: globals.css puts overflow-x:hidden on body, which makes body its own
+   scroll container and un-sticks sticky children in standards mode */
+.pv-bar{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding:10px 12px;background:#0d0f13;border-bottom:1px solid rgba(255,255,255,.09)}
 .pv-bar strong{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#97a1b3;margin-right:6px}
 .pv-tab{height:30px;padding:0 12px;border-radius:9999px;border:1px solid rgba(255,255,255,.12);background:transparent;color:#f2f5f9;font:600 13px "IBM Plex Sans",sans-serif;cursor:pointer}
 .pv-tab[aria-selected="true"]{background:#0b74b8;border-color:#0b74b8;color:#fff}
@@ -82,7 +86,8 @@ const cssSet = new Set();
 for (const s of SCREENS) { const r = await screen(s); out.push(r); r.css.forEach((c) => cssSet.add(c)); console.log("rendered", s[2]); }
 let appCss = ""; for (const c of cssSet) appCss += await inlineCss(c);
 const bar = `<div class="pv-bar" role="tablist" aria-label="Screens"><strong>5C Learn · preview</strong>${out.map((s) => `<button class="pv-tab" role="tab" aria-selected="${s.id === "pv-home"}" data-target="${s.id}">${s.name}</button>`).join("")}<span class="pv-note">static preview · demo data · not deployed</span></div>`;
-const html = `<title>5C Learn Preview</title>\n<style>${appCss}</style>\n<style>\n${PV_CSS}\n</style>\n${bar}\n${out.map((s) => s.body).join("\n")}\n${PV_SCRIPT}\n`;
+// data-theme must exist on <html> at parse time — the Winners tokens live on [data-theme=dark]/[data-theme=light], and dark is the default (no attribute-less state).
+const html = `<!doctype html>\n<html data-theme="dark">\n<title>5C Learn Preview</title>\n<style>${appCss}</style>\n<style>\n${PV_CSS}\n</style>\n${bar}\n${out.map((s) => s.body).join("\n")}\n${PV_SCRIPT}\n</html>\n`;
 const dest = join(ROOT, "docs", "5C_LEARN_PREVIEW.html");
 writeFileSync(dest, html);
 console.log("wrote", dest, (html.length / 1e6).toFixed(2), "MB; skeletons left:", (html.match(/aria-busy="true"/g) || []).length, "; hidden payloads left:", (html.match(/<div hidden id="S:/g) || []).length);
