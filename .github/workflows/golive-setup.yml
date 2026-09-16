@@ -27,7 +27,7 @@ jobs:
       FIRST_ADMIN_EMAIL: ${{ secrets.FIRST_ADMIN_EMAIL || vars.FIRST_ADMIN_EMAIL || 'trailingtrades@gmail.com' }}
       FIRST_ADMIN_NAME: ${{ secrets.FIRST_ADMIN_NAME || vars.FIRST_ADMIN_NAME || 'Rahul Sarawgi' }}
       STEP: ${{ github.event.inputs.step }}
-      SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL_LIVE || 'https://circles-algo-lab.vercel.app' }}
+      SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL_LIVE || 'https://learn.optionlab.co.in' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -102,7 +102,7 @@ jobs:
           E="$(echo "$FIRST_ADMIN_EMAIL" | tr -s '[:space:]' '\n' | grep -E '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' | tail -1 | tr 'A-Z' 'a-z')"; E="${E:-trailingtrades@gmail.com}"
           REF=$(echo "$DATABASE_URL" | grep -oE 'postgres\.[a-z0-9]{20}' | head -1 | sed 's/^postgres\.//'); U="https://$REF.supabase.co"
           K="$(echo "$SUPABASE_SERVICE_ROLE_KEY" | tr -d '[:space:]')"
-          SITE="${SITE_URL:-https://circles-algo-lab.vercel.app}"
+          SITE="${SITE_URL:-https://learn.optionlab.co.in}"
           out=$(curl -s -w '\n%{http_code}' -H "apikey: $K" -H "Authorization: Bearer $K" -H "Content-Type: application/json" -X POST "$U/auth/v1/admin/generate_link" -d "{\"type\":\"recovery\",\"email\":\"$E\",\"options\":{\"redirect_to\":\"$SITE/api/auth/callback?next=/learn/reset/confirm\"}}")
           code=${out##*$'\n'}; body=${out%$'\n'*}
           [ "$code" = "200" ] || { echo "::error::generate_link -> HTTP $code: ${body:0:300}"; exit 1; }
@@ -126,7 +126,7 @@ jobs:
           # Verify the credentials against the Auth password grant (prints status and error only, never tokens).
           v=$(curl -s -w '\n%{http_code}' -H "apikey: $K" -H "Content-Type: application/json" -X POST "$U/auth/v1/token?grant_type=password" -d "{\"email\":\"$E\",\"password\":\"$PW\"}"); vc=${v##*$'\n'}; vb=${v%$'\n'*}
           if [ "$vc" = "200" ]; then echo "password grant check: OK (HTTP 200)"; else echo "::warning::password grant check failed: HTTP $vc: $(printf '%s' "$vb" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('error_description') or d.get('msg') or d.get('error') or d)" 2>/dev/null | head -c 200)"; fi
-          echo "::notice::Temporary password set for $E. Sign in at ${SITE_URL:-https://circles-algo-lab.vercel.app}/learn and change it afterwards (Forgot password)."
+          echo "::notice::Temporary password set for $E. Sign in at ${SITE_URL:-https://learn.optionlab.co.in}/learn and change it afterwards (Forgot password)."
           echo ""; echo "email:    $E"; echo "password: $PW"; echo ""
       - name: Check
         if: env.STEP != 'link' && env.STEP != 'temp-password'
