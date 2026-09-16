@@ -2,7 +2,7 @@ import "server-only";
 import { Resend } from "resend";
 import { TIER2, CREDENTIAL_LINE } from "@/lib/compliance/strings";
 
-const FROM = process.env.EMAIL_FROM ?? "5C Learn <learn@5circles.co>";
+const FROM = process.env.EMAIL_FROM ?? "Circle S.M.A.R.T <learn@5circles.co>";
 
 /** Tier-2 footer on every platform email (§2). The warning glyph is part of the approved wording. */
 function wrap(bodyHtml: string) {
@@ -16,11 +16,11 @@ ${bodyHtml}
 
 export async function sendInviteEmail(to: string, fullName: string, cohortName: string, link: string) {
   const html = wrap(`<p>Namaste ${fullName},</p>
-<p>Aapka <strong>5C Learn</strong> account tayyar hai — cohort <strong>${cohortName}</strong> ke liye.</p>
+<p>Aapka <strong>Circle S.M.A.R.T</strong> account tayyar hai — cohort <strong>${cohortName}</strong> ke liye.</p>
 <p>Neeche wale link se apna password set kijiye. Ye link <strong>sirf ek baar</strong> chalega aur <strong>7 din</strong> mein expire ho jayega.</p>
 <p><a href="${link}" style="display:inline-block;background:#134A9A;color:#ffffff;padding:10px 18px;border-radius:9999px;text-decoration:none;font-weight:600">Set my password</a></p>
 <p style="font-size:13px;color:#4b5670">Link kaam na kare to apne mentor se dobara invite maangiye. Password kabhi email par nahi bheja jata.</p>`);
-  return send(to, "Aapka 5C Learn invite — password set kijiye", html);
+  return send(to, "Aapka Circle S.M.A.R.T invite — password set kijiye", html);
 }
 
 async function send(to: string, subject: string, html: string) {
@@ -35,7 +35,7 @@ async function send(to: string, subject: string, html: string) {
 export async function sendCertificateEmail(to: string, fullName: string, levelTitle: string, certNo: string, link: string) {
   const html = wrap(`<p>Badhai ho ${fullName},</p>
 <p>Aapka <strong>${levelTitle}</strong> level ka Certificate of Completion issue ho gaya hai. Certificate No. <strong>${certNo}</strong>.</p>
-<p><a href="${link}" style="display:inline-block;background:#134A9A;color:#ffffff;padding:10px 18px;border-radius:9999px;text-decoration:none;font-weight:600">Download from 5C Learn</a></p>
+<p><a href="${link}" style="display:inline-block;background:#134A9A;color:#ffffff;padding:10px 18px;border-radius:9999px;text-decoration:none;font-weight:600">Download from Circle S.M.A.R.T</a></p>
 <p style="font-size:13px;color:#4b5670">This certifies course completion only. It is not a SEBI or NISM certification and confers no licence to advise.</p>`);
-  return send(to, `Aapka ${levelTitle} certificate tayyar hai — 5C Learn`, html);
+  return send(to, `Aapka ${levelTitle} certificate tayyar hai — Circle S.M.A.R.T`, html);
 }

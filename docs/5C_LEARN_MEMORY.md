@@ -4,6 +4,11 @@ Owner: Rahul Sarawgi, 5 Circles Pvt Ltd, SEBI Registered Research Analyst, Reg. 
 Chat language: Hinglish (Roman script). Regulatory/disclaimer text: English, verbatim.
 Working style: deliver files not chat; verify before claiming; flag errors/compliance gaps; MCQ decisions, not open questions.
 
+## Product name: CIRCLE S.M.A.R.T (renamed from "5C Learn", 16 Sep 2026)
+The learner dashboard in this repo is CIRCLE S.M.A.R.T — Level 1 of the 5 Circles Academy ladder:
+Level 1 CIRCLE S.M.A.R.T (this app) → Level 2 CIRCLE W.I.N.N.E.R.S (5circles-dashboard) → Level 3 CIRCLE O.N.E → Level 4 CIRCLE P.R.O (3 & 4 not built yet).
+Internal names stay (repo paths, `5C_LEARN_*` docs, `5cd.*` storage keys, DB); only user-facing branding says Circle S.M.A.R.T. Course-internal Tier 1/2/3 (Basic/Advanced/Expert) are levels WITHIN this product — unrelated to the Academy ladder.
+
 ## Two SEPARATE products in ONE repo (never mix)
 Repo: github.com/trailingtrades/circles-algo-lab (default branch `main`)
 

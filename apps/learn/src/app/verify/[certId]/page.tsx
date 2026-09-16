@@ -40,7 +40,7 @@ export default async function VerifyPage({ params, searchParams }: { params: Pro
   return (
     <div className="lrn-shell">
       <main className="lrn-main" style={{ maxWidth: 760, margin: "0 auto", width: "100%" }}>
-        <div className="flex items-center gap-3 mb-4"><Image src="/brand/logo.png" alt="5 Circles" width={40} height={40} /><div><div style={{ fontWeight: 700 }}>5C Learn · Certificate verification</div><div className="col-eyebrow">{COMPANY.short} · {COMPANY.tagline}</div></div></div>
+        <div className="flex items-center gap-3 mb-4"><Image src="/brand/logo.png" alt="5 Circles" width={40} height={40} /><div><div style={{ fontWeight: 700 }}>Circle S.M.A.R.T · Certificate verification</div><div className="col-eyebrow">{COMPANY.short} · {COMPANY.tagline}</div></div></div>
         <form method="get" action="/verify/lookup" className="col-card flex gap-2 items-end flex-wrap" role="search">
           <div className="lrn-field" style={{ flex: "1 1 240px", margin: 0 }}><label htmlFor="q">Certificate number</label><input id="q" name="q" className="col-input lrn-num" placeholder="5C-FOUND-2026-XXXXXX" defaultValue={sp.q ?? (certId !== "lookup" ? certId : "")} required /></div>
           <button className="col-btn col-btn--primary"><Search size={16} aria-hidden /> Verify</button>
@@ -61,7 +61,7 @@ export default async function VerifyPage({ params, searchParams }: { params: Pro
           <p className="lrn-muted" style={{ margin: "4px 0 0", fontSize: "var(--col-text-body-sm)" }}>Principal Officer: {COMPANY.principalOfficer} · Compliance Officer: {COMPANY.complianceOfficer} · {COMPANY.email} · {COMPANY.phone} · {COMPANY.site}</p>
           <p className="lrn-muted" style={{ margin: "4px 0 0", fontSize: "var(--col-text-body-sm)" }}>Grievances: write to the Compliance Officer; unresolved matters may be escalated to SEBI SCORES (scores.sebi.gov.in) or the Online Dispute Resolution portal (smartodr.in).</p>
           <p className="lrn-footer__cred mt-2" style={{ fontSize: "var(--col-text-dense)" }}>{CREDENTIAL_LINE}</p>
-          <p style={{ margin: "6px 0 0", fontSize: "var(--col-text-body-sm)" }}><strong>A 5C Learn certificate certifies course completion only. It is not a SEBI or NISM certification and confers no licence to advise.</strong></p>
+          <p style={{ margin: "6px 0 0", fontSize: "var(--col-text-body-sm)" }}><strong>A Circle S.M.A.R.T certificate certifies course completion only. It is not a SEBI or NISM certification and confers no licence to advise.</strong></p>
         </section>
       </main>
       <ComplianceFooter tier={1} grievance />
