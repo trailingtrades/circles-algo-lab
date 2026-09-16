@@ -1,0 +1,318 @@
+/* ============================================================
+   5C Learn — CIRCLE W.I.N.N.E.R.S skin
+   Two parts:
+   1. VERBATIM token blocks from the live Winners build
+      (docs/winners-reference/tokens.css = template.html lines 27–90).
+      Do not edit values here — every tuned one carries the reason
+      in the comment above it. The only change is the restored
+      closing brace of [data-theme=light], cut off in extraction.
+   2. A bridge that points the legacy --col-* variables (still
+      referenced by tokens.css component classes and globals.css)
+      at the Winners tokens, plus the component recipes Winners
+      uses (pill nav, wordmark, gate rings, recessed locked cards,
+      covers, roadmap). Presentation only — no content or logic.
+   ============================================================ */
+
+/* ---------- 1. Winners tokens, verbatim ---------- */
+
+/* IBM Plex Sans — the CircleOptionLab face, self-hosted at /fonts/ on the learn host.
+   The offline single file and the artifact have no /fonts/, and simply fall back to the
+   system stack below; nothing else depends on the file being there. */
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:100 700;font-display:swap;
+  src:url("/fonts/IBMPlexSans-var.woff2") format("woff2")}
+:root{
+  --bull:#16a34a; --bull-soft:#16a34a22;
+  --bear:#f0554e; --bear-soft:#f0554e22;
+  --gold:#f5a524; --gold-soft:#f5a52422;
+  --c1:#22d3ee; --c2:#2dd4bf; --c3:#38bdf8; --c4:#818cf8; --c5:#f5a524;
+  --r-sm:8px; --r-md:14px; --r-lg:22px; --r-xl:30px;
+  --ff:"IBM Plex Sans","Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",sans-serif;
+  --ff-d:"Nirmala UI","Segoe UI",system-ui,sans-serif;
+  --sp:clamp(16px,4vw,28px);
+  --maxw:1180px;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+[data-theme=dark]{
+  /* Navy family carried over from OptionLab so the card gradient below sits in the
+     same key as the rest of the product line. */
+  --bg:#050608; --bg-2:#0d0f13; --panel:#0f1520; --panel-2:#16233f;
+  --line:#1c2433; --line-2:#334155;
+  /* --ink-3 was #64748b: 3.7:1 on the panel, under AA for the small labels it is used
+     on. Lightened until it clears 4.5 on every surface here. */
+  --ink:#e2e8f0; --ink-2:#93a4b5; --ink-3:#7c8ca3;
+  --card-grad:linear-gradient(to bottom right,#16233f,#101a2e 52%,#0c1322);
+  --card-line:#1c2433;
+  /* brand cyan from the CircleOptionLab ramp (acc-400). 8.9:1 on --bg as text; the
+     --brand-ink navy is what sits ON it — never white on brand cyan (2.5:1). */
+  --brand:#22b8f5; --brand-soft:#22b8f526; --brand-ink:#0b1b33;
+  /* bull/bear/gold are fill colours; as TEXT they need their own values per
+     theme. On dark surfaces the fills already clear AA, so these just alias. */
+  --gold-text:#f5a524; --bull-text:#16a34a; --bear-text:#f0554e;
+  /* Library bias pills sit on a tint of their OWN hue, not on the panel, so they need
+     one more step of darkening than --*-text gives. On dark the tint is barely there
+     and these can alias; the light values below are where it actually matters. */
+  --pill-bull:var(--bull-text); --pill-bear:var(--bear-text); --pill-gold:var(--gold-text);
+  --chart-bg:#ffffff;
+  --shadow:0 18px 50px -12px #000000aa;
+  --glow:0 0 0 1px #ffffff08, 0 1px 0 #ffffff0a inset;
+}
+[data-theme=light]{
+  --bg:#f4f7fb; --bg-2:#ffffff; --panel:#ffffff; --panel-2:#eef3f9;
+  --line:#d3dee7; --line-2:#a9bccb;
+  /* --ink-3 was #7c8fa1 = 3.4:1 on white, under AA. #64748b clears white at 4.65 but
+     only reaches 4.32 on the page ground (#f4f7f9), which is where the eyebrow, stat
+     labels and library counts actually sit — one more step down puts it at 5.25. */
+  --ink:#18232f; --ink-2:#47596b; --ink-3:#57687a;
+  --card-grad:linear-gradient(to bottom right,#f2f7ff,#ffffff 52%,#f8fafc);
+  --card-line:#e2e8f0;
+  /* acc-600 from the CircleOptionLab ramp: the one blue that clears 4.5:1 with white
+     text (4.6). Never the brand cyan #00AEEF with white — 2.5:1. */
+  --brand:#0b74b8; --brand-soft:#0b74b81f; --brand-ink:#ffffff;
+  /* On white the display fills all fail AA as text: gold 2.04:1, green 3.30:1,
+     red 3.43:1. These darker -700 shades clear it while reading as the same
+     colours. Same trap as teal-600 above — check contrast, do not eyeball it. */
+  --gold-text:#b45309; --bull-text:#15803d; --bear-text:#b91c1c;
+  /* Measured on the composited pill, not on white: --bull-text over its own 13% tint
+     is 4.33:1, which misses AA for 10px text. One shade down clears it at 6.2:1.
+     Red and amber already passed; they move too so the three stay a set. */
+  --pill-bull:#166534; --pill-bear:#991b1b; --pill-gold:#92400e;
+  --chart-bg:#ffffff;
+  --shadow:0 14px 40px -14px #22304028;
+  --glow:0 0 0 1px #18232f0d;
+}
+
+/* ---------- 2a. Bridge: legacy --col-* now resolve to Winners tokens ----------
+   tokens.css keeps dark/light as PAIRED variables switched by .col-light rules;
+   Winners keeps one set switched by [data-theme]. Collapsing each pair onto the
+   theme-driven token makes every legacy rule and its .col-light override agree,
+   whichever fires. LangProvider stamps data-theme and the body classes together. */
+[data-theme=dark], [data-theme=light]{
+  --col-dark-base: var(--bg);            --col-light-base: var(--bg);
+  --col-dark-card: var(--panel);         --col-light-card: var(--panel);
+  --col-dark-card-to: var(--bg-2);       --col-light-card-tint: var(--panel-2);
+  --col-dark-text-primary: var(--ink);   --col-light-text-primary: var(--ink);
+  --col-dark-text-secondary: var(--ink-2); --col-light-text-secondary: var(--ink-2);
+  --col-dark-text-tertiary: var(--ink-3);  --col-light-text-tertiary: var(--ink-3);
+  --col-dark-border: var(--line);        --col-light-border: var(--line);
+  --col-brand: var(--brand);
+  --col-button: var(--brand);
+  --col-up-dark: var(--bull-text);       --col-up-light-safe: var(--bull-text);
+  --col-up-light: var(--bull);
+  --col-down-dark: var(--bear-text);     --col-down-light: var(--bear-text);
+  --col-warn: var(--gold-text);
+  --col-font-sans: var(--ff);
+  /* Winners sets numbers in the sans face with tabular lining numerals, not Plex Mono. */
+  --col-font-mono: var(--ff);
+  --col-radius-card: var(--r-lg);
+  --col-radius-inner: var(--r-md);
+  --col-radius-input: var(--r-sm);
+  --col-ease: var(--ease);
+  --col-dark-glow-blue: var(--brand-soft);
+}
+
+/* ---------- 2b. Fills that carried hardcoded white text ----------
+   Cyan fills take --brand-ink navy (dark); on light --brand is the AA blue and
+   --brand-ink is white — both pairs come straight from the tokens. */
+.col-btn--primary{ background: var(--brand); color: var(--brand-ink); }
+.lrn-skip{ background: var(--brand); color: var(--brand-ink); }
+.lrn-bar__fill{ background: var(--brand); }
+.lrn-nav-item[aria-current="page"], .lrn-opt--chosen{ background: var(--brand-soft); }
+[data-theme=light] .lrn-nav-item[aria-current="page"]{ color: var(--brand); background: var(--brand-soft); }
+.lrn-check input, .lrn-opt input{ accent-color: var(--brand); }
+
+/* Cards pick up the Winners diagonal gradient, hairline and inset glow. */
+.col-card{ background: var(--card-grad); border-color: var(--card-line); box-shadow: var(--glow); }
+.col-light .col-card{ background: var(--card-grad); border-color: var(--card-line); }
+.col-table thead th{ background: var(--panel); }
+.col-input{ background: var(--bg-2); }
+.col-light .col-input{ background: var(--bg-2); }
+.lrn-prompt__body{ background: var(--panel-2); }
+.col-light .lrn-prompt__body{ background: var(--panel-2); }
+.lrn-bar__track{ background: var(--panel-2); }
+.col-light .lrn-bar__track{ background: var(--panel-2); }
+.lrn-skel{ background: var(--panel-2); }
+.col-light .lrn-skel{ background: var(--panel-2); }
+.col-chip{ background: var(--panel-2); }
+.col-light .col-chip{ background: var(--panel-2); }
+body{ font-variant-numeric: tabular-nums lining-nums; }
+
+/* ---------- 2c. Wordmark ----------
+   Text-bearing gradients stop at #0093D6 — near-black on navy is 2.19:1, so the
+   ramp never runs darker than this. Large text only (AA-large at 3:1 on white). */
+.wm{
+  background: linear-gradient(92deg, var(--c1), var(--brand) 45%, #0093D6);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent; -webkit-text-fill-color: transparent;
+  font-weight: 700; letter-spacing: -0.01em;
+}
+[data-theme=light] .wm{ background: linear-gradient(92deg, #0093D6, var(--brand) 60%, #0b5f96); -webkit-background-clip: text; background-clip: text; }
+
+/* ---------- 2d. Centered container + header (matches the live Winners header:
+   brand lockup, icon pill-nav group, language pill, theme icon, student chip) ---------- */
+.lrn-max{ width: 100%; max-width: var(--maxw); margin-inline: auto; }
+.lrn-main > .lrn-max{ display: block; }
+.lrn-brand__by{ font-size: 11px; color: var(--ink-3); display: block; line-height: 1.1; }
+.lrn-pillnav{
+  display: none; align-items: center; gap: 2px;
+  padding: 3px; border: 1px solid var(--line); border-radius: 9999px;
+  background: var(--panel); min-width: 0; overflow-x: auto; scrollbar-width: none;
+}
+.lrn-pillnav::-webkit-scrollbar{ display: none; }
+@media (min-width: 768px){ .lrn-pillnav{ display: inline-flex; } .lrn-sidebar{ display: none !important; } }
+.lrn-pill{
+  display: inline-flex; align-items: center; gap: 7px;
+  height: 34px; padding: 0 14px; border-radius: 9999px;
+  font-size: var(--col-text-body-sm); font-weight: 600; white-space: nowrap;
+  color: var(--ink-2); text-decoration: none;
+  transition: background var(--col-duration-fast) var(--ease), color var(--col-duration-fast) var(--ease);
+}
+.lrn-pill:hover{ color: var(--ink); background: var(--panel-2); }
+.lrn-pill[aria-current="page"]{ background: var(--brand); color: var(--brand-ink); }
+.lrn-iconbtn{
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 9999px; border: 1px solid var(--line);
+  background: var(--panel); color: var(--ink-2); cursor: pointer;
+}
+.lrn-iconbtn:hover{ color: var(--ink); }
+.lrn-langpill{
+  display: inline-flex; align-items: center; gap: 7px; height: 38px; padding: 0 14px;
+  border-radius: 9999px; border: 1px solid var(--line); background: var(--panel);
+  color: var(--ink); font-size: var(--col-text-body-sm); font-weight: 600; cursor: pointer;
+}
+.lrn-student{
+  display: inline-flex; align-items: center; gap: 8px;
+  height: 36px; padding: 2px 12px 2px 2px; border: 1px solid var(--line);
+  border-radius: 9999px; background: var(--panel);
+  font-size: var(--col-text-body-sm); font-weight: 600; color: var(--ink);
+  max-width: 180px;
+}
+.lrn-student__ava{
+  width: 28px; height: 28px; border-radius: 9999px; flex: 0 0 auto;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--brand); color: var(--brand-ink);
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+}
+.lrn-student__name{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 519px){ .lrn-student__name{ display: none; } .lrn-student{ padding-right: 2px; } }
+
+/* ---------- 2e. Access gate: ring backdrop + kicker ---------- */
+.lrn-gate{ position: relative; }
+.lrn-gate__rings{
+  position: absolute; left: 50%; top: 42%; transform: translate(-50%, -50%);
+  width: min(560px, 120vw); aspect-ratio: 1; pointer-events: none; z-index: 0;
+}
+.lrn-gate__rings svg{ width: 100%; height: 100%; display: block; }
+.lrn-gate > *:not(.lrn-gate__rings){ position: relative; z-index: 1; }
+.lrn-kicker{
+  font-size: var(--col-text-eyebrow); font-weight: 600; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+
+/* ---------- 2f. Locked cards: recessed surface, hollow badge, padlock chip ----------
+   Never dimmed with opacity — every text token stays at full strength. */
+.lrn-card--locked{
+  background: var(--bg-2); border: 1px solid var(--line); box-shadow: none;
+}
+.lrn-badge--hollow{
+  display: inline-flex; align-items: center; gap: 4px; height: 24px; padding: 0 10px;
+  border-radius: 9999px; border: 1px solid var(--line-2);
+  background: transparent; color: var(--ink-2);
+  font-size: var(--col-text-dense); font-weight: 600;
+}
+.lrn-lockchip{
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px; border-radius: 9999px; flex: 0 0 auto;
+  background: var(--panel-2); color: var(--ink-2); border: 1px solid var(--line);
+}
+
+/* ---------- 2g. Cover art on module/session cards (live Winners recipe:
+   full-bleed saturated diagonal gradient, icon left, big module number right) ---------- */
+.lrn-cover{
+  display: flex; align-items: center; justify-content: space-between;
+  height: 96px; padding: 0 var(--col-space-4);
+  margin: calc(-1 * var(--col-space-5)) calc(-1 * var(--col-space-5)) var(--col-space-4);
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+  position: relative; overflow: hidden;
+}
+.lrn-cover__tint{ position: absolute; inset: 0; }
+.lrn-cover svg{ position: relative; color: #ffffff; opacity: .9; }
+.lrn-cover__num{
+  position: relative; font-size: 44px; font-weight: 700; line-height: 1;
+  color: #ffffff; opacity: .4; letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+/* Light covers are pastel — white glyphs wash out, ink reads on every tint. */
+[data-theme=light] .lrn-cover svg{ color: var(--ink); opacity: .55; }
+[data-theme=light] .lrn-cover__num{ color: var(--ink); opacity: .3; }
+.lrn-card--locked .lrn-cover__tint{ opacity: .35; }
+
+/* Status pill (AVAILABLE / COMPLETE style) */
+.lrn-avail{
+  display: inline-flex; align-items: center; height: 24px; padding: 0 12px;
+  border-radius: 9999px; background: var(--brand-soft); color: var(--brand);
+  font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+}
+.lrn-avail--done{ background: var(--bull-soft); color: var(--pill-bull); }
+
+/* ---------- 2h. Segmented ring panel + icon stat tiles ---------- */
+.lrn-segring{ display: block; }
+.lrn-segring__seg{ transition: stroke var(--col-duration) var(--ease); }
+.lrn-ringpanel{
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: var(--col-space-5) var(--col-space-6);
+}
+.lrn-statrow{ display: grid; gap: var(--col-space-3); grid-template-columns: repeat(auto-fit, minmax(min(100%, 168px), 1fr)); }
+.lrn-stat{ display: flex; align-items: center; gap: var(--col-space-3); padding: var(--col-space-4); }
+.lrn-stat__ico{
+  width: 42px; height: 42px; border-radius: 12px; flex: 0 0 auto;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--brand-soft); color: var(--brand);
+}
+.lrn-stat .lrn-num{ font-size: 22px; font-weight: 700; margin: 0; line-height: 1.15; }
+.lrn-stat__lbl{
+  font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-3); margin: 2px 0 0;
+}
+
+/* ---------- 2i. Continue-learning bar + phase-banner roadmap ---------- */
+.lrn-continue{ display: flex; align-items: center; gap: var(--col-space-4); flex-wrap: wrap; }
+.lrn-tile-ico{
+  width: 56px; height: 56px; border-radius: 14px; flex: 0 0 auto;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--brand-soft); color: var(--brand);
+}
+.lrn-continue__body{ flex: 1 1 260px; min-width: 0; }
+.lrn-continue__kick{
+  font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--brand); margin: 0 0 2px;
+}
+.lrn-continue__meta{ display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+.lrn-continue__meta .lrn-bar__track{ flex: 1 1 auto; margin-top: 0; max-width: 320px; }
+.lrn-continue__pct{ font-size: var(--col-text-dense); color: var(--ink-3); white-space: nowrap; }
+.lrn-phases{ display: flex; flex-direction: column; gap: var(--col-space-3); }
+.lrn-phase{
+  display: flex; align-items: center; gap: var(--col-space-4);
+  padding: var(--col-space-4) var(--col-space-5);
+  text-decoration: none; color: inherit; flex-wrap: wrap;
+}
+.lrn-phase__kick{
+  font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--brand); margin: 0 0 2px;
+}
+/* Gold is for achievement/milestone moments only — the CURRENT milestone row. */
+.lrn-phase--now{ border-color: var(--gold); }
+.lrn-phase--now .lrn-phase__kick{ color: var(--gold-text); }
+.lrn-phase--now .lrn-tile-ico{ background: var(--gold-soft); color: var(--gold-text); }
+.lrn-phase__body{ flex: 1 1 260px; min-width: 0; }
+.lrn-phase__title{ font-size: 16px; font-weight: 700; margin: 0; }
+.lrn-phase__sub{ font-size: var(--col-text-body-sm); color: var(--ink-2); margin: 2px 0 0; }
+.lrn-phase__count{ font-size: var(--col-text-body); font-weight: 700; color: var(--ink-2); white-space: nowrap; }
+
+/* Long tag chips wrap instead of overflowing their fixed 24px height. */
+.lrn-tags .col-chip{ height: auto; min-height: 24px; padding-top: 3px; padding-bottom: 3px; white-space: normal; }
+
+/* ---------- 2j. Hero ---------- */
+.lrn-hero{ display: flex; flex-wrap: wrap; align-items: stretch; gap: var(--col-space-4) var(--col-space-6); }
+.lrn-hero__txt{ flex: 1 1 320px; min-width: 0; align-self: center; }
+.lrn-hero__txt .lrn-title{ font-size: clamp(30px, 3.4vw, 44px); line-height: 1.12; margin: 6px 0 10px; }
+.lrn-hero__ring{ flex: 0 1 340px; }

@@ -1,28 +1,48 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useLang } from "@/lib/i18n/LangProvider";
-import { CREDENTIAL_LINE } from "@/lib/compliance/strings";
-import { Eye, EyeOff } from "@/components/ui/Icon";
+import { NAV } from "./nav";
+import { Sun, Moon, Languages } from "@/components/ui/Icon";
 
-export function Header() {
+/* Live Winners header recipe: centered max-width row — brand lockup, one pill
+   group of icon nav chips, a language pill, a theme icon button, and the
+   student chip on the right. Active chip is a --brand fill with --brand-ink
+   text (never white on the dark cyan). */
+export function Header({ studentName }: { studentName?: string }) {
   const { lang, setLang, theme, setTheme } = useLang();
+  const path = usePathname();
+  const name = studentName?.trim() || "Student";
   return (
-    <header className="col-header" role="banner">
-      <Link href="/learn/home" className="lrn-brand">
-        <Image src="/brand/logo.png" alt="5 Circles" width={32} height={32} priority />
-        <span className="min-w-0">
-          <span className="lrn-brand__name block">5C Learn</span>
-          <span className="lrn-brand__sub block">{CREDENTIAL_LINE}</span>
-        </span>
-      </Link>
-      <div className="flex items-center gap-2">
-        <button type="button" className="lrn-toggle" aria-pressed={lang === "hi"} aria-label="Switch language" onClick={() => setLang(lang === "en" ? "hi" : "en")}>
-          {lang === "en" ? "EN" : "HI"}
-        </button>
-        <button type="button" className="lrn-toggle" aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"} onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-          {theme === "dark" ? <Eye size={16} aria-hidden /> : <EyeOff size={16} aria-hidden />}
-        </button>
+    <header className="col-header" role="banner" style={{ height: "auto", minHeight: 64, padding: "8px 16px" }}>
+      <div className="lrn-max flex items-center justify-between gap-3">
+        <Link href="/learn/home" className="lrn-brand">
+          <Image src="/brand/logo.png" alt="5 Circles" width={36} height={36} priority />
+          <span className="min-w-0">
+            <span className="lrn-brand__name wm block" style={{ fontSize: 17 }}>5C LEARN</span>
+            <span className="lrn-brand__by">by 5 Circles</span>
+          </span>
+        </Link>
+        <nav className="lrn-pillnav" aria-label="Primary">
+          {NAV.map(({ href, label, icon: I }) => (
+            <Link key={href + label} href={href} className="lrn-pill" aria-current={path.startsWith(href) ? "page" : undefined}>
+              <I size={15} strokeWidth={1.75} aria-hidden />{label}
+            </Link>
+          ))}
+        </nav>
+        <div className="flex items-center gap-2">
+          <button type="button" className="lrn-langpill" aria-pressed={lang === "hi"} aria-label="Switch language" onClick={() => setLang(lang === "en" ? "hi" : "en")}>
+            <Languages size={15} strokeWidth={1.75} aria-hidden />{lang === "en" ? "EN" : "HI"}
+          </button>
+          <button type="button" className="lrn-iconbtn" aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"} onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+            {theme === "dark" ? <Sun size={17} strokeWidth={1.75} aria-hidden /> : <Moon size={17} strokeWidth={1.75} aria-hidden />}
+          </button>
+          <span className="lrn-student" title={name}>
+            <span className="lrn-student__ava" aria-hidden>{name.charAt(0)}</span>
+            <span className="lrn-student__name">{name}</span>
+          </span>
+        </div>
       </div>
     </header>
   );

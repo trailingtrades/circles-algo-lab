@@ -4,8 +4,8 @@
   "week": null,
   "kind": "excel",
   "file_name": "5C_AITC_Foundation_MockPortfolio_Template_v1.xlsx",
-  "note": "virtual Rs 10 lakh mock portfolio (Google Drive)",
-  "storage_path": "https://drive.google.com/file/d/1vGXOWT8KI59zSG43WC-CT0BvyYZQBLua/view"
+  "note": "virtual Rs 10 lakh mock portfolio (Google Drive, 4 Sep copy)",
+  "storage_path": "https://drive.google.com/file/d/1D03lWibwVrePE_iQHc_ae4LPnXI-y7HM/view"
  },
  {
   "level": "foundation",
@@ -51,48 +51,344 @@
   "level": "foundation",
   "week": 1,
   "kind": "deck",
-  "file_name": "5C_AITC_Tier1_W1_Deck.pptx",
-  "note": "deck pending upload",
-  "storage_path": null
+  "file_name": "5Circles_Candlestick_Basics (Google Slides)",
+  "note": "candles, trend, S/R — pairs with Session 5",
+  "storage_path": "https://docs.google.com/presentation/d/1XUH2eezNFWBp_3UebzPCo4O6zdOMbes6Q2XKL1Q_P-0/edit"
+ },
+ {
+  "level": "foundation",
+  "week": 1,
+  "kind": "deck",
+  "file_name": "5Circles_Chart_Patterns (Google Slides)",
+  "note": "price structure and patterns — pairs with Sessions 5-6",
+  "storage_path": "https://docs.google.com/presentation/d/1OCWV7Yr-8n-UU5VyJrTJyIaMy7Qlt5iEzmKRpiqPDXE/edit"
+ },
+ {
+  "level": null,
+  "week": null,
+  "kind": "link",
+  "file_name": "5Circles_Complete_Question_Bank (Google Doc)",
+  "note": "exam prep — full question bank, all tiers",
+  "storage_path": "https://docs.google.com/document/d/1e5iLlkY0cGhRp9KoQsUsQgf77LkfX5vmedHRAEr3Jio/edit"
+ },
+ {
+  "level": null,
+  "week": null,
+  "kind": "link",
+  "file_name": "AI Trading Course — Curriculum Index (Google Sheet)",
+  "note": "tier/week/session index of the curriculum",
+  "storage_path": "https://docs.google.com/spreadsheets/d/1ZzMybEjVJpPpG6DFqsJyd5RceOJHgrCwNkYT1f8vIh4/edit"
+ },
+ {
+  "level": "foundation",
+  "week": 1,
+  "kind": "deck",
+  "file_name": "5C_AITC_Foundation_Week1_Deck_v1_1.pptx",
+  "note": "Week 1 class deck",
+  "storage_path": "https://drive.google.com/file/d/1NDaZPAPzi5qGpku0QaNMXywM6-pjj0Ne/view"
  },
  {
   "level": "foundation",
   "week": 1,
   "kind": "handout",
-  "file_name": "5C_AITC_Tier1_W1_Handout.pdf",
-  "note": "handout pending upload",
-  "storage_path": null
+  "file_name": "5C_AITC_Foundation_Handout1_v1.pdf",
+  "note": "Week 1 handout",
+  "storage_path": "https://drive.google.com/file/d/1KXPGM1iyOqSWpsXqdTWcUsl3brMgfF2z/view"
+ },
+ {
+  "level": "foundation",
+  "week": 1,
+  "kind": "exam",
+  "file_name": "5C_AITC_Foundation_Week1_Exam_v1.pdf",
+  "note": "Week 1 exam paper (print version of Quiz Game 1)",
+  "storage_path": "https://drive.google.com/file/d/1WO6q_3e_3QDcRGLQlZHAMy33vMuBoYLb/view"
  },
  {
   "level": "foundation",
   "week": 2,
   "kind": "deck",
-  "file_name": "5C_AITC_Tier1_W2_Deck.pptx",
-  "note": "deck pending upload",
-  "storage_path": null
+  "file_name": "5C_AITC_Foundation_Week2_Deck_v1.pptx",
+  "note": "Week 2 class deck",
+  "storage_path": "https://drive.google.com/file/d/1TP7OgK3eG19wg__qh_W6AYQCbmj9lMXd/view"
  },
  {
   "level": "foundation",
   "week": 2,
   "kind": "handout",
-  "file_name": "5C_AITC_Tier1_W2_Handout.pdf",
-  "note": "handout pending upload",
-  "storage_path": null
+  "file_name": "5C_AITC_Foundation_Handout2_v1.pdf",
+  "note": "Week 2 handout",
+  "storage_path": "https://drive.google.com/file/d/1NNnlWCRMH6JhkAWRHOE5U0B1bsGdHrq8/view"
+ },
+ {
+  "level": "foundation",
+  "week": 2,
+  "kind": "exam",
+  "file_name": "5C_AITC_Foundation_Week2_Exam_v1.pdf",
+  "note": "Week 2 exam paper (print version of Quiz Game 2)",
+  "storage_path": "https://drive.google.com/file/d/1BZum1cFmWcygQmGzOv5nRvkBHIi0Y6PQ/view"
  },
  {
   "level": "foundation",
   "week": 3,
   "kind": "deck",
-  "file_name": "5C_AITC_Tier1_W3_Deck.pptx",
-  "note": "deck pending upload",
-  "storage_path": null
+  "file_name": "5C_AITC_Foundation_Week3_Deck_v1.pptx",
+  "note": "Week 3 class deck",
+  "storage_path": "https://drive.google.com/file/d/1zAmk7chCNGzUt_DWJpL13AH8JpZwUZfp/view"
  },
  {
   "level": "foundation",
   "week": 3,
   "kind": "handout",
-  "file_name": "5C_AITC_Tier1_W3_Handout.pdf",
-  "note": "handout pending upload",
-  "storage_path": null
+  "file_name": "5C_AITC_Foundation_Handout3_v1.pdf",
+  "note": "Week 3 handout",
+  "storage_path": "https://drive.google.com/file/d/1S0oIzQuv_TsHp6n_uSnGdLQ4AkQcLrfu/view"
+ },
+ {
+  "level": "foundation",
+  "week": 3,
+  "kind": "exam",
+  "file_name": "5C_AITC_Foundation_Week3_Exam_v1.pdf",
+  "note": "Week 3 exam paper (print version of Quiz Game 3)",
+  "storage_path": "https://drive.google.com/file/d/1fiPKi5F6VSEIdKSzBJb-x6V_f4Qfo_Hv/view"
+ },
+ {
+  "level": "foundation",
+  "week": null,
+  "kind": "deck",
+  "file_name": "5C_AITC_Foundation_Week4_Deck_v1.pptx",
+  "note": "v1 pack Week 4 — Curriculum v2 Tier 1 is 3 weeks; re-cut pending",
+  "storage_path": "https://drive.google.com/file/d/1sO3k2HP6OHIzxwJ9ngsWPtvKaYEWzbgK/view"
+ },
+ {
+  "level": "foundation",
+  "week": null,
+  "kind": "handout",
+  "file_name": "5C_AITC_Foundation_Handout4_v1.pdf",
+  "note": "v1 pack Week 4 handout — re-cut pending",
+  "storage_path": "https://drive.google.com/file/d/1-RowkI8NqDXB2I9mBbFI3OcMMBSrbVJO/view"
+ },
+ {
+  "level": "foundation",
+  "week": null,
+  "kind": "exam",
+  "file_name": "5C_AITC_Foundation_Final_Exam_v1.pdf",
+  "note": "Final exam paper (print version)",
+  "storage_path": "https://drive.google.com/file/d/1KL-UxbXK-kw-mSTyJdcvwQqo8fminjJe/view"
+ },
+ {
+  "level": "foundation",
+  "week": null,
+  "kind": "workbook",
+  "file_name": "5C_AITC_Foundation_Workbook_v1.pdf",
+  "note": "Tier 1 workbook",
+  "storage_path": "https://drive.google.com/file/d/1cThjak0q4GXy_DXPXDSjzLOXZdjyX0Z-/view"
+ },
+ {
+  "level": "intermediate",
+  "week": 1,
+  "kind": "deck",
+  "file_name": "5C_AITC_Intermediate_Week1_Deck_v1.pptx",
+  "note": "v1 pack Week 1 deck",
+  "storage_path": "https://drive.google.com/file/d/1l22hxJ3Qtc3Bf2_y5NWI8zxv7dqZdDRU/view"
+ },
+ {
+  "level": "intermediate",
+  "week": 1,
+  "kind": "handout",
+  "file_name": "5C_AITC_Intermediate_Handout1_v1.pdf",
+  "note": "v1 pack Week 1 handout",
+  "storage_path": "https://drive.google.com/file/d/1WQZ6DnPDLP3E8HK87DdUFevVDLADhq7y/view"
+ },
+ {
+  "level": "intermediate",
+  "week": 1,
+  "kind": "exam",
+  "file_name": "5C_AITC_Intermediate_Week1_Exam_v1.pdf",
+  "note": "v1 pack Week 1 exam paper",
+  "storage_path": "https://drive.google.com/file/d/1wOucu6Qf6M2tIHlXotKFxGYFfZ0OJsOr/view"
+ },
+ {
+  "level": "intermediate",
+  "week": 2,
+  "kind": "deck",
+  "file_name": "5C_AITC_Intermediate_Week2_Deck_v1.pptx",
+  "note": "v1 pack Week 2 deck",
+  "storage_path": "https://drive.google.com/file/d/1xtaN08sb-meqfLkgxLOyIbYLzWcq5A1p/view"
+ },
+ {
+  "level": "intermediate",
+  "week": 2,
+  "kind": "handout",
+  "file_name": "5C_AITC_Intermediate_Handout2_v1.pdf",
+  "note": "v1 pack Week 2 handout",
+  "storage_path": "https://drive.google.com/file/d/1nAlzSyGS29rVJpVy6ex18Ihc6XYRzpjk/view"
+ },
+ {
+  "level": "intermediate",
+  "week": 2,
+  "kind": "exam",
+  "file_name": "5C_AITC_Intermediate_Week2_Exam_v1.pdf",
+  "note": "v1 pack Week 2 exam paper",
+  "storage_path": "https://drive.google.com/file/d/1v5KZmXXAgXbmeBoSSDcX4Ty0Bxo7va-k/view"
+ },
+ {
+  "level": "intermediate",
+  "week": 3,
+  "kind": "deck",
+  "file_name": "5C_AITC_Intermediate_Week3_Deck_v1.pptx",
+  "note": "v1 pack Week 3 deck",
+  "storage_path": "https://drive.google.com/file/d/19UHqFZA_jpDx0d24eFCDEjlwhWW97QE2/view"
+ },
+ {
+  "level": "intermediate",
+  "week": 3,
+  "kind": "handout",
+  "file_name": "5C_AITC_Intermediate_Handout3_v1.pdf",
+  "note": "v1 pack Week 3 handout",
+  "storage_path": "https://drive.google.com/file/d/1BonAclVcC2x989qIcUAuflx0anOKCp21/view"
+ },
+ {
+  "level": "intermediate",
+  "week": 3,
+  "kind": "exam",
+  "file_name": "5C_AITC_Intermediate_Week3_Exam_v1.pdf",
+  "note": "v1 pack Week 3 exam paper",
+  "storage_path": "https://drive.google.com/file/d/1Jo3Kpltg7pWHcL44ayO2OSPV7NUKQYgf/view"
+ },
+ {
+  "level": "intermediate",
+  "week": 4,
+  "kind": "deck",
+  "file_name": "5C_AITC_Intermediate_Week4_Deck_v1.pptx",
+  "note": "v1 pack Week 4 deck",
+  "storage_path": "https://drive.google.com/file/d/1UUNRwxMTMdTf3Fy67dHhBuELgsSC-C9c/view"
+ },
+ {
+  "level": "intermediate",
+  "week": 4,
+  "kind": "handout",
+  "file_name": "5C_AITC_Intermediate_Handout4_v1.pdf",
+  "note": "v1 pack Week 4 handout",
+  "storage_path": "https://drive.google.com/file/d/1DZT_c67JHV4F22Nf60go1Osj4_bELgrr/view"
+ },
+ {
+  "level": "intermediate",
+  "week": null,
+  "kind": "exam",
+  "file_name": "5C_AITC_Intermediate_Final_Exam_v1.pdf",
+  "note": "Final exam paper (print version)",
+  "storage_path": "https://drive.google.com/file/d/1gAqXujgxKxYDF6K4KD6FHudDjqjf2-UP/view"
+ },
+ {
+  "level": "intermediate",
+  "week": null,
+  "kind": "workbook",
+  "file_name": "5C_AITC_Intermediate_Workbook_v1.pdf",
+  "note": "Tier 2 workbook",
+  "storage_path": "https://drive.google.com/file/d/1nW1caJYEO8cPpq_pn8TJqakRvbSsjuKb/view"
+ },
+ {
+  "level": "advanced",
+  "week": 1,
+  "kind": "deck",
+  "file_name": "5C_AITC_Advanced_Week1_Deck_v1.pptx",
+  "note": "v1 pack Week 1 deck",
+  "storage_path": "https://drive.google.com/file/d/15CMDwls2n6wvVQRAK63Goteqy75jfaFi/view"
+ },
+ {
+  "level": "advanced",
+  "week": 1,
+  "kind": "handout",
+  "file_name": "5C_AITC_Advanced_Handout1_v1.pdf",
+  "note": "v1 pack Week 1 handout",
+  "storage_path": "https://drive.google.com/file/d/1OLtyermz0xP2ovtazaQMA6Yai5tgFmtY/view"
+ },
+ {
+  "level": "advanced",
+  "week": 1,
+  "kind": "exam",
+  "file_name": "5C_AITC_Advanced_Week1_Exam_v1.pdf",
+  "note": "v1 pack Week 1 exam paper",
+  "storage_path": "https://drive.google.com/file/d/1wWEthuY-7BwrTTOA5HOmIfBb3EYcxgQg/view"
+ },
+ {
+  "level": "advanced",
+  "week": 2,
+  "kind": "deck",
+  "file_name": "5C_AITC_Advanced_Week2_Deck_v1.pptx",
+  "note": "v1 pack Week 2 deck",
+  "storage_path": "https://drive.google.com/file/d/1A0PJLnLK_w5AQSIW-wvi-C1s2Nr9LTi_/view"
+ },
+ {
+  "level": "advanced",
+  "week": 2,
+  "kind": "handout",
+  "file_name": "5C_AITC_Advanced_Handout2_v1.pdf",
+  "note": "v1 pack Week 2 handout",
+  "storage_path": "https://drive.google.com/file/d/1bPR5i_SnzSOTiU9jFOxTx_F1iNKvshcf/view"
+ },
+ {
+  "level": "advanced",
+  "week": 2,
+  "kind": "exam",
+  "file_name": "5C_AITC_Advanced_Week2_Exam_v1.pdf",
+  "note": "v1 pack Week 2 exam paper",
+  "storage_path": "https://drive.google.com/file/d/1TotF6kDtcfuYaLz8wMey8GTDPl4ARGM8/view"
+ },
+ {
+  "level": "advanced",
+  "week": 3,
+  "kind": "deck",
+  "file_name": "5C_AITC_Advanced_Week3_Deck_v1.pptx",
+  "note": "v1 pack Week 3 deck",
+  "storage_path": "https://drive.google.com/file/d/1Pxp7OnG1NvzRHUzFzhy-F26-yXT7SlNu/view"
+ },
+ {
+  "level": "advanced",
+  "week": 3,
+  "kind": "handout",
+  "file_name": "5C_AITC_Advanced_Handout3_v1.pdf",
+  "note": "v1 pack Week 3 handout",
+  "storage_path": "https://drive.google.com/file/d/1x_u05Egcm64NBn8uMfWRcQTOu0qFCU9Q/view"
+ },
+ {
+  "level": "advanced",
+  "week": 3,
+  "kind": "exam",
+  "file_name": "5C_AITC_Advanced_Week3_Exam_v1.pdf",
+  "note": "v1 pack Week 3 exam paper",
+  "storage_path": "https://drive.google.com/file/d/1i8aAJMHs8FQoasafLht8Cr-eqlhio9Yx/view"
+ },
+ {
+  "level": "advanced",
+  "week": 4,
+  "kind": "deck",
+  "file_name": "5C_AITC_Advanced_Week4_Deck_v1.pptx",
+  "note": "v1 pack Week 4 deck",
+  "storage_path": "https://drive.google.com/file/d/1D2RluYLh0gORK6hGcGaRAPk4dz14TPFX/view"
+ },
+ {
+  "level": "advanced",
+  "week": 4,
+  "kind": "handout",
+  "file_name": "5C_AITC_Advanced_Handout4_v1.pdf",
+  "note": "v1 pack Week 4 handout",
+  "storage_path": "https://drive.google.com/file/d/130sqldaMef9F9GYCvSBTYtSEJpWn8RRr/view"
+ },
+ {
+  "level": "advanced",
+  "week": null,
+  "kind": "exam",
+  "file_name": "5C_AITC_Advanced_Final_Exam_v1.pdf",
+  "note": "Final exam paper (print version)",
+  "storage_path": "https://drive.google.com/file/d/1-QPs0lYvONTvM1zq5KZYUZtnhiFDEug4/view"
+ },
+ {
+  "level": "advanced",
+  "week": null,
+  "kind": "workbook",
+  "file_name": "5C_AITC_Advanced_Workbook_v1.pdf",
+  "note": "Tier 3 workbook",
+  "storage_path": "https://drive.google.com/file/d/1JwSxWTXH-rnXMvXeP1-3ztRekVhxB_gI/view"
  }
 ]
