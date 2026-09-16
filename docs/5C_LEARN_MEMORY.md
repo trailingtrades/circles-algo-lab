@@ -81,5 +81,11 @@ Rule: a task on one product must not edit the other's files. Check `git diff --s
 - PPT/deck uploads: deferred — design first, uploads in a later step, then deploy in one go.
 - Work branch: claude/upbeat-archimedes-oei66i (contains all of claude/5c-learn-dashboard-build-taxape + PR #25).
 
+## AITC course pack (wired 16 Sep 2026)
+- Drive folder `1dtZn1iqD59sS_ujpa2NJ6if8glvhA0kk` (owner rsaraogi746@gmail.com, anyone-with-link) = full v1 pack: per tier 4 weekly decks, 4 handouts, 3 weekly exams + final, workbook; plus Foundation mock portfolio (4 Sep copy). All 37 files linked in `scripts/gen_content.py` resources (regenerate with `python3 scripts/gen_content.py`).
+- MISMATCH: v1 packs are 4 weeks/tier; Curriculum v2 is 3/10/20 weeks. Foundation Week-4 deck/handout parked at level scope pending a re-cut. Tier 2/3 week numbers are the v1 pack's, not v2's.
+- Links depend on the folder staying anyone-with-link (or student-shared). Duplicates in Drive: Foundation W1 deck ×3 (v1_1 newest, linked), Candlestick_Basics ×6, Chart_Patterns ×2, Curriculum_Index ×2 — clean up.
+- Still pending: Tier 1 Rule Card/Journal/Sizing templates, Tier 2 capstone template, Tier 3 starter repo. Handoff doc in folder: 5C_AITC_HANDOFF_02Sep2026.md.
+
 ## Known open items
 Q8 domain; Compliance Officer @5circles.co email; second signatory; quiz banks for sessions 6–60; 11 exam papers; videos; deck/handout uploads.
