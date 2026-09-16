@@ -147,7 +147,11 @@ body{ font-variant-numeric: tabular-nums lining-nums; }
 }
 [data-theme=light] .wm{ background: linear-gradient(92deg, #0093D6, var(--brand) 60%, #0b5f96); -webkit-background-clip: text; background-clip: text; }
 
-/* ---------- 2d. Header: one pill group of nav chips + student chip ---------- */
+/* ---------- 2d. Centered container + header (matches the live Winners header:
+   brand lockup, icon pill-nav group, language pill, theme icon, student chip) ---------- */
+.lrn-max{ width: 100%; max-width: var(--maxw); margin-inline: auto; }
+.lrn-main > .lrn-max{ display: block; }
+.lrn-brand__by{ font-size: 11px; color: var(--ink-3); display: block; line-height: 1.1; }
 .lrn-pillnav{
   display: none; align-items: center; gap: 2px;
   padding: 3px; border: 1px solid var(--line); border-radius: 9999px;
@@ -156,14 +160,25 @@ body{ font-variant-numeric: tabular-nums lining-nums; }
 .lrn-pillnav::-webkit-scrollbar{ display: none; }
 @media (min-width: 768px){ .lrn-pillnav{ display: inline-flex; } .lrn-sidebar{ display: none !important; } }
 .lrn-pill{
-  display: inline-flex; align-items: center; gap: 6px;
-  height: 32px; padding: 0 14px; border-radius: 9999px;
-  font-size: var(--col-text-body-sm); font-weight: 500; white-space: nowrap;
+  display: inline-flex; align-items: center; gap: 7px;
+  height: 34px; padding: 0 14px; border-radius: 9999px;
+  font-size: var(--col-text-body-sm); font-weight: 600; white-space: nowrap;
   color: var(--ink-2); text-decoration: none;
   transition: background var(--col-duration-fast) var(--ease), color var(--col-duration-fast) var(--ease);
 }
 .lrn-pill:hover{ color: var(--ink); background: var(--panel-2); }
-.lrn-pill[aria-current="page"]{ background: var(--brand); color: var(--brand-ink); font-weight: 600; }
+.lrn-pill[aria-current="page"]{ background: var(--brand); color: var(--brand-ink); }
+.lrn-iconbtn{
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 9999px; border: 1px solid var(--line);
+  background: var(--panel); color: var(--ink-2); cursor: pointer;
+}
+.lrn-iconbtn:hover{ color: var(--ink); }
+.lrn-langpill{
+  display: inline-flex; align-items: center; gap: 7px; height: 38px; padding: 0 14px;
+  border-radius: 9999px; border: 1px solid var(--line); background: var(--panel);
+  color: var(--ink); font-size: var(--col-text-body-sm); font-weight: 600; cursor: pointer;
+}
 .lrn-student{
   display: inline-flex; align-items: center; gap: 8px;
   height: 36px; padding: 2px 12px 2px 2px; border: 1px solid var(--line);
@@ -210,54 +225,94 @@ body{ font-variant-numeric: tabular-nums lining-nums; }
   background: var(--panel-2); color: var(--ink-2); border: 1px solid var(--line);
 }
 
-/* ---------- 2g. Cover art strip on module/session cards ---------- */
+/* ---------- 2g. Cover art on module/session cards (live Winners recipe:
+   full-bleed saturated diagonal gradient, icon left, big module number right) ---------- */
 .lrn-cover{
-  display: flex; align-items: center; justify-content: center;
-  height: 64px; border-radius: var(--r-md);
-  margin: calc(-1 * var(--col-space-2)) 0 var(--col-space-2);
+  display: flex; align-items: center; justify-content: space-between;
+  height: 96px; padding: 0 var(--col-space-4);
+  margin: calc(-1 * var(--col-space-5)) calc(-1 * var(--col-space-5)) var(--col-space-4);
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
   position: relative; overflow: hidden;
 }
-.lrn-cover__tint{ position: absolute; inset: 0; opacity: .14; }
-.lrn-cover svg{ position: relative; }
-.lrn-card--locked .lrn-cover__tint{ opacity: .07; }
+.lrn-cover__tint{ position: absolute; inset: 0; }
+.lrn-cover svg{ position: relative; color: #ffffff; opacity: .9; }
+.lrn-cover__num{
+  position: relative; font-size: 44px; font-weight: 700; line-height: 1;
+  color: #ffffff; opacity: .4; letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+/* Light covers are pastel — white glyphs wash out, ink reads on every tint. */
+[data-theme=light] .lrn-cover svg{ color: var(--ink); opacity: .55; }
+[data-theme=light] .lrn-cover__num{ color: var(--ink); opacity: .3; }
+.lrn-card--locked .lrn-cover__tint{ opacity: .35; }
 
-/* ---------- 2h. Segmented progress ring + compact stat tiles ---------- */
+/* Status pill (AVAILABLE / COMPLETE style) */
+.lrn-avail{
+  display: inline-flex; align-items: center; height: 24px; padding: 0 12px;
+  border-radius: 9999px; background: var(--brand-soft); color: var(--brand);
+  font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+}
+.lrn-avail--done{ background: var(--bull-soft); color: var(--pill-bull); }
+
+/* ---------- 2h. Segmented ring panel + icon stat tiles ---------- */
 .lrn-segring{ display: block; }
 .lrn-segring__seg{ transition: stroke var(--col-duration) var(--ease); }
-.lrn-stat{ padding: var(--col-space-4); }
-.lrn-stat .lrn-num{ font-size: 28px; font-weight: 700; margin: 2px 0; line-height: 1.15; }
-.lrn-stat .lrn-session__sub{ font-size: var(--col-text-dense); }
-.lrn-statrow{ display: grid; gap: var(--col-space-3); grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); }
-
-/* ---------- 2i. Horizontal roadmap ---------- */
-.lrn-roadmap{
-  display: flex; gap: 0; overflow-x: auto; -webkit-overflow-scrolling: touch;
-  padding: var(--col-space-2) 0 var(--col-space-3); scrollbar-width: thin;
+.lrn-ringpanel{
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: var(--col-space-5) var(--col-space-6);
 }
-.lrn-road{
-  display: flex; flex-direction: column; align-items: center; gap: 6px;
-  flex: 1 0 108px; min-width: 108px; position: relative;
-  text-decoration: none; color: var(--ink-2); font-size: var(--col-text-dense);
-  text-align: center; padding: 0 6px;
-}
-.lrn-road::before{
-  content: ""; position: absolute; top: 13px; left: -50%; width: 100%;
-  height: 2px; background: var(--line);
-}
-.lrn-road:first-child::before{ display: none; }
-.lrn-road__dot{
-  width: 28px; height: 28px; border-radius: 9999px; position: relative; z-index: 1;
+.lrn-statrow{ display: grid; gap: var(--col-space-3); grid-template-columns: repeat(auto-fit, minmax(min(100%, 168px), 1fr)); }
+.lrn-stat{ display: flex; align-items: center; gap: var(--col-space-3); padding: var(--col-space-4); }
+.lrn-stat__ico{
+  width: 42px; height: 42px; border-radius: 12px; flex: 0 0 auto;
   display: inline-flex; align-items: center; justify-content: center;
-  border: 2px solid var(--line-2); background: var(--bg-2); color: var(--ink-2);
-  font-size: 11px; font-weight: 700;
+  background: var(--brand-soft); color: var(--brand);
 }
-.lrn-road--done .lrn-road__dot{ background: var(--brand); border-color: var(--brand); color: var(--brand-ink); }
-.lrn-road--now .lrn-road__dot{ border-color: var(--brand); color: var(--brand); background: var(--bg-2); box-shadow: 0 0 0 4px var(--brand-soft); }
-.lrn-road--done::before{ background: var(--brand); }
-.lrn-road--now{ color: var(--ink); font-weight: 600; }
-.lrn-road__label{ max-width: 108px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lrn-stat .lrn-num{ font-size: 22px; font-weight: 700; margin: 0; line-height: 1.15; }
+.lrn-stat__lbl{
+  font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-3); margin: 2px 0 0;
+}
+
+/* ---------- 2i. Continue-learning bar + phase-banner roadmap ---------- */
+.lrn-continue{ display: flex; align-items: center; gap: var(--col-space-4); flex-wrap: wrap; }
+.lrn-tile-ico{
+  width: 56px; height: 56px; border-radius: 14px; flex: 0 0 auto;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--brand-soft); color: var(--brand);
+}
+.lrn-continue__body{ flex: 1 1 260px; min-width: 0; }
+.lrn-continue__kick{
+  font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--brand); margin: 0 0 2px;
+}
+.lrn-continue__meta{ display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+.lrn-continue__meta .lrn-bar__track{ flex: 1 1 auto; margin-top: 0; max-width: 320px; }
+.lrn-continue__pct{ font-size: var(--col-text-dense); color: var(--ink-3); white-space: nowrap; }
+.lrn-phases{ display: flex; flex-direction: column; gap: var(--col-space-3); }
+.lrn-phase{
+  display: flex; align-items: center; gap: var(--col-space-4);
+  padding: var(--col-space-4) var(--col-space-5);
+  text-decoration: none; color: inherit; flex-wrap: wrap;
+}
+.lrn-phase__kick{
+  font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--brand); margin: 0 0 2px;
+}
+/* Gold is for achievement/milestone moments only — the CURRENT milestone row. */
+.lrn-phase--now{ border-color: var(--gold); }
+.lrn-phase--now .lrn-phase__kick{ color: var(--gold-text); }
+.lrn-phase--now .lrn-tile-ico{ background: var(--gold-soft); color: var(--gold-text); }
+.lrn-phase__body{ flex: 1 1 260px; min-width: 0; }
+.lrn-phase__title{ font-size: 16px; font-weight: 700; margin: 0; }
+.lrn-phase__sub{ font-size: var(--col-text-body-sm); color: var(--ink-2); margin: 2px 0 0; }
+.lrn-phase__count{ font-size: var(--col-text-body); font-weight: 700; color: var(--ink-2); white-space: nowrap; }
+
+/* Long tag chips wrap instead of overflowing their fixed 24px height. */
+.lrn-tags .col-chip{ height: auto; min-height: 24px; padding-top: 3px; padding-bottom: 3px; white-space: normal; }
 
 /* ---------- 2j. Hero ---------- */
-.lrn-hero{ display: flex; flex-wrap: wrap; align-items: center; gap: var(--col-space-4) var(--col-space-6); }
-.lrn-hero__txt{ flex: 1 1 260px; min-width: 0; }
-.lrn-hero__ring{ flex: 0 0 auto; }
+.lrn-hero{ display: flex; flex-wrap: wrap; align-items: stretch; gap: var(--col-space-4) var(--col-space-6); }
+.lrn-hero__txt{ flex: 1 1 320px; min-width: 0; align-self: center; }
+.lrn-hero__txt .lrn-title{ font-size: clamp(30px, 3.4vw, 44px); line-height: 1.12; margin: 6px 0 10px; }
+.lrn-hero__ring{ flex: 0 1 340px; }

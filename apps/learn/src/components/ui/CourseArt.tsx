@@ -2,30 +2,32 @@ import * as React from "react";
 import { CandlestickChart, Target, Shield, BookOpen, type IconProps } from "./Icon";
 
 /* Cover art in the Winners MOD_ART shape — a lookup of id: [icon, '#hex'] with a
-   deterministic fallback, because weeks have no cover art of their own. Tints come
+   deterministic fallback, because sessions have no cover art of their own. Tints come
    from the same --c1..--c5 / sky-indigo-teal family Winners uses, so the two
    courses read as one product. Presentation only: nothing here touches content. */
 type Art = [React.ComponentType<IconProps>, string];
 
-const COURSE_ART: Record<string, Art> = {
-  "foundation-w1": [CandlestickChart, "#38bdf8"],
-  "foundation-w2": [Target, "#22d3ee"],
-  "foundation-w3": [Shield, "#818cf8"],
+const WEEK_ICON: Record<string, React.ComponentType<IconProps>> = {
+  "foundation-w1": CandlestickChart,
+  "foundation-w2": Target,
+  "foundation-w3": Shield,
 };
 
-/* Same fallback recipe as Winners' modArt(): book icon, 5-colour cycle keyed on number. */
+/* Same fallback recipe as Winners' modArt(): 5-colour cycle keyed on number.
+   Each session cycles the family (Winners gives every module its own tint). */
 const CYCLE = ["#22d3ee", "#2dd4bf", "#38bdf8", "#818cf8", "#f5a524"];
-export function courseArt(level: string, week: number): Art {
-  return COURSE_ART[`${level}-w${week}`] ?? [BookOpen, CYCLE[week % CYCLE.length]];
+export function courseArt(level: string, week: number, n = week): Art {
+  return [WEEK_ICON[`${level}-w${week}`] ?? BookOpen, CYCLE[n % CYCLE.length]];
 }
 
-/** Icon/tint cover strip for week & session cards (Winners module-card recipe). */
-export function Cover({ level, week, size = 28 }: { level: string; week: number; size?: number }) {
-  const [Glyph, tint] = courseArt(level, week);
+/** Full-bleed icon/tint cover with the big module number (live Winners module-card recipe). */
+export function Cover({ level, week, n, size = 30 }: { level: string; week: number; n?: number; size?: number }) {
+  const [Glyph, tint] = courseArt(level, week, n ?? week);
   return (
     <div className="lrn-cover" aria-hidden>
-      <div className="lrn-cover__tint" style={{ background: `radial-gradient(ellipse at 50% 120%, ${tint}, transparent 75%), ${tint}` }} />
-      <Glyph size={size} strokeWidth={1.5} style={{ color: tint }} />
+      <div className="lrn-cover__tint" style={{ background: `linear-gradient(135deg, ${tint}b8, ${tint}2e 70%, transparent)` }} />
+      <Glyph size={size} strokeWidth={1.5} />
+      {n != null && <span className="lrn-cover__num">{String(n).padStart(2, "0")}</span>}
     </div>
   );
 }
@@ -58,26 +60,29 @@ export function RingsArt() {
   );
 }
 
-/** Segmented progress ring: one arc segment per unit, filled with --brand when done. */
-export function SegmentedRing({ done, total, size = 112, stroke = 9, label }:
+/** Segmented progress ring, Winners hero-panel style: chunky rounded segments,
+    done = brand, remainder faint; big % with an uppercase label under it. */
+export function SegmentedRing({ done, total, size = 190, stroke = 11, label }:
   { done: number; total: number; size?: number; stroke?: number; label: string }) {
   const r = (size - stroke) / 2;
   const c = 2 * Math.PI * r;
-  const gap = total > 1 ? Math.min(4, c / total * 0.18) : 0;
-  const seg = c / total - gap;
+  const gap = total > 1 ? Math.min(8, (c / total) * 0.3) : 0;
+  const seg = Math.max(2, c / total - gap);
   const pct = total ? Math.round((done / total) * 100) : 0;
   return (
     <svg className="lrn-segring" width={size} height={size} viewBox={`0 0 ${size} ${size}`} role="img" aria-label={`${label}: ${done} / ${total}`}>
       {Array.from({ length: total }, (_, i) => (
         <circle key={i} className="lrn-segring__seg" cx={size / 2} cy={size / 2} r={r} fill="none"
-          stroke={i < done ? "var(--brand)" : "var(--line-2)"} strokeWidth={stroke} strokeLinecap="butt"
+          stroke={i < done ? "var(--brand)" : "var(--line-2)"} strokeOpacity={i < done ? 1 : 0.45}
+          strokeWidth={stroke} strokeLinecap="round"
           strokeDasharray={`${seg} ${c - seg}`}
           transform={`rotate(${-90 + (360 / total) * i} ${size / 2} ${size / 2})`} />
       ))}
-      <text x="50%" y="46%" dominantBaseline="central" textAnchor="middle" fill="var(--ink)"
-        fontSize={size * 0.22} fontWeight={700} style={{ fontVariantNumeric: "tabular-nums" }}>{pct}%</text>
-      <text x="50%" y="62%" dominantBaseline="central" textAnchor="middle" fill="var(--ink-3)" fontSize={size * 0.09}>
-        {done} / {total}
+      <text x="50%" y="47%" dominantBaseline="central" textAnchor="middle" fill="var(--ink)"
+        fontSize={size * 0.24} fontWeight={700} style={{ fontVariantNumeric: "tabular-nums" }}>{pct}%</text>
+      <text x="50%" y="63%" dominantBaseline="central" textAnchor="middle" fill="var(--ink-3)"
+        fontSize={size * 0.058} fontWeight={600} letterSpacing="0.12em" style={{ textTransform: "uppercase" }}>
+        {label}
       </text>
     </svg>
   );

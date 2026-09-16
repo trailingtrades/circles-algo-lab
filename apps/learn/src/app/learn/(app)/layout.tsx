@@ -15,7 +15,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
       <OfflineBanner />
       <div className="lrn-body">
         <Sidebar />
-        <main className="lrn-main" id="main">{children}</main>
+        <main className="lrn-main" id="main"><div className="lrn-max">{children}</div></main>
       </div>
       <ComplianceFooter tier={1} />
       <BottomNav />

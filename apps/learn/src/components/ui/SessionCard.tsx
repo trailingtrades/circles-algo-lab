@@ -1,4 +1,4 @@
-import { Lock, CheckCircle, Clock } from "./Icon";
+import { Lock } from "./Icon";
 import { Cover } from "./CourseArt";
 
 export type SessionStatus = "complete" | "in_progress" | "locked" | "not_started";
@@ -14,16 +14,15 @@ const STATUS: Record<SessionStatus, { label: string; cls: string }> = {
 export function SessionCard(p: SessionCardProps) {
   const s = STATUS[p.status];
   const locked = p.status === "locked";
-  const Glyph = p.status === "complete" ? CheckCircle : locked ? Lock : Clock;
   return (
     <article className={`col-card lrn-session${locked ? " lrn-card--locked" : ""}`} aria-label={`Session ${p.n}`}>
-      {p.level != null && p.week != null && <Cover level={p.level} week={p.week} />}
+      {p.level != null && p.week != null && <Cover level={p.level} week={p.week} n={p.n} />}
       <div className="flex items-center justify-between gap-2">
-        <span className="col-eyebrow">{p.day} · S{String(p.n).padStart(2, "0")}</span>
         {/* Locked cards get the hollow badge + padlock chip, never a dimmed one. */}
         {locked
           ? <span className="flex items-center gap-2"><span className="lrn-badge--hollow">{s.label}</span><span className="lrn-lockchip"><Lock size={13} strokeWidth={1.75} aria-hidden /></span></span>
-          : <span className={`col-chip ${s.cls}`}><Glyph size={14} strokeWidth={1.75} aria-hidden />{s.label}</span>}
+          : <span className={`lrn-avail${p.status === "complete" ? " lrn-avail--done" : ""}`}>{s.label}</span>}
+        <span className="col-eyebrow">{p.day} · S{String(p.n).padStart(2, "0")}</span>
       </div>
       <h3 className="lrn-session__title">{p.lang === "hi" ? p.titleHi : p.titleEn}</h3>
       <p className="lrn-session__sub">{p.lang === "hi" ? p.titleEn : p.titleHi}</p>
