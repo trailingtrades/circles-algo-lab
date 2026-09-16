@@ -17,7 +17,7 @@ const SCREENS = [
   ["pv-locked", "Locked", "/learn/session/9"], ["pv-exam", "Exam", "/learn/exam/foundation-w1"], ["pv-score", "Score", "/learn/score"], ["pv-leaderboard", "Leaderboard", "/learn/leaderboard"],
   ["pv-portfolio", "Portfolio", "/learn/portfolio"], ["pv-certificate", "Certificate", "/learn/certificate"], ["pv-resources", "Resources", "/learn/resources"], ["pv-verify", "Verify", "/verify/lookup"],
 ];
-const PV_CSS = `body{padding-top:88px}
+const PV_CSS = `body{padding-top:88px;background:var(--bg)}
 html{scroll-padding-top:88px} /* the deferred #pv-* fragment scroll lands sections below the fixed bar */
 /* fixed, not sticky: globals.css puts overflow-x:hidden on body, which makes body its own
    scroll container and un-sticks sticky children in standards mode */
@@ -51,7 +51,9 @@ async function dataUri(path) {
   cache.set(path, d); return d;
 }
 async function inlineCss(href) {
-  let css = await (await fetch(BASE + href)).text();
+  const r = await fetch(BASE + href);
+  if (!r.ok) throw new Error(`inlineCss ${r.status} ${href} — is the running server serving the build you just made?`);
+  let css = await r.text();
   const urls = [...new Set([...css.matchAll(/url\((\/_next\/static\/media\/[^)"']+)\)/g)].map((m) => m[1]))];
   for (const u of urls) css = css.split(`url(${u})`).join(`url(${await dataUri(u)})`);
   return css;
