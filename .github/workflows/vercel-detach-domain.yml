@@ -1,0 +1,28 @@
+name: Detach learn.optionlab.co.in from Vercel
+# One-off (17 Sep 2026): the domain's DNS points at the VPS, but the Vercel project still
+# had the domain attached, so visitors with stale DNS got the old Vercel deployment and
+# sessions split across two backends (404s on /learn/home etc.). Detaching makes Vercel
+# refuse the host entirely; stale caches then fail fast instead of serving the wrong app.
+on: workflow_dispatch
+jobs:
+  detach:
+    runs-on: ubuntu-latest
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      TEAM: team_zAmVNOZ45AuOCiuewGfmpTvT
+      PROJECT: prj_7xYqX0IXME5JgB2LTcuz1goFJOEw
+      DOMAIN: learn.optionlab.co.in
+    steps:
+      - name: Detach domain
+        run: |
+          code=$(curl -s -o /tmp/out -w '%{http_code}' -X DELETE \
+            "https://api.vercel.com/v9/projects/$PROJECT/domains/$DOMAIN?teamId=$TEAM" \
+            -H "Authorization: Bearer $VERCEL_TOKEN")
+          echo "DELETE -> $code"; cat /tmp/out; echo
+          case "$code" in 2*) echo "detached";; 404) echo "already gone";; *) exit 1;; esac
+      - name: Verify
+        run: |
+          code=$(curl -s -o /dev/null -w '%{http_code}' \
+            "https://api.vercel.com/v9/projects/$PROJECT/domains/$DOMAIN?teamId=$TEAM" \
+            -H "Authorization: Bearer $VERCEL_TOKEN")
+          [ "$code" = "404" ] && echo "confirmed: domain no longer on the project" || { echo "::error::domain still attached (HTTP $code)"; exit 1; }
