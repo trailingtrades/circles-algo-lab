@@ -18,7 +18,7 @@ export function Header({ studentName }: { studentName?: string }) {
     <header className="col-header" role="banner" style={{ height: "auto", minHeight: 64, padding: "8px 16px" }}>
       <div className="lrn-max flex items-center justify-between gap-3">
         <Link href="/learn/home" className="lrn-brand">
-          <Image src="/brand/logo.png" alt="5 Circles" width={36} height={36} priority />
+          <Image src={(process.env.NEXT_PUBLIC_BASE_PATH || "") + "/brand/logo.png"} alt="5 Circles" width={36} height={36} priority />
           <span className="min-w-0">
             <span className="lrn-brand__name wm block" style={{ fontSize: 17 }}>CIRCLE S.M.A.R.T</span>
             <span className="lrn-brand__by">Level 1 · by 5 Circles</span>

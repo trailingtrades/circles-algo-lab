@@ -89,7 +89,7 @@ export default function AcademyLanding() {
     <div className={s.wrap}>
       <header className={s.header}>
         <div className={s.brand}>
-          <Image src="/brand/logo.png" alt="5 Circles" width={44} height={44} priority />
+          <Image src={(process.env.NEXT_PUBLIC_BASE_PATH || "") + "/brand/logo.png"} alt="5 Circles" width={44} height={44} priority />
           <div className={s.brandName}>
             <span className={s.brandCo}>5 Circles Pvt Ltd</span>
             <span className={s.brandTitle}>5 Circles Academy</span>

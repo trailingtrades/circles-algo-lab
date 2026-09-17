@@ -40,7 +40,7 @@ export default async function VerifyPage({ params, searchParams }: { params: Pro
   return (
     <div className="lrn-shell">
       <main className="lrn-main" style={{ maxWidth: 760, margin: "0 auto", width: "100%" }}>
-        <div className="flex items-center gap-3 mb-4"><Image src="/brand/logo.png" alt="5 Circles" width={40} height={40} /><div><div style={{ fontWeight: 700 }}>Circle S.M.A.R.T · Certificate verification</div><div className="col-eyebrow">{COMPANY.short} · {COMPANY.tagline}</div></div></div>
+        <div className="flex items-center gap-3 mb-4"><Image src={(process.env.NEXT_PUBLIC_BASE_PATH || "") + "/brand/logo.png"} alt="5 Circles" width={40} height={40} /><div><div style={{ fontWeight: 700 }}>Circle S.M.A.R.T · Certificate verification</div><div className="col-eyebrow">{COMPANY.short} · {COMPANY.tagline}</div></div></div>
         <form method="get" action="/verify/lookup" className="col-card flex gap-2 items-end flex-wrap" role="search">
           <div className="lrn-field" style={{ flex: "1 1 240px", margin: 0 }}><label htmlFor="q">Certificate number</label><input id="q" name="q" className="col-input lrn-num" placeholder="5C-FOUND-2026-XXXXXX" defaultValue={sp.q ?? (certId !== "lookup" ? certId : "")} required /></div>
           <button className="col-btn col-btn--primary"><Search size={16} aria-hidden /> Verify</button>

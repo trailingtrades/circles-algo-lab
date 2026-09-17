@@ -1,0 +1,16 @@
+[Unit]
+Description=CIRCLE S.M.A.R.T (Next.js) — learn.optionlab.co.in/smart
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/learn-smart/current
+EnvironmentFile=/etc/learn-smart.env
+Environment=NODE_ENV=production PORT=3001 HOSTNAME=127.0.0.1
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=3
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target

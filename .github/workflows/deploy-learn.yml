@@ -2,11 +2,11 @@ name: Deploy 5C Learn (Vercel)
 # Builds apps/learn on Vercel and promotes it to production. Runs on every push to main that touches the app or
 # content, or manually from Actions -> "Deploy 5C Learn (Vercel)" -> Run workflow.
 # Required repo secret: VERCEL_TOKEN (Vercel -> Account -> Tokens). Project/team ids are fixed below (not secrets).
+# RETIRED 17 Sep 2026: the app is self-hosted on the VPS (see deploy-smart-vps.yml and
+# apps/learn/deploy-vps/). Manual dispatch kept only as a fallback until the Vercel
+# project is deleted.
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ["apps/learn/**", "content/**", ".github/workflows/deploy-learn.yml"]
 concurrency: { group: deploy-learn, cancel-in-progress: false }
 jobs:
   deploy:
