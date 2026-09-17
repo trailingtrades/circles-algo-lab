@@ -1,0 +1,86 @@
+name: Deploy 5C Learn (VPS /smart)
+# Builds apps/learn as a self-hosted Next.js standalone bundle (basePath /smart) and ships it to
+# the VPS at learn.optionlab.co.in, where systemd unit `learn-smart` runs it on 127.0.0.1:3001
+# behind nginx (snippet /etc/nginx/snippets/smart-app.conf). Replaces the old Vercel hosting for
+# CIRCLE S.M.A.R.T. Required repo secret: VPS_SSH_KEY (private key for root@200.141.9.107).
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["apps/learn/**", "content/**", ".github/workflows/deploy-smart-vps.yml"]
+concurrency: { group: deploy-smart-vps, cancel-in-progress: false }
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      VPS: root@200.141.9.107
+      # Public values (shipped to every browser) — same source of truth as deploy-learn.yml.
+      NEXT_PUBLIC_SUPABASE_URL: https://hcajzeykcdcxqidgmzep.supabase.co
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhjYWp6ZXlrY2RjeHFpZGdtemVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk0Mzg0OTEsImV4cCI6MjEwNTAxNDQ5MX0.NFO6ofobvDON2TfAGzE2b8tK8kymDUl5uxcUAyPFeHY
+      NEXT_PUBLIC_SITE_URL: https://learn.optionlab.co.in/smart
+      NEXT_PUBLIC_BASE_PATH: /smart
+      NEXT_OUTPUT_STANDALONE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: apps/learn/package-lock.json }
+      - name: SSH setup
+        run: |
+          [ -n "${{ secrets.VPS_SSH_KEY }}" ] || { echo "::error::secret VPS_SSH_KEY is not set"; exit 1; }
+          mkdir -p ~/.ssh && printf '%s\n' "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/vps && chmod 600 ~/.ssh/vps
+          ssh-keyscan -H 200.141.9.107 >> ~/.ssh/known_hosts 2>/dev/null
+          echo "SSHOPTS=-i $HOME/.ssh/vps -o ConnectTimeout=15" >> "$GITHUB_ENV"
+      - name: Build (standalone, basePath /smart)
+        working-directory: apps/learn
+        run: |
+          npm ci
+          npm run build
+          # Standalone mirrors the monorepo layout because outputFileTracingRoot is the repo root.
+          cp -r .next/static .next/standalone/apps/learn/.next/static
+          cp -r public .next/standalone/apps/learn/public
+          tar -C .next/standalone -czf /tmp/smart-app.tgz .
+      - name: Ship and restart
+        run: |
+          REL=$(date +%Y%m%d%H%M%S)-${GITHUB_SHA::7}
+          scp $SSHOPTS /tmp/smart-app.tgz "$VPS:/tmp/smart-app.tgz"
+          ssh $SSHOPTS "$VPS" "set -e
+            mkdir -p /opt/learn-smart/releases/$REL
+            tar -xzf /tmp/smart-app.tgz -C /opt/learn-smart/releases/$REL && rm /tmp/smart-app.tgz
+            # Runtime env: public values live in this workflow, server-only ones in repo secrets.
+            umask 077; cat > /etc/learn-smart.env <<EOF
+          NEXT_PUBLIC_SUPABASE_URL=$NEXT_PUBLIC_SUPABASE_URL
+          NEXT_PUBLIC_SUPABASE_ANON_KEY=$NEXT_PUBLIC_SUPABASE_ANON_KEY
+          NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL
+          SUPABASE_SERVICE_ROLE_KEY=${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          CERT_SIGNING_SECRET=${{ secrets.CERT_SIGNING_SECRET }}
+          EOF
+            chown -R www-data:www-data /opt/learn-smart/releases/$REL
+            ln -sfn /opt/learn-smart/releases/$REL/apps/learn /opt/learn-smart/current
+            systemctl restart learn-smart
+            sleep 3; systemctl is-active learn-smart
+            curl -sf -o /dev/null -w 'local health: %{http_code}\n' http://127.0.0.1:3001/smart/api/health
+            # Keep the 3 newest releases.
+            ls -1dt /opt/learn-smart/releases/* | tail -n +4 | xargs -r rm -rf"
+      - name: Enable nginx route (first run only) and reload
+        run: |
+          ssh $SSHOPTS "$VPS" "set -e
+            SITE=/etc/nginx/sites-enabled/learn.optionlab.co.in
+            if ! grep -q 'snippets/smart-app.conf' \$SITE; then
+              sed -i 's|include /etc/nginx/snippets/academy-paths.conf;|include /etc/nginx/snippets/academy-paths.conf;\n\n    include /etc/nginx/snippets/smart-app.conf;|' \$SITE
+              # The old redirect stub is replaced by the app; keep a dated backup.
+              [ -f /var/www/learn-5circles/smart/index.html ] && mv /var/www/learn-5circles/smart/index.html /var/www/learn-5circles/smart/index.html.pre-app.\$(date +%Y%m%d)
+            fi
+            nginx -t && systemctl reload nginx"
+      - name: Smoke test
+        run: |
+          H=learn.optionlab.co.in
+          code=$(curl -s -o /dev/null -w '%{http_code}' -L --resolve $H:443:200.141.9.107 https://$H/smart/)
+          final=$(curl -s -o /tmp/body -w '%{url_effective}' -L --resolve $H:443:200.141.9.107 https://$H/smart/)
+          echo "/smart/ -> $code (final: $final)"
+          [ "$code" = "200" ] || { echo "::error::/smart/ returned $code"; exit 1; }
+          curl -s --resolve $H:443:200.141.9.107 https://$H/smart/api/health | grep -q '"ok":true' || { echo "::error::health check failed"; exit 1; }
+          # Static neighbours must still be served from disk, not the app.
+          for p in / /smart/about/ /winners/ /one/; do
+            c=$(curl -s -o /dev/null -w '%{http_code}' --resolve $H:443:200.141.9.107 https://$H$p); echo "$p -> $c"
+            [ "$c" = "200" ] || { echo "::error::$p returned $c"; exit 1; }
+          done
