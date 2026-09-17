@@ -12,6 +12,7 @@ Internal names stay (repo paths, `5C_LEARN_*` docs, `5cd.*` storage keys, DB); o
 
 ## Two SEPARATE products in ONE repo (never mix)
 Repo: github.com/trailingtrades/circles-algo-lab (default branch `main`)
+- Push access from Rahul's Windows machine (17 Sep 2026): git/gh authenticate as `5circlespvtltd` (gh keyring token via Windows Credential Manager), added as a collaborator with write on this repo. Gotcha: the first two invite attempts silently failed because the accept click happened while the browser was signed into the wrong account — the invite must be accepted while signed in as `5circlespvtltd` (incognito window works). Verify with `gh api repos/trailingtrades/circles-algo-lab --jq .permissions` → `push: true`.
 
 | Product | Where in repo | Live | Notes |
 |---|---|---|---|
