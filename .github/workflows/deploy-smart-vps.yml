@@ -78,7 +78,13 @@ jobs:
           echo "/smart/ -> $code (final: $final)"
           [ "$code" = "200" ] || { echo "::error::/smart/ returned $code"; exit 1; }
           # Static neighbours must still be served from disk, not the app.
-          for p in / /smart/about/ /winners/ /one/; do
+          for p in / /smart/about/; do
             c=$(curl -s -o /dev/null -w '%{http_code}' --resolve $H:443:200.141.9.107 https://$H$p); echo "$p -> $c"
             [ "$c" = "200" ] || { echo "::error::$p returned $c"; exit 1; }
+          done
+          # Gated stages: anonymous = 302 to the SMART sign-in (stage gate, 17 Sep 2026).
+          # 200 also passes so the smoke test survives enforcement being switched off.
+          for p in /winners/ /one/; do
+            c=$(curl -s -o /dev/null -w '%{http_code}' --resolve $H:443:200.141.9.107 https://$H$p); echo "$p -> $c"
+            [ "$c" = "302" ] || [ "$c" = "200" ] || { echo "::error::$p returned $c"; exit 1; }
           done
