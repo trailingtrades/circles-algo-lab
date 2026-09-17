@@ -1,0 +1,27 @@
+/* Academy landing (root /) — stage ladder cards on the Winners skin tokens. */
+.wrap { min-height: 100vh; display: flex; flex-direction: column; background: var(--bg); color: var(--ink); }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 24px; background: var(--bg-2); border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 12px; }
+.brandName { display: flex; flex-direction: column; }
+.brandCo { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-3); }
+.brandTitle { font-size: 20px; font-weight: 700; }
+.enterBtn { white-space: nowrap; }
+.main { flex: 1; width: 100%; max-width: 1240px; margin: 0 auto; padding: 32px 24px 48px; }
+.intro { max-width: 720px; color: var(--ink-2); margin: 0 0 28px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; align-items: stretch; }
+.card { display: flex; flex-direction: column; gap: 14px; border: 1px solid var(--line); border-radius: var(--r-lg, 14px); background: var(--panel); padding: 22px; }
+.cardLive { border-color: var(--brand); }
+.stageRow { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.stageNo { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-2); }
+.stageDot { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: var(--brand); color: var(--brand-ink); font-weight: 700; font-size: 12px; letter-spacing: 0; }
+.badgeLive { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--bull-text, #16a34a); border: 1px solid currentColor; border-radius: 999px; padding: 3px 10px; }
+.badgeSoon { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand); border: 1px dashed var(--brand); border-radius: 999px; padding: 3px 10px; }
+.title { font-size: 26px; font-weight: 800; margin: 0; }
+.subtitle { font-size: 13px; color: var(--ink-2); margin: 0; }
+.blurb { font-size: 14px; line-height: 1.55; color: var(--ink-2); margin: 0; }
+.list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 13.5px; color: var(--ink-2); }
+.list li { padding-left: 20px; position: relative; }
+.list li::before { content: "\2713"; position: absolute; left: 0; color: var(--bull-text, #16a34a); font-weight: 700; }
+.actions { margin-top: auto; display: flex; flex-direction: column; gap: 10px; padding-top: 8px; }
+.codeNote { font-size: 12px; color: var(--ink-3); }
+.soonBtn { opacity: 0.85; }
