@@ -29,3 +29,17 @@ copies of the files installed on the box; the box is the source of truth.
 
 Gotcha that already bit once: `smart-pull.sh` must not let the `umask 077` used for the
 env file leak into the release dirs, or www-data cannot traverse them (CHDIR 200).
+
+## Stage gate (one login, per-stage unlock) — added 17 Sep 2026
+
+`/winners/` and `/one/` can be gated behind the SMART login via nginx `auth_request` →
+`/smart/api/gate/<stage>` (stage_access table; mentors grant at /smart/learn/mentor/stages).
+The gated nginx variant is `snippets/academy-paths-gated.conf` (kept in sync from this dir).
+
+Enforcement is a one-line include swap in `/etc/nginx/sites-enabled/learn.optionlab.co.in`:
+
+    # ON  (do this only after every current student has an account + grants)
+    sed -i 's|snippets/academy-paths.conf|snippets/academy-paths-gated.conf|' /etc/nginx/sites-enabled/learn.optionlab.co.in && nginx -t && systemctl reload nginx
+
+    # OFF (instant rollback)
+    sed -i 's|snippets/academy-paths-gated.conf|snippets/academy-paths.conf|' /etc/nginx/sites-enabled/learn.optionlab.co.in && nginx -t && systemctl reload nginx

@@ -28,6 +28,7 @@ function LoginInner() {
             <p className="lrn-muted" style={{ margin: 0 }}>{t("welcome")}</p>
           </div>
           <form className="col-card" action={action} aria-label="Sign in">
+            <input type="hidden" name="next" value={params.get("next") ?? ""} />
             {notice && <p className="lrn-notice" role="status"><AlertCircle size={16} aria-hidden /> {notice}</p>}
             <div className="lrn-field"><label htmlFor="email">Email</label><input id="email" name="email" className="col-input" type="email" autoComplete="email" inputMode="email" required /></div>
             <div className="lrn-field"><label htmlFor="pw">Password</label><input id="pw" name="password" className="col-input" type="password" autoComplete="current-password" required /></div>

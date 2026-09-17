@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic";
 import { requireViewer } from "@/lib/auth/guard";
 import { createClient } from "@/lib/supabase/server";
 import { supabaseConfigured } from "@/lib/supabase/env";
+import Link from "next/link";
 import { GradeForm } from "./GradeForm";
 import { Shield } from "@/components/ui/Icon";
 
@@ -33,6 +34,7 @@ export default async function MentorPage() {
     <>
       <p className="col-eyebrow">Mentor · {v.full_name}</p>
       <h1 className="lrn-title">Cohorts</h1>
+      <p className="mt-2"><Link href="/learn/mentor/stages" className="lrn-link">Stage access — WINNERS / O.N.E unlocks →</Link></p>
       {out.length === 0 && <p className="lrn-muted">Aapko abhi koi cohort assign nahi hai. Admin se kahiye cohort par mentor set kare.</p>}
       {out.map(({ c, students, ranking, ungraded, atRisk, names }) => (
         <section key={c.id} className="mt-4" aria-labelledby={`m-${c.id}`}>

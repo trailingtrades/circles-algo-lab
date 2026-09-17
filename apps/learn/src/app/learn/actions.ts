@@ -16,6 +16,10 @@ export async function signIn(_: AuthState, form: FormData): Promise<AuthState> {
   const { data: { user } } = await sb.auth.getUser();
   const { data: p } = await sb.from("profiles").select("status").eq("id", user!.id).maybeSingle();
   if (p?.status === "suspended") { await sb.auth.signOut(); return { error: "Ye account suspended hai. Apne mentor se sampark kijiye." }; }
+  // Stage pages (nginx auth_request) bounce signed-out students here with ?next=/winners/ or /one/.
+  // Those paths live OUTSIDE the app's basePath, so the redirect must be absolute; strict whitelist.
+  const next = String(form.get("next") ?? "");
+  if (next === "/winners/" || next === "/one/") redirect(new URL(next, siteUrl()).toString());
   redirect("/learn/home");
 }
 
