@@ -16,8 +16,8 @@ jobs:
       VERCEL_ORG_ID: team_zAmVNOZ45AuOCiuewGfmpTvT
       VERCEL_PROJECT_ID: prj_7xYqX0IXME5JgB2LTcuz1goFJOEw
       # Public production URL. Unique deployment URLs sit behind Vercel Authentication and redirect to vercel.com.
-      # Requires learn.optionlab.co.in to be attached to the Vercel project (Settings -> Domains) before this runs.
-      PROD_URL: https://learn.optionlab.co.in
+      # learn.optionlab.co.in DNS points at the VPS (static Academy landing); the app lives on the vercel.app alias.
+      PROD_URL: https://circles-algo-lab.vercel.app
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
