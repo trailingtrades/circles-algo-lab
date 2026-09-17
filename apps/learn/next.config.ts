@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
   turbopack: { root: path.join(__dirname, "..", "..") },
   outputFileTracingRoot: path.join(__dirname, "..", ".."),
   ...(basePath ? { basePath } : {}),
+  // Under a basePath the image optimizer strips the prefix from src and then fails to find the
+  // file internally; the only images are three tiny logos, so skip optimization entirely there.
+  ...(basePath ? { images: { unoptimized: true } } : {}),
   ...(process.env.NEXT_OUTPUT_STANDALONE ? { output: "standalone" as const } : {}),
   // Under /smart the VPS's own static landing is the front door; the app root (Academy ladder
   // duplicate) is skipped so /smart/ opens the programme itself.
