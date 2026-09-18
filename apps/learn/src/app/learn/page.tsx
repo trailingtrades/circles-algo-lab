@@ -10,6 +10,29 @@ import { signIn } from "./actions";
 import { AlertCircle } from "@/components/ui/Icon";
 import { RingsArt } from "@/components/ui/CourseArt";
 
+/* Daily motivation on the sign-in gate — process and discipline only, never returns (§1.4).
+   Picked by day-of-year so every student sees the same line all day, a new one tomorrow. */
+const QUOTES: [string, string][] = [
+  ["One session a day beats ten on Sunday.", "Roz ek session, Sunday ke dus se behtar."],
+  ["The market rewards process, not predictions.", "Market process ko izzat deta hai, prediction ko nahi."],
+  ["Small consistent steps build the trader, not one big trade.", "Trader roz ke chhote steps se banta hai, ek bade trade se nahi."],
+  ["Your journal is your best mentor after your mentor.", "Mentor ke baad sabse achha mentor — aapka journal."],
+  ["Risk first. Entry later.", "Pehle risk socho, entry baad mein."],
+  ["Losing small is a skill. Practise it.", "Chhota loss lena ek skill hai. Roz practice karo."],
+  ["Charts repeat. So should your routine.", "Charts repeat hote hain. Aapka routine bhi hona chahiye."],
+  ["Finish today's session — your future self is watching.", "Aaj ka session poora karo — kal wale aap dekh rahe hain."],
+  ["Patience is also a position.", "Sabr bhi ek position hai."],
+  ["Rules protect you when emotions won't.", "Jab emotions saath chhod dein, rules bachate hain."],
+  ["Study the loss longer than you celebrate the win.", "Jeet se zyada der haar ko padho."],
+  ["Every expert was once on Day 1. Stay on the path.", "Har expert kabhi Day 1 par tha. Raaste par bane raho."],
+];
+function quoteOfTheDay(lang: string): string {
+  const now = new Date();
+  const day = Math.floor((now.getTime() - Date.UTC(now.getUTCFullYear(), 0, 0)) / 86400000);
+  const q = QUOTES[day % QUOTES.length];
+  return lang === "hi" ? q[1] : q[0];
+}
+
 function LoginInner() {
   const { t, lang, setLang } = useLang();
   const [state, action, pending] = useActionState(signIn, {});
@@ -29,12 +52,18 @@ function LoginInner() {
       <main className="lrn-main flex flex-col items-center justify-center" style={{ paddingTop: 48 }}>
         <div className="lrn-login">
           <div className="flex flex-col items-center gap-2 mb-6 text-center">
-            <Image src={(process.env.NEXT_PUBLIC_BASE_PATH || "") + "/brand/logo.png"} alt="5 Circles" width={64} height={64} priority />
+            <span className="lrn-login__logo">
+              <Image src={(process.env.NEXT_PUBLIC_BASE_PATH || "") + "/brand/logo.png"} alt="5 Circles" width={64} height={64} priority />
+            </span>
             <h1 className="lrn-title wm">{stage.title}</h1>
             <p className="lrn-kicker">{stage.kicker}</p>
             <p className="col-eyebrow">{COMPANY.tagline}</p>
             <p className="lrn-muted" style={{ margin: 0 }}>{t("welcome")}</p>
           </div>
+          <blockquote className="lrn-quote">
+            <span className="lrn-quote__label">{lang === "hi" ? "Aaj ka focus" : "Today's focus"}</span>
+            <p className="lrn-quote__text">{quoteOfTheDay(lang)}</p>
+          </blockquote>
           <form className="col-card" action={action} aria-label="Sign in">
             <input type="hidden" name="next" value={params.get("next") ?? ""} />
             {notice && <p className="lrn-notice" role="status"><AlertCircle size={16} aria-hidden /> {notice}</p>}
