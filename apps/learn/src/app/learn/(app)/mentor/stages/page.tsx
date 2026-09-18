@@ -14,7 +14,7 @@ export default async function StageAccessPage() {
   // RLS limits both queries to students this viewer may see (own cohorts, or everyone for admin).
   const [{ data: students }, { data: grants }, { data: visits }] = await Promise.all([
     sb.from("profiles").select("id,full_name,status").eq("role", "student").neq("status", "suspended").order("full_name"),
-    sb.from("stage_access").select("user_id,stage,expires_at"),
+    sb.from("stage_access").select("user_id,stage,expires_at,starts_at"),
     sb.from("stage_visits").select("user_id,stage,at").order("at", { ascending: false }).limit(200),
   ]);
   const lastVisit = new Map<string, string>();

@@ -21,13 +21,17 @@ export function Header({ studentName, role }: { studentName?: string; role?: "st
   return (
     <header className="col-header" role="banner" style={{ height: "auto", minHeight: 64, padding: "8px 16px" }}>
       <div className="lrn-max flex items-center justify-between gap-3">
-        <Link href="/learn/home" className="lrn-brand">
-          <Image src={(process.env.NEXT_PUBLIC_BASE_PATH || "") + "/brand/logo.png"} alt="5 Circles" width={36} height={36} priority />
-          <span className="min-w-0">
+        <span className="lrn-brand">
+          {/* Logo = back to the Academy landing (domain root, outside the /smart basePath) —
+              same behaviour as the Winners top bar. The wordmark stays in-app. */}
+          <a href="/" title="5 Circles Academy" aria-label="5 Circles Academy home">
+            <Image src={(process.env.NEXT_PUBLIC_BASE_PATH || "") + "/brand/logo.png"} alt="5 Circles" width={36} height={36} priority />
+          </a>
+          <Link href="/learn/home" className="min-w-0" style={{ textDecoration: "none" }}>
             <span className="lrn-brand__name wm block" style={{ fontSize: 17 }}>CIRCLE S.M.A.R.T</span>
             <span className="lrn-brand__by">Level 1 · by 5 Circles</span>
-          </span>
-        </Link>
+          </Link>
+        </span>
         <nav className="lrn-pillnav" aria-label="Primary">
           {[...NAV, ...staff].map(({ href, label, icon: I }) => (
             <Link key={href + label} href={href} className="lrn-pill" aria-current={path.startsWith(href) ? "page" : undefined}>

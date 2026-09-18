@@ -3,7 +3,8 @@ import { useActionState } from "react";
 import { setStageAccess, type StageState } from "./actions";
 import { AlertCircle } from "@/components/ui/Icon";
 
-type Grant = { stage: string; expires_at: string | null };
+type Grant = { stage: string; expires_at: string | null; starts_at?: string | null };
+const d = (iso: string) => new Date(iso).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" });
 
 /** One student row: WINNERS / O.N.E grant-revoke controls with an optional expiry date. */
 export function StageRow({ userId, name, grants }: { userId: string; name: string; grants: Grant[] }) {
@@ -21,12 +22,13 @@ export function StageRow({ userId, name, grants }: { userId: string; name: strin
               <input type="hidden" name="stage" value={stage} />
               {g ? (
                 <>
-                  <span className="col-chip">{g.expires_at ? `till ${new Date(g.expires_at).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" })}` : "open"}</span>
+                  <span className="col-chip">{g.starts_at && new Date(g.starts_at) > new Date() ? `from ${d(g.starts_at)}` : ""}{g.starts_at && new Date(g.starts_at) > new Date() && g.expires_at ? " · " : ""}{g.expires_at ? `till ${d(g.expires_at)}` : g.starts_at && new Date(g.starts_at) > new Date() ? "" : "open"}</span>
                   <button type="submit" name="op" value="revoke" className="col-btn" disabled={pending}>Revoke</button>
                 </>
               ) : (
                 <>
-                  <input name="expires_at" type="date" className="col-input" style={{ width: 150, padding: "2px 6px" }} aria-label={`${stage} expiry (optional)`} />
+                  <input name="starts_at" type="date" className="col-input" style={{ width: 140, padding: "2px 6px" }} aria-label={`${stage} start date (optional)`} title="Start date (blank = aaj se)" />
+                  <input name="expires_at" type="date" className="col-input" style={{ width: 140, padding: "2px 6px" }} aria-label={`${stage} end date (optional)`} title="End date (blank = kabhi nahi)" />
                   <button type="submit" name="op" value="grant" className="col-btn col-btn--primary" disabled={pending}>Grant</button>
                 </>
               )}

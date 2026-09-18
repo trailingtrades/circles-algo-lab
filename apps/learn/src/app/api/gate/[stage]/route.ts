@@ -20,8 +20,9 @@ export async function GET(_req: Request, ctx: { params: Promise<{ stage: string 
   let expiresAt: string | null = null;
   if (v.role === "student") {
     const sb = await createClient();
-    const { data } = await sb.from("stage_access").select("expires_at").eq("user_id", v.id).eq("stage", stage).maybeSingle();
+    const { data } = await sb.from("stage_access").select("expires_at,starts_at").eq("user_id", v.id).eq("stage", stage).maybeSingle();
     if (!data) return new NextResponse(null, { status: 403 });
+    if (data.starts_at && new Date(data.starts_at).getTime() > Date.now()) return new NextResponse(null, { status: 403 });
     if (data.expires_at && new Date(data.expires_at).getTime() < Date.now()) return new NextResponse(null, { status: 403 });
     expiresAt = data.expires_at;
   }

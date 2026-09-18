@@ -4,13 +4,14 @@ import { requireViewer } from "@/lib/auth/guard";
 import { createClient } from "@/lib/supabase/server";
 import { supabaseConfigured } from "@/lib/supabase/env";
 import { BulkInviteForm, RosterActions } from "@/components/admin/RosterForms";
+import { CohortDatesForm } from "@/components/admin/CohortDatesForm";
 
 export default async function CohortPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   if (!supabaseConfigured()) notFound();
   await requireViewer(["admin"]);
   const sb = await createClient();
-  const { data: cohort } = await sb.from("cohorts").select("id,name,level,starts_on").eq("id", id).maybeSingle();
+  const { data: cohort } = await sb.from("cohorts").select("id,name,level,starts_on,ends_on").eq("id", id).maybeSingle();
   if (!cohort) notFound();
   const { data: members } = await sb.from("profiles").select("id,full_name,role,status,joined_at").eq("cohort_id", id).order("full_name");
   const { data: invites } = await sb.from("invites").select("id,email,full_name,expires_at,accepted_at,created_at").eq("cohort_id", id).order("created_at", { ascending: false });
@@ -20,7 +21,8 @@ export default async function CohortPage({ params }: { params: Promise<{ id: str
     <>
       <p className="col-eyebrow">Admin · Cohort</p>
       <h1 className="lrn-title">{cohort.name}</h1>
-      <p className="lrn-muted" style={{ marginTop: 0 }}>{cohort.level} · starts {cohort.starts_on} · {members?.length ?? 0} members · {pending.length} pending invites</p>
+      <p className="lrn-muted" style={{ marginTop: 0 }}>{cohort.level} · {cohort.starts_on} → {cohort.ends_on ?? "open"} · {members?.length ?? 0} members · {pending.length} pending invites</p>
+      <div className="col-card mt-3" style={{ padding: 14 }}><CohortDatesForm cohortId={cohort.id} startsOn={cohort.starts_on} endsOn={cohort.ends_on} /></div>
       <div className="lrn-grid mt-4">
         <section className="col-card" aria-labelledby="imp">
           <h2 id="imp" className="lrn-session__title">Bulk import students</h2>

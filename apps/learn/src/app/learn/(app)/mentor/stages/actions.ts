@@ -15,6 +15,7 @@ export async function setStageAccess(_: StageState, form: FormData): Promise<Sta
   const stage = String(form.get("stage") ?? "");
   const op = String(form.get("op") ?? "");
   const expires = String(form.get("expires_at") ?? "").trim(); // yyyy-mm-dd or empty = never
+  const starts = String(form.get("starts_at") ?? "").trim();   // yyyy-mm-dd or empty = active now
   if (!userId || !STAGES.has(stage) || !["grant", "revoke"].includes(op)) return { error: "Bad request." };
   const admin = createAdminClient();
   const { data: target } = await admin.from("profiles").select("full_name,role,cohort_id,cohorts(mentor_id)").eq("id", userId).single();
@@ -33,8 +34,15 @@ export async function setStageAccess(_: StageState, form: FormData): Promise<Sta
       if (Number.isNaN(d.getTime())) return { error: "Expiry date samajh nahi aayi (yyyy-mm-dd)." };
       expires_at = d.toISOString();
     }
+    let starts_at: string | null = null;
+    if (starts) {
+      const d = new Date(`${starts}T00:00:00+05:30`); // start of that day, IST
+      if (Number.isNaN(d.getTime())) return { error: "Start date samajh nahi aayi (yyyy-mm-dd)." };
+      starts_at = d.toISOString();
+    }
+    if (starts_at && expires_at && starts_at >= expires_at) return { error: "Start date end se pehle honi chahiye." };
     const { error } = await admin.from("stage_access").upsert(
-      { user_id: userId, stage, expires_at, granted_by: v.id },
+      { user_id: userId, stage, starts_at, expires_at, granted_by: v.id },
       { onConflict: "user_id,stage" },
     );
     if (error) return { error: error.message };

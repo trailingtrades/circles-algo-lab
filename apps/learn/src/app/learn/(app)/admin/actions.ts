@@ -18,14 +18,55 @@ export async function createCohort(_: AdminState, form: FormData): Promise<Admin
   const name = String(form.get("name") ?? "").trim();
   const level = String(form.get("level") ?? "foundation");
   const starts_on = String(form.get("starts_on") ?? "");
+  const ends_on = String(form.get("ends_on") ?? "").trim() || null;
   if (!/^[A-Za-z0-9-]{4,60}$/.test(name)) return { error: "Cohort name: letters, digits, hyphens only (e.g. TDP-Foundation-Oct-2026)." };
   if (!["foundation", "intermediate", "advanced"].includes(level) || !starts_on) return { error: "Level aur start date chahiye." };
+  if (ends_on && ends_on <= starts_on) return { error: "End date start ke baad honi chahiye." };
   const admin = createAdminClient();
-  const { data, error } = await admin.from("cohorts").insert({ name, level, starts_on }).select("id").single();
+  const { data, error } = await admin.from("cohorts").insert({ name, level, starts_on, ends_on }).select("id").single();
   if (error) return { error: error.message.includes("duplicate") ? "Is naam ka cohort pehle se hai." : error.message };
-  await audit(v.id, "cohort.create", "cohorts", data.id, null, { name, level, starts_on });
+  await audit(v.id, "cohort.create", "cohorts", data.id, null, { name, level, starts_on, ends_on });
   revalidatePath("/learn/admin");
   return { ok: `Cohort ${name} ban gaya.` };
+}
+
+/** Batch dates: start + end editable any time (informational schedule; access windows live on stage_access). */
+export async function setCohortDates(_: AdminState, form: FormData): Promise<AdminState> {
+  const v = await requireViewer(["admin"]);
+  const cohortId = String(form.get("cohort_id") ?? "");
+  const starts_on = String(form.get("starts_on") ?? "");
+  const ends_on = String(form.get("ends_on") ?? "").trim() || null;
+  if (!cohortId || !starts_on) return { error: "Start date chahiye." };
+  if (ends_on && ends_on <= starts_on) return { error: "End date start ke baad honi chahiye." };
+  const admin = createAdminClient();
+  const { data: before } = await admin.from("cohorts").select("starts_on,ends_on").eq("id", cohortId).single();
+  const { error } = await admin.from("cohorts").update({ starts_on, ends_on }).eq("id", cohortId);
+  if (error) return { error: error.message };
+  await audit(v.id, "cohort.dates", "cohorts", cohortId, before, { starts_on, ends_on });
+  revalidatePath(`/learn/admin/cohorts/${cohortId}`);
+  return { ok: "Dates saved." };
+}
+
+/* ---------- master admin ----------
+   One master account (env MASTER_ADMIN_EMAIL, default the first admin). Only the master
+   may change anyone's role; other admins keep every other power. The DB trigger already
+   limits role changes to admins — this narrows it further at the action layer. */
+const MASTER_ADMIN_EMAIL = (process.env.MASTER_ADMIN_EMAIL || "trailingtrades@gmail.com").toLowerCase();
+export async function setRole(_: AdminState, form: FormData): Promise<AdminState> {
+  const v = await requireViewer(["admin"]);
+  if ((v.email ?? "").toLowerCase() !== MASTER_ADMIN_EMAIL) return { error: "Sirf master admin roles badal sakta hai." };
+  const userId = String(form.get("user_id") ?? "");
+  const role = String(form.get("role") ?? "");
+  if (!["student", "mentor", "admin"].includes(role)) return { error: "Invalid role." };
+  if (userId === v.id) return { error: "Apna hi role nahi badal sakte." };
+  const admin = createAdminClient();
+  const { data: before } = await admin.from("profiles").select("role,full_name").eq("id", userId).single();
+  if (!before) return { error: "User not found." };
+  const { error } = await admin.from("profiles").update({ role }).eq("id", userId);
+  if (error) return { error: error.message };
+  await audit(v.id, "user.role", "profiles", userId, { role: before.role }, { role });
+  revalidatePath("/learn/admin/people");
+  return { ok: `${before.full_name}: ab ${role}.` };
 }
 
 /** Bulk import: "Full Name, email" per line (CSV paste or upload). Creates one 7-day single-use invite each and emails it. No self-signup exists anywhere else. */

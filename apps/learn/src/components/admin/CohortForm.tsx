@@ -10,6 +10,7 @@ export function CohortForm() {
       <div className="lrn-field"><label htmlFor="level">Level</label>
         <select id="level" name="level" className="col-input"><option value="foundation">Foundation</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option></select></div>
       <div className="lrn-field"><label htmlFor="starts_on">Starts on</label><input id="starts_on" name="starts_on" type="date" className="col-input" required /></div>
+      <div className="lrn-field"><label htmlFor="ends_on">Ends on (optional)</label><input id="ends_on" name="ends_on" type="date" className="col-input" /></div>
       {state.error && <p className="lrn-error" role="alert">{state.error}</p>}
       {state.ok && <p className="lrn-notice" role="status">{state.ok}</p>}
       <button type="submit" className="col-btn col-btn--primary" disabled={pending}>Create cohort</button>

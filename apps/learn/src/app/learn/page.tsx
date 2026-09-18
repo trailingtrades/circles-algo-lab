@@ -52,9 +52,9 @@ function LoginInner() {
       <main className="lrn-main flex flex-col items-center justify-center" style={{ paddingTop: 48 }}>
         <div className="lrn-login">
           <div className="flex flex-col items-center gap-2 mb-6 text-center">
-            <span className="lrn-login__logo">
+            <a className="lrn-login__logo" href="/" title="5 Circles Academy" aria-label="Back to 5 Circles Academy">
               <Image src={(process.env.NEXT_PUBLIC_BASE_PATH || "") + "/brand/logo.png"} alt="5 Circles" width={64} height={64} priority />
-            </span>
+            </a>
             <h1 className="lrn-title wm">{stage.title}</h1>
             <p className="lrn-kicker">{stage.kicker}</p>
             <p className="col-eyebrow">{COMPANY.tagline}</p>
