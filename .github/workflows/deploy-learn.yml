@@ -29,7 +29,7 @@ jobs:
         # Re-setting them from a known-good source fixes hand-paste errors (hidden characters, wrong key).
         env:
           PUB_SUPABASE_URL: https://hcajzeykcdcxqidgmzep.supabase.co
-          PUB_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhjYWp6ZXlrY2RjeHFpZGdtemVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk0Mzg0OTEsImV4cCI6MjEwNTAxNDQ5MX0.NFO6ofobvDON2TfAGzE2b8tK8kymDUl5uxcUAyPFeHY
+          PUB_ANON_KEY: sb_publishable_gAfSezP8b8W_9sF_MJA7XQ_9yEGxdRo
         run: |
           # Vercel REST API upsert (the CLI prompts interactively for anything that looks like a credential).
           set_env() { # name value

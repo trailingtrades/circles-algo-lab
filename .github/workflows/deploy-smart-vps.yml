@@ -22,7 +22,7 @@ jobs:
       VPS_AGE_PUBKEY: age1d5d4nkmdhnjcn5gay0y3x8hlzkgke3h2ks6vcqh9qkep70ae0yzqm7ns92
       # Public values (shipped to every browser) — same source of truth as deploy-learn.yml.
       NEXT_PUBLIC_SUPABASE_URL: https://hcajzeykcdcxqidgmzep.supabase.co
-      NEXT_PUBLIC_SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhjYWp6ZXlrY2RjeHFpZGdtemVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk0Mzg0OTEsImV4cCI6MjEwNTAxNDQ5MX0.NFO6ofobvDON2TfAGzE2b8tK8kymDUl5uxcUAyPFeHY
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: sb_publishable_gAfSezP8b8W_9sF_MJA7XQ_9yEGxdRo
       NEXT_PUBLIC_SITE_URL: https://learn.optionlab.co.in/smart
       NEXT_PUBLIC_BASE_PATH: /smart
       NEXT_OUTPUT_STANDALONE: "1"
