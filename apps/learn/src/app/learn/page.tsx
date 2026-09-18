@@ -15,6 +15,14 @@ function LoginInner() {
   const [state, action, pending] = useActionState(signIn, {});
   const params = useSearchParams();
   const notice = params.get("suspended") ? "Ye account suspended hai. Apne mentor se sampark kijiye." : params.get("set") ? "Password set ho gaya. Ab sign in kijiye." : params.get("error") === "link" ? "Link expire ho gaya ya galat hai." : null;
+  // One Academy login for every stage: when the stage gate bounced the student here
+  // (?next=/winners/ or /one/), the header names the programme they are opening.
+  const next = params.get("next");
+  const stage = next === "/winners/"
+    ? { title: "CIRCLE W.I.N.N.E.R.S", kicker: "Stage 2 · 5 Circles Academy" }
+    : next === "/one/"
+      ? { title: "CIRCLE O.N.E", kicker: "Stage 3 · 5 Circles Academy" }
+      : { title: "CIRCLE S.M.A.R.T", kicker: "Level 1 · 5 Circles Academy" };
   return (
     <div className="lrn-shell lrn-gate">
       <div className="lrn-gate__rings" aria-hidden><RingsArt /></div>
@@ -22,8 +30,8 @@ function LoginInner() {
         <div className="lrn-login">
           <div className="flex flex-col items-center gap-2 mb-6 text-center">
             <Image src={(process.env.NEXT_PUBLIC_BASE_PATH || "") + "/brand/logo.png"} alt="5 Circles" width={64} height={64} priority />
-            <h1 className="lrn-title wm">CIRCLE S.M.A.R.T</h1>
-            <p className="lrn-kicker">Level 1 · 5 Circles Academy</p>
+            <h1 className="lrn-title wm">{stage.title}</h1>
+            <p className="lrn-kicker">{stage.kicker}</p>
             <p className="col-eyebrow">{COMPANY.tagline}</p>
             <p className="lrn-muted" style={{ margin: 0 }}>{t("welcome")}</p>
           </div>
