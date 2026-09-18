@@ -4,16 +4,20 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useLang } from "@/lib/i18n/LangProvider";
 import { NAV } from "./nav";
-import { Sun, Moon, Languages } from "@/components/ui/Icon";
+import { Sun, Moon, Languages, BookOpen, Settings } from "@/components/ui/Icon";
 
 /* Live Winners header recipe: centered max-width row — brand lockup, one pill
    group of icon nav chips, a language pill, a theme icon button, and the
    student chip on the right. Active chip is a --brand fill with --brand-ink
    text (never white on the dark cyan). */
-export function Header({ studentName }: { studentName?: string }) {
+export function Header({ studentName, role }: { studentName?: string; role?: "student" | "mentor" | "admin" }) {
   const { lang, setLang, theme, setTheme } = useLang();
   const path = usePathname();
   const name = studentName?.trim() || "Student";
+  // Staff-only chips: students never see these; the pages themselves re-check the role server-side.
+  const staff = role === "admin"
+    ? [{ href: "/learn/mentor", label: "Mentor", icon: BookOpen }, { href: "/learn/admin", label: "Admin", icon: Settings }]
+    : role === "mentor" ? [{ href: "/learn/mentor", label: "Mentor", icon: BookOpen }] : [];
   return (
     <header className="col-header" role="banner" style={{ height: "auto", minHeight: 64, padding: "8px 16px" }}>
       <div className="lrn-max flex items-center justify-between gap-3">
@@ -25,7 +29,7 @@ export function Header({ studentName }: { studentName?: string }) {
           </span>
         </Link>
         <nav className="lrn-pillnav" aria-label="Primary">
-          {NAV.map(({ href, label, icon: I }) => (
+          {[...NAV, ...staff].map(({ href, label, icon: I }) => (
             <Link key={href + label} href={href} className="lrn-pill" aria-current={path.startsWith(href) ? "page" : undefined}>
               <I size={15} strokeWidth={1.75} aria-hidden />{label}
             </Link>

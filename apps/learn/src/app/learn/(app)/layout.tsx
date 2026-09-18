@@ -11,7 +11,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
   return (
     <div className="lrn-shell">
       <a href="#main" className="lrn-skip">Skip to content</a>
-      <Header studentName={name} />
+      <Header studentName={name} role={v?.role} />
       <OfflineBanner />
       <div className="lrn-body">
         <Sidebar />
