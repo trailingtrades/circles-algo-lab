@@ -344,3 +344,12 @@ body{ font-variant-numeric: tabular-nums lining-nums; }
 .lrn-login .col-card{ backdrop-filter: blur(6px); }
 .lrn-login .col-btn--primary{ transition: transform .15s ease, box-shadow .15s ease; }
 .lrn-login .col-btn--primary:hover{ transform: translateY(-1px); box-shadow: 0 6px 18px -6px var(--brand); }
+
+/* ---------- 2i. Two-row header (18 Sep 2026) ----------
+   Staff chips (Mentor/Admin) made the single header row overflow behind the right-side
+   controls; on desktop the pill nav now sits on its own centred second row. Phone keeps
+   the sidebar + bottom nav, untouched. */
+@media (min-width: 768px){
+  .col-header > .lrn-max{ flex-wrap: wrap; }
+  .col-header .lrn-pillnav{ order: 3; flex-basis: 100%; justify-content: center; margin-top: 4px; }
+}
