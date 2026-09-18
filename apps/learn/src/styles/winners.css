@@ -353,3 +353,53 @@ body{ font-variant-numeric: tabular-nums lining-nums; }
   .col-header > .lrn-max{ flex-wrap: wrap; }
   .col-header .lrn-pillnav{ order: 3; flex-basis: 100%; justify-content: center; margin-top: 4px; }
 }
+
+/* ---------- 2j. Academy strip + wave journey (18 Sep 2026) ----------
+   Ported from the CIRCLE O.N.E header/dashboard so all three stages read identically:
+   the ladder strip above the header, and the wave journey diagram on Home. */
+.acad{ display:flex; align-items:center; gap:6px; padding:8px 0 0; font-size:.72rem;
+  letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3); flex-wrap:wrap; }
+.acad a{ color:var(--ink-2); text-decoration:none; padding:3px 9px;
+  border:1px solid var(--line); border-radius:999px; background:var(--panel); }
+.acad a:hover{ border-color:var(--brand); color:var(--ink); }
+.acad a.home{ border-color:#22b8f566; color:var(--ink); }
+.acad .on{ padding:3px 9px; border-radius:999px; background:var(--brand); color:var(--brand-ink); font-weight:700; }
+.acad .soon{ padding:3px 9px; border-radius:999px; border:1px dashed var(--line-2); opacity:.7; }
+.acad .sep{ opacity:.35; }
+@media(max-width:640px){ .acad{ font-size:.66rem; } .acad .sib,.acad .soon,.acad .sep{ display:none; } }
+
+.wave{ position:relative; padding:12px 0 4px; border-radius:12px; border:1px solid var(--line);
+  background:var(--panel); background-image:linear-gradient(to bottom right,#16233f,#0f1520 55%,#0c1322); overflow:hidden; }
+.col-light .wave{ background-image:none; }
+.wave svg{ display:block; width:100%; height:auto; }
+.wv-nodes{ position:absolute; inset:0; pointer-events:none; }
+.wv-n{ position:absolute; display:flex; flex-direction:column; align-items:center; gap:5px;
+  text-align:center; width:150px; pointer-events:auto; transform:translate(-50%,-20px); text-decoration:none; }
+.wv-n .dot{ width:38px; height:38px; border-radius:50%; display:grid; place-items:center;
+  background:var(--panel); border:2px solid var(--line-2); color:var(--ink-3); }
+.wv-n.done .dot{ background:#4caf50; border-color:#4caf50; color:#fff; }
+.wv-n.cur .dot{ background:var(--brand); border-color:var(--brand); color:var(--brand-ink); box-shadow:0 0 0 8px rgba(34,184,245,.16); }
+.wv-n.end .dot{ width:46px; height:46px; border-color:#f5a524; color:#f5a524; background:rgba(245,165,36,.16); }
+.wv-n.end.done .dot{ background:#f5a524; color:#1a1206; }
+.wv-n .k{ font-size:.62rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); }
+.wv-n.cur .k{ color:var(--brand); } .wv-n.done .k{ color:#4caf50; }
+.wv-n .t{ font-size:.8rem; font-weight:700; line-height:1.2; color:var(--ink); }
+.wv-n .p{ font-size:.68rem; color:var(--ink-3); }
+.wv-mobile{ display:none; }
+@media(max-width:760px){
+  .wave svg,.wv-nodes{ display:none; }
+  .wv-mobile{ display:grid; padding:4px 14px 10px; }
+  .wv-m{ display:grid; grid-template-columns:34px minmax(0,1fr) auto; gap:12px; align-items:center;
+    padding:9px 0; border-top:1px solid var(--line); }
+  .wv-m:first-child{ border-top:0; }
+  .wv-m .dot{ width:30px; height:30px; border-radius:50%; display:grid; place-items:center;
+    background:var(--panel); border:2px solid var(--line-2); color:var(--ink-3); }
+  .wv-m.done .dot{ background:#4caf50; border-color:#4caf50; color:#fff; }
+  .wv-m.cur .dot{ background:var(--brand); border-color:var(--brand); color:var(--brand-ink); }
+  .wv-m .t{ font-size:.82rem; font-weight:700; color:var(--ink); }
+  .wv-m .p{ font-size:.68rem; color:var(--brand); }
+  .wv-m .pct{ font-size:.72rem; color:var(--ink-3); }
+}
+
+/* Hero title matches the O.N.E dashboard scale exactly. */
+.lrn-hero__txt .lrn-title{ font-size: clamp(1.6rem, 4vw, 2.4rem); letter-spacing: -.03em; }

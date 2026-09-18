@@ -11,6 +11,7 @@ import { T } from "@/lib/i18n/strings";
 import { loadScore } from "@/lib/scoring/read";
 import { RankChip } from "@/components/ui/RankChip";
 import { Clock, Calendar, ArrowRight, CheckCircle, BookOpen, Target, Activity } from "@/components/ui/Icon";
+import { WaveJourney, type WaveStep } from "@/components/ui/WaveJourney";
 
 /* Live Winners home recipe: kicker + big gradient-name hero beside a ring panel,
    icon stat tiles, a full-width continue-learning bar, phase-banner roadmap
@@ -39,7 +40,7 @@ export default async function HomePage() {
       <section className="lrn-hero mb-4">
         <div className="lrn-hero__txt">
           <p className="lrn-kicker">{level.title_en} · Week {week.number} · {lang === "hi" ? week.title_hi : week.title_en}{demo && " · preview"}</p>
-          <h1 className="lrn-title">{lang === "hi" ? "Namaste" : "Hello"}{name ? <>, <span className="wm">{name}</span></> : null}</h1>
+          <h1 className="lrn-title">{lang === "hi" ? "Namaste" : "Welcome"}{name ? <>, <span className="wm">{name}</span></> : null}</h1>
           <p className="lrn-muted" style={{ marginTop: 0 }}>{t("rankNote")}</p>
           <p style={{ margin: "10px 0 0" }}><RankChip rank={score.rank} band={score.band} /></p>
         </div>
@@ -47,6 +48,26 @@ export default async function HomePage() {
           <SegmentedRing done={levelDone} total={levelSessions.length} label="Overall progress" />
         </div>
       </section>
+
+      {/* Wave journey — Start → Week 1..3 → Final Exam, the O.N.E dashboard diagram. */}
+      {(() => {
+        const fw = [1, 2, 3].map((w) => {
+          const ss = SESSIONS.filter((s) => s.level === "foundation" && s.week === w);
+          const d = ss.filter((s) => isComplete(stateOf(state, s.number))).length;
+          return { w, total: ss.length, done: d };
+        });
+        const curW = fw.findIndex((x) => x.done < x.total);
+        const allF = curW === -1;
+        const steps: WaveStep[] = [
+          { key: "start", title: lang === "hi" ? "Shuruaat" : "Start", kind: "start", done: doneCount > 0 },
+          ...fw.map((x, i) => ({
+            key: `w${x.w}`, title: `${lang === "hi" ? "Hafta" : "Week"} ${x.w}`, sub: `${x.done}/${x.total}`,
+            kind: "mid" as const, done: x.done === x.total, cur: i === curW, frac: x.total ? x.done / x.total : 0, href: "/learn/path",
+          })),
+          { key: "final", title: "Final Exam", kind: "end", done: false, cur: allF, href: "/learn/exam/foundation-final" },
+        ];
+        return <WaveJourney steps={steps} youAreHere={lang === "hi" ? "AAP YAHAN HAIN" : "YOU ARE HERE"} />;
+      })()}
 
       {/* Icon stat tiles */}
       <div className="lrn-statrow">

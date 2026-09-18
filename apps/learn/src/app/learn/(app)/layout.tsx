@@ -1,4 +1,5 @@
 import { Header } from "@/components/shell/Header";
+import { AcademyStrip } from "@/components/shell/AcademyStrip";
 import { Sidebar, BottomNav } from "@/components/shell/Nav";
 import { ComplianceFooter } from "@/components/ui/ComplianceFooter";
 import { OfflineBanner } from "@/components/ui/OfflineBanner";
@@ -11,6 +12,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
   return (
     <div className="lrn-shell">
       <a href="#main" className="lrn-skip">Skip to content</a>
+      <AcademyStrip />
       <Header studentName={name} role={v?.role} />
       <OfflineBanner />
       <div className="lrn-body">

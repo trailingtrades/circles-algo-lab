@@ -25,10 +25,10 @@ export function Header({ studentName, role }: { studentName?: string; role?: "st
           {/* Logo = back to the Academy landing (domain root, outside the /smart basePath) —
               same behaviour as the Winners top bar. The wordmark stays in-app. */}
           <a href="/" title="5 Circles Academy" aria-label="5 Circles Academy home">
-            <Image src={(process.env.NEXT_PUBLIC_BASE_PATH || "") + "/brand/logo.png"} alt="5 Circles" width={36} height={36} priority />
+            <Image src={(process.env.NEXT_PUBLIC_BASE_PATH || "") + "/brand/logo.png"} alt="5 Circles" width={48} height={48} priority />
           </a>
           <Link href="/learn/home" className="min-w-0" style={{ textDecoration: "none" }}>
-            <span className="lrn-brand__name wm block" style={{ fontSize: 17 }}>CIRCLE S.M.A.R.T</span>
+            <span className="lrn-brand__name wm block" style={{ fontSize: 22, letterSpacing: ".04em" }}>CIRCLE S.M.A.R.T</span>
             <span className="lrn-brand__by">Level 1 · by 5 Circles</span>
           </Link>
         </span>

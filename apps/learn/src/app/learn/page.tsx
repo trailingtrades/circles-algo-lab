@@ -9,6 +9,7 @@ import { CREDENTIAL_LINE, COMPANY } from "@/lib/compliance/strings";
 import { signIn } from "./actions";
 import { AlertCircle } from "@/components/ui/Icon";
 import { RingsArt } from "@/components/ui/CourseArt";
+import { AcademyStrip } from "@/components/shell/AcademyStrip";
 
 /* Daily motivation on the sign-in gate — process and discipline only, never returns (§1.4).
    Picked by day-of-year so every student sees the same line all day, a new one tomorrow. */
@@ -48,6 +49,7 @@ function LoginInner() {
       : { title: "CIRCLE S.M.A.R.T", kicker: "Level 1 · 5 Circles Academy" };
   return (
     <div className="lrn-shell lrn-gate">
+      <AcademyStrip />
       <div className="lrn-gate__rings" aria-hidden><RingsArt /></div>
       <main className="lrn-main flex flex-col items-center justify-center" style={{ paddingTop: 48 }}>
         <div className="lrn-login">
