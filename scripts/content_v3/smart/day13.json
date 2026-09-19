@@ -1,0 +1,1362 @@
+{
+  "day": 13,
+  "title": {
+    "en": "Strategy #2: Opening Range Breakout (optional)",
+    "hi": "Strategy #2: Opening Range Breakout (optional)",
+    "dv": "स्ट्रैटेजी #2: ओपनिंग रेंज ब्रेकआउट (ऑप्शनल)"
+  },
+  "tags": {
+    "concept": {
+      "en": "Opening Range Breakout: an optional intraday strategy, written as rules",
+      "hi": "Opening Range Breakout: ek optional intraday strategy, rules mein likhi hui",
+      "dv": "ओपनिंग रेंज ब्रेकआउट: एक ऑप्शनल इंट्राडे स्ट्रैटेजी, नियमों में लिखी हुई"
+    },
+    "ai_lab": {
+      "en": "ORB rule-card audit: AI finds the weak spots, you fix them",
+      "hi": "ORB rule-card audit: AI kamzor jagah dhoondhe, aap unhe theek karein",
+      "dv": "ORB रूल-कार्ड ऑडिट: AI कमज़ोर जगह ढूँढे, आप उन्हें ठीक करें"
+    },
+    "psychology": {
+      "en": "Breakout FOMO",
+      "hi": "Breakout ka FOMO",
+      "dv": "ब्रेकआउट का FOMO"
+    }
+  },
+  "strategy": "Opening Range Breakout (ORB)",
+  "duration_min": 75,
+  "story": {
+    "kind": "story",
+    "title": {
+      "en": "The breakout that wasn't",
+      "hi": "Woh breakout jo tha hi nahi",
+      "dv": "वह ब्रेकआउट जो था ही नहीं"
+    },
+    "panels": [
+      {
+        "who": "narrator",
+        "say": {
+          "en": "A working day, 9:22 am. Aman is in his office cab in Pune with a 5-minute chart open. Priya is on the call from Lucknow.",
+          "hi": "Ek working day, subah 9:22. Aman Pune mein office cab mein baitha hai, phone par 5-minute chart khula hai. Priya Lucknow se call par hai.",
+          "dv": "एक कामकाजी दिन, सुबह 9:22। अमन पुणे में ऑफ़िस कैब में बैठा है, फ़ोन पर 5-मिनट चार्ट खुला है। प्रिया लखनऊ से कॉल पर है।"
+        }
+      },
+      {
+        "who": "aman",
+        "mood": "excited",
+        "say": {
+          "en": "Kiran Foods is up Rs 12 since the open. It's breaking out. I just bought 2,000 shares on paper at Rs 476, before it runs away.",
+          "hi": "Kiran Foods open se Rs 12 upar hai. Breakout ho raha hai. Maine abhi paper par Rs 476 par 2,000 shares le liye, isse pehle ki yeh bhaag jaaye.",
+          "dv": "Kiran Foods ओपन से Rs 12 ऊपर है। ब्रेकआउट हो रहा है। मैंने अभी पेपर पर Rs 476 पर 2,000 शेयर ले लिए, इससे पहले कि यह भाग जाए।"
+        }
+      },
+      {
+        "who": "narrator",
+        "say": {
+          "en": "9:40 am. Kiran Foods is back at Rs 464. Aman is down Rs 24,000 on paper. He had set no stop. And his Rs 9.52 lakh position was nearly four times the 25% cap.",
+          "hi": "Subah 9:40. Kiran Foods wapas Rs 464 par aa gaya. Aman paper par Rs 24,000 ke loss mein hai. Stop toh usne lagaya hi nahi tha. Aur Rs 9.52 lakh ki position 25% cap se lagbhag chaar guna thi.",
+          "dv": "सुबह 9:40। Kiran Foods वापस Rs 464 पर आ गया। अमन पेपर पर Rs 24,000 के घाटे में है। स्टॉप तो उसने लगाया ही नहीं था। और Rs 9.52 लाख की पोज़िशन 25% कैप से लगभग चार गुना थी।"
+        }
+      },
+      {
+        "who": "priya",
+        "mood": "thinking",
+        "say": {
+          "en": "Aman, breaking out of what? At 9:22 the first 15 minutes were not even over. And where was your stop?",
+          "hi": "Aman, breakout kis cheez se? 9:22 par toh pehle 15 minute bhi poore nahi hue the. Aur stop kahan tha?",
+          "dv": "अमन, ब्रेकआउट किस चीज़ से? 9:22 पर तो पहले 15 मिनट भी पूरे नहीं हुए थे। और स्टॉप कहाँ था?"
+        }
+      },
+      {
+        "who": "aman",
+        "mood": "sad",
+        "say": {
+          "en": "There was no stop. Rs 24,000 is 2.4R, more than my whole daily limit of 2R. And from 9:30 I am at my desk.",
+          "hi": "Stop tha hi nahi. Rs 24,000 matlab 2.4R, meri poori daily limit 2R se bhi zyada. Aur 9:30 se toh main desk par hota hoon.",
+          "dv": "स्टॉप था ही नहीं। Rs 24,000 मतलब 2.4R, मेरी पूरी डेली लिमिट 2R से भी ज़्यादा। और 9:30 से तो मैं डेस्क पर होता हूँ।"
+        }
+      },
+      {
+        "who": "mentor",
+        "mood": "thinking",
+        "say": {
+          "en": "Then who watches this trade at 10:30, while you are in a meeting? The idea was not the problem, Aman; the rush was. Today we write ORB as rules: when to wait, when to enter, where to exit and when not to trade. On Day 10 your own answers ruled intraday out for you; today you will see exactly why.",
+          "hi": "Toh 10:30 par, jab aap meeting mein honge, yeh trade kaun dekhega? Aman, problem idea mein nahi thi, jaldbaazi mein thi. Aaj hum ORB ko rules mein likhenge: kab rukna hai, kab entry leni hai, kahan exit karna hai aur kab trade karna hi nahi hai. Day 10 mein aapke apne jawabon se hi intraday aapke liye bahar ho gaya tha; aaj aap dekhenge ki kyun.",
+          "dv": "तो 10:30 पर, जब आप मीटिंग में होंगे, यह ट्रेड कौन देखेगा? अमन, दिक़्क़त आइडिया में नहीं थी, जल्दबाज़ी में थी। आज हम ORB को नियमों में लिखेंगे: कब रुकना है, कब एंट्री लेनी है, कहाँ एग्ज़िट करना है और कब ट्रेड करना ही नहीं है। दिन 10 में आपके अपने जवाबों से ही इंट्राडे आपके लिए बाहर हो गया था; आज आप देखेंगे कि क्यों।"
+        }
+      }
+    ],
+    "moral": {
+      "en": "A breakout you chase is a feeling. A close outside a marked range, on written rules, is a setup.",
+      "hi": "Jis breakout ke peeche aap bhaagte hain, woh ek feeling hai. Mark ki hui range ke bahar close, likhe hue rules ke saath, woh setup hai.",
+      "dv": "जिस ब्रेकआउट के पीछे आप भागते हैं, वह एक एहसास है। मार्क की हुई रेंज के बाहर क्लोज़, लिखे हुए नियमों के साथ, वह सेटअप है।"
+    }
+  },
+  "topics": [
+    {
+      "h": {
+        "en": "ORB in one line, and who it is for",
+        "hi": "ORB ek line mein, aur yeh kiske liye hai",
+        "dv": "ORB एक लाइन में, और यह किसके लिए है"
+      },
+      "p": {
+        "en": "The first minutes after 9:15 are the noisiest of the day: overnight news, pending orders and emotions all hit the market at once. The Opening Range Breakout, or ORB, waits out this noise. You mark the highest and lowest price of the first 15 minutes, 9:15 to 9:30; that box is the opening range (OR). If a 5-minute candle later closes outside the box, that is a breakout. On trend days the early push can carry on for hours; on choppy days, when price swings up and down with no direction, it often fails. ORB is optional in this course: take it up only if you can watch the screen from 9:15 to 11:00 on working days and are free again at 14:30 (2:30 pm) to close anything still open; otherwise stay with EMA Pullback Swing from Day 11.",
+        "hi": "9:15 ke baad ke pehle kuch minute din ke sabse shor wale hote hain: raat ki news, pending orders aur emotions, sab ek saath market par toot padte hain. Opening Range Breakout, yaani ORB, is shor ke thamne ka intezaar karta hai. Aap pehle 15 minute, 9:15 se 9:30, ka sabse ooncha aur sabse neecha price mark karte hain; yahi box opening range (OR) hai. Agar baad mein koi 5-minute candle is box ke bahar close ho jaye, toh woh breakout hai. Trend wale dinon mein subah ka yeh dhakka ghanton chal sakta hai; choppy dinon mein, jab price bina kisi direction ke upar-neeche jhoolta hai, yeh aksar fail ho jaata hai. Is course mein ORB optional hai: ise tabhi apnaiye jab aap working days par 9:15 se 11:00 tak screen dekh sakein aur 14:30 (dopahar 2:30) par phir se free hon, taaki khula trade band kar sakein; warna Day 11 wali EMA Pullback Swing hi aapki strategy rahegi.",
+        "dv": "9:15 के बाद के पहले कुछ मिनट दिन के सबसे ज़्यादा शोर वाले होते हैं: रात की ख़बरें, पेंडिंग ऑर्डर और इमोशन, सब एक साथ बाज़ार पर टूट पड़ते हैं। ओपनिंग रेंज ब्रेकआउट, यानी ORB, इस शोर के थमने का इंतज़ार करता है। आप पहले 15 मिनट, 9:15 से 9:30, का सबसे ऊँचा और सबसे नीचा भाव मार्क करते हैं; यही बॉक्स ओपनिंग रेंज (OR) है। अगर बाद में कोई 5-मिनट कैंडल इस बॉक्स के बाहर क्लोज़ हो, तो वह ब्रेकआउट है। ट्रेंड वाले दिनों में सुबह का यह धक्का घंटों चल सकता है; चॉपी दिनों में, जब भाव बिना दिशा के ऊपर-नीचे झूलता है, यह अक्सर फ़ेल हो जाता है। इस कोर्स में ORB ऑप्शनल है: इसे तभी अपनाएँ जब आप कामकाजी दिनों में 9:15 से 11:00 तक स्क्रीन देख सकें और 14:30 (दोपहर 2:30) पर फिर से ख़ाली हों, ताकि खुला ट्रेड बंद कर सकें; वरना दिन 11 वाली EMA Pullback Swing ही आपकी स्ट्रैटेजी रहे।"
+      },
+      "example": {
+        "en": "Priya's office hours rule out live ORB, so on Sunday she scrolls back to last Tuesday's 5-minute chart of Bharat Pumps Ltd. (The name is made up; picture a large, heavily traded company.) It opened at Rs 1,003 and in the first 15 minutes swung between Rs 1,000 and Rs 1,010, so she writes 'OR 1,000-1,010' in her notebook and covers the rest of the chart. Think of a Test-match opener: he leaves the first few balls outside off stump and reads the pitch before playing big shots. Use ORB only on liquid cash stocks; to start, only shares from the NIFTY 50 list, and never futures or options, not even on paper. The NIFTY 50 index itself is not a share and has no volume of its own, so you cannot buy it as a share and VWAP cannot be drawn on it.",
+        "hi": "Priya ke office hours mein live ORB mumkin nahi, isliye Sunday ko woh pichhle Tuesday ka Bharat Pumps Ltd ka 5-minute chart peeche scroll karke dekhti hai. (Naam made-up hai; ise ek badi, khoob trade hone wali company maaniye.) Stock Rs 1,003 par khula aur pehle 15 minute mein Rs 1,000 aur Rs 1,010 ke beech jhoolta raha, toh woh notebook mein 'OR 1,000-1,010' likh leti hai aur baaki chart dhak deti hai. Test match ka opener yaad kijiye: shuru ki kuch gendein off stump ke bahar chhod deta hai aur bade shots se pehle pitch samajh leta hai. ORB sirf liquid cash stocks par kijiye; shuruaat mein sirf NIFTY 50 list ke shares par, aur futures ya options bilkul nahi, paper par bhi nahi. NIFTY 50 index khud koi share nahi hai aur uska apna volume nahi hota, isliye na use share ki tarah khareed sakte hain, na us par VWAP ban sakta hai.",
+        "dv": "प्रिया के ऑफ़िस के घंटों में लाइव ORB मुमकिन नहीं, इसलिए रविवार को वह पिछले मंगलवार का Bharat Pumps Ltd का 5-मिनट चार्ट पीछे स्क्रॉल करके देखती है। (नाम काल्पनिक है; इसे एक बड़ी, ख़ूब ट्रेड होने वाली कंपनी मानिए।) स्टॉक Rs 1,003 पर खुला और पहले 15 मिनट में Rs 1,000 और Rs 1,010 के बीच झूलता रहा, तो वह नोटबुक में 'OR 1,000-1,010' लिख लेती है और बाक़ी चार्ट ढक देती है। टेस्ट मैच का ओपनर याद कीजिए: शुरू की कुछ गेंदें ऑफ़ स्टंप के बाहर छोड़ देता है और बड़े शॉट से पहले पिच समझ लेता है। ORB सिर्फ़ लिक्विड कैश स्टॉक्स पर करें; शुरुआत में सिर्फ़ NIFTY 50 लिस्ट के शेयरों पर, और फ़्यूचर्स या ऑप्शंस बिल्कुल नहीं, पेपर पर भी नहीं। NIFTY 50 इंडेक्स ख़ुद कोई शेयर नहीं है और उसका अपना वॉल्यूम नहीं होता, इसलिए न उसे शेयर की तरह ख़रीदा जा सकता है, न उस पर VWAP बन सकता है।"
+      },
+      "remember": {
+        "en": "ORB = mark the first 15 minutes, then wait for a close outside. No screen time from 9:15 to 11:00 and again at 14:30, no ORB.",
+        "hi": "ORB = pehle 15 minute mark kijiye, phir bahar close ka intezaar. 9:15 se 11:00 tak aur phir 14:30 par screen ka waqt nahi, toh ORB nahi.",
+        "dv": "ORB = पहले 15 मिनट मार्क करें, फिर बाहर क्लोज़ का इंतज़ार। 9:15 से 11:00 तक और फिर 14:30 पर स्क्रीन का वक़्त नहीं, तो ORB नहीं।"
+      },
+      "visual": {
+        "kind": "steps",
+        "title": {
+          "en": "An ORB morning",
+          "hi": "Ek ORB wali subah",
+          "dv": "एक ORB वाली सुबह"
+        },
+        "caption": {
+          "en": "Times are IST on NSE trading days. Check nseindia.com for holidays and any change in timings.",
+          "hi": "Time IST mein hai, NSE ke trading days par. Chhuttiyan aur timing mein koi badlav nseindia.com par check kijiye.",
+          "dv": "समय IST में है, NSE के ट्रेडिंग दिनों पर। छुट्टियाँ और समय में कोई बदलाव nseindia.com पर देख लें।"
+        },
+        "items": [
+          {
+            "tag": "9:00",
+            "label": {
+              "en": "Pre-open",
+              "hi": "Pre-open",
+              "dv": "प्री-ओपन"
+            },
+            "sub": {
+              "en": "One opening price is worked out",
+              "hi": "Ek opening price tay hota hai",
+              "dv": "एक ओपनिंग भाव तय होता है"
+            }
+          },
+          {
+            "tag": "9:15",
+            "label": {
+              "en": "Range begins",
+              "hi": "Range shuru",
+              "dv": "रेंज शुरू"
+            },
+            "sub": {
+              "en": "Watch only, no trades",
+              "hi": "Sirf dekhiye, trade nahi",
+              "dv": "सिर्फ़ देखें, ट्रेड नहीं"
+            }
+          },
+          {
+            "tag": "9:30",
+            "label": {
+              "en": "Range complete",
+              "hi": "Range poori",
+              "dv": "रेंज पूरी"
+            },
+            "sub": {
+              "en": "Mark OR high and OR low",
+              "hi": "OR high aur OR low mark kijiye",
+              "dv": "OR हाई और OR लो मार्क करें"
+            }
+          },
+          {
+            "tag": "9:35",
+            "label": {
+              "en": "First possible signal",
+              "hi": "Pehla mumkin signal",
+              "dv": "पहला मुमकिन सिग्नल"
+            },
+            "sub": {
+              "en": "Earliest 5-minute close outside",
+              "hi": "Bahar pehla 5-minute close yahin ho sakta hai",
+              "dv": "बाहर पहला 5-मिनट क्लोज़ यहीं हो सकता है"
+            }
+          },
+          {
+            "tag": "11:00",
+            "label": {
+              "en": "Entry cut-off",
+              "hi": "Nayi entry nahi",
+              "dv": "एंट्री बंद"
+            },
+            "sub": {
+              "en": "No entry after 11:00",
+              "hi": "11:00 ke baad entry nahi",
+              "dv": "11:00 के बाद एंट्री नहीं"
+            }
+          },
+          {
+            "tag": "14:30",
+            "label": {
+              "en": "Time exit",
+              "hi": "Time exit",
+              "dv": "टाइम एग्ज़िट"
+            },
+            "sub": {
+              "en": "Close whatever is still open",
+              "hi": "Jo bhi khula hai, band kijiye",
+              "dv": "जो भी खुला है, बंद करें"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "h": {
+        "en": "The entry: a close outside, not a wick",
+        "hi": "Entry: bahar close chahiye, wick nahi",
+        "dv": "एंट्री: बाहर क्लोज़ चाहिए, विक नहीं"
+      },
+      "p": {
+        "en": "A wick is the thin line of a candle: price visited there but could not stay. The close is where the candle finished after five minutes of buying and selling, so ORB acts only when a 5-minute candle closes outside the range. Charts name a candle by the minute it starts: the 9:30 candle closes at 9:35, the earliest possible signal. A long needs that close above the range high with price above VWAP (Day 8); a short needs a close below the range low with price below VWAP. The breakout candle's volume must also beat its 20-candle average; early in the day that average still includes yesterday's quiet afternoon, so treat it as a minimum, not proof. On paper, your entry is the next candle's open, the first price you could really have got.",
+        "hi": "Wick candle ki patli line hoti hai: price wahan gaya toh, par tik nahi paya. Close woh jagah hai jahan paanch minute ki khareed-bikri ke baad candle khatam hui, isliye ORB tabhi kuch karta hai jab koi 5-minute candle range ke bahar close ho. Chart candle ko uske shuru hone ke time se naam deta hai: 9:30 wali candle 9:35 par close hoti hai, yahi sabse pehla mumkin signal hai. Long ke liye yeh close range high ke upar aur price VWAP (Day 8) ke upar chahiye; short ke liye close range low ke neeche aur price VWAP ke neeche. Breakout candle ka volume bhi apne 20-candle average se upar hona chahiye; subah yeh average kal dopahar ki shaant candles bhi gin leta hai, isliye ise kam se kam shart maaniye, saboot nahi. Paper par aapki entry agli candle ka open hai, kyunki asal mein sabse pehla price wahi mil sakta tha.",
+        "dv": "विक कैंडल की पतली लाइन होती है: भाव वहाँ गया तो, पर टिक नहीं पाया। क्लोज़ वह जगह है जहाँ पाँच मिनट की ख़रीद-बिक्री के बाद कैंडल ख़त्म हुई, इसलिए ORB तभी कुछ करता है जब कोई 5-मिनट कैंडल रेंज के बाहर क्लोज़ हो। चार्ट कैंडल को उसके शुरू होने के समय से नाम देता है: 9:30 वाली कैंडल 9:35 पर क्लोज़ होती है, यही सबसे पहला मुमकिन सिग्नल है। लॉन्ग के लिए यह क्लोज़ रेंज हाई के ऊपर और भाव VWAP (दिन 8) के ऊपर चाहिए; शॉर्ट के लिए क्लोज़ रेंज लो के नीचे और भाव VWAP के नीचे। ब्रेकआउट कैंडल का वॉल्यूम भी अपने 20-कैंडल एवरेज से ऊपर होना चाहिए; सुबह यह एवरेज कल दोपहर की शांत कैंडल्स भी गिन लेता है, इसलिए इसे कम से कम शर्त मानिए, सबूत नहीं। पेपर पर आपकी एंट्री अगली कैंडल का ओपन है, क्योंकि असल में सबसे पहला भाव वही मिल सकता था।"
+      },
+      "example": {
+        "en": "On the chart below, Bharat Pumps' range is Rs 1,000-1,010. The 9:35-9:40 candle spikes to Rs 1,013 on thin volume but closes at Rs 1,007, back inside: no entry, however exciting it looked. The 9:45-9:50 candle closes at Rs 1,012 on volume well above its 20-candle average (its bar is the tallest since the range formed), and VWAP is near Rs 1,006, below the price. That is the signal. The paper entry is the next candle's open, Rs 1,012.",
+        "hi": "Neeche chart mein Bharat Pumps ki range Rs 1,000-1,010 hai. 9:35-9:40 wali candle kam volume par Rs 1,013 tak uchhalti hai, lekin Rs 1,007 par, range ke andar hi close hoti hai: entry nahi, chahe kitni bhi exciting lagi ho. 9:45-9:50 wali candle Rs 1,012 par close hoti hai; uska volume apne 20-candle average se kaafi upar hai (range banne ke baad sabse lamba volume bar yahi hai), aur VWAP lagbhag Rs 1,006 par, price ke neeche hai. Yahi signal hai. Paper entry agli candle ka open hai: Rs 1,012.",
+        "dv": "नीचे के चार्ट में Bharat Pumps की रेंज Rs 1,000-1,010 है। 9:35-9:40 वाली कैंडल कम वॉल्यूम पर Rs 1,013 तक उछलती है, लेकिन Rs 1,007 पर, रेंज के अंदर ही क्लोज़ होती है: एंट्री नहीं, चाहे कितनी भी रोमांचक लगी हो। 9:45-9:50 वाली कैंडल Rs 1,012 पर क्लोज़ होती है; उसका वॉल्यूम अपने 20-कैंडल एवरेज से काफ़ी ऊपर है (रेंज बनने के बाद सबसे लंबा वॉल्यूम बार यही है), और VWAP लगभग Rs 1,006 पर, भाव के नीचे है। यही सिग्नल है। पेपर एंट्री अगली कैंडल का ओपन है: Rs 1,012।"
+      },
+      "remember": {
+        "en": "A wick is a visit; a close is a decision. ORB trades only closes.",
+        "hi": "Wick sirf ek chakkar hai; close ek faisla hai. ORB sirf close par trade karta hai.",
+        "dv": "विक बस एक चक्कर है; क्लोज़ एक फ़ैसला है। ORB सिर्फ़ क्लोज़ पर ट्रेड करता है।"
+      },
+      "visual": {
+        "kind": "candles",
+        "title": {
+          "en": "Wick vs close",
+          "hi": "Wick vs close",
+          "dv": "विक बनाम क्लोज़"
+        },
+        "caption": {
+          "en": "5-minute candles from 9:15. The first three make the range. The 9:35-9:40 candle only poked out; the 9:45-9:50 candle closed outside on strong volume, above VWAP.",
+          "hi": "9:15 se 5-minute candles. Pehli teen se range banti hai. 9:35-9:40 wali candle ne sirf bahar jhaanka; 9:45-9:50 wali candle strong volume ke saath, VWAP ke upar, bahar close hui.",
+          "dv": "9:15 से 5-मिनट कैंडल। पहली तीन से रेंज बनती है। 9:35-9:40 वाली कैंडल ने सिर्फ़ बाहर झाँका; 9:45-9:50 वाली कैंडल अच्छे वॉल्यूम के साथ, VWAP के ऊपर, बाहर क्लोज़ हुई।"
+        },
+        "bars": [
+          [
+            1003,
+            1008,
+            1000,
+            1006
+          ],
+          [
+            1006,
+            1010,
+            1002,
+            1004
+          ],
+          [
+            1004,
+            1007,
+            1001,
+            1005
+          ],
+          [
+            1005,
+            1009,
+            1003,
+            1008
+          ],
+          [
+            1008,
+            1013,
+            1006,
+            1007
+          ],
+          [
+            1007,
+            1009,
+            1004,
+            1006
+          ],
+          [
+            1006,
+            1013,
+            1005,
+            1012
+          ],
+          [
+            1012,
+            1017,
+            1011,
+            1016
+          ],
+          [
+            1016,
+            1020,
+            1014,
+            1019
+          ],
+          [
+            1019,
+            1021,
+            1015,
+            1017
+          ],
+          [
+            1017,
+            1023,
+            1016,
+            1022
+          ],
+          [
+            1022,
+            1025,
+            1019,
+            1024
+          ]
+        ],
+        "volume": [
+          90,
+          70,
+          55,
+          40,
+          30,
+          28,
+          75,
+          60,
+          45,
+          35,
+          40,
+          38
+        ],
+        "levels": [
+          {
+            "y": 1010,
+            "label": {
+              "en": "OR high",
+              "hi": "OR high",
+              "dv": "OR हाई"
+            },
+            "tone": "gold"
+          },
+          {
+            "y": 1006,
+            "label": {
+              "en": "VWAP at 9:50",
+              "hi": "VWAP 9:50 par",
+              "dv": "VWAP 9:50 पर"
+            },
+            "tone": "muted",
+            "dashed": true
+          },
+          {
+            "y": 1000,
+            "label": {
+              "en": "Stop: OR low",
+              "hi": "Stop: OR low",
+              "dv": "स्टॉप: OR लो"
+            },
+            "tone": "down"
+          },
+          {
+            "y": 1036,
+            "label": {
+              "en": "2R exit",
+              "hi": "2R exit",
+              "dv": "2R एग्ज़िट"
+            },
+            "tone": "up"
+          }
+        ],
+        "marks": [
+          {
+            "i": 4,
+            "label": {
+              "en": "Wick only",
+              "hi": "Sirf wick",
+              "dv": "सिर्फ़ विक"
+            },
+            "tone": "down",
+            "at": "high"
+          },
+          {
+            "i": 6,
+            "label": {
+              "en": "Close outside",
+              "hi": "Bahar close",
+              "dv": "बाहर क्लोज़"
+            },
+            "tone": "up",
+            "at": "low"
+          }
+        ]
+      }
+    },
+    {
+      "h": {
+        "en": "Stop, profit exit, time exit and size",
+        "hi": "Stop, profit exit, time exit aur size",
+        "dv": "स्टॉप, प्रॉफ़िट एग्ज़िट, टाइम एग्ज़िट और साइज़"
+      },
+      "p": {
+        "en": "Every ORB trade has three exits written down before you enter. The stop sits at the other side of the range: the range low for a long, the range high for a short. The profit exit is 2R, twice your risk per share, and anything still open at 14:30 is closed, well before any broker square-off. Size comes from Day 9: Rs 10,000 ÷ the distance between entry and stop, rounded down, then checked against the 25% cap; take the smaller number. ORB stops are tight, so the 25% cap is usually the smaller one and a full stop-out costs less than Rs 10,000. Your journal still records it the Day 12 way: rupees ÷ Rs 10,000, minus the 0.1R allowance. The Day 9 daily stop still applies: stop for the day at -2R. Because capped ORB stop-outs usually cost less than 1R, ORB adds a second line: after two stop-outs in a day, you are done, whichever comes first.",
+        "hi": "Har ORB trade ke teen exit entry se pehle likh liye jaate hain. Stop range ki doosri taraf hota hai: long mein range low, short mein range high. Profit exit 2R par hai, yaani per share risk ka do guna, aur 14:30 par jo bhi khula ho, use band kar dijiye, broker ke square-off se kaafi pehle. Size Day 9 se aata hai: Rs 10,000 ÷ entry aur stop ki doori, neeche round kijiye, phir 25% cap se milaiye; jo chhota ho, wahi lijiye. ORB ke stop paas hote hain, isliye aksar 25% cap hi chhota padta hai aur poora stop-out Rs 10,000 se kam ka hota hai. Journal mein ise Day 12 ke tareeke se hi likhiye: rupaye ÷ Rs 10,000, phir 0.1R allowance minus. Day 9 ka daily stop yahan bhi lagta hai: -2R par din khatam. Cap ki wajah se ORB ka stop-out aksar 1R se kam ka hota hai, isliye ORB ek line aur jodta hai: din mein do stop-out, aur aapka din khatam; jo pehle ho.",
+        "dv": "हर ORB ट्रेड के तीन एग्ज़िट एंट्री से पहले लिख लिए जाते हैं। स्टॉप रेंज की दूसरी तरफ़ होता है: लॉन्ग में रेंज लो, शॉर्ट में रेंज हाई। प्रॉफ़िट एग्ज़िट 2R पर है, यानी प्रति शेयर रिस्क का दोगुना, और 14:30 पर जो भी खुला हो, उसे बंद कर दें, ब्रोकर के स्क्वेयर-ऑफ़ से काफ़ी पहले। साइज़ दिन 9 से आता है: Rs 10,000 ÷ एंट्री और स्टॉप की दूरी, नीचे की ओर राउंड करें, फिर 25% कैप से मिलाएँ; जो छोटा हो, वही लें। ORB के स्टॉप पास होते हैं, इसलिए अक्सर 25% कैप ही छोटा पड़ता है और पूरा स्टॉप-आउट Rs 10,000 से कम का होता है। जर्नल में इसे दिन 12 के तरीक़े से ही लिखें: रुपये ÷ Rs 10,000, फिर 0.1R अलाउंस घटाएँ। दिन 9 का डेली स्टॉप यहाँ भी लागू है: -2R पर दिन ख़त्म। कैप की वजह से ORB का स्टॉप-आउट अक्सर 1R से कम का होता है, इसलिए ORB एक लाइन और जोड़ता है: दिन में दो स्टॉप-आउट, और आपका दिन ख़त्म; जो पहले हो।"
+      },
+      "example": {
+        "en": "Bharat Pumps: entry Rs 1,012, stop Rs 1,000, so the risk is Rs 12 a share. The 1% rule alone allows 833 shares, but that is about Rs 8.4 lakh of stock, far above the 25% cap of Rs 2.5 lakh. So Priya's paper test uses 247 shares and risks Rs 2,964, less than 1%; the 1% is a ceiling, not a goal. Then she uncovers the rest of the day and records whichever came first: stop, profit exit or 14:30. Day 12's paper rules still apply: the profit exit counts only if price traded beyond it, and the 0.1R cost allowance comes off. The Day 12 both-touched rule applies here too: if the stop and the profit exit both fall inside one 5-minute candle, count the stop, because the chart cannot show which came first. If every winner reached the full 2R, the breakeven win-rate before costs would be 1 ÷ (1 + 2), about 33%; 14:30 exits and costs push it higher.",
+        "hi": "Bharat Pumps: entry Rs 1,012, stop Rs 1,000, yaani risk Rs 12 per share. Sirf 1% rule se 833 shares bante hain, lekin woh lagbhag Rs 8.4 lakh ke shares ho jaate hain, 25% cap yaani Rs 2.5 lakh se bahut zyada. Isliye Priya ke paper test mein 247 shares hain, aur risk Rs 2,964 hai, 1% se kam; 1% ek chhat hai, manzil nahi. Phir woh baaki din ka chart kholti hai aur jo pehle hua woh likhti hai: stop, profit exit ya 14:30. Day 12 ke paper rules yahan bhi lagte hain: profit exit tabhi ginega jab price uske paar trade hua ho, aur 0.1R ka cost allowance katega. Day 12 wala dono-touch rule yahan bhi lagta hai: agar stop aur profit exit dono ek hi 5-minute candle ke andar aa jaayein, toh stop hi giniye, kyunki chart yeh nahi dikhata ki pehle kya hua. Agar har jeet poore 2R tak pahunche, toh costs se pehle breakeven win-rate 1 ÷ (1 + 2), yaani lagbhag 33% hoga; 14:30 wale exit aur costs ise aur upar le jaate hain.",
+        "dv": "Bharat Pumps: एंट्री Rs 1,012, स्टॉप Rs 1,000, यानी रिस्क Rs 12 प्रति शेयर। सिर्फ़ 1% रूल से 833 शेयर बनते हैं, लेकिन वह लगभग Rs 8.4 लाख के शेयर हो जाते हैं, 25% कैप यानी Rs 2.5 लाख से बहुत ज़्यादा। इसलिए प्रिया के पेपर टेस्ट में 247 शेयर हैं, और रिस्क Rs 2,964 है, 1% से कम; 1% एक छत है, मंज़िल नहीं। फिर वह बाक़ी दिन का चार्ट खोलती है और जो पहले हुआ वह लिखती है: स्टॉप, प्रॉफ़िट एग्ज़िट या 14:30। दिन 12 के पेपर नियम यहाँ भी लागू हैं: प्रॉफ़िट एग्ज़िट तभी गिना जाएगा जब भाव उसके पार ट्रेड हुआ हो, और 0.1R का कॉस्ट अलाउंस कटेगा। दिन 12 वाला दोनों-छुए नियम यहाँ भी लागू है: अगर स्टॉप और प्रॉफ़िट एग्ज़िट दोनों एक ही 5-मिनट कैंडल के अंदर आ जाएँ, तो स्टॉप ही गिनें, क्योंकि चार्ट यह नहीं दिखाता कि पहले क्या हुआ। अगर हर जीत पूरे 2R तक पहुँचे, तो ख़र्चों से पहले ब्रेकईवन विन-रेट 1 ÷ (1 + 2), यानी लगभग 33% होगा; 14:30 वाले एग्ज़िट और ख़र्चे इसे और ऊपर ले जाते हैं।"
+      },
+      "remember": {
+        "en": "Stop at the range's other side, 2R profit exit, out by 14:30. Size = the smaller of the 1% rule and the 25% cap.",
+        "hi": "Stop range ki doosri taraf, profit exit 2R, 14:30 tak bahar. Size = 1% rule aur 25% cap mein jo chhota ho.",
+        "dv": "स्टॉप रेंज की दूसरी तरफ़, प्रॉफ़िट एग्ज़िट 2R, 14:30 तक बाहर। साइज़ = 1% रूल और 25% कैप में जो छोटा हो।"
+      },
+      "visual": {
+        "kind": "calc",
+        "title": {
+          "en": "Sizing one ORB trade",
+          "hi": "Ek ORB trade ka size",
+          "dv": "एक ORB ट्रेड का साइज़"
+        },
+        "caption": {
+          "en": "Risk on this trade: 247 x Rs 12 = Rs 2,964. Profit exit at 2R: Rs 1,012 + Rs 24 = Rs 1,036.",
+          "hi": "Is trade ka risk: 247 x Rs 12 = Rs 2,964. 2R par profit exit: Rs 1,012 + Rs 24 = Rs 1,036.",
+          "dv": "इस ट्रेड का रिस्क: 247 x Rs 12 = Rs 2,964। 2R पर प्रॉफ़िट एग्ज़िट: Rs 1,012 + Rs 24 = Rs 1,036।"
+        },
+        "rows": [
+          {
+            "label": {
+              "en": "Entry (next open)",
+              "hi": "Entry (agla open)",
+              "dv": "एंट्री (अगला ओपन)"
+            },
+            "value": "Rs 1,012"
+          },
+          {
+            "label": {
+              "en": "Stop (range low)",
+              "hi": "Stop (range low)",
+              "dv": "स्टॉप (रेंज लो)"
+            },
+            "value": "Rs 1,000",
+            "op": "-"
+          },
+          {
+            "label": {
+              "en": "Risk per share",
+              "hi": "Per share risk",
+              "dv": "प्रति शेयर रिस्क"
+            },
+            "value": "Rs 12",
+            "op": "="
+          },
+          {
+            "label": {
+              "en": "1% rule: Rs 10,000 ÷ 12",
+              "hi": "1% rule: Rs 10,000 ÷ 12",
+              "dv": "1% रूल: Rs 10,000 ÷ 12"
+            },
+            "value": "833"
+          },
+          {
+            "label": {
+              "en": "25% cap: Rs 2,50,000 ÷ 1,012",
+              "hi": "25% cap: Rs 2,50,000 ÷ 1,012",
+              "dv": "25% कैप: Rs 2,50,000 ÷ 1,012"
+            },
+            "value": "247"
+          }
+        ],
+        "result": {
+          "label": {
+            "en": "Shares to buy (the smaller)",
+            "hi": "Kharidne wale shares (chhota number)",
+            "dv": "ख़रीदने वाले शेयर (छोटी संख्या)"
+          },
+          "value": "247"
+        }
+      }
+    },
+    {
+      "h": {
+        "en": "Short selling in cash: learn the rules before the trade",
+        "hi": "Cash mein short selling: trade se pehle rules samajhiye",
+        "dv": "कैश में शॉर्ट सेलिंग: ट्रेड से पहले नियम समझें"
+      },
+      "p": {
+        "en": "Short selling means selling shares you do not own, hoping to buy them back cheaper. In the cash segment, a retail trader with a normal trading account can do this only within the day: brokers offer it as an intraday product, and every short must be bought back, or squared off, before the market closes. (Carrying a short overnight needs borrowed shares through a separate securities lending scheme, which is outside this course.) If a short is not bought back and you cannot deliver the shares at settlement, the exchange buys them in an auction at your cost and adds a penalty, and that bill can be far bigger than your stop. A short is also riskier by nature: a price can only fall to zero, but it can keep rising. In Stage 1, all of this stays on paper.",
+        "hi": "Short selling ka matlab hai woh shares bechna jo aapke paas hain hi nahi, is ummeed mein ki baad mein saste mein khareed lenge. Cash segment mein normal trading account wala retail trader yeh sirf usi din ke andar kar sakta hai: brokers ise intraday product ki tarah dete hain, aur har short ko market band hone se pehle wapas khareedna, yaani square off karna, zaroori hai. (Short ko raat bhar rakhne ke liye alag securities lending scheme se udhaar shares chahiye, jo is course ke bahar hai.) Agar short wapas nahi khareeda gaya aur settlement par aap shares deliver nahi kar paaye, toh exchange auction mein woh shares khareedta hai, aapke kharche par, aur upar se penalty lagti hai; yeh bill aapke stop se kahin bada ho sakta hai. Short apne aap mein bhi zyada risky hai: price gir kar zero tak hi ja sakta hai, lekin chadhta hi ja sakta hai. Stage 1 mein yeh sab sirf paper par hai.",
+        "dv": "शॉर्ट सेलिंग का मतलब है वे शेयर बेचना जो आपके पास हैं ही नहीं, इस उम्मीद में कि बाद में सस्ते में ख़रीद लेंगे। कैश सेगमेंट में सामान्य ट्रेडिंग अकाउंट वाला रिटेल ट्रेडर यह सिर्फ़ उसी दिन के अंदर कर सकता है: ब्रोकर इसे इंट्राडे प्रोडक्ट की तरह देते हैं, और हर शॉर्ट को बाज़ार बंद होने से पहले वापस ख़रीदना, यानी स्क्वेयर-ऑफ़ करना, ज़रूरी है। (शॉर्ट को रात भर रखने के लिए अलग सिक्योरिटीज़ लेंडिंग स्कीम से उधार शेयर चाहिए, जो इस कोर्स के बाहर है।) अगर शॉर्ट वापस नहीं ख़रीदा गया और सेटलमेंट पर आप शेयर डिलीवर नहीं कर पाए, तो एक्सचेंज ऑक्शन में वे शेयर ख़रीदता है, आपके ख़र्चे पर, और ऊपर से पेनल्टी लगती है; यह बिल आपके स्टॉप से कहीं बड़ा हो सकता है। शॉर्ट अपने आप में भी ज़्यादा रिस्की है: भाव गिरकर ज़ीरो तक ही जा सकता है, लेकिन चढ़ता ही जा सकता है। Stage 1 में यह सब सिर्फ़ पेपर पर है।"
+      },
+      "example": {
+        "en": "On another past morning that Priya scrolls back to, Gupta Cement Ltd's range is Rs 497-505. The 9:50-9:55 candle closes at Rs 495: below the range, below VWAP, on above-average volume. Priya's paper short: entry Rs 495 at the next open, stop at the range high of Rs 505, risk Rs 10 a share. The 1% rule allows 1,000 shares and the 25% cap allows 505, so she shorts 505 and risks Rs 5,050; her 2R profit exit is Rs 475, and at 14:30 she buys back whatever is left. Now picture why this course keeps you to NIFTY 50 stocks: news at 1 pm sends a small, thinly traded stock to its upper price band, sellers vanish and a short seller cannot buy back. That is how an auction bill is born.",
+        "hi": "Priya jis doosri purani subah tak peeche scroll karti hai, usmein Gupta Cement Ltd ki range Rs 497-505 hai. 9:50-9:55 wali candle Rs 495 par close hoti hai: range ke neeche, VWAP ke neeche, aur average se zyada volume ke saath. Priya ka paper short: agle open par Rs 495 par entry, stop range high Rs 505 par, risk Rs 10 per share. 1% rule 1,000 shares deta hai aur 25% cap 505, toh woh 505 shares short karti hai aur Rs 5,050 ka risk leti hai; uska 2R profit exit Rs 475 hai, aur 14:30 par jo bacha ho woh wapas khareed leti hai. Ab sochiye ki yeh course aapko NIFTY 50 stocks tak hi kyun rakhta hai: dopahar 1 baje ki news kisi chhote, kam trade hone wale stock ko upper price band tak le jaati hai, sellers gayab ho jaate hain aur short seller wapas khareed hi nahi paata. Auction ka bill aise hi banta hai.",
+        "dv": "प्रिया जिस दूसरी पुरानी सुबह तक पीछे स्क्रॉल करती है, उसमें Gupta Cement Ltd की रेंज Rs 497-505 है। 9:50-9:55 वाली कैंडल Rs 495 पर क्लोज़ होती है: रेंज के नीचे, VWAP के नीचे, और एवरेज से ज़्यादा वॉल्यूम के साथ। प्रिया का पेपर शॉर्ट: अगले ओपन पर Rs 495 पर एंट्री, स्टॉप रेंज हाई Rs 505 पर, रिस्क Rs 10 प्रति शेयर। 1% रूल 1,000 शेयर देता है और 25% कैप 505, तो वह 505 शेयर शॉर्ट करती है और Rs 5,050 का रिस्क लेती है; उसका 2R प्रॉफ़िट एग्ज़िट Rs 475 है, और 14:30 पर जो बचा हो वह वापस ख़रीद लेती है। अब सोचिए कि यह कोर्स आपको NIFTY 50 स्टॉक्स तक ही क्यों रखता है: दोपहर 1 बजे की ख़बर किसी छोटे, कम ट्रेड होने वाले स्टॉक को अपर प्राइस बैंड तक ले जाती है, बेचने वाले ग़ायब हो जाते हैं और शॉर्ट सेलर वापस ख़रीद ही नहीं पाता। ऑक्शन का बिल ऐसे ही बनता है।"
+      },
+      "remember": {
+        "en": "A cash short lives for one day only. Buy it back by 14:30, every time.",
+        "hi": "Cash ka short sirf ek din ka hota hai. Har baar 14:30 tak wapas khareed lijiye.",
+        "dv": "कैश का शॉर्ट सिर्फ़ एक दिन का होता है। हर बार 14:30 तक वापस ख़रीद लें।"
+      },
+      "visual": {
+        "kind": "compare",
+        "title": {
+          "en": "Long vs short in cash",
+          "hi": "Cash mein long vs short",
+          "dv": "कैश में लॉन्ग बनाम शॉर्ट"
+        },
+        "caption": {
+          "en": "Stage 1: both on paper only. No futures or options, not even on paper.",
+          "hi": "Stage 1: dono sirf paper par. Futures ya options nahi, paper par bhi nahi.",
+          "dv": "Stage 1: दोनों सिर्फ़ पेपर पर। फ़्यूचर्स या ऑप्शंस नहीं, पेपर पर भी नहीं।"
+        },
+        "cols": [
+          {
+            "head": {
+              "en": "Long: buy first",
+              "hi": "Long: pehle khareedna",
+              "dv": "लॉन्ग: पहले ख़रीदना"
+            },
+            "tone": "up",
+            "points": [
+              {
+                "en": "Buy now, sell later",
+                "hi": "Abhi khareedna, baad mein bechna",
+                "dv": "अभी ख़रीदना, बाद में बेचना"
+              },
+              {
+                "en": "Can be held as delivery",
+                "hi": "Delivery mein rakh sakte hain",
+                "dv": "डिलीवरी में रख सकते हैं"
+              },
+              {
+                "en": "Worst case: price falls to zero",
+                "hi": "Sabse bura: price zero tak gire",
+                "dv": "सबसे बुरा: भाव ज़ीरो तक गिरे"
+              }
+            ]
+          },
+          {
+            "head": {
+              "en": "Short: sell first",
+              "hi": "Short: pehle bechna",
+              "dv": "शॉर्ट: पहले बेचना"
+            },
+            "tone": "down",
+            "points": [
+              {
+                "en": "Sell shares you do not own",
+                "hi": "Jo shares paas nahi, unhe bechna",
+                "dv": "जो शेयर पास नहीं, उन्हें बेचना"
+              },
+              {
+                "en": "Buy back the same day",
+                "hi": "Usi din wapas khareedna zaroori",
+                "dv": "उसी दिन वापस ख़रीदना ज़रूरी"
+              },
+              {
+                "en": "A rising price has no ceiling",
+                "hi": "Chadhte price ki koi chhat nahi",
+                "dv": "चढ़ते भाव की कोई छत नहीं"
+              },
+              {
+                "en": "Not bought back: auction + penalty",
+                "hi": "Wapas nahi khareeda: auction + penalty",
+                "dv": "वापस नहीं ख़रीदा: ऑक्शन + पेनल्टी"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "h": {
+        "en": "Gap days and your starter no-trade list",
+        "hi": "Gap days aur aapki starter no-trade list",
+        "dv": "गैप वाले दिन और आपकी शुरुआती नो-ट्रेड लिस्ट"
+      },
+      "p": {
+        "en": "Some mornings the best ORB trade is no trade. A gap day is when a stock opens above yesterday's high or below yesterday's low, often on overnight news; its first 15 minutes tend to be wild, the range can be very wide, and part of the move may be spent before the range even forms. Skip ORB in a stock on its gap days. Do not change this rule before you have 30 ORB paper trades in your journal, and then only in writing, at the weekend. Also skip a stock on its results day or a day of big company news, and skip any stock stuck at or near its price band, where you may not be able to get out; the band is shown on the stock's NSE quote page (many NIFTY 50 stocks show 'No Band' there; this check matters most for other stocks). Take no new trade once the day hits -2R or two stop-outs, whichever comes first, and none while 3 trades are already open. Day 19 turns this starter list into a full event calendar.",
+        "hi": "Kai baar subah ka sabse achha ORB trade yahi hota hai ki trade hi na karein. Gap day woh din hai jab stock kal ke high se upar ya kal ke low se neeche khulta hai, aksar raat ki kisi news par; aise din pehle 15 minute aksar bahut uthal-puthal bhare hote hain, range bahut chaudi ho sakti hai, aur range banne se pehle hi move ka ek hissa nikal chuka ho sakta hai. Kisi stock ke gap day par us mein ORB mat kijiye. Yeh rule tab tak mat badliye jab tak journal mein 30 ORB paper trades na ho jaayein; uske baad bhi sirf weekend par, likhkar. Kisi stock ke results wale din ya badi company news wale din bhi use chhod dijiye, aur jo stock apne price band par ya uske paas atka ho, use bhi, kyunki wahan se nikalna mushkil ho sakta hai; band stock ke NSE quote page par dikhta hai (kai NIFTY 50 stocks wahan 'No Band' dikhate hain; yeh check baaki stocks ke liye zyada zaroori hai). Din -2R ya do stop-out tak pahunch jaaye, jo pehle ho, toh koi naya trade nahi, aur jab 3 trades pehle se khule hon tab bhi nahi. Day 19 is starter list ko ek poore event calendar mein badal dega.",
+        "dv": "कई बार सुबह का सबसे अच्छा ORB ट्रेड यही होता है कि ट्रेड ही न करें। गैप वाला दिन वह है जब स्टॉक कल के हाई से ऊपर या कल के लो से नीचे खुलता है, अक्सर रात की किसी ख़बर पर; ऐसे दिन पहले 15 मिनट अक्सर बहुत उथल-पुथल भरे होते हैं, रेंज बहुत चौड़ी हो सकती है, और रेंज बनने से पहले ही चाल का एक हिस्सा निकल चुका हो सकता है। किसी स्टॉक के गैप वाले दिन उसमें ORB न करें। जब तक जर्नल में 30 ORB पेपर ट्रेड न हो जाएँ, यह नियम मत बदलिए; उसके बाद भी सिर्फ़ वीकेंड पर, लिखकर। किसी स्टॉक के रिज़ल्ट वाले दिन या कंपनी की बड़ी ख़बर वाले दिन भी उसे छोड़ दें, और जो स्टॉक अपने प्राइस बैंड पर या उसके पास अटका हो, उसे भी, क्योंकि वहाँ से निकलना मुश्किल हो सकता है; बैंड स्टॉक के NSE कोट पेज पर दिखता है (कई NIFTY 50 स्टॉक्स वहाँ 'No Band' दिखाते हैं; यह जाँच बाक़ी स्टॉक्स के लिए ज़्यादा ज़रूरी है)। दिन -2R या दो स्टॉप-आउट तक पहुँच जाए, जो पहले हो, तो कोई नया ट्रेड नहीं, और जब 3 ट्रेड पहले से खुले हों तब भी नहीं। दिन 19 इस शुरुआती लिस्ट को एक पूरे इवेंट कैलेंडर में बदल देगा।"
+      },
+      "example": {
+        "en": "In her Sunday practice on past charts, Sharma Textiles Ltd had traded between Rs 290 and Rs 300 the day before, then opened at Rs 318 after overnight news, above the previous day's high: a gap day. Aman, on the call, wants to buy the 'strength'. Priya checks her card, sees 'gap day: skip', and writes 'Skipped: gap day' in her journal. On Day 12's adherence score, that counts as following her rules.",
+        "hi": "Sunday ko purane charts ki practice mein, Sharma Textiles Ltd pichhle din Rs 290 aur Rs 300 ke beech trade hua tha, phir raat ki news ke baad Rs 318 par khula, pichhle din ke high ke upar: gap day. Call par Aman is 'strength' ko khareedna chahta hai. Priya apna card dekhti hai, 'gap day: skip' padhti hai, aur journal mein 'Skipped: gap day' likh deti hai. Day 12 ke adherence score mein yeh bhi rules follow karna hi gina jaata hai.",
+        "dv": "रविवार को पुराने चार्ट की प्रैक्टिस में, Sharma Textiles Ltd पिछले दिन Rs 290 और Rs 300 के बीच ट्रेड हुआ था, फिर रात की ख़बर के बाद Rs 318 पर खुला, पिछले दिन के हाई के ऊपर: गैप वाला दिन। कॉल पर अमन इस 'मज़बूती' को ख़रीदना चाहता है। प्रिया अपना कार्ड देखती है, 'गैप वाला दिन: स्किप' पढ़ती है, और जर्नल में 'Skipped: gap day' लिख देती है। दिन 12 के एडहेरेंस स्कोर में यह भी नियम मानना ही गिना जाता है।"
+      },
+      "remember": {
+        "en": "A no-trade day is a decision, not a missed chance, and it still counts as following your rules.",
+        "hi": "No-trade day ek faisla hai, chhoota hua mauka nahi, aur yeh bhi rules follow karna hi gina jaata hai.",
+        "dv": "नो-ट्रेड दिन एक फ़ैसला है, छूटा हुआ मौक़ा नहीं, और यह भी नियम मानना ही गिना जाता है।"
+      },
+      "visual": {
+        "kind": "flow",
+        "title": {
+          "en": "The pre-trade gate",
+          "hi": "Pre-trade gate",
+          "dv": "प्री-ट्रेड गेट"
+        },
+        "caption": {
+          "en": "One 'no' anywhere means no ORB trade in that stock today.",
+          "hi": "Kahin bhi ek 'nahi' ka matlab: aaj us stock mein ORB trade nahi.",
+          "dv": "कहीं भी एक 'नहीं' का मतलब: आज उस स्टॉक में ORB ट्रेड नहीं।"
+        },
+        "nodes": [
+          {
+            "label": {
+              "en": "NIFTY 50 stock?",
+              "hi": "NIFTY 50 stock?",
+              "dv": "NIFTY 50 स्टॉक?"
+            },
+            "sub": {
+              "en": "Liquid, tight spread",
+              "hi": "Liquid, kam spread",
+              "dv": "लिक्विड, कम स्प्रेड"
+            },
+            "tone": "brand"
+          },
+          {
+            "label": {
+              "en": "No gap today?",
+              "hi": "Aaj gap nahi?",
+              "dv": "आज गैप नहीं?"
+            },
+            "sub": {
+              "en": "Opened inside yesterday's range",
+              "hi": "Kal ki range ke andar khula",
+              "dv": "कल की रेंज के अंदर खुला"
+            }
+          },
+          {
+            "label": {
+              "en": "No results or news?",
+              "hi": "Results ya news nahi?",
+              "dv": "रिज़ल्ट या ख़बर नहीं?"
+            },
+            "sub": {
+              "en": "Check exchange announcements",
+              "hi": "Exchange announcements check kijiye",
+              "dv": "एक्सचेंज की घोषणाएँ देखें"
+            }
+          },
+          {
+            "label": {
+              "en": "Away from price band?",
+              "hi": "Price band se door?",
+              "dv": "प्राइस बैंड से दूर?"
+            },
+            "sub": {
+              "en": "See the NSE quote page",
+              "hi": "NSE quote page par dekhiye",
+              "dv": "NSE कोट पेज पर देखें"
+            }
+          },
+          {
+            "label": {
+              "en": "Room left today?",
+              "hi": "Aaj gunjaaish baaki?",
+              "dv": "आज गुंजाइश बाक़ी?"
+            },
+            "sub": {
+              "en": "Above -2R, under 2 stop-outs, under 3 open",
+              "hi": "-2R se upar, 2 se kam stop-out, 3 se kam khule",
+              "dv": "-2R से ऊपर, 2 से कम स्टॉप-आउट, 3 से कम खुले"
+            }
+          },
+          {
+            "label": {
+              "en": "Mark the range",
+              "hi": "Range mark kijiye",
+              "dv": "रेंज मार्क करें"
+            },
+            "sub": {
+              "en": "Then wait for a close",
+              "hi": "Phir close ka intezaar",
+              "dv": "फिर क्लोज़ का इंतज़ार"
+            },
+            "tone": "up"
+          }
+        ],
+        "arrows": [
+          {
+            "en": "yes",
+            "hi": "haan",
+            "dv": "हाँ"
+          },
+          {
+            "en": "yes",
+            "hi": "haan",
+            "dv": "हाँ"
+          },
+          {
+            "en": "yes",
+            "hi": "haan",
+            "dv": "हाँ"
+          },
+          {
+            "en": "yes",
+            "hi": "haan",
+            "dv": "हाँ"
+          },
+          {
+            "en": "yes",
+            "hi": "haan",
+            "dv": "हाँ"
+          }
+        ]
+      }
+    },
+    {
+      "h": {
+        "en": "Breakout FOMO: the trade you chase",
+        "hi": "Breakout FOMO: jis trade ke peeche aap bhaagte hain",
+        "dv": "ब्रेकआउट FOMO: जिस ट्रेड के पीछे आप भागते हैं"
+      },
+      "p": {
+        "en": "FOMO, the fear of missing out, is the pull you feel when a price is running and everyone seems to be in. In ORB it shows up in three ways: buying before the range is complete, chasing a breakout that happened long ago, and jumping back in right after a stop-out. A fakeout, a false breakout that falls back inside the range, often punishes all three. The rule stays plain: you enter only at the open after the first close outside that passes both checks, and only if that open comes by 11:00; if you missed it, the trade is gone. One ORB trade per stock per day, so a stop-out is never followed by a revenge trade in the same stock. Judge ORB after 30 paper trades, never on one exciting morning.",
+        "hi": "FOMO, yaani fear of missing out, woh khinchaav hai jo tab mehsoos hota hai jab price bhaag raha ho aur lage ki sab log andar hain. ORB mein yeh teen tarah se dikhta hai: range poori hone se pehle khareed lena, bahut pehle ho chuke breakout ke peeche bhaagna, aur stop lagne ke turant baad wapas kood padna. Fakeout, yaani nakli breakout jo wapas range ke andar aa jaata hai, aksar teeno ko sazaa deta hai. Rule seedha hai: entry sirf us pehle bahar close ke baad wale open par, jo dono checks paas kare, aur woh open 11:00 tak aana chahiye; agar woh chhoot gaya, toh trade gaya. Ek stock mein ek din mein sirf ek ORB trade, taaki stop lagne ke baad usi stock mein revenge trade na ho. ORB ko 30 paper trades ke baad parakhiye, kisi ek exciting subah par nahi.",
+        "dv": "FOMO, यानी कुछ छूट जाने का डर, वह खिंचाव है जो तब महसूस होता है जब भाव भाग रहा हो और लगे कि सब लोग अंदर हैं। ORB में यह तीन तरह से दिखता है: रेंज पूरी होने से पहले ख़रीद लेना, बहुत पहले हो चुके ब्रेकआउट के पीछे भागना, और स्टॉप लगने के तुरंत बाद वापस कूद पड़ना। फ़ेकआउट, यानी नकली ब्रेकआउट जो वापस रेंज के अंदर आ जाता है, अक्सर तीनों को सज़ा देता है। नियम सीधा है: एंट्री सिर्फ़ उस पहले बाहर क्लोज़ के बाद वाले ओपन पर, जो दोनों जाँचें पास करे, और वह ओपन 11:00 तक आना चाहिए; अगर वह छूट गया, तो ट्रेड गया। एक स्टॉक में एक दिन में सिर्फ़ एक ORB ट्रेड, ताकि स्टॉप लगने के बाद उसी स्टॉक में रिवेंज ट्रेड न हो। ORB को 30 पेपर ट्रेड के बाद परखें, किसी एक रोमांचक सुबह पर नहीं।"
+      },
+      "example": {
+        "en": "On the Bharat Pumps chart, the signal was the 9:45-9:50 candle and the entry was Rs 1,012. That morning, at 10:30, Aman glances at his phone at his desk, sees the stock at Rs 1,028 and wants in. His stop would still be the range low of Rs 1,000, so his risk per share jumps from Rs 12 to Rs 28, and his 2R profit exit moves from Rs 1,036 to Rs 1,084. Even inside the 25% cap, his rupee risk more than doubles.",
+        "hi": "Bharat Pumps ke chart mein signal 9:45-9:50 wali candle thi aur entry Rs 1,012 par thi. Usi subah 10:30 par Aman desk par phone dekhta hai, stock Rs 1,028 par hai, aur woh andar ghusna chahta hai. Uska stop ab bhi range low Rs 1,000 hi hoga, toh per share risk Rs 12 se Rs 28 ho jaata hai, aur 2R profit exit Rs 1,036 se khisak kar Rs 1,084 par chala jaata hai. 25% cap ke andar rehkar bhi uska rupee risk do guna se zyada ho jaata hai.",
+        "dv": "Bharat Pumps के चार्ट में सिग्नल 9:45-9:50 वाली कैंडल थी और एंट्री Rs 1,012 पर थी। उसी सुबह 10:30 पर अमन डेस्क पर फ़ोन देखता है, स्टॉक Rs 1,028 पर है, और वह अंदर घुसना चाहता है। उसका स्टॉप अब भी रेंज लो Rs 1,000 ही होगा, तो प्रति शेयर रिस्क Rs 12 से Rs 28 हो जाता है, और 2R प्रॉफ़िट एग्ज़िट Rs 1,036 से खिसककर Rs 1,084 पर चला जाता है। 25% कैप के अंदर रहकर भी उसका रुपयों में रिस्क दोगुने से ज़्यादा हो जाता है।"
+      },
+      "remember": {
+        "en": "Missed is not lost. Waiting for the next setup costs nothing.",
+        "hi": "Chhoota hua trade nuksaan nahi hai. Agle setup ka intezaar muft hai.",
+        "dv": "छूटा हुआ ट्रेड नुक़सान नहीं है। अगले सेटअप का इंतज़ार मुफ़्त है।"
+      },
+      "visual": {
+        "kind": "bars",
+        "title": {
+          "en": "Rupee risk as you chase",
+          "hi": "Peeche bhaagne par rupee risk",
+          "dv": "पीछे भागने पर रुपयों में रिस्क"
+        },
+        "caption": {
+          "en": "Same stop at Rs 1,000, size capped at 25% (247, 245, 243 shares). The 2R profit exit runs from Rs 1,036 to Rs 1,060 to Rs 1,084.",
+          "hi": "Wahi stop Rs 1,000, size 25% cap par (247, 245, 243 shares). 2R profit exit Rs 1,036 se Rs 1,060 aur phir Rs 1,084 tak khisak jaata hai.",
+          "dv": "वही स्टॉप Rs 1,000, साइज़ 25% कैप पर (247, 245, 243 शेयर)। 2R प्रॉफ़िट एग्ज़िट Rs 1,036 से Rs 1,060 और फिर Rs 1,084 तक खिसक जाता है।"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "Entry Rs 1,012",
+              "hi": "Entry Rs 1,012",
+              "dv": "एंट्री Rs 1,012"
+            },
+            "value": 2964,
+            "display": "Rs 2,964",
+            "tone": "up"
+          },
+          {
+            "label": {
+              "en": "Entry Rs 1,020",
+              "hi": "Entry Rs 1,020",
+              "dv": "एंट्री Rs 1,020"
+            },
+            "value": 4900,
+            "display": "Rs 4,900",
+            "tone": "gold"
+          },
+          {
+            "label": {
+              "en": "Entry Rs 1,028",
+              "hi": "Entry Rs 1,028",
+              "dv": "एंट्री Rs 1,028"
+            },
+            "value": 6804,
+            "display": "Rs 6,804",
+            "tone": "down"
+          }
+        ]
+      }
+    }
+  ],
+  "key_terms": [
+    {
+      "term": {
+        "en": "Opening range (OR)",
+        "hi": "Opening range (OR)",
+        "dv": "ओपनिंग रेंज (OR)"
+      },
+      "meaning": {
+        "en": "The high and low of the first 15 minutes of trading, 9:15 to 9:30. ORB waits for price to close outside it.",
+        "hi": "Trading ke pehle 15 minute, 9:15 se 9:30, ka high aur low. ORB iske bahar close ka intezaar karta hai.",
+        "dv": "ट्रेडिंग के पहले 15 मिनट, 9:15 से 9:30, का हाई और लो। ORB इसके बाहर क्लोज़ का इंतज़ार करता है।"
+      }
+    },
+    {
+      "term": {
+        "en": "Breakout close",
+        "hi": "Breakout close",
+        "dv": "ब्रेकआउट क्लोज़"
+      },
+      "meaning": {
+        "en": "A 5-minute candle that closes outside the opening range. A wick poking out does not count.",
+        "hi": "Woh 5-minute candle jo opening range ke bahar close ho. Sirf bahar jhaankti wick nahi ginti.",
+        "dv": "वह 5-मिनट कैंडल जो ओपनिंग रेंज के बाहर क्लोज़ हो। सिर्फ़ बाहर झाँकती विक नहीं गिनी जाती।"
+      }
+    },
+    {
+      "term": {
+        "en": "Fakeout",
+        "hi": "Fakeout",
+        "dv": "फ़ेकआउट"
+      },
+      "meaning": {
+        "en": "A false breakout: price moves outside the range, sometimes even closes outside, then falls back inside. Waiting for a close filters out the wick-only ones; the stop at the other side limits the damage from the rest.",
+        "hi": "Nakli breakout: price range ke bahar jaata hai, kabhi bahar close bhi ho jaata hai, phir wapas andar aa jaata hai. Close ka intezaar sirf-wick wale fakeouts se bachata hai; baaki mein doosri taraf ka stop nuksaan chhota rakhta hai.",
+        "dv": "नकली ब्रेकआउट: भाव रेंज के बाहर जाता है, कभी बाहर क्लोज़ भी हो जाता है, फिर वापस अंदर आ जाता है। क्लोज़ का इंतज़ार सिर्फ़-विक वाले फ़ेकआउट से बचाता है; बाक़ी में दूसरी तरफ़ का स्टॉप नुक़सान छोटा रखता है।"
+      }
+    },
+    {
+      "term": {
+        "en": "Short selling (cash)",
+        "hi": "Short selling (cash)",
+        "dv": "शॉर्ट सेलिंग (कैश)"
+      },
+      "meaning": {
+        "en": "Selling shares you do not own and buying them back later. With a normal trading account, a retail short in the cash segment is intraday only.",
+        "hi": "Jo shares aapke paas nahi, unhe bechna aur baad mein wapas khareedna. Normal trading account se cash segment mein retail short sirf intraday hota hai.",
+        "dv": "जो शेयर आपके पास नहीं, उन्हें बेचना और बाद में वापस ख़रीदना। सामान्य ट्रेडिंग अकाउंट से कैश सेगमेंट में रिटेल शॉर्ट सिर्फ़ इंट्राडे होता है।"
+      }
+    },
+    {
+      "term": {
+        "en": "Square-off",
+        "hi": "Square-off",
+        "dv": "स्क्वेयर-ऑफ़"
+      },
+      "meaning": {
+        "en": "Closing an open intraday position before the day ends. Brokers may do it near the close; in ORB you do it yourself by 14:30.",
+        "hi": "Khuli intraday position ko din khatam hone se pehle band karna. Broker close ke paas yeh kar sakta hai; ORB mein aap khud 14:30 tak karte hain.",
+        "dv": "खुली इंट्राडे पोज़िशन को दिन ख़त्म होने से पहले बंद करना। ब्रोकर क्लोज़ के पास यह कर सकता है; ORB में आप ख़ुद 14:30 तक करते हैं।"
+      }
+    },
+    {
+      "term": {
+        "en": "Short-delivery auction",
+        "hi": "Short delivery auction",
+        "dv": "शॉर्ट डिलीवरी ऑक्शन"
+      },
+      "meaning": {
+        "en": "If a short is not bought back and the shares are not delivered, the exchange buys them in an auction at the seller's cost, plus a penalty.",
+        "hi": "Agar short wapas nahi khareeda gaya aur shares deliver nahi hue, toh exchange auction mein unhe khareedta hai, bechne wale ke kharche par, upar se penalty.",
+        "dv": "अगर शॉर्ट वापस नहीं ख़रीदा गया और शेयर डिलीवर नहीं हुए, तो एक्सचेंज ऑक्शन में उन्हें ख़रीदता है, बेचने वाले के ख़र्चे पर, ऊपर से पेनल्टी।"
+      }
+    }
+  ],
+  "mindmap": {
+    "kind": "mindmap",
+    "center": {
+      "en": "ORB, by written rules",
+      "hi": "ORB, likhe hue rules se",
+      "dv": "ORB, लिखे हुए नियमों से"
+    },
+    "branches": [
+      {
+        "label": {
+          "en": "The range",
+          "hi": "Range",
+          "dv": "रेंज"
+        },
+        "tone": "brand",
+        "points": [
+          {
+            "en": "9:15-9:30 high and low",
+            "hi": "9:15-9:30 ka high aur low",
+            "dv": "9:15-9:30 का हाई और लो"
+          },
+          {
+            "en": "NIFTY 50 cash stocks only",
+            "hi": "Sirf NIFTY 50 ke cash stocks",
+            "dv": "सिर्फ़ NIFTY 50 के कैश स्टॉक्स"
+          },
+          {
+            "en": "Optional: needs 9:15-11:00 free",
+            "hi": "Optional: 9:15-11:00 ka waqt chahiye",
+            "dv": "ऑप्शनल: 9:15-11:00 का वक़्त चाहिए"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Entry",
+          "hi": "Entry",
+          "dv": "एंट्री"
+        },
+        "tone": "up",
+        "points": [
+          {
+            "en": "5-min close outside, not a wick",
+            "hi": "Bahar 5-min close, wick nahi",
+            "dv": "बाहर 5-मिनट क्लोज़, विक नहीं"
+          },
+          {
+            "en": "VWAP and volume agree",
+            "hi": "VWAP aur volume saath",
+            "dv": "VWAP और वॉल्यूम साथ"
+          },
+          {
+            "en": "Fill at the next candle's open",
+            "hi": "Fill agli candle ke open par",
+            "dv": "फ़िल अगली कैंडल के ओपन पर"
+          },
+          {
+            "en": "No new entry after 11:00",
+            "hi": "11:00 ke baad nayi entry nahi",
+            "dv": "11:00 के बाद नई एंट्री नहीं"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Exits and size",
+          "hi": "Exit aur size",
+          "dv": "एग्ज़िट और साइज़"
+        },
+        "tone": "gold",
+        "points": [
+          {
+            "en": "Stop: other side of the range",
+            "hi": "Stop: range ki doosri taraf",
+            "dv": "स्टॉप: रेंज की दूसरी तरफ़"
+          },
+          {
+            "en": "2R profit exit, out by 14:30",
+            "hi": "2R profit exit, 14:30 tak bahar",
+            "dv": "2R प्रॉफ़िट एग्ज़िट, 14:30 तक बाहर"
+          },
+          {
+            "en": "Smaller of 1% rule and 25% cap",
+            "hi": "1% rule aur 25% cap mein chhota",
+            "dv": "1% रूल और 25% कैप में छोटा"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Shorts in cash",
+          "hi": "Cash mein short",
+          "dv": "कैश में शॉर्ट"
+        },
+        "tone": "down",
+        "points": [
+          {
+            "en": "Intraday only (normal account)",
+            "hi": "Sirf intraday (normal account)",
+            "dv": "सिर्फ़ इंट्राडे (सामान्य अकाउंट)"
+          },
+          {
+            "en": "Buy back the same day",
+            "hi": "Usi din wapas khareedna",
+            "dv": "उसी दिन वापस ख़रीदना"
+          },
+          {
+            "en": "Not bought back: auction + penalty",
+            "hi": "Nahi khareeda: auction + penalty",
+            "dv": "नहीं ख़रीदा: ऑक्शन + पेनल्टी"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "No-trade list",
+          "hi": "No-trade list",
+          "dv": "नो-ट्रेड लिस्ट"
+        },
+        "tone": "muted",
+        "points": [
+          {
+            "en": "Gap days",
+            "hi": "Gap days",
+            "dv": "गैप वाले दिन"
+          },
+          {
+            "en": "Results or big news",
+            "hi": "Results ya badi news",
+            "dv": "रिज़ल्ट या बड़ी ख़बर"
+          },
+          {
+            "en": "Near the price band",
+            "hi": "Price band ke paas",
+            "dv": "प्राइस बैंड के पास"
+          },
+          {
+            "en": "At -2R, after 2 stop-outs, or with 3 open",
+            "hi": "-2R par, 2 stop-out ke baad ya 3 khule hon",
+            "dv": "-2R पर, 2 स्टॉप-आउट के बाद या 3 खुले हों"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Your mind",
+          "hi": "Aapka mann",
+          "dv": "आपका मन"
+        },
+        "tone": "brand",
+        "points": [
+          {
+            "en": "Missed is not lost",
+            "hi": "Chhoota matlab nuksaan nahi",
+            "dv": "छूटा मतलब नुक़सान नहीं"
+          },
+          {
+            "en": "One ORB trade per stock a day",
+            "hi": "Ek stock, ek din, ek ORB trade",
+            "dv": "एक स्टॉक, एक दिन, एक ORB ट्रेड"
+          },
+          {
+            "en": "Judge after 30 trades",
+            "hi": "30 trades ke baad parakhiye",
+            "dv": "30 ट्रेड के बाद परखें"
+          }
+        ]
+      }
+    ]
+  },
+  "kaam": {
+    "en": "Write your ORB rule card, then test it by hand on one past morning of a NIFTY 50 stock. Do this once even if EMA Pullback stays your strategy. Stretch (about 30 minutes more): repeat on four more past mornings this week.",
+    "hi": "Apna ORB rule card likhiye, phir kisi NIFTY 50 stock ki ek purani subah par haath se test kijiye. Chahe aapki strategy EMA Pullback hi rahe, yeh ek baar zaroor kijiye. Stretch (lagbhag 30 minute aur): is hafte chaar aur purani subahon par dohraiye.",
+    "dv": "अपना ORB रूल कार्ड लिखिए, फिर किसी NIFTY 50 स्टॉक की एक पुरानी सुबह पर हाथ से टेस्ट कीजिए। चाहे आपकी स्ट्रैटेजी EMA Pullback ही रहे, यह एक बार ज़रूर कीजिए। स्ट्रेच (लगभग 30 मिनट और): इस हफ़्ते चार और पुरानी सुबहों पर दोहराइए।"
+  },
+  "kaam_steps": [
+    {
+      "en": "In Google Sheets or on paper, write your one-page ORB rule card: setup, entry, stop, 2R profit exit, 14:30 time exit, size (1% rule and 25% cap), your starter no-trade list, and one ORB trade per stock per day.",
+      "hi": "Google Sheets mein ya kaagaz par apna ek page ka ORB rule card likhiye: setup, entry, stop, 2R profit exit, 14:30 time exit, size (1% rule aur 25% cap), aapki starter no-trade list, aur ek stock mein ek din mein sirf ek ORB trade.",
+      "dv": "Google Sheets में या काग़ज़ पर अपना एक पेज का ORB रूल कार्ड लिखिए: सेटअप, एंट्री, स्टॉप, 2R प्रॉफ़िट एग्ज़िट, 14:30 टाइम एग्ज़िट, साइज़ (1% रूल और 25% कैप), आपकी शुरुआती नो-ट्रेड लिस्ट, और एक स्टॉक में एक दिन में सिर्फ़ एक ORB ट्रेड।"
+    },
+    {
+      "en": "Open a free TradingView chart of any stock from the NIFTY 50 list, set the 5-minute timeframe, add VWAP and Volume, and if your Volume settings offer a moving average, set it to 20. Then scroll back to a past trading day.",
+      "hi": "NIFTY 50 list ke kisi bhi stock ka free TradingView chart kholiye, 5-minute timeframe lagaiye, VWAP aur Volume jodiye, aur Volume ki settings mein moving average ho toh use 20 par kijiye. Phir kisi purane trading day par scroll kijiye.",
+      "dv": "NIFTY 50 लिस्ट के किसी भी स्टॉक का फ़्री TradingView चार्ट खोलिए, 5-मिनट टाइमफ़्रेम लगाइए, VWAP और Volume जोड़िए, और Volume की सेटिंग में मूविंग एवरेज हो तो उसे 20 पर कीजिए। फिर किसी पुराने ट्रेडिंग दिन पर स्क्रॉल कीजिए।"
+    },
+    {
+      "en": "Check the gate first: if that day opened above the previous day's high or below its low, log 'Skipped: gap day' and choose another day. Otherwise, draw two horizontal lines at the high and low of the 9:15, 9:20 and 9:25 candles: your opening range.",
+      "hi": "Pehle gate check kijiye: agar us din stock pichhle din ke high se upar ya low se neeche khula, toh 'Skipped: gap day' likhiye aur koi doosra din chuniye. Warna 9:15, 9:20 aur 9:25 wali candles ke high aur low par do horizontal lines kheenchiye: yahi aapki opening range hai.",
+      "dv": "पहले गेट जाँचिए: अगर उस दिन स्टॉक पिछले दिन के हाई से ऊपर या लो से नीचे खुला, तो 'Skipped: gap day' लिखिए और कोई दूसरा दिन चुनिए। वरना 9:15, 9:20 और 9:25 वाली कैंडल्स के हाई और लो पर दो हॉरिज़ॉन्टल लाइनें खींचिए: यही आपकी ओपनिंग रेंज है।"
+    },
+    {
+      "en": "Scroll the chart so the range's last candle, the 9:25 one, sits at the right edge of the screen (or cover the rest with a sticky note), then move forward one candle at a time up to 11:00, writing 'entry' or 'no entry' before each step. If you got an entry, keep going until the stop, the profit exit or 14:30.",
+      "hi": "Chart ko aise scroll kijiye ki range ki aakhri candle, 9:25 wali, screen ke right edge par ho (ya baaki ko sticky note se dhak dijiye), phir 11:00 tak ek-ek candle aage badhiye, aur har candle se pehle likhiye: 'entry' ya 'no entry'. Entry mili ho, toh stop, profit exit ya 14:30 tak aage chalte rahiye.",
+      "dv": "चार्ट को ऐसे स्क्रॉल कीजिए कि रेंज की आख़िरी कैंडल, 9:25 वाली, स्क्रीन के दाएँ किनारे पर हो (या बाक़ी को स्टिकी नोट से ढक दीजिए), फिर 11:00 तक एक-एक कैंडल आगे बढ़िए, और हर कैंडल से पहले लिखिए: 'एंट्री' या 'नो एंट्री'। एंट्री मिली हो, तो स्टॉप, प्रॉफ़िट एग्ज़िट या 14:30 तक आगे चलते रहिए।"
+    },
+    {
+      "en": "Log it as one row in your Day 12 Google Sheet journal (longs and shorts both go there): entry at the next open, stop, 2R profit exit, quantity, which came first (stop, profit exit or 14:30) and the R result the Day 12 way. No entry by 11:00? Write 'No setup'.",
+      "hi": "Ise apne Day 12 wale Google Sheet journal mein ek row ki tarah likhiye (long aur short dono wahin): agle open par entry, stop, 2R profit exit, quantity, pehle kya hua (stop, profit exit ya 14:30) aur Day 12 ke tareeke se R result. 11:00 tak entry nahi mili? 'No setup' likhiye.",
+      "dv": "इसे अपने दिन 12 वाले Google Sheet जर्नल में एक रो की तरह लिखिए (लॉन्ग और शॉर्ट दोनों वहीं): अगले ओपन पर एंट्री, स्टॉप, 2R प्रॉफ़िट एग्ज़िट, शेयरों की संख्या, पहले क्या हुआ (स्टॉप, प्रॉफ़िट एग्ज़िट या 14:30) और दिन 12 के तरीक़े से R नतीजा। 11:00 तक एंट्री नहीं मिली? 'No setup' लिखिए।"
+    },
+    {
+      "en": "Paste your rule card into the AI Lab prompt 'ORB rule-card audit' and rewrite every rule it flags as unclear.",
+      "hi": "Apna rule card AI Lab ke prompt 'ORB rule-card audit' mein paste kijiye, aur jo bhi rule woh unclear bataye, use dobara likhiye.",
+      "dv": "अपना रूल कार्ड AI Lab के प्रॉम्प्ट 'ORB रूल-कार्ड ऑडिट' में पेस्ट कीजिए, और जो भी नियम वह अस्पष्ट बताए, उसे दोबारा लिखिए।"
+    }
+  ],
+  "kaam_min": 50,
+  "outcome": {
+    "en": "By the end you can mark an opening range, tell a breakout close from a wick that only poked out, plan the stop, 2R profit exit, time exit and size of an ORB paper trade, explain the rules and risks of short selling in the cash segment, and name the days when you should not trade ORB at all.",
+    "hi": "Aaj ke baad aap opening range mark kar payenge, breakout close aur sirf bahar jhaankti wick mein farak kar payenge, ORB paper trade ka stop, 2R profit exit, time exit aur size plan kar payenge, cash segment mein short selling ke rules aur risk samjha payenge, aur bata payenge ki kin dinon ORB bilkul nahi karna chahiye.",
+    "dv": "आज के बाद आप ओपनिंग रेंज मार्क कर पाएँगे, ब्रेकआउट क्लोज़ और सिर्फ़ बाहर झाँकती विक में फ़र्क़ कर पाएँगे, ORB पेपर ट्रेड का स्टॉप, 2R प्रॉफ़िट एग्ज़िट, टाइम एग्ज़िट और साइज़ प्लान कर पाएँगे, कैश सेगमेंट में शॉर्ट सेलिंग के नियम और रिस्क समझा पाएँगे, और बता पाएँगे कि किन दिनों ORB बिल्कुल नहीं करना है।"
+  },
+  "tools": [
+    {
+      "en": "TradingView free chart (5-min, VWAP, Volume)",
+      "hi": "TradingView free chart (5-min, VWAP, Volume)",
+      "dv": "TradingView फ़्री चार्ट (5-मिनट, VWAP, Volume)"
+    },
+    {
+      "en": "Google Sheets or paper",
+      "hi": "Google Sheets ya kaagaz",
+      "dv": "Google Sheets या काग़ज़"
+    },
+    {
+      "en": "NSE website (nseindia.com)",
+      "hi": "NSE website (nseindia.com)",
+      "dv": "NSE वेबसाइट (nseindia.com)"
+    },
+    {
+      "en": "Any AI chat",
+      "hi": "Koi bhi AI chat",
+      "dv": "कोई भी AI चैट"
+    }
+  ],
+  "fun": {
+    "en": "'Valid or not?' rapid-fire: one person sketches a range and a few 5-minute candles on paper, and the others call 'entry', 'no entry' or 'no-trade day' within five seconds, then explain why. Then swap rule cards with a partner and hunt for one situation the card does not answer. Every hole found earns the author a rewrite, not a penalty.",
+    "hi": "'Valid ya nahi?' rapid-fire: koi ek saathi kaagaz par range aur kuch 5-minute candles banata hai, baaki log paanch second mein 'entry', 'no entry' ya 'no-trade day' bolte hain, phir wajah samjhate hain. Phir partner ke saath rule card badliye aur aisi ek situation dhoondhiye jiska jawab card mein nahi hai. Har kami milne par likhne wala apna card dobara likhega; koi saza nahi.",
+    "dv": "'वैलिड या नहीं?' रैपिड-फ़ायर: कोई एक साथी काग़ज़ पर रेंज और कुछ 5-मिनट कैंडल बनाता है, बाक़ी लोग पाँच सेकंड में 'एंट्री', 'नो एंट्री' या 'नो-ट्रेड दिन' बोलते हैं, फिर वजह समझाते हैं। फिर पार्टनर के साथ रूल कार्ड बदलिए और ऐसी एक स्थिति ढूँढिए जिसका जवाब कार्ड में नहीं है। हर कमी मिलने पर लिखने वाला अपना कार्ड दोबारा लिखेगा; कोई सज़ा नहीं।"
+  },
+  "compliance": "Educational content only, not investment advice. Company names and chart prices are made up for illustration. ORB is taught as an optional learning framework with no performance claim; past performance is not indicative of future results. Stage 1 uses virtual money only; no live orders are required or advised. No affiliation with any charting site named. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
+  "prompts": [
+    {
+      "title": {
+        "en": "ORB rule-card audit",
+        "hi": "ORB rule-card audit",
+        "dv": "ORB रूल-कार्ड ऑडिट"
+      },
+      "body": "Act as a strict but kind trading-rules reviewer for an Indian beginner who is paper trading only. I will paste my one-page Opening Range Breakout (ORB) rule card for liquid NSE cash-segment stocks. First, list every rule that is ambiguous, meaning two honest people could read it differently, and suggest stricter wording. Then turn the card into a yes/no pre-trade checklist in the order I would use it between 9:00 and 14:30 IST: opening range marked from 9:15 to 9:30; a 5-minute close outside the range, not a wick; VWAP on the same side; breakout volume above its 20-candle average; entry at the next candle's open after the first close outside that passes both checks, and only if that open comes by 11:00; stop at the other side of the range; 2R profit exit; time exit at 14:30; if the stop and the profit exit fall inside one candle, count the stop; no new entries after 11:00; quantity = (capital x 1%) / (distance between entry and stop; stop minus entry for a short), capped at 25% of capital; at most 3 open trades; one ORB trade per stock per day; no new trades once the day hits -2R or two stop-outs, whichever comes first; and the no-trade checks (gap day, results or big news, near the price band). Flag anything in my card that uses futures or options, because this course does not allow them, not even on paper. Do not comment on how profitable ORB is, do not recommend any stock, do not give buy or sell advice, and do not mention price targets for real stocks or expected returns.\n\nMy rule card:\n<paste here>"
+    },
+    {
+      "title": {
+        "en": "Short-selling reality check",
+        "hi": "Short selling ka reality check",
+        "dv": "शॉर्ट सेलिंग का रियलिटी चेक"
+      },
+      "body": "Explain to a complete beginner how intraday short selling works for a retail trader in the Indian cash (equity) segment: why a short must be squared off the same day, what a broker's auto square-off is and why a trader should not rely on it, what happens in concept if a short is not bought back and the shares are not delivered at settlement (the exchange auction and the penalty), and why a stock stuck at its upper price band is dangerous for a short seller. Use a made-up company, 'Gupta Cement Ltd', and simple rupee numbers. Label every statement Fact (checkable on the NSE, BSE or SEBI websites or with a broker), Guess (you are unsure, or it may have changed) or Kachra (a popular myth). End with a list of points I should verify on nseindia.com or with a broker, because rules and timings can change. Do not quote penalty rates or percentages, do not recommend any stock, do not give buy or sell advice, and do not mention targets or expected returns."
+    },
+    {
+      "title": {
+        "en": "Valid or not? drill",
+        "hi": "Valid ya nahi? drill",
+        "dv": "वैलिड या नहीं? ड्रिल"
+      },
+      "body": "Create 8 short practice scenarios for the Opening Range Breakout rules below, using made-up NSE cash stocks only (for example 'Bharat Pumps Ltd'). For each scenario give yesterday's high and low, today's open, the 9:15-9:30 range high and low, and three or four 5-minute candles after 9:30 with open, high, low, close, volume compared with its 20-candle average, and VWAP. Show me one scenario at a time and ask: entry, no entry, or no-trade day? Wait for my answer, then explain the correct answer using only these rules: entry only on the first 5-minute close outside the range that has VWAP on the same side and above-average volume; entry at the next candle's open, which must come by 11:00; no entries after 11:00; skip gap days, results days and stocks near their price band; one ORB trade per stock per day. Include at least two wick-only fakeouts and one gap day. Do not use real company names, do not give buy or sell advice, and do not mention returns or how profitable ORB is."
+    }
+  ],
+  "journal_prompt": {
+    "en": "When did you last act because 'everyone is getting in', in a sale, a queue, a tip or a trade? What did it cost you? And which single line of your ORB rule card would have stopped Aman at 9:22?",
+    "hi": "Aakhri baar kab aapne sirf isliye kuch kiya kyunki 'sab log ghus rahe hain', kisi sale, line, tip ya trade mein? Uski keemat kya padi? Aur aapke ORB rule card ki kaunsi ek line Aman ko 9:22 par rok leti?",
+    "dv": "आख़िरी बार कब आपने सिर्फ़ इसलिए कुछ किया क्योंकि 'सब लोग घुस रहे हैं', किसी सेल, लाइन, टिप या ट्रेड में? उसकी क़ीमत क्या पड़ी? और आपके ORB रूल कार्ड की कौन-सी एक लाइन अमन को 9:22 पर रोक लेती?"
+  },
+  "motivation": {
+    "en": "A rule you can follow on a dull morning is worth more than a setup you love on an exciting one. Today you wrote one down.",
+    "hi": "Jo rule aap ek boring subah bhi nibha sakein, woh kisi exciting subah ke pasandida setup se zyada keemti hai. Aaj aapne aisa ek rule likh liya.",
+    "dv": "जो नियम आप एक बोरिंग सुबह भी निभा सकें, वह किसी रोमांचक सुबह के पसंदीदा सेटअप से ज़्यादा क़ीमती है। आज आपने ऐसा एक नियम लिख लिया।"
+  },
+  "quiz": [
+    {
+      "stem": {
+        "en": "Sharma Textiles Ltd's opening range is Rs 300 to Rs 306. The 9:40-9:45 candle rises to Rs 308 but closes at Rs 305, and VWAP is Rs 303. Under today's rules, what do you do?",
+        "hi": "Sharma Textiles Ltd ki opening range Rs 300 se Rs 306 hai. 9:40-9:45 wali candle Rs 308 tak jaati hai lekin Rs 305 par close hoti hai, aur VWAP Rs 303 hai. Aaj ke rules ke hisaab se aap kya karenge?",
+        "dv": "Sharma Textiles Ltd की ओपनिंग रेंज Rs 300 से Rs 306 है। 9:40-9:45 वाली कैंडल Rs 308 तक जाती है लेकिन Rs 305 पर क्लोज़ होती है, और VWAP Rs 303 है। आज के नियमों के हिसाब से आप क्या करेंगे?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "No entry: the candle closed back inside the range",
+            "hi": "Entry nahi: candle wapas range ke andar hi close hui",
+            "dv": "एंट्री नहीं: कैंडल वापस रेंज के अंदर ही क्लोज़ हुई"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Buy now, since price has already crossed above Rs 306",
+            "hi": "Abhi khareediye, price Rs 306 ke upar ja chuka hai",
+            "dv": "अभी ख़रीदें, भाव Rs 306 के ऊपर जा चुका है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Buy at Rs 308, the high of that 5-minute candle",
+            "hi": "Rs 308 par khareediye, us 5-minute candle ka high",
+            "dv": "Rs 308 पर ख़रीदें, उस 5-मिनट कैंडल का हाई"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Short at once, because the breakout has failed",
+            "hi": "Turant short kijiye, kyunki breakout fail ho gaya",
+            "dv": "तुरंत शॉर्ट करें, क्योंकि ब्रेकआउट फ़ेल हो गया"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "ORB needs a 5-minute close outside the range. Rs 308 was only a wick; the close at Rs 305 is inside, so there is no signal. A short would need a close below Rs 300 with price under VWAP, and this candle did neither. Waiting for the close filters out many fakeouts, though not all.",
+        "hi": "ORB ko range ke bahar 5-minute close chahiye. Rs 308 sirf wick tha; close Rs 305 par andar hua, isliye koi signal nahi. Short ke liye Rs 300 ke neeche close aur VWAP ke neeche price chahiye, aur is candle mein dono mein se kuch nahi hua. Close ka intezaar kai fakeouts se bachata hai, sabse nahi.",
+        "dv": "ORB को रेंज के बाहर 5-मिनट क्लोज़ चाहिए। Rs 308 सिर्फ़ विक था; क्लोज़ Rs 305 पर अंदर हुआ, इसलिए कोई सिग्नल नहीं। शॉर्ट के लिए Rs 300 के नीचे क्लोज़ और VWAP के नीचे भाव चाहिए, और इस कैंडल में दोनों नहीं हुए। क्लोज़ का इंतज़ार कई फ़ेकआउट से बचाता है, सबसे नहीं।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Capital is Rs 10,00,000. A paper ORB short in Kiran Foods Ltd has an entry of Rs 400 and a stop at the range high of Rs 408. Using the 1% rule and the 25% cap, how many shares do you short?",
+        "hi": "Capital Rs 10,00,000 hai. Kiran Foods Ltd mein ek paper ORB short: entry Rs 400, stop range high Rs 408 par. 1% rule aur 25% cap dono lagakar aap kitne shares short karenge?",
+        "dv": "कैपिटल Rs 10,00,000 है। Kiran Foods Ltd में एक पेपर ORB शॉर्ट: एंट्री Rs 400, स्टॉप रेंज हाई Rs 408 पर। 1% रूल और 25% कैप दोनों लगाकर आप कितने शेयर शॉर्ट करेंगे?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "625 shares",
+            "hi": "625 shares",
+            "dv": "625 शेयर"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "1,250 shares",
+            "hi": "1,250 shares",
+            "dv": "1,250 शेयर"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "2,500 shares",
+            "hi": "2,500 shares",
+            "dv": "2,500 शेयर"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "None: a cash short is not allowed",
+            "hi": "Koi nahi: cash mein short allowed nahi",
+            "dv": "एक भी नहीं: कैश में शॉर्ट की इजाज़त नहीं"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "For a short, risk per share is stop minus entry: Rs 408 - Rs 400 = Rs 8. The 1% rule allows Rs 10,000 ÷ 8 = 1,250 shares, worth Rs 5 lakh. The 25% cap allows Rs 2,50,000 ÷ 400 = 625 shares. Take the smaller, 625; your risk is 625 x Rs 8 = Rs 5,000. Cash shorts are allowed, but only intraday.",
+        "hi": "Short mein per share risk = stop minus entry: Rs 408 - Rs 400 = Rs 8. 1% rule se Rs 10,000 ÷ 8 = 1,250 shares bante hain, jo Rs 5 lakh ke hain. 25% cap Rs 2,50,000 ÷ 400 = 625 shares tak hi allow karta hai. Jo chhota hai, 625, wahi lijiye; risk 625 x Rs 8 = Rs 5,000 hoga. Cash mein short allowed hai, par sirf intraday.",
+        "dv": "शॉर्ट में प्रति शेयर रिस्क = स्टॉप माइनस एंट्री: Rs 408 - Rs 400 = Rs 8। 1% रूल से Rs 10,000 ÷ 8 = 1,250 शेयर बनते हैं, जो Rs 5 लाख के हैं। 25% कैप Rs 2,50,000 ÷ 400 = 625 शेयर तक ही इजाज़त देता है। जो छोटा है, 625, वही लें; रिस्क 625 x Rs 8 = Rs 5,000 होगा। कैश में शॉर्ट की इजाज़त है, पर सिर्फ़ इंट्राडे।"
+      }
+    },
+    {
+      "stem": {
+        "en": "On a day's leave from office, Aman short-sells 300 shares of Gupta Cement Ltd on paper, in the cash segment, at 10:00 as an intraday trade. Which statement is correct?",
+        "hi": "Office se chhutti wale din Aman paper par 10:00 baje cash segment mein Gupta Cement Ltd ke 300 shares intraday short sell karta hai. Kaunsi baat sahi hai?",
+        "dv": "ऑफ़िस से छुट्टी वाले दिन अमन पेपर पर 10:00 बजे कैश सेगमेंट में Gupta Cement Ltd के 300 शेयर इंट्राडे शॉर्ट सेल करता है। कौन-सी बात सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "He must buy the shares back before today's close",
+            "hi": "Use aaj close se pehle hi shares wapas khareedne honge",
+            "dv": "उसे आज क्लोज़ से पहले ही शेयर वापस ख़रीदने होंगे"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "He can keep the short open for up to a week",
+            "hi": "Woh short ko ek hafte tak khula rakh sakta hai",
+            "dv": "वह शॉर्ट को एक हफ़्ते तक खुला रख सकता है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "He can carry it overnight as a normal delivery trade",
+            "hi": "Woh ise normal delivery trade banakar raat bhar rakh sakta hai",
+            "dv": "वह इसे सामान्य डिलीवरी ट्रेड बनाकर रात भर रख सकता है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "He has until T+1 settlement to buy them back",
+            "hi": "Uske paas T+1 settlement tak wapas khareedne ka time hai",
+            "dv": "उसके पास T+1 सेटलमेंट तक वापस ख़रीदने का समय है"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "With a normal trading account, a retail short in the cash segment is intraday only: it must be squared off the same day. If it is not bought back and the shares cannot be delivered at settlement, the exchange buys them in an auction at the seller's cost and adds a penalty. T+1 is when the shares must be delivered; a short not bought back by the close is already a short delivery. Brokers often square off near the close on their own, but that is a safety net, not a plan, and it may come with a charge; check with your broker.",
+        "hi": "Normal trading account se cash segment mein retail short sirf intraday hota hai: use usi din square off karna zaroori hai. Agar wapas nahi khareeda gaya aur settlement par shares deliver nahi ho paaye, toh exchange auction mein unhe khareedta hai, bechne wale ke kharche par, aur penalty bhi lagti hai. T+1 par shares deliver karne hote hain; close tak wapas na khareeda gaya short pehle hi short delivery ban chuka hai. Brokers aksar close ke paas khud square off kar dete hain, lekin woh safety net hai, plan nahi, aur uska charge bhi lag sakta hai; apne broker se confirm kijiye.",
+        "dv": "सामान्य ट्रेडिंग अकाउंट से कैश सेगमेंट में रिटेल शॉर्ट सिर्फ़ इंट्राडे होता है: उसे उसी दिन स्क्वेयर-ऑफ़ करना ज़रूरी है। अगर वापस नहीं ख़रीदा गया और सेटलमेंट पर शेयर डिलीवर नहीं हो पाए, तो एक्सचेंज ऑक्शन में उन्हें ख़रीदता है, बेचने वाले के ख़र्चे पर, और पेनल्टी भी लगती है। T+1 पर शेयर डिलीवर करने होते हैं; क्लोज़ तक वापस न ख़रीदा गया शॉर्ट पहले ही शॉर्ट डिलीवरी बन चुका है। ब्रोकर अक्सर क्लोज़ के पास ख़ुद स्क्वेयर-ऑफ़ कर देते हैं, लेकिन वह सेफ़्टी नेट है, प्लान नहीं, और उसका चार्ज भी लग सकता है; अपने ब्रोकर से पूछ लें।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Yesterday Bharat Pumps Ltd traded between Rs 980 and Rs 1,000. After overnight news, it opens today at Rs 1,030. What does your starter no-trade list say?",
+        "hi": "Kal Bharat Pumps Ltd Rs 980 aur Rs 1,000 ke beech trade hua. Raat ki news ke baad aaj woh Rs 1,030 par khulta hai. Aapki starter no-trade list kya kehti hai?",
+        "dv": "कल Bharat Pumps Ltd Rs 980 और Rs 1,000 के बीच ट्रेड हुआ। रात की ख़बर के बाद आज वह Rs 1,030 पर खुलता है। आपकी शुरुआती नो-ट्रेड लिस्ट क्या कहती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Skip ORB in this stock today: it is a gap day",
+            "hi": "Aaj is stock mein ORB nahi: yeh gap day hai",
+            "dv": "आज इस स्टॉक में ORB नहीं: यह गैप वाला दिन है"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Trade a bigger size, since the gap shows strength",
+            "hi": "Bada size lijiye, kyunki gap strength dikhata hai",
+            "dv": "बड़ा साइज़ लें, क्योंकि गैप मज़बूती दिखाता है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Buy at 9:15 before the opening range even forms",
+            "hi": "Range banne se pehle hi 9:15 par khareed lijiye",
+            "dv": "रेंज बनने से पहले ही 9:15 पर ख़रीद लें"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Use yesterday's range as today's opening range",
+            "hi": "Kal ki range ko hi aaj ki opening range maan lijiye",
+            "dv": "कल की रेंज को ही आज की ओपनिंग रेंज मान लें"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Opening above yesterday's high makes it a gap day. Your starter list says skip ORB in that stock on such days: the first 15 minutes tend to be wild and part of the move may already be spent. A no-trade day still counts as following your rules.",
+        "hi": "Kal ke high se upar khulna ise gap day banata hai. Aapki starter list kehti hai ki aise din us stock mein ORB chhod dijiye: pehle 15 minute aksar uthal-puthal bhare hote hain aur move ka hissa pehle hi nikal chuka ho sakta hai. No-trade day bhi rules follow karna hi gina jaata hai.",
+        "dv": "कल के हाई से ऊपर खुलना इसे गैप वाला दिन बनाता है। आपकी शुरुआती लिस्ट कहती है कि ऐसे दिन उस स्टॉक में ORB छोड़ दें: पहले 15 मिनट अक्सर उथल-पुथल भरे होते हैं और चाल का हिस्सा पहले ही निकल चुका हो सकता है। नो-ट्रेड दिन भी नियम मानना ही गिना जाता है।"
+      }
+    },
+    {
+      "stem": {
+        "en": "The first close above the range that passed both checks came at 9:50, and you missed it. At 10:30 the stock is Rs 18 above the range high, and your office group says there is still time. What does your rule card say?",
+        "hi": "Range ke upar pehla close jo dono checks paas karta tha, 9:50 par aaya aur aap chook gaye. 10:30 par stock range high se Rs 18 upar hai, aur office group keh raha hai ki abhi bhi time hai. Aapka rule card kya kehta hai?",
+        "dv": "रेंज के ऊपर पहला क्लोज़ जो दोनों जाँचें पास करता था, 9:50 पर आया और आप चूक गए। 10:30 पर स्टॉक रेंज हाई से Rs 18 ऊपर है, और ऑफ़िस ग्रुप कह रहा है कि अभी भी वक़्त है। आपका रूल कार्ड क्या कहता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Skip it: the entry was the open after 9:50",
+            "hi": "Chhod dijiye: entry 9:50 ke baad wale open par hi thi",
+            "dv": "छोड़ दें: एंट्री 9:50 के बाद वाले ओपन पर ही थी"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Enter now, but with half the usual quantity",
+            "hi": "Abhi entry lijiye, par aam se aadhi quantity ke saath",
+            "dv": "अभी एंट्री लें, पर आम से आधे शेयरों के साथ"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Enter now, with a tighter stop than usual",
+            "hi": "Abhi entry lijiye, aam se tight stop ke saath",
+            "dv": "अभी एंट्री लें, आम से टाइट स्टॉप के साथ"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Wait for a pullback, then enter after 11:00",
+            "hi": "Pullback ka intezaar kijiye, phir 11:00 ke baad entry",
+            "dv": "पुलबैक का इंतज़ार करें, फिर 11:00 के बाद एंट्री"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "The card allows one entry: the open after the first close outside the range that passes both checks. Chasing keeps the stop at the other side of the range, so your risk per share grows and your 2R profit exit moves further away. Half size or a tighter stop are rules made up on the spot, and no new entries are allowed after 11:00. A trade outside the card is a guess, however small. In your journal write 'Skipped: missed entry' with the emotion 'FOMO'; that is adherence.",
+        "hi": "Card sirf ek entry allow karta hai: range ke bahar us pehle close ke baad wala open, jo dono checks paas kare. Peeche bhaagne par stop range ki doosri taraf hi rehta hai, toh per share risk badh jaata hai aur 2R profit exit aur door chala jaata hai. Aadha size ya tight stop mauke par gadhe gaye rules hain, aur 11:00 ke baad nayi entry allowed nahi. Card ke bahar ka trade andaaza hai, chahe kitna bhi chhota ho. Journal mein 'Skipped: missed entry' likhiye, emotion 'FOMO'; yahi adherence hai.",
+        "dv": "कार्ड सिर्फ़ एक एंट्री की इजाज़त देता है: रेंज के बाहर उस पहले क्लोज़ के बाद वाला ओपन, जो दोनों जाँचें पास करे। पीछे भागने पर स्टॉप रेंज की दूसरी तरफ़ ही रहता है, तो प्रति शेयर रिस्क बढ़ जाता है और 2R प्रॉफ़िट एग्ज़िट और दूर चला जाता है। आधा साइज़ या टाइट स्टॉप मौक़े पर गढ़े गए नियम हैं, और 11:00 के बाद नई एंट्री की इजाज़त नहीं। कार्ड के बाहर का ट्रेड अंदाज़ा है, चाहे कितना भी छोटा हो। जर्नल में 'Skipped: missed entry' लिखें, इमोशन 'FOMO'; यही एडहेरेंस है।"
+      }
+    }
+  ]
+}

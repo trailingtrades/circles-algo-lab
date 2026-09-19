@@ -13,6 +13,12 @@ export const DEMO: LearnerState = {
   sessions: { 1: { watched_pct: 100, handout_opened: true, quiz_submitted: true, journal_saved: true, completed_at: "2026-10-01" }, 2: { watched_pct: 92, handout_opened: true, quiz_submitted: true, journal_saved: true, completed_at: "2026-10-02" }, 3: { watched_pct: 40, handout_opened: false, quiz_submitted: false, journal_saved: false, completed_at: null } },
   certificates: [], overrides: [], suspended: false,
 };
+const PREVIEW_ALL: LearnerState = {
+  ...DEMO,
+  sessions: Object.fromEntries(Array.from({ length: 21 }, (_, i) => [i + 1, i < 20
+    ? { watched_pct: 100, handout_opened: true, quiz_submitted: true, journal_saved: true, completed_at: "2026-10-01" }
+    : { watched_pct: 0, handout_opened: false, quiz_submitted: false, journal_saved: false, completed_at: null }])),
+};
 
 /** Session id -> number and publish flag. Read with the service role when it is configured: under RLS a student
  *  cannot see an unpublished row, so its progress used to vanish from the state and relock every later session.
@@ -26,7 +32,9 @@ async function sessionIndex(sb: Awaited<ReturnType<typeof createClient>>) {
 /** Memoised per request (Home reaches it twice: the page and loadScore). Returns the viewer too, so pages need no
  *  extra auth round trip for the learner's name. */
 export const loadLearnerState = cache(async (): Promise<{ state: LearnerState; demo: boolean; lang: Lang; viewer: Viewer | null }> => {
-  if (!supabaseConfigured()) return { state: DEMO, demo: true, lang: await getLang(), viewer: null };
+  // LOCAL_PREVIEW=1 (local preview only — never set where Supabase is configured): Days 1-20 done,
+  // Day 21 in progress, so a reviewer can open every Stage 1 lesson in demo mode.
+  if (!supabaseConfigured()) return { state: process.env.LOCAL_PREVIEW === "1" ? PREVIEW_ALL : DEMO, demo: true, lang: await getLang(), viewer: null };
   const v = await getViewer();
   if (!v) return { state: DEMO, demo: true, lang: await getLang(), viewer: null };
   const sb = await createClient();

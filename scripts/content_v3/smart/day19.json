@@ -1,0 +1,1400 @@
+{
+ "day": 19,
+ "title": {
+  "en": "The event calendar and your no-trade days",
+  "hi": "Event calendar aur aapke no-trade days",
+  "dv": "इवेंट कैलेंडर और आपके नो-ट्रेड दिन"
+ },
+ "tags": {
+  "concept": {
+   "en": "Events, their timing, and a no-trade rule for each strategy",
+   "hi": "Events, unki timing, aur har strategy ke liye no-trade rule",
+   "dv": "इवेंट, उनकी टाइमिंग, और हर स्ट्रैटेजी के लिए नो-ट्रेड नियम"
+  },
+  "ai_lab": {
+   "en": "Event calendar builder: AI drafts, official sites decide",
+   "hi": "Event calendar builder: AI draft banaye, official sites faisla karein",
+   "dv": "इवेंट कैलेंडर बिल्डर: AI ड्राफ़्ट बनाए, आधिकारिक साइट फ़ैसला करें"
+  },
+  "psychology": {
+   "en": "Fear of missing the big day",
+   "hi": "Bada din chhoot jaane ka dar",
+   "dv": "बड़ा दिन छूट जाने का डर"
+  }
+ },
+ "strategy": null,
+ "duration_min": 75,
+ "story": {
+  "kind": "story",
+  "title": {
+   "en": "The biggest day of the year",
+   "hi": "Saal ka sabse bada din",
+   "dv": "साल का सबसे बड़ा दिन"
+  },
+  "panels": [
+   {
+    "who": "narrator",
+    "say": {
+     "en": "The night before the Union Budget. Aman video-calls the mentor, and Priya joins from Lucknow.",
+     "hi": "Union Budget se pehle ki raat. Aman mentor ko video call karta hai, aur Priya Lucknow se jud jaati hai.",
+     "dv": "यूनियन बजट से पहले की रात। अमन मेंटर को वीडियो कॉल करता है, और प्रिया लखनऊ से जुड़ जाती है।"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "excited",
+    "say": {
+     "en": "Sir, tomorrow is Budget day. Everyone says there will be a huge move. On paper, I'll take an ORB trade as soon as the range breaks, and two swing trades before the speech. It's the biggest day of the year; I can't sit it out.",
+     "hi": "Sir, kal Budget hai. Sab keh rahe hain bahut bada move aayega. Paper par range tootte hi main ek ORB trade lunga, aur speech se pehle do swing trades bhi. Saal ka sabse bada din hai; main bahar nahi baith sakta.",
+     "dv": "सर, कल बजट है। सब कह रहे हैं बहुत बड़ा मूव आएगा। पेपर पर रेंज टूटते ही मैं एक ORB ट्रेड लूँगा, और भाषण से पहले दो स्विंग ट्रेड भी। साल का सबसे बड़ा दिन है; मैं बाहर नहीं बैठ सकता।"
+    }
+   },
+   {
+    "who": "priya",
+    "mood": "thinking",
+    "say": {
+     "en": "But the speech starts around 11. Your 9:15 to 9:30 range will be drawn before anyone knows what the Budget says. What will that range tell you?",
+     "hi": "Lekin speech toh 11 baje ke aas-paas shuru hoti hai. Aapki 9:15 se 9:30 wali range tab tak ban chuki hogi, jab kisi ko pata hi nahi hoga ki Budget mein kya hai. Woh range aapko kya batayegi?",
+     "dv": "लेकिन भाषण तो 11 बजे के आसपास शुरू होता है। आपकी 9:15 से 9:30 वाली रेंज तब तक बन चुकी होगी, जब किसी को पता ही नहीं होगा कि बजट में क्या है। वो रेंज आपको क्या बताएगी?"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "thinking",
+    "say": {
+     "en": "Good question, Priya. Aman, one question from me too: which way will the market go tomorrow?",
+     "hi": "Achha sawaal, Priya. Aman, ek sawaal mera bhi: kal market kis taraf jaayega?",
+     "dv": "अच्छा सवाल, प्रिया। अमन, एक सवाल मेरा भी: कल बाज़ार किस तरफ़ जाएगा?"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "worried",
+    "say": {
+     "en": "Honestly, no idea. Up or down, but big. Like Gupta Cement on Tuesday: I bought at 400 on paper, stop 382, and after the results it opened at 364. I didn't even know the results were that evening.",
+     "hi": "Sach kahun toh pata nahi. Upar ya neeche, par bada. Jaise Tuesday ko Gupta Cement mein hua: paper par 400 mein liya, stop 382, aur results ke baad 364 par khula. Mujhe toh pata bhi nahi tha ki usi shaam results hain.",
+     "dv": "सच कहूँ तो पता नहीं। ऊपर या नीचे, पर बड़ा। जैसे मंगलवार को Gupta Cement में हुआ: पेपर पर 400 में लिया, स्टॉप 382, और नतीजों के बाद 364 पर खुला। मुझे तो पता भी नहीं था कि उसी शाम नतीजे हैं।"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "neutral",
+    "say": {
+     "en": "That results date was on the NSE website six trading days before you bought. Most big days are not surprises; they are written down in advance. Tonight we write them down too, with your rule for each one, before the day arrives.",
+     "hi": "Results ki woh date aapke khareedne se chhe trading days pehle NSE ki website par thi. Zyadatar bade din surprise nahi hote; woh pehle se likhe hote hain. Aaj raat hum bhi unhe likh lenge, aur har din ke saamne aapka rule bhi, woh din aane se pehle hi.",
+     "dv": "नतीजों की वो तारीख़ आपके ख़रीदने से छह ट्रेडिंग दिन पहले NSE की वेबसाइट पर थी। ज़्यादातर बड़े दिन अचानक नहीं आते; वे पहले से लिखे होते हैं। आज रात हम भी उन्हें लिख लेंगे, और हर दिन के सामने आपका नियम भी, वह दिन आने से पहले ही।"
+    }
+   }
+  ],
+  "moral": {
+   "en": "Most big days are on the calendar long before they arrive. The skill is deciding, in advance, what you will do on them.",
+   "hi": "Zyadatar bade din aane se kaafi pehle calendar par likhe hote hain. Asli hunar hai pehle se tay kar lena ki us din aap kya karenge.",
+   "dv": "ज़्यादातर बड़े दिन आने से काफ़ी पहले कैलेंडर पर लिखे होते हैं। असली हुनर है पहले से तय कर लेना कि उस दिन आप क्या करेंगे।"
+  }
+ },
+ "topics": [
+  {
+   "h": {
+    "en": "Events: the gaps you can see coming",
+    "hi": "Events: woh gaps jo pehle se dikh jaate hain",
+    "dv": "इवेंट: वो गैप जो पहले से दिख जाते हैं"
+   },
+   "p": {
+    "en": "An event is a scheduled moment when big new information reaches the market all at once: a company's results, an RBI policy decision, the Union Budget. Price does not walk to its new level; it often jumps, and that jump is a gap (Day 6). Day 9 showed what a gap does to a stop: a planned 1R loss can become 2R or more. Today's twist is that most of these jumps are not surprises. Their dates are published days or weeks ahead. An event calendar is simply a list of those dates, kept where you will see it before you trade.",
+    "hi": "Event yaani ek tay kiya hua waqt, jab koi badi nayi jaankari ek saath market tak pahunchti hai: kisi company ke results, RBI ka policy decision, ya Union Budget. Aise mein price dheere-dheere nahi chalta, aksar seedha kood jaata hai, aur isi chhalaang ko gap kehte hain (Day 6). Day 9 mein humne dekha tha ki gap stop ke saath kya karta hai: 1R ka planned loss 2R ya usse bhi zyada ho sakta hai. Aaj ki baat yeh hai ki inmein se zyadatar chhalaangein surprise nahi hoti. Inki dates kuch din ya hafte pehle hi publish ho jaati hain. Event calendar bas in dates ki ek list hai, jo aap aisi jagah rakhte hain jahan trade se pehle nazar pad jaaye.",
+    "dv": "इवेंट यानी एक तय वक़्त, जब कोई बड़ी नई जानकारी एक साथ बाज़ार तक पहुँचती है: किसी कंपनी के नतीजे, RBI का पॉलिसी फ़ैसला, या यूनियन बजट। ऐसे में प्राइस धीरे-धीरे नहीं चलता, अक्सर सीधे छलाँग लगा देता है, और इसी छलाँग को गैप कहते हैं (दिन 6)। दिन 9 में हमने देखा था कि गैप स्टॉप के साथ क्या करता है: 1R का तय नुक़सान 2R या उससे भी ज़्यादा हो सकता है। आज की बात यह है कि इनमें से ज़्यादातर छलाँगें अचानक नहीं आतीं। इनकी तारीख़ें कुछ दिन या हफ़्ते पहले ही घोषित हो जाती हैं। इवेंट कैलेंडर बस इन तारीख़ों की एक लिस्ट है, जिसे आप ऐसी जगह रखते हैं जहाँ ट्रेड से पहले नज़र पड़ जाए।"
+   },
+   "example": {
+    "en": "Aman's paper trade in Gupta Cement Ltd: 555 shares at Rs 400, stop Rs 382 (1.5 x an ATR of Rs 12), so 1R was about Rs 10,000. Results came out that evening. Next morning the stock opened at Rs 364, and his stop, an SL-M order (Day 9), sold near there: 555 x Rs 36 = Rs 19,980, about 2R. The board-meeting notice for those results had been on the NSE website six trading days before he bought. His Day 11 card already said 'skip any stock whose results date falls in the next 15 trading days'; he simply never looked the date up. It was Day 9's gap again, with one difference: this time the date was public.",
+    "hi": "Aman ka Gupta Cement Ltd wala paper trade: 555 shares Rs 400 par, stop Rs 382 (Rs 12 ke ATR ka 1.5 guna), yaani 1R lagbhag Rs 10,000. Usi shaam results aa gaye. Agli subah stock Rs 364 par khula aur uska stop, jo SL-M order tha (Day 9), wahin ke aas-paas bik gaya: 555 x Rs 36 = Rs 19,980, lagbhag 2R. In results ki board meeting ka notice uske khareedne se chhe trading days pehle hi NSE ki website par aa chuka tha. Uske Day 11 wale card par likha bhi tha 'jis stock ke results agle 15 trading days mein hon, use skip karo'; bas usne date check hi nahi ki. Yeh Day 9 wala gap hi tha, bas ek farq ke saath: is baar date pehle se public thi.",
+    "dv": "अमन का Gupta Cement Ltd वाला पेपर ट्रेड: 555 शेयर Rs 400 पर, स्टॉप Rs 382 (Rs 12 के ATR का 1.5 गुना), यानी 1R लगभग Rs 10,000। उसी शाम नतीजे आ गए। अगली सुबह स्टॉक Rs 364 पर खुला और उसका स्टॉप, जो SL-M ऑर्डर था (दिन 9), वहीं के आसपास बिक गया: 555 x Rs 36 = Rs 19,980, लगभग 2R। इन नतीजों की बोर्ड मीटिंग का नोटिस उसके ख़रीदने से छह ट्रेडिंग दिन पहले ही NSE की वेबसाइट पर आ चुका था। उसके दिन 11 वाले कार्ड पर लिखा भी था 'जिस स्टॉक के नतीजे अगले 15 ट्रेडिंग दिनों में हों, उसे छोड़ दो'; बस उसने तारीख़ देखी ही नहीं। यह दिन 9 वाला गैप ही था, बस एक फ़र्क़ के साथ: इस बार तारीख़ पहले से पब्लिक थी।"
+   },
+   "remember": {
+    "en": "Getting caught in a results-day gap is rarely bad luck. Usually it is a date nobody looked up.",
+    "hi": "Results wale din ke gap mein phans jaana aksar badkismati nahi hota. Zyadatar woh ek date hoti hai jo kisi ne check hi nahi ki.",
+    "dv": "नतीजों वाले दिन के गैप में फँस जाना अक्सर बदक़िस्मती नहीं होता। ज़्यादातर वह एक तारीख़ होती है जिसे किसी ने देखा ही नहीं।"
+   },
+   "visual": {
+    "kind": "candles",
+    "title": {
+     "en": "The date was public",
+     "hi": "Date pehle se public thi",
+     "dv": "तारीख़ पहले से पब्लिक थी"
+    },
+    "caption": {
+     "en": "The results date was announced six trading days before the entry. Stop Rs 382; the first price after the results was Rs 364. Loss: about 2R, not 1R.",
+     "hi": "Results ki date entry se chhe trading days pehle announce ho chuki thi. Stop Rs 382; results ke baad pehla price hi Rs 364 tha. Loss: lagbhag 2R, 1R nahi.",
+     "dv": "नतीजों की तारीख़ एंट्री से छह ट्रेडिंग दिन पहले घोषित हो चुकी थी। स्टॉप Rs 382; नतीजों के बाद पहला प्राइस ही Rs 364 था। नुक़सान: लगभग 2R, 1R नहीं।"
+    },
+    "bars": [
+     [
+      392,
+      399,
+      388,
+      397
+     ],
+     [
+      397,
+      404,
+      393,
+      402
+     ],
+     [
+      402,
+      409,
+      397,
+      405
+     ],
+     [
+      405,
+      411,
+      399,
+      400
+     ],
+     [
+      400,
+      404,
+      392,
+      395
+     ],
+     [
+      395,
+      399,
+      387,
+      391
+     ],
+     [
+      391,
+      398,
+      386,
+      396
+     ],
+     [
+      396,
+      403,
+      391,
+      401
+     ],
+     [
+      401,
+      405,
+      395,
+      404
+     ],
+     [
+      400,
+      406,
+      396,
+      402
+     ],
+     [
+      364,
+      369,
+      357,
+      361
+     ]
+    ],
+    "volume": [
+     50,
+     55,
+     60,
+     58,
+     52,
+     48,
+     54,
+     57,
+     53,
+     60,
+     190
+    ],
+    "levels": [
+     {
+      "y": 400,
+      "label": {
+       "en": "Entry 400",
+       "hi": "Entry 400",
+       "dv": "एंट्री 400"
+      },
+      "tone": "brand"
+     },
+     {
+      "y": 382,
+      "label": {
+       "en": "Stop 382",
+       "hi": "Stop 382",
+       "dv": "स्टॉप 382"
+      },
+      "tone": "down",
+      "dashed": false
+     }
+    ],
+    "marks": [
+     {
+      "i": 3,
+      "label": {
+       "en": "Date announced",
+       "hi": "Date announce hui",
+       "dv": "तारीख़ घोषित"
+      },
+      "tone": "gold",
+      "at": "high"
+     },
+     {
+      "i": 9,
+      "label": {
+       "en": "Entry",
+       "hi": "Entry",
+       "dv": "एंट्री"
+      },
+      "tone": "brand",
+      "at": "high"
+     },
+     {
+      "i": 10,
+      "label": {
+       "en": "Results gap",
+       "hi": "Results gap",
+       "dv": "नतीजों का गैप"
+      },
+      "tone": "down",
+      "at": "high"
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Where events come from: your stock, India, the world",
+    "hi": "Events kahan se aate hain: aapka stock, India, duniya",
+    "dv": "इवेंट कहाँ से आते हैं: आपका स्टॉक, भारत, दुनिया"
+   },
+   "p": {
+    "en": "Events come from three places. Stock events hit one company: its quarterly results, the board meeting that approves them, and ex-dates for a dividend, bonus or split (Day 15), when the price drops for a mechanical reason and an unadjusted chart shows a fake gap. Indian market events touch almost everything: RBI policy decisions, the Union Budget, exchange holidays and special sessions, and F&O expiry days, when the index can be jumpier even if you trade no F&O. Index events sit in between: when a company enters or leaves an index such as NIFTY 50, the change is announced weeks ahead and takes effect on a set date. Around that date, index funds must buy the stock coming in and sell the one going out, so both can see unusual volume and moves. World events arrive from abroad, such as decisions of the US Federal Reserve (America's central bank), whose dates are published well in advance. Some big global news comes with no date at all; it cannot go on any calendar, which is one reason every trade still risks only 1%. Write down the date; never guess what will be announced.",
+    "hi": "Events teen jagah se aate hain. Stock events sirf ek company ko hilaate hain: uske quarterly results, unhe approve karne wali board meeting, aur dividend, bonus ya split ki ex-date (Day 15), jab price ek mechanical wajah se neeche aata hai aur unadjusted chart par nakli gap dikh jaata hai. Indian market ke events lagbhag sab par asar daalte hain: RBI ke policy decisions, Union Budget, exchange holidays aur special sessions, aur F&O expiry days, jin dinon index zyada uchhal-kood kar sakta hai, chahe aap F&O na bhi karte hon. Index events beech mein aate hain: jab koi company NIFTY 50 jaise index mein aati hai ya usse bahar jaati hai, toh yeh badlaav hafton pehle announce hota hai aur ek tay date se lagu hota hai. Us date ke aas-paas index funds ko aane wala stock khareedna aur jaane wala bechna padta hai, isliye dono mein volume aur move asaamanya ho sakte hain. Duniya ke events bahar se aate hain, jaise US Federal Reserve (America ka central bank) ke decisions, jinki dates kaafi pehle publish ho jaati hain. Kuch badi global khabrein bina kisi date ke achanak aa jaati hain; unhe kisi calendar par nahi likha ja sakta, aur yeh bhi ek wajah hai ki har trade mein risk sirf 1% rehta hai. Date likh lijiye; kya announce hoga, yeh guess mat kijiye.",
+    "dv": "इवेंट तीन जगह से आते हैं। स्टॉक के इवेंट सिर्फ़ एक कंपनी को हिलाते हैं: उसके तिमाही नतीजे, उन्हें मंज़ूरी देने वाली बोर्ड मीटिंग, और डिविडेंड, बोनस या स्प्लिट की एक्स-डेट (दिन 15), जब प्राइस एक तकनीकी वजह से नीचे आता है और बिना एडजस्ट वाले चार्ट पर नकली गैप दिख जाता है। भारतीय बाज़ार के इवेंट लगभग सब पर असर डालते हैं: RBI के पॉलिसी फ़ैसले, यूनियन बजट, एक्सचेंज की छुट्टियाँ और स्पेशल सेशन, और F&O एक्सपायरी के दिन, जब इंडेक्स ज़्यादा उछल-कूद कर सकता है, चाहे आप F&O न भी करते हों। इंडेक्स के इवेंट बीच में आते हैं: जब कोई कंपनी NIFTY 50 जैसे इंडेक्स में आती है या उससे बाहर जाती है, तो यह बदलाव हफ़्तों पहले घोषित होता है और एक तय तारीख़ से लागू होता है। उस तारीख़ के आसपास इंडेक्स फ़ंड को आने वाला स्टॉक ख़रीदना और जाने वाला बेचना पड़ता है, इसलिए दोनों में वॉल्यूम और चाल असामान्य हो सकती है। दुनिया के इवेंट बाहर से आते हैं, जैसे US फ़ेडरल रिज़र्व (अमेरिका का सेंट्रल बैंक) के फ़ैसले, जिनकी तारीख़ें काफ़ी पहले घोषित हो जाती हैं। कुछ बड़ी ग्लोबल ख़बरें बिना किसी तारीख़ के अचानक आ जाती हैं; उन्हें किसी कैलेंडर पर नहीं लिखा जा सकता, और यह भी एक वजह है कि हर ट्रेड में रिस्क सिर्फ़ 1% रहता है। तारीख़ लिख लीजिए; क्या घोषणा होगी, इसका अंदाज़ा मत लगाइए।"
+   },
+   "example": {
+    "en": "Priya jots down the next 30 days for her paper watchlist (all dates made up). The 6th: an RBI policy decision. The 12th: Kiran Foods Ltd results. The 18th: Sharma Textiles Ltd goes ex-dividend with a Rs 5 dividend, so, all else equal, its price drops by about Rs 5 that morning; that is an adjustment, not a signal. The 19th, at night: a US Fed decision, which will show up at the open on the 20th. Friday the 21st: an exchange holiday, so the market shuts for three days, a longer 'overnight' for any swing trade she holds. Five dates, three places, one sheet.",
+    "hi": "Priya apni paper watchlist ke liye agle 30 din likh leti hai (saari dates banaavati hain). 6 ko: RBI ka policy decision. 12 ko: Kiran Foods Ltd ke results. 18 ko: Sharma Textiles Ltd ki ex-dividend date, Rs 5 ka dividend; baaki sab waisa hi rahe toh us subah price lagbhag Rs 5 neeche aata hai, yeh adjustment hai, signal nahi. 19 ki raat: US Fed ka decision, jiska asar 20 ke open par dikhega. Friday 21 ko: exchange holiday, yaani market teen din band, aur uske kisi bhi swing trade ke liye ek lambi 'raat'. Paanch dates, teen jagah, ek sheet.",
+    "dv": "प्रिया अपनी पेपर वॉचलिस्ट के लिए अगले 30 दिन लिख लेती है (सारी तारीख़ें काल्पनिक हैं)। 6 को: RBI का पॉलिसी फ़ैसला। 12 को: Kiran Foods Ltd के नतीजे। 18 को: Sharma Textiles Ltd की एक्स-डिविडेंड तारीख़, Rs 5 का डिविडेंड; बाक़ी सब वैसा ही रहे तो उस सुबह प्राइस लगभग Rs 5 नीचे आता है, यह एडजस्टमेंट है, सिग्नल नहीं। 19 की रात: US फ़ेड का फ़ैसला, जिसका असर 20 के ओपन पर दिखेगा। शुक्रवार 21 को: एक्सचेंज की छुट्टी, यानी बाज़ार तीन दिन बंद, और उसके किसी भी स्विंग ट्रेड के लिए एक लंबी 'रात'। पाँच तारीख़ें, तीन जगहें, एक शीट।"
+   },
+   "remember": {
+    "en": "For every date, ask first: does it come from my stock, from India, or from the world?",
+    "hi": "Har date ke liye pehle poochhiye: yeh mere stock se aa rahi hai, India se, ya duniya se?",
+    "dv": "हर तारीख़ के लिए पहले पूछिए: यह मेरे स्टॉक से आ रही है, भारत से, या दुनिया से?"
+   },
+   "visual": {
+    "kind": "compare",
+    "title": {
+     "en": "Three places events come from",
+     "hi": "Events ki teen jagah",
+     "dv": "इवेंट की तीन जगहें"
+    },
+    "caption": {
+     "en": "Write down the date and the time, never a guess about what will be announced.",
+     "hi": "Date aur time likhiye; kya announce hoga, iska guess kabhi nahi.",
+     "dv": "तारीख़ और टाइम लिखिए; क्या घोषणा होगी, इसका अंदाज़ा कभी नहीं।"
+    },
+    "cols": [
+     {
+      "head": {
+       "en": "Your stock",
+       "hi": "Aapka stock",
+       "dv": "आपका स्टॉक"
+      },
+      "tone": "brand",
+      "points": [
+       {
+        "en": "Results and the board meeting",
+        "hi": "Results aur board meeting",
+        "dv": "नतीजे और बोर्ड मीटिंग"
+       },
+       {
+        "en": "Ex-date: dividend, bonus, split",
+        "hi": "Ex-date: dividend, bonus, split",
+        "dv": "एक्स-डेट: डिविडेंड, बोनस, स्प्लिट"
+       },
+       {
+        "en": "Found in NSE/BSE announcements",
+        "hi": "NSE/BSE announcements mein milta hai",
+        "dv": "NSE/BSE अनाउंसमेंट में मिलता है"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "Indian market",
+       "hi": "Indian market",
+       "dv": "भारतीय बाज़ार"
+      },
+      "tone": "gold",
+      "points": [
+       {
+        "en": "RBI policy decisions",
+        "hi": "RBI ke policy decisions",
+        "dv": "RBI के पॉलिसी फ़ैसले"
+       },
+       {
+        "en": "Union Budget",
+        "hi": "Union Budget",
+        "dv": "यूनियन बजट"
+       },
+       {
+        "en": "Holidays, special sessions",
+        "hi": "Holidays, special sessions",
+        "dv": "छुट्टियाँ, स्पेशल सेशन"
+       },
+       {
+        "en": "Index changes, expiry days",
+        "hi": "Index changes, expiry days",
+        "dv": "इंडेक्स बदलाव, एक्सपायरी के दिन"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "The world",
+       "hi": "Duniya",
+       "dv": "दुनिया"
+      },
+      "tone": "muted",
+      "points": [
+       {
+        "en": "US Fed decisions",
+        "hi": "US Fed ke decisions",
+        "dv": "US फ़ेड के फ़ैसले"
+       },
+       {
+        "en": "Surprise news: no date, so 1% risk",
+        "hi": "Achanak khabar: koi date nahi, isliye 1% risk",
+        "dv": "अचानक ख़बर: कोई तारीख़ नहीं, इसलिए 1% रिस्क"
+       },
+       {
+        "en": "Fed decision: Indian night",
+        "hi": "Fed decision: India mein raat",
+        "dv": "फ़ेड का फ़ैसला: भारत में रात"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Timing: during market hours or overnight",
+    "hi": "Timing: market ke ghanton mein ya raat mein",
+    "dv": "टाइमिंग: बाज़ार के घंटों में या रात में"
+   },
+   "p": {
+    "en": "The time of an event matters as much as its date. Some land during market hours: the RBI usually announces its policy decision in the morning, and on Budget day the speech normally begins around 11 am. These whip prices up and down within the day, which hurts intraday trades such as ORB. Others land overnight: many companies release results after 3:30 pm, and US Fed decisions come during the Indian night. You cannot trade on these until the pre-open at 9:00 the next morning, and by then the price has already jumped, so they arrive as a gap, which hurts swing trades held overnight. A board-meeting notice gives the date, often not the hour; if no time is given, assume the results could land during market hours or overnight. Times can change, so check the official announcement every time.",
+    "hi": "Event ki date jitni zaroori hai, utna hi zaroori uska time hai. Kuch events market ke ghanton mein aate hain: RBI aam taur par apna policy decision subah announce karta hai, aur Budget wale din speech aksar 11 baje ke aas-paas shuru hoti hai. Yeh din ke andar hi price ko upar-neeche jhakjhor dete hain, aur isse ORB jaise intraday trades ko nuksaan hota hai. Kuch events raat mein aate hain: kai companies apne results 3:30 ke baad nikaalti hain, aur US Fed ke decisions India ki raat mein aate hain. In par aap agli subah 9:00 baje ke pre-open se pehle trade kar hi nahi sakte, aur tab tak price kood chuka hota hai, isliye yeh gap bankar aate hain, aur isse raat bhar hold kiye gaye swing trades ko nuksaan hota hai. Board meeting ke notice mein date hoti hai, time aksar nahi; agar time nahi diya, toh maan kar chaliye ki results market ke ghanton mein bhi aa sakte hain aur raat mein bhi. Time badal bhi sakta hai, isliye har baar official announcement check kijiye.",
+    "dv": "इवेंट की तारीख़ जितनी ज़रूरी है, उतना ही ज़रूरी उसका टाइम है। कुछ इवेंट बाज़ार के घंटों में आते हैं: RBI आम तौर पर अपना पॉलिसी फ़ैसला सुबह घोषित करता है, और बजट वाले दिन भाषण अक्सर 11 बजे के आसपास शुरू होता है। ये दिन के अंदर ही प्राइस को ऊपर-नीचे झकझोर देते हैं, और इससे ORB जैसे इंट्राडे ट्रेड को नुक़सान होता है। कुछ इवेंट रात में आते हैं: कई कंपनियाँ अपने नतीजे 3:30 के बाद जारी करती हैं, और US फ़ेड के फ़ैसले भारत की रात में आते हैं। इन पर आप अगली सुबह 9:00 बजे के प्री-ओपन से पहले ट्रेड कर ही नहीं सकते, और तब तक प्राइस छलाँग लगा चुका होता है, इसलिए ये गैप बनकर आते हैं, और इससे रात भर होल्ड किए गए स्विंग ट्रेड को नुक़सान होता है। बोर्ड मीटिंग के नोटिस में तारीख़ होती है, टाइम अक्सर नहीं; अगर टाइम नहीं दिया, तो मानकर चलिए कि नतीजे बाज़ार के घंटों में भी आ सकते हैं और रात में भी। टाइम बदल भी सकता है, इसलिए हर बार आधिकारिक घोषणा देख लें।"
+   },
+   "example": {
+    "en": "On Budget day, the opening range of a liquid stock such as Sharma Textiles Ltd is set by 9:30, but the speech starts about 90 minutes later. ORB takes no new entry after 11:00 (Day 13), so any trade you take can still be open when the speech begins, and from then on the speech, not your rule, decides where it goes. Now picture a swing position in Kiran Foods Ltd: its results arrive at 6 pm, and the US Fed decides late at night, Indian time. Your first chance to exit is the next morning's open, at whatever price the market chooses.",
+    "hi": "Budget wale din Sharma Textiles Ltd jaise liquid stock ki opening range 9:30 tak ban jaati hai, lekin speech lagbhag dedh ghante baad shuru hoti hai. ORB mein 11:00 ke baad nayi entry nahi hoti (Day 13), isliye jo bhi trade aapne liya, woh speech shuru hote waqt bhi khula ho sakta hai, aur uske baad trade ka rukh aapka rule nahi, speech tay karegi. Ab Kiran Foods Ltd mein ek swing position sochiye: uske results shaam 6 baje aate hain, aur US Fed ka decision India ke time se der raat aata hai. Exit ka pehla mauka agli subah ka open hai, us price par jo market tay kare.",
+    "dv": "बजट वाले दिन Sharma Textiles Ltd जैसे लिक्विड स्टॉक की ओपनिंग रेंज 9:30 तक बन जाती है, लेकिन भाषण लगभग डेढ़ घंटे बाद शुरू होता है। ORB में 11:00 के बाद नई एंट्री नहीं होती (दिन 13), इसलिए जो भी ट्रेड आपने लिया, वह भाषण शुरू होते वक़्त भी खुला हो सकता है, और उसके बाद ट्रेड की दिशा आपका नियम नहीं, भाषण तय करेगा। अब Kiran Foods Ltd में एक स्विंग पोज़िशन सोचिए: उसके नतीजे शाम 6 बजे आते हैं, और US फ़ेड का फ़ैसला भारतीय समय से देर रात आता है। एग्ज़िट का पहला मौक़ा अगली सुबह का ओपन है, उस प्राइस पर जो बाज़ार तय करे।"
+   },
+   "remember": {
+    "en": "During-hours events hurt intraday trades; overnight events hurt swing trades. Know which one you are holding.",
+    "hi": "Market ke ghanton wale events intraday trades ko nuksaan pahunchate hain; raat wale events swing ko. Pata hona chahiye ki aapke haath mein kaunsa trade hai.",
+    "dv": "बाज़ार के घंटों वाले इवेंट इंट्राडे ट्रेड को नुक़सान पहुँचाते हैं; रात वाले इवेंट स्विंग को। आपको पता होना चाहिए कि आपके हाथ में कौन-सा ट्रेड है।"
+   },
+   "visual": {
+    "kind": "steps",
+    "title": {
+     "en": "When events usually land (IST)",
+     "hi": "Events aam taur par kab aate hain (IST)",
+     "dv": "इवेंट आम तौर पर कब आते हैं (IST)"
+    },
+    "caption": {
+     "en": "Typical times only; they can change. Surprise news can land at any hour. Always confirm on the official page.",
+     "hi": "Yeh sirf aam times hain; badal sakte hain. Achanak khabar kabhi bhi aa sakti hai. Hamesha official page par confirm kijiye.",
+     "dv": "ये सिर्फ़ आम टाइम हैं; बदल सकते हैं। अचानक ख़बर कभी भी आ सकती है। हमेशा आधिकारिक पेज पर जाँच लें।"
+    },
+    "items": [
+     {
+      "tag": "Night",
+      "label": {
+       "en": "US Fed decision",
+       "hi": "US Fed ka decision",
+       "dv": "US फ़ेड का फ़ैसला"
+      },
+      "sub": {
+       "en": "Shows up at the next open",
+       "hi": "Agle open par dikhta hai",
+       "dv": "अगले ओपन पर दिखता है"
+      }
+     },
+     {
+      "tag": "9:00",
+      "label": {
+       "en": "Pre-open",
+       "hi": "Pre-open",
+       "dv": "प्री-ओपन"
+      },
+      "sub": {
+       "en": "Overnight news gets priced in",
+       "hi": "Raat ki khabar price mein aa jaati hai",
+       "dv": "रात की ख़बर प्राइस में आ जाती है"
+      }
+     },
+     {
+      "tag": "~10:00",
+      "label": {
+       "en": "RBI policy decision",
+       "hi": "RBI policy decision",
+       "dv": "RBI पॉलिसी फ़ैसला"
+      },
+      "sub": {
+       "en": "Usually in the morning; hits intraday",
+       "hi": "Aksar subah; intraday par asar",
+       "dv": "अक्सर सुबह; इंट्राडे पर असर"
+      }
+     },
+     {
+      "tag": "~11:00",
+      "label": {
+       "en": "Budget speech",
+       "hi": "Budget speech",
+       "dv": "बजट भाषण"
+      },
+      "sub": {
+       "en": "Budget day only; hits intraday",
+       "hi": "Sirf Budget wale din; intraday par asar",
+       "dv": "सिर्फ़ बजट वाले दिन; इंट्राडे पर असर"
+      }
+     },
+     {
+      "tag": "15:30+",
+      "label": {
+       "en": "Many results",
+       "hi": "Kai companies ke results",
+       "dv": "कई कंपनियों के नतीजे"
+      },
+      "sub": {
+       "en": "Gap at the next open; hits swing",
+       "hi": "Agle open par gap; swing par asar",
+       "dv": "अगले ओपन पर गैप; स्विंग पर असर"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Your no-trade rules: match the event to the trade",
+    "hi": "Aapke no-trade rules: event ko trade se milaiye",
+    "dv": "आपके नो-ट्रेड नियम: इवेंट को ट्रेड से मिलाइए"
+   },
+   "p": {
+    "en": "A no-trade rule is a line on your Rule Card that names the days you stay out, decided before those days arrive. Your default strategy, EMA Pullback Swing (Day 11), holds overnight, so overnight events matter most to it. The optional ORB (Day 13) opens and closes within one trading day (its time exit is 14:30), so during-hours events matter most to it. And Aman's two swing entries on Budget morning? The starter table does not block them, because the speech lands during market hours, when a stop usually fills close to 1R, plus some slippage in a fast market. But a Budget-day swing can move more than one ATR in minutes and stop you out on noise, so many beginners simply add 'no new swing entry on Budget day' to their card; if the day tempts you to move stops, that line is a must. Keep the list short: if your rules block half the month, you will stop obeying them, and three or four clear lines are enough. Day 18 introduced hedging; at Stage 1 the cheapest protection before an event is a smaller position, or none. And a setup you skip because of a written rule still scores as adherence (Day 12).",
+    "hi": "No-trade rule aapke Rule Card ki woh line hai jo batati hai ki kin dinon aap bahar rahenge, aur yeh faisla un dinon ke aane se pehle hota hai. Aapki default strategy, EMA Pullback Swing (Day 11), raat bhar position rakhti hai, isliye uske liye raat wale events sabse zyada maayne rakhte hain. Optional ORB (Day 13) ek hi trading din ke andar khul kar band ho jaata hai (uska time exit 14:30 hai), isliye uske liye market ke ghanton wale events sabse zyada maayne rakhte hain. Aur Aman ki Budget wali subah ki do swing entries? Starter table unhe block nahi karti, kyunki speech market ke ghanton mein aati hai, jab stop aksar 1R ke aas-paas hi fill hota hai, bas tez market mein thodi slippage ke saath. Lekin Budget day par swing trade minuton mein ek ATR se zyada hil sakta hai aur shor mein hi stop hit ho sakta hai, isliye kai beginners card par seedha likh dete hain 'Budget wale din nayi swing entry nahi'; agar us din aapka mann stop khiskaane ko karta hai, toh yeh line zaroor likhiye. List chhoti rakhiye: agar rules aadha mahina hi block kar dein, toh aap unhe maanna chhod denge; teen-chaar saaf lines kaafi hain. Day 18 mein hedging ka idea aaya tha; Stage 1 mein kisi event se pehle sabse sasta bachaav hai chhoti position, ya koi position nahi. Aur haan, likhe hue rule ki wajah se chhoda gaya setup bhi adherence mein hi ginta hai (Day 12).",
+    "dv": "नो-ट्रेड नियम आपके रूल कार्ड की वह लाइन है जो बताती है कि किन दिनों आप बाहर रहेंगे, और यह फ़ैसला उन दिनों के आने से पहले होता है। आपकी डिफ़ॉल्ट स्ट्रैटेजी, EMA पुलबैक स्विंग (दिन 11), रात भर पोज़िशन रखती है, इसलिए उसके लिए रात वाले इवेंट सबसे ज़्यादा मायने रखते हैं। ऑप्शनल ORB (दिन 13) एक ही ट्रेडिंग दिन के अंदर खुलकर बंद हो जाता है (उसका टाइम एग्ज़िट 14:30 है), इसलिए उसके लिए बाज़ार के घंटों वाले इवेंट सबसे ज़्यादा मायने रखते हैं। और अमन की बजट वाली सुबह की दो स्विंग एंट्री? शुरुआती टेबल उन्हें ब्लॉक नहीं करती, क्योंकि भाषण बाज़ार के घंटों में आता है, जब स्टॉप अक्सर 1R के आसपास ही फ़िल होता है, बस तेज़ बाज़ार में थोड़ी स्लिपेज के साथ। लेकिन बजट वाले दिन स्विंग ट्रेड मिनटों में एक ATR से ज़्यादा हिल सकता है और शोर में ही स्टॉप हिट हो सकता है, इसलिए कई शुरुआती ट्रेडर कार्ड पर सीधे लिख देते हैं 'बजट वाले दिन नई स्विंग एंट्री नहीं'; अगर उस दिन आपका मन स्टॉप खिसकाने को करता है, तो यह लाइन ज़रूर लिखिए। लिस्ट छोटी रखिए: अगर नियम आधा महीना ही ब्लॉक कर दें, तो आप उन्हें मानना छोड़ देंगे; तीन-चार साफ़ लाइनें काफ़ी हैं। दिन 18 में हेजिंग का आइडिया आया था; Stage 1 में किसी इवेंट से पहले सबसे सस्ता बचाव है छोटी पोज़िशन, या कोई पोज़िशन नहीं। और हाँ, लिखे हुए नियम की वजह से छोड़ा गया सेटअप भी एडहेरेंस में ही गिना जाता है (दिन 12)।"
+   },
+   "example": {
+    "en": "Priya writes four lines on Sunday. One: no new swing entry in a stock whose results fall inside my 15-trading-day window (Day 11). Two: if a results date is announced after I enter, I exit before the close on the trading day before the results, and log it as a planned exit. (If I would rather hold through results, I write that on Sunday instead and accept that the loss could be 2R or more.) Three: no ORB on an RBI policy day or Budget day, or in a stock on its own results day. Four: on an ex-date, I do not read the adjusted drop as a signal. Her count for next month: one RBI day with no ORB, and 2 of her 8 watchlist stocks blocked for new swing entries. Every other day is normal.",
+    "hi": "Priya Sunday ko chaar lines likhti hai. Ek: jis stock ke results meri 15 trading days ki window (Day 11) ke andar hon, usmein nayi swing entry nahi. Do: agar entry ke baad results ki date announce hoti hai, toh results se pehle wale trading din close se pehle exit kar dungi, aur use planned exit likhungi. (Agar results tak hold karna hai, toh yeh bhi Sunday ko hi likh dungi aur maan lungi ki loss 2R ya usse zyada bhi ho sakta hai.) Teen: RBI policy wale din ya Budget wale din ORB nahi, aur kisi stock ke apne results wale din us stock mein ORB nahi. Chaar: ex-date par adjusted girawat ko signal nahi maanungi. Agle mahine ka uska hisaab: ek RBI wala din jab ORB nahi, aur uski watchlist ke 8 mein se 2 stocks mein nayi swing entry block. Baaki har din normal hai.",
+    "dv": "प्रिया रविवार को चार लाइनें लिखती है। एक: जिस स्टॉक के नतीजे मेरी 15 ट्रेडिंग दिन की विंडो (दिन 11) के अंदर हों, उसमें नई स्विंग एंट्री नहीं। दो: अगर एंट्री के बाद नतीजों की तारीख़ घोषित होती है, तो नतीजों से पहले वाले ट्रेडिंग दिन क्लोज़ से पहले एग्ज़िट कर दूँगी, और उसे प्लान किया हुआ एग्ज़िट लिखूँगी। (अगर नतीजों तक होल्ड करना है, तो यह भी रविवार को ही लिख दूँगी और मान लूँगी कि नुक़सान 2R या उससे ज़्यादा भी हो सकता है।) तीन: RBI पॉलिसी वाले दिन या बजट वाले दिन ORB नहीं, और किसी स्टॉक के अपने नतीजों वाले दिन उस स्टॉक में ORB नहीं। चार: एक्स-डेट पर एडजस्टेड गिरावट को सिग्नल नहीं मानूँगी। अगले महीने का उसका हिसाब: एक RBI वाला दिन जब ORB नहीं, और उसकी वॉचलिस्ट के 8 में से 2 स्टॉक में नई स्विंग एंट्री ब्लॉक। बाक़ी हर दिन नॉर्मल है।"
+   },
+   "remember": {
+    "en": "Decide the event rule on Sunday, not at 9:14 on the day.",
+    "hi": "Event ka rule Sunday ko tay kijiye, us din subah 9:14 par nahi.",
+    "dv": "इवेंट का नियम रविवार को तय कीजिए, उस दिन सुबह 9:14 पर नहीं।"
+   },
+   "visual": {
+    "kind": "compare",
+    "title": {
+     "en": "A starter no-trade table",
+     "hi": "Ek starter no-trade table",
+     "dv": "एक शुरुआती नो-ट्रेड टेबल"
+    },
+    "caption": {
+     "en": "A starting point to adapt, not a law. Write your own version on your Rule Card.",
+     "hi": "Yeh shuruaat hai, kanoon nahi. Apna version apne Rule Card par likhiye.",
+     "dv": "यह शुरुआत है, क़ानून नहीं। अपना वर्ज़न अपने रूल कार्ड पर लिखिए।"
+    },
+    "cols": [
+     {
+      "head": {
+       "en": "EMA Pullback (swing)",
+       "hi": "EMA Pullback (swing)",
+       "dv": "EMA पुलबैक (स्विंग)"
+      },
+      "tone": "brand",
+      "points": [
+       {
+        "en": "Results in window: no new entry",
+        "hi": "Window mein results: nayi entry nahi",
+        "dv": "विंडो में नतीजे: नई एंट्री नहीं"
+       },
+       {
+        "en": "Holding into results: exit the day before",
+        "hi": "Results tak hold: ek din pehle exit",
+        "dv": "नतीजों तक होल्ड: एक दिन पहले एग्ज़िट"
+       },
+       {
+        "en": "Ex-date: the drop is an adjustment",
+        "hi": "Ex-date: girawat sirf adjustment hai",
+        "dv": "एक्स-डेट: गिरावट सिर्फ़ एडजस्टमेंट है"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "ORB (optional, intraday)",
+       "hi": "ORB (optional, intraday)",
+       "dv": "ORB (ऑप्शनल, इंट्राडे)"
+      },
+      "tone": "gold",
+      "points": [
+       {
+        "en": "RBI policy day: no ORB",
+        "hi": "RBI policy wala din: ORB nahi",
+        "dv": "RBI पॉलिसी वाला दिन: ORB नहीं"
+       },
+       {
+        "en": "Budget day: no ORB",
+        "hi": "Budget wala din: ORB nahi",
+        "dv": "बजट वाला दिन: ORB नहीं"
+       },
+       {
+        "en": "Stock's results day: skip that stock",
+        "hi": "Stock ke results ka din: woh stock skip",
+        "dv": "स्टॉक के नतीजों का दिन: वो स्टॉक छोड़ें"
+       },
+       {
+        "en": "Big gap open: Day 13 list",
+        "hi": "Bada gap open: Day 13 ki list",
+        "dv": "बड़ा गैप ओपन: दिन 13 की लिस्ट"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "Every day",
+       "hi": "Har din",
+       "dv": "हर दिन"
+      },
+      "tone": "up",
+      "points": [
+       {
+        "en": "Before any entry: calendar + that stock's NSE page",
+        "hi": "Har entry se pehle: calendar + us stock ka NSE page",
+        "dv": "हर एंट्री से पहले: कैलेंडर + उस स्टॉक का NSE पेज"
+       },
+       {
+        "en": "Skipped by rule = adherence",
+        "hi": "Rule se skip = adherence",
+        "dv": "नियम से छोड़ा = एडहेरेंस"
+       },
+       {
+        "en": "Log every event gap in R",
+        "hi": "Har event gap R mein likhiye",
+        "dv": "हर इवेंट गैप R में लिखें"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Build your 30-day calendar from official sources",
+    "hi": "Official sources se apna 30 din ka calendar banaiye",
+    "dv": "आधिकारिक सोर्स से अपना 30 दिन का कैलेंडर बनाइए"
+   },
+   "p": {
+    "en": "Your calendar is one simple sheet with seven columns: date, event, place (stock, India or world), time (market hours or overnight), strategy hit, your rule, and 'source checked'. Every date comes from an official page: the NSE holiday list and circulars; board-meeting and corporate-action notices under NSE or BSE corporate announcements; index changes in NSE Indices press releases (niftyindices.com); the RBI press release with its policy meeting schedule; the government's Budget announcement; and the US Federal Reserve's own meeting calendar. AI can draft the empty table in a minute, but it can invent or mix up dates, and a wrong date is a costly hallucination (Day 4). Refresh the sheet every Sunday, because new board-meeting notices keep arriving. A board-meeting notice can appear only a few working days before the meeting, so before any new swing entry, also open that one stock's NSE announcements page. And know the results season. Under current SEBI rules, companies must publish quarterly results within 45 days of a quarter's end, and within 60 days for the year's last quarter. So for about six to nine weeks after March, June, September and December end, a new notice can appear any day. These deadlines can change; check the SEBI site for the latest. Tomorrow, on Day 20, this calendar check becomes the first line of your Daily Routine Card.",
+    "hi": "Aapka calendar ek seedhi-saadi sheet hai, saat columns ke saath: date, event, jagah (stock, India ya duniya), time (market ke ghante ya raat), kis strategy par asar, aapka rule, aur 'source checked'. Har date kisi official page se aani chahiye: NSE ki holiday list aur circulars; NSE ya BSE ke corporate announcements mein board meeting aur corporate action ke notice; index changes ke liye NSE Indices ki press releases (niftyindices.com); RBI ki woh press release jismein policy meetings ka schedule hota hai; Budget par sarkar ki official ghoshna; aur US Federal Reserve ka apna meeting calendar. AI khaali table ek minute mein bana dega, lekin woh apni taraf se dates bana bhi deta hai ya aapas mein mila deta hai, aur galat date bahut mehnga hallucination hai (Day 4). Har Sunday sheet update kijiye, kyunki board meeting ke naye notice aate hi rehte hain. Board meeting ka notice kabhi-kabhi meeting se bas kuch working days pehle aata hai, isliye har nayi swing entry se pehle us ek stock ka NSE announcements page bhi khol lijiye. Aur results season yaad rakhiye. SEBI ke abhi ke rules mein companies ko quarter khatam hone ke 45 din ke andar results dene hote hain, aur saal ke aakhri quarter ke liye 60 din. Toh March, June, September aur December khatam hone ke baad lagbhag chhe se nau hafte tak naya notice kabhi bhi aa sakta hai. Yeh deadlines badal sakti hain; latest ke liye SEBI ki site dekhiye. Kal, Day 20 mein, yahi calendar check aapke Daily Routine Card ki pehli line ban jaayega.",
+    "dv": "आपका कैलेंडर एक सीधी-सादी शीट है, सात कॉलम के साथ: तारीख़, इवेंट, जगह (स्टॉक, भारत या दुनिया), टाइम (बाज़ार के घंटे या रात), किस स्ट्रैटेजी पर असर, आपका नियम, और 'सोर्स चेक किया'। हर तारीख़ किसी आधिकारिक पेज से आनी चाहिए: NSE की छुट्टियों की लिस्ट और सर्कुलर; NSE या BSE के कॉर्पोरेट अनाउंसमेंट में बोर्ड मीटिंग और कॉर्पोरेट एक्शन के नोटिस; इंडेक्स बदलाव के लिए NSE Indices की प्रेस रिलीज़ (niftyindices.com); RBI की वह प्रेस रिलीज़ जिसमें पॉलिसी मीटिंग का शेड्यूल होता है; बजट पर सरकार की आधिकारिक घोषणा; और US फ़ेडरल रिज़र्व का अपना मीटिंग कैलेंडर। AI ख़ाली टेबल एक मिनट में बना देगा, लेकिन वह अपनी तरफ़ से तारीख़ें गढ़ भी देता है या आपस में मिला देता है, और ग़लत तारीख़ बहुत महँगा हैलुसिनेशन है (दिन 4)। हर रविवार शीट अपडेट कीजिए, क्योंकि बोर्ड मीटिंग के नए नोटिस आते ही रहते हैं। बोर्ड मीटिंग का नोटिस कभी-कभी मीटिंग से बस कुछ वर्किंग दिन पहले आता है, इसलिए हर नई स्विंग एंट्री से पहले उस एक स्टॉक का NSE अनाउंसमेंट पेज भी खोल लीजिए। और रिज़ल्ट सीज़न याद रखिए। SEBI के मौजूदा नियमों में कंपनियों को तिमाही ख़त्म होने के 45 दिन के अंदर नतीजे देने होते हैं, और साल की आख़िरी तिमाही के लिए 60 दिन। तो मार्च, जून, सितंबर और दिसंबर ख़त्म होने के बाद लगभग छह से नौ हफ़्ते तक नया नोटिस कभी भी आ सकता है। ये समय-सीमाएँ बदल सकती हैं; ताज़ा नियम SEBI की साइट पर देखिए। कल, दिन 20 में, यही कैलेंडर जाँच आपके डेली रूटीन कार्ड की पहली लाइन बन जाएगी।"
+   },
+   "example": {
+    "en": "One row of Priya's sheet reads: '12th | Kiran Foods Ltd results | stock | time not given: could be either | both | no new swing entry until results are out; if holding, exit before the close on the 11th; no ORB in it on the 12th | NSE announcement, checked'. She also sets a phone reminder for 8 pm on the evening before each action day: the 10th for this row, because the exit must happen before the close on the 11th. That way the rule reaches her before the market does. Her first full build took about 40 minutes; each Sunday refresh takes about 10.",
+    "hi": "Priya ki sheet ki ek row aisi hai: '12 | Kiran Foods Ltd results | stock | time nahi diya: dono ho sakta hai | dono | results aane tak nayi swing entry nahi; hold ho toh 11 ko close se pehle exit; 12 ko is stock mein ORB nahi | NSE announcement, checked'. Usne har action wale din se ek shaam pehle, raat 8 baje ka phone reminder bhi laga diya hai: is row ke liye 10 tareekh ko, kyunki exit 11 ko close se pehle karna hai. Is tarah rule market khulne se pehle hi uske saamne hota hai. Pehli baar poori sheet banane mein use lagbhag 40 minute lage; har Sunday ke update mein bas 10 ke aas-paas.",
+    "dv": "प्रिया की शीट की एक लाइन ऐसी है: '12 | Kiran Foods Ltd नतीजे | स्टॉक | टाइम नहीं दिया: दोनों हो सकता है | दोनों | नतीजे आने तक नई स्विंग एंट्री नहीं; होल्ड हो तो 11 को क्लोज़ से पहले एग्ज़िट; 12 को इस स्टॉक में ORB नहीं | NSE अनाउंसमेंट, चेक किया'। उसने हर ऐक्शन वाले दिन से एक शाम पहले, रात 8 बजे का फ़ोन रिमाइंडर भी लगा दिया है: इस लाइन के लिए 10 तारीख़ को, क्योंकि एग्ज़िट 11 को क्लोज़ से पहले करना है। इस तरह नियम बाज़ार खुलने से पहले ही उसके सामने होता है। पहली बार पूरी शीट बनाने में उसे लगभग 40 मिनट लगे; हर रविवार के अपडेट में बस 10 के आसपास।"
+   },
+   "remember": {
+    "en": "AI drafts the table; official sites fill in the dates.",
+    "hi": "Table AI banaye; dates official sites se bhariye.",
+    "dv": "टेबल AI बनाए; तारीख़ें आधिकारिक साइट से भरिए।"
+   },
+   "visual": {
+    "kind": "flow",
+    "title": {
+     "en": "From official page to Rule Card",
+     "hi": "Official page se Rule Card tak",
+     "dv": "आधिकारिक पेज से रूल कार्ड तक"
+    },
+    "caption": {
+     "en": "Tick 'source checked' only after you have seen the date on the official page yourself.",
+     "hi": "'Source checked' par tick tabhi lagaiye jab date aapne khud official page par dekh li ho.",
+     "dv": "'सोर्स चेक किया' पर टिक तभी लगाइए जब तारीख़ आपने ख़ुद आधिकारिक पेज पर देख ली हो।"
+    },
+    "nodes": [
+     {
+      "label": {
+       "en": "Official page",
+       "hi": "Official page",
+       "dv": "आधिकारिक पेज"
+      },
+      "sub": {
+       "en": "NSE, BSE, RBI, govt, Fed",
+       "hi": "NSE, BSE, RBI, sarkar, Fed",
+       "dv": "NSE, BSE, RBI, सरकार, फ़ेड"
+      },
+      "tone": "brand"
+     },
+     {
+      "label": {
+       "en": "Your sheet",
+       "hi": "Aapki sheet",
+       "dv": "आपकी शीट"
+      },
+      "sub": {
+       "en": "Date, time, place",
+       "hi": "Date, time, jagah",
+       "dv": "तारीख़, टाइम, जगह"
+      }
+     },
+     {
+      "label": {
+       "en": "Match strategy",
+       "hi": "Strategy milaiye",
+       "dv": "स्ट्रैटेजी मिलाइए"
+      },
+      "sub": {
+       "en": "Swing or ORB?",
+       "hi": "Swing ya ORB?",
+       "dv": "स्विंग या ORB?"
+      }
+     },
+     {
+      "label": {
+       "en": "Write the rule",
+       "hi": "Rule likhiye",
+       "dv": "नियम लिखिए"
+      },
+      "sub": {
+       "en": "On your Rule Card",
+       "hi": "Apne Rule Card par",
+       "dv": "अपने रूल कार्ड पर"
+      },
+      "tone": "gold"
+     },
+     {
+      "label": {
+       "en": "Sunday refresh",
+       "hi": "Sunday update",
+       "dv": "रविवार अपडेट"
+      },
+      "sub": {
+       "en": "New notices keep coming",
+       "hi": "Naye notice aate rehte hain",
+       "dv": "नए नोटिस आते रहते हैं"
+      },
+      "tone": "up"
+     }
+    ],
+    "arrows": [
+     {
+      "en": "copy date",
+      "hi": "date copy",
+      "dv": "तारीख़ कॉपी"
+     },
+     {
+      "en": "tag",
+      "hi": "tag",
+      "dv": "टैग"
+     },
+     {
+      "en": "decide",
+      "hi": "faisla",
+      "dv": "फ़ैसला"
+     },
+     {
+      "en": "repeat",
+      "hi": "dohraiye",
+      "dv": "दोहराएँ"
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Fear of missing the big day",
+    "hi": "Bada din chhoot jaane ka dar",
+    "dv": "बड़ा दिन छूट जाने का डर"
+   },
+   "p": {
+    "en": "Big event days feel like a Diwali sale: news channels count down, groups buzz, and staying out feels like missing the one day that matters. Day 13 met FOMO, the fear of missing out, in a running breakout; here it comes dressed as a date. On such days prices often swing both ways within minutes, spreads widen (Day 2), and the move is a reaction to news nobody could know in advance. A fisherman who stays ashore on a cyclone-warning day is not a coward; he wants to fish for many more years. Skipping a trade your rules block costs you no money, only a chance, while a 2R or 3R loss on a big day can wipe out weeks of careful trades.",
+    "hi": "Bade event wale din Diwali sale jaise lagte hain: news channels countdown chalate hain, groups mein shor mach jaata hai, aur bahar rehna aisa lagta hai jaise saal ka sabse zaroori din hi chhoot gaya. Day 13 mein FOMO, yaani kuch chhoot jaane ka dar, humne bhaagte breakout mein dekha tha; yahan woh ek date ka roop lekar aata hai. Aise dinon mein price aksar minuton mein dono taraf jhoolta hai, spread chauda ho jaata hai (Day 2), aur move ek aisi khabar ka reaction hota hai jo pehle se kisi ko pata nahi thi. Cyclone warning wale din kinare par ruka machhuara darpok nahi hai; woh aane wale kai saal tak machhli pakadna chahta hai. Rule ki wajah se chhoda gaya trade aapka ek paisa nahi leta, bas ek mauka jaata hai, jabki bade din ka 2R ya 3R ka loss hafton ki mehnat par paani pher sakta hai.",
+    "dv": "बड़े इवेंट वाले दिन दिवाली सेल जैसे लगते हैं: न्यूज़ चैनल उलटी गिनती चलाते हैं, ग्रुप में शोर मच जाता है, और बाहर रहना ऐसा लगता है जैसे साल का सबसे ज़रूरी दिन ही छूट गया। दिन 13 में FOMO, यानी कुछ छूट जाने का डर, हमने भागते ब्रेकआउट में देखा था; यहाँ वह एक तारीख़ का रूप लेकर आता है। ऐसे दिनों में प्राइस अक्सर मिनटों में दोनों तरफ़ झूलता है, स्प्रेड चौड़ा हो जाता है (दिन 2), और चाल एक ऐसी ख़बर का रिएक्शन होती है जो पहले से किसी को पता नहीं थी। साइक्लोन की चेतावनी वाले दिन किनारे पर रुका मछुआरा डरपोक नहीं है; वह आने वाले कई साल तक मछली पकड़ना चाहता है। नियम की वजह से छोड़ा गया ट्रेड आपका एक पैसा नहीं लेता, बस एक मौक़ा जाता है, जबकि बड़े दिन का 2R या 3R का नुक़सान हफ़्तों की मेहनत पर पानी फेर सकता है।"
+   },
+   "example": {
+    "en": "In this illustrative Budget day, NIFTY 50 was 1.6% above its open by 11:30, soon after the speech began. Two hours later it was 1.1% below the open, and it closed 0.4% lower. Anyone who chased the first surge and anyone who sold the later dip could both have been stopped out on the same day. Aman, who had taken the day off to trade it, spent that morning watching with a notebook instead, writing down how prices reacted. His journal entry: no-trade day, rule followed.",
+    "hi": "Is udaharan wale Budget day mein, speech shuru hone ke thodi der baad, 11:30 tak NIFTY 50 apne open se 1.6% upar tha. Do ghante baad woh open se 1.1% neeche tha, aur din 0.4% girkar band hua. Pehli tezi ke peeche bhaagne wala aur baad ki girawat mein bechne wala, dono ka stop ek hi din mein hit ho sakta tha. Aman ne us din trade karne ke liye chhutti li thi, lekin usne woh subah notebook lekar sirf dekhne mein bitaayi, aur likhta gaya ki price ne kaise react kiya. Journal mein uski entry: no-trade day, rule follow kiya.",
+    "dv": "इस उदाहरण वाले बजट दिन में, भाषण शुरू होने के थोड़ी देर बाद, 11:30 तक NIFTY 50 अपने ओपन से 1.6% ऊपर था। दो घंटे बाद वह ओपन से 1.1% नीचे था, और दिन 0.4% गिरकर बंद हुआ। पहली तेज़ी के पीछे भागने वाला और बाद की गिरावट में बेचने वाला, दोनों का स्टॉप एक ही दिन में हिट हो सकता था। अमन ने उस दिन ट्रेड करने के लिए छुट्टी ली थी, लेकिन उसने वह सुबह नोटबुक लेकर सिर्फ़ देखने में बिताई, और लिखता गया कि प्राइस ने कैसे रिएक्ट किया। जर्नल में उसकी एंट्री: नो-ट्रेड दिन, नियम माना।"
+   },
+   "remember": {
+    "en": "Skipping a blocked trade costs no money. A bad big day can cost weeks.",
+    "hi": "Rule se chhoda trade paisa nahi leta. Ek bura bada din hafton ki mehnat par paani pher sakta hai.",
+    "dv": "नियम से छोड़ा ट्रेड पैसा नहीं लेता। एक बुरा बड़ा दिन हफ़्तों की मेहनत पर पानी फेर सकता है।"
+   },
+   "visual": {
+    "kind": "line",
+    "title": {
+     "en": "One Budget day, both ways",
+     "hi": "Ek Budget day, dono taraf",
+     "dv": "एक बजट दिन, दोनों तरफ़"
+    },
+    "caption": {
+     "en": "Open = 100. Up 1.6% by 11:30, down 1.1% by 13:30, closed 0.4% lower. At 9:15 nobody knew the direction.",
+     "hi": "Open = 100. 11:30 tak 1.6% upar, 13:30 tak 1.1% neeche, aur 0.4% neeche band. 9:15 par direction kisi ko pata nahi thi.",
+     "dv": "ओपन = 100। 11:30 तक 1.6% ऊपर, 13:30 तक 1.1% नीचे, और 0.4% नीचे बंद। 9:15 पर दिशा किसी को पता नहीं थी।"
+    },
+    "x_label": {
+     "en": "Time, 9:15 to 15:30",
+     "hi": "Time, 9:15 se 15:30",
+     "dv": "टाइम, 9:15 से 15:30"
+    },
+    "y_label": {
+     "en": "Open = 100",
+     "hi": "Open = 100",
+     "dv": "ओपन = 100"
+    },
+    "series": [
+     {
+      "name": {
+       "en": "NIFTY 50",
+       "hi": "NIFTY 50",
+       "dv": "NIFTY 50"
+      },
+      "tone": "brand",
+      "points": [
+       100.0,
+       100.3,
+       100.5,
+       100.4,
+       100.6,
+       100.7,
+       100.6,
+       100.8,
+       101.3,
+       101.6,
+       100.9,
+       100.2,
+       99.6,
+       99.1,
+       99.5,
+       100.1,
+       99.4,
+       98.9,
+       99.2,
+       99.6,
+       99.3,
+       99.0,
+       99.4,
+       99.7,
+       99.5,
+       99.6
+      ]
+     }
+    ],
+    "marks": [
+     {
+      "x": 7,
+      "label": {
+       "en": "Speech starts",
+       "hi": "Speech shuru",
+       "dv": "भाषण शुरू"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "key_terms": [
+  {
+   "term": {
+    "en": "Event",
+    "hi": "Event",
+    "dv": "इवेंट"
+   },
+   "meaning": {
+    "en": "A scheduled moment when big new information reaches the market at once, such as results, an RBI policy decision or the Budget.",
+    "hi": "Ek tay waqt jab badi nayi jaankari ek saath market tak pahunchti hai, jaise results, RBI ka policy decision ya Budget.",
+    "dv": "एक तय वक़्त जब बड़ी नई जानकारी एक साथ बाज़ार तक पहुँचती है, जैसे नतीजे, RBI का पॉलिसी फ़ैसला या बजट।"
+   }
+  },
+  {
+   "term": {
+    "en": "Event calendar",
+    "hi": "Event calendar",
+    "dv": "इवेंट कैलेंडर"
+   },
+   "meaning": {
+    "en": "Your list of coming event dates, each checked on an official site, with your rule written next to it.",
+    "hi": "Aane wale events ki dates ki aapki list, har date official site par check ki hui, aur uske saamne aapka rule likha hua.",
+    "dv": "आने वाले इवेंट की तारीख़ों की आपकी लिस्ट, हर तारीख़ आधिकारिक साइट पर जाँची हुई, और उसके सामने आपका नियम लिखा हुआ।"
+   }
+  },
+  {
+   "term": {
+    "en": "No-trade day",
+    "hi": "No-trade day",
+    "dv": "नो-ट्रेड दिन"
+   },
+   "meaning": {
+    "en": "A day your written rules keep you out of a strategy. Staying out on it counts as adherence.",
+    "hi": "Woh din jab aapke likhe hue rules aapko kisi strategy se bahar rakhte hain. Us din bahar rehna adherence mein ginta hai.",
+    "dv": "वह दिन जब आपके लिखे हुए नियम आपको किसी स्ट्रैटेजी से बाहर रखते हैं। उस दिन बाहर रहना एडहेरेंस में गिना जाता है।"
+   }
+  },
+  {
+   "term": {
+    "en": "Board meeting notice",
+    "hi": "Board meeting notice",
+    "dv": "बोर्ड मीटिंग नोटिस"
+   },
+   "meaning": {
+    "en": "A company's advance notice, under NSE or BSE corporate announcements, of the meeting that approves its results.",
+    "hi": "Woh notice jo company NSE ya BSE ke corporate announcements mein pehle se daalti hai, ki results approve karne wali board meeting kis din hogi.",
+    "dv": "वह नोटिस जो कंपनी NSE या BSE के कॉर्पोरेट अनाउंसमेंट में पहले से डालती है, कि नतीजों को मंज़ूरी देने वाली बोर्ड मीटिंग किस दिन होगी।"
+   }
+  },
+  {
+   "term": {
+    "en": "Overnight event",
+    "hi": "Overnight event",
+    "dv": "रात वाला इवेंट"
+   },
+   "meaning": {
+    "en": "News that arrives while the market is shut and often shows up as a gap at the next open.",
+    "hi": "Aisi khabar jo market band hone par aati hai aur aksar agle open par gap bankar dikhti hai.",
+    "dv": "ऐसी ख़बर जो बाज़ार बंद होने पर आती है और अक्सर अगले ओपन पर गैप बनकर दिखती है।"
+   }
+  },
+  {
+   "term": {
+    "en": "Results season",
+    "hi": "Results season",
+    "dv": "रिज़ल्ट सीज़न"
+   },
+   "meaning": {
+    "en": "The weeks after each quarter ends when companies publish results; board-meeting notices can appear any day.",
+    "hi": "Har quarter khatam hone ke baad ke woh hafte jab companies results nikaalti hain; board meeting ke notice kabhi bhi aa sakte hain.",
+    "dv": "हर तिमाही ख़त्म होने के बाद के वे हफ़्ते जब कंपनियाँ नतीजे जारी करती हैं; बोर्ड मीटिंग के नोटिस कभी भी आ सकते हैं।"
+   }
+  }
+ ],
+ "mindmap": {
+  "kind": "mindmap",
+  "center": {
+   "en": "Event calendar and no-trade days",
+   "hi": "Event calendar aur no-trade days",
+   "dv": "इवेंट कैलेंडर और नो-ट्रेड दिन"
+  },
+  "branches": [
+   {
+    "label": {
+     "en": "Why events matter",
+     "hi": "Events kyun maayne rakhte hain",
+     "dv": "इवेंट क्यों मायने रखते हैं"
+    },
+    "tone": "down",
+    "points": [
+     {
+      "en": "Big news lands at once",
+      "hi": "Badi khabar ek saath aati hai",
+      "dv": "बड़ी ख़बर एक साथ आती है"
+     },
+     {
+      "en": "A gap can turn 1R into 2R",
+      "hi": "Gap 1R ko 2R bana sakta hai",
+      "dv": "गैप 1R को 2R बना सकता है"
+     },
+     {
+      "en": "Most dates are public early",
+      "hi": "Zyadatar dates pehle se public",
+      "dv": "ज़्यादातर तारीख़ें पहले से पब्लिक"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Three places",
+     "hi": "Teen jagah",
+     "dv": "तीन जगहें"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "Stock: results, ex-dates",
+      "hi": "Stock: results, ex-dates",
+      "dv": "स्टॉक: नतीजे, एक्स-डेट"
+     },
+     {
+      "en": "India: RBI, Budget, holidays",
+      "hi": "India: RBI, Budget, holidays",
+      "dv": "भारत: RBI, बजट, छुट्टियाँ"
+     },
+     {
+      "en": "World: US Fed, surprise news",
+      "hi": "Duniya: US Fed, achanak khabrein",
+      "dv": "दुनिया: US फ़ेड, अचानक ख़बरें"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Timing",
+     "hi": "Timing",
+     "dv": "टाइमिंग"
+    },
+    "tone": "gold",
+    "points": [
+     {
+      "en": "During hours: hurts ORB",
+      "hi": "Market ke ghante: ORB par asar",
+      "dv": "बाज़ार के घंटे: ORB पर असर"
+     },
+     {
+      "en": "Overnight: hurts swing",
+      "hi": "Raat: swing par asar",
+      "dv": "रात: स्विंग पर असर"
+     },
+     {
+      "en": "Confirm official times",
+      "hi": "Official time confirm karein",
+      "dv": "आधिकारिक टाइम जाँच लें"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Your rules",
+     "hi": "Aapke rules",
+     "dv": "आपके नियम"
+    },
+    "tone": "up",
+    "points": [
+     {
+      "en": "Results in window: no new swing",
+      "hi": "Window mein results: nayi swing nahi",
+      "dv": "विंडो में नतीजे: नई स्विंग नहीं"
+     },
+     {
+      "en": "RBI or Budget day: no ORB",
+      "hi": "RBI ya Budget day: ORB nahi",
+      "dv": "RBI या बजट का दिन: ORB नहीं"
+     },
+     {
+      "en": "Keep the list short",
+      "hi": "List chhoti rakhiye",
+      "dv": "लिस्ट छोटी रखें"
+     },
+     {
+      "en": "Skipped by rule = adherence",
+      "hi": "Rule se skip = adherence",
+      "dv": "नियम से छोड़ा = एडहेरेंस"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Your calendar",
+     "hi": "Aapka calendar",
+     "dv": "आपका कैलेंडर"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "Official pages only",
+      "hi": "Sirf official pages",
+      "dv": "सिर्फ़ आधिकारिक पेज"
+     },
+     {
+      "en": "AI drafts, you verify",
+      "hi": "AI draft kare, aap verify karein",
+      "dv": "AI ड्राफ़्ट करे, आप जाँचें"
+     },
+     {
+      "en": "Refresh every Sunday",
+      "hi": "Har Sunday update",
+      "dv": "हर रविवार अपडेट"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Your mind",
+     "hi": "Aapka mann",
+     "dv": "आपका मन"
+    },
+    "tone": "muted",
+    "points": [
+     {
+      "en": "Big-day FOMO",
+      "hi": "Bade din ka FOMO",
+      "dv": "बड़े दिन का FOMO"
+     },
+     {
+      "en": "Skipping costs no money",
+      "hi": "Chhodne mein paisa nahi jaata",
+      "dv": "छोड़ने में पैसा नहीं जाता"
+     }
+    ]
+   }
+  ]
+ },
+ "kaam": {
+  "en": "Build your first 30-day event calendar: official dates only, each with the rule you will follow.",
+  "hi": "Apna pehla 30 din ka event calendar banaiye: sirf official dates, aur har date ke saath woh rule jo aap follow karenge.",
+  "dv": "अपना पहला 30 दिन का इवेंट कैलेंडर बनाइए: सिर्फ़ आधिकारिक तारीख़ें, और हर तारीख़ के साथ वह नियम जो आप मानेंगे।"
+ },
+ "kaam_steps": [
+  {
+   "en": "Open a new Google Sheet and add seven columns: Date, Event, Place, Time, Strategy hit, My rule, Source checked.",
+   "hi": "Ek nayi Google Sheet kholiye aur saat columns banaiye: Date, Event, Place, Time, Strategy hit, My rule, Source checked.",
+   "dv": "एक नई Google Sheet खोलिए और सात कॉलम बनाइए: Date, Event, Place, Time, Strategy hit, My rule, Source checked।"
+  },
+  {
+   "en": "On nseindia.com, open the trading holidays list and add every market holiday in the next 30 days; also check NSE circulars for any special session, such as Muhurat trading.",
+   "hi": "nseindia.com par trading holidays ki list kholiye aur agle 30 din ki har market holiday sheet mein daaliye; kisi special session (jaise Muhurat trading) ke liye NSE ke circulars bhi dekh lijiye.",
+   "dv": "nseindia.com पर ट्रेडिंग छुट्टियों की लिस्ट खोलिए और अगले 30 दिन की हर बाज़ार छुट्टी शीट में डालिए; किसी स्पेशल सेशन (जैसे मुहूर्त ट्रेडिंग) के लिए NSE के सर्कुलर भी देख लीजिए।"
+  },
+  {
+   "en": "On rbi.org.in find this year's monetary policy meeting schedule, and on federalreserve.gov the Fed's meeting calendar; add each decision day in your 30 days (RBI: the meeting's last day; Fed: write the next Indian trading morning, when it shows up).",
+   "hi": "rbi.org.in par is saal ka monetary policy meeting schedule aur federalreserve.gov par Fed ka meeting calendar dhoondhiye; aapke 30 din mein jo bhi decision day pade, use sheet mein daaliye (RBI: meeting ka aakhri din; Fed: India ki agli trading subah likhiye, jab iska asar dikhega).",
+   "dv": "rbi.org.in पर इस साल का मॉनेटरी पॉलिसी मीटिंग शेड्यूल और federalreserve.gov पर फ़ेड का मीटिंग कैलेंडर ढूँढिए; आपके 30 दिन में जो भी फ़ैसले का दिन पड़े, उसे शीट में डालिए (RBI: मीटिंग का आख़िरी दिन; फ़ेड: भारत की अगली ट्रेडिंग सुबह लिखिए, जब इसका असर दिखेगा)।"
+  },
+  {
+   "en": "For three stocks on your paper watchlist, search NSE or BSE corporate announcements and add any results board meeting or ex-date in the next 30 days; if nothing is announced yet, write 'none yet' and recheck on Sunday; also note if any of them is joining or leaving an index.",
+   "hi": "Apni paper watchlist ke teen stocks ke liye NSE ya BSE ke corporate announcements search kijiye, aur agle 30 din mein aane wali results ki board meeting ya ex-date daaliye; agar abhi kuch announce nahi hua, toh 'none yet' likhiye aur Sunday ko dobara check kijiye; yeh bhi dekhiye ki inmein se koi index mein aa ya ja raha hai kya.",
+   "dv": "अपनी पेपर वॉचलिस्ट के तीन स्टॉक के लिए NSE या BSE के कॉर्पोरेट अनाउंसमेंट सर्च कीजिए, और अगले 30 दिन में आने वाली नतीजों की बोर्ड मीटिंग या एक्स-डेट डालिए; अगर अभी कुछ घोषित नहीं हुआ, तो 'अभी नहीं' लिखिए और रविवार को फिर देखिए; यह भी देखिए कि इनमें से कोई इंडेक्स में आ या जा रहा है क्या।"
+  },
+  {
+   "en": "Using today's starter table, write your no-trade rule in the 'My rule' column next to each date.",
+   "hi": "Aaj ki starter table ki madad se har date ke saamne 'My rule' column mein apna no-trade rule likhiye.",
+   "dv": "आज की शुरुआती टेबल की मदद से हर तारीख़ के सामने 'My rule' कॉलम में अपना नो-ट्रेड नियम लिखिए।"
+  },
+  {
+   "en": "Stretch, about 15 more minutes: run the AI Lab prompt 'Event calendar template' and compare any date or time the AI mentions with your sheet; mark every mismatch Kachra.",
+   "hi": "Stretch, lagbhag 15 minute aur: AI Lab ka 'Event calendar template' prompt chalaiye, aur AI jo bhi date ya time bataye use apni sheet se milaiye; jo match na kare use Kachra mark kijiye.",
+   "dv": "स्ट्रेच, लगभग 15 मिनट और: AI Lab का 'Event calendar template' प्रॉम्प्ट चलाइए, और AI जो भी तारीख़ या टाइम बताए उसे अपनी शीट से मिलाइए; जो मेल न खाए उसे कचरा मार्क कीजिए।"
+  }
+ ],
+ "kaam_min": 40,
+ "outcome": {
+  "en": "By the end you can explain why scheduled events cause gaps and sharp swings, sort any event by where it comes from and when it lands, write no-trade rules that fit each strategy, and build a 30-day event calendar from official sources.",
+  "hi": "Aaj ke baad aap samjha payenge ki tay events gap aur tez uchhal-kood kyun laate hain, kisi bhi event ko uski jagah aur time se pehchaan payenge, har strategy ke hisaab se no-trade rules likh payenge, aur official sources se 30 din ka event calendar bana payenge.",
+  "dv": "आज के बाद आप समझा पाएँगे कि तय इवेंट गैप और तेज़ उछल-कूद क्यों लाते हैं, किसी भी इवेंट को उसकी जगह और टाइम से पहचान पाएँगे, हर स्ट्रैटेजी के हिसाब से नो-ट्रेड नियम लिख पाएँगे, और आधिकारिक सोर्स से 30 दिन का इवेंट कैलेंडर बना पाएँगे।"
+ },
+ "tools": [
+  {
+   "en": "NSE website (nseindia.com)",
+   "hi": "NSE website (nseindia.com)",
+   "dv": "NSE वेबसाइट (nseindia.com)"
+  },
+  {
+   "en": "BSE website (bseindia.com)",
+   "hi": "BSE website (bseindia.com)",
+   "dv": "BSE वेबसाइट (bseindia.com)"
+  },
+  {
+   "en": "RBI website (rbi.org.in)",
+   "hi": "RBI website (rbi.org.in)",
+   "dv": "RBI वेबसाइट (rbi.org.in)"
+  },
+  {
+   "en": "US Federal Reserve website (federalreserve.gov)",
+   "hi": "US Federal Reserve website (federalreserve.gov)",
+   "dv": "US फ़ेडरल रिज़र्व वेबसाइट (federalreserve.gov)"
+  },
+  {
+   "en": "Google Sheets or Google Calendar",
+   "hi": "Google Sheets ya Google Calendar",
+   "dv": "Google Sheets या Google Calendar"
+  },
+  {
+   "en": "Any AI chat",
+   "hi": "Koi bhi AI chat",
+   "dv": "कोई भी AI चैट"
+  }
+ ],
+ "fun": {
+  "en": "Calendar treasure hunt: set a 10-minute timer and find three dates on official pages: the next NSE market holiday, the next RBI policy decision, and one board meeting for a stock on your watchlist (or confirm that none is announced yet). Screenshot each source page. With classmates, compare answers; if two people found different dates, work out which page was right and why. Alone? Try to beat your own time next Sunday.",
+  "hi": "Calendar treasure hunt: 10 minute ka timer lagaiye aur official pages par teen dates dhoondhiye: NSE ki agli market holiday, RBI ka agla policy decision, aur apni watchlist ke kisi stock ki ek board meeting (ya confirm kijiye ki abhi koi announce nahi hui). Har source page ka screenshot le lijiye. Classmates ke saath answers milaiye; agar do logon ko alag dates mili hain, toh pata lagaiye ki kaunsa page sahi tha aur kyun. Akele hain? Agle Sunday apna hi time beat karke dikhaiye.",
+  "dv": "कैलेंडर ट्रेज़र हंट: 10 मिनट का टाइमर लगाइए और आधिकारिक पेजों पर तीन तारीख़ें ढूँढिए: NSE की अगली बाज़ार छुट्टी, RBI का अगला पॉलिसी फ़ैसला, और अपनी वॉचलिस्ट के किसी स्टॉक की एक बोर्ड मीटिंग (या पक्का कीजिए कि अभी कोई घोषित नहीं हुई)। हर सोर्स पेज का स्क्रीनशॉट ले लीजिए। साथियों के साथ जवाब मिलाइए; अगर दो लोगों को अलग तारीख़ें मिलीं, तो पता लगाइए कि कौन-सा पेज सही था और क्यों। अकेले हैं? अगले रविवार अपना ही टाइम बेहतर करके दिखाइए।"
+ },
+ "compliance": "Educational content only, not investment advice. Stage 1 uses virtual money only. Company names, dates and chart prices are made up for illustration; confirm real event dates and times on the official NSE, BSE, RBI, government or US Federal Reserve page. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
+ "prompts": [
+  {
+   "title": {
+    "en": "Event calendar template",
+    "hi": "Event calendar template",
+    "dv": "इवेंट कैलेंडर टेम्पलेट"
+   },
+   "body": "Build a blank 30-day event calendar template for an Indian beginner who paper-trades NSE cash stocks with two strategies: an EMA pullback swing strategy that holds positions overnight, and an optional opening range breakout that is intraday only. Columns: Date, Event, Place (my stock / Indian market / world), Timing (during market hours / overnight), Strategy affected (swing / ORB / both), My rule, Source checked (Y/N). Include example rows, with the date left blank, for these event types: company results and board meetings, dividend/bonus/split ex-dates, RBI monetary policy decisions, the Union Budget, exchange holidays and special sessions, index changes, and US Federal Reserve decisions. For each event type, name the official page where I can confirm the date, such as the NSE holiday list, NSE or BSE corporate announcements, the RBI press release, the official Union Budget announcement or the Federal Reserve's meeting calendar. Do not fill in any dates yourself. If you mention a typical time of day, label it Guess and tell me where to confirm it. Do not recommend any stock, do not predict what any event will announce or how the market will move, and do not give buy or sell advice, targets or return expectations."
+  },
+  {
+   "title": {
+    "en": "Event or noise?",
+    "hi": "Event ya shor?",
+    "dv": "इवेंट या शोर?"
+   },
+   "body": "I will paste up to 10 items I collected about the coming month: headlines, forwarded messages and my own notes. Before pasting, I will remove names, phone numbers, group names, links and any personal details. If an item tells me to buy or sell a stock, or gives a price target or a return, label it Kachra and do not discuss it as a trade. A dated company event, such as a results board meeting or an ex-date, is fine to sort. For each item, tell me: (1) is it a scheduled event with a date I can verify, or just noise; (2) place: one stock, the Indian market, or the world; (3) timing: during Indian market hours or overnight; (4) which kind of trade it matters for: an overnight swing trade, an intraday opening-range trade, or neither. Label every claim in your answer Fact (I can confirm it on an official site you name), Guess (plausible but unconfirmed) or Kachra (rumour, hype, or something nobody can know in advance, such as what a policy will announce). Do not predict outcomes or market direction, do not recommend any stock, and do not give buy or sell advice, targets or return expectations."
+  },
+  {
+   "title": {
+    "en": "Big-day FOMO check",
+    "hi": "Big-day FOMO check",
+    "dv": "बड़े दिन का FOMO चेक"
+   },
+   "body": "Act as a calm trading-psychology coach. Ask me 5 short questions, one at a time, about how I feel and behave on big market days such as Budget day, an RBI policy day or a results day for a stock I follow: what I watch, whom I listen to, and what I did the last time I felt I might miss out. After my answers, summarise in plain words where FOMO is pulling me, and help me write one short line for my Rule Card that says what I will do instead of trading on such days. Do not ask for any personal or financial details, do not predict any event or market move, and do not give buy or sell advice, targets or return expectations."
+  }
+ ],
+ "journal_prompt": {
+  "en": "Which date on your new calendar pulls at you the most, and why? Write the exact rule you will follow that day, and count how many trading days your rules block in the next 30. Is that a list you will actually obey?",
+  "hi": "Aapke naye calendar ki kaunsi date aapko sabse zyada kheenchti hai, aur kyun? Us din ka exact rule likhiye, aur giniye ki agle 30 din mein aapke rules kitne trading days block karte hain. Kya yeh aisi list hai jise aap sach mein maanenge?",
+  "dv": "आपके नए कैलेंडर की कौन-सी तारीख़ आपको सबसे ज़्यादा खींचती है, और क्यों? उस दिन का ठीक-ठीक नियम लिखिए, और गिनिए कि अगले 30 दिन में आपके नियम कितने ट्रेडिंग दिन ब्लॉक करते हैं। क्या यह ऐसी लिस्ट है जिसे आप सच में मानेंगे?"
+ },
+ "motivation": {
+  "en": "Today you put the market's big days on paper before they arrived. Deciding calmly on a Sunday is what lets you stay calm on a Budget morning.",
+  "hi": "Aaj aapne market ke bade din unke aane se pehle hi kaagaz par utaar liye. Sunday ko shaanti se liya gaya faisla hi Budget wali subah aapko shaant rakhta hai.",
+  "dv": "आज आपने बाज़ार के बड़े दिन उनके आने से पहले ही काग़ज़ पर उतार लिए। रविवार को शांति से लिया गया फ़ैसला ही बजट वाली सुबह आपको शांत रखता है।"
+ },
+ "quiz": [
+  {
+   "stem": {
+    "en": "Aman holds 250 shares of Kiran Foods Ltd, bought at Rs 800 with a stop at Rs 760, so 1R = Rs 10,000. Results come out after the close, and the next morning the stock opens at Rs 680. His stop fills at the open. What did the trade lose?",
+    "hi": "Aman ke paas Kiran Foods Ltd ke 250 shares hain, Rs 800 par khareede, stop Rs 760 par, yaani 1R = Rs 10,000. Market band hone ke baad results aate hain, aur agli subah stock Rs 680 par khulta hai. Stop open par hi fill hota hai. Is trade mein kitna loss hua?",
+    "dv": "अमन के पास Kiran Foods Ltd के 250 शेयर हैं, Rs 800 पर ख़रीदे, स्टॉप Rs 760 पर, यानी 1R = Rs 10,000। बाज़ार बंद होने के बाद नतीजे आते हैं, और अगली सुबह स्टॉक Rs 680 पर खुलता है। स्टॉप ओपन पर ही फ़िल होता है। इस ट्रेड में कितना नुक़सान हुआ?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "3R, about Rs 30,000",
+      "hi": "3R, lagbhag Rs 30,000",
+      "dv": "3R, लगभग Rs 30,000"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "2R, about Rs 20,000",
+      "hi": "2R, lagbhag Rs 20,000",
+      "dv": "2R, लगभग Rs 20,000"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "1R, as his stop planned",
+      "hi": "1R, jaisa stop mein tay tha",
+      "dv": "1R, जैसा स्टॉप में तय था"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "1.5R, about Rs 15,000",
+      "hi": "1.5R, lagbhag Rs 15,000",
+      "dv": "1.5R, लगभग Rs 15,000"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "The stop could not sell at Rs 760, because the first price after the results was Rs 680. Loss per share = Rs 800 - Rs 680 = Rs 120, and 250 x Rs 120 = Rs 30,000, which is 3R. The '2R' answer counts only the gap below the stop (Rs 760 - Rs 680) and forgets the Rs 40 a share he had already planned to lose. Results dates are usually public days in advance; that is exactly what a calendar is for.",
+    "hi": "Stop Rs 760 par bech hi nahi saka, kyunki results ke baad pehla price hi Rs 680 tha. Per share loss = Rs 800 - Rs 680 = Rs 120, aur 250 x Rs 120 = Rs 30,000, yaani 3R. '2R' wala jawab sirf stop ke neeche ka gap ginta hai (Rs 760 - Rs 680) aur woh Rs 40 per share bhool jaata hai jiska loss pehle se plan mein tha. Results ki date aam taur par kuch din pehle hi public ho jaati hai; calendar isi kaam ke liye hai.",
+    "dv": "स्टॉप Rs 760 पर बेच ही नहीं सका, क्योंकि नतीजों के बाद पहला प्राइस ही Rs 680 था। प्रति शेयर नुक़सान = Rs 800 - Rs 680 = Rs 120, और 250 x Rs 120 = Rs 30,000, यानी 3R। '2R' वाला जवाब सिर्फ़ स्टॉप के नीचे का गैप गिनता है (Rs 760 - Rs 680) और वह Rs 40 प्रति शेयर भूल जाता है जिसका नुक़सान पहले से प्लान में था। नतीजों की तारीख़ आम तौर पर कुछ दिन पहले ही पब्लिक हो जाती है; कैलेंडर इसी काम के लिए है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "On a day's leave from office, Aman paper-trades the optional ORB in a liquid cash stock. Today the RBI's policy decision is due at about 10 am, and his opening range forms from 9:15 to 9:30. What does a sensible no-trade list tell him?",
+    "hi": "Office se ek din ki chhutti par Aman ek liquid cash stock mein optional ORB paper par trade karta hai. Aaj RBI ka policy decision subah lagbhag 10 baje aana hai, aur uski opening range 9:15 se 9:30 ke beech banti hai. Ek samajhdaar no-trade list use kya kehti hai?",
+    "dv": "ऑफ़िस से एक दिन की छुट्टी पर अमन एक लिक्विड कैश स्टॉक में ऑप्शनल ORB पेपर पर ट्रेड करता है। आज RBI का पॉलिसी फ़ैसला सुबह लगभग 10 बजे आना है, और उसकी ओपनिंग रेंज 9:15 से 9:30 के बीच बनती है। एक समझदार नो-ट्रेड लिस्ट उससे क्या कहती है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Skip ORB today; the range forms before the news",
+      "hi": "Aaj ORB skip; range khabar se pehle banti hai",
+      "dv": "आज ORB छोड़ें; रेंज ख़बर से पहले बनती है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Trade it with a wider stop to ride out the swings",
+      "hi": "Trade kijiye, par swings ke liye stop chauda rakhiye",
+      "dv": "ट्रेड करें, पर झटकों के लिए स्टॉप चौड़ा रखें"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Trade it; RBI moves only banks",
+      "hi": "Trade kijiye; RBI sirf banks ko hilata hai",
+      "dv": "ट्रेड करें; RBI सिर्फ़ बैंकों को हिलाता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Trade it, but only if the range breaks before 10 am",
+      "hi": "Trade kijiye, par tabhi jab range 10 baje se pehle toote",
+      "dv": "ट्रेड करें, पर तभी जब रेंज 10 बजे से पहले टूटे"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "A range drawn before big news says little about what comes after it. When the decision lands mid-morning, prices can whip both ways and break the range for reasons your rule was never tested on. A wider stop does not fix that, an early break can reverse at 10, and RBI decisions can move the whole market, not just banks. The simple line: no ORB on RBI policy or Budget days.",
+    "hi": "Badi khabar se pehle bani range yeh nahi bata sakti ki khabar ke baad kya hoga. Jab decision subah 10 baje ke aas-paas aata hai, toh price dono taraf jhatke maar sakta hai aur range aisi wajah se toot sakti hai jis par aapka rule kabhi test hi nahi hua. Chauda stop yeh theek nahi karta, 10 baje se pehle ka break 10 baje palat sakta hai, aur RBI ke decisions sirf banks nahi, poore market ko hila sakte hain. Seedhi line: RBI policy ya Budget wale din ORB nahi.",
+    "dv": "बड़ी ख़बर से पहले बनी रेंज यह नहीं बता सकती कि ख़बर के बाद क्या होगा। जब फ़ैसला सुबह 10 बजे के आसपास आता है, तो प्राइस दोनों तरफ़ झटके मार सकता है और रेंज ऐसी वजह से टूट सकती है जिस पर आपका नियम कभी टेस्ट ही नहीं हुआ। चौड़ा स्टॉप इसे ठीक नहीं करता, 10 बजे से पहले का ब्रेक 10 बजे पलट सकता है, और RBI के फ़ैसले सिर्फ़ बैंक नहीं, पूरे बाज़ार को हिला सकते हैं। सीधी लाइन: RBI पॉलिसी या बजट वाले दिन ORB नहीं।"
+   }
+  },
+  {
+   "stem": {
+    "en": "You hold a swing position overnight. Which event is most likely to hit it as a gap at the next open, rather than as sharp moves during market hours?",
+    "hi": "Aapki swing position raat bhar hold hai. Kaunsa event uspar din ke jhatkon ki tarah nahi, balki agli subah ke open par gap bankar sabse zyada asar karega?",
+    "dv": "आपकी स्विंग पोज़िशन रात भर होल्ड है। कौन-सा इवेंट उस पर बाज़ार के घंटों के झटकों की तरह नहीं, बल्कि अगली सुबह के गैप की तरह सबसे ज़्यादा असर डालेगा?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "A US Fed decision during the Indian night",
+      "hi": "India ki raat mein aaya US Fed ka decision",
+      "dv": "भारत की रात में आया US फ़ेड का फ़ैसला"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "An RBI policy decision announced at about 10 am",
+      "hi": "Subah lagbhag 10 baje aaya RBI ka policy decision",
+      "dv": "सुबह लगभग 10 बजे आया RBI का पॉलिसी फ़ैसला"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "A Budget speech that starts around 11 am",
+      "hi": "11 baje ke aas-paas shuru hui Budget speech",
+      "dv": "11 बजे के आसपास शुरू हुआ बजट भाषण"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Results released at 1 pm, mid-session",
+      "hi": "Dopahar 1 baje aaye results",
+      "dv": "दोपहर 1 बजे आए नतीजे"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "The US Fed decides while Indian markets are shut, so Indian prices can react only at the next open, often with a gap. RBI decisions and the Budget speech usually land during market hours and whip prices within the day. Results released at 1 pm also hit during hours; many results, though, come after 3:30 pm and gap the next morning.",
+    "hi": "US Fed tab decision leta hai jab Indian market band hota hai, isliye Indian prices agle open par hi react kar paate hain, aksar gap ke saath. RBI ke decisions aur Budget speech aam taur par market ke ghanton mein aate hain aur din ke andar hi price ko jhatke dete hain. Dopahar 1 baje aaye results bhi ghanton ke andar hi asar karte hain; haan, kai results 3:30 ke baad aate hain aur agli subah gap banaate hain.",
+    "dv": "US फ़ेड तब फ़ैसला लेता है जब भारतीय बाज़ार बंद होता है, इसलिए भारतीय प्राइस अगले ओपन पर ही रिएक्ट कर पाते हैं, अक्सर गैप के साथ। RBI के फ़ैसले और बजट भाषण आम तौर पर बाज़ार के घंटों में आते हैं और दिन के अंदर ही प्राइस को झटके देते हैं। दोपहर 1 बजे आए नतीजे भी घंटों के अंदर ही असर करते हैं; हाँ, कई नतीजे 3:30 के बाद आते हैं और अगली सुबह गैप बनाते हैं।"
+   }
+  },
+  {
+   "stem": {
+    "en": "An AI chat tells you that Kiran Foods Ltd will announce its results on the 14th. Before you mark a no-trade rule on that date, what should you do?",
+    "hi": "Ek AI chat aapko batati hai ki Kiran Foods Ltd 14 tareekh ko results announce karegi. Us date par no-trade rule mark karne se pehle aapko kya karna chahiye?",
+    "dv": "एक AI चैट आपको बताती है कि Kiran Foods Ltd 14 तारीख़ को नतीजे घोषित करेगी। उस तारीख़ पर नो-ट्रेड नियम मार्क करने से पहले आपको क्या करना चाहिए?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Check the board-meeting notice on NSE or BSE",
+      "hi": "NSE ya BSE par board meeting ka notice check karein",
+      "dv": "NSE या BSE पर बोर्ड मीटिंग का नोटिस देखें"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Accept it; the date is very specific",
+      "hi": "Maan lijiye; date bilkul specific hai",
+      "dv": "मान लीजिए; तारीख़ एकदम सटीक बताई है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Ask the same AI again and trust a repeat answer",
+      "hi": "Usi AI se dobara poochhiye aur wahi jawab aaye toh maan lijiye",
+      "dv": "उसी AI से दोबारा पूछिए और वही जवाब आए तो मान लीजिए"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Look for the same date in a finfluencer's post",
+      "hi": "Kisi finfluencer ki post mein wahi date dhoondhiye",
+      "dv": "किसी फ़िनफ़्लुएंसर की पोस्ट में वही तारीख़ ढूँढिए"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "AI can invent or mix up dates, and a confident, specific answer is not evidence (Day 4). Companies give advance notice of the board meeting that approves results, and it appears under NSE or BSE corporate announcements. Asking the same AI twice checks nothing, and a social-media post is not an official source.",
+    "hi": "AI dates bana bhi sakta hai aur mila bhi sakta hai, aur confident, specific jawab koi saboot nahi hai (Day 4). Companies results approve karne wali board meeting ka notice pehle se deti hain, aur woh NSE ya BSE ke corporate announcements mein dikhta hai. Wahi AI se do baar poochhne se kuch check nahi hota, aur social media post official source nahi hai.",
+    "dv": "AI तारीख़ें गढ़ भी सकता है और मिला भी सकता है, और आत्मविश्वास से दिया गया साफ़ जवाब कोई सबूत नहीं है (दिन 4)। कंपनियाँ नतीजों को मंज़ूरी देने वाली बोर्ड मीटिंग का नोटिस पहले से देती हैं, और वह NSE या BSE के कॉर्पोरेट अनाउंसमेंट में दिखता है। उसी AI से दो बार पूछने से कुछ जाँच नहीं होती, और सोशल मीडिया की पोस्ट आधिकारिक सोर्स नहीं है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "A year later, Aman again takes Budget day off to paper-trade ORB, but his calendar marks it as a no-trade day for ORB, so he stays out. By the close NIFTY 50 is up 1%. How should he log the day in his journal?",
+    "hi": "Ek saal baad Aman phir Budget day ki chhutti leta hai taaki ORB paper par trade kare, lekin uske calendar mein woh din ORB ke liye no-trade day mark hai, isliye woh bahar rehta hai. Close tak NIFTY 50 1% upar hai. Use journal mein yeh din kaise likhna chahiye?",
+    "dv": "एक साल बाद अमन फिर बजट वाले दिन की छुट्टी लेता है ताकि ORB पेपर पर ट्रेड करे, लेकिन उसके कैलेंडर में वह दिन ORB के लिए नो-ट्रेड दिन मार्क है, इसलिए वह बाहर रहता है। क्लोज़ तक NIFTY 50 1% ऊपर है। उसे जर्नल में यह दिन कैसे लिखना चाहिए?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "As full adherence: he followed a written rule",
+      "hi": "Poora adherence: usne likha hua rule follow kiya",
+      "dv": "पूरा एडहेरेंस: उसने लिखा हुआ नियम माना"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "As a missed chance he should make up tomorrow",
+      "hi": "Ek chhoota hua mauka, jise kal poora karna chahiye",
+      "dv": "एक छूटा हुआ मौक़ा, जिसे कल पूरा करना चाहिए"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "As a mistake, because his rule cost him a winner",
+      "hi": "Ek galti, kyunki rule ne usse ek jeet chheen li",
+      "dv": "एक ग़लती, क्योंकि नियम ने उससे एक जीत छीन ली"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Not at all, since no trade means nothing to log",
+      "hi": "Kuch nahi, trade hi nahi hua toh likhna kya",
+      "dv": "कुछ नहीं, ट्रेड ही नहीं हुआ तो लिखना क्या"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "The close does not judge a rule: at 9:15 nobody knew the direction, and a 1% close says nothing about how wild the path was. A setup skipped because a written rule says so earns its adherence point (Day 12), and logging it builds the record that matters. 'Making up for it' tomorrow is FOMO pushing you into extra trades your rules never asked for.",
+    "hi": "Close kisi rule ka faisla nahi karta: 9:15 par direction kisi ko pata nahi thi, aur 1% ka close yeh nahi batata ki beech ka raasta kitna ulta-pulta tha. Likhe hue rule ki wajah se chhoda gaya setup apna adherence point kamata hai (Day 12), aur use likhne se hi woh record banta hai jo asli maayne rakhta hai. Kal 'bharpai' karne ki soch FOMO hai, jo aapse aise extra trades karwaati hai jo rules mein the hi nahi.",
+    "dv": "क्लोज़ किसी नियम का फ़ैसला नहीं करता: 9:15 पर दिशा किसी को पता नहीं थी, और 1% का क्लोज़ यह नहीं बताता कि बीच का रास्ता कितना उथल-पुथल भरा था। लिखे हुए नियम की वजह से छोड़ा गया सेटअप अपना एडहेरेंस वाला पॉइंट कमाता है (दिन 12), और उसे लिखने से ही वह रिकॉर्ड बनता है जो असल में मायने रखता है। कल 'भरपाई' करने की सोच FOMO है, जो आपसे ऐसे एक्स्ट्रा ट्रेड करवाती है जो नियमों में थे ही नहीं।"
+   }
+  }
+ ]
+}

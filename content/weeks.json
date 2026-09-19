@@ -2,22 +2,25 @@
  {
   "level": "foundation",
   "number": 1,
-  "title_en": "Market, maths and your AI co-pilot",
-  "title_hi": "Market, maths aur AI co-pilot",
+  "title_en": "How the market works, and the language of price",
+  "title_hi": "Market kaise chalta hai, aur price ki bhasha",
+  "title_dv": "बाज़ार कैसे चलता है, और प्राइस की भाषा",
   "theme_accent": "#00AEEF"
  },
  {
   "level": "foundation",
   "number": 2,
-  "title_en": "Two strategies, one risk rule",
-  "title_hi": "Do strategies, ek risk rule",
+  "title_en": "Risk first, strategy second",
+  "title_hi": "Risk pehle, strategy baad mein",
+  "title_dv": "रिस्क पहले, स्ट्रैटेजी बाद में",
   "theme_accent": "#134A9A"
  },
  {
   "level": "foundation",
   "number": 3,
-  "title_en": "Algo Level 1, backtest and your routine",
-  "title_hi": "Algo Level 1, backtest aur aapki routine",
+  "title_en": "Build your system, protect yourself",
+  "title_hi": "Apna system banao, khud ko bachao",
+  "title_dv": "अपना सिस्टम बनाएँ, ख़ुद को बचाएँ",
   "theme_accent": "#f5a623"
  },
  {

@@ -1,0 +1,1336 @@
+{
+ "day": 3,
+ "title": {
+  "en": "Trader vs gambler: the maths most beginners skip",
+  "hi": "Trader vs gambler: woh maths jo zyadatar beginners skip kar dete hain",
+  "dv": "ट्रेडर बनाम जुआरी: वो हिसाब जिसे ज़्यादातर नए लोग छोड़ देते हैं"
+ },
+ "tags": {
+  "concept": {
+   "en": "Expectancy, R-multiples, the breakeven win-rate and drawdown",
+   "hi": "Expectancy, R-multiple, breakeven win-rate aur drawdown",
+   "dv": "एक्सपेक्टेंसी, R-मल्टीपल, ब्रेकईवन विन-रेट और ड्रॉडाउन"
+  },
+  "ai_lab": {
+   "en": "Streak simulator: let a sheet show you luck",
+   "hi": "Streak simulator: luck ka khel sheet par dekhiye",
+   "dv": "स्ट्रीक सिम्युलेटर: क़िस्मत का खेल शीट पर देखिए"
+  },
+  "psychology": {
+   "en": "The lure of tips (tips ka lalach)",
+   "hi": "Tips ka lalach",
+   "dv": "टिप्स का लालच"
+  }
+ },
+ "strategy": null,
+ "duration_min": 75,
+ "story": {
+  "kind": "story",
+  "title": {
+   "en": "Seven out of eight",
+   "hi": "Aath mein se saat",
+   "dv": "आठ में से सात"
+  },
+  "panels": [
+   {
+    "who": "narrator",
+    "say": {
+     "en": "Tuesday, 8 pm. Aman joins the call with Priya and the mentor, phone already in hand.",
+     "hi": "Tuesday, raat 8 baje. Priya aur mentor ke saath call par Aman bhi judta hai, phone pehle se haath mein.",
+     "dv": "मंगलवार, रात 8 बजे। प्रिया और मेंटर के साथ कॉल पर अमन भी जुड़ता है, फ़ोन पहले से हाथ में।"
+    }
+   },
+   {
+    "who": "tipster",
+    "mood": "excited",
+    "say": {
+     "en": "Last week 7 out of 8 calls hit target. Sure-shot calls every morning at 9:10. Join Premium for just Rs 4,999. Only 20 seats left.",
+     "hi": "Pichhle hafte 8 mein se 7 calls ka target hit hua. Roz subah 9:10 par sure-shot calls. Premium join kijiye sirf Rs 4,999 mein. Sirf 20 seats bachi hain.",
+     "dv": "पिछले हफ़्ते 8 में से 7 कॉल का टारगेट हिट हुआ। रोज़ सुबह 9:10 पर श्योर-शॉट कॉल। प्रीमियम जॉइन कीजिए सिर्फ़ Rs 4,999 में। सिर्फ़ 20 सीटें बची हैं।"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "excited",
+    "say": {
+     "en": "Sir, look at this. Seven out of eight! If I just copy his calls, won't the Rs 4,999 come back in a week?",
+     "hi": "Sir, yeh dekhiye. Aath mein se saat! Bas uski calls copy kar loon, toh Rs 4,999 toh ek hafte mein wapas aa jayenge na?",
+     "dv": "सर, ये देखिए। आठ में से सात! बस उसकी कॉल कॉपी कर लूँ, तो Rs 4,999 तो एक हफ़्ते में वापस आ जाएँगे न?"
+    }
+   },
+   {
+    "who": "priya",
+    "mood": "thinking",
+    "say": {
+     "en": "Aman, what happened on the eighth call? He tells us how often he was right, not how much the wrong one cost.",
+     "hi": "Aman, aathvi call ka kya hua? Woh yeh bata raha hai ki kitni baar sahi tha, yeh nahi ki galat wali call mein kitna gaya.",
+     "dv": "अमन, आठवीं कॉल का क्या हुआ? वो ये बता रहा है कि कितनी बार सही था, ये नहीं कि ग़लत वाली कॉल में कितना गया।"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "thinking",
+    "say": {
+     "en": "Good question, Priya. Suppose each of the seven winning calls made Rs 1,000 and the one losing call lost Rs 8,000. Aman, how did that week end?",
+     "hi": "Achha sawaal hai, Priya. Maan lijiye saaton winning calls ne Rs 1,000-1,000 kamaye, aur ek losing call mein Rs 8,000 gaye. Aman, woh hafta kaisa khatam hua?",
+     "dv": "अच्छा सवाल है, प्रिया। मान लीजिए सातों जीतने वाली कॉल ने Rs 1,000-1,000 कमाए, और हारने वाली एक कॉल में Rs 8,000 गए। अमन, वो हफ़्ता कैसे ख़त्म हुआ?"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "worried",
+    "say": {
+     "en": "Seven thousand in, eight thousand out... Seven wins, and I am still Rs 1,000 down. Plus the fee.",
+     "hi": "Saat hazaar aaye, aath hazaar gaye... Saat jeet ke baad bhi main Rs 1,000 minus mein hoon. Upar se fees alag.",
+     "dv": "सात हज़ार आए, आठ हज़ार गए... सात जीत के बाद भी मैं Rs 1,000 घाटे में हूँ। ऊपर से फ़ीस अलग।"
+    }
+   }
+  ],
+  "moral": {
+   "en": "'How often' is only half the story. Before you trust any win-rate, ask 'how much'.",
+   "hi": "'Kitni baar' sirf aadhi kahani hai. Kisi bhi win-rate par bharosa karne se pehle poochhiye: 'kitna'?",
+   "dv": "'कितनी बार' सिर्फ़ आधी कहानी है। किसी भी विन-रेट पर भरोसा करने से पहले पूछिए: 'कितना'?"
+  }
+ },
+ "topics": [
+  {
+   "h": {
+    "en": "Trader or gambler: the difference is maths",
+    "hi": "Trader ya gambler: fark maths ka hai",
+    "dv": "ट्रेडर या जुआरी: फ़र्क़ हिसाब का है"
+   },
+   "p": {
+    "en": "A trader and a gambler both put money on a result nobody knows in advance; the difference is maths. A gambler bets on a feeling and never knows what an average bet makes or loses. A trader follows written rules, records every win and loss, and keeps each loss small enough to survive the next one. F&O means futures and options; we study them only on Day 18, and Stage 1 places no F&O trades: samjho, khelo mat. Separately, one official number is worth knowing now: SEBI FY26 study (Aug 2026): 87.7% of individual F&O traders were in net loss, aggregate Rs 91,685 crore, average Rs 1.17 lakh per loss-making trader. The study reports outcomes; it does not say why each trader lost.",
+    "hi": "Trader aur gambler, dono aise nateeje par paisa lagate hain jo pehle se kisi ko pata nahi hota; fark sirf maths ka hai. Gambler feeling par daav lagata hai, aur use kabhi pata nahi hota ki ek average daav mein kitna aata ya jaata hai. Trader likhe hue rules follow karta hai, har jeet aur haar record karta hai, aur har loss itna chhota rakhta hai ki agle trade ke liye capital bacha rahe. F&O yaani futures aur options; inhe hum sirf Day 18 par samjhenge, aur Stage 1 mein koi F&O trade nahi hota: samjho, khelo mat. Ek alag baat: ek official number abhi jaan lijiye: SEBI FY26 study (Aug 2026): 87.7% individual F&O traders net loss mein the, aggregate Rs 91,685 crore, average Rs 1.17 lakh per loss-making trader. Yeh study batati hai ki kya hua; har loss ki wajah nahi batati.",
+    "dv": "ट्रेडर और जुआरी, दोनों ऐसे नतीजे पर पैसा लगाते हैं जो पहले से किसी को पता नहीं होता; फ़र्क़ सिर्फ़ हिसाब का है। जुआरी मन के भरोसे दाँव लगाता है, और उसे कभी पता नहीं होता कि एक औसत दाँव में कितना आता या जाता है। ट्रेडर लिखे हुए नियम मानता है, हर जीत और हार दर्ज करता है, और हर लॉस इतना छोटा रखता है कि अगले ट्रेड के लिए कैपिटल बचा रहे। F&O यानी फ़्यूचर्स और ऑप्शन; इन्हें हम सिर्फ़ दिन 18 पर समझेंगे, और Stage 1 में कोई F&O ट्रेड नहीं होता: समझो, खेलो मत। एक अलग बात: एक आधिकारिक नंबर अभी जान लीजिए: SEBI FY26 स्टडी (Aug 2026): 87.7% इंडिविजुअल F&O ट्रेडर नेट लॉस में थे, कुल Rs 91,685 करोड़, और घाटे वाले हर ट्रेडर पर औसतन Rs 1.17 लाख। यह स्टडी बताती है कि क्या हुआ; हर लॉस की वजह नहीं बताती।"
+   },
+   "example": {
+    "en": "Think of a family card game. Ramesh uncle wins 6 hands out of 10 and tells everyone he is in form. But his wins are small, about Rs 200 a hand, because he settles for a small win the moment he is ahead, and his losses are big, about Rs 500 a hand, because he keeps raising his bet even on weak cards. Six wins bring in Rs 1,200; four losses cost Rs 2,000. He goes home Rs 800 poorer, still talking about his form. A trader would have written the numbers down and seen the problem on the first night.",
+    "hi": "Ghar par taash ki baazi sochiye. Ramesh uncle 10 mein se 6 baazi jeet jaate hain aur sabko bata dete hain ki woh form mein hain. Lekin unki jeet chhoti hoti hai, lagbhag Rs 200 ek baazi, kyunki thoda aage hote hi chhoti jeet le kar baazi khatam kar dete hain; aur haar badi, lagbhag Rs 500 ek baazi, kyunki kamzor patton par bhi chaal badhate rehte hain. 6 jeet se Rs 1,200 aaye; 4 haar mein Rs 2,000 chale gaye. Woh Rs 800 ganwa kar ghar jaate hain, aur phir bhi apne form ki baat karte rehte hain. Ek trader pehli hi raat numbers likh leta, aur problem use turant dikh jaati.",
+    "dv": "घर पर ताश की बाज़ी सोचिए। रमेश अंकल 10 में से 6 बाज़ी जीत जाते हैं और सबको बता देते हैं कि वो फ़ॉर्म में हैं। लेकिन उनकी जीत छोटी होती है, लगभग Rs 200 एक बाज़ी, क्योंकि थोड़ा आगे होते ही छोटी जीत लेकर बाज़ी ख़त्म कर देते हैं; और हार बड़ी, लगभग Rs 500 एक बाज़ी, क्योंकि कमज़ोर पत्तों पर भी चाल बढ़ाते रहते हैं। 6 जीत से Rs 1,200 आए; 4 हार में Rs 2,000 चले गए। वो Rs 800 गँवाकर घर जाते हैं, और फिर भी अपने फ़ॉर्म की बात करते रहते हैं। एक ट्रेडर पहली ही रात नंबर लिख लेता, और गड़बड़ उसे तुरंत दिख जाती।"
+   },
+   "remember": {
+    "en": "A gambler counts wins. A trader counts wins, losses and the size of each.",
+    "hi": "Gambler sirf jeet ginta hai. Trader jeet, haar aur dono ka size ginta hai.",
+    "dv": "जुआरी सिर्फ़ जीत गिनता है। ट्रेडर जीत, हार और दोनों का साइज़ गिनता है।"
+   },
+   "visual": {
+    "kind": "compare",
+    "title": {
+     "en": "Same uncertainty, two approaches",
+     "hi": "Uncertainty ek, tareeke do",
+     "dv": "अनिश्चितता एक, तरीक़े दो"
+    },
+    "caption": {
+     "en": "Both face the same market. Only one knows the numbers of the game.",
+     "hi": "Market dono ke liye ek hi hai. Khel ke numbers sirf ek ko pata hain.",
+     "dv": "बाज़ार दोनों के लिए एक ही है। खेल के नंबर सिर्फ़ एक को पता हैं।"
+    },
+    "cols": [
+     {
+      "head": {
+       "en": "Gambler",
+       "hi": "Gambler",
+       "dv": "जुआरी"
+      },
+      "tone": "down",
+      "points": [
+       {
+        "en": "Bets on a feeling or a tip",
+        "hi": "Feeling ya tip par daav",
+        "dv": "मन या टिप के भरोसे दाँव"
+       },
+       {
+        "en": "Remembers only the wins",
+        "hi": "Sirf jeet yaad rakhta hai",
+        "dv": "सिर्फ़ जीत याद रखता है"
+       },
+       {
+        "en": "Bet size changes with mood",
+        "hi": "Daav ka size mood ke saath badalta hai",
+        "dv": "दाँव का साइज़ मूड के साथ बदलता है"
+       },
+       {
+        "en": "One bad night can end it",
+        "hi": "Ek buri raat sab khatam kar sakti hai",
+        "dv": "एक बुरी रात सब ख़त्म कर सकती है"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "Trader",
+       "hi": "Trader",
+       "dv": "ट्रेडर"
+      },
+      "tone": "up",
+      "points": [
+       {
+        "en": "Follows written rules",
+        "hi": "Likhe hue rules follow karta hai",
+        "dv": "लिखे हुए नियम मानता है"
+       },
+       {
+        "en": "Records every win and loss",
+        "hi": "Har jeet aur haar record karta hai",
+        "dv": "हर जीत और हार दर्ज करता है"
+       },
+       {
+        "en": "Keeps each loss small",
+        "hi": "Har loss chhota rakhta hai",
+        "dv": "हर लॉस छोटा रखता है"
+       },
+       {
+        "en": "Judges after 30+ trades",
+        "hi": "30+ trades ke baad judge karta hai",
+        "dv": "30+ ट्रेड के बाद परखता है"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "R: one ruler for every trade",
+    "hi": "R: har trade ke liye ek hi scale",
+    "dv": "R: हर ट्रेड के लिए एक ही पैमाना"
+   },
+   "p": {
+    "en": "Before a trade, a trader decides the price at which the idea is proved wrong and places a stop-loss there (Day 2). The money you lose if that stop is hit is your planned risk, called 1R: the distance to the stop multiplied by the number of shares. Every result is then counted in R: a gain of twice your planned risk is +2R, and a trade that hits its stop is -1R. R puts a trade risking Rs 500 and one risking Rs 5,000 on the same scale, and '-1R, as planned' is easier to accept than 'I lost Rs 5,000'. From Day 12, when paper trading starts, your journal records every trade in R.",
+    "hi": "Trade se pehle trader tay kar leta hai ki kis price par uska idea galat saabit hoga, aur wahan stop-loss laga deta hai (Day 2). Woh stop hit ho jaye toh jitna paisa jayega, wahi aapka planned risk hai, jise 1R kehte hain: stop tak ki doori x shares ki ginti. Phir har result R mein gina jaata hai: planned risk ka do guna profit hua toh +2R, aur stop hit hua toh -1R. R ki wajah se Rs 500 risk wala trade aur Rs 5,000 risk wala trade ek hi scale par aa jaate hain, aur '-1R, jaisa plan tha' maan lena 'mera Rs 5,000 doob gaya' se kahin aasaan hai. Day 12 se, jab paper trading shuru hogi, aapke journal mein har trade R mein likha jayega.",
+    "dv": "ट्रेड से पहले ट्रेडर तय कर लेता है कि किस भाव पर उसका आइडिया ग़लत साबित होगा, और वहाँ स्टॉप-लॉस लगा देता है (दिन 2)। वो स्टॉप हिट हो जाए तो जितना पैसा जाएगा, वही आपका प्लान किया हुआ रिस्क है, जिसे 1R कहते हैं: स्टॉप तक की दूरी x शेयरों की गिनती। फिर हर नतीजा R में गिना जाता है: प्लान किए रिस्क का दोगुना प्रॉफ़िट हुआ तो +2R, और स्टॉप हिट हुआ तो -1R। R की वजह से Rs 500 रिस्क वाला ट्रेड और Rs 5,000 रिस्क वाला ट्रेड एक ही पैमाने पर आ जाते हैं, और '-1R, जैसा प्लान था' मान लेना 'मेरा Rs 5,000 डूब गया' से कहीं आसान है। दिन 12 से, जब पेपर ट्रेडिंग शुरू होगी, आपके जर्नल में हर ट्रेड R में लिखा जाएगा।"
+   },
+   "example": {
+    "en": "Priya works through a practice example in Gupta Cement Ltd: 40 shares at Rs 500, stop at Rs 490. Planned risk = Rs 10 x 40 = Rs 400, so 1R = Rs 400. If she exits at Rs 520, she gains Rs 20 x 40 = Rs 800, which is +2R. An exit at Rs 505 makes Rs 200, or +0.5R, and if the stop is hit she loses Rs 400, or -1R. But if bad news makes the share open at Rs 484, below her stop, the loss is Rs 16 x 40 = Rs 640, or -1.6R. A stop is your planned exit; it does not promise the exit price.",
+    "hi": "Priya ek practice example dekhti hai: Gupta Cement Ltd ke 40 shares Rs 500 par, stop Rs 490 par. Planned risk = Rs 10 x 40 = Rs 400, yaani 1R = Rs 400. Agar woh Rs 520 par exit kare, toh Rs 20 x 40 = Rs 800 ka profit, yaani +2R. Rs 505 par exit se Rs 200 milte hain, yaani +0.5R, aur stop hit hua toh Rs 400 jaate hain, yaani -1R. Lekin agar kisi buri khabar se share seedha Rs 484 par khule, stop se neeche, toh loss Rs 16 x 40 = Rs 640 hoga, yaani -1.6R. Stop aapka planned exit hai; exit price ka vada nahi karta.",
+    "dv": "प्रिया एक प्रैक्टिस उदाहरण देखती है: Gupta Cement Ltd के 40 शेयर Rs 500 पर, स्टॉप Rs 490 पर। प्लान किया रिस्क = Rs 10 x 40 = Rs 400, यानी 1R = Rs 400। अगर वो Rs 520 पर एग्ज़िट करे, तो Rs 20 x 40 = Rs 800 का प्रॉफ़िट, यानी +2R। Rs 505 पर एग्ज़िट से Rs 200 मिलते हैं, यानी +0.5R, और स्टॉप लगा तो Rs 400 जाते हैं, यानी -1R। लेकिन अगर किसी बुरी ख़बर से शेयर सीधे Rs 484 पर खुले, स्टॉप से नीचे, तो लॉस Rs 16 x 40 = Rs 640 होगा, यानी -1.6R। स्टॉप आपका प्लान किया हुआ एग्ज़िट है; एग्ज़िट प्राइस का वादा नहीं करता।"
+   },
+   "remember": {
+    "en": "1R = the rupees you lose if your stop is hit: distance to the stop x quantity.",
+    "hi": "1R = stop hit hone par jitne rupaye jaayenge: stop tak ki doori x quantity.",
+    "dv": "1R = स्टॉप हिट होने पर जितने रुपये जाएँगे: स्टॉप तक की दूरी x क्वांटिटी।"
+   },
+   "visual": {
+    "kind": "candles",
+    "title": {
+     "en": "The R ruler on a chart",
+     "hi": "Chart par R ka scale",
+     "dv": "चार्ट पर R का पैमाना"
+    },
+    "caption": {
+     "en": "Entry Rs 500, stop Rs 490, 40 shares, so 1R = Rs 400. The exit at Rs 520 made Rs 800: +2R. The dip to Rs 493 stayed above the stop.",
+     "hi": "Entry Rs 500, stop Rs 490, 40 shares, toh 1R = Rs 400. Rs 520 par exit se Rs 800 bane: +2R. Rs 493 tak ki girawat stop ke upar hi rahi.",
+     "dv": "एंट्री Rs 500, स्टॉप Rs 490, 40 शेयर, तो 1R = Rs 400। Rs 520 पर एग्ज़िट से Rs 800 बने: +2R। Rs 493 तक की गिरावट स्टॉप के ऊपर ही रही।"
+    },
+    "bars": [
+     [
+      497,
+      500,
+      495,
+      499
+     ],
+     [
+      499,
+      502,
+      497,
+      500
+     ],
+     [
+      500,
+      501,
+      495,
+      496
+     ],
+     [
+      496,
+      498,
+      493,
+      497
+     ],
+     [
+      497,
+      503,
+      496,
+      502
+     ],
+     [
+      502,
+      507,
+      501,
+      506
+     ],
+     [
+      506,
+      511,
+      504,
+      510
+     ],
+     [
+      510,
+      512,
+      506,
+      508
+     ],
+     [
+      508,
+      515,
+      507,
+      514
+     ],
+     [
+      514,
+      519,
+      513,
+      518
+     ],
+     [
+      518,
+      522,
+      516,
+      520
+     ]
+    ],
+    "levels": [
+     {
+      "y": 490,
+      "label": {
+       "en": "Stop -1R",
+       "hi": "Stop -1R",
+       "dv": "स्टॉप -1R"
+      },
+      "tone": "down"
+     },
+     {
+      "y": 500,
+      "label": {
+       "en": "Entry",
+       "hi": "Entry",
+       "dv": "एंट्री"
+      },
+      "tone": "brand",
+      "dashed": false
+     },
+     {
+      "y": 510,
+      "label": {
+       "en": "+1R",
+       "hi": "+1R",
+       "dv": "+1R"
+      },
+      "tone": "muted"
+     },
+     {
+      "y": 520,
+      "label": {
+       "en": "+2R",
+       "hi": "+2R",
+       "dv": "+2R"
+      },
+      "tone": "up"
+     }
+    ],
+    "marks": [
+     {
+      "i": 10,
+      "label": {
+       "en": "Exit +2R",
+       "hi": "Exit +2R",
+       "dv": "एग्ज़िट +2R"
+      },
+      "tone": "up",
+      "at": "high"
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Expectancy: what one trade is worth on average",
+    "hi": "Expectancy: ek trade average mein kitne ka hai",
+    "dv": "एक्सपेक्टेंसी: एक ट्रेड औसतन कितने का है"
+   },
+   "p": {
+    "en": "Win-rate is how often you win; payoff is how big your average win is compared with your average loss, say +1.5R against -1R. Expectancy joins the two into one number, the average result per trade over many trades: (win-rate x average win) - (loss-rate x average loss), where loss-rate = 1 - win-rate, and the average loss is written without its minus sign (1R, not -1R). A positive expectancy after costs is what traders call an edge. Costs such as brokerage, taxes and slippage (Day 2) come off every trade, so take the charges from your own contract note, add the slippage you saw, and count it all in R. Trust the number only after enough trades: at least 30 to judge a rule, and 100 for confidence.",
+    "hi": "Win-rate ka matlab hai aap kitni baar jeette hain; payoff ka matlab hai aapki average jeet aapki average haar ke muqable kitni badi hai, jaise +1.5R ke saamne -1R. Expectancy in dono ko jod kar ek number bana deti hai, yaani bahut saare trades par ek trade ka average result: (win-rate x average jeet) - (loss-rate x average haar), jahan loss-rate = 1 - win-rate, aur average haar bina minus ke likhiye (1R, -1R nahi). Costs ke baad bhi expectancy positive ho, toh traders use edge kehte hain. Brokerage, taxes aur slippage jaise costs (Day 2) har trade se katte hain, isliye charges apne contract note se lijiye, slippage alag se jodiye, aur sab R mein giniye. Is number par bharosa tabhi kijiye jab trades kaafi hon: rule judge karne ke liye kam se kam 30, aur confidence ke liye 100.",
+    "dv": "विन-रेट का मतलब है आप कितनी बार जीतते हैं; पेऑफ़ का मतलब है आपकी औसत जीत आपकी औसत हार के मुक़ाबले कितनी बड़ी है, जैसे +1.5R के सामने -1R। एक्सपेक्टेंसी इन दोनों को जोड़कर एक नंबर बना देती है, यानी बहुत सारे ट्रेड पर एक ट्रेड का औसत नतीजा: (विन-रेट x औसत जीत) - (लॉस-रेट x औसत हार), जहाँ लॉस-रेट = 1 - विन-रेट, और औसत हार बिना माइनस के लिखिए (1R, -1R नहीं)। कॉस्ट के बाद भी एक्सपेक्टेंसी पॉज़िटिव हो, तो ट्रेडर उसे एज (edge) कहते हैं। ब्रोकरेज, टैक्स और स्लिपेज जैसी कॉस्ट (दिन 2) हर ट्रेड से कटती हैं, इसलिए चार्ज अपने कॉन्ट्रैक्ट नोट से लीजिए, स्लिपेज अलग से जोड़िए, और सब R में गिनिए। इस नंबर पर भरोसा तभी कीजिए जब ट्रेड काफ़ी हों: नियम परखने के लिए कम से कम 30, और भरोसे के लिए 100।"
+   },
+   "example": {
+    "en": "A rule is tested on 100 past trades: 55 winners averaging +1.5R and 45 losers at -1R. The wins add 55 x 1.5 = 82.5R and the losses take away 45R. Say costs come to about 0.1R a trade, another 10R in all. That leaves 27.5R over 100 trades, or +0.275R per trade on average. Think of a chai stall: one cup's margin tells you nothing, but a month of cups, minus the day the kettle broke, tells you whether the stall works.",
+    "hi": "Ek rule ko pichhle 100 trades par test kiya gaya: 55 winners, average +1.5R, aur 45 losers, har ek -1R. Jeet se 55 x 1.5 = 82.5R jude aur haar se 45R ghat gaye. Maan lijiye costs har trade par lagbhag 0.1R hain, yaani kul 10R aur. Bache 27.5R, 100 trades par, yaani average mein har trade +0.275R. Chai ki tapri sochiye: ek cup ka margin kuch nahi batata, lekin mahine bhar ke cups ka hisaab, kettle toot jaane wale din ka kharcha ghata kar, batata hai ki tapri chal rahi hai ya nahi.",
+    "dv": "एक नियम को पिछले 100 ट्रेड पर टेस्ट किया गया: 55 जीतने वाले ट्रेड, औसत +1.5R, और 45 हारने वाले, हर एक -1R। जीत से 55 x 1.5 = 82.5R जुड़े और हार से 45R घट गए। मान लीजिए कॉस्ट हर ट्रेड पर लगभग 0.1R है, यानी कुल 10R और। बचे 27.5R, 100 ट्रेड पर, यानी औसतन हर ट्रेड +0.275R। चाय की टपरी सोचिए: एक कप का मार्जिन कुछ नहीं बताता, लेकिन महीने भर के कपों का हिसाब, केतली टूटने वाले दिन का ख़र्च घटाकर, बताता है कि टपरी चल रही है या नहीं।"
+   },
+   "remember": {
+    "en": "Edge = positive expectancy, after costs, over many trades. Not a feeling, and not one good week.",
+    "hi": "Edge = costs ke baad, bahut saare trades par positive expectancy. Na koi feeling, na ek achha hafta.",
+    "dv": "एज = कॉस्ट के बाद, बहुत सारे ट्रेड पर पॉज़िटिव एक्सपेक्टेंसी। न कोई फ़ीलिंग, न एक अच्छा हफ़्ता।"
+   },
+   "visual": {
+    "kind": "calc",
+    "title": {
+     "en": "Expectancy of one rule over 100 trades",
+     "hi": "100 trades par ek rule ki expectancy",
+     "dv": "100 ट्रेड पर एक नियम की एक्सपेक्टेंसी"
+    },
+    "caption": {
+     "en": "Illustrative numbers. Take your real costs from your own contract note.",
+     "hi": "Illustrative numbers hain. Asli costs apne contract note se lijiye.",
+     "dv": "ये उदाहरण के नंबर हैं। असली कॉस्ट अपने कॉन्ट्रैक्ट नोट से लीजिए।"
+    },
+    "rows": [
+     {
+      "label": {
+       "en": "55 wins x 1.5R",
+       "hi": "55 jeet x 1.5R",
+       "dv": "55 जीत x 1.5R"
+      },
+      "value": "82.5R"
+     },
+     {
+      "label": {
+       "en": "45 losses x 1R",
+       "hi": "45 haar x 1R",
+       "dv": "45 हार x 1R"
+      },
+      "value": "45R",
+      "op": "-"
+     },
+     {
+      "label": {
+       "en": "Costs: 100 trades x 0.1R",
+       "hi": "Costs: 100 trades x 0.1R",
+       "dv": "कॉस्ट: 100 ट्रेड x 0.1R"
+      },
+      "value": "10R",
+      "op": "-"
+     },
+     {
+      "label": {
+       "en": "Net over 100 trades",
+       "hi": "100 trades ka net",
+       "dv": "100 ट्रेड का नेट"
+      },
+      "value": "27.5R",
+      "op": "="
+     },
+     {
+      "label": {
+       "en": "Number of trades",
+       "hi": "Trades ki ginti",
+       "dv": "ट्रेड की गिनती"
+      },
+      "value": "100",
+      "op": "÷"
+     }
+    ],
+    "result": {
+     "label": {
+      "en": "Expectancy per trade",
+      "hi": "Har trade ki expectancy",
+      "dv": "हर ट्रेड की एक्सपेक्टेंसी"
+     },
+     "value": "+0.275R"
+    }
+   }
+  },
+  {
+   "h": {
+    "en": "The breakeven win-rate: judge any accuracy claim",
+    "hi": "Breakeven win-rate: har accuracy claim ko parakhne ka tareeka",
+    "dv": "ब्रेकईवन विन-रेट: हर एक्यूरेसी दावे को परखने का तरीक़ा"
+   },
+   "p": {
+    "en": "Breakeven means you neither make nor lose money. Every payoff needs a minimum win-rate to break even, and below it the method loses money even before costs. We write payoffs as risk : reward, so 1:2 means an average win of 2R for an average loss of 1R. The breakeven win-rate is 1 ÷ (1 + reward per 1R of risk): at 1:1 you must win 50% of trades, at 1:1.5 you need 40%, and at 1:2 about 33%. So a low win-rate can make money and a high one can still lose. When someone boasts about accuracy, ask one thing: how big is the average win compared with the average loss?",
+    "hi": "Breakeven ka matlab hai na profit, na loss. Har payoff mein breakeven tak pahunchne ke liye ek minimum win-rate chahiye; usse neeche method costs se pehle hi paisa ganwata hai. Payoff hum risk : reward ki tarah likhte hain, toh 1:2 ka matlab hai 1R ki average haar ke saamne 2R ki average jeet. Breakeven win-rate = 1 ÷ (1 + har 1R risk par milne wala reward): 1:1 par aapko 50% trades jeetne honge, 1:1.5 par 40%, aur 1:2 par lagbhag 33%. Yaani kam win-rate bhi paisa bana sakta hai, aur ooncha win-rate bhi paisa ganwa sakta hai. Jab koi apni accuracy ka dhol peete, toh bas ek sawaal poochhiye: average jeet, average haar ke muqable kitni badi hai?",
+    "dv": "ब्रेकईवन का मतलब है न प्रॉफ़िट, न लॉस। हर पेऑफ़ में ब्रेकईवन तक पहुँचने के लिए कम से कम एक तय विन-रेट चाहिए; उससे नीचे तरीक़ा कॉस्ट से पहले ही पैसा गँवाता है। पेऑफ़ हम रिस्क : रिवॉर्ड की तरह लिखते हैं, तो 1:2 का मतलब है 1R की औसत हार के सामने 2R की औसत जीत। ब्रेकईवन विन-रेट = 1 ÷ (1 + हर 1R रिस्क पर मिलने वाला रिवॉर्ड): 1:1 पर आपको 50% ट्रेड जीतने होंगे, 1:1.5 पर 40%, और 1:2 पर लगभग 33%। यानी कम विन-रेट भी पैसा बना सकता है, और ऊँचा विन-रेट भी पैसा गँवा सकता है। जब कोई अपनी एक्यूरेसी का ढोल पीटे, तो बस एक सवाल पूछिए: औसत जीत, औसत हार के मुक़ाबले कितनी बड़ी है?"
+   },
+   "example": {
+    "en": "A channel boasts '8 out of 10 calls right'. Its winners are booked quickly at about +0.2R, but its losers run to -1R. Breakeven for 1:0.2 is 1 ÷ 1.2, about 83%, so 80% accuracy still loses: 0.8 x 0.2 - 0.2 x 1 = -0.04R per trade, before costs. Priya's plan wins only 4 trades in 10, but her average win is +2R. Breakeven for 1:2 is 33%, and her expectancy is 0.4 x 2 - 0.6 x 1 = +0.2R per trade.",
+    "hi": "Ek channel shaan se kehta hai: '10 mein se 8 calls sahi'. Uske winners jaldi book ho jaate hain, lagbhag +0.2R par, lekin losers -1R tak chale jaate hain. 1:0.2 ka breakeven 1 ÷ 1.2 hai, lagbhag 83%, isliye 80% accuracy ke bawajood paisa jaata hai: 0.8 x 0.2 - 0.2 x 1 = har trade -0.04R, costs se pehle. Priya ka plan 10 mein se sirf 4 trade jeetta hai, lekin uski average jeet +2R hai. 1:2 ka breakeven 33% hai, aur uski expectancy 0.4 x 2 - 0.6 x 1 = har trade +0.2R.",
+    "dv": "एक चैनल शान से कहता है: '10 में से 8 कॉल सही'। उसके विनर जल्दी बुक हो जाते हैं, लगभग +0.2R पर, लेकिन लूज़र -1R तक चले जाते हैं। 1:0.2 का ब्रेकईवन 1 ÷ 1.2 है, लगभग 83%, इसलिए 80% एक्यूरेसी के बावजूद पैसा जाता है: 0.8 x 0.2 - 0.2 x 1 = हर ट्रेड -0.04R, कॉस्ट से पहले। प्रिया का प्लान 10 में से सिर्फ़ 4 ट्रेड जीतता है, लेकिन उसकी औसत जीत +2R है। 1:2 का ब्रेकईवन 33% है, और उसकी एक्सपेक्टेंसी 0.4 x 2 - 0.6 x 1 = हर ट्रेड +0.2R।"
+   },
+   "remember": {
+    "en": "Never judge a win-rate alone. Ask for the average win and the average loss.",
+    "hi": "Win-rate ko kabhi akele judge mat kijiye. Average jeet aur average haar, dono poochhiye.",
+    "dv": "विन-रेट को कभी अकेले मत परखिए। औसत जीत और औसत हार, दोनों पूछिए।"
+   },
+   "visual": {
+    "kind": "bars",
+    "title": {
+     "en": "Win-rate needed to break even",
+     "hi": "Breakeven ke liye zaroori win-rate",
+     "dv": "ब्रेकईवन के लिए ज़रूरी विन-रेट"
+    },
+    "caption": {
+     "en": "Labels are risk : reward. These are before costs; adding costs pushes each number a little higher.",
+     "hi": "Labels risk : reward hain. Yeh costs se pehle ke numbers hain; costs jodne par har number thoda aur badh jaata hai.",
+     "dv": "लेबल रिस्क : रिवॉर्ड हैं। ये कॉस्ट से पहले के नंबर हैं; कॉस्ट जोड़ने पर हर नंबर थोड़ा और बढ़ जाता है।"
+    },
+    "items": [
+     {
+      "label": {
+       "en": "1 : 0.2",
+       "hi": "1 : 0.2",
+       "dv": "1 : 0.2"
+      },
+      "value": 83.3,
+      "display": "83%",
+      "tone": "down"
+     },
+     {
+      "label": {
+       "en": "1 : 0.5",
+       "hi": "1 : 0.5",
+       "dv": "1 : 0.5"
+      },
+      "value": 66.7,
+      "display": "67%",
+      "tone": "down"
+     },
+     {
+      "label": {
+       "en": "1 : 1",
+       "hi": "1 : 1",
+       "dv": "1 : 1"
+      },
+      "value": 50,
+      "display": "50%",
+      "tone": "gold"
+     },
+     {
+      "label": {
+       "en": "1 : 1.5",
+       "hi": "1 : 1.5",
+       "dv": "1 : 1.5"
+      },
+      "value": 40,
+      "display": "40%",
+      "tone": "up"
+     },
+     {
+      "label": {
+       "en": "1 : 2",
+       "hi": "1 : 2",
+       "dv": "1 : 2"
+      },
+      "value": 33.3,
+      "display": "33%",
+      "tone": "up"
+     },
+     {
+      "label": {
+       "en": "1 : 3",
+       "hi": "1 : 3",
+       "dv": "1 : 3"
+      },
+      "value": 25,
+      "display": "25%",
+      "tone": "up"
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Losing streaks, drawdown and the long climb back",
+    "hi": "Losing streak, drawdown aur wapas upar aane ki lambi chadhai",
+    "dv": "लगातार हार, ड्रॉडाउन और वापसी की लंबी चढ़ाई"
+   },
+   "p": {
+    "en": "Even a good method loses several times in a row. At a 55% win-rate, the chance of at least one run of 5 losses in 100 trades is about 65%, and of 7 losses about 18%. Drawdown is how far your capital falls from its last high before it makes a new one. Risk of ruin is the chance that losses become so deep that you cannot, or will not, carry on. The climb back is always steeper than the fall: a 10% loss needs 11% to recover, 25% needs 33%, and 50% needs 100%. The size of each bet decides whether a normal streak is a dent or the end of the game; Day 9 turns this into the 1% rule.",
+    "hi": "Achha method bhi lagataar kai baar haar jaata hai. 55% win-rate par, 100 trades mein kam se kam ek baar lagataar 5 haar aane ka chance lagbhag 65% hai, aur lagataar 7 haar ka lagbhag 18%. Drawdown ka matlab hai aapka capital apne pichhle high se kitna neeche aaya, naya high banne se pehle. Risk of ruin woh chance hai ki loss itna gehra ho jaye ki aap aage khel hi na payein, ya khelne ki himmat hi na bache. Wapas upar chadhna hamesha girne se mushkil hota hai: 10% loss ke baad 11% chahiye, 25% ke baad 33%, aur 50% ke baad poore 100%. Har daav ka size hi tay karta hai ki normal streak sirf ek chot banegi ya khel hi khatam kar degi; Day 9 mein isi se 1% rule banega.",
+    "dv": "अच्छा तरीक़ा भी लगातार कई बार हार जाता है। 55% विन-रेट पर, 100 ट्रेड में कम से कम एक बार लगातार 5 हार आने का चांस लगभग 65% है, और लगातार 7 हार का लगभग 18%। ड्रॉडाउन का मतलब है आपका कैपिटल अपने पिछले हाई से कितना नीचे आया, नया हाई बनने से पहले। रिस्क ऑफ़ रुइन वो चांस है कि लॉस इतना गहरा हो जाए कि आप आगे खेल ही न पाएँ, या खेलने की हिम्मत ही न बचे। वापस ऊपर चढ़ना हमेशा गिरने से मुश्किल होता है: 10% लॉस के बाद 11% चाहिए, 25% के बाद 33%, और 50% के बाद पूरे 100%। हर दाँव का साइज़ ही तय करता है कि नॉर्मल स्ट्रीक सिर्फ़ एक चोट बनेगी या खेल ही ख़त्म कर देगी; दिन 9 में इसी से 1% रूल बनेगा।"
+   },
+   "example": {
+    "en": "Aman and Priya follow the same 20 practice trades: each win +1.5R, each loss -1R, with 7 losses in a row in the middle. Priya risks 1% of her capital on each trade, Aman 10%. After the streak Priya is about 7% below her peak, because seven 0.99s multiplied together leave 0.932. Aman is about 52% below his, because seven 0.9s multiplied together leave 0.478. To get back to his peak he now needs a gain of about 109%. Same trades, same luck; only the bet size was different.",
+    "hi": "Aman aur Priya same 20 practice trades follow karte hain: har jeet +1.5R, har haar -1R, aur beech mein lagataar 7 haar. Priya har trade par apne capital ka 1% risk karti hai, Aman 10%. Streak ke baad Priya apne peak se lagbhag 7% neeche hai, kyunki saat baar 0.99 ko aapas mein guna karne par 0.932 bachta hai. Aman apne peak se lagbhag 52% neeche hai, kyunki saat baar 0.9 ko guna karne par 0.478 bachta hai. Peak par wapas aane ke liye use ab lagbhag 109% ka gain chahiye. Trades wahi, luck wahi; fark sirf daav ke size ka tha.",
+    "dv": "अमन और प्रिया वही 20 प्रैक्टिस ट्रेड फ़ॉलो करते हैं: हर जीत +1.5R, हर हार -1R, और बीच में लगातार 7 हार। प्रिया हर ट्रेड पर अपने कैपिटल का 1% रिस्क करती है, अमन 10%। स्ट्रीक के बाद प्रिया अपने पीक से लगभग 7% नीचे है, क्योंकि सात बार 0.99 को आपस में गुणा करने पर 0.932 बचता है। अमन अपने पीक से लगभग 52% नीचे है, क्योंकि सात बार 0.9 को गुणा करने पर 0.478 बचता है। पीक पर वापस आने के लिए उसे अब लगभग 109% का गेन चाहिए। ट्रेड वही, क़िस्मत वही; फ़र्क़ सिर्फ़ दाँव के साइज़ का था।"
+   },
+   "remember": {
+    "en": "Losing streaks are part of the maths. Size your bets so you are still standing after one.",
+    "hi": "Losing streak maths ka hissa hai. Daav itna rakhiye ki streak ke baad bhi aap khade rahein.",
+    "dv": "लगातार हार हिसाब का हिस्सा है। दाँव इतना रखिए कि स्ट्रीक के बाद भी आप खड़े रहें।"
+   },
+   "visual": {
+    "kind": "line",
+    "title": {
+     "en": "Same trades, different bet size",
+     "hi": "Trades wahi, daav alag",
+     "dv": "ट्रेड वही, दाँव अलग"
+    },
+    "caption": {
+     "en": "Illustrative 20 trades (8 wins, 12 losses, 7 in a row), adding up to 0R. From its high, the 10% account fell 52%, the 1% account about 7%. Even at 0R, the 10% account ends 14% down.",
+     "hi": "Illustrative 20 trades (8 jeet, 12 haar, jinmein 7 lagataar), kul 0R. Apne high se 10% wala account 52% gira, 1% wala lagbhag 7%. Kul 0R hone par bhi 10% wala account 14% neeche khatam hua.",
+     "dv": "उदाहरण के 20 ट्रेड (8 जीत, 12 हार, जिनमें 7 लगातार), कुल 0R। अपने हाई से 10% वाला अकाउंट 52% गिरा, 1% वाला लगभग 7%। कुल 0R होने पर भी 10% वाला अकाउंट 14% नीचे ख़त्म हुआ।"
+    },
+    "x_label": {
+     "en": "Trade number",
+     "hi": "Trade number",
+     "dv": "ट्रेड नंबर"
+    },
+    "y_label": {
+     "en": "Capital (start 100)",
+     "hi": "Capital (start 100)",
+     "dv": "कैपिटल (शुरुआत 100)"
+    },
+    "series": [
+     {
+      "name": {
+       "en": "1% risk",
+       "hi": "1% risk",
+       "dv": "1% रिस्क"
+      },
+      "tone": "brand",
+      "points": [
+       100.0,
+       101.5,
+       103.0,
+       102.0,
+       103.5,
+       102.5,
+       101.5,
+       100.4,
+       99.4,
+       98.4,
+       97.5,
+       96.5,
+       97.9,
+       97.0,
+       98.4,
+       99.9,
+       98.9,
+       100.4,
+       99.4,
+       98.4,
+       99.9
+      ]
+     },
+     {
+      "name": {
+       "en": "10% risk",
+       "hi": "10% risk",
+       "dv": "10% रिस्क"
+      },
+      "tone": "down",
+      "points": [
+       100.0,
+       115.0,
+       132.2,
+       119.0,
+       136.9,
+       123.2,
+       110.9,
+       99.8,
+       89.8,
+       80.8,
+       72.7,
+       65.5,
+       75.3,
+       67.8,
+       77.9,
+       89.6,
+       80.7,
+       92.7,
+       83.5,
+       75.1,
+       86.4
+      ]
+     }
+    ],
+    "marks": [
+     {
+      "x": 4,
+      "label": {
+       "en": "Streak starts",
+       "hi": "Streak shuru",
+       "dv": "स्ट्रीक शुरू"
+      }
+     },
+     {
+      "x": 11,
+      "label": {
+       "en": "Streak ends",
+       "hi": "Streak khatam",
+       "dv": "स्ट्रीक ख़त्म"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "The lure of tips: why a tip feels so good",
+    "hi": "Tips ka lalach: tip itni achhi kyun lagti hai",
+    "dv": "टिप्स का लालच: टिप इतनी अच्छी क्यों लगती है"
+   },
+   "p": {
+    "en": "Lalach means greed, but a tip pulls on more than greed. It offers certainty in an uncertain market, it saves you the hard work of learning, it gives you someone else to blame, and a busy group makes you feel you belong. Tip sellers know this, so they shout about wins and stay quiet about the size of the losses, the total number of calls and the costs. Your defence is today's maths: before trusting any claim, ask for every call, the average win and the average loss in R, and the period covered. On Day 7 you will audit a practice set of 20 'tips' and learn how to check a SEBI registration.",
+    "hi": "Lalach ka matlab hai greed, lekin tip sirf greed se nahi kheenchti. Woh uncertain market mein certainty ka ehsaas deti hai, seekhne ki mehnat bacha deti hai, galat hone par kisi aur ko blame karne ka mauka deti hai, aur ek bhara hua group aapko apnapan mehsoos karata hai. Tip bechne wale yeh sab jaante hain, isliye jeet ka shor machate hain aur loss ke size, calls ki kul ginti aur costs par chup rehte hain. Aapka bachaav aaj ka maths hai: kisi bhi claim par bharosa karne se pehle har call ka record, R mein average jeet aur average haar, aur kitne time ka data hai, yeh sab maangiye. Day 7 par aap 20 practice 'tips' ka audit karenge aur SEBI registration check karna seekhenge.",
+    "dv": "लालच का मतलब है ज़्यादा पाने की चाह, लेकिन टिप सिर्फ़ लालच से नहीं खींचती। वो अनिश्चित बाज़ार में 'बात पक्की है' वाला एहसास देती है, सीखने की मेहनत बचा देती है, ग़लत होने पर किसी और को दोष देने का मौक़ा देती है, और एक भरा हुआ ग्रुप अपनेपन का एहसास कराता है। टिप बेचने वाले ये सब जानते हैं, इसलिए जीत का शोर मचाते हैं और लॉस के साइज़, कॉल की कुल गिनती और कॉस्ट पर चुप रहते हैं। आपका बचाव आज का हिसाब है: किसी भी दावे पर भरोसा करने से पहले हर कॉल का रिकॉर्ड, R में औसत जीत और औसत हार, और कितने समय का डेटा है, ये सब माँगिए। दिन 7 पर आप 20 प्रैक्टिस 'टिप्स' का ऑडिट करेंगे और SEBI रजिस्ट्रेशन जाँचना सीखेंगे।"
+   },
+   "example": {
+    "en": "Back to the story: suppose seven winning calls made Rs 1,000 each and one losing call cost Rs 8,000. Aman saw '7 out of 8'. Priya asked what the eighth call cost, and once the mentor put numbers on it, the week was Rs 1,000 down, or Rs 5,999 down after the Rs 4,999 fee. Same message, two questions: 'how often?' and 'how much?'",
+    "hi": "Story yaad kijiye: maan lijiye saat winning calls ne Rs 1,000-1,000 kamaye aur ek losing call mein Rs 8,000 gaye. Aman ne dekha '8 mein se 7'. Priya ne poochha ki aathvi call mein kitna gaya, aur mentor ke numbers lagate hi hafta Rs 1,000 ke loss mein nikla, aur Rs 4,999 ki fees jodkar Rs 5,999 ke loss mein. Message ek hi tha, sawaal do: 'kitni baar?' aur 'kitna?'",
+    "dv": "कहानी याद कीजिए: मान लीजिए सात जीतने वाली कॉल ने Rs 1,000-1,000 कमाए और हारने वाली एक कॉल में Rs 8,000 गए। अमन ने देखा '8 में से 7'। प्रिया ने पूछा कि आठवीं कॉल में कितना गया, और मेंटर के नंबर लगाते ही हफ़्ता Rs 1,000 के घाटे में निकला, और Rs 4,999 की फ़ीस जोड़कर Rs 5,999 के घाटे में। मैसेज एक ही था, सवाल दो: 'कितनी बार?' और 'कितना?'"
+   },
+   "remember": {
+    "en": "A tip sells certainty. Your defence is one sentence: show me the losses too.",
+    "hi": "Tip certainty bechti hai. Aapka bachaav ek line hai: losses bhi dikhaiye.",
+    "dv": "टिप 'पक्की बात' का एहसास बेचती है। आपका बचाव एक लाइन है: लॉस भी दिखाइए।"
+   },
+   "visual": {
+    "kind": "flow",
+    "title": {
+     "en": "The lalach loop",
+     "hi": "Lalach ka chakkar",
+     "dv": "लालच का चक्कर"
+    },
+    "caption": {
+     "en": "The next tip starts the loop again. Break it at box 2: do the maths before the money.",
+     "hi": "Agli tip se chakkar phir shuru hota hai. Ise box 2 par todiye: paisa lagane se pehle maths.",
+     "dv": "अगली टिप से चक्कर फिर शुरू होता है। इसे दूसरे बॉक्स पर तोड़िए: पैसा लगाने से पहले हिसाब।"
+    },
+    "nodes": [
+     {
+      "label": {
+       "en": "Tip arrives",
+       "hi": "Tip aati hai",
+       "dv": "टिप आती है"
+      },
+      "sub": {
+       "en": "'7 of 8 right'",
+       "hi": "'8 mein se 7 sahi'",
+       "dv": "'8 में से 7 सही'"
+      },
+      "tone": "brand"
+     },
+     {
+      "label": {
+       "en": "Maths skipped",
+       "hi": "Maths skip",
+       "dv": "हिसाब छूटा"
+      },
+      "sub": {
+       "en": "No one asks the loss size",
+       "hi": "Loss ka size koi nahi poochhta",
+       "dv": "लॉस का साइज़ कोई नहीं पूछता"
+      },
+      "tone": "gold"
+     },
+     {
+      "label": {
+       "en": "Big bet",
+       "hi": "Bada daav",
+       "dv": "बड़ा दाँव"
+      },
+      "sub": {
+       "en": "It feels certain",
+       "hi": "Sab pakka lagta hai",
+       "dv": "सब पक्का लगता है"
+      },
+      "tone": "gold"
+     },
+     {
+      "label": {
+       "en": "Big loss",
+       "hi": "Bada loss",
+       "dv": "बड़ा लॉस"
+      },
+      "sub": {
+       "en": "One call wipes out many wins",
+       "hi": "Ek call kai jeet mita deti hai",
+       "dv": "एक कॉल कई जीत मिटा देती है"
+      },
+      "tone": "down"
+     },
+     {
+      "label": {
+       "en": "Next tip",
+       "hi": "Agli tip",
+       "dv": "अगली टिप"
+      },
+      "sub": {
+       "en": "'To win it back'",
+       "hi": "'Wapas kamaane ke liye'",
+       "dv": "'वापस कमाने के लिए'"
+      },
+      "tone": "down"
+     }
+    ]
+   }
+  }
+ ],
+ "key_terms": [
+  {
+   "term": {
+    "en": "R (R-multiple)",
+    "hi": "R (R-multiple)",
+    "dv": "R (R-मल्टीपल)"
+   },
+   "meaning": {
+    "en": "1R is the rupees you lose if your stop is hit. Every result is counted in R: winning twice that risk is +2R.",
+    "hi": "1R woh rupaye hain jo stop hit hone par jaate hain. Har result R mein gina jaata hai: us risk ka do guna jeete toh +2R.",
+    "dv": "1R वो रुपये हैं जो स्टॉप हिट होने पर जाते हैं। हर नतीजा R में गिना जाता है: उस रिस्क का दोगुना जीते तो +2R।"
+   }
+  },
+  {
+   "term": {
+    "en": "Win-rate and payoff",
+    "hi": "Win-rate aur payoff",
+    "dv": "विन-रेट और पेऑफ़"
+   },
+   "meaning": {
+    "en": "Win-rate: how often you win. Payoff: how big the average win is compared with the average loss.",
+    "hi": "Win-rate: aap kitni baar jeette hain. Payoff: average jeet, average haar ke muqable kitni badi hai.",
+    "dv": "विन-रेट: आप कितनी बार जीतते हैं। पेऑफ़: औसत जीत, औसत हार के मुक़ाबले कितनी बड़ी है।"
+   }
+  },
+  {
+   "term": {
+    "en": "Expectancy",
+    "hi": "Expectancy",
+    "dv": "एक्सपेक्टेंसी"
+   },
+   "meaning": {
+    "en": "The average result per trade over many trades: (win-rate x average win) - (loss-rate x average loss) - costs per trade, with the average loss written without its minus sign (1R, not -1R). Positive after costs means an edge.",
+    "hi": "Bahut saare trades par ek trade ka average result: (win-rate x average jeet) - (loss-rate x average haar) - har trade ki cost; average haar bina minus ke likhiye (1R, -1R nahi). Costs ke baad bhi positive ho toh edge.",
+    "dv": "बहुत सारे ट्रेड पर एक ट्रेड का औसत नतीजा: (विन-रेट x औसत जीत) - (लॉस-रेट x औसत हार) - हर ट्रेड की कॉस्ट; औसत हार बिना माइनस के लिखिए (1R, -1R नहीं)। कॉस्ट के बाद भी पॉज़िटिव हो तो एज।"
+   }
+  },
+  {
+   "term": {
+    "en": "Breakeven win-rate",
+    "hi": "Breakeven win-rate",
+    "dv": "ब्रेकईवन विन-रेट"
+   },
+   "meaning": {
+    "en": "The lowest win-rate at which a payoff stops losing money, before costs: 1 ÷ (1 + reward per 1R). At 1:2 it is about 33%.",
+    "hi": "Woh sabse kam win-rate jahan payoff paisa ganwana band karta hai, costs se pehle: 1 ÷ (1 + har 1R par reward). 1:2 par lagbhag 33%.",
+    "dv": "वो सबसे कम विन-रेट जहाँ पेऑफ़ पैसा गँवाना बंद करता है, कॉस्ट से पहले: 1 ÷ (1 + हर 1R पर रिवॉर्ड)। 1:2 पर लगभग 33%।"
+   }
+  },
+  {
+   "term": {
+    "en": "Drawdown",
+    "hi": "Drawdown",
+    "dv": "ड्रॉडाउन"
+   },
+   "meaning": {
+    "en": "How far your capital falls from its last high before it makes a new high.",
+    "hi": "Aapka capital apne pichhle high se kitna gira, naya high banne se pehle.",
+    "dv": "आपका कैपिटल अपने पिछले हाई से कितना गिरा, नया हाई बनने से पहले।"
+   }
+  },
+  {
+   "term": {
+    "en": "Risk of ruin",
+    "hi": "Risk of ruin",
+    "dv": "रिस्क ऑफ़ रुइन"
+   },
+   "meaning": {
+    "en": "The chance that losses grow so deep that you cannot, or will not, carry on.",
+    "hi": "Woh chance ki loss itna gehra ho jaye ki aap aage khel hi na payein, ya khelna chhod dein.",
+    "dv": "वो चांस कि लॉस इतना गहरा हो जाए कि आप आगे खेल ही न पाएँ, या खेलना छोड़ दें।"
+   }
+  }
+ ],
+ "mindmap": {
+  "kind": "mindmap",
+  "center": {
+   "en": "Trader vs gambler: the maths",
+   "hi": "Trader vs gambler: maths",
+   "dv": "ट्रेडर बनाम जुआरी: हिसाब"
+  },
+  "branches": [
+   {
+    "label": {
+     "en": "R ruler",
+     "hi": "R ka scale",
+     "dv": "R का पैमाना"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "1R = loss if the stop hits",
+      "hi": "1R = stop hit par loss",
+      "dv": "1R = स्टॉप हिट पर लॉस"
+     },
+     {
+      "en": "Stop distance x quantity",
+      "hi": "Stop ki doori x quantity",
+      "dv": "स्टॉप की दूरी x क्वांटिटी"
+     },
+     {
+      "en": "A gap can cost more than 1R",
+      "hi": "Gap 1R se zyada le sakta hai",
+      "dv": "गैप 1R से ज़्यादा ले सकता है"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Expectancy",
+     "hi": "Expectancy",
+     "dv": "एक्सपेक्टेंसी"
+    },
+    "tone": "up",
+    "points": [
+     {
+      "en": "Win% x avg win - loss% x avg loss (1R, not -1R)",
+      "hi": "Win% x avg jeet - loss% x avg haar (1R, -1R nahi)",
+      "dv": "विन% x औसत जीत - लॉस% x औसत हार (1R, -1R नहीं)"
+     },
+     {
+      "en": "Subtract costs in R",
+      "hi": "Costs R mein ghataiye",
+      "dv": "कॉस्ट R में घटाइए"
+     },
+     {
+      "en": "30 to judge, 100 for confidence",
+      "hi": "30 par judge, 100 par zyada bharosa",
+      "dv": "30 पर परखें, 100 पर ज़्यादा भरोसा"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Breakeven",
+     "hi": "Breakeven",
+     "dv": "ब्रेकईवन"
+    },
+    "tone": "gold",
+    "points": [
+     {
+      "en": "1 ÷ (1 + reward per 1R)",
+      "hi": "1 ÷ (1 + har 1R par reward)",
+      "dv": "1 ÷ (1 + हर 1R पर रिवॉर्ड)"
+     },
+     {
+      "en": "1:1 = 50%, 1:1.5 = 40%, 1:2 = 33%",
+      "hi": "1:1 = 50%, 1:1.5 = 40%, 1:2 = 33%",
+      "dv": "1:1 = 50%, 1:1.5 = 40%, 1:2 = 33%"
+     },
+     {
+      "en": "High accuracy can still lose",
+      "hi": "Oonchi accuracy bhi paisa ganwa sakti hai",
+      "dv": "ऊँची एक्यूरेसी भी पैसा गँवा सकती है"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Streaks and drawdown",
+     "hi": "Streak aur drawdown",
+     "dv": "स्ट्रीक और ड्रॉडाउन"
+    },
+    "tone": "down",
+    "points": [
+     {
+      "en": "5 losses in a row are common",
+      "hi": "Lagataar 5 haar aam baat hai",
+      "dv": "लगातार 5 हार आम बात है"
+     },
+     {
+      "en": "-50% needs +100%",
+      "hi": "-50% ke baad +100% chahiye",
+      "dv": "-50% के बाद +100% चाहिए"
+     },
+     {
+      "en": "Bet size decides survival",
+      "hi": "Daav ka size tay karta hai kaun bachega",
+      "dv": "दाँव का साइज़ तय करता है कौन बचेगा"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "The lure of tips",
+     "hi": "Tips ka lalach",
+     "dv": "टिप्स का लालच"
+    },
+    "tone": "muted",
+    "points": [
+     {
+      "en": "Tips sell certainty",
+      "hi": "Tip certainty bechti hai",
+      "dv": "टिप 'पक्की बात' बेचती है"
+     },
+     {
+      "en": "Ask: show me the losses",
+      "hi": "Poochhiye: losses bhi dikhaiye",
+      "dv": "पूछिए: लॉस भी दिखाइए"
+     },
+     {
+      "en": "Day 7: audit 20 practice tips",
+      "hi": "Day 7: 20 practice tips ka audit",
+      "dv": "दिन 7: 20 प्रैक्टिस टिप्स का ऑडिट"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "One official number",
+     "hi": "Ek official number",
+     "dv": "एक आधिकारिक नंबर"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "SEBI FY26 study (Aug 2026)",
+      "hi": "SEBI FY26 study (Aug 2026)",
+      "dv": "SEBI FY26 स्टडी (Aug 2026)"
+     },
+     {
+      "en": "Reports outcomes, not reasons",
+      "hi": "Nateeja batati hai, wajah nahi",
+      "dv": "नतीजा बताती है, वजह नहीं"
+     },
+     {
+      "en": "F&O = samjho, khelo mat",
+      "hi": "F&O = samjho, khelo mat",
+      "dv": "F&O = समझो, खेलो मत"
+     }
+    ]
+   }
+  ]
+ },
+ "kaam": {
+  "en": "Do the maths yourself: build a 10-trade expectancy sheet, test one accuracy claim and see what a losing streak does (25 minutes core, plus an optional 20-minute stretch).",
+  "hi": "Maths khud kijiye: 10 trades ki expectancy sheet banaiye, ek accuracy claim parakhiye, aur dekhiye ki losing streak kya karti hai (25 minute ka core kaam, aur 20 minute ka optional stretch).",
+  "dv": "हिसाब ख़ुद कीजिए: 10 ट्रेड की एक्सपेक्टेंसी शीट बनाइए, एक एक्यूरेसी दावा परखिए, और देखिए कि लगातार हार क्या करती है (25 मिनट का मुख्य काम, और 20 मिनट का ऑप्शनल स्ट्रेच)।"
+ },
+ "kaam_steps": [
+  {
+   "en": "Open a new Google Sheet and type these 10 practice results, in R, into cells A1 to A10: 2, -1, -1, 1.5, -1, 2, -1, -1, 3, -1.",
+   "hi": "Ek nayi Google Sheet kholiye aur yeh 10 practice results, R mein, cell A1 se A10 tak type kijiye: 2, -1, -1, 1.5, -1, 2, -1, -1, 3, -1.",
+   "dv": "एक नई Google Sheet खोलिए और ये 10 प्रैक्टिस नतीजे, R में, सेल A1 से A10 तक टाइप कीजिए: 2, -1, -1, 1.5, -1, 2, -1, -1, 3, -1।"
+  },
+  {
+   "en": "In cell B1 type =AVERAGE(A1:A10). This is the expectancy per trade, before costs; check that it shows 0.25, that is +0.25R.",
+   "hi": "Cell B1 mein =AVERAGE(A1:A10) type kijiye. Yahi costs se pehle har trade ki expectancy hai; check kijiye ki 0.25 dikh raha hai, yaani +0.25R.",
+   "dv": "सेल B1 में =AVERAGE(A1:A10) टाइप कीजिए। यही कॉस्ट से पहले हर ट्रेड की एक्सपेक्टेंसी है; देखिए कि 0.25 दिख रहा है, यानी +0.25R।"
+  },
+  {
+   "en": "In cell B2 type =COUNTIF(A1:A10,\">0\")/10 for the win-rate; it shows 0.4, that is 40%. Just 4 wins in 10 still gave a positive expectancy, but 10 trades are far too few to judge a real rule.",
+   "hi": "Cell B2 mein win-rate ke liye =COUNTIF(A1:A10,\">0\")/10 type kijiye; 0.4 dikhega, yaani 40%. Sirf 4 jeet ke bawajood expectancy positive rahi, lekin asli rule judge karne ke liye 10 trades bahut kam hain.",
+   "dv": "सेल B2 में विन-रेट के लिए =COUNTIF(A1:A10,\">0\")/10 टाइप कीजिए; 0.4 दिखेगा, यानी 40%। सिर्फ़ 4 जीत के बावजूद एक्सपेक्टेंसी पॉज़िटिव रही, लेकिन असली नियम परखने के लिए 10 ट्रेड बहुत कम हैं।"
+  },
+  {
+   "en": "On your phone calculator, work out the breakeven win-rate for a 1:0.5 payoff (1 ÷ 1.5) and write in your notebook whether a '60% accuracy' claim with that payoff clears it (check: about 67%, so 60% does not clear it).",
+   "hi": "Phone ke calculator par 1:0.5 payoff ka breakeven win-rate nikaaliye (1 ÷ 1.5), aur notebook mein likhiye ki us payoff ke saath '60% accuracy' wala claim use paar karta hai ya nahi (check: lagbhag 67%, yaani 60% paar nahi karta).",
+   "dv": "फ़ोन के कैलकुलेटर पर 1:0.5 पेऑफ़ का ब्रेकईवन विन-रेट निकालिए (1 ÷ 1.5), और नोटबुक में लिखिए कि उस पेऑफ़ के साथ '60% एक्यूरेसी' वाला दावा उसे पार करता है या नहीं (जाँच: लगभग 67%, यानी 60% पार नहीं करता)।"
+  },
+  {
+   "en": "On the calculator, multiply 0.9 x 0.9 x ... until 0.9 appears seven times, then do the same with 0.99, and write how much of Rs 10,00,000 is left after 7 straight losses at 10% risk and at 1% risk (check: about Rs 4.78 lakh and Rs 9.32 lakh).",
+   "hi": "Calculator par saat baar 0.9 ko aapas mein guna kijiye (0.9 x 0.9 x ...), phir saat baar 0.99 ko, aur likhiye ki 10% aur 1% risk par lagataar 7 haar ke baad Rs 10,00,000 mein se kitna bachta hai (check: lagbhag Rs 4.78 lakh aur Rs 9.32 lakh).",
+   "dv": "कैलकुलेटर पर सात बार 0.9 को आपस में गुणा कीजिए (0.9 x 0.9 x ...), फिर सात बार 0.99 को, और लिखिए कि 10% और 1% रिस्क पर लगातार 7 हार के बाद Rs 10,00,000 में से कितना बचता है (जाँच: लगभग Rs 4.78 लाख और Rs 9.32 लाख)।"
+  },
+  {
+   "en": "Stretch, optional (about 20 more minutes; easier on a laptop): use the AI Lab prompt 'Streak simulator' to build a 100-trade sheet, and write down the longest losing streak it shows.",
+   "hi": "Stretch, optional (lagbhag 20 minute aur; laptop ho toh aasaan): AI Lab ke 'Streak simulator' prompt se 100 trades ki sheet banaiye, aur usmein dikhne wali sabse lambi losing streak likh lijiye.",
+   "dv": "स्ट्रेच, ऑप्शनल (लगभग 20 मिनट और; लैपटॉप हो तो आसान): AI Lab के 'स्ट्रीक सिम्युलेटर' प्रॉम्प्ट से 100 ट्रेड की शीट बनाइए, और उसमें दिखने वाली लगातार हार की सबसे लंबी स्ट्रीक लिख लीजिए।"
+  }
+ ],
+ "kaam_min": 25,
+ "outcome": {
+  "en": "By the end you can measure any trade in R, work out a method's expectancy and breakeven win-rate, explain why losing streaks and drawdowns must be survivable, and question any accuracy claim before it tempts you.",
+  "hi": "Aaj ke baad aap kisi bhi trade ko R mein naap payenge, kisi method ki expectancy aur breakeven win-rate nikaal payenge, samjha payenge ki losing streak aur drawdown jhelne laayak kyun hone chahiye, aur kisi bhi accuracy claim ke lalach mein aane se pehle us par sawaal utha payenge.",
+  "dv": "आज के बाद आप किसी भी ट्रेड को R में नाप पाएँगे, किसी तरीक़े की एक्सपेक्टेंसी और ब्रेकईवन विन-रेट निकाल पाएँगे, समझा पाएँगे कि लगातार हार और ड्रॉडाउन झेलने लायक़ क्यों होने चाहिए, और किसी भी एक्यूरेसी दावे के लालच में आने से पहले उस पर सवाल उठा पाएँगे।"
+ },
+ "tools": [
+  {
+   "en": "Google Sheets",
+   "hi": "Google Sheets",
+   "dv": "Google Sheets"
+  },
+  {
+   "en": "Phone calculator",
+   "hi": "Phone ka calculator",
+   "dv": "फ़ोन का कैलकुलेटर"
+  },
+  {
+   "en": "Notebook or journal",
+   "hi": "Notebook ya journal",
+   "dv": "नोटबुक या जर्नल"
+  },
+  {
+   "en": "Any AI chat",
+   "hi": "Koi bhi AI chat",
+   "dv": "कोई भी AI चैट"
+  }
+ ],
+ "fun": {
+  "en": "Coin-flip survival: everyone starts with 100 chips. Heads wins 1.5 times the bet, tails loses the bet. Half the group bets 2 chips a flip, half bets 20; a 20-chip player left with fewer than 20 chips is out. Each player flips their own coin 20 times, plots their chips on paper and marks their deepest fall from their high. Then compare: how many big bettors were knocked out, and whose fall could you have sat through calmly? This coin pays 1.5 to 1 on every win, an edge no real market hands you, so the big bettors who survive often finish with more chips; the real question is how many did not survive, and how close the rest came. Alone? Play the big-bet role 5 times with fresh flips and count the knock-outs.",
+  "hi": "Coin-flip survival: sab 100 chips se shuru karte hain. Heads aaye toh daav ka 1.5 guna jeet, tails aaye toh daav gaya. Aadha group har flip par 2 chips lagata hai, aadha 20; 20 wale ke paas 20 se kam chips bachein toh woh game se bahar. Har player apna coin 20 baar uchhale, apne chips kaagaz par plot kare, aur apne high se sabse gehri girawat mark kare. Phir dekhiye: bade daav wale kitne log bahar hue, aur kiski girawat aap shaanti se jhel paate? Yeh coin har jeet par 1.5 guna deta hai, jo asli market kabhi nahi deta, isliye bade daav wale jo bach gaye unke paas aksar zyada chips hote hain; asli sawaal yeh hai ki kitne nahi bache, aur baaki khel khatam hone ke kitne kareeb pahunch gaye. Akele hain? Bade daav wala role 5 baar, har baar naye flips ke saath, khel kar giniye ki kitni baar bahar hue.",
+  "dv": "कॉइन-फ़्लिप सर्वाइवल: सब 100 चिप्स से शुरू करते हैं। हेड आए तो दाँव का 1.5 गुना जीत, टेल आए तो दाँव गया। आधा ग्रुप हर फ़्लिप पर 2 चिप्स लगाता है, आधा 20; 20 वाले के पास 20 से कम चिप्स बचें तो वो खेल से बाहर। हर खिलाड़ी अपना सिक्का 20 बार उछाले, अपने चिप्स काग़ज़ पर प्लॉट करे, और अपने हाई से सबसे गहरी गिरावट मार्क करे। फिर देखिए: बड़े दाँव वाले कितने लोग बाहर हुए, और किसकी गिरावट आप शांति से झेल पाते? ये सिक्का हर जीत पर 1.5 गुना देता है, जो असली बाज़ार कभी नहीं देता, इसलिए बड़े दाँव वालों में जो बच गए उनके पास अक्सर ज़्यादा चिप्स होते हैं; असली सवाल ये है कि कितने नहीं बचे, और बाक़ी खेल ख़त्म होने के कितने क़रीब पहुँच गए। अकेले हैं? बड़े दाँव वाला रोल 5 बार, हर बार नए फ़्लिप के साथ, खेलकर गिनिए कि कितनी बार बाहर हुए।"
+ },
+ "compliance": "Educational content only, not investment advice. Stage 1 uses virtual money only and places no F&O trades, not even on paper. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
+ "prompts": [
+  {
+   "title": {
+    "en": "Streak simulator",
+    "hi": "Streak simulator",
+    "dv": "स्ट्रीक सिम्युलेटर"
+   },
+   "body": "Act as a patient spreadsheet tutor for a complete beginner in India. Give me step-by-step Google Sheets formulas for a 100-row trading simulation using made-up numbers. Put the inputs in their own cells: win-rate (default 55%), average win in R (default 1.5), average loss in R (1), risk per trade as a percentage of capital (default 1%) and starting capital (100). Each row should show: a random win or loss using RAND(), the result in R, running capital, the running peak, the drawdown from that peak in %, and the current losing streak. Add summary cells for the longest losing streak and the deepest drawdown. Then explain how to freeze one random sequence (copy the win/loss column and paste it as values only) so I can compare 1% and 10% risk on exactly the same trades, and how any edit to the sheet makes RAND() draw a fresh sequence, so I can see how much luck alone changes the picture. End with 5 plain lines on how to read the results. This is a teaching simulation: do not suggest any real strategy or stock, do not give buy or sell advice, and do not mention targets or expected returns."
+  },
+  {
+   "title": {
+    "en": "Check the tipster's maths",
+    "hi": "Tipster ka maths check kijiye",
+    "dv": "टिप वाले का हिसाब जाँचिए"
+   },
+   "body": "I will paste a made-up message from a tip channel, for example: '7 out of 8 calls hit target last week, join Premium for Rs 4,999'. Act as a calm, sceptical teacher. First, list what the message does not tell me: the total number of calls, the average win and the average loss in R, costs, the time period, and whether the sender is registered with SEBI. Then sort each claim in the message into one of three groups: can be checked (say where I could check it), cannot be checked, or a sales trick (pressure, scarcity or a promise), and give one line of reason for each. If I give you a win-rate and a payoff, work out the breakeven win-rate with 1 / (1 + reward per 1R of risk) and the expectancy per trade, showing each step. Do not name any real channel or stock, do not tell me to join any service, do not give buy or sell advice, and do not mention targets or return expectations."
+  },
+  {
+   "title": {
+    "en": "Quiz me on trading maths",
+    "hi": "Trading maths par mera quiz lijiye",
+    "dv": "ट्रेडिंग के हिसाब पर मेरा क्विज़ लीजिए"
+   },
+   "body": "Act as a friendly maths coach for a beginner trader in India. Ask me 6 short numeric questions, one at a time, using made-up companies and round rupee numbers: two on R-multiples (1R = distance to the stop x quantity), two on expectancy and the breakeven win-rate, and two on drawdown and loss recovery. Wait for my answer each time, then show the correct working in simple steps and tell me where I slipped. At the end, name the one idea I should revise. Do not use real stock names, do not give buy or sell advice, and do not mention targets or return expectations."
+  }
+ ],
+ "journal_prompt": {
+  "en": "Think of a tip, forward or 'hot call' you have seen. What did it show you, and what did it leave out? Write the one question you will now ask before you trust any win-rate.",
+  "hi": "Koi tip, forward ya 'hot call' yaad kijiye jo aapne dekhi ho. Usne aapko kya dikhaya, aur kya chhupa liya? Woh ek sawaal likhiye jo aap ab kisi bhi win-rate par bharosa karne se pehle zaroor poochhenge.",
+  "dv": "कोई टिप, फ़ॉरवर्ड या 'हॉट कॉल' याद कीजिए जो आपने देखी हो। उसने आपको क्या दिखाया, और क्या छिपा लिया? वो एक सवाल लिखिए जो आप अब किसी भी विन-रेट पर भरोसा करने से पहले ज़रूर पूछेंगे।"
+ },
+ "motivation": {
+  "en": "Maths makes no promise of a win. It only tells you, honestly, which game you are playing, and that honesty is where a trader begins.",
+  "hi": "Maths jeet ka vada nahi karta. Woh bas imaandaari se batata hai ki aap kaunsa khel khel rahe hain, aur trader ki shuruaat usi imaandaari se hoti hai.",
+  "dv": "हिसाब जीत का वादा नहीं करता। वो बस ईमानदारी से बताता है कि आप कौन-सा खेल खेल रहे हैं, और ट्रेडर की शुरुआत उसी ईमानदारी से होती है।"
+ },
+ "quiz": [
+  {
+   "stem": {
+    "en": "Priya's practice plan: buy 100 shares of Kiran Foods Ltd at Rs 300, with a stop at Rs 294. She later exits at Rs 312. What is the result in R?",
+    "hi": "Priya ka practice plan: Kiran Foods Ltd ke 100 shares Rs 300 par, stop Rs 294 par. Baad mein woh Rs 312 par exit karti hai. R mein result kya hai?",
+    "dv": "प्रिया का प्रैक्टिस प्लान: Kiran Foods Ltd के 100 शेयर Rs 300 पर, स्टॉप Rs 294 पर। बाद में वो Rs 312 पर एग्ज़िट करती है। R में नतीजा क्या है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "+2R",
+      "hi": "+2R",
+      "dv": "+2R"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "+12R",
+      "hi": "+12R",
+      "dv": "+12R"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "+1R",
+      "hi": "+1R",
+      "dv": "+1R"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "+0.5R",
+      "hi": "+0.5R",
+      "dv": "+0.5R"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "1R is the planned loss if the stop is hit: Rs 6 x 100 shares = Rs 600. The gain is Rs 12 x 100 = Rs 1,200, twice the planned risk, so +2R. +12R mixes up rupees per share with R, +1R counts any win as one unit whatever its size, and +0.5R divides the risk by the gain instead of the gain by the risk.",
+    "hi": "1R woh planned loss hai jo stop hit hone par hota: Rs 6 x 100 shares = Rs 600. Profit hai Rs 12 x 100 = Rs 1,200, yaani planned risk ka do guna, isliye +2R. +12R ne per share rupaye ko hi R samajh liya, +1R har jeet ko ek hi unit maan leta hai chahe woh kitni bhi badi ho, aur +0.5R ne profit ko risk se bhaag dene ki jagah risk ko profit se bhaag de diya.",
+    "dv": "1R वो प्लान किया लॉस है जो स्टॉप हिट होने पर होता: Rs 6 x 100 शेयर = Rs 600। प्रॉफ़िट है Rs 12 x 100 = Rs 1,200, यानी प्लान किए रिस्क का दोगुना, इसलिए +2R। +12R ने प्रति शेयर रुपये को ही R समझ लिया, +1R हर जीत को एक ही यूनिट मान लेता है चाहे वो कितनी भी बड़ी हो, और +0.5R ने प्रॉफ़िट को रिस्क से भाग देने की जगह रिस्क को प्रॉफ़िट से भाग दे दिया।"
+   }
+  },
+  {
+   "stem": {
+    "en": "A rule wins half of its trades. Its average win is +1.5R and its average loss is -1R. What is its expectancy per trade, before costs?",
+    "hi": "Ek rule apne aadhe trades jeetta hai. Uski average jeet +1.5R hai aur average haar -1R. Costs se pehle har trade ki expectancy kya hai?",
+    "dv": "एक नियम अपने आधे ट्रेड जीतता है। उसकी औसत जीत +1.5R है और औसत हार -1R। कॉस्ट से पहले हर ट्रेड की एक्सपेक्टेंसी क्या है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "+0.25R",
+      "hi": "+0.25R",
+      "dv": "+0.25R"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "+0.5R",
+      "hi": "+0.5R",
+      "dv": "+0.5R"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "-0.25R",
+      "hi": "-0.25R",
+      "dv": "-0.25R"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Zero, since wins equal losses",
+      "hi": "Zero, kyunki jeet aur haar barabar hain",
+      "dv": "ज़ीरो, क्योंकि जीत और हार बराबर हैं"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Expectancy = (0.5 x 1.5R) - (0.5 x 1R) = 0.75R - 0.5R = +0.25R per trade. +0.5R forgets that wins and losses each happen only half the time. Costs from your contract note would lower this, so subtract them in R before you call it an edge.",
+    "hi": "Expectancy = (0.5 x 1.5R) - (0.5 x 1R) = 0.75R - 0.5R = har trade +0.25R. +0.5R bhool jaata hai ki jeet aur haar dono sirf aadhe time hoti hain. Contract note ke costs isse aur kam karenge, isliye edge kehne se pehle unhe R mein ghataiye.",
+    "dv": "एक्सपेक्टेंसी = (0.5 x 1.5R) - (0.5 x 1R) = 0.75R - 0.5R = हर ट्रेड +0.25R। +0.5R भूल जाता है कि जीत और हार दोनों सिर्फ़ आधे समय होती हैं। कॉन्ट्रैक्ट नोट की कॉस्ट इसे और कम करेगी, इसलिए एज कहने से पहले उसे R में घटाइए।"
+   }
+  },
+  {
+   "stem": {
+    "en": "A channel shows that 75% of its calls hit target. On average a winning call makes +0.25R and a losing call costs -1R. What does the maths say?",
+    "hi": "Ek channel dikhata hai ki uski 75% calls ka target hit hua. Average mein winning call +0.25R banati hai aur losing call -1R le jaati hai. Maths kya kehta hai?",
+    "dv": "एक चैनल दिखाता है कि उसकी 75% कॉल का टारगेट हिट हुआ। औसतन जीतने वाली कॉल +0.25R बनाती है और हारने वाली कॉल -1R ले जाती है। हिसाब क्या कहता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "It loses about 0.06R a trade, even before costs",
+      "hi": "Costs se pehle hi har trade lagbhag 0.06R ka loss",
+      "dv": "कॉस्ट से पहले ही हर ट्रेड लगभग 0.06R का घाटा"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "It is strong, since 75% accuracy is far above 50%",
+      "hi": "Strong hai, kyunki 75% accuracy 50% se kaafi upar hai",
+      "dv": "मज़बूत है, क्योंकि 75% एक्यूरेसी 50% से काफ़ी ऊपर है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "It makes about +0.19R a trade before costs",
+      "hi": "Costs se pehle har trade lagbhag +0.19R kamata hai",
+      "dv": "कॉस्ट से पहले हर ट्रेड लगभग +0.19R कमाता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "It breaks even: 75% is exactly its breakeven win-rate",
+      "hi": "Breakeven par hai: 75% hi iska breakeven win-rate hai",
+      "dv": "ब्रेकईवन पर है: 75% ही इसका ब्रेकईवन विन-रेट है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Breakeven for 1:0.25 is 1 ÷ 1.25 = 80%, and 75% is below it. 75% looks like breakeven only if you wrongly work out 1 - 0.25; the right formula gives 80%. Expectancy = 0.75 x 0.25R - 0.25 x 1R = 0.1875R - 0.25R, about -0.06R per trade before costs. +0.19R counts the wins but forgets the losses. Small wins with big losses need a very high win-rate just to stand still, so always ask for the average win and the average loss.",
+    "hi": "1:0.25 ka breakeven 1 ÷ 1.25 = 80% hai, aur 75% usse neeche hai. 75% breakeven tab lagta hai jab koi galti se 1 - 0.25 kar de; sahi formula se 80% aata hai. Expectancy = 0.75 x 0.25R - 0.25 x 1R = 0.1875R - 0.25R, yaani costs se pehle har trade lagbhag -0.06R. +0.19R sirf jeet ginta hai, haar bhool jaata hai. Chhoti jeet aur badi haar wale method ko sirf barabar rehne ke liye bhi bahut ooncha win-rate chahiye, isliye hamesha average jeet aur average haar dono poochhiye.",
+    "dv": "1:0.25 का ब्रेकईवन 1 ÷ 1.25 = 80% है, और 75% उससे नीचे है। 75% ब्रेकईवन तब लगता है जब कोई ग़लती से 1 - 0.25 कर दे; सही फ़ॉर्मूले से 80% आता है। एक्सपेक्टेंसी = 0.75 x 0.25R - 0.25 x 1R = 0.1875R - 0.25R, यानी कॉस्ट से पहले हर ट्रेड लगभग -0.06R। +0.19R सिर्फ़ जीत गिनता है, हार भूल जाता है। छोटी जीत और बड़ी हार वाले तरीक़े को सिर्फ़ बराबर रहने के लिए भी बहुत ऊँचा विन-रेट चाहिए, इसलिए हमेशा औसत जीत और औसत हार, दोनों पूछिए।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Aman's virtual account falls from Rs 10,00,000 to Rs 7,50,000. What gain does he now need on Rs 7,50,000 just to get back to Rs 10,00,000?",
+    "hi": "Aman ka virtual account Rs 10,00,000 se girkar Rs 7,50,000 par aa jaata hai. Wapas Rs 10,00,000 tak pahunchne ke liye use ab Rs 7,50,000 par kitna gain chahiye?",
+    "dv": "अमन का वर्चुअल अकाउंट Rs 10,00,000 से गिरकर Rs 7,50,000 पर आ जाता है। वापस Rs 10,00,000 तक पहुँचने के लिए उसे अब Rs 7,50,000 पर कितना गेन चाहिए?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "About 33%",
+      "hi": "Lagbhag 33%",
+      "dv": "लगभग 33%"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Exactly 25%",
+      "hi": "Theek 25%",
+      "dv": "ठीक 25%"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "About 20%",
+      "hi": "Lagbhag 20%",
+      "dv": "लगभग 20%"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "About 50%",
+      "hi": "Lagbhag 50%",
+      "dv": "लगभग 50%"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "He must earn back Rs 2,50,000 on a smaller base: 2,50,000 ÷ 7,50,000 = 33.3%. The fall was 25% of Rs 10 lakh, but the climb back is measured on what is left. The same maths makes -50% need +100%, which is why protecting capital comes first.",
+    "hi": "Use Rs 2,50,000 wapas kamane hain, lekin ab chhote base par: 2,50,000 ÷ 7,50,000 = 33.3%. Girawat Rs 10 lakh ka 25% thi, par wapsi bache hue paise par naapi jaati hai. Isi maths se -50% ke baad +100% chahiye, isliye capital bachana sabse pehle aata hai.",
+    "dv": "उसे Rs 2,50,000 वापस कमाने हैं, लेकिन अब छोटे बेस पर: 2,50,000 ÷ 7,50,000 = 33.3%। गिरावट Rs 10 लाख का 25% थी, पर वापसी बचे हुए पैसे पर नापी जाती है। इसी हिसाब से -50% के बाद +100% चाहिए, इसलिए कैपिटल बचाना सबसे पहले आता है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Priya's rule showed a 55% win-rate and a positive expectancy over 100 practice trades. Now it has lost 5 trades in a row. What is the most reasonable response?",
+    "hi": "Priya ke rule ne 100 practice trades mein 55% win-rate aur positive expectancy dikhayi. Ab woh lagataar 5 trades haar gaya hai. Sabse samajhdaar kadam kya hai?",
+    "dv": "प्रिया के नियम ने 100 प्रैक्टिस ट्रेड में 55% विन-रेट और पॉज़िटिव एक्सपेक्टेंसी दिखाई। अब वो लगातार 5 ट्रेड हार गया है। सबसे समझदारी भरा क़दम क्या है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Pause, and check she followed her rules; such streaks are common",
+      "hi": "Ruk kar check kare ki rules follow hue; aisi streak aam hai",
+      "dv": "रुककर जाँचे कि नियम माने गए; ऐसी स्ट्रीक आम है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Drop the rule at once, since five losses prove it has stopped working",
+      "hi": "Rule turant chhod de, kyunki paanch haar saabit karti hain ki woh kaam karna band kar chuka hai",
+      "dv": "नियम तुरंत छोड़ दे, क्योंकि पाँच हार साबित करती हैं कि वो काम करना बंद कर चुका है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Double the size of the next trade to win the losses back",
+      "hi": "Agle trade ka size double kare, taaki loss wapas aa jaye",
+      "dv": "अगले ट्रेड का साइज़ डबल करे, ताकि लॉस वापस आ जाए"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Take the next trade with confidence, since a win is now due",
+      "hi": "Agla trade poore confidence se le, kyunki ab jeet banti hai",
+      "dv": "अगला ट्रेड पूरे भरोसे से ले, क्योंकि अब जीत बनती है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "At a 55% win-rate, at least one run of 5 losses in 100 trades happens about 65% of the time, so a streak alone does not prove the rule is broken. First check whether she followed her rules and whether costs or market conditions have changed. Doubling up turns a normal streak into a deep drawdown, and no win is ever 'due': the market does not remember her last five trades. Later in the course you will learn a house rule to pause and review after a run like this.",
+    "hi": "55% win-rate par, 100 trades mein kam se kam ek baar lagataar 5 haar lagbhag 65% baar aati hai, isliye sirf streak se yeh saabit nahi hota ki rule toot gaya. Pehle check kijiye ki rules follow hue ya nahi, aur costs ya market ke halaat badle ya nahi. Size double karne se normal streak gehra drawdown ban jaati hai, aur koi jeet kabhi 'banti' nahi: market ko uske pichhle paanch trades yaad nahi rehte. Aage course mein aap aisi streak ke baad rukne aur review karne ka ek house rule seekhenge.",
+    "dv": "55% विन-रेट पर, 100 ट्रेड में कम से कम एक बार लगातार 5 हार लगभग 65% बार आती है, इसलिए सिर्फ़ स्ट्रीक से ये साबित नहीं होता कि नियम टूट गया। पहले जाँचिए कि नियम माने गए या नहीं, और कॉस्ट या बाज़ार के हालात बदले या नहीं। साइज़ डबल करने से नॉर्मल स्ट्रीक गहरा ड्रॉडाउन बन जाती है, और कोई जीत कभी 'बनती' नहीं: बाज़ार को उसके पिछले पाँच ट्रेड याद नहीं रहते। आगे कोर्स में आप ऐसी स्ट्रीक के बाद रुकने और रिव्यू करने का एक हाउस रूल सीखेंगे।"
+   }
+  }
+ ]
+}

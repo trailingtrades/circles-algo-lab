@@ -23,7 +23,8 @@ export async function proxy(req: NextRequest) {
   const isPublic = PUBLIC.some((r) => r.test(path));
   if (!supabaseConfigured()) {
     // Demo mode is for dev and CI only. The VPS build (basePath set) must never serve the app shell without auth.
-    return process.env.NEXT_PUBLIC_BASE_PATH && !isPublic ? new NextResponse("Service unavailable", { status: 503 }) : NextResponse.next();
+    // LOCAL_PREVIEW=1 is set only by the local preview launcher on Rahul's machine; the VPS env never carries it.
+    return process.env.NEXT_PUBLIC_BASE_PATH && !isPublic && process.env.LOCAL_PREVIEW !== "1" ? new NextResponse("Service unavailable", { status: 503 }) : NextResponse.next();
   }
   let res = NextResponse.next({ request: req });
   const sb = createServerClient(SUPABASE_URL, SUPABASE_ANON_KEY, {

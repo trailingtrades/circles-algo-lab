@@ -1,0 +1,695 @@
+{
+  "week": 3,
+  "questions": [
+    {
+      "stem": {
+        "en": "Under SEBI's rule for mutual funds, which companies count as mid caps?",
+        "hi": "Mutual funds ke liye SEBI ke rule mein mid cap kaun si companies maani jaati hain?",
+        "dv": "म्यूचुअल फ़ंड के लिए SEBI के नियम में मिड कैप किन कंपनियों को माना जाता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Those ranked 101 to 250 by market cap",
+            "hi": "Market-cap rank 101 se 250 wali companies",
+            "dv": "मार्केट-कैप रैंक 101 से 250 वाली कंपनियाँ"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Those with a share price from Rs 100 to Rs 500",
+            "hi": "Jinka share price Rs 100 se Rs 500 ke beech ho",
+            "dv": "जिनका शेयर प्राइस Rs 100 से Rs 500 के बीच हो"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Those ranked 251 to 500 on the AMFI list",
+            "hi": "AMFI list mein 251 se 500 rank wali companies",
+            "dv": "AMFI लिस्ट में 251 से 500 रैंक वाली कंपनियाँ"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Those ranked 51 to 150 by market cap",
+            "hi": "Market-cap rank 51 se 150 wali companies",
+            "dv": "मार्केट-कैप रैंक 51 से 150 वाली कंपनियाँ"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Market cap is share price x total number of shares, and the rank on that decides the tier: the top 100 are large caps, 101 to 250 are mid caps, and the rest are small caps. AMFI publishes the list every six months, so a tier can change. A share price alone says nothing about size: a Rs 100 share can belong to a bigger company than a Rs 5,000 share.",
+        "hi": "Market cap = share price x company ke kul shares, aur isi ke rank se tier tay hota hai: top 100 large cap, 101 se 250 mid cap, baaki sab small cap. AMFI yeh list har chhe mahine mein jaari karta hai, isliye tier badal bhi sakta hai. Akele share price se company ka size pata nahi chalta: Rs 100 wala share bhi Rs 5,000 wale share se badi company ka ho sakta hai.",
+        "dv": "मार्केट कैप = शेयर प्राइस x कंपनी के कुल शेयर, और इसी की रैंक से टियर तय होता है: टॉप 100 लार्ज कैप, 101 से 250 मिड कैप, बाक़ी सब स्मॉल कैप। AMFI यह लिस्ट हर छह महीने में जारी करता है, इसलिए टियर बदल भी सकता है। अकेले शेयर प्राइस से कंपनी का साइज़ पता नहीं चलता: Rs 100 वाला शेयर भी Rs 5,000 वाले शेयर से बड़ी कंपनी का हो सकता है।"
+      }
+    },
+    {
+      "stem": {
+        "en": "The course quotes only one F&O-loss figure: 'SEBI FY26 study (Aug 2026): 87.7% of individual F&O traders were in net loss, aggregate Rs 91,685 crore, average Rs 1.17 lakh per loss-making trader.' Which reading of it is accurate?",
+        "hi": "Course F&O loss ka sirf ek hi figure quote karta hai: 'SEBI FY26 study (Aug 2026): 87.7% individual F&O traders net loss mein the, aggregate Rs 91,685 crore, average Rs 1.17 lakh per loss-making trader.' Iska kaun sa matlab sahi hai?",
+        "dv": "कोर्स F&O नुक़सान का सिर्फ़ एक ही आँकड़ा देता है: 'SEBI FY26 स्टडी (Aug 2026): 87.7% इंडिविजुअल F&O ट्रेडर नेट लॉस में थे, कुल Rs 91,685 करोड़, और घाटे वाले हर ट्रेडर पर औसतन Rs 1.17 लाख।' इसका कौन-सा मतलब सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "It reports outcomes, not the reason behind each loss",
+            "hi": "Yeh figure batata hai kya hua, har loss ki wajah nahi",
+            "dv": "यह आँकड़ा बताता है कि क्या हुआ, हर लॉस की वजह नहीं"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "It counts only people who bought cheap far OTM options",
+            "hi": "Yeh sirf saste, door ke OTM options khareedne walon ko ginta hai",
+            "dv": "यह सिर्फ़ सस्ते, दूर के OTM ऑप्शन ख़रीदने वालों को गिनता है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "It counts losing trades, so most traders may still profit",
+            "hi": "Yeh losing trades ginta hai, isliye zyadatar traders shayad profit mein hon",
+            "dv": "यह घाटे वाले ट्रेड गिनता है, इसलिए ज़्यादातर ट्रेडर शायद फ़ायदे में हों"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "It leaves out anyone who placed a stop-loss on each trade",
+            "hi": "Har trade par stop-loss lagane wale ismein gine hi nahi gaye",
+            "dv": "हर ट्रेड पर स्टॉप-लॉस लगाने वाले इसमें गिने ही नहीं गए"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "The study counts results: how many individual F&O traders were in net loss, and how much they lost in all and on average. It counts traders, not trades, and it does not give the reason behind each loss, so never attach one to the figure. Separately, the course's own view is that Stage 1 learns F&O only as a concept: samjho, khelo mat.",
+        "hi": "Study nateeje ginti hai: kitne individual F&O traders net loss mein rahe, aur kul milakar aur average mein kitna loss hua. Yeh traders ko ginti hai, trades ko nahi, aur har loss ki wajah nahi batati, isliye is figure ke saath apni taraf se koi wajah mat jodiye. Alag se, course ki apni soch yeh hai ki Stage 1 mein F&O sirf samajhna hai: samjho, khelo mat.",
+        "dv": "स्टडी नतीजे गिनती है: कितने इंडिविजुअल F&O ट्रेडर नेट लॉस में रहे, और कुल मिलाकर और औसतन कितना नुक़सान हुआ। यह ट्रेडरों को गिनती है, ट्रेडों को नहीं, और हर लॉस की वजह नहीं बताती, इसलिए इस आँकड़े के साथ अपनी तरफ़ से कोई वजह मत जोड़िए। अलग से, कोर्स की अपनी सोच यह है कि Stage 1 में F&O सिर्फ़ समझना है: समझो, खेलो मत।"
+      }
+    },
+    {
+      "stem": {
+        "en": "On NSE's option chain, the open interest (OI) at one NIFTY 50 strike jumps during the day. What does that number, on its own, tell you?",
+        "hi": "NSE ki option chain par NIFTY 50 ke ek strike ka open interest (OI) din mein achanak badh jaata hai. Akele yeh number aapko kya batata hai?",
+        "dv": "NSE की ऑप्शन चेन पर NIFTY 50 के एक स्ट्राइक का ओपन इंटरेस्ट (OI) दिन में अचानक बढ़ जाता है। अकेले यह नंबर आपको क्या बताता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "More contracts are open, each with a buyer and a seller",
+            "hi": "Khule contracts badhe; har ek ka ek buyer, ek seller",
+            "dv": "खुले कॉन्ट्रैक्ट बढ़े; हर एक का ख़रीदार और बेचने वाला"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Buyers outnumber sellers, so the index is likely to rise",
+            "hi": "Buyers sellers se zyada hain, isliye index upar jayega",
+            "dv": "ख़रीदार बेचने वालों से ज़्यादा हैं, इसलिए इंडेक्स ऊपर जाएगा"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Sellers outnumber buyers, so the index is likely to fall",
+            "hi": "Sellers buyers se zyada hain, isliye index neeche jayega",
+            "dv": "बेचने वाले ख़रीदारों से ज़्यादा हैं, इसलिए इंडेक्स नीचे जाएगा"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "That strike is where the index is likely to end at expiry",
+            "hi": "Expiry par index shayad isi strike ke aas-paas khatam hoga",
+            "dv": "एक्सपायरी पर इंडेक्स शायद इसी स्ट्राइक के आसपास ख़त्म होगा"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "OI counts the contracts still open. Every contract has one buyer and one seller, so OI can never show 'more buyers than sellers'. It tells you how much is open at a strike, not which way the market will go. At this stage, OI and PCR are words to recognise, not signals to act on.",
+        "hi": "OI batata hai kitne contracts abhi khule hain. Har contract ke peeche ek buyer aur ek seller hota hai, isliye OI kabhi 'sellers se zyada buyers' dikha hi nahi sakta. Yeh bas itna batata hai ki us strike par kitna khula hai, yeh nahi ki market kis taraf jayega. Abhi ke liye OI aur PCR pehchaanne wale shabd hain, trade karne ke signal nahi.",
+        "dv": "OI बताता है कि कितने कॉन्ट्रैक्ट अभी खुले हैं। हर कॉन्ट्रैक्ट के पीछे एक ख़रीदार और एक बेचने वाला होता है, इसलिए OI कभी 'बेचने वालों से ज़्यादा ख़रीदार' दिखा ही नहीं सकता। यह बस इतना बताता है कि उस स्ट्राइक पर कितना खुला है, यह नहीं कि बाज़ार किस तरफ़ जाएगा। अभी के लिए OI और PCR पहचानने वाले शब्द हैं, ट्रेड करने के सिग्नल नहीं।"
+      }
+    },
+    {
+      "stem": {
+        "en": "SEBI's retail algo framework has been in force since 1 April 2026. Which of these falls outside it?",
+        "hi": "SEBI ka retail algo framework 1 April 2026 se lagu hai. Inmein se kaun si cheez uske daayre se bahar hai?",
+        "dv": "SEBI का रिटेल एल्गो फ़्रेमवर्क 1 अप्रैल 2026 से लागू है। इनमें से कौन-सी चीज़ उसके दायरे से बाहर है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A price alert that only sends a message to your phone",
+            "hi": "Price alert jo bas aapke phone par message bhejta hai",
+            "dv": "प्राइस अलर्ट जो बस आपके फ़ोन पर मैसेज भेजता है"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "A small program that places orders through a broker's API",
+            "hi": "Chhota program jo broker ke API se orders lagata hai",
+            "dv": "छोटा प्रोग्राम जो ब्रोकर के API से ऑर्डर लगाता है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A self-built algo used by its writer and his spouse only",
+            "hi": "Khud ka banaya algo, jise sirf banane wala aur uski patni chalate hain",
+            "dv": "ख़ुद का बनाया एल्गो, जिसे सिर्फ़ बनाने वाला और उसकी पत्नी चलाते हैं"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "An algo that stays below the exchange-set order-rate limit",
+            "hi": "Algo jo exchange ki order-rate limit se neeche hi rehta hai",
+            "dv": "एल्गो जो एक्सचेंज की ऑर्डर-रेट लिमिट से नीचे ही रहता है"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "The framework covers every order a program sends through a broker's API. The broker is the principal, each order carries an exchange Algo-ID, and an algo above the exchange-set order-rate limit must also be registered. A slow algo is still an algo, and use by the writer's family as SEBI defines it happens inside the framework, not outside it. Orders you tap in yourself, and alerts, are outside it. Check the SEBI and NSE sites for the latest.",
+        "hi": "Framework har us order par lagu hota hai jo koi program broker ke API se bhejta hai. Broker principal hai, har order par exchange ka Algo-ID hota hai, aur order-rate limit se upar chalne wale algo ko registration bhi chahiye. Dheere chalne wala algo bhi algo hi hai, aur SEBI jinhe family maanta hai, unka use bhi framework ke andar hi aata hai, bahar nahi. Jo orders aap khud lagate hain, aur alerts, framework ke bahar hain. Latest rules SEBI aur NSE ki site par check kijiye.",
+        "dv": "फ़्रेमवर्क हर उस ऑर्डर पर लागू होता है जो कोई प्रोग्राम ब्रोकर के API से भेजता है। ब्रोकर प्रिंसिपल है, हर ऑर्डर पर एक्सचेंज का Algo-ID होता है, और ऑर्डर-रेट लिमिट से ऊपर चलने वाले एल्गो का रजिस्ट्रेशन भी ज़रूरी है। धीमा चलने वाला एल्गो भी एल्गो ही है, और SEBI जिन्हें परिवार मानता है, उनका इस्तेमाल भी फ़्रेमवर्क के अंदर ही आता है, बाहर नहीं। जो ऑर्डर आप ख़ुद लगाते हैं, और अलर्ट, फ़्रेमवर्क से बाहर हैं। लेटेस्ट नियम SEBI और NSE की साइट पर देखिए।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Gupta Cement Ltd, a made-up company, announces a rights issue at a price below the market. Aman holds its shares and does nothing: he neither applies nor sells his rights. What happens to him?",
+        "hi": "Gupta Cement Ltd, ek made-up company, market se kam price par rights issue laati hai. Aman ke paas uske shares hain aur woh kuch nahi karta: na apply karta hai, na apne rights bechta hai. Uske saath kya hota hai?",
+        "dv": "Gupta Cement Ltd, एक काल्पनिक कंपनी, बाज़ार से कम भाव पर राइट्स इश्यू लाती है। अमन के पास उसके शेयर हैं और वह कुछ नहीं करता: न अप्लाई करता है, न अपने राइट्स बेचता है। उसके साथ क्या होता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The right lapses, and his slice of the company shrinks",
+            "hi": "Right lapse ho jaata hai aur uska hissa chhota ho jaata hai",
+            "dv": "राइट बेकार चला जाता है, और उसका हिस्सा छोटा हो जाता है"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Nothing changes, since ignoring an offer costs him nothing",
+            "hi": "Kuch nahi badalta, offer chhod dene ka koi kharcha nahi hota",
+            "dv": "कुछ नहीं बदलता, ऑफ़र छोड़ देने का कोई ख़र्च नहीं होता"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The company pays him market value for the unused right",
+            "hi": "Company bina istemaal hue right ki market value Aman ko de deti hai",
+            "dv": "कंपनी बिना इस्तेमाल हुए राइट की बाज़ार क़ीमत उसे चुका देती है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "He gets the new shares, and the cost is debited to him",
+            "hi": "Naye shares mil jaate hain, aur paisa apne-aap kat jaata hai",
+            "dv": "नए शेयर मिल जाते हैं, और पैसा अपने-आप कट जाता है"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "A rights issue lets existing holders buy new shares at a set price, usually below the market. You can apply, sell the right on the exchange, or ignore it. Ignoring is not free: the price adjusts down on the ex-date, the unused right lapses worthless, and once the new shares are issued, your slice of the company is smaller. If you do not want to apply, selling the right at least keeps its value.",
+        "hi": "Rights issue mein purane shareholders ko ek tay price par, aam taur par market se kam, naye shares khareedne ka mauka milta hai. Aap apply kar sakte hain, right ko exchange par bech sakte hain, ya chhod sakte hain. Chhodna free nahi hai: ex-date par price neeche adjust ho jaata hai, bina use hua right bekaar chala jaata hai, aur naye shares aane ke baad company mein aapka hissa chhota ho jaata hai. Apply nahi karna, toh right bech dijiye; kam se kam uski value toh haath aayegi.",
+        "dv": "राइट्स इश्यू में पुराने शेयरहोल्डरों को एक तय भाव पर, आम तौर पर बाज़ार से कम, नए शेयर ख़रीदने का मौक़ा मिलता है। आप अप्लाई कर सकते हैं, राइट को एक्सचेंज पर बेच सकते हैं, या छोड़ सकते हैं। छोड़ना मुफ़्त नहीं है: एक्स-डेट पर भाव नीचे एडजस्ट हो जाता है, बिना इस्तेमाल का राइट बेकार चला जाता है, और नए शेयर आने के बाद कंपनी में आपका हिस्सा छोटा हो जाता है। अप्लाई नहीं करना, तो राइट बेच दीजिए; कम से कम उसकी क़ीमत तो हाथ आएगी।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Priya scores a made-up company. Sales: Rs 300 crore in year 1, Rs 360 crore in year 3. Operating margin over the three years: 14%, 12%, 10%. D/E 0.6, interest cover 4. Promoter pledge 5%, unchanged. Three-year profit Rs 45 crore, three-year operating cash flow Rs 20 crore. Under the course rules, what happens?",
+        "hi": "Priya ek made-up company ka card bharti hai. Sales: saal 1 mein Rs 300 crore, saal 3 mein Rs 360 crore. Teen saalon ka operating margin: 14%, 12%, 10%. D/E 0.6, interest cover 4. Promoter pledge 5%, koi badlaav nahi. Teen saal ka profit Rs 45 crore, teen saal ka operating cash flow Rs 20 crore. Course ke rules ke hisaab se kya hoga?",
+        "dv": "प्रिया एक काल्पनिक कंपनी का कार्ड भरती है। सेल्स: साल 1 में Rs 300 करोड़, साल 3 में Rs 360 करोड़। तीन सालों का ऑपरेटिंग मार्जिन: 14%, 12%, 10%। D/E 0.6, इंटरेस्ट कवर 4। प्रमोटर प्लेज 5%, कोई बदलाव नहीं। तीन साल का प्रॉफ़िट Rs 45 करोड़, तीन साल का ऑपरेटिंग कैश फ़्लो Rs 20 करोड़। कोर्स के नियमों के हिसाब से क्या होगा?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Off the list: two counted flags, margin and cash",
+            "hi": "List se bahar: do counted flags, margin aur cash",
+            "dv": "लिस्ट से बाहर: दो फ़्लैग, मार्जिन और कैश"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "It stays: the pledge is under 10%, so no knock-out",
+            "hi": "List par rahegi: pledge 10% se kam hai, knock-out nahi",
+            "dv": "लिस्ट में रहेगी: प्लेज 10% से कम है, नॉक-आउट नहीं"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "It stays: sales grew, and growth outweighs the rest",
+            "hi": "List par rahegi: sales badhi, aur growth sabse bhaari hai",
+            "dv": "लिस्ट में रहेगी: सेल्स बढ़ी, और ग्रोथ सबसे भारी है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Off the list: any fall in margin is a knock-out alone",
+            "hi": "List se bahar: margin ka zara bhi girna akele knock-out hai",
+            "dv": "लिस्ट से बाहर: मार्जिन का ज़रा भी गिरना अकेले नॉक-आउट है"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Start with the knock-out: a 5% pledge that is not rising does not knock it out. Then count the other four. Sales in year 3 are above year 1: no flag. Margin fell in both year 2 and year 3: flag. D/E 0.6 and interest cover 4 pass: no flag. Three-year cash of Rs 20 crore is below half the Rs 45 crore profit (Rs 22.5 crore): flag. Two counted flags take it off the swing watchlist, however good the chart or the story. Write the reason in your journal.",
+        "hi": "Pehle knock-out dekhiye: 5% pledge jo badh nahi raha, knock-out nahi hai. Ab baaki chaar giniye. Saal 3 ki sales saal 1 se zyada: flag nahi. Margin saal 2 aur saal 3 dono mein gira: flag. D/E 0.6 aur interest cover 4 theek hain: flag nahi. Teen saal ka cash Rs 20 crore hai, jo Rs 45 crore profit ke aadhe (Rs 22.5 crore) se kam hai: flag. Do counted flags aa gaye, toh stock swing watchlist se bahar, chart ya kahani kitni bhi achhi ho. Wajah journal mein likh lijiye.",
+        "dv": "पहले नॉक-आउट देखिए: 5% प्लेज जो बढ़ नहीं रहा, नॉक-आउट नहीं है। अब बाक़ी चार गिनिए। साल 3 की सेल्स साल 1 से ज़्यादा: फ़्लैग नहीं। मार्जिन साल 2 और साल 3 दोनों में गिरा: फ़्लैग। D/E 0.6 और इंटरेस्ट कवर 4 ठीक हैं: फ़्लैग नहीं। तीन साल का कैश Rs 20 करोड़ है, जो Rs 45 करोड़ प्रॉफ़िट के आधे (Rs 22.5 करोड़) से कम है: फ़्लैग। दो फ़्लैग आ गए, तो स्टॉक स्विंग वॉचलिस्ट से बाहर, चार्ट या कहानी कितनी भी अच्छी हो। वजह जर्नल में लिख लीजिए।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Every chart box in Priya's flowchart says yes for a stock: planned entry Rs 400, ATR 14 at Rs 8. Her virtual capital is Rs 10 lakh (1R = Rs 10,000), and she already has 3 open paper trades. What does the flowchart say?",
+        "hi": "Priya ke flowchart ke saare chart boxes ek stock ke liye yes kehte hain: planned entry Rs 400, ATR 14 Rs 8. Uski virtual capital Rs 10 lakh hai (1R = Rs 10,000), aur uske paas pehle se 3 paper trades khule hain. Flowchart kya kehta hai?",
+        "dv": "प्रिया के फ़्लोचार्ट के सारे चार्ट बॉक्स एक स्टॉक के लिए हाँ कहते हैं: प्लान्ड एंट्री Rs 400, ATR 14 Rs 8। उसकी वर्चुअल कैपिटल Rs 10 लाख है (1R = Rs 10,000), और उसके पास पहले से 3 पेपर ट्रेड खुले हैं। फ़्लोचार्ट क्या कहता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "No trade: the open-trades box already says no",
+            "hi": "No trade: open-trades wala box pehle hi no kehta hai",
+            "dv": "नो ट्रेड: खुले ट्रेड वाला बॉक्स पहले ही ना कहता है"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Buy 833 shares, the size given by the 1% formula",
+            "hi": "833 shares ki entry, jitna 1% formula deta hai",
+            "dv": "833 शेयरों की एंट्री, जितना 1% फ़ॉर्मूला देता है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Buy 625 shares, the size allowed by the 25% cap",
+            "hi": "625 shares ki entry, jitni 25% cap allow karti hai",
+            "dv": "625 शेयरों की एंट्री, जितनी 25% कैप इजाज़त देती है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Close her weakest trade first, then buy 625 shares",
+            "hi": "Pehle sabse kamzor trade band, phir 625 shares ki entry",
+            "dv": "पहले सबसे कमज़ोर ट्रेड बंद, फिर 625 शेयरों की एंट्री"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "One NO anywhere in the flowchart means NO TRADE. The 'Risk fits?' box asks whether she has fewer than 3 open trades; she has 3, so the answer is no and the flowchart ends before the plan box ever runs. Had it run, the stop would be 1.5 x 8 = Rs 12 below entry, the 1% formula would give 10,000 / 12 = 833 shares, and the 25% cap (Rs 2,50,000) would cut that to 625 at Rs 400. The limit of 3 keeps no more than 3R at risk at a time. Closing a trade just to make room is a new decision her rules never asked for.",
+        "hi": "Flowchart mein kahin bhi ek NO ka matlab hai NO TRADE. 'Risk fits?' wala box poochta hai ki khule trades 3 se kam hain ya nahi; Priya ke 3 khule hain, toh jawab no hai, aur plan wale box tak baat pahunchti hi nahi. Pahunchti, toh stop entry se 1.5 x 8 = Rs 12 neeche hota, 1% formula 10,000 / 12 = 833 shares deta, aur Rs 400 par 25% cap (Rs 2,50,000) ise 625 kar deti. 3 ki limit isliye hai ki ek saath 3R se zyada risk par na ho. Sirf jagah banane ke liye koi trade band karna ek naya faisla hai, jo uske rules ne kabhi maanga hi nahi.",
+        "dv": "फ़्लोचार्ट में कहीं भी एक NO का मतलब है NO TRADE। 'Risk fits?' वाला बॉक्स पूछता है कि खुले ट्रेड 3 से कम हैं या नहीं; प्रिया के 3 खुले हैं, तो जवाब ना है, और प्लान वाले बॉक्स तक बात पहुँचती ही नहीं। पहुँचती, तो स्टॉप एंट्री से 1.5 x 8 = Rs 12 नीचे होता, 1% फ़ॉर्मूला 10,000 / 12 = 833 शेयर देता, और Rs 400 पर 25% कैप (Rs 2,50,000) इसे 625 कर देती। 3 की लिमिट इसलिए है कि एक साथ 3R से ज़्यादा रिस्क पर न हो। सिर्फ़ जगह बनाने के लिए कोई ट्रेड बंद करना एक नया फ़ैसला है, जो उसके नियमों ने कभी माँगा ही नहीं।"
+      }
+    },
+    {
+      "stem": {
+        "en": "In Priya's hand backtest, a trade enters at the next day's open, Rs 250. ATR 14 is Rs 6, and her stop is 1.5 x ATR below entry. The 2.5R exit is never reached, and the 15-day time exit sells at Rs 263.50. With the course's 0.1R cost allowance, what net R goes in her log?",
+        "hi": "Priya ke haath se kiye backtest mein ek trade agle din ke open, Rs 250, par entry leta hai. ATR 14 Rs 6 hai, aur stop entry se 1.5 x ATR neeche hai. 2.5R wala exit kabhi nahi aata, aur 15 din ka time exit Rs 263.50 par bechta hai. Course ke 0.1R cost allowance ke saath log mein kitna net R jayega?",
+        "dv": "प्रिया के हाथ से किए बैकटेस्ट में एक ट्रेड अगले दिन के ओपन, Rs 250, पर एंट्री लेता है। ATR 14 Rs 6 है, और स्टॉप एंट्री से 1.5 x ATR नीचे है। 2.5R वाला एग्ज़िट कभी नहीं आता, और 15 दिन का टाइम एग्ज़िट Rs 263.50 पर बेचता है। कोर्स के 0.1R कॉस्ट अलाउंस के साथ लॉग में कितना नेट R जाएगा?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "+1.40R: Rs 13.50 / Rs 9 risk, minus 0.1R",
+            "hi": "+1.40R: Rs 13.50 / Rs 9 risk, minus 0.1R",
+            "dv": "+1.40R: Rs 13.50 / Rs 9 रिस्क, माइनस 0.1R"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "+1.50R: the costs are already in the price",
+            "hi": "+1.50R: costs price mein pehle se shaamil hain",
+            "dv": "+1.50R: कॉस्ट तो भाव में पहले से ही शामिल है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "+2.15R: Rs 13.50 / Rs 6 ATR, minus 0.1R",
+            "hi": "+2.15R: Rs 13.50 / Rs 6 ATR, minus 0.1R",
+            "dv": "+2.15R: Rs 13.50 / Rs 6 ATR, माइनस 0.1R"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "+2.40R: the 2.5R exit minus 0.1R of costs",
+            "hi": "+2.40R: 2.5R ka exit, minus 0.1R costs",
+            "dv": "+2.40R: 2.5R का एग्ज़िट, माइनस 0.1R कॉस्ट"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "The stop sits 1.5 x Rs 6 = Rs 9 below entry, at Rs 241, so 1R is Rs 9 a share, not the ATR of Rs 6. Gross R = (263.50 - 250) / 9 = +1.5R. Take off 0.1R for costs and slippage: +1.40R. The 2.5R exit (Rs 272.50) was never hit, so it cannot be logged, and a chart price never includes your costs. Log net R, never gross.",
+        "hi": "Stop entry se 1.5 x Rs 6 = Rs 9 neeche, Rs 241 par hai, isliye 1R = Rs 9 per share, ATR ke Rs 6 nahi. Gross R = (263.50 - 250) / 9 = +1.5R. Costs aur slippage ke 0.1R ghataiye: +1.40R. 2.5R ka exit (Rs 272.50) kabhi hit hi nahi hua, toh use log nahi kar sakte, aur chart ke price mein aapke costs kabhi shaamil nahi hote. Log mein hamesha net R likhiye, gross nahi.",
+        "dv": "स्टॉप एंट्री से 1.5 x Rs 6 = Rs 9 नीचे, Rs 241 पर है, इसलिए 1R = Rs 9 प्रति शेयर, ATR के Rs 6 नहीं। ग्रॉस R = (263.50 - 250) / 9 = +1.5R। कॉस्ट और स्लिपेज के 0.1R घटाइए: +1.40R। 2.5R का एग्ज़िट (Rs 272.50) कभी हिट ही नहीं हुआ, तो उसे लॉग नहीं कर सकते, और चार्ट के भाव में आपकी कॉस्ट कभी शामिल नहीं होती। लॉग में हमेशा नेट R लिखिए, ग्रॉस नहीं।"
+      }
+    },
+    {
+      "stem": {
+        "en": "A classmate's 30-trade hand backtest shows 12 wins and 18 losses, and the net R adds up to +2.4R. What is the expectancy?",
+        "hi": "Ek classmate ke 30 trades wale hand backtest mein 12 wins aur 18 losses hain, aur net R ka total +2.4R hai. Expectancy kitni hai?",
+        "dv": "एक क्लासमेट के 30 ट्रेड वाले हाथ से किए बैकटेस्ट में 12 जीत और 18 हार हैं, और नेट R का टोटल +2.4R है। एक्सपेक्टेंसी कितनी है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "About +0.08R per trade: +2.4R / 30",
+            "hi": "Lagbhag +0.08R per trade: +2.4R / 30",
+            "dv": "लगभग +0.08R प्रति ट्रेड: +2.4R / 30"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "About +0.20R per trade, counting only wins",
+            "hi": "Lagbhag +0.20R per trade, sirf wins gin kar",
+            "dv": "लगभग +0.20R प्रति ट्रेड, सिर्फ़ जीत गिनकर"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "40%, since 12 of the 30 trades won",
+            "hi": "40%, kyunki 30 mein se 12 trades win hue",
+            "dv": "40%, क्योंकि 30 में से 12 ट्रेड में जीत हुई"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "+2.4R, the total of the whole log",
+            "hi": "+2.4R, poore log ka total",
+            "dv": "+2.4R, पूरे लॉग का टोटल"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Expectancy is the average net R per trade across all trades: +2.4R / 30 = +0.08R. Dividing by the 12 wins ignores the 18 losses, and 40% is the win-rate, a different number. A small positive expectancy after costs is only a first look: 30 trades is a start, about 100 builds confidence, and every backtest result is hypothetical.",
+        "hi": "Expectancy saare trades ka average net R per trade hai: +2.4R / 30 = +0.08R. Sirf 12 wins se divide karna 18 losses ko bhool jaana hai, aur 40% toh win-rate hai, ek alag number. Costs ke baad chhoti positive expectancy bas pehli jhalak hai: 30 trades shuruaat hai, lagbhag 100 trades se bharosa banta hai, aur backtest ka har result hypothetical hai.",
+        "dv": "एक्सपेक्टेंसी सारे ट्रेडों का औसत नेट R प्रति ट्रेड है: +2.4R / 30 = +0.08R। सिर्फ़ 12 जीत से भाग देना 18 हार को भूल जाना है, और 40% तो विन-रेट है, एक अलग नंबर। कॉस्ट के बाद छोटी पॉज़िटिव एक्सपेक्टेंसी बस पहली झलक है: 30 ट्रेड शुरुआत है, लगभग 100 ट्रेड से भरोसा बनता है, और बैकटेस्ट का हर नतीजा काल्पनिक है।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Priya copies one row of NSE's option chain into her sheet: NIFTY 50 at 24,150 (illustrative) and the 24,300 put's premium at 190. What should she write for its moneyness and premium split?",
+        "hi": "Priya NSE ki option chain ki ek row apni sheet mein copy karti hai: NIFTY 50 24,150 par (illustrative), aur 24,300 put ka premium 190. Uski moneyness aur premium ka split woh kya likhe?",
+        "dv": "प्रिया NSE की ऑप्शन चेन की एक पंक्ति अपनी शीट में कॉपी करती है: NIFTY 50 24,150 पर (काल्पनिक), और 24,300 पुट का प्रीमियम 190। उसकी मनीनेस और प्रीमियम का बँटवारा वह क्या लिखे?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "ITM: intrinsic 150, time value 40",
+            "hi": "ITM: intrinsic 150, time value 40",
+            "dv": "ITM: इंट्रिंसिक 150, टाइम वैल्यू 40"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "OTM: all 190 is time value, as for a call",
+            "hi": "OTM: poora 190 time value, jaise call mein",
+            "dv": "OTM: पूरा 190 टाइम वैल्यू, जैसे कॉल में"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "ITM: all 190 is intrinsic value",
+            "hi": "ITM: poora 190 intrinsic value hai",
+            "dv": "ITM: पूरा 190 इंट्रिंसिक वैल्यू है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "ITM: intrinsic 40, time value 150",
+            "hi": "ITM: intrinsic 40, time value 150",
+            "dv": "ITM: इंट्रिंसिक 40, टाइम वैल्यू 150"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "A put is the right to sell, so its moneyness is the mirror image of a call: a put whose strike is above the current price is in the money. Intrinsic value = strike - price = 24,300 - 24,150 = 150. Time value is the rest: 190 - 150 = 40, and it melts towards zero by expiry. Do not swap the parts: intrinsic is strike minus price, and the rest is time value. If NIFTY stayed at 24,150 until expiry, this put would end at 150.",
+        "hi": "Put bechne ka right hai, isliye uski moneyness call ki ulti hoti hai: jis put ka strike current price se upar ho, woh in the money hai. Intrinsic value = strike - price = 24,300 - 24,150 = 150. Baaki time value hai: 190 - 150 = 40, aur yeh expiry tak pighal kar zero ki taraf jaati hai. Dono hisse ulte mat kijiye: intrinsic = strike minus price, baaki time value. NIFTY expiry tak 24,150 par hi tika rahe, toh yeh put 150 par khatam hoga.",
+        "dv": "पुट बेचने का राइट है, इसलिए उसकी मनीनेस कॉल से ठीक उल्टी होती है: जिस पुट का स्ट्राइक मौजूदा भाव से ऊपर हो, वह इन द मनी है। इंट्रिंसिक वैल्यू = स्ट्राइक - भाव = 24,300 - 24,150 = 150। बाक़ी टाइम वैल्यू है: 190 - 150 = 40, और यह एक्सपायरी तक पिघलकर ज़ीरो की तरफ़ जाती है। दोनों हिस्से उलटे मत कीजिए: इंट्रिंसिक = स्ट्राइक माइनस भाव, बाक़ी टाइम वैल्यू। NIFTY एक्सपायरी तक 24,150 पर ही टिका रहे, तो यह पुट 150 पर ख़त्म होगा।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Priya entered a swing trade in Sharma Textiles Ltd last week. On Sunday a new board-meeting notice shows results on Thursday, with no time given. Her written rule: if results are announced after entry, exit before the close on the trading day before them. It is Wednesday, 2 pm; the trade is at +0.8R and the trend looks strong. What does her system say?",
+        "hi": "Priya ne pichhle hafte Sharma Textiles Ltd mein swing trade liya. Sunday ko naya board-meeting notice aata hai: results Thursday ko, time nahi diya. Uska likha hua rule: entry ke baad results ki date aaye, toh results se pehle wale trading din ke close se pehle exit. Aaj Wednesday hai, dopahar ke 2 baje; trade +0.8R par hai aur trend mazboot dikh raha hai. Uska system kya kehta hai?",
+        "dv": "प्रिया ने पिछले हफ़्ते Sharma Textiles Ltd में स्विंग ट्रेड लिया। रविवार को नया बोर्ड-मीटिंग नोटिस आता है: नतीजे गुरुवार को, समय नहीं दिया। उसका लिखा हुआ नियम: एंट्री के बाद नतीजों की तारीख़ आए, तो नतीजों से पहले वाले ट्रेडिंग दिन के क्लोज़ से पहले एग्ज़िट। आज बुधवार है, दोपहर के 2 बजे; ट्रेड +0.8R पर है और ट्रेंड मज़बूत दिख रहा है। उसका सिस्टम क्या कहता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Exit before today's close and log a planned exit",
+            "hi": "Aaj close se pehle exit, aur planned exit log karein",
+            "dv": "आज क्लोज़ से पहले एग्ज़िट, और प्लान्ड एग्ज़िट लॉग करें"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Hold: the trade is in profit and the trend is strong",
+            "hi": "Hold: trade profit mein hai aur trend mazboot hai",
+            "dv": "होल्ड: ट्रेड मुनाफ़े में है और ट्रेंड मज़बूत है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Hold, but move the stop up to entry to stay protected",
+            "hi": "Hold, lekin bachaav ke liye stop entry par le aayein",
+            "dv": "होल्ड, लेकिन बचाव के लिए स्टॉप एंट्री पर ले आएँ"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Exit on Thursday only if results come in market hours",
+            "hi": "Thursday ko exit, woh bhi tab jab results market hours mein aayein",
+            "dv": "गुरुवार को एग्ज़िट, वह भी तब जब नतीजे मार्केट आवर्स में आएँ"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Her rule was written on a calm Sunday for exactly this moment, and today is the trading day before results. With no time given, the results could land overnight, and then the stock can open far past any stop, so moving the stop to entry does not protect the trade. Waiting until Thursday is too late if they land during market hours. Exiting and logging it as a planned exit is full adherence. Holding through results had to be decided on Sunday, in writing, accepting that the loss could be 2R or more.",
+        "hi": "Yeh rule ek shaant Sunday ko isi pal ke liye likha gaya tha, aur aaj results se pehle wala trading din hai. Time nahi diya gaya, toh results raat ko bhi aa sakte hain, aur tab stock kisi bhi stop se bahut door khul sakta hai; isliye stop ko entry par le aane se trade bachta nahi. Results market hours mein aaye, toh Thursday tak rukne mein bahut der ho jayegi. Exit karke use planned exit ki tarah log karna poori adherence hai. Results ke dauraan hold karna tha, toh yeh Sunday ko hi likh kar tay karna tha, yeh maan kar ki loss 2R ya usse zyada bhi ho sakta hai.",
+        "dv": "यह नियम एक शांत रविवार को इसी पल के लिए लिखा गया था, और आज नतीजों से पहले वाला ट्रेडिंग दिन है। समय नहीं दिया गया, तो नतीजे रात को भी आ सकते हैं, और तब स्टॉक किसी भी स्टॉप से बहुत दूर खुल सकता है; इसलिए स्टॉप को एंट्री पर ले आने से ट्रेड बचता नहीं। नतीजे मार्केट आवर्स में आए, तो गुरुवार तक रुकने में बहुत देर हो जाएगी। एग्ज़िट करके उसे प्लान्ड एग्ज़िट की तरह लॉग करना पूरी एडहेरेंस है। नतीजों के दौरान होल्ड करना था, तो यह रविवार को ही लिखकर तय करना था, यह मानकर कि नुक़सान 2R या उससे ज़्यादा भी हो सकता है।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Aman's journal entry: 'Down Rs 8,000 on this paper trade. Selling now would waste all that money. I will hold until it comes back to my buying price.' Which bias is speaking?",
+        "hi": "Aman ki journal entry: 'Is paper trade mein Rs 8,000 ka loss chal raha hai. Abhi bechunga toh saara paisa bekaar jayega. Jab tak mere buying price par wapas nahi aata, hold karunga.' Yahan kaun sa bias bol raha hai?",
+        "dv": "अमन की जर्नल एंट्री: 'इस पेपर ट्रेड में Rs 8,000 का नुक़सान चल रहा है। अभी बेचूँगा तो सारा पैसा बेकार जाएगा। जब तक मेरे ख़रीद भाव पर वापस नहीं आता, होल्ड करूँगा।' यहाँ कौन-सा बायस बोल रहा है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Sunk cost: money already lost is steering the choice",
+            "hi": "Sunk cost: jo paisa doob chuka, wahi faisla chala raha hai",
+            "dv": "संक कॉस्ट: जो पैसा डूब चुका, वही फ़ैसला चला रहा है"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Recency: his last few trades are weighing too much",
+            "hi": "Recency: pichhle kuch trades ko zyada wazan de raha hai",
+            "dv": "रीसेंसी: पिछले कुछ ट्रेडों को ज़्यादा वज़न दे रहा है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Revenge: he wants a quick new trade to win the loss back",
+            "hi": "Revenge: loss wapas jeetne ke liye jaldi naya trade chahta hai",
+            "dv": "रिवेंज: नुक़सान वापस जीतने के लिए जल्दी नया ट्रेड चाहता है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "FOMO: he fears missing a move that has already run",
+            "hi": "FOMO: nikal chuke move ke chhoot jaane ka dar",
+            "dv": "FOMO: निकल चुके मूव के छूट जाने का डर"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Money already lost is a sunk cost. It should not decide today's choice, because the market does not know Aman's buying price, and 'back to my price' is not a level on any chart. What decides the exit is the stop and the rules on his plan card, not the hope of getting back to even. The course's answer, written while calm: the stop stays where the plan card put it.",
+        "hi": "Jo paisa pehle hi doob chuka, woh sunk cost hai. Aaj ka faisla usse nahi hona chahiye, kyunki market ko Aman ka buying price pata hi nahi, aur 'mere price tak wapas' kisi chart par koi level nahi hai. Exit plan card ka stop aur rules tay karte hain, barabar ho jaane ki umeed nahi. Course ka jawab, shaant dimaag se likha hua: stop wahin rahega jahan plan card ne rakha tha.",
+        "dv": "जो पैसा पहले ही डूब चुका, वह संक कॉस्ट है। आज का फ़ैसला उससे नहीं होना चाहिए, क्योंकि बाज़ार को अमन का ख़रीद भाव पता ही नहीं, और 'मेरे भाव तक वापस' किसी चार्ट पर कोई लेवल नहीं है। एग्ज़िट प्लान कार्ड का स्टॉप और नियम तय करते हैं, बराबरी पर आने की उम्मीद नहीं। कोर्स का जवाब, शांत दिमाग़ से लिखा हुआ: स्टॉप वहीं रहेगा जहाँ प्लान कार्ड ने रखा था।"
+      }
+    },
+    {
+      "stem": {
+        "en": "A classmate's journal, Tuesday evening: 'Bought on my setup. Watched three videos saying this stock will rise and felt calmer. Skipped a post about its weak cash flow; just negative noise.' Which bias does this entry show?",
+        "hi": "Ek classmate ka journal, Tuesday shaam: 'Setup par khareeda. Teen videos dekhe jo keh rahe the yeh stock chadhega, toh sukoon mila. Company ke kamzor cash flow wali ek post skip kar di; bas negative shor tha.' Is entry mein kaun sa bias dikhta hai?",
+        "dv": "एक क्लासमेट का जर्नल, मंगलवार शाम: 'सेटअप पर ख़रीदा। तीन वीडियो देखे जो कह रहे थे यह स्टॉक चढ़ेगा, तो सुकून मिला। कंपनी के कमज़ोर कैश फ़्लो वाली एक पोस्ट छोड़ दी; बस नेगेटिव शोर था।' इस एंट्री में कौन-सा बायस दिखता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Confirmation bias: keeping only the views that agree",
+            "hi": "Confirmation bias: sirf sehmat views ko jagah dena",
+            "dv": "कन्फ़र्मेशन बायस: सिर्फ़ सहमत राय को जगह देना"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Recency: giving the last three trades far too much weight",
+            "hi": "Recency: pichhle teen trades ko had se zyada wazan dena",
+            "dv": "रीसेंसी: पिछले तीन ट्रेडों को हद से ज़्यादा वज़न देना"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Loss aversion: moving the stop to avoid booking a loss",
+            "hi": "Loss aversion: loss book na karna pade, isliye stop khiskana",
+            "dv": "लॉस अवर्ज़न: लॉस बुक न करना पड़े, इसलिए स्टॉप खिसकाना"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Revenge: chasing a quick win right after a stop-out",
+            "hi": "Revenge: stop-out ke turant baad jaldi jeet ke peeche bhaagna",
+            "dv": "रिवेंज: स्टॉप-आउट के तुरंत बाद जल्दी जीत के पीछे भागना"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "After entering, the classmate collected views that agree and skipped the one that did not: that is confirmation bias. The skipped post was about cash flow, one of the five health checks, so it was information, not noise. Videos that agree add comfort, not facts. A written answer helps: after entry, read at least one view that disagrees, and let only the plan card's rules decide the exit.",
+        "hi": "Entry ke baad classmate ne sirf sehmat views jama kiye aur jo sehmat nahi tha, use skip kar diya: yahi confirmation bias hai. Skip ki gayi post cash flow ke baare mein thi, jo paanch health checks mein se ek hai; yaani woh jaankari thi, shor nahi. Sehmat videos sukoon dete hain, nayi jaankari nahi. Ek likha hua jawab kaam aata hai: entry ke baad kam se kam ek aisa view padhiye jo aapse sehmat na ho, aur exit sirf plan card ke rules ko tay karne dijiye.",
+        "dv": "एंट्री के बाद क्लासमेट ने सिर्फ़ सहमत राय जमा की और जो सहमत नहीं थी, उसे छोड़ दिया: यही कन्फ़र्मेशन बायस है। छोड़ी गई पोस्ट कैश फ़्लो के बारे में थी, जो पाँच हेल्थ चेक में से एक है; यानी वह जानकारी थी, शोर नहीं। सहमत वीडियो सुकून देते हैं, नई जानकारी नहीं। एक लिखा हुआ जवाब काम आता है: एंट्री के बाद कम से कम एक ऐसी राय पढ़िए जो आपसे सहमत न हो, और एग्ज़िट सिर्फ़ प्लान कार्ड के नियमों को तय करने दीजिए।"
+      }
+    },
+    {
+      "stem": {
+        "en": "A message offers 'account handling': 'Steady 4% every month, not one losing month in two years. Just share your login ID and OTP once.' Using the course's tools, which reading is most accurate?",
+        "hi": "Ek message 'account handling' offer karta hai: 'Har mahine steady 4%, do saal mein ek bhi loss wala mahina nahi. Bas ek baar apna login ID aur OTP share kijiye.' Course ke tools se dekhein, toh sabse sahi reading kaun si hai?",
+        "dv": "एक मैसेज 'अकाउंट हैंडलिंग' ऑफ़र करता है: 'हर महीने स्थिर 4%, दो साल में एक भी घाटे वाला महीना नहीं। बस एक बार अपना लॉगिन ID और OTP शेयर कीजिए।' कोर्स के टूल से देखें, तो सबसे सही मतलब कौन-सा है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A trap: about 60% a year, no bad month, and an OTP ask",
+            "hi": "Jaal: saal ka lagbhag 60%, bura mahina ek bhi nahi, OTP ki maang",
+            "dv": "जाल: साल का लगभग 60%, कोई बुरा महीना नहीं, OTP की माँग"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Fair: 4% a month is modest, so share the login ID but not the OTP",
+            "hi": "Theek hai: 4% mahina chhota hai, login ID de dijiye, par OTP bilkul nahi",
+            "dv": "ठीक है: 4% महीना छोटा है, लॉगिन ID दे दीजिए, पर OTP बिल्कुल नहीं"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Safe to try if the screenshots of past months look genuine",
+            "hi": "Pichhle mahinon ke screenshots asli lagein, toh try kar sakte hain",
+            "dv": "पिछले महीनों के स्क्रीनशॉट असली लगें, तो एक बार आज़मा सकते हैं"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Believable: that is only 4% x 12 = 48% a year",
+            "hi": "Bharose layak: yeh bas 4% x 12 = saal ka 48% hai",
+            "dv": "भरोसे लायक़: यह बस 4% x 12 = साल का 48% है"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Compound it: twelve months of 1.04 multiplied together is about 1.60, roughly 60% a year, with no losing month. Adding 4% twelve times gives 48%, but returns compound, so the claim is really about 60%. Real records have drawdowns; even Priya's honest practice backtest had a 6.23R fall inside it. Registered advisers and analysts may not promise returns, so a fixed monthly figure is itself a red flag. And a login plus OTP lets a stranger trade in your name while every loss stays yours. Share nothing, keep a screenshot, and report it at cybercrime.gov.in; if money has gone, call 1930 at once.",
+        "hi": "Compound karke dekhiye: 1.04 ko baarah baar guna karein toh lagbhag 1.60 aata hai, yaani saal ka qareeb 60%, aur ek bhi loss wala mahina nahi. 4% ko baarah baar jodne se 48% aata hai, par returns compound hote hain, isliye asli daava qareeb 60% ka hai. Asli records mein drawdown hote hi hain; Priya ke imaandar practice backtest mein bhi 6.23R ki girawat thi. Registered advisers aur analysts returns ka vaada nahi kar sakte, isliye har mahine ka tay figure khud ek red flag hai. Aur login ke saath OTP mil gaya, toh koi ajnabi aapke naam se trade kar sakta hai, jabki har loss aapka hi rahega. Kuch share mat kijiye, screenshot rakh lijiye, aur cybercrime.gov.in par report kijiye; paisa chala gaya ho, toh turant 1930 par call kijiye.",
+        "dv": "कंपाउंड करके देखिए: 1.04 को बारह बार गुणा करें तो लगभग 1.60 आता है, यानी साल का क़रीब 60%, और एक भी घाटे वाला महीना नहीं। 4% को बारह बार जोड़ने से 48% आता है, पर रिटर्न कंपाउंड होते हैं, इसलिए असली दावा क़रीब 60% का है। असली रिकॉर्ड में ड्रॉडाउन होते ही हैं; प्रिया के ईमानदार प्रैक्टिस बैकटेस्ट में भी 6.23R की गिरावट थी। रजिस्टर्ड एडवाइज़र और एनालिस्ट रिटर्न का वादा नहीं कर सकते, इसलिए हर महीने का तय आँकड़ा ख़ुद एक रेड फ़्लैग है। और लॉगिन के साथ OTP मिल गया, तो कोई अजनबी आपके नाम से ट्रेड कर सकता है, जबकि हर नुक़सान आपका ही रहेगा। कुछ शेयर मत कीजिए, स्क्रीनशॉट रख लीजिए, और cybercrime.gov.in पर रिपोर्ट कीजिए; पैसा चला गया हो, तो तुरंत 1930 पर कॉल कीजिए।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Priya holds two swing trades and plans no ORB this week. Her calendar shows an RBI policy decision on Wednesday at about 10 am, and no other events. A friend says she must exit both trades on Tuesday. What does the course's event logic say?",
+        "hi": "Priya ke paas do swing trades khule hain aur is hafte ORB ka koi plan nahi. Uske calendar mein Wednesday ko lagbhag 10 baje RBI ka policy decision hai, aur koi doosra event nahi. Ek dost kehta hai ki use dono trades Tuesday ko hi band kar dene chahiye. Course ka event logic kya kehta hai?",
+        "dv": "प्रिया के पास दो स्विंग ट्रेड खुले हैं और इस हफ़्ते ORB का कोई प्लान नहीं। उसके कैलेंडर में बुधवार को लगभग 10 बजे RBI का पॉलिसी फ़ैसला है, और कोई दूसरा इवेंट नहीं। एक दोस्त कहता है कि उसे दोनों ट्रेड मंगलवार को ही बंद कर देने चाहिए। कोर्स का इवेंट लॉजिक क्या कहता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "No forced exit: the RBI decision lands in market hours",
+            "hi": "Exit zaroori nahi: RBI ka decision market hours mein aata hai",
+            "dv": "एग्ज़िट ज़रूरी नहीं: RBI का फ़ैसला मार्केट आवर्स में आता है"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Exit both: an RBI day is a no-trade day for every strategy",
+            "hi": "Dono exit: RBI ka din har strategy ke liye no-trade day hai",
+            "dv": "दोनों एग्ज़िट: RBI का दिन हर स्ट्रैटेजी के लिए नो-ट्रेड डे है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Widen both stops on Wednesday to ride out the swings",
+            "hi": "Wednesday ko dono stops wide kar dein, taaki jhatke jhel sakein",
+            "dv": "बुधवार को दोनों स्टॉप और नीचे खिसका दें, ताकि झटके झेल सकें"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Hold, and add to both trades once the decision is out",
+            "hi": "Hold karein, aur decision ke baad dono trades mein size badha dein",
+            "dv": "होल्ड करें, और फ़ैसला आने के बाद दोनों ट्रेड में साइज़ बढ़ा दें"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Match the event to the trade. An RBI decision at about 10 am lands during market hours, so it cannot open the stock far past her stop the way overnight news can; a stop hit in the session usually fills near the stop, close to 1R plus some slippage. That is why the course's starter rules block ORB on RBI days, not swing holds. Overnight events, such as results after 3:30 pm or a US Fed decision, are the ones that threaten swing trades. Widening stops or adding size on a news day breaks her plan.",
+        "hi": "Event ko trade se milaiye. RBI ka decision lagbhag 10 baje, market hours mein aata hai, isliye yeh raat wali khabar ki tarah stock ko stop se bahut door nahi khol sakta; session ke dauraan stop hit ho, toh aam taur par stop ke paas hi fill hota hai, 1R ke qareeb, thodi slippage ke saath. Isiliye course ke starter rules RBI ke din ORB rokte hain, swing hold nahi. Swing trades ko asli khatra raat wale events se hota hai, jaise 3:30 ke baad aane wale results ya US Fed ka decision. News ke din stops wide karna ya size badhana plan todna hai.",
+        "dv": "इवेंट को ट्रेड से मिलाइए। RBI का फ़ैसला लगभग 10 बजे, मार्केट आवर्स में आता है, इसलिए यह रात वाली ख़बर की तरह स्टॉक को स्टॉप से बहुत दूर नहीं खोल सकता; सेशन के दौरान स्टॉप हिट हो, तो आम तौर पर स्टॉप के पास ही फ़िल होता है, 1R के क़रीब, थोड़ी स्लिपेज के साथ। इसीलिए कोर्स के स्टार्टर नियम RBI के दिन ORB रोकते हैं, स्विंग होल्ड नहीं। स्विंग ट्रेड को असली ख़तरा रात वाले इवेंट से होता है, जैसे 3:30 के बाद आने वाले नतीजे या US Fed का फ़ैसला। ख़बर के दिन स्टॉप नीचे खिसकाना या साइज़ बढ़ाना प्लान तोड़ना है।"
+      }
+    }
+  ]
+}

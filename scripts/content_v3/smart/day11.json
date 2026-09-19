@@ -1,0 +1,1492 @@
+{
+ "day": 11,
+ "title": {
+  "en": "Strategy #1: the EMA Pullback Swing",
+  "hi": "Strategy #1: EMA Pullback Swing",
+  "dv": "स्ट्रैटेजी #1: EMA पुलबैक स्विंग"
+ },
+ "tags": {
+  "concept": {
+   "en": "EMA Pullback Swing: exact rules for trend, pullback, strength, signal, entry, stop, size and exits",
+   "hi": "EMA Pullback Swing: trend, pullback, strength, signal, entry, stop, size aur exit ke saaf rules",
+   "dv": "EMA पुलबैक स्विंग: ट्रेंड, पुलबैक, स्ट्रेंथ, सिग्नल, एंट्री, स्टॉप, साइज़ और एग्ज़िट के साफ़ नियम"
+  },
+  "ai_lab": {
+   "en": "Screener condition writer: AI drafts, you verify on real charts",
+   "hi": "Screener condition writer: AI draft kare, aap charts par verify karein",
+   "dv": "स्क्रीनर कंडीशन राइटर: AI ड्राफ़्ट करे, आप चार्ट पर जाँचें"
+  },
+  "psychology": {
+   "en": "Impatience: chasing a train that has left",
+   "hi": "Impatience: nikal chuki train ke peeche bhaagna",
+   "dv": "बेसब्री: निकल चुकी ट्रेन के पीछे भागना"
+  }
+ },
+ "strategy": "EMA Pullback Swing",
+ "duration_min": 90,
+ "story": {
+  "kind": "story",
+  "title": {
+   "en": "The train that already left",
+   "hi": "Jo train nikal chuki",
+   "dv": "जो ट्रेन निकल चुकी"
+  },
+  "panels": [
+   {
+    "who": "narrator",
+    "say": {
+     "en": "Wednesday, 8:30 pm. Aman is just back from office in Pune. Priya joins the mentor's video call from Lucknow.",
+     "hi": "Wednesday, raat 8:30. Aman abhi-abhi Pune mein office se lauta hai. Priya Lucknow se mentor ki video call par jud jaati hai.",
+     "dv": "बुधवार, रात 8:30। अमन अभी-अभी पुणे में ऑफ़िस से लौटा है। प्रिया लखनऊ से मेंटर की वीडियो कॉल पर जुड़ जाती है।"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "excited",
+    "say": {
+     "en": "Sir, Kiran Foods jumped 7% today, and I found out only after work. Tomorrow at 9:15 I'm buying at whatever price, before it runs away again.",
+     "hi": "Sir, Kiran Foods aaj 7% bhaag gaya, aur mujhe office ke baad pata chala. Kal 9:15 par jo bhi price ho, main le lunga, isse pehle ki woh aur bhaag jaye.",
+     "dv": "सर, Kiran Foods आज 7% भाग गया, और मुझे ऑफ़िस के बाद पता चला। कल 9:15 पर जो भी भाव हो, मैं ले लूँगा, इससे पहले कि वो और भाग जाए।"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "thinking",
+    "say": {
+     "en": "Aman, at a railway station, if your train has already started moving, what do you do?",
+     "hi": "Aman, station par agar aapki train chal padi ho, toh aap kya karte hain?",
+     "dv": "अमन, स्टेशन पर अगर आपकी ट्रेन चल पड़ी हो, तो आप क्या करते हैं?"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "sad",
+    "say": {
+     "en": "I run and jump in, sir... That is exactly how I bought last month. It fell the very next week, and I sold at a loss.",
+     "hi": "Daud ke chadh jaata hoon, sir... Pichhle mahine bhi aise hi khareeda tha. Agle hi hafte gir gaya, aur loss mein bechna pada.",
+     "dv": "दौड़कर चढ़ जाता हूँ, सर... पिछले महीने भी ऐसे ही ख़रीदा था। अगले ही हफ़्ते गिर गया, और घाटे में बेचना पड़ा।"
+    }
+   },
+   {
+    "who": "priya",
+    "mood": "thinking",
+    "say": {
+     "en": "Sir, is there a calmer way to catch the same trend, like boarding at the next station?",
+     "hi": "Sir, kya usi trend ko pakadne ka koi shaant tareeka hai, jaise agle station par train pakadna?",
+     "dv": "सर, क्या उसी ट्रेंड को पकड़ने का कोई शांत तरीक़ा है, जैसे अगले स्टेशन पर ट्रेन पकड़ना?"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "happy",
+    "say": {
+     "en": "There is, Priya. Stocks in an uptrend often pause and dip back towards their EMA 20. Sometimes the trend resumes from there, sometimes it does not, so we fix the exit before getting in. And some weeks no train stops at all. Waiting is part of the plan.",
+     "hi": "Haan, hai Priya. Uptrend wale stocks aksar thoda rukte hain aur wapas apne EMA 20 ki taraf aate hain. Kabhi wahan se trend phir chal padta hai, kabhi nahi, isliye exit hum chadhne se pehle hi tay kar lete hain. Aur kuch hafte koi train rukti hi nahi. Intezaar bhi plan ka hissa hai.",
+     "dv": "हाँ, है प्रिया। अपट्रेंड वाले स्टॉक अक्सर थोड़ा रुकते हैं और वापस अपने EMA 20 की तरफ़ आते हैं। कभी वहाँ से ट्रेंड फिर चल पड़ता है, कभी नहीं, इसलिए एग्ज़िट हम चढ़ने से पहले ही तय कर लेते हैं। और कुछ हफ़्ते कोई ट्रेन रुकती ही नहीं। इंतज़ार भी प्लान का हिस्सा है।"
+    }
+   }
+  ],
+  "moral": {
+   "en": "Chasing a moving price is impatience. A pullback plan lets the price come to you, and some days the right trade is no trade.",
+   "hi": "Bhaagte price ke peeche daudna impatience hai. Pullback plan mein price aapke paas aata hai, aur kuch din sahi trade yahi hota hai ki trade na karein.",
+   "dv": "भागते भाव के पीछे दौड़ना बेसब्री है। पुलबैक प्लान में भाव आपके पास आता है, और कुछ दिन सही ट्रेड यही होता है कि ट्रेड न करें।"
+  }
+ },
+ "topics": [
+  {
+   "h": {
+    "en": "Buy the pause, not the chase",
+    "hi": "Rukne par khareediye, bhaagne par nahi",
+    "dv": "रुकने पर ख़रीदें, भागने पर नहीं"
+   },
+   "p": {
+    "en": "A swing trade is held for a few days to a few weeks and planned on the daily chart. The EMA Pullback Swing buys a stock that is already in an uptrend, but only after it pauses and dips back towards its EMA 20; that dip is called a pullback. Picture an up-escalator: someone steps back one stair, yet the escalator keeps rising. Impatience does the opposite: it chases a stock right after a big jump, or grabs a falling stock because it looks cheap. This is the course's default challenge strategy because it needs one look a day, in the evening after the market closes, for about 20 minutes.",
+    "hi": "Swing trade mein aap stock ko kuch din se kuch hafton tak rakhte hain, aur plan daily chart par banta hai. EMA Pullback Swing aise stock ko khareedta hai jo pehle se uptrend mein hai, lekin tabhi jab woh thoda ruk kar apne EMA 20 ki taraf wapas aaye; is wapsi ko pullback kehte hain. Upar jaati escalator sochiye: koi ek seedhi peeche aa gaya, par escalator toh upar hi ja rahi hai. Jaldbaazi iska ulta karwati hai: bade jump ke turant baad stock ke peeche bhaagna, ya girte stock ko 'sasta' samajh kar utha lena. Yeh course ki default challenge strategy isliye hai, kyunki ismein din mein ek baar, shaam ko market band hone ke baad, lagbhag 20 minute dekhna kaafi hai.",
+    "dv": "स्विंग ट्रेड में आप स्टॉक को कुछ दिन से कुछ हफ़्तों तक रखते हैं, और प्लान डेली चार्ट पर बनता है। EMA पुलबैक स्विंग ऐसे स्टॉक को ख़रीदता है जो पहले से अपट्रेंड में है, लेकिन तभी जब वह थोड़ा रुककर अपने EMA 20 की तरफ़ वापस आए; इस वापसी को पुलबैक कहते हैं। ऊपर जाती एस्केलेटर सोचिए: कोई एक सीढ़ी पीछे आ गया, पर एस्केलेटर तो ऊपर ही जा रही है। बेसब्री इसका उल्टा करवाती है: बड़ी छलाँग के तुरंत बाद स्टॉक के पीछे भागना, या गिरते स्टॉक को 'सस्ता' समझकर उठा लेना। यह कोर्स की डिफ़ॉल्ट चैलेंज स्ट्रैटेजी इसलिए है, क्योंकि इसमें दिन में एक बार, शाम को बाज़ार बंद होने के बाद, लगभग 20 मिनट देखना काफ़ी है।"
+   },
+   "example": {
+    "en": "Think of a Diwali sale. A good shirt at 20% off in a busy season is like a pullback: the demand is still there. Tomatoes at half price because they are going bad are like a downtrend: cheap for a reason. Kiran Foods Ltd, which Aman wants to buy the evening after its 7% jump, is neither. Buying it at tomorrow's open means buying far above its EMA 20, where the usual slide back towards EMA 20 can be bigger than your 1.5 x ATR stop.",
+    "hi": "Diwali sale sochiye. Busy season mein achhi shirt par 20% off ek pullback jaisa hai: demand abhi bhi bani hui hai. Aadhe daam par tamatar, kyunki woh sadne lage hain, downtrend jaise hain: saste toh hain, par kisi wajah se. Aman jis Kiran Foods Ltd ko 7% jump wali shaam khareedna chahta hai, woh in dono mein se kuch nahi hai. Use kal ke open par khareedne ka matlab hai EMA 20 se kaafi upar khareedna, jahan EMA 20 ki taraf aam wapsi bhi aapke 1.5 x ATR stop se badi ho sakti hai.",
+    "dv": "दिवाली सेल सोचिए। भीड़ वाले सीज़न में अच्छी शर्ट पर 20% की छूट एक पुलबैक जैसी है: माँग अब भी बनी हुई है। आधे दाम पर टमाटर, क्योंकि वे सड़ने लगे हैं, डाउनट्रेंड जैसे हैं: सस्ते तो हैं, पर किसी वजह से। अमन जिस Kiran Foods Ltd को 7% उछाल वाली शाम ख़रीदना चाहता है, वह इन दोनों में से कुछ नहीं है। उसे कल के ओपन पर ख़रीदने का मतलब है EMA 20 से काफ़ी ऊपर ख़रीदना, जहाँ EMA 20 की तरफ़ आम वापसी भी आपके 1.5 x ATR स्टॉप से बड़ी हो सकती है।"
+   },
+   "remember": {
+    "en": "Trend first, then wait for the pause. A stock that looks cheap in a downtrend is not a pullback.",
+    "hi": "Pehle trend, phir rukne ka intezaar. Downtrend mein sasta dikhne wala stock pullback nahi hai.",
+    "dv": "पहले ट्रेंड, फिर रुकने का इंतज़ार। डाउनट्रेंड में सस्ता दिखने वाला स्टॉक पुलबैक नहीं है।"
+   },
+   "visual": {
+    "kind": "compare",
+    "title": {
+     "en": "Three ways to buy",
+     "hi": "Khareedne ke teen tareeke",
+     "dv": "ख़रीदने के तीन तरीक़े"
+    },
+    "caption": {
+     "en": "Only the first is a setup. The other two are impatience dressed up as opportunity.",
+     "hi": "Sirf pehla setup hai. Baaki do mauke jaise dikhte hain, par asal mein jaldbaazi hai.",
+     "dv": "सिर्फ़ पहला सेटअप है। बाक़ी दो मौक़े जैसे दिखते हैं, पर असल में बेसब्री है।"
+    },
+    "cols": [
+     {
+      "head": {
+       "en": "Pullback in an uptrend",
+       "hi": "Uptrend mein pullback",
+       "dv": "अपट्रेंड में पुलबैक"
+      },
+      "tone": "up",
+      "points": [
+       {
+        "en": "EMA 20 above a rising EMA 50",
+        "hi": "EMA 20, badhte EMA 50 ke upar",
+        "dv": "EMA 20, बढ़ते EMA 50 के ऊपर"
+       },
+       {
+        "en": "Price rests near EMA 20",
+        "hi": "Price EMA 20 ke paas rukta hai",
+        "dv": "भाव EMA 20 के पास रुकता है"
+       },
+       {
+        "en": "Exit written before entry",
+        "hi": "Exit entry se pehle likha hua",
+        "dv": "एग्ज़िट एंट्री से पहले लिखा हुआ"
+       },
+       {
+        "en": "Eligible",
+        "hi": "Eligible",
+        "dv": "पास"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "Chasing a spike",
+       "hi": "Spike ke peeche bhaagna",
+       "dv": "उछाल के पीछे भागना"
+      },
+      "tone": "gold",
+      "points": [
+       {
+        "en": "Bought right after a big jump",
+        "hi": "Bade jump ke turant baad khareeda",
+        "dv": "बड़ी छलाँग के तुरंत बाद ख़रीदा"
+       },
+       {
+        "en": "Far above EMA 20",
+        "hi": "EMA 20 se kaafi upar",
+        "dv": "EMA 20 से काफ़ी ऊपर"
+       },
+       {
+        "en": "A normal dip can hit the stop",
+        "hi": "Normal girawat bhi stop hit kar sakti hai",
+        "dv": "मामूली गिरावट भी स्टॉप हिट कर सकती है"
+       },
+       {
+        "en": "Not eligible",
+        "hi": "Eligible nahi",
+        "dv": "फ़ेल"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "'Cheap' in a downtrend",
+       "hi": "Downtrend mein 'sasta'",
+       "dv": "डाउनट्रेंड में 'सस्ता'"
+      },
+      "tone": "down",
+      "points": [
+       {
+        "en": "EMA 20 below EMA 50",
+        "hi": "EMA 20, EMA 50 ke neeche",
+        "dv": "EMA 20, EMA 50 के नीचे"
+       },
+       {
+        "en": "Falling for a reason",
+        "hi": "Girne ki koi wajah hai",
+        "dv": "गिरने की कोई वजह है"
+       },
+       {
+        "en": "Not eligible, however cheap",
+        "hi": "Kitna bhi sasta ho, eligible nahi",
+        "dv": "कितना भी सस्ता हो, फ़ेल"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "The setup: trend, pullback, cool-down",
+    "hi": "Setup: trend, pullback, cool-down",
+    "dv": "सेटअप: ट्रेंड, पुलबैक, कूल-डाउन"
+   },
+   "p": {
+    "en": "You check three rules on the daily chart, with the tools from Day 8. Rule 1, trend: EMA 20 is above EMA 50, and EMA 50 is higher than it was 10 trading days ago, so it is rising. Rule 2, pullback: the close is within 2% of EMA 20, above or below it, and still above EMA 50. Rule 3, cool-down: RSI(14) is between 40 and 50; in an uptrend that means a shallow rest, not 'oversold'. A stock that passes all three goes to one more check, relative strength, before it joins your watchlist, the short list you look at each evening.",
+    "hi": "Teen rules aap daily chart par, Day 8 ke tools se check karte hain. Rule 1, trend: EMA 20, EMA 50 ke upar ho, aur EMA 50 ki value 10 trading days pehle se zyada ho, yaani woh badh raha ho. Rule 2, pullback: close EMA 20 se 2% ke andar ho, upar ya neeche, aur phir bhi EMA 50 ke upar ho. Rule 3, cool-down: RSI(14) 40 aur 50 ke beech ho; uptrend mein iska matlab halka sa aaraam hai, 'oversold' nahi. Jo stock teeno pass kare, woh ek aur check par jaata hai, relative strength, aur uske baad hi aapki watchlist mein aata hai, yaani woh chhoti list jo aap har shaam dekhte hain.",
+    "dv": "तीन नियम आप डेली चार्ट पर, दिन 8 के टूल्स से जाँचते हैं। नियम 1, ट्रेंड: EMA 20, EMA 50 के ऊपर हो, और EMA 50 की वैल्यू 10 ट्रेडिंग दिन पहले से ज़्यादा हो, यानी वह बढ़ रहा हो। नियम 2, पुलबैक: क्लोज़ EMA 20 से 2% के अंदर हो, ऊपर या नीचे, और फिर भी EMA 50 के ऊपर हो। नियम 3, कूल-डाउन: RSI(14) 40 और 50 के बीच हो; अपट्रेंड में इसका मतलब हल्का-सा आराम है, 'ओवरसोल्ड' नहीं। जो स्टॉक तीनों पास करे, वह एक और जाँच पर जाता है, रिलेटिव स्ट्रेंथ, और उसके बाद ही आपकी वॉचलिस्ट में आता है, यानी वह छोटी लिस्ट जो आप हर शाम देखते हैं।"
+   },
+   "example": {
+    "en": "Wednesday evening, Gupta Cement Ltd closes at Rs 393.50. EMA 20 is Rs 400.2 and EMA 50 is Rs 390.1; ten trading days ago EMA 50 was Rs 383.4, so it is rising. The close is about 1.7% below EMA 20 and still above EMA 50, and RSI(14) is 45. All three rules pass. Another stock on Priya's screen also shows RSI 45, but its EMA 20 is below EMA 50, so her check stops at rule 1.",
+    "hi": "Wednesday shaam, Gupta Cement Ltd Rs 393.50 par band hota hai. EMA 20 Rs 400.2 hai aur EMA 50 Rs 390.1; 10 trading days pehle EMA 50 Rs 383.4 tha, yaani woh badh raha hai. Close EMA 20 se lagbhag 1.7% neeche hai aur phir bhi EMA 50 ke upar, aur RSI(14) 45 hai. Teeno rules pass. Priya ki screen par ek aur stock ka RSI bhi 45 hai, lekin uska EMA 20, EMA 50 ke neeche hai, toh uski jaanch rule 1 par hi ruk jaati hai.",
+    "dv": "बुधवार शाम, Gupta Cement Ltd Rs 393.50 पर बंद होता है। EMA 20 Rs 400.2 है और EMA 50 Rs 390.1; 10 ट्रेडिंग दिन पहले EMA 50 Rs 383.4 था, यानी वह बढ़ रहा है। क्लोज़ EMA 20 से लगभग 1.7% नीचे है और फिर भी EMA 50 के ऊपर, और RSI(14) 45 है। तीनों नियम पास। प्रिया की स्क्रीन पर एक और स्टॉक का RSI भी 45 है, लेकिन उसका EMA 20, EMA 50 के नीचे है, तो उसकी जाँच नियम 1 पर ही रुक जाती है।"
+   },
+   "remember": {
+    "en": "Rule 1 is a gate: if the trend fails, nothing else matters, however good the RSI looks.",
+    "hi": "Rule 1 ek darwaza hai: trend fail toh baaki sab bekaar, RSI kitna bhi achha dikhe.",
+    "dv": "नियम 1 एक दरवाज़ा है: ट्रेंड फ़ेल, तो बाक़ी सब बेकार, RSI कितना भी अच्छा दिखे।"
+   },
+   "visual": {
+    "kind": "line",
+    "title": {
+     "en": "Trend first, then the pullback",
+     "hi": "Pehle trend, phir pullback",
+     "dv": "पहले ट्रेंड, फिर पुलबैक"
+    },
+    "caption": {
+     "en": "Gupta Cement Ltd: EMA 20 stays above a rising EMA 50 while the price dips back towards EMA 20. The last three points are Wednesday's setup, Thursday's signal and Friday.",
+     "hi": "Gupta Cement Ltd: price EMA 20 ki taraf wapas aata hai, aur EMA 20 badhte EMA 50 ke upar bana rehta hai. Aakhri teen points: Wednesday ka setup, Thursday ka signal aur Friday.",
+     "dv": "Gupta Cement Ltd: भाव EMA 20 की तरफ़ वापस आता है, और EMA 20 बढ़ते EMA 50 के ऊपर बना रहता है। आख़िरी तीन पॉइंट: बुधवार का सेटअप, गुरुवार का सिग्नल और शुक्रवार।"
+    },
+    "x_label": {
+     "en": "Trading days",
+     "hi": "Trading days",
+     "dv": "ट्रेडिंग के दिन"
+    },
+    "y_label": {
+     "en": "Price (Rs)",
+     "hi": "Price (Rs)",
+     "dv": "भाव (Rs)"
+    },
+    "series": [
+     {
+      "name": {
+       "en": "Close",
+       "hi": "Close",
+       "dv": "क्लोज़"
+      },
+      "tone": "brand",
+      "points": [
+       372.5,
+       369.9,
+       374.2,
+       374.0,
+       379.6,
+       379.9,
+       381.3,
+       380.6,
+       381.0,
+       386.6,
+       396.0,
+       392.4,
+       381.8,
+       377.5,
+       382.3,
+       381.7,
+       381.7,
+       384.9,
+       384.3,
+       384.0,
+       389.9,
+       389.0,
+       392.5,
+       406.4,
+       409.8,
+       403.6,
+       403.0,
+       401.8,
+       399.5,
+       401.4,
+       400.6,
+       400.6,
+       397.1,
+       396.7,
+       386.6,
+       395.5,
+       387.6,
+       390.3,
+       397.1,
+       398.7,
+       395.5,
+       396.4,
+       405.5,
+       403.2,
+       407.8,
+       405.0,
+       409.8,
+       413.0,
+       410.0,
+       404.5,
+       399.0,
+       395.5,
+       393.5,
+       400.0,
+       403.0
+      ]
+     },
+     {
+      "name": {
+       "en": "EMA 20",
+       "hi": "EMA 20",
+       "dv": "EMA 20"
+      },
+      "tone": "gold",
+      "points": [
+       359.6,
+       360.6,
+       361.9,
+       363.1,
+       364.6,
+       366.1,
+       367.5,
+       368.8,
+       369.9,
+       371.5,
+       373.9,
+       375.6,
+       376.2,
+       376.3,
+       376.9,
+       377.4,
+       377.8,
+       378.5,
+       379.0,
+       379.5,
+       380.5,
+       381.3,
+       382.4,
+       384.6,
+       387.0,
+       388.6,
+       390.0,
+       391.1,
+       391.9,
+       392.8,
+       393.6,
+       394.2,
+       394.5,
+       394.7,
+       393.9,
+       394.1,
+       393.5,
+       393.2,
+       393.5,
+       394.0,
+       394.2,
+       394.4,
+       395.4,
+       396.2,
+       397.3,
+       398.0,
+       399.1,
+       400.5,
+       401.4,
+       401.7,
+       401.4,
+       400.9,
+       400.2,
+       400.1,
+       400.4
+      ]
+     },
+     {
+      "name": {
+       "en": "EMA 50",
+       "hi": "EMA 50",
+       "dv": "EMA 50"
+      },
+      "tone": "muted",
+      "points": [
+       339.1,
+       340.3,
+       341.7,
+       342.9,
+       344.4,
+       345.8,
+       347.2,
+       348.5,
+       349.7,
+       351.2,
+       352.9,
+       354.5,
+       355.6,
+       356.4,
+       357.4,
+       358.4,
+       359.3,
+       360.3,
+       361.3,
+       362.1,
+       363.2,
+       364.2,
+       365.3,
+       367.0,
+       368.6,
+       370.0,
+       371.3,
+       372.5,
+       373.6,
+       374.7,
+       375.7,
+       376.6,
+       377.4,
+       378.2,
+       378.5,
+       379.2,
+       379.5,
+       379.9,
+       380.6,
+       381.3,
+       381.9,
+       382.5,
+       383.4,
+       384.1,
+       385.1,
+       385.8,
+       386.8,
+       387.8,
+       388.7,
+       389.3,
+       389.7,
+       389.9,
+       390.1,
+       390.4,
+       390.9
+      ]
+     }
+    ],
+    "marks": [
+     {
+      "x": 48,
+      "label": {
+       "en": "Dip starts",
+       "hi": "Dip shuru",
+       "dv": "गिरावट शुरू"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Relative strength: is it leading NIFTY 50?",
+    "hi": "Relative strength: kya stock NIFTY 50 se aage hai?",
+    "dv": "रिलेटिव स्ट्रेंथ: क्या स्टॉक NIFTY 50 से आगे है?"
+   },
+   "p": {
+    "en": "Relative strength, or RS, compares a stock's move with the market's move over the same period. It is not RSI, even though RSI stands for Relative Strength Index: RSI compares a stock with its own recent days, while RS compares it with NIFTY 50. Here the period is 3 months, about 63 trading days, and the market is NIFTY 50. Rule 4, strength: RS = the stock's % change minus NIFTY 50's % change, and it must be positive. The reason is practical: you may hold only 3 trades at a time, so spend those slots on stocks that have been stronger than the market, not weaker. Pass this too and the stock joins your watchlist; if more setups appear than you have free slots, prefer the higher RS.",
+    "hi": "Relative strength, yaani RS, batata hai ki ek hi period mein stock market se kitna aage ya peeche chala. Naam milta-julta hai, kyunki RSI ka poora naam Relative Strength Index hai, par dono alag hain: RSI stock ko uske apne pichhle dino se compare karta hai, RS use NIFTY 50 se. Yahan period 3 mahine ka hai, lagbhag 63 trading days, aur market matlab NIFTY 50. Rule 4, strength: RS = stock ka % change minus NIFTY 50 ka % change, aur yeh positive hona chahiye. Wajah practical hai: aap ek saath sirf 3 trades rakh sakte hain, toh yeh jagah un stocks ko dijiye jo market se mazboot rahe hain, kamzor nahi. Yeh bhi pass ho, tab stock watchlist mein aata hai; aur agar khaali jagah se zyada setups aa jayein, toh zyada RS wale ko pehle rakhiye.",
+    "dv": "रिलेटिव स्ट्रेंथ, यानी RS, बताती है कि एक ही दौर में स्टॉक बाज़ार से कितना आगे या पीछे चला। नाम मिलता-जुलता है, क्योंकि RSI का पूरा नाम Relative Strength Index है, पर दोनों अलग हैं: RSI स्टॉक की तुलना उसके अपने पिछले दिनों से करता है, RS उसकी तुलना NIFTY 50 से करती है। यहाँ दौर 3 महीने का है, लगभग 63 ट्रेडिंग दिन, और बाज़ार मतलब NIFTY 50। नियम 4, स्ट्रेंथ: RS = स्टॉक का % बदलाव माइनस NIFTY 50 का % बदलाव, और यह पॉज़िटिव होना चाहिए। वजह सीधी है: आप एक साथ सिर्फ़ 3 ट्रेड रख सकते हैं, तो यह जगह उन स्टॉक्स को दीजिए जो बाज़ार से मज़बूत रहे हैं, कमज़ोर नहीं। यह भी पास हो, तब स्टॉक वॉचलिस्ट में आता है; और अगर ख़ाली जगह से ज़्यादा सेटअप आ जाएँ, तो ज़्यादा RS वाले को पहले रखिए।"
+   },
+   "example": {
+    "en": "Over the same 3 months, NIFTY 50 went from 25,000 to 26,000, up 4%. Gupta Cement Ltd went from Rs 348 to Rs 393.50 (Wednesday's close), up about 13%, so its RS is about +9 points and it joins the watchlist. Sharma Textiles Ltd went from Rs 250 to Rs 255, up 2%: it rose, but its RS is -2 points, so it is skipped. On a free TradingView chart you can see RS as one line by typing the stock's symbol, a slash, then NIFTY; a rising line means the stock is beating the index.",
+    "hi": "Isi 3 mahine mein NIFTY 50, 25,000 se 26,000 gaya, yaani 4% upar. Gupta Cement Ltd Rs 348 se Rs 393.50 (Wednesday ka close) tak gaya, lagbhag 13% upar, toh uska RS lagbhag +9 points hai aur woh watchlist mein aa jaata hai. Sharma Textiles Ltd Rs 250 se Rs 255 gaya, 2% upar: chadha toh sahi, par RS -2 points hai, isliye skip. TradingView ke free chart par stock ka symbol, phir slash, phir NIFTY type karke aap RS ko ek line ki tarah dekh sakte hain; line upar ja rahi hai toh stock index se aage chal raha hai.",
+    "dv": "इन्हीं 3 महीनों में NIFTY 50, 25,000 से 26,000 गया, यानी 4% ऊपर। Gupta Cement Ltd Rs 348 से Rs 393.50 (बुधवार का क्लोज़) तक गया, लगभग 13% ऊपर, तो उसका RS लगभग +9 पॉइंट है और वह वॉचलिस्ट में आ जाता है। Sharma Textiles Ltd Rs 250 से Rs 255 गया, 2% ऊपर: चढ़ा तो सही, पर RS -2 पॉइंट है, इसलिए छोड़ दिया। TradingView के फ़्री चार्ट पर स्टॉक का सिंबल, फिर स्लैश, फिर NIFTY टाइप करके आप RS को एक लाइन की तरह देख सकते हैं; लाइन ऊपर जा रही है, तो स्टॉक इंडेक्स से आगे चल रहा है।"
+   },
+   "remember": {
+    "en": "Rising is not the same as leading. Spend your 3 slots on stocks that beat NIFTY 50.",
+    "hi": "Chadhna aur aage rehna ek baat nahi. Apni 3 jagah un stocks ko dijiye jo NIFTY 50 se aage hain.",
+    "dv": "चढ़ना और आगे रहना एक बात नहीं। अपनी 3 जगह उन स्टॉक्स को दें जो NIFTY 50 से आगे हैं।"
+   },
+   "visual": {
+    "kind": "bars",
+    "title": {
+     "en": "3-month change",
+     "hi": "3 mahine ka change",
+     "dv": "3 महीने का बदलाव"
+    },
+    "caption": {
+     "en": "Both stocks rose, but only one beat the index. RS = stock change minus NIFTY 50 change.",
+     "hi": "Dono stocks chadhe, par index se aage sirf ek raha. RS = stock ka change minus NIFTY 50 ka change.",
+     "dv": "दोनों स्टॉक चढ़े, पर इंडेक्स से आगे सिर्फ़ एक रहा। RS = स्टॉक का बदलाव माइनस NIFTY 50 का बदलाव।"
+    },
+    "unit": "%",
+    "items": [
+     {
+      "label": {
+       "en": "Gupta Cement",
+       "hi": "Gupta Cement",
+       "dv": "Gupta Cement"
+      },
+      "value": 13,
+      "tone": "up",
+      "display": "+13%"
+     },
+     {
+      "label": {
+       "en": "NIFTY 50",
+       "hi": "NIFTY 50",
+       "dv": "NIFTY 50"
+      },
+      "value": 4,
+      "tone": "gold",
+      "display": "+4%"
+     },
+     {
+      "label": {
+       "en": "Sharma Textiles",
+       "hi": "Sharma Textiles",
+       "dv": "Sharma Textiles"
+      },
+      "value": 2,
+      "tone": "muted",
+      "display": "+2%"
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "The signal, and an entry that never chases",
+    "hi": "Signal, aur aisi entry jo peeche nahi bhaagti",
+    "dv": "सिग्नल, और ऐसी एंट्री जो पीछे नहीं भागती"
+   },
+   "p": {
+    "en": "A watchlist stock needs a signal day: a candle that closes above the previous day's high while rule 1 still holds, a sign that buyers are stepping back in. If no signal comes within 5 trading days, drop the stock. On the signal evening you write the plan, and the entry is the next day's open, the first price you could really trade. The plan carries two limits: skip if the stock opens above the signal close plus 0.5 x ATR, because the gap has gone past your plan. Also skip if it opens below the signal day's low, because the signal has already failed. Skipping costs you no capital; chasing spends risk you never planned.",
+    "hi": "Watchlist wale stock ko ek signal day chahiye: ek candle jo pichhle din ke high ke upar close ho, aur rule 1 tab bhi pass ho; yeh ishaara hai ki buyers wapas aa rahe hain. 5 trading days mein signal na aaye, toh stock hata dijiye. Signal wali shaam aap plan likhte hain, aur entry hoti hai agle din ka open, yaani pehla price jis par aap sach mein trade kar sakte the. Plan mein do limits hoti hain: agar stock signal close plus 0.5 x ATR se upar khule, toh skip, kyunki gap aapke plan se aage nikal gaya. Aur agar signal day ke low se neeche khule, toh bhi skip, kyunki signal pehle hi fail ho chuka hai. Skip karne se capital nahi jaata; chase karne mein woh risk lagta hai jo aapne plan hi nahi kiya tha.",
+    "dv": "वॉचलिस्ट वाले स्टॉक को एक सिग्नल डे चाहिए: एक कैंडल जो पिछले दिन के हाई के ऊपर क्लोज़ हो, और नियम 1 तब भी पास हो; यह इशारा है कि ख़रीदार वापस आ रहे हैं। 5 ट्रेडिंग दिन में सिग्नल न आए, तो स्टॉक हटा दीजिए। सिग्नल वाली शाम आप प्लान लिखते हैं, और एंट्री होती है अगले दिन का ओपन, यानी पहला भाव जिस पर आप सच में ट्रेड कर सकते थे। प्लान में दो सीमाएँ होती हैं: अगर स्टॉक सिग्नल क्लोज़ प्लस 0.5 x ATR से ऊपर खुले, तो छोड़ दीजिए, क्योंकि गैप आपके प्लान से आगे निकल गया। और अगर सिग्नल डे के लो से नीचे खुले, तो भी छोड़ दीजिए, क्योंकि सिग्नल पहले ही फ़ेल हो चुका है। छोड़ने से पूँजी नहीं जाती; पीछा करने में वह रिस्क लगता है जो आपने प्लान ही नहीं किया था।"
+   },
+   "example": {
+    "en": "Gupta Cement Ltd joined Priya's watchlist during a five-day dip. On Thursday it closed at Rs 400, above Wednesday's high of Rs 398: the signal. That evening her plan reads: maximum entry Rs 400 + 0.5 x Rs 12 = Rs 406, and skip if it opens below Thursday's low of Rs 390. Friday opens at Rs 404, inside both limits, so her paper entry is Rs 404. Had it opened at Rs 409, she would have written 'skipped: gap past plan' and moved on, because a slip back to Rs 400 alone would already cost her half her risk.",
+    "hi": "Gupta Cement Ltd paanch din ki girawat ke dauran Priya ki watchlist mein aaya. Thursday ko woh Rs 400 par band hua, jo Wednesday ke high Rs 398 se upar hai: yahi signal hai. Us shaam uska plan kehta hai: maximum entry Rs 400 + 0.5 x Rs 12 = Rs 406, aur agar Thursday ke low Rs 390 se neeche khule toh skip. Friday ko stock Rs 404 par khulta hai, dono limits ke andar, toh uski paper entry Rs 404 hai. Agar woh Rs 409 par khulta, toh Priya 'skipped: gap past plan' likh kar aage badh jaati, kyunki sirf Rs 400 tak wapas aane par hi uska aadha risk chala jaata.",
+    "dv": "Gupta Cement Ltd पाँच दिन की गिरावट के दौरान प्रिया की वॉचलिस्ट में आया। गुरुवार को वह Rs 400 पर बंद हुआ, जो बुधवार के हाई Rs 398 से ऊपर है: यही सिग्नल है। उस शाम उसका प्लान कहता है: मैक्सिमम एंट्री Rs 400 + 0.5 x Rs 12 = Rs 406, और अगर गुरुवार के लो Rs 390 से नीचे खुले, तो छोड़ना है। शुक्रवार को स्टॉक Rs 404 पर खुलता है, दोनों सीमाओं के अंदर, तो उसकी पेपर एंट्री Rs 404 है। अगर वह Rs 409 पर खुलता, तो प्रिया 'छोड़ा: गैप प्लान से आगे' लिखकर आगे बढ़ जाती, क्योंकि सिर्फ़ Rs 400 तक वापस आने पर ही उसका आधा रिस्क चला जाता।"
+   },
+   "remember": {
+    "en": "Plan in the evening, enter at the next open, and only inside your two limits. On paper, read the open from the next evening's daily candle.",
+    "hi": "Plan shaam ko, entry agle open par, aur sirf apni do limits ke andar. Paper par open agli shaam daily candle se padhiye.",
+    "dv": "प्लान शाम को, एंट्री अगले ओपन पर, और सिर्फ़ अपनी दो सीमाओं के अंदर। पेपर पर ओपन अगली शाम डेली कैंडल से पढ़िए।"
+   },
+   "visual": {
+    "kind": "candles",
+    "title": {
+     "en": "Signal day, then a patient entry",
+     "hi": "Signal day, phir sabr wali entry",
+     "dv": "सिग्नल डे, फिर सब्र वाली एंट्री"
+    },
+    "caption": {
+     "en": "Thursday closes above Wednesday's high. Friday opens at Rs 404, below the Rs 406 maximum, so the paper entry is Rs 404 and the stop Rs 386.",
+     "hi": "Thursday ka close Wednesday ke high se upar hai. Friday Rs 404 par khulta hai, Rs 406 ki maximum se neeche, toh paper entry Rs 404 aur stop Rs 386.",
+     "dv": "गुरुवार का क्लोज़ बुधवार के हाई से ऊपर है। शुक्रवार Rs 404 पर खुलता है, Rs 406 की मैक्सिमम से नीचे, तो पेपर एंट्री Rs 404 और स्टॉप Rs 386।"
+    },
+    "bars": [
+     [
+      402.8,
+      406.1,
+      397.9,
+      403.2
+     ],
+     [
+      404.5,
+      407.8,
+      400.6,
+      407.8
+     ],
+     [
+      408.1,
+      413.8,
+      397.4,
+      405.0
+     ],
+     [
+      404.0,
+      414.3,
+      401.2,
+      409.8
+     ],
+     [
+      408.3,
+      416.8,
+      400.7,
+      413.0
+     ],
+     [
+      413.0,
+      416.5,
+      406.0,
+      410.0
+     ],
+     [
+      409.5,
+      412.0,
+      400.5,
+      404.5
+     ],
+     [
+      404.0,
+      407.0,
+      396.0,
+      399.0
+     ],
+     [
+      400.0,
+      402.5,
+      391.5,
+      395.5
+     ],
+     [
+      395.5,
+      398.0,
+      388.0,
+      393.5
+     ],
+     [
+      393.0,
+      401.5,
+      390.0,
+      400.0
+     ],
+     [
+      404.0,
+      408.0,
+      398.0,
+      403.0
+     ]
+    ],
+    "levels": [
+     {
+      "y": 406,
+      "label": {
+       "en": "Max entry 406",
+       "hi": "Max entry 406",
+       "dv": "मैक्स एंट्री 406"
+      },
+      "tone": "gold"
+     },
+     {
+      "y": 390,
+      "label": {
+       "en": "Skip < 390",
+       "hi": "Skip < 390",
+       "dv": "छोड़ें < 390"
+      },
+      "tone": "muted",
+      "dashed": true
+     },
+     {
+      "y": 386,
+      "label": {
+       "en": "Stop 386",
+       "hi": "Stop 386",
+       "dv": "स्टॉप 386"
+      },
+      "tone": "down"
+     }
+    ],
+    "marks": [
+     {
+      "i": 9,
+      "label": {
+       "en": "Pullback",
+       "hi": "Pullback",
+       "dv": "पुलबैक"
+      },
+      "tone": "gold",
+      "at": "low"
+     },
+     {
+      "i": 10,
+      "label": {
+       "en": "Signal",
+       "hi": "Signal",
+       "dv": "सिग्नल"
+      },
+      "tone": "up",
+      "at": "high"
+     },
+     {
+      "i": 11,
+      "label": {
+       "en": "Entry",
+       "hi": "Entry",
+       "dv": "एंट्री"
+      },
+      "tone": "brand",
+      "at": "high"
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "The plan card: stop, size, exits",
+    "hi": "Plan card: stop, size, exits",
+    "dv": "प्लान कार्ड: स्टॉप, साइज़, एग्ज़िट"
+   },
+   "p": {
+    "en": "Every trade gets a plan card before entry, and its numbers do not move afterwards. Stop: entry minus 1.5 x ATR(14), so ordinary daily noise is less likely to knock you out; because that distance is known the evening before, so is your size. Size: quantity = Rs 10,000 ÷ stop distance, rounded down; Rs 10,000 is 1% of your Rs 10 lakh virtual capital. If that many shares would be worth more than 25% of capital (Rs 2,50,000), cut the quantity to the cap, as on Day 9, and take the smaller number. Profit exit: a planned sell at entry + 2.5 x the stop distance, which is 2.5R; on paper it counts only if the price actually trades there. Time exit: count the entry day as day 1; if neither exit has happened by the close of day 15, exit at the next day's open. Hold at most 3 open trades, and remember from Day 9 that a gap can push a loss past 1R.",
+    "hi": "Har trade ka entry se pehle ek plan card banta hai, aur uske numbers baad mein nahi badalte. Stop: entry minus 1.5 x ATR(14), taaki roz ka normal utaar-chadhaav aapko aasaani se bahar na kar de; yeh doori pichhli shaam hi pata hoti hai, isliye size bhi. Size: quantity = Rs 10,000 ÷ stop ki doori, neeche round karke; Rs 10,000 aapke Rs 10 lakh virtual capital ka 1% hai. Agar itne shares ki value capital ke 25% (Rs 2,50,000) se zyada ho jaye, toh Day 9 ki tarah quantity ko cap tak ghata dijiye, aur jo number chhota ho wahi lijiye. Profit exit: entry + stop ki doori ka 2.5 guna par ek planned sell, yaani 2.5R; paper par yeh tabhi maana jayega jab price sach mein wahan trade kare. Time exit: entry wale din ko day 1 giniye; day 15 ke close tak dono mein se koi exit na ho, toh agle din ke open par exit. Ek saath zyada se zyada 3 open trades, aur Day 9 yaad rakhiye: gap aane par loss 1R se zyada bhi ho sakta hai.",
+    "dv": "हर ट्रेड का एंट्री से पहले एक प्लान कार्ड बनता है, और उसके नंबर बाद में नहीं बदलते। स्टॉप: एंट्री माइनस 1.5 x ATR(14), ताकि रोज़ का आम उतार-चढ़ाव आपको आसानी से बाहर न कर दे; यह दूरी पिछली शाम ही पता होती है, इसलिए साइज़ भी। साइज़: क्वांटिटी = Rs 10,000 ÷ स्टॉप की दूरी, नीचे की ओर राउंड करके; Rs 10,000 आपकी Rs 10 लाख की वर्चुअल पूँजी का 1% है। अगर इतने शेयरों की वैल्यू पूँजी के 25% (Rs 2,50,000) से ज़्यादा हो जाए, तो दिन 9 की तरह क्वांटिटी को सीमा तक घटा दीजिए, और जो संख्या छोटी हो, वही लीजिए। प्रॉफ़िट एग्ज़िट: एंट्री + स्टॉप की दूरी का 2.5 गुना पर एक तय सेल, यानी 2.5R; पेपर पर यह तभी माना जाएगा जब भाव सच में वहाँ ट्रेड करे। टाइम एग्ज़िट: एंट्री वाले दिन को दिन 1 गिनिए; दिन 15 के क्लोज़ तक दोनों में से कोई एग्ज़िट न हो, तो अगले दिन के ओपन पर एग्ज़िट। एक साथ ज़्यादा से ज़्यादा 3 खुले ट्रेड, और दिन 9 याद रखिए: गैप आने पर घाटा 1R से ज़्यादा भी हो सकता है।"
+   },
+   "example": {
+    "en": "Priya's card for Gupta Cement Ltd starts from Friday's open of Rs 404 and an ATR(14) of Rs 12; the calculation below shows every line. With a 2.5R profit exit, the breakeven win-rate is 1 ÷ (1 + 2.5), about 29% before costs. In ten trades, 3 winners at +2.5R and 7 losers at -1R net +0.5R; 2 winners and 8 losers net -3R. That is arithmetic, not a forecast: time exits, costs, slippage and gaps all change it. A normal order lasts one day; with a real broker, a sell that waits for weeks would need a GTT, the broker facility from Day 2.",
+    "hi": "Gupta Cement Ltd ke liye Priya ka card Friday ke open Rs 404 aur ATR(14) Rs 12 se shuru hota hai; neeche wali calculation mein har line dikhti hai. 2.5R profit exit par breakeven win-rate hai 1 ÷ (1 + 2.5), yaani costs se pehle lagbhag 29%. Das trades mein 3 jeet (+2.5R) aur 7 haar (-1R) hon toh net +0.5R; 2 jeet aur 8 haar hon toh net -3R. Yeh sirf hisaab hai, forecast nahi: time exit, costs, slippage aur gaps, sab isse badal dete hain. Normal order sirf ek din chalta hai; real broker par hafton tak rukne wale sell ke liye GTT chahiye hota, jo Day 2 mein dekha tha.",
+    "dv": "Gupta Cement Ltd के लिए प्रिया का कार्ड शुक्रवार के ओपन Rs 404 और ATR(14) Rs 12 से शुरू होता है; नीचे वाले हिसाब में हर लाइन दिखती है। 2.5R प्रॉफ़िट एग्ज़िट पर ब्रेकईवन विन-रेट है 1 ÷ (1 + 2.5), यानी ख़र्चों से पहले लगभग 29%। दस ट्रेड में 3 जीत (+2.5R) और 7 हार (-1R) हों, तो कुल +0.5R; 2 जीत और 8 हार हों, तो कुल -3R। यह सिर्फ़ हिसाब है, भविष्यवाणी नहीं: टाइम एग्ज़िट, ख़र्च, स्लिपेज और गैप, सब इसे बदल देते हैं। आम ऑर्डर सिर्फ़ एक दिन चलता है; असली ब्रोकर पर हफ़्तों तक रुकने वाले सेल के लिए GTT चाहिए होता, जो दिन 2 में देखा था।"
+   },
+   "remember": {
+    "en": "Write the stop, size and both exits before you enter. After entry you follow the card; you do not edit it.",
+    "hi": "Stop, size aur dono exits entry se pehle likhiye. Entry ke baad card follow hota hai, edit nahi.",
+    "dv": "स्टॉप, साइज़ और दोनों एग्ज़िट एंट्री से पहले लिखें। एंट्री के बाद कार्ड पर चलना है, उसे बदलना नहीं।"
+   },
+   "visual": {
+    "kind": "calc",
+    "title": {
+     "en": "Priya's plan card",
+     "hi": "Priya ka plan card",
+     "dv": "प्रिया का प्लान कार्ड"
+    },
+    "caption": {
+     "en": "22.4% of capital is under the 25% cap. A gap through the stop can still cost more than 1R.",
+     "hi": "Capital ka 22.4%, 25% cap ke andar hai. Stop ke paar gap aaye, toh loss phir bhi 1R se zyada ho sakta hai.",
+     "dv": "पूँजी का 22.4%, 25% की सीमा के अंदर है। स्टॉप के पार गैप आए, तो घाटा फिर भी 1R से ज़्यादा हो सकता है।"
+    },
+    "rows": [
+     {
+      "label": {
+       "en": "Entry: Friday's open",
+       "hi": "Entry: Friday ka open",
+       "dv": "एंट्री: शुक्रवार का ओपन"
+      },
+      "value": "Rs 404"
+     },
+     {
+      "label": {
+       "en": "1.5 x ATR, with ATR Rs 12",
+       "hi": "1.5 x ATR, jab ATR Rs 12",
+       "dv": "1.5 x ATR, जब ATR Rs 12"
+      },
+      "value": "Rs 18",
+      "op": "-"
+     },
+     {
+      "label": {
+       "en": "Stop price",
+       "hi": "Stop price",
+       "dv": "स्टॉप प्राइस"
+      },
+      "value": "Rs 386",
+      "op": "="
+     },
+     {
+      "label": {
+       "en": "Quantity: Rs 10,000 ÷ Rs 18, rounded down",
+       "hi": "Quantity: Rs 10,000 ÷ Rs 18, neeche round",
+       "dv": "क्वांटिटी: Rs 10,000 ÷ Rs 18, नीचे राउंड"
+      },
+      "value": "555"
+     },
+     {
+      "label": {
+       "en": "Position value: 555 x Rs 404",
+       "hi": "Position value: 555 x Rs 404",
+       "dv": "पोज़िशन वैल्यू: 555 x Rs 404"
+      },
+      "value": "Rs 2,24,220 (22.4%)"
+     },
+     {
+      "label": {
+       "en": "Profit exit: Rs 404 + 2.5 x Rs 18",
+       "hi": "Profit exit: Rs 404 + 2.5 x Rs 18",
+       "dv": "प्रॉफ़िट एग्ज़िट: Rs 404 + 2.5 x Rs 18"
+      },
+      "value": "Rs 449"
+     }
+    ],
+    "result": {
+     "label": {
+      "en": "Loss if the stop is hit: 555 x Rs 18",
+      "hi": "Stop hit hone par loss: 555 x Rs 18",
+      "dv": "स्टॉप हिट होने पर घाटा: 555 x Rs 18"
+     },
+     "value": "Rs 9,990 ≈ 1R"
+    }
+   }
+  },
+  {
+   "h": {
+    "en": "The screener finds, you decide",
+    "hi": "Screener dhoondhta hai, faisla aap karte hain",
+    "dv": "स्क्रीनर ढूँढता है, फ़ैसला आप करते हैं"
+   },
+   "p": {
+    "en": "A screener is a website tool that filters hundreds of stocks by your rules; TradingView's stock screener and Chartink both have free versions, and we have no tie-up with either. Start with the NIFTY 500, an index of 500 of India's larger listed companies. Keep only stocks that trade at least Rs 10 crore a day on average over the last 20 days (turnover = price x shares traded); thinly traded stocks have wide spreads and sudden gaps. Add rules 1 to 4 and run it once each evening. Free screeners cannot always express every rule, for example 'EMA 50 higher than 10 days ago'; any rule the screener cannot hold, you check by eye on the chart. Then open every result by eye: a downtrend stock in the list means a condition is wrong. Skip any stock whose results date falls in the next 15 trading days; Day 19 builds the full calendar. If no date is announced yet, check again each evening you hold the trade: companies can announce it only a few days ahead. Doubt any neat drop, such as exactly half, until you have checked for a bonus or split. The screener is your eyes and the trigger stays with you; on Day 16 these rules become a flowchart and alerts.",
+    "hi": "Screener ek website tool hai jo aapke rules se sainkdon stocks filter kar deta hai; TradingView ke stock screener aur Chartink, dono ke free versions hain, aur hamara kisi se koi tie-up nahi hai. Shuruaat NIFTY 500 se kijiye, yaani Bharat ki 500 badi listed companies ka index. Sirf woh stocks rakhiye jinka pichhle 20 din ka average turnover roz kam se kam Rs 10 crore ho (turnover = price x kitne shares trade hue); kam trade hone wale stocks mein spread chauda hota hai aur gap achanak aate hain. Phir rules 1 se 4 jodiye aur har shaam ek baar chalaiye. Free screener har rule nahi likh paate, jaise 'EMA 50, 10 din pehle se upar'; jo rule screener mein na bane, use chart par aankh se check kijiye. Iske baad har result ko aankh se khol kar dekhiye: list mein downtrend wala stock aa gaya, toh koi condition galat hai. Jis stock ki results date agle 15 trading days mein ho, use skip kijiye; poora calendar Day 19 mein banega. Date abhi announce nahi hui, toh trade ke dauran har shaam dobara check kijiye: companies yeh date kuch hi din pehle bhi bata sakti hain. Price achanak theek aadha ho jaye, toh pehle bonus ya split check kijiye; tab tak us girawat par bharosa mat kijiye. Screener aapki aankhon ka kaam karta hai, trigger aapke haath mein rehta hai; Day 16 mein yahi rules flowchart aur alerts banenge.",
+    "dv": "स्क्रीनर एक वेबसाइट टूल है, जो आपके नियमों से सैकड़ों स्टॉक्स फ़िल्टर कर देता है; TradingView के स्टॉक स्क्रीनर और Chartink, दोनों के फ़्री वर्ज़न हैं, और हमारा किसी से कोई टाई-अप नहीं है। शुरुआत NIFTY 500 से कीजिए, यानी भारत की 500 बड़ी लिस्टेड कंपनियों का इंडेक्स। सिर्फ़ वे स्टॉक रखिए जिनका पिछले 20 दिन का औसत टर्नओवर रोज़ कम से कम Rs 10 करोड़ हो (टर्नओवर = भाव x कितने शेयर ट्रेड हुए); कम ट्रेड होने वाले स्टॉक्स में स्प्रेड चौड़ा होता है और गैप अचानक आते हैं। फिर नियम 1 से 4 जोड़िए और हर शाम एक बार चलाइए। फ़्री स्क्रीनर हर नियम नहीं लिख पाते, जैसे 'EMA 50, 10 दिन पहले से ऊपर'; जो नियम स्क्रीनर में न बने, उसे चार्ट पर आँख से जाँचिए। इसके बाद हर नतीजे को आँख से खोलकर देखिए: लिस्ट में डाउनट्रेंड वाला स्टॉक आ गया, तो कोई कंडीशन ग़लत है। जिस स्टॉक की रिज़ल्ट डेट अगले 15 ट्रेडिंग दिनों में हो, उसे छोड़ दीजिए; पूरा कैलेंडर दिन 19 में बनेगा। अगर तारीख़ अभी घोषित नहीं हुई, तो ट्रेड के दौरान हर शाम फिर से देखिए: कंपनियाँ यह तारीख़ कुछ ही दिन पहले भी बता सकती हैं। भाव अचानक ठीक आधा हो जाए, तो पहले बोनस या स्प्लिट जाँचिए; तब तक उस गिरावट पर भरोसा मत कीजिए। स्क्रीनर आपकी आँखों का काम करता है, ट्रिगर आपके हाथ में रहता है; दिन 16 में यही नियम फ़्लोचार्ट और अलर्ट बनेंगे।"
+   },
+   "example": {
+    "en": "Aman spots Bharat Pumps Ltd on a free data site: 'down 50% today', RSI near 15, and ATR up from Rs 15 to Rs 36. He calls it cheap. Priya checks NSE's corporate actions page: a 1:1 bonus is listed for that day, so the price halved from about Rs 600 to Rs 300, while each holder is due one extra share for every share held. The site had not adjusted its data, so the gap counted as a true range of about Rs 300. On adjusted data nothing crashed and ATR is about Rs 7.50; a stop built on Rs 36 would sit Rs 54 away instead of about Rs 11. Day 15 explains bonuses and splits properly.",
+    "hi": "Aman ek free data site par Bharat Pumps Ltd dekhta hai: 'aaj 50% down', RSI 15 ke aas-paas, aur ATR Rs 15 se Rs 36 ho gaya. Woh kehta hai, sasta mil raha hai. Priya NSE ka corporate actions page check karti hai: us din ka 1:1 bonus likha hai, toh price lagbhag Rs 600 se Rs 300 ho gaya, par har holder ko har share par ek extra share milna hai. Site ne data adjust nahi kiya tha, isliye gap ko lagbhag Rs 300 ki true range gin liya gaya. Adjusted data par kuch nahi gira, aur ATR lagbhag Rs 7.50 hai; Rs 36 wale ATR se bana stop Rs 54 door hota, lagbhag Rs 11 ki jagah. Bonus aur split ko Day 15 mein theek se samjhenge.",
+    "dv": "अमन एक फ़्री डेटा साइट पर Bharat Pumps Ltd देखता है: 'आज 50% डाउन', RSI 15 के आसपास, और ATR Rs 15 से Rs 36 हो गया। वह कहता है, सस्ता मिल रहा है। प्रिया NSE का कॉर्पोरेट एक्शन पेज देखती है: उस दिन का 1:1 बोनस दर्ज है, तो भाव लगभग Rs 600 से Rs 300 हो गया, पर हर शेयरहोल्डर को हर शेयर पर एक और शेयर मिलना है। साइट ने डेटा एडजस्ट नहीं किया था, इसलिए गैप को लगभग Rs 300 की ट्रू रेंज गिन लिया गया। एडजस्टेड डेटा पर कुछ नहीं गिरा, और ATR लगभग Rs 7.50 है; Rs 36 वाले ATR से बना स्टॉप Rs 54 दूर होता, लगभग Rs 11 की जगह। बोनस और स्प्लिट को दिन 15 में ठीक से समझेंगे।"
+   },
+   "remember": {
+    "en": "Screener = eyes, trigger = you. An empty list on some evenings is the rule working, not the market ignoring you.",
+    "hi": "Screener = aankhein, trigger = aap. Kisi shaam list khaali aaye, toh yeh rule ka kaam hai; market aapko ignore nahi kar raha.",
+    "dv": "स्क्रीनर = आँखें, ट्रिगर = आप। किसी शाम लिस्ट ख़ाली आए, तो यह नियम का काम है; बाज़ार आपको अनदेखा नहीं कर रहा।"
+   },
+   "visual": {
+    "kind": "flow",
+    "title": {
+     "en": "From 500 stocks to one plan",
+     "hi": "500 stocks se ek plan tak",
+     "dv": "500 स्टॉक्स से एक प्लान तक"
+    },
+    "caption": {
+     "en": "The screener only narrows the list. Your eyes, your checks and a signal day turn it into a plan.",
+     "hi": "Screener sirf list chhoti karta hai. Aapki aankhein, aapke checks aur ek signal day hi use plan banate hain.",
+     "dv": "स्क्रीनर सिर्फ़ लिस्ट छोटी करता है। आपकी आँखें, आपकी जाँच और एक सिग्नल डे ही उसे प्लान बनाते हैं।"
+    },
+    "nodes": [
+     {
+      "label": {
+       "en": "NIFTY 500",
+       "hi": "NIFTY 500",
+       "dv": "NIFTY 500"
+      },
+      "sub": {
+       "en": "Min. turnover",
+       "hi": "Min turnover",
+       "dv": "न्यूनतम टर्नओवर"
+      },
+      "tone": "muted"
+     },
+     {
+      "label": {
+       "en": "Rules 1-3",
+       "hi": "Rules 1-3",
+       "dv": "नियम 1-3"
+      },
+      "sub": {
+       "en": "Trend, pullback, RSI",
+       "hi": "Trend, pullback, RSI",
+       "dv": "ट्रेंड, पुलबैक, RSI"
+      },
+      "tone": "brand"
+     },
+     {
+      "label": {
+       "en": "Rule 4",
+       "hi": "Rule 4",
+       "dv": "नियम 4"
+      },
+      "sub": {
+       "en": "RS beats NIFTY 50",
+       "hi": "RS, NIFTY 50 se aage",
+       "dv": "RS, NIFTY 50 से आगे"
+      },
+      "tone": "brand"
+     },
+     {
+      "label": {
+       "en": "Your eyes",
+       "hi": "Aapki aankhein",
+       "dv": "आपकी आँखें"
+      },
+      "sub": {
+       "en": "Results date, bonus, split",
+       "hi": "Results date, bonus, split",
+       "dv": "रिज़ल्ट डेट, बोनस, स्प्लिट"
+      },
+      "tone": "gold"
+     },
+     {
+      "label": {
+       "en": "Watchlist",
+       "hi": "Watchlist",
+       "dv": "वॉचलिस्ट"
+      },
+      "sub": {
+       "en": "Wait for a signal day",
+       "hi": "Signal day ka intezaar",
+       "dv": "सिग्नल डे का इंतज़ार"
+      }
+     },
+     {
+      "label": {
+       "en": "Plan card",
+       "hi": "Plan card",
+       "dv": "प्लान कार्ड"
+      },
+      "sub": {
+       "en": "Entry, stop, size, exits",
+       "hi": "Entry, stop, size, exits",
+       "dv": "एंट्री, स्टॉप, साइज़, एग्ज़िट"
+      },
+      "tone": "up"
+     }
+    ]
+   }
+  }
+ ],
+ "key_terms": [
+  {
+   "term": {
+    "en": "Pullback",
+    "hi": "Pullback",
+    "dv": "पुलबैक"
+   },
+   "meaning": {
+    "en": "A short dip inside an uptrend, back towards a moving average such as EMA 20, while the trend is still intact.",
+    "hi": "Uptrend ke andar ek chhoti si girawat, EMA 20 jaise moving average ki taraf, jab trend abhi bhi bana hua ho.",
+    "dv": "अपट्रेंड के अंदर एक छोटी-सी गिरावट, EMA 20 जैसे मूविंग एवरेज की तरफ़, जब ट्रेंड अब भी बना हुआ हो।"
+   }
+  },
+  {
+   "term": {
+    "en": "Swing trade",
+    "hi": "Swing trade",
+    "dv": "स्विंग ट्रेड"
+   },
+   "meaning": {
+    "en": "A trade held for a few days to a few weeks, planned on the daily chart and checked once a day.",
+    "hi": "Kuch din se kuch hafton tak rakha jaane wala trade, jiska plan daily chart par banta hai aur din mein ek baar check hota hai.",
+    "dv": "कुछ दिन से कुछ हफ़्तों तक रखा जाने वाला ट्रेड, जिसका प्लान डेली चार्ट पर बनता है और दिन में एक बार जाँचा जाता है।"
+   }
+  },
+  {
+   "term": {
+    "en": "Signal day",
+    "hi": "Signal day",
+    "dv": "सिग्नल डे"
+   },
+   "meaning": {
+    "en": "The day a watchlist stock closes above the previous day's high while the trend rule still holds. You write the plan that evening and enter at the next open.",
+    "hi": "Woh din jab watchlist wala stock pichhle din ke high ke upar close kare aur trend rule tab bhi pass ho. Plan usi shaam likhte hain, entry agle open par.",
+    "dv": "वह दिन जब वॉचलिस्ट वाला स्टॉक पिछले दिन के हाई के ऊपर क्लोज़ करे और ट्रेंड वाला नियम तब भी पास हो। प्लान उसी शाम लिखते हैं, एंट्री अगले ओपन पर।"
+   }
+  },
+  {
+   "term": {
+    "en": "Relative strength (RS)",
+    "hi": "Relative strength (RS)",
+    "dv": "रिलेटिव स्ट्रेंथ (RS)"
+   },
+   "meaning": {
+    "en": "A stock's % change minus NIFTY 50's % change over the same period. Positive means the stock has beaten the index. Not the same as RSI.",
+    "hi": "Ek hi dauran mein stock ka % change minus NIFTY 50 ka % change. Positive ka matlab stock index se aage raha. Yeh RSI nahi hai.",
+    "dv": "एक ही दौर में स्टॉक का % बदलाव माइनस NIFTY 50 का % बदलाव। पॉज़िटिव का मतलब स्टॉक इंडेक्स से आगे रहा। यह RSI नहीं है।"
+   }
+  },
+  {
+   "term": {
+    "en": "Screener",
+    "hi": "Screener",
+    "dv": "स्क्रीनर"
+   },
+   "meaning": {
+    "en": "A tool that filters many stocks by your rules and returns a list. It never places orders and never replaces your own check.",
+    "hi": "Aisa tool jo aapke rules se bahut saare stocks filter karke ek list deta hai. Yeh na order lagata hai, na aapki apni jaanch ki jagah leta hai.",
+    "dv": "ऐसा टूल जो आपके नियमों से बहुत-से स्टॉक्स फ़िल्टर करके एक लिस्ट देता है। यह न ऑर्डर लगाता है, न आपकी अपनी जाँच की जगह लेता है।"
+   }
+  },
+  {
+   "term": {
+    "en": "Time exit",
+    "hi": "Time exit",
+    "dv": "टाइम एग्ज़िट"
+   },
+   "meaning": {
+    "en": "Leaving a trade after a set time when neither the stop nor the profit exit has been hit. Here: count the entry day as day 1; if nothing has happened by the close of day 15, exit at the next open.",
+    "hi": "Tay waqt ke baad trade se nikalna, jab na stop hit hua ho na profit exit. Yahan: entry wala din day 1 giniye; day 15 ke close tak kuch na ho, toh agle open par exit.",
+    "dv": "तय समय के बाद ट्रेड से निकलना, जब न स्टॉप हिट हुआ हो, न प्रॉफ़िट एग्ज़िट। यहाँ: एंट्री वाले दिन को दिन 1 गिनिए; दिन 15 के क्लोज़ तक कुछ न हो, तो अगले ओपन पर एग्ज़िट।"
+   }
+  }
+ ],
+ "mindmap": {
+  "kind": "mindmap",
+  "center": {
+   "en": "EMA Pullback Swing",
+   "hi": "EMA Pullback Swing",
+   "dv": "EMA पुलबैक स्विंग"
+  },
+  "branches": [
+   {
+    "label": {
+     "en": "Setup",
+     "hi": "Setup",
+     "dv": "सेटअप"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "EMA 20 above a rising EMA 50",
+      "hi": "EMA 20, badhte EMA 50 ke upar",
+      "dv": "EMA 20, बढ़ते EMA 50 के ऊपर"
+     },
+     {
+      "en": "Close within 2% of EMA 20",
+      "hi": "Close EMA 20 se 2% ke andar",
+      "dv": "क्लोज़ EMA 20 से 2% के अंदर"
+     },
+     {
+      "en": "RSI(14) 40-50",
+      "hi": "RSI(14) 40-50",
+      "dv": "RSI(14) 40-50"
+     },
+     {
+      "en": "RS beats NIFTY 50",
+      "hi": "RS, NIFTY 50 se aage",
+      "dv": "RS, NIFTY 50 से आगे"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Entry",
+     "hi": "Entry",
+     "dv": "एंट्री"
+    },
+    "tone": "up",
+    "points": [
+     {
+      "en": "Signal: close above previous high",
+      "hi": "Signal: pichhle high ke upar close",
+      "dv": "सिग्नल: पिछले हाई के ऊपर क्लोज़"
+     },
+     {
+      "en": "Enter at the next open",
+      "hi": "Entry agle open par",
+      "dv": "एंट्री अगले ओपन पर"
+     },
+     {
+      "en": "Max entry = close + 0.5 x ATR",
+      "hi": "Max entry = close + 0.5 x ATR",
+      "dv": "मैक्स एंट्री = क्लोज़ + 0.5 x ATR"
+     },
+     {
+      "en": "Gap past plan = skip",
+      "hi": "Plan se aage gap = skip",
+      "dv": "प्लान से आगे गैप = छोड़ें"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Plan card",
+     "hi": "Plan card",
+     "dv": "प्लान कार्ड"
+    },
+    "tone": "gold",
+    "points": [
+     {
+      "en": "Stop = entry - 1.5 x ATR",
+      "hi": "Stop = entry - 1.5 x ATR",
+      "dv": "स्टॉप = एंट्री - 1.5 x ATR"
+     },
+     {
+      "en": "Qty = Rs 10,000 ÷ stop distance",
+      "hi": "Qty = Rs 10,000 ÷ stop distance",
+      "dv": "क्वांटिटी = Rs 10,000 ÷ स्टॉप की दूरी"
+     },
+     {
+      "en": "Profit exit 2.5R; time exit day 15",
+      "hi": "Profit exit 2.5R; time exit day 15",
+      "dv": "प्रॉफ़िट एग्ज़िट 2.5R; टाइम एग्ज़िट दिन 15"
+     },
+     {
+      "en": "Max 3 trades, 25% cap",
+      "hi": "Max 3 trades, 25% cap",
+      "dv": "ज़्यादा से ज़्यादा 3 ट्रेड, 25% सीमा"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Screener",
+     "hi": "Screener",
+     "dv": "स्क्रीनर"
+    },
+    "tone": "muted",
+    "points": [
+     {
+      "en": "Finds, never decides",
+      "hi": "Dhoondhta hai, faisla nahi karta",
+      "dv": "ढूँढता है, फ़ैसला नहीं करता"
+     },
+     {
+      "en": "Check every result by eye",
+      "hi": "Har result aankh se check",
+      "dv": "हर नतीजा आँख से जाँचें"
+     },
+     {
+      "en": "Results in next 15 days = skip",
+      "hi": "Agle 15 din mein results = skip",
+      "dv": "अगले 15 दिन में रिज़ल्ट = छोड़ें"
+     },
+     {
+      "en": "A bonus can fake a crash",
+      "hi": "Bonus nakli crash dikha sakta hai",
+      "dv": "बोनस नक़ली क्रैश दिखा सकता है"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Your mind",
+     "hi": "Aapka mann",
+     "dv": "आपका मन"
+    },
+    "tone": "down",
+    "points": [
+     {
+      "en": "Impatience chases; rules wait",
+      "hi": "Impatience bhaagti hai; rules rukte hain",
+      "dv": "बेसब्री भागती है; नियम रुकते हैं"
+     },
+     {
+      "en": "A missed trade costs no capital",
+      "hi": "Chhoote trade se capital nahi jaata",
+      "dv": "छूटे ट्रेड से पूँजी नहीं जाती"
+     },
+     {
+      "en": "Empty list = rule working",
+      "hi": "Khaali list = rule kaam kar raha",
+      "dv": "ख़ाली लिस्ट = नियम काम कर रहा"
+     }
+    ]
+   }
+  ]
+ },
+ "kaam": {
+  "en": "Write your EMA Pullback rule card, build a screener from it, check its results by eye, and fill one practice plan card in your sheet or notebook. No trade today; paper trading starts tomorrow. Allow about 55 minutes the first time.",
+  "hi": "Apna EMA Pullback rule card likhiye, usse screener banaiye, results aankh se check kijiye, aur sheet ya notebook mein ek practice plan card bhariye. Aaj koi trade nahi; paper trading kal se shuru hogi. Pehli baar mein lagbhag 55 minute lagenge.",
+  "dv": "अपना EMA पुलबैक रूल कार्ड लिखिए, उससे स्क्रीनर बनाइए, नतीजे आँख से जाँचिए, और शीट या नोटबुक में एक अभ्यास प्लान कार्ड भरिए। आज कोई ट्रेड नहीं; पेपर ट्रेडिंग कल से शुरू होगी। पहली बार में लगभग 55 मिनट लगेंगे।"
+ },
+ "kaam_steps": [
+  {
+   "en": "On one page in Google Sheets or your notebook, write your EMA Pullback rule card: rules 1 to 4, the signal day and its 5-day limit, entry at the next open with its two skip limits, the 1.5 x ATR stop, size with the 25% cap, the 2.5R and 15-day exits, the results-date and bonus/split checks, and the house limits: stop for the day after -2R, pause and review after -5R in a week. Tomorrow's paper trades follow this card.",
+   "hi": "Google Sheets ya notebook mein ek page par apna EMA Pullback rule card likhiye: rules 1 se 4, signal day aur uski 5 din ki limit, agle open par entry aur uski do skip limits, 1.5 x ATR stop, 25% cap ke saath size, 2.5R aur 15 din wale exits, results date aur bonus/split ke checks, aur house limits: -2R ke baad us din ke liye stop, hafte mein -5R ke baad ruk kar review. Kal se paper trades isi card se chalenge.",
+   "dv": "Google Sheets या नोटबुक में एक पेज पर अपना EMA पुलबैक रूल कार्ड लिखिए: नियम 1 से 4, सिग्नल डे और उसकी 5 दिन की सीमा, अगले ओपन पर एंट्री और उसकी दो स्किप सीमाएँ, 1.5 x ATR स्टॉप, 25% सीमा के साथ साइज़, 2.5R और 15 दिन वाले एग्ज़िट, रिज़ल्ट डेट व बोनस/स्प्लिट की जाँच, और हाउस लिमिट: -2R के बाद उस दिन के लिए रुकिए, हफ़्ते में -5R के बाद रुककर रिव्यू कीजिए। कल से पेपर ट्रेड इसी कार्ड से चलेंगे।"
+  },
+  {
+   "en": "Run the AI Lab prompt 'Screener condition writer' and copy the conditions it gives for rules 1 to 4 and the minimum turnover.",
+   "hi": "AI Lab ka 'Screener condition writer' prompt chalaiye, aur rules 1 se 4 aur minimum turnover ki jo conditions woh de, unhe copy kar lijiye.",
+   "dv": "AI Lab का 'स्क्रीनर कंडीशन राइटर' प्रॉम्प्ट चलाइए, और नियम 1 से 4 और न्यूनतम टर्नओवर की जो कंडीशन वह दे, उन्हें कॉपी कर लीजिए।"
+  },
+  {
+   "en": "Open a free screener, TradingView's stock screener or Chartink (no broker account needed), enter those conditions and run it on the latest daily close. Note any rule it cannot hold; you will check that one by eye.",
+   "hi": "Ek free screener kholiye, TradingView ka stock screener ya Chartink (broker account ki zaroorat nahi), woh conditions daaliye aur latest daily close par chalaiye. Jo rule screener mein na bane, use note kar lijiye; woh aankh se check hoga.",
+   "dv": "एक फ़्री स्क्रीनर खोलिए, TradingView का स्टॉक स्क्रीनर या Chartink (ब्रोकर अकाउंट की ज़रूरत नहीं), वो कंडीशन डालिए और ताज़ा डेली क्लोज़ पर चलाइए। जो नियम स्क्रीनर में न बने, उसे नोट कर लीजिए; वह आँख से जाँचा जाएगा।"
+  },
+  {
+   "en": "Open 5 charts from the results and mark each Eligible or Not eligible by eye against rules 1 to 4. If the list is empty, check 5 NIFTY 50 stocks by hand instead. These names are a checking drill, not a buy list; do not share them as tips.",
+   "hi": "Results mein se 5 charts kholiye aur rules 1 se 4 ke hisaab se har ek ko aankh se Eligible ya Not eligible mark kijiye. List khaali ho, toh 5 NIFTY 50 stocks haath se check kijiye. Yeh naam sirf checking drill hain, buy list nahi; inhe tips ki tarah share mat kijiye.",
+   "dv": "नतीजों में से 5 चार्ट खोलिए और नियम 1 से 4 के हिसाब से हर एक को आँख से 'पास' या 'फ़ेल' मार्क कीजिए। लिस्ट ख़ाली हो, तो 5 NIFTY 50 स्टॉक्स हाथ से जाँचिए। ये नाम सिर्फ़ जाँच का अभ्यास हैं, ख़रीदने की लिस्ट नहीं; इन्हें टिप्स की तरह शेयर न करें।"
+  },
+  {
+   "en": "If a stock that breaks a rule slipped through, fix that one condition, run the screener again and note what changed.",
+   "hi": "Agar koi rule todne wala stock list mein aa gaya, toh woh ek condition theek kijiye, screener dobara chalaiye aur note kijiye ki kya badla.",
+   "dv": "अगर कोई नियम तोड़ने वाला स्टॉक लिस्ट में आ गया, तो वह एक कंडीशन ठीक कीजिए, स्क्रीनर दोबारा चलाइए और नोट कीजिए कि क्या बदला।"
+  },
+  {
+   "en": "In Google Sheets or a notebook, fill one plan-card row for this practice case: signal close Rs 520, signal-day low Rs 508, ATR Rs 16, next open Rs 526. Work out the maximum entry, whether to enter, the stop, quantity, position % and profit exit. Check: Rs 528, yes, Rs 502, 416 shares, 21.9% and Rs 586.",
+   "hi": "Google Sheets ya notebook mein is practice case ke liye ek plan-card row bhariye: signal close Rs 520, signal day ka low Rs 508, ATR Rs 16, agla open Rs 526. Maximum entry, entry leni hai ya nahi, stop, quantity, position % aur profit exit nikaliye. Milaiye: Rs 528, haan, Rs 502, 416 shares, 21.9% aur Rs 586.",
+   "dv": "Google Sheets या नोटबुक में इस अभ्यास केस के लिए प्लान कार्ड की एक लाइन भरिए: सिग्नल क्लोज़ Rs 520, सिग्नल डे का लो Rs 508, ATR Rs 16, अगला ओपन Rs 526। मैक्सिमम एंट्री, एंट्री लेनी है या नहीं, स्टॉप, क्वांटिटी, पोज़िशन % और प्रॉफ़िट एग्ज़िट निकालिए। मिलाइए: Rs 528, हाँ, Rs 502, 416 शेयर, 21.9% और Rs 586।"
+  }
+ ],
+ "kaam_min": 55,
+ "outcome": {
+  "en": "By the end you can state the EMA Pullback Swing rules exactly, check a chart against them, write a plan card with a 1.5 x ATR stop, a sized quantity, a 2.5R profit exit and a 15-day time exit, and explain why a gap past your plan is skipped, not chased.",
+  "hi": "Aaj ke baad aap EMA Pullback Swing ke rules bilkul saaf bata payenge, kisi chart ko un par check kar payenge, 1.5 x ATR stop, sahi quantity, 2.5R profit exit aur 15 din ke time exit wala plan card likh payenge, aur samjha payenge ki plan se aage ka gap skip kyun hota hai, chase kyun nahi.",
+  "dv": "आज के बाद आप EMA पुलबैक स्विंग के नियम बिल्कुल साफ़ बता पाएँगे, किसी चार्ट को उन पर जाँच पाएँगे, 1.5 x ATR स्टॉप, सही क्वांटिटी, 2.5R प्रॉफ़िट एग्ज़िट और 15 दिन के टाइम एग्ज़िट वाला प्लान कार्ड लिख पाएँगे, और समझा पाएँगे कि प्लान से आगे का गैप छोड़ा क्यों जाता है, उसका पीछा क्यों नहीं किया जाता।"
+ },
+ "tools": [
+  {
+   "en": "TradingView free chart and stock screener",
+   "hi": "TradingView free chart aur stock screener",
+   "dv": "TradingView फ़्री चार्ट और स्टॉक स्क्रीनर"
+  },
+  {
+   "en": "Chartink (free; some features need a free login)",
+   "hi": "Chartink (free; kuch features ke liye free login)",
+   "dv": "Chartink (फ़्री; कुछ फ़ीचर के लिए फ़्री लॉगिन)"
+  },
+  {
+   "en": "NSE website: event calendar and corporate actions",
+   "hi": "NSE website: event calendar aur corporate actions",
+   "dv": "NSE वेबसाइट: इवेंट कैलेंडर और कॉर्पोरेट एक्शन"
+  },
+  {
+   "en": "Google Sheets or a notebook",
+   "hi": "Google Sheets ya notebook",
+   "dv": "Google Sheets या नोटबुक"
+  },
+  {
+   "en": "Any AI chat",
+   "hi": "Koi bhi AI chat",
+   "dv": "कोई भी AI चैट"
+  }
+ ],
+ "fun": {
+  "en": "'Screener Race', a process game: pairs swap screener lists. You score one point for every stock in your partner's list that breaks a rule, and your partner scores one when they fix the condition that let it in. Points never come from the stocks listed, and no stock is discussed as a buy or sell. Solo version: open 5 random daily charts, call Eligible or Not eligible within 60 seconds for each, then check against your rule card.",
+  "hi": "'Screener Race', ek process game: jodi mein screener lists badal lijiye. Partner ki list mein har rule todne wale stock par aapko ek point, aur jab partner woh condition theek kar de jisse woh stock aaya, toh ek point usko. Point kabhi list ke stocks se nahi milte, aur kisi stock ki buy ya sell ke roop mein baat nahi hoti. Akele khelna ho toh: 5 random daily charts kholiye, har chart par 60 second mein Eligible ya Not eligible boliye, phir rule card se milaiye.",
+  "dv": "'स्क्रीनर रेस', एक प्रोसेस गेम: जोड़ी में स्क्रीनर लिस्ट बदल लीजिए। पार्टनर की लिस्ट में हर नियम तोड़ने वाले स्टॉक पर आपको एक पॉइंट, और जब पार्टनर वह कंडीशन ठीक कर दे जिससे वह स्टॉक आया, तो एक पॉइंट उसे। पॉइंट कभी लिस्ट के स्टॉक्स से नहीं मिलते, और किसी स्टॉक की ख़रीद या बिक्री के तौर पर बात नहीं होती। अकेले खेलना हो तो: 5 रैंडम डेली चार्ट खोलिए, हर चार्ट पर 60 सेकंड में 'पास' या 'फ़ेल' बोलिए, फिर रूल कार्ड से मिलाइए।"
+ },
+ "compliance": "Educational content only, not investment advice. Company names and chart prices are made up for illustration. No performance claim is made; past performance is not indicative of future results. Stage 1 uses virtual money only. No affiliation with any screener or charting site named. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
+ "prompts": [
+  {
+   "title": {
+    "en": "Screener condition writer",
+    "hi": "Screener condition writer",
+    "dv": "स्क्रीनर कंडीशन राइटर"
+   },
+   "body": "You are a careful teacher helping a beginner build a stock screener for Indian cash equities on the daily timeframe. I will tell you which platform I use (TradingView stock screener or Chartink). Turn these rules into screener conditions: (1) EMA 20 above EMA 50, and EMA 50 higher than it was 10 trading days ago; (2) close within 2% of EMA 20, above or below, and above EMA 50; (3) RSI(14) between 40 and 50; (4) 3-month (63 trading day) % change greater than NIFTY 50's 3-month % change; (5) universe NIFTY 500, with 20-day average turnover (close x volume) above Rs 10 crore. Give each condition in the platform's own syntax, then explain each clause in one plain line so I can verify it. Also give a second version for signal days: rule 1, rule 4 and the universe and turnover filter, plus today's close above the previous day's high. Explain that rules 2 and 3 were met on an earlier day, so I must match this list against my watchlist from the last 5 trading days. If the platform cannot express a rule, say so clearly and tell me to check that rule by eye. Label every statement about the platform's features as Fact (checkable in its help pages), Guess (you are not sure, or it may have changed) or Kachra (a common myth). Finally, list 2 ways a wrong clause would show up in the results, for example downtrend stocks appearing. Do not name any stock, do not give buy or sell advice, and do not mention price targets or expected returns.\n\nMy platform: <TradingView stock screener or Chartink>"
+  },
+  {
+   "title": {
+    "en": "Rule-card ambiguity hunt",
+    "hi": "Rule card ki ambiguity pakadiye",
+    "dv": "रूल कार्ड की उलझनें पकड़ें"
+   },
+   "body": "Act as a strict examiner of trading rule cards. I will paste my EMA Pullback Swing rule card below. Find every word or rule that two people could read differently (for example 'near', 'rising', 'strong', or 'close above what?') and ask me one short question about each. Then check whether the card covers all of these, and list anything missing: trend filter, pullback distance, RSI zone, relative strength vs NIFTY 50, signal day, signal within 5 trading days of joining the watchlist, NIFTY 500 universe with average daily turnover of Rs 10 crore or more, entry at the next day's open with a maximum entry and a gap-down skip, stop at 1.5 x ATR(14) below entry, quantity from 1% risk on Rs 10 lakh virtual capital, 25% position cap, 2.5R profit exit, 15-day time exit, maximum 3 open trades, daily stop after -2R, weekly pause after -5R, results-date check and corporate-action check. Do not judge whether the strategy makes money, do not suggest any stock, and do not give buy or sell advice, targets or return expectations.\n\nMy rule card: <paste here>"
+  },
+  {
+   "title": {
+    "en": "Plan-card arithmetic check",
+    "hi": "Plan card ka hisaab check",
+    "dv": "प्लान कार्ड का हिसाब जाँचें"
+   },
+   "body": "Check the arithmetic of my plan card for a virtual paper trade. I will type: capital (Rs 10,00,000), risk per trade (1%), the signal day's close and low, ATR(14), the next day's open, plus my own answers. Show each step: maximum entry = signal close + 0.5 x ATR, and whether the open is inside it and above the signal day's low (if not, the rule says skip); entry = the open; stop = entry - 1.5 x ATR; quantity = (capital x 1%) / (1.5 x ATR), rounded down; position value and its % of capital, and if it is above 25%, the capped quantity (Rs 2,50,000 ÷ entry, rounded down) and the new planned risk in R; profit exit = entry + 2.5 x stop distance; the loss in rupees and in R if the stop is hit exactly; and the loss in R if the stock opens 2% below the stop. Then point out which of my answers differ from yours and why. This is an arithmetic check only: do not tell me whether to take the trade, do not name or suggest any stock, and do not give return expectations.\n\nMy numbers and my answers: <type here>"
+  }
+ ],
+ "journal_prompt": {
+  "en": "Recall one time you chased something that had already moved: a sale, a train, a stock, a trend. What did the chase cost you? Now copy the one line from today's rule card that would have made you wait.",
+  "hi": "Ek aisa mauka yaad kijiye jab aap kisi aisi cheez ke peeche bhaage jo pehle hi nikal chuki thi: sale, train, stock ya trend. Us chase ki kya keemat chukani padi? Ab aaj ke rule card ki woh ek line likhiye jo aapko rukne par majboor karti.",
+  "dv": "एक ऐसा मौक़ा याद कीजिए जब आप किसी ऐसी चीज़ के पीछे भागे जो पहले ही निकल चुकी थी: सेल, ट्रेन, स्टॉक या ट्रेंड। उस भागदौड़ की क्या क़ीमत चुकानी पड़ी? अब आज के रूल कार्ड की वह एक लाइन लिखिए, जो आपको रुकने पर मजबूर करती।"
+ },
+ "motivation": {
+  "en": "Today you wrote rules that mostly tell you when not to buy. On most evenings, those are the rules you will use.",
+  "hi": "Aaj aapne aise rules likhe jo zyadatar batate hain ki kab nahi khareedna. Zyadatar shaamon ko aap yahi rules use karenge.",
+  "dv": "आज आपने ऐसे नियम लिखे जो ज़्यादातर बताते हैं कि कब नहीं ख़रीदना है। ज़्यादातर शामों को आप यही नियम इस्तेमाल करेंगे।"
+ },
+ "quiz": [
+  {
+   "stem": {
+    "en": "A stock's EMA 20 is below its EMA 50. The price has just dipped to EMA 20 and RSI(14) is 45. Under the EMA Pullback Swing rules, what do you do?",
+    "hi": "Ek stock ka EMA 20 uske EMA 50 ke neeche hai. Price abhi EMA 20 tak aaya hai aur RSI(14) 45 hai. EMA Pullback Swing ke rules ke hisaab se aap kya karenge?",
+    "dv": "एक स्टॉक का EMA 20 उसके EMA 50 के नीचे है। भाव अभी EMA 20 तक आया है और RSI(14) 45 है। EMA पुलबैक स्विंग के नियमों के हिसाब से आप क्या करेंगे?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Skip it: the trend rule fails first",
+      "hi": "Skip: trend wala rule pehle hi fail hai",
+      "dv": "छोड़ें: ट्रेंड वाला नियम ही फ़ेल है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Buy it: the pullback and RSI both fit",
+      "hi": "Khareedein: pullback aur RSI dono fit hain",
+      "dv": "ख़रीदें: पुलबैक और RSI दोनों फ़िट हैं"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Buy half, since two of three rules pass",
+      "hi": "Aadha khareedein, teen mein se do rules pass",
+      "dv": "आधा ख़रीदें, तीन में से दो नियम पास हैं"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Wait for RSI below 30, then buy it",
+      "hi": "RSI 30 ke neeche aaye, tab khareedein",
+      "dv": "RSI 30 के नीचे आने दें, फिर ख़रीदें"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Rule 1 is a gate. Rule 2 fails too, because a price at EMA 20 is below EMA 50 here. With EMA 20 below EMA 50 the stock is not in an uptrend, so a dip to EMA 20 is not a pullback, however neat the RSI looks. A half-size trade does not repair a failed rule, and 'buy below 30' is the oversold myth, not this strategy.",
+    "hi": "Rule 1 ek darwaza hai. Rule 2 bhi fail hai, kyunki EMA 20 tak aaya price yahan EMA 50 ke neeche hai. EMA 20, EMA 50 ke neeche hai, toh stock uptrend mein hi nahi hai; EMA 20 tak ki girawat pullback nahi hai, RSI kitna bhi achha dikhe. Aadhe size ka trade fail hue rule ko theek nahi karta, aur '30 ke neeche khareedo' oversold wala myth hai, yeh strategy nahi.",
+    "dv": "नियम 1 एक दरवाज़ा है। नियम 2 भी फ़ेल है, क्योंकि EMA 20 तक आया भाव यहाँ EMA 50 के नीचे है। EMA 20, EMA 50 के नीचे है, तो स्टॉक अपट्रेंड में ही नहीं है; EMA 20 तक की गिरावट पुलबैक नहीं है, RSI कितना भी अच्छा दिखे। आधे साइज़ का ट्रेड फ़ेल हुए नियम को ठीक नहीं करता, और '30 के नीचे ख़रीदो' ओवरसोल्ड वाला मिथक है, यह स्ट्रैटेजी नहीं।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Entry at the next open is Rs 250, ATR(14) is Rs 8, virtual capital is Rs 10 lakh and risk is 1% per trade. What stop and quantity does the rule card give?",
+    "hi": "Agle open par entry Rs 250 hai, ATR(14) Rs 8, virtual capital Rs 10 lakh aur risk har trade par 1%. Rule card ke hisaab se stop aur quantity kya hogi?",
+    "dv": "अगले ओपन पर एंट्री Rs 250 है, ATR(14) Rs 8, वर्चुअल पूँजी Rs 10 लाख और हर ट्रेड पर रिस्क 1%। रूल कार्ड के हिसाब से स्टॉप और क्वांटिटी क्या होगी?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Stop Rs 238, 833 shares",
+      "hi": "Stop Rs 238, 833 shares",
+      "dv": "स्टॉप Rs 238, 833 शेयर"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Stop Rs 242, 1,250 shares",
+      "hi": "Stop Rs 242, 1,250 shares",
+      "dv": "स्टॉप Rs 242, 1,250 शेयर"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Stop Rs 238, 40 shares",
+      "hi": "Stop Rs 238, 40 shares",
+      "dv": "स्टॉप Rs 238, 40 शेयर"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Stop Rs 226, 416 shares",
+      "hi": "Stop Rs 226, 416 shares",
+      "dv": "स्टॉप Rs 226, 416 शेयर"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "1.5 x Rs 8 = Rs 12, so the stop is Rs 250 - Rs 12 = Rs 238. Quantity = Rs 10,000 ÷ Rs 12 = 833.3, rounded down to 833. The position is 833 x Rs 250 = Rs 2,08,250, about 20.8% of capital, inside the 25% cap. 40 shares divides the risk by the price instead of the stop distance; Rs 242 uses 1 x ATR and Rs 226 uses 3 x ATR.",
+    "hi": "1.5 x Rs 8 = Rs 12, toh stop hai Rs 250 - Rs 12 = Rs 238. Quantity = Rs 10,000 ÷ Rs 12 = 833.3, neeche round karke 833. Position hai 833 x Rs 250 = Rs 2,08,250, yaani capital ka lagbhag 20.8%, 25% cap ke andar. 40 shares wala jawab risk ko stop distance ki jagah price se divide karta hai; Rs 242 mein 1 x ATR laga hai aur Rs 226 mein 3 x ATR.",
+    "dv": "1.5 x Rs 8 = Rs 12, तो स्टॉप है Rs 250 - Rs 12 = Rs 238। क्वांटिटी = Rs 10,000 ÷ Rs 12 = 833.3, नीचे राउंड करके 833। पोज़िशन है 833 x Rs 250 = Rs 2,08,250, यानी पूँजी का लगभग 20.8%, 25% की सीमा के अंदर। 40 शेयर वाला जवाब रिस्क को स्टॉप की दूरी की जगह भाव से भाग देता है; Rs 242 में 1 x ATR लगा है और Rs 226 में 3 x ATR।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Priya's plan for Gupta Cement Ltd: signal close Rs 400, signal-day low Rs 390, ATR(14) Rs 12. Next morning the stock opens at Rs 409. What does the rule card say?",
+    "hi": "Gupta Cement Ltd ke liye Priya ka plan: signal close Rs 400, signal day ka low Rs 390, ATR(14) Rs 12. Agli subah stock Rs 409 par khulta hai. Rule card kya kehta hai?",
+    "dv": "Gupta Cement Ltd के लिए प्रिया का प्लान: सिग्नल क्लोज़ Rs 400, सिग्नल डे का लो Rs 390, ATR(14) Rs 12। अगली सुबह स्टॉक Rs 409 पर खुलता है। रूल कार्ड क्या कहता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Skip: it opened above her max entry",
+      "hi": "Skip: stock max entry se upar khula",
+      "dv": "छोड़ें: ओपन मैक्स एंट्री से ऊपर है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Buy at the open, stop at Rs 391",
+      "hi": "Open par khareedein, stop Rs 391",
+      "dv": "ओपन पर ख़रीदें, स्टॉप Rs 391 रखें"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Buy at the open with half the shares",
+      "hi": "Open par aadhe shares khareedein",
+      "dv": "ओपन पर आधे शेयर ही ख़रीद लें"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Wait for a dip to Rs 400, then buy",
+      "hi": "Rs 400 tak dip ka intezaar, phir khareedein",
+      "dv": "Rs 400 तक गिरने का इंतज़ार, फिर ख़रीदें"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Her plan allowed an entry only up to Rs 400 + 0.5 x Rs 12 = Rs 406. At Rs 409 the stock has run Rs 9 past the signal close overnight; if it merely slips back to Rs 400, she is down Rs 9 a share, half of her Rs 18 stop distance, before the trade has done anything. Half size or a later dip-buy are new plans made after the fact. The written rule is skip.",
+    "hi": "Uske plan mein entry sirf Rs 400 + 0.5 x Rs 12 = Rs 406 tak allowed thi. Rs 409 par stock raaton-raat signal close se Rs 9 aage nikal gaya; agar woh bas Rs 400 tak wapas aaye, toh trade kuch karne se pehle hi har share par Rs 9 ka loss, yaani Rs 18 ki stop doori ka aadha. Aadha size ya baad mein dip par khareedna, baad mein banaye gaye naye plan hain. Likha hua rule hai: skip.",
+    "dv": "उसके प्लान में एंट्री सिर्फ़ Rs 400 + 0.5 x Rs 12 = Rs 406 तक की इजाज़त थी। Rs 409 पर स्टॉक रातों-रात सिग्नल क्लोज़ से Rs 9 आगे निकल गया; अगर वह बस Rs 400 तक वापस आए, तो ट्रेड कुछ करने से पहले ही हर शेयर पर Rs 9 का घाटा, यानी Rs 18 की स्टॉप दूरी का आधा। आधा साइज़ या बाद में गिरावट पर ख़रीदना, बाद में बनाए गए नए प्लान हैं। लिखा हुआ नियम है: छोड़ दें।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Over the last 3 months NIFTY 50 rose 4%. Stock A rose 9%, Stock B rose 3% and Stock C rose 1%. All three pass rules 1 to 3. Which pass the relative-strength rule?",
+    "hi": "Pichhle 3 mahine mein NIFTY 50, 4% chadha. Stock A 9% chadha, Stock B 3% aur Stock C 1%. Teeno rules 1 se 3 pass karte hain. Relative-strength rule kaun pass karta hai?",
+    "dv": "पिछले 3 महीने में NIFTY 50, 4% चढ़ा। स्टॉक A 9% चढ़ा, स्टॉक B 3% और स्टॉक C 1%। तीनों नियम 1 से 3 पास करते हैं। रिलेटिव-स्ट्रेंथ वाला नियम कौन पास करता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Only A, the one that beat NIFTY 50",
+      "hi": "Sirf A, jo NIFTY 50 se aage raha",
+      "dv": "सिर्फ़ A, जो NIFTY 50 से आगे रहा"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "A and B, the two that rose the most",
+      "hi": "A aur B, jo sabse zyada chadhe",
+      "dv": "A और B, जो सबसे ज़्यादा चढ़े"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "All three, since every one of them rose",
+      "hi": "Teeno, kyunki teeno chadhe hain",
+      "dv": "तीनों, क्योंकि तीनों चढ़े हैं"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Only C, since it has the most room to rise",
+      "hi": "Sirf C, usme chadhne ki jagah zyada hai",
+      "dv": "सिर्फ़ C, उसमें चढ़ने की जगह ज़्यादा है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "RS = the stock's change minus NIFTY 50's change. A: 9 - 4 = +5 points. B: 3 - 4 = -1. C: 1 - 4 = -3. B and C rose, but less than the index, so they lag it. 'Room to rise' is a story, not a rule.",
+    "hi": "RS = stock ka change minus NIFTY 50 ka change. A: 9 - 4 = +5 points. B: 3 - 4 = -1. C: 1 - 4 = -3. B aur C chadhe toh, par index se kam, isliye woh peeche hain. 'Chadhne ki jagah' ek kahani hai, rule nahi.",
+    "dv": "RS = स्टॉक का बदलाव माइनस NIFTY 50 का बदलाव। A: 9 - 4 = +5 पॉइंट। B: 3 - 4 = -1। C: 1 - 4 = -3। B और C चढ़े तो, पर इंडेक्स से कम, इसलिए वे पीछे हैं। 'चढ़ने की जगह' एक कहानी है, नियम नहीं।"
+   }
+  },
+  {
+   "stem": {
+    "en": "A free data site shows Bharat Pumps Ltd down 50% today, RSI near 15 and ATR more than doubled. NSE's corporate actions page shows a 1:1 bonus took effect today. What is the right reading?",
+    "hi": "Ek free data site par Bharat Pumps Ltd aaj 50% down dikh raha hai, RSI 15 ke aas-paas aur ATR do guna se zyada. NSE ke corporate actions page ke mutabik aaj 1:1 bonus laagu hua hai. Sahi matlab kya hai?",
+    "dv": "एक फ़्री डेटा साइट पर Bharat Pumps Ltd आज 50% डाउन दिख रहा है, RSI 15 के आसपास और ATR दोगुने से ज़्यादा। NSE के कॉर्पोरेट एक्शन पेज के मुताबिक़ आज 1:1 बोनस लागू हुआ है। सही मतलब क्या है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Mostly the bonus; recheck it on adjusted data",
+      "hi": "Zyadatar bonus ka asar; adjusted data dekhein",
+      "dv": "ज़्यादातर बोनस का असर; एडजस्टेड डेटा देखें"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "A genuine crash: holders lost half their money",
+      "hi": "Asli crash: holders ka aadha paisa doob gaya",
+      "dv": "असली क्रैश: शेयरहोल्डरों का आधा पैसा डूब गया"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "RSI near 15 is oversold, so it is a pullback buy",
+      "hi": "RSI 15 ke paas oversold hai, toh yeh pullback buy hai",
+      "dv": "RSI 15 के पास ओवरसोल्ड है, तो यह पुलबैक वाली ख़रीद है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "The site is broken, so stop using any indicators",
+      "hi": "Site kharab hai, toh indicators use karna band karein",
+      "dv": "साइट ख़राब है, तो इंडिकेटर इस्तेमाल करना बंद करें"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "In a 1:1 bonus each holder gets one extra share for every share held, so the price roughly halves while the holding's value stays about the same. Unadjusted data reads that as a crash: RSI plunges, the EMAs bend down and ATR balloons because the gap counts as true range. Check adjusted data before trusting any indicator. And a real RSI of 15 would not be this strategy's 40-50 zone anyway.",
+    "hi": "1:1 bonus mein har ek share par ek extra share milta hai, toh price lagbhag aadha ho jaata hai, jabki holding ki value lagbhag utni hi rehti hai. Unadjusted data ise crash ki tarah padhta hai: RSI gir jaata hai, EMAs neeche mud jaate hain aur ATR phool jaata hai, kyunki gap true range mein gina jaata hai. Kisi bhi indicator par bharosa karne se pehle adjusted data check kijiye. Aur asli RSI 15 bhi is strategy ka 40-50 zone nahi hota.",
+    "dv": "1:1 बोनस में हर एक शेयर पर एक और शेयर मिलता है, तो भाव लगभग आधा हो जाता है, जबकि होल्डिंग की वैल्यू लगभग उतनी ही रहती है। अनएडजस्टेड डेटा इसे क्रैश की तरह पढ़ता है: RSI गिर जाता है, EMA नीचे मुड़ जाते हैं और ATR फूल जाता है, क्योंकि गैप ट्रू रेंज में गिना जाता है। किसी भी इंडिकेटर पर भरोसा करने से पहले एडजस्टेड डेटा देखें। और असली RSI 15 भी इस स्ट्रैटेजी का 40-50 ज़ोन नहीं होता।"
+   }
+  }
+ ]
+}

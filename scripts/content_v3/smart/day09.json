@@ -1,0 +1,1272 @@
+{
+ "day": 9,
+ "title": {
+  "en": "Risk first: the 1% rule and position sizing",
+  "hi": "Risk pehle: 1% rule aur position sizing",
+  "dv": "रिस्क पहले: 1% का नियम और पोज़िशन साइज़िंग"
+ },
+ "tags": {
+  "concept": {
+   "en": "The 1% rule, position sizing and the limits that keep you in the game",
+   "hi": "1% rule, position sizing aur woh limits jo aapko game mein tikaaye rakhti hain",
+   "dv": "1% का नियम, पोज़िशन साइज़िंग और वे सीमाएँ जो आपको खेल में टिकाए रखती हैं"
+  },
+  "ai_lab": {
+   "en": "Build a sizing sheet; let AI check the formulas",
+   "hi": "Sizing sheet banaiye; formulas AI se check karwaiye",
+   "dv": "साइज़िंग शीट बनाएँ; फ़ॉर्मूले AI से चेक करवाएँ"
+  },
+  "psychology": {
+   "en": "'This time I'll bet big'",
+   "hi": "'Is baar bada lagata hoon'",
+   "dv": "'इस बार बड़ा लगाता हूँ'"
+  }
+ },
+ "strategy": null,
+ "duration_min": 75,
+ "story": {
+  "kind": "story",
+  "title": {
+   "en": "This time, big",
+   "hi": "Is baar bada",
+   "dv": "इस बार बड़ा"
+  },
+  "panels": [
+   {
+    "who": "narrator",
+    "say": {
+     "en": "Sunday evening. Aman has found a chart he loves and calls the mentor. Priya is on the call with her notebook open.",
+     "hi": "Sunday ki shaam. Aman ko ek chart bahut pasand aa gaya hai, aur usne turant mentor ko call kar diya. Priya bhi call par hai, notebook khol ke baithi hai.",
+     "dv": "रविवार की शाम। अमन को एक चार्ट बहुत पसंद आ गया है, और उसने तुरंत मेंटर को कॉल कर दिया। प्रिया भी कॉल पर है, नोटबुक खोलकर बैठी है।"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "excited",
+    "say": {
+     "en": "Sir, after the Rs 500 zone broke, Bharat Pumps has now bounced from Rs 400 three times. When paper trading starts, I'm going big: Rs 5 lakh, half of my Rs 10 lakh practice capital. That's 1,250 shares.",
+     "hi": "Sir, Rs 500 wala zone toot gaya tha, ab Bharat Pumps teen baar Rs 400 se bounce ho chuka hai. Paper trading shuru hote hi is baar bada lagata hoon: Rs 5 lakh, mere Rs 10 lakh ke practice capital ka aadha. Poore 1,250 shares.",
+     "dv": "सर, Rs 500 वाला ज़ोन टूट गया था, अब Bharat Pumps तीन बार Rs 400 से बाउंस हो चुका है। पेपर ट्रेडिंग शुरू होते ही इस बार बड़ा लगाता हूँ: Rs 5 लाख, मेरे Rs 10 लाख के प्रैक्टिस कैपिटल का आधा। पूरे 1,250 शेयर।"
+    }
+   },
+   {
+    "who": "priya",
+    "mood": "thinking",
+    "say": {
+     "en": "And if Rs 400 breaks this time? Where do you get out, and how much does that cost?",
+     "hi": "Aur agar is baar Rs 400 toot gaya toh? Exit kahan hoga, aur usmein kitna jaayega?",
+     "dv": "और अगर इस बार Rs 400 टूट गया तो? एग्ज़िट कहाँ होगा, और उसमें कितना जाएगा?"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "neutral",
+    "say": {
+     "en": "Stop-loss at Rs 380. Only Rs 20 a share. That's a small risk.",
+     "hi": "Stop-loss Rs 380 par lagaunga. Sirf Rs 20 per share. Chhota sa risk hai.",
+     "dv": "स्टॉप-लॉस Rs 380 पर लगाऊँगा। सिर्फ़ Rs 20 प्रति शेयर। छोटा-सा रिस्क है।"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "thinking",
+    "say": {
+     "en": "First a question, Aman. What is Rs 20 on 1,250 shares? And if bad news comes overnight and it opens at Rs 360, can your stop still sell at Rs 380?",
+     "hi": "Pehle ek sawaal, Aman. 1,250 shares par Rs 20 kitna hua? Aur agar raat mein buri khabar aa gayi aur stock Rs 360 par khula, toh kya aapka stop Rs 380 par bech payega?",
+     "dv": "पहले एक सवाल, अमन। 1,250 शेयर पर Rs 20 कितना हुआ? और अगर रात में बुरी ख़बर आ गई और स्टॉक Rs 360 पर खुला, तो क्या आपका स्टॉप Rs 380 पर बेच पाएगा?"
+    }
+   },
+   {
+    "who": "priya",
+    "mood": "worried",
+    "say": {
+     "en": "Rs 25,000 if the stop works. If it opens at Rs 360, Rs 50,000, in one morning.",
+     "hi": "Stop chala toh Rs 25,000. Rs 360 par khula toh ek hi subah mein Rs 50,000.",
+     "dv": "स्टॉप चला तो Rs 25,000। Rs 360 पर खुला तो एक ही सुबह में Rs 50,000।"
+    }
+   }
+  ],
+  "moral": {
+   "en": "The chart tells you where to get out; it never tells you how much to buy. That comes from a formula, and size is the one part of a trade fully in your hands.",
+   "hi": "Chart batata hai exit kahan karna hai; kitna khareedna hai, yeh kabhi nahi batata. Woh formula se aata hai, aur size hi trade ka woh hissa hai jo poori tarah aapke haath mein hai.",
+   "dv": "चार्ट बताता है कि एग्ज़िट कहाँ करना है; कितना ख़रीदना है, यह कभी नहीं बताता। वह फ़ॉर्मूले से आता है, और साइज़ ही ट्रेड का वह हिस्सा है जो पूरी तरह आपके हाथ में है।"
+  }
+ },
+ "topics": [
+  {
+   "h": {
+    "en": "The 1% rule: decide the loss before the trade",
+    "hi": "1% rule: trade se pehle loss tay kijiye",
+    "dv": "1% का नियम: ट्रेड से पहले नुक़सान तय करें"
+   },
+   "p": {
+    "en": "Before any trade, decide the most you will lose if you turn out to be wrong. This course fixes that at 1% of your capital, the money you have set aside for trading. On Day 3 you met 1R, your planned loss if the stop is hit; from today 1R has a set size: 1% of your capital, which is Rs 10,000 on the Rs 10 lakh challenge capital. The rule does not decide how much money goes into a trade. It decides how much that trade is planned to take from you if the stop-loss is hit. Small losses keep you in the game long enough to judge a method fairly: at least 30 trades, and 100 for confidence.",
+    "hi": "Koi bhi trade lene se pehle tay kar lijiye ki galat nikle toh zyada se zyada kitna nuksaan uthayenge. Is course mein yeh limit aapke capital ka 1% hai; capital matlab woh paisa jo aapne trading ke liye alag rakha hai. Day 3 mein aapne 1R dekha tha, yaani stop hit hone par planned loss; aaj se iska size tay hai: capital ka 1%, yaani Rs 10 lakh ke challenge capital par Rs 10,000. Yeh rule nahi batata ki trade mein kitna paisa lagega; yeh batata hai ki stop-loss hit hua toh plan ke hisaab se woh trade aapse kitna le jaayega. Chhote loss aapko game mein itni der tikaaye rakhte hain ki aap kisi method ko theek se parakh sakein: kam se kam 30 trades, aur bharose ke liye 100.",
+    "dv": "कोई भी ट्रेड लेने से पहले तय कर लें कि ग़लत निकलने पर ज़्यादा से ज़्यादा कितना नुक़सान उठाएँगे। इस कोर्स में यह सीमा आपके कैपिटल का 1% है; कैपिटल मतलब वह पैसा जो आपने ट्रेडिंग के लिए अलग रखा है। दिन 3 में आपने 1R देखा था, यानी स्टॉप हिट होने पर प्लान किया हुआ नुक़सान; आज से इसका साइज़ तय है: कैपिटल का 1%, यानी Rs 10 लाख के चैलेंज कैपिटल पर Rs 10,000। यह नियम नहीं बताता कि ट्रेड में कितना पैसा लगेगा; यह बताता है कि स्टॉप-लॉस हिट हुआ तो प्लान के हिसाब से वह ट्रेड आपसे कितना ले जाएगा। छोटे नुक़सान आपको खेल में इतनी देर टिकाए रखते हैं कि आप किसी तरीक़े को ठीक से परख सकें: कम से कम 30 ट्रेड, और भरोसे के लिए 100।"
+   },
+   "example": {
+    "en": "Two chai-stall owners in Lucknow each keep Rs 10,000 in the galla, the cash box, for trying new items. Each time, Ramesh risks 10% of whatever is left in the galla; Salim risks 1%. In two bad monsoon weeks, ten ideas flop in a row, a longer streak than the seven you met on Day 3. Ramesh is left with about Rs 3,487 and now needs a gain of about 187% just to get back to Rs 10,000. Salim has about Rs 9,044 and needs about 10.6%. Same bad luck, very different futures.",
+    "hi": "Lucknow mein do chai-stall wale naye items try karne ke liye apne galle mein Rs 10,000 rakhte hain. Har baar Ramesh galle mein bache paise ka 10% daon par lagata hai; Salim sirf 1%. Baarish ke do kharab hafton mein lagataar das idea flop ho gaye, Day 3 ke saat wale silsile se bhi lamba. Ramesh ke paas lagbhag Rs 3,487 bache, aur wapas Rs 10,000 tak pahunchne ke liye ab use lagbhag 187% kamana padega. Salim ke paas lagbhag Rs 9,044 hain, aur use bas lagbhag 10.6% chahiye. Kismat dono ki ek jaisi kharab thi, aage ka raasta bilkul alag.",
+    "dv": "लखनऊ में दो चाय की दुकान वाले नए आइटम आज़माने के लिए अपने गल्ले में Rs 10,000 रखते हैं। हर बार रमेश गल्ले में बचे पैसे का 10% दाँव पर लगाता है; सलीम सिर्फ़ 1%। बारिश के दो ख़राब हफ़्तों में लगातार दस आइडिया फ़्लॉप हो गए, दिन 3 के सात वाले सिलसिले से भी लंबा। रमेश के पास लगभग Rs 3,487 बचे, और वापस Rs 10,000 तक पहुँचने के लिए अब उसे लगभग 187% कमाना पड़ेगा। सलीम के पास लगभग Rs 9,044 हैं, और उसे बस लगभग 10.6% चाहिए। क़िस्मत दोनों की एक जैसी ख़राब थी, आगे का रास्ता बिल्कुल अलग।"
+   },
+   "remember": {
+    "en": "1% is the most you plan to lose on one idea, not the amount you invest.",
+    "hi": "1% woh zyada se zyada loss hai jo aap ek idea par plan karte hain, invest hone wali rakam nahi.",
+    "dv": "1% वह ज़्यादा से ज़्यादा नुक़सान है जो आप एक आइडिया पर प्लान करते हैं, लगने वाली रक़म नहीं।"
+   },
+   "visual": {
+    "kind": "bars",
+    "title": {
+     "en": "Ten losses in a row",
+     "hi": "Lagataar 10 loss",
+     "dv": "लगातार 10 नुक़सान"
+    },
+    "caption": {
+     "en": "Capital left after 10 straight losses, each loss a fixed % of what is left, so each loss is a little smaller than the last. A bigger risk per trade digs a much deeper hole.",
+     "hi": "Lagataar 10 loss ke baad kitna capital bachta hai, jab har loss bache hue capital ka tay % ho, isliye har agla loss thoda chhota hota hai. Har trade par risk jitna bada, gaddha utna gehra.",
+     "dv": "लगातार 10 नुक़सान के बाद कितना कैपिटल बचता है, जब हर नुक़सान बचे हुए कैपिटल का तय % हो, इसलिए हर अगला नुक़सान थोड़ा छोटा होता है। हर ट्रेड पर रिस्क जितना बड़ा, गड्ढा उतना गहरा।"
+    },
+    "unit": "%",
+    "items": [
+     {
+      "label": {
+       "en": "Risk 0.5%",
+       "hi": "Risk 0.5%",
+       "dv": "रिस्क 0.5%"
+      },
+      "value": 95.1,
+      "tone": "muted",
+      "display": "95.1%"
+     },
+     {
+      "label": {
+       "en": "Risk 1%",
+       "hi": "Risk 1%",
+       "dv": "रिस्क 1%"
+      },
+      "value": 90.4,
+      "tone": "up",
+      "display": "90.4%"
+     },
+     {
+      "label": {
+       "en": "Risk 2%",
+       "hi": "Risk 2%",
+       "dv": "रिस्क 2%"
+      },
+      "value": 81.7,
+      "tone": "gold",
+      "display": "81.7%"
+     },
+     {
+      "label": {
+       "en": "Risk 5%",
+       "hi": "Risk 5%",
+       "dv": "रिस्क 5%"
+      },
+      "value": 59.9,
+      "tone": "down",
+      "display": "59.9%"
+     },
+     {
+      "label": {
+       "en": "Risk 10%",
+       "hi": "Risk 10%",
+       "dv": "रिस्क 10%"
+      },
+      "value": 34.9,
+      "tone": "down",
+      "display": "34.9%"
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "The sizing formula: stop first, quantity second",
+    "hi": "Sizing formula: pehle stop, phir quantity",
+    "dv": "साइज़िंग फ़ॉर्मूला: पहले स्टॉप, फिर क्वांटिटी"
+   },
+   "p": {
+    "en": "Position size means how many shares you buy, and it comes from three small steps. First, risk budget = capital x 1%. Second, risk per share = the distance between your entry price and your stop-loss price. Third, quantity = risk budget ÷ risk per share, rounded down to a whole share, because rounding up would break the 1% limit. Notice the sequence: you cannot size a trade until you know its stop. Where the stop goes comes from the chart: Day 6's swing lows, or Day 8's 1.5 x ATR distance, which Day 11 builds into the swing rule.",
+    "hi": "Position size ka matlab hai aap kitne shares khareedenge, aur yeh teen chhote steps se nikalta hai. Pehla, risk budget = capital x 1%. Doosra, risk per share = entry price aur stop-loss price ke beech ki doori. Teesra, quantity = risk budget ÷ risk per share, round down karke poore share tak, kyunki round up karne se 1% ki limit toot jaayegi. Sequence par dhyaan dijiye: jab tak stop pata nahi, trade ka size nikal hi nahi sakta. Stop kahan lagega, yeh chart batata hai: Day 6 ke swing lows, ya Day 8 ki 1.5 x ATR wali doori, jise Day 11 swing rule mein jodega.",
+    "dv": "पोज़िशन साइज़ का मतलब है आप कितने शेयर ख़रीदेंगे, और यह तीन छोटे स्टेप से निकलता है। पहला, रिस्क बजट = कैपिटल x 1%। दूसरा, रिस्क प्रति शेयर = एंट्री प्राइस और स्टॉप-लॉस प्राइस के बीच की दूरी। तीसरा, क्वांटिटी = रिस्क बजट ÷ रिस्क प्रति शेयर, और जवाब को पूरे शेयर तक नीचे राउंड करें, क्योंकि ऊपर राउंड करने से 1% की सीमा टूट जाएगी। क्रम पर ध्यान दें: जब तक स्टॉप पता नहीं, ट्रेड का साइज़ निकल ही नहीं सकता। स्टॉप कहाँ लगेगा, यह चार्ट बताता है: दिन 6 के स्विंग लो, या दिन 8 की 1.5 x ATR वाली दूरी, जिसे दिन 11 स्विंग नियम में जोड़ेगा।"
+   },
+   "example": {
+    "en": "In Day 8's quiz, Gupta Cement Ltd had its stop Rs 12 below a Rs 300 entry: Rs 10,000 ÷ 12 = 833.3, so 833 shares. Priya sizes a practice trade in Kiran Foods Ltd on her Rs 10 lakh virtual capital: entry Rs 250, stop Rs 237. Risk per share is Rs 13. Rs 10,000 ÷ 13 = 769.2, so she buys 769 shares, and her planned risk is 769 x Rs 13 = Rs 9,997, just inside 1R. Rounding up to 770 would risk Rs 10,010. On a Rs 1 lakh account the same trade would be Rs 1,000 ÷ 13 = 76 shares: the formula scales with your capital.",
+    "hi": "Day 8 ke quiz mein Gupta Cement Ltd ka stop Rs 300 ki entry se Rs 12 neeche tha: Rs 10,000 ÷ 12 = 833.3, yaani 833 shares. Priya apne Rs 10 lakh ke virtual capital par Kiran Foods Ltd ka ek practice trade size karti hai: entry Rs 250, stop Rs 237. Risk per share Rs 13 hua. Rs 10,000 ÷ 13 = 769.2, toh woh 769 shares leti hai, aur uska planned risk 769 x Rs 13 = Rs 9,997 hai, 1R ke andar. 770 tak round up karti toh risk Rs 10,010 ho jaata. Rs 1 lakh ke account par yahi trade Rs 1,000 ÷ 13 = 76 shares ka banta: formula aapke capital ke saath chhota-bada hota hai.",
+    "dv": "दिन 8 के क्विज़ में Gupta Cement Ltd का स्टॉप Rs 300 की एंट्री से Rs 12 नीचे था: Rs 10,000 ÷ 12 = 833.3, यानी 833 शेयर। प्रिया अपने Rs 10 लाख के वर्चुअल कैपिटल पर Kiran Foods Ltd का एक प्रैक्टिस ट्रेड साइज़ करती है: एंट्री Rs 250, स्टॉप Rs 237। रिस्क प्रति शेयर Rs 13 हुआ। Rs 10,000 ÷ 13 = 769.2, तो वह 769 शेयर लेती है, और उसका प्लान किया हुआ रिस्क 769 x Rs 13 = Rs 9,997 है, 1R के अंदर। 770 तक ऊपर राउंड करती तो रिस्क Rs 10,010 हो जाता। Rs 1 लाख के अकाउंट पर यही ट्रेड Rs 1,000 ÷ 13 = 76 शेयर का बनता: फ़ॉर्मूला आपके कैपिटल के साथ छोटा-बड़ा होता है।"
+   },
+   "remember": {
+    "en": "Stop first, size second. The formula decides how many shares, not your mood.",
+    "hi": "Pehle stop, phir size. Kitne shares, yeh formula tay karta hai, aapka mood nahi.",
+    "dv": "पहले स्टॉप, फिर साइज़। कितने शेयर, यह फ़ॉर्मूला तय करता है, आपका मूड नहीं।"
+   },
+   "visual": {
+    "kind": "calc",
+    "title": {
+     "en": "Aman's trade, sized properly",
+     "hi": "Aman ka trade, sahi size ke saath",
+     "dv": "अमन का ट्रेड, सही साइज़ के साथ"
+    },
+    "caption": {
+     "en": "500 shares x Rs 400 = Rs 2,00,000, 20% of capital. Aman's 1,250 shares would be Rs 5,00,000, 50%: twice the 25% cap in the next topic.",
+     "hi": "500 shares x Rs 400 = Rs 2,00,000, yaani capital ka 20%. Aman ke 1,250 shares Rs 5,00,000 ke hote, yaani 50%: agle topic ke 25% cap ka dugna.",
+     "dv": "500 शेयर x Rs 400 = Rs 2,00,000, यानी कैपिटल का 20%। अमन के 1,250 शेयर Rs 5,00,000 के होते, यानी 50%: अगले टॉपिक की 25% कैप का दोगुना।"
+    },
+    "rows": [
+     {
+      "label": {
+       "en": "Capital",
+       "hi": "Capital",
+       "dv": "कैपिटल"
+      },
+      "value": "Rs 10,00,000"
+     },
+     {
+      "label": {
+       "en": "Risk per trade",
+       "hi": "Har trade ka risk",
+       "dv": "हर ट्रेड का रिस्क"
+      },
+      "value": "1%",
+      "op": "x"
+     },
+     {
+      "label": {
+       "en": "Risk budget (1R)",
+       "hi": "Risk budget (1R)",
+       "dv": "रिस्क बजट (1R)"
+      },
+      "value": "Rs 10,000",
+      "op": "="
+     },
+     {
+      "label": {
+       "en": "Risk per share (400 - 380)",
+       "hi": "Risk per share (400 - 380)",
+       "dv": "रिस्क प्रति शेयर (400 - 380)"
+      },
+      "value": "Rs 20",
+      "op": "÷"
+     }
+    ],
+    "result": {
+     "label": {
+      "en": "Quantity (shares)",
+      "hi": "Quantity (shares)",
+      "dv": "क्वांटिटी (शेयर)"
+     },
+     "value": "500"
+    }
+   }
+  },
+  {
+   "h": {
+    "en": "The 25% cap: when a tight stop asks for too much",
+    "hi": "25% cap: jab tight stop bahut zyada maangta hai",
+    "dv": "25% कैप: जब टाइट स्टॉप बहुत ज़्यादा माँगता है"
+   },
+   "p": {
+    "en": "The formula has one weak spot. When the stop is very close to the entry, risk per share is tiny, so the formula asks for a huge quantity. So the course adds a second limit: no single position may be worth more than 25% of your capital, which is Rs 2.5 lakh on Rs 10 lakh. Position value is quantity x entry price. Size with the formula, check the cap, and take the smaller quantity. Leverage, where a broker lets you take a position bigger than your cash, changes neither limit: both are measured on your own capital.",
+    "hi": "Is formula mein ek kamzori hai. Jab stop entry ke bilkul paas ho, toh risk per share bahut chhota hota hai, aur formula bahut badi quantity maang leta hai. Isliye course ek doosri limit jodta hai: koi bhi ek position aapke capital ke 25% se zyada ki nahi hogi, yaani Rs 10 lakh par Rs 2.5 lakh. Position value = quantity x entry price. Pehle formula se size nikaliye, phir cap check kijiye, aur jo quantity chhoti ho wahi lijiye. Leverage, yaani broker aapko apne cash se badi position lene de, in dono limits ko nahi badalta: dono aapke apne capital par hi naapi jaati hain.",
+    "dv": "इस फ़ॉर्मूले में एक कमज़ोरी है। जब स्टॉप एंट्री के बिल्कुल पास हो, तो रिस्क प्रति शेयर बहुत छोटा होता है, और फ़ॉर्मूला बहुत बड़ी क्वांटिटी माँग लेता है। इसलिए कोर्स एक दूसरी सीमा जोड़ता है: कोई भी एक पोज़िशन आपके कैपिटल के 25% से ज़्यादा की नहीं होगी, यानी Rs 10 लाख पर Rs 2.5 लाख। पोज़िशन वैल्यू = क्वांटिटी x एंट्री प्राइस। पहले फ़ॉर्मूले से साइज़ निकालें, फिर कैप जाँचें, और जो क्वांटिटी छोटी हो वही लें। लीवरेज, यानी ब्रोकर आपको अपने कैश से बड़ी पोज़िशन लेने दे, इन दोनों सीमाओं को नहीं बदलता: दोनों आपके अपने कैपिटल पर ही नापी जाती हैं।"
+   },
+   "example": {
+    "en": "Sharma Textiles Ltd: entry Rs 500, stop Rs 495, so risk per share is only Rs 5. The formula says Rs 10,000 ÷ 5 = 2,000 shares, worth Rs 10 lakh: your entire capital in one stock. The cap allows Rs 2,50,000 ÷ 500 = 500 shares, so the planned risk drops to 500 x Rs 5 = Rs 2,500 (0.25R). Now suppose bad news makes it open at Rs 450. Uncapped, the loss is 2,000 x Rs 50 = Rs 1,00,000, 10% of capital in one morning. Capped, it is Rs 25,000 (2.5R): painful, but survivable.",
+    "hi": "Sharma Textiles Ltd: entry Rs 500, stop Rs 495, yaani risk per share sirf Rs 5. Formula kehta hai Rs 10,000 ÷ 5 = 2,000 shares, jinki value Rs 10 lakh hai: aapka poora capital ek hi stock mein. Cap sirf Rs 2,50,000 ÷ 500 = 500 shares ki ijazat deta hai, toh planned risk ghat ke 500 x Rs 5 = Rs 2,500 (0.25R) reh jaata hai. Ab maan lijiye buri khabar ke baad stock Rs 450 par khulta hai. Bina cap ke loss 2,000 x Rs 50 = Rs 1,00,000 hai, ek hi subah mein capital ka 10%. Cap ke saath yeh Rs 25,000 (2.5R) hai: dard hota hai, par aap game mein bane rehte hain.",
+    "dv": "Sharma Textiles Ltd: एंट्री Rs 500, स्टॉप Rs 495, यानी रिस्क प्रति शेयर सिर्फ़ Rs 5। फ़ॉर्मूला कहता है Rs 10,000 ÷ 5 = 2,000 शेयर, जिनकी वैल्यू Rs 10 लाख है: आपका पूरा कैपिटल एक ही स्टॉक में। कैप सिर्फ़ Rs 2,50,000 ÷ 500 = 500 शेयर की इजाज़त देता है, तो प्लान किया हुआ रिस्क घटकर 500 x Rs 5 = Rs 2,500 (0.25R) रह जाता है। अब मान लीजिए बुरी ख़बर के बाद स्टॉक Rs 450 पर खुलता है। बिना कैप के नुक़सान 2,000 x Rs 50 = Rs 1,00,000 है, एक ही सुबह में कैपिटल का 10%। कैप के साथ यह Rs 25,000 (2.5R) है: दर्द होता है, पर आप खेल में बने रहते हैं।"
+   },
+   "remember": {
+    "en": "Formula first, then the 25% cap. Always take the smaller quantity.",
+    "hi": "Pehle formula, phir 25% cap. Hamesha chhoti quantity lijiye.",
+    "dv": "पहले फ़ॉर्मूला, फिर 25% कैप। हमेशा छोटी क्वांटिटी लें।"
+   },
+   "visual": {
+    "kind": "flow",
+    "title": {
+     "en": "Formula, then cap",
+     "hi": "Pehle formula, phir cap",
+     "dv": "पहले फ़ॉर्मूला, फिर कैप"
+    },
+    "caption": {
+     "en": "Sharma Textiles Ltd: a Rs 5 stop looks safe, but the formula alone would put all your capital in one stock.",
+     "hi": "Sharma Textiles Ltd: Rs 5 ka stop safe lagta hai, lekin sirf formula ke bharose chalte toh poora capital ek hi stock mein chala jaata.",
+     "dv": "Sharma Textiles Ltd: Rs 5 का स्टॉप सुरक्षित लगता है, लेकिन सिर्फ़ फ़ॉर्मूले के भरोसे चलते तो पूरा कैपिटल एक ही स्टॉक में चला जाता।"
+    },
+    "nodes": [
+     {
+      "label": {
+       "en": "Formula size",
+       "hi": "Formula size",
+       "dv": "फ़ॉर्मूला साइज़"
+      },
+      "sub": {
+       "en": "10,000 ÷ 5 = 2,000 shares",
+       "hi": "10,000 ÷ 5 = 2,000 shares",
+       "dv": "10,000 ÷ 5 = 2,000 शेयर"
+      },
+      "tone": "brand"
+     },
+     {
+      "label": {
+       "en": "Position value",
+       "hi": "Position value",
+       "dv": "पोज़िशन वैल्यू"
+      },
+      "sub": {
+       "en": "Rs 10,00,000 = 100% of capital",
+       "hi": "Rs 10,00,000 = capital ka 100%",
+       "dv": "Rs 10,00,000 = कैपिटल का 100%"
+      },
+      "tone": "down"
+     },
+     {
+      "label": {
+       "en": "25% cap",
+       "hi": "25% cap",
+       "dv": "25% कैप"
+      },
+      "sub": {
+       "en": "Max Rs 2,50,000",
+       "hi": "Max Rs 2,50,000",
+       "dv": "अधिकतम Rs 2,50,000"
+      },
+      "tone": "gold"
+     },
+     {
+      "label": {
+       "en": "Final size",
+       "hi": "Final size",
+       "dv": "फ़ाइनल साइज़"
+      },
+      "sub": {
+       "en": "500 shares, risk 0.25R",
+       "hi": "500 shares, risk 0.25R",
+       "dv": "500 शेयर, रिस्क 0.25R"
+      },
+      "tone": "up"
+     }
+    ],
+    "arrows": [
+     {
+      "en": "x Rs 500",
+      "hi": "x Rs 500",
+      "dv": "x Rs 500"
+     },
+     {
+      "en": "too big",
+      "hi": "bahut bada",
+      "dv": "बहुत बड़ा"
+     },
+     {
+      "en": "÷ Rs 500",
+      "hi": "÷ Rs 500",
+      "dv": "÷ Rs 500"
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Stops that slip: gaps, circuits and slippage",
+    "hi": "Jab stop phisal jaaye: gap, circuit aur slippage",
+    "dv": "जब स्टॉप फिसल जाए: गैप, सर्किट और स्लिपेज"
+   },
+   "p": {
+    "en": "A stop-loss is the price where you plan to exit, not a promise of the price you will get (Day 2). A gap can jump over it: bad news arrives after 3:30 pm and the stock opens far below your stop. An SL-M (stop-loss market) order then sells near that opening price, and an SL (stop-loss limit) order may not sell at all. A circuit can trap you: at the lower price band there are hardly any buyers, and your sell order just waits in the queue. Slippage adds a little more: in a fast fall a market order fills a little below your trigger. This is one more reason for 1%: a 2R surprise then costs 2% of capital, while at 10% risk the same surprise costs 20%.",
+    "hi": "Stop-loss woh price hai jahan aap exit karna plan karte hain; yeh is baat ka vaada nahi ki aapko wahi price milega (Day 2). Gap stop ke upar se kood sakta hai: buri khabar 3:30 ke baad aati hai aur stock aapke stop se kaafi neeche khulta hai. Tab SL-M (stop-loss market) order usi opening price ke aas-paas bik jaata hai, aur SL (stop-loss limit) order shayad bike hi nahi. Circuit aapko phansa sakta hai: lower price band par buyers na ke barabar hote hain, aur aapka sell order bas queue mein pada rehta hai. Slippage thoda aur jod deta hai: tez girte market mein market order trigger se thoda neeche fill hota hai. 1% ki ek aur wajah yahi hai: tab 2R ka jhatka capital ka 2% hota hai, jabki 10% risk par wahi jhatka 20% ka hota hai.",
+    "dv": "स्टॉप-लॉस वह प्राइस है जहाँ आप एग्ज़िट करना प्लान करते हैं; यह इस बात का वादा नहीं कि आपको वही प्राइस मिलेगा (दिन 2)। गैप इसे लाँघ सकता है: बुरी ख़बर 3:30 के बाद आती है और स्टॉक आपके स्टॉप से काफ़ी नीचे खुलता है। तब SL-M (स्टॉप-लॉस मार्केट) ऑर्डर उसी ओपनिंग प्राइस के आसपास बिक जाता है, और SL (स्टॉप-लॉस लिमिट) ऑर्डर शायद बिके ही नहीं। सर्किट आपको फँसा सकता है: लोअर प्राइस बैंड पर ख़रीदार न के बराबर होते हैं, और आपका सेल ऑर्डर बस कतार में पड़ा रहता है। स्लिपेज थोड़ा और जोड़ देता है: तेज़ी से गिरते बाज़ार में मार्केट ऑर्डर ट्रिगर से थोड़ा नीचे फ़िल होता है। 1% की एक और वजह यही है: तब 2R का झटका कैपिटल का 2% होता है, जबकि 10% रिस्क पर वही झटका 20% का होता है।"
+   },
+   "example": {
+    "en": "Suppose Aman takes the correctly sized trade on paper: 500 shares of Bharat Pumps Ltd at Rs 400, stop Rs 380, so 1R = Rs 10,000. Weak results come out in the evening, and the next morning the stock opens at Rs 360. His stop is an SL-M order he placed again before the open, so it triggers and sells near Rs 360: the loss is 500 x Rs 40 = Rs 20,000, which is 2R, or 2% of capital. That one gap also hits the -2R daily stop, so he is done for the day, but he is still trading next week. With his first plan of 1,250 shares, the same morning would have cost Rs 50,000 (5R).",
+    "hi": "Maan lijiye Aman sahi size wala trade paper par leta hai: Bharat Pumps Ltd ke 500 shares Rs 400 par, stop Rs 380, yaani 1R = Rs 10,000. Shaam ko kamzor results aate hain, aur agli subah stock Rs 360 par khulta hai. Uska stop ek SL-M order hai jo usne subah market khulne se pehle dobara lagaya tha, isliye trigger hote hi Rs 360 ke aas-paas bik jaata hai: loss 500 x Rs 40 = Rs 20,000, yaani 2R, capital ka 2%. Isi ek gap se -2R ka daily stop bhi lag gaya, toh us din ki trading khatam; lekin agle hafte bhi woh trading mein hai. Uske pehle plan ke 1,250 shares ke saath yahi subah Rs 50,000 (5R) ki padti.",
+    "dv": "मान लीजिए अमन सही साइज़ वाला ट्रेड पेपर पर लेता है: Bharat Pumps Ltd के 500 शेयर Rs 400 पर, स्टॉप Rs 380, यानी 1R = Rs 10,000। शाम को कमज़ोर नतीजे आते हैं, और अगली सुबह स्टॉक Rs 360 पर खुलता है। उसका स्टॉप एक SL-M ऑर्डर है जो उसने सुबह बाज़ार खुलने से पहले दोबारा लगाया था, इसलिए ट्रिगर होते ही Rs 360 के आसपास बिक जाता है: नुक़सान 500 x Rs 40 = Rs 20,000, यानी 2R, कैपिटल का 2%। इसी एक गैप से -2R का डेली स्टॉप भी लग गया, तो उस दिन की ट्रेडिंग ख़त्म; लेकिन अगले हफ़्ते भी वह ट्रेडिंग में है। उसके पहले प्लान के 1,250 शेयर के साथ यही सुबह Rs 50,000 (5R) की पड़ती।"
+   },
+   "remember": {
+    "en": "Your stop sets the plan; gaps and circuits can move the real exit. Size small enough to survive both.",
+    "hi": "Stop plan tay karta hai; gap aur circuit asli exit ko kahin aur le ja sakte hain. Size itna chhota rakhiye ki in dono ko jhel sakein.",
+    "dv": "स्टॉप प्लान तय करता है; गैप और सर्किट असली एग्ज़िट को कहीं और ले जा सकते हैं। साइज़ इतना छोटा रखें कि इन दोनों को झेल सकें।"
+   },
+   "visual": {
+    "kind": "candles",
+    "title": {
+     "en": "A gap jumps the stop",
+     "hi": "Gap stop ke upar se kood gaya",
+     "dv": "गैप ने स्टॉप लाँघ दिया"
+    },
+    "caption": {
+     "en": "The stop was at Rs 380, but the first price after the news was Rs 360. Loss: 2R, not 1R.",
+     "hi": "Stop Rs 380 par tha, lekin khabar ke baad pehla price hi Rs 360 tha. Loss: 2R, 1R nahi.",
+     "dv": "स्टॉप Rs 380 पर था, लेकिन ख़बर के बाद पहला प्राइस ही Rs 360 था। नुक़सान: 2R, 1R नहीं।"
+    },
+    "bars": [
+     [
+      410,
+      416,
+      406,
+      414
+     ],
+     [
+      414,
+      420,
+      411,
+      418
+     ],
+     [
+      418,
+      422,
+      410,
+      412
+     ],
+     [
+      412,
+      414,
+      403,
+      405
+     ],
+     [
+      405,
+      408,
+      386,
+      398
+     ],
+     [
+      398,
+      404,
+      395,
+      401
+     ],
+     [
+      401,
+      405,
+      396,
+      403
+     ],
+     [
+      403,
+      409,
+      400,
+      406
+     ],
+     [
+      406,
+      408,
+      397,
+      399
+     ],
+     [
+      360,
+      366,
+      352,
+      358
+     ]
+    ],
+    "volume": [
+     60,
+     55,
+     58,
+     62,
+     90,
+     70,
+     65,
+     60,
+     58,
+     180
+    ],
+    "levels": [
+     {
+      "y": 400,
+      "label": {
+       "en": "Entry 400",
+       "hi": "Entry 400",
+       "dv": "एंट्री 400"
+      },
+      "tone": "brand"
+     },
+     {
+      "y": 380,
+      "label": {
+       "en": "Stop 380",
+       "hi": "Stop 380",
+       "dv": "स्टॉप 380"
+      },
+      "tone": "down",
+      "dashed": false
+     }
+    ],
+    "marks": [
+     {
+      "i": 6,
+      "label": {
+       "en": "Buy",
+       "hi": "Buy",
+       "dv": "ख़रीद"
+      },
+      "tone": "brand",
+      "at": "low"
+     },
+     {
+      "i": 9,
+      "label": {
+       "en": "Opens 360",
+       "hi": "360 par khula",
+       "dv": "360 पर खुला"
+      },
+      "tone": "down",
+      "at": "high"
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Three open trades, and trades that fall together",
+    "hi": "Teen open trades, aur saath girne wale trades",
+    "dv": "तीन खुले ट्रेड, और साथ गिरने वाले ट्रेड"
+   },
+   "p": {
+    "en": "Two more limits protect the account as a whole. First, keep at most 3 trades open at a time, so no more than 3R, about 3% of capital, is planned risk at once; with the 25% cap, at least a quarter of your capital also stays in cash. Second, watch correlation, which means how closely two shares tend to move together. Shares in the same sector, meaning the same line of business, such as three banks, react to the same news, so three bank trades are really one big bet on banks. A simple check: if two open trades would fall on the same headline, treat them as one bigger bet whose risks add up, not as two separate trades, and spread your open trades across different sectors.",
+    "hi": "Do aur limits poore account ko bachati hain. Pehli, ek waqt mein zyada se zyada 3 trades open rakhiye, taaki ek saath 3R se zyada, yaani capital ke lagbhag 3% se zyada, planned risk na ho; 25% cap ke saath aapke capital ka kam se kam ek-chauthai hissa cash mein bhi rehta hai. Doosri, correlation par nazar rakhiye, yaani do shares kitna saath-saath chalte hain. Ek hi sector ke shares, yaani ek hi tarah ka business, jaise teen bank, ek hi khabar par react karte hain, isliye teen bank trades asal mein banks par ek bada daon hain. Seedha sa check: agar do open trades ek hi headline par gir sakte hain, toh unhe do alag trades nahi, ek bada daon maaniye jiska risk jud jaata hai, aur open trades alag-alag sectors mein rakhiye.",
+    "dv": "दो और सीमाएँ पूरे अकाउंट को बचाती हैं। पहली, एक समय में ज़्यादा से ज़्यादा 3 ट्रेड खुले रखें, ताकि एक साथ 3R से ज़्यादा, यानी कैपिटल के लगभग 3% से ज़्यादा, प्लान किया हुआ रिस्क न हो; 25% कैप के साथ आपके कैपिटल का कम से कम एक-चौथाई हिस्सा कैश में भी रहता है। दूसरी, कोरिलेशन पर नज़र रखें, यानी दो शेयर कितना साथ-साथ चलते हैं। एक ही सेक्टर के शेयर, यानी एक ही तरह का कारोबार, जैसे तीन बैंक, एक ही ख़बर पर रिएक्ट करते हैं, इसलिए तीन बैंक ट्रेड असल में बैंकों पर एक बड़ा दाँव हैं। सीधा-सा चेक: अगर दो खुले ट्रेड एक ही हेडलाइन पर गिर सकते हैं, तो उन्हें दो अलग ट्रेड नहीं, एक बड़ा दाँव मानें जिसका रिस्क जुड़ जाता है, और खुले ट्रेड अलग-अलग सेक्टर में रखें।"
+   },
+   "example": {
+    "en": "Picture Aman's first week of paper trading: three open trades, 1R each, and all three are bank shares. One evening a negative headline hits the whole banking sector. Next morning all three stops are hit in the first few minutes: at least 3R, Rs 30,000, gone before he can think. Priya also has three trades, in a bank, a cement maker and a pump maker. The same headline most likely hits only her bank trade: at least 1R, not 3R.",
+    "hi": "Aman ke paper trading ka pehla hafta sochiye: teen trades open hain, har ek 1R ka, aur teeno bank shares hain. Ek shaam poore banking sector par ek buri headline aa jaati hai. Agli subah pehle kuch minute mein hi teeno stops hit ho jaate hain: kam se kam 3R, yaani Rs 30,000, sochne se pehle hi chale gaye. Priya ke bhi teen trades hain: ek bank, ek cement company aur ek pump company. Wahi headline shayad sirf uske bank trade ko lagegi: kam se kam 1R, 3R nahi.",
+    "dv": "अमन की पेपर ट्रेडिंग का पहला हफ़्ता सोचिए: तीन ट्रेड खुले हैं, हर एक 1R का, और तीनों बैंक शेयर हैं। एक शाम पूरे बैंकिंग सेक्टर पर एक बुरी हेडलाइन आ जाती है। अगली सुबह पहले कुछ मिनट में ही तीनों स्टॉप हिट हो जाते हैं: कम से कम 3R, यानी Rs 30,000, सोचने से पहले ही चले गए। प्रिया के भी तीन ट्रेड हैं: एक बैंक, एक सीमेंट कंपनी और एक पंप कंपनी। वही हेडलाइन शायद सिर्फ़ उसके बैंक ट्रेड को लगेगी: कम से कम 1R, 3R नहीं।"
+   },
+   "remember": {
+    "en": "Trades that fall on the same news count as one bigger bet.",
+    "hi": "Jo trades ek hi khabar par girte hain, woh ek bada daon hain.",
+    "dv": "जो ट्रेड एक ही ख़बर पर गिरते हैं, वे एक बड़ा दाँव हैं।"
+   },
+   "visual": {
+    "kind": "compare",
+    "title": {
+     "en": "Three trades, or one big bet?",
+     "hi": "Teen trades, ya ek bada daon?",
+     "dv": "तीन ट्रेड, या एक बड़ा दाँव?"
+    },
+    "caption": {
+     "en": "A market-wide fall can still hit all three. Spreading across sectors reduces this risk; it does not remove it.",
+     "hi": "Poore market ki giraavat teeno ko phir bhi maar sakti hai. Alag sectors mein baantne se yeh risk kam hota hai, khatam nahi.",
+     "dv": "पूरे बाज़ार की गिरावट तीनों को फिर भी मार सकती है। अलग सेक्टर में बाँटने से यह रिस्क कम होता है, ख़त्म नहीं।"
+    },
+    "cols": [
+     {
+      "head": {
+       "en": "3 bank trades",
+       "hi": "3 bank trades",
+       "dv": "3 बैंक ट्रेड"
+      },
+      "tone": "down",
+      "points": [
+       {
+        "en": "Same sector, same news",
+        "hi": "Ek sector, ek khabar",
+        "dv": "एक सेक्टर, एक ख़बर"
+       },
+       {
+        "en": "One headline hits all three",
+        "hi": "Ek headline, teeno par chot",
+        "dv": "एक हेडलाइन, तीनों पर चोट"
+       },
+       {
+        "en": "3R or more in one morning",
+        "hi": "Ek subah mein 3R ya zyada",
+        "dv": "एक सुबह में 3R या ज़्यादा"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "3 different sectors",
+       "hi": "3 alag sectors",
+       "dv": "3 अलग सेक्टर"
+      },
+      "tone": "up",
+      "points": [
+       {
+        "en": "Bank, cement, pumps",
+        "hi": "Bank, cement, pumps",
+        "dv": "बैंक, सीमेंट, पंप"
+       },
+       {
+        "en": "One headline hits one trade",
+        "hi": "Ek headline, ek trade par chot",
+        "dv": "एक हेडलाइन, एक ट्रेड पर चोट"
+       },
+       {
+        "en": "Usually one stop, not three",
+        "hi": "Aksar ek stop, teen nahi",
+        "dv": "अक्सर एक स्टॉप, तीन नहीं"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "The daily stop, and the urge to bet big",
+    "hi": "Daily stop, aur 'is baar bada lagata hoon' wala mann",
+    "dv": "डेली स्टॉप, और 'इस बार बड़ा लगाता हूँ' वाला मन"
+   },
+   "p": {
+    "en": "'This time I'll bet big' usually strikes at two moments: after a few wins, when you feel sure, and after a few losses, when you want the money back fast. In both moments the feeling is loudest and judgement is weakest, so size never follows confidence; it follows only the formula. The course also gives you an emergency off switch, the kill-switch for humans: after -2R in a day (two full losses, which is -2% when you risk 1%), you stop trading until the next day, with no 'one last trade to recover'. After -5R in a week, pause and read your journal before the next trade. Changing any rule is weekend work, done in writing, never during market hours.",
+    "hi": "'Is baar bada lagata hoon' wala mann aksar do mauko par aata hai: do-teen trade jeetne ke baad, jab aap khud ko pakka sahi maante hain, aur do-teen loss ke baad, jab paisa jaldi wapas chahiye. Dono waqt feeling sabse tez hoti hai aur samajh sabse kamzor, isliye size kabhi confidence ke hisaab se nahi badalta; sirf formula se aata hai. Course aapko ek emergency off switch bhi deta hai, jise hum kill-switch for humans kehte hain: ek din mein -2R (do poore loss, yaani 1% risk par -2%) ke baad us din trading band, 'bas ek aakhri recovery trade' bhi nahi. Hafte mein -5R ho jaaye, toh ruk jaiye aur agle trade se pehle apna journal padhiye. Koi bhi rule badalna weekend ka kaam hai, likh kar, market hours mein kabhi nahi.",
+    "dv": "'इस बार बड़ा लगाता हूँ' वाला मन अक्सर दो मौक़ों पर आता है: दो-तीन ट्रेड जीतने के बाद, जब आप ख़ुद को पक्का सही मानते हैं, और दो-तीन नुक़सान के बाद, जब पैसा जल्दी वापस चाहिए। दोनों वक़्त मन सबसे ज़्यादा उछलता है और समझ सबसे कमज़ोर होती है, इसलिए साइज़ कभी कॉन्फ़िडेंस के हिसाब से नहीं बदलता; सिर्फ़ फ़ॉर्मूले से आता है। कोर्स आपको एक इमरजेंसी ऑफ़ स्विच भी देता है, जिसे हम 'इंसानों का किल-स्विच' कहते हैं: एक दिन में -2R (दो पूरे नुक़सान, यानी 1% रिस्क पर -2%) के बाद उस दिन ट्रेडिंग बंद, 'बस एक आख़िरी रिकवरी ट्रेड' भी नहीं। हफ़्ते में -5R हो जाए, तो रुक जाएँ और अगले ट्रेड से पहले अपना जर्नल पढ़ें। कोई भी नियम बदलना वीकेंड का काम है, लिखकर, बाज़ार के समय में कभी नहीं।"
+   },
+   "example": {
+    "en": "Picture a challenge day on which Aman has taken leave from office. By 11 am Aman has lost two full trades: -Rs 20,000, or -2R. A new chart looks perfect, and he wants to take it at double size, Rs 20,000 of risk, 'to get it all back'. If that one also fails, his day ends at -4R, Rs 40,000. With the kill-switch he closes the app at -2R, 2% of capital, and tomorrow he starts fresh at the normal 1R size.",
+    "hi": "Challenge ka ek din sochiye, jab Aman ne office se chhutti li hai. Subah 11 baje tak Aman do poore trades haar chuka hai: -Rs 20,000, yaani -2R. Ek naya chart ekdum perfect lag raha hai, aur woh use double size par lena chahta hai, Rs 20,000 ke risk ke saath, 'sab wapas nikaalne ke liye'. Agar yeh bhi fail ho gaya, toh din -4R, yaani Rs 40,000 par khatam hoga. Kill-switch ke saath woh -2R, yaani capital ke 2% par app band kar deta hai, aur kal normal 1R size se nayi shuruaat karta hai.",
+    "dv": "चैलेंज का एक दिन सोचिए, जब अमन ने ऑफ़िस से छुट्टी ली है। सुबह 11 बजे तक अमन दो पूरे ट्रेड हार चुका है: -Rs 20,000, यानी -2R। एक नया चार्ट एकदम परफ़ेक्ट लग रहा है, और वह उसे डबल साइज़ पर लेना चाहता है, Rs 20,000 के रिस्क के साथ, 'सब वापस निकालने के लिए'। अगर यह भी फ़ेल हो गया, तो दिन -4R, यानी Rs 40,000 पर ख़त्म होगा। किल-स्विच के साथ वह -2R, यानी कैपिटल के 2% पर ऐप बंद कर देता है, और कल नॉर्मल 1R साइज़ से नई शुरुआत करता है।"
+   },
+   "remember": {
+    "en": "Size comes from the formula, never from how sure you feel.",
+    "hi": "Size formula se aata hai, is baat se kabhi nahi ki aap kitne sure feel kar rahe hain.",
+    "dv": "साइज़ फ़ॉर्मूले से आता है, इस बात से कभी नहीं कि आप कितना पक्का महसूस कर रहे हैं।"
+   },
+   "visual": {
+    "kind": "steps",
+    "title": {
+     "en": "The loss ladder",
+     "hi": "Loss ki seedhi",
+     "dv": "नुक़सान की सीढ़ी"
+    },
+    "caption": {
+     "en": "Write these limits on your Risk Card, a short note of your five limits, before the market opens, while you are calm.",
+     "hi": "Yeh limits market khulne se pehle, shaant mann se, apne Risk Card par likh lijiye: paanch limits wala ek chhota note.",
+     "dv": "ये सीमाएँ बाज़ार खुलने से पहले, शांत मन से, अपने रिस्क कार्ड पर लिख लें: पाँच सीमाओं वाला एक छोटा नोट।"
+    },
+    "items": [
+     {
+      "tag": "0R",
+      "label": {
+       "en": "Before the market",
+       "hi": "Market se pehle",
+       "dv": "बाज़ार से पहले"
+      },
+      "sub": {
+       "en": "Limits written on your Risk Card",
+       "hi": "Limits aapke Risk Card par likhi hui",
+       "dv": "सीमाएँ आपके रिस्क कार्ड पर लिखी हुई"
+      }
+     },
+     {
+      "tag": "-1R",
+      "label": {
+       "en": "One loss",
+       "hi": "Ek loss",
+       "dv": "एक नुक़सान"
+      },
+      "sub": {
+       "en": "Log it and keep following the plan",
+       "hi": "Journal mein likhiye, plan par chalte rahiye",
+       "dv": "जर्नल में लिखें, प्लान पर चलते रहें"
+      }
+     },
+     {
+      "tag": "-2R",
+      "label": {
+       "en": "Down 2R today",
+       "hi": "Aaj -2R",
+       "dv": "आज -2R"
+      },
+      "sub": {
+       "en": "Stop trading until tomorrow",
+       "hi": "Kal tak trading band",
+       "dv": "कल तक ट्रेडिंग बंद"
+      }
+     },
+     {
+      "tag": "-5R",
+      "label": {
+       "en": "Down 5R this week",
+       "hi": "Is hafte -5R",
+       "dv": "इस हफ़्ते -5R"
+      },
+      "sub": {
+       "en": "Pause and review your journal",
+       "hi": "Ruk kar journal review kijiye",
+       "dv": "रुककर जर्नल रिव्यू करें"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "key_terms": [
+  {
+   "term": {
+    "en": "1R (risk per trade)",
+    "hi": "1R (risk per trade)",
+    "dv": "1R (हर ट्रेड का रिस्क)"
+   },
+   "meaning": {
+    "en": "The planned loss on one trade if the stop is hit: 1% of capital, Rs 10,000 on Rs 10 lakh.",
+    "hi": "Stop hit hone par ek trade ka planned loss: capital ka 1%, yaani Rs 10 lakh par Rs 10,000.",
+    "dv": "स्टॉप हिट होने पर एक ट्रेड का प्लान किया हुआ नुक़सान: कैपिटल का 1%, यानी Rs 10 लाख पर Rs 10,000।"
+   }
+  },
+  {
+   "term": {
+    "en": "Risk per share",
+    "hi": "Risk per share",
+    "dv": "रिस्क प्रति शेयर"
+   },
+   "meaning": {
+    "en": "The distance between your entry price and your stop-loss price.",
+    "hi": "Aapke entry price aur stop-loss price ke beech ki doori.",
+    "dv": "आपके एंट्री प्राइस और स्टॉप-लॉस प्राइस के बीच की दूरी।"
+   }
+  },
+  {
+   "term": {
+    "en": "Position size",
+    "hi": "Position size",
+    "dv": "पोज़िशन साइज़"
+   },
+   "meaning": {
+    "en": "How many shares you buy: risk budget ÷ risk per share, rounded down, then cut to the 25% cap if needed.",
+    "hi": "Aap kitne shares khareedte hain: risk budget ÷ risk per share, round down karke, aur zaroorat ho toh 25% cap tak kam karke.",
+    "dv": "आप कितने शेयर ख़रीदते हैं: रिस्क बजट ÷ रिस्क प्रति शेयर, नीचे राउंड करके, और ज़रूरत हो तो 25% कैप तक घटाकर।"
+   }
+  },
+  {
+   "term": {
+    "en": "Exposure cap",
+    "hi": "Exposure cap",
+    "dv": "एक्सपोज़र कैप"
+   },
+   "meaning": {
+    "en": "The most one position may be worth: 25% of capital, Rs 2.5 lakh on Rs 10 lakh.",
+    "hi": "Ek position ki zyada se zyada value: capital ka 25%, yaani Rs 10 lakh par Rs 2.5 lakh.",
+    "dv": "एक पोज़िशन की ज़्यादा से ज़्यादा वैल्यू: कैपिटल का 25%, यानी Rs 10 लाख पर Rs 2.5 लाख।"
+   }
+  },
+  {
+   "term": {
+    "en": "Correlation",
+    "hi": "Correlation",
+    "dv": "कोरिलेशन"
+   },
+   "meaning": {
+    "en": "How closely two shares move together. Correlated trades behave like one bigger bet.",
+    "hi": "Do shares kitna saath-saath chalte hain. Correlated trades ek bade daon ki tarah behave karte hain.",
+    "dv": "दो शेयर कितना साथ-साथ चलते हैं। कोरिलेटेड ट्रेड एक बड़े दाँव की तरह बर्ताव करते हैं।"
+   }
+  },
+  {
+   "term": {
+    "en": "Kill-switch for humans",
+    "hi": "Kill-switch for humans",
+    "dv": "इंसानों का किल-स्विच"
+   },
+   "meaning": {
+    "en": "The daily stop: after -2R in one day, no more trades until the next day.",
+    "hi": "Daily stop: ek din mein -2R ke baad agle din tak koi trade nahi.",
+    "dv": "डेली स्टॉप: एक दिन में -2R के बाद अगले दिन तक कोई ट्रेड नहीं।"
+   }
+  }
+ ],
+ "mindmap": {
+  "kind": "mindmap",
+  "center": {
+   "en": "Risk first, size second",
+   "hi": "Pehle risk, phir size",
+   "dv": "पहले रिस्क, फिर साइज़"
+  },
+  "branches": [
+   {
+    "label": {
+     "en": "1% rule",
+     "hi": "1% rule",
+     "dv": "1% का नियम"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "1R = Rs 10,000 on Rs 10 lakh",
+      "hi": "Rs 10 lakh par 1R = Rs 10,000",
+      "dv": "Rs 10 लाख पर 1R = Rs 10,000"
+     },
+     {
+      "en": "Caps planned loss, not investment",
+      "hi": "Planned loss ki limit, investment ki nahi",
+      "dv": "प्लान किए नुक़सान की सीमा, निवेश की नहीं"
+     },
+     {
+      "en": "Helps you survive losing streaks",
+      "hi": "Losing streak jhelne mein madad",
+      "dv": "लगातार नुक़सान झेलने में मदद"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Sizing formula",
+     "hi": "Sizing formula",
+     "dv": "साइज़िंग फ़ॉर्मूला"
+    },
+    "tone": "up",
+    "points": [
+     {
+      "en": "Budget = capital x 1%",
+      "hi": "Budget = capital x 1%",
+      "dv": "बजट = कैपिटल x 1%"
+     },
+     {
+      "en": "÷ entry-to-stop distance",
+      "hi": "÷ entry se stop ki doori",
+      "dv": "÷ एंट्री से स्टॉप की दूरी"
+     },
+     {
+      "en": "Always round down",
+      "hi": "Hamesha round down",
+      "dv": "हमेशा नीचे राउंड करें"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "25% cap",
+     "hi": "25% cap",
+     "dv": "25% कैप"
+    },
+    "tone": "gold",
+    "points": [
+     {
+      "en": "Max Rs 2.5 lakh per position",
+      "hi": "Ek position max Rs 2.5 lakh",
+      "dv": "एक पोज़िशन अधिकतम Rs 2.5 लाख"
+     },
+     {
+      "en": "Tight stops need it most",
+      "hi": "Tight stop mein sabse zaroori",
+      "dv": "टाइट स्टॉप में सबसे ज़रूरी"
+     },
+     {
+      "en": "Take the smaller quantity",
+      "hi": "Chhoti quantity lijiye",
+      "dv": "छोटी क्वांटिटी लें"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Stops can slip",
+     "hi": "Stop phisal sakta hai",
+     "dv": "स्टॉप फिसल सकता है"
+    },
+    "tone": "down",
+    "points": [
+     {
+      "en": "Gaps jump over stops",
+      "hi": "Gap stop ke upar se kood jaata hai",
+      "dv": "गैप स्टॉप लाँघ जाता है"
+     },
+     {
+      "en": "Circuits trap sellers",
+      "hi": "Circuit sellers ko phansata hai",
+      "dv": "सर्किट बेचने वालों को फँसाता है"
+     },
+     {
+      "en": "Loss can exceed 1R",
+      "hi": "Loss 1R se zyada ho sakta hai",
+      "dv": "नुक़सान 1R से ज़्यादा हो सकता है"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Account limits",
+     "hi": "Account ki limits",
+     "dv": "अकाउंट की सीमाएँ"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "Max 3 open trades",
+      "hi": "Max 3 open trades",
+      "dv": "अधिकतम 3 खुले ट्रेड"
+     },
+     {
+      "en": "Same-news trades = one bet",
+      "hi": "Ek khabar wale trades = ek daon",
+      "dv": "एक ख़बर वाले ट्रेड = एक दाँव"
+     },
+     {
+      "en": "-2R day stop, -5R pause and review",
+      "hi": "-2R par din band, -5R par pause aur review",
+      "dv": "-2R पर दिन बंद, -5R पर पॉज़ और रिव्यू"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Your mind",
+     "hi": "Aapka mann",
+     "dv": "आपका मन"
+    },
+    "tone": "down",
+    "points": [
+     {
+      "en": "Confidence is not a size",
+      "hi": "Confidence size nahi hai",
+      "dv": "कॉन्फ़िडेंस साइज़ नहीं है"
+     },
+     {
+      "en": "No 'win it back' trade",
+      "hi": "'Wapas nikaalo' trade nahi",
+      "dv": "'वापस निकालो' ट्रेड नहीं"
+     },
+     {
+      "en": "Change rules only on weekends",
+      "hi": "Rules sirf weekend par badlein",
+      "dv": "नियम सिर्फ़ वीकेंड पर बदलें"
+     }
+    ]
+   }
+  ]
+ },
+ "kaam": {
+  "en": "Build your own sizing calculator in Google Sheets, test it on four practice trades and write your Risk Card.",
+  "hi": "Google Sheets mein apna sizing calculator banaiye, chaar practice trades par test kijiye aur apna Risk Card likhiye.",
+  "dv": "Google Sheets में अपना साइज़िंग कैलकुलेटर बनाएँ, चार प्रैक्टिस ट्रेड पर टेस्ट करें और अपना रिस्क कार्ड लिखें।"
+ },
+ "kaam_steps": [
+  {
+   "en": "Open a new Google Sheet. In A1 to A4 type Capital, Risk %, Entry, Stop; in B1 to B4 type 1000000, 1%, 400, 380.",
+   "hi": "Ek nayi Google Sheet kholiye. A1 se A4 mein likhiye Capital, Risk %, Entry, Stop; aur B1 se B4 mein 1000000, 1%, 400, 380.",
+   "dv": "एक नई Google Sheet खोलें। A1 से A4 में लिखें Capital, Risk %, Entry, Stop; और B1 से B4 में 1000000, 1%, 400, 380।"
+  },
+  {
+   "en": "In A5 to A7 type Risk budget, Risk per share, Quantity. In B5 type =B1*B2, in B6 =ABS(B3-B4), in B7 =ROUNDDOWN(B5/B6,0). In Sheets, * means multiply.",
+   "hi": "A5 se A7 mein likhiye Risk budget, Risk per share, Quantity. B5 mein =B1*B2, B6 mein =ABS(B3-B4), B7 mein =ROUNDDOWN(B5/B6,0). Sheets mein * ka matlab guna hai.",
+   "dv": "A5 से A7 में लिखें Risk budget, Risk per share, Quantity। B5 में =B1*B2, B6 में =ABS(B3-B4), B7 में =ROUNDDOWN(B5/B6,0)। Sheets में * का मतलब गुणा है।"
+  },
+  {
+   "en": "In A8 to A10 type Position value, Cap check, Final quantity. In B8 type =B7*B3, in B9 =IF(B8>0.25*B1,\"OVERSIZED\",\"OK\"), in B10 =MIN(B7,ROUNDDOWN(0.25*B1/B3,0)).",
+   "hi": "A8 se A10 mein likhiye Position value, Cap check, Final quantity. B8 mein =B7*B3, B9 mein =IF(B8>0.25*B1,\"OVERSIZED\",\"OK\"), B10 mein =MIN(B7,ROUNDDOWN(0.25*B1/B3,0)).",
+   "dv": "A8 से A10 में लिखें Position value, Cap check, Final quantity। B8 में =B7*B3, B9 में =IF(B8>0.25*B1,\"OVERSIZED\",\"OK\"), B10 में =MIN(B7,ROUNDDOWN(0.25*B1/B3,0))।"
+  },
+  {
+   "en": "Change only Entry and Stop to test four trades: 400/380, 250/237, 500/495 and 300/288 (Day 8's 1.5 x ATR stop). Quantity should read 500, 769, 2,000 and 833. Only 500/495 should say OVERSIZED, and its Final quantity should be 500.",
+   "hi": "Sirf Entry aur Stop badal kar chaar trades test kijiye: 400/380, 250/237, 500/495 aur 300/288 (Day 8 ka 1.5 x ATR stop). Quantity 500, 769, 2,000 aur 833 aani chahiye. Sirf 500/495 par OVERSIZED dikhna chahiye, aur uski Final quantity 500 honi chahiye.",
+   "dv": "सिर्फ़ Entry और Stop बदलकर चार ट्रेड टेस्ट करें: 400/380, 250/237, 500/495 और 300/288 (दिन 8 का 1.5 x ATR स्टॉप)। Quantity 500, 769, 2,000 और 833 आनी चाहिए। सिर्फ़ 500/495 पर OVERSIZED दिखना चाहिए, और उसकी Final quantity 500 होनी चाहिए।"
+  },
+  {
+   "en": "Write your Risk Card on paper or in the sheet: 1% per trade, 25% per position, at most 3 open trades, stop for the day at -2R, pause and review at -5R in a week.",
+   "hi": "Paper par ya sheet mein apna Risk Card likhiye: har trade 1%, har position 25%, zyada se zyada 3 open trades, -2R par us din trading band, hafte mein -5R par ruk kar review.",
+   "dv": "काग़ज़ पर या शीट में अपना रिस्क कार्ड लिखें: हर ट्रेड 1%, हर पोज़िशन 25%, ज़्यादा से ज़्यादा 3 खुले ट्रेड, -2R पर उस दिन ट्रेडिंग बंद, हफ़्ते में -5R पर रुककर रिव्यू।"
+  },
+  {
+   "en": "Run the AI Lab prompt 'Check my sizing sheet', then recheck one of its answers yourself on a phone calculator.",
+   "hi": "AI Lab ka 'Meri sizing sheet check kijiye' prompt chalaiye, phir uska ek jawab khud phone calculator par dobara check kijiye.",
+   "dv": "AI Lab का 'मेरी साइज़िंग शीट जाँचिए' प्रॉम्प्ट चलाएँ, फिर उसका एक जवाब ख़ुद फ़ोन कैलकुलेटर पर दोबारा जाँचें।"
+  }
+ ],
+ "kaam_min": 40,
+ "outcome": {
+  "en": "By the end you can size any trade with the 1% formula, apply the 25% cap, explain why a trade can lose more than 1R even with a stop-loss, and list the five risk limits you will follow from Day 12.",
+  "hi": "Aaj ke baad aap 1% formula se kisi bhi trade ka size nikaal payenge, 25% cap laga payenge, samjha payenge ki stop-loss ke baad bhi loss 1R se zyada kyun ho sakta hai, aur woh paanch risk limits bata payenge jin par aap Day 12 se chalenge.",
+  "dv": "आज के बाद आप 1% फ़ॉर्मूले से किसी भी ट्रेड का साइज़ निकाल पाएँगे, 25% कैप लगा पाएँगे, समझा पाएँगे कि स्टॉप-लॉस के बाद भी नुक़सान 1R से ज़्यादा क्यों हो सकता है, और वे पाँच रिस्क सीमाएँ बता पाएँगे जिन पर आप दिन 12 से चलेंगे।"
+ },
+ "tools": [
+  {
+   "en": "Google Sheets",
+   "hi": "Google Sheets",
+   "dv": "Google Sheets"
+  },
+  {
+   "en": "Phone calculator",
+   "hi": "Phone calculator",
+   "dv": "फ़ोन कैलकुलेटर"
+  },
+  {
+   "en": "Paper or notebook for the Risk Card",
+   "hi": "Risk Card ke liye paper ya notebook",
+   "dv": "रिस्क कार्ड के लिए काग़ज़ या नोटबुक"
+  },
+  {
+   "en": "Any AI chat",
+   "hi": "Koi bhi AI chat",
+   "dv": "कोई भी AI चैट"
+  }
+ ],
+ "fun": {
+  "en": "Size Sprint: ask a friend or family member to call out five entry and stop prices. Size each one on a phone calculator within 60 seconds. Score a point for every correct rounded-down quantity and every OVERSIZED you catch; speed alone earns nothing.",
+  "hi": "Size Sprint: kisi dost ya ghar mein kisi se paanch entry aur stop prices bolne ko kahiye. Har ek ka size phone calculator par 60 second mein nikaaliye. Har sahi, round down ki hui quantity aur har pakde gaye OVERSIZED ka ek point; sirf speed ka koi point nahi.",
+  "dv": "Size Sprint: किसी दोस्त या घर में किसी से पाँच एंट्री और स्टॉप प्राइस बोलने को कहें। हर एक का साइज़ फ़ोन कैलकुलेटर पर 60 सेकंड में निकालें। हर सही, नीचे राउंड की हुई क्वांटिटी और हर पकड़े गए OVERSIZED का एक पॉइंट; सिर्फ़ स्पीड का कोई पॉइंट नहीं।"
+ },
+ "compliance": "Educational content only, not investment advice. Company names and chart prices are made up for illustration. Stage 1 uses virtual money only. A stop-loss does not promise your exit price. No affiliation with any tool named. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
+ "prompts": [
+  {
+   "title": {
+    "en": "Check my sizing sheet",
+    "hi": "Meri sizing sheet check kijiye",
+    "dv": "मेरी साइज़िंग शीट जाँचिए"
+   },
+   "body": "You are a careful spreadsheet tutor for a beginner who is learning position sizing for Indian cash-market shares with virtual money only. I will paste the formulas from my Google Sheets sizing calculator. Inputs: capital, risk % per trade, entry price, stop price. Outputs: risk budget, risk per share (the absolute distance between entry and stop), quantity rounded down to a whole share, position value, a cell that shows OVERSIZED when position value is above 25% of capital, and a final quantity that is the smaller of the formula quantity and the 25% cap quantity. Check each formula for mistakes and explain any error in simple words. Then work these four test cases by hand, showing every step, so I can compare with my sheet: capital Rs 10,00,000 and risk 1%, with entry/stop of 400/380, 250/237, 500/495 and 300/288, and for each give the formula quantity, the position value, OK or OVERSIZED, and the final quantity after the 25% cap. Do not recommend any stock, do not give buy or sell advice, and do not mention targets or expected returns."
+  },
+  {
+   "title": {
+    "en": "Stress-test my stop",
+    "hi": "Mere stop ka stress-test",
+    "dv": "मेरे स्टॉप का स्ट्रेस-टेस्ट"
+   },
+   "body": "Act as a patient risk teacher for Indian markets. On Rs 10,00,000 of virtual capital I plan a practice trade in a made-up NSE stock, 'Bharat Pumps Ltd': 500 shares at Rs 400 with a stop-loss at Rs 380, so 1R = Rs 10,000. Describe five realistic situations in which my actual loss could be bigger than 1R, for example an overnight gap, a lower circuit, slippage in a fast market, or an SL-limit order that does not fill. For each one, state an example price clearly and calculate the loss in rupees and in R. Label every statement Fact (how Indian markets work, checkable on the NSE or SEBI website), Guess (your assumption about prices) or Kachra (a popular myth). Finish with three habits that limit the damage. Do not recommend any stock, do not give buy or sell advice, and do not mention targets or expected returns. Do not quote any price-band or circuit percentage; say that the exchange sets the band for each stock and that I should check the NSE website. Use only this made-up company in every situation, and do not name any real company, index constituent or real news event."
+  },
+  {
+   "title": {
+    "en": "The 'bet big' urge",
+    "hi": "'Bada lagata hoon' wala mann",
+    "dv": "'बड़ा लगाता हूँ' वाला मन"
+   },
+   "body": "Act as a calm trading-psychology coach. Ask me 5 short questions, one at a time, about the moments when I have wanted to increase my position size: after wins, after losses, or when a tip or a chart looked 'perfect'. After my answers, describe my pattern in plain words and help me write two if-then rules, for example 'If I feel very sure, then I still use the formula size'. Do not ask for any personal or financial details, do not suggest any stock or strategy, and do not give buy or sell advice, targets or return expectations."
+  }
+ ],
+ "journal_prompt": {
+  "en": "When did you last feel 'this time I'll bet big', in markets or anywhere else? What were you feeling just before it? Write the one sentence you will say to yourself the next time that urge comes.",
+  "hi": "Aakhri baar 'is baar bada lagata hoon' wala mann kab aaya tha, market mein ya kahin aur? Usse theek pehle aap kya feel kar rahe the? Woh ek line likhiye jo agli baar yeh mann aane par aap khud se kahenge.",
+  "dv": "आख़िरी बार 'इस बार बड़ा लगाता हूँ' वाला मन कब आया था, बाज़ार में या कहीं और? उससे ठीक पहले आप क्या महसूस कर रहे थे? वह एक लाइन लिखें जो अगली बार यह मन आने पर आप ख़ुद से कहेंगे।"
+ },
+ "motivation": {
+  "en": "You cannot control how the next trade ends. You can always control its size.",
+  "hi": "Agla trade kaise khatam hoga, yeh aapke haath mein nahi. Uska size hamesha aapke haath mein hai.",
+  "dv": "अगला ट्रेड कैसे ख़त्म होगा, यह आपके हाथ में नहीं। उसका साइज़ हमेशा आपके हाथ में है।"
+ },
+ "quiz": [
+  {
+   "stem": {
+    "en": "Priya has Rs 10,00,000 of virtual capital and risks 1% per trade. Her entry is Rs 320 and her stop is Rs 304. How many shares should she buy?",
+    "hi": "Priya ke paas Rs 10,00,000 ka virtual capital hai aur woh har trade par 1% risk leti hai. Entry Rs 320 hai aur stop Rs 304. Use kitne shares khareedne chahiye?",
+    "dv": "प्रिया के पास Rs 10,00,000 का वर्चुअल कैपिटल है और वह हर ट्रेड पर 1% रिस्क लेती है। एंट्री Rs 320 है और स्टॉप Rs 304। उसे कितने शेयर ख़रीदने चाहिए?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "625 shares",
+      "hi": "625 shares",
+      "dv": "625 शेयर"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "31 shares",
+      "hi": "31 shares",
+      "dv": "31 शेयर"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "781 shares",
+      "hi": "781 shares",
+      "dv": "781 शेयर"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "3,125 shares",
+      "hi": "3,125 shares",
+      "dv": "3,125 शेयर"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Risk budget = 1% of Rs 10,00,000 = Rs 10,000. Risk per share = 320 - 304 = Rs 16. Quantity = 10,000 ÷ 16 = 625 shares, worth Rs 2,00,000, which is 20% of capital and inside the 25% cap. 31 comes from dividing the budget by the price, 781 is only the 25% cap, and 3,125 would put all the capital in one stock.",
+    "hi": "Risk budget = Rs 10,00,000 ka 1% = Rs 10,000. Risk per share = 320 - 304 = Rs 16. Quantity = 10,000 ÷ 16 = 625 shares, jinki value Rs 2,00,000 hai, yaani capital ka 20%, 25% cap ke andar. 31 budget ko price se divide karne par aata hai, 781 sirf 25% cap hai, aur 3,125 mein poora capital ek hi stock mein chala jaata.",
+    "dv": "रिस्क बजट = Rs 10,00,000 का 1% = Rs 10,000। रिस्क प्रति शेयर = 320 - 304 = Rs 16। क्वांटिटी = 10,000 ÷ 16 = 625 शेयर, जिनकी वैल्यू Rs 2,00,000 है, यानी कैपिटल का 20%, 25% कैप के अंदर। 31 बजट को प्राइस से भाग देने पर आता है, 781 सिर्फ़ 25% कैप है, और 3,125 में पूरा कैपिटल एक ही स्टॉक में चला जाता।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Entry Rs 800, stop Rs 796, capital Rs 10 lakh, risk 1%. The sizing formula gives 2,500 shares. What final size do the course rules allow?",
+    "hi": "Entry Rs 800, stop Rs 796, capital Rs 10 lakh, risk 1%. Sizing formula 2,500 shares deta hai. Course ke rules ke hisaab se final size kitna hoga?",
+    "dv": "एंट्री Rs 800, स्टॉप Rs 796, कैपिटल Rs 10 लाख, रिस्क 1%। साइज़िंग फ़ॉर्मूला 2,500 शेयर देता है। कोर्स के नियमों के हिसाब से फ़ाइनल साइज़ कितना होगा?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "312 shares, set by the 25% cap",
+      "hi": "312 shares, 25% cap ke hisaab se",
+      "dv": "312 शेयर, 25% कैप के हिसाब से"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "2,500 shares, exactly as the formula says",
+      "hi": "2,500 shares, bilkul formula ke hisaab se",
+      "dv": "2,500 शेयर, बिल्कुल फ़ॉर्मूले के हिसाब से"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "1,250 shares, half of the formula size",
+      "hi": "1,250 shares, formula size ka aadha",
+      "dv": "1,250 शेयर, फ़ॉर्मूला साइज़ का आधा"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "12 shares, the budget divided by price",
+      "hi": "12 shares, budget ko price se divide karke",
+      "dv": "12 शेयर, बजट को प्राइस से भाग देकर"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Risk per share is only Rs 4, so the formula asks for 2,500 shares worth Rs 20,00,000, twice the whole capital. The 25% cap allows Rs 2,50,000 ÷ 800 = 312.5, rounded down to 312 shares. Planned risk falls to 312 x Rs 4 = Rs 1,248, well inside 1R. Take the smaller of the two quantities, every time.",
+    "hi": "Risk per share sirf Rs 4 hai, isliye formula 2,500 shares maangta hai jinki value Rs 20,00,000 hai, poore capital ka double. 25% cap Rs 2,50,000 ÷ 800 = 312.5 ki ijazat deta hai, round down karke 312 shares. Planned risk ghat ke 312 x Rs 4 = Rs 1,248 reh jaata hai, 1R ke kaafi andar. Dono quantities mein se chhoti wali, har baar.",
+    "dv": "रिस्क प्रति शेयर सिर्फ़ Rs 4 है, इसलिए फ़ॉर्मूला 2,500 शेयर माँगता है जिनकी वैल्यू Rs 20,00,000 है, पूरे कैपिटल का दोगुना। 25% कैप Rs 2,50,000 ÷ 800 = 312.5 की इजाज़त देता है, नीचे राउंड करके 312 शेयर। प्लान किया हुआ रिस्क घटकर 312 x Rs 4 = Rs 1,248 रह जाता है, 1R के काफ़ी अंदर। दोनों क्वांटिटी में से छोटी वाली, हर बार।"
+   }
+  },
+  {
+   "stem": {
+    "en": "You hold 400 shares of Kiran Foods Ltd bought at Rs 250, with a stop at Rs 225, so 1R = Rs 10,000. After bad news the stock opens at Rs 205, and your stop sells at the open. What is the loss in R?",
+    "hi": "Aapke paas Kiran Foods Ltd ke 400 shares hain, Rs 250 par khareede, stop Rs 225 par, yaani 1R = Rs 10,000. Buri khabar ke baad stock Rs 205 par khulta hai, aur aapka stop opening par bech deta hai. Loss kitne R ka hua?",
+    "dv": "आपके पास Kiran Foods Ltd के 400 शेयर हैं, Rs 250 पर ख़रीदे, स्टॉप Rs 225 पर, यानी 1R = Rs 10,000। बुरी ख़बर के बाद स्टॉक Rs 205 पर खुलता है, और आपका स्टॉप ओपनिंग पर बेच देता है। नुक़सान कितने R का हुआ?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "1.8R, about Rs 18,000",
+      "hi": "1.8R, lagbhag Rs 18,000",
+      "dv": "1.8R, लगभग Rs 18,000"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "1R, because the stop caps it",
+      "hi": "1R, kyunki stop ne rok diya",
+      "dv": "1R, क्योंकि स्टॉप ने रोक दिया"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "4.5R, about Rs 45,000",
+      "hi": "4.5R, lagbhag Rs 45,000",
+      "dv": "4.5R, लगभग Rs 45,000"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "0.8R, about Rs 8,000",
+      "hi": "0.8R, lagbhag Rs 8,000",
+      "dv": "0.8R, लगभग Rs 8,000"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Loss = 400 x (250 - 205) = 400 x Rs 45 = Rs 18,000. Divide by 1R (Rs 10,000) and you get 1.8R. The stop was a plan to exit at Rs 225, but the first price available after the gap was Rs 205. Rs 8,000 is only the extra slip below the stop, not the whole loss.",
+    "hi": "Loss = 400 x (250 - 205) = 400 x Rs 45 = Rs 18,000. Ise 1R (Rs 10,000) se divide kijiye, 1.8R aata hai. Stop Rs 225 par exit ka plan tha, lekin gap ke baad pehla milne wala price Rs 205 tha. Rs 8,000 toh sirf stop se neeche ka extra slippage hai, poora loss nahi.",
+    "dv": "नुक़सान = 400 x (250 - 205) = 400 x Rs 45 = Rs 18,000। इसे 1R (Rs 10,000) से भाग दें, 1.8R आता है। स्टॉप Rs 225 पर एग्ज़िट का प्लान था, लेकिन गैप के बाद पहला मिलने वाला प्राइस Rs 205 था। Rs 8,000 तो सिर्फ़ स्टॉप से नीचे की एक्स्ट्रा फिसलन है, पूरा नुक़सान नहीं।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Aman has three open swing trades, 1R each: Gupta Cement Ltd and two other cement makers. Which statement is most accurate?",
+    "hi": "Aman ke teen swing trades open hain, har ek 1R ka: Gupta Cement Ltd aur do aur cement companies. Kaunsi baat sabse sahi hai?",
+    "dv": "अमन के तीन स्विंग ट्रेड खुले हैं, हर एक 1R का: Gupta Cement Ltd और दो और सीमेंट कंपनियाँ। कौन-सी बात सबसे सही है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "It is closer to one big bet on cement",
+      "hi": "Yeh cement par ek bade daon jaisa hai",
+      "dv": "यह सीमेंट पर एक बड़े दाँव जैसा है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "His risk is well spread over three stocks",
+      "hi": "Uska risk teen stocks mein achhe se bant gaya hai",
+      "dv": "उसका रिस्क तीन स्टॉक में अच्छे से बँटा है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "It is safe, since each trade risks only 1R",
+      "hi": "Safe hai, kyunki har trade sirf 1R ka hai",
+      "dv": "सुरक्षित है, क्योंकि हर ट्रेड सिर्फ़ 1R का है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Correlation matters only for intraday trades",
+      "hi": "Correlation sirf intraday trades mein maayne rakhta hai",
+      "dv": "कोरिलेशन सिर्फ़ इंट्राडे ट्रेड में मायने रखता है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Shares in the same sector tend to react to the same news. One bad cement headline can hit all three stops together, costing 3R or more in one morning, which is beyond the -2R daily stop. Count trades that would fall on the same headline as one bigger bet, and spread open trades across sectors.",
+    "hi": "Ek hi sector ke shares aksar ek hi khabar par react karte hain. Cement ki ek buri headline teeno stops ek saath hit kar sakti hai, aur ek subah mein 3R ya usse zyada ja sakta hai, jo -2R ke daily stop se bhi aage hai. Jo trades ek hi headline par gir sakte hain, unhe ek bada daon giniye, aur open trades alag sectors mein rakhiye.",
+    "dv": "एक ही सेक्टर के शेयर अक्सर एक ही ख़बर पर रिएक्ट करते हैं। सीमेंट की एक बुरी हेडलाइन तीनों स्टॉप एक साथ हिट कर सकती है, और एक सुबह में 3R या उससे ज़्यादा जा सकता है, जो -2R के डेली स्टॉप से भी आगे है। जो ट्रेड एक ही हेडलाइन पर गिर सकते हैं, उन्हें एक बड़ा दाँव गिनें, और खुले ट्रेड अलग-अलग सेक्टर में रखें।"
+   }
+  },
+  {
+   "stem": {
+    "en": "On a day's leave from work, Priya's only trade today gapped below her stop at the open and closed at -2R. At 1:30 pm a clean setup appears that fits all her rules. What do the course rules say?",
+    "hi": "Office se chhutti ke din, Priya ka aaj ka akela trade opening par stop ke neeche gap se khula aur -2R par band hua. Dopahar 1:30 baje ek saaf setup aata hai jo uske saare rules par fit hai. Course ke rules kya kehte hain?",
+    "dv": "ऑफ़िस से छुट्टी के दिन, प्रिया का आज का अकेला ट्रेड ओपनिंग पर स्टॉप के नीचे गैप से खुला और -2R पर बंद हुआ। दोपहर 1:30 बजे एक साफ़ सेटअप आता है जो उसके सारे नियमों पर फ़िट है। कोर्स के नियम क्या कहते हैं?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Stop for the day: the -2R limit is hit",
+      "hi": "Aaj ke liye band: -2R ki limit poori",
+      "dv": "आज के लिए बंद: -2R की सीमा पूरी"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Take it: she has lost only one trade today",
+      "hi": "Le lijiye: aaj usne sirf ek trade haara hai",
+      "dv": "ले लें: आज उसने सिर्फ़ एक ट्रेड हारा है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Take it at half size, just to be careful",
+      "hi": "Aadhe size par lijiye, bas savdhaani ke liye",
+      "dv": "आधे साइज़ पर लें, बस सावधानी के लिए"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Take it, but only with a tighter stop",
+      "hi": "Le lijiye, lekin sirf tight stop ke saath",
+      "dv": "ले लें, लेकिन सिर्फ़ टाइट स्टॉप के साथ"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "The daily stop counts R, not losing trades. One gap loss of -2R is enough: trading ends for today, however good the setup looks. Tomorrow she starts fresh at the normal 1R size.",
+    "hi": "Daily stop R ginta hai, haare hue trades nahi. Gap se aaya -2R ka ek hi loss kaafi hai: aaj ki trading khatam, setup kitna bhi achha lage. Kal woh normal 1R size se nayi shuruaat karegi.",
+    "dv": "डेली स्टॉप R गिनता है, हारे हुए ट्रेड नहीं। गैप से आया -2R का एक ही नुक़सान काफ़ी है: आज की ट्रेडिंग ख़त्म, सेटअप कितना भी अच्छा लगे। कल वह नॉर्मल 1R साइज़ से नई शुरुआत करेगी।"
+   }
+  }
+ ]
+}

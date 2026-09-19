@@ -1,0 +1,1507 @@
+{
+  "day": 6,
+  "title": {
+    "en": "Trend, zones and gaps: reading price structure",
+    "hi": "Trend, zones aur gaps: price ka structure padhna",
+    "dv": "ट्रेंड, ज़ोन और गैप: प्राइस का ढाँचा पढ़ना"
+  },
+  "tags": {
+    "concept": {
+      "en": "Price structure: trend, support and resistance zones, breakouts and gaps",
+      "hi": "Price structure: trend, support aur resistance zones, breakouts aur gaps",
+      "dv": "प्राइस का ढाँचा: ट्रेंड, सपोर्ट और रेज़िस्टेंस ज़ोन, ब्रेकआउट और गैप"
+    },
+    "ai_lab": {
+      "en": "Grade my chart marking: AI checks, you decide",
+      "hi": "Grade my chart marking: AI check kare, faisla aapka",
+      "dv": "मेरी चार्ट मार्किंग ग्रेड कीजिए: AI जाँचे, फ़ैसला आपका"
+    },
+    "psychology": {
+      "en": "Level ka moh: clinging to a level after it breaks",
+      "hi": "Level ka moh: toote hue level se chipke rehna",
+      "dv": "लेवल का मोह: टूटे हुए लेवल से चिपके रहना"
+    }
+  },
+  "strategy": null,
+  "duration_min": 75,
+  "story": {
+    "kind": "story",
+    "title": {
+      "en": "The line Aman trusted",
+      "hi": "Woh line jis par Aman ko bharosa tha",
+      "dv": "वह लाइन जिस पर अमन को भरोसा था"
+    },
+    "panels": [
+      {
+        "who": "narrator",
+        "say": {
+          "en": "Saturday evening. Aman shares his phone screen on a video call with the mentor and Priya.",
+          "hi": "Saturday shaam. Aman mentor aur Priya ke saath video call par apni phone screen share karta hai.",
+          "dv": "शनिवार शाम। अमन मेंटर और प्रिया के साथ वीडियो कॉल पर अपने फ़ोन की स्क्रीन शेयर करता है।"
+        }
+      },
+      {
+        "who": "aman",
+        "mood": "worried",
+        "say": {
+          "en": "Sir, see this. Bharat Pumps bounced from Rs 500 three times, so last month, before the course, I drew a thick line there and bought 100 shares at Rs 515. On Friday it closed at Rs 488. But 500 is strong support. It will come back, won't it?",
+          "hi": "Sir, yeh dekhiye. Bharat Pumps Rs 500 se teen baar uchhla, toh pichhle mahine, course se pehle, maine wahan ek moti line kheench di aur Rs 515 par 100 shares le liye. Friday ko yeh Rs 488 par close hua. Par 500 toh strong support hai. Wapas aa jayega na?",
+          "dv": "सर, यह देखिए। Bharat Pumps Rs 500 से तीन बार उछला, तो पिछले महीने, कोर्स से पहले, मैंने वहाँ एक मोटी लाइन खींच दी और Rs 515 पर 100 शेयर ले लिए। शुक्रवार को यह Rs 488 पर बंद हुआ। पर 500 तो मज़बूत सपोर्ट है। वापस आ जाएगा ना?"
+        }
+      },
+      {
+        "who": "priya",
+        "mood": "thinking",
+        "say": {
+          "en": "Aman, I checked the chart. The three bounces came at Rs 503, 498 and 506, never exactly at 500. And Friday's volume was almost double the usual. Is it still support?",
+          "hi": "Aman, maine chart dekha. Teeno bounce Rs 503, 498 aur 506 par aaye the, exactly 500 par ek bhi nahi. Aur Friday ka volume normal se lagbhag double tha. Kya yeh ab bhi support hai?",
+          "dv": "अमन, मैंने चार्ट देखा। तीनों उछाल Rs 503, 498 और 506 पर आए थे, ठीक 500 पर एक भी नहीं। और शुक्रवार का वॉल्यूम आम दिनों से लगभग दोगुना था। क्या यह अब भी सपोर्ट है?"
+        }
+      },
+      {
+        "who": "mentor",
+        "mood": "thinking",
+        "say": {
+          "en": "Two questions, Aman. Who made that level: your line, or the people who bought there? And if they have stopped buying, what is your line holding up?",
+          "hi": "Aman, do sawaal. Yeh level kisne banaya: aapki line ne, ya un logon ne jinhone wahan khareeda tha? Aur agar unhone khareedna band kar diya hai, toh aapki line ab kya sambhaal rahi hai?",
+          "dv": "अमन, दो सवाल। यह लेवल किसने बनाया: आपकी लाइन ने, या उन लोगों ने जिन्होंने वहाँ ख़रीदा था? और अगर उन्होंने ख़रीदना बंद कर दिया है, तो आपकी लाइन अब क्या थामे हुए है?"
+        }
+      },
+      {
+        "who": "aman",
+        "mood": "sad",
+        "say": {
+          "en": "I never thought of it that way. I just trusted the line.",
+          "hi": "Aisa toh maine kabhi socha hi nahi. Bas line par bharosa kar liya.",
+          "dv": "ऐसा तो मैंने कभी सोचा ही नहीं। बस लाइन पर भरोसा कर लिया।"
+        }
+      },
+      {
+        "who": "mentor",
+        "mood": "neutral",
+        "say": {
+          "en": "Today we learn to read what price is actually doing: trend, zones, breakouts and gaps. A level is a useful map, not a promise. When it breaks, your written plan decides, not your hope.",
+          "hi": "Aaj hum padhna seekhenge ki price asal mein kya kar raha hai: trend, zones, breakouts aur gaps. Level ek kaam ka naksha hai, vaada nahi. Jab woh toot jaaye, toh faisla aapka likha hua plan karega, aapki umeed nahi.",
+          "dv": "आज हम पढ़ना सीखेंगे कि प्राइस असल में क्या कर रहा है: ट्रेंड, ज़ोन, ब्रेकआउट और गैप। लेवल एक काम का नक्शा है, वादा नहीं। जब वह टूट जाए, तो फ़ैसला आपका लिखा हुआ प्लान करेगा, आपकी उम्मीद नहीं।"
+        }
+      }
+    ],
+    "moral": {
+      "en": "A support level is a memory of where people bought. It is not a promise that they will buy there again.",
+      "hi": "Support level bas ek yaad hai ki log kahan khareed rahe the. Yeh vaada nahi ki woh wahan dobara khareedenge.",
+      "dv": "सपोर्ट लेवल बस एक याद है कि लोग कहाँ ख़रीद रहे थे। यह वादा नहीं कि वे वहाँ दोबारा ख़रीदेंगे।"
+    }
+  },
+  "topics": [
+    {
+      "h": {
+        "en": "Swing points: the staircase of a trend",
+        "hi": "Swing points: trend ki seedhi",
+        "dv": "स्विंग पॉइंट: ट्रेंड की सीढ़ी"
+      },
+      "p": {
+        "en": "Price rarely moves in a straight line; it moves in waves. The top of a wave is a swing high: by one common rule, a candle whose high is above the highs of the two candles on each side of it. A swing low is the mirror image, at the bottom of a wave. When each swing high and each swing low is higher than the one before, you have an uptrend: higher highs (HH) and higher lows (HL). A downtrend is the reverse: lower highs (LH) and lower lows (LL). When the highs keep stalling near one level and the lows near another, the market is sideways, or range-bound. Always name the timeframe, because a stock can be in an uptrend on the daily chart and a downtrend on the weekly.",
+        "hi": "Price seedhi line mein kam hi chalta hai; woh lehron mein chalta hai. Lehar ki choti ko swing high kehte hain: ek aam rule ke hisaab se, woh candle jiska high dono taraf ki do-do candles ke high se upar ho. Swing low iska ulta hai, yaani lehar ka sabse neeche wala point. Jab har swing high aur har swing low pichhle wale se upar bane, toh woh uptrend hai: higher highs (HH) aur higher lows (HL). Downtrend iska ulta hai: lower highs (LH) aur lower lows (LL). Jab highs baar-baar ek level ke aas-paas ruk jaayein aur lows doosre level ke aas-paas, toh market sideways hai, yaani ek range mein ghoom raha hai. Timeframe hamesha bataiye, kyunki ek hi stock daily chart par uptrend mein aur weekly par downtrend mein ho sakta hai.",
+        "dv": "प्राइस सीधी लाइन में कम ही चलता है; वह लहरों में चलता है। लहर की चोटी को स्विंग हाई कहते हैं: एक आम नियम के हिसाब से, वह कैंडल जिसका हाई दोनों तरफ़ की दो-दो कैंडल के हाई से ऊपर हो। स्विंग लो इसका उल्टा है, यानी लहर का सबसे निचला पॉइंट। जब हर स्विंग हाई और हर स्विंग लो पिछले वाले से ऊपर बने, तो वह अपट्रेंड है: हायर हाई (HH) और हायर लो (HL)। डाउनट्रेंड इसका उल्टा है: लोअर हाई (LH) और लोअर लो (LL)। जब हाई बार-बार एक लेवल के आसपास रुक जाएँ और लो दूसरे लेवल के आसपास, तो बाज़ार साइडवेज़ है, यानी एक रेंज में घूम रहा है। टाइमफ़्रेम हमेशा बताइए, क्योंकि एक ही स्टॉक डेली चार्ट पर अपट्रेंड में और वीकली पर डाउनट्रेंड में हो सकता है।"
+      },
+      "example": {
+        "en": "On Gupta Cement Ltd's daily chart, the swing lows came at Rs 398, 412 and 428, and the swing highs at Rs 430, 448 and 466. Each low was higher than the one before, and so was each high: an uptrend. Then one day it closed at Rs 423, below the last higher low of Rs 428. That does not make it a downtrend yet. It means the staircase has broken, and the uptrend is now in question.",
+        "hi": "Gupta Cement Ltd ke daily chart par swing lows Rs 398, 412 aur 428 par bane, aur swing highs Rs 430, 448 aur 466 par. Har low pichhle se upar tha, aur har high bhi: yeh uptrend hai. Phir ek din yeh Rs 423 par close hua, jo aakhri higher low, Rs 428, se neeche hai. Isse abhi downtrend nahi ban gaya. Bas seedhi toot gayi hai, aur uptrend par ab sawaal khada ho gaya hai.",
+        "dv": "Gupta Cement Ltd के डेली चार्ट पर स्विंग लो Rs 398, 412 और 428 पर बने, और स्विंग हाई Rs 430, 448 और 466 पर। हर लो पिछले से ऊपर था, और हर हाई भी: यह अपट्रेंड है। फिर एक दिन यह Rs 423 पर बंद हुआ, जो आख़िरी हायर लो, Rs 428, से नीचे है। इससे अभी डाउनट्रेंड नहीं बन गया। बस सीढ़ी टूट गई है, और अपट्रेंड पर अब सवाल खड़ा हो गया है।"
+      },
+      "remember": {
+        "en": "Uptrend = higher highs and higher lows. A close below the last higher low puts the trend in question.",
+        "hi": "Uptrend = higher highs aur higher lows. Aakhri higher low ke neeche close aaya, toh trend par sawaal hai.",
+        "dv": "अपट्रेंड = हायर हाई और हायर लो। आख़िरी हायर लो के नीचे क्लोज़ आया, तो ट्रेंड पर सवाल है।"
+      },
+      "visual": {
+        "kind": "candles",
+        "title": {
+          "en": "Reading the staircase",
+          "hi": "Seedhi ko padhna",
+          "dv": "सीढ़ी को पढ़ना"
+        },
+        "caption": {
+          "en": "Gupta Cement, daily. Each swing low sits above the last, until a close below Rs 428 breaks the pattern.",
+          "hi": "Gupta Cement, daily. Har swing low pichhle se upar hai, jab tak Rs 428 ke neeche ka close pattern tod nahi deta.",
+          "dv": "Gupta Cement, डेली। हर स्विंग लो पिछले से ऊपर है, जब तक Rs 428 के नीचे का क्लोज़ पैटर्न तोड़ नहीं देता।"
+        },
+        "bars": [
+          [
+            415,
+            417,
+            408,
+            410
+          ],
+          [
+            410,
+            412,
+            403,
+            405
+          ],
+          [
+            405,
+            407,
+            398,
+            402
+          ],
+          [
+            402,
+            411,
+            400,
+            409
+          ],
+          [
+            409,
+            418,
+            407,
+            416
+          ],
+          [
+            416,
+            425,
+            414,
+            423
+          ],
+          [
+            423,
+            430,
+            419,
+            426
+          ],
+          [
+            426,
+            428,
+            418,
+            420
+          ],
+          [
+            420,
+            422,
+            412,
+            414
+          ],
+          [
+            414,
+            424,
+            413,
+            422
+          ],
+          [
+            422,
+            434,
+            420,
+            432
+          ],
+          [
+            432,
+            443,
+            430,
+            441
+          ],
+          [
+            441,
+            448,
+            437,
+            444
+          ],
+          [
+            444,
+            446,
+            434,
+            436
+          ],
+          [
+            436,
+            438,
+            428,
+            431
+          ],
+          [
+            431,
+            446,
+            430,
+            444
+          ],
+          [
+            444,
+            458,
+            442,
+            456
+          ],
+          [
+            456,
+            466,
+            452,
+            460
+          ],
+          [
+            460,
+            462,
+            445,
+            447
+          ],
+          [
+            447,
+            449,
+            432,
+            434
+          ],
+          [
+            434,
+            436,
+            420,
+            423
+          ]
+        ],
+        "levels": [
+          {
+            "y": 428,
+            "label": {
+              "en": "Last HL",
+              "hi": "Aakhri HL",
+              "dv": "आख़िरी HL"
+            },
+            "tone": "down",
+            "dashed": true
+          }
+        ],
+        "marks": [
+          {
+            "i": 2,
+            "label": {
+              "en": "Swing low",
+              "hi": "Swing low",
+              "dv": "स्विंग लो"
+            },
+            "tone": "muted",
+            "at": "low"
+          },
+          {
+            "i": 6,
+            "label": {
+              "en": "Swing high",
+              "hi": "Swing high",
+              "dv": "स्विंग हाई"
+            },
+            "tone": "muted",
+            "at": "high"
+          },
+          {
+            "i": 8,
+            "label": {
+              "en": "HL",
+              "hi": "HL",
+              "dv": "HL"
+            },
+            "tone": "up",
+            "at": "low"
+          },
+          {
+            "i": 12,
+            "label": {
+              "en": "HH",
+              "hi": "HH",
+              "dv": "HH"
+            },
+            "tone": "up",
+            "at": "high"
+          },
+          {
+            "i": 14,
+            "label": {
+              "en": "HL",
+              "hi": "HL",
+              "dv": "HL"
+            },
+            "tone": "up",
+            "at": "low"
+          },
+          {
+            "i": 17,
+            "label": {
+              "en": "HH",
+              "hi": "HH",
+              "dv": "HH"
+            },
+            "tone": "up",
+            "at": "high"
+          },
+          {
+            "i": 20,
+            "label": {
+              "en": "HL broken",
+              "hi": "HL toota",
+              "dv": "HL टूटा"
+            },
+            "tone": "down",
+            "at": "low"
+          }
+        ]
+      }
+    },
+    {
+      "h": {
+        "en": "Support and resistance: zones, not lines",
+        "hi": "Support aur resistance: zone, line nahi",
+        "dv": "सपोर्ट और रेज़िस्टेंस: ज़ोन, लाइन नहीं"
+      },
+      "p": {
+        "en": "Support is a price area where falling prices have stopped and turned up before, because buyers stepped in. Resistance is an area where rising prices have stopped and turned down, because sellers stepped in: think of a floor and a ceiling. They are zones, not exact lines, because buyers do not all wait at one rupee; so draw a band over the cluster of wicks and bodies where price turned. A test is when price enters the zone and turns away. More tests make a level better known, though each test may also use up some of the buyers or sellers waiting there. As a rough rule, a zone is usually no wider than one ordinary day's range; Day 8 gives you a ruler for this, called ATR.",
+        "hi": "Support woh price area hai jahan girta hua price pehle ruka aur upar mud gaya, kyunki wahan buyers aa gaye. Resistance woh area hai jahan chadhta hua price ruka aur neeche mud gaya, kyunki wahan sellers aa gaye: inhe ghar ka farsh aur chhat samajhiye. Yeh zone hote hain, exact line nahi, kyunki saare buyers ek hi rupaye par intezaar nahi karte; isliye jahan-jahan price muda, un wicks aur bodies ko dhakti hui ek patti banaiye. Test ka matlab hai price ka zone mein aana aur wahan se laut jaana. Jitne zyada test, utne zyada log us level ko jaante hain, lekin har test wahan baithe kuch buyers ya sellers ko khatam bhi kar sakta hai. Mote taur par, ek zone ek normal din ki range se zyada chauda nahi hota; ise naapne ka paimaana, ATR, aap Day 8 mein seekhenge.",
+        "dv": "सपोर्ट वह प्राइस एरिया है जहाँ गिरता हुआ प्राइस पहले रुका और ऊपर मुड़ गया, क्योंकि वहाँ ख़रीदार आ गए। रेज़िस्टेंस वह एरिया है जहाँ चढ़ता हुआ प्राइस रुका और नीचे मुड़ गया, क्योंकि वहाँ बेचने वाले आ गए: इन्हें घर का फ़र्श और छत समझिए। ये ज़ोन होते हैं, एकदम सटीक लाइन नहीं, क्योंकि सारे ख़रीदार एक ही रुपये पर इंतज़ार नहीं करते; इसलिए जहाँ-जहाँ प्राइस मुड़ा, उन विक और बॉडी को ढकती हुई एक पट्टी बनाइए। टेस्ट का मतलब है प्राइस का ज़ोन में आना और वहाँ से लौट जाना। जितने ज़्यादा टेस्ट, उतने ज़्यादा लोग उस लेवल को जानते हैं, लेकिन हर टेस्ट वहाँ बैठे कुछ ख़रीदारों या बेचने वालों को ख़त्म भी कर सकता है। मोटे तौर पर, एक ज़ोन एक आम दिन की रेंज से ज़्यादा चौड़ा नहीं होता; इसे नापने का पैमाना, ATR, आप दिन 8 में सीखेंगे।"
+      },
+      "example": {
+        "en": "At the sabzi mandi in a normal week, when tomatoes fall to about Rs 20 a kilo, dhaba and hotel buyers pick up extra crates, so the price stops falling. Near Rs 30, families buy less and farmers bring more, so it stops rising. The price moves around inside that band, never pinned to one exact rupee. Sharma Textiles Ltd did the same for about five weeks. It turned up from Rs 483, 481 and 480, and turned down from Rs 548 and 546; the wicks and bodies of those turns cluster at Rs 480-494 (support) and Rs 536-548 (resistance). A single line drawn at Rs 485 would have been pierced by all three bounces.",
+        "hi": "Normal hafte mein sabzi mandi dekhiye. Tamatar Rs 20 kilo ke aas-paas aate hi dhabe aur hotel wale extra crate utha lete hain, toh daam girna ruk jaata hai. Rs 30 ke paas log kam khareedte hain aur kisan zyada maal le aate hain, toh daam chadhna ruk jaata hai. Daam isi patti ke andar ghoomta hai, kisi ek rupaye par tika nahi rehta. Sharma Textiles Ltd ne lagbhag paanch hafte yahi kiya. Yeh Rs 483, 481 aur 480 se upar muda, aur Rs 548 aur 546 se neeche; jahan price palta, un candles ki wicks aur bodies Rs 480-494 (support) aur Rs 536-548 (resistance) mein jama hain. Agar aap Rs 485 par ek akeli line kheenchte, toh teeno bounce ki wicks us line ke neeche chali jaatin.",
+        "dv": "आम हफ़्ते में सब्ज़ी मंडी देखिए। टमाटर Rs 20 किलो के आसपास आते ही ढाबे और होटल वाले ज़्यादा क्रेट उठा लेते हैं, तो भाव गिरना रुक जाता है। Rs 30 के पास लोग कम ख़रीदते हैं और किसान ज़्यादा माल ले आते हैं, तो भाव चढ़ना रुक जाता है। भाव इसी पट्टी के अंदर घूमता है, किसी एक रुपये पर टिका नहीं रहता। Sharma Textiles Ltd ने लगभग पाँच हफ़्ते यही किया। यह Rs 483, 481 और 480 से ऊपर मुड़ा, और Rs 548 और 546 से नीचे; जहाँ प्राइस पलटा, उन कैंडल की विक और बॉडी Rs 480-494 (सपोर्ट) और Rs 536-548 (रेज़िस्टेंस) में जमा हैं। अगर आप Rs 485 पर एक अकेली लाइन खींचते, तो तीनों उछाल की विक उस लाइन के नीचे चली जातीं।"
+      },
+      "remember": {
+        "en": "Draw support and resistance as bands where price actually turned, not as one magic number.",
+        "hi": "Support aur resistance ko wahan patti ki tarah banaiye jahan price sach mein muda, ek jaadui number ki tarah nahi.",
+        "dv": "सपोर्ट और रेज़िस्टेंस को वहाँ पट्टी की तरह बनाइए जहाँ प्राइस सच में मुड़ा, किसी एक जादुई नंबर की तरह नहीं।"
+      },
+      "visual": {
+        "kind": "candles",
+        "title": {
+          "en": "A range with two zones",
+          "hi": "Do zones wali range",
+          "dv": "दो ज़ोन वाली रेंज"
+        },
+        "caption": {
+          "en": "Sharma Textiles, daily. Three tests of support and two of resistance, never at the same rupee twice.",
+          "hi": "Sharma Textiles, daily. Support ke teen test aur resistance ke do, aur ek bhi baar bilkul same rupaye par nahi.",
+          "dv": "Sharma Textiles, डेली। सपोर्ट के तीन टेस्ट और रेज़िस्टेंस के दो, और एक बार भी बिल्कुल उसी रुपये पर नहीं।"
+        },
+        "bars": [
+          [
+            528,
+            531,
+            518,
+            520
+          ],
+          [
+            520,
+            523,
+            506,
+            509
+          ],
+          [
+            509,
+            512,
+            494,
+            497
+          ],
+          [
+            497,
+            499,
+            483,
+            494
+          ],
+          [
+            494,
+            506,
+            492,
+            504
+          ],
+          [
+            504,
+            517,
+            502,
+            515
+          ],
+          [
+            515,
+            529,
+            513,
+            527
+          ],
+          [
+            527,
+            535,
+            524,
+            534
+          ],
+          [
+            536,
+            548,
+            531,
+            533
+          ],
+          [
+            533,
+            535,
+            520,
+            523
+          ],
+          [
+            523,
+            525,
+            506,
+            509
+          ],
+          [
+            509,
+            511,
+            493,
+            496
+          ],
+          [
+            496,
+            498,
+            481,
+            492
+          ],
+          [
+            492,
+            505,
+            490,
+            503
+          ],
+          [
+            503,
+            516,
+            501,
+            514
+          ],
+          [
+            514,
+            530,
+            512,
+            528
+          ],
+          [
+            528,
+            546,
+            526,
+            538
+          ],
+          [
+            538,
+            540,
+            522,
+            525
+          ],
+          [
+            525,
+            527,
+            505,
+            508
+          ],
+          [
+            508,
+            510,
+            493,
+            496
+          ],
+          [
+            496,
+            498,
+            480,
+            493
+          ],
+          [
+            493,
+            504,
+            491,
+            502
+          ],
+          [
+            502,
+            514,
+            500,
+            512
+          ]
+        ],
+        "levels": [
+          {
+            "y": 548,
+            "label": {
+              "en": "Resistance top",
+              "hi": "Resistance top",
+              "dv": "रेज़िस्टेंस टॉप"
+            },
+            "tone": "down",
+            "dashed": true
+          },
+          {
+            "y": 536,
+            "label": {
+              "en": "Resistance base",
+              "hi": "Resistance base",
+              "dv": "रेज़िस्टेंस बेस"
+            },
+            "tone": "down",
+            "dashed": true
+          },
+          {
+            "y": 494,
+            "label": {
+              "en": "Support top",
+              "hi": "Support top",
+              "dv": "सपोर्ट टॉप"
+            },
+            "tone": "up",
+            "dashed": true
+          },
+          {
+            "y": 480,
+            "label": {
+              "en": "Support base",
+              "hi": "Support base",
+              "dv": "सपोर्ट बेस"
+            },
+            "tone": "up",
+            "dashed": true
+          }
+        ],
+        "marks": [
+          {
+            "i": 3,
+            "label": {
+              "en": "S-test 1",
+              "hi": "S-test 1",
+              "dv": "S-टेस्ट 1"
+            },
+            "tone": "up",
+            "at": "low"
+          },
+          {
+            "i": 12,
+            "label": {
+              "en": "S-test 2",
+              "hi": "S-test 2",
+              "dv": "S-टेस्ट 2"
+            },
+            "tone": "up",
+            "at": "low"
+          },
+          {
+            "i": 20,
+            "label": {
+              "en": "S-test 3",
+              "hi": "S-test 3",
+              "dv": "S-टेस्ट 3"
+            },
+            "tone": "up",
+            "at": "low"
+          },
+          {
+            "i": 8,
+            "label": {
+              "en": "R-test 1",
+              "hi": "R-test 1",
+              "dv": "R-टेस्ट 1"
+            },
+            "tone": "down",
+            "at": "high"
+          },
+          {
+            "i": 16,
+            "label": {
+              "en": "R-test 2",
+              "hi": "R-test 2",
+              "dv": "R-टेस्ट 2"
+            },
+            "tone": "down",
+            "at": "high"
+          }
+        ]
+      }
+    },
+    {
+      "h": {
+        "en": "When a level breaks: real, false, and role reversal",
+        "hi": "Jab level toot jaaye: asli, nakli aur role reversal",
+        "dv": "जब लेवल टूट जाए: असली, नक़ली और रोल रिवर्सल"
+      },
+      "p": {
+        "en": "A breakout is price leaving a zone: up through resistance, or down through support, which is often called a breakdown. Many breakouts fail: price pokes out, then falls back inside the zone, and this is called a false breakout, or fake-out. Three checks help you tell them apart: did a candle close beyond the zone rather than just poke a wick through, was volume clearly above its average (Day 5), and did price hold when it came back to test the zone? After a real break, the old ceiling often becomes the new floor, and the old floor the new ceiling. This is called role reversal. It is commonly seen, but it is still a probability, not a rule.",
+        "hi": "Breakout ka matlab hai price ka zone se bahar nikal jaana: resistance ke upar, ya support ke neeche, jise aksar breakdown kehte hain. Bahut saare breakouts fail ho jaate hain: price bahar jhaankta hai, phir wapas zone ke andar aa jaata hai; ise false breakout ya fake-out kehte hain. Asli aur nakli ka farq teen sawaalon se pakadiye: kya candle zone ke bahar close hui, ya sirf wick bahar gayi; kya volume apne average se saaf upar tha (Day 5); aur jab price zone ko dobara test karne aaya, toh kya woh tika raha? Asli break ke baad purani chhat aksar naya farsh ban jaati hai, aur purana farsh nayi chhat. Ise role reversal kehte hain. Yeh aksar dikhta hai, lekin yeh bhi ek probability hai, rule nahi.",
+        "dv": "ब्रेकआउट का मतलब है प्राइस का ज़ोन से बाहर निकल जाना: रेज़िस्टेंस के ऊपर, या सपोर्ट के नीचे, जिसे अक्सर ब्रेकडाउन कहते हैं। बहुत सारे ब्रेकआउट फ़ेल हो जाते हैं: प्राइस बाहर झाँकता है, फिर वापस ज़ोन के अंदर आ जाता है; इसे फ़ॉल्स ब्रेकआउट या फ़ेक-आउट कहते हैं। असली और नक़ली का फ़र्क़ तीन सवालों से पकड़िए: क्या कैंडल ज़ोन के बाहर क्लोज़ हुई, या सिर्फ़ विक बाहर गई; क्या वॉल्यूम अपने एवरेज से साफ़ ऊपर था (दिन 5); और जब प्राइस ज़ोन को दोबारा टेस्ट करने आया, तो क्या वह टिका रहा? असली ब्रेक के बाद पुरानी छत अक्सर नया फ़र्श बन जाती है, और पुराना फ़र्श नई छत। इसे रोल रिवर्सल कहते हैं। यह अक्सर दिखता है, लेकिन यह भी एक संभावना है, नियम नहीं।"
+      },
+      "example": {
+        "en": "Sharma Textiles' resistance zone was Rs 536-548. One day it poked up to Rs 556 but closed at Rs 538, back inside the zone, on 1.6 lakh shares against a 20-day average of 2.0 lakh: a fake-out. Two weeks later it closed at Rs 562 on 5.2 lakh shares, 2.6 times the average. A week after that it dipped to Rs 547, into the old resistance zone, and turned up again. This time, the old ceiling acted as a floor.",
+        "hi": "Sharma Textiles ka resistance zone Rs 536-548 tha. Ek din price Rs 556 tak gaya, par Rs 538 par close hua, yaani wapas zone ke andar, aur volume sirf 1.6 lakh shares tha, jabki 20 din ka average 2.0 lakh tha: yeh fake-out tha. Do hafte baad yeh Rs 562 par close hua, 5.2 lakh shares ke saath, yaani average ka 2.6 guna. Uske ek hafte baad yeh Rs 547 tak utra, purane resistance zone ke andar, aur phir upar mud gaya. Is baar purani chhat ne farsh ka kaam kiya.",
+        "dv": "Sharma Textiles का रेज़िस्टेंस ज़ोन Rs 536-548 था। एक दिन प्राइस Rs 556 तक गया, पर Rs 538 पर बंद हुआ, यानी वापस ज़ोन के अंदर, और वॉल्यूम सिर्फ़ 1.6 लाख शेयर था, जबकि 20 दिन का एवरेज 2.0 लाख था: यह फ़ेक-आउट था। दो हफ़्ते बाद यह Rs 562 पर बंद हुआ, 5.2 लाख शेयर के साथ, यानी एवरेज का 2.6 गुना। उसके एक हफ़्ते बाद यह Rs 547 तक उतरा, पुराने रेज़िस्टेंस ज़ोन के अंदर, और फिर ऊपर मुड़ गया। इस बार पुरानी छत ने फ़र्श का काम किया।"
+      },
+      "remember": {
+        "en": "A wick is not a breakout. Look for a close beyond the zone, above-average volume, and a retest that holds.",
+        "hi": "Sirf wick breakout nahi hai. Zone ke bahar close, average se zyada volume, aur tika hua retest dekhiye.",
+        "dv": "सिर्फ़ विक ब्रेकआउट नहीं है। ज़ोन के बाहर क्लोज़, एवरेज से ज़्यादा वॉल्यूम, और टिका हुआ रीटेस्ट देखिए।"
+      },
+      "visual": {
+        "kind": "bars",
+        "title": {
+          "en": "Volume helps tell them apart",
+          "hi": "Volume farq pehchaanne mein madad karta hai",
+          "dv": "वॉल्यूम फ़र्क़ पहचानने में मदद करता है"
+        },
+        "caption": {
+          "en": "Sharma Textiles, shares traded. The fake-out came on below-average volume; the real break came on 2.6 times the average.",
+          "hi": "Sharma Textiles, trade hue shares. Fake-out average se kam volume par aaya; asli break average ke 2.6 guna volume par.",
+          "dv": "Sharma Textiles, ट्रेड हुए शेयर। फ़ेक-आउट एवरेज से कम वॉल्यूम पर आया; असली ब्रेक एवरेज के 2.6 गुना वॉल्यूम पर।"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "20-day average",
+              "hi": "20 din ka average",
+              "dv": "20 दिन का एवरेज"
+            },
+            "value": 2.0,
+            "tone": "muted",
+            "display": "2.0 lakh"
+          },
+          {
+            "label": {
+              "en": "Fake-out day",
+              "hi": "Fake-out ka din",
+              "dv": "फ़ेक-आउट का दिन"
+            },
+            "value": 1.6,
+            "tone": "down",
+            "display": "1.6 lakh"
+          },
+          {
+            "label": {
+              "en": "Breakout day",
+              "hi": "Breakout ka din",
+              "dv": "ब्रेकआउट का दिन"
+            },
+            "value": 5.2,
+            "tone": "up",
+            "display": "5.2 lakh"
+          }
+        ]
+      }
+    },
+    {
+      "h": {
+        "en": "Five candle patterns, and why context matters",
+        "hi": "Paanch candle patterns, aur context kyun zaroori hai",
+        "dv": "पाँच कैंडल पैटर्न, और कॉन्टेक्स्ट क्यों ज़रूरी है"
+      },
+      "p": {
+        "en": "On Day 5 you read single candles: as rules of thumb, a long body suggests one side was in control, and a long wick shows price reached a level and was pushed back from it. Now learn just five patterns; 'bullish' means pointing to a rise, 'bearish' to a fall. Bullish engulfing: after a fall, a green body fully covers the previous red body; bearish engulfing is the mirror, after a rise. Hammer: after a fall, a small body near the top of the candle and a lower wick at least twice the body; the shooting star is its mirror, after a rise. Inside bar: the whole candle, high to low, sits within the previous candle's range, a pause. Alone, a pattern means little; at a tested zone it becomes a clue worth noting, and above-average volume or a bigger trend in the same direction makes that clue stronger.",
+        "hi": "Day 5 mein aapne ek-ek candle padhna seekha: rule of thumb yeh hai ki lambi body batati hai ki ek side ka control tha, aur lambi wick batati hai ki price ek level tak gaya, par wahan se use wapas dhakel diya gaya. Ab bas paanch patterns yaad kijiye; 'bullish' matlab upar ki taraf ishaara, 'bearish' matlab neeche ki taraf. Bullish engulfing: girne ke baad, ek green body pichhli red body ko poora dhak leti hai; bearish engulfing iska ulta hai, chadhne ke baad. Hammer: girne ke baad, candle ke upar ki taraf chhoti body, aur neeche wick jo body se kam se kam do guna lambi ho; shooting star iska ulta hai, chadhne ke baad. Inside bar: poori candle, high se low tak, pichhli candle ki range ke andar rehti hai, yaani ek thehraav. Akela pattern kuch khaas nahi kehta; tested zone par woh note karne layak clue ban jaata hai, aur average se zyada volume ya usi disha mein bada trend ho, toh clue aur mazboot hota hai.",
+        "dv": "दिन 5 में आपने एक-एक कैंडल पढ़ना सीखा: मोटे नियम के तौर पर, लंबी बॉडी बताती है कि एक पक्ष का कंट्रोल था, और लंबी विक बताती है कि प्राइस एक लेवल तक गया, पर वहाँ से उसे वापस धकेल दिया गया। अब बस पाँच पैटर्न याद कीजिए; 'बुलिश' मतलब ऊपर की ओर इशारा, 'बेयरिश' मतलब नीचे की ओर। बुलिश एनगल्फ़िंग: गिरावट के बाद, एक हरी बॉडी पिछली लाल बॉडी को पूरा ढक लेती है; बेयरिश एनगल्फ़िंग इसका उल्टा है, चढ़ाव के बाद। हैमर: गिरावट के बाद, कैंडल के ऊपरी हिस्से में छोटी बॉडी, और नीचे विक जो बॉडी से कम से कम दोगुनी लंबी हो; शूटिंग स्टार इसका उल्टा है, चढ़ाव के बाद। इनसाइड बार: पूरी कैंडल, हाई से लो तक, पिछली कैंडल की रेंज के अंदर रहती है, यानी एक ठहराव। अकेला पैटर्न कुछ ख़ास नहीं कहता; टेस्ट हुए ज़ोन पर वह नोट करने लायक सुराग बन जाता है, और एवरेज से ज़्यादा वॉल्यूम या उसी दिशा में बड़ा ट्रेंड हो, तो सुराग और मज़बूत होता है।"
+      },
+      "example": {
+        "en": "Look again at Sharma Textiles' third test of support. That candle opened at Rs 496, fell to Rs 480 and closed at Rs 493, with a high of Rs 498. Body: Rs 3. Lower wick: Rs 13, more than four times the body. Upper wick: Rs 2. The candle is red, since it closed below its open, and its lower wick runs from the close, Rs 493, down to Rs 480. A hammer can be red or green; the shape is what counts. That is a hammer, and it sits inside a tested support zone, which is what gives it meaning. Above-average volume that day would make the clue stronger. The same candle in the middle of the range would have said very little; and even here it is a clue, not a signal to buy.",
+        "hi": "Sharma Textiles ke support ka teesra test phir se dekhiye. Woh candle Rs 496 par khuli, Rs 480 tak giri aur Rs 493 par close hui, aur uska high Rs 498 tha. Body: Rs 3. Neeche ki wick: Rs 13, yaani body se chaar guna se bhi zyada. Upar ki wick: Rs 2. Candle red hai, kyunki open se neeche close hui, aur iski neeche ki wick close, Rs 493, se Rs 480 tak hai. Hammer red ya green dono ho sakta hai; shape hi asli baat hai. Yeh hammer hai, aur yeh ek tested support zone ke andar bana hai; isi se iska matlab banta hai. Us din volume average se zyada hota, toh clue aur mazboot hota. Yahi candle range ke beech mein banti, toh kuch khaas nahi kehti; aur yahan bhi yeh ek clue hai, kharidne ka signal nahi.",
+        "dv": "Sharma Textiles के सपोर्ट का तीसरा टेस्ट फिर से देखिए। वह कैंडल Rs 496 पर खुली, Rs 480 तक गिरी और Rs 493 पर बंद हुई, और उसका हाई Rs 498 था। बॉडी: Rs 3। नीचे की विक: Rs 13, यानी बॉडी से चार गुना से भी ज़्यादा। ऊपर की विक: Rs 2। कैंडल लाल है, क्योंकि ओपन से नीचे बंद हुई, और इसकी नीचे की विक क्लोज़, Rs 493, से Rs 480 तक है। हैमर लाल या हरा दोनों हो सकता है; असली बात उसका आकार है। यह हैमर है, और यह टेस्ट हुए सपोर्ट ज़ोन के अंदर बना है; इसी से इसका मतलब बनता है। उस दिन वॉल्यूम एवरेज से ज़्यादा होता, तो सुराग और मज़बूत होता। यही कैंडल रेंज के बीच में बनती, तो कुछ ख़ास नहीं कहती; और यहाँ भी यह एक सुराग है, ख़रीदने का सिग्नल नहीं।"
+      },
+      "remember": {
+        "en": "A pattern alone is noise. At a tested zone it becomes a clue; volume and the bigger trend can make it stronger.",
+        "hi": "Akela pattern sirf noise hai. Tested zone par yeh clue banta hai; volume aur bada trend saath dein toh clue mazboot hota hai.",
+        "dv": "अकेला पैटर्न सिर्फ़ शोर है। टेस्ट हुए ज़ोन पर यह सुराग बनता है; वॉल्यूम और बड़ा ट्रेंड साथ दें तो सुराग मज़बूत होता है।"
+      },
+      "visual": {
+        "kind": "compare",
+        "title": {
+          "en": "The five, and where they matter",
+          "hi": "Paanch patterns, aur yeh kahan matter karte hain",
+          "dv": "पाँच पैटर्न, और वे कहाँ मायने रखते हैं"
+        },
+        "caption": {
+          "en": "Patterns are probabilities inside context, never certainties.",
+          "hi": "Patterns context ke andar sirf probability hain, pakki baat kabhi nahi.",
+          "dv": "पैटर्न कॉन्टेक्स्ट के अंदर सिर्फ़ संभावना हैं, पक्की बात कभी नहीं।"
+        },
+        "cols": [
+          {
+            "head": {
+              "en": "At support, after a fall",
+              "hi": "Support par, girne ke baad",
+              "dv": "सपोर्ट पर, गिरावट के बाद"
+            },
+            "tone": "up",
+            "points": [
+              {
+                "en": "Bullish engulfing: green body covers the previous red body",
+                "hi": "Bullish engulfing: green body pichhli red body ko dhak le",
+                "dv": "बुलिश एनगल्फ़िंग: हरी बॉडी पिछली लाल बॉडी को ढक ले"
+              },
+              {
+                "en": "Hammer: small body on top, lower wick at least 2x the body",
+                "hi": "Hammer: upar chhoti body, neeche wick body se kam se kam 2 guna",
+                "dv": "हैमर: ऊपर छोटी बॉडी, नीचे विक बॉडी से कम से कम 2 गुना"
+              }
+            ]
+          },
+          {
+            "head": {
+              "en": "At resistance, after a rise",
+              "hi": "Resistance par, chadhne ke baad",
+              "dv": "रेज़िस्टेंस पर, चढ़ाव के बाद"
+            },
+            "tone": "down",
+            "points": [
+              {
+                "en": "Bearish engulfing: red body covers the previous green body",
+                "hi": "Bearish engulfing: red body pichhli green body ko dhak le",
+                "dv": "बेयरिश एनगल्फ़िंग: लाल बॉडी पिछली हरी बॉडी को ढक ले"
+              },
+              {
+                "en": "Shooting star: small body at the bottom, upper wick at least 2x the body",
+                "hi": "Shooting star: neeche chhoti body, upar wick body se kam se kam 2 guna",
+                "dv": "शूटिंग स्टार: नीचे छोटी बॉडी, ऊपर विक बॉडी से कम से कम 2 गुना"
+              }
+            ]
+          },
+          {
+            "head": {
+              "en": "Anywhere: a pause",
+              "hi": "Kahin bhi: ek thehraav",
+              "dv": "कहीं भी: एक ठहराव"
+            },
+            "tone": "gold",
+            "points": [
+              {
+                "en": "Inside bar: high and low within the previous candle's range",
+                "hi": "Inside bar: high aur low pichhli candle ki range ke andar",
+                "dv": "इनसाइड बार: हाई और लो पिछली कैंडल की रेंज के अंदर"
+              },
+              {
+                "en": "Shows indecision; wait for the next candle",
+                "hi": "Market ki duvidha dikhata hai; agli candle ka wait kijiye",
+                "dv": "बाज़ार की दुविधा दिखाता है; अगली कैंडल का इंतज़ार कीजिए"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "h": {
+        "en": "Gaps: four types and one impostor",
+        "hi": "Gaps: chaar types aur ek nakli",
+        "dv": "गैप: चार तरह के और एक नक़ली"
+      },
+      "p": {
+        "en": "A gap is an empty space on the chart where no trade took place. In a full gap-up, today's low is above yesterday's high; in a full gap-down, today's high is below yesterday's low. When price later comes back and trades through that empty space, the gap is said to be 'filled'. Chartists name four types: a common gap inside a sideways range, often filled soon; a breakaway gap that leaves a range, often on high volume; a runaway gap in the middle of a strong move; and an exhaustion gap late in a long move, often filled quickly. You can usually name a gap only afterwards, so treat your label as a guess until price confirms it. And a gap on the ex-date of a bonus, split or large dividend (the first day the share trades without that benefit) is mechanical, not the market's verdict: that is the impostor.",
+        "hi": "Gap chart par ek khaali jagah hai, jahan koi trade hua hi nahi. Full gap-up mein aaj ka low kal ke high se upar hota hai; full gap-down mein aaj ka high kal ke low se neeche. Jab price baad mein laut kar us khaali jagah ke aar-paar trade kar le, toh kehte hain ki gap 'bhar gaya'. Chartists chaar types batate hain: common gap, jo sideways range ke andar banta hai aur aksar jaldi bhar jaata hai; breakaway gap, jo range chhod deta hai, aksar bade volume ke saath; runaway gap, jo tez move ke beech mein aata hai; aur exhaustion gap, jo lambe move ke aakhir mein aata hai aur aksar jaldi bhar jaata hai. Gap kis type ka tha, yeh aksar baad mein hi pata chalta hai, isliye jab tak price confirm na kare, apne label ko andaaza hi maaniye. Aur bonus, split ya bade dividend ki ex-date (jis din se share us fayde ke bina trade hota hai) par bana gap sirf hisaab ka gap hai, market ka faisla nahi: yahi woh nakli gap hai.",
+        "dv": "गैप चार्ट पर एक ख़ाली जगह है, जहाँ कोई ट्रेड हुआ ही नहीं। फ़ुल गैप-अप में आज का लो कल के हाई से ऊपर होता है; फ़ुल गैप-डाउन में आज का हाई कल के लो से नीचे। जब प्राइस बाद में लौटकर उस ख़ाली जगह के आर-पार ट्रेड कर ले, तो कहते हैं कि गैप 'भर गया'। चार्ट पढ़ने वाले चार तरह के गैप बताते हैं: कॉमन गैप, जो साइडवेज़ रेंज के अंदर बनता है और अक्सर जल्दी भर जाता है; ब्रेकअवे गैप, जो रेंज छोड़ देता है, अक्सर बड़े वॉल्यूम के साथ; रनअवे गैप, जो तेज़ चाल के बीच में आता है; और एग्ज़ॉशन गैप, जो लंबी चाल के आख़िर में आता है और अक्सर जल्दी भर जाता है। गैप किस तरह का था, यह अक्सर बाद में ही पता चलता है, इसलिए जब तक प्राइस कन्फ़र्म न करे, अपने लेबल को अंदाज़ा ही मानिए। और बोनस, स्प्लिट या बड़े डिविडेंड की एक्स-डेट (जिस दिन से शेयर उस फ़ायदे के बिना ट्रेड होता है) पर बना गैप सिर्फ़ हिसाब का गैप है, बाज़ार का फ़ैसला नहीं: यही वह नक़ली गैप है।"
+      },
+      "example": {
+        "en": "Remember the 'crash that never happened' from Day 5? It also shows up as a gap. Kiran Foods Ltd closes at Rs 640 the day before the ex-date of a 1:1 bonus, and on the ex-date it opens near Rs 320. On an unadjusted chart a beginner sees a huge gap-down and calls it a breakaway gap. But a holder of 50 shares worth Rs 32,000 ends up with 100 shares at about Rs 320, still about Rs 32,000. Before you name any big gap, switch to an adjusted chart and check the corporate-actions page on the NSE website; Day 15 covers these events in full.",
+        "hi": "Day 5 ka 'crash jo kabhi hua hi nahi' yaad hai? Wahi cheez gap ban kar bhi dikhti hai. Kiran Foods Ltd 1:1 bonus ki ex-date se pehle wale din Rs 640 par close hota hai, aur ex-date par lagbhag Rs 320 par khulta hai. Unadjusted chart par beginner ko bada gap-down dikhta hai, aur woh ise breakaway gap keh deta hai. Lekin jiske paas 50 shares the, yaani Rs 32,000 ke, uske paas aakhir mein lagbhag Rs 320 ke 100 shares honge, yaani ab bhi lagbhag Rs 32,000. Kisi bhi bade gap ka naam rakhne se pehle adjusted chart par jaiye aur NSE website par corporate actions wala page check kijiye; yeh saare events Day 15 mein detail mein aayenge.",
+        "dv": "दिन 5 का 'क्रैश जो कभी हुआ ही नहीं' याद है? वही चीज़ गैप बनकर भी दिखती है। Kiran Foods Ltd 1:1 बोनस की एक्स-डेट से पहले वाले दिन Rs 640 पर बंद होता है, और एक्स-डेट पर लगभग Rs 320 पर खुलता है। अनएडजस्टेड चार्ट पर नए ट्रेडर को बड़ा गैप-डाउन दिखता है, और वह इसे ब्रेकअवे गैप कह देता है। लेकिन जिसके पास 50 शेयर थे, यानी Rs 32,000 के, उसके पास आख़िर में लगभग Rs 320 के 100 शेयर होंगे, यानी अब भी लगभग Rs 32,000। किसी भी बड़े गैप का नाम रखने से पहले एडजस्टेड चार्ट पर जाइए और NSE वेबसाइट पर कॉर्पोरेट एक्शन वाला पेज देखिए; ये सारे इवेंट दिन 15 में विस्तार से आएँगे।"
+      },
+      "remember": {
+        "en": "Name a gap only in hindsight, and rule out a corporate action before you read anything into it.",
+        "hi": "Gap ka naam baad mein rakhiye, aur koi bhi matlab nikaalne se pehle corporate action check kar lijiye.",
+        "dv": "गैप का नाम बाद में रखिए, और कोई भी मतलब निकालने से पहले कॉर्पोरेट एक्शन जाँच लीजिए।"
+      },
+      "visual": {
+        "kind": "steps",
+        "title": {
+          "en": "Four gaps in the life of a trend",
+          "hi": "Trend ki zindagi ke chaar gaps",
+          "dv": "ट्रेंड की ज़िंदगी के चार गैप"
+        },
+        "caption": {
+          "en": "You can usually name a gap only in hindsight, so treat the label as a guess. A gap on a bonus or split ex-date is none of these.",
+          "hi": "Gap kis type ka hai, yeh aksar baad mein hi pata chalta hai, isliye label ko andaaza maaniye. Bonus ya split ki ex-date wala gap inmein se koi nahi hai.",
+          "dv": "गैप किस तरह का है, यह अक्सर बाद में ही पता चलता है, इसलिए लेबल को अंदाज़ा मानिए। बोनस या स्प्लिट की एक्स-डेट वाला गैप इनमें से कोई नहीं है।"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "Common gap",
+              "hi": "Common gap",
+              "dv": "कॉमन गैप"
+            },
+            "sub": {
+              "en": "Inside a range; often filled soon",
+              "hi": "Range ke andar; aksar jaldi bhar jaata hai",
+              "dv": "रेंज के अंदर; अक्सर जल्दी भर जाता है"
+            }
+          },
+          {
+            "label": {
+              "en": "Breakaway gap",
+              "hi": "Breakaway gap",
+              "dv": "ब्रेकअवे गैप"
+            },
+            "sub": {
+              "en": "Leaves the range, often on high volume",
+              "hi": "Range chhod deta hai, aksar bade volume par",
+              "dv": "रेंज छोड़ देता है, अक्सर बड़े वॉल्यूम पर"
+            }
+          },
+          {
+            "label": {
+              "en": "Runaway gap",
+              "hi": "Runaway gap",
+              "dv": "रनअवे गैप"
+            },
+            "sub": {
+              "en": "Mid-move; trend often continues",
+              "hi": "Move ke beech mein; trend aksar chalta rehta hai",
+              "dv": "चाल के बीच में; ट्रेंड अक्सर चलता रहता है"
+            }
+          },
+          {
+            "label": {
+              "en": "Exhaustion gap",
+              "hi": "Exhaustion gap",
+              "dv": "एग्ज़ॉशन गैप"
+            },
+            "sub": {
+              "en": "Late in a long move; often filled fast",
+              "hi": "Lambe move ke aakhir mein; aksar jaldi bhar jaata hai",
+              "dv": "लंबी चाल के आख़िर में; अक्सर जल्दी भर जाता है"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "h": {
+        "en": "Level ka moh: when your level breaks",
+        "hi": "Level ka moh: jab aapka level toot jaaye",
+        "dv": "लेवल का मोह: जब आपका लेवल टूट जाए"
+      },
+      "p": {
+        "en": "Level ka moh means falling in love with a price level. You bought because 'Rs 500 always holds', and when price closes below the zone, you tell yourself it will come back. But a level is only a memory of where people bought or sold; when they stop defending it, the level is gone. So write your exit before you enter, for example: 'If a daily candle closes below the zone, I exit.' Then follow it, whatever you feel that evening. Many traders also keep a stop-loss order a little lower, under the zone's lowest swing low, in case price falls hard during the day; Day 9 and Day 11 show where the course puts its stop. Price can also jump instead of walk. A gap-down open can start below your stop-loss. And a stock locked at its lower price band (Day 1), called a 'lower circuit', has sellers queued and almost no buyers, so your sell order can stay stuck all day. On the chart, such a day often looks like a flat dash. That is why Day 9 sizes every position so that even such a day stays survivable.",
+        "hi": "Level ka moh matlab kisi price level se pyaar ho jaana. Aapne isliye khareeda ki 'Rs 500 toh hamesha tikta hai', aur jab price zone ke neeche close hota hai, toh aap khud ko samjhaate hain ki wapas aa jayega. Lekin level sirf ek yaad hai ki log kahan khareed ya bech rahe the; jab woh use bachana band kar dete hain, toh level khatam. Isliye entry se pehle hi apna exit likh lijiye, jaise: 'Daily candle zone ke neeche close hui, toh exit.' Phir us shaam aapko kaisa bhi lage, usi par chaliye. Kai traders iske saath zone ke sabse neeche wale swing low se thoda neeche ek stop-loss order bhi rakhte hain, taaki din mein price tezi se gire toh bhi bachav rahe; course ka apna stop rule aap Day 9 aur Day 11 mein seekhenge. Price dheere-dheere chalne ki jagah kood bhi sakta hai. Gap-down mein price seedha aapke stop-loss ke neeche khul sakta hai. Aur lower price band (Day 1) par lock hue stock, yaani 'lower circuit', mein sellers ki line lagi hoti hai aur buyers lagbhag nahi hote, isliye aapka sell order poore din atka reh sakta hai. Chart par aisa din aksar ek sapaat dash jaisa dikhta hai. Isiliye Day 9 mein har position ka size aise tay karenge ki aisa din bhi jhela ja sake.",
+        "dv": "लेवल का मोह मतलब किसी प्राइस लेवल से प्यार हो जाना। आपने इसलिए ख़रीदा कि 'Rs 500 तो हमेशा टिकता है', और जब प्राइस ज़ोन के नीचे बंद होता है, तो आप ख़ुद को समझाते हैं कि वापस आ जाएगा। लेकिन लेवल सिर्फ़ एक याद है कि लोग कहाँ ख़रीद या बेच रहे थे; जब वे उसे बचाना बंद कर देते हैं, तो लेवल ख़त्म। इसलिए एंट्री से पहले ही अपना एग्ज़िट लिख लीजिए, जैसे: 'डेली कैंडल ज़ोन के नीचे बंद हुई, तो एग्ज़िट।' फिर उस शाम आपको कैसा भी लगे, उसी पर चलिए। कई ट्रेडर इसके साथ ज़ोन के सबसे निचले स्विंग लो से थोड़ा नीचे एक स्टॉप-लॉस ऑर्डर भी रखते हैं, ताकि दिन में प्राइस तेज़ी से गिरे तो भी बचाव रहे; कोर्स का अपना स्टॉप नियम आप दिन 9 और दिन 11 में सीखेंगे। प्राइस धीरे-धीरे चलने की जगह कूद भी सकता है। गैप-डाउन में प्राइस सीधा आपके स्टॉप-लॉस के नीचे खुल सकता है। और लोअर प्राइस बैंड (दिन 1) पर लॉक हुए स्टॉक, यानी 'लोअर सर्किट', में बेचने वालों की लाइन लगी होती है और ख़रीदार लगभग नहीं होते, इसलिए आपका सेल ऑर्डर पूरे दिन अटका रह सकता है। चार्ट पर ऐसा दिन अक्सर एक सपाट डैश जैसा दिखता है। इसीलिए दिन 9 में हर पोज़िशन का साइज़ ऐसे तय करेंगे कि ऐसा दिन भी झेला जा सके।"
+      },
+      "example": {
+        "en": "Aman bought 100 shares of Bharat Pumps Ltd at Rs 515 because support had held three times, at Rs 503, 498 and 506, a zone of roughly Rs 498-510. On Friday it closed at Rs 488, below the zone, on 3.8 lakh shares against a 2.0 lakh average. A written exit rule would have taken him out near that close; his moh said wait. Two weeks later it bounced to Rs 505, stalled inside the old support zone, and then slid to Rs 452, where Aman finally sold. The calculation shows what the moh cost him.",
+        "hi": "Aman ne Bharat Pumps Ltd ke 100 shares Rs 515 par khareede, kyunki support teen baar tika tha, Rs 503, 498 aur 506 par, yaani lagbhag Rs 498-510 ka zone. Friday ko yeh Rs 488 par close hua, zone ke neeche, 3.8 lakh shares ke volume par, jabki average 2.0 lakh tha. Likha hua exit rule hota, toh woh usi close ke aas-paas bahar nikal jaata; moh ne kaha, ruko. Do hafte baad price Rs 505 tak uchhla, purane support zone ke andar atak gaya, aur phir Rs 452 tak phisal gaya, jahan Aman ne aakhirkaar bech diya. Calculation dekhiye, moh ki keemat kitni padi.",
+        "dv": "अमन ने Bharat Pumps Ltd के 100 शेयर Rs 515 पर ख़रीदे, क्योंकि सपोर्ट तीन बार टिका था, Rs 503, 498 और 506 पर, यानी लगभग Rs 498-510 का ज़ोन। शुक्रवार को यह Rs 488 पर बंद हुआ, ज़ोन के नीचे, 3.8 लाख शेयर के वॉल्यूम पर, जबकि एवरेज 2.0 लाख था। लिखा हुआ एग्ज़िट नियम होता, तो वह उसी क्लोज़ के आसपास बाहर निकल जाता; मोह ने कहा, रुको। दो हफ़्ते बाद प्राइस Rs 505 तक उछला, पुराने सपोर्ट ज़ोन के अंदर अटक गया, और फिर Rs 452 तक फिसल गया, जहाँ अमन ने आख़िरकार बेच दिया। कैलकुलेशन देखिए, मोह की क़ीमत कितनी पड़ी।"
+      },
+      "remember": {
+        "en": "A level is a memory, not a promise. When it breaks on a close, your written plan decides, not your hope.",
+        "hi": "Level ek yaad hai, vaada nahi. Close par toot jaaye, toh faisla aapka likha hua plan karega, umeed nahi.",
+        "dv": "लेवल एक याद है, वादा नहीं। क्लोज़ पर टूट जाए, तो फ़ैसला आपका लिखा हुआ प्लान करेगा, उम्मीद नहीं।"
+      },
+      "visual": {
+        "kind": "calc",
+        "title": {
+          "en": "What the moh cost Aman",
+          "hi": "Moh ki keemat",
+          "dv": "मोह की क़ीमत"
+        },
+        "caption": {
+          "en": "Before costs, and taking the exit at about the Rs 488 close: the rule would have cost about Rs 2,700; the hope cost Rs 6,300.",
+          "hi": "Charges se pehle, aur lagbhag Rs 488 close par exit maan kar: rule se lagbhag Rs 2,700 jaate; umeed ne Rs 6,300 le liye.",
+          "dv": "चार्ज से पहले, और लगभग Rs 488 क्लोज़ पर एग्ज़िट मानकर: नियम से लगभग Rs 2,700 जाते; उम्मीद ने Rs 6,300 ले लिए।"
+        },
+        "rows": [
+          {
+            "label": {
+              "en": "Held to Rs 452: 100 x Rs 63",
+              "hi": "Rs 452 tak hold: 100 x Rs 63",
+              "dv": "Rs 452 तक होल्ड: 100 x Rs 63"
+            },
+            "value": "Rs 6,300"
+          },
+          {
+            "label": {
+              "en": "Exit at Rs 488 close: 100 x Rs 27",
+              "hi": "Rs 488 close par exit: 100 x Rs 27",
+              "dv": "Rs 488 क्लोज़ पर एग्ज़िट: 100 x Rs 27"
+            },
+            "value": "Rs 2,700",
+            "op": "-"
+          }
+        ],
+        "result": {
+          "label": {
+            "en": "Extra cost of level ka moh",
+            "hi": "Level ke moh ki extra keemat",
+            "dv": "लेवल के मोह की एक्स्ट्रा क़ीमत"
+          },
+          "value": "Rs 3,600"
+        }
+      }
+    }
+  ],
+  "key_terms": [
+    {
+      "term": {
+        "en": "Swing high / swing low",
+        "hi": "Swing high / swing low",
+        "dv": "स्विंग हाई / स्विंग लो"
+      },
+      "meaning": {
+        "en": "The top or bottom of a price wave. A simple rule: a high above the highs of the two candles on each side (a swing low is the mirror). You can confirm it only after two more candles have closed.",
+        "hi": "Price ki lehar ki choti ya tala. Simple rule: woh high jo dono taraf ki do-do candles ke high se upar ho (swing low iska ulta hai). Ise confirm tabhi kar sakte hain jab uske baad do aur candles close ho jaayein.",
+        "dv": "प्राइस की लहर की चोटी या तला। आसान नियम: वह हाई जो दोनों तरफ़ की दो-दो कैंडल के हाई से ऊपर हो (स्विंग लो इसका उल्टा है)। इसे तभी पक्का मान सकते हैं जब उसके बाद दो और कैंडल बंद हो जाएँ।"
+      }
+    },
+    {
+      "term": {
+        "en": "HH / HL and LH / LL",
+        "hi": "HH / HL aur LH / LL",
+        "dv": "HH / HL और LH / LL"
+      },
+      "meaning": {
+        "en": "Higher highs and higher lows mark an uptrend; lower highs and lower lows mark a downtrend.",
+        "hi": "Higher highs aur higher lows matlab uptrend; lower highs aur lower lows matlab downtrend.",
+        "dv": "हायर हाई और हायर लो मतलब अपट्रेंड; लोअर हाई और लोअर लो मतलब डाउनट्रेंड।"
+      }
+    },
+    {
+      "term": {
+        "en": "Support / resistance zone",
+        "hi": "Support / resistance zone",
+        "dv": "सपोर्ट / रेज़िस्टेंस ज़ोन"
+      },
+      "meaning": {
+        "en": "A price band where buyers (support) or sellers (resistance) have turned price before. A band, not one exact price.",
+        "hi": "Woh price patti jahan pehle buyers (support) ya sellers (resistance) ne price ko mod diya tha. Patti, koi ek exact price nahi.",
+        "dv": "वह प्राइस पट्टी जहाँ पहले ख़रीदारों (सपोर्ट) या बेचने वालों (रेज़िस्टेंस) ने प्राइस को मोड़ दिया था। पट्टी, कोई एक सटीक भाव नहीं।"
+      }
+    },
+    {
+      "term": {
+        "en": "False breakout (fake-out)",
+        "hi": "False breakout (fake-out)",
+        "dv": "फ़ॉल्स ब्रेकआउट (फ़ेक-आउट)"
+      },
+      "meaning": {
+        "en": "Price pokes out of a zone, then closes back inside it, often on thin volume.",
+        "hi": "Price zone se bahar jhaankta hai, phir wapas andar close ho jaata hai, aksar kam volume par.",
+        "dv": "प्राइस ज़ोन से बाहर झाँकता है, फिर वापस अंदर बंद हो जाता है, अक्सर कम वॉल्यूम पर।"
+      }
+    },
+    {
+      "term": {
+        "en": "Role reversal",
+        "hi": "Role reversal",
+        "dv": "रोल रिवर्सल"
+      },
+      "meaning": {
+        "en": "After a real break, old resistance may act as support, and old support as resistance. A probability, not a rule.",
+        "hi": "Asli break ke baad purana resistance support ban sakta hai, aur purana support resistance. Probability hai, rule nahi.",
+        "dv": "असली ब्रेक के बाद पुराना रेज़िस्टेंस सपोर्ट बन सकता है, और पुराना सपोर्ट रेज़िस्टेंस। संभावना है, नियम नहीं।"
+      }
+    },
+    {
+      "term": {
+        "en": "Gap",
+        "hi": "Gap",
+        "dv": "गैप"
+      },
+      "meaning": {
+        "en": "An empty space on the chart: today's low above yesterday's high (gap-up), or today's high below yesterday's low (gap-down). News often calls any open above yesterday's close a 'gap-up'.",
+        "hi": "Chart par khaali jagah: aaj ka low kal ke high se upar (gap-up), ya aaj ka high kal ke low se neeche (gap-down). News mein aksar kal ke close se upar khulne ko hi 'gap-up' keh dete hain.",
+        "dv": "चार्ट पर ख़ाली जगह: आज का लो कल के हाई से ऊपर (गैप-अप), या आज का हाई कल के लो से नीचे (गैप-डाउन)। ख़बरों में अक्सर कल के क्लोज़ से ऊपर खुलने को ही 'गैप-अप' कह देते हैं।"
+      }
+    }
+  ],
+  "mindmap": {
+    "kind": "mindmap",
+    "center": {
+      "en": "Reading price structure",
+      "hi": "Price ka structure padhna",
+      "dv": "प्राइस का ढाँचा पढ़ना"
+    },
+    "branches": [
+      {
+        "label": {
+          "en": "Trend",
+          "hi": "Trend",
+          "dv": "ट्रेंड"
+        },
+        "tone": "brand",
+        "points": [
+          {
+            "en": "Swing highs and lows",
+            "hi": "Swing highs aur lows",
+            "dv": "स्विंग हाई और लो"
+          },
+          {
+            "en": "Up = HH + HL",
+            "hi": "Up = HH + HL",
+            "dv": "अपट्रेंड = HH + HL"
+          },
+          {
+            "en": "Down = LH + LL",
+            "hi": "Down = LH + LL",
+            "dv": "डाउनट्रेंड = LH + LL"
+          },
+          {
+            "en": "Always name the timeframe",
+            "hi": "Timeframe hamesha bataiye",
+            "dv": "टाइमफ़्रेम हमेशा बताइए"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Zones",
+          "hi": "Zones",
+          "dv": "ज़ोन"
+        },
+        "tone": "gold",
+        "points": [
+          {
+            "en": "Floor and ceiling",
+            "hi": "Farsh aur chhat",
+            "dv": "फ़र्श और छत"
+          },
+          {
+            "en": "A band, not one rupee",
+            "hi": "Patti, ek rupaya nahi",
+            "dv": "पट्टी, एक रुपया नहीं"
+          },
+          {
+            "en": "More tests, better known",
+            "hi": "Zyada test, zyada log jaante hain",
+            "dv": "ज़्यादा टेस्ट, ज़्यादा लोग जानते हैं"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Breaks",
+          "hi": "Breaks",
+          "dv": "ब्रेक"
+        },
+        "tone": "up",
+        "points": [
+          {
+            "en": "A close beyond, not a wick",
+            "hi": "Bahar close, sirf wick nahi",
+            "dv": "बाहर क्लोज़, सिर्फ़ विक नहीं"
+          },
+          {
+            "en": "Volume above average",
+            "hi": "Average se zyada volume",
+            "dv": "एवरेज से ज़्यादा वॉल्यूम"
+          },
+          {
+            "en": "Role reversal is a probability",
+            "hi": "Role reversal ek probability hai",
+            "dv": "रोल रिवर्सल एक संभावना है"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Five candles",
+          "hi": "Paanch candles",
+          "dv": "पाँच कैंडल"
+        },
+        "tone": "brand",
+        "points": [
+          {
+            "en": "Engulfing, bullish and bearish",
+            "hi": "Engulfing, bullish aur bearish",
+            "dv": "एनगल्फ़िंग, बुलिश और बेयरिश"
+          },
+          {
+            "en": "Hammer and shooting star",
+            "hi": "Hammer aur shooting star",
+            "dv": "हैमर और शूटिंग स्टार"
+          },
+          {
+            "en": "Inside bar = pause",
+            "hi": "Inside bar = thehraav",
+            "dv": "इनसाइड बार = ठहराव"
+          },
+          {
+            "en": "Matter most at a zone",
+            "hi": "Zone par sabse zyada matter karte hain",
+            "dv": "ज़ोन पर सबसे ज़्यादा मायने रखते हैं"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Gaps",
+          "hi": "Gaps",
+          "dv": "गैप"
+        },
+        "tone": "gold",
+        "points": [
+          {
+            "en": "Common, breakaway, runaway, exhaustion",
+            "hi": "Common, breakaway, runaway, exhaustion",
+            "dv": "कॉमन, ब्रेकअवे, रनअवे, एग्ज़ॉशन"
+          },
+          {
+            "en": "Named in hindsight",
+            "hi": "Naam baad mein",
+            "dv": "नाम बाद में"
+          },
+          {
+            "en": "Check corporate actions",
+            "hi": "Corporate action check kijiye",
+            "dv": "कॉर्पोरेट एक्शन जाँचिए"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Your mind",
+          "hi": "Aapka mann",
+          "dv": "आपका मन"
+        },
+        "tone": "down",
+        "points": [
+          {
+            "en": "Level ka moh",
+            "hi": "Level ka moh",
+            "dv": "लेवल का मोह"
+          },
+          {
+            "en": "A level is a memory",
+            "hi": "Level ek yaad hai",
+            "dv": "लेवल एक याद है"
+          },
+          {
+            "en": "Gaps and circuit locks can jump stops",
+            "hi": "Gap aur circuit lock stop ko laangh sakte hain",
+            "dv": "गैप और सर्किट लॉक स्टॉप को लाँघ सकते हैं"
+          }
+        ]
+      }
+    ]
+  },
+  "kaam": {
+    "en": "Mark one chart's structure by hand, then let AI grade it. Core: one NIFTY 50 chart, about 30 minutes. Optional stretch: repeat on BANKNIFTY and on the weekly NIFTY 50 chart later this week, about 30 minutes more.",
+    "hi": "Ek chart ka structure haath se mark kijiye, phir AI se grade karwaiye. Core kaam: NIFTY 50 ka ek chart, lagbhag 30 minute. Optional stretch: is hafte baad mein yahi BANKNIFTY aur NIFTY 50 ke weekly chart par dohraiye, lagbhag 30 minute aur.",
+    "dv": "एक चार्ट का ढाँचा हाथ से मार्क कीजिए, फिर AI से ग्रेड करवाइए। मुख्य काम: NIFTY 50 का एक चार्ट, लगभग 30 मिनट। वैकल्पिक स्ट्रेच: इस हफ़्ते बाद में यही BANKNIFTY और NIFTY 50 के वीकली चार्ट पर दोहराइए, लगभग 30 मिनट और।"
+  },
+  "kaam_steps": [
+    {
+      "en": "Open a free TradingView chart of NIFTY 50 on the daily timeframe, showing about six months of candles.",
+      "hi": "TradingView ka free chart kholiye, NIFTY 50 daily timeframe par, aur lagbhag chhe mahine ki candles dikhaiye.",
+      "dv": "TradingView का फ़्री चार्ट खोलिए, NIFTY 50 डेली टाइमफ़्रेम पर, और लगभग छह महीने की कैंडल दिखाइए।"
+    },
+    {
+      "en": "With the text tool, label the last four swing highs and four swing lows as HH, HL, LH or LL, comparing each with the swing just before it. On a phone, turn it sideways so the candles are easier to see.",
+      "hi": "Text tool se aakhri chaar swing highs aur chaar swing lows par HH, HL, LH ya LL likhiye; har ek ko usse theek pehle wale swing se compare kijiye. Phone par ho toh use landscape (tircha) kar lijiye, candles saaf dikhengi.",
+      "dv": "टेक्स्ट टूल से आख़िरी चार स्विंग हाई और चार स्विंग लो पर HH, HL, LH या LL लिखिए; हर एक की तुलना उससे ठीक पहले वाले स्विंग से कीजिए। फ़ोन पर हों तो उसे लैंडस्केप (आड़ा) कर लीजिए, कैंडल साफ़ दिखेंगी।"
+    },
+    {
+      "en": "With the rectangle tool, draw one support zone and one resistance zone over the wicks and bodies where price turned.",
+      "hi": "Rectangle tool se ek support zone aur ek resistance zone banaiye, un wicks aur bodies ke upar jahan price muda tha.",
+      "dv": "रेक्टेंगल टूल से एक सपोर्ट ज़ोन और एक रेज़िस्टेंस ज़ोन बनाइए, उन विक और बॉडी के ऊपर जहाँ प्राइस मुड़ा था।"
+    },
+    {
+      "en": "Find one full gap (today's low above yesterday's high, or today's high below yesterday's low) and write its date and your guess of its type with a question mark, for example 'breakaway?'. If there is none in six months, write 'no full gap' and mark the biggest opening jump instead.",
+      "hi": "Ek full gap dhoondhiye (aaj ka low kal ke high se upar, ya aaj ka high kal ke low se neeche) aur uski date aur uske type ka apna andaaza question mark ke saath likhiye, jaise 'breakaway?'. Chhe mahine mein ek bhi na mile, toh 'no full gap' likhiye aur sabse bade opening jump ko mark kar dijiye.",
+      "dv": "एक फ़ुल गैप ढूँढिए (आज का लो कल के हाई से ऊपर, या आज का हाई कल के लो से नीचे) और उसकी तारीख़ और उसके टाइप का अपना अंदाज़ा सवाल के निशान के साथ लिखिए, जैसे 'ब्रेकअवे?'। छह महीने में एक भी न मिले, तो 'कोई फ़ुल गैप नहीं' लिखिए और सबसे बड़े ओपनिंग जंप को मार्क कर दीजिए।"
+    },
+    {
+      "en": "Take a screenshot with the price scale and dates visible, cropping out your name and any account details.",
+      "hi": "Screenshot lijiye jismein price scale aur dates dikhein, aur usmein se apna naam aur koi bhi account detail crop kar dijiye.",
+      "dv": "स्क्रीनशॉट लीजिए जिसमें प्राइस स्केल और तारीख़ें दिखें, और उसमें से अपना नाम और कोई भी अकाउंट डिटेल क्रॉप कर दीजिए।"
+    },
+    {
+      "en": "Run the AI Lab prompt 'Grade my chart marking' with the screenshot. Use an AI chat that accepts images; if yours does not, type your labels with their dates and prices instead. Where the AI disagrees, look at the chart again yourself before accepting either view.",
+      "hi": "Screenshot ke saath AI Lab ka 'Grade my chart marking' prompt chalaiye. Aisi AI chat use kijiye jo image le sake; agar aapki nahi leti, toh apne labels unki dates aur prices ke saath type kar dijiye. Jahan AI aapse alag raay de, wahan kisi bhi baat ko maanne se pehle khud chart dobara dekhiye.",
+      "dv": "स्क्रीनशॉट के साथ AI Lab का 'मेरी चार्ट मार्किंग ग्रेड कीजिए' प्रॉम्प्ट चलाइए। ऐसी AI चैट इस्तेमाल कीजिए जो इमेज ले सके; अगर आपकी नहीं लेती, तो अपने लेबल उनकी तारीख़ और प्राइस के साथ टाइप कर दीजिए। जहाँ AI आपसे अलग राय दे, वहाँ किसी भी बात को मानने से पहले ख़ुद चार्ट दोबारा देखिए।"
+    }
+  ],
+  "kaam_min": 30,
+  "outcome": {
+    "en": "By the end you can mark swing points and name a trend, draw support and resistance as zones, test a breakout with a close and volume, spot five candle patterns in context, name the four gap types, and let go of a level that has broken.",
+    "hi": "Aaj ke baad aap swing points mark karke trend ka naam bata payenge, support aur resistance ko zone ki tarah bana payenge, close aur volume se breakout ko parakh payenge, context mein paanch candle patterns pehchaan payenge, chaar tarah ke gaps ka naam le payenge, aur toote hue level ko chhodna seekh jayenge.",
+    "dv": "आज के बाद आप स्विंग पॉइंट मार्क करके ट्रेंड का नाम बता पाएँगे, सपोर्ट और रेज़िस्टेंस को ज़ोन की तरह बना पाएँगे, क्लोज़ और वॉल्यूम से ब्रेकआउट को परख पाएँगे, कॉन्टेक्स्ट में पाँच कैंडल पैटर्न पहचान पाएँगे, चार तरह के गैप का नाम ले पाएँगे, और टूटे हुए लेवल को छोड़ना सीख जाएँगे।"
+  },
+  "tools": [
+    {
+      "en": "TradingView free chart",
+      "hi": "TradingView free chart",
+      "dv": "TradingView फ़्री चार्ट"
+    },
+    {
+      "en": "NSE website (nseindia.com)",
+      "hi": "NSE website (nseindia.com)",
+      "dv": "NSE वेबसाइट (nseindia.com)"
+    },
+    {
+      "en": "Phone screenshot and markup tool",
+      "hi": "Phone ka screenshot aur markup tool",
+      "dv": "फ़ोन का स्क्रीनशॉट और मार्कअप टूल"
+    },
+    {
+      "en": "Any AI chat",
+      "hi": "Koi bhi AI chat",
+      "dv": "कोई भी AI चैट"
+    }
+  ],
+  "fun": {
+    "en": "60-second structure drill: take a screenshot of a NIFTY 50 or BANKNIFTY daily chart and, in your phone's photo-markup tool, label the swings HH, HL, LH or LL within 60 seconds. With friends, swap screenshots and vote for the cleanest marking; alone, repeat it daily this week and note whether your speed and accuracy improve.",
+    "hi": "60 second ki structure drill: NIFTY 50 ya BANKNIFTY ke daily chart ka screenshot lijiye, aur phone ke photo-markup tool mein 60 second ke andar swings par HH, HL, LH ya LL likhiye. Doston ke saath hon toh screenshots badal lijiye aur sabse saaf marking ko vote dijiye; akele hon toh is hafte roz dohraiye aur note kijiye ki speed aur accuracy mein koi sudhaar aaya ya nahi.",
+    "dv": "60 सेकंड की स्ट्रक्चर ड्रिल: NIFTY 50 या BANKNIFTY के डेली चार्ट का स्क्रीनशॉट लीजिए, और फ़ोन के फ़ोटो-मार्कअप टूल में 60 सेकंड के अंदर स्विंग पर HH, HL, LH या LL लिखिए। दोस्तों के साथ हों तो स्क्रीनशॉट बदल लीजिए और सबसे साफ़ मार्किंग को वोट दीजिए; अकेले हों तो इस हफ़्ते रोज़ दोहराइए और नोट कीजिए कि रफ़्तार और सटीकता में कोई सुधार आया या नहीं।"
+  },
+  "compliance": "Educational content only, not investment advice. Company names and chart prices are made up for illustration. Patterns and levels are probabilities, never certainties. No affiliation with any charting site named. Stage 1 uses virtual money only. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
+  "prompts": [
+    {
+      "title": {
+        "en": "Grade my chart marking",
+        "hi": "Grade my chart marking",
+        "dv": "मेरी चार्ट मार्किंग ग्रेड कीजिए"
+      },
+      "body": "I am attaching a screenshot of a daily or weekly chart of an Indian index (NIFTY 50 or BANKNIFTY); I will tell you which. If I cannot attach an image, I will type my labels with their dates and prices instead. On it I have marked swing highs and swing lows (labelled HH, HL, LH or LL), one support zone and one resistance zone drawn as rectangles, and one gap with my guess of its type. Grade my marking on five points, each out of 5 with one sentence of reason: (a) are my swing points the obvious ones, using the rule that a swing high is above the highs of the two candles on each side (a swing low is the mirror); (b) is my trend label consistent with those swings; (c) are my zones bands that cover where price actually turned, rather than single lines; (d) did I miss a zone that price tested more often; (e) is my gap label a reasonable guess, remembering that gap types are usually clear only in hindsight. Label each of your comments Fact (visible on the chart), Guess (your interpretation) or Kachra (if I have written a popular myth). If you cannot read part of the image clearly, say so instead of guessing. Then give me one thing to redo. Do not forecast where the price will go next, do not give buy or sell advice, and do not mention targets or expected returns."
+    },
+    {
+      "title": {
+        "en": "Real or fake breakout? Practice round",
+        "hi": "Asli ya fake breakout? Practice round",
+        "dv": "असली या फ़ेक ब्रेकआउट? प्रैक्टिस राउंड"
+      },
+      "body": "Create 6 practice scenarios for a beginner, using made-up company names only. In each, a stock reaches a support or resistance zone: give the zone (for example Rs 536-548), that day's high, low and close, the day's volume and the 20-day average volume. Show me one scenario at a time and ask me to judge it as a likely real breakout, a likely false breakout (fake-out), or too early to tell. After each answer, explain using three checks: did the candle close beyond the zone, was volume clearly above average, and what a retest of the zone would need to show. Remind me that every judgement is a probability, not a certainty. Do not use real stock names, do not give buy or sell advice, and do not mention targets or expected returns."
+    },
+    {
+      "title": {
+        "en": "Level ka moh check",
+        "hi": "Level ka moh check",
+        "dv": "लेवल का मोह चेक"
+      },
+      "body": "Act as a calm trading-psychology coach. Ask me 5 short questions, one at a time, about how I behave when a price level I trusted breaks: whether I move or remove my stop-loss, whether I buy more at a lower price to 'average down' my cost, what I tell myself, and how long I wait before admitting the level has failed. After my answers, summarise in plain words where 'level ka moh' (emotional attachment to a price level) shows up in my thinking, and help me write one exit rule for paper trading in the form 'If a daily candle closes below my zone, I will...'. Label any general claim you make about trader behaviour as Fact, Guess or Kachra. Do not ask for personal or financial details, do not suggest any stock, and do not give buy or sell advice, targets or return expectations."
+    }
+  ],
+  "journal_prompt": {
+    "en": "Recall something you held on to after it had clearly stopped working: a price, a plan, your hopes for a cricket team, anything. What made letting go hard? Then write, in one line, the exit rule you will follow when a zone breaks on a close.",
+    "hi": "Koi aisi cheez yaad kijiye jise aap tab bhi pakde rahe jab woh saaf taur par kaam karna band kar chuki thi: koi price, koi plan, kisi cricket team se umeedein, kuch bhi. Chhodna mushkil kyun laga? Phir ek line mein woh exit rule likhiye jo aap tab follow karenge jab koi zone close par toot jaaye.",
+    "dv": "कोई ऐसी चीज़ याद कीजिए जिसे आप तब भी पकड़े रहे जब वह साफ़ तौर पर काम करना बंद कर चुकी थी: कोई भाव, कोई प्लान, किसी क्रिकेट टीम से उम्मीदें, कुछ भी। छोड़ना मुश्किल क्यों लगा? फिर एक लाइन में वह एग्ज़िट नियम लिखिए जो आप तब मानेंगे जब कोई ज़ोन क्लोज़ पर टूट जाए।"
+  },
+  "motivation": {
+    "en": "Levels are made by people's decisions, not by the lines we draw. Reading them as zones, and letting go when they break, is where humility in trading begins.",
+    "hi": "Levels hamari kheenchi lines se nahi, logon ke faislon se bante hain. Unhe zone ki tarah padhna, aur tootne par chhod dena, yahin se trading mein humility shuru hoti hai.",
+    "dv": "लेवल हमारी खींची लाइनों से नहीं, लोगों के फ़ैसलों से बनते हैं। उन्हें ज़ोन की तरह पढ़ना, और टूटने पर छोड़ देना, ट्रेडिंग में विनम्रता की शुरुआत है।"
+  },
+  "quiz": [
+    {
+      "stem": {
+        "en": "On a daily chart, a stock's swing points in order are: low Rs 400, high Rs 440, low Rs 418, high Rs 455, low Rs 431, high Rs 470. What is the trend on this timeframe?",
+        "hi": "Ek daily chart par kisi stock ke swing points is order mein hain: low Rs 400, high Rs 440, low Rs 418, high Rs 455, low Rs 431, high Rs 470. Is timeframe par trend kya hai?",
+        "dv": "एक डेली चार्ट पर किसी स्टॉक के स्विंग पॉइंट इस क्रम में हैं: लो Rs 400, हाई Rs 440, लो Rs 418, हाई Rs 455, लो Rs 431, हाई Rs 470। इस टाइमफ़्रेम पर ट्रेंड क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Uptrend: the highs and the lows both keep rising",
+            "hi": "Uptrend: highs aur lows dono upar ja rahe hain",
+            "dv": "अपट्रेंड: हाई और लो दोनों ऊपर जा रहे हैं"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Downtrend: every rise is followed by a fall",
+            "hi": "Downtrend: har uchhaal ke baad giraavat aati hai",
+            "dv": "डाउनट्रेंड: हर उछाल के बाद गिरावट आती है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Sideways: highs and lows stay near the same levels",
+            "hi": "Sideways: highs aur lows ek hi levels ke aas-paas hain",
+            "dv": "साइडवेज़: हाई और लो एक ही लेवल के आसपास हैं"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Can't tell yet: a trend needs at least ten swings",
+            "hi": "Abhi keh nahi sakte: trend ke liye das swings chahiye",
+            "dv": "अभी कह नहीं सकते: ट्रेंड के लिए दस स्विंग चाहिए"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Separate the lows from the highs. Lows: 400, 418, 431, each higher than the last. Highs: 440, 455, 470, each higher too. Higher highs plus higher lows is the definition of an uptrend. No fixed count of swings is needed; the order of the highs and lows is what names the trend. Falls happen inside an uptrend as well; what matters is that each fall stops above the previous low.",
+        "hi": "Lows aur highs ko alag kijiye. Lows: 400, 418, 431, har ek pichhle se upar. Highs: 440, 455, 470, yeh bhi har baar upar. Higher highs aur higher lows, yahi uptrend ki definition hai. Swings ki koi fixed ginti zaroori nahi; highs aur lows ka order hi trend batata hai. Uptrend mein bhi giraavat aati hai; dekhna yeh hai ki har giraavat pichhle low se upar hi ruk jaati hai.",
+        "dv": "लो और हाई को अलग कीजिए। लो: 400, 418, 431, हर एक पिछले से ऊपर। हाई: 440, 455, 470, ये भी हर बार ऊपर। हायर हाई और हायर लो, यही अपट्रेंड की परिभाषा है। स्विंग की कोई तय गिनती ज़रूरी नहीं; हाई और लो का क्रम ही ट्रेंड बताता है। अपट्रेंड में भी गिरावट आती है; देखना यह है कि हर गिरावट पिछले लो से ऊपर ही रुक जाती है।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Kiran Foods has a resistance zone at Rs 312-320. Today it touched Rs 327 but closed at Rs 314, on 0.9 lakh shares against a 20-day average of 1.2 lakh. What is the most reasonable reading?",
+        "hi": "Kiran Foods ka resistance zone Rs 312-320 hai. Aaj price Rs 327 tak gaya, lekin Rs 314 par close hua, 0.9 lakh shares ke volume par, jabki 20 din ka average 1.2 lakh hai. Sabse samajhdaar reading kya hai?",
+        "dv": "Kiran Foods का रेज़िस्टेंस ज़ोन Rs 312-320 है। आज प्राइस Rs 327 तक गया, लेकिन Rs 314 पर बंद हुआ, 0.9 लाख शेयर के वॉल्यूम पर, जबकि 20 दिन का एवरेज 1.2 लाख है। सबसे समझदारी वाली रीडिंग क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A likely fake-out: no close above, weak volume",
+            "hi": "Shayad fake-out: upar close nahi, volume kamzor",
+            "dv": "शायद फ़ेक-आउट: ऊपर क्लोज़ नहीं, वॉल्यूम कमज़ोर"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "A confirmed breakout, since it touched Rs 327",
+            "hi": "Pakka breakout hai, kyunki price Rs 327 chhoo gaya",
+            "dv": "पक्का ब्रेकआउट है, क्योंकि प्राइस Rs 327 छू गया"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A new uptrend, since the zone has been crossed",
+            "hi": "Naya uptrend shuru, kyunki zone paar ho gaya",
+            "dv": "नया अपट्रेंड शुरू, क्योंकि ज़ोन पार हो गया"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The zone no longer counts, as a wick went through",
+            "hi": "Zone ab bekaar hai, kyunki wick paar chali gayi",
+            "dv": "ज़ोन अब बेकार है, क्योंकि विक पार चली गई"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "A breakout needs more than a wick. The candle closed at Rs 314, back inside the zone, and volume was below average (0.9 lakh against 1.2 lakh). Both checks fail, so this looks like a false breakout. A later close above Rs 320 on clearly above-average volume, and a retest that holds, would change the picture; even then it stays a probability.",
+        "hi": "Breakout ke liye sirf wick kaafi nahi. Candle Rs 314 par close hui, yaani wapas zone ke andar, aur volume average se kam tha (0.9 lakh, jabki average 1.2 lakh). Dono checks fail, isliye yeh false breakout jaisa dikhta hai. Aage chalkar Rs 320 ke upar close, saaf taur par average se zyada volume ke saath, aur tika hua retest aaye, toh tasveer badal sakti hai; tab bhi yeh probability hi rahegi.",
+        "dv": "ब्रेकआउट के लिए सिर्फ़ विक काफ़ी नहीं। कैंडल Rs 314 पर बंद हुई, यानी वापस ज़ोन के अंदर, और वॉल्यूम एवरेज से कम था (0.9 लाख, जबकि एवरेज 1.2 लाख)। दोनों जाँच फ़ेल, इसलिए यह फ़ॉल्स ब्रेकआउट जैसा दिखता है। आगे चलकर Rs 320 के ऊपर क्लोज़, साफ़ तौर पर एवरेज से ज़्यादा वॉल्यूम के साथ, और टिका हुआ रीटेस्ट आए, तो तस्वीर बदल सकती है; तब भी यह संभावना ही रहेगी।"
+      }
+    },
+    {
+      "stem": {
+        "en": "After a fall, Gupta Cement forms this candle inside a tested support zone: open Rs 430, high Rs 433, low Rs 418, close Rs 432. What is it?",
+        "hi": "Giraavat ke baad Gupta Cement ek tested support zone ke andar yeh candle banata hai: open Rs 430, high Rs 433, low Rs 418, close Rs 432. Yeh kya hai?",
+        "dv": "गिरावट के बाद Gupta Cement एक टेस्ट हुए सपोर्ट ज़ोन के अंदर यह कैंडल बनाता है: ओपन Rs 430, हाई Rs 433, लो Rs 418, क्लोज़ Rs 432। यह क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A hammer: lower wick is six times the body",
+            "hi": "Hammer: neeche ki wick body se chhe guna",
+            "dv": "हैमर: नीचे की विक बॉडी से छह गुना"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "A shooting star: long wick and a small body",
+            "hi": "Shooting star: lambi wick aur chhoti body",
+            "dv": "शूटिंग स्टार: लंबी विक और छोटी बॉडी"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A red candle, because it fell to Rs 418 first",
+            "hi": "Red candle, kyunki pehle Rs 418 tak giri",
+            "dv": "लाल कैंडल, क्योंकि पहले Rs 418 तक गिरी"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "No pattern, because the body is only Rs 2",
+            "hi": "Koi pattern nahi, kyunki body sirf Rs 2 hai",
+            "dv": "कोई पैटर्न नहीं, क्योंकि बॉडी सिर्फ़ Rs 2 है"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Body = close minus open = Rs 432 - 430 = Rs 2, and it is green because the close is above the open. The lower wick runs from the lower of open and close down to the low; on a green candle that is the open: Rs 430 - 418 = Rs 12, six times the body. The upper wick runs from the higher of the two up to the high: Rs 433 - 432 = Rs 1. A small body near the top with a long lower wick, after a fall, is a hammer, whether green or red; a shooting star has its long wick on top. Inside a tested zone it is a clue worth noting, not a buy signal.",
+        "hi": "Body = close minus open = Rs 432 - 430 = Rs 2, aur yeh green hai kyunki close open se upar hai. Neeche ki wick open aur close mein jo neeche ho, wahan se low tak jaati hai; green candle mein woh open hai: Rs 430 - 418 = Rs 12, yaani body se chhe guna. Upar ki wick dono mein jo upar ho, wahan se high tak: Rs 433 - 432 = Rs 1. Giraavat ke baad upar chhoti body aur neeche lambi wick, yahi hammer hai, chahe green ho ya red; shooting star mein lambi wick upar hoti hai. Tested zone ke andar yeh note karne layak clue hai, kharidne ka signal nahi.",
+        "dv": "बॉडी = क्लोज़ माइनस ओपन = Rs 432 - 430 = Rs 2, और यह हरी है क्योंकि क्लोज़ ओपन से ऊपर है। नीचे की विक, ओपन और क्लोज़ में से जो नीचे हो, वहाँ से लो तक जाती है; हरी कैंडल में वह ओपन है: Rs 430 - 418 = Rs 12, यानी बॉडी से छह गुना। ऊपर की विक, दोनों में से जो ऊपर हो, वहाँ से हाई तक: Rs 433 - 432 = Rs 1। गिरावट के बाद ऊपर छोटी बॉडी और नीचे लंबी विक, यही हैमर है, चाहे हरी हो या लाल; शूटिंग स्टार में लंबी विक ऊपर होती है। टेस्ट हुए ज़ोन के अंदर यह नोट करने लायक सुराग है, ख़रीदने का सिग्नल नहीं।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Sharma Textiles closes at Rs 600. The next morning is the ex-date of a 1:1 bonus, and on an unadjusted chart it opens near Rs 300. What is this gap?",
+        "hi": "Sharma Textiles Rs 600 par close hota hai. Agli subah 1:1 bonus ki ex-date hai, aur unadjusted chart par yeh lagbhag Rs 300 par khulta hai. Yeh gap kya hai?",
+        "dv": "Sharma Textiles Rs 600 पर बंद होता है। अगली सुबह 1:1 बोनस की एक्स-डेट है, और अनएडजस्टेड चार्ट पर यह लगभग Rs 300 पर खुलता है। यह गैप क्या है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "A mechanical bonus gap, not a real crash",
+            "hi": "Bonus ka hisaabi gap, asli crash nahi",
+            "dv": "बोनस का हिसाबी गैप, असली क्रैश नहीं"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "An exhaustion gap that ends the whole uptrend",
+            "hi": "Exhaustion gap, jo uptrend khatam kar deta hai",
+            "dv": "एग्ज़ॉशन गैप, जो अपट्रेंड ख़त्म कर देता है"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A breakaway gap caused by heavy panic selling",
+            "hi": "Breakaway gap, jo ghabraahat ki bikri se bana",
+            "dv": "ब्रेकअवे गैप, जो घबराहट की बिकवाली से बना"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A common gap that will be filled in days",
+            "hi": "Common gap, jo kuch dinon mein bhar jayega",
+            "dv": "कॉमन गैप, जो कुछ दिनों में भर जाएगा"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "A 1:1 bonus gives one free share for each share held, so the price roughly halves while the holding doubles: 100 shares x Rs 600 = Rs 60,000 becomes 200 shares x Rs 300 = Rs 60,000. Nothing was lost. This gap is an accounting effect, the impostor among gaps. Use an adjusted chart and check the corporate-actions page on the NSE website before reading meaning into any big gap.",
+        "hi": "1:1 bonus mein har share par ek free share milta hai, isliye price lagbhag aadha ho jaata hai aur shares double: 100 shares x Rs 600 = Rs 60,000 ab 200 shares x Rs 300 = Rs 60,000 hain. Kuch nahi gaya. Yeh gap sirf hisaab ka asar hai, gaps mein woh nakli wala. Kisi bhi bade gap ka matlab nikaalne se pehle adjusted chart dekhiye aur NSE website par corporate actions wala page check kijiye.",
+        "dv": "1:1 बोनस में हर शेयर पर एक फ़्री शेयर मिलता है, इसलिए प्राइस लगभग आधा हो जाता है और शेयर दोगुने: 100 शेयर x Rs 600 = Rs 60,000 अब 200 शेयर x Rs 300 = Rs 60,000 हैं। कुछ नहीं गया। यह गैप सिर्फ़ हिसाब का असर है, गैप में वह नक़ली वाला। किसी भी बड़े गैप का मतलब निकालने से पहले एडजस्टेड चार्ट देखिए और NSE वेबसाइट पर कॉर्पोरेट एक्शन वाला पेज देखिए।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Suppose Aman had written this rule before buying: exit if Bharat Pumps closes below its support zone of Rs 498-510. It closes at Rs 488 on almost double its average volume, and he says, 'It has held three times; I will give it a few more days.' What is Aman's decision an example of?",
+        "hi": "Maan lijiye Aman ne khareedne se pehle yeh rule likh liya tha: agar Bharat Pumps apne Rs 498-510 ke support zone ke neeche close ho, toh exit. Yeh Rs 488 par close hota hai, average se lagbhag double volume par, aur Aman kehta hai, 'Teen baar tika hai; kuch din aur de deta hoon.' Aman ka yeh faisla kis cheez ki misaal hai?",
+        "dv": "मान लीजिए अमन ने ख़रीदने से पहले यह नियम लिख लिया था: अगर Bharat Pumps अपने Rs 498-510 के सपोर्ट ज़ोन के नीचे बंद हो, तो एग्ज़िट। यह Rs 488 पर बंद होता है, एवरेज से लगभग दोगुने वॉल्यूम पर, और अमन कहता है, 'तीन बार टिका है; कुछ दिन और दे देता हूँ।' अमन का यह फ़ैसला किस चीज़ की मिसाल है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Level ka moh: hope overriding his own rule",
+            "hi": "Level ka moh: umeed ne rule tudwa diya",
+            "dv": "लेवल का मोह: उम्मीद ने नियम तुड़वा दिया"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Patience: a zone tested three times will hold",
+            "hi": "Sabr: teen baar test hua zone tikega hi",
+            "dv": "सब्र: तीन बार टेस्ट हुआ ज़ोन टिकेगा ही"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Role reversal: the zone will now act as support",
+            "hi": "Role reversal: zone ab support ka kaam karega",
+            "dv": "रोल रिवर्सल: ज़ोन अब सपोर्ट का काम करेगा"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Discipline: he is firmly sticking to his first view",
+            "hi": "Discipline: woh apni pehli raay par mazbooti se tika hai",
+            "dv": "अनुशासन: वह अपनी पहली राय पर मज़बूती से टिका है"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "His own plan said exit on a close below the zone, and the close came at Rs 488 on heavy volume. Staying in because the level 'has held before' is level ka moh: loving the level more than the plan. Discipline would mean following the written rule, not his first view. Past bounces show where buyers were, not where they will be. And role reversal points the other way: broken support may now act as resistance.",
+        "hi": "Uske apne plan mein likha tha ki zone ke neeche close aaye toh exit, aur close Rs 488 par, bhaari volume ke saath aaya. 'Pehle tika tha' soch kar ruke rehna hi level ka moh hai: plan se zyada level se pyaar. Discipline ka matlab likhe hue rule par chalna hota, apni pehli raay par nahi. Pichhle bounce batate hain ki buyers kahan the, yeh nahi ki aage kahan honge. Aur role reversal ulti taraf ishaara karta hai: toota hua support ab resistance ban sakta hai.",
+        "dv": "उसके अपने प्लान में लिखा था कि ज़ोन के नीचे क्लोज़ आए तो एग्ज़िट, और क्लोज़ Rs 488 पर, भारी वॉल्यूम के साथ आया। 'पहले टिका था' सोचकर रुके रहना ही लेवल का मोह है: प्लान से ज़्यादा लेवल से प्यार। अनुशासन का मतलब लिखे हुए नियम पर चलना होता, अपनी पहली राय पर नहीं। पिछले उछाल बताते हैं कि ख़रीदार कहाँ थे, यह नहीं कि आगे कहाँ होंगे। और रोल रिवर्सल उल्टी तरफ़ इशारा करता है: टूटा हुआ सपोर्ट अब रेज़िस्टेंस बन सकता है।"
+      }
+    }
+  ]
+}

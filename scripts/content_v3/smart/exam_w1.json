@@ -1,0 +1,275 @@
+{
+  "week": 1,
+  "questions": [
+    {
+      "stem": {
+        "en": "In the journey of a trade, what does the clearing corporation do?",
+        "hi": "Ek trade ke safar mein clearing corporation ka kaam kya hai?",
+        "dv": "एक ट्रेड के सफ़र में क्लियरिंग कॉर्पोरेशन का काम क्या है?"
+      },
+      "options": [
+        { "text": { "en": "It stands between buyer and seller in every trade", "hi": "Har trade mein buyer aur seller ke beech khadi rehti hai", "dv": "हर ट्रेड में ख़रीदार और बेचने वाले के बीच खड़ी रहती है" }, "correct": true },
+        { "text": { "en": "It holds your shares in electronic form, in your name", "hi": "Aapke shares electronic form mein, aapke naam par rakhti hai", "dv": "आपके शेयर इलेक्ट्रॉनिक रूप में, आपके नाम पर रखती है" }, "correct": false },
+        { "text": { "en": "It checks you have enough money before sending your order", "hi": "Order bhejne se pehle check karti hai ki aapke paise poore hain", "dv": "ऑर्डर भेजने से पहले देखती है कि आपके पैसे पूरे हैं या नहीं" }, "correct": false },
+        { "text": { "en": "It matches buy and sell orders by best price, then time", "hi": "Buy aur sell orders ko pehle best price, phir time se milaati hai", "dv": "ख़रीद-बिक्री के ऑर्डर पहले बेस्ट भाव, फिर समय के हिसाब से मिलाती है" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "Each link in the chain has one job. The broker checks your money and sends the order, the exchange matches buyers and sellers, and the depository (NSDL or CDSL) holds shares in your demat. The clearing corporation becomes the buyer to every seller and the seller to every buyer, so neither side has to trust a stranger to pay or deliver.",
+        "hi": "Is chain mein har kadi ka apna kaam hai. Broker aapke paise check karke order aage bhejta hai, exchange buyers aur sellers ko milaata hai, aur depository (NSDL ya CDSL) shares ko aapke demat mein rakhti hai. Clearing corporation har seller ke liye buyer ban jaati hai aur har buyer ke liye seller, taaki paise ya shares ke liye kisi ko anjaan party par bharosa na karna pade.",
+        "dv": "इस चेन में हर कड़ी का अपना काम है। ब्रोकर आपके पैसे देखकर ऑर्डर आगे भेजता है, एक्सचेंज ख़रीदारों और बेचने वालों को मिलाता है, और डिपॉज़िटरी (NSDL या CDSL) शेयर आपके डीमैट में रखती है। क्लियरिंग कॉर्पोरेशन हर बेचने वाले के लिए ख़रीदार बन जाती है और हर ख़रीदार के लिए बेचने वाली, ताकि पैसे या शेयर के लिए किसी को अनजान पार्टी पर भरोसा न करना पड़े।"
+      }
+    },
+    {
+      "stem": {
+        "en": "For tax, profit from intraday equity trades is usually treated as which kind of income?",
+        "hi": "Tax ke liye, intraday equity trades ka munafa aam taur par kis tarah ki income maana jaata hai?",
+        "dv": "टैक्स के लिए, इंट्राडे इक्विटी ट्रेड का मुनाफ़ा आम तौर पर किस तरह की इनकम माना जाता है?"
+      },
+      "options": [
+        { "text": { "en": "Speculative business income", "hi": "Speculative business income", "dv": "स्पेक्युलेटिव बिज़नेस इनकम" }, "correct": true },
+        { "text": { "en": "Short-term capital gains", "hi": "Short-term capital gains", "dv": "शॉर्ट-टर्म कैपिटल गेन" }, "correct": false },
+        { "text": { "en": "Long-term capital gains", "hi": "Long-term capital gains", "dv": "लॉन्ग-टर्म कैपिटल गेन" }, "correct": false },
+        { "text": { "en": "Tax-free, since no delivery is taken", "hi": "Tax-free, kyunki delivery li hi nahi", "dv": "टैक्स-फ़्री, क्योंकि डिलीवरी ली ही नहीं" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "The tax head depends on the kind of trade. Delivery gains are capital gains, short- or long-term depending on how long you held the shares; intraday equity profit is speculative business income; F&O is business income. This course prints no tax rates: keep every contract note, file your return on time so losses can be carried forward, and ask a CA about your own case.",
+        "hi": "Tax head trade ke type par depend karta hai. Delivery ka munafa capital gains hai; short-term ya long-term, yeh is par depend karta hai ki shares kitne time rakhe; intraday equity ka munafa speculative business income hai; F&O business income hai. Yeh course koi tax rate nahi deta: har contract note sambhaal kar rakhiye, return time par file kijiye taaki loss aage carry forward ho sake, aur apne case ke liye CA se poochhiye.",
+        "dv": "टैक्स हेड ट्रेड के टाइप पर निर्भर करता है। डिलीवरी का मुनाफ़ा कैपिटल गेन है; शॉर्ट-टर्म या लॉन्ग-टर्म, यह इस पर निर्भर करता है कि शेयर कितने समय रखे; इंट्राडे इक्विटी का मुनाफ़ा स्पेक्युलेटिव बिज़नेस इनकम है; F&O बिज़नेस इनकम है। यह कोर्स कोई टैक्स रेट नहीं देता: हर कॉन्ट्रैक्ट नोट सँभालकर रखें, रिटर्न समय पर फ़ाइल करें ताकि लॉस आगे कैरी फ़ॉरवर्ड हो सके, और अपने केस के लिए CA से पूछें।"
+      }
+    },
+    {
+      "stem": {
+        "en": "What is an AI chat's 'knowledge cutoff'?",
+        "hi": "AI chat ka 'knowledge cutoff' kya hota hai?",
+        "dv": "किसी AI चैट का 'नॉलेज कटऑफ़' क्या होता है?"
+      },
+      "options": [
+        { "text": { "en": "The date its training text ends", "hi": "Woh date jahan uska training text khatam hota hai", "dv": "वह तारीख़ जहाँ उसका ट्रेनिंग टेक्स्ट ख़त्म होता है" }, "correct": true },
+        { "text": { "en": "The date its answers were last checked by experts", "hi": "Woh date jab experts ne uske jawab aakhri baar check kiye", "dv": "वह तारीख़ जब एक्सपर्ट ने उसके जवाब आख़िरी बार जाँचे" }, "correct": false },
+        { "text": { "en": "The point in a long chat where it starts making things up", "hi": "Lambi chat mein woh point jahan se woh baatein gadhne lagta hai", "dv": "लंबी चैट में वह पॉइंट जहाँ से वह बातें गढ़ने लगता है" }, "correct": false },
+        { "text": { "en": "The time each day after which it stops searching the web", "hi": "Din ka woh time jiske baad woh web search band kar deta hai", "dv": "दिन का वह समय जिसके बाद वह वेब सर्च बंद कर देता है" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "An LLM learns from text up to a certain date and may know nothing after it: new results, new rules, today's prices. That is why an old model may still say Indian shares settle on T+2, though the market moved fully to T+1 in January 2023. Stating something false with full confidence is a different problem, called hallucination. The fix for both is the same: paste the source yourself and check the quote.",
+        "hi": "LLM ek tay date tak ke text se seekhta hai, aur uske baad ki cheezein shayad jaanta hi nahi: naye results, naye rules, aaj ke prices. Isiliye koi purana model ab bhi keh sakta hai ki Indian shares T+2 par settle hote hain, jabki market January 2023 mein poori tarah T+1 par aa chuka hai. Poore confidence se galat baat bol dena alag problem hai, jise hallucination kehte hain. Dono ka ilaaj ek hi hai: source khud paste kijiye aur quote check kijiye.",
+        "dv": "LLM एक तय तारीख़ तक के टेक्स्ट से सीखता है, और उसके बाद की चीज़ें शायद जानता ही नहीं: नए रिज़ल्ट, नए नियम, आज के भाव। इसीलिए कोई पुराना मॉडल अब भी कह सकता है कि भारतीय शेयर T+2 पर सेटल होते हैं, जबकि बाज़ार जनवरी 2023 में पूरी तरह T+1 पर आ चुका है। पूरे भरोसे से ग़लत बात बोल देना अलग समस्या है, जिसे हैलुसिनेशन कहते हैं। दोनों का इलाज एक ही है: सोर्स ख़ुद पेस्ट करें और कोट जाँचें।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Priya plans swing trades that she will hold for days or weeks. In which order should she read her charts?",
+        "hi": "Priya aise swing trades plan karti hai jinhe woh kuch din ya hafton tak hold karegi. Use charts kis order mein padhne chahiye?",
+        "dv": "प्रिया ऐसे स्विंग ट्रेड प्लान करती है जिन्हें वह कुछ दिन या हफ़्तों तक होल्ड करेगी। उसे चार्ट किस क्रम में पढ़ने चाहिए?"
+      },
+      "options": [
+        { "text": { "en": "Weekly for direction, then daily for timing", "hi": "Direction ke liye weekly, phir timing ke liye daily", "dv": "दिशा के लिए वीकली, फिर टाइमिंग के लिए डेली" }, "correct": true },
+        { "text": { "en": "Daily for direction, then weekly to time the entry", "hi": "Direction ke liye daily, phir entry timing ke liye weekly", "dv": "दिशा के लिए डेली, फिर एंट्री की टाइमिंग के लिए वीकली" }, "correct": false },
+        { "text": { "en": "15-minute for direction, then daily for timing", "hi": "Direction ke liye 15-minute, phir timing ke liye daily", "dv": "दिशा के लिए 15-मिनट, फिर टाइमिंग के लिए डेली" }, "correct": false },
+        { "text": { "en": "Only the 5-minute chart, since it shows the most detail", "hi": "Sirf 5-minute chart, kyunki usmein sabse zyada detail hai", "dv": "सिर्फ़ 5-मिनट चार्ट, क्योंकि उसमें सबसे ज़्यादा डिटेल है" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "Read the direction on the higher timeframe and the timing on the lower one, never the other way round. A swing trader holds for days or weeks, so the weekly chart gives the big picture and the daily chart gives the timing. Lower timeframes such as 5 or 15 minutes carry a lot of noise, meaning small random moves; they suit an intraday trader, not her.",
+        "hi": "Direction hamesha bade timeframe par padhiye aur timing chhote par, kabhi ulta nahi. Swing trader kuch din ya hafton tak hold karta hai, isliye weekly chart badi tasveer dikhata hai aur daily chart timing deta hai. 5 ya 15-minute jaise chhote timeframes mein bahut noise hota hai, yaani chhoti random moves; yeh intraday trader ke kaam ki cheez hai, Priya ke nahi.",
+        "dv": "दिशा हमेशा बड़े टाइमफ़्रेम पर पढ़ें और टाइमिंग छोटे पर, कभी उल्टा नहीं। स्विंग ट्रेडर कुछ दिन या हफ़्तों तक होल्ड करता है, इसलिए वीकली चार्ट बड़ी तस्वीर दिखाता है और डेली चार्ट टाइमिंग देता है। 5 या 15-मिनट जैसे छोटे टाइमफ़्रेम में बहुत नॉइज़ होता है, यानी छोटी-छोटी रैंडम चालें; यह इंट्राडे ट्रेडर के काम की चीज़ है, प्रिया के नहीं।"
+      }
+    },
+    {
+      "stem": {
+        "en": "A line chart usually joins which price from each period?",
+        "hi": "Line chart aam taur par har period ka kaun sa price jodta hai?",
+        "dv": "लाइन चार्ट आम तौर पर हर पीरियड का कौन-सा भाव जोड़ता है?"
+      },
+      "options": [
+        { "text": { "en": "The closing price", "hi": "Closing price", "dv": "क्लोज़िंग भाव" }, "correct": true },
+        { "text": { "en": "The opening price", "hi": "Opening price", "dv": "ओपनिंग भाव" }, "correct": false },
+        { "text": { "en": "The day's high price", "hi": "Us din ka high price", "dv": "उस दिन का हाई भाव" }, "correct": false },
+        { "text": { "en": "The average of high and low", "hi": "High aur low ka average", "dv": "हाई और लो का औसत" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "A line chart joins each period's closing price. It looks clean, but it hides the open, the high and the low, so a day with a big swing and a small net change looks calm. A candle chart shows all four prices, OHLC, which is why this course reads candles.",
+        "hi": "Line chart har period ka closing price jodta hai. Dikhne mein saaf lagta hai, lekin open, high aur low chhup jaate hain, isliye bade utaar-chadhaav wala din bhi, agar net badlaav chhota ho, shaant dikhta hai. Candle chart chaaron price, yaani OHLC, dikhata hai, isiliye yeh course candles padhta hai.",
+        "dv": "लाइन चार्ट हर पीरियड का क्लोज़िंग भाव जोड़ता है। देखने में साफ़ लगता है, लेकिन ओपन, हाई और लो छिप जाते हैं, इसलिए बड़े उतार-चढ़ाव वाला दिन भी, अगर कुल बदलाव छोटा हो, शांत दिखता है। कैंडल चार्ट चारों भाव, यानी OHLC, दिखाता है, इसीलिए यह कोर्स कैंडल पढ़ता है।"
+      }
+    },
+    {
+      "stem": {
+        "en": "A rule's average win is 3R and its average loss is 1R. Before costs, what is the lowest win-rate at which it stops losing money?",
+        "hi": "Ek rule ki average jeet 3R hai aur average loss 1R. Costs se pehle, kam se kam kitna win-rate chahiye taaki yeh nuksaan mein na rahe?",
+        "dv": "किसी नियम की औसत जीत 3R है और औसत लॉस 1R। कॉस्ट से पहले, कम से कम कितना विन-रेट चाहिए ताकि यह घाटे में न रहे?"
+      },
+      "options": [
+        { "text": { "en": "25%", "hi": "25%", "dv": "25%" }, "correct": true },
+        { "text": { "en": "About 33%", "hi": "Lagbhag 33%", "dv": "लगभग 33%" }, "correct": false },
+        { "text": { "en": "50%", "hi": "50%", "dv": "50%" }, "correct": false },
+        { "text": { "en": "75%", "hi": "75%", "dv": "75%" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "Breakeven win-rate = 1 ÷ (1 + reward per 1R of risk) = 1 ÷ (1 + 3) = 25%. Check it: in 100 trades, 25 wins x 3R = 75R and 75 losses x 1R = 75R, so the net is zero. 33% is 1 ÷ 3, which forgets the +1; 75% is 3 ÷ 4, the share of trades you can afford to lose, not the share you must win; 50% is true only for a 1:1 payoff. Costs push the real breakeven a little higher.",
+        "hi": "Breakeven win-rate = 1 ÷ (1 + har 1R risk par reward) = 1 ÷ (1 + 3) = 25%. Khud check kar lijiye: 100 trades mein 25 jeet x 3R = 75R, aur 75 loss x 1R = 75R, yaani net zero. 33% bas 1 ÷ 3 hai, jismein +1 chhoot gaya; 75% asal mein 3 ÷ 4 hai, yaani kitne trades aap haar sakte hain, na ki kitne jeetne zaroori hain; aur 50% sirf 1:1 payoff par sahi hai. Costs jodne par asli breakeven thoda aur upar chala jaata hai.",
+        "dv": "ब्रेकईवन विन-रेट = 1 ÷ (1 + हर 1R रिस्क पर रिवॉर्ड) = 1 ÷ (1 + 3) = 25%। ख़ुद जाँच लें: 100 ट्रेड में 25 जीत x 3R = 75R, और 75 लॉस x 1R = 75R, यानी कुल मिलाकर बराबर। 33% बस 1 ÷ 3 है, जिसमें +1 छूट गया; 75% असल में 3 ÷ 4 है, यानी कितने ट्रेड आप हार सकते हैं, न कि कितने जीतने ज़रूरी हैं; और 50% सिर्फ़ 1:1 पेऑफ़ पर सही है। कॉस्ट जोड़ने पर असली ब्रेकईवन थोड़ा और ऊपर चला जाता है।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Over 40 practice trades, Priya's rule won 16 times at an average of +2.5R and lost 24 times at -1R. Costs came to about 0.1R per trade. What is its expectancy per trade after costs?",
+        "hi": "40 practice trades mein Priya ke rule ne 16 trades jeete, average +2.5R ke saath, aur 24 haare, har ek -1R par. Costs har trade lagbhag 0.1R rahe. Costs ke baad har trade ki expectancy kitni hai?",
+        "dv": "40 प्रैक्टिस ट्रेड में प्रिया के नियम ने 16 ट्रेड जीते, औसतन +2.5R के साथ, और 24 हारे, हर एक -1R पर। कॉस्ट हर ट्रेड लगभग 0.1R रही। कॉस्ट के बाद हर ट्रेड की एक्सपेक्टेंसी कितनी है?"
+      },
+      "options": [
+        { "text": { "en": "About +0.3R", "hi": "Lagbhag +0.3R", "dv": "लगभग +0.3R" }, "correct": true },
+        { "text": { "en": "About +0.4R", "hi": "Lagbhag +0.4R", "dv": "लगभग +0.4R" }, "correct": false },
+        { "text": { "en": "A loss of about 0.2R", "hi": "Lagbhag 0.2R ka loss", "dv": "लगभग 0.2R का लॉस" }, "correct": false },
+        { "text": { "en": "About +1.0R", "hi": "Lagbhag +1.0R", "dv": "लगभग +1.0R" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "Win-rate = 16 ÷ 40 = 40%, so loss-rate = 60%. Expectancy = 0.4 x 2.5R - 0.6 x 1R = 1.0R - 0.6R = +0.4R before costs, and +0.4R - 0.1R = +0.3R after costs. +0.4R forgets the costs, +1.0R counts only the wins, and -0.2R treats every win as just 1R. A 40% win-rate can still carry an edge when the average win is big enough. 40 trades is enough to start judging a rule; 100 is needed for confidence.",
+        "hi": "Win-rate = 16 ÷ 40 = 40%, toh loss-rate = 60%. Expectancy = 0.4 x 2.5R - 0.6 x 1R = 1.0R - 0.6R = costs se pehle +0.4R, aur costs ke baad +0.4R - 0.1R = +0.3R. +0.4R mein costs bhool gaye, +1.0R sirf jeet ginta hai, aur -0.2R har jeet ko sirf 1R maan leta hai. Average jeet kaafi badi ho, toh 40% win-rate par bhi edge ho sakta hai. Rule ko judge karna shuru karne ke liye 40 trades kaafi hain; bharose ke liye 100 chahiye.",
+        "dv": "विन-रेट = 16 ÷ 40 = 40%, तो लॉस-रेट = 60%। एक्सपेक्टेंसी = 0.4 x 2.5R - 0.6 x 1R = 1.0R - 0.6R = कॉस्ट से पहले +0.4R, और कॉस्ट के बाद +0.4R - 0.1R = +0.3R। +0.4R में कॉस्ट छूट गई, +1.0R सिर्फ़ जीत गिनता है, और -0.2R हर जीत को सिर्फ़ 1R मान लेता है। औसत जीत काफ़ी बड़ी हो, तो 40% विन-रेट पर भी एज हो सकता है। नियम को परखना शुरू करने के लिए 40 ट्रेड काफ़ी हैं; भरोसे के लिए 100 चाहिए।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Aman's practice plan: 200 shares of Gupta Cement Ltd at Rs 150, for delivery. Each morning before the open he places an SL (stop-loss limit) sell: trigger Rs 145, limit Rs 144. One night bad news comes out and the stock opens at Rs 141, so his order does not fill. Later that day he sells by hand at Rs 138. What is the result in R?",
+        "hi": "Aman ka practice plan: Gupta Cement Ltd ke 200 shares Rs 150 par, delivery mein. Har subah market khulne se pehle woh ek SL (stop-loss limit) sell lagata hai: trigger Rs 145, limit Rs 144. Ek raat buri khabar aati hai, stock Rs 141 par khulta hai, isliye uska order fill nahi hota. Usi din baad mein woh khud Rs 138 par bechta hai. Result R mein kitna hai?",
+        "dv": "अमन का प्रैक्टिस प्लान: Gupta Cement Ltd के 200 शेयर Rs 150 पर, डिलीवरी में। हर सुबह बाज़ार खुलने से पहले वह एक SL (स्टॉप-लॉस लिमिट) सेल लगाता है: ट्रिगर Rs 145, लिमिट Rs 144। एक रात बुरी ख़बर आती है, स्टॉक Rs 141 पर खुलता है, इसलिए उसका ऑर्डर फ़िल नहीं होता। उसी दिन बाद में वह ख़ुद Rs 138 पर बेचता है। नतीजा R में कितना है?"
+      },
+      "options": [
+        { "text": { "en": "-2.4R, a real loss of Rs 2,400", "hi": "-2.4R, yaani asli loss Rs 2,400", "dv": "-2.4R, यानी असली लॉस Rs 2,400" }, "correct": true },
+        { "text": { "en": "-1R, since the stop caps the loss", "hi": "-1R, kyunki stop loss ko rok deta hai", "dv": "-1R, क्योंकि स्टॉप लॉस को रोक देता है" }, "correct": false },
+        { "text": { "en": "-1.2R, a sale at the Rs 144 limit", "hi": "-1.2R, yaani Rs 144 ki limit par sale", "dv": "-1.2R, यानी Rs 144 की लिमिट पर बिक्री" }, "correct": false },
+        { "text": { "en": "-12R, since it fell Rs 12 a share", "hi": "-12R, kyunki share Rs 12 gir gaya", "dv": "-12R, क्योंकि शेयर Rs 12 गिर गया" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "1R is the planned risk: (Rs 150 - Rs 145) x 200 = Rs 1,000. The stock opened below his Rs 144 limit, so the SL order woke up but found no buyer at his price. The actual loss is (Rs 150 - Rs 138) x 200 = Rs 2,400, and Rs 2,400 ÷ Rs 1,000 = -2.4R. -1R assumes a stop fixes the exit price; -1.2R assumes the limit filled. R is always the rupees lost divided by the planned risk, never rupees per share.",
+        "hi": "1R planned risk hai: (Rs 150 - Rs 145) x 200 = Rs 1,000. Stock uski Rs 144 ki limit se neeche khula, isliye SL order jaag toh gaya, par uske price par koi buyer nahi mila. Asli loss (Rs 150 - Rs 138) x 200 = Rs 2,400 hua, aur Rs 2,400 ÷ Rs 1,000 = -2.4R. -1R maan leta hai ki stop exit price tay kar deta hai; -1.2R maan leta hai ki limit fill ho gayi. R hamesha rupaye ka loss ÷ planned risk hota hai, per share rupaye kabhi nahi.",
+        "dv": "1R प्लान किया हुआ रिस्क है: (Rs 150 - Rs 145) x 200 = Rs 1,000। स्टॉक उसकी Rs 144 की लिमिट से नीचे खुला, इसलिए SL ऑर्डर जाग तो गया, पर उसके भाव पर कोई ख़रीदार नहीं मिला। असली लॉस (Rs 150 - Rs 138) x 200 = Rs 2,400 हुआ, और Rs 2,400 ÷ Rs 1,000 = -2.4R। -1R मान लेता है कि स्टॉप एग्ज़िट का भाव तय कर देता है; -1.2R मान लेता है कि लिमिट फ़िल हो गई। R हमेशा रुपयों का लॉस ÷ प्लान किया हुआ रिस्क होता है, प्रति शेयर रुपये कभी नहीं।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Bharat Pumps Ltd's order book shows sellers offering 50 shares at Rs 60, 50 at Rs 61 and 100 at Rs 63. Aman places a market buy for 150 shares. What average price does he pay?",
+        "hi": "Bharat Pumps Ltd ki order book mein sellers 50 shares Rs 60 par, 50 Rs 61 par aur 100 Rs 63 par de rahe hain. Aman 150 shares ka market buy lagata hai. Uska average buy price kitna aata hai?",
+        "dv": "Bharat Pumps Ltd की ऑर्डर बुक में बेचने वाले 50 शेयर Rs 60 पर, 50 Rs 61 पर और 100 Rs 63 पर दे रहे हैं। अमन 150 शेयर का मार्केट बाय लगाता है। उसका औसत ख़रीद भाव कितना आता है?"
+      },
+      "options": [
+        { "text": { "en": "About Rs 61.33 a share", "hi": "Lagbhag Rs 61.33 per share", "dv": "लगभग Rs 61.33 प्रति शेयर" }, "correct": true },
+        { "text": { "en": "Rs 60, the best ask", "hi": "Rs 60, jo best ask hai", "dv": "Rs 60, जो बेस्ट आस्क है" }, "correct": false },
+        { "text": { "en": "Rs 61, the middle level", "hi": "Rs 61, jo beech ka level hai", "dv": "Rs 61, जो बीच का लेवल है" }, "correct": false },
+        { "text": { "en": "Rs 63, the highest ask", "hi": "Rs 63, jo sabse ooncha ask hai", "dv": "Rs 63, जो सबसे ऊँचा आस्क है" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "A market order eats through the queue until it is full: 50 x Rs 60 = Rs 3,000, 50 x Rs 61 = Rs 3,050 and 50 x Rs 63 = Rs 3,150. Total Rs 9,200 ÷ 150 = about Rs 61.33, which is Rs 200 more than the Rs 9,000 he expected at Rs 60. That extra is slippage. A limit buy at Rs 60 would have filled 50 shares and left 100 waiting.",
+        "hi": "Market order queue ko tab tak khaata jaata hai jab tak poora na bhar jaaye: 50 x Rs 60 = Rs 3,000, 50 x Rs 61 = Rs 3,050 aur 50 x Rs 63 = Rs 3,150. Kul Rs 9,200 ÷ 150 = lagbhag Rs 61.33, yaani Rs 60 wale andaaze ke Rs 9,000 se Rs 200 zyada. Yahi extra slippage hai. Rs 60 ka limit buy hota, toh 50 shares fill ho jaate aur baaki 100 queue mein wait karte.",
+        "dv": "मार्केट ऑर्डर क़तार को तब तक खाता जाता है जब तक पूरा न भर जाए: 50 x Rs 60 = Rs 3,000, 50 x Rs 61 = Rs 3,050 और 50 x Rs 63 = Rs 3,150। कुल Rs 9,200 ÷ 150 = लगभग Rs 61.33, यानी Rs 60 वाले अंदाज़े के Rs 9,000 से Rs 200 ज़्यादा। यही एक्स्ट्रा स्लिपेज है। Rs 60 का लिमिट बाय होता, तो 50 शेयर फ़िल हो जाते और बाक़ी 100 क़तार में इंतज़ार करते।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Aman sells 20 shares of Kiran Foods Ltd from his demat on a Tuesday. Wednesday is an exchange holiday. Under T+1, on which day is this sale normally settled?",
+        "hi": "Aman Tuesday ko apne demat se Kiran Foods Ltd ke 20 shares bechta hai. Wednesday ko exchange holiday hai. T+1 ke hisaab se yeh sale aam taur par kis din settle hogi?",
+        "dv": "अमन मंगलवार को अपने डीमैट से Kiran Foods Ltd के 20 शेयर बेचता है। बुधवार को एक्सचेंज की छुट्टी है। T+1 के हिसाब से यह बिक्री आम तौर पर किस दिन सेटल होगी?"
+      },
+      "options": [
+        { "text": { "en": "Thursday; the holiday is skipped", "hi": "Thursday ko; holiday bas skip ho jaata hai", "dv": "गुरुवार को; छुट्टी बस छोड़ दी जाती है" }, "correct": true },
+        { "text": { "en": "Wednesday, since settlement runs on holidays too", "hi": "Wednesday ko, kyunki settlement holiday par bhi chalta hai", "dv": "बुधवार को, क्योंकि सेटलमेंट छुट्टी पर भी चलता है" }, "correct": false },
+        { "text": { "en": "Friday, since a holiday adds a day", "hi": "Friday ko, kyunki holiday ek din badha deta hai", "dv": "शुक्रवार को, क्योंकि छुट्टी एक दिन बढ़ा देती है" }, "correct": false },
+        { "text": { "en": "Tuesday itself, as the shares were already his", "hi": "Tuesday ko hi, kyunki shares pehle se uske the", "dv": "मंगलवार को ही, क्योंकि शेयर पहले से उसके थे" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "T+1 counts trading days, not calendar days. The first trading day after Tuesday is Thursday: the Wednesday holiday is simply skipped, and it does not add an extra day on top. A sale follows the same T+1 cycle as a purchase, even though the shares were already in his demat. The exchange announces its holiday list in advance.",
+        "hi": "T+1 trading days ginta hai, calendar days nahi. Tuesday ke baad pehla trading day Thursday hai: Wednesday ki holiday bas skip ho jaati hai, woh upar se ek extra din nahi jodti. Sale bhi usi T+1 cycle par settle hoti hai jis par khareed, chahe shares pehle se demat mein hon. Exchange apni holiday list pehle se announce kar deta hai.",
+        "dv": "T+1 ट्रेडिंग दिन गिनता है, कैलेंडर दिन नहीं। मंगलवार के बाद पहला ट्रेडिंग दिन गुरुवार है: बुधवार की छुट्टी बस छोड़ दी जाती है, वह ऊपर से एक दिन और नहीं जोड़ती। बिक्री भी उसी T+1 चक्र पर सेटल होती है जिस पर ख़रीद, चाहे शेयर पहले से डीमैट में हों। एक्सचेंज अपनी छुट्टियों की लिस्ट पहले से बता देता है।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Aman risks 5% of his current capital on every trade. Starting from his peak, he hits a streak of 5 losses in a row. Roughly how far below his peak is he now, and what gain does he need to get back?",
+        "hi": "Aman har trade par apni current capital ka 5% risk karta hai. Apne peak se shuru hokar usse lagatar 5 losses ki streak lagti hai. Ab woh peak se lagbhag kitna neeche hai, aur wapas pahunchne ke liye kitna gain chahiye?",
+        "dv": "अमन हर ट्रेड पर अपनी मौजूदा कैपिटल का 5% रिस्क लेता है। अपने पीक से शुरू होकर उसे लगातार 5 लॉस की स्ट्रीक लगती है। अब वह पीक से लगभग कितना नीचे है, और वापस पहुँचने के लिए कितना गेन चाहिए?"
+      },
+      "options": [
+        { "text": { "en": "About 23% down; about 29% needed back", "hi": "Lagbhag 23% neeche; wapsi ke liye lagbhag 29%", "dv": "लगभग 23% नीचे; वापसी के लिए लगभग 29%" }, "correct": true },
+        { "text": { "en": "25% down; 25% needed to get back", "hi": "25% neeche; wapsi ke liye bhi 25%", "dv": "25% नीचे; वापसी के लिए भी 25%" }, "correct": false },
+        { "text": { "en": "About 23% down; 23% needed to get back", "hi": "Lagbhag 23% neeche; wapsi ke liye bhi utna hi, 23%", "dv": "लगभग 23% नीचे; वापसी के लिए भी उतना ही, 23%" }, "correct": false },
+        { "text": { "en": "25% down; about 33% needed to get back", "hi": "25% neeche; wapsi ke liye lagbhag 33%", "dv": "25% नीचे; वापसी के लिए लगभग 33%" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "Each loss takes 5% of what is left, so the losses multiply: 0.95 x 0.95 x 0.95 x 0.95 x 0.95 = about 0.774, or about 23% below the peak. Adding 5% five times to get 25% slightly overstates it. The climb back is steeper than the fall: 1 ÷ 0.774 = about 1.29, so he needs about 29% just to get back. At 1% risk, the same streak would leave him only about 5% down, which is why Day 9 sets the 1% rule.",
+        "hi": "Har loss bache hue paise ka 5% le jaata hai, isliye losses guna hote hain: 0.95 x 0.95 x 0.95 x 0.95 x 0.95 = lagbhag 0.774, yaani peak se lagbhag 23% neeche. 5% ko paanch baar jodkar 25% maan lena thoda zyada bata deta hai. Wapsi ki chadhai girne se hamesha zyada khadi hoti hai: 1 ÷ 0.774 = lagbhag 1.29, yaani sirf wapas pahunchne ke liye lagbhag 29% chahiye. 1% risk par yahi streak use sirf lagbhag 5% neeche le jaati, isiliye Day 9 mein 1% rule aata hai.",
+        "dv": "हर लॉस बचे हुए पैसे का 5% ले जाता है, इसलिए लॉस गुणा होते जाते हैं: 0.95 x 0.95 x 0.95 x 0.95 x 0.95 = लगभग 0.774, यानी पीक से लगभग 23% नीचे। 5% को पाँच बार जोड़कर 25% मान लेना थोड़ा ज़्यादा बता देता है। वापसी की चढ़ाई गिरने से हमेशा ज़्यादा खड़ी होती है: 1 ÷ 0.774 = लगभग 1.29, यानी सिर्फ़ वापस पहुँचने के लिए लगभग 29% चाहिए। 1% रिस्क पर यही स्ट्रीक उसे सिर्फ़ लगभग 5% नीचे ले जाती, इसीलिए दिन 9 में 1% का नियम आता है।"
+      }
+    },
+    {
+      "stem": {
+        "en": "For six weeks, Kiran Foods Ltd has moved sideways between a support zone at Rs 280-286 and a resistance zone at Rs 318-324. Today, after a two-day dip to about Rs 301, right in the middle of that range, it prints a hammer on below-average volume. What is the most reasonable reading?",
+        "hi": "Chhe hafton se Kiran Foods Ltd sideways chal raha hai, Rs 280-286 ke support zone aur Rs 318-324 ke resistance zone ke beech. Aaj do din ki halki girawat ke baad, lagbhag Rs 301 par, yaani range ke bilkul beech mein, average se kam volume par ek hammer banta hai. Sabse samajhdaar reading kya hai?",
+        "dv": "छह हफ़्तों से Kiran Foods Ltd साइडवेज़ चल रहा है, Rs 280-286 के सपोर्ट ज़ोन और Rs 318-324 के रेज़िस्टेंस ज़ोन के बीच। आज दो दिन की हल्की गिरावट के बाद, लगभग Rs 301 पर, यानी रेंज के ठीक बीच में, एवरेज से कम वॉल्यूम पर एक हैमर बनता है। सबसे समझदारी वाली रीडिंग क्या है?"
+      },
+      "options": [
+        { "text": { "en": "A weak clue at best: no tested zone, thin volume", "hi": "Bas ek kamzor clue: na tested zone, na volume ka saath", "dv": "बस एक कमज़ोर क्लू: न टेस्टेड ज़ोन, न वॉल्यूम का साथ" }, "correct": true },
+        { "text": { "en": "A buy signal, since a hammer marks the bottom of a fall", "hi": "Buy signal, kyunki hammer girawat ka bottom batata hai", "dv": "बाय सिग्नल, क्योंकि हैमर गिरावट का बॉटम बताता है" }, "correct": false },
+        { "text": { "en": "A bearish sign, since the long lower wick shows selling", "hi": "Bearish sign, kyunki lambi lower wick selling dikhati hai", "dv": "बेयरिश संकेत, क्योंकि लंबी लोअर विक बिकवाली दिखाती है" }, "correct": false },
+        { "text": { "en": "A breakout, since the candle closed near its high", "hi": "Breakout, kyunki candle apne high ke paas close hui", "dv": "ब्रेकआउट, क्योंकि कैंडल अपने हाई के पास बंद हुई" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "A candle pattern means little on its own; at a tested zone it becomes a clue worth noting. This hammer sits in the middle of the range, far from both support and resistance, and volume is below average, so nothing backs it up. It is not a breakout either: price is still well inside the range. The long lower wick shows price was pushed down and then bought back, not heavy selling.",
+        "hi": "Akele candle pattern ka zyada matlab nahi hota; tested zone par woh dhyaan dene layak clue ban jaata hai. Yeh hammer range ke beech mein hai, support aur resistance dono se door, aur volume bhi average se kam hai, toh ise kisi cheez ka saath nahi mil raha. Yeh breakout bhi nahi hai: price abhi bhi range ke kaafi andar hai. Lambi lower wick dikhati hai ki price neeche dhakela gaya aur phir wapas khareeda gaya, bhaari selling nahi.",
+        "dv": "अकेले कैंडल पैटर्न का ज़्यादा मतलब नहीं होता; टेस्टेड ज़ोन पर वह ध्यान देने लायक़ क्लू बन जाता है। यह हैमर रेंज के बीच में है, सपोर्ट और रेज़िस्टेंस दोनों से दूर, और वॉल्यूम भी एवरेज से कम है, तो इसे किसी चीज़ का साथ नहीं मिल रहा। यह ब्रेकआउट भी नहीं है: प्राइस अभी भी रेंज के काफ़ी अंदर है। लंबी लोअर विक दिखाती है कि प्राइस नीचे धकेला गया और फिर वापस ख़रीदा गया, भारी बिकवाली नहीं।"
+      }
+    },
+    {
+      "stem": {
+        "en": "On Gupta Cement Ltd's daily chart, the swing lows were Rs 310, 322 and 335, and the swing highs Rs 340, 356 and 371. Today it closes at Rs 331 on about twice its average volume. What is the most reasonable reading?",
+        "hi": "Gupta Cement Ltd ke daily chart par swing lows Rs 310, 322 aur 335 the, aur swing highs Rs 340, 356 aur 371. Aaj yeh apne average se lagbhag double volume par Rs 331 par close hota hai. Sabse samajhdaar reading kya hai?",
+        "dv": "Gupta Cement Ltd के डेली चार्ट पर स्विंग लो Rs 310, 322 और 335 थे, और स्विंग हाई Rs 340, 356 और 371। आज यह अपने एवरेज से लगभग दोगुने वॉल्यूम पर Rs 331 पर बंद होता है। सबसे समझदारी वाली रीडिंग क्या है?"
+      },
+      "options": [
+        { "text": { "en": "The uptrend is in question; no downtrend yet", "hi": "Uptrend ab sawaal mein hai; downtrend abhi nahi", "dv": "अपट्रेंड अब सवाल में है; डाउनट्रेंड अभी नहीं" }, "correct": true },
+        { "text": { "en": "A downtrend is now confirmed, since volume backs the fall", "hi": "Downtrend confirm ho gaya, kyunki volume girawat ke saath hai", "dv": "डाउनट्रेंड कन्फ़र्म हो गया, क्योंकि वॉल्यूम गिरावट के साथ है" }, "correct": false },
+        { "text": { "en": "Nothing has changed, since the uptrend is still fully intact", "hi": "Kuch nahi badla, uptrend abhi bhi poori tarah salamat hai", "dv": "कुछ नहीं बदला, अपट्रेंड अभी भी पूरी तरह सलामत है" }, "correct": false },
+        { "text": { "en": "A sideways market, since price is back inside its old range", "hi": "Sideways market, kyunki price wapas purani range mein aa gaya", "dv": "साइडवेज़ मार्केट, क्योंकि प्राइस वापस पुरानी रेंज में आ गया" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "Higher lows (310, 322, 335) and higher highs (340, 356, 371) made an uptrend. A close at Rs 331, below the last higher low of Rs 335, breaks the staircase, and the heavy volume makes that break worth taking seriously. But a downtrend needs lower highs and lower lows, and none has formed yet. It is not sideways either: that needs highs and lows stalling near the same levels. So the honest label is 'uptrend in question'; if you held the stock, your written exit rule decides, not hope.",
+        "hi": "Higher lows (310, 322, 335) aur higher highs (340, 356, 371) se uptrend bana tha. Rs 331 ka close, yaani aakhri higher low Rs 335 ke neeche, yeh seedhi tod deta hai, aur bhaari volume is break ko serious bana deta hai. Lekin downtrend ke liye lower highs aur lower lows chahiye, jo abhi bane hi nahi. Yeh sideways bhi nahi hai: uske liye highs aur lows ko ek hi levels ke paas atakna chahiye. Toh sahi label hai 'uptrend sawaal mein'; agar aapke paas share hai, toh faisla aapka likha hua exit rule karega, ummeed nahi.",
+        "dv": "हायर लो (310, 322, 335) और हायर हाई (340, 356, 371) से अपट्रेंड बना था। Rs 331 का क्लोज़, यानी आख़िरी हायर लो Rs 335 के नीचे, यह सीढ़ी तोड़ देता है, और भारी वॉल्यूम इस टूट को गंभीर बना देता है। लेकिन डाउनट्रेंड के लिए लोअर हाई और लोअर लो चाहिए, जो अभी बने ही नहीं। यह साइडवेज़ भी नहीं है: उसके लिए हाई और लो को एक ही लेवल के पास अटकना चाहिए। तो सही लेबल है 'अपट्रेंड सवाल में'; अगर आपके पास शेयर है, तो फ़ैसला आपका लिखा हुआ एग्ज़िट नियम करेगा, उम्मीद नहीं।"
+      }
+    },
+    {
+      "stem": {
+        "en": "A polished, AI-written 'research note' in a Telegram group reads: 'Sharma Textiles Ltd: buy at Rs 400, target Rs 440. Our calls hit target 80% of the time.' It gives no stop-loss and no list of past calls. What is the key flaw?",
+        "hi": "Ek Telegram group mein AI se likha, chamakta hua 'research note' aata hai: 'Sharma Textiles Ltd: Rs 400 par buy, target Rs 440. Hamari calls 80% baar target hit karti hain.' Na koi stop-loss diya hai, na purani calls ki list. Sabse badi kami kya hai?",
+        "dv": "एक Telegram ग्रुप में AI से लिखा, चमकता हुआ 'रिसर्च नोट' आता है: 'Sharma Textiles Ltd: Rs 400 पर बाय, टारगेट Rs 440। हमारी कॉल 80% बार टारगेट हिट करती हैं।' न कोई स्टॉप-लॉस दिया है, न पुरानी कॉल की लिस्ट। सबसे बड़ी कमी क्या है?"
+      },
+      "options": [
+        { "text": { "en": "No stop means no R, so the claim cannot be measured", "hi": "Stop nahi, toh R nahi, isliye claim naapa hi nahi ja sakta", "dv": "स्टॉप नहीं, तो R नहीं, इसलिए दावा मापा ही नहीं जा सकता" }, "correct": true },
+        { "text": { "en": "The target is only 10% away, too small to be worth it", "hi": "Target sirf 10% door hai, itna chhota target lena bekaar hai", "dv": "टारगेट सिर्फ़ 10% दूर है, इतना छोटा टारगेट लेना बेकार है" }, "correct": false },
+        { "text": { "en": "Nothing, since an AI checked the numbers before posting", "hi": "Koi kami nahi, kyunki AI ne post se pehle numbers check kiye", "dv": "कोई कमी नहीं, क्योंकि AI ने पोस्ट से पहले नंबर जाँच लिए" }, "correct": false },
+        { "text": { "en": "An 80% hit-rate proves the method makes money overall", "hi": "80% hit-rate saabit karta hai ki method kul milakar kamata hai", "dv": "80% हिट-रेट साबित करता है कि तरीक़ा कुल मिलाकर कमाता है" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "R is the gain or loss divided by the planned risk from entry to stop, so a call with no stop cannot be counted in R at all. With no stop and no full list of calls, the 80% cannot be checked, and even a true hit-rate means little without the average win and loss. A neat AI-written format is not proof: sort this as Kachra until every call is shown with its stop.",
+        "hi": "R ka matlab hai gain ya loss ÷ entry se stop tak ka planned risk, isliye bina stop wali call R mein gini hi nahi ja sakti. Na stop, na calls ki poori list, toh 80% check hi nahi ho sakta; aur sach ho bhi, toh average jeet aur average haar ke bina hit-rate ka matlab kam hai. AI ka saaf-suthra format saboot nahi hai: jab tak har call apne stop ke saath na dikhe, ise Kachra mein daaliye.",
+        "dv": "R का मतलब है गेन या लॉस ÷ एंट्री से स्टॉप तक का प्लान किया हुआ रिस्क, इसलिए बिना स्टॉप वाली कॉल R में गिनी ही नहीं जा सकती। न स्टॉप, न कॉल की पूरी लिस्ट, तो 80% जाँचा ही नहीं जा सकता; और सच हो भी, तो औसत जीत और औसत हार के बिना हिट-रेट का मतलब कम है। AI का साफ़-सुथरा फ़ॉर्मैट सबूत नहीं है: जब तक हर कॉल अपने स्टॉप के साथ न दिखे, इसे कचरे के डिब्बे में डालें।"
+      }
+    },
+    {
+      "stem": {
+        "en": "A practice channel's banner says '18 of 20 calls hit target'. The mentor's full record shows 25 calls, all with stops: 18 hit the target and 7 hit the stop, and 5 of those 7 posts were deleted. In every call the stop was 10% below entry and the target 3% above it. What do all 25 calls add up to, before costs?",
+        "hi": "Ek practice channel ke banner par likha hai: '20 mein se 18 calls ka target hit'. Mentor ke poore record mein 25 calls hain, sab stop ke saath: 18 ka target hit hua aur 7 ka stop, aur un 7 mein se 5 posts delete kar di gayi. Har call mein stop entry se 10% neeche tha aur target 3% upar. Costs se pehle, sabhi 25 calls ka kul hisaab kya banta hai?",
+        "dv": "एक प्रैक्टिस चैनल के बैनर पर लिखा है: '20 में से 18 कॉल का टारगेट हिट'। मेंटर के पूरे रिकॉर्ड में 25 कॉल हैं, सब स्टॉप के साथ: 18 का टारगेट हिट हुआ और 7 का स्टॉप, और उन 7 में से 5 पोस्ट डिलीट कर दी गईं। हर कॉल में स्टॉप एंट्री से 10% नीचे था और टारगेट 3% ऊपर। कॉस्ट से पहले, सभी 25 कॉल का कुल हिसाब क्या बनता है?"
+      },
+      "options": [
+        { "text": { "en": "A 72% hit-rate and a net loss of 1.6R", "hi": "72% hit-rate aur 1.6R ka net loss", "dv": "72% हिट-रेट और 1.6R का नेट लॉस" }, "correct": true },
+        { "text": { "en": "A 90% hit-rate and a net gain of 3.4R", "hi": "90% hit-rate aur 3.4R ka net gain", "dv": "90% हिट-रेट और 3.4R का नेट गेन" }, "correct": false },
+        { "text": { "en": "A 72% hit-rate and a net gain of 11R", "hi": "72% hit-rate aur 11R ka net gain", "dv": "72% हिट-रेट और 11R का नेट गेन" }, "correct": false },
+        { "text": { "en": "A 72% hit-rate and exactly breakeven, 0R", "hi": "72% hit-rate aur bilkul breakeven, yaani 0R", "dv": "72% हिट-रेट और बिल्कुल ब्रेकईवन, यानी 0R" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "Hit-rate counts every call that had a stop: 18 ÷ 25 = 72%. The banner's 18 of 20, or 90%, hides the 5 deleted losses; that is survivorship bias. Each win earns 3% ÷ 10% = +0.3R and each loss costs -1R, so over the 25 calls 18 x 0.3R - 7 x 1R = 5.4R - 7R = -1.6R. For a 1:0.3 payoff the breakeven win-rate is 1 ÷ 1.3, about 77%, so even 72% loses money before costs. +3.4R is the banner's view (18 wins, only 2 losses); +11R appears only if every win is counted as a full 1R.",
+        "hi": "Hit-rate har us call par ginte hain jismein stop tha: 18 ÷ 25 = 72%. Banner ka 20 mein se 18, yaani 90%, delete ki gayi 5 losing calls ko chhupa leta hai; yahi survivorship bias hai. Har jeet 3% ÷ 10% = +0.3R deti hai aur har haar -1R le jaati hai, toh 25 calls mein 18 x 0.3R - 7 x 1R = 5.4R - 7R = -1.6R. 1:0.3 payoff ka breakeven win-rate 1 ÷ 1.3, yaani lagbhag 77% hai, isliye 72% par bhi costs se pehle hi paisa jaata hai. +3.4R banner wali tasveer hai (18 jeet, sirf 2 haar); +11R tabhi aata hai jab har jeet ko poora 1R gin lein.",
+        "dv": "हिट-रेट हर उस कॉल पर गिनते हैं जिसमें स्टॉप था: 18 ÷ 25 = 72%। बैनर का 20 में से 18, यानी 90%, डिलीट की गई 5 घाटे वाली कॉल को छिपा लेता है; यही सर्वाइवरशिप बायस है। हर जीत 3% ÷ 10% = +0.3R देती है और हर हार -1R ले जाती है, तो 25 कॉल में 18 x 0.3R - 7 x 1R = 5.4R - 7R = -1.6R। 1:0.3 पेऑफ़ का ब्रेकईवन विन-रेट 1 ÷ 1.3, यानी लगभग 77% है, इसलिए 72% पर भी कॉस्ट से पहले ही पैसा जाता है। +3.4R बैनर वाली तस्वीर है (18 जीत, सिर्फ़ 2 हार); +11R तभी आता है जब हर जीत को पूरा 1R गिन लें।"
+      }
+    }
+  ]
+}
