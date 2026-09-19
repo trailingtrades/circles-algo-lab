@@ -1,11 +1,16 @@
 @import "tailwindcss";
 @import "../styles/tokens.css";
 @import "../styles/tailwind-theme.css";
-@import "../styles/winners.css"; /* CIRCLE W.I.N.N.E.R.S skin — must come last so its bridge wins the cascade */
+@import "../styles/winners.css"; /* CIRCLE W.I.N.N.E.R.S skin — after tokens.css so its bridge wins over the legacy tokens */
+@import "../styles/visuals.css"; /* teaching visuals (components/visuals); own class names only, so order does not matter */
+/* NB: everything in THIS file comes after the imports above, so at equal specificity a rule here
+   beats winners.css. Use the Winners tokens (--brand, --brand-ink, --brand-soft) here too. */
 
-/* ---- responsive foundations (responsive-dashboard-layout SKILL.md §2) ---- */
+/* ---- responsive foundations (responsive-dashboard-layout SKILL.md §2) ----
+   overflow-x: CLIP, not hidden. `hidden` on html/body turns body into a scroll container, and then
+   position:sticky (phone bottom nav, exam timer) scrolls away with the content instead of sticking. */
 *, *::before, *::after { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; max-width: 100%; overflow-x: hidden; }
+html, body { margin: 0; padding: 0; max-width: 100%; overflow-x: clip; }
 .grid > *, .flex > *, .lrn-shell > *, .lrn-main > * { min-width: 0; }
 body { font-family: var(--col-font-sans); }
 :focus-visible { outline: 2px solid var(--col-brand); outline-offset: 2px; }
@@ -14,61 +19,134 @@ body { font-family: var(--col-font-sans); }
 /* ---- app shell ---- */
 .lrn-shell { min-height: 100dvh; display: flex; flex-direction: column; }
 .lrn-body { display: flex; flex: 1 1 auto; min-height: 0; }
-.lrn-sidebar { display: none; width: 220px; flex: 0 0 220px; border-right: 1px solid var(--col-dark-border); padding: var(--col-space-4) var(--col-space-3); }
-.col-light .lrn-sidebar { border-color: var(--col-light-border); }
-.lrn-main { flex: 1 1 auto; min-width: 0; padding: var(--col-space-4); padding-bottom: calc(var(--col-space-6) + 64px); }
-.lrn-bottomnav { position: sticky; bottom: 0; display: flex; height: 64px; border-top: 1px solid var(--col-dark-border); background: var(--col-dark-base); padding-bottom: env(safe-area-inset-bottom); }
-.col-light .lrn-bottomnav { border-color: var(--col-light-border); background: var(--col-light-base); }
-@media (min-width: 768px) {
-  .lrn-sidebar { display: block; }
-  .lrn-bottomnav { display: none; }
-  .lrn-main { padding: var(--col-space-5); }
-}
-.lrn-nav-item { display: flex; align-items: center; gap: var(--col-space-3); min-height: 44px; padding: 0 var(--col-space-3); border-radius: var(--col-radius-inner); color: var(--col-dark-text-secondary); font-size: var(--col-text-body); text-decoration: none; }
-.col-light .lrn-nav-item { color: var(--col-light-text-secondary); }
-.lrn-nav-item[aria-current="page"] { color: var(--col-brand); background: rgba(0,174,239,.08); font-weight: 600; }
-.lrn-bottomnav .lrn-nav-item { flex: 1 1 0; flex-direction: column; justify-content: center; gap: 2px; font-size: var(--col-text-dense-sm); border-radius: 0; }
+.lrn-main { flex: 1 1 auto; min-width: 0; padding: var(--col-space-4) var(--col-space-4) var(--col-space-6); }
+@media (min-width: 768px) { .lrn-main { padding: var(--col-space-5); } }
 .lrn-grid { display: grid; gap: var(--col-space-4); grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
 
-/* ---- header ---- */
-.col-header { gap: var(--col-space-3); padding: 0 var(--col-space-4); }
-.lrn-brand { display: flex; align-items: center; gap: var(--col-space-2); min-width: 0; text-decoration: none; color: inherit; }
-.lrn-brand__name { font-weight: 700; font-size: var(--col-text-body); white-space: nowrap; }
-.lrn-brand__sub { font-family: var(--col-font-mono); font-size: var(--col-text-eyebrow-sm); color: var(--col-dark-text-tertiary); white-space: nowrap; }
-.col-light .lrn-brand__sub { color: var(--col-light-text-tertiary); }
-@media (max-width: 479px) { .lrn-brand__sub { display: none; } }
+/* ---- phone bottom nav + More sheet ----
+   Sticky at the end of the shell: it rides the bottom of the screen while scrolling and settles
+   below the footer at the end, so it never covers the disclaimer. Height grows by the notch inset
+   so the 44px targets keep their full height on iPhones. */
+.lrn-bottomnav { position: sticky; bottom: 0; z-index: 20; display: flex; height: calc(64px + env(safe-area-inset-bottom)); padding-bottom: env(safe-area-inset-bottom); border-top: 1px solid var(--col-dark-border); background: var(--col-dark-base); }
+.col-light .lrn-bottomnav { border-color: var(--col-light-border); background: var(--col-light-base); }
+@media (min-width: 768px) { .lrn-bottomnav { display: none; } }
+.lrn-nav-item { display: flex; align-items: center; gap: var(--col-space-3); min-height: 44px; padding: 0 var(--col-space-3); border-radius: var(--col-radius-inner); color: var(--col-dark-text-secondary); font-size: var(--col-text-body); text-decoration: none; }
+.col-light .lrn-nav-item { color: var(--col-light-text-secondary); }
+.lrn-nav-item[aria-current="page"], .lrn-nav-item[data-on] { color: var(--brand); background: var(--brand-soft); font-weight: 600; }
+.col-light .lrn-nav-item[aria-current="page"], .col-light .lrn-nav-item[data-on] { color: var(--col-navy); } /* brand cyan text fails on light; navy 8.5:1 */
+.lrn-bottomnav .lrn-nav-item { flex: 1 1 0; min-width: 0; flex-direction: column; justify-content: center; gap: 2px; padding: 0 2px; font-size: 12px; border-radius: 0; }
+.lrn-bottomnav .lrn-nav-item span { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lrn-bottomnav button.lrn-nav-item { appearance: none; background: transparent; border: 0; margin: 0; font-family: inherit; cursor: pointer; }
+.lrn-bottomnav button.lrn-nav-item[data-on] { background: var(--brand-soft); }
+.lrn-sheet { position: fixed; inset: auto 0 0 0; margin: 0; width: 100%; max-width: 100%; max-height: 85dvh; padding: 0; overflow: auto; border: 0; border-top: 1px solid var(--line); border-radius: 16px 16px 0 0; background: var(--panel); color: var(--ink); }
+.lrn-sheet::backdrop { background: rgb(5 6 8 / .6); }
+.lrn-sheet__in { padding: 12px 16px calc(16px + env(safe-area-inset-bottom)); }
+.lrn-sheet__head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.lrn-sheet__head h2 { margin: 0; font-size: 16px; font-weight: 700; }
+.lrn-sheet__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.lrn-sheet__item { display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 14px; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--bg-2); color: var(--ink); font-size: 14px; font-weight: 600; text-decoration: none; }
+.lrn-sheet__item span { min-width: 0; overflow-wrap: anywhere; }
+.lrn-sheet__item[aria-current="page"] { border-color: var(--brand); background: var(--brand-soft); }
+
+/* ---- header ----
+   Phone: one row, lockup left, controls right; the controls never shrink, the wordmark does.
+   Desktop (>=768): a two-row grid — lockup + controls, then the pill nav centred on its own row
+   (centred by the grid cell, so an overflowing bar still scrolls from its first pill). */
+.lrn-header { height: auto; min-height: 64px; padding: 8px 16px; }
+.lrn-hdr { display: flex; align-items: center; justify-content: space-between; gap: var(--col-space-3); }
+.lrn-brand { display: flex; align-items: center; gap: var(--col-space-2); flex: 1 1 auto; min-width: 0; text-decoration: none; color: inherit; }
+.lrn-brand__logo { display: inline-flex; flex: 0 0 auto; }
+.lrn-brand__logo img { width: 44px; height: 44px; }
+.lrn-brand__link { display: block; min-width: 0; text-decoration: none; color: inherit; }
+.lrn-brand__name { display: block; font-weight: 700; font-size: 21px; letter-spacing: .04em; line-height: 1.15; white-space: nowrap; overflow: hidden; }
+.lrn-hdr__ctl { display: flex; align-items: center; gap: var(--col-space-2); flex: 0 0 auto; }
+.lrn-hdr__ctl > * { flex: 0 0 auto; }
+@media (min-width: 768px) {
+  .lrn-hdr { display: grid; grid-template-columns: minmax(0, 1fr) auto; row-gap: 6px; }
+  .lrn-hdr .lrn-pillnav { grid-column: 1 / -1; grid-row: 2; justify-self: center; max-width: 100%; }
+}
+@media (max-width: 767px) { .lrn-student__name { display: none; } .lrn-student { padding-right: 2px; } }
+@media (max-width: 519px) {
+  .lrn-header { padding: 8px 12px; }
+  .lrn-hdr { gap: var(--col-space-2); }
+  .lrn-hdr__ctl { gap: 6px; }
+  .lrn-brand__logo img { width: 34px; height: 34px; }
+  .lrn-brand__name { font-size: clamp(14px, 4.2vw, 18px); letter-spacing: .02em; }
+  .lrn-brand__by { display: none; }
+  .lrn-iconbtn { width: 36px; height: 36px; }
+}
+@media (max-width: 399px) { .lrn-student, .lrn-langsel__ico { display: none; } }
+/* Language: the native <select> lies invisibly over the pill, which shows the current choice. */
+.lrn-langsel { position: relative; gap: 6px; padding: 0 10px 0 12px; }
+.lrn-langsel select { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; padding: 0; border: 0; opacity: 0; cursor: pointer; appearance: none; -webkit-appearance: none; font-size: 16px; }
+.lrn-langsel:focus-within { outline: 2px solid var(--brand); outline-offset: 2px; }
+.lrn-langsel option { color: #18232f; background: #fff; }
+.lrn-langsel__short { display: none; }
+@media (max-width: 639px) { .lrn-langsel__long { display: none; } .lrn-langsel__short { display: inline; } }
 .lrn-toggle { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 0 var(--col-space-2); border-radius: var(--col-radius-pill); border: 1px solid var(--col-dark-border); background: transparent; color: inherit; font-family: var(--col-font-mono); font-size: var(--col-text-dense); font-weight: 600; cursor: pointer; }
 .col-light .lrn-toggle { border-color: var(--col-light-border); }
 
-/* ---- compliance footer: never clamp, never hide ---- */
-.lrn-footer { border-top: 1px solid var(--col-dark-border); padding: var(--col-space-4); font-size: var(--col-text-dense); line-height: var(--col-line-body); color: var(--col-dark-text-secondary); overflow-wrap: anywhere; }
+/* ---- site footer (ComplianceFooter): never clamp, never hide ----
+   3 columns on desktop, 2 on tablets, stacked on phones (link lists wrap inline there so the
+   footer stays short). The disclaimer always spans the full width under the columns. */
+.lrn-footer { border-top: 1px solid var(--col-dark-border); padding: var(--col-space-6) var(--col-space-4) var(--col-space-5); font-size: var(--col-text-body-sm); line-height: 1.55; color: var(--col-dark-text-secondary); overflow-wrap: anywhere; }
 .col-light .lrn-footer { border-color: var(--col-light-border); color: var(--col-light-text-secondary); }
+.lrn-footer p { margin: 0; }
 .lrn-footer__cred { font-family: var(--col-font-mono); font-weight: 600; color: var(--col-dark-text-primary); margin-bottom: var(--col-space-2); }
 .col-light .lrn-footer__cred { color: var(--col-light-text-primary); }
-.lrn-footer p { margin: 0; }
+.lrn-foot { display: grid; gap: var(--col-space-5) var(--col-space-6); grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 560px) { .lrn-foot { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 960px) { .lrn-foot { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.lrn-foot__col { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.lrn-foot__h { margin: 0 0 2px; font-size: var(--col-text-eyebrow); font-weight: 600; letter-spacing: var(--col-tracking-eyebrow); text-transform: uppercase; color: var(--ink-3); }
+.lrn-foot__name { font-size: 15px; font-weight: 700; color: var(--ink); }
+.lrn-foot__note { display: block; }
+.lrn-foot__addr { display: flex; flex-direction: column; gap: 2px; font-style: normal; }
+.lrn-foot__addr + .lrn-foot__addr { margin-top: var(--col-space-2); }
+.lrn-foot__strong { font-weight: 600; color: var(--ink); }
+.lrn-foot__links { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+.lrn-foot__links--row { flex-direction: row; flex-wrap: wrap; column-gap: var(--col-space-4); }
+@media (max-width: 559px) { .lrn-foot__links { flex-direction: row; flex-wrap: wrap; column-gap: var(--col-space-4); } }
+.lrn-footer a { display: inline-block; padding: 3px 0; color: var(--ink); text-decoration: underline; text-decoration-color: var(--line-2); text-underline-offset: 3px; }
+.lrn-footer a:hover { color: var(--brand); text-decoration-color: currentColor; }
+.lrn-foot__disc { margin-top: var(--col-space-5); padding-top: var(--col-space-4); border-top: 1px solid var(--line); font-size: var(--col-text-dense); }
+.lrn-foot__base { margin-top: var(--col-space-3); font-size: var(--col-text-dense); color: var(--ink-3); }
+
+/* ---- margins that mt-* / mb-* must be able to override ----
+   Tailwind v4 utilities live in @layer utilities, and any unlayered rule beats any layered one, so a
+   margin set in the unlayered rules of this file silently cancels mt-* / mb-* on the same element.
+   Default margins for classes that are combined with margin utilities therefore sit in
+   @layer components (below utilities). Everything else in this file stays unlayered so it keeps
+   beating winners.css / tokens.css. .lrn-session__title / __sub and .lrn-list need no margin here:
+   preflight (@layer base) already zeroes it. */
+@layer components {
+  .lrn-title { margin: 0 0 var(--col-space-1); }
+  .lrn-notice, .lrn-error { margin: 0 0 12px; }
+}
 
 /* ---- components ---- */
 .lrn-ring { display: inline-block; }
 .lrn-ring__arc { transition: stroke-dashoffset var(--col-duration) var(--col-ease); }
 .lrn-session { display: flex; flex-direction: column; gap: var(--col-space-2); }
-.lrn-session__title { font-weight: 600; font-size: var(--col-text-body); margin: 0; }
-.lrn-session__sub { font-size: var(--col-text-body-sm); color: var(--col-dark-text-secondary); margin: 0; }
+.lrn-session__title { font-weight: 600; font-size: var(--col-text-body); }
+.lrn-session__sub { font-size: var(--col-text-body-sm); color: var(--col-dark-text-secondary); }
 .col-light .lrn-session__sub { color: var(--col-light-text-secondary); }
 .lrn-tags { display: flex; flex-wrap: wrap; gap: var(--col-space-1); }
 .lrn-num { font-family: var(--col-font-mono); font-variant-numeric: tabular-nums; }
-.lrn-title { font-size: var(--col-text-title); font-weight: 700; margin: 0 0 var(--col-space-1); line-height: var(--col-line-tight); }
+.lrn-title { font-size: var(--col-text-title); font-weight: 700; line-height: var(--col-line-tight); }
 .lrn-muted { color: var(--col-dark-text-secondary); }
 .col-light .lrn-muted { color: var(--col-light-text-secondary); }
-.lrn-virtual { display: inline-flex; align-items: center; gap: var(--col-space-1); border: 1px solid var(--col-warn, #f5a623); color: var(--col-warn, #f5a623); border-radius: var(--col-radius-pill); padding: 2px 8px; font-family: var(--col-font-mono); font-size: var(--col-text-eyebrow-sm); font-weight: 600; text-transform: uppercase; }
+/* One amber (--col-warn = the Winners --gold-text: 5:1 on white, AA on dark) instead of two golds. */
+.lrn-virtual { display: inline-flex; align-items: center; gap: var(--col-space-1); border: 1px solid var(--col-warn); color: var(--col-warn); border-radius: var(--col-radius-pill); padding: 2px 8px; font-family: var(--col-font-mono); font-size: var(--col-text-eyebrow-sm); font-weight: 600; letter-spacing: var(--col-tracking-eyebrow); text-transform: uppercase; }
 .lrn-login { max-width: 420px; margin: 0 auto; width: 100%; }
 .lrn-field { display: flex; flex-direction: column; gap: var(--col-space-1); margin-bottom: var(--col-space-3); }
 .lrn-field label { font-size: var(--col-text-body-sm); font-weight: 600; }
 .lrn-field .col-input { width: 100%; }
 
 /* ---- auth / forms ---- */
-.lrn-error { display: flex; gap: 6px; align-items: flex-start; color: var(--col-down-dark); font-size: var(--col-text-body-sm); margin: 0 0 12px; }
+.lrn-error { display: flex; gap: 6px; align-items: flex-start; color: var(--col-down-dark); font-size: var(--col-text-body-sm); }
 .col-light .lrn-error { color: var(--col-down-light); }
-.lrn-notice { display: flex; gap: 6px; align-items: flex-start; color: var(--col-brand); font-size: var(--col-text-body-sm); margin: 0 0 12px; }
+.lrn-notice { display: flex; gap: 6px; align-items: flex-start; color: var(--col-brand); font-size: var(--col-text-body-sm); }
 .col-light .lrn-notice { color: var(--col-button); }
 .lrn-link { color: var(--col-brand); text-decoration: underline; text-underline-offset: 2px; }
 .col-light .lrn-link { color: var(--col-button); }
@@ -88,7 +166,7 @@ select.col-input { padding-right: 28px; }
 .lrn-cardlink:focus-visible { outline: 2px solid var(--col-brand); outline-offset: 2px; border-radius: var(--col-radius-card); }
 .lrn-video { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: var(--col-radius-inner); overflow: hidden; background: #000; }
 .lrn-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.lrn-list { display: flex; flex-direction: column; gap: var(--col-space-3); margin: 0; padding: 0; list-style: none; }
+.lrn-list { display: flex; flex-direction: column; gap: var(--col-space-3); padding: 0; list-style: none; }
 .lrn-res { display: flex; align-items: center; justify-content: space-between; gap: var(--col-space-3); padding: var(--col-space-3); border: 1px solid var(--col-dark-border); flex-wrap: wrap; }
 .col-light .lrn-res { border-color: var(--col-light-border); }
 .lrn-prompt { border: 1px solid var(--col-dark-border); padding: var(--col-space-3); }
@@ -98,10 +176,13 @@ select.col-input { padding-right: 28px; }
 .lrn-quiz { display: flex; flex-direction: column; gap: var(--col-space-4); }
 .lrn-q { border: 1px solid var(--col-dark-border); padding: var(--col-space-3); margin: 0; min-width: 0; }
 .col-light .lrn-q { border-color: var(--col-light-border); }
-.lrn-q__stem { font-weight: 600; padding: 0 4px; }
+/* Floated so the legend sits inside the card: a normal legend straddles the fieldset's top border, which
+   left the first lines of any wrapped question outside the rounded card (quiz and exam runner). */
+.lrn-q__stem { font-weight: 600; float: left; width: 100%; padding: 0 4px; margin: 0 0 8px; }
+.lrn-q__stem + * { clear: both; }
 .lrn-opt { display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 4px 8px; border-radius: 6px; cursor: pointer; }
 .lrn-opt input { width: 18px; height: 18px; accent-color: var(--col-button); flex: 0 0 auto; }
-.lrn-opt--chosen { background: rgba(0,174,239,.08); }
+.lrn-opt--chosen { background: var(--brand-soft); }
 .lrn-opt--right { color: var(--col-up-dark); } .col-light .lrn-opt--right { color: var(--col-up-light-safe); }
 .lrn-opt--wrong { color: var(--col-down-dark); } .col-light .lrn-opt--wrong { color: var(--col-down-light); }
 .lrn-q__expl { font-size: var(--col-text-body-sm); margin: 8px 4px 0; color: var(--col-dark-text-secondary); }
@@ -129,23 +210,23 @@ select.col-input { padding-right: 28px; }
 .col-light .lrn-skel { background: #e2e7f0; }
 @keyframes lrn-pulse { 50% { opacity: .5; } }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-.lrn-skip { position: absolute; left: -999px; top: 8px; z-index: 50; background: var(--col-button); color: #fff; padding: 8px 14px; border-radius: 9999px; font-weight: 600; }
+/* --brand fill takes --brand-ink text: navy on the dark cyan, white on the light AA blue. Never white on cyan. */
+.lrn-skip { position: absolute; left: -999px; top: 8px; z-index: 50; background: var(--brand); color: var(--brand-ink); padding: 8px 14px; border-radius: 9999px; font-weight: 600; }
 .lrn-skip:focus { left: 8px; }
-.lrn-offline { display: flex; align-items: center; gap: 8px; padding: 8px 16px; background: rgba(245,166,35,.12); color: var(--col-warn, #f5a623); border-bottom: 1px solid rgba(245,166,35,.3); font-size: var(--col-text-body-sm); }
+.lrn-offline { display: flex; align-items: center; gap: 8px; padding: 8px 16px; background: var(--gold-soft); color: var(--col-warn); border-bottom: 1px solid var(--line); font-size: var(--col-text-body-sm); }
 
 /* ---- a11y fixes found by axe (light theme) ----
    tokens.css --col-light-text-tertiary (#8792a6) measures ~3.2:1 on the light ground: fine for decoration, fails AA for eyebrow text.
-   In light mode, text roles that used tertiary move to secondary (#4b5670, ~7:1). Active nav uses button blue (4.99:1), never brand cyan (2.53:1). */
-.col-light .col-eyebrow, .col-light .lrn-brand__sub, .col-light .lrn-dl dt { color: var(--col-light-text-secondary); }
-.col-light .lrn-nav-item[aria-current="page"] { color: var(--col-button); }
-.col-light .lrn-link { color: var(--col-button); }
-.col-light .lrn-nav-item[aria-current="page"] { color: var(--col-navy); background: rgba(19,74,154,.08); }
-.col-light .lrn-virtual { color: #7a4f00; border-color: #7a4f00; }   /* amber text fails AA on light; dark amber 7.5:1 */
+   In light mode, text roles that used tertiary move to secondary (#4b5670, ~7:1). */
+.col-light .col-eyebrow, .col-light .lrn-dl dt { color: var(--col-light-text-secondary); }
 
-/* Session · Learn tab topic blocks and Aaj Ka Kaam card (Curriculum v2). */
-.lrn-topics { display: grid; gap: var(--col-space-3); }
-.lrn-topic { padding: var(--col-space-4); }
-.lrn-topic__h { font-size: var(--col-text-h4, 16px); font-weight: 600; margin: 4px 0 6px; }
-.lrn-topic__p { margin: 0; line-height: 1.6; font-size: var(--col-text-body, 14px); }
-.lrn-kaam { border-color: var(--col-brand); }
-.lrn-kaam__p { margin: 8px 0 0; font-size: 16px; line-height: 1.6; font-weight: 500; }
+/* ---- three languages ----
+   IBM Plex Sans has no Devanagari glyphs; name the system Devanagari faces so हिंदी renders in
+   a good font on every platform (Android: Noto, Windows: Nirmala UI, Apple: Kohinoor) and give
+   the taller script a little more line height. data-lang is stamped by the root layout. */
+:root, [data-theme=dark], [data-theme=light] {
+  --ff: "IBM Plex Sans", "Noto Sans Devanagari", "Nirmala UI", "Kohinoor Devanagari", "Mangal", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  --col-font-sans: var(--ff);
+}
+html[data-lang="dv"] body { line-height: 1.7; }
+html[data-lang="dv"] .lrn-title, html[data-lang="dv"] h1, html[data-lang="dv"] h2, html[data-lang="dv"] h3 { line-height: 1.4; }

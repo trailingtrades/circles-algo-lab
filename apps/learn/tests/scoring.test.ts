@@ -70,6 +70,20 @@ async function main() {
     let d2 = false; try { await db.query("select award($1,$2,'exam',250,'exam',$3,'self')", [U(2), lvl, ref(99)]); } catch { d2 = true; }
     ok("student cannot call award()", d2);
   });
+  console.log("\n# Consistency board (0011): a weekly review counts once a week; the week starts Monday 00:00 IST");
+  // Written as the server would (superuser = service role here). U5 spams three one-line weekly reviews today;
+  // U6 writes one review plus a note just after Monday 00:00 IST and one just before it (last week).
+  const monIST = "date_trunc('week', now() at time zone 'Asia/Kolkata') at time zone 'Asia/Kolkata'";
+  for (let k = 0; k < 3; k++) await db.query("insert into journal_entries (user_id, kind, body) values ($1,'friday_review','Weekly review, one line.')", [U(5)]);
+  await db.query(`insert into journal_entries (user_id, kind, body, created_at) values ($1,'friday_review','Week review.',${monIST} + interval '1 hour'), ($1,'reflection','Monday note.',${monIST} + interval '30 minutes'), ($1,'reflection','Last Sunday night.',${monIST} - interval '1 hour')`, [U(6)]);
+  await as(U(5), async () => {
+    const me = (await db.query("select * from board_consistency()")).rows.find((x) => x.is_me);
+    ok("three weekly reviews on one day score 1 day + 2 (not 1 + 6)", Number(me?.value) === 3, String(me?.value));
+  });
+  await as(U(6), async () => {
+    const me = (await db.query("select * from board_consistency()")).rows.find((x) => x.is_me);
+    ok("entries after Monday 00:00 IST count this week, Sunday 23:00 IST does not", Number(me?.value) === 3, String(me?.value));
+  });
   const sql = (await db.query("select pg_get_functiondef('app.board_process(uuid)'::regprocedure) as d union all select pg_get_functiondef('app.board_consistency()'::regprocedure) union all select pg_get_functiondef('app.board_improved(uuid)'::regprocedure)")).rows.map((x) => x.d).join("\n");
   ok("no leaderboard SQL touches portfolio_rows / entry_price / qty (no P&L board can exist)", !/portfolio_rows|entry_price|qty/.test(sql));
   await db.end();

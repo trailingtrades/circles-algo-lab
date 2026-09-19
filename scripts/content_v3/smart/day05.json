@@ -1,0 +1,1101 @@
+{
+ "day": 5,
+ "title": {
+  "en": "Reading a chart: candles, timeframes and volume",
+  "hi": "Chart padhna: candles, timeframes aur volume",
+  "dv": "चार्ट पढ़ना: कैंडल, टाइमफ़्रेम और वॉल्यूम"
+ },
+ "tags": {
+  "concept": {
+   "en": "Charts, timeframes, candles and volume",
+   "hi": "Charts, timeframes, candles aur volume",
+   "dv": "चार्ट, टाइमफ़्रेम, कैंडल और वॉल्यूम"
+  },
+  "ai_lab": {
+   "en": "Chart screenshot cross-check: AI describes, you verify",
+   "hi": "Chart screenshot cross-check: AI describe kare, aap verify karein",
+   "dv": "चार्ट स्क्रीनशॉट क्रॉस-चेक: AI बताए, आप जाँचें"
+  },
+  "psychology": {
+   "en": "Seeing patterns everywhere",
+   "hi": "Har jagah pattern dikhna",
+   "dv": "हर जगह पैटर्न दिखना"
+  }
+ },
+ "strategy": null,
+ "duration_min": 60,
+ "story": {
+  "kind": "story",
+  "title": {
+   "en": "Five green candles",
+   "hi": "Paanch hari candles",
+   "dv": "पाँच हरी कैंडल"
+  },
+  "panels": [
+   {
+    "who": "narrator",
+    "say": {
+     "en": "Thursday, 10:30 pm. Aman posts a chart screenshot in the study group and tags the mentor.",
+     "hi": "Thursday, raat 10:30 baje. Aman study group mein ek chart ka screenshot daalta hai aur mentor ko tag karta hai.",
+     "dv": "गुरुवार, रात 10:30 बजे। अमन स्टडी ग्रुप में एक चार्ट का स्क्रीनशॉट डालता है और मेंटर को टैग करता है।"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "excited",
+    "say": {
+     "en": "Sir, look at Kiran Foods. Five green candles in a row, each one higher than the last. Something big is starting, isn't it? I want to get in first thing tomorrow.",
+     "hi": "Sir, Kiran Foods dekhiye. Lagataar paanch hari candles, har ek pichhli se upar. Kuch bada shuru ho raha hai na? Kal subah sabse pehle ghusne ka mann hai.",
+     "dv": "सर, Kiran Foods देखिए। लगातार पाँच हरी कैंडल, हर एक पिछली से ऊपर। कुछ बड़ा शुरू हो रहा है न? कल सुबह सबसे पहले घुसने का मन है।"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "thinking",
+    "say": {
+     "en": "Before we talk about 'big', tell me two things. What timeframe is this chart? And what do the volume bars under those candles look like?",
+     "hi": "'Bada' ki baat se pehle do cheezein bataiye. Yeh chart kis timeframe ka hai? Aur un candles ke neeche volume bars kaise dikh rahe hain?",
+     "dv": "'बड़े' की बात से पहले दो चीज़ें बताइए। यह चार्ट किस टाइमफ़्रेम का है? और उन कैंडल के नीचे वॉल्यूम बार कैसे दिख रहे हैं?"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "thinking",
+    "say": {
+     "en": "Timeframe... whatever the app opened. One minute, the corner says 5m. So those five candles are only 25 minutes?",
+     "hi": "Timeframe... jo app ne khola, wahi. Ek minute, corner mein 5m likha hai. Matlab yeh paanch candles sirf 25 minute ki hain?",
+     "dv": "टाइमफ़्रेम... जो ऐप ने खोला, वही। एक मिनट, कोने में 5m लिखा है। मतलब ये पाँच कैंडल सिर्फ़ 25 मिनट की हैं?"
+    }
+   },
+   {
+    "who": "priya",
+    "mood": "thinking",
+    "say": {
+     "en": "And sir, the volume bars under them are tiny, smaller than most of the day. Very few shares were changing hands then.",
+     "hi": "Aur sir, unke neeche volume bars bahut chhote hain, din ke zyadatar bars se bhi chhote. Us waqt bahut kam shares ka len-den ho raha tha.",
+     "dv": "और सर, उनके नीचे वॉल्यूम बार बहुत छोटे हैं, दिन के ज़्यादातर बार से भी छोटे। उस वक़्त बहुत कम शेयरों का लेन-देन हो रहा था।"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "happy",
+    "say": {
+     "en": "So it is a 25-minute wiggle on very low volume. Toss a coin all day and you will often see five heads in a row too. Today we learn to read what a chart actually shows. What it means comes after that.",
+     "hi": "Toh yeh kam volume par 25 minute ki ek chhoti si hilchal hai. Din bhar sikka uchhaaliye, toh lagataar paanch heads bhi aksar aa jaate hain. Aaj hum seekhenge ki chart asal mein kya dikha raha hai. Matlab uske baad nikalenge.",
+     "dv": "तो यह कम वॉल्यूम पर 25 मिनट की एक छोटी-सी हलचल है। दिन भर सिक्का उछालिए, तो लगातार पाँच बार चित भी अक्सर आ जाता है। आज हम सीखेंगे कि चार्ट असल में क्या दिखा रहा है। मतलब उसके बाद निकालेंगे।"
+    }
+   }
+  ],
+  "moral": {
+   "en": "Before you ask what a chart means, check what it shows: the timeframe, the candles and the volume.",
+   "hi": "Chart ka matlab poochhne se pehle dekhiye ki woh dikha kya raha hai: timeframe, candles aur volume.",
+   "dv": "चार्ट का मतलब पूछने से पहले देखिए कि वह दिखा क्या रहा है: टाइमफ़्रेम, कैंडल और वॉल्यूम।"
+  }
+ },
+ "topics": [
+  {
+   "h": {
+    "en": "Your free chart, and three ways to draw price",
+    "hi": "Aapka free chart, aur price dikhane ke teen tareeke",
+    "dv": "आपका फ़्री चार्ट, और भाव दिखाने के तीन तरीक़े"
+   },
+   "p": {
+    "en": "A price chart is a picture of the prices at which a share changed hands over time: the price scale runs up the right side, and time runs along the bottom. You do not need a broker account to see one: open tradingview.com in your phone browser, or its free app, search 'NIFTY' and pick the NIFTY 50 index from NSE. That free chart is enough to start, and the timeframe button (1D, 1W, 15m) sits near the top. A line chart joins each period's closing price: clean, but it hides everything that happened in between. A bar chart and a candlestick chart both show four prices for each period; the candle, with its coloured body, is the easiest to read, so we use it from today. For a chart covering many years, switch on the log scale (in TradingView, look for Log in the price-scale settings), so that a rise from Rs 100 to Rs 200 looks as big as one from Rs 1,000 to Rs 2,000: both are +100%.",
+    "hi": "Price chart ek tasveer hai jo dikhati hai ki waqt ke saath share kis price par bika: price ka scale right side par hota hai, aur time ka neeche. Chart dekhne ke liye broker account ki zaroorat nahi: phone ke browser mein tradingview.com ya uska free app kholiye, 'NIFTY' search kijiye aur NSE ka NIFTY 50 index chuniye. Shuruaat ke liye yahi free chart kaafi hai, aur timeframe ka button (1D, 1W, 15m) upar hi milta hai. Line chart har period ke closing price ko ek line se jod deta hai: saaf dikhta hai, lekin beech mein jo hua woh sab chhup jaata hai. Bar chart aur candlestick chart dono har period ke chaar prices dikhate hain; candle ki body rangeen hoti hai, isliye use padhna sabse aasaan hai, aur aaj se hum yahi use karenge. Kai saalon ka chart dekhna ho toh log scale on kar lijiye (TradingView mein price scale ki settings mein Log dhoondhiye), taaki Rs 100 se Rs 200 aur Rs 1,000 se Rs 2,000 ki chadhai ek jaisi dikhe: dono +100% hain.",
+    "dv": "प्राइस चार्ट एक तस्वीर है, जो दिखाती है कि वक़्त के साथ शेयर किस भाव पर बिका: भाव का स्केल दाईं तरफ़ होता है, और समय का नीचे। चार्ट देखने के लिए ब्रोकर अकाउंट की ज़रूरत नहीं: फ़ोन के ब्राउज़र में tradingview.com या उसका फ़्री ऐप खोलिए, 'NIFTY' सर्च कीजिए और NSE का NIFTY 50 इंडेक्स चुनिए। शुरुआत के लिए यही फ़्री चार्ट काफ़ी है, और टाइमफ़्रेम का बटन (1D, 1W, 15m) ऊपर ही मिलता है। लाइन चार्ट हर पीरियड के क्लोज़िंग भाव को एक लाइन से जोड़ देता है: साफ़ दिखता है, लेकिन बीच में जो हुआ, वह सब छिप जाता है। बार चार्ट और कैंडलस्टिक चार्ट, दोनों हर पीरियड के चार भाव दिखाते हैं; कैंडल की बॉडी रंगीन होती है, इसलिए उसे पढ़ना सबसे आसान है, और आज से हम यही इस्तेमाल करेंगे। कई सालों का चार्ट देखना हो, तो लॉग स्केल चालू कर लें (TradingView में प्राइस स्केल की सेटिंग में Log ढूँढिए), ताकि Rs 100 से Rs 200 और Rs 1,000 से Rs 2,000 की चढ़ाई एक जैसी दिखे: दोनों +100% हैं।"
+   },
+   "example": {
+    "en": "On Monday, Anand Snacks Ltd closed at Rs 412, up from Rs 400 on Friday. A line chart shows just that: one point at Rs 412, joined to Friday's Rs 400. The candle for the same day tells you much more: it opened at Rs 402, ran up to Rs 425 by 11 am, fell to Rs 398 after lunch and closed at Rs 412. Anyone who bought at Rs 425 is still sitting on a loss of Rs 13 a share, though the line looks perfectly calm.",
+    "hi": "Monday ko Anand Snacks Ltd Rs 412 par band hua, Friday ke Rs 400 se upar. Line chart bas itna hi dikhata hai: Rs 412 par ek point, jo Friday ke Rs 400 se juda hai. Usi din ki candle kahin zyada batati hai: share Rs 402 par khula, 11 baje tak Rs 425 tak chadh gaya, lunch ke baad Rs 398 tak gir gaya, aur Rs 412 par band hua. Jisne Rs 425 par khareeda, woh abhi bhi har share par Rs 13 ke loss mein baitha hai, jabki line bilkul shaant dikhti hai.",
+    "dv": "सोमवार को Anand Snacks Ltd Rs 412 पर बंद हुआ, शुक्रवार के Rs 400 से ऊपर। लाइन चार्ट बस इतना ही दिखाता है: Rs 412 पर एक बिंदु, जो शुक्रवार के Rs 400 से जुड़ा है। उसी दिन की कैंडल कहीं ज़्यादा बताती है: शेयर Rs 402 पर खुला, 11 बजे तक Rs 425 तक चढ़ गया, लंच के बाद Rs 398 तक गिर गया, और Rs 412 पर बंद हुआ। जिसने Rs 425 पर ख़रीदा, वह अब भी हर शेयर पर Rs 13 के घाटे में बैठा है, जबकि लाइन बिल्कुल शांत दिखती है।"
+   },
+   "remember": {
+    "en": "Line for a quick look, candles for real reading. Any free chart will do; no broker account needed.",
+    "hi": "Jaldi nazar ke liye line, asli padhai ke liye candles. Koi bhi free chart chalega; broker account ki zaroorat nahi.",
+    "dv": "सरसरी नज़र के लिए लाइन, असली पढ़ाई के लिए कैंडल। कोई भी फ़्री चार्ट चलेगा; ब्रोकर अकाउंट की ज़रूरत नहीं।"
+   },
+   "visual": {
+    "kind": "compare",
+    "title": {
+     "en": "Same prices, three pictures",
+     "hi": "Ek hi prices, teen tasveerein",
+     "dv": "एक ही भाव, तीन तस्वीरें"
+    },
+    "caption": {
+     "en": "All three are drawn from the same data. Only the picture changes.",
+     "hi": "Teeno ek hi data se bane hain. Sirf tasveer badalti hai.",
+     "dv": "तीनों एक ही डेटा से बने हैं। सिर्फ़ तस्वीर बदलती है।"
+    },
+    "cols": [
+     {
+      "head": {
+       "en": "Line chart",
+       "hi": "Line chart",
+       "dv": "लाइन चार्ट"
+      },
+      "tone": "muted",
+      "points": [
+       {
+        "en": "Joins closing prices",
+        "hi": "Closing prices ko jodta hai",
+        "dv": "क्लोज़िंग भावों को जोड़ता है"
+       },
+       {
+        "en": "Quick look over long periods",
+        "hi": "Lambe samay par ek nazar ke liye",
+        "dv": "लंबे समय पर एक नज़र के लिए"
+       },
+       {
+        "en": "Hides open, high and low",
+        "hi": "Open, high, low chhupa leta hai",
+        "dv": "ओपन, हाई, लो छिपा लेता है"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "Bar chart",
+       "hi": "Bar chart",
+       "dv": "बार चार्ट"
+      },
+      "tone": "gold",
+      "points": [
+       {
+        "en": "Open, high, low, close",
+        "hi": "Open, high, low, close",
+        "dv": "ओपन, हाई, लो, क्लोज़"
+       },
+       {
+        "en": "Open tick left, close tick right",
+        "hi": "Open ka tick left, close ka right",
+        "dv": "ओपन का निशान बाएँ, क्लोज़ का दाएँ"
+       },
+       {
+        "en": "Harder to read at a glance",
+        "hi": "Ek nazar mein padhna mushkil",
+        "dv": "एक नज़र में पढ़ना मुश्किल"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "Candlestick",
+       "hi": "Candlestick",
+       "dv": "कैंडलस्टिक"
+      },
+      "tone": "up",
+      "points": [
+       {
+        "en": "Same four prices as a bar",
+        "hi": "Bar wale hi chaar prices",
+        "dv": "बार वाले ही चार भाव"
+       },
+       {
+        "en": "Body coloured green or red",
+        "hi": "Body hari ya laal",
+        "dv": "बॉडी हरी या लाल"
+       },
+       {
+        "en": "Easiest to read: our default",
+        "hi": "Padhne mein sabse aasaan: humara default",
+        "dv": "पढ़ने में सबसे आसान: हमारा डिफ़ॉल्ट"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "One candle, four prices",
+    "hi": "Ek candle, chaar prices",
+    "dv": "एक कैंडल, चार भाव"
+   },
+   "p": {
+    "en": "Every candle records four prices for its period, called OHLC: open (the first trade), high (the highest trade), low (the lowest trade) and close (the last trade). One exception on daily charts: on NSE the day's open is usually set in the 9:00-9:15 pre-open session, and the official close is worked out by the exchange at the end of the day (for stocks that also trade in F&O, through a closing auction that starts at 3:15 pm), not simply the last trade. So the daily open and close can differ a little from the first 5-minute candle's open and the last one's close; check the NSE site for the current method. The thick body runs from the open to the close, and the thin wicks, also called shadows, reach up to the high and down to the low. A green candle closed above its own open, and a red candle closed below its own open. Colour compares the close with the open of the same candle, not with yesterday's close, so a green candle can still be a down day.",
+    "hi": "Har candle apne period ke chaar prices record karti hai, jinhe OHLC kehte hain: open (pehla trade), high (sabse ooncha trade), low (sabse neecha trade) aur close (aakhri trade). Daily chart par ek chhoti si baat: NSE par din ka open aam taur par 9:00-9:15 ke pre-open session mein tay hota hai, aur official close exchange din ke aakhir mein khud nikaalta hai (jo shares F&O mein bhi trade hote hain, unka 3:15 baje shuru hone wale closing auction se); yeh sirf aakhri trade ka price nahi hota. Isliye daily open aur close, pehli 5-minute candle ke open aur aakhri candle ke close se thoda alag ho sakte hain; latest tareeka NSE ki site par check kar lijiye. Moti wali body open se close tak jaati hai, aur uske upar-neeche ki patli lines, jinhe wick ya shadow kehte hain, upar high tak aur neeche low tak pahunchti hain. Hari candle ka matlab hai close apne hi open se upar hua, aur laal candle ka matlab close apne open se neeche hua. Rang tay karne ke liye close ko usi candle ke open se milaya jaata hai, kal ke close se nahi, isliye hari candle ke baawajood share us din neeche ho sakta hai.",
+    "dv": "हर कैंडल अपने पीरियड के चार भाव दर्ज करती है, जिन्हें OHLC कहते हैं: ओपन (पहला ट्रेड), हाई (सबसे ऊँचा ट्रेड), लो (सबसे नीचा ट्रेड) और क्लोज़ (आख़िरी ट्रेड)। डेली चार्ट पर एक छोटी-सी बात: NSE पर दिन का ओपन आम तौर पर 9:00-9:15 के प्री-ओपन सेशन में तय होता है, और ऑफ़िशियल क्लोज़ एक्सचेंज दिन के आख़िर में ख़ुद निकालता है (जो शेयर F&O में भी ट्रेड होते हैं, उनका 3:15 बजे शुरू होने वाले क्लोज़िंग ऑक्शन से); यह सिर्फ़ आख़िरी ट्रेड का भाव नहीं होता। इसलिए डेली ओपन और क्लोज़, पहली 5-मिनट कैंडल के ओपन और आख़िरी कैंडल के क्लोज़ से थोड़े अलग हो सकते हैं; ताज़ा तरीक़ा NSE की साइट पर देख लें। मोटा हिस्सा, यानी बॉडी, ओपन से क्लोज़ तक जाता है, और उसके ऊपर-नीचे की पतली लाइनें, जो विक (बत्ती) या शैडो कहलाती हैं, ऊपर हाई तक और नीचे लो तक पहुँचती हैं। हरी कैंडल का मतलब है क्लोज़ अपने ही ओपन से ऊपर हुआ, और लाल कैंडल का मतलब क्लोज़ अपने ओपन से नीचे हुआ। रंग तय करने के लिए क्लोज़ को उसी कैंडल के ओपन से मिलाया जाता है, कल के क्लोज़ से नहीं, इसलिए हरी कैंडल के बावजूद शेयर उस दिन नीचे हो सकता है।"
+   },
+   "example": {
+    "en": "Bharat Pumps Ltd closed at Rs 500 yesterday. Today it opens at Rs 480 after weak news, dips to Rs 474, recovers to a high of Rs 494 and closes at Rs 490. The candle is green, because Rs 490 is above today's open of Rs 480. Yet your app shows the stock down Rs 10, or 2%, because it compares with yesterday's Rs 500. Both are true; they simply answer different questions. One more check: some apps draw hollow and filled bodies instead of green and red, so see what your app's colours mean.",
+    "hi": "Bharat Pumps Ltd kal Rs 500 par band hua. Aaj ek kamzor khabar ke baad woh Rs 480 par khulta hai, Rs 474 tak gir jaata hai, phir sambhal kar Rs 494 ka high banata hai aur Rs 490 par band hota hai. Candle hari hai, kyunki Rs 490 aaj ke open Rs 480 se upar hai. Phir bhi aapka app share ko Rs 10 yaani 2% neeche dikhata hai, kyunki woh kal ke Rs 500 se milata hai. Dono baatein sach hain; bas dono alag-alag sawaal ka jawab hain. Ek aur baat: kuch apps hari-laal ki jagah khokhli aur bhari body dikhate hain, isliye check kar lijiye ki aapke app ke rang ka matlab kya hai.",
+    "dv": "Bharat Pumps Ltd कल Rs 500 पर बंद हुआ। आज एक कमज़ोर ख़बर के बाद वह Rs 480 पर खुलता है, Rs 474 तक गिर जाता है, फिर सँभलकर Rs 494 का हाई बनाता है और Rs 490 पर बंद होता है। कैंडल हरी है, क्योंकि Rs 490 आज के ओपन Rs 480 से ऊपर है। फिर भी आपका ऐप शेयर को Rs 10 यानी 2% नीचे दिखाता है, क्योंकि वह कल के Rs 500 से मिलाता है। दोनों बातें सच हैं; बस दोनों अलग-अलग सवालों के जवाब हैं। एक और बात: कुछ ऐप हरी-लाल की जगह खोखली और भरी हुई बॉडी दिखाते हैं, इसलिए देख लें कि आपके ऐप के रंगों का मतलब क्या है।"
+   },
+   "remember": {
+    "en": "Green or red compares the close with its own open. Up or down for the day compares with yesterday's close.",
+    "hi": "Hara ya laal: close ko apne open se milaiye. Din mein up ya down: kal ke close se.",
+    "dv": "हरा या लाल: क्लोज़ को अपने ओपन से मिलाइए। दिन में ऊपर या नीचे: कल के क्लोज़ से।"
+   },
+   "visual": {
+    "kind": "candles",
+    "title": {
+     "en": "Inside one candle",
+     "hi": "Ek candle ke andar",
+     "dv": "एक कैंडल के अंदर"
+    },
+    "caption": {
+     "en": "Green, because the close (Rs 490) is above the open (Rs 480), even though the stock is down from yesterday's Rs 500.",
+     "hi": "Hari, kyunki close (Rs 490) open (Rs 480) se upar hai, bhale hi share kal ke Rs 500 se neeche ho.",
+     "dv": "हरी, क्योंकि क्लोज़ (Rs 490) ओपन (Rs 480) से ऊपर है, भले ही शेयर कल के Rs 500 से नीचे हो।"
+    },
+    "bars": [
+     [480, 494, 474, 490]
+    ],
+    "anatomy": true
+   }
+  },
+  {
+   "h": {
+    "en": "Timeframes: the zoom button of a chart",
+    "hi": "Timeframe: chart ka zoom button",
+    "dv": "टाइमफ़्रेम: चार्ट का ज़ूम बटन"
+   },
+   "p": {
+    "en": "A timeframe is how much time one candle covers: on a daily chart one candle is one session, and on a 15-minute chart a normal session makes 25 candles. A bigger candle is simply the smaller ones joined: the first open, the highest high, the lowest low and the last close. Switching timeframes is like zooming on Google Maps: weekly is the country, daily is the city, 15-minute is your street. The higher timeframe shows the big picture; the lower one shows detail and a lot of noise, meaning small random moves. Read the direction on the higher timeframe and the timing on the lower one, never the other way round. A swing trader, who holds for days or weeks, reads the weekly and daily charts; an intraday trader, who exits the same day, reads the daily and 15-minute charts.",
+    "hi": "Timeframe ka matlab hai ek candle kitne waqt ki hai: daily chart par ek candle ek trading session hai, aur 15-minute chart par ek normal session mein 25 candles ban jaati hain. Badi candle bas chhoti candles ko jod kar banti hai: pehla open, sabse ooncha high, sabse neecha low aur aakhri close. Timeframe badalna Google Maps par zoom karne jaisa hai: weekly poora desh hai, daily aapka shehar, aur 15-minute aapki gali. Higher timeframe big picture dikhata hai; lower timeframe detail dikhata hai, aur saath mein bahut saara noise, yaani chhote-mote random moves. Direction higher timeframe par padhiye aur timing lower par, ulta kabhi nahi. Swing trader, jo trade dinon ya hafton tak rakhta hai, weekly aur daily chart dekhta hai; intraday trader, jo usi din exit kar leta hai, daily aur 15-minute chart dekhta hai.",
+    "dv": "टाइमफ़्रेम का मतलब है कि एक कैंडल कितने वक़्त की है: डेली चार्ट पर एक कैंडल एक ट्रेडिंग सेशन है, और 15-मिनट चार्ट पर एक आम सेशन में 25 कैंडल बन जाती हैं। बड़ी कैंडल बस छोटी कैंडलों को जोड़कर बनती है: पहला ओपन, सबसे ऊँचा हाई, सबसे नीचा लो और आख़िरी क्लोज़। टाइमफ़्रेम बदलना Google Maps पर ज़ूम करने जैसा है: वीकली पूरा देश है, डेली आपका शहर, और 15-मिनट आपकी गली। बड़ा टाइमफ़्रेम बड़ी तस्वीर दिखाता है; छोटा टाइमफ़्रेम बारीकी दिखाता है, और साथ में बहुत सारा नॉइज़, यानी छोटी-मोटी रैंडम हलचल। दिशा बड़े टाइमफ़्रेम पर पढ़िए और टाइमिंग छोटे पर, उल्टा कभी नहीं। स्विंग ट्रेडर, जो ट्रेड कई दिन या हफ़्ते रखता है, वीकली और डेली चार्ट देखता है; इंट्राडे ट्रेडर, जो उसी दिन निकल जाता है, डेली और 15-मिनट चार्ट देखता है।"
+   },
+   "example": {
+    "en": "Priya's habit: before she opens a 15-minute chart, she writes one line from the daily chart, such as 'Daily: NIFTY 50 has risen through most of this month.' Then, in the last hour today, say NIFTY 50 falls from 24,300 to 24,180: 120 points of red 15-minute candles that look scary up close. That fall is only about 0.49% (120 ÷ 24,300 x 100); on the daily chart it is just part of one candle, a small wiggle in the bigger picture. Her one line stops her from mistaking a wiggle for a new story.",
+    "hi": "Priya ki aadat hai: 15-minute chart kholne se pehle woh daily chart se ek line likh leti hai, jaise 'Daily: NIFTY 50 is mahine zyadatar upar gaya hai.' Phir maan lijiye aaj aakhri ghante mein NIFTY 50 gir kar 24,300 se 24,180 par aa jaata hai: 15-minute ki laal candles mein 120 points, jo paas se kaafi darawni lagti hain. Yeh girawat sirf lagbhag 0.49% hai (120 ÷ 24,300 x 100); daily chart par yeh ek hi candle ka chhota sa hissa hai, badi tasveer mein ek chhoti si hilchal. Woh ek line use hilchal ko nayi kahani samajhne se bacha leti hai.",
+    "dv": "प्रिया की आदत है: 15-मिनट चार्ट खोलने से पहले वह डेली चार्ट से एक लाइन लिख लेती है, जैसे 'डेली: NIFTY 50 इस महीने ज़्यादातर ऊपर गया है।' फिर मान लीजिए आज आख़िरी घंटे में NIFTY 50 गिरकर 24,300 से 24,180 पर आ जाता है: 15-मिनट की लाल कैंडल में 120 पॉइंट, जो पास से काफ़ी डरावनी लगती हैं। यह गिरावट सिर्फ़ लगभग 0.49% है (120 ÷ 24,300 x 100); डेली चार्ट पर यह एक ही कैंडल का छोटा-सा हिस्सा है, बड़ी तस्वीर में एक छोटी-सी हलचल। वह एक लाइन उसे हलचल को नई कहानी समझने से बचा लेती है।"
+   },
+   "remember": {
+    "en": "Plan on the bigger candle, time on the smaller one.",
+    "hi": "Plan badi candle par, timing chhoti par.",
+    "dv": "प्लान बड़ी कैंडल पर, टाइमिंग छोटी पर।"
+   },
+   "visual": {
+    "kind": "steps",
+    "title": {
+     "en": "Zooming in, one step at a time",
+     "hi": "Ek-ek step karke zoom in",
+     "dv": "एक-एक क़दम ज़ूम इन"
+    },
+    "caption": {
+     "en": "A normal 9:15-3:30 session is 375 minutes: 375 ÷ 15 = 25 candles, 375 ÷ 5 = 75. Stocks that also trade in F&O stop regular trading at 3:15 pm and close by auction, so their last candles can differ.",
+     "hi": "9:15 se 3:30 ka normal session 375 minute ka hota hai: 375 ÷ 15 = 25 candles, 375 ÷ 5 = 75. Jo shares F&O mein bhi trade hote hain, unki regular trading 3:15 baje ruk jaati hai aur close auction se tay hota hai, isliye unki aakhri candles alag dikh sakti hain.",
+     "dv": "9:15 से 3:30 का आम सेशन 375 मिनट का होता है: 375 ÷ 15 = 25 कैंडल, 375 ÷ 5 = 75। जो शेयर F&O में भी ट्रेड होते हैं, उनकी रेगुलर ट्रेडिंग 3:15 बजे रुक जाती है और क्लोज़ ऑक्शन से तय होता है, इसलिए उनकी आख़िरी कैंडल अलग दिख सकती हैं।"
+    },
+    "items": [
+     {
+      "tag": "1W",
+      "label": {
+       "en": "Weekly",
+       "hi": "Weekly",
+       "dv": "वीकली"
+      },
+      "sub": {
+       "en": "1 candle = 1 week. The big picture.",
+       "hi": "1 candle = 1 hafta. Big picture.",
+       "dv": "1 कैंडल = 1 हफ़्ता। बड़ी तस्वीर।"
+      }
+     },
+     {
+      "tag": "1D",
+      "label": {
+       "en": "Daily",
+       "hi": "Daily",
+       "dv": "डेली"
+      },
+      "sub": {
+       "en": "1 candle = 1 session. Swing decisions.",
+       "hi": "1 candle = 1 session. Swing ke faisle.",
+       "dv": "1 कैंडल = 1 सेशन। स्विंग के फ़ैसले।"
+      }
+     },
+     {
+      "tag": "15m",
+      "label": {
+       "en": "15-minute",
+       "hi": "15-minute",
+       "dv": "15-मिनट"
+      },
+      "sub": {
+       "en": "25 candles a day. Intraday timing.",
+       "hi": "Din mein 25 candles. Intraday timing.",
+       "dv": "दिन में 25 कैंडल। इंट्राडे टाइमिंग।"
+      }
+     },
+     {
+      "tag": "5m",
+      "label": {
+       "en": "5-minute",
+       "hi": "5-minute",
+       "dv": "5-मिनट"
+      },
+      "sub": {
+       "en": "75 candles a day. Mostly noise for beginners. Never plan a swing trade here.",
+       "hi": "Din mein 75 candles. Beginners ke liye zyadatar noise. Swing trade yahan se kabhi plan mat kijiye.",
+       "dv": "दिन में 75 कैंडल। नए लोगों के लिए ज़्यादातर नॉइज़। स्विंग ट्रेड यहाँ से कभी प्लान न करें।"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Volume: how many shares changed hands",
+    "hi": "Volume: kitne shares ka len-den hua",
+    "dv": "वॉल्यूम: कितने शेयरों का लेन-देन हुआ"
+   },
+   "p": {
+    "en": "Volume is the number of shares traded during a candle's period, and charts show it as bars under the price. Every share bought was sold by someone, so each share traded is counted once; volume has no side. Many apps simply give the volume bar the candle's colour, a few colour it against the previous close, and either way green is about price, not proof that buyers outnumbered sellers. To judge whether volume is high, compare it with the average volume, usually of the last 20 sessions; today's volume divided by that average is called relative volume. Volume counts shares, not people: one big fund can make a tall bar on its own. Shares with low volume also tend to have wider bid-ask spreads, as you saw on Day 2.",
+    "hi": "Volume ka matlab hai ek candle ke period mein kitne shares trade hue, aur chart par yeh price ke neeche bars ki shakal mein dikhta hai. Har khareede gaye share ko kisi ne becha bhi hai, isliye har share ek hi baar gina jaata hai; volume ki koi side nahi hoti. Kai apps volume bar ko bas candle ka rang de dete hain, kuch pichhle close se milakar rangte hain, aur dono haalat mein hara bar price ki baat hai, is baat ka saboot nahi ki buyers sellers se zyada the. Volume zyada hai ya kam, yeh jaanne ke liye use average volume se milaiye, aam taur par pichhle 20 sessions ke average se; aaj ke volume ko us average se divide kijiye, toh jo number aata hai use relative volume kehte hain. Volume shares ginta hai, log nahi: akela ek bada fund bhi ooncha bar bana sakta hai. Kam volume wale shares mein bid-ask spread bhi aksar chauda hota hai, jaisa aapne Day 2 mein dekha.",
+    "dv": "वॉल्यूम का मतलब है कि एक कैंडल के पीरियड में कितने शेयर ट्रेड हुए, और चार्ट पर यह भाव के नीचे बार की शक्ल में दिखता है। हर ख़रीदे गए शेयर को किसी ने बेचा भी है, इसलिए हर शेयर एक ही बार गिना जाता है; वॉल्यूम की कोई साइड नहीं होती। कई ऐप वॉल्यूम बार को बस कैंडल का रंग दे देते हैं, कुछ पिछले क्लोज़ से मिलाकर रंगते हैं, और दोनों हालत में हरा बार भाव की बात है, इस बात का सबूत नहीं कि ख़रीदार बेचने वालों से ज़्यादा थे। वॉल्यूम ज़्यादा है या कम, यह जानने के लिए उसे एवरेज वॉल्यूम से मिलाइए, आम तौर पर पिछले 20 सेशन के एवरेज से; आज के वॉल्यूम को उस एवरेज से भाग दीजिए, तो जो नंबर आता है उसे रिलेटिव वॉल्यूम कहते हैं। वॉल्यूम शेयर गिनता है, लोग नहीं: अकेला एक बड़ा फ़ंड भी ऊँचा बार बना सकता है। कम वॉल्यूम वाले शेयरों में बिड-आस्क स्प्रेड भी अक्सर चौड़ा होता है, जैसा आपने दिन 2 में देखा।"
+   },
+   "example": {
+    "en": "Kiran Foods Ltd trades about 2,00,000 shares on a normal day; that is its 20-day average volume. Today it rises from Rs 300 to Rs 318 (+6%), and 6,40,000 shares change hands. Relative volume = 6,40,000 ÷ 2,00,000 = 3.2 times. Far more shares than usual changed hands in this move. What that means for a trade depends on where on the chart it happened, and that is Day 6's lesson.",
+    "hi": "Kiran Foods Ltd mein ek normal din lagbhag 2,00,000 shares trade hote hain; yahi uska 20-day average volume hai. Aaj share Rs 300 se Rs 318 par pahunch jaata hai (+6%), aur 6,40,000 shares ka len-den hota hai. Relative volume = 6,40,000 ÷ 2,00,000 = 3.2 guna. Matlab is move mein aam din se kahin zyada shares ka len-den hua. Trade ke liye iska kya matlab hai, yeh is baat par depend karta hai ki move chart par kahan hua, aur yahi Day 6 ka lesson hai.",
+    "dv": "Kiran Foods Ltd में एक आम दिन लगभग 2,00,000 शेयर ट्रेड होते हैं; यही उसका 20 दिन का एवरेज वॉल्यूम है। आज शेयर Rs 300 से Rs 318 पर पहुँच जाता है (+6%), और 6,40,000 शेयरों का लेन-देन होता है। रिलेटिव वॉल्यूम = 6,40,000 ÷ 2,00,000 = 3.2 गुना। मतलब इस चाल में आम दिन से कहीं ज़्यादा शेयरों का लेन-देन हुआ। ट्रेड के लिए इसका क्या मतलब है, यह इस बात पर निर्भर है कि चाल चार्ट पर कहाँ हुई, और यही दिन 6 का सबक़ है।"
+   },
+   "remember": {
+    "en": "Volume has no side. Call it big or small only after comparing it with its average.",
+    "hi": "Volume ki koi side nahi hoti. Use bada ya chhota tabhi kahiye jab average se mila lein.",
+    "dv": "वॉल्यूम की कोई साइड नहीं होती। उसे बड़ा या छोटा तभी कहिए, जब एवरेज से मिला लें।"
+   },
+   "visual": {
+    "kind": "candles",
+    "title": {
+     "en": "Same stock, one very different day",
+     "hi": "Wahi stock, ek bilkul alag din",
+     "dv": "वही स्टॉक, एक बिल्कुल अलग दिन"
+    },
+    "caption": {
+     "en": "Bars under the price show volume. The last day traded 6,40,000 shares against a 20-day average of 2,00,000.",
+     "hi": "Price ke neeche wale bars volume hain. Aakhri din 6,40,000 shares trade hue, jabki 20-day average 2,00,000 hai.",
+     "dv": "भाव के नीचे वाले बार वॉल्यूम हैं। आख़िरी दिन 6,40,000 शेयर ट्रेड हुए, जबकि 20 दिन का एवरेज 2,00,000 है।"
+    },
+    "bars": [
+     [296, 299, 293, 297],
+     [297, 300, 294, 295],
+     [295, 298, 292, 297],
+     [297, 302, 296, 300],
+     [300, 301, 296, 298],
+     [298, 300, 295, 296],
+     [296, 301, 295, 300],
+     [300, 302, 297, 298],
+     [298, 301, 296, 300],
+     [301, 320, 299, 318]
+    ],
+    "volume": [190, 215, 180, 220, 205, 175, 225, 195, 195, 640],
+    "marks": [
+     {
+      "i": 9,
+      "label": {
+       "en": "3.2x volume",
+       "hi": "3.2x volume",
+       "dv": "3.2x वॉल्यूम"
+      },
+      "tone": "gold",
+      "at": "high"
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Adjusted prices: the crash that never happened",
+    "hi": "Adjusted prices: woh crash jo hua hi nahi",
+    "dv": "एडजस्टेड भाव: वह क्रैश जो हुआ ही नहीं"
+   },
+   "p": {
+    "en": "Sometimes a share's price changes overnight and nobody loses a rupee. In a stock split each share becomes two or more, so the price falls in the same proportion; in a bonus issue holders get free extra shares, and the price adjusts the same way. Your holding is worth the same, but a raw (unadjusted) price chart shows a sudden cliff. That is why most charting sites show adjusted prices: they rescale all older prices so the chart stays comparable, and some can also adjust for dividends. Company decisions like these are called corporate actions, and the NSE website lists them for every company listed there. Before you believe any sudden crash or jump on a chart, check that list; Day 15 covers corporate actions in detail.",
+    "hi": "Kabhi-kabhi share ka price raaton-raat badal jaata hai, aur kisi ka ek rupaya bhi nahi doobta. Stock split mein har share do ya zyada shares ban jaata hai, isliye price usi hisaab se gir jaata hai; bonus issue mein shareholders ko free mein extra shares milte hain, aur price bhi usi tarah adjust ho jaata hai. Aapki holding ki value wahi rehti hai, lekin raw, yaani bina adjust kiye, price chart par achanak ek khaai dikhti hai. Isiliye zyadatar charting sites adjusted prices dikhati hain: woh saare purane prices ko rescale kar deti hain taaki purane aur naye prices ek hi paimaane par dikhein, aur kuch sites dividend ke liye bhi adjust kar sakti hain. Company ke aise faislon ko corporate actions kehte hain, aur NSE ki website wahan listed har company ke corporate actions ki list deti hai. Chart par koi achanak crash ya jump dikhe, toh bharosa karne se pehle yeh list check kijiye; corporate actions ko detail mein Day 15 mein padhenge.",
+    "dv": "कभी-कभी शेयर का भाव रातों-रात बदल जाता है, और किसी का एक रुपया भी नहीं डूबता। स्टॉक स्प्लिट में हर शेयर दो या ज़्यादा शेयर बन जाता है, इसलिए भाव उसी हिसाब से गिर जाता है; बोनस इश्यू में शेयरहोल्डरों को फ़्री में एक्स्ट्रा शेयर मिलते हैं, और भाव भी उसी तरह एडजस्ट हो जाता है। आपकी होल्डिंग की क़ीमत वही रहती है, लेकिन रॉ, यानी बिना एडजस्ट किए, चार्ट पर अचानक एक खाई दिखती है। इसीलिए ज़्यादातर चार्टिंग साइट एडजस्टेड भाव दिखाती हैं: वे सारे पुराने भावों को उसी अनुपात में बदल देती हैं, ताकि पुराने और नए भाव एक ही पैमाने पर दिखें, और कुछ साइट डिविडेंड के लिए भी एडजस्ट कर सकती हैं। कंपनी के ऐसे फ़ैसलों को कॉर्पोरेट एक्शन कहते हैं, और NSE की वेबसाइट वहाँ लिस्टेड हर कंपनी के कॉर्पोरेट एक्शन की लिस्ट देती है। चार्ट पर कोई अचानक क्रैश या उछाल दिखे, तो भरोसा करने से पहले यह लिस्ट देख लें; कॉर्पोरेट एक्शन को विस्तार से दिन 15 में पढ़ेंगे।"
+   },
+   "example": {
+    "en": "Gupta Cement Ltd closes at Rs 1,200 on Thursday. On Friday a split takes effect, each share becomes two, and the share trades around Rs 600. Aman's 10 shares worth Rs 12,000 are now 20 shares at Rs 600: still Rs 12,000. A raw chart shows a 50% fall in one day. An adjusted chart divides every price before the split by 2, so Thursday shows Rs 600 and the line runs on without a break. Free price downloads, and AI tools reading them, may use raw prices, so check before you trust any 'crash'. One practical catch: the extra shares usually reach your demat a working day or two later, so for a short while your app may show the old number of shares at the new, lower price. That gap is not a loss either.",
+    "hi": "Gupta Cement Ltd Thursday ko Rs 1,200 par band hota hai. Friday ko split laagu ho jaata hai, har share do ban jaata hai, aur share lagbhag Rs 600 par trade hota hai. Aman ke Rs 12,000 ke 10 shares ab Rs 600 ke 20 shares hain: kul value phir bhi Rs 12,000. Raw chart ek din mein 50% ki girawat dikhata hai. Adjusted chart split se pehle ke har price ko 2 se divide kar deta hai, isliye Thursday Rs 600 dikhata hai aur line bina toote aage badhti hai. Free price downloads, aur unhe padhne wale AI tools, raw prices use kar sakte hain, isliye kisi bhi 'crash' par bharosa karne se pehle check kar lijiye. Ek practical baat: extra shares aam taur par ek-do working din baad demat mein aate hain, isliye thodi der ke liye aapka app purani quantity nayi, kam price par dikha sakta hai. Yeh gap bhi loss nahi hai.",
+    "dv": "Gupta Cement Ltd गुरुवार को Rs 1,200 पर बंद होता है। शुक्रवार को स्प्लिट लागू हो जाता है, हर शेयर दो बन जाता है, और शेयर लगभग Rs 600 पर ट्रेड होता है। अमन के Rs 12,000 के 10 शेयर अब Rs 600 के 20 शेयर हैं: कुल क़ीमत फिर भी Rs 12,000। रॉ चार्ट एक दिन में 50% की गिरावट दिखाता है। एडजस्टेड चार्ट स्प्लिट से पहले के हर भाव को 2 से भाग दे देता है, इसलिए गुरुवार Rs 600 दिखाता है और लाइन बिना टूटे आगे बढ़ती है। फ़्री प्राइस डाउनलोड, और उन्हें पढ़ने वाले AI टूल, बिना एडजस्ट किए भाव इस्तेमाल कर सकते हैं, इसलिए किसी भी 'क्रैश' पर भरोसा करने से पहले जाँच लें। एक काम की बात: एक्स्ट्रा शेयर आम तौर पर एक-दो वर्किंग दिन बाद डीमैट में आते हैं, इसलिए कुछ देर के लिए आपका ऐप पुरानी संख्या नई, कम क़ीमत पर दिखा सकता है। यह फ़र्क़ भी नुक़सान नहीं है।"
+   },
+   "remember": {
+    "en": "A sudden cliff on a chart may be a split or a bonus, not a crash. Check corporate actions before you react.",
+    "hi": "Chart par achanak khaai split ya bonus bhi ho sakti hai, crash nahi. React karne se pehle corporate actions check kijiye.",
+    "dv": "चार्ट पर अचानक खाई स्प्लिट या बोनस भी हो सकती है, क्रैश नहीं। रिएक्ट करने से पहले कॉर्पोरेट एक्शन देख लें।"
+   },
+   "visual": {
+    "kind": "calc",
+    "title": {
+     "en": "A split changes the price, not your money",
+     "hi": "Split price badalta hai, aapka paisa nahi",
+     "dv": "स्प्लिट भाव बदलता है, आपका पैसा नहीं"
+    },
+    "caption": {
+     "en": "A raw chart shows this as a 50% fall. An adjusted chart divides older prices by 2, so there is no cliff.",
+     "hi": "Raw chart ise 50% ki girawat dikhata hai. Adjusted chart purane prices ko 2 se divide karta hai, isliye koi khaai nahi dikhti.",
+     "dv": "रॉ चार्ट इसे 50% की गिरावट दिखाता है। एडजस्टेड चार्ट पुराने भावों को 2 से भाग देता है, इसलिए कोई खाई नहीं दिखती।"
+    },
+    "rows": [
+     {
+      "label": {
+       "en": "After: 20 shares x Rs 600",
+       "hi": "Baad mein: 20 shares x Rs 600",
+       "dv": "बाद में: 20 शेयर x Rs 600"
+      },
+      "value": "Rs 12,000"
+     },
+     {
+      "label": {
+       "en": "Before: 10 shares x Rs 1,200",
+       "hi": "Pehle: 10 shares x Rs 1,200",
+       "dv": "पहले: 10 शेयर x Rs 1,200"
+      },
+      "value": "Rs 12,000",
+      "op": "-"
+     }
+    ],
+    "result": {
+     "label": {
+      "en": "Change in your holding",
+      "hi": "Aapki holding mein badlav",
+      "dv": "आपकी होल्डिंग में बदलाव"
+     },
+     "value": "Rs 0"
+    }
+   }
+  },
+  {
+   "h": {
+    "en": "Seeing patterns everywhere",
+    "hi": "Har jagah pattern dikhna",
+    "dv": "हर जगह पैटर्न दिखना"
+   },
+   "p": {
+    "en": "Our brain is built to find patterns: we see faces in clouds and an old woman spinning thread on the moon. On charts this becomes pattern illusion, seeing meaning in moves that are mostly chance. Coin tosses, drawn as a chart, produce rallies (quick rises), falls and streaks that can look a lot like a share price chart. AI tools share the habit: shown a chart screenshot, an AI can misread numbers or name a pattern that is not there. So read every chart in a fixed order, timeframe, then candles, then volume, and treat anything you cannot point to on the chart as a Guess, not a Fact. Before you share a screenshot with AI, keep the price axis and dates visible, and crop out your name, client ID, balances and holdings.",
+    "hi": "Humara dimaag pattern dhoondhne ke liye hi bana hai: hum baadalon mein chehre dekh lete hain, aur chaand par charkha kaatti budhiya. Chart par yahi aadat pattern illusion ban jaati hai, yaani un moves mein matlab dhoondh lena jo zyadatar ittefaq se hote hain. Sikka uchhaal kar uske nateeje chart par bana dijiye, toh usmein bhi rally (tez chadhai), girawat aur lagataar ek jaise moves ban jaate hain, kaafi had tak asli share chart jaise. AI mein bhi yahi aadat hai: chart ka screenshot dikhaiye, toh AI numbers galat padh sakta hai, ya aisa pattern bata sakta hai jo wahan hai hi nahi. Isliye har chart ek fixed order mein padhiye, pehle timeframe, phir candles, phir volume, aur jis cheez par aap chart par ungli na rakh sakein, use Guess maaniye, Fact nahi. AI ko screenshot dene se pehle dhyaan rakhiye ki price axis aur dates dikh rahi hon, aur apna naam, client ID, balance aur holdings crop kar dijiye.",
+    "dv": "हमारा दिमाग़ पैटर्न ढूँढने के लिए ही बना है: हम बादलों में चेहरे देख लेते हैं, और चाँद पर चरखा कातती बुढ़िया। चार्ट पर यही आदत पैटर्न इल्यूज़न बन जाती है, यानी उन चालों में मतलब ढूँढ लेना जो ज़्यादातर इत्तेफ़ाक़ से होती हैं। सिक्का उछालकर उसके नतीजे चार्ट पर बना दीजिए, तो उसमें भी रैली (तेज़ चढ़ाई), गिरावट और लगातार एक जैसी चालें बन जाती हैं, काफ़ी हद तक असली शेयर चार्ट जैसी। AI में भी यही आदत है: चार्ट का स्क्रीनशॉट दिखाइए, तो AI नंबर ग़लत पढ़ सकता है, या ऐसा पैटर्न बता सकता है जो वहाँ है ही नहीं। इसलिए हर चार्ट एक तय क्रम में पढ़िए, पहले टाइमफ़्रेम, फिर कैंडल, फिर वॉल्यूम, और जिस चीज़ पर आप चार्ट पर उँगली न रख सकें, उसे गेस मानिए, फ़ैक्ट नहीं। AI को स्क्रीनशॉट देने से पहले ध्यान रखें कि प्राइस एक्सिस और तारीख़ें दिख रही हों, और अपना नाम, क्लाइंट ID, बैलेंस और होल्डिंग क्रॉप कर दें।"
+   },
+   "example": {
+    "en": "Five heads in five tosses is rare: about 1 in 32. But a normal day has 75 five-minute candles. If every one of them were a coin toss, a run of five or more green candles would still show up somewhere on about 7 days out of 10. So Aman's five green candles on a 5-minute chart prove nothing on their own. Chance alone makes streaks like that on a screen full of candles.",
+    "hi": "Paanch baar sikka uchhaalein aur paanchon baar heads aaye, aisa kam hota hai: lagbhag 32 mein ek baar. Lekin ek normal din mein 5-minute ki 75 candles hoti hain. Agar har candle ek sikke ki uchhaal hoti, tab bhi lagbhag 10 mein se 7 dinon mein kahin na kahin lagataar paanch ya zyada hari candles dikh jaatin. Toh Aman ki 5-minute chart wali paanch hari candles akele kuch saabit nahi karti. Candles se bhari screen par aisi streak sirf ittefaq se bhi ban jaati hai.",
+    "dv": "पाँच बार सिक्का उछालें और पाँचों बार चित आए, ऐसा कम होता है: लगभग 32 में एक बार। लेकिन एक आम दिन में 5-मिनट की 75 कैंडल होती हैं। अगर हर कैंडल एक सिक्के की उछाल होती, तब भी लगभग 10 में से 7 दिनों में कहीं न कहीं लगातार पाँच या ज़्यादा हरी कैंडल दिख जातीं। तो अमन की 5-मिनट चार्ट वाली पाँच हरी कैंडल अकेले कुछ साबित नहीं करतीं। कैंडल से भरी स्क्रीन पर ऐसा सिलसिला सिर्फ़ इत्तेफ़ाक़ से भी बन जाता है।"
+   },
+   "remember": {
+    "en": "If you cannot point to it on the chart, it is a Guess. Timeframe, candles and volume first; the story comes last.",
+    "hi": "Jis cheez par chart par ungli na rakh sakein, woh Guess hai. Pehle timeframe, candles aur volume; kahani sabse baad mein.",
+    "dv": "जिस चीज़ पर चार्ट पर उँगली न रख सकें, वह गेस है। पहले टाइमफ़्रेम, कैंडल और वॉल्यूम; कहानी सबसे बाद में।"
+   },
+   "visual": {
+    "kind": "line",
+    "title": {
+     "en": "30 coin tosses, drawn as a chart",
+     "hi": "30 baar sikka, chart ki shakal mein",
+     "dv": "30 बार सिक्का, चार्ट की शक्ल में"
+    },
+    "caption": {
+     "en": "One made-up run of 30 tosses, picked to show a clear streak: start at Rs 100, heads add Rs 5, tails take away Rs 5. Your own tosses will look different, but they will still show streaks and swings.",
+     "hi": "30 tosses ka ek banaya hua example, jismein streak saaf dikhe: Rs 100 se shuru, heads par Rs 5 jodiye, tails par Rs 5 ghataiye. Aapke apne tosses alag dikhenge, par unmein bhi streaks aur chadhai-utaar dikhenge.",
+     "dv": "30 उछालों का एक बनाया हुआ उदाहरण, जिसमें सिलसिला साफ़ दिखे: Rs 100 से शुरू, चित आए तो Rs 5 जोड़िए, पट आए तो Rs 5 घटाइए। आपकी अपनी उछालें अलग दिखेंगी, पर उनमें भी सिलसिले और चढ़ाव-उतार दिखेंगे।"
+    },
+    "x_label": {
+     "en": "Toss number",
+     "hi": "Toss number",
+     "dv": "उछाल नंबर"
+    },
+    "y_label": {
+     "en": "Rs",
+     "hi": "Rs",
+     "dv": "Rs"
+    },
+    "series": [
+     {
+      "name": {
+       "en": "Coin tosses",
+       "hi": "Sikke ki uchhaal",
+       "dv": "सिक्के की उछाल"
+      },
+      "tone": "brand",
+      "points": [100, 105, 110, 115, 120, 125, 130, 135, 130, 125, 130, 135, 140, 135, 130, 135, 130, 125, 120, 125, 120, 115, 110, 105, 110, 105, 100, 105, 110, 105, 110]
+     }
+    ],
+    "marks": [
+     {
+      "x": 4,
+      "label": {
+       "en": "Rally?",
+       "hi": "Rally?",
+       "dv": "रैली?"
+      }
+     },
+     {
+      "x": 21,
+      "label": {
+       "en": "Fall?",
+       "hi": "Girawat?",
+       "dv": "गिरावट?"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "key_terms": [
+  {
+   "term": {
+    "en": "OHLC",
+    "hi": "OHLC",
+    "dv": "OHLC"
+   },
+   "meaning": {
+    "en": "Open, high, low and close: the four prices every candle or bar records for its period. On an NSE daily candle, the open and close are the exchange's official prices.",
+    "hi": "Open, high, low aur close: woh chaar prices jo har candle ya bar apne period ke liye record karti hai. NSE ki daily candle mein open aur close exchange ke official prices hote hain.",
+    "dv": "ओपन, हाई, लो और क्लोज़: वे चार भाव जो हर कैंडल या बार अपने पीरियड के लिए दर्ज करती है। NSE की डेली कैंडल में ओपन और क्लोज़ एक्सचेंज के ऑफ़िशियल भाव होते हैं।"
+   }
+  },
+  {
+   "term": {
+    "en": "Body and wick",
+    "hi": "Body aur wick",
+    "dv": "बॉडी और विक (बत्ती)"
+   },
+   "meaning": {
+    "en": "The body runs from open to close; the thin wicks reach the high and the low. A long wick shows prices that were touched but not kept.",
+    "hi": "Body open se close tak hoti hai; patli wicks high aur low tak jaati hain. Lambi wick batati hai ki price wahan tak gaya, par tika nahi.",
+    "dv": "बॉडी ओपन से क्लोज़ तक होती है; पतली विक हाई और लो तक जाती हैं। लंबी विक बताती है कि भाव वहाँ तक गया, पर टिका नहीं।"
+   }
+  },
+  {
+   "term": {
+    "en": "Timeframe",
+    "hi": "Timeframe",
+    "dv": "टाइमफ़्रेम"
+   },
+   "meaning": {
+    "en": "How much time one candle covers: 5 minutes, 15 minutes, one session or one week.",
+    "hi": "Ek candle kitne waqt ki hai: 5 minute, 15 minute, ek session ya ek hafta.",
+    "dv": "एक कैंडल कितने वक़्त की है: 5 मिनट, 15 मिनट, एक सेशन या एक हफ़्ता।"
+   }
+  },
+  {
+   "term": {
+    "en": "Volume and relative volume",
+    "hi": "Volume aur relative volume",
+    "dv": "वॉल्यूम और रिलेटिव वॉल्यूम"
+   },
+   "meaning": {
+    "en": "Volume is the number of shares traded in a period. Relative volume is today's volume divided by its average, often the 20-day average.",
+    "hi": "Volume yaani ek period mein kitne shares trade hue. Relative volume woh number hai jo aaj ke volume ko uske average se divide karke aata hai, aksar 20-day average se.",
+    "dv": "वॉल्यूम यानी एक पीरियड में कितने शेयर ट्रेड हुए। रिलेटिव वॉल्यूम वह नंबर है जो आज के वॉल्यूम को उसके एवरेज से भाग देने पर आता है, अक्सर 20 दिन के एवरेज से।"
+   }
+  },
+  {
+   "term": {
+    "en": "Adjusted price",
+    "hi": "Adjusted price",
+    "dv": "एडजस्टेड भाव"
+   },
+   "meaning": {
+    "en": "A price series in which older prices are rescaled for splits, bonus issues and sometimes dividends, so the chart shows no fake cliffs.",
+    "hi": "Aisi price series jismein purane prices split, bonus aur kabhi-kabhi dividend ke hisaab se rescale kiye gaye hon, taaki chart par nakli khaai na dikhe.",
+    "dv": "ऐसी प्राइस सीरीज़ जिसमें पुराने भाव स्प्लिट, बोनस और कभी-कभी डिविडेंड के हिसाब से बदले गए हों, ताकि चार्ट पर नक़ली खाई न दिखे।"
+   }
+  },
+  {
+   "term": {
+    "en": "Pattern illusion",
+    "hi": "Pattern illusion",
+    "dv": "पैटर्न इल्यूज़न"
+   },
+   "meaning": {
+    "en": "Seeing meaning in chart moves that are mostly chance. Coin tosses can make convincing 'patterns' too.",
+    "hi": "Chart ke un moves mein matlab dekhna jo zyadatar ittefaq hote hain. Sikke ki uchhaal bhi asli lagne wale 'patterns' bana deti hai.",
+    "dv": "चार्ट की उन चालों में मतलब देखना जो ज़्यादातर इत्तेफ़ाक़ होती हैं। सिक्के की उछाल भी असली लगने वाले 'पैटर्न' बना देती है।"
+   }
+  }
+ ],
+ "mindmap": {
+  "kind": "mindmap",
+  "center": {
+   "en": "Reading a chart",
+   "hi": "Chart padhna",
+   "dv": "चार्ट पढ़ना"
+  },
+  "branches": [
+   {
+    "label": {
+     "en": "Chart types",
+     "hi": "Chart types",
+     "dv": "चार्ट के टाइप"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "Line = closes only",
+      "hi": "Line = sirf closes",
+      "dv": "लाइन = सिर्फ़ क्लोज़"
+     },
+     {
+      "en": "Bar and candle = OHLC",
+      "hi": "Bar aur candle = OHLC",
+      "dv": "बार और कैंडल = OHLC"
+     },
+     {
+      "en": "Log scale for long charts",
+      "hi": "Lambe charts ke liye log scale",
+      "dv": "लंबे चार्ट के लिए लॉग स्केल"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "One candle",
+     "hi": "Ek candle",
+     "dv": "एक कैंडल"
+    },
+    "tone": "up",
+    "points": [
+     {
+      "en": "Body = open to close",
+      "hi": "Body = open se close",
+      "dv": "बॉडी = ओपन से क्लोज़"
+     },
+     {
+      "en": "Wicks = high and low",
+      "hi": "Wicks = high aur low",
+      "dv": "विक = हाई और लो"
+     },
+     {
+      "en": "Colour = close vs its own open",
+      "hi": "Rang = close vs apna open",
+      "dv": "रंग = क्लोज़ बनाम अपना ओपन"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Timeframes",
+     "hi": "Timeframes",
+     "dv": "टाइमफ़्रेम"
+    },
+    "tone": "gold",
+    "points": [
+     {
+      "en": "1 candle = 1 period",
+      "hi": "1 candle = 1 period",
+      "dv": "1 कैंडल = 1 पीरियड"
+     },
+     {
+      "en": "Daily = one session",
+      "hi": "Daily = ek session",
+      "dv": "डेली = एक सेशन"
+     },
+     {
+      "en": "Plan on big candles, time on small",
+      "hi": "Plan badi candle par, timing chhoti par",
+      "dv": "प्लान बड़ी कैंडल पर, टाइमिंग छोटी पर"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Volume",
+     "hi": "Volume",
+     "dv": "वॉल्यूम"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "Shares traded, no side",
+      "hi": "Trade hue shares, koi side nahi",
+      "dv": "ट्रेड हुए शेयर, कोई साइड नहीं"
+     },
+     {
+      "en": "Compare with the 20-day average",
+      "hi": "20-day average se milaiye",
+      "dv": "20 दिन के एवरेज से मिलाइए"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Adjusted prices",
+     "hi": "Adjusted prices",
+     "dv": "एडजस्टेड भाव"
+    },
+    "tone": "muted",
+    "points": [
+     {
+      "en": "Split or bonus is not a crash",
+      "hi": "Split ya bonus crash nahi",
+      "dv": "स्प्लिट या बोनस क्रैश नहीं"
+     },
+     {
+      "en": "Check corporate actions on NSE",
+      "hi": "NSE par corporate actions check karein",
+      "dv": "NSE पर कॉर्पोरेट एक्शन देखें"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Your mind",
+     "hi": "Aapka mann",
+     "dv": "आपका मन"
+    },
+    "tone": "down",
+    "points": [
+     {
+      "en": "Coin tosses make patterns too",
+      "hi": "Sikka bhi pattern bana deta hai",
+      "dv": "सिक्का भी पैटर्न बना देता है"
+     },
+     {
+      "en": "Can't point to it? It's a Guess",
+      "hi": "Ungli nahi rakh sakte? Toh Guess",
+      "dv": "उँगली नहीं रख सकते? तो गेस"
+     },
+     {
+      "en": "Crop personal details before AI",
+      "hi": "AI se pehle personal details crop karein",
+      "dv": "AI से पहले निजी जानकारी क्रॉप करें"
+     }
+    ]
+   }
+  ]
+ },
+ "kaam": {
+  "en": "Set up a free chart and read it in order: chart type, one candle, three timeframes, volume and corporate actions, then check an AI's reading against your own.",
+  "hi": "Ek free chart set up kijiye aur use order mein padhiye: chart type, ek candle, teen timeframes, volume aur corporate actions, phir AI ki reading ko apni reading se milaiye.",
+  "dv": "एक फ़्री चार्ट सेट कीजिए और उसे क्रम से पढ़िए: चार्ट टाइप, एक कैंडल, तीन टाइमफ़्रेम, वॉल्यूम और कॉर्पोरेट एक्शन, फिर AI की रीडिंग को अपनी रीडिंग से मिलाइए।"
+ },
+ "kaam_steps": [
+  {
+   "en": "On tradingview.com or its free app, search 'NIFTY', open the NIFTY 50 index from NSE, switch the chart type between line, bar and candles, and leave it on candles.",
+   "hi": "tradingview.com ya uske free app par 'NIFTY' search kijiye, NSE ka NIFTY 50 index kholiye, chart type ko line, bar aur candles mein badal kar dekhiye, aur candles par chhod dijiye.",
+   "dv": "tradingview.com या उसके फ़्री ऐप पर 'NIFTY' सर्च कीजिए, NSE का NIFTY 50 इंडेक्स खोलिए, चार्ट टाइप को लाइन, बार और कैंडल में बदलकर देखिए, और कैंडल पर छोड़ दीजिए।"
+  },
+  {
+   "en": "On the daily (1D) chart, read the last candle's open, high, low and close (TradingView shows them as O, H, L, C at the top left; tap and hold a candle to see another one), and write them and its colour in a notebook or Google Sheets. If the market is open, that candle is still forming, so also note the time.",
+   "hi": "Daily (1D) chart par aakhri candle ka open, high, low aur close padhiye (TradingView inhe upar left mein O, H, L, C ki tarah dikhata hai; kisi aur candle ke liye us par tap karke hold kijiye), aur inhe aur candle ka rang notebook ya Google Sheets mein likh lijiye. Market khula ho toh yeh candle abhi ban rahi hai, isliye time bhi note kar lijiye.",
+   "dv": "डेली (1D) चार्ट पर आख़िरी कैंडल का ओपन, हाई, लो और क्लोज़ पढ़िए (TradingView इन्हें ऊपर बाईं ओर O, H, L, C के रूप में दिखाता है; किसी और कैंडल के लिए उस पर टैप करके होल्ड कीजिए), और इन्हें और कैंडल का रंग नोटबुक या Google Sheets में लिख लीजिए। बाज़ार खुला हो, तो यह कैंडल अभी बन रही है, इसलिए समय भी नोट कर लीजिए।"
+  },
+  {
+   "en": "Switch to 1W and then to 15m, and write one line for each: what does this zoom level show you?",
+   "hi": "Pehle 1W aur phir 15m par switch kijiye, aur dono ke liye ek-ek line likhiye: yeh zoom level aapko kya dikha raha hai?",
+   "dv": "पहले 1W और फिर 15m पर जाइए, और दोनों के लिए एक-एक लाइन लिखिए: यह ज़ूम लेवल आपको क्या दिखा रहा है?"
+  },
+  {
+   "en": "Open the daily chart of any one company from the NIFTY 50 list (search NIFTY 50 constituents on nseindia.com or niftyindices.com). This is for practice, not a pick; the index itself has no volume. If no volume bars show, add the 'Volume' indicator, then note whether the last bar is taller or shorter than most of the previous 20.",
+   "hi": "NIFTY 50 list ki kisi bhi ek company ka daily chart kholiye (nseindia.com ya niftyindices.com par NIFTY 50 constituents search kijiye). Yeh sirf practice ke liye hai, koi pick nahi; index ka apna volume nahi hota. Volume bars na dikhein toh 'Volume' indicator add kar lijiye, phir note kijiye ki aakhri bar pichhle 20 mein se zyadatar se ooncha hai ya neecha.",
+   "dv": "NIFTY 50 लिस्ट की किसी भी एक कंपनी का डेली चार्ट खोलिए (nseindia.com या niftyindices.com पर NIFTY 50 constituents सर्च कीजिए)। यह सिर्फ़ प्रैक्टिस के लिए है, कोई सुझाव नहीं; इंडेक्स का अपना वॉल्यूम नहीं होता। वॉल्यूम बार न दिखें, तो 'Volume' इंडिकेटर जोड़ लीजिए, फिर नोट कीजिए कि आख़िरी बार पिछले 20 में से ज़्यादातर से ऊँचा है या नीचा।"
+  },
+  {
+   "en": "On nseindia.com, search the same company, open its 'Corporate Actions' section, and note its most recent split, bonus or dividend, if any. If the page offers a date range, pick one year or more; if NSE does not load, try bseindia.com.",
+   "hi": "nseindia.com par usi company ko search kijiye, uska 'Corporate Actions' section kholiye, aur sabse haal ka split, bonus ya dividend, agar koi ho, note kar lijiye. Date range ka option ho toh ek saal ya zyada chuniye; NSE na khule toh bseindia.com try kijiye.",
+   "dv": "nseindia.com पर उसी कंपनी को सर्च कीजिए, उसका 'Corporate Actions' सेक्शन खोलिए, और सबसे हाल का स्प्लिट, बोनस या डिविडेंड, अगर कोई हो, नोट कर लीजिए। तारीख़ की रेंज का विकल्प हो, तो एक साल या ज़्यादा चुनिए; NSE न खुले, तो bseindia.com आज़माइए।"
+  },
+  {
+   "en": "Screenshot that daily chart, crop out anything personal, run the AI Lab prompt 'Chart screenshot cross-check', and mark each claim tick, cross or 'can't verify'.",
+   "hi": "Us daily chart ka screenshot lijiye, kuch bhi personal ho toh crop kar dijiye, AI Lab ka 'Chart screenshot cross-check' prompt chalaiye, aur AI ke har claim ke aage tick, cross ya 'verify nahi ho saka' likhiye.",
+   "dv": "उस डेली चार्ट का स्क्रीनशॉट लीजिए, कुछ भी निजी हो तो क्रॉप कर दीजिए, AI Lab का 'Chart screenshot cross-check' प्रॉम्प्ट चलाइए, और AI के हर दावे के आगे सही, ग़लत या 'जाँच नहीं हो सकी' लिखिए।"
+  }
+ ],
+ "kaam_min": 35,
+ "outcome": {
+  "en": "By the end you can set up a free chart, read any candle's open, high, low and close, pick a timeframe for a reason, compare a day's volume with its average, spot a split that looks like a crash, and check an AI's chart reading instead of trusting it.",
+  "hi": "Aaj ke baad aap free chart set up kar payenge, kisi bhi candle ka open, high, low aur close padh payenge, soch-samajh kar timeframe chun payenge, kisi din ke volume ko uske average se mila payenge, crash jaisa dikhne wala split pehchaan payenge, aur AI ki chart reading par aankh band karke bharosa karne ki jagah use check kar payenge.",
+  "dv": "आज के बाद आप एक फ़्री चार्ट सेट कर पाएँगे, किसी भी कैंडल का ओपन, हाई, लो और क्लोज़ पढ़ पाएँगे, सोच-समझकर टाइमफ़्रेम चुन पाएँगे, किसी दिन के वॉल्यूम को उसके एवरेज से मिला पाएँगे, क्रैश जैसा दिखने वाला स्प्लिट पहचान पाएँगे, और AI की चार्ट रीडिंग पर आँख मूँदकर भरोसा करने की जगह उसे जाँच पाएँगे।"
+ },
+ "tools": [
+  {
+   "en": "TradingView free chart",
+   "hi": "TradingView free chart",
+   "dv": "TradingView फ़्री चार्ट"
+  },
+  {
+   "en": "NSE website (nseindia.com)",
+   "hi": "NSE website (nseindia.com)",
+   "dv": "NSE वेबसाइट (nseindia.com)"
+  },
+  {
+   "en": "Notebook or Google Sheets",
+   "hi": "Notebook ya Google Sheets",
+   "dv": "नोटबुक या Google Sheets"
+  },
+  {
+   "en": "A coin",
+   "hi": "Ek sikka",
+   "dv": "एक सिक्का"
+  },
+  {
+   "en": "Any AI chat that accepts images",
+   "hi": "Koi bhi AI chat jo image le sake",
+   "dv": "कोई भी AI चैट जो इमेज ले सके"
+  }
+ ],
+ "fun": {
+  "en": "'Real or coin?': toss a coin 30 times and draw the chart on paper (start at 100, heads +5, tails -5). On a second sheet, set NIFTY 50 to a daily line chart showing about 30 days and trace its shape, with no numbers, at the same height as your coin chart. Ask classmates or family which one is real. It is often hard to tell, and that is today's lesson.",
+  "hi": "'Asli ya sikka?': 30 baar sikka uchhaaliye aur paper par uska chart banaiye (100 se shuru, heads +5, tails -5). Doosre kaagaz par NIFTY 50 ka lagbhag 30 din ka daily line chart kholiye aur uski shakal utaar lijiye, bina numbers ke, utni hi oonchai mein jitna sikke wala chart hai. Classmates ya family se poochhiye ki asli kaunsa hai. Aksar batana mushkil hota hai, aur yahi aaj ka sabak hai.",
+  "dv": "'असली या सिक्का?': 30 बार सिक्का उछालिए और काग़ज़ पर उसका चार्ट बनाइए (100 से शुरू, चित +5, पट -5)। दूसरे काग़ज़ पर NIFTY 50 का लगभग 30 दिन का डेली लाइन चार्ट खोलकर उसकी शक्ल उतार लीजिए, बिना नंबर के, उतनी ही ऊँचाई में जितना सिक्के वाला चार्ट है। साथियों या परिवार से पूछिए कि असली कौन-सा है। अक्सर बताना मुश्किल होता है, और यही आज का सबक़ है।"
+ },
+ "compliance": "Educational content only, not investment advice. Company names and chart prices are made up for illustration. AI output is analysis for learning, never a buy or sell call. No affiliation with any charting site named. Stage 1 uses virtual money only. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
+ "prompts": [
+  {
+   "title": {
+    "en": "Chart screenshot cross-check",
+    "hi": "Chart screenshot cross-check",
+    "dv": "चार्ट स्क्रीनशॉट क्रॉस-चेक"
+   },
+   "body": "I am attaching a screenshot of a daily candlestick chart with volume bars. I have cropped out my name, client ID, balances and holdings. Describe only what is visible, as short numbered claims I can tick or cross after checking the chart myself: (1) the chart's timeframe and date range, if you can read them; (2) the open, high, low and close of the last candle, and its colour; (3) whether the last volume bar is taller or shorter than most of the previous 20; (4) the overall direction over the visible window, in one plain sentence; (5) anything you cannot read clearly, marked 'unclear'. If the price axis or dates are cut off, say so instead of guessing numbers. Label every claim Fact (directly visible on the chart), Guess (your interpretation) or Kachra (hype, or a claim nobody can check from this image). Do not name chart patterns, do not forecast, and do not give buy or sell advice, targets or return expectations."
+  },
+  {
+   "title": {
+    "en": "Candle drill",
+    "hi": "Candle drill",
+    "dv": "कैंडल ड्रिल"
+   },
+   "body": "Act as a patient chart-reading tutor for an Indian beginner. Make up 5 daily candles for a fictional company, 'Bharat Pumps Ltd', each with open, high, low and close in rupees, plus the previous day's close. Make sure every high is at or above that candle's open and close, and every low at or below them. Include at least one green candle on a day when the stock still ended below the previous close. For each candle, ask me one question at a time: its colour, the size of its body, the length of its upper and lower wicks, and whether the stock was up or down for the day. Check each answer and explain any mistake in one or two lines. Use only made-up prices; do not discuss real stocks, and do not give buy or sell advice, targets or return expectations."
+  },
+  {
+   "title": {
+    "en": "Crash or corporate action?",
+    "hi": "Crash ya corporate action?",
+    "dv": "क्रैश या कॉर्पोरेट एक्शन?"
+   },
+   "body": "Here are 10 made-up daily closing prices, in rupees, for a fictional company, 'Gupta Cement Ltd': 1180, 1195, 1210, 1190, 1200, 601, 598, 610, 605, 612. First, ask me three questions that would help decide whether the drop on day 6 was a real fall or the result of a stock split or bonus issue. Then explain, step by step, how an adjusted price series would rewrite days 1 to 5 if it was a split in which each share became two, and show the adjusted numbers. Finally, tell me what kind of page on the NSE website lists a company's corporate actions, and label each of your statements Fact, Guess or Kachra. Do not give buy or sell advice, targets or return expectations."
+  }
+ ],
+ "journal_prompt": {
+  "en": "Which timeframe did your eyes trust most today, and why? Write down one thing you, or an AI, 'saw' on a chart but could not actually point to.",
+  "hi": "Aaj aapki aankhon ne kis timeframe par sabse zyada bharosa kiya, aur kyun? Ek aisi cheez likhiye jo aapne, ya AI ne, chart par 'dekhi', lekin asal mein us par ungli nahi rakh paaye.",
+  "dv": "आज आपकी आँखों ने किस टाइमफ़्रेम पर सबसे ज़्यादा भरोसा किया, और क्यों? एक ऐसी चीज़ लिखिए जो आपने, या AI ने, चार्ट पर 'देखी', लेकिन असल में उस पर उँगली नहीं रख पाए।"
+ },
+ "motivation": {
+  "en": "A chart is a record of what people already did, not a forecast. Today you learnt to read that record plainly, and every careful trader starts right here.",
+  "hi": "Chart us cheez ka record hai jo log pehle hi kar chuke hain, koi forecast nahi. Aaj aapne yeh record saaf-saaf padhna seekha, aur har samajhdaar trader yahin se shuru karta hai.",
+  "dv": "चार्ट उस चीज़ का रिकॉर्ड है जो लोग पहले ही कर चुके हैं, भविष्यवाणी नहीं। आज आपने यह रिकॉर्ड साफ़-साफ़ पढ़ना सीखा, और हर समझदार ट्रेडर यहीं से शुरू करता है।"
+ },
+ "quiz": [
+  {
+   "stem": {
+    "en": "Sharma Textiles Ltd closed at Rs 250 yesterday. Today it opens at Rs 240, trades between Rs 236 and Rs 247, and closes at Rs 245. Which statement about today is correct?",
+    "hi": "Sharma Textiles Ltd kal Rs 250 par band hua. Aaj woh Rs 240 par khulta hai, Rs 236 aur Rs 247 ke beech trade karta hai, aur Rs 245 par band hota hai. Aaj ke baare mein kaunsi baat sahi hai?",
+    "dv": "Sharma Textiles Ltd कल Rs 250 पर बंद हुआ। आज वह Rs 240 पर खुलता है, Rs 236 और Rs 247 के बीच ट्रेड करता है, और Rs 245 पर बंद होता है। आज के बारे में कौन-सी बात सही है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "A green candle, though the stock is down Rs 5 today",
+      "hi": "Hari candle, halanki share aaj Rs 5 neeche hai",
+      "dv": "हरी कैंडल, हालाँकि शेयर आज Rs 5 नीचे है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "A red candle, since it closed below yesterday's Rs 250",
+      "hi": "Laal candle, kyunki close kal ke Rs 250 se neeche hai",
+      "dv": "लाल कैंडल, क्योंकि क्लोज़ कल के Rs 250 से नीचे है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "A green candle, and the stock is up Rs 5 for the day",
+      "hi": "Hari candle, aur share aaj Rs 5 upar hai",
+      "dv": "हरी कैंडल, और शेयर आज Rs 5 ऊपर है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "A red candle, since its low of Rs 236 is below the open",
+      "hi": "Laal candle, kyunki Rs 236 ka low open se neeche hai",
+      "dv": "लाल कैंडल, क्योंकि Rs 236 का लो ओपन से नीचे है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Colour compares the close with the same candle's open: Rs 245 is above Rs 240, so the candle is green. The day's change compares with yesterday's close: Rs 245 - Rs 250 = -Rs 5, a 2% fall. A low below the open only makes a lower wick; it does not decide the colour.",
+    "hi": "Rang tay karne ke liye close ko usi candle ke open se milaya jaata hai: Rs 245, Rs 240 se upar hai, isliye candle hari hai. Din ka badlav kal ke close se milaya jaata hai: Rs 245 - Rs 250 = -Rs 5, yaani 2% ki girawat. Open se neeche ka low sirf lower wick banata hai; rang woh tay nahi karta.",
+    "dv": "रंग तय करने के लिए क्लोज़ को उसी कैंडल के ओपन से मिलाया जाता है: Rs 245, Rs 240 से ऊपर है, इसलिए कैंडल हरी है। दिन का बदलाव कल के क्लोज़ से मिलाया जाता है: Rs 245 - Rs 250 = -Rs 5, यानी 2% की गिरावट। ओपन से नीचे का लो सिर्फ़ निचली विक बनाता है; रंग वह तय नहीं करता।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Four 15-minute candles from 9:15 to 10:15 read (open, high, low, close): 200, 204, 199, 203 / 203, 206, 202, 205 / 205, 205, 198, 199 / 199, 202, 197, 201. What is the one-hour candle for 9:15 to 10:15?",
+    "hi": "9:15 se 10:15 tak ki chaar 15-minute candles (open, high, low, close) yeh hain: 200, 204, 199, 203 / 203, 206, 202, 205 / 205, 205, 198, 199 / 199, 202, 197, 201. 9:15 se 10:15 ki ek ghante wali candle kya hogi?",
+    "dv": "9:15 से 10:15 तक की चार 15-मिनट कैंडल (ओपन, हाई, लो, क्लोज़) ये हैं: 200, 204, 199, 203 / 203, 206, 202, 205 / 205, 205, 198, 199 / 199, 202, 197, 201। 9:15 से 10:15 की एक घंटे वाली कैंडल क्या होगी?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Open 200, high 206, low 197, close 201",
+      "hi": "Open 200, high 206, low 197, close 201",
+      "dv": "ओपन 200, हाई 206, लो 197, क्लोज़ 201"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Open 200, high 204, low 199, close 203",
+      "hi": "Open 200, high 204, low 199, close 203",
+      "dv": "ओपन 200, हाई 204, लो 199, क्लोज़ 203"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Open 201, high 206, low 197, close 200",
+      "hi": "Open 201, high 206, low 197, close 200",
+      "dv": "ओपन 201, हाई 206, लो 197, क्लोज़ 200"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Open 201.75, high 206, low 197, close 201",
+      "hi": "Open 201.75, high 206, low 197, close 201",
+      "dv": "ओपन 201.75, हाई 206, लो 197, क्लोज़ 201"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "A bigger candle is built from the smaller candles inside it. Its open is the first candle's open (200), its close is the last candle's close (201), its high is the highest high (206) and its low is the lowest low (197). Nothing is averaged. Charting apps build every bigger intraday candle this way, for example four 15-minute candles into one hourly candle. (An NSE daily candle can differ a little, because the exchange sets the official open and close.)",
+    "hi": "Badi candle apne andar ki chhoti candles se banti hai. Uska open pehli candle ka open hai (200), close aakhri candle ka close (201), high sabse ooncha high (206) aur low sabse neecha low (197). Kuch bhi average nahi hota. Charting apps har badi intraday candle isi tarah banate hain, jaise chaar 15-minute candles se ek ghante wali. (NSE ki daily candle thodi alag ho sakti hai, kyunki official open aur close exchange tay karta hai.)",
+    "dv": "बड़ी कैंडल अपने अंदर की छोटी कैंडल से बनती है। उसका ओपन पहली कैंडल का ओपन है (200), क्लोज़ आख़िरी कैंडल का क्लोज़ (201), हाई सबसे ऊँचा हाई (206) और लो सबसे नीचा लो (197)। कुछ भी एवरेज नहीं होता। चार्टिंग ऐप हर बड़ी इंट्राडे कैंडल इसी तरह बनाते हैं, जैसे चार 15-मिनट कैंडल से एक घंटे वाली। (NSE की डेली कैंडल थोड़ी अलग हो सकती है, क्योंकि ऑफ़िशियल ओपन और क्लोज़ एक्सचेंज तय करता है।)"
+   }
+  },
+  {
+   "stem": {
+    "en": "Sharma Textiles Ltd's 20-day average volume is 4,00,000 shares. Today the price rises 5% and 3,00,000 shares trade, shown as a green volume bar. Which statement is fair?",
+    "hi": "Sharma Textiles Ltd ka 20-day average volume 4,00,000 shares hai. Aaj price 5% chadhta hai aur 3,00,000 shares trade hote hain, jo hare volume bar mein dikhte hain. Kaunsi baat sahi hai?",
+    "dv": "Sharma Textiles Ltd का 20 दिन का एवरेज वॉल्यूम 4,00,000 शेयर है। आज भाव 5% चढ़ता है और 3,00,000 शेयर ट्रेड होते हैं, जो हरे वॉल्यूम बार में दिखते हैं। कौन-सी बात सही है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "The rise came on below-average volume: 0.75 times",
+      "hi": "Yeh rise average se kam volume par hua: 0.75 guna",
+      "dv": "यह बढ़त एवरेज से कम वॉल्यूम पर हुई: 0.75 गुना"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Buyers outnumbered sellers, because the bar is green",
+      "hi": "Buyers sellers se zyada the, kyunki bar hara hai",
+      "dv": "ख़रीदार बेचने वालों से ज़्यादा थे, क्योंकि बार हरा है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Volume was high, since 3,00,000 is a big number of shares",
+      "hi": "Volume zyada tha, kyunki 3,00,000 shares bada number hai",
+      "dv": "वॉल्यूम ज़्यादा था, क्योंकि 3,00,000 शेयर बड़ी संख्या है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "The volume confirms the rise will continue tomorrow",
+      "hi": "Volume confirm karta hai ki rise kal bhi jaari rahega",
+      "dv": "वॉल्यूम पक्का करता है कि बढ़त कल भी जारी रहेगी"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Relative volume = 3,00,000 ÷ 4,00,000 = 0.75, so fewer shares than usual changed hands. A green bar is only about price; every share bought was also sold, so volume has no side. And no volume reading can tell you what happens tomorrow.",
+    "hi": "Relative volume = 3,00,000 ÷ 4,00,000 = 0.75, yaani aam din se kam shares ka len-den hua. Hara bar sirf price ki baat hai; har khareeda gaya share kisi ne becha bhi, isliye volume ki koi side nahi hoti. Aur koi bhi volume reading yeh nahi bata sakti ki kal kya hoga.",
+    "dv": "रिलेटिव वॉल्यूम = 3,00,000 ÷ 4,00,000 = 0.75, यानी आम दिन से कम शेयरों का लेन-देन हुआ। हरा बार सिर्फ़ भाव की बात है; हर ख़रीदा गया शेयर किसी ने बेचा भी है, इसलिए वॉल्यूम की कोई साइड नहीं होती। और कोई भी वॉल्यूम रीडिंग यह नहीं बता सकती कि कल क्या होगा।"
+   }
+  },
+  {
+   "stem": {
+    "en": "You hold 30 shares of Bharat Pumps Ltd, which trade at Rs 800. The company gives one free bonus share for every share held, and next day a raw chart shows the price near Rs 400, a 50% 'crash'. What happened to your holding?",
+    "hi": "Aapke paas Bharat Pumps Ltd ke 30 shares hain, jinka price abhi Rs 800 hai. Company har share par ek free bonus share deti hai, aur agle din raw chart price ko lagbhag Rs 400 par, yaani 50% ke 'crash' ke saath dikhata hai. Aapki holding ka kya hua?",
+    "dv": "आपके पास Bharat Pumps Ltd के 30 शेयर हैं, जिनका भाव अभी Rs 800 है। कंपनी हर शेयर पर एक फ़्री बोनस शेयर देती है, और अगले दिन रॉ चार्ट भाव को लगभग Rs 400 पर, यानी 50% के 'क्रैश' के साथ दिखाता है। आपकी होल्डिंग का क्या हुआ?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "60 shares worth about Rs 24,000: no real loss",
+      "hi": "60 shares, lagbhag Rs 24,000: koi asli loss nahi",
+      "dv": "60 शेयर, लगभग Rs 24,000: असली नुक़सान नहीं"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "30 shares now worth about Rs 12,000: a 50% loss",
+      "hi": "30 shares, ab value lagbhag Rs 12,000: 50% ka loss",
+      "dv": "30 शेयर, अब क़ीमत लगभग Rs 12,000: 50% का नुक़सान"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "60 shares now worth about Rs 48,000: a 100% gain",
+      "hi": "60 shares, ab value lagbhag Rs 48,000: 100% ka faayda",
+      "dv": "60 शेयर, अब क़ीमत लगभग Rs 48,000: 100% का फ़ायदा"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "30 shares plus a cash payout of about Rs 12,000",
+      "hi": "30 shares aur lagbhag Rs 12,000 ka cash payout",
+      "dv": "30 शेयर और लगभग Rs 12,000 का कैश पेआउट"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "One free share for each share held doubles your shares to 60, and the price adjusts to about half: 60 x Rs 400 = Rs 24,000, the same as 30 x Rs 800. The raw chart's 50% cliff is not a loss. An adjusted chart divides older prices by 2, and the NSE website shows the bonus under the company's corporate actions. If your app briefly shows 30 shares at Rs 400, the 30 bonus shares simply have not been credited yet.",
+    "hi": "Har share par ek free share milne se aapke shares 60 ho jaate hain, aur price lagbhag aadha adjust ho jaata hai: 60 x Rs 400 = Rs 24,000, jo 30 x Rs 800 ke barabar hai. Raw chart ki 50% wali khaai asli loss nahi hai. Adjusted chart purane prices ko 2 se divide kar deta hai, aur NSE ki website par yeh bonus company ke corporate actions mein dikhta hai. Agar app kuch der 30 shares Rs 400 par dikhaye, toh bas 30 bonus shares abhi credit nahi hue.",
+    "dv": "हर शेयर पर एक फ़्री शेयर मिलने से आपके शेयर 60 हो जाते हैं, और भाव लगभग आधा एडजस्ट हो जाता है: 60 x Rs 400 = Rs 24,000, जो 30 x Rs 800 के बराबर है। रॉ चार्ट की 50% वाली खाई असली नुक़सान नहीं है। एडजस्टेड चार्ट पुराने भावों को 2 से भाग दे देता है, और NSE की वेबसाइट पर यह बोनस कंपनी के कॉर्पोरेट एक्शन में दिखता है। अगर ऐप कुछ देर 30 शेयर Rs 400 पर दिखाए, तो बस 30 बोनस शेयर अभी क्रेडिट नहीं हुए हैं।"
+   }
+  },
+  {
+   "stem": {
+    "en": "At 2:40 pm Aman sees five green candles in a row on a 5-minute chart, with volume bars smaller than usual. He feels sure something big is starting. What is the most reasonable reading?",
+    "hi": "Dopahar 2:40 par Aman ko 5-minute chart par lagataar paanch hari candles dikhti hain, aur unke volume bars aam se chhote hain. Use poora yakeen ho jaata hai ki kuch bada shuru ho raha hai. Sabse samajhdaar reading kya hai?",
+    "dv": "दोपहर 2:40 पर अमन को 5-मिनट चार्ट पर लगातार पाँच हरी कैंडल दिखती हैं, और उनके वॉल्यूम बार आम से छोटे हैं। उसे पूरा यक़ीन हो जाता है कि कुछ बड़ा शुरू हो रहा है। सबसे समझदारी भरी रीडिंग क्या है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "A 25-minute streak on thin volume can easily be chance",
+      "hi": "Kam volume par 25 minute ki streak aasani se ittefaq ho sakti hai",
+      "dv": "कम वॉल्यूम पर 25 मिनट का सिलसिला आसानी से इत्तेफ़ाक़ हो सकता है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Five greens in a row show that buyers have taken control",
+      "hi": "Lagataar paanch hari candles ka matlab buyers ne control le liya",
+      "dv": "लगातार पाँच हरी कैंडल का मतलब ख़रीदारों ने कंट्रोल ले लिया"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Small volume bars mean big buyers are quietly collecting",
+      "hi": "Chhote volume bars ka matlab bade buyers chupchaap khareed rahe hain",
+      "dv": "छोटे वॉल्यूम बार का मतलब है कि बड़े ख़रीदार चुपचाप शेयर जमा कर रहे हैं"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "The 5-minute chart is the right view for a swing decision",
+      "hi": "Swing ka faisla lene ke liye 5-minute chart hi sahi view hai",
+      "dv": "स्विंग का फ़ैसला लेने के लिए 5-मिनट चार्ट ही सही व्यू है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Five 5-minute candles cover only 25 minutes, and the small volume bars show fewer shares than usual changing hands. Even if every candle were a coin toss, a streak of five greens would appear on most days. Green only means each candle closed above its own open, not that buyers 'took control'. Swing decisions belong on the daily and weekly charts.",
+    "hi": "Paanch 5-minute candles sirf 25 minute ki hoti hain, aur chhote volume bars batate hain ki aam se kam shares ka len-den hua. Agar har candle ek sikke ki uchhaal hoti, tab bhi zyadatar dinon mein lagataar paanch hari candles dikh jaatin. Hare rang ka matlab sirf itna hai ki har candle apne open se upar band hui, yeh nahi ki buyers ne 'control le liya'. Swing ke faisle daily aur weekly chart par hote hain.",
+    "dv": "पाँच 5-मिनट कैंडल सिर्फ़ 25 मिनट की होती हैं, और छोटे वॉल्यूम बार बताते हैं कि आम से कम शेयरों का लेन-देन हुआ। अगर हर कैंडल एक सिक्के की उछाल होती, तब भी ज़्यादातर दिनों में लगातार पाँच हरी कैंडल दिख जातीं। हरे रंग का मतलब सिर्फ़ इतना है कि हर कैंडल अपने ओपन से ऊपर बंद हुई, यह नहीं कि ख़रीदारों ने 'कंट्रोल ले लिया'। स्विंग के फ़ैसले डेली और वीकली चार्ट पर होते हैं।"
+   }
+  }
+ ]
+}

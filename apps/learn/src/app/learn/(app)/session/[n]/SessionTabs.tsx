@@ -1,98 +1,81 @@
 "use client";
-import { useState, useTransition } from "react";
-import Link from "next/link";
-import { isWeekReviewDay, type Session, type Resource, type QuizQuestionPublic } from "@/lib/content/course";
-import type { SessionState } from "@/lib/progress/gating";
-import { PromptBlock } from "@/components/ui/PromptBlock";
-import { QuizBlock } from "@/components/ui/QuizBlock";
-import { markWatched, markHandoutOpened, saveJournal, type ActState } from "../actions";
-import { CheckCircle, Circle, Download, AlertCircle, Lock } from "@/components/ui/Icon";
+import { useEffect, useRef, useState, type KeyboardEvent, type ReactNode } from "react";
+import { t3 } from "@/lib/i18n/lang";
+import { useLang } from "@/lib/i18n/LangProvider";
+import { ArrowRight, CheckCircle } from "@/components/ui/Icon";
+import css from "@/components/lesson/lesson.module.css";
 
-const TABS = ["Learn", "Aaj Ka Kaam", "AI Lab", "Quiz", "Journal"] as const;
+export type TabKey = "learn" | "kaam" | "ai" | "quiz" | "journal";
+const KEYS: TabKey[] = ["learn", "kaam", "ai", "quiz", "journal"];
+const S = {
+  learn: t3("Learn", "Seekhiye", "सीखिए"),
+  kaam: t3("Today's task", "Aaj Ka Kaam", "आज का काम"),
+  ai: t3("AI Lab", "AI Lab", "AI लैब"),
+  quiz: t3("Quiz", "Quiz", "क्विज़"),
+  journal: t3("Journal", "Journal", "जर्नल"),
+  sections: t3("Lesson sections", "Lesson ke hisse", "लेसन के हिस्से"),
+  done: t3("done", "ho gaya", "पूरा"),
+  next: t3("Next", "Aage", "आगे"),
+};
 
-export function SessionTabs({ s, embed, resources, quiz, state, lang, demo }: { s: Session; embed: string | null; resources: Resource[]; quiz: QuizQuestionPublic[]; state: SessionState; lang: "en" | "hi"; demo: boolean }) {
-  const [tab, setTab] = useState<(typeof TABS)[number]>("Learn");
-  const c = s.content;
-  const review = isWeekReviewDay(s);
-  const [watched, setWatched] = useState(state.watched_pct);
-  const [handout, setHandout] = useState(state.handout_opened);
-  const [journalSaved, setJournalSaved] = useState(state.journal_saved);
-  const [msg, setMsg] = useState<ActState>({});
-  const [pending, start] = useTransition();
-  const complete = state.quiz_submitted && journalSaved;
+/** Tab shell for a lesson. The panels arrive ready-made (mostly server-rendered); each is kept mounted and
+ *  only hidden, so a half-written journal entry or picked quiz answers survive a tab switch. On a 360px phone
+ *  the strip scrolls sideways, with a fade on the right edge while more tabs are out of view. */
+export function SessionTabs({ panels, done }: { panels: Record<TabKey, ReactNode>; done: Partial<Record<TabKey, boolean>> }) {
+  const { tx } = useLang();
+  const [tab, setTab] = useState<TabKey>("learn");
+  const wrap = useRef<HTMLDivElement>(null);
+  const bar = useRef<HTMLDivElement>(null);
+  const btns = useRef<Partial<Record<TabKey, HTMLButtonElement | null>>>({});
+
+  useEffect(() => {
+    const el = bar.current, w = wrap.current; if (!el || !w) return;
+    // A DOM flag, not state: it changes on every scroll frame and only CSS reads it.
+    const update = () => { w.dataset.more = String(el.scrollLeft + el.clientWidth < el.scrollWidth - 2); };
+    update();
+    el.addEventListener("scroll", update, { passive: true });
+    const ro = new ResizeObserver(update); ro.observe(el);
+    return () => { el.removeEventListener("scroll", update); ro.disconnect(); };
+  }, []);
+
+  function go(k: TabKey, focus = false) {
+    setTab(k);
+    const b = btns.current[k];
+    b?.scrollIntoView({ block: "nearest", inline: "nearest" });
+    if (focus) b?.focus();
+  }
+  function onKey(e: KeyboardEvent) {
+    const i = KEYS.indexOf(tab);
+    const j = e.key === "ArrowRight" ? i + 1 : e.key === "ArrowLeft" ? i - 1 : e.key === "Home" ? 0 : e.key === "End" ? KEYS.length - 1 : null;
+    if (j === null) return;
+    e.preventDefault();
+    go(KEYS[(j + KEYS.length) % KEYS.length], true);
+  }
+  const next = KEYS[KEYS.indexOf(tab) + 1];
   return (
     <>
-      <div className="col-tabs" role="tablist" aria-label="Session sections">
-        {TABS.map((t) => <button key={t} role="tab" type="button" className="col-tab" aria-selected={tab === t} onClick={() => setTab(t)}>{t}</button>)}
+      <div ref={wrap} className={css.tabsWrap}>
+        <div ref={bar} className={`col-tabs ${css.tabs}`} role="tablist" aria-label={tx(S.sections)} onKeyDown={onKey}>
+          {KEYS.map((k) => (
+            <button key={k} ref={(el) => { btns.current[k] = el; }} id={`tab-${k}`} role="tab" type="button" className="col-tab" aria-selected={tab === k} aria-controls={`panel-${k}`} tabIndex={tab === k ? 0 : -1} onClick={() => go(k)}>
+              {tx(S[k])}
+              {done[k] && <><CheckCircle size={13} className={css.tabDone} aria-hidden /><span className="sr-only"> ({tx(S.done)})</span></>}
+            </button>
+          ))}
+        </div>
       </div>
-      <div className="mt-4" role="tabpanel">
-        {tab === "Learn" && (
-          <div>
-            {embed ? <div className="lrn-video"><iframe src={embed} title={s.title_en} allow="accelerometer; encrypted-media; picture-in-picture" allowFullScreen loading="lazy" /></div>
-              : <div className="col-card col-empty"><Lock size={32} strokeWidth={1.5} aria-hidden /><p className="col-empty__title">Video abhi attach nahi hua</p><p style={{ margin: 0 }}>Class recording (YouTube unlisted) admin editor se jodi jayegi. Tab tak Read aur AI Lab se shuru kijiye.</p></div>}
-            <div className="lrn-topics mt-4">
-              {c.topics.map((t, i) => <section key={i} className="col-card lrn-topic"><span className="col-eyebrow">{String(i + 1).padStart(2, "0")}</span><h3 className="lrn-topic__h">{t.h}</h3><p className="lrn-topic__p">{t.p}</p></section>)}
-            </div>
-            <p className="lrn-muted mt-3" style={{ fontSize: "var(--col-text-body-sm)" }}>Outcome: {c.outcome}</p>
-            {resources.length > 0 && <ul className="lrn-list mt-4">
-              {resources.map((r) => (
-                <li key={r.file_name} className="col-card__inner lrn-res">
-                  <div><strong>{r.kind}</strong> · {r.file_name}<div className="lrn-muted" style={{ fontSize: "var(--col-text-dense)" }}>{r.note}{!r.storage_path && " · file pending upload"}</div></div>
-                  {r.kind === "handout" ? (
-                    <button type="button" className="col-btn col-btn--ghost col-btn--sm" disabled={pending} onClick={() => start(async () => { const x = await markHandoutOpened(s.number); setMsg(x); if (x.ok) setHandout(true); })}>{handout ? <><CheckCircle size={14} aria-hidden /> Opened</> : <><Download size={14} aria-hidden /> Open handout</>}</button>
-                  ) : <span className="col-chip"><Download size={14} aria-hidden /> pending</span>}
-                </li>
-              ))}
-            </ul>}
-            <div className="flex items-center gap-3 mt-3 flex-wrap">
-              <span className="col-chip">Watched: <span className="lrn-num">{watched}%</span></span>
-              <button type="button" className="col-btn col-btn--ghost col-btn--sm" disabled={pending || watched >= 80} onClick={() => start(async () => { const r = await markWatched(s.number, 100); setMsg(r); if (r.ok) setWatched(100); })}>Mark as watched</button>
-              <span className="lrn-muted" style={{ fontSize: "var(--col-text-dense)" }}>Attendance points need 80%+ watched and the handout opened.</span>
-            </div>
-          </div>
-        )}
-        {tab === "Aaj Ka Kaam" && (
-          <div className="lrn-list">
-            <section className="col-card lrn-kaam"><span className="col-eyebrow">Aaj Ka Kaam · 15 min</span><p className="lrn-kaam__p">{c.kaam}</p></section>
-            <div className="lrn-grid">
-              <section className="col-card"><span className="col-eyebrow">Outcome</span><p style={{ margin: "6px 0 0" }}>{c.outcome}</p></section>
-              <section className="col-card"><span className="col-eyebrow">Tools</span><div className="lrn-tags mt-2">{c.tools.length ? c.tools.map((t) => <span key={t} className="col-chip">{t}</span>) : <span className="lrn-muted">Koi tool nahi, sirf soch.</span>}</div>{s.strategy && <p className="lrn-muted mt-2" style={{ fontSize: "var(--col-text-dense)" }}>Strategy: {s.strategy}</p>}</section>
-              {c.fun && <section className="col-card"><span className="col-eyebrow">Cohort</span><p style={{ margin: "6px 0 0" }}>{c.fun}</p></section>}
-            </div>
-            {c.compliance && <p className="lrn-muted" style={{ fontSize: "var(--col-text-dense)", margin: 0 }}>Compliance note: {c.compliance}</p>}
-          </div>
-        )}
-        {tab === "AI Lab" && (
-          <div className="lrn-list">
-            <p className="lrn-muted" style={{ marginTop: 0 }}>AI = analyst, human = trigger. Prompt copy kijiye, apne AI tool mein chalaiye, aur output ko Fact / Guess / Kachra mein baantiye. Prompts English mein hi rehte hain.</p>
-            {s.prompts.map((p, i) => <PromptBlock key={i} prompt={p} />)}
-          </div>
-        )}
-        {tab === "Quiz" && <QuizBlock n={s.number} questions={quiz} lang={lang} alreadySubmitted={state.quiz_submitted} />}
-        {tab === "Journal" && (
-          <form className="lrn-list" onSubmit={(e) => { e.preventDefault(); const f = new FormData(e.currentTarget); start(async () => { const r = await saveJournal(s.number, String(f.get("body")), (f.get("kind") as "reflection" | "galti_log" | "friday_review") ?? "reflection"); setMsg(r); if (r.ok) setJournalSaved(true); }); }}>
-            <p className="lrn-muted" style={{ marginTop: 0 }}>{c.journal_prompt} Sirf ek line bhi kaafi hai.</p>
-            <div className="lrn-field"><label htmlFor="kind">Entry type</label>
-              <select id="kind" name="kind" className="col-input" defaultValue={review ? "friday_review" : "reflection"}><option value="reflection">Reflection</option><option value="galti_log">Galti-log</option><option value="friday_review">Weekly review</option></select></div>
-            <div className="lrn-field"><label htmlFor="body">Your note</label><textarea id="body" name="body" className="col-input lrn-textarea" minLength={10} maxLength={4000} required /></div>
-            <button className="col-btn col-btn--primary" disabled={pending}>{pending ? "Saving" : "Save journal"}</button>
-            {journalSaved && <p className="lrn-notice" role="status"><CheckCircle size={16} aria-hidden /> Journal saved for this session.</p>}
-          </form>
-        )}
-        {msg.error && <p className="lrn-error mt-3" role="alert"><AlertCircle size={16} aria-hidden /> {msg.error}</p>}
-      </div>
-
-      <section className="col-card mt-6" aria-label="Session complete gate">
-        <span className="col-eyebrow">Session complete gate</span>
-        <ul className="lrn-checks">
-          <li>{state.quiz_submitted ? <CheckCircle size={16} aria-hidden /> : <Circle size={16} aria-hidden />} Quiz submitted</li>
-          <li>{journalSaved ? <CheckCircle size={16} aria-hidden /> : <Circle size={16} aria-hidden />} Journal saved</li>
-          <li className="lrn-muted">{watched >= 80 && handout ? <CheckCircle size={16} aria-hidden /> : <Circle size={16} aria-hidden />} Attendance (video 80%+ and handout) — for points, not for unlock</li>
-        </ul>
-        {complete ? <Link href={`/learn/session/${s.number + 1}`} className="col-btn col-btn--primary">Next session</Link>
-          : <p className="lrn-muted" style={{ margin: 0 }}>Agla session tab khulega jab quiz aur journal dono ho jayein.</p>}
-        {demo && <p className="lrn-muted mt-2" style={{ fontSize: "var(--col-text-dense)" }}>Preview mode: Supabase project connect hone tak progress save nahi hoti.</p>}
-      </section>
+      {KEYS.map((k) => (
+        <div key={k} id={`panel-${k}`} role="tabpanel" aria-labelledby={`tab-${k}`} hidden={tab !== k} tabIndex={0} className={css.panel}>
+          {panels[k]}
+        </div>
+      ))}
+      {next && (
+        <div className={css.nextTab}>
+          <button type="button" className="col-btn col-btn--ghost" onClick={() => { go(next); wrap.current?.scrollIntoView({ block: "start", behavior: "smooth" }); }}>
+            {tx(S.next)}: {tx(S[next])} <ArrowRight size={16} aria-hidden />
+          </button>
+        </div>
+      )}
     </>
   );
 }

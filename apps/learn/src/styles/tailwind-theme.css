@@ -105,7 +105,10 @@
           comfortable at arm's length on a 27" monitor is sub-minimum
           on a phone screen at reading distance. Bump the two smallest
           steps; leave body/title alone since clamp() already scales
-          --text-title down gracefully. */
+          --text-title down gracefully.
+          These are the Tailwind names only. The --col-* sizes the components
+          actually read get the same floor in tokens.css: a rule inside
+          @layer base can never beat that file's unlayered :root. */
     :root {
       --text-dense: 13px;
       --text-dense-sm: 11px;

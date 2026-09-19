@@ -1,0 +1,1279 @@
+{
+ "day": 1,
+ "title": {
+  "en": "How Indian markets actually run",
+  "hi": "Indian share market asal mein kaise chalta hai",
+  "dv": "भारतीय शेयर बाज़ार असल में कैसे चलता है"
+ },
+ "tags": {
+  "concept": {
+   "en": "Market structure: who runs it and what happens after you tap Buy",
+   "hi": "Market ka structure: kaun chalata hai, aur Buy dabane ke baad kya hota hai",
+   "dv": "बाज़ार का ढाँचा: कौन चलाता है, और Buy दबाने के बाद क्या होता है"
+  },
+  "ai_lab": {
+   "en": "Follow my order: AI explains, you verify",
+   "hi": "Follow my order: AI samjhaye, aap verify karein",
+   "dv": "Follow my order: AI समझाए, आप जाँचें"
+  },
+  "psychology": {
+   "en": "Beginner's overconfidence",
+   "hi": "Beginner ka overconfidence",
+   "dv": "नए ट्रेडर का ओवरकॉन्फ़िडेंस"
+  }
+ },
+ "strategy": null,
+ "duration_min": 60,
+ "story": {
+  "kind": "story",
+  "title": {
+   "en": "Where did my shares go?",
+   "hi": "Mere shares gaye kahan?",
+   "dv": "मेरे शेयर गए कहाँ?"
+  },
+  "panels": [
+   {
+    "who": "narrator",
+    "say": {
+     "en": "Saturday, 10 am. Aman calls the mentor from Pune. Priya joins the call.",
+     "hi": "Saturday, subah 10 baje. Aman Pune se mentor ko call karta hai. Priya bhi call par hai.",
+     "dv": "शनिवार, सुबह 10 बजे। अमन पुणे से मेंटर को कॉल करता है। प्रिया भी कॉल पर है।"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "worried",
+    "say": {
+     "en": "Sir, on Friday I bought 20 shares of Sharma Textiles. They are not showing in my demat, and the price on my app has not moved all morning. Is something wrong?",
+     "hi": "Sir, Friday ko maine Sharma Textiles ke 20 shares khareede. Demat mein dikh hi nahi rahe, aur app par price subah se hila tak nahi. Kuch gadbad toh nahi ho gayi?",
+     "dv": "सर, शुक्रवार को मैंने शर्मा टेक्सटाइल्स के 20 शेयर ख़रीदे। डीमैट में दिख ही नहीं रहे, और ऐप पर भाव सुबह से हिला तक नहीं। कुछ गड़बड़ तो नहीं हो गई?"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "thinking",
+    "say": {
+     "en": "Relax, Aman. Two questions first. Is the market open on a Saturday? And after you tap Buy, how many days do shares take to reach your demat?",
+     "hi": "Aman, ghabraiye mat. Pehle do sawaal. Kya Saturday ko market khulta hai? Aur Buy dabane ke baad shares ko demat tak pahunchne mein kitne din lagte hain?",
+     "dv": "अमन, घबराइए मत। पहले दो सवाल। क्या शनिवार को बाज़ार खुलता है? और Buy दबाने के बाद शेयर को डीमैट तक पहुँचने में कितने दिन लगते हैं?"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "thinking",
+    "say": {
+     "en": "Umm... I thought I tap Buy and the shares just appear. All three of my trades this week made money, so I assumed I had understood everything.",
+     "hi": "Umm... maine socha Buy dabaya aur shares seedha aa gaye. Is hafte teeno trade mein profit hua, toh laga main sab samajh gaya hoon.",
+     "dv": "हम्म... मैंने सोचा Buy दबाया और शेयर सीधे आ गए। इस हफ़्ते तीनों ट्रेड में प्रॉफ़िट हुआ, तो लगा मैं सब समझ गया हूँ।"
+    }
+   },
+   {
+    "who": "priya",
+    "mood": "thinking",
+    "say": {
+     "en": "Sir, so there is a whole chain behind that one Buy button that we never see?",
+     "hi": "Sir, matlab us ek Buy button ke peeche poori ek chain hai, jo hum kabhi dekhte hi nahi?",
+     "dv": "सर, मतलब उस एक Buy बटन के पीछे पूरी एक चेन है, जो हम कभी देखते ही नहीं?"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "happy",
+    "say": {
+     "en": "Exactly. Today we follow one order from your phone to your demat. And Aman, three wins in one good week prove very little. Understanding comes first.",
+     "hi": "Bilkul. Aaj hum ek order ka poora safar dekhenge, phone se demat tak. Aur Aman, ek achhe hafte ki teen jeet se kuch khaas saabit nahi hota. Samajh pehle aati hai.",
+     "dv": "बिल्कुल। आज हम एक ऑर्डर का पूरा सफ़र देखेंगे, फ़ोन से डीमैट तक। और अमन, एक अच्छे हफ़्ते की तीन जीत से कुछ ख़ास साबित नहीं होता। समझ पहले आती है।"
+    }
+   }
+  ],
+  "moral": {
+   "en": "Tapping Buy takes two seconds. Knowing what happens behind it is the real first step.",
+   "hi": "Buy dabane mein do second lagte hain. Uske peeche kya hota hai, yeh samajhna hi asli pehla kadam hai.",
+   "dv": "Buy दबाने में दो सेकंड लगते हैं। उसके पीछे क्या होता है, यह समझना ही असली पहला क़दम है।"
+  }
+ },
+ "topics": [
+  {
+   "h": {
+    "en": "The referee, the ground and the players",
+    "hi": "Referee, ground aur players",
+    "dv": "रेफ़री, मैदान और खिलाड़ी"
+   },
+   "p": {
+    "en": "A share is a small piece of ownership in a company: own one share of Sharma Textiles Ltd and you own a tiny slice of that business. Think of the market as a cricket match. SEBI (Securities and Exchange Board of India) is the referee: it makes the rules, registers brokers and advisers, and acts on complaints. NSE and BSE are the two main grounds, called stock exchanges, where buy and sell orders meet. The players are FII/FPI (foreign investors such as overseas funds), DII (Indian institutions such as mutual funds and insurance companies) and retail (individuals like you). Day 7 shows you how to check a registration and where to complain.",
+    "hi": "Share yaani kisi company mein ek chhota sa hissa: Sharma Textiles Ltd ka ek share aapke paas hai, toh us business ka ek chhota tukda aapka hai. Market ko ek cricket match ki tarah samjhiye. SEBI (Securities and Exchange Board of India) referee hai: rules banata hai, brokers aur advisers ko register karta hai, aur complaints par action leta hai. NSE aur BSE do main ground hain, jinhe stock exchange kehte hain, jahan buy aur sell orders milte hain. Players teen tarah ke hain: FII/FPI yaani videshi investors jaise overseas funds, DII yaani desi institutions jaise mutual funds aur insurance companies, aur retail yaani aap aur hum jaise individuals. Registration kaise check karein aur complaint kahan karein, yeh Day 7 mein seekhenge.",
+    "dv": "शेयर यानी किसी कंपनी में एक छोटा-सा हिस्सा: Sharma Textiles Ltd का एक शेयर आपके पास है, तो उस कारोबार का एक छोटा टुकड़ा आपका है। बाज़ार को एक क्रिकेट मैच की तरह समझिए। SEBI (सिक्योरिटीज़ एंड एक्सचेंज बोर्ड ऑफ़ इंडिया) रेफ़री है: नियम बनाता है, ब्रोकर और एडवाइज़र को रजिस्टर करता है, और शिकायतों पर कार्रवाई करता है। NSE और BSE दो मुख्य मैदान हैं, जिन्हें स्टॉक एक्सचेंज कहते हैं, जहाँ ख़रीदने और बेचने के ऑर्डर मिलते हैं। खिलाड़ी तीन तरह के हैं: FII/FPI यानी विदेशी इन्वेस्टर, जैसे बाहर के बड़े फ़ंड; DII यानी देसी संस्थाएँ, जैसे म्यूचुअल फ़ंड और इंश्योरेंस कंपनियाँ; और रिटेल यानी आप और हम जैसे आम लोग। रजिस्ट्रेशन कैसे जाँचें और शिकायत कहाँ करें, यह दिन 7 में सीखेंगे।"
+   },
+   "example": {
+    "en": "At a sabzi mandi at dawn, a hotel buyer takes 500 kg of tomatoes while a family buys 1 kg; the big order moves the price. Markets work the same way: one mutual fund may buy Rs 500 crore of shares in a day, while a retail buyer puts in Rs 5,000. And remember, every time you buy, someone is selling to you. That seller may know more than you do.",
+    "hi": "Subah ki sabzi mandi mein ek hotel wala 500 kilo tamatar utha leta hai aur ek parivaar 1 kilo; bada order bhav hila deta hai. Market mein bhi yahi hota hai: ek mutual fund ek din mein Rs 500 crore ke shares khareed sakta hai, jabki ek retail buyer Rs 5,000 lagata hai. Aur yaad rakhiye, jab aap khareedte hain toh koi aapko bech bhi raha hota hai. Ho sakta hai us seller ko aapse zyada pata ho.",
+    "dv": "सुबह की सब्ज़ी मंडी में एक होटल वाला 500 किलो टमाटर उठा लेता है और एक परिवार 1 किलो; बड़ा ऑर्डर भाव हिला देता है। बाज़ार में भी यही होता है: एक म्यूचुअल फ़ंड एक दिन में Rs 500 करोड़ के शेयर ख़रीद सकता है, जबकि एक रिटेल ख़रीदार Rs 5,000 लगाता है। और याद रखिए, जब आप ख़रीदते हैं तो कोई आपको बेच भी रहा होता है। हो सकता है उस बेचने वाले को आपसे ज़्यादा पता हो।"
+   },
+   "remember": {
+    "en": "SEBI registration means the person must follow SEBI's rules and you can complain against them. It never means profit.",
+    "hi": "SEBI registration ka matlab hai ki use SEBI ke rules maanne padte hain aur aap uski complaint kar sakte hain. Iska matlab profit bilkul nahi hota.",
+    "dv": "SEBI रजिस्ट्रेशन का मतलब है कि उसे SEBI के नियम मानने पड़ते हैं और आप उसकी शिकायत कर सकते हैं। इसका मतलब मुनाफ़ा बिल्कुल नहीं होता।"
+   },
+   "visual": {
+    "kind": "compare",
+    "title": {
+     "en": "Who's who in the market",
+     "hi": "Market mein kaun kya hai",
+     "dv": "बाज़ार में कौन क्या है"
+    },
+    "caption": {
+     "en": "Bigger players move bigger money, but no one player controls the market.",
+     "hi": "Bade players bada paisa lagate hain, lekin koi ek player market control nahi karta.",
+     "dv": "बड़े खिलाड़ी बड़ा पैसा लगाते हैं, लेकिन कोई एक खिलाड़ी बाज़ार कंट्रोल नहीं करता।"
+    },
+    "cols": [
+     {
+      "head": {
+       "en": "SEBI = referee",
+       "hi": "SEBI = referee",
+       "dv": "SEBI = रेफ़री"
+      },
+      "tone": "brand",
+      "points": [
+       {
+        "en": "Makes the rules",
+        "hi": "Rules banata hai",
+        "dv": "नियम बनाता है"
+       },
+       {
+        "en": "Registers brokers, advisers, analysts",
+        "hi": "Brokers, advisers, analysts ko register karta hai",
+        "dv": "ब्रोकर, एडवाइज़र, एनालिस्ट को रजिस्टर करता है"
+       },
+       {
+        "en": "Acts on complaints",
+        "hi": "Complaints par action leta hai",
+        "dv": "शिकायतों पर कार्रवाई करता है"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "NSE / BSE = ground",
+       "hi": "NSE / BSE = ground",
+       "dv": "NSE / BSE = मैदान"
+      },
+      "tone": "gold",
+      "points": [
+       {
+        "en": "Buy and sell orders meet here",
+        "hi": "Buy aur sell orders yahin milte hain",
+        "dv": "ख़रीद-बिक्री के ऑर्डर यहीं मिलते हैं"
+       },
+       {
+        "en": "Publishes prices and indices",
+        "hi": "Prices aur index publish karta hai",
+        "dv": "भाव और इंडेक्स पब्लिश करता है"
+       },
+       {
+        "en": "Sets a daily price band per stock",
+        "hi": "Har stock ka daily price band set karta hai",
+        "dv": "हर स्टॉक का रोज़ का प्राइस बैंड तय करता है"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "Players",
+       "hi": "Players",
+       "dv": "खिलाड़ी"
+      },
+      "tone": "up",
+      "points": [
+       {
+        "en": "FII/FPI: foreign funds",
+        "hi": "FII/FPI: videshi funds",
+        "dv": "FII/FPI: विदेशी फ़ंड"
+       },
+       {
+        "en": "DII: Indian funds, insurers",
+        "hi": "DII: desi funds, insurance companies",
+        "dv": "DII: देसी फ़ंड, इंश्योरेंस कंपनियाँ"
+       },
+       {
+        "en": "Retail: you and me",
+        "hi": "Retail: aap aur hum",
+        "dv": "रिटेल: आप और हम"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "The index: one number for the whole market",
+    "hi": "Index: poore market ka ek number",
+    "dv": "इंडेक्स: पूरे बाज़ार का एक नंबर"
+   },
+   "p": {
+    "en": "An index is a basket of shares shown as a single number, like a thermometer for the market. NIFTY 50 tracks 50 large companies listed on NSE; SENSEX tracks 30 large companies on BSE; NIFTY Bank tracks banking shares. Companies are chosen by rules on size and trading activity, and bigger companies carry more weight. So one heavyweight falling can pull the index down even on a day when most shares rise. You cannot buy an index itself; index funds and ETFs copy it, and Day 10 covers them.",
+    "hi": "Index shares ki ek tokri hai, jiska haal ek number mein dikhta hai — ise market ka thermometer samajh lijiye. NIFTY 50 NSE par listed 50 badi companies ko track karta hai, SENSEX BSE ki 30 badi companies ko, aur NIFTY Bank sirf banking shares ko. Companies size aur trading activity ke rules se chuni jaati hain, aur badi company ka weight zyada hota hai. Isliye ek heavyweight gir jaye toh index neeche aa sakta hai, chahe us din zyadatar shares upar gaye hon. Index ko seedha nahi khareed sakte; index funds aur ETFs use copy karte hain, inki baat Day 10 mein karenge.",
+    "dv": "इंडेक्स शेयरों की एक टोकरी है, जिसका हाल एक नंबर में दिखता है — इसे बाज़ार का थर्मामीटर समझ लीजिए। NIFTY 50 में NSE पर लिस्टेड 50 बड़ी कंपनियाँ हैं, SENSEX में BSE की 30 बड़ी कंपनियाँ, और NIFTY Bank में सिर्फ़ बैंकिंग शेयर। कंपनियाँ साइज़ और ट्रेडिंग एक्टिविटी के नियमों से चुनी जाती हैं, और बड़ी कंपनी का वज़न ज़्यादा होता है। इसलिए एक भारी कंपनी गिर जाए तो इंडेक्स नीचे आ सकता है, चाहे उस दिन ज़्यादातर शेयर ऊपर गए हों। इंडेक्स को सीधे नहीं ख़रीद सकते; इंडेक्स फ़ंड और ETF उसे कॉपी करते हैं, इनकी बात दिन 10 में करेंगे।"
+   },
+   "example": {
+    "en": "Think of a class average where the toppers' marks count more. In a mini-index, Big Co has 50% weight, Mid Co 30% and Small Co 20%. Big Co falls 4% while the other two rise. The index still ends lower, as the calculation shows.",
+    "hi": "Ek class average sochiye jismein toppers ke marks zyada gine jaate hain. Ek mini-index mein Big Co ka weight 50%, Mid Co ka 30% aur Small Co ka 20% hai. Big Co 4% gir jaata hai, baaki dono chadh jaate hain. Phir bhi index neeche band hota hai — calculation dekhiye.",
+    "dv": "एक क्लास एवरेज सोचिए, जिसमें टॉपर्स के नंबर ज़्यादा गिने जाते हैं। एक छोटे इंडेक्स में Big Co का वज़न 50%, Mid Co का 30% और Small Co का 20% है। Big Co का शेयर 4% गिर जाता है, बाक़ी दोनों चढ़ जाते हैं। फिर भी इंडेक्स नीचे बंद होता है — हिसाब देखिए।"
+   },
+   "remember": {
+    "en": "The index gives the market's mood in one number, but heavyweights speak loudest.",
+    "hi": "Index ek number mein market ka mood batata hai, lekin heavyweights ki awaaz sabse unchi hoti hai.",
+    "dv": "इंडेक्स एक नंबर में बाज़ार का मूड बताता है, लेकिन भारी कंपनियों की आवाज़ सबसे ऊँची होती है।"
+   },
+   "visual": {
+    "kind": "calc",
+    "title": {
+     "en": "How weight moves an index",
+     "hi": "Weight index ko kaise hilata hai",
+     "dv": "वज़न इंडेक्स को कैसे हिलाता है"
+    },
+    "caption": {
+     "en": "Two of three shares rose, yet the index fell. Weight matters more than headcount.",
+     "hi": "Teen mein se do shares chadhe, phir bhi index gira. Ginti se zyada weight maayne rakhta hai.",
+     "dv": "तीन में से दो शेयर चढ़े, फिर भी इंडेक्स गिरा। गिनती से ज़्यादा वज़न मायने रखता है।"
+    },
+    "rows": [
+     {
+      "label": {
+       "en": "Big Co: 50% weight, falls 4%",
+       "hi": "Big Co: 50% weight, 4% gira",
+       "dv": "Big Co: 50% वज़न, 4% गिरा"
+      },
+      "value": "-2.0%"
+     },
+     {
+      "label": {
+       "en": "Mid Co: 30% weight, rises 2%",
+       "hi": "Mid Co: 30% weight, 2% chadha",
+       "dv": "Mid Co: 30% वज़न, 2% चढ़ा"
+      },
+      "value": "+0.6%",
+      "op": "+"
+     },
+     {
+      "label": {
+       "en": "Small Co: 20% weight, rises 5%",
+       "hi": "Small Co: 20% weight, 5% chadha",
+       "dv": "Small Co: 20% वज़न, 5% चढ़ा"
+      },
+      "value": "+1.0%",
+      "op": "+"
+     }
+    ],
+    "result": {
+     "label": {
+      "en": "Index move",
+      "hi": "Index ka move",
+      "dv": "इंडेक्स की चाल"
+     },
+     "value": "-0.4%"
+    }
+   }
+  },
+  {
+   "h": {
+    "en": "Your three accounts and one KYC",
+    "hi": "Aapke teen account aur ek KYC",
+    "dv": "आपके तीन अकाउंट और एक KYC"
+   },
+   "p": {
+    "en": "To trade you need three linked accounts. A bank account holds your money. A trading account, opened with a broker, is where you place buy and sell orders. A demat account holds your shares in electronic form at a depository, NSDL or CDSL, in your own name; you usually open it through your broker, acting as a depository participant (DP), but the broker does not own your shares. KYC (Know Your Customer) is the one-time identity check with your PAN, address proof, photo and a live or video verification. No genuine broker, exchange or SEBI official will ever ask for your password, OTP or TPIN (a PIN used to approve selling shares from your demat).",
+    "hi": "Trading ke liye teen jude hue accounts chahiye. Bank account mein aapka paisa rehta hai. Trading account broker ke paas khulta hai, aur yahin se aap buy-sell orders lagate hain. Demat account mein aapke shares electronic form mein rehte hain — depository yaani NSDL ya CDSL ke paas, aapke apne naam par; yeh aam taur par broker ke through khulta hai (broker yahan DP yaani depository participant hota hai), lekin shares broker ke nahi hote. KYC (Know Your Customer) ek baar ka identity check hai: PAN, address proof, photo aur ek live ya video verification. Koi bhi asli broker, exchange ya SEBI ka official aapse password, OTP ya TPIN (woh PIN jisse demat se shares bechne ki approval di jaati hai) kabhi nahi maangega.",
+    "dv": "ट्रेडिंग के लिए तीन जुड़े हुए अकाउंट चाहिए। बैंक अकाउंट में आपका पैसा रहता है। ट्रेडिंग अकाउंट ब्रोकर के पास खुलता है, और यहीं से आप ख़रीदने-बेचने के ऑर्डर लगाते हैं। डीमैट अकाउंट में आपके शेयर इलेक्ट्रॉनिक रूप में रहते हैं — डिपॉज़िटरी यानी NSDL या CDSL के पास, आपके अपने नाम पर; यह आम तौर पर ब्रोकर के ज़रिए खुलता है (ब्रोकर यहाँ DP यानी डिपॉज़िटरी पार्टिसिपेंट होता है), लेकिन शेयर ब्रोकर के नहीं होते। KYC (नो योर कस्टमर) एक बार की पहचान जाँच है: PAN, पते का सबूत, फ़ोटो और एक लाइव या वीडियो वेरिफ़िकेशन। कोई भी असली ब्रोकर, एक्सचेंज या SEBI का अधिकारी आपसे पासवर्ड, OTP या TPIN (वह PIN जिससे डीमैट से शेयर बेचने की मंज़ूरी दी जाती है) कभी नहीं माँगेगा।"
+   },
+   "example": {
+    "en": "Priya explains it her way: the bank account is her purse, the trading account is the shop counter where she places an order, and the demat account is her bank locker. When she buys 10 shares of Gupta Cement Ltd at Rs 450, Rs 4,500 plus small charges (Day 2) leave her trading balance, and on the next trading day (T+1, explained in the next topic) the 10 shares land in her locker, in her own name. Whenever you open real accounts, add a nominee so your family can claim your shares. In Stage 1 you need none of these accounts: the app's Portfolio page holds Rs 10 lakh of virtual money, and paper trading on it starts on Day 12.",
+    "hi": "Priya ise apne tareeke se samjhati hai: bank account uska purse hai, trading account dukaan ka counter jahan woh order deti hai, aur demat account uska bank locker. Jab woh Gupta Cement Ltd ke 10 shares Rs 450 par khareedti hai, toh Rs 4,500 aur thode charges (Day 2) trading balance se nikal jaate hain, aur agle trading day (T+1, agle topic mein samjhenge) 10 shares uske naam se locker mein aa jaate hain. Jab bhi asli account kholein, nominee zaroor add kijiye, taaki aapki family shares claim kar sake. Stage 1 mein aapko inmein se koi account nahi chahiye: app ke Portfolio page par Rs 10 lakh ka virtual paisa hai, aur uspar paper trading Day 12 se shuru hogi.",
+    "dv": "प्रिया इसे अपने तरीक़े से समझाती है: बैंक अकाउंट उसका पर्स है, ट्रेडिंग अकाउंट दुकान का काउंटर है जहाँ वह ऑर्डर देती है, और डीमैट अकाउंट उसका बैंक लॉकर। जब वह Gupta Cement Ltd के 10 शेयर Rs 450 पर ख़रीदती है, तो Rs 4,500 और थोड़े चार्ज (दिन 2) ट्रेडिंग बैलेंस से निकल जाते हैं, और अगले ट्रेडिंग दिन (T+1, अगले टॉपिक में समझेंगे) 10 शेयर उसके नाम से लॉकर में आ जाते हैं। जब भी असली अकाउंट खोलें, नॉमिनी ज़रूर जोड़िए, ताकि आपका परिवार शेयर क्लेम कर सके। Stage 1 में आपको इनमें से कोई अकाउंट नहीं चाहिए: ऐप के Portfolio पेज पर Rs 10 लाख का वर्चुअल पैसा है, और उस पर पेपर ट्रेडिंग दिन 12 से शुरू होगी।"
+   },
+   "remember": {
+    "en": "Money in the bank, orders through the broker, shares in your demat, and your OTP stays with you.",
+    "hi": "Paisa bank mein, orders broker se, shares aapke demat mein, aur OTP sirf aapke paas.",
+    "dv": "पैसा बैंक में, ऑर्डर ब्रोकर से, शेयर आपके डीमैट में, और OTP सिर्फ़ आपके पास।"
+   },
+   "visual": {
+    "kind": "compare",
+    "title": {
+     "en": "Three accounts, one KYC",
+     "hi": "Teen accounts, ek KYC",
+     "dv": "तीन अकाउंट, एक KYC"
+    },
+    "caption": {
+     "en": "Your shares sit in your own demat. Nobody genuine asks for your OTP, password or TPIN.",
+     "hi": "Aapke shares aapke apne demat mein rehte hain. Koi asli broker ya official aapka OTP, password ya TPIN nahi maangta.",
+     "dv": "आपके शेयर आपके अपने डीमैट में रहते हैं। कोई असली ब्रोकर या अधिकारी आपका OTP, पासवर्ड या TPIN नहीं माँगता।"
+    },
+    "cols": [
+     {
+      "head": {
+       "en": "Bank = purse",
+       "hi": "Bank = purse",
+       "dv": "बैंक = बटुआ"
+      },
+      "tone": "brand",
+      "points": [
+       {
+        "en": "Holds your money",
+        "hi": "Aapka paisa rakhta hai",
+        "dv": "आपका पैसा रखता है"
+       },
+       {
+        "en": "Pays for buys, receives sale money",
+        "hi": "Kharid ka paisa deta, bikri ka leta hai",
+        "dv": "ख़रीद का पैसा देता, बिक्री का लेता है"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "Trading = shop counter",
+       "hi": "Trading = dukaan ka counter",
+       "dv": "ट्रेडिंग = दुकान का काउंटर"
+      },
+      "tone": "gold",
+      "points": [
+       {
+        "en": "Opened with a broker",
+        "hi": "Broker ke saath khulta hai",
+        "dv": "ब्रोकर के साथ खुलता है"
+       },
+       {
+        "en": "Your orders go through it",
+        "hi": "Aapke orders isi se jaate hain",
+        "dv": "आपके ऑर्डर इसी से जाते हैं"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "Demat = locker",
+       "hi": "Demat = locker",
+       "dv": "डीमैट = लॉकर"
+      },
+      "tone": "up",
+      "points": [
+       {
+        "en": "Shares in your name",
+        "hi": "Shares aapke naam par",
+        "dv": "शेयर आपके नाम पर"
+       },
+       {
+        "en": "Held at NSDL or CDSL",
+        "hi": "NSDL ya CDSL mein",
+        "dv": "NSDL या CDSL में"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "The journey of an order, from your phone to your demat",
+    "hi": "Ek order ka safar: phone se demat tak",
+    "dv": "एक ऑर्डर का सफ़र: फ़ोन से डीमैट तक"
+   },
+   "p": {
+    "en": "When you tap Buy, your order first goes to your broker, who checks that you have enough money. The broker sends it to the exchange, where a computer lines up every buy and sell order: the best price goes first, and at the same price, whoever came first. When a buyer's price meets a seller's price, a trade happens. The clearing corporation then stands between the two sides; it becomes the buyer to every seller and the seller to every buyer, so neither depends on a stranger. On T+1, the next trading day, the shares reach the buyer's demat through the depository, and the money reaches the seller's broker.",
+    "hi": "Jab aap Buy dabate hain, order pehle broker ke paas jaata hai, jo check karta hai ki aapke paas poora paisa hai ya nahi. Broker order ko exchange bhejta hai, jahan ek computer saare buy aur sell orders line mein lagata hai: best price pehle, aur same price par jo pehle aaya woh pehle. Jaise hi buyer ka price seller ke price se milta hai, trade ho jaata hai. Phir clearing corporation dono ke beech khadi ho jaati hai — har seller ke liye buyer aur har buyer ke liye seller ban jaati hai — taaki kisi ko anjaan party par bharosa na karna pade. T+1 yaani agle trading day par shares depository ke through buyer ke demat mein pahunch jaate hain, aur paisa seller ke broker tak.",
+    "dv": "जब आप Buy दबाते हैं, ऑर्डर पहले ब्रोकर के पास जाता है, जो जाँचता है कि आपके पास पूरा पैसा है या नहीं। ब्रोकर ऑर्डर को एक्सचेंज भेजता है, जहाँ एक कंप्यूटर सारे ख़रीद और बिक्री के ऑर्डर लाइन में लगाता है: सबसे अच्छा भाव पहले, और एक ही भाव पर जो पहले आया वो पहले। जैसे ही ख़रीदार का भाव बेचने वाले के भाव से मिलता है, ट्रेड हो जाता है। फिर क्लियरिंग कॉर्पोरेशन दोनों के बीच खड़ी हो जाती है — हर बेचने वाले के लिए ख़रीदार और हर ख़रीदार के लिए बेचने वाली बन जाती है — ताकि किसी को अनजान पार्टी पर भरोसा न करना पड़े। T+1 यानी अगले ट्रेडिंग दिन, शेयर डिपॉज़िटरी के ज़रिए ख़रीदार के डीमैट में पहुँच जाते हैं, और पैसा बेचने वाले के ब्रोकर तक।"
+   },
+   "example": {
+    "en": "Remember Aman's Friday? He bought 20 shares of Sharma Textiles Ltd at Rs 250 at 11 am, a Rs 5,000 order. Saturday and Sunday are not trading days, so T+1 was Monday. Nothing was lost; the shares were simply on the way. An optional same-day cycle exists for a limited list of stocks; check with your broker.",
+    "hi": "Aman ka Friday yaad hai? Usne subah 11 baje Sharma Textiles Ltd ke 20 shares Rs 250 par khareede — Rs 5,000 ka order. Saturday aur Sunday trading days nahi hote, isliye T+1 Monday tha. Kuch khoya nahi tha; shares bas raaste mein the. Kuch chune hue stocks ke liye ek optional same-day cycle bhi hai — apne broker se confirm kar lijiye.",
+    "dv": "अमन का शुक्रवार याद है? उसने सुबह 11 बजे Sharma Textiles Ltd के 20 शेयर Rs 250 पर ख़रीदे — Rs 5,000 का ऑर्डर। शनिवार और रविवार ट्रेडिंग के दिन नहीं होते, इसलिए T+1 सोमवार था। कुछ खोया नहीं था; शेयर बस रास्ते में थे। कुछ चुने हुए स्टॉक्स के लिए उसी दिन वाला एक ऑप्शनल सेटलमेंट भी है — अपने ब्रोकर से पूछ लें।"
+   },
+   "remember": {
+    "en": "T+1 counts trading days, not calendar days. Buy on a Friday and the shares normally arrive on Monday.",
+    "hi": "T+1 trading days ginta hai, calendar days nahi. Friday ko khareediye, toh shares aam taur par Monday ko aayenge.",
+    "dv": "T+1 ट्रेडिंग के दिन गिनता है, कैलेंडर के दिन नहीं। शुक्रवार को ख़रीदें, तो शेयर आम तौर पर सोमवार को आएँगे।"
+   },
+   "visual": {
+    "kind": "flow",
+    "title": {
+     "en": "Follow one order",
+     "hi": "Ek order ka safar",
+     "dv": "एक ऑर्डर का सफ़र"
+    },
+    "caption": {
+     "en": "Money travels the other way: from the buyer's broker, through clearing, to the seller.",
+     "hi": "Paisa ulti disha mein chalta hai: buyer ke broker se, clearing ke through, seller tak.",
+     "dv": "पैसा उल्टी दिशा में चलता है: ख़रीदार के ब्रोकर से, क्लियरिंग के ज़रिए, बेचने वाले तक।"
+    },
+    "nodes": [
+     {
+      "label": {
+       "en": "Your app",
+       "hi": "Aapka app",
+       "dv": "आपका ऐप"
+      },
+      "sub": {
+       "en": "You tap Buy",
+       "hi": "Aap Buy dabate hain",
+       "dv": "आप Buy दबाते हैं"
+      },
+      "tone": "brand"
+     },
+     {
+      "label": {
+       "en": "Broker",
+       "hi": "Broker",
+       "dv": "ब्रोकर"
+      },
+      "sub": {
+       "en": "Checks your money",
+       "hi": "Paisa check karta hai",
+       "dv": "पैसा जाँचता है"
+      }
+     },
+     {
+      "label": {
+       "en": "Exchange",
+       "hi": "Exchange",
+       "dv": "एक्सचेंज"
+      },
+      "sub": {
+       "en": "Matches buyer and seller",
+       "hi": "Buyer-seller ko milata hai",
+       "dv": "ख़रीदार-बेचने वाले को मिलाता है"
+      }
+     },
+     {
+      "label": {
+       "en": "Clearing corp",
+       "hi": "Clearing corp",
+       "dv": "क्लियरिंग कॉर्प"
+      },
+      "sub": {
+       "en": "Stands in the middle",
+       "hi": "Beech mein khadi hoti hai",
+       "dv": "बीच में खड़ी होती है"
+      }
+     },
+     {
+      "label": {
+       "en": "Depository",
+       "hi": "Depository",
+       "dv": "डिपॉज़िटरी"
+      },
+      "sub": {
+       "en": "NSDL or CDSL",
+       "hi": "NSDL ya CDSL",
+       "dv": "NSDL या CDSL"
+      }
+     },
+     {
+      "label": {
+       "en": "Your demat",
+       "hi": "Aapka demat",
+       "dv": "आपका डीमैट"
+      },
+      "sub": {
+       "en": "Shares in your name",
+       "hi": "Shares aapke naam par",
+       "dv": "शेयर आपके नाम पर"
+      },
+      "tone": "up"
+     }
+    ],
+    "arrows": [
+     {
+      "en": "order",
+      "hi": "order",
+      "dv": "ऑर्डर"
+     },
+     {
+      "en": "sends",
+      "hi": "bhejta hai",
+      "dv": "भेजता है"
+     },
+     {
+      "en": "trade",
+      "hi": "trade",
+      "dv": "ट्रेड"
+     },
+     {
+      "en": "settles",
+      "hi": "settle",
+      "dv": "सेटल"
+     },
+     {
+      "en": "T+1",
+      "hi": "T+1",
+      "dv": "T+1"
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "The market clock, and when prices are stopped",
+    "hi": "Market ki ghadi, aur jab price ruk jaata hai",
+    "dv": "बाज़ार की घड़ी, और जब भाव रुक जाता है"
+   },
+   "p": {
+    "en": "NSE's normal session runs from 9:15 am to 3:30 pm on trading days. Just before it, from 9:00 to 9:15, is the pre-open session, where orders are collected and one opening price is worked out. The market is closed on weekends and exchange holidays. Rarely, the exchange announces a special session, such as Muhurat trading on Diwali or a session when the Budget falls on a weekend. A price band, often called a circuit, is the daily limit the exchange sets on how far most stocks may move; some heavily traded stocks have a flexible limit instead. When a stock hits its lower band, there may be many sellers and almost no buyers. If the index moves too sharply either way, a market-wide circuit breaker can pause all trading. Timings and bands can change, so check the NSE website for the latest.",
+    "hi": "NSE ka normal session trading days par subah 9:15 se dopahar 3:30 tak chalta hai. Usse theek pehle 9:00 se 9:15 tak pre-open session hota hai, jismein orders ikatthe hote hain aur ek opening price tay hota hai. Weekends aur exchange holidays par market band rehta hai. Kabhi-kabhaar exchange special session announce karta hai, jaise Diwali par Muhurat trading, ya Budget weekend par pade toh ek session. Price band ko aam bol-chaal mein circuit kehte hain. Yeh exchange ki daily limit hai ki zyadatar stocks ek din mein kitna upar-neeche ja sakte hain; kuch bade, zyada trade hone wale stocks ki limit flexible hoti hai. Lower band par aksar sellers bahut hote hain aur buyers na ke barabar. Agar index kisi bhi taraf bahut tezi se hile, toh market-wide circuit breaker saari trading kuch der ke liye rok sakta hai. Timings aur bands badal sakte hain, isliye latest jaankari NSE ki website par check kijiye.",
+    "dv": "NSE का नॉर्मल सेशन ट्रेडिंग के दिनों में सुबह 9:15 से दोपहर 3:30 तक चलता है। उससे ठीक पहले 9:00 से 9:15 तक प्री-ओपन सेशन होता है, जिसमें ऑर्डर इकट्ठे होते हैं और एक ओपनिंग प्राइस तय होता है। शनिवार-रविवार और एक्सचेंज की छुट्टियों में बाज़ार बंद रहता है। कभी-कभार एक्सचेंज स्पेशल सेशन की घोषणा करता है, जैसे दिवाली पर मुहूर्त ट्रेडिंग, या बजट शनिवार-रविवार को पड़े तो एक सेशन। प्राइस बैंड को आम बोलचाल में सर्किट कहते हैं। यह एक्सचेंज की रोज़ की सीमा है कि ज़्यादातर स्टॉक एक दिन में कितना ऊपर-नीचे जा सकते हैं; कुछ बड़े, ज़्यादा ट्रेड होने वाले स्टॉक की सीमा लचीली होती है। लोअर बैंड पर अक्सर बेचने वाले बहुत होते हैं और ख़रीदार न के बराबर। अगर इंडेक्स किसी भी तरफ़ बहुत तेज़ी से हिले, तो मार्केट-वाइड सर्किट ब्रेकर सारी ट्रेडिंग कुछ देर के लिए रोक सकता है। टाइमिंग और बैंड बदल सकते हैं, इसलिए ताज़ा जानकारी NSE की वेबसाइट पर देख लें।"
+   },
+   "example": {
+    "en": "Kiran Foods Ltd closed at Rs 200 yesterday. Today, after bad news, it drops to its lower band of Rs 180, the limit the exchange set for the day. Aman wants to sell 50 shares, worth Rs 9,000 at that price, but lakhs of shares are already queued to sell and very few buyers are around. His order just waits in the line and may not fill today. Day 2 shows why even a stop-loss cannot promise your exit price.",
+    "hi": "Kiran Foods Ltd kal Rs 200 par band hua. Aaj ek buri khabar ke baad woh apne lower band Rs 180 tak gir gaya — yeh limit exchange ne aaj ke liye set ki thi. Aman 50 shares bechna chahta hai, us price par Rs 9,000 ke, lekin lakhon shares pehle se bikne ki line mein hain aur buyers gine-chune hain. Uska order bas line mein khada rehta hai; ho sakta hai aaj fill hi na ho. Stop-loss bhi exit price ka vada kyun nahi kar sakta, yeh Day 2 mein dekhenge.",
+    "dv": "Kiran Foods Ltd कल Rs 200 पर बंद हुआ। आज एक बुरी ख़बर के बाद वह अपने लोअर बैंड Rs 180 तक गिर गया — यह सीमा एक्सचेंज ने आज के लिए तय की थी। अमन 50 शेयर बेचना चाहता है, उस भाव पर Rs 9,000 के, लेकिन लाखों शेयर पहले से बिकने की लाइन में हैं और ख़रीदार गिने-चुने हैं। उसका ऑर्डर बस लाइन में खड़ा रहता है; हो सकता है आज फ़िल ही न हो। स्टॉप-लॉस भी एग्ज़िट प्राइस का वादा क्यों नहीं कर सकता, यह दिन 2 में देखेंगे।"
+   },
+   "remember": {
+    "en": "A price band can stop you from selling. Knowing this before you buy is part of understanding risk.",
+    "hi": "Price band aapko bechne se rok sakta hai. Khareedne se pehle yeh jaan lena bhi risk samajhne ka hissa hai.",
+    "dv": "प्राइस बैंड आपको बेचने से रोक सकता है। ख़रीदने से पहले यह जान लेना भी रिस्क समझने का हिस्सा है।"
+   },
+   "visual": {
+    "kind": "steps",
+    "title": {
+     "en": "One trading day, then T+1",
+     "hi": "Ek trading day, phir T+1",
+     "dv": "एक ट्रेडिंग दिन, फिर T+1"
+    },
+    "caption": {
+     "en": "The market is closed on weekends and exchange holidays. Check the holiday list on nseindia.com.",
+     "hi": "Weekends aur exchange holidays par market band rehta hai. Holiday list nseindia.com par dekhiye.",
+     "dv": "शनिवार-रविवार और एक्सचेंज की छुट्टियों में बाज़ार बंद रहता है। छुट्टियों की लिस्ट nseindia.com पर देखें।"
+    },
+    "items": [
+     {
+      "tag": "9:00 am",
+      "label": {
+       "en": "Pre-open",
+       "hi": "Pre-open",
+       "dv": "प्री-ओपन"
+      },
+      "sub": {
+       "en": "Orders collected, opening price found",
+       "hi": "Orders ikatthe, opening price tay",
+       "dv": "ऑर्डर इकट्ठे, ओपनिंग प्राइस तय"
+      }
+     },
+     {
+      "tag": "9:15 am",
+      "label": {
+       "en": "Market opens",
+       "hi": "Market khulta hai",
+       "dv": "बाज़ार खुलता है"
+      },
+      "sub": {
+       "en": "Normal buying and selling",
+       "hi": "Normal kharid-bikri",
+       "dv": "आम ख़रीद-बिक्री"
+      }
+     },
+     {
+      "tag": "3:30 pm",
+      "label": {
+       "en": "Market closes",
+       "hi": "Market band",
+       "dv": "बाज़ार बंद"
+      },
+      "sub": {
+       "en": "Normal session ends",
+       "hi": "Normal session khatam",
+       "dv": "नॉर्मल सेशन ख़त्म"
+      }
+     },
+     {
+      "tag": "T+1",
+      "label": {
+       "en": "Next trading day",
+       "hi": "Agla trading day",
+       "dv": "अगला ट्रेडिंग दिन"
+      },
+      "sub": {
+       "en": "Shares reach the buyer's demat",
+       "hi": "Shares buyer ke demat mein",
+       "dv": "शेयर ख़रीदार के डीमैट में"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Beginner's overconfidence: three wins are not skill",
+    "hi": "Beginner ka overconfidence: teen jeet skill nahi hai",
+    "dv": "नए ट्रेडर का ओवरकॉन्फ़िडेंस: तीन जीत हुनर नहीं"
+   },
+   "p": {
+    "en": "Overconfidence means believing we are more skilled than we really are. It hits hardest right after a few early wins. When the market is rising, many shares rise with it, so three winning trades in a good week may be the market's tide, not your skill. Skill shows only over many trades in different conditions; this course asks for at least 30 trades before you judge any rule. That is why Stage 1 uses virtual money only: a Rs 10 lakh practice account on the Portfolio page, paper trading from Day 12, and scores for following your rules, not for profit.",
+    "hi": "Overconfidence ka matlab hai khud ko asliyat se zyada samajhdaar maan lena. Yeh sabse zyada tab pakadta hai jab shuru ke kuch trades mein jeet mil jaati hai. Chadhte market mein bahut saare shares saath-saath chadh jaate hain, toh achhe hafte ki teen jeet market ki lehar bhi ho sakti hai, aapki skill nahi. Skill bahut saare trades aur alag-alag market conditions mein hi dikhti hai; yeh course kisi bhi rule ko judge karne se pehle kam se kam 30 trades maangta hai. Isiliye Stage 1 mein sirf virtual paisa hai: Portfolio page par Rs 10 lakh ka practice account, Day 12 se paper trading, aur score rules follow karne par milta hai, profit par nahi.",
+    "dv": "ओवरकॉन्फ़िडेंस का मतलब है ख़ुद को असलियत से ज़्यादा समझदार मान लेना। यह सबसे ज़्यादा तब पकड़ता है, जब शुरू के कुछ ट्रेड में जीत मिल जाती है। चढ़ते बाज़ार में बहुत-से शेयर साथ-साथ चढ़ जाते हैं, तो अच्छे हफ़्ते की तीन जीत बाज़ार की लहर भी हो सकती है, आपका हुनर नहीं। हुनर बहुत सारे ट्रेड और अलग-अलग हालात में ही दिखता है; यह कोर्स किसी भी नियम को परखने से पहले कम से कम 30 ट्रेड माँगता है। इसीलिए Stage 1 में सिर्फ़ वर्चुअल पैसा है: Portfolio पेज पर Rs 10 लाख का प्रैक्टिस अकाउंट, दिन 12 से पेपर ट्रेडिंग, और स्कोर नियम मानने पर मिलता है, मुनाफ़े पर नहीं।"
+   },
+   "example": {
+    "en": "In Aman's winning week, NIFTY 50 itself rose about 3%, and his three trades made Rs 1,800. Priya asked him one question: 'Would these trades have worked if the market had fallen that week?' Aman had no answer. Asking that question after every win is the simplest cure for overconfidence.",
+    "hi": "Aman ke jeet wale hafte mein NIFTY 50 khud lagbhag 3% chadha tha, aur uske teen trades ne Rs 1,800 kamaye. Priya ne bas ek sawaal poocha: 'Agar us hafte market gira hota, toh kya yeh trades tab bhi chalte?' Aman ke paas jawab nahi tha. Har jeet ke baad yahi sawaal poochna overconfidence ka sabse seedha ilaaj hai.",
+    "dv": "अमन के जीत वाले हफ़्ते में NIFTY 50 ख़ुद लगभग 3% चढ़ा था, और उसके तीन ट्रेड ने Rs 1,800 कमाए। प्रिया ने बस एक सवाल पूछा: 'अगर उस हफ़्ते बाज़ार गिरा होता, तो क्या ये ट्रेड तब भी चलते?' अमन के पास जवाब नहीं था। हर जीत के बाद यही सवाल पूछना ओवरकॉन्फ़िडेंस का सबसे सीधा इलाज है।"
+   },
+   "remember": {
+    "en": "Judge a method after 30 trades, never after three.",
+    "hi": "Kisi tareeke ko 30 trades ke baad judge kijiye, teen ke baad kabhi nahi.",
+    "dv": "किसी तरीक़े को 30 ट्रेड के बाद परखिए, तीन के बाद कभी नहीं।"
+   },
+   "visual": {
+    "kind": "line",
+    "title": {
+     "en": "Riding the tide",
+     "hi": "Lehar par sawaari",
+     "dv": "लहर की सवारी"
+    },
+    "caption": {
+     "en": "Both lines start at 100. In his winning week Aman's picks rose faster than NIFTY 50; in this what-if, they fall faster when the tide turns. Three wins cannot tell tide from skill.",
+     "hi": "Dono lines 100 se shuru hoti hain. Jeet wale hafte mein Aman ke stocks NIFTY 50 se tez chadhe; is 'what if' mein lehar palatte hi woh aur tezi se girte hain. Teen jeet se pata hi nahi chalta ki lehar thi ya skill.",
+     "dv": "दोनों लाइनें 100 से शुरू होती हैं। जीत वाले हफ़्ते में अमन के स्टॉक NIFTY 50 से तेज़ चढ़े; इस 'अगर ऐसा हो' वाली तस्वीर में लहर पलटते ही वे और तेज़ी से गिरते हैं। तीन जीत से पता ही नहीं चलता कि लहर थी या हुनर।"
+    },
+    "x_label": {
+     "en": "Trading days",
+     "hi": "Trading days",
+     "dv": "ट्रेडिंग के दिन"
+    },
+    "y_label": {
+     "en": "Start = 100",
+     "hi": "Start = 100",
+     "dv": "शुरुआत = 100"
+    },
+    "series": [
+     {
+      "name": {
+       "en": "NIFTY 50",
+       "hi": "NIFTY 50",
+       "dv": "NIFTY 50"
+      },
+      "tone": "gold",
+      "points": [
+       100,
+       100.5,
+       101.2,
+       101.6,
+       102.3,
+       103.0,
+       102.4,
+       101.5,
+       100.6,
+       100.1
+      ]
+     },
+     {
+      "name": {
+       "en": "Aman's picks",
+       "hi": "Aman ke stocks",
+       "dv": "अमन के स्टॉक"
+      },
+      "tone": "brand",
+      "points": [
+       100,
+       101.0,
+       102.5,
+       103.3,
+       104.8,
+       106.0,
+       104.6,
+       102.4,
+       100.3,
+       99.1
+      ]
+     }
+    ],
+    "marks": [
+     {
+      "x": 5,
+      "label": {
+       "en": "If tide turns",
+       "hi": "Lehar palte toh",
+       "dv": "लहर पलटे तो"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "key_terms": [
+  {
+   "term": {
+    "en": "Share",
+    "hi": "Share",
+    "dv": "शेयर"
+   },
+   "meaning": {
+    "en": "A small piece of ownership in a company.",
+    "hi": "Kisi company mein ek chhota sa hissa.",
+    "dv": "किसी कंपनी में एक छोटा-सा हिस्सा।"
+   }
+  },
+  {
+   "term": {
+    "en": "Index",
+    "hi": "Index",
+    "dv": "इंडेक्स"
+   },
+   "meaning": {
+    "en": "A basket of shares shown as one number, such as NIFTY 50 or SENSEX. Bigger companies carry more weight.",
+    "hi": "Shares ki tokri jo ek number mein dikhti hai, jaise NIFTY 50 ya SENSEX. Badi companies ka weight zyada hota hai.",
+    "dv": "शेयरों की टोकरी जो एक नंबर में दिखती है, जैसे NIFTY 50 या SENSEX। बड़ी कंपनियों का वज़न ज़्यादा होता है।"
+   }
+  },
+  {
+   "term": {
+    "en": "FII/FPI and DII",
+    "hi": "FII/FPI aur DII",
+    "dv": "FII/FPI और DII"
+   },
+   "meaning": {
+    "en": "Foreign investors (the official term is now FPI) and Indian institutions such as mutual funds and insurers.",
+    "hi": "Videshi investors (ab official naam FPI hai) aur desi institutions, jaise mutual funds aur insurance companies.",
+    "dv": "विदेशी इन्वेस्टर (अब आधिकारिक नाम FPI है) और देसी संस्थाएँ, जैसे म्यूचुअल फ़ंड और इंश्योरेंस कंपनियाँ।"
+   }
+  },
+  {
+   "term": {
+    "en": "Demat account",
+    "hi": "Demat account",
+    "dv": "डीमैट अकाउंट"
+   },
+   "meaning": {
+    "en": "The account that holds your shares electronically, in your name, at NSDL or CDSL.",
+    "hi": "Woh account jismein aapke shares electronic form mein, aapke naam par, NSDL ya CDSL ke paas rehte hain.",
+    "dv": "वह अकाउंट जिसमें आपके शेयर इलेक्ट्रॉनिक रूप में, आपके नाम पर, NSDL या CDSL के पास रहते हैं।"
+   }
+  },
+  {
+   "term": {
+    "en": "T+1 settlement",
+    "hi": "T+1 settlement",
+    "dv": "T+1 सेटलमेंट"
+   },
+   "meaning": {
+    "en": "Trade day plus one trading day: when shares reach the buyer and money reaches the seller.",
+    "hi": "Trade ka din plus ek trading day: jab shares buyer tak aur paisa seller tak pahunchta hai.",
+    "dv": "ट्रेड का दिन और उसके बाद एक ट्रेडिंग दिन: जब शेयर ख़रीदार तक और पैसा बेचने वाले तक पहुँचता है।"
+   }
+  },
+  {
+   "term": {
+    "en": "Price band (circuit)",
+    "hi": "Price band (circuit)",
+    "dv": "प्राइस बैंड (सर्किट)"
+   },
+   "meaning": {
+    "en": "The daily limit the exchange sets on how far most stocks can move. At the band, your order may not fill.",
+    "hi": "Exchange ki set ki hui daily limit ki zyadatar stocks kitna upar-neeche ja sakte hain. Band par aapka order shayad fill na ho.",
+    "dv": "एक्सचेंज की तय की हुई रोज़ की सीमा कि ज़्यादातर स्टॉक कितना ऊपर-नीचे जा सकते हैं। बैंड पर आपका ऑर्डर शायद फ़िल न हो।"
+   }
+  }
+ ],
+ "mindmap": {
+  "kind": "mindmap",
+  "center": {
+   "en": "How the market runs",
+   "hi": "Market kaise chalta hai",
+   "dv": "बाज़ार कैसे चलता है"
+  },
+  "branches": [
+   {
+    "label": {
+     "en": "Who's who",
+     "hi": "Kaun kya hai",
+     "dv": "कौन क्या है"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "SEBI = referee",
+      "hi": "SEBI = referee",
+      "dv": "SEBI = रेफ़री"
+     },
+     {
+      "en": "NSE, BSE = grounds",
+      "hi": "NSE, BSE = ground",
+      "dv": "NSE, BSE = मैदान"
+     },
+     {
+      "en": "FII/FPI, DII, retail = players",
+      "hi": "FII/FPI, DII, retail = players",
+      "dv": "FII/FPI, DII, रिटेल = खिलाड़ी"
+     },
+     {
+      "en": "Registration is no promise of profit",
+      "hi": "Registration profit ka vada nahi",
+      "dv": "रजिस्ट्रेशन मुनाफ़े का वादा नहीं"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Scoreboard",
+     "hi": "Scoreboard",
+     "dv": "स्कोरबोर्ड"
+    },
+    "tone": "gold",
+    "points": [
+     {
+      "en": "NIFTY 50, SENSEX, NIFTY Bank",
+      "hi": "NIFTY 50, SENSEX, NIFTY Bank",
+      "dv": "NIFTY 50, SENSEX, NIFTY Bank"
+     },
+     {
+      "en": "Heavyweights move it most",
+      "hi": "Heavyweights sabse zyada hilaate hain",
+      "dv": "भारी कंपनियाँ सबसे ज़्यादा हिलाती हैं"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Your accounts",
+     "hi": "Aapke accounts",
+     "dv": "आपके अकाउंट"
+    },
+    "tone": "up",
+    "points": [
+     {
+      "en": "Bank = money",
+      "hi": "Bank = paisa",
+      "dv": "बैंक = पैसा"
+     },
+     {
+      "en": "Trading = orders",
+      "hi": "Trading = orders",
+      "dv": "ट्रेडिंग = ऑर्डर"
+     },
+     {
+      "en": "Demat = shares, in your name",
+      "hi": "Demat = shares, aapke naam par",
+      "dv": "डीमैट = शेयर, आपके नाम पर"
+     },
+     {
+      "en": "Never share OTP or TPIN",
+      "hi": "OTP ya TPIN kabhi share nahi",
+      "dv": "OTP या TPIN कभी शेयर नहीं"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Order journey",
+     "hi": "Order ka safar",
+     "dv": "ऑर्डर का सफ़र"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "App, broker, exchange",
+      "hi": "App, broker, exchange",
+      "dv": "ऐप, ब्रोकर, एक्सचेंज"
+     },
+     {
+      "en": "Clearing, depository, demat",
+      "hi": "Clearing, depository, demat",
+      "dv": "क्लियरिंग, डिपॉज़िटरी, डीमैट"
+     },
+     {
+      "en": "T+1 = next trading day",
+      "hi": "T+1 = agla trading day",
+      "dv": "T+1 = अगला ट्रेडिंग दिन"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Market clock",
+     "hi": "Market ki ghadi",
+     "dv": "बाज़ार की घड़ी"
+    },
+    "tone": "gold",
+    "points": [
+     {
+      "en": "Pre-open 9:00-9:15",
+      "hi": "Pre-open 9:00-9:15",
+      "dv": "प्री-ओपन 9:00-9:15"
+     },
+     {
+      "en": "Normal session 9:15 am-3:30 pm",
+      "hi": "Normal session 9:15 am-3:30 pm",
+      "dv": "नॉर्मल सेशन सुबह 9:15-दोपहर 3:30"
+     },
+     {
+      "en": "Price bands can block your exit",
+      "hi": "Price band exit rok sakta hai",
+      "dv": "प्राइस बैंड एग्ज़िट रोक सकता है"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Your mind",
+     "hi": "Aapka mann",
+     "dv": "आपका मन"
+    },
+    "tone": "down",
+    "points": [
+     {
+      "en": "Three wins are not skill",
+      "hi": "Teen jeet skill nahi",
+      "dv": "तीन जीत हुनर नहीं"
+     },
+     {
+      "en": "Judge after 30 trades",
+      "hi": "30 trades ke baad judge karein",
+      "dv": "30 ट्रेड के बाद परखें"
+     },
+     {
+      "en": "Virtual money only in Stage 1",
+      "hi": "Stage 1 mein sirf virtual paisa",
+      "dv": "Stage 1 में सिर्फ़ वर्चुअल पैसा"
+     }
+    ]
+   }
+  ]
+ },
+ "kaam": {
+  "en": "See the market's machinery for yourself: write who does what, read the market clock and draw an order's journey from memory.",
+  "hi": "Market ke peeche ka system khud dekhiye: kaun kya karta hai likhiye, market ki ghadi padhiye aur yaad se ek order ka safar banaiye.",
+  "dv": "बाज़ार के पीछे का सिस्टम ख़ुद देखिए: कौन क्या करता है लिखिए, बाज़ार की घड़ी पढ़िए और याद से एक ऑर्डर का सफ़र बनाइए।"
+ },
+ "kaam_steps": [
+  {
+   "en": "Without looking, write one line each on what SEBI, NSE/BSE, your broker and NSDL/CDSL do. Then check your lines against today's lesson.",
+   "hi": "Bina dekhe, ek-ek line mein likhiye ki SEBI, NSE/BSE, broker aur NSDL/CDSL kya kaam karte hain. Phir aaj ke lesson se milaiye.",
+   "dv": "बिना देखे, एक-एक लाइन में लिखिए कि SEBI, NSE/BSE, ब्रोकर और NSDL/CDSL क्या काम करते हैं। फिर आज के पाठ से मिलाइए।"
+  },
+  {
+   "en": "On nseindia.com, find this year's trading holidays list and write down the next market holiday.",
+   "hi": "nseindia.com par is saal ki trading holidays list dhoondhiye aur agli market holiday likh lijiye.",
+   "dv": "nseindia.com पर इस साल की ट्रेडिंग छुट्टियों की लिस्ट ढूँढिए और बाज़ार की अगली छुट्टी लिख लीजिए।"
+  },
+  {
+   "en": "Open a free TradingView chart, search NIFTY 50 and SENSEX, and note the last closing value of each.",
+   "hi": "TradingView ka free chart kholiye, NIFTY 50 aur SENSEX search kijiye, aur dono ki last closing value note kijiye.",
+   "dv": "TradingView का फ़्री चार्ट खोलिए, NIFTY 50 और SENSEX सर्च कीजिए, और दोनों की आख़िरी क्लोज़िंग वैल्यू नोट कीजिए।"
+  },
+  {
+   "en": "On paper or in Google Sheets, draw the six stops of an order from app to demat from memory, then check it against today's flow.",
+   "hi": "Paper par ya Google Sheets mein, yaad se, app se demat tak order ke chhe stops draw kijiye, phir aaj ke flow se milaiye.",
+   "dv": "काग़ज़ पर या Google Sheets में, याद से, ऐप से डीमैट तक ऑर्डर के छह पड़ाव बनाइए, फिर आज के फ़्लो से मिलाइए।"
+  },
+  {
+   "en": "Run the AI Lab prompt 'Follow my order' and mark every line you cannot confirm on the SEBI or NSE website as 'Not sure'. Never type your PAN, OTP or account details into any AI.",
+   "hi": "AI Lab ka 'Follow my order' prompt chalaiye, aur jo line aap SEBI ya NSE ki website par confirm na kar payein, use 'Not sure' mark kijiye. Kisi bhi AI mein apna PAN, OTP ya account details kabhi mat daaliye.",
+   "dv": "AI Lab का 'Follow my order' प्रॉम्प्ट चलाइए, और जो लाइन आप SEBI या NSE की वेबसाइट पर जाँच न पाएँ, उसे 'Not sure' मार्क कीजिए। किसी भी AI में अपना PAN, OTP या अकाउंट की जानकारी कभी मत डालिए।"
+  }
+ ],
+ "kaam_min": 25,
+ "outcome": {
+  "en": "By the end you can explain who runs the Indian market, what happens after you tap Buy up to T+1, when the market is open and when a price band can stop you, and why three early wins do not prove skill.",
+  "hi": "Aaj ke baad aap samjha payenge ki Indian market kaun chalata hai, Buy dabane se T+1 tak kya hota hai, market kab khula rehta hai aur price band kab rok sakta hai, aur shuru ki teen jeet skill kyun saabit nahi karti.",
+  "dv": "आज के बाद आप समझा पाएँगे कि भारतीय बाज़ार कौन चलाता है, Buy दबाने से T+1 तक क्या होता है, बाज़ार कब खुला रहता है और प्राइस बैंड कब रोक सकता है, और शुरू की तीन जीत हुनर क्यों साबित नहीं करतीं।"
+ },
+ "tools": [
+  {
+   "en": "SEBI website (sebi.gov.in)",
+   "hi": "SEBI website (sebi.gov.in)",
+   "dv": "SEBI वेबसाइट (sebi.gov.in)"
+  },
+  {
+   "en": "NSE website (nseindia.com)",
+   "hi": "NSE website (nseindia.com)",
+   "dv": "NSE वेबसाइट (nseindia.com)"
+  },
+  {
+   "en": "TradingView free chart",
+   "hi": "TradingView free chart",
+   "dv": "TradingView फ़्री चार्ट"
+  },
+  {
+   "en": "Paper or Google Sheets",
+   "hi": "Paper ya Google Sheets",
+   "dv": "काग़ज़ या Google Sheets"
+  },
+  {
+   "en": "Any AI chat",
+   "hi": "Koi bhi AI chat",
+   "dv": "कोई भी AI चैट"
+  }
+ ],
+ "fun": {
+  "en": "Role-play 'Follow my order': with classmates or family, six people play app, broker, exchange, clearing corporation, depository and demat, and pass one paper order along. Anyone who forgets their job explains it again. Alone? Write the six names on chits, lay them in order and say each one's job aloud.",
+  "hi": "Role-play 'Follow my order': classmates ya family ke saath chhe log app, broker, exchange, clearing corporation, depository aur demat bante hain, aur ek kaagaz ka order aage badhate hain. Jo apna kaam bhool jaye, woh use dobara samjhaye. Akele hain? Chhe parchiyon par naam likhiye, sahi order mein rakhiye aur har ek ka kaam bol kar samjhaiye.",
+  "dv": "रोल-प्ले 'Follow my order': साथियों या परिवार के साथ छह लोग ऐप, ब्रोकर, एक्सचेंज, क्लियरिंग कॉर्पोरेशन, डिपॉज़िटरी और डीमैट बनें, और काग़ज़ का एक ऑर्डर आगे बढ़ाएँ। जो अपना काम भूल जाए, वह उसे दोबारा समझाए। अकेले हैं? छह पर्चियों पर नाम लिखिए, सही क्रम में रखिए और हर एक का काम बोलकर समझाइए।"
+ },
+ "compliance": "Educational content only, not investment advice. Stage 1 uses virtual money only. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
+ "prompts": [
+  {
+   "title": {
+    "en": "Follow my order",
+    "hi": "Follow my order",
+    "dv": "Follow my order"
+   },
+   "body": "You are a patient teacher of the Indian stock market, talking to a complete beginner. Explain, in short numbered steps, what happens after I tap Buy for 10 shares of a made-up NSE-listed company, 'Gupta Cement Ltd', through a broker app at 11:00 am on a Friday: the broker's checks, the exchange order book and matching, the clearing corporation, the depository (NSDL or CDSL), my demat account, and when the shares arrive under T+1 settlement given the weekend. Label every statement as Checkable (I can confirm it on the SEBI, NSE, BSE, NSDL or CDSL website) or Not sure (you are not certain, or it may have changed). End with a list of the facts I should re-check on official websites because they can change. Do not recommend any stock, do not give buy or sell advice, and do not mention targets or expected returns."
+  },
+  {
+   "title": {
+    "en": "Myth or fact: market basics",
+    "hi": "Myth ya fact: market basics",
+    "dv": "मिथक या सच: बाज़ार की बुनियाद"
+   },
+   "body": "List 8 common beliefs that Indian beginners hold about how the stock market works, for example 'my broker keeps my shares', 'the market is open on Saturday', 'SEBI registration means profits' and 'the index is just the average of its shares'. For each belief, label it True, False or Not sure, give a one-line correction in simple words, and name the official website (SEBI, NSE, BSE, NSDL or CDSL) where I can check it. Do not recommend any stock, do not give buy or sell advice, and do not mention targets or expected returns."
+  },
+  {
+   "title": {
+    "en": "Overconfidence check",
+    "hi": "Overconfidence check",
+    "dv": "ओवरकॉन्फ़िडेंस चेक"
+   },
+   "body": "Act as a calm trading-psychology coach. Ask me 6 short questions, one at a time, to find out whether I am overconfident about trading: how I explain my past wins, how many trades I look at before trusting a method, what I did after a winning streak, and how I would react to three losses in a row. After my answers, give me a plain summary: where I may be overconfident, one habit to reduce it, and one question to ask myself after every win. Do not ask for any personal or financial details, do not suggest any stock or strategy, and do not give buy or sell advice, targets or return expectations."
+  }
+ ],
+ "journal_prompt": {
+  "en": "Which stop in an order's journey surprised you most today? And recall one time you may have mistaken luck for skill, in markets, cricket or exams. What really caused that win?",
+  "hi": "Aaj order ke safar ka kaunsa stop aapko sabse zyada surprising laga? Aur ek aisa mauka yaad kijiye jab aapne luck ko skill samajh liya ho — market, cricket ya exam mein. Us jeet ki asli wajah kya thi?",
+  "dv": "आज ऑर्डर के सफ़र का कौन-सा पड़ाव आपको सबसे ज़्यादा चौंकाने वाला लगा? और एक ऐसा मौक़ा याद कीजिए, जब आपने क़िस्मत को हुनर समझ लिया हो — बाज़ार, क्रिकेट या परीक्षा में। उस जीत की असली वजह क्या थी?"
+ },
+ "motivation": {
+  "en": "Today you saw the map of the market. A map does not take you anywhere by itself, but without it every road is a guess.",
+  "hi": "Aaj aapne market ka naksha dekha. Naksha khud manzil tak nahi le jaata, lekin uske bina har raasta sirf andaaza hota hai.",
+  "dv": "आज आपने बाज़ार का नक्शा देखा। नक्शा ख़ुद मंज़िल तक नहीं ले जाता, लेकिन उसके बिना हर रास्ता सिर्फ़ अंदाज़ा होता है।"
+ },
+ "quiz": [
+  {
+   "stem": {
+    "en": "Priya buys 10 shares of Gupta Cement Ltd on a Friday. Monday is a normal trading day. Under T+1 settlement, when should the shares reach her demat account?",
+    "hi": "Priya Friday ko Gupta Cement Ltd ke 10 shares khareedti hai. Monday normal trading day hai. T+1 settlement mein shares uske demat mein kab aane chahiye?",
+    "dv": "प्रिया शुक्रवार को Gupta Cement Ltd के 10 शेयर ख़रीदती है। सोमवार आम ट्रेडिंग दिन है। T+1 सेटलमेंट में शेयर उसके डीमैट में कब आने चाहिए?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "On Monday, the next trading day",
+      "hi": "Monday ko, agle trading day par",
+      "dv": "सोमवार को, अगले ट्रेडिंग दिन"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "On Saturday, the next calendar day",
+      "hi": "Saturday ko, agle calendar day par",
+      "dv": "शनिवार को, अगले कैलेंडर दिन"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "On Friday itself, within minutes",
+      "hi": "Friday ko hi, kuch minute mein",
+      "dv": "शुक्रवार को ही, कुछ मिनट में"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "On Tuesday, two trading days later",
+      "hi": "Tuesday ko, do trading days baad",
+      "dv": "मंगलवार को, दो ट्रेडिंग दिन बाद"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "T+1 counts trading days, not calendar days. Saturday and Sunday are closed, so one trading day after Friday is Monday. An optional same-day cycle exists for a limited list of stocks; check with your broker.",
+    "hi": "T+1 trading days ginta hai, calendar days nahi. Saturday-Sunday market band rehta hai, isliye Friday ke baad agla trading day Monday hai. Kuch chune hue stocks ke liye ek optional same-day cycle bhi hai — apne broker se confirm kijiye.",
+    "dv": "T+1 ट्रेडिंग के दिन गिनता है, कैलेंडर के दिन नहीं। शनिवार-रविवार बाज़ार बंद रहता है, इसलिए शुक्रवार के बाद अगला ट्रेडिंग दिन सोमवार है। कुछ चुने हुए स्टॉक्स के लिए उसी दिन वाला एक ऑप्शनल सेटलमेंट भी है — अपने ब्रोकर से पूछ लें।"
+   }
+  },
+  {
+   "stem": {
+    "en": "A made-up index has three companies. A has 60% weight and falls 3%. B has 25% weight and rises 2%. C has 15% weight and rises 2%. Roughly how does the index move?",
+    "hi": "Ek practice index mein teen companies hain. A ka weight 60% hai aur woh 3% girta hai. B ka weight 25% hai aur woh 2% chadhta hai. C ka weight 15% hai aur woh bhi 2% chadhta hai. Index lagbhag kitna move karega?",
+    "dv": "एक काल्पनिक इंडेक्स में तीन कंपनियाँ हैं। A का वज़न 60% है और उसका शेयर 3% गिरता है। B का वज़न 25% है और उसका शेयर 2% चढ़ता है। C का वज़न 15% है और उसका शेयर भी 2% चढ़ता है। इंडेक्स लगभग कितना हिलेगा?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "It falls about 1.0%",
+      "hi": "Lagbhag 1% girega",
+      "dv": "लगभग 1% गिरेगा"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "It rises about 0.3%",
+      "hi": "Lagbhag 0.3% chadhega",
+      "dv": "लगभग 0.3% चढ़ेगा"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "It stays exactly flat",
+      "hi": "Bilkul flat rahega",
+      "dv": "बिल्कुल फ़्लैट रहेगा"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "It falls about 3.0%",
+      "hi": "Lagbhag 3% girega",
+      "dv": "लगभग 3% गिरेगा"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Multiply each move by its weight: 60% x -3% = -1.8%, 25% x +2% = +0.5%, 15% x +2% = +0.3%. Total: -1.0%. Two companies rose, yet the heavyweight pulled the index down. A plain average of the three moves (+0.3%) ignores weight.",
+    "hi": "Har move ko uske weight se multiply kijiye: 60% x -3% = -1.8%, 25% x +2% = +0.5%, 15% x +2% = +0.3%. Total: -1.0%. Do companies chadhi, phir bhi heavyweight ne index ko neeche kheench liya. Teeno moves ka seedha average (+0.3%) weight ko ignore kar deta hai.",
+    "dv": "हर चाल को उसके वज़न से गुणा कीजिए: 60% x -3% = -1.8%, 25% x +2% = +0.5%, 15% x +2% = +0.3%। कुल: -1.0%। दो कंपनियाँ चढ़ीं, फिर भी भारी कंपनी ने इंडेक्स को नीचे खींच लिया। तीनों चालों का सीधा एवरेज (+0.3%) वज़न को नज़रअंदाज़ कर देता है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "After settlement, where are the shares you bought actually held?",
+    "hi": "Settlement ke baad aapke khareede hue shares asal mein kahan rakhe hote hain?",
+    "dv": "सेटलमेंट के बाद आपके ख़रीदे हुए शेयर असल में कहाँ रखे होते हैं?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "In your demat, at NSDL or CDSL",
+      "hi": "Aapke demat mein, NSDL ya CDSL ke paas",
+      "dv": "आपके डीमैट में, NSDL या CDSL के पास"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "In your broker's own company account",
+      "hi": "Broker ki apni company ke account mein",
+      "dv": "ब्रोकर की अपनी कंपनी के अकाउंट में"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "With SEBI, in a central share locker",
+      "hi": "SEBI ke paas, ek central share locker mein",
+      "dv": "SEBI के पास, एक सेंट्रल शेयर लॉकर में"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "At the exchange, until you sell them",
+      "hi": "Exchange ke paas, jab tak aap bech na dein",
+      "dv": "एक्सचेंज के पास, जब तक आप बेच न दें"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Shares sit in electronic form in your own demat account, held at a depository (NSDL or CDSL) in your name. The broker carries your orders, the exchange matches trades and SEBI makes the rules. Check the statement your depository sends you, and never share your OTP or TPIN.",
+    "hi": "Shares electronic form mein aapke apne demat account mein rehte hain, depository (NSDL ya CDSL) ke paas, aapke naam par. Broker aapke orders le jaata hai, exchange trades match karta hai, aur SEBI rules banata hai. Depository jo statement bhejti hai use check karte rahiye, aur OTP ya TPIN kabhi share mat kijiye.",
+    "dv": "शेयर इलेक्ट्रॉनिक रूप में आपके अपने डीमैट अकाउंट में रहते हैं, डिपॉज़िटरी (NSDL या CDSL) के पास, आपके नाम पर। ब्रोकर आपके ऑर्डर ले जाता है, एक्सचेंज ट्रेड मैच करता है, और SEBI नियम बनाता है। डिपॉज़िटरी जो स्टेटमेंट भेजती है, उसे देखते रहिए, और OTP या TPIN कभी शेयर न करें।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Kiran Foods Ltd is stuck at its lower price band. Lakhs of shares are waiting to be sold and there are very few buyers. Aman places a sell order at the band price. What is most likely?",
+    "hi": "Kiran Foods Ltd apne lower price band par atka hua hai. Lakhon shares bikne ki line mein hain aur buyers bahut kam hain. Aman band price par sell order lagata hai. Sabse zyada chance kis baat ka hai?",
+    "dv": "Kiran Foods Ltd अपने लोअर प्राइस बैंड पर अटका हुआ है। लाखों शेयर बिकने की लाइन में हैं और ख़रीदार बहुत कम हैं। अमन बैंड वाले भाव पर सेल ऑर्डर लगाता है। सबसे ज़्यादा क्या हो सकता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "His order may wait unfilled in the queue",
+      "hi": "Order bina fill hue line mein reh sakta hai",
+      "dv": "ऑर्डर बिना फ़िल हुए लाइन में रह सकता है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "It fills at once, since the price is fixed",
+      "hi": "Turant fill ho jayega, kyunki price fixed hai",
+      "dv": "तुरंत फ़िल हो जाएगा, क्योंकि भाव तय है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "The exchange buys his shares at the band",
+      "hi": "Exchange khud band price par uske shares khareed lega",
+      "dv": "एक्सचेंज ख़ुद बैंड वाले भाव पर उसके शेयर ख़रीद लेगा"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "His broker must buy the shares from him",
+      "hi": "Broker ko uske shares khareedne padenge",
+      "dv": "ब्रोकर को उसके शेयर ख़रीदने पड़ेंगे"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "A price band stops the price from moving past the exchange's limit for the day; it does not create buyers. When sellers far outnumber buyers, sell orders pile up at the band and many stay unfilled. Nobody is obliged to buy your shares. That is how a lower band can trap you.",
+    "hi": "Price band price ko exchange ki daily limit se aage jaane se rokta hai; woh buyers paida nahi karta. Jab sellers buyers se kahin zyada hon, toh sell orders band par jama ho jaate hain aur kaafi orders fill hi nahi hote. Aapke shares khareedne ki zimmedari kisi ki nahi hai. Isi tarah lower band aapko phansa sakta hai.",
+    "dv": "प्राइस बैंड भाव को एक्सचेंज की रोज़ की सीमा से आगे जाने से रोकता है; वह ख़रीदार पैदा नहीं करता। जब बेचने वाले ख़रीदारों से कहीं ज़्यादा हों, तो सेल ऑर्डर बैंड पर जमा हो जाते हैं और बहुत-से ऑर्डर फ़िल ही नहीं होते। आपके शेयर ख़रीदने की ज़िम्मेदारी किसी की नहीं है। इसी तरह लोअर बैंड आपको फँसा सकता है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Aman made money on 3 out of 3 trades in a week when NIFTY 50 rose about 3%. What is the most reasonable conclusion?",
+    "hi": "Jis hafte NIFTY 50 lagbhag 3% chadha, us hafte Aman ke 3 mein se 3 trades profit mein rahe. Sabse samajhdaar nateeja kya hai?",
+    "dv": "जिस हफ़्ते NIFTY 50 लगभग 3% चढ़ा, उस हफ़्ते अमन के 3 में से 3 ट्रेड प्रॉफ़िट में रहे। सबसे समझदारी भरा नतीजा क्या है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Three trades in a rising week prove little",
+      "hi": "Chadhte hafte ke 3 trade kuch saabit nahi karte",
+      "dv": "चढ़ते हफ़्ते के 3 ट्रेड कुछ साबित नहीं करते"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "His stock-picking skill has now been proven",
+      "hi": "Uski stock chunne ki skill ab saabit ho gayi",
+      "dv": "उसका स्टॉक चुनने का हुनर अब साबित हो गया"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "He is ready to trade with bigger amounts",
+      "hi": "Ab woh bade amount se trade karne ke liye taiyaar hai",
+      "dv": "अब वह बड़ी रक़म से ट्रेड करने के लिए तैयार है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "His method should work in falling markets too",
+      "hi": "Uska tareeka girte market mein bhi chalega",
+      "dv": "उसका तरीक़ा गिरते बाज़ार में भी चलेगा"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "When the market rises, many shares rise with it, so a few wins may be the tide, not skill. A method is judged only after at least 30 trades across different market conditions. Treating early luck as skill is beginner's overconfidence, and it often leads to bigger bets at exactly the wrong time.",
+    "hi": "Chadhte market mein bahut saare shares saath chadhte hain, toh kuch jeet market ki lehar bhi ho sakti hai, skill nahi. Kisi tareeke ko kam se kam 30 trades aur alag-alag market conditions ke baad hi judge kiya jaata hai. Shuru ke luck ko skill samajh lena beginner ka overconfidence hai, aur yahi aksar galat waqt par bade daav lagwata hai.",
+    "dv": "चढ़ते बाज़ार में बहुत-से शेयर साथ चढ़ते हैं, तो कुछ जीत बाज़ार की लहर भी हो सकती है, हुनर नहीं। किसी तरीक़े को कम से कम 30 ट्रेड और अलग-अलग हालात के बाद ही परखा जाता है। शुरू की क़िस्मत को हुनर समझ लेना नए ट्रेडर का ओवरकॉन्फ़िडेंस है, और यही अक्सर ग़लत वक़्त पर बड़े दाँव लगवाता है।"
+   }
+  }
+ ]
+}

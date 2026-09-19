@@ -1,0 +1,1385 @@
+{
+ "week": null,
+ "questions": [
+  {
+   "stem": {
+    "en": "On a normal NSE trading day, what happens in the pre-open session from 9:00 to 9:15 am?",
+    "hi": "NSE ke ek normal trading day par, subah 9:00 se 9:15 ke pre-open session mein kya hota hai?",
+    "dv": "NSE के एक आम ट्रेडिंग दिन पर, सुबह 9:00 से 9:15 के प्री-ओपन सेशन में क्या होता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Orders are collected and one opening price is worked out",
+      "hi": "Orders jama hote hain aur ek opening price tay hota hai",
+      "dv": "ऑर्डर जमा होते हैं और एक ओपनिंग भाव तय होता है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Only brokers and funds may trade; retail orders must wait",
+      "hi": "Sirf brokers aur funds trade karte hain; retail ko rukna padta hai",
+      "dv": "सिर्फ़ ब्रोकर और फ़ंड ट्रेड करते हैं; रिटेल को रुकना पड़ता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Yesterday's unfilled orders are replayed at yesterday's close",
+      "hi": "Kal ke bina fill hue orders kal ke close par dobara chalte hain",
+      "dv": "कल के बिना भरे ऑर्डर कल के क्लोज़ पर दोबारा चलते हैं"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Normal trading runs, but with wider price bands for all",
+      "hi": "Normal trading chalti hai, bas sabke price bands chaude hote hain",
+      "dv": "आम ट्रेडिंग चलती है, बस सबके प्राइस बैंड चौड़े होते हैं"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "NSE's pre-open runs from 9:00 to 9:15 am. Orders are collected, and the exchange works out one opening price from them, so the day does not begin with a scramble of random first trades. The normal session then runs from 9:15 am to 3:30 pm. This is also why a daily candle's open usually comes from the pre-open, not from the first 5-minute candle. Timings can change, so check the NSE website for the latest.",
+    "hi": "NSE ka pre-open 9:00 se 9:15 tak chalta hai. Is dauraan orders jama kiye jaate hain, aur exchange unse ek opening price nikaal leta hai, taaki din pehle kuch random trades ki bhaagdaud se shuru na ho. Uske baad normal session 9:15 se 3:30 tak chalta hai. Isiliye daily candle ka open aam taur par pre-open se aata hai, pehli 5-minute candle se nahi. Timings badal sakti hain, toh latest ke liye NSE ki website zaroor dekhiye.",
+    "dv": "NSE का प्री-ओपन 9:00 से 9:15 तक चलता है। इस दौरान ऑर्डर जमा किए जाते हैं, और एक्सचेंज उनसे एक ओपनिंग भाव निकालता है, ताकि दिन पहले कुछ बेतरतीब सौदों की भागदौड़ से शुरू न हो। इसके बाद आम सेशन 9:15 से 3:30 तक चलता है। इसीलिए डेली कैंडल का ओपन आम तौर पर प्री-ओपन से आता है, पहली 5-मिनट कैंडल से नहीं। समय बदल सकता है, इसलिए ताज़ा जानकारी के लिए NSE की वेबसाइट ज़रूर देखें।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Priya wants to know exactly how much brokerage, STT and stamp duty she paid on yesterday's trade. Where does the course tell her to look?",
+    "hi": "Priya theek-theek jaanna chahti hai ki kal ke trade par usne kitni brokerage, STT aur stamp duty di. Course use kahan dekhne ko kehta hai?",
+    "dv": "प्रिया ठीक-ठीक जानना चाहती है कि कल के ट्रेड पर उसने कितनी ब्रोकरेज, STT और स्टैंप ड्यूटी दी। कोर्स उसे कहाँ देखने को कहता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Her contract note, which lists each charge in rupees",
+      "hi": "Apna contract note: har charge rupees mein",
+      "dv": "अपना कॉन्ट्रैक्ट नोट: हर चार्ज रुपयों में"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "An AI chat, which knows today's rate for every charge",
+      "hi": "Ek AI chat, jise har charge ki aaj ki rate pata hai",
+      "dv": "कोई AI चैट, जिसे हर चार्ज की आज की दर पता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "The exchange's rate card, which is the same for every broker",
+      "hi": "Exchange ka rate card, jo har broker ke liye ek jaisa hai",
+      "dv": "एक्सचेंज का रेट कार्ड, जो हर ब्रोकर के लिए एक जैसा है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Her bank statement, where each charge is shown separately",
+      "hi": "Apna bank statement, jismein har charge alag se dikhta hai",
+      "dv": "अपना बैंक स्टेटमेंट, जिसमें हर चार्ज अलग से दिखता है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "The contract note is the official record your broker sends within a day of every trade, and it lists each charge in rupees: brokerage, STT, exchange charges, SEBI fees, GST and stamp duty. Brokerage differs from broker to broker, and the other charges change from time to time, which is why this course prints no rates. An AI chat may quote old or invented rates, and a bank statement shows only money moving to and from your broker. Keep every contract note: you will need them at tax time, and a CA will ask for them.",
+    "hi": "Contract note woh official record hai jo broker har trade ke ek din ke andar bhejta hai, aur usmein har charge rupees mein likha hota hai: brokerage, STT, exchange charges, SEBI fees, GST aur stamp duty. Brokerage har broker ki alag hoti hai, aur baaki charges samay-samay par badalte hain, isiliye yeh course koi rate nahi deta. AI chat purani ya gadhi hui rate bata sakta hai, aur bank statement mein sirf broker ke saath paise ka aana-jaana dikhta hai. Har contract note sambhaal kar rakhiye: tax ke waqt inki zaroorat padegi, aur CA inhe maangega.",
+    "dv": "कॉन्ट्रैक्ट नोट वह आधिकारिक रिकॉर्ड है जो ब्रोकर हर ट्रेड के एक दिन के अंदर भेजता है, और उसमें हर चार्ज रुपयों में लिखा होता है: ब्रोकरेज, STT, एक्सचेंज चार्ज, SEBI फ़ीस, GST और स्टैंप ड्यूटी। ब्रोकरेज हर ब्रोकर की अलग होती है, और बाक़ी चार्ज समय-समय पर बदलते हैं, इसीलिए यह कोर्स कोई दर नहीं देता। AI चैट पुरानी या गढ़ी हुई दर बता सकता है, और बैंक स्टेटमेंट में सिर्फ़ ब्रोकर के साथ पैसों का आना-जाना दिखता है। हर कॉन्ट्रैक्ट नोट सँभालकर रखें: टैक्स के वक़्त इनकी ज़रूरत पड़ेगी, और CA इन्हें माँगेगा।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Aman reads four claims about Kiran Foods Ltd, a made-up company. Using the course's three bins, which claim is a Fact?",
+    "hi": "Aman Kiran Foods Ltd, ek made-up company, ke baare mein chaar claims padhta hai. Course ke teen bins se dekhein, toh kaun sa claim Fact hai?",
+    "dv": "अमन Kiran Foods Ltd, एक काल्पनिक कंपनी, के बारे में चार दावे पढ़ता है। कोर्स के तीन डिब्बों से देखें, तो कौन-सा दावा फ़ैक्ट है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Q2 sales were Rs 410 crore, and the NSE filing shows the same",
+      "hi": "Q2 sales Rs 410 crore thi, aur NSE filing mein bhi yahi likha hai",
+      "dv": "Q2 की सेल्स Rs 410 करोड़ थी, और NSE फ़ाइलिंग में भी यही लिखा है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "The next two quarters will be record ones, the CEO says on TV",
+      "hi": "Agle do quarter record wale honge, CEO TV par kehte hain",
+      "dv": "अगली दो तिमाहियाँ रिकॉर्ड वाली होंगी, CEO TV पर कहते हैं"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "A popular page posts that the share will surely beat NIFTY 50 this year",
+      "hi": "Ek popular page likhta hai ki share is saal NIFTY 50 ko zaroor peeche chhodega",
+      "dv": "एक मशहूर पेज लिखता है कि शेयर इस साल NIFTY 50 को ज़रूर पीछे छोड़ेगा"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "An AI chat says Q2 sales were about Rs 450 crore, citing no source",
+      "hi": "AI chat kehta hai Q2 sales lagbhag Rs 450 crore thi, bina kisi source ke",
+      "dv": "AI चैट कहता है Q2 की सेल्स लगभग Rs 450 करोड़ थी, बिना किसी सोर्स के"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "A Fact has already happened, can be checked in an official source, and matches it: the Rs 410 crore sales line does all three. The CEO's line is a Guess; it is a fact that he said it, but nobody can check the next two quarters today. 'Surely beat NIFTY 50' is certainty with no source, so it is Kachra. The AI's Rs 450 crore is a checkable claim that does not match the filing, so it is Kachra too, however neat it looks.",
+    "hi": "Fact woh hai jo ho chuka hai, official source mein check ho sakta hai, aur usse match karta hai: Rs 410 crore wali sales line teeno shartein poori karti hai. CEO wali line Guess hai; unhone yeh kaha, yeh toh fact hai, lekin agle do quarter ko aaj koi check nahi kar sakta. 'Zaroor peeche chhodega' bina source ki certainty hai, isliye Kachra. AI ka Rs 450 crore ek check ho sakne wala claim hai jo filing se match nahi karta, toh woh bhi Kachra hai, chahe kitna bhi saaf-suthra dikhe.",
+    "dv": "फ़ैक्ट वह है जो हो चुका है, किसी आधिकारिक सोर्स में जाँचा जा सकता है, और उससे मेल खाता है: Rs 410 करोड़ वाली सेल्स की लाइन तीनों शर्तें पूरी करती है। CEO वाली लाइन गेस है; उन्होंने यह कहा, यह तो फ़ैक्ट है, लेकिन अगली दो तिमाहियों को आज कोई जाँच नहीं सकता। 'ज़रूर पीछे छोड़ेगा' बिना सोर्स का पक्का दावा है, इसलिए कचरा। AI का Rs 450 करोड़ एक जाँचा जा सकने वाला दावा है जो फ़ाइलिंग से मेल नहीं खाता, तो वह भी कचरा है, चाहे कितना भी साफ़-सुथरा दिखे।"
+   }
+  },
+  {
+   "stem": {
+    "en": "A normal NSE session runs from 9:15 am to 3:30 pm. How many candles does it make on a 15-minute chart?",
+    "hi": "NSE ka normal session subah 9:15 se dopahar 3:30 tak chalta hai. 15-minute chart par isse kitni candles banti hain?",
+    "dv": "NSE का आम सेशन सुबह 9:15 से दोपहर 3:30 तक चलता है। 15-मिनट चार्ट पर इससे कितनी कैंडल बनती हैं?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "25 candles",
+      "hi": "25 candles",
+      "dv": "25 कैंडल"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "24 candles",
+      "hi": "24 candles",
+      "dv": "24 कैंडल"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "26 candles",
+      "hi": "26 candles",
+      "dv": "26 कैंडल"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "375 candles",
+      "hi": "375 candles",
+      "dv": "375 कैंडल"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "From 9:15 am to 3:30 pm is 6 hours and 15 minutes, or 375 minutes, and 375 ÷ 15 = 25. (375 would be the count on a 1-minute chart.) Each 15-minute candle joins three 5-minute candles: the first open, the highest high, the lowest low and the last close. On a daily chart the whole session is one candle. Read the direction on the bigger candle and the timing on the smaller one.",
+    "hi": "9:15 se 3:30 tak 6 ghante 15 minute hote hain, yaani 375 minute, aur 375 ÷ 15 = 25. (375 candles toh 1-minute chart par banti hain.) Har 15-minute candle teen 5-minute candles ko jodkar banti hai: pehla open, sabse ooncha high, sabse neecha low aur aakhri close. Daily chart par poora session ek hi candle hota hai. Direction badi candle par padhiye, aur timing chhoti candle par.",
+    "dv": "9:15 से 3:30 तक 6 घंटे 15 मिनट होते हैं, यानी 375 मिनट, और 375 ÷ 15 = 25। (375 कैंडल तो 1-मिनट चार्ट पर बनती हैं।) हर 15-मिनट कैंडल तीन 5-मिनट कैंडलों को जोड़कर बनती है: पहला ओपन, सबसे ऊँचा हाई, सबसे नीचा लो और आख़िरी क्लोज़। डेली चार्ट पर पूरा सेशन एक ही कैंडल होता है। दिशा बड़ी कैंडल पर पढ़ें, और टाइमिंग छोटी कैंडल पर।"
+   }
+  },
+  {
+   "stem": {
+    "en": "In one 5-minute candle, Kiran Foods Ltd trades 4,00,000 shares against its 20-candle average of 40,000. A friend texts Aman, 'Thousands of new investors are rushing in.' What can the volume bar alone tell him?",
+    "hi": "Ek 5-minute candle mein Kiran Foods Ltd ke 4,00,000 shares trade hote hain, jabki uska 20-candle average 40,000 hai. Aman ka ek dost message karta hai, 'Hazaaron naye investors toot pade hain.' Akela volume bar use kya bata sakta hai?",
+    "dv": "एक 5-मिनट कैंडल में Kiran Foods Ltd के 4,00,000 शेयर ट्रेड होते हैं, जबकि उसका 20-कैंडल औसत 40,000 है। अमन का एक दोस्त मैसेज करता है, 'हज़ारों नए निवेशक टूट पड़े हैं।' अकेला वॉल्यूम बार उसे क्या बता सकता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "10 times the usual shares traded, but not how many people",
+      "hi": "Normal se 10 guna shares, par log kitne the, yeh nahi",
+      "dv": "आम से 10 गुना शेयर, पर लोग कितने थे, यह नहीं"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Thousands of new small investors entered, as the message says",
+      "hi": "Hazaaron naye chhote investors aaye, jaisa message kehta hai",
+      "dv": "हज़ारों नए छोटे निवेशक आए, जैसा मैसेज कहता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Buyers outnumbered sellers about ten to one in that candle",
+      "hi": "Us candle mein buyers sellers se lagbhag das guna zyada the",
+      "dv": "उस कैंडल में ख़रीदार बेचने वालों से लगभग दस गुना थे"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Price will keep rising for as long as volume stays this high",
+      "hi": "Jab tak volume itna ooncha hai, price badhta hi rahega",
+      "dv": "जब तक वॉल्यूम इतना ऊँचा है, भाव बढ़ता ही रहेगा"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Relative volume = 4,00,000 ÷ 40,000 = 10, so far more shares than usual changed hands. But volume counts shares, not people: one large fund's order can make a tall bar on its own. Every share bought was also sold by someone, so volume has no side, and no volume bar can tell you the next price. A message that claims to know who is buying, with no source, goes in the Kachra bin.",
+    "hi": "Relative volume = 4,00,000 ÷ 40,000 = 10, yaani normal se kahin zyada shares ne haath badle. Lekin volume shares ginta hai, log nahi: ek bade fund ka ek order akele hi lamba bar bana sakta hai. Har khareeda gaya share kisi ne becha bhi, isliye volume ki koi side nahi hoti, aur koi bhi volume bar agla price nahi bata sakta. Jo message bina source ke daava kare ki kaun khareed raha hai, woh Kachra bin mein jaata hai.",
+    "dv": "रिलेटिव वॉल्यूम = 4,00,000 ÷ 40,000 = 10, यानी आम से कहीं ज़्यादा शेयरों ने हाथ बदले। लेकिन वॉल्यूम शेयर गिनता है, लोग नहीं: किसी बड़े फ़ंड का एक ऑर्डर अकेले ही लंबा बार बना सकता है। हर ख़रीदा गया शेयर किसी ने बेचा भी, इसलिए वॉल्यूम की कोई साइड नहीं होती, और कोई भी वॉल्यूम बार अगला भाव नहीं बता सकता। जो मैसेज बिना सोर्स के दावा करे कि कौन ख़रीद रहा है, वह कचरे के डिब्बे में जाता है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Yesterday Sharma Textiles Ltd traded between Rs 495 and Rs 510 and closed at Rs 505. Today it opens at Rs 514, dips to Rs 507 and closes at Rs 520. Using the course's definition, what does today's daily chart show?",
+    "hi": "Kal Sharma Textiles Ltd Rs 495 aur Rs 510 ke beech trade hua aur Rs 505 par close hua. Aaj woh Rs 514 par khulta hai, Rs 507 tak neeche aata hai aur Rs 520 par close hota hai. Course ki definition se, aaj ka daily chart kya dikhata hai?",
+    "dv": "कल Sharma Textiles Ltd Rs 495 और Rs 510 के बीच ट्रेड हुआ और Rs 505 पर बंद हुआ। आज वह Rs 514 पर खुलता है, Rs 507 तक नीचे आता है और Rs 520 पर बंद होता है। कोर्स की परिभाषा से, आज का डेली चार्ट क्या दिखाता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "No full gap, since today's low of Rs 507 is inside yesterday's range",
+      "hi": "Full gap nahi, kyunki aaj ka low Rs 507 kal ki range ke andar hai",
+      "dv": "फ़ुल गैप नहीं, क्योंकि लो Rs 507 कल की रेंज में है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "A full gap-up, because it opened above yesterday's high of Rs 510",
+      "hi": "Full gap-up, kyunki open kal ke high Rs 510 se upar hua",
+      "dv": "फ़ुल गैप-अप, क्योंकि ओपन कल के हाई Rs 510 से ऊपर हुआ"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "A gap still waiting to be filled, since price closed higher at Rs 520",
+      "hi": "Gap abhi fill hona baaki hai, kyunki price Rs 520 par upar close hua",
+      "dv": "गैप अभी भरना बाक़ी है, क्योंकि भाव Rs 520 पर ऊपर बंद हुआ"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "A breakaway gap, since the day closed well above Rs 510",
+      "hi": "Breakaway gap, kyunki din Rs 510 se kaafi upar close hua",
+      "dv": "ब्रेकअवे गैप, क्योंकि दिन Rs 510 से काफ़ी ऊपर बंद हुआ"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "In a full gap-up, today's low is above yesterday's high, so an empty space is left on the chart. Here the open of Rs 514 was above yesterday's high of Rs 510, but the day dipped to Rs 507, back inside yesterday's range, so the space was traded through the same morning and no gap remains. News often calls any open above yesterday's close a 'gap-up'; on the chart, check the low. And a label like 'breakaway' is given only in hindsight, never on the same day.",
+    "hi": "Full gap-up mein aaj ka low kal ke high se upar hota hai, isliye chart par ek khaali jagah chhoot jaati hai. Yahan Rs 514 ka open kal ke high Rs 510 se upar tha, lekin din Rs 507 tak aa gaya, yaani wapas kal ki range ke andar, toh woh khaali jagah usi subah trade ho gayi aur koi gap nahi bacha. News aksar kal ke close se upar ke har open ko 'gap-up' keh deti hai; chart par low check kijiye. Aur 'breakaway' jaisa label baad mein hi diya jaata hai, usi din kabhi nahi.",
+    "dv": "फ़ुल गैप-अप में आज का लो कल के हाई से ऊपर होता है, इसलिए चार्ट पर एक ख़ाली जगह छूट जाती है। यहाँ Rs 514 का ओपन कल के हाई Rs 510 से ऊपर था, लेकिन दिन Rs 507 तक आ गया, यानी वापस कल की रेंज के अंदर, तो वह ख़ाली जगह उसी सुबह ट्रेड हो गई और कोई गैप नहीं बचा। न्यूज़ अक्सर कल के क्लोज़ से ऊपर के हर ओपन को 'गैप-अप' कह देती है; चार्ट पर लो देखें। और 'ब्रेकअवे' जैसा लेबल बाद में ही दिया जाता है, उसी दिन कभी नहीं।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Yesterday's daily candle of Gupta Cement Ltd had a high of Rs 250 and a low of Rs 240. Today's candle has a high of Rs 248 and a low of Rs 243. Which of the course's five patterns is today's candle?",
+    "hi": "Gupta Cement Ltd ki kal ki daily candle ka high Rs 250 aur low Rs 240 tha. Aaj ki candle ka high Rs 248 aur low Rs 243 hai. Course ke paanch patterns mein se aaj ki candle kaun si hai?",
+    "dv": "Gupta Cement Ltd की कल की डेली कैंडल का हाई Rs 250 और लो Rs 240 था। आज की कैंडल का हाई Rs 248 और लो Rs 243 है। कोर्स के पाँच पैटर्न में से आज की कैंडल कौन-सी है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "An inside bar: a pause in yesterday's range",
+      "hi": "Inside bar: kal ki range ke andar thehraav",
+      "dv": "इनसाइड बार: कल की रेंज में ठहराव"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "A bullish engulfing: today's range is smaller",
+      "hi": "Bullish engulfing: aaj ki range chhoti hai",
+      "dv": "बुलिश एंगल्फ़िंग: आज की रेंज छोटी है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "A hammer: its low stayed above yesterday's low",
+      "hi": "Hammer: iska low kal ke low se upar raha",
+      "dv": "हैमर: इसका लो कल के लो से ऊपर रहा"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "A shooting star: its high stopped below Rs 250",
+      "hi": "Shooting star: iska high Rs 250 se neeche ruka",
+      "dv": "शूटिंग स्टार: इसका हाई Rs 250 से नीचे रुका"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "An inside bar is a candle whose whole range, high to low, sits within the previous candle's range: Rs 243 to Rs 248 fits inside Rs 240 to Rs 250. It shows a pause. Engulfing needs a body that fully covers the previous body, and a hammer or a shooting star needs one long wick, at least twice the body, after a fall or a rise. Alone, an inside bar means little; at a tested zone it becomes a clue worth noting.",
+    "hi": "Inside bar woh candle hai jiski poori range, high se low tak, pichhli candle ki range ke andar baithti hai: Rs 243 se Rs 248, Rs 240 se Rs 250 ke andar hai. Yeh ek thehraav dikhata hai. Engulfing ke liye body ko pichhli body poori dhakni hoti hai, aur hammer ya shooting star ke liye ek lamba wick chahiye, body se kam se kam do guna, girawat ya tezi ke baad. Akele inside bar ka zyada matlab nahi; tested zone par yeh note karne layak clue ban jaata hai.",
+    "dv": "इनसाइड बार वह कैंडल है जिसकी पूरी रेंज, हाई से लो तक, पिछली कैंडल की रेंज के अंदर बैठती है: Rs 243 से Rs 248, Rs 240 से Rs 250 के अंदर है। यह एक ठहराव दिखाता है। एंगल्फ़िंग के लिए बॉडी को पिछली बॉडी पूरी ढकनी होती है, और हैमर या शूटिंग स्टार के लिए एक लंबी विक चाहिए, बॉडी से कम से कम दोगुनी, गिरावट या तेज़ी के बाद। अकेले इनसाइड बार का ज़्यादा मतलब नहीं; टेस्ट हुए ज़ोन पर यह नोट करने लायक़ सुराग़ बन जाता है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Four practice methods each lose 1R on a losing trade. Before costs, which one loses money on average over many trades?",
+    "hi": "Chaar practice methods hain, aur har ek losing trade par 1R ganwata hai. Costs se pehle, kaun sa method bahut saare trades mein average par paisa ganwata hai?",
+    "dv": "चार प्रैक्टिस तरीक़े हैं, और हर एक घाटे वाले ट्रेड पर 1R गँवाता है। कॉस्ट से पहले, कौन-सा तरीक़ा बहुत सारे ट्रेडों में औसतन पैसा गँवाता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "70% wins, average win +0.4R",
+      "hi": "70% jeet, average win +0.4R",
+      "dv": "70% जीत, औसत जीत +0.4R"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "35% wins, average win +2.5R",
+      "hi": "35% jeet, average win +2.5R",
+      "dv": "35% जीत, औसत जीत +2.5R"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "45% wins, average win +1.5R",
+      "hi": "45% jeet, average win +1.5R",
+      "dv": "45% जीत, औसत जीत +1.5R"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "60% wins, average win +0.75R",
+      "hi": "60% jeet, average win +0.75R",
+      "dv": "60% जीत, औसत जीत +0.75R"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Breakeven win-rate = 1 ÷ (1 + average win per 1R of risk). At +2.5R you need about 29%, at +1.5R 40%, at +0.75R about 57%, and at +0.4R about 71%. Only the 70% method sits below its own breakeven: 0.70 x 0.4R - 0.30 x 1R = -0.02R a trade, before any costs. That is why a high win-rate alone proves nothing: always ask for the average win and the average loss.",
+    "hi": "Breakeven win-rate = 1 ÷ (1 + har 1R risk par average win). +2.5R par lagbhag 29% chahiye, +1.5R par 40%, +0.75R par lagbhag 57%, aur +0.4R par lagbhag 71%. Sirf 70% wala method apne breakeven se neeche hai: 0.70 x 0.4R - 0.30 x 1R = har trade -0.02R, woh bhi costs se pehle. Isiliye sirf oonchi win-rate kuch saabit nahi karti: hamesha average win aur average loss dono poochiye.",
+    "dv": "ब्रेकईवन विन-रेट = 1 ÷ (1 + हर 1R रिस्क पर औसत जीत)। +2.5R पर लगभग 29% चाहिए, +1.5R पर 40%, +0.75R पर लगभग 57%, और +0.4R पर लगभग 71%। सिर्फ़ 70% वाला तरीक़ा अपने ब्रेकईवन से नीचे है: 0.70 x 0.4R - 0.30 x 1R = हर ट्रेड -0.02R, वह भी कॉस्ट से पहले। इसीलिए सिर्फ़ ऊँची विन-रेट कुछ साबित नहीं करती: हमेशा औसत जीत और औसत घाटा, दोनों पूछें।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Priya's complaint about her registered broker is still unsolved after she wrote to its grievance desk. She takes it to SMART ODR. How does SMART ODR handle it?",
+    "hi": "Priya ki apne registered broker ke khilaaf complaint, uske grievance desk ko likhne ke baad bhi, hal nahi hui. Woh use SMART ODR par le jaati hai. SMART ODR ise kaise handle karta hai?",
+    "dv": "प्रिया की अपने रजिस्टर्ड ब्रोकर के ख़िलाफ़ शिकायत, उसके ग्रीवांस डेस्क को लिखने के बाद भी, हल नहीं हुई। वह उसे SMART ODR पर ले जाती है। SMART ODR इसे कैसे संभालता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "A conciliator helps first; if that fails, an arbitrator rules",
+      "hi": "Pehle conciliator, baat na bane toh arbitrator faisla deta hai",
+      "dv": "पहले कंसिलिएटर, बात न बने तो आर्बिट्रेटर फ़ैसला देता है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "It files the case with the cyber police as a fraud report today",
+      "hi": "Yeh case ko fraud report bana kar seedha cyber police ko bhej deta hai",
+      "dv": "यह केस को फ़्रॉड रिपोर्ट बनाकर सीधे साइबर पुलिस को भेज देता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "It is only a helpline that logs the complaint for SEBI to read",
+      "hi": "Yeh bas ek helpline hai jo complaint SEBI ke padhne ke liye note kar leti hai",
+      "dv": "यह बस एक हेल्पलाइन है जो शिकायत SEBI के पढ़ने के लिए नोट कर लेती है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "It sends the matter straight to a civil court for a full hearing",
+      "hi": "Yeh maamla seedha civil court mein poori sunwai ke liye bhej deta hai",
+      "dv": "यह मामला सीधे सिविल कोर्ट में पूरी सुनवाई के लिए भेज देता है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "SMART ODR is the securities market's online dispute resolution portal. You can use it once the entity's own grievance desk, or SCORES, has not solved a complaint. A conciliator first helps both sides agree; if that fails, an arbitrator decides. Fraud by people who were never registered is a different road: report it at cybercrime.gov.in or call 1930. Check the SEBI site for the latest process.",
+    "hi": "SMART ODR securities market ka online dispute resolution portal hai. Jab entity ka apna grievance desk, ya SCORES, complaint hal na kare, tab aap iska use kar sakte hain. Pehle ek conciliator dono pakshon ko samjhaute tak laane ki koshish karta hai; baat na bane toh ek arbitrator faisla deta hai. Jo log kabhi registered the hi nahi, unka fraud alag raasta hai: cybercrime.gov.in par report kijiye ya 1930 par call kijiye. Latest process ke liye SEBI ki site dekhiye.",
+    "dv": "SMART ODR सिक्योरिटीज़ मार्केट का ऑनलाइन विवाद समाधान पोर्टल है। जब एंटिटी का अपना ग्रीवांस डेस्क, या SCORES, शिकायत हल न करे, तब आप इसका इस्तेमाल कर सकते हैं। पहले एक कंसिलिएटर दोनों पक्षों को समझौते तक लाने की कोशिश करता है; बात न बने तो एक आर्बिट्रेटर फ़ैसला देता है। जो लोग कभी रजिस्टर्ड थे ही नहीं, उनका फ़्रॉड अलग रास्ता है: cybercrime.gov.in पर रिपोर्ट करें या 1930 पर कॉल करें। ताज़ा प्रक्रिया के लिए SEBI की साइट देखें।"
+   }
+  },
+  {
+   "stem": {
+    "en": "A Telegram group hypes a tiny, thinly traded share every hour: 'operator news, buy before it runs.' Its price and volume jump for three days. What is most likely happening?",
+    "hi": "Ek Telegram group har ghante ek chhote, kam trade hone wale share ko hype karta hai: 'operator news hai, bhaagne se pehle kharid lo.' Teen din tak uska price aur volume uchhalte hain. Sabse zyada sambhavna kya chal rahi hai?",
+    "dv": "एक Telegram ग्रुप हर घंटे एक छोटे, कम ट्रेड होने वाले शेयर को हाइप करता है: 'ऑपरेटर न्यूज़ है, भागने से पहले ख़रीद लो।' तीन दिन तक उसका भाव और वॉल्यूम उछलते हैं। सबसे ज़्यादा संभावना क्या चल रही है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "A pump-and-dump: members buy while the operators sell to them",
+      "hi": "Pump-and-dump: members kharidte hain aur operators unhi ko bechte hain",
+      "dv": "पंप-एंड-डंप: मेंबर ख़रीदते हैं और ऑपरेटर उन्हीं को बेचते हैं"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Early company news reaching small investors before the big funds",
+      "hi": "Company ki news bade funds se pehle chhote investors tak pahunch rahi hai",
+      "dv": "कंपनी की ख़बर बड़े फ़ंडों से पहले छोटे निवेशकों तक पहुँच रही है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "A genuine breakout, since both price and volume confirm the move",
+      "hi": "Asli breakout, kyunki price aur volume dono move ko confirm kar rahe hain",
+      "dv": "असली ब्रेकआउट, क्योंकि भाव और वॉल्यूम दोनों मूव को कन्फ़र्म कर रहे हैं"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Normal demand, since a small share naturally moves much faster",
+      "hi": "Normal demand, kyunki chhota share apne-aap tez chalta hai",
+      "dv": "आम माँग, क्योंकि छोटा शेयर अपने-आप तेज़ चलता है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "In a pump-and-dump, a group hypes a small, thinly traded share so that members buy, while the operators, the people running the scheme, sell to them at the top. Words like 'operator news' go straight into the Kachra bin. The volume only shows that shares changed hands; here much of it may be members buying from the operators. When the selling ends, a thin share can fall fast, and at its lower price band a sell order may not even fill.",
+    "hi": "Pump-and-dump mein ek group kisi chhote, kam trade hone wale share ko hype karta hai taaki members kharidein, aur operators, yaani scheme chalane wale log, top par unhi ko bech dete hain. 'Operator news' jaise shabd seedha Kachra bin mein jaate hain. Volume bas itna batata hai ki shares ne haath badle; yahan uska bada hissa members ka operators se kharidna ho sakta hai. Jab bikwaali khatam hoti hai, toh patla share tezi se gir sakta hai, aur lower price band par sell order shayad fill bhi na ho.",
+    "dv": "पंप-एंड-डंप में एक ग्रुप किसी छोटे, कम ट्रेड होने वाले शेयर को हाइप करता है ताकि मेंबर ख़रीदें, और ऑपरेटर, यानी स्कीम चलाने वाले लोग, ऊपर के भाव पर उन्हीं को बेच देते हैं। 'ऑपरेटर न्यूज़' जैसे शब्द सीधे कचरे के डिब्बे में जाते हैं। वॉल्यूम बस इतना बताता है कि शेयरों ने हाथ बदले; यहाँ उसका बड़ा हिस्सा मेंबरों का ऑपरेटरों से ख़रीदना हो सकता है। जब बिकवाली ख़त्म होती है, तो कम ट्रेड होने वाला शेयर तेज़ी से गिर सकता है, और लोअर प्राइस बैंड पर सेल ऑर्डर शायद भरे भी नहीं।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Yesterday Kiran Foods Ltd closed at Rs 200. Today it opens higher and trades only between Rs 206 and Rs 211. What is today's true range, the number that ATR averages?",
+    "hi": "Kal Kiran Foods Ltd Rs 200 par close hua. Aaj woh upar khulta hai aur sirf Rs 206 se Rs 211 ke beech trade karta hai. Aaj ki true range kya hai, woh number jiska average ATR nikaalta hai?",
+    "dv": "कल Kiran Foods Ltd Rs 200 पर बंद हुआ। आज वह ऊपर खुलता है और सिर्फ़ Rs 206 से Rs 211 के बीच ट्रेड करता है। आज की ट्रू रेंज क्या है, वह संख्या जिसका औसत ATR निकालता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Rs 11, from yesterday's close up to today's high",
+      "hi": "Rs 11, kal ke close se aaj ke high tak",
+      "dv": "Rs 11, कल के क्लोज़ से आज के हाई तक"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Rs 5, from today's low of Rs 206 to today's high",
+      "hi": "Rs 5, aaj ke low Rs 206 se aaj ke high tak",
+      "dv": "Rs 5, आज के लो Rs 206 से आज के हाई तक"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Rs 6, from yesterday's close up to today's low",
+      "hi": "Rs 6, kal ke close se aaj ke low tak",
+      "dv": "Rs 6, कल के क्लोज़ से आज के लो तक"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Rs 8.50, from yesterday's close to the day's midpoint",
+      "hi": "Rs 8.50, kal ke close se aaj ki range ke beech tak",
+      "dv": "Rs 8.50, कल के क्लोज़ से आज की रेंज के बीच तक"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "True range is the largest of three distances: high to low (Rs 5), previous close to high (Rs 11) and previous close to low (Rs 6). Here it is Rs 11, because the gap counts. That is why ATR 14, a smoothed average of the last 14 true ranges, grows after gap days. It measures how big the usual move is, never its direction.",
+    "hi": "True range teen dooriyon mein se sabse badi hoti hai: high se low (Rs 5), pichhle close se high (Rs 11) aur pichhle close se low (Rs 6). Yahan yeh Rs 11 hai, kyunki gap bhi gina jaata hai. Isiliye gap wale dinon ke baad ATR 14, jo pichhli 14 true ranges ka smooth average hai, badh jaata hai. Yeh bas batata hai ki aam move kitna bada hai, direction kabhi nahi.",
+    "dv": "ट्रू रेंज तीन दूरियों में से सबसे बड़ी होती है: हाई से लो (Rs 5), पिछले क्लोज़ से हाई (Rs 11) और पिछले क्लोज़ से लो (Rs 6)। यहाँ यह Rs 11 है, क्योंकि गैप भी गिना जाता है। इसीलिए गैप वाले दिनों के बाद ATR 14, जो पिछली 14 ट्रू रेंज का स्मूद औसत है, बढ़ जाता है। यह बस बताता है कि आम मूव कितना बड़ा है, दिशा कभी नहीं।"
+   }
+  },
+  {
+   "stem": {
+    "en": "What is the main difference between an SMA and an EMA of the same length?",
+    "hi": "Ek hi length ke SMA aur EMA mein asli fark kya hai?",
+    "dv": "एक ही लंबाई के SMA और EMA में असली फ़र्क़ क्या है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "The EMA weights recent closes more, so it turns sooner",
+      "hi": "EMA naye closes ko zyada weight deta hai, isliye jaldi mudta hai",
+      "dv": "EMA हाल के क्लोज़ को ज़्यादा वज़न देकर जल्दी मुड़ता है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "The EMA predicts the next close; the SMA only looks back",
+      "hi": "EMA agla close bata deta hai; SMA sirf peeche dekhta hai",
+      "dv": "EMA अगला क्लोज़ बता देता है; SMA सिर्फ़ पीछे देखता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "The SMA has no lag at all, because it counts days equally",
+      "hi": "SMA mein koi lag nahi hota, kyunki woh har din ko barabar ginta hai",
+      "dv": "SMA में कोई लैग नहीं होता, क्योंकि वह हर दिन को बराबर गिनता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "The EMA uses volume as well as price; the SMA uses only price",
+      "hi": "EMA price ke saath volume bhi leta hai; SMA sirf price leta hai",
+      "dv": "EMA भाव के साथ वॉल्यूम भी लेता है; SMA सिर्फ़ भाव लेता है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "An SMA is the plain average of the last N closes, each counted equally. An EMA gives the latest closes more weight, so it turns sooner. Both are built from past prices, so both lag, and neither predicts anything. Think of a car's rear-view mirror: it shows clearly where price has been, never where it is going.",
+    "hi": "SMA pichhle N closes ka seedha average hai, jismein har din barabar ginta hai. EMA sabse naye closes ko zyada weight deta hai, isliye jaldi mudta hai. Dono pichhle prices se bante hain, isliye dono lag karte hain, aur koi bhi aage ka kuch nahi batata. Ise car ke rear-view mirror ki tarah samjhiye: yeh saaf dikhata hai ki price kahan se aaya hai, yeh kabhi nahi ki kahan jaayega.",
+    "dv": "SMA पिछले N क्लोज़ का सीधा औसत है, जिसमें हर दिन बराबर गिना जाता है। EMA सबसे नए क्लोज़ को ज़्यादा वज़न देता है, इसलिए जल्दी मुड़ता है। दोनों पिछले भावों से बनते हैं, इसलिए दोनों लैग करते हैं, और कोई भी आगे का कुछ नहीं बताता। इसे कार के रियर-व्यू मिरर की तरह समझें: यह साफ़ दिखाता है कि भाव कहाँ से आया है, यह कभी नहीं कि कहाँ जाएगा।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Bad news gaps a stock below the stop, and a trade planned to lose 1R closes at -2R. What does that cost a trader who risks 1% per trade, and one who risks 10%?",
+    "hi": "Buri khabar se stock stop ke neeche gap ho jaata hai, aur jis trade mein 1R ka loss plan tha, woh -2R par band hota hai. Jo trader har trade par 1% risk leta hai, aur jo 10% leta hai, dono ka kitna nuksaan hua?",
+    "dv": "बुरी ख़बर से स्टॉक स्टॉप के नीचे गैप हो जाता है, और जिस ट्रेड में 1R का घाटा प्लान था, वह -2R पर बंद होता है। जो ट्रेडर हर ट्रेड पर 1% रिस्क लेता है, और जो 10% लेता है, दोनों का कितना नुक़सान हुआ?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "2% of capital at 1% risk; 20% at 10% risk",
+      "hi": "1% risk par capital ka 2%; 10% risk par 20%",
+      "dv": "1% रिस्क पर कैपिटल का 2%; 10% रिस्क पर 20%"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "2% of capital either way: R is the same",
+      "hi": "Dono ka capital ka 2%: R toh ek hi hai",
+      "dv": "दोनों का कैपिटल का 2%: R तो एक ही है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "1% and 10%: the stop caps each loss at 1R",
+      "hi": "1% aur 10%: stop har loss ko 1R par rok deta hai",
+      "dv": "1% और 10%: स्टॉप हर घाटे को 1R पर रोक देता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Nothing yet: a gap loss is recovered the next day",
+      "hi": "Abhi kuch nahi: gap ka loss agle din wapas aa jaata hai",
+      "dv": "अभी कुछ नहीं: गैप का घाटा अगले दिन वापस आ जाता है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "R scales with your risk per trade. At 1% risk, -2R is -2% of capital: a dent. At 10% risk, the same gap costs 20%, and a 20% loss needs a 25% gain just to get back. A stop sets your plan, not your exit price; gaps and circuits can push a loss past 1R. That is why the course sizes every trade at 1%, so a bad surprise stays survivable.",
+    "hi": "R aapke per-trade risk ke saath chhota-bada hota hai. 1% risk par -2R matlab capital ka -2%: bas ek chot. 10% risk par wahi gap 20% le jaata hai, aur 20% ke loss se wapas aane ke liye 25% ka gain chahiye. Stop aapka plan tay karta hai, exit price nahi; gap aur circuit loss ko 1R se aage le ja sakte hain. Isiliye course har trade 1% par size karta hai, taaki buri surprise bhi jhel li jaaye.",
+    "dv": "R आपके हर ट्रेड के रिस्क के साथ छोटा-बड़ा होता है। 1% रिस्क पर -2R यानी कैपिटल का -2%: बस एक चोट। 10% रिस्क पर वही गैप 20% ले जाता है, और 20% के घाटे से वापस आने के लिए 25% का गेन चाहिए। स्टॉप आपका प्लान तय करता है, एग्ज़िट भाव नहीं; गैप और सर्किट घाटे को 1R से आगे ले जा सकते हैं। इसीलिए कोर्स हर ट्रेड 1% पर साइज़ करता है, ताकि बुरा झटका भी झेला जा सके।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Priya's virtual capital is Rs 10 lakh. For an intraday paper trade, entry is Rs 200 and the stop is Rs 196. A friend says, 'Your broker gives 5x leverage, so size it on Rs 50 lakh.' What quantity do the course rules allow?",
+    "hi": "Priya ka virtual capital Rs 10 lakh hai. Ek intraday paper trade mein entry Rs 200 hai aur stop Rs 196. Ek dost kehta hai, 'Tumhara broker 5x leverage deta hai, toh Rs 50 lakh par size karo.' Course ke rules kitni quantity ki ijazat dete hain?",
+    "dv": "प्रिया का वर्चुअल कैपिटल Rs 10 लाख है। एक इंट्राडे पेपर ट्रेड में एंट्री Rs 200 है और स्टॉप Rs 196। एक दोस्त कहता है, 'तुम्हारा ब्रोकर 5x लेवरेज देता है, तो Rs 50 लाख पर साइज़ करो।' कोर्स के नियम कितनी क्वांटिटी की इजाज़त देते हैं?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "1,250 shares: both limits use her own Rs 10 lakh",
+      "hi": "1,250 shares: dono limits apne Rs 10 lakh par",
+      "dv": "1,250 शेयर: दोनों लिमिट अपने Rs 10 लाख पर"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "2,500 shares, since the 1% rule alone decides the quantity",
+      "hi": "2,500 shares, kyunki quantity akela 1% rule tay karta hai",
+      "dv": "2,500 शेयर, क्योंकि क्वांटिटी अकेला 1% नियम तय करता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "6,250 shares: 25% of the Rs 50 lakh leverage limit",
+      "hi": "6,250 shares: Rs 50 lakh ki leverage limit ka 25%",
+      "dv": "6,250 शेयर: Rs 50 लाख की लेवरेज लिमिट का 25%"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "12,500 shares: 1% of Rs 50 lakh, divided by Rs 4 risk",
+      "hi": "12,500 shares: Rs 50 lakh ka 1%, Rs 4 risk se divide karke",
+      "dv": "12,500 शेयर: Rs 50 लाख का 1%, Rs 4 रिस्क से भाग देकर"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Leverage lets a broker give you a position bigger than your cash, but it changes neither limit: both are measured on your own capital. The formula gives Rs 10,000 ÷ Rs 4 = 2,500 shares, worth Rs 5,00,000, which is above the 25% cap of Rs 2,50,000. The cap allows Rs 2,50,000 ÷ Rs 200 = 1,250 shares, so she takes the smaller number. Sizing on borrowed buying power would put five times the planned rupees at risk.",
+    "hi": "Leverage se broker aapko cash se badi position de deta hai, lekin isse koi bhi limit nahi badalti: dono aapke apne capital par naapi jaati hain. Formula Rs 10,000 ÷ Rs 4 = 2,500 shares deta hai, jinki value Rs 5,00,000 hai, jo 25% ke cap Rs 2,50,000 se upar hai. Cap Rs 2,50,000 ÷ Rs 200 = 1,250 shares ki ijazat deta hai, toh woh chhota number leti hai. Udhaar ki buying power par size karti, toh plan se paanch guna rupees risk par hote.",
+    "dv": "लेवरेज से ब्रोकर आपको कैश से बड़ी पोज़िशन दे देता है, लेकिन इससे कोई भी लिमिट नहीं बदलती: दोनों आपके अपने कैपिटल पर नापी जाती हैं। फ़ॉर्मूला Rs 10,000 ÷ Rs 4 = 2,500 शेयर देता है, जिनकी क़ीमत Rs 5,00,000 है, जो 25% के कैप Rs 2,50,000 से ऊपर है। कैप Rs 2,50,000 ÷ Rs 200 = 1,250 शेयर की इजाज़त देता है, तो वह छोटी संख्या लेती है। उधार की बाइंग पावर पर साइज़ करती, तो प्लान से पाँच गुना रुपये रिस्क पर होते।"
+   }
+  },
+  {
+   "stem": {
+    "en": "A NIFTY 50 index fund has a yearly expense ratio. How does an investor actually pay it?",
+    "hi": "Ek NIFTY 50 index fund ka saalana expense ratio hota hai. Investor ise asal mein kaise chukata hai?",
+    "dv": "एक NIFTY 50 इंडेक्स फ़ंड का सालाना एक्सपेंस रेशियो होता है। निवेशक इसे असल में कैसे चुकाता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "It comes out of the fund daily; the NAV is already after it",
+      "hi": "Yeh roz fund se katta hai; NAV pehle se iske baad ka hota hai",
+      "dv": "यह रोज़ फ़ंड से कटता है; NAV पहले से इसके बाद का होता है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "It is debited once a year from the investor's own bank account",
+      "hi": "Saal mein ek baar investor ke bank account se debit hota hai",
+      "dv": "साल में एक बार निवेशक के बैंक खाते से डेबिट होता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "It is charged only when units are sold, as a fee at exit time",
+      "hi": "Yeh sirf units bechne par lagta hai, exit ke waqt fee ki tarah",
+      "dv": "यह सिर्फ़ यूनिट बेचने पर लगता है, एग्ज़िट के वक़्त फ़ीस की तरह"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "It is taken from each SIP instalment before any units are bought",
+      "hi": "Har SIP kisht se units kharidne se pehle kaat liya jaata hai",
+      "dv": "हर SIP किस्त से यूनिट ख़रीदने से पहले काट लिया जाता है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "The expense ratio is the fund's yearly fee. It is taken out of the fund a little every day, so the NAV you see is already after the fee; you never get a separate bill. That is why two funds copying the same index can give slightly different results. An index fund copies the index; it does not promise to beat it or to protect you from a fall. Which fund suits you is a question for a SEBI-registered Investment Adviser.",
+    "hi": "Expense ratio fund ki saalana fee hai. Yeh har din thoda-thoda fund se nikaala jaata hai, isliye jo NAV aap dekhte hain woh pehle se fee ke baad ka hota hai; alag se koi bill nahi aata. Isiliye ek hi index copy karne wale do funds ke result thode alag ho sakte hain. Index fund index ko copy karta hai; usse aage nikalne ya girawat se bachane ka koi vaada nahi karta. Aapke liye kaun sa fund sahi hai, yeh SEBI-registered Investment Adviser se poochne ka sawaal hai.",
+    "dv": "एक्सपेंस रेशियो फ़ंड की सालाना फ़ीस है। यह हर दिन थोड़ा-थोड़ा फ़ंड से निकाला जाता है, इसलिए जो NAV आप देखते हैं वह पहले से फ़ीस के बाद का होता है; अलग से कोई बिल नहीं आता। इसीलिए एक ही इंडेक्स कॉपी करने वाले दो फ़ंडों के नतीजे थोड़े अलग हो सकते हैं। इंडेक्स फ़ंड इंडेक्स को कॉपी करता है; उससे आगे निकलने या गिरावट से बचाने का कोई वादा नहीं करता। आपके लिए कौन-सा फ़ंड सही है, यह SEBI-रजिस्टर्ड इन्वेस्टमेंट एडवाइज़र से पूछने का सवाल है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Which statement best describes a SIP?",
+    "hi": "SIP ko sabse sahi kaun sa statement batata hai?",
+    "dv": "SIP को सबसे सही कौन-सी बात बताती है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "A way of buying a fund: a fixed sum on a fixed date",
+      "hi": "Fund kharidne ka ek tareeka: tay tareekh par tay rakam",
+      "dv": "फ़ंड ख़रीदने का एक तरीक़ा: तय तारीख़ पर तय रक़म"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "A special fund type that protects you in falling markets",
+      "hi": "Ek khaas fund type jo girte market mein aapko bachata hai",
+      "dv": "एक ख़ास फ़ंड टाइप जो गिरते बाज़ार में आपको बचाता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "A scheme that buys more units only when the NAV is high",
+      "hi": "Ek scheme jo sirf NAV oonchi hone par zyada units kharidti hai",
+      "dv": "एक स्कीम जो सिर्फ़ NAV ऊँची होने पर ज़्यादा यूनिट ख़रीदती है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "A kind of bank deposit that pays a set amount every month",
+      "hi": "Ek tarah ka bank deposit jo har mahine tay rakam deta hai",
+      "dv": "एक तरह का बैंक डिपॉज़िट जो हर महीने तय रक़म देता है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "A SIP (systematic investment plan) is not a product; it is a way of buying a mutual fund. You fix an amount and a date, and each month that amount buys units at that day's NAV: more units when the NAV is low, fewer when it is high. It removes the daily 'is today the right day?' question. It does not promise profit: if the market falls and stays down, the value of your units falls too.",
+    "hi": "SIP (systematic investment plan) koi product nahi hai; yeh mutual fund kharidne ka ek tareeka hai. Aap ek rakam aur ek tareekh tay kar dete hain, aur har mahine woh rakam us din ki NAV par units kharid leti hai: NAV kam ho toh zyada units, zyada ho toh kam. Isse roz ka 'kya aaj sahi din hai?' wala sawaal khatam ho jaata hai. Profit ka koi vaada nahi hai: market gir kar neeche hi raha, toh aapki units ki value bhi gir jaayegi.",
+    "dv": "SIP (सिस्टमैटिक इन्वेस्टमेंट प्लान) कोई प्रोडक्ट नहीं है; यह म्यूचुअल फ़ंड ख़रीदने का एक तरीक़ा है। आप एक रक़म और एक तारीख़ तय कर देते हैं, और हर महीने वह रक़म उस दिन की NAV पर यूनिट ख़रीद लेती है: NAV कम हो तो ज़्यादा यूनिट, ज़्यादा हो तो कम। इससे रोज़ का 'क्या आज सही दिन है?' वाला सवाल ख़त्म हो जाता है। मुनाफ़े का कोई वादा नहीं है: बाज़ार गिरकर नीचे ही रहा, तो आपकी यूनिटों की क़ीमत भी गिर जाएगी।"
+   }
+  },
+  {
+   "stem": {
+    "en": "A stock passes Rule 1 of the EMA Pullback Swing: its EMA 20 is Rs 500, above an EMA 50 of Rs 494 that is higher than it was 10 trading days ago. Which of these closes also passes Rule 2?",
+    "hi": "Ek stock EMA Pullback Swing ka Rule 1 pass karta hai: uska EMA 20 Rs 500 hai, jo Rs 494 wale EMA 50 ke upar hai, aur EMA 50 apni 10 trading din pehle wali value se upar hai. Inmein se kaun sa close Rule 2 bhi pass karta hai?",
+    "dv": "एक स्टॉक EMA पुलबैक स्विंग का नियम 1 पास करता है: उसका EMA 20 Rs 500 है, जो Rs 494 वाले EMA 50 के ऊपर है, और EMA 50 अपनी 10 ट्रेडिंग दिन पहले वाली वैल्यू से ऊपर है। इनमें से कौन-सा क्लोज़ नियम 2 भी पास करता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Rs 497",
+      "hi": "Rs 497",
+      "dv": "Rs 497"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Rs 492",
+      "hi": "Rs 492",
+      "dv": "Rs 492"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Rs 511.50",
+      "hi": "Rs 511.50",
+      "dv": "Rs 511.50"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Rs 488",
+      "hi": "Rs 488",
+      "dv": "Rs 488"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Rule 2 has two parts: the close is within 2% of EMA 20, above or below it, and still above EMA 50. 2% of Rs 500 is Rs 10, so the band is Rs 490 to Rs 510. Rs 497 is inside the band and above Rs 494, so it passes. Rs 492 is inside the band but below EMA 50, so it fails. Rs 511.50 is 2.3% above EMA 20 and Rs 488 is 2.4% below it, so both fail. Passing Rule 2 is still not a trade: Rule 3 (RSI 14 between 40 and 50), relative strength and a signal day must follow.",
+    "hi": "Rule 2 ke do hisse hain: close EMA 20 se 2% ke andar ho, upar ya neeche, aur phir bhi EMA 50 ke upar ho. Rs 500 ka 2% Rs 10 hai, toh band Rs 490 se Rs 510 hai. Rs 497 band ke andar hai aur Rs 494 se upar bhi, isliye pass. Rs 492 band ke andar hai, lekin EMA 50 ke neeche, isliye fail. Rs 511.50 EMA 20 se 2.3% upar hai aur Rs 488 2.4% neeche, toh dono fail. Rule 2 pass hona abhi trade nahi hai: iske baad Rule 3 (RSI 14, 40 aur 50 ke beech), relative strength aur signal day bhi chahiye.",
+    "dv": "नियम 2 के दो हिस्से हैं: क्लोज़ EMA 20 से 2% के अंदर हो, ऊपर या नीचे, और फिर भी EMA 50 के ऊपर हो। Rs 500 का 2% Rs 10 है, तो बैंड Rs 490 से Rs 510 है। Rs 497 बैंड के अंदर है और Rs 494 से ऊपर भी, इसलिए पास। Rs 492 बैंड के अंदर है, लेकिन EMA 50 के नीचे, इसलिए फ़ेल। Rs 511.50, EMA 20 से 2.3% ऊपर है और Rs 488, 2.4% नीचे, तो दोनों फ़ेल। नियम 2 पास होना अभी ट्रेड नहीं है: इसके बाद नियम 3 (RSI 14, 40 और 50 के बीच), रिलेटिव स्ट्रेंथ और सिग्नल डे भी चाहिए।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Priya's paper trade in Bharat Pumps Ltd has a profit exit at Rs 450 and a stop at Rs 402. The next day it opens at Rs 438, reaches a high of exactly Rs 450, dips to a low of Rs 432 and closes at Rs 441. What goes in her journal?",
+    "hi": "Bharat Pumps Ltd mein Priya ke paper trade ka profit exit Rs 450 par hai aur stop Rs 402 par. Agle din woh Rs 438 par khulta hai, high theek Rs 450 tak jaata hai, low Rs 432 tak aata hai, aur Rs 441 par close hota hai. Uske journal mein kya likha jaayega?",
+    "dv": "Bharat Pumps Ltd में प्रिया के पेपर ट्रेड का प्रॉफ़िट एग्ज़िट Rs 450 पर है और स्टॉप Rs 402 पर। अगले दिन वह Rs 438 पर खुलता है, हाई ठीक Rs 450 तक जाता है, लो Rs 432 तक आता है, और Rs 441 पर बंद होता है। उसकी जर्नल में क्या लिखा जाएगा?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Still open, since the high only touched Rs 450, never above",
+      "hi": "Trade khula hai, kyunki high ne Rs 450 bas chhua",
+      "dv": "ट्रेड खुला है, क्योंकि हाई ने Rs 450 बस छुआ"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Exit at Rs 450, since the price reached her profit exit today",
+      "hi": "Rs 450 par exit, kyunki price aaj uske profit exit tak pahunch gaya",
+      "dv": "Rs 450 पर एग्ज़िट, क्योंकि भाव आज उसके प्रॉफ़िट एग्ज़िट तक पहुँच गया"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Exit at the Rs 441 close, since the target area was reached",
+      "hi": "Rs 441 ke close par exit, kyunki target ka area aa gaya tha",
+      "dv": "Rs 441 के क्लोज़ पर एग्ज़िट, क्योंकि टारगेट का एरिया आ गया था"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Exit at Rs 438, the open, since her rules sell at the open",
+      "hi": "Rs 438 ke open par exit, kyunki uske rules open par bechte hain",
+      "dv": "Rs 438 के ओपन पर एग्ज़िट, क्योंकि उसके नियम ओपन पर बेचते हैं"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "On paper, a sell waiting at your profit exit counts only if price trades above it. At exactly Rs 450, sellers who queued there earlier fill first, and a touch may never reach your order. So the trade stays open, and the same card carries on: the stop, the profit exit and the time exit. A stop is different: an intraday touch of the stop counts as an exit. Both rules lean against you on purpose, so that paper results do not flatter you.",
+    "hi": "Paper par, profit exit par wait kar raha sell tabhi ginta hai jab price uske upar trade kare. Theek Rs 450 par, wahan pehle se line mein lage sellers pehle fill hote hain, aur ek touch aapke order tak shayad pahunche hi nahi. Isliye trade khula rehta hai, aur wahi card chalta rehta hai: stop, profit exit aur time exit. Stop ka hisaab alag hai: din mein stop ko chhoo liya, toh exit gina jaata hai. Dono rules jaan-boojhkar aapke khilaaf jhukte hain, taaki paper ke results aapko jhoothi tasalli na dein.",
+    "dv": "पेपर पर, प्रॉफ़िट एग्ज़िट पर इंतज़ार कर रहा सेल तभी गिना जाता है जब भाव उसके ऊपर ट्रेड करे। ठीक Rs 450 पर, वहाँ पहले से लाइन में लगे बेचने वाले पहले भरते हैं, और एक टच आपके ऑर्डर तक शायद पहुँचे ही नहीं। इसलिए ट्रेड खुला रहता है, और वही कार्ड चलता रहता है: स्टॉप, प्रॉफ़िट एग्ज़िट और टाइम एग्ज़िट। स्टॉप का हिसाब अलग है: दिन में स्टॉप को छू लिया, तो एग्ज़िट गिना जाता है। दोनों नियम जान-बूझकर आपके ख़िलाफ़ झुकते हैं, ताकि पेपर के नतीजे आपको झूठी तसल्ली न दें।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Gupta Cement Ltd's opening range is Rs 500 to Rs 508. A 5-minute candle closes above Rs 508 and passes both checks, and the next candle opens at Rs 510. For this paper long, where do the stop and the profit exit go?",
+    "hi": "Gupta Cement Ltd ki opening range Rs 500 se Rs 508 hai. Ek 5-minute candle Rs 508 ke upar close hoti hai aur dono checks pass karti hai, aur agli candle Rs 510 par khulti hai. Is paper long ka stop aur profit exit kahan lagenge?",
+    "dv": "Gupta Cement Ltd की ओपनिंग रेंज Rs 500 से Rs 508 है। एक 5-मिनट कैंडल Rs 508 के ऊपर बंद होती है और दोनों चेक पास करती है, और अगली कैंडल Rs 510 पर खुलती है। इस पेपर लॉन्ग का स्टॉप और प्रॉफ़िट एग्ज़िट कहाँ लगेंगे?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Stop Rs 500, profit exit Rs 530",
+      "hi": "Stop Rs 500, profit exit Rs 530",
+      "dv": "स्टॉप Rs 500, प्रॉफ़िट एग्ज़िट Rs 530"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Stop Rs 508, profit exit Rs 514",
+      "hi": "Stop Rs 508, profit exit Rs 514",
+      "dv": "स्टॉप Rs 508, प्रॉफ़िट एग्ज़िट Rs 514"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Stop Rs 504, profit exit Rs 522",
+      "hi": "Stop Rs 504, profit exit Rs 522",
+      "dv": "स्टॉप Rs 504, प्रॉफ़िट एग्ज़िट Rs 522"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Stop Rs 500, profit exit Rs 535 (2.5R)",
+      "hi": "Stop Rs 500, profit exit Rs 535 (2.5R)",
+      "dv": "स्टॉप Rs 500, प्रॉफ़िट एग्ज़िट Rs 535 (2.5R)"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "In ORB the stop sits at the other side of the range: the range low, Rs 500, for a long. Risk per share is Rs 510 - Rs 500 = Rs 10. The profit exit is 2R: 2 x Rs 10 = Rs 20 above entry, so Rs 530, and anything still open at 14:30 is closed. The 2.5R profit exit belongs to the EMA Pullback Swing, not to ORB. Size then comes from the smaller of the 1% rule and the 25% cap.",
+    "hi": "ORB mein stop range ki doosri taraf lagta hai: long ke liye range low, yaani Rs 500. Risk per share Rs 510 - Rs 500 = Rs 10 hai. Profit exit 2R hai: 2 x Rs 10 = entry se Rs 20 upar, yaani Rs 530, aur 14:30 tak jo bhi khula ho, band kar diya jaata hai. 2.5R wala profit exit EMA Pullback Swing ka hai, ORB ka nahi. Size phir 1% rule aur 25% cap mein se jo chhota ho, usse aata hai.",
+    "dv": "ORB में स्टॉप रेंज की दूसरी तरफ़ लगता है: लॉन्ग के लिए रेंज लो, यानी Rs 500। प्रति शेयर रिस्क Rs 510 - Rs 500 = Rs 10 है। प्रॉफ़िट एग्ज़िट 2R है: 2 x Rs 10 = एंट्री से Rs 20 ऊपर, यानी Rs 530, और 14:30 तक जो भी खुला हो, बंद कर दिया जाता है। 2.5R वाला प्रॉफ़िट एग्ज़िट EMA पुलबैक स्विंग का है, ORB का नहीं। साइज़ फिर 1% नियम और 25% कैप में से जो छोटा हो, उससे आता है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "A backtest page says its rule was checked 'out-of-sample'. What should that phrase mean?",
+    "hi": "Ek backtest page kehta hai ki uska rule 'out-of-sample' check hua hai. Is baat ka matlab kya hona chahiye?",
+    "dv": "एक बैकटेस्ट पेज कहता है कि उसका नियम 'आउट-ऑफ़-सैंपल' जाँचा गया है। इस बात का मतलब क्या होना चाहिए?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "It was tested on data the rule was not built or tuned on",
+      "hi": "Rule ko aise data par test kiya gaya jis par woh bana ya tune nahi hua",
+      "dv": "नियम को ऐसे डेटा पर टेस्ट किया गया जिस पर वह बना या ट्यून नहीं हुआ"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "It was tested on every stock, with no sample chosen at all",
+      "hi": "Har stock par test hua, koi sample chuna hi nahi gaya",
+      "dv": "हर स्टॉक पर टेस्ट हुआ, कोई सैंपल चुना ही नहीं गया"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Its losing trades were set aside as outliers, out of the sample",
+      "hi": "Losing trades ko outlier maan kar sample se bahar rakh diya gaya",
+      "dv": "घाटे वाले ट्रेडों को आउटलायर मानकर सैंपल से बाहर रख दिया गया"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "It was tuned until the past results fitted it most closely",
+      "hi": "Use tab tak tune kiya gaya jab tak purane results sabse achhe se fit na ho gaye",
+      "dv": "उसे तब तक ट्यून किया गया जब तक पुराने नतीजे सबसे अच्छे से फ़िट न हो गए"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Out-of-sample means testing a rule on data it was not built on. A rule tuned until it fits one period perfectly is curve-fitted; it often looks brilliant there and ordinary on new data. Removing losing trades is not testing, it is editing. If a page cannot show costs, drawdown, the trade count, a falling market and fresh data for its final settings, treat it as an advertisement, not evidence.",
+    "hi": "Out-of-sample ka matlab hai rule ko aise data par test karna jis par woh bana hi nahi. Jo rule ek period par perfectly fit hone tak tune kiya gaya ho, woh curve-fitted hai; wahan woh shaandaar dikhta hai aur naye data par maamooli. Losing trades hata dena testing nahi, editing hai. Agar page costs, drawdown, trade count, girta market aur final settings ke liye naya data nahi dikha sakta, toh use advertisement samjhiye, saboot nahi.",
+    "dv": "आउट-ऑफ़-सैंपल का मतलब है नियम को ऐसे डेटा पर टेस्ट करना जिस पर वह बना ही नहीं। जो नियम एक पीरियड पर पूरी तरह फ़िट होने तक ट्यून किया गया हो, वह कर्व-फ़िटेड है; वहाँ वह शानदार दिखता है और नए डेटा पर मामूली। घाटे वाले ट्रेड हटा देना टेस्टिंग नहीं, एडिटिंग है। अगर पेज कॉस्ट, ड्रॉडाउन, ट्रेडों की गिनती, गिरता बाज़ार और आख़िरी सेटिंग के लिए नया डेटा नहीं दिखा सकता, तो उसे विज्ञापन समझें, सबूत नहीं।"
+   }
+  },
+  {
+   "stem": {
+    "en": "A made-up company has 50 crore shares, and each trades at Rs 400. What is its market cap?",
+    "hi": "Ek made-up company ke 50 crore shares hain, aur har share Rs 400 par trade karta hai. Iska market cap kitna hai?",
+    "dv": "एक काल्पनिक कंपनी के 50 करोड़ शेयर हैं, और हर शेयर Rs 400 पर ट्रेड करता है। इसका मार्केट कैप कितना है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Rs 20,000 crore",
+      "hi": "Rs 20,000 crore",
+      "dv": "Rs 20,000 करोड़"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Rs 2,000 crore",
+      "hi": "Rs 2,000 crore",
+      "dv": "Rs 2,000 करोड़"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Rs 2,00,000 crore",
+      "hi": "Rs 2,00,000 crore",
+      "dv": "Rs 2,00,000 करोड़"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Rs 200 crore",
+      "hi": "Rs 200 crore",
+      "dv": "Rs 200 करोड़"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Market cap is share price x total number of shares: Rs 400 x 50 crore = Rs 20,000 crore, the price tag of the whole company. Its tier depends on rank, not on a fixed rupee amount: under SEBI's rule for mutual funds, the top 100 companies are large caps, 101 to 250 are mid caps, and the rest are small caps. AMFI updates that list every six months, so check amfiindia.com.",
+    "hi": "Market cap = share price x kul shares: Rs 400 x 50 crore = Rs 20,000 crore, yaani poori company ka price tag. Company kis tier mein hai, yeh rank se tay hota hai, kisi fixed rupee amount se nahi: mutual funds ke liye SEBI ke rule mein top 100 companies large cap hain, 101 se 250 mid cap, aur baaki small cap. AMFI yeh list har chhe mahine update karta hai, toh amfiindia.com par dekhiye.",
+    "dv": "मार्केट कैप = शेयर का भाव x कुल शेयर: Rs 400 x 50 करोड़ = Rs 20,000 करोड़, यानी पूरी कंपनी का प्राइस टैग। कंपनी किस टियर में है, यह रैंक से तय होता है, किसी तय रुपये की रक़म से नहीं: म्यूचुअल फ़ंड के लिए SEBI के नियम में टॉप 100 कंपनियाँ लार्ज कैप हैं, 101 से 250 मिड कैप, और बाक़ी स्मॉल कैप। AMFI यह लिस्ट हर छह महीने अपडेट करता है, तो amfiindia.com पर देखें।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Last quarter the promoters of a made-up company held 45 crore of its 90 crore shares, or 50%. This quarter they hold 45%, and they sold no shares. What most likely explains the fall?",
+    "hi": "Pichhle quarter ek made-up company ke promoters ke paas uske 90 crore shares mein se 45 crore the, yaani 50%. Is quarter unke paas 45% hai, aur unhone ek bhi share nahi becha. Is girawat ki sabse sambhav wajah kya hai?",
+    "dv": "पिछली तिमाही एक काल्पनिक कंपनी के प्रमोटरों के पास उसके 90 करोड़ शेयरों में से 45 करोड़ थे, यानी 50%। इस तिमाही उनके पास 45% है, और उन्होंने एक भी शेयर नहीं बेचा। इस गिरावट की सबसे संभव वजह क्या है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "The company issued 10 crore new shares: dilution",
+      "hi": "Company ne 10 crore naye shares jaari kiye: dilution",
+      "dv": "कंपनी ने 10 करोड़ नए शेयर जारी किए: डाइल्यूशन"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "The share price fell, which lowers the promoter's percentage",
+      "hi": "Share ka price gira, jisse promoter ka percentage kam hota hai",
+      "dv": "शेयर का भाव गिरा, जिससे प्रमोटर का प्रतिशत कम होता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "A bonus issue cut the promoter's share of the company",
+      "hi": "Bonus issue ne company mein promoter ka hissa kam kar diya",
+      "dv": "बोनस इश्यू ने कंपनी में प्रमोटर का हिस्सा कम कर दिया"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "The promoters pledged 5% of shares, and pledged ones drop out",
+      "hi": "Promoters ne 5% shares pledge kiye, aur pledged shares ginti se bahar ho gaye",
+      "dv": "प्रमोटरों ने 5% शेयर गिरवी रखे, और गिरवी वाले शेयर गिनती से बाहर हो गए"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "If a company issues new shares to institutions or employees, the promoters' percentage falls without a single share sold: 45 crore out of 100 crore is 45%. This is dilution. A bonus is given to every holder in the same ratio, so percentages stay the same; the share price does not change who owns what; and pledged shares still belong to the promoter. Read the quarterly shareholding pattern before you call a fall 'promoter selling'.",
+    "hi": "Jab company institutions ya employees ko naye shares jaari karti hai, toh promoters ka percentage ek bhi share beche bina gir jaata hai: 100 crore mein 45 crore matlab 45%. Ise dilution kehte hain. Bonus har holder ko ek hi ratio mein milta hai, isliye percentage wahi rehta hai; share price se yeh nahi badalta ki kiske paas kitna hai; aur pledged shares ab bhi promoter ke hi hote hain. Kisi girawat ko 'promoter selling' kehne se pehle quarterly shareholding pattern padhiye.",
+    "dv": "जब कंपनी संस्थानों या कर्मचारियों को नए शेयर जारी करती है, तो प्रमोटरों का प्रतिशत एक भी शेयर बेचे बिना गिर जाता है: 100 करोड़ में 45 करोड़ यानी 45%। इसे डाइल्यूशन कहते हैं। बोनस हर होल्डर को एक ही अनुपात में मिलता है, इसलिए प्रतिशत वही रहता है; शेयर के भाव से यह नहीं बदलता कि किसके पास कितना है; और गिरवी रखे शेयर अब भी प्रमोटर के ही होते हैं। किसी गिरावट को 'प्रमोटर की बिकवाली' कहने से पहले तिमाही का शेयरहोल्डिंग पैटर्न पढ़ें।"
+   }
+  },
+  {
+   "stem": {
+    "en": "A trader builds a small algo that places orders through his broker's API, each with an exchange Algo-ID. A colleague asks to run it in his own account for a monthly fee. Under SEBI's retail algo framework, what is the right answer?",
+    "hi": "Ek trader ek chhota algo banata hai jo uske broker ke API se orders lagata hai, har order par exchange ka Algo-ID hota hai. Ek colleague ise apne account mein mahine ki fee dekar chalana chahta hai. SEBI ke retail algo framework ke hisaab se sahi jawab kya hai?",
+    "dv": "एक ट्रेडर एक छोटा एल्गो बनाता है जो उसके ब्रोकर के API से ऑर्डर लगाता है, हर ऑर्डर पर एक्सचेंज का Algo-ID होता है। एक साथी इसे अपने अकाउंट में महीने की फ़ीस देकर चलाना चाहता है। SEBI के रिटेल एल्गो फ़्रेमवर्क के हिसाब से सही जवाब क्या है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "No: unless empanelled, it is for him and his family only",
+      "hi": "Nahi: empanelment ke bina sirf uske aur parivaar ke liye",
+      "dv": "नहीं: एम्पैनलमेंट के बिना सिर्फ़ उसके और परिवार के लिए"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Yes, if the colleague signs a note accepting all losses",
+      "hi": "Haan, agar colleague saare loss maanne ka note sign kar de",
+      "dv": "हाँ, अगर साथी सारे घाटे मानने का नोट साइन कर दे"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Yes, since the Algo-ID already makes the algo legal to sell",
+      "hi": "Haan, kyunki Algo-ID se algo bechna apne-aap legal ho jaata hai",
+      "dv": "हाँ, क्योंकि Algo-ID से एल्गो बेचना अपने-आप क़ानूनी हो जाता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Yes, if the fee is small and the logic is shown in full",
+      "hi": "Haan, agar fee chhoti ho aur poora logic dikha diya jaaye",
+      "dv": "हाँ, अगर फ़ीस छोटी हो और पूरा लॉजिक दिखा दिया जाए"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Under the framework in force since 1 April 2026, a self-built algo is for you and your family only: spouse, dependent children and dependent parents. Anyone offering algos to others must be empanelled by an exchange, and black-box sellers, who hide their logic, must also be SEBI-registered Research Analysts. An Algo-ID is a number plate for orders, not a licence to sell. These rules can change, so check the SEBI and NSE websites.",
+    "hi": "1 April 2026 se laagu framework mein, khud banaya algo sirf aapke aur aapke parivaar ke liye hai: pati ya patni, aap par nirbhar bachche aur aap par nirbhar maata-pita. Jo bhi doosron ko algo deta hai, use kisi exchange mein empanelled hona zaroori hai, aur jo apna logic chhupate hain (black-box), unka SEBI-registered Research Analyst hona bhi zaroori hai. Algo-ID orders ki number plate hai, bechne ka licence nahi. Yeh rules badal sakte hain, toh SEBI aur NSE ki websites dekhiye.",
+    "dv": "1 अप्रैल 2026 से लागू फ़्रेमवर्क में, ख़ुद बनाया एल्गो सिर्फ़ आपके और आपके परिवार के लिए है: पति या पत्नी, आप पर निर्भर बच्चे और आप पर निर्भर माता-पिता। जो भी दूसरों को एल्गो देता है, उसका किसी एक्सचेंज में एम्पैनल होना ज़रूरी है, और जो अपना लॉजिक छिपाते हैं (ब्लैक-बॉक्स), उनका SEBI-रजिस्टर्ड रिसर्च एनालिस्ट होना भी ज़रूरी है। Algo-ID ऑर्डर की नंबर प्लेट है, बेचने का लाइसेंस नहीं। ये नियम बदल सकते हैं, इसलिए SEBI और NSE की वेबसाइट देखें।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Row 17 of Priya's 30-trade hand backtest reads: entry Rs 300, stop Rs 288, exit 'day-15 time exit' at the next open, Rs 300. The course takes a 0.1R cost allowance off every trade. What should go in the net R and win columns?",
+    "hi": "Priya ke 30-trade hand backtest ki row 17 mein likha hai: entry Rs 300, stop Rs 288, exit 'day-15 time exit', agle open par Rs 300. Course har trade se 0.1R ka cost allowance ghatata hai. Net R aur win wale columns mein kya jaana chahiye?",
+    "dv": "प्रिया के 30-ट्रेड हाथ वाले बैकटेस्ट की पंक्ति 17 में लिखा है: एंट्री Rs 300, स्टॉप Rs 288, एग्ज़िट 'दिन-15 टाइम एग्ज़िट', अगले ओपन पर Rs 300। कोर्स हर ट्रेड से 0.1R का कॉस्ट अलाउंस घटाता है। नेट R और जीत वाले कॉलम में क्या जाना चाहिए?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "-0.10R, a small loss after costs",
+      "hi": "-0.10R, costs ke baad chhota sa loss",
+      "dv": "-0.10R, कॉस्ट के बाद छोटा-सा घाटा"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "0R, a scratch trade left out of her stats",
+      "hi": "0R, ek scratch trade jo stats se bahar rahega",
+      "dv": "0R, एक स्क्रैच ट्रेड जो आँकड़ों से बाहर रहेगा"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "+0.1R, since the time exit saved her stop",
+      "hi": "+0.1R, kyunki time exit ne stop bacha liya",
+      "dv": "+0.1R, क्योंकि टाइम एग्ज़िट ने स्टॉप बचा लिया"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "0R, counted as a win since nothing was lost",
+      "hi": "0R, jeet gina jaayega kyunki kuch gaya nahi",
+      "dv": "0R, जीत गिनी जाएगी क्योंकि कुछ गया नहीं"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "R-multiple = (exit - entry) ÷ (entry - stop) = (Rs 300 - Rs 300) ÷ Rs 12 = 0R gross. Every trade then loses the 0.1R allowance for costs and slippage, so the net result is -0.10R. The course decides before the test that a win means net R above zero, so this is a small loss. Leaving scratch trades out of the log would quietly flatter the win-rate.",
+    "hi": "R-multiple = (exit - entry) ÷ (entry - stop) = (Rs 300 - Rs 300) ÷ Rs 12 = 0R gross. Phir har trade se costs aur slippage ka 0.1R allowance katta hai, toh net result -0.10R hai. Course test se pehle hi tay kar leta hai ki jeet matlab net R zero se upar, isliye yeh ek chhota loss hai. Scratch trades ko log se bahar rakhna chupke se win-rate ko behtar dikha dega.",
+    "dv": "R-मल्टिपल = (एग्ज़िट - एंट्री) ÷ (एंट्री - स्टॉप) = (Rs 300 - Rs 300) ÷ Rs 12 = 0R ग्रॉस। फिर हर ट्रेड से कॉस्ट और स्लिपेज का 0.1R अलाउंस कटता है, तो नेट नतीजा -0.10R है। कोर्स टेस्ट से पहले ही तय कर लेता है कि जीत यानी नेट R ज़ीरो से ऊपर, इसलिए यह एक छोटा घाटा है। स्क्रैच ट्रेडों को लॉग से बाहर रखना चुपके से विन-रेट को बेहतर दिखा देगा।"
+   }
+  },
+  {
+   "stem": {
+    "en": "On a backtest trade's signal day, NIFTY 50's EMA 20 is above its EMA 50. EMA 20 is higher than it was 10 trading days earlier, but EMA 50 is lower. How should Priya tag the market phase?",
+    "hi": "Backtest ke ek trade ke signal day par NIFTY 50 ka EMA 20 uske EMA 50 ke upar hai. EMA 20 apni 10 trading din pehle wali value se upar hai, lekin EMA 50 apni 10 trading din pehle wali value se neeche hai. Priya ko market phase ka kya tag lagana chahiye?",
+    "dv": "बैकटेस्ट के एक ट्रेड के सिग्नल डे पर NIFTY 50 का EMA 20 उसके EMA 50 के ऊपर है। EMA 20 अपनी 10 ट्रेडिंग दिन पहले वाली वैल्यू से ऊपर है, लेकिन EMA 50 अपनी 10 ट्रेडिंग दिन पहले वाली वैल्यू से नीचे है। प्रिया को मार्केट फ़ेज़ का क्या टैग लगाना चाहिए?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Sideways: 'up' needs both EMAs higher than 10 days ago",
+      "hi": "Sideways: 'up' ke liye dono EMA 10 din pehle se oonche chahiye",
+      "dv": "साइडवेज़: 'अप' के लिए दोनों EMA 10 दिन पहले से ऊँचे चाहिए"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Up: EMA 20 is above EMA 50, and that alone sets the phase",
+      "hi": "Up: EMA 20 EMA 50 ke upar hai, aur phase akele isi se tay hota hai",
+      "dv": "अप: EMA 20, EMA 50 के ऊपर है, और फ़ेज़ अकेले इसी से तय होता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Down: EMA 50 is falling, and the slower line sets the phase",
+      "hi": "Down: EMA 50 gir raha hai, aur phase dheemi line tay karti hai",
+      "dv": "डाउन: EMA 50 गिर रहा है, और फ़ेज़ धीमी लाइन तय करती है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Untagged: skip the trade until the two EMAs agree on direction",
+      "hi": "Koi tag nahi: jab tak dono EMA ek direction par na hon, trade chhod do",
+      "dv": "कोई टैग नहीं: जब तक दोनों EMA एक दिशा पर न हों, ट्रेड छोड़ दें"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "The course's tag is strict. Up: EMA 20 above EMA 50, and both higher than 10 trading days earlier. Down: EMA 20 below EMA 50, and both lower. Anything else is sideways, and here EMA 50 has not risen, so the tag is sideways. The tag never removes a trade from the log. Tagging every trade shows whether the results came from one kind of market; about 100 trades across up, down and sideways phases start to give confidence.",
+    "hi": "Course ka tag strict hai. Up: EMA 20, EMA 50 ke upar, aur dono apni 10 trading din pehle wali value se upar. Down: EMA 20, EMA 50 ke neeche, aur dono us value se neeche. Baaki sab sideways hai, aur yahan EMA 50 badha nahi, toh tag sideways hai. Tag ki wajah se koi trade log se hataaya nahi jaata. Har trade ko tag karne se pata chalta hai ki results sirf ek tarah ke market se toh nahi aaye; up, down aur sideways teeno phases mein lagbhag 100 trades hon, tab bharosa banna shuru hota hai.",
+    "dv": "कोर्स का टैग सख़्त है। अप: EMA 20, EMA 50 के ऊपर, और दोनों अपनी 10 ट्रेडिंग दिन पहले वाली वैल्यू से ऊपर। डाउन: EMA 20, EMA 50 के नीचे, और दोनों उस वैल्यू से नीचे। बाक़ी सब साइडवेज़ है, और यहाँ EMA 50 बढ़ा नहीं, तो टैग साइडवेज़ है। टैग की वजह से कोई ट्रेड लॉग से हटाया नहीं जाता। हर ट्रेड को टैग करने से पता चलता है कि नतीजे सिर्फ़ एक तरह के बाज़ार से तो नहीं आए; अप, डाउन और साइडवेज़ तीनों फ़ेज़ में लगभग 100 ट्रेड हों, तब भरोसा बनना शुरू होता है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "In a made-up case, an investor holds Gupta Cement Ltd shares bought at Rs 500 and pays a premium of Rs 10 a share for a 480 put as insurance. At expiry the share is at Rs 420. Ignoring costs, what is his loss per share?",
+    "hi": "Ek made-up case mein, ek investor ke paas Gupta Cement Ltd ke shares hain jo usne Rs 500 par kharide the, aur woh insurance ke taur par 480 ke put ke liye Rs 10 prati share premium deta hai. Expiry par share Rs 420 par hai. Costs chhod kar, use prati share kitna nuksaan hua?",
+    "dv": "एक काल्पनिक केस में, एक निवेशक के पास Gupta Cement Ltd के शेयर हैं जो उसने Rs 500 पर ख़रीदे थे, और वह बीमे के तौर पर 480 के पुट के लिए Rs 10 प्रति शेयर प्रीमियम देता है। एक्सपायरी पर शेयर Rs 420 पर है। कॉस्ट छोड़कर, उसे प्रति शेयर कितना नुक़सान हुआ?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Rs 30: Rs 20 to the strike, plus the Rs 10 premium",
+      "hi": "Rs 30: strike tak Rs 20, plus Rs 10 ka premium",
+      "dv": "Rs 30: स्ट्राइक तक Rs 20, ऊपर से Rs 10 का प्रीमियम"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Rs 20: the put stops the loss exactly at the strike",
+      "hi": "Rs 20: put loss ko theek strike par rok deta hai",
+      "dv": "Rs 20: पुट घाटे को ठीक स्ट्राइक पर रोक देता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Rs 70: the Rs 80 fall, less the Rs 10 premium earned",
+      "hi": "Rs 70: Rs 80 ki girawat, minus kamaya hua Rs 10 premium",
+      "dv": "Rs 70: Rs 80 की गिरावट, घटा कमाया हुआ Rs 10 प्रीमियम"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Rs 90: the full Rs 80 fall, plus the Rs 10 premium paid",
+      "hi": "Rs 90: poori Rs 80 ki girawat, plus diya hua Rs 10 premium",
+      "dv": "Rs 90: पूरी Rs 80 की गिरावट, ऊपर से दिया हुआ Rs 10 प्रीमियम"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "A put is the right to sell at the strike. Held to expiry, this stock put settles by delivery: he hands over his shares at Rs 480. So he loses Rs 20 a share down to the strike, plus the Rs 10 premium he paid: Rs 30 in all, against Rs 80 with no put. That is the hedge idea: the premium is the insurance cost, paid even when nothing goes wrong. In Stage 1 this is for understanding only: samjho, khelo mat.",
+    "hi": "Put strike par bechne ka right hai. Expiry tak rakha jaaye, toh yeh stock put delivery se settle hota hai: woh apne shares Rs 480 par de deta hai. Isliye strike tak prati share Rs 20 gaye, upar se Rs 10 ka premium jo usne diya tha: kul Rs 30, jabki put ke bina Rs 80 jaate. Yahi hedge ka idea hai: premium insurance ki keemat hai, jo tab bhi dena padta hai jab kuch galat na ho. Stage 1 mein yeh sirf samajhne ke liye hai: samjho, khelo mat.",
+    "dv": "पुट, स्ट्राइक पर बेचने का अधिकार है। एक्सपायरी तक रखा जाए, तो यह स्टॉक पुट डिलीवरी से सेटल होता है: वह अपने शेयर Rs 480 पर दे देता है। इसलिए स्ट्राइक तक प्रति शेयर Rs 20 गए, ऊपर से Rs 10 का प्रीमियम जो उसने दिया था: कुल Rs 30, जबकि पुट के बिना Rs 80 जाते। यही हेज का आइडिया है: प्रीमियम बीमे की क़ीमत है, जो तब भी देनी पड़ती है जब कुछ ग़लत न हो। चरण 1 में यह सिर्फ़ समझने के लिए है: समझो, खेलो मत।"
+   }
+  },
+  {
+   "stem": {
+    "en": "In an option trade, what is the most the seller (writer) of a call can make?",
+    "hi": "Option trade mein, call ka seller (writer) zyada se zyada kitna kama sakta hai?",
+    "dv": "ऑप्शन ट्रेड में, कॉल का सेलर (राइटर) ज़्यादा से ज़्यादा कितना कमा सकता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "The premium received at the start",
+      "hi": "Shuru mein mila hua premium",
+      "dv": "शुरू में मिला हुआ प्रीमियम"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "The rise in price above the strike",
+      "hi": "Strike ke upar price ki poori tezi",
+      "dv": "स्ट्राइक के ऊपर भाव की पूरी तेज़ी"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "No cap at all: his gain has no limit",
+      "hi": "Koi cap nahi: uske gain ki koi limit nahi",
+      "dv": "कोई सीमा नहीं: उसके गेन की कोई लिमिट नहीं"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Twice the premium, if held to expiry",
+      "hi": "Expiry tak rakhe toh premium ka do guna",
+      "dv": "एक्सपायरी तक रखे तो प्रीमियम का दोगुना"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "The call seller receives the premium and takes on the duty to honour the buyer's right. His best case is keeping that premium; if the price rises far above the strike, his loss keeps growing. The buyer's worst case is losing the premium. So selling can look steady until one big move arrives, which is why F&O in Stage 1 is for understanding only: samjho, khelo mat.",
+    "hi": "Call seller premium le leta hai aur buyer ke right ko nibhaane ki zimmedari utha leta hai. Uska best case bas woh premium rakh lena hai; agar price strike se kaafi upar chala gaya, toh uska loss badhta hi jaata hai. Buyer ka worst case premium ganwana hai. Isliye selling tab tak shaant dikh sakti hai jab tak ek bada move na aa jaaye, aur isiliye Stage 1 mein F&O sirf samajhne ke liye hai: samjho, khelo mat.",
+    "dv": "कॉल सेलर प्रीमियम ले लेता है और ख़रीदार के अधिकार को निभाने की ज़िम्मेदारी उठा लेता है। उसका सबसे अच्छा नतीजा बस वह प्रीमियम रख लेना है; अगर भाव स्ट्राइक से काफ़ी ऊपर चला गया, तो उसका घाटा बढ़ता ही जाता है। ख़रीदार का सबसे बुरा नतीजा प्रीमियम गँवाना है। इसलिए सेलिंग तब तक शांत दिख सकती है जब तक एक बड़ा मूव न आ जाए, और इसीलिए चरण 1 में F&O सिर्फ़ समझने के लिए है: समझो, खेलो मत।"
+   }
+  },
+  {
+   "stem": {
+    "en": "NSE Indices announces that Kiran Foods Ltd, a made-up company, will join NIFTY 50 from a set date three weeks ahead. What does the course say about that date?",
+    "hi": "NSE Indices announce karta hai ki Kiran Foods Ltd, ek made-up company, teen hafte baad ki ek tay tareekh se NIFTY 50 mein shaamil hogi. Course us tareekh ke baare mein kya kehta hai?",
+    "dv": "NSE Indices ऐलान करता है कि Kiran Foods Ltd, एक काल्पनिक कंपनी, तीन हफ़्ते बाद की एक तय तारीख़ से NIFTY 50 में शामिल होगी। कोर्स उस तारीख़ के बारे में क्या कहता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Index funds must buy it around then: watch for unusual volume",
+      "hi": "Tab index funds ko ise kharidna hoga: volume asaamanya ho sakta hai",
+      "dv": "तब इंडेक्स फ़ंडों को इसे ख़रीदना होगा: वॉल्यूम असामान्य हो सकता है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "The share is now sure to rise, since only strong firms get in",
+      "hi": "Ab share ka badhna tay hai, kyunki sirf mazboot companies andar aati hain",
+      "dv": "अब शेयर का बढ़ना तय है, क्योंकि सिर्फ़ मज़बूत कंपनियाँ अंदर आती हैं"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Nothing happens then, since the news is already three weeks old",
+      "hi": "Us din kuch nahi hota, kyunki khabar teen hafte purani ho chuki hai",
+      "dv": "उस दिन कुछ नहीं होता, क्योंकि ख़बर तीन हफ़्ते पुरानी हो चुकी है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Trading in the stock is paused until the change takes effect",
+      "hi": "Badlaav laagu hone tak stock mein trading rok di jaati hai",
+      "dv": "बदलाव लागू होने तक स्टॉक में ट्रेडिंग रोक दी जाती है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Index changes are announced weeks ahead and take effect on a set date. Around that date, index funds must buy the stock coming in and sell the one going out, so both can see unusual volume and sharp moves. Mark it on your event calendar, with the date from the NSE Indices press release on niftyindices.com. Joining an index says the company is large and actively traded; it says nothing certain about the next price.",
+    "hi": "Index ke badlaav hafton pehle announce hote hain aur ek tay tareekh se laagu hote hain. Us tareekh ke aas-paas index funds ko aane wala stock kharidna aur jaane wala stock bechna padta hai, isliye dono mein asaamanya volume aur tez moves dikh sakte hain. Ise apne event calendar par likhiye, tareekh niftyindices.com par NSE Indices ki press release se lijiye. Index mein aane ka matlab hai company badi hai aur usmein khoob trading hoti hai; agle price ke baare mein yeh kuch pakka nahi batata.",
+    "dv": "इंडेक्स के बदलाव हफ़्तों पहले घोषित होते हैं और एक तय तारीख़ से लागू होते हैं। उस तारीख़ के आसपास इंडेक्स फ़ंडों को आने वाला स्टॉक ख़रीदना और जाने वाला स्टॉक बेचना पड़ता है, इसलिए दोनों में असामान्य वॉल्यूम और तेज़ मूव दिख सकते हैं। इसे अपने इवेंट कैलेंडर पर लिखें, तारीख़ niftyindices.com पर NSE Indices की प्रेस रिलीज़ से लें। इंडेक्स में आने का मतलब है कंपनी बड़ी है और उसमें ख़ूब ट्रेडिंग होती है; अगले भाव के बारे में यह कुछ पक्का नहीं बताता।"
+   }
+  },
+  {
+   "stem": {
+    "en": "This week Aman's rules produced 3 setups, but his paper journal shows 9 trades. The extra 6 are tagged 'bored'. What is his journal showing him?",
+    "hi": "Is hafte Aman ke rules ne 3 setups diye, lekin uske paper journal mein 9 trades hain. Baaki 6 par 'bored' ka tag hai. Uska journal use kya dikha raha hai?",
+    "dv": "इस हफ़्ते अमन के नियमों ने 3 सेटअप दिए, लेकिन उसकी पेपर जर्नल में 9 ट्रेड हैं। बाक़ी 6 पर 'बोर' का टैग है। उसकी जर्नल उसे क्या दिखा रही है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Overtrading: more trades than his rules produced",
+      "hi": "Overtrading: rules ne jitne diye, usse zyada trades",
+      "dv": "ओवरट्रेडिंग: नियमों ने जितने दिए, उससे ज़्यादा ट्रेड"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Revenge trading: trying to win back a stop-out",
+      "hi": "Revenge trading: stop-out ka paisa wapas jeetne ki koshish",
+      "dv": "रिवेंज ट्रेडिंग: स्टॉप-आउट का पैसा वापस जीतने की कोशिश"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Loss aversion: holding losers to avoid booking them",
+      "hi": "Loss aversion: loss book na karna pade, isliye losers pakde rehna",
+      "dv": "लॉस एवर्ज़न: घाटा बुक न करना पड़े, इसलिए घाटे वाले ट्रेड पकड़े रहना"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Healthy activity: more trades give him more samples",
+      "hi": "Achhi activity: zyada trades matlab zyada samples",
+      "dv": "अच्छी सक्रियता: ज़्यादा ट्रेड यानी ज़्यादा सैंपल"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Overtrading means taking more trades than your rules produce, often out of boredom or the itch for action. Each extra trade pays costs and slippage, and without an edge it drags expectancy down. Trades taken off the rule card are not samples of the rule, so they tell him nothing about it. Adding up R for each emotion tag makes the enemy name itself; his fix is written and simple: trade only what the card produces.",
+    "hi": "Overtrading ka matlab hai rules jitne trades dein, usse zyada lena, aksar boriyat ya kuch karne ki khujli mein. Har extra trade costs aur slippage chukata hai, aur edge ke bina expectancy ko neeche kheench leta hai. Rule card ke bahar liye gaye trades us rule ke samples hi nahi hain, toh woh rule ke baare mein kuch nahi batate. Har emotion tag ka R jodiye, dushman ka naam khud saamne aa jaata hai; ilaaj likha hua aur seedha hai: sirf wahi trade jo card de.",
+    "dv": "ओवरट्रेडिंग का मतलब है नियम जितने ट्रेड दें, उससे ज़्यादा लेना, अक्सर बोरियत या कुछ करने की खुजली में। हर अतिरिक्त ट्रेड कॉस्ट और स्लिपेज चुकाता है, और एज के बिना एक्सपेक्टेंसी को नीचे खींच लेता है। रूल कार्ड के बाहर लिए गए ट्रेड उस नियम के सैंपल ही नहीं हैं, तो वे नियम के बारे में कुछ नहीं बताते। हर इमोशन टैग का R जोड़ें, दुश्मन का नाम ख़ुद सामने आ जाता है; इलाज लिखा हुआ और सीधा है: सिर्फ़ वही ट्रेड जो कार्ड दे।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Priya asks an AI to draw her EMA Pullback flowchart. The draft works out the stop from ATR 14 on a 15-minute chart and leaves out the next-morning gap check. What should she do?",
+    "hi": "Priya ek AI se apna EMA Pullback flowchart banwati hai. Draft stop ko 15-minute chart ke ATR 14 se nikaalta hai aur agli subah wala gap check chhod deta hai. Use kya karna chahiye?",
+    "dv": "प्रिया एक AI से अपना EMA पुलबैक फ़्लोचार्ट बनवाती है। ड्राफ़्ट स्टॉप को 15-मिनट चार्ट के ATR 14 से निकालता है और अगली सुबह वाला गैप चेक छोड़ देता है। उसे क्या करना चाहिए?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Fix both: daily ATR for the stop, and restore the gap check",
+      "hi": "Dono theek kare: stop ke liye daily ATR, aur gap check wapas",
+      "dv": "दोनों ठीक करे: स्टॉप के लिए डेली ATR, और गैप चेक वापस"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Use it as drawn, since the AI has already read her rule card",
+      "hi": "Jaisa bana hai waisa use kare, AI ne rule card padh hi liya hai",
+      "dv": "जैसा बना है वैसा इस्तेमाल करे, AI ने रूल कार्ड पढ़ ही लिया है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Keep the 15-minute ATR, since a tighter stop means more shares",
+      "hi": "15-minute ATR rakhe, kyunki tight stop matlab zyada shares",
+      "dv": "15-मिनट ATR रखे, क्योंकि टाइट स्टॉप यानी ज़्यादा शेयर"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Restore only the gap check; the ATR choice is a style call",
+      "hi": "Sirf gap check wapas jode; ATR kaun sa ho, yeh style ki baat hai",
+      "dv": "सिर्फ़ गैप चेक वापस जोड़े; ATR कौन-सा हो, यह स्टाइल की बात है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "AI drafts fast but often gets such details wrong, and checking the draft is her job. A daily rule needs daily ATR: a 15-minute ATR is a typical 15-minute move, so the stop would sit inside normal daily noise, and the sizing formula would ask for far more shares. The gap check matters too: skip if the stock opens above the signal close plus 0.5 x ATR, or below the signal day's low. If a box would need 'maybe', the rule behind it is not ready.",
+    "hi": "AI draft jaldi bana deta hai, lekin aise details mein aksar galti kar deta hai, aur draft check karna Priya ka kaam hai. Daily rule ko daily ATR chahiye: 15-minute ATR ek aam 15-minute move hai, toh stop roz ke normal noise ke andar hi baith jaayega, aur sizing formula kahin zyada shares maangega. Gap check bhi zaroori hai: agar stock signal close plus 0.5 x ATR se upar khule, ya signal day ke low se neeche, toh trade chhod dijiye. Jis box mein 'shayad' likhna pade, uske peeche ka rule abhi taiyaar nahi hai.",
+    "dv": "AI ड्राफ़्ट जल्दी बना देता है, लेकिन ऐसी बारीकियों में अक्सर ग़लती कर देता है, और ड्राफ़्ट जाँचना प्रिया का काम है। डेली नियम को डेली ATR चाहिए: 15-मिनट ATR एक आम 15-मिनट का मूव है, तो स्टॉप रोज़ के आम उतार-चढ़ाव के अंदर ही बैठ जाएगा, और साइज़िंग फ़ॉर्मूला कहीं ज़्यादा शेयर माँगेगा। गैप चेक भी ज़रूरी है: अगर स्टॉक सिग्नल क्लोज़ प्लस 0.5 x ATR से ऊपर खुले, या सिग्नल डे के लो से नीचे, तो ट्रेड छोड़ दें। जिस बॉक्स में 'शायद' लिखना पड़े, उसके पीछे का नियम अभी तैयार नहीं है।"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1206 @@
+{
+ "day": 21,
+ "title": {
+  "en": "Finale: Week 3 review, your certificate and the road to Stage 2",
+  "hi": "Finale: Week 3 ka review, aapka certificate aur Stage 2 ka raasta",
+  "dv": "फ़िनाले: हफ़्ता 3 का रिव्यू, आपका सर्टिफ़िकेट और Stage 2 का रास्ता"
+ },
+ "tags": {
+  "concept": {
+   "en": "Week 3 as one system, process-based results, certificate criteria and the road to Stage 2",
+   "hi": "Week 3 ek system ki tarah, process par tika result, certificate ki shartein aur Stage 2 ka raasta",
+   "dv": "हफ़्ता 3 एक सिस्टम की तरह, प्रोसेस पर आधारित नतीजे, सर्टिफ़िकेट की शर्तें और Stage 2 का रास्ता"
+  },
+  "ai_lab": {
+   "en": "Final journal review: AI counts, you choose the habits",
+   "hi": "Aakhri journal review: AI ginti kare, habits aap chunein",
+   "dv": "आख़िरी जर्नल रिव्यू: AI गिनती करे, आदतें आप चुनें"
+  },
+  "psychology": {
+   "en": "Finish-line overconfidence",
+   "hi": "Finish line wala overconfidence",
+   "dv": "फ़िनिश लाइन वाला ओवरकॉन्फ़िडेंस"
+  }
+ },
+ "strategy": null,
+ "duration_min": 75,
+ "story": {
+  "kind": "story",
+  "title": {
+   "en": "Course over, so I'm ready?",
+   "hi": "Course khatam, toh main ready hoon?",
+   "dv": "कोर्स ख़त्म, तो मैं तैयार हूँ?"
+  },
+  "panels": [
+   {
+    "who": "narrator",
+    "say": {
+     "en": "Sunday evening, the last weekend call of Stage 1. Aman joins late, reading something on his phone.",
+     "hi": "Sunday shaam, Stage 1 ki aakhri weekend call. Aman late join karta hai, phone par kuch padhte hue.",
+     "dv": "रविवार शाम, Stage 1 की आख़िरी वीकेंड कॉल। अमन देर से जुड़ता है, फ़ोन पर कुछ पढ़ते हुए।"
+    }
+   },
+   {
+    "who": "tipster",
+    "mood": "excited",
+    "say": {
+     "en": "Congratulations on finishing your course! Now let our AI algo trade options for you. Just share your login ID and one OTP. 5% every month, assured. Zero effort. Only 10 seats left.",
+     "hi": "Course complete karne ki badhai! Ab hamara AI algo aapke liye options trade karega. Bas apna login ID aur ek OTP share kijiye. Har mahine 5%, assured. Zero mehnat. Sirf 10 seats bachi hain.",
+     "dv": "कोर्स पूरा करने की बधाई! अब हमारा AI एल्गो आपके लिए ऑप्शंस ट्रेड करेगा। बस अपना लॉगिन ID और एक OTP शेयर कीजिए। हर महीने 5%, पक्का। कोई मेहनत नहीं। सिर्फ़ 10 सीटें बची हैं।"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "excited",
+    "say": {
+     "en": "Sir, the course ends today and the certificate comes on its own. Ten days of paper trading is enough, right? This algo could run while I sit in office.",
+     "hi": "Sir, aaj course khatam ho gaya, certificate bhi apne aap aa jayega. Das din ki paper trading kaafi hai na? Yeh algo toh office mein baithe-baithe chal jayega.",
+     "dv": "सर, आज कोर्स ख़त्म हो गया, सर्टिफ़िकेट भी अपने-आप आ जाएगा। दस दिन की पेपर ट्रेडिंग काफ़ी है न? यह एल्गो तो ऑफ़िस में बैठे-बैठे चल जाएगा।"
+    }
+   },
+   {
+    "who": "priya",
+    "mood": "thinking",
+    "say": {
+     "en": "Sir, my backtest has 30 trades and my paper log has only 7. What does the certificate actually allow us to do?",
+     "hi": "Sir, mere backtest mein 30 trades hain aur paper log mein sirf 7. Certificate milne ke baad hum asal mein kya kar sakte hain?",
+     "dv": "सर, मेरे बैकटेस्ट में 30 ट्रेड हैं और पेपर लॉग में सिर्फ़ 7। सर्टिफ़िकेट मिलने के बाद हम असल में क्या कर सकते हैं?"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "thinking",
+    "say": {
+     "en": "Good questions, both of you. Aman, on Day 16, what did a legal algo need: which broker, which Algo-ID? This message names neither, and it wants your OTP. Would you hand a stranger your house keys because he congratulated you?",
+     "hi": "Dono ke sawaal achhe hain. Aman, Day 16 mein legal algo ke liye kya chahiye tha: kaunsa broker, kaunsa Algo-ID? Is message mein dono nahi hain, aur yeh aapka OTP maang raha hai. Koi anjaan aadmi badhai de de, toh kya aap use ghar ki chaabi de denge?",
+     "dv": "दोनों के सवाल अच्छे हैं। अमन, दिन 16 में लीगल एल्गो के लिए क्या चाहिए था: कौन-सा ब्रोकर, कौन-सा Algo-ID? इस मैसेज में दोनों नहीं हैं, और यह आपका OTP माँग रहा है। कोई अनजान आदमी बधाई दे दे, तो क्या आप उसे घर की चाबी दे देंगे?"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "happy",
+    "say": {
+     "en": "Today we look back at Week 3, read what your certificate really means, and write down the conditions that must be met before anyone thinks of real money. Finishing is one thing. Being ready is another.",
+     "hi": "Aaj hum Week 3 ko ek baar palat kar dekhenge, certificate ka asli matlab samjhenge, aur likhenge ki real paise ke baare mein sochne se pehle kaun-kaun si shartein poori honi chahiye. Course khatam karna ek baat hai. Ready hona doosri.",
+     "dv": "आज हम हफ़्ता 3 को एक बार पलटकर देखेंगे, सर्टिफ़िकेट का असली मतलब समझेंगे, और लिखेंगे कि असली पैसे के बारे में सोचने से पहले कौन-कौन सी शर्तें पूरी होनी चाहिए। कोर्स ख़त्म करना एक बात है। तैयार होना दूसरी।"
+    }
+   }
+  ],
+  "moral": {
+   "en": "A certificate says you finished learning the basics. Readiness shows slowly, in a routine you keep.",
+   "hi": "Certificate batata hai ki aapne basics seekh liye. Ready hain ya nahi, yeh dheere-dheere dikhta hai, us routine mein jo aap nibhate hain.",
+   "dv": "सर्टिफ़िकेट बताता है कि आपने बुनियादी बातें सीख लीं। तैयारी धीरे-धीरे दिखती है, उस रूटीन में जो आप निभाते हैं।"
+  }
+ },
+ "topics": [
+  {
+   "h": {
+    "en": "Week 3 in one evening",
+    "hi": "Week 3 ek shaam mein",
+    "dv": "हफ़्ता 3, एक शाम में"
+   },
+   "p": {
+    "en": "Week 3 turned your rules into a system. Day 15 gave you a five-check health filter and showed how corporate actions, such as a dividend, bonus or split, change the price on the ex-date. Day 16 turned your rule card into a yes/no flowchart, with alerts that only say 'look now'. Day 17 tested the rule by hand over 30 trades, in R, after costs. Day 18 explained F&O, but the gate stays shut: samjho, khelo mat. Day 19 marked the days you stay out, and Day 20 put everything on one Daily Routine Card, with a kill-switch after -2R in a day. Quiz Game 3 and the final exam check what you learned.",
+    "hi": "Week 3 ne aapke rules ko ek system bana diya. Day 15 mein aapne 5 checks wala health filter seekha, aur dekha ki dividend, bonus ya split jaise corporate actions ex-date par price ko kaise badal dete hain. Day 16 ne rule card ko yes/no flowchart mein badal diya, aur aise alerts diye jo sirf 'ab dekhiye' kehte hain. Day 17 mein aapne rule ko haath se 30 trades par test kiya, R mein, costs ke baad. Day 18 ne F&O samjhaya, par darwaza band hi rehta hai: samjho, khelo mat. Day 19 ne woh din mark kiye jab aap bahar rehte hain, aur Day 20 ne sab kuch ek Daily Routine Card par rakh diya, ek din mein -2R ke baad kill-switch ke saath. Quiz Game 3 aur final exam aapki seekhi hui cheezein check karte hain.",
+    "dv": "हफ़्ता 3 ने आपके नियमों को एक सिस्टम बना दिया। दिन 15 में आपने 5 चेक वाला हेल्थ फ़िल्टर सीखा, और देखा कि डिविडेंड, बोनस या स्प्लिट जैसे कॉर्पोरेट एक्शन एक्स-डेट पर भाव को कैसे बदल देते हैं। दिन 16 ने रूल कार्ड को हाँ/ना वाले फ़्लोचार्ट में बदल दिया, और ऐसे अलर्ट दिए जो सिर्फ़ 'अब देखिए' कहते हैं। दिन 17 में आपने नियम को हाथ से 30 ट्रेड पर परखा, R में, ख़र्चों के बाद। दिन 18 ने F&O समझाया, पर दरवाज़ा बंद ही रहता है: समझो, खेलो मत। दिन 19 ने वे दिन तय किए जब आप बाहर रहते हैं, और दिन 20 ने सब कुछ एक डेली रूटीन कार्ड पर रख दिया, एक दिन में -2R के बाद किल-स्विच के साथ। Quiz Game 3 और फ़ाइनल परीक्षा आपकी सीखी हुई बातें जाँचते हैं।"
+   },
+   "example": {
+    "en": "7 pm, after the close. Priya's screener lists Kiran Foods Ltd. It passes all five health checks, and its corporate actions page shows no bonus or split that could fake a move on her chart. Flowchart: EMA 20 is above a rising EMA 50; the close of Rs 470 is above EMA 20 at Rs 464 and within 2% of it; RSI 14 reads 46; it has beaten NIFTY 50 over 3 months; and today it closed above yesterday's high. Every box says yes, and the rule has her hand-made 30-trade backtest behind it. Then the calendar: quarterly results are due in 3 trading days, and her Day 11 card says no new swing entry when results fall inside the next 15 trading days. She writes 'Valid setup, skipped: results rule' in her journal and closes the laptop at 7:20.",
+    "hi": "Shaam 7 baje, market band hone ke baad. Priya ke screener mein Kiran Foods Ltd aata hai. Paanchon health checks pass, aur uske corporate actions page par aisa koi bonus ya split nahi jo chart par nakli move dikhaye. Flowchart: EMA 20, badhte hue EMA 50 ke upar hai; Rs 470 ka close, Rs 464 wale EMA 20 ke upar hai aur usse 2% ke andar; RSI 14 hai 46; 3 mahine mein yeh NIFTY 50 se aage hai; aur aaj ka close kal ke high ke upar hai. Har box yes kehta hai, aur rule ke peeche uska haath se bana 30 trades ka backtest bhi hai. Phir calendar: quarterly results 3 trading days mein aane wale hain, aur uske Day 11 wale card par likha hai ki results agle 15 trading days mein hon toh koi nayi swing entry nahi. Woh journal mein likhti hai 'Setup valid tha, skip kiya: results rule', aur 7:20 par laptop band kar deti hai.",
+    "dv": "शाम 7 बजे, बाज़ार बंद होने के बाद। प्रिया के स्क्रीनर में Kiran Foods Ltd आता है। पाँचों हेल्थ चेक पास, और उसके कॉर्पोरेट एक्शन पेज पर ऐसा कोई बोनस या स्प्लिट नहीं जो चार्ट पर नक़ली मूव दिखाए। फ़्लोचार्ट: EMA 20, बढ़ते हुए EMA 50 के ऊपर है; Rs 470 का क्लोज़, Rs 464 वाले EMA 20 के ऊपर है और उससे 2% के अंदर; RSI 14 है 46; 3 महीने में यह NIFTY 50 से आगे है; और आज का क्लोज़ कल के हाई के ऊपर है। हर बॉक्स 'हाँ' कहता है, और नियम के पीछे उसका हाथ से बना 30 ट्रेड का बैकटेस्ट भी है। फिर कैलेंडर: तिमाही नतीजे 3 ट्रेडिंग दिन में आने वाले हैं, और उसके दिन 11 वाले कार्ड पर लिखा है कि नतीजे अगले 15 ट्रेडिंग दिन में हों तो कोई नई स्विंग एंट्री नहीं। वह जर्नल में लिखती है 'सेटअप सही था, छोड़ा: नतीजों वाला नियम', और 7:20 पर लैपटॉप बंद कर देती है।"
+   },
+   "remember": {
+    "en": "A system is every rule together. One NO from any rule, from any week, means no trade.",
+    "hi": "System matlab saare rules ek saath. Kisi bhi hafte ke kisi bhi rule ka ek NO, yaani no trade.",
+    "dv": "सिस्टम यानी सारे नियम एक साथ। किसी भी हफ़्ते के किसी भी नियम का एक 'ना' मतलब कोई ट्रेड नहीं।"
+   },
+   "visual": {
+    "kind": "flow",
+    "title": {
+     "en": "Week 3 in one evening",
+     "hi": "Week 3, ek shaam mein",
+     "dv": "हफ़्ता 3, एक शाम में"
+    },
+    "caption": {
+     "en": "One NO anywhere ends the chain. A valid setup, correctly skipped, counts as a rule followed.",
+     "hi": "Kahin bhi ek NO aaya, toh chain wahin khatam. Valid setup ko sahi wajah se chhodna bhi rule follow karna hai.",
+     "dv": "कहीं भी एक 'ना' आया, तो चेन वहीं ख़त्म। सही सेटअप को सही वजह से छोड़ना भी नियम मानना है।"
+    },
+    "nodes": [
+     {
+      "label": {
+       "en": "Health-check",
+       "hi": "Health-check",
+       "dv": "हेल्थ-चेक"
+      },
+      "sub": {
+       "en": "Day 15: 5 checks pass",
+       "hi": "Day 15: 5 checks pass",
+       "dv": "दिन 15: 5 चेक पास"
+      },
+      "tone": "brand"
+     },
+     {
+      "label": {
+       "en": "Corporate actions",
+       "hi": "Corporate actions",
+       "dv": "कॉर्पोरेट एक्शन"
+      },
+      "sub": {
+       "en": "Day 15: chart not distorted",
+       "hi": "Day 15: chart mein nakli gap nahi",
+       "dv": "दिन 15: चार्ट में नक़ली गैप नहीं"
+      }
+     },
+     {
+      "label": {
+       "en": "Flowchart",
+       "hi": "Flowchart",
+       "dv": "फ़्लोचार्ट"
+      },
+      "sub": {
+       "en": "Day 16: every box yes",
+       "hi": "Day 16: har box yes",
+       "dv": "दिन 16: हर बॉक्स हाँ"
+      }
+     },
+     {
+      "label": {
+       "en": "Tested rule",
+       "hi": "Tested rule",
+       "dv": "परखा हुआ नियम"
+      },
+      "sub": {
+       "en": "Day 17: 30-trade backtest",
+       "hi": "Day 17: 30 trades ka backtest",
+       "dv": "दिन 17: 30 ट्रेड का बैकटेस्ट"
+      }
+     },
+     {
+      "label": {
+       "en": "Event calendar",
+       "hi": "Event calendar",
+       "dv": "इवेंट कैलेंडर"
+      },
+      "sub": {
+       "en": "Day 19: results in 3 days",
+       "hi": "Day 19: results 3 din mein",
+       "dv": "दिन 19: नतीजे 3 दिन में"
+      },
+      "tone": "down"
+     },
+     {
+      "label": {
+       "en": "Routine card",
+       "hi": "Routine card",
+       "dv": "रूटीन कार्ड"
+      },
+      "sub": {
+       "en": "Day 20: log 'No trade'",
+       "hi": "Day 20: 'No trade' likhiye",
+       "dv": "दिन 20: 'कोई ट्रेड नहीं' लिखें"
+      },
+      "tone": "gold"
+     }
+    ],
+    "arrows": [
+     {
+      "en": "pass",
+      "hi": "pass",
+      "dv": "पास"
+     },
+     {
+      "en": "clear",
+      "hi": "clear",
+      "dv": "साफ़"
+     },
+     {
+      "en": "yes",
+      "hi": "yes",
+      "dv": "हाँ"
+     },
+     {
+      "en": "rule OK",
+      "hi": "rule OK",
+      "dv": "नियम ठीक"
+     },
+     {
+      "en": "NO",
+      "hi": "NO",
+      "dv": "ना"
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Shortcut Trap #3: 'we trade for you'",
+    "hi": "Shortcut Trap #3: 'hum aapke liye trade karenge'",
+    "dv": "शॉर्टकट ट्रैप #3: 'हम आपके लिए ट्रेड करेंगे'"
+   },
+   "p": {
+    "en": "When a course ends, a new kind of offer arrives. Copy-trading means your account automatically copies someone else's trades; 'account handling' means a stranger trades in your account; a 'fully automatic' algo runs there for a fee or a profit share. The ask is nearly always the same: your login ID and password, an OTP 'just once', or the TPIN that approves selling shares from your demat. Whoever holds these can place any order in your name, and every loss stays yours. Test the offer with Day 16's road rules: a legal algo runs through your broker with an exchange Algo-ID, algo sellers must be empanelled (approved and listed) by an exchange, and black-box sellers must also be SEBI-registered Research Analysts. Registered advisers and analysts may not promise returns, so a fixed monthly figure is itself a red flag. These rules can change, so check sebi.gov.in and nseindia.com.",
+    "hi": "Course khatam hote hi ek naye type ka offer aane lagta hai. Copy-trading ka matlab hai ki aapka account kisi aur ke trades apne aap copy karta hai; 'account handling' ka matlab hai ki koi anjaan aapke account mein trade karta hai; aur ek 'fully automatic' algo fees ya profit share ke badle wahin chalta hai. Maang lagbhag hamesha ek hi hoti hai: aapka login ID aur password, 'bas ek baar' OTP, ya woh TPIN jisse demat se shares bechne ki approval jaati hai. Jiske paas yeh aa gaye, woh aapke naam se koi bhi order laga sakta hai, aur har loss aapka hi rehta hai. Offer ko Day 16 ke road rules se check kijiye: legal algo aapke broker ke through, exchange ke Algo-ID ke saath chalta hai; algo bechne walon ka exchange se empanelled, yaani approved aur listed, hona zaroori hai; aur black-box bechne walon ko SEBI-registered Research Analyst bhi hona padta hai. Registered advisers aur analysts returns ka vada nahi kar sakte, isliye har mahine ka tay figure khud ek red flag hai. Yeh rules badal sakte hain, isliye sebi.gov.in aur nseindia.com par check kar lijiye.",
+    "dv": "कोर्स ख़त्म होते ही एक नए तरह का ऑफ़र आने लगता है। कॉपी-ट्रेडिंग का मतलब है कि आपका अकाउंट किसी और के ट्रेड अपने-आप कॉपी करता है; 'अकाउंट हैंडलिंग' का मतलब है कि कोई अनजान आदमी आपके अकाउंट में ट्रेड करता है; और एक 'फ़ुली ऑटोमैटिक' एल्गो फ़ीस या मुनाफ़े के हिस्से के बदले वहीं चलता है। माँग लगभग हमेशा एक ही होती है: आपका लॉगिन ID और पासवर्ड, 'बस एक बार' OTP, या वह TPIN जिससे डीमैट से शेयर बेचने की मंज़ूरी जाती है। जिसके पास ये आ गए, वह आपके नाम से कोई भी ऑर्डर लगा सकता है, और हर नुक़सान आपका ही रहता है। ऑफ़र को दिन 16 के रोड रूल्स से जाँचिए: लीगल एल्गो आपके ब्रोकर के ज़रिए, एक्सचेंज के Algo-ID के साथ चलता है; एल्गो बेचने वालों का एक्सचेंज से एम्पैनल, यानी मंज़ूर और लिस्टेड, होना ज़रूरी है; और ब्लैक-बॉक्स बेचने वालों को SEBI-रजिस्टर्ड रिसर्च एनालिस्ट भी होना पड़ता है। रजिस्टर्ड एडवाइज़र और एनालिस्ट रिटर्न का वादा नहीं कर सकते, इसलिए हर महीने का तय आँकड़ा अपने-आप में एक रेड फ़्लैग है। ये नियम बदल सकते हैं, इसलिए sebi.gov.in और nseindia.com पर जाँच लें।"
+   },
+   "example": {
+    "en": "Take the message in Aman's story. '5% a month' sounds modest, but compounded over a year it is twelve 1.05s multiplied together, about 1.80: roughly 80% a year, with no losing month. Priya's honest 30-trade backtest on Day 17 had a drawdown of 6.23R inside it; a record with no bad month is the Day 14 brochure again. And the login and OTP would let a stranger trade options in Aman's account, while Stage 1 places no F&O trades, not even on paper. Aman shares nothing, keeps a screenshot, blocks the number and reports the message at cybercrime.gov.in; had any money gone, he would also call 1930 at once.",
+    "hi": "Aman ki story wala message lijiye. '5% mahina' sunne mein chhota lagta hai, lekin saal bhar compound karein toh barah 1.05 aapas mein guna hote hain, lagbhag 1.80: yaani saal ka qareeb 80%, aur ek bhi ghate wala mahina nahi. Day 17 mein Priya ke imaandaar 30 trades wale backtest ke andar bhi 6.23R ka drawdown tha; jis record mein ek bhi bura mahina na ho, woh wahi Day 14 wala brochure hai. Aur login aur OTP se ek anjaan aadmi Aman ke account mein options trade kar sakta hai, jabki Stage 1 mein F&O ka ek bhi trade nahi hota, paper par bhi nahi. Aman kuch share nahi karta, screenshot rakh leta hai, number block kar deta hai aur message ko cybercrime.gov.in par report kar deta hai; paisa chala gaya hota toh turant 1930 par call bhi karta.",
+    "dv": "अमन की कहानी वाला मैसेज लीजिए। '5% महीना' सुनने में छोटा लगता है, लेकिन साल भर कंपाउंड करें तो बारह 1.05 आपस में गुणा होते हैं, लगभग 1.80: यानी साल का क़रीब 80%, और एक भी घाटे वाला महीना नहीं। दिन 17 में प्रिया के ईमानदार 30 ट्रेड वाले बैकटेस्ट के अंदर भी 6.23R का ड्रॉडाउन था; जिस रिकॉर्ड में एक भी बुरा महीना न हो, वह वही दिन 14 वाला ब्रोशर है। और लॉगिन व OTP से एक अनजान आदमी अमन के अकाउंट में ऑप्शंस ट्रेड कर सकता है, जबकि Stage 1 में F&O का एक भी ट्रेड नहीं होता, पेपर पर भी नहीं। अमन कुछ शेयर नहीं करता, स्क्रीनशॉट रख लेता है, नंबर ब्लॉक कर देता है और मैसेज की शिकायत cybercrime.gov.in पर कर देता है; पैसा चला गया होता तो तुरंत 1930 पर कॉल भी करता।"
+   },
+   "remember": {
+    "en": "Your login, OTP and TPIN never leave you. Anyone who needs them to 'help' you is the trap.",
+    "hi": "Login, OTP aur TPIN kabhi aapke paas se bahar nahi jaate. Jise 'madad' ke liye inki zaroorat ho, wahi trap hai.",
+    "dv": "लॉगिन, OTP और TPIN कभी आपके पास से बाहर नहीं जाते। जिसे 'मदद' के लिए इनकी ज़रूरत हो, वही जाल है।"
+   },
+   "visual": {
+    "kind": "compare",
+    "title": {
+     "en": "The offer vs your checks",
+     "hi": "Offer vs aapke checks",
+     "dv": "ऑफ़र बनाम आपकी जाँच"
+    },
+    "caption": {
+     "en": "One failed check is enough to say no. Stage 1 places no automated orders at all.",
+     "hi": "Mana karne ke liye ek fail check hi kaafi hai. Stage 1 mein koi automated order lagta hi nahi.",
+     "dv": "मना करने के लिए एक फ़ेल जाँच ही काफ़ी है। Stage 1 में कोई ऑटोमैटिक ऑर्डर लगता ही नहीं।"
+    },
+    "cols": [
+     {
+      "head": {
+       "en": "The offer says",
+       "hi": "Offer kehta hai",
+       "dv": "ऑफ़र कहता है"
+      },
+      "tone": "down",
+      "points": [
+       {
+        "en": "Share your login and OTP once",
+        "hi": "Login aur OTP ek baar share kijiye",
+        "dv": "लॉगिन और OTP एक बार शेयर करें"
+       },
+       {
+        "en": "5% every month, no bad month",
+        "hi": "Har mahine 5%, koi bura mahina nahi",
+        "dv": "हर महीने 5%, कोई बुरा महीना नहीं"
+       },
+       {
+        "en": "Secret algo, no broker named",
+        "hi": "Secret algo, broker ka naam nahi",
+        "dv": "गुप्त एल्गो, ब्रोकर का नाम नहीं"
+       },
+       {
+        "en": "Pay the profit share to a person",
+        "hi": "Profit share kisi insaan ko dijiye",
+        "dv": "मुनाफ़े का हिस्सा किसी व्यक्ति को दें"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "What you check",
+       "hi": "Aap kya check karein",
+       "dv": "आप क्या जाँचें"
+      },
+      "tone": "up",
+      "points": [
+       {
+        "en": "No genuine firm asks you to share an OTP or TPIN",
+        "hi": "Koi asli firm aapse OTP ya TPIN share karne ko nahi kehti",
+        "dv": "कोई असली फ़र्म आपसे OTP या TPIN बताने को नहीं कहती"
+       },
+       {
+        "en": "Registered advisers and analysts may not promise returns",
+        "hi": "Registered advisers aur analysts returns ka vada nahi kar sakte",
+        "dv": "रजिस्टर्ड एडवाइज़र और एनालिस्ट रिटर्न का वादा नहीं कर सकते"
+       },
+       {
+        "en": "Legal algo: broker, Algo-ID, empanelment",
+        "hi": "Legal algo: broker, Algo-ID, empanelment",
+        "dv": "लीगल एल्गो: ब्रोकर, Algo-ID, एम्पैनलमेंट"
+       },
+       {
+        "en": "Fees go only to an account in the registered name",
+        "hi": "Fees sirf registered naam wale account mein jaati hai",
+        "dv": "फ़ीस सिर्फ़ रजिस्टर्ड नाम वाले अकाउंट में जाती है"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Your challenge result is a process score",
+    "hi": "Aapka challenge result ek process score hai",
+    "dv": "आपका चैलेंज नतीजा एक प्रोसेस स्कोर है"
+   },
+   "p": {
+    "en": "Since Day 12 your paper account has gone up or down. The challenge ignores that number on purpose. In about ten days you have logged perhaps 5 to 20 paper trades, below the 30 needed even to judge a rule, so profit or loss over so few trades is mostly luck. Your challenge score, out of 1,000 points, comes only from what you control: attendance, quizzes, exams, practice work graded by your mentor, and discipline, such as on-time weekly reviews and honest mistake logs. The split is attendance 200, quizzes 200, exams 250, practice work 250 and discipline 100. Paper profit earns zero points. For your own review, use the adherence score from Day 12: decisions that followed your written rules, divided by all decisions, where a setup skipped by a written rule, or a no-setup day spent out, counts as one decision followed.",
+    "hi": "Day 12 se aapka paper account upar gaya ho ya neeche, challenge us number ko jaan-boojh kar ignore karta hai. Lagbhag das dinon mein aapne shayad 5 se 20 paper trades log kiye hain, jo kisi rule ko judge karne ke liye zaroori 30 se bhi kam hain; itne kam trades ka profit ya loss zyadatar luck hi hota hai. Aapka challenge score, 1,000 points mein se, sirf un cheezon se banta hai jo aapke haath mein hain: attendance, quizzes, exams, mentor ka grade kiya hua practice kaam, aur discipline, jaise time par weekly review aur imaandaar galti log. Points ka batwara: attendance 200, quizzes 200, exams 250, practice kaam 250, discipline 100. Paper profit ka ek bhi point nahi milta. Apne review ke liye Day 12 wala adherence score use kijiye: jo decisions aapke likhe rules ke hisaab se hue, unhe saare decisions se divide kijiye; likhe rule ki wajah se chhoda gaya setup, ya bina setup wala din jab aap bahar rahe, bhi ek sahi decision ginta hai.",
+    "dv": "दिन 12 से आपका पेपर अकाउंट ऊपर गया हो या नीचे, चैलेंज उस नंबर को जान-बूझकर नज़रअंदाज़ करता है। लगभग दस दिनों में आपने शायद 5 से 20 पेपर ट्रेड लॉग किए हैं, जो किसी नियम को परखने के लिए ज़रूरी 30 से भी कम हैं; इतने कम ट्रेड का मुनाफ़ा या नुक़सान ज़्यादातर क़िस्मत ही होता है। आपका चैलेंज स्कोर, 1,000 पॉइंट में से, सिर्फ़ उन चीज़ों से बनता है जो आपके हाथ में हैं: हाज़िरी, क्विज़, परीक्षाएँ, मेंटर का ग्रेड किया हुआ प्रैक्टिस काम, और अनुशासन, जैसे समय पर वीकली रिव्यू और ईमानदार ग़लती लॉग। पॉइंट का बँटवारा: हाज़िरी 200, क्विज़ 200, परीक्षाएँ 250, प्रैक्टिस काम 250, अनुशासन 100। पेपर मुनाफ़े का एक भी पॉइंट नहीं मिलता। अपने रिव्यू के लिए दिन 12 वाला एडहेरेंस स्कोर लीजिए: जो फ़ैसले आपके लिखे नियमों के हिसाब से हुए, उन्हें सारे फ़ैसलों से भाग दीजिए; लिखे नियम की वजह से छोड़ा गया सेटअप, या बिना सेटअप वाला दिन जब आप बाहर रहे, भी एक सही फ़ैसला गिना जाता है।"
+   },
+   "example": {
+    "en": "Aman's sheet since Day 12, the same one he added up on Day 20: 20 paper trades, 12 of which broke a rule, and 3 times he correctly stayed out (two no-setup days, and one setup he skipped because it gapped past his maximum entry). 11 of his 23 decisions followed his rules (8 on-rule trades + 3 stay-outs), an adherence of about 48%, and his virtual account is down Rs 53,000. Priya took 7 trades and is down Rs 6,000. Three of them broke a rule (once an entry a day before the signal, once a size above the formula from a rounding slip, and once a stop moved lower), and 8 times she correctly stayed out: 12 of 15, 80%. Aman's 8 on-rule trades made +2.4R; his 12 broken ones lost 7.7R. Had those broken trades happened to win, he would have learned the wrong lesson: a rule-breaking win is the most dangerous habit to reward.",
+    "hi": "Aman ki sheet Day 12 se, wahi jo usne Day 20 par joda tha: 20 paper trades, jinmein se 12 mein rule toota, aur 3 baar woh sahi wajah se bahar raha (do din koi setup nahi tha, aur ek setup usne chhoda kyunki woh uski maximum entry se upar gap karke khula). 23 decisions mein se 11 rule ke hisaab se the (8 rule wale trades + 3 baar bahar), yaani adherence lagbhag 48%, aur virtual account Rs 53,000 neeche hai. Priya ne 7 trades liye aur uska account Rs 6,000 neeche hai. Uske 3 trades mein rule toota (ek baar signal se ek din pehle entry, ek baar rounding ki galti se formula se bada size, aur ek baar stop neeche khiska), aur 8 baar woh sahi wajah se bahar rahi: 15 mein se 12, yaani 80%. Aman ke 8 rule wale trades ne +2.4R kamaye; 12 toote rules wale trades ne 7.7R gawaa diye. Agar woh toote trades luck se jeet jaate, toh woh galat sabak seekhta: rule todkar mili jeet ko inaam dena sabse khatarnaak aadat hai.",
+    "dv": "अमन की शीट दिन 12 से, वही जो उसने दिन 20 पर जोड़ी थी: 20 पेपर ट्रेड, जिनमें से 12 में नियम टूटा, और 3 बार वह सही वजह से बाहर रहा (दो दिन कोई सेटअप नहीं था, और एक सेटअप उसने छोड़ा क्योंकि वह उसकी मैक्सिमम एंट्री से ऊपर गैप करके खुला)। 23 फ़ैसलों में से 11 नियम के हिसाब से थे (नियम वाले 8 ट्रेड + 3 बार बाहर), यानी एडहेरेंस लगभग 48%, और वर्चुअल अकाउंट Rs 53,000 नीचे है। प्रिया ने 7 ट्रेड लिए और उसका अकाउंट Rs 6,000 नीचे है। उसके 3 ट्रेड में नियम टूटा (एक बार सिग्नल से एक दिन पहले एंट्री, एक बार राउंडिंग की ग़लती से फ़ॉर्मूले से बड़ा साइज़, और एक बार स्टॉप नीचे खिसका), और 8 बार वह सही वजह से बाहर रही: 15 में से 12, यानी 80%। अमन के नियम वाले 8 ट्रेड ने +2.4R कमाए; टूटे नियमों वाले 12 ट्रेड ने 7.7R गँवा दिए। अगर वे टूटे ट्रेड संयोग से जीत जाते, तो वह ग़लत सबक़ सीखता: नियम तोड़कर मिली जीत को इनाम देना सबसे ख़तरनाक आदत है।"
+   },
+   "remember": {
+    "en": "Profit over a few paper trades is mostly noise. Adherence is the number you can improve every single day.",
+    "hi": "Kuch paper trades ka profit zyadatar luck hota hai. Adherence woh number hai jo aap har din sudhaar sakte hain.",
+    "dv": "कुछ पेपर ट्रेड का मुनाफ़ा ज़्यादातर क़िस्मत का खेल है। एडहेरेंस वह नंबर है जिसे आप हर दिन सुधार सकते हैं।"
+   },
+   "visual": {
+    "kind": "calc",
+    "title": {
+     "en": "Priya's adherence score",
+     "hi": "Priya ka adherence score",
+     "dv": "प्रिया का एडहेरेंस स्कोर"
+    },
+    "caption": {
+     "en": "Aman's adherence was 48%, and his 12 rule-breaking trades lost 7.7R. Adherence is the one number in your hands every day.",
+     "hi": "Aman ka adherence 48% tha, aur uske 12 rule todne wale trades ne 7.7R gawaa diye. Adherence hi woh number hai jo roz aapke haath mein hai.",
+     "dv": "अमन का एडहेरेंस 48% था, और नियम तोड़ने वाले उसके 12 ट्रेड ने 7.7R गँवा दिए। एडहेरेंस ही वह नंबर है जो रोज़ आपके हाथ में है।"
+    },
+    "rows": [
+     {
+      "label": {
+       "en": "Trades that followed every rule",
+       "hi": "Har rule follow karne wale trades",
+       "dv": "हर नियम मानने वाले ट्रेड"
+      },
+      "value": "4"
+     },
+     {
+      "label": {
+       "en": "Times correctly stayed out",
+       "hi": "Kitni baar sahi wajah se bahar rahi",
+       "dv": "कितनी बार सही वजह से बाहर रही"
+      },
+      "value": "8",
+      "op": "+"
+     },
+     {
+      "label": {
+       "en": "Decisions on-rule",
+       "hi": "Rule ke hisaab se decisions",
+       "dv": "नियम के हिसाब से फ़ैसले"
+      },
+      "value": "12",
+      "op": "="
+     },
+     {
+      "label": {
+       "en": "All decisions: 7 trades + 8 stay-outs",
+       "hi": "Saare decisions: 7 trades + 8 baar bahar",
+       "dv": "सारे फ़ैसले: 7 ट्रेड + 8 बार बाहर"
+      },
+      "value": "15",
+      "op": "÷"
+     }
+    ],
+    "result": {
+     "label": {
+      "en": "Adherence score",
+      "hi": "Adherence score",
+      "dv": "एडहेरेंस स्कोर"
+     },
+     "value": "80%"
+    }
+   }
+  },
+  {
+   "h": {
+    "en": "From journal to five habits",
+    "hi": "Journal se paanch habits tak",
+    "dv": "जर्नल से पाँच आदतों तक"
+   },
+   "p": {
+    "en": "Your journal now holds every paper decision since Day 12, with its emotion tag and any broken rule. Read it like a coach, not a judge: count how often each rule broke, not how much money moved. Pick out your top 3 mistakes with their counts, your top 3 strengths, and the one emotion that sits most often next to a broken rule. Then write 5 habits for the next 4 weeks, each an action you control ('the stop goes in with the order'), never a money goal. This is your improvement plan. Put a check-in date in your calendar and, if you can, share the plan with one study partner. An AI can do the counting once names and personal details are removed; checking its counts and choosing the habits stay with you.",
+    "hi": "Aapke journal mein ab Day 12 se har paper decision hai, uske emotion tag aur toote rule ke saath. Ise coach ki tarah padhiye, judge ki tarah nahi: ginti kijiye ki kaunsa rule kitni baar toota, yeh nahi ki kitna paisa hila. Apni top 3 galtiyan unki ginti ke saath nikaaliye, top 3 strengths, aur woh ek emotion jo sabse zyada baar toote rule ke saath dikhta hai. Phir agle 4 hafton ke liye 5 habits likhiye, har ek aisa action jo aapke control mein ho ('stop order ke saath hi lagega'), paise ka goal kabhi nahi. Yahi aapka improvement plan hai. Calendar mein ek check-in date daal dijiye, aur ho sake toh plan kisi ek study partner ke saath share kijiye. Naam aur personal details hata dein, toh ginti AI kar sakta hai; uski ginti check karna aur habits chunna aapka hi kaam hai.",
+    "dv": "आपके जर्नल में अब दिन 12 से हर पेपर फ़ैसला है, उसके इमोशन टैग और टूटे नियम के साथ। इसे कोच की तरह पढ़िए, जज की तरह नहीं: गिनिए कि कौन-सा नियम कितनी बार टूटा, यह नहीं कि कितना पैसा हिला। अपनी टॉप 3 ग़लतियाँ उनकी गिनती के साथ निकालिए, टॉप 3 ख़ूबियाँ, और वह एक इमोशन जो सबसे ज़्यादा बार टूटे नियम के साथ दिखता है। फिर अगले 4 हफ़्तों के लिए 5 आदतें लिखिए, हर एक ऐसा काम जो आपके बस में हो ('स्टॉप ऑर्डर के साथ ही लगेगा'), पैसे का लक्ष्य कभी नहीं। यही आपका इम्प्रूवमेंट प्लान है। कैलेंडर में एक चेक-इन की तारीख़ डाल दीजिए, और हो सके तो प्लान किसी एक स्टडी पार्टनर के साथ शेयर कीजिए। नाम और निजी जानकारी हटा दें, तो गिनती AI कर सकता है; उसकी गिनती जाँचना और आदतें चुनना आपका ही काम है।"
+   },
+   "example": {
+    "en": "Aman's counts: 12 of his 20 trades broke a rule. Five had no setup, and four of those were also above the formula size: his two early Kiran Foods chases and Thursday's revenge pair. Four entries came before the daily close confirmed the signal. He moved the stop lower twice, and ignored his results rule once. His strengths: never more than 3 open trades, a journal row every day, and an honest emotion tag on every row. The tag 'FOMO' sits next to 6 of his 12 breaks. His five habits: the stop goes in with the order and never moves lower; he decides only after 3:30 pm; no setup on the screener means no trade; when he feels FOMO, he writes the idea down and waits for the evening scan; and a 20-minute review every Sunday. His check-in is 4 weeks from today, with Priya as his study partner.",
+    "hi": "Aman ki ginti: 20 mein se 12 trades mein rule toota. Paanch bina setup ke the, aur unmein se chaar formula se bade size ke bhi: Kiran Foods ke do shuruaati chase trades aur Thursday ki revenge wali jodi. Chaar entries daily close se signal confirm hone se pehle hui. Stop do baar neeche khiskaya, aur ek baar results rule ignore kiya. Uski strengths: kabhi 3 se zyada open trades nahi, roz journal ki row, aur har row par imaandaar emotion tag. 'FOMO' tag uske 12 mein se 6 toote rules ke saath dikhta hai. Uski paanch habits: stop order ke saath lagega aur kabhi neeche nahi khiskega; faisla sirf 3:30 ke baad; screener par setup nahi toh trade nahi; FOMO feel ho toh idea likh kar evening scan ka intezaar karega; aur har Sunday 20 minute ka review. Uska check-in aaj se 4 hafte baad hai, aur Priya uski study partner hai.",
+    "dv": "अमन की गिनती: 20 में से 12 ट्रेड में नियम टूटा। पाँच बिना सेटअप के थे, और उनमें से चार फ़ॉर्मूले से बड़े साइज़ के भी: Kiran Foods के दो शुरुआती जल्दबाज़ी वाले ट्रेड और गुरुवार की रिवेंज वाली जोड़ी। चार एंट्री डेली क्लोज़ से सिग्नल कन्फ़र्म होने से पहले हुईं। स्टॉप दो बार नीचे खिसकाया, और एक बार नतीजों वाला नियम अनदेखा किया। उसकी ख़ूबियाँ: कभी 3 से ज़्यादा खुले ट्रेड नहीं, रोज़ जर्नल की एक रो, और हर रो पर ईमानदार इमोशन टैग। 'FOMO' टैग उसके 12 में से 6 टूटे नियमों के साथ दिखता है। उसकी पाँच आदतें: स्टॉप ऑर्डर के साथ लगेगा और कभी नीचे नहीं खिसकेगा; फ़ैसला सिर्फ़ 3:30 के बाद; स्क्रीनर पर सेटअप नहीं तो ट्रेड नहीं; FOMO महसूस हो तो आइडिया लिखकर शाम के स्कैन का इंतज़ार करेगा; और हर रविवार 20 मिनट का रिव्यू। उसका चेक-इन आज से 4 हफ़्ते बाद है, और प्रिया उसकी स्टडी पार्टनर है।"
+   },
+   "remember": {
+    "en": "Write habits, not money goals. A habit you can tick every day beats a target you cannot control.",
+    "hi": "Habits likhiye, paise ke goal nahi. Jo habit aap roz tick kar sakein, woh us target se behtar hai jo aapke control mein hi nahi.",
+    "dv": "आदतें लिखिए, पैसे के लक्ष्य नहीं। जिस आदत पर आप रोज़ टिक लगा सकें, वह उस लक्ष्य से बेहतर है जो आपके बस में ही नहीं।"
+   }
+  },
+  {
+   "h": {
+    "en": "The certificate: six checks, no profit test",
+    "hi": "Certificate: chhe checks, profit ka koi test nahi",
+    "dv": "सर्टिफ़िकेट: छह शर्तें, मुनाफ़े की कोई शर्त नहीं"
+   },
+   "p": {
+    "en": "Your certificate is issued automatically once six checks are met, and the certificate page shows a tick against each. One: at least 90% of sessions complete, which is 19 of 21; a session counts once its quiz is submitted and its journal entry is written. Two: the final exam passed with 60% or more (18 of 30); it has 30 questions and 60 minutes. If the first attempt falls short you get one more. Only 26 or more out of 30 on the first attempt earns a Distinction. Three: all three weekly Quiz Games attempted (the certificate page calls them weekly exams). Four: the practice artefact ladder, five complete rows on the Portfolio page, each graded C or better on process by your mentor (on the page: Practice tasks graded C or better). Five: a weekly review written for at least 2 of the 3 weeks, by choosing 'Weekly review' in the journal on Day 7, 14 or 21. Missed Day 7 or 14? Open that day from your Path and write it there; it still counts. Six: an account in good standing. If a check is still open today, you can finish it after Day 21; the certificate issues on its own as soon as the last check turns green.",
+    "hi": "Chhe checks poore hote hi certificate apne aap issue ho jaata hai, aur certificate page par har check ke aage tick dikhta hai. Ek: kam se kam 90% sessions poore, yaani 21 mein se 19; session tab poora ginta hai jab uska quiz submit ho jaaye aur journal entry likh di jaaye. Do: final exam 60% ya usse zyada (30 mein se 18) se pass; ismein 30 sawaal aur 60 minute hain. Pehli baar pass na ho toh ek aur mauka milta hai. Distinction sirf pehle attempt mein 30 mein se 26 ya zyada par milta hai. Teen: teenon weekly Quiz Games attempt kiye hon (certificate page par inka naam weekly exams hai). Chaar: practice artefact ladder, yaani Portfolio page par paanch poori rows, har ek ko mentor ne process par C ya behtar grade diya ho (page par: Practice tasks par mentor ka grade C ya behtar). Paanch: 3 mein se kam se kam 2 hafton ka weekly review, Day 7, 14 ya 21 ko journal mein 'Weekly review' chun kar likha gaya ho. Day 7 ya 14 ka review chhoot gaya? Path se woh din kholiye aur wahin likhiye; woh bhi ginta hai. Chhe: account active ho, suspended nahi. Agar aaj koi check baaki hai, toh use Day 21 ke baad bhi poora kar sakte hain; aakhri check green hote hi certificate apne aap issue ho jaata hai.",
+    "dv": "छह शर्तें पूरी होते ही सर्टिफ़िकेट अपने-आप जारी हो जाता है, और सर्टिफ़िकेट पेज पर हर शर्त के आगे टिक दिखता है। एक: कम से कम 90% सेशन पूरे, यानी 21 में से 19; सेशन तब पूरा गिना जाता है जब उसका क्विज़ सबमिट हो जाए और जर्नल एंट्री लिख दी जाए। दो: फ़ाइनल परीक्षा 60% या उससे ज़्यादा (30 में से 18) से पास; इसमें 30 सवाल और 60 मिनट हैं। पहली बार में पास न हों तो एक मौक़ा और मिलता है। Distinction सिर्फ़ पहली कोशिश में 30 में से 26 या ज़्यादा लाने पर मिलता है। तीन: तीनों वीकली Quiz Game दिए हों (सर्टिफ़िकेट पेज पर इनका नाम वीकली परीक्षाएँ है)। चार: प्रैक्टिस आर्टिफ़ैक्ट लैडर, यानी Portfolio पेज पर पाँच पूरी रो, हर एक को मेंटर ने प्रोसेस पर C या बेहतर ग्रेड दिया हो (पेज पर: प्रैक्टिस टास्क पर मेंटर का ग्रेड C या बेहतर)। पाँच: 3 में से कम से कम 2 हफ़्तों का वीकली रिव्यू, दिन 7, 14 या 21 को जर्नल में 'साप्ताहिक रिव्यू' चुनकर लिखा गया हो। दिन 7 या 14 का रिव्यू छूट गया? 'रास्ता' पेज से वह दिन खोलिए और वहीं लिखिए; वह भी गिना जाता है। छह: अकाउंट एक्टिव हो, सस्पेंड नहीं। अगर आज कोई शर्त बाक़ी है, तो उसे दिन 21 के बाद भी पूरा कर सकते हैं; आख़िरी शर्त पूरी होते ही सर्टिफ़िकेट अपने-आप जारी हो जाता है।"
+   },
+   "example": {
+    "en": "A complete Portfolio row, in virtual money only, has seven parts. Two are Full Whys: a business reason and a second, independent one. Then the top risk and your answer to it. Then a price-stop and a Why-stop ('the idea is wrong if...'). Last, a review point: a date or trigger to look again. Priya's row on Gupta Cement Ltd has a price-stop at Rs 386 (the stop from her Day 11 plan card), a Why-stop of 'sales fall two quarters in a row', and the next results date as its review point. The certificate itself carries a number and a QR code that opens a public verify page. It certifies that you completed a course. It is not a SEBI or NISM certification, not a licence to advise, and not a signal that you are ready for real money.",
+    "hi": "Portfolio ki ek poori row, sirf virtual paise mein, saat hisson ki hoti hai. Do Full Why: ek business reason, aur doosra alag reason. Phir sabse bada risk aur uska aapka jawab. Phir price-stop aur Why-stop ('idea galat saabit hoga agar...'). Aakhir mein review point, yaani dobara dekhne ki date ya trigger. Gupta Cement Ltd par Priya ki row mein price-stop Rs 386 hai (uske Day 11 plan card wala stop), Why-stop hai 'lagatar do quarter sales giri', aur review point agli results date. Certificate par ek number aur QR code hota hai, jo ek public verify page kholta hai. Yeh certify karta hai ki aapne course poora kiya. Yeh SEBI ya NISM certification nahi hai, advice dene ka licence nahi hai, aur is baat ka signal bhi nahi ki aap real paise ke liye ready hain.",
+    "dv": "Portfolio की एक पूरी रो, सिर्फ़ वर्चुअल पैसे में, सात हिस्सों की होती है। दो फ़ुल व्हाई: एक बिज़नेस का कारण, और दूसरा अलग कारण। फिर सबसे बड़ा जोखिम और उसका आपका जवाब। फिर प्राइस-स्टॉप और व्हाई-स्टॉप ('आइडिया ग़लत साबित होगा अगर...')। आख़िर में रिव्यू पॉइंट, यानी दोबारा देखने की तारीख़ या ट्रिगर। Gupta Cement Ltd पर प्रिया की रो में प्राइस-स्टॉप Rs 386 है (उसके दिन 11 वाले प्लान कार्ड का स्टॉप), व्हाई-स्टॉप है 'लगातार दो तिमाही बिक्री गिरी', और रिव्यू पॉइंट अगली नतीजों की तारीख़। सर्टिफ़िकेट पर एक नंबर और QR कोड होता है, जो एक पब्लिक वेरिफ़ाई पेज खोलता है। यह बताता है कि आपने कोर्स पूरा किया। यह SEBI या NISM का सर्टिफ़िकेशन नहीं है, सलाह देने का लाइसेंस नहीं है, और इस बात का संकेत भी नहीं कि आप असली पैसे के लिए तैयार हैं।"
+   },
+   "remember": {
+    "en": "The certificate shows you finished the course. Only your journal can show how you trade.",
+    "hi": "Certificate dikhata hai ki aapne course poora kiya. Aap trade kaise karte hain, yeh sirf aapka journal dikha sakta hai.",
+    "dv": "सर्टिफ़िकेट दिखाता है कि आपने कोर्स पूरा किया। आप ट्रेड कैसे करते हैं, यह सिर्फ़ आपका जर्नल दिखा सकता है।"
+   },
+   "visual": {
+    "kind": "steps",
+    "title": {
+     "en": "Six checks for the certificate",
+     "hi": "Certificate ke chhe checks",
+     "dv": "सर्टिफ़िकेट की छह शर्तें"
+    },
+    "caption": {
+     "en": "Your certificate page shows the same six checks. None of them asks for profit.",
+     "hi": "Certificate page par yahi chhe checks dikhte hain. Inmein se koi bhi profit nahi maangta.",
+     "dv": "सर्टिफ़िकेट पेज पर यही छह शर्तें दिखती हैं। इनमें से कोई भी मुनाफ़ा नहीं माँगती।"
+    },
+    "items": [
+     {
+      "tag": "19/21",
+      "label": {
+       "en": "Sessions complete",
+       "hi": "Sessions poore",
+       "dv": "सेशन पूरे"
+      },
+      "sub": {
+       "en": "Quiz submitted, journal written",
+       "hi": "Quiz submit, journal likha",
+       "dv": "क्विज़ सबमिट, जर्नल लिखा"
+      }
+     },
+     {
+      "tag": "60%+",
+      "label": {
+       "en": "Final exam passed",
+       "hi": "Final exam pass",
+       "dv": "फ़ाइनल परीक्षा पास"
+      },
+      "sub": {
+       "en": "30 questions, 60 minutes",
+       "hi": "30 sawaal, 60 minute",
+       "dv": "30 सवाल, 60 मिनट"
+      }
+     },
+     {
+      "tag": "3/3",
+      "label": {
+       "en": "Quiz Games attempted",
+       "hi": "Quiz Games diye",
+       "dv": "Quiz Game दिए"
+      },
+      "sub": {
+       "en": "One for each week",
+       "hi": "Har hafte ka ek",
+       "dv": "हर हफ़्ते का एक"
+      }
+     },
+     {
+      "tag": "5 rows",
+      "label": {
+       "en": "Practice ladder",
+       "hi": "Practice ladder",
+       "dv": "प्रैक्टिस लैडर"
+      },
+      "sub": {
+       "en": "Graded C or better",
+       "hi": "Grade C ya behtar",
+       "dv": "ग्रेड C या बेहतर"
+      }
+     },
+     {
+      "tag": "2/3",
+      "label": {
+       "en": "Weekly reviews",
+       "hi": "Weekly reviews",
+       "dv": "वीकली रिव्यू"
+      },
+      "sub": {
+       "en": "Day 7, 14 or 21",
+       "hi": "Day 7, 14 ya 21",
+       "dv": "दिन 7, 14 या 21"
+      }
+     },
+     {
+      "tag": "OK",
+      "label": {
+       "en": "Good standing",
+       "hi": "Account active",
+       "dv": "अकाउंट एक्टिव"
+      },
+      "sub": {
+       "en": "Not suspended",
+       "hi": "Suspended nahi",
+       "dv": "सस्पेंड नहीं"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Before real money: the 'not yet' list, and Stage 2",
+    "hi": "Real paise se pehle: 'abhi nahi' list, aur Stage 2",
+    "dv": "असली पैसे से पहले: 'अभी नहीं' की लिस्ट, और Stage 2"
+   },
+   "p": {
+    "en": "Finishing Stage 1 means you have learned the basics. It does not mean you are ready to risk real money, and no certificate, course or AI can tell you that you are. Before anyone should even consider it, a few conditions must be met. The Daily Routine Card has run for at least four more weeks of paper trading. About 100 trades are logged, backtest and paper together, on the same frozen rules, across up, down and sideways markets. Adherence stays high on losing days too. An emergency fund of 3 to 6 months of essential expenses is in place (Day 10), and only risk capital would ever be used, money you could lose without hurting your household; never borrowed money. F&O stays shut: samjho, khelo mat. Stage 2, CIRCLE W.I.N.N.E.R.S, is the next stage of the 5 Circles Academy; it builds on these 21 days, and your mentor opens it once Stage 1 is complete.",
+    "hi": "Stage 1 poora karne ka matlab hai ki aapne basics seekh liye. Iska matlab yeh nahi ki aap real paisa risk karne ke liye ready hain, aur koi certificate, course ya AI aapko yeh nahi bata sakta. Is baare mein sochne se pehle bhi kuch shartein poori honi chahiye. Daily Routine Card kam se kam chaar aur hafte paper trading par chal chuka ho. Same frozen rules par lagbhag 100 trades log ho chuke hon, backtest aur paper milakar, up, down aur sideways, teeno tarah ke market mein. Loss wale dinon mein bhi adherence achha bana rahe. 3 se 6 mahine ke zaroori kharche jitna emergency fund taiyaar ho (Day 10), aur lage toh sirf risk capital, yaani woh paisa jo doob jaaye toh ghar ka kharcha na ruke; udhaar ka paisa kabhi nahi. F&O ka darwaza band hi rahega: samjho, khelo mat. Stage 2, CIRCLE W.I.N.N.E.R.S, 5 Circles Academy ka agla stage hai; yeh inhi 21 dinon par aage banta hai, aur Stage 1 poora hone ke baad aapke mentor ise aapke liye kholte hain.",
+    "dv": "Stage 1 पूरा करने का मतलब है कि आपने बुनियादी बातें सीख लीं। इसका मतलब यह नहीं कि आप असली पैसा जोखिम में डालने के लिए तैयार हैं, और कोई सर्टिफ़िकेट, कोर्स या AI आपको यह नहीं बता सकता। इस बारे में सोचने से पहले भी कुछ शर्तें पूरी होनी चाहिए। डेली रूटीन कार्ड कम से कम चार और हफ़्ते पेपर ट्रेडिंग पर चल चुका हो। एक ही फ़्रीज़ किए गए नियमों पर लगभग 100 ट्रेड लॉग हो चुके हों, बैकटेस्ट और पेपर मिलाकर, तेज़ी, मंदी और साइडवेज़, तीनों तरह के बाज़ार में। घाटे वाले दिनों में भी एडहेरेंस ऊँचा रहे। 3 से 6 महीने के ज़रूरी ख़र्च जितना इमरजेंसी फ़ंड तैयार हो (दिन 10), और लगे तो सिर्फ़ रिस्क कैपिटल, यानी वह पैसा जो डूब जाए तो घर का ख़र्च न रुके; उधार का पैसा कभी नहीं। F&O का दरवाज़ा बंद ही रहेगा: समझो, खेलो मत। Stage 2, CIRCLE W.I.N.N.E.R.S, 5 Circles Academy का अगला चरण है; यह इन्हीं 21 दिनों पर आगे बनता है, और Stage 1 पूरा होने के बाद आपके मेंटर इसे आपके लिए खोलते हैं।"
+   },
+   "example": {
+    "en": "Say Aman ignores the list, puts Rs 2,00,000 of real money behind rules he is still changing, and a bad month takes 25%, leaving Rs 1,50,000. To get back to Rs 2,00,000 he now needs Rs 50,000, which is 33% of what is left, not 25%. Four more weeks on paper would have cost him nothing but patience. This is Day 3's loss-recovery maths, and it is why 'not yet' is often the wisest answer.",
+    "hi": "Maan lijiye Aman yeh list ignore karke, un rules par jinhe woh abhi bhi badal raha hai, Rs 2,00,000 real paisa laga deta hai, aur ek bura mahina 25% le jaata hai: bache Rs 1,50,000. Wapas Rs 2,00,000 tak pahunchne ke liye ab use Rs 50,000 chahiye, jo bache hue paise ka 33% hai, 25% nahi. Woh chaar hafte aur paper par rehta, toh uska kuch nahi jaata, bas sabr lagta. Yahi Day 3 ka loss-recovery wala hisaab hai, aur isiliye 'abhi nahi' aksar sabse samajhdaar jawab hota hai.",
+    "dv": "मान लीजिए अमन यह लिस्ट अनदेखी करके, उन नियमों पर जिन्हें वह अभी भी बदल रहा है, Rs 2,00,000 असली पैसा लगा देता है, और एक बुरा महीना 25% ले जाता है: बचे Rs 1,50,000। वापस Rs 2,00,000 तक पहुँचने के लिए अब उसे Rs 50,000 चाहिए, जो बचे हुए पैसे का 33% है, 25% नहीं। वह चार हफ़्ते और पेपर पर रहता, तो उसका कुछ नहीं जाता, बस सब्र लगता। यही दिन 3 का लॉस-रिकवरी वाला हिसाब है, और इसीलिए 'अभी नहीं' अक्सर सबसे समझदारी भरा जवाब होता है।"
+   },
+   "remember": {
+    "en": "'Not yet' is a complete answer. Routine, sample size and savings come before any real rupee.",
+    "hi": "'Abhi nahi' apne aap mein poora jawab hai. Kisi bhi real rupaye se pehle routine, sample size aur savings.",
+    "dv": "'अभी नहीं' अपने-आप में पूरा जवाब है। किसी भी असली रुपये से पहले रूटीन, सैंपल साइज़ और बचत।"
+   },
+   "visual": {
+    "kind": "bars",
+    "title": {
+     "en": "Gain needed to repair a loss",
+     "hi": "Loss bharne ke liye kitna gain chahiye",
+     "dv": "नुक़सान भरने के लिए कितनी बढ़त चाहिए"
+    },
+    "caption": {
+     "en": "The deeper the fall, the steeper the climb back. Waiting on paper costs far less.",
+     "hi": "Jitni gehri girawat, utni khadi chadhai. Paper par intezaar kahin sasta padta hai.",
+     "dv": "जितनी गहरी गिरावट, उतनी खड़ी चढ़ाई। पेपर पर इंतज़ार कहीं सस्ता पड़ता है।"
+    },
+    "unit": "%",
+    "items": [
+     {
+      "label": {
+       "en": "After -10%",
+       "hi": "-10% ke baad",
+       "dv": "-10% के बाद"
+      },
+      "value": 11.1,
+      "display": "+11%",
+      "tone": "gold"
+     },
+     {
+      "label": {
+       "en": "After -25%",
+       "hi": "-25% ke baad",
+       "dv": "-25% के बाद"
+      },
+      "value": 33.3,
+      "display": "+33%",
+      "tone": "down"
+     },
+     {
+      "label": {
+       "en": "After -50%",
+       "hi": "-50% ke baad",
+       "dv": "-50% के बाद"
+      },
+      "value": 100,
+      "display": "+100%",
+      "tone": "down"
+     }
+    ]
+   }
+  }
+ ],
+ "key_terms": [
+  {
+   "term": {
+    "en": "Adherence score",
+    "hi": "Adherence score",
+    "dv": "एडहेरेंस स्कोर"
+   },
+   "meaning": {
+    "en": "Decisions that followed your written rules divided by all decisions. A setup skipped by a written rule, or a no-setup day spent out, counts as a decision followed.",
+    "hi": "Likhe rules ke hisaab se hue decisions, saare decisions se divide. Likhe rule ki wajah se chhoda gaya setup, ya bina setup wala din jab aap bahar rahe, bhi sahi decision ginta hai.",
+    "dv": "लिखे नियमों के हिसाब से हुए फ़ैसले, सारे फ़ैसलों से भाग। लिखे नियम की वजह से छोड़ा गया सेटअप, या बिना सेटअप वाला दिन जब आप बाहर रहे, भी सही फ़ैसला गिना जाता है।"
+   }
+  },
+  {
+   "term": {
+    "en": "Copy-trading and account handling",
+    "hi": "Copy-trading aur account handling",
+    "dv": "कॉपी-ट्रेडिंग और अकाउंट हैंडलिंग"
+   },
+   "meaning": {
+    "en": "Offers to copy someone's trades into your account, or to trade it for you. Many ask for your login or OTP, and whoever trades, every loss stays yours.",
+    "hi": "Aise offers jo kisi aur ke trades aapke account mein copy karein, ya aapke liye trade karein. Kai offers aapka login ya OTP maangte hain, aur trade koi bhi kare, har loss aapka hi rehta hai.",
+    "dv": "ऐसे ऑफ़र जो किसी और के ट्रेड आपके अकाउंट में कॉपी करें, या आपके लिए ट्रेड करें। कई ऑफ़र आपका लॉगिन या OTP माँगते हैं, और ट्रेड कोई भी करे, हर नुक़सान आपका ही रहता है।"
+   }
+  },
+  {
+   "term": {
+    "en": "Practice artefact ladder",
+    "hi": "Practice artefact ladder",
+    "dv": "प्रैक्टिस आर्टिफ़ैक्ट लैडर"
+   },
+   "meaning": {
+    "en": "Five complete rows on the Portfolio page, each graded on process by your mentor. C or better on all five is one certificate check.",
+    "hi": "Portfolio page par paanch poori rows, har ek ko mentor process par grade karte hain. Paanchon par C ya behtar, certificate ka ek check hai.",
+    "dv": "Portfolio पेज पर पाँच पूरी रो, हर एक को मेंटर प्रोसेस पर ग्रेड करते हैं। पाँचों पर C या बेहतर, सर्टिफ़िकेट की एक शर्त है।"
+   }
+  },
+  {
+   "term": {
+    "en": "Improvement plan",
+    "hi": "Improvement plan",
+    "dv": "इम्प्रूवमेंट प्लान"
+   },
+   "meaning": {
+    "en": "Five habits for the next four weeks, built from your journal's counts, with a check-in date.",
+    "hi": "Agle chaar hafton ki paanch habits, journal ki ginti se bani, ek check-in date ke saath.",
+    "dv": "अगले चार हफ़्तों की पाँच आदतें, जर्नल की गिनती से बनी, एक चेक-इन तारीख़ के साथ।"
+   }
+  },
+  {
+   "term": {
+    "en": "Certificate of Completion",
+    "hi": "Certificate of Completion",
+    "dv": "कोर्स पूरा करने का सर्टिफ़िकेट"
+   },
+   "meaning": {
+    "en": "Proof that you completed the course, with a number and a QR code to verify it. Not a SEBI or NISM certification, not a licence, not a readiness signal.",
+    "hi": "Course poora karne ka saboot, verify karne ke liye number aur QR code ke saath. SEBI ya NISM certification nahi, licence nahi, ready hone ka signal bhi nahi.",
+    "dv": "कोर्स पूरा करने का सबूत, जाँचने के लिए नंबर और QR कोड के साथ। SEBI या NISM सर्टिफ़िकेशन नहीं, लाइसेंस नहीं, तैयार होने का संकेत भी नहीं।"
+   }
+  },
+  {
+   "term": {
+    "en": "Challenge score",
+    "hi": "Challenge score",
+    "dv": "चैलेंज स्कोर"
+   },
+   "meaning": {
+    "en": "Your Stage 1 score out of 1,000: attendance 200, quizzes 200, exams 250, practice work 250, discipline 100. Paper profit earns zero points.",
+    "hi": "Stage 1 ka 1,000 mein se score: attendance 200, quizzes 200, exams 250, practice kaam 250, discipline 100. Paper profit ke zero points.",
+    "dv": "Stage 1 का 1,000 में से स्कोर: हाज़िरी 200, क्विज़ 200, परीक्षाएँ 250, प्रैक्टिस काम 250, अनुशासन 100। पेपर मुनाफ़े के शून्य पॉइंट।"
+   }
+  }
+ ],
+ "mindmap": {
+  "kind": "mindmap",
+  "center": {
+   "en": "The finish line is a start line",
+   "hi": "Finish line hi start line hai",
+   "dv": "फ़िनिश लाइन ही स्टार्ट लाइन है"
+  },
+  "branches": [
+   {
+    "label": {
+     "en": "Week 3 system",
+     "hi": "Week 3 ka system",
+     "dv": "हफ़्ता 3 का सिस्टम"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "Health-check and ex-dates",
+      "hi": "Health-check aur ex-dates",
+      "dv": "हेल्थ-चेक और एक्स-डेट"
+     },
+     {
+      "en": "Flowchart; alerts only say 'look'",
+      "hi": "Flowchart; alert sirf 'dekho'",
+      "dv": "फ़्लोचार्ट; अलर्ट सिर्फ़ 'देखो'"
+     },
+     {
+      "en": "30-trade backtest in net R",
+      "hi": "Net R mein 30 trades ka backtest",
+      "dv": "नेट R में 30 ट्रेड का बैकटेस्ट"
+     },
+     {
+      "en": "Calendar, routine card, -2R stop",
+      "hi": "Calendar, routine card, -2R stop",
+      "dv": "कैलेंडर, रूटीन कार्ड, -2R स्टॉप"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Shortcut Trap #3",
+     "hi": "Shortcut Trap #3",
+     "dv": "शॉर्टकट ट्रैप #3"
+    },
+    "tone": "down",
+    "points": [
+     {
+      "en": "Never share login, OTP, TPIN",
+      "hi": "Login, OTP, TPIN kabhi share nahi",
+      "dv": "लॉगिन, OTP, TPIN कभी शेयर नहीं"
+     },
+     {
+      "en": "Legal algo: broker plus Algo-ID",
+      "hi": "Legal algo: broker aur Algo-ID",
+      "dv": "लीगल एल्गो: ब्रोकर और Algo-ID"
+     },
+     {
+      "en": "Monthly-return promise = red flag",
+      "hi": "Monthly return ka vada = red flag",
+      "dv": "महीने के रिटर्न का वादा = रेड फ़्लैग"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Process score",
+     "hi": "Process score",
+     "dv": "प्रोसेस स्कोर"
+    },
+    "tone": "up",
+    "points": [
+     {
+      "en": "Paper profit earns 0 points",
+      "hi": "Paper profit = 0 points",
+      "dv": "पेपर मुनाफ़ा = 0 पॉइंट"
+     },
+     {
+      "en": "No-trade days count",
+      "hi": "No-trade days bhi ginte hain",
+      "dv": "नो-ट्रेड दिन भी गिने जाते हैं"
+     },
+     {
+      "en": "5 habits, one check-in date",
+      "hi": "5 habits, ek check-in date",
+      "dv": "5 आदतें, एक चेक-इन तारीख़"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Certificate",
+     "hi": "Certificate",
+     "dv": "सर्टिफ़िकेट"
+    },
+    "tone": "gold",
+    "points": [
+     {
+      "en": "Six checks, none about profit",
+      "hi": "Chhe checks, profit ka koi nahi",
+      "dv": "छह शर्तें, मुनाफ़े की कोई नहीं"
+     },
+     {
+      "en": "5 Portfolio rows, C or better",
+      "hi": "5 Portfolio rows, C ya behtar",
+      "dv": "5 Portfolio रो, C या बेहतर"
+     },
+     {
+      "en": "Not SEBI/NISM, not a licence",
+      "hi": "SEBI/NISM nahi, licence nahi",
+      "dv": "SEBI/NISM नहीं, लाइसेंस नहीं"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Not yet",
+     "hi": "Abhi nahi",
+     "dv": "अभी नहीं"
+    },
+    "tone": "down",
+    "points": [
+     {
+      "en": "4 more weeks of routine",
+      "hi": "4 aur hafte routine",
+      "dv": "4 और हफ़्ते रूटीन"
+     },
+     {
+      "en": "About 100 trades, same rules",
+      "hi": "Same rules par lagbhag 100 trades",
+      "dv": "एक ही नियम, लगभग 100 ट्रेड"
+     },
+     {
+      "en": "Emergency fund; never borrowed money",
+      "hi": "Emergency fund; udhaar kabhi nahi",
+      "dv": "इमरजेंसी फ़ंड; उधार कभी नहीं"
+     },
+     {
+      "en": "F&O: samjho, khelo mat",
+      "hi": "F&O: samjho, khelo mat",
+      "dv": "F&O: समझो, खेलो मत"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Next step",
+     "hi": "Agla kadam",
+     "dv": "अगला क़दम"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "Stage 2: CIRCLE W.I.N.N.E.R.S",
+      "hi": "Stage 2: CIRCLE W.I.N.N.E.R.S",
+      "dv": "Stage 2: CIRCLE W.I.N.N.E.R.S"
+     },
+     {
+      "en": "Your mentor opens it after Stage 1",
+      "hi": "Stage 1 ke baad mentor kholte hain",
+      "dv": "Stage 1 के बाद मेंटर खोलते हैं"
+     }
+    ]
+   }
+  ]
+ },
+ "kaam": {
+  "en": "Close Stage 1 properly: review your journal since Day 12 with AI, write five habits with a check-in date, check the six certificate checks and add a Portfolio row if you need one, then take Quiz Game 3 and the final exam.",
+  "hi": "Stage 1 ko theek se band kijiye: AI ke saath Day 12 se ab tak ka journal review kijiye, check-in date ke saath paanch habits likhiye, certificate ke chhe checks dekhiye aur zaroorat ho toh ek Portfolio row bhariye, phir Quiz Game 3 aur final exam dijiye.",
+  "dv": "Stage 1 को ठीक से पूरा कीजिए: AI के साथ दिन 12 से अब तक का जर्नल रिव्यू कीजिए, चेक-इन तारीख़ के साथ पाँच आदतें लिखिए, सर्टिफ़िकेट की छह शर्तें देखिए और ज़रूरत हो तो एक Portfolio रो भरिए, फिर Quiz Game 3 और फ़ाइनल परीक्षा दीजिए।"
+ },
+ "kaam_steps": [
+  {
+   "en": "Copy your journal entries since Day 12 into one note, and delete every personal name, PAN, client ID and account detail.",
+   "hi": "Day 12 se ab tak ki journal entries ek note mein copy kijiye, aur har personal naam, PAN, client ID aur account detail hata dijiye.",
+   "dv": "दिन 12 से अब तक की जर्नल एंट्री एक नोट में कॉपी कीजिए, और हर निजी नाम, PAN, क्लाइंट ID और अकाउंट की जानकारी हटा दीजिए।"
+  },
+  {
+   "en": "Run the AI Lab prompt 'Final journal review' on that note, and tick each count only after checking it against your journal.",
+   "hi": "Us note par AI Lab ka 'Final journal review' prompt chalaiye, aur har ginti ko apne journal se mila kar hi tick kijiye.",
+   "dv": "उस नोट पर AI Lab का 'आख़िरी जर्नल रिव्यू' प्रॉम्प्ट चलाइए, और हर गिनती को अपने जर्नल से मिलाकर ही टिक कीजिए।"
+  },
+  {
+   "en": "In today's journal, choose 'Weekly review', write your Week 3 review ending with your five habits, and set a phone reminder four weeks from today called 'Check my five habits'.",
+   "hi": "Aaj ke journal mein 'Weekly review' chuniye, Week 3 ka review paanch habits ke saath likhiye, aur phone mein aaj se chaar hafte baad ka reminder lagaiye: 'Check my five habits'.",
+   "dv": "आज के जर्नल में 'साप्ताहिक रिव्यू' चुनिए, हफ़्ता 3 का रिव्यू पाँच आदतों के साथ लिखिए, और फ़ोन में आज से चार हफ़्ते बाद का रिमाइंडर लगाइए: 'अपनी पाँच आदतें जाँचो'।"
+  },
+  {
+   "en": "Open the certificate page and write down each check that is still open, with the one action it needs. If your Day 7 or Day 14 weekly review is missing, open that day from your Path, choose 'Weekly review' and write it now.",
+   "hi": "Certificate page kholiye aur jo check abhi baaki hai, use uske liye zaroori ek kaam ke saath likh lijiye. Agar Day 7 ya Day 14 ka weekly review nahi likha, toh Path se woh din kholiye, 'Weekly review' chuniye aur abhi likhiye.",
+   "dv": "सर्टिफ़िकेट पेज खोलिए और जो शर्त अभी बाक़ी है, उसे उसके लिए ज़रूरी एक काम के साथ लिख लीजिए। अगर दिन 7 या दिन 14 का वीकली रिव्यू नहीं लिखा, तो 'रास्ता' पेज से वह दिन खोलिए, 'साप्ताहिक रिव्यू' चुनिए और अभी लिखिए।"
+  },
+  {
+   "en": "Open the Portfolio page and count the rows marked Complete; the certificate needs five, each with all seven parts from the certificate topic above. If you have fewer, fill one more now, in virtual money only, and add the rest over the coming days; your mentor grades each one.",
+   "hi": "Portfolio page kholiye aur 'Poori' wali rows giniye; certificate ke liye paanch chahiye, har ek upar certificate wale topic ke saaton hisson ke saath. Kam hain, toh abhi ek aur row bhariye, sirf virtual paise mein, aur baaki agle kuch dinon mein jodiye; mentor har row ko grade karte hain.",
+   "dv": "Portfolio पेज खोलिए और 'पूरी' वाली रो गिनिए; सर्टिफ़िकेट के लिए पाँच चाहिए, हर एक ऊपर सर्टिफ़िकेट वाले टॉपिक के सातों हिस्सों के साथ। कम हैं, तो अभी एक और रो भरिए, सिर्फ़ वर्चुअल पैसे में, और बाक़ी अगले कुछ दिनों में जोड़िए; मेंटर हर रो को ग्रेड करते हैं।"
+  },
+  {
+   "en": "Submit today's quiz first, so all 21 days are complete. Then take Quiz Game 3 (15 questions, 30 minutes), take a break, and sit the final exam (30 questions, 60 minutes) when you are fresh, today or tomorrow. None of these is part of the minutes above.",
+   "hi": "Pehle aaj ka quiz submit kijiye, taaki saare 21 din poore ho jaayein. Phir Quiz Game 3 dijiye (15 sawaal, 30 minute), thoda break lijiye, aur fresh dimaag se final exam dijiye (30 sawaal, 60 minute), aaj ya kal. Inmein se koi bhi upar ke minutes mein shaamil nahi hai.",
+   "dv": "पहले आज का क्विज़ सबमिट कीजिए, ताकि सारे 21 दिन पूरे हो जाएँ। फिर Quiz Game 3 दीजिए (15 सवाल, 30 मिनट), थोड़ा रुकिए, और ताज़ा दिमाग़ से फ़ाइनल परीक्षा दीजिए (30 सवाल, 60 मिनट), आज या कल। इनमें से कोई भी ऊपर के मिनटों में शामिल नहीं है।"
+  }
+ ],
+ "kaam_min": 55,
+ "outcome": {
+  "en": "By the end you can run one stock through all of Week 3's rules, spot a 'we trade for you' offer, score your own paper trading since Day 12 on process, list the six certificate checks, and explain why finishing a course is not the same as being ready for real money.",
+  "hi": "Aaj ke baad aap ek stock ko Week 3 ke saare rules se guzaar payenge, 'hum aapke liye trade karenge' wala offer pehchaan payenge, Day 12 se apni paper trading ko process par score kar payenge, certificate ke chhe checks gina payenge, aur samjha payenge ki course khatam karna real paise ke liye ready hona nahi hai.",
+  "dv": "आज के बाद आप एक स्टॉक को हफ़्ता 3 के सारे नियमों से गुज़ार पाएँगे, 'हम आपके लिए ट्रेड करेंगे' वाला ऑफ़र पहचान पाएँगे, दिन 12 से अपनी पेपर ट्रेडिंग को प्रोसेस पर स्कोर कर पाएँगे, सर्टिफ़िकेट की छह शर्तें गिना पाएँगे, और समझा पाएँगे कि कोर्स ख़त्म करना असली पैसे के लिए तैयार होना नहीं है।"
+ },
+ "tools": [
+  {
+   "en": "Any AI chat",
+   "hi": "Koi bhi AI chat",
+   "dv": "कोई भी AI चैट"
+  },
+  {
+   "en": "Your journal (app or Google Sheets)",
+   "hi": "Aapka journal (app ya Google Sheets)",
+   "dv": "आपका जर्नल (ऐप या Google Sheets)"
+  },
+  {
+   "en": "The app's certificate and Portfolio pages",
+   "hi": "App ke certificate aur Portfolio pages",
+   "dv": "ऐप के सर्टिफ़िकेट और Portfolio पेज"
+  },
+  {
+   "en": "SEBI and NSE websites (sebi.gov.in, nseindia.com)",
+   "hi": "SEBI aur NSE websites (sebi.gov.in, nseindia.com)",
+   "dv": "SEBI और NSE वेबसाइट (sebi.gov.in, nseindia.com)"
+  },
+  {
+   "en": "Cyber-crime portal (cybercrime.gov.in) and helpline 1930",
+   "hi": "Cyber crime portal (cybercrime.gov.in) aur helpline 1930",
+   "dv": "साइबर क्राइम पोर्टल (cybercrime.gov.in) और हेल्पलाइन 1930"
+  },
+  {
+   "en": "Phone calendar",
+   "hi": "Phone calendar",
+   "dv": "फ़ोन कैलेंडर"
+  }
+ ],
+ "fun": {
+  "en": "Convocation, opt-in and with no numbers: each learner reads one line from their Day 1 journal next to one line from today's. If your cohort gives awards, they go by process only: Discipline, Best Journal, and Best Screener, judged on how cleanly rules became screener conditions, never on whether its picks rose. Alone? Write a five-line letter to your Day 1 self and reopen it on your check-in date.",
+  "hi": "Convocation, apni marzi se aur bina kisi number ke: har learner apne Day 1 journal ki ek line aur aaj ki ek line saath-saath padhta hai. Agar aapka batch awards deta hai, toh sirf process par: Discipline, Best Journal aur Best Screener, jo is baat par judge ho ki rules kitni saafai se screener conditions bane, is par kabhi nahi ki uske stocks chadhe ya nahi. Akele hain? Apne Day 1 wale khud ko paanch line ki chitthi likhiye, aur check-in date par use dobara kholiye.",
+  "dv": "कॉन्वोकेशन, अपनी मर्ज़ी से और बिना किसी नंबर के: हर सीखने वाला अपने दिन 1 के जर्नल की एक लाइन और आज की एक लाइन साथ-साथ पढ़ता है। अगर आपका बैच अवॉर्ड देता है, तो सिर्फ़ प्रोसेस पर: डिसिप्लिन, बेस्ट जर्नल और बेस्ट स्क्रीनर, जो इस पर परखा जाए कि नियम कितनी सफ़ाई से स्क्रीनर की शर्तें बने, इस पर कभी नहीं कि उसके स्टॉक चढ़े या नहीं। अकेले हैं? अपने दिन 1 वाले ख़ुद को पाँच लाइन की चिट्ठी लिखिए, और चेक-इन की तारीख़ पर उसे दोबारा खोलिए।"
+ },
+ "compliance": "Educational content only, not investment advice. Company names, prices and paper results in this lesson are made up for illustration; paper and backtest results are hypothetical. Stage 1 uses virtual money only and places no automated or F&O orders. The course certificate certifies completion only; it is not a SEBI or NISM certification, confers no licence to advise, and is not a signal to trade with real money. Past performance is not indicative of future results. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
+ "prompts": [
+  {
+   "title": {
+    "en": "Final journal review",
+    "hi": "Final journal review",
+    "dv": "आख़िरी जर्नल रिव्यू"
+   },
+   "body": "You are a calm trading coach reviewing a beginner's paper-trade journal from a 21-day course that scores process, never profit. I will paste my paper-trade journal rows since I started paper trading (about ten days), with all personal details removed: date, stock (I may replace names with Stock A, Stock B), setup, whether each rule was followed, emotion tag and notes, plus the days I took no trade. Do five things. (1) Count how often each rule was broken and list my top 3 process mistakes with their counts. (2) List my top 3 strengths: rules I kept every time, and days I correctly stayed out. (3) Name the emotion tag that appears most often next to a broken rule. (4) Work out my adherence score: decisions that followed my rules divided by all decisions. A trade that kept every rule, a setup I skipped because a written rule said so, and a no-setup day on which I stayed out each count as one decision followed; a trade with any broken rule counts as one decision not followed. (5) Draft 5 habits for the next 4 weeks, each written as an action I control, never as a money goal. Label every finding Fact (counted directly from my rows, with the row dates) or Guess (your interpretation). Do not comment on profit or loss, do not suggest new strategies or stocks, do not give buy or sell advice, and do not mention targets or expected returns.\n\nJournal:\n<paste here>"
+  },
+  {
+   "title": {
+    "en": "'We trade for you' offer check",
+    "hi": "'We trade for you' offer check",
+    "dv": "'हम आपके लिए ट्रेड करेंगे' ऑफ़र जाँच"
+   },
+   "body": "I received a message offering copy-trading, 'account handling' or an automatic algo that would trade in my account for a monthly fee or a profit share. I will paste the message with all names, numbers and links removed. Do not ask me for any personal or account details. Check the message against these points, as you understand India's rules: who may give buy or sell advice for a fee, whether algo orders must go through a broker and carry an exchange Algo-ID, whether algo sellers must be empanelled with an exchange, whether black-box algo sellers must be SEBI-registered Research Analysts, whether registered advisers may promise returns, and what can happen if I share my login, password, OTP or TPIN. Label every claim in the message Fact, Guess or Kachra. List the red flags from most to least serious, and tell me which rules I should confirm myself on sebi.gov.in or nseindia.com, because rules change and your knowledge has a cutoff date. End with safe next steps: share nothing, keep screenshots, block and report at cybercrime.gov.in, and call 1930 if money has already gone. Do not recommend any product, algo, broker or stock, do not give buy or sell advice, and do not mention targets or returns.\n\nMessage:\n<paste here>"
+  },
+  {
+   "title": {
+    "en": "Ready or not yet",
+    "hi": "Ready ya abhi nahi",
+    "dv": "तैयार या अभी नहीं"
+   },
+   "body": "Act as a careful, honest mentor for an Indian beginner who has just finished a 21-day course using only virtual money. Ask me 8 short questions, one at a time, about: how many weeks I have followed a written daily routine, how many trades I have logged on the same frozen rules (backtest and paper together), my adherence on losing days, whether I have an emergency fund, whether any money I might use is borrowed, whether I understand contract notes and the basic tax heads, how I behaved during my worst losing streak, and who I would talk to before deciding anything. After my answers, give me a 'Not yet' list of what is still missing, with one small next step for each. Never tell me I am ready to trade with real money, never suggest an amount, and never suggest F&O. Do not recommend any stock, strategy or product, do not give buy or sell advice, and do not mention targets or return expectations."
+  }
+ ],
+ "journal_prompt": {
+  "en": "Read your Day 1 journal entry again. What did you believe about the market then that you no longer believe? And which of your five habits will be hardest to keep in the next four weeks, and why?",
+  "hi": "Apni Day 1 ki journal entry dobara padhiye. Tab market ke baare mein aap kya maante the jo ab nahi maante? Aur aapki paanch habits mein se kaunsi agle chaar hafton mein nibhana sabse mushkil hoga, aur kyun?",
+  "dv": "अपनी दिन 1 की जर्नल एंट्री दोबारा पढ़िए। तब बाज़ार के बारे में आप क्या मानते थे जो अब नहीं मानते? और आपकी पाँच आदतों में से कौन-सी अगले चार हफ़्तों में निभाना सबसे मुश्किल होगा, और क्यों?"
+ },
+ "motivation": {
+  "en": "Twenty-one days ago you wanted to know what happens after you tap Buy. Today you also know when not to tap it, and why. Keep the journal going; it will teach you more than any certificate.",
+  "hi": "Ikkees din pehle aap jaanna chahte the ki Buy dabane ke baad kya hota hai. Aaj aap yeh bhi jaante hain ki kab nahi dabana, aur kyun. Journal chalate rahiye; yeh aapko kisi bhi certificate se zyada sikhayega.",
+  "dv": "इक्कीस दिन पहले आप जानना चाहते थे कि Buy दबाने के बाद क्या होता है। आज आप यह भी जानते हैं कि कब नहीं दबाना, और क्यों। जर्नल चलाते रहिए; यह आपको किसी भी सर्टिफ़िकेट से ज़्यादा सिखाएगा।"
+ },
+ "quiz": [
+  {
+   "stem": {
+    "en": "At 7 pm, Priya's EMA Pullback rule gives a valid setup on Bharat Pumps Ltd, every flowchart box says yes, and her backtest showed a positive edge. Her written no-trade rule, from her Day 11 card, says: no new swing entry if the company's results fall within the next 15 trading days. Results are due in 2 trading days. What does her system say?",
+    "hi": "Shaam 7 baje Priya ka EMA Pullback rule Bharat Pumps Ltd par valid setup deta hai, flowchart ka har box yes kehta hai, aur uske backtest ne positive edge dikhaya tha. Uske Day 11 wale card ka no-trade rule kehta hai: company ke results agle 15 trading days ke andar hon toh koi nayi swing entry nahi. Results 2 trading days mein aane wale hain. Uska system kya kehta hai?",
+    "dv": "शाम 7 बजे प्रिया का EMA Pullback नियम Bharat Pumps Ltd पर सही सेटअप देता है, फ़्लोचार्ट का हर बॉक्स 'हाँ' कहता है, और उसके बैकटेस्ट ने पॉज़िटिव एज दिखाया था। उसके दिन 11 वाले कार्ड का नो-ट्रेड नियम कहता है: कंपनी के नतीजे अगले 15 ट्रेडिंग दिन के अंदर हों तो कोई नई स्विंग एंट्री नहीं। नतीजे 2 ट्रेडिंग दिन में आने वाले हैं। उसका सिस्टम क्या कहता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "No trade: the calendar rule overrides the setup",
+      "hi": "No trade: calendar rule setup se upar hai",
+      "dv": "कोई ट्रेड नहीं: कैलेंडर नियम सेटअप से ऊपर है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Enter with half the usual size, to be careful",
+      "hi": "Aadhe size se entry, savdhaani ke liye",
+      "dv": "आधे साइज़ से एंट्री, सावधानी के लिए"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Enter now and plan to exit just before results",
+      "hi": "Abhi entry, aur results se theek pehle exit",
+      "dv": "अभी एंट्री, और नतीजों से ठीक पहले एग्ज़िट"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Enter, since her backtest showed a positive edge",
+      "hi": "Entry, kyunki backtest ne positive edge dikhaya",
+      "dv": "एंट्री, क्योंकि बैकटेस्ट ने पॉज़िटिव एज दिखाया"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "A system is all its rules together, not only the chart part. Her calendar rule was written in advance for exactly this case, so one NO ends the flowchart. Half size and an early exit are new rules invented on the spot, and her backtest, which followed the same card, never included entries just before results. Skipping a valid setup because a written rule says so counts as a decision followed.",
+    "hi": "System saare rules ka jod hai, sirf chart wala hissa nahi. Calendar rule pehle se isi situation ke liye likha gaya tha, isliye ek NO flowchart ko wahin khatam kar deta hai. Aadha size ya jaldi exit, mauke par gadhe gaye naye rules hain, aur backtest ne bhi isi card ke hisaab se results se theek pehle ki entries li hi nahi thi. Likhe hue rule ki wajah se valid setup chhodna bhi ek sahi decision ginta hai.",
+    "dv": "सिस्टम सारे नियमों का जोड़ है, सिर्फ़ चार्ट वाला हिस्सा नहीं। कैलेंडर वाला नियम पहले से इसी हालत के लिए लिखा गया था, इसलिए एक 'ना' फ़्लोचार्ट को वहीं ख़त्म कर देता है। आधा साइज़ या जल्दी एग्ज़िट मौक़े पर गढ़े गए नए नियम हैं, और बैकटेस्ट ने भी इसी कार्ड के हिसाब से नतीजों से ठीक पहले की एंट्री ली ही नहीं थी। लिखे हुए नियम की वजह से सही सेटअप छोड़ना भी एक सही फ़ैसला गिना जाता है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Since paper trading began, a learner took 10 paper trades: 8 followed every rule and 2 broke one, though both of those made money. On 6 other days there was no setup, and she correctly stayed out. What is her adherence score?",
+    "hi": "Paper trading shuru hone ke baad ek learner ne 10 paper trades liye: 8 mein har rule follow hua aur 2 mein ek rule toota, halaanki un dono mein profit hua. 6 aur din koi setup nahi tha, aur woh sahi wajah se bahar rahi. Uska adherence score kya hai?",
+    "dv": "पेपर ट्रेडिंग शुरू होने के बाद एक सीखने वाली ने 10 पेपर ट्रेड लिए: 8 में हर नियम माना गया और 2 में एक नियम टूटा, हालाँकि उन दोनों में मुनाफ़ा हुआ। 6 और दिन कोई सेटअप नहीं था, और वह सही वजह से बाहर रही। उसका एडहेरेंस स्कोर क्या है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "88%, counting no-trade days as decisions",
+      "hi": "88%, no-trade days ko decisions gin kar",
+      "dv": "88%, नो-ट्रेड दिनों को फ़ैसले गिनकर"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "80%, counting only the trades she took",
+      "hi": "80%, sirf liye gaye trades gin kar",
+      "dv": "80%, सिर्फ़ लिए गए ट्रेड गिनकर"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "It cannot be scored before 30 trades",
+      "hi": "30 trades se pehle score ho hi nahi sakta",
+      "dv": "30 ट्रेड से पहले स्कोर हो ही नहीं सकता"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "100%, because both rule breaks made money",
+      "hi": "100%, kyunki dono toote rules mein profit hua",
+      "dv": "100%, क्योंकि दोनों टूटे नियमों में मुनाफ़ा हुआ"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Adherence = decisions that followed your rules ÷ all decisions. Decisions: 10 trades + 6 no-trade days = 16. On-rule: 8 + 6 = 14. So 14 ÷ 16 = 87.5%, about 88%. Leaving out the no-trade days gives 80% and hides good discipline. A profitable break is still a break, and the most dangerous kind. The 30-trade minimum is for judging a rule, not for scoring whether you followed it.",
+    "hi": "Adherence = rules ke hisaab se hue decisions ÷ saare decisions. Decisions: 10 trades + 6 no-trade days = 16. Rule ke hisaab se: 8 + 6 = 14. Toh 14 ÷ 16 = 87.5%, lagbhag 88%. No-trade days hata dein toh 80% aata hai, aur achha discipline chhup jaata hai. Profit wala break bhi break hi hai, aur sabse khatarnaak kism ka. 30 trades ki shart rule ko judge karne ke liye hai, yeh score karne ke liye nahi ki aapne rule follow kiya ya nahi.",
+    "dv": "एडहेरेंस = नियमों के हिसाब से हुए फ़ैसले ÷ सारे फ़ैसले। फ़ैसले: 10 ट्रेड + 6 नो-ट्रेड दिन = 16। नियम के हिसाब से: 8 + 6 = 14। तो 14 ÷ 16 = 87.5%, लगभग 88%। नो-ट्रेड दिन हटा दें तो 80% आता है, और अच्छा अनुशासन छिप जाता है। नियम तोड़कर मुनाफ़ा हुआ, तब भी नियम टूटा ही है, और यह सबसे ख़तरनाक क़िस्म का है। 30 ट्रेड की शर्त नियम को परखने के लिए है, यह स्कोर करने के लिए नहीं कि आपने नियम माना या नहीं।"
+   }
+  },
+  {
+   "stem": {
+    "en": "A message offers Aman a 'fully automatic algo' that trades options in his account for a 30% profit share. It needs his login ID and a one-time OTP, and it names no broker, Algo-ID or registration. What should he do?",
+    "hi": "Ek message Aman ko 'fully automatic algo' offer karta hai jo 30% profit share ke badle uske account mein options trade karega. Isse uska login ID aur ek baar ka OTP chahiye, aur isne na koi broker, na Algo-ID, na registration bataya hai. Aman ko kya karna chahiye?",
+    "dv": "एक मैसेज अमन को 'फ़ुली ऑटोमैटिक एल्गो' ऑफ़र करता है, जो मुनाफ़े के 30% हिस्से के बदले उसके अकाउंट में ऑप्शंस ट्रेड करेगा। इसे उसका लॉगिन ID और एक बार का OTP चाहिए, और इसने न कोई ब्रोकर, न Algo-ID, न रजिस्ट्रेशन बताया है। अमन को क्या करना चाहिए?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Share nothing, check sebi.gov.in and report it",
+      "hi": "Kuch na de, sebi.gov.in check kare, report kare",
+      "dv": "कुछ शेयर न करे, sebi.gov.in जाँचे, शिकायत करे"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Share the OTP once and change the password after",
+      "hi": "Ek baar OTP de de, baad mein password badal le",
+      "dv": "एक बार OTP दे दे, बाद में पासवर्ड बदल ले"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Try it with a small amount first, then decide",
+      "hi": "Pehle chhoti rakam se try kare, phir faisla kare",
+      "dv": "पहले छोटी रक़म से आज़माकर देखे, फिर फ़ैसला करे"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Ask for a free trial month before sharing anything",
+      "hi": "Kuch bhi share karne se pehle ek free trial maange",
+      "dv": "कुछ भी शेयर करने से पहले एक फ़्री ट्रायल माँगे"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "An OTP or login lets whoever holds it place any order in Aman's name, and the losses stay his. The offer fails Day 16's checks at once: no broker, no Algo-ID, no registration to verify, and options, which Stage 1 does not trade at all. A small test or a free trial still hands over his account. Share nothing, check any name on sebi.gov.in, keep screenshots and report the message at cybercrime.gov.in.",
+    "hi": "OTP ya login jiske paas ho, woh Aman ke naam se koi bhi order laga sakta hai, aur loss Aman ka hi rahega. Offer Day 16 ke checks mein turant fail ho jaata hai: na broker, na Algo-ID, na verify karne layak registration, aur options, jo Stage 1 mein bilkul trade nahi hote. Chhota test ho ya free trial, account toh phir bhi saunpna padega. Kuch share mat kijiye, koi bhi naam sebi.gov.in par check kijiye, screenshots rakhiye aur message cybercrime.gov.in par report kijiye.",
+    "dv": "OTP या लॉगिन जिसके पास हो, वह अमन के नाम से कोई भी ऑर्डर लगा सकता है, और नुक़सान अमन का ही रहेगा। ऑफ़र दिन 16 की जाँच में तुरंत फ़ेल हो जाता है: न ब्रोकर, न Algo-ID, न जाँचने लायक़ रजिस्ट्रेशन, और ऑप्शंस, जो Stage 1 में बिल्कुल ट्रेड नहीं होते। छोटा टेस्ट हो या फ़्री ट्रायल, अकाउंट तो फिर भी सौंपना पड़ेगा। कुछ शेयर न करें, कोई भी नाम sebi.gov.in पर जाँचें, स्क्रीनशॉट रखें और मैसेज की शिकायत cybercrime.gov.in पर करें।"
+   }
+  },
+  {
+   "stem": {
+    "en": "A learner passes the final exam with a Distinction. Her paper account shows +Rs 38,000 from 12 trades since Day 12, and 5 of those trades broke a rule. What is the most accurate reading?",
+    "hi": "Ek learner final exam Distinction ke saath pass karti hai. Uske paper account mein Day 12 se 12 trades par +Rs 38,000 dikh raha hai, aur unmein se 5 trades mein rule toota tha. Iska sabse sahi matlab kya hai?",
+    "dv": "एक सीखने वाली फ़ाइनल परीक्षा Distinction के साथ पास करती है। उसके पेपर अकाउंट में दिन 12 से 12 ट्रेड पर +Rs 38,000 दिख रहा है, और उनमें से 5 ट्रेड में नियम टूटा था। इसका सबसे सही मतलब क्या है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "She knows the basics; 12 trades prove little",
+      "hi": "Basics aa gaye, par 12 trades kaafi nahi",
+      "dv": "बुनियादी बातें आ गईं, पर 12 ट्रेड काफ़ी नहीं"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "She is ready to start with a small real amount",
+      "hi": "Woh chhoti real rakam se shuru karne ko ready hai",
+      "dv": "वह छोटी असली रक़म से शुरू करने को तैयार है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Her rules are proven by a strong exam and profit",
+      "hi": "Achhe exam aur profit se uske rules saabit ho gaye",
+      "dv": "अच्छी परीक्षा और मुनाफ़े से उसके नियम साबित हो गए"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "She should move to F&O now that cash is mastered",
+      "hi": "Cash seekh liya, ab use F&O par jaana chahiye",
+      "dv": "कैश सीख लिया, अब उसे F&O पर जाना चाहिए"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "An exam tests knowledge, not trading. Twelve trades in one stretch of market are far below the 30 needed even to judge a rule, and further still from the 100 that start to give confidence. With 5 of the 12 trades breaking a rule, the Rs 38,000 is not a test of her rules at all. The certificate is not a readiness signal, and F&O stays shut in Stage 1: samjho, khelo mat.",
+    "hi": "Exam knowledge test karta hai, trading nahi. Market ke ek hi daur ke 12 trades, rule judge karne ke liye zaroori 30 se bhi bahut kam hain, aur confidence dene wale 100 se toh aur bhi door. 12 mein se 5 trades mein rule toota, isliye Rs 38,000 uske rules ka test hai hi nahi. Certificate ready hone ka signal nahi hai, aur Stage 1 mein F&O ka darwaza band hai: samjho, khelo mat.",
+    "dv": "परीक्षा ज्ञान परखती है, ट्रेडिंग नहीं। बाज़ार के एक ही दौर के 12 ट्रेड, नियम परखने के लिए ज़रूरी 30 से भी बहुत कम हैं, और भरोसा देने वाले 100 से तो और भी दूर। 12 में से 5 ट्रेड में नियम टूटा, इसलिए Rs 38,000 उसके नियमों की परख है ही नहीं। सर्टिफ़िकेट तैयार होने का संकेत नहीं है, और Stage 1 में F&O का दरवाज़ा बंद है: समझो, खेलो मत।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Someone skips the 'not yet' list, and a bad month takes 20% of Rs 5,00,000, leaving Rs 4,00,000. What gain on Rs 4,00,000 is needed just to get back to Rs 5,00,000?",
+    "hi": "Koi 'abhi nahi' list skip kar deta hai, aur ek bura mahina Rs 5,00,000 ka 20% le jaata hai: bachte hain Rs 4,00,000. Sirf wapas Rs 5,00,000 tak aane ke liye Rs 4,00,000 par kitna gain chahiye?",
+    "dv": "कोई 'अभी नहीं' वाली लिस्ट छोड़ देता है, और एक बुरा महीना Rs 5,00,000 का 20% ले जाता है: बचते हैं Rs 4,00,000। सिर्फ़ वापस Rs 5,00,000 तक आने के लिए Rs 4,00,000 पर कितनी बढ़त चाहिए?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "25%: Rs 1,00,000 on Rs 4,00,000",
+      "hi": "25%: Rs 4,00,000 par Rs 1,00,000",
+      "dv": "25%: Rs 4,00,000 पर Rs 1,00,000"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "20%, the same percentage as the loss itself",
+      "hi": "20%, bilkul loss jitna hi percentage",
+      "dv": "20%, बिल्कुल नुक़सान जितना ही प्रतिशत"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "40%, because a recovery takes double the fall",
+      "hi": "40%, kyunki recovery girawat ka dugna leti hai",
+      "dv": "40%, क्योंकि रिकवरी गिरावट का दोगुना लेती है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "16%, since a smaller base makes it easier",
+      "hi": "16%, kyunki chhota base ise aasaan bana deta hai",
+      "dv": "16%, क्योंकि छोटा बेस इसे आसान बना देता है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "You need Rs 1,00,000 back, but on a smaller base: 1,00,000 ÷ 4,00,000 = 25%. Losses and gains are not symmetric (Day 3): -10% needs +11%, -25% needs +33%, and -50% needs +100%. That is why a few more weeks on paper cost little, while rushing can cost a lot.",
+    "hi": "Aapko Rs 1,00,000 wapas chahiye, lekin chhote base par: 1,00,000 ÷ 4,00,000 = 25%. Loss aur gain barabar nahi chalte (Day 3): -10% ke liye +11%, -25% ke liye +33%, aur -50% ke liye +100% chahiye. Isiliye kuch aur hafte paper par rehna sasta padta hai, aur jaldbaazi mehngi pad sakti hai.",
+    "dv": "आपको Rs 1,00,000 वापस चाहिए, लेकिन छोटे बेस पर: 1,00,000 ÷ 4,00,000 = 25%। नुक़सान और बढ़त बराबर नहीं चलते (दिन 3): -10% के लिए +11%, -25% के लिए +33%, और -50% के लिए +100% चाहिए। इसीलिए कुछ और हफ़्ते पेपर पर रहना सस्ता पड़ता है, और जल्दबाज़ी महँगी पड़ सकती है।"
+   }
+  }
+ ]
+}

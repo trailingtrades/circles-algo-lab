@@ -1,37 +1,46 @@
-import { Lock } from "./Icon";
+import { Lock, Check } from "./Icon";
 import { Cover } from "./CourseArt";
+import { pick3, type Session } from "@/lib/content/course";
+import type { Gate, Status } from "@/lib/progress/gating";
+import { t3, tr, type L, type Lang } from "@/lib/i18n/lang";
+import { T } from "@/lib/i18n/strings";
 
-export type SessionStatus = "complete" | "in_progress" | "locked" | "not_started";
-export interface SessionCardProps { n: number; day: string; titleEn: string; titleHi: string; concept: string; aiLab: string; psychology: string; status: SessionStatus; lockedWhy?: string; lang: "en" | "hi"; level?: string; week?: number; }
+export type SessionStatus = Status;
 
-const STATUS: Record<SessionStatus, { label: string; cls: string }> = {
-  complete: { label: "Complete", cls: "col-chip--up" },
-  in_progress: { label: "In progress", cls: "" },
-  locked: { label: "Locked", cls: "" },
-  not_started: { label: "Not started", cls: "" },
+const S = {
+  notStarted: t3("Not started", "Abhi shuru nahi hua", "अभी शुरू नहीं हुआ"),
+  aiLab: t3("AI lab", "AI lab", "AI लैब"),
 };
+const STATUS: Record<Status, L> = { complete: T.done, in_progress: T.inProgress, locked: T.locked, not_started: S.notStarted };
 
-export function SessionCard(p: SessionCardProps) {
-  const s = STATUS[p.status];
-  const locked = p.status === "locked";
+/** "Day 8 · S08" in every language — the same label on Home, Path and the session page.
+ *  Tier 1 counts course days; tiers without a course day fall back to the session number. */
+export function dayText(s: Session, lang: Lang) {
+  const n = `S${String(s.number).padStart(2, "0")}`;
+  return s.course_day ? `${tr(T.day, lang)} ${s.course_day} · ${n}` : `${tr(T.session, lang)} ${s.number}`;
+}
+export const statusText = (st: Status, lang: Lang) => tr(STATUS[st], lang);
+
+/** One session as a card: cover, status, day, the title in the learner's language only, one muted line of topics,
+ *  and — when locked — why, in the learner's language (pass why={false} where the reason only repeats the card
+ *  before it). The status is the only pill on the card. */
+export function SessionCard({ s, g, lang, cover = true, why = true }: { s: Session; g: Gate; lang: Lang; cover?: boolean; why?: boolean }) {
+  const locked = g.status === "locked";
+  const concept = tr(s.content.tags?.concept ?? s.core_concept, lang);
+  const lab = tr(s.content.tags?.ai_lab ?? s.ai_lab, lang);
   return (
-    <article className={`col-card lrn-session${locked ? " lrn-card--locked" : ""}`} aria-label={`Session ${p.n}`}>
-      {p.level != null && p.week != null && <Cover level={p.level} week={p.week} n={p.n} />}
+    <article className={`col-card lrn-session${locked ? " lrn-card--locked" : ""}`}>
+      {cover && <Cover level={s.level} week={s.week} n={s.number} />}
       <div className="flex items-center justify-between gap-2">
-        {/* Locked cards get the hollow badge + padlock chip, never a dimmed one. */}
+        {/* Locked = hollow badge with a padlock (recessed card, never opacity-dimmed); done = brand + check. */}
         {locked
-          ? <span className="flex items-center gap-2"><span className="lrn-badge--hollow">{s.label}</span><span className="lrn-lockchip"><Lock size={13} strokeWidth={1.75} aria-hidden /></span></span>
-          : <span className={`lrn-avail${p.status === "complete" ? " lrn-avail--done" : ""}`}>{s.label}</span>}
-        <span className="col-eyebrow">{p.day} · S{String(p.n).padStart(2, "0")}</span>
+          ? <span className="lrn-badge--hollow"><Lock size={12} strokeWidth={1.75} aria-hidden />{statusText(g.status, lang)}</span>
+          : <span className="lrn-avail">{g.status === "complete" && <Check size={12} strokeWidth={2} aria-hidden style={{ marginRight: 4 }} />}{statusText(g.status, lang)}</span>}
+        <span className="col-eyebrow">{dayText(s, lang)}</span>
       </div>
-      <h3 className="lrn-session__title">{p.lang === "hi" ? p.titleHi : p.titleEn}</h3>
-      <p className="lrn-session__sub">{p.lang === "hi" ? p.titleEn : p.titleHi}</p>
-      <div className="lrn-tags">
-        <span className="col-chip">Concept: {p.concept}</span>
-        <span className="col-chip">AI Lab: {p.aiLab}</span>
-        <span className="col-chip">Psychology: {p.psychology}</span>
-      </div>
-      {locked && p.lockedWhy && <p className="lrn-session__sub"><Lock size={12} aria-hidden /> {p.lockedWhy}</p>}
+      <h3 className="lrn-session__title">{pick3(s, "title", lang)}</h3>
+      {(concept || lab) && <p className="lrn-session__sub">{[concept, lab && `${tr(S.aiLab, lang)}: ${lab}`].filter(Boolean).join(" · ")}</p>}
+      {locked && why && g.why && <p className="lrn-session__sub">{tr(g.why, lang)}</p>}
     </article>
   );
 }

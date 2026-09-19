@@ -1,12 +1,14 @@
 "use client";
 import { useActionState } from "react";
 import { setRole } from "@/app/learn/(app)/admin/actions";
+import { useKeepForm } from "./useKeepForm";
 
 /** Master-only role switch on the People page; the server action re-checks the master email. */
 export function RoleForm({ userId, role }: { userId: string; role: string }) {
   const [state, action, pending] = useActionState(setRole, {});
+  const { ref, onSubmit } = useKeepForm(action);
   return (
-    <form action={action} className="flex items-center gap-2">
+    <form ref={ref} onSubmit={onSubmit} className="flex items-center gap-2">
       <input type="hidden" name="user_id" value={userId} />
       <select name="role" defaultValue={role} className="col-input" style={{ width: 110, padding: "2px 6px" }} aria-label="Role">
         <option value="student">student</option>

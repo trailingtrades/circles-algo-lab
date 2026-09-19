@@ -1,0 +1,1301 @@
+{
+  "day": 20,
+  "title": {
+    "en": "Trading psychology and your Daily Routine Card",
+    "hi": "Trading psychology aur aapka Daily Routine Card",
+    "dv": "ट्रेडिंग साइकोलॉजी और आपका डेली रूटीन कार्ड"
+  },
+  "tags": {
+    "concept": {
+      "en": "Seven biases that break rules, and a routine that catches them",
+      "hi": "Rules todne wale saat biases, aur unhe pakadne wala routine",
+      "dv": "नियम तोड़ने वाले सात बायस, और उन्हें पकड़ने वाला रूटीन"
+    },
+    "ai_lab": {
+      "en": "End-of-day process review: AI checks the process, never picks trades",
+      "hi": "End-of-day process review: AI process check kare, trade kabhi na chune",
+      "dv": "दिन के आख़िर का प्रोसेस रिव्यू: AI प्रोसेस जाँचे, ट्रेड कभी न चुने"
+    },
+    "psychology": {
+      "en": "The ego after a loss",
+      "hi": "Loss ke baad ka ego",
+      "dv": "नुक़सान के बाद का ईगो"
+    }
+  },
+  "strategy": null,
+  "duration_min": 75,
+  "story": {
+    "kind": "story",
+    "title": {
+      "en": "I'll win it all back today",
+      "hi": "Aaj hi sab wapas nikaal loonga",
+      "dv": "आज ही सब वापस निकाल लूँगा"
+    },
+    "panels": [
+      {
+        "who": "narrator",
+        "say": {
+          "en": "Thursday, 8 pm. Aman joins the class call with his paper-trading sheet open. The last two rows are deep red.",
+          "hi": "Thursday, raat 8 baje. Aman paper-trading sheet khol kar class call join karta hai. Aakhri do rows gehri laal hain.",
+          "dv": "गुरुवार, रात 8 बजे। अमन पेपर ट्रेडिंग शीट खोलकर क्लास कॉल जॉइन करता है। आख़िरी दो लाइनें गहरी लाल हैं।"
+        }
+      },
+      {
+        "who": "aman",
+        "mood": "sad",
+        "say": {
+          "en": "Sir, yesterday my Bharat Pumps trade hit its stop: minus Rs 10,000, exactly 1R, as planned. But it felt like the market had made a fool of me. So this morning, during a meeting, I bought two other stocks at double size to win it back. No setup. Both hit their stops by lunch.",
+          "hi": "Sir, kal mera Bharat Pumps wala trade stop par nikal gaya: minus Rs 10,000, theek 1R, plan ke hisaab se. Lekin laga jaise market ne mujhe bewakoof bana diya. Toh aaj subah, meeting ke beech, sab wapas nikaalne ke liye maine do aur stocks double size par khareed liye. Koi setup nahi tha. Lunch tak dono ka stop hit ho gaya.",
+          "dv": "सर, कल मेरा Bharat Pumps वाला ट्रेड स्टॉप पर निकल गया: माइनस Rs 10,000, ठीक 1R, प्लान के हिसाब से। लेकिन लगा जैसे बाज़ार ने मुझे बेवक़ूफ़ बना दिया। तो आज सुबह, मीटिंग के बीच, सब वापस निकालने के लिए मैंने दो और स्टॉक डबल साइज़ पर ख़रीद लिए। कोई सेटअप नहीं था। लंच तक दोनों का स्टॉप हिट हो गया।"
+        }
+      },
+      {
+        "who": "mentor",
+        "mood": "thinking",
+        "say": {
+          "en": "Today alone is -4R, twice your -2R daily stop. With yesterday, that is -5R, Rs 50,000 of virtual money: you have hit the weekly pause, and it is only Thursday. One question, Aman. After the first loss, were you following your card, or trying to prove the market wrong?",
+          "hi": "Sirf aaj -4R, yaani aapke -2R daily stop ka dugna. Kal ko milakar -5R, yaani Rs 50,000 ka virtual paisa: weekly pause lag chuka hai, aur abhi sirf Thursday hai. Aman, ek sawaal. Pehle loss ke baad aap apna card follow kar rahe the, ya market ko galat saabit karne ki koshish kar rahe the?",
+          "dv": "सिर्फ़ आज -4R, यानी आपके -2R डेली स्टॉप का दोगुना। कल को मिलाकर -5R, यानी Rs 50,000 का वर्चुअल पैसा: वीकली पॉज़ लग चुका है, और अभी सिर्फ़ गुरुवार है। अमन, एक सवाल। पहले नुक़सान के बाद आप अपना कार्ड फ़ॉलो कर रहे थे, या बाज़ार को ग़लत साबित करने की कोशिश कर रहे थे?"
+        }
+      },
+      {
+        "who": "aman",
+        "mood": "worried",
+        "say": {
+          "en": "...Proving it wrong. It felt personal.",
+          "hi": "...Galat saabit karne ki. Baat dil par lag gayi thi.",
+          "dv": "...ग़लत साबित करने की। बात दिल पर लग गई थी।"
+        }
+      },
+      {
+        "who": "priya",
+        "mood": "thinking",
+        "say": {
+          "en": "Sir, I did something similar, only smaller. My stop was about to be hit, so I moved it lower, just so I would not have to write a loss in my journal. Is that the same thing?",
+          "hi": "Sir, maine bhi kuch aisa hi kiya, bas chhote level par. Mera stop hit hone wala tha, toh maine use neeche khiska diya, bas isliye ki journal mein loss na likhna pade. Kya yeh bhi wahi cheez hai?",
+          "dv": "सर, मैंने भी कुछ ऐसा ही किया, बस छोटे स्तर पर। मेरा स्टॉप हिट होने वाला था, तो मैंने उसे नीचे खिसका दिया, बस इसलिए कि जर्नल में नुक़सान न लिखना पड़े। क्या यह भी वही चीज़ है?"
+        }
+      },
+      {
+        "who": "mentor",
+        "mood": "neutral",
+        "say": {
+          "en": "Same root, different branch. A loss hurts our pride more than our pocket, so we try to erase it. Today we build a routine that catches you in that moment, because that is exactly when willpower leaves the room.",
+          "hi": "Jad ek hi hai, bas shaakh alag. Loss jeb se zyada ego ko chubhta hai, isliye hum use mitaane ki koshish karte hain. Aaj hum ek aisa routine banayenge jo aapko usi pal pakad le, kyunki theek usi waqt willpower saath chhod deti hai.",
+          "dv": "जड़ एक ही है, बस शाख़ अलग। नुक़सान जेब से ज़्यादा ईगो को चुभता है, इसलिए हम उसे मिटाने की कोशिश करते हैं। आज हम एक ऐसा रूटीन बनाएँगे जो आपको उसी पल पकड़ ले, क्योंकि ठीक उसी वक़्त विलपावर साथ छोड़ देती है।"
+        }
+      }
+    ],
+    "moral": {
+      "en": "A loss is the price of one trade, not a verdict on you. Build the routine on a calm day so it protects you on an angry one.",
+      "hi": "Loss ek trade ki keemat hai, aapke baare mein faisla nahi. Routine shaant din par banaiye, taaki gusse wale din woh aapko bachaye.",
+      "dv": "नुक़सान एक ट्रेड की क़ीमत है, आपके बारे में फ़ैसला नहीं। रूटीन शांत दिन पर बनाइए, ताकि ग़ुस्से वाले दिन वह आपको बचाए।"
+    }
+  },
+  "topics": [
+    {
+      "h": {
+        "en": "The ego after a loss: revenge trading",
+        "hi": "Loss ke baad ka ego: revenge trading",
+        "dv": "नुक़सान के बाद का ईगो: रिवेंज ट्रेडिंग"
+      },
+      "p": {
+        "en": "A loss costs money once and pride a second time, and the pride often hurts more. Ego here means the part of us that needs to be right. When a stop is hit (traders call this a stop-out), the ego wants a quick win to cancel the loss, so we take a revenge trade: a trade taken to win money back, not because a rule gave a setup. Revenge trades are usually bigger, faster and taken without a proper look at the chart, so they tend to lose more than a normal trade. The fix starts with language: say 'the trade lost 1R', not 'I lost'. And remember Day 14: a loss that followed every rule is a correct trade.",
+        "hi": "Loss ek baar paisa leta hai aur doosri baar izzat, aur aksar izzat wali chot zyada dukhti hai. Ego yahan hamara woh hissa hai jise hamesha sahi saabit hona hai. Stop hit hote hi (ise stop-out kehte hain) ego ek jaldi wali jeet chahta hai jo loss ko mita de, aur hum revenge trade le lete hain: aisa trade jo paisa wapas nikaalne ke liye liya gaya, kisi rule ke setup ki wajah se nahi. Revenge trade aksar bada hota hai, jaldbaazi mein liya jaata hai, chart theek se dekhe bina, isliye aksar normal trade se zyada nuksaan kar deta hai. Ilaaj bhasha se shuru hota hai: 'main haar gaya' nahi, 'trade ne 1R khoya' kahiye. Aur Day 14 yaad rakhiye: har rule follow karke hua loss ek sahi trade hai.",
+        "dv": "नुक़सान एक बार पैसा लेता है और दूसरी बार इज़्ज़त, और अक्सर इज़्ज़त वाली चोट ज़्यादा दुखती है। ईगो यहाँ हमारा वह हिस्सा है जिसे हमेशा सही साबित होना है। स्टॉप हिट होते ही (इसे स्टॉप-आउट कहते हैं) ईगो एक जल्दी वाली जीत चाहता है जो नुक़सान को मिटा दे, और हम रिवेंज ट्रेड ले लेते हैं: ऐसा ट्रेड जो पैसा वापस निकालने के लिए लिया गया, किसी नियम के सेटअप की वजह से नहीं। रिवेंज ट्रेड अक्सर बड़ा होता है, जल्दबाज़ी में लिया जाता है, चार्ट ठीक से देखे बिना, इसलिए अक्सर आम ट्रेड से ज़्यादा नुक़सान कर देता है। इलाज भाषा से शुरू होता है: 'मैं हार गया' नहीं, 'ट्रेड ने 1R खोया' कहिए। और दिन 14 याद रखिए: हर नियम मानकर हुआ नुक़सान एक सही ट्रेड है।"
+      },
+      "example": {
+        "en": "Replay Aman's two days with his card. Yesterday's stop: -1R, Rs 10,000. Today there was no setup, so the card says no trade, and his week would stand at -1R. His ego's version: two trades at double size, -2R each, so -1R - 2R - 2R = -5R, Rs 50,000, the whole weekly pause reached by Thursday. The gap between the two versions, Rs 40,000, was not the market's doing; it was the ego's bill. A simple cooling-off rule after any stop-out: close the chart, fill the journal row with an emotion tag, and wait 10 minutes; after that, only a trade already on last night's plan card. (To keep the sums simple, R here is before Day 12's 0.1R cost allowance per trade.)",
+        "hi": "Ab Aman ke yeh do din uske card ke hisaab se dobara dekhiye. Kal ka stop: -1R, yaani Rs 10,000. Aaj koi setup nahi tha, toh card kehta hai: koi trade nahi, aur uska hafta -1R par rehta. Ego wala version: double size par do trade, har ek -2R, toh -1R - 2R - 2R = -5R, yaani Rs 50,000, aur Thursday tak poora weekly pause. Dono versions ke beech ka farq, Rs 40,000, market ne nahi kiya; yeh ego ka bill tha. Har stop-out ke baad ek simple cooling-off rule: chart band kijiye, journal row emotion tag ke saath bhariye, aur 10 minute rukiye; uske baad bhi sirf wahi trade jo kal raat ke plan card par pehle se hai. (Hisaab simple rakhne ke liye yahan R, Day 12 ke 0.1R per trade cost allowance se pehle ka hai.)",
+        "dv": "अब अमन के ये दो दिन उसके कार्ड के हिसाब से दोबारा देखिए। कल का स्टॉप: -1R, यानी Rs 10,000। आज कोई सेटअप नहीं था, तो कार्ड कहता है: कोई ट्रेड नहीं, और उसका हफ़्ता -1R पर रहता। ईगो वाला वर्ज़न: डबल साइज़ पर दो ट्रेड, हर एक -2R, तो -1R - 2R - 2R = -5R, यानी Rs 50,000, और गुरुवार तक पूरा वीकली पॉज़। दोनों वर्ज़न के बीच का फ़र्क़, Rs 40,000, बाज़ार ने नहीं किया; यह ईगो का बिल था। हर स्टॉप-आउट के बाद एक आसान कूलिंग-ऑफ़ नियम: चार्ट बंद कीजिए, जर्नल की लाइन इमोशन टैग के साथ भरिए, और 10 मिनट रुकिए; उसके बाद भी सिर्फ़ वही ट्रेड जो कल रात के प्लान कार्ड पर पहले से है। (हिसाब आसान रखने के लिए यहाँ R, दिन 12 के हर ट्रेड पर 0.1R कॉस्ट अलाउंस से पहले का है।)"
+      },
+      "remember": {
+        "en": "The market does not know you exist. A stop-out is a cost, not an insult.",
+        "hi": "Market ko pata bhi nahi ki aap hain. Stop-out ek kharcha hai, bezzati nahi.",
+        "dv": "बाज़ार को पता भी नहीं कि आप हैं। स्टॉप-आउट एक ख़र्चा है, बेइज़्ज़ती नहीं।"
+      },
+      "visual": {
+        "kind": "flow",
+        "title": {
+          "en": "The revenge loop",
+          "hi": "Revenge ka chakkar",
+          "dv": "रिवेंज का चक्कर"
+        },
+        "caption": {
+          "en": "Without a kill-switch, the fourth box leads straight back to the second. The -2R daily stop cuts the loop.",
+          "hi": "Kill-switch na ho, toh chautha box seedha doosre par wapas le jaata hai. -2R ka daily stop is chakkar ko kaat deta hai.",
+          "dv": "किल-स्विच न हो, तो चौथा बॉक्स सीधे दूसरे पर वापस ले जाता है। -2R का डेली स्टॉप इस चक्कर को काट देता है।"
+        },
+        "nodes": [
+          {
+            "label": {
+              "en": "A loss",
+              "hi": "Ek loss",
+              "dv": "एक नुक़सान"
+            },
+            "sub": {
+              "en": "-1R, as planned",
+              "hi": "-1R, plan ke mutabik",
+              "dv": "-1R, प्लान के मुताबिक़"
+            },
+            "tone": "muted"
+          },
+          {
+            "label": {
+              "en": "Ego hurt",
+              "hi": "Ego ko chot",
+              "dv": "ईगो को चोट"
+            },
+            "sub": {
+              "en": "'The market fooled me'",
+              "hi": "'Market ne bewakoof banaya'",
+              "dv": "'बाज़ार ने बेवक़ूफ़ बनाया'"
+            },
+            "tone": "down"
+          },
+          {
+            "label": {
+              "en": "Revenge trade",
+              "hi": "Revenge trade",
+              "dv": "रिवेंज ट्रेड"
+            },
+            "sub": {
+              "en": "No setup, bigger size",
+              "hi": "Setup nahi, size bada",
+              "dv": "सेटअप नहीं, साइज़ बड़ा"
+            },
+            "tone": "down"
+          },
+          {
+            "label": {
+              "en": "Bigger loss",
+              "hi": "Bada loss",
+              "dv": "बड़ा नुक़सान"
+            },
+            "sub": {
+              "en": "-2R or worse",
+              "hi": "-2R ya usse bhi zyada",
+              "dv": "-2R या उससे भी ज़्यादा"
+            },
+            "tone": "down"
+          },
+          {
+            "label": {
+              "en": "Kill-switch",
+              "hi": "Kill-switch",
+              "dv": "किल-स्विच"
+            },
+            "sub": {
+              "en": "Screen off till tomorrow",
+              "hi": "Kal tak screen band",
+              "dv": "कल तक स्क्रीन बंद"
+            },
+            "tone": "gold"
+          }
+        ],
+        "arrows": [
+          {
+            "en": "hurts",
+            "hi": "chubhta hai",
+            "dv": "चुभता है"
+          },
+          {
+            "en": "pushes",
+            "hi": "dhakelta hai",
+            "dv": "धकेलता है"
+          },
+          {
+            "en": "often loses",
+            "hi": "aksar loss",
+            "dv": "अक्सर नुक़सान"
+          },
+          {
+            "en": "at -2R",
+            "hi": "-2R par",
+            "dv": "-2R पर"
+          }
+        ]
+      }
+    },
+    {
+      "h": {
+        "en": "FOMO and overtrading: your journal names the enemy",
+        "hi": "FOMO aur overtrading: journal dushman ka naam batata hai",
+        "dv": "FOMO और ओवरट्रेडिंग: जर्नल दुश्मन का नाम बताता है"
+      },
+      "p": {
+        "en": "FOMO, the fear of missing out, is the pull to jump into a move that has already run, without your setup. It is like running after a Mumbai local that has left the platform: you might catch it, you might fall, and the next one comes in a few minutes. Overtrading means taking more trades than your rules produce, often out of boredom or the itch for action, like snacking when you are not hungry. Each extra trade pays costs and slippage (Day 2), and without an edge it drags your expectancy down (Day 3). You do not have to guess which enemy is yours. Since Day 12 your journal has tagged every trade with an emotion; add up the R for each tag and the enemy names itself.",
+        "hi": "FOMO yaani fear of missing out, matlab 'kahin yeh move chhoot na jaaye' wala darr: yeh aapko bina setup ke aise move mein ghusa deta hai jo pehle hi chal chuka hai. Yeh platform chhod chuki Mumbai local ke peeche bhaagne jaisa hai: pakad bhi sakte hain, gir bhi sakte hain, aur agli local kuch minute mein aa hi jaati hai. Overtrading ka matlab hai aapke rules jitne trade dete hain, usse zyada lena, aksar boriyat ya kuch karte rehne ki khujli mein, jaise bina bhookh ke snacks khaate rehna. Har extra trade costs aur slippage (Day 2) bharta hai, aur edge ke bina aapki expectancy neeche kheench leta hai (Day 3). Aapka dushman kaunsa hai, iska andaaza lagane ki zaroorat nahi. Day 12 se aapka journal har trade par emotion tag laga raha hai; har tag ka R jodiye, dushman khud saamne aa jaayega.",
+        "dv": "FOMO यानी फ़ियर ऑफ़ मिसिंग आउट, मतलब 'कहीं यह मूव छूट न जाए' वाला डर: यह आपको बिना सेटअप के ऐसे मूव में घुसा देता है जो पहले ही चल चुका है। यह प्लेटफ़ॉर्म छोड़ चुकी मुंबई लोकल के पीछे भागने जैसा है: पकड़ भी सकते हैं, गिर भी सकते हैं, और अगली लोकल कुछ मिनट में आ ही जाती है। ओवरट्रेडिंग का मतलब है आपके नियम जितने ट्रेड देते हैं, उससे ज़्यादा लेना, अक्सर बोरियत या कुछ न कुछ करते रहने की खुजली में, जैसे बिना भूख के नमकीन खाते रहना। हर एक्स्ट्रा ट्रेड कॉस्ट और स्लिपेज (दिन 2) भरता है, और एज के बिना आपकी एक्सपेक्टेंसी नीचे खींच लेता है (दिन 3)। आपका दुश्मन कौन-सा है, इसका अंदाज़ा लगाने की ज़रूरत नहीं। दिन 12 से आपका जर्नल हर ट्रेड पर इमोशन टैग लगा रहा है; हर टैग का R जोड़िए, दुश्मन ख़ुद सामने आ जाएगा।"
+      },
+      "example": {
+        "en": "Aman adds up his 20 paper trades since Day 12. Only 8 came from his rule card, tagged 'calm': +2.4R. The other 12 were 6 FOMO trades (-2.1R), 4 'bored' trades (-1.6R) and 2 'angry' trades, this morning's revenge pair (-4.0R), together -7.7R. His total is -5.3R, or -Rs 53,000 of virtual money, while the 8 rule trades alone show +2.4R. Twenty trades in under two weeks, on a swing plan that allows three open trades at a time, is itself a clue: his rule card produced only 8. FOMO is his most frequent enemy; anger is his most expensive, at -2.0R a trade.",
+        "hi": "Aman Day 12 se ab tak ke apne 20 paper trades jodta hai. Sirf 8 trade rule card se aaye, tag 'calm': +2.4R. Baaki 12 mein 6 FOMO trade (-2.1R), 4 'bore' wale (-1.6R) aur 2 'gussa' wale trade the, yaani aaj subah ke do revenge trade (-4.0R); kul milakar -7.7R. Uska total -5.3R hai, yaani -Rs 53,000 virtual paisa, jabki sirf 8 rule wale trade +2.4R dikhate hain. Swing plan par, jismein ek saath sirf teen trade khule reh sakte hain, do hafte se kam mein 20 trade khud ek ishaara hai: rule card ne sirf 8 diye. FOMO sabse zyada baar aata hai; gussa sabse mehenga hai, har trade par -2.0R.",
+        "dv": "अमन दिन 12 से अब तक के अपने 20 पेपर ट्रेड जोड़ता है। सिर्फ़ 8 ट्रेड रूल कार्ड से आए, टैग 'शांत': +2.4R। बाक़ी 12 में 6 FOMO ट्रेड (-2.1R), 4 'बोरियत' वाले (-1.6R) और 2 'ग़ुस्सा' वाले ट्रेड थे, यानी आज सुबह के दो रिवेंज ट्रेड (-4.0R); कुल मिलाकर -7.7R। उसका टोटल -5.3R है, यानी -Rs 53,000 वर्चुअल पैसा, जबकि सिर्फ़ 8 नियम वाले ट्रेड +2.4R दिखाते हैं। स्विंग प्लान पर, जिसमें एक साथ सिर्फ़ तीन ट्रेड खुले रह सकते हैं, दो हफ़्ते से कम में 20 ट्रेड ख़ुद एक इशारा है: रूल कार्ड ने सिर्फ़ 8 दिए। FOMO सबसे ज़्यादा बार आता है; ग़ुस्सा सबसे महँगा है, हर ट्रेड पर -2.0R।"
+      },
+      "remember": {
+        "en": "Your rules decide how many trades you take. Boredom and fear do not get a vote.",
+        "hi": "Kitne trade lene hain, yeh rules tay karte hain. Boriyat aur darr ko vote nahi milta.",
+        "dv": "कितने ट्रेड लेने हैं, यह नियम तय करते हैं। बोरियत और डर को वोट नहीं मिलता।"
+      },
+      "visual": {
+        "kind": "bars",
+        "title": {
+          "en": "Aman's R by emotion tag",
+          "hi": "Emotion tag ke hisaab se Aman ka R",
+          "dv": "इमोशन टैग के हिसाब से अमन का R"
+        },
+        "caption": {
+          "en": "20 hypothetical paper trades, count in brackets; R before the 0.1R cost allowance. Only the calm, on-rule trades added R.",
+          "hi": "Example ke liye 20 paper trades, bracket mein ginti; R, 0.1R cost allowance se pehle. Sirf calm, rule wale trades ne R joda.",
+          "dv": "20 काल्पनिक पेपर ट्रेड, ब्रैकेट में गिनती; R, 0.1R कॉस्ट अलाउंस से पहले। सिर्फ़ शांत, नियम वाले ट्रेडों ने R जोड़ा।"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "Calm (8)",
+              "hi": "Calm (8)",
+              "dv": "शांत (8)"
+            },
+            "value": 2.4,
+            "tone": "up",
+            "display": "+2.4R"
+          },
+          {
+            "label": {
+              "en": "FOMO (6)",
+              "hi": "FOMO (6)",
+              "dv": "FOMO (6)"
+            },
+            "value": -2.1,
+            "tone": "down",
+            "display": "-2.1R"
+          },
+          {
+            "label": {
+              "en": "Bored (4)",
+              "hi": "Bore (4)",
+              "dv": "बोरियत (4)"
+            },
+            "value": -1.6,
+            "tone": "down",
+            "display": "-1.6R"
+          },
+          {
+            "label": {
+              "en": "Angry (2)",
+              "hi": "Gussa (2)",
+              "dv": "ग़ुस्सा (2)"
+            },
+            "value": -4.0,
+            "tone": "down",
+            "display": "-4.0R"
+          }
+        ]
+      }
+    },
+    {
+      "h": {
+        "en": "Four quiet biases that bend your rules",
+        "hi": "Rules ko modne wale chaar chupe biases",
+        "dv": "नियमों को मोड़ने वाले चार छिपे बायस"
+      },
+      "p": {
+        "en": "A bias is a built-in shortcut in thinking that pulls every human the same wrong way. Revenge, FOMO and overtrading are the loud traps; these four are quiet. Strictly, the loud three are habits driven by emotion and the quiet four are biases; for short, this lesson calls all seven biases. Loss aversion: studies of behaviour suggest a loss hurts roughly twice as much as an equal gain pleases, so we move stops to avoid booking one. Sunk cost: money already lost makes us hold on 'until it comes back', though the market does not know our buying price. Confirmation bias: after entering, we hunt for posts and videos that agree and skip the ones that do not. Recency: the last three trades feel like the whole truth, so we drop a rule after a short losing streak. Each bias needs a written answer on your card, decided while you are calm.",
+        "hi": "Bias soch ka ek andar baitha shortcut hai, jo har insaan ko ek hi galat taraf kheenchta hai. Revenge, FOMO aur overtrading khule jaal hain; yeh chaar chupe hue hain. Sach kahein toh khule teen jazbaat se bani aadatein hain aur chupe chaar asli biases; short mein aaj hum saaton ko biases keh rahe hain. Loss aversion: behaviour par hui studies ke mutabik ek loss ka dard, utne hi gain ki khushi se lagbhag dugna hota hai, isliye loss book na karna pade, is chakkar mein hum stop khiska dete hain. Sunk cost: jo paisa doob chuka, uske chakkar mein hum sochte hain 'wapas aane tak hold kar leta hoon', jabki market ko hamara buying price pata hi nahi. Confirmation bias: entry ke baad hum sirf woh posts aur videos dhoondhte hain jo humse sehmat hon, baaki skip kar dete hain. Recency: pichhle teen trade hi poora sach lagne lagte hain, aur chhoti si losing streak ke baad hum rule chhod dete hain. Har bias ka ek likha hua jawab aapke card par hona chahiye, jo aapne shaant dimaag se tay kiya ho.",
+        "dv": "बायस सोच का एक अंदर बैठा शॉर्टकट है, जो हर इंसान को एक ही ग़लत तरफ़ खींचता है। रिवेंज, FOMO और ओवरट्रेडिंग खुले जाल हैं; ये चार छिपे हुए हैं। सच कहें तो खुले तीन भावनाओं से बनी आदतें हैं और छिपे चार असली बायस; छोटे में आज हम सातों को बायस कह रहे हैं। लॉस अवर्ज़न: इंसानी व्यवहार पर हुई स्टडीज़ के मुताबिक़ एक नुक़सान का दर्द, उतने ही फ़ायदे की ख़ुशी से लगभग दोगुना होता है, इसलिए नुक़सान बुक न करना पड़े, इस चक्कर में हम स्टॉप खिसका देते हैं। संक कॉस्ट: जो पैसा डूब चुका, उसके चक्कर में हम सोचते हैं 'वापस आने तक पकड़े रहता हूँ', जबकि बाज़ार को हमारा ख़रीद भाव पता ही नहीं। कन्फ़र्मेशन बायस: एंट्री के बाद हम सिर्फ़ वे पोस्ट और वीडियो ढूँढते हैं जो हमसे सहमत हों, बाक़ी छोड़ देते हैं। रीसेंसी: पिछले तीन ट्रेड ही पूरा सच लगने लगते हैं, और छोटी-सी लॉसिंग स्ट्रीक के बाद हम नियम छोड़ देते हैं। हर बायस का एक लिखा हुआ जवाब आपके कार्ड पर होना चाहिए, जो आपने शांत दिमाग़ से तय किया हो।"
+      },
+      "example": {
+        "en": "Priya's paper trade in Gupta Cement Ltd: 500 shares at Rs 500, stop Rs 480, so 1R = Rs 10,000. At Rs 483 she moved the stop to Rs 460 'to give it room'. The price fell through Rs 480 and then Rs 460, so she lost 500 x Rs 40 = Rs 20,000, which is 2R. Loss aversion doubled a planned loss. The answer to recency is Day 3's maths: at a 40% win-rate, any three trades all lose about 22% of the time (0.6 x 0.6 x 0.6 = 0.216), so a three-loss streak says very little about a rule on its own.",
+        "hi": "Priya ka Gupta Cement Ltd mein paper trade: 500 shares Rs 500 par, stop Rs 480, yaani 1R = Rs 10,000. Rs 483 par usne stop khiska kar Rs 460 kar diya, 'thodi jagah dene ke liye'. Price Rs 480 ke neeche gaya, phir Rs 460 ke bhi, aur loss hua 500 x Rs 40 = Rs 20,000, yaani 2R. Loss aversion ne planned loss ko double kar diya. Recency ka jawab Day 3 ki maths mein hai: 40% win-rate par teen lagataar trade haarne ka chance 0.6 x 0.6 x 0.6, yaani lagbhag 22% hai, isliye teen loss ki streak akele kisi rule ke baare mein bahut kam batati hai.",
+        "dv": "प्रिया का Gupta Cement Ltd में पेपर ट्रेड: 500 शेयर Rs 500 पर, स्टॉप Rs 480, यानी 1R = Rs 10,000। Rs 483 पर उसने स्टॉप खिसकाकर Rs 460 कर दिया, 'थोड़ी जगह देने के लिए'। भाव Rs 480 के नीचे गया, फिर Rs 460 के भी, और नुक़सान हुआ 500 x Rs 40 = Rs 20,000, यानी 2R। लॉस अवर्ज़न ने तय नुक़सान को डबल कर दिया। रीसेंसी का जवाब दिन 3 के हिसाब में है: 40% विन-रेट पर लगातार तीन ट्रेड हारने का चांस 0.6 x 0.6 x 0.6, यानी लगभग 22% है, इसलिए तीन नुक़सान की स्ट्रीक अकेले किसी नियम के बारे में बहुत कम बताती है।"
+      },
+      "remember": {
+        "en": "Once a trade is on, the stop stays where your plan card put it. Never move it down to dodge a loss.",
+        "hi": "Trade lene ke baad stop wahi rehta hai jahan plan card ne rakha tha. Loss se bachne ke liye use neeche kabhi mat khiskaiye.",
+        "dv": "ट्रेड लेने के बाद स्टॉप वहीं रहता है जहाँ प्लान कार्ड ने रखा था। नुक़सान से बचने के लिए उसे नीचे कभी मत खिसकाइए।"
+      },
+      "visual": {
+        "kind": "candles",
+        "title": {
+          "en": "The stop that moved",
+          "hi": "Khiska hua stop",
+          "dv": "खिसका हुआ स्टॉप"
+        },
+        "caption": {
+          "en": "Exiting at the planned stop near Rs 480 would have cost -1R. After the stop moved, the exit near Rs 460 cost -2R.",
+          "hi": "Plan wale stop Rs 480 ke paas exit hota toh -1R lagta. Stop khiskane ke baad Rs 460 ke paas exit -2R pada.",
+          "dv": "प्लान वाले स्टॉप Rs 480 के पास एग्ज़िट होता तो -1R लगता। स्टॉप खिसकाने के बाद Rs 460 के पास एग्ज़िट -2R पड़ा।"
+        },
+        "bars": [
+          [
+            496,
+            503,
+            494,
+            501
+          ],
+          [
+            500,
+            506,
+            497,
+            504
+          ],
+          [
+            504,
+            507,
+            495,
+            497
+          ],
+          [
+            497,
+            499,
+            487,
+            489
+          ],
+          [
+            489,
+            492,
+            481,
+            483
+          ],
+          [
+            483,
+            485,
+            476,
+            478
+          ],
+          [
+            478,
+            480,
+            468,
+            470
+          ],
+          [
+            470,
+            473,
+            459,
+            462
+          ],
+          [
+            462,
+            466,
+            455,
+            458
+          ]
+        ],
+        "levels": [
+          {
+            "y": 500,
+            "label": {
+              "en": "Entry",
+              "hi": "Entry",
+              "dv": "एंट्री"
+            },
+            "tone": "brand"
+          },
+          {
+            "y": 480,
+            "label": {
+              "en": "Planned stop",
+              "hi": "Planned stop",
+              "dv": "तय स्टॉप"
+            },
+            "tone": "gold"
+          },
+          {
+            "y": 460,
+            "label": {
+              "en": "Moved stop",
+              "hi": "Khiska stop",
+              "dv": "खिसका स्टॉप"
+            },
+            "tone": "down"
+          }
+        ],
+        "marks": [
+          {
+            "i": 4,
+            "label": {
+              "en": "Stop moved",
+              "hi": "Stop khiska",
+              "dv": "स्टॉप खिसका"
+            },
+            "tone": "gold",
+            "at": "high"
+          },
+          {
+            "i": 7,
+            "label": {
+              "en": "-2R exit",
+              "hi": "-2R exit",
+              "dv": "-2R एग्ज़िट"
+            },
+            "tone": "down",
+            "at": "low"
+          }
+        ]
+      }
+    },
+    {
+      "h": {
+        "en": "The kill-switch for humans: design, not willpower",
+        "hi": "Insaanon ka kill-switch: willpower nahi, design",
+        "dv": "इंसानों का किल-स्विच: विलपावर नहीं, डिज़ाइन"
+      },
+      "p": {
+        "en": "Day 9 gave you the kill-switch: stop for the day at -2R, and pause and review after -5R in a week. Think of the MCB, the small circuit breaker in your home's switchboard: it trips before the wiring burns, and nobody argues with it. The trouble is that you must flip your own switch, at the very moment your judgement is weakest. So do not rely on willpower; design your day so that breaking the rule takes effort. Add one rule about your body too: no new trades when you are angry, unwell or short of sleep. A tired brain is a poor risk manager.",
+        "hi": "Day 9 ne aapko kill-switch diya tha: -2R par us din ke liye stop, aur hafte mein -5R par pause aur review. Ghar ke switchboard mein laga MCB sochiye, yaani chhota circuit breaker: wiring jalne se pehle hi trip ho jaata hai, aur usse koi behes nahi karta. Dikkat yeh hai ki apna switch aapko khud girana hai, theek us pal jab aapki samajh sabse kamzor hoti hai. Isliye willpower ke bharose mat rahiye; apna din aise design kijiye ki rule todne mein mehnat lage. Apne shareer ke liye bhi ek rule jodiye: gussa ho, tabiyat kharab ho ya neend poori na hui ho, toh koi naya trade nahi. Thaka hua dimaag achha risk manager nahi hota.",
+        "dv": "दिन 9 ने आपको किल-स्विच दिया था: -2R पर उस दिन के लिए स्टॉप, और हफ़्ते में -5R पर पॉज़ और रिव्यू। घर के स्विचबोर्ड में लगा MCB सोचिए, यानी छोटा सर्किट ब्रेकर: वायरिंग जलने से पहले ही ट्रिप हो जाता है, और उससे कोई बहस नहीं करता। दिक़्क़त यह है कि अपना स्विच आपको ख़ुद गिराना है, ठीक उस पल जब आपकी समझ सबसे कमज़ोर होती है। इसलिए विलपावर के भरोसे मत रहिए; अपना दिन ऐसे डिज़ाइन कीजिए कि नियम तोड़ने में मेहनत लगे। अपने शरीर के लिए भी एक नियम जोड़िए: ग़ुस्सा हो, तबीयत ख़राब हो या नींद पूरी न हुई हो, तो कोई नया ट्रेड नहीं। थका हुआ दिमाग़ अच्छा रिस्क मैनेजर नहीं होता।"
+      },
+      "example": {
+        "en": "On Rs 10 lakh of virtual capital, 1R = Rs 10,000, so Aman writes at the top of his card: 'Daily stop: -Rs 20,000. Weekly pause: -Rs 50,000.' Then he designs his day. The chart and paper-trading apps leave his phone's home screen during office hours, and he exits every tip group. Alerts are set only at the entry and stop levels from last night's plan card. He opens a journal row before every order, not after. And he and Priya text each other 'stopped for today' when the switch trips. None of this needs courage in the moment; it was all decided on a calm Sunday.",
+        "hi": "Rs 10 lakh ki virtual capital par 1R = Rs 10,000, toh Aman apne card ke upar likhta hai: 'Daily stop: -Rs 20,000. Weekly pause: -Rs 50,000.' Phir woh apna din design karta hai. Office ke time chart aur paper-trading apps phone ki home screen se hat jaate hain, aur woh saare tip groups chhod deta hai. Alerts sirf kal raat ke plan card ke entry aur stop levels par lagte hain. Har order se pehle woh journal row kholta hai, baad mein nahi. Aur switch trip hote hi woh aur Priya ek-doosre ko message kar dete hain: 'aaj ke liye band'. Is sab ke liye us pal himmat nahi chahiye; sab kuch ek shaant Sunday ko tay ho chuka tha.",
+        "dv": "Rs 10 लाख की वर्चुअल कैपिटल पर 1R = Rs 10,000, तो अमन अपने कार्ड के ऊपर लिखता है: 'डेली स्टॉप: -Rs 20,000। वीकली पॉज़: -Rs 50,000।' फिर वह अपना दिन डिज़ाइन करता है। ऑफ़िस के समय चार्ट और पेपर-ट्रेडिंग ऐप फ़ोन की होम स्क्रीन से हट जाते हैं, और वह सारे टिप ग्रुप छोड़ देता है। अलर्ट सिर्फ़ कल रात के प्लान कार्ड के एंट्री और स्टॉप लेवल पर लगते हैं। हर ऑर्डर से पहले वह जर्नल की लाइन खोलता है, बाद में नहीं। और स्विच ट्रिप होते ही वह और प्रिया एक-दूसरे को मैसेज कर देते हैं: 'आज के लिए बंद'। इस सबके लिए उस पल हिम्मत नहीं चाहिए; सब कुछ एक शांत रविवार को तय हो चुका था।"
+      },
+      "remember": {
+        "en": "Discipline is not a feeling in the moment. It is a decision made earlier and written down.",
+        "hi": "Discipline us pal ki feeling nahi hai. Yeh pehle liya gaya, likha hua faisla hai.",
+        "dv": "अनुशासन उस पल की भावना नहीं है। यह पहले लिया गया, लिखा हुआ फ़ैसला है।"
+      },
+      "visual": {
+        "kind": "compare",
+        "title": {
+          "en": "Willpower vs design",
+          "hi": "Willpower vs design",
+          "dv": "विलपावर बनाम डिज़ाइन"
+        },
+        "caption": {
+          "en": "Design, not willpower: build the day so that the right action is also the easy one.",
+          "hi": "Willpower nahi, design: din aisa banaiye ki sahi kaam hi aasaan kaam ho.",
+          "dv": "विलपावर नहीं, डिज़ाइन: दिन ऐसा बनाइए कि सही काम ही आसान काम हो।"
+        },
+        "cols": [
+          {
+            "head": {
+              "en": "Willpower plan",
+              "hi": "Willpower wala plan",
+              "dv": "विलपावर वाला प्लान"
+            },
+            "tone": "down",
+            "points": [
+              {
+                "en": "'I'll be careful today'",
+                "hi": "'Aaj dhyaan rakhunga'",
+                "dv": "'आज ध्यान रखूँगा'"
+              },
+              {
+                "en": "Limit decided in the moment",
+                "hi": "Limit usi pal tay",
+                "dv": "सीमा उसी पल तय"
+              },
+              {
+                "en": "App and tip groups one tap away",
+                "hi": "App aur tip groups ek tap door",
+                "dv": "ऐप और टिप ग्रुप एक टैप दूर"
+              },
+              {
+                "en": "Journal filled later, if at all",
+                "hi": "Journal baad mein, agar yaad rahe",
+                "dv": "जर्नल बाद में, अगर याद रहे"
+              }
+            ]
+          },
+          {
+            "head": {
+              "en": "Design plan",
+              "hi": "Design wala plan",
+              "dv": "डिज़ाइन वाला प्लान"
+            },
+            "tone": "up",
+            "points": [
+              {
+                "en": "Daily stop in rupees, written before 9:15",
+                "hi": "Daily stop rupees mein, 9:15 se pehle likha",
+                "dv": "डेली स्टॉप रुपये में, 9:15 से पहले लिखा"
+              },
+              {
+                "en": "Alerts only at plan-card levels",
+                "hi": "Alerts sirf plan card ke levels par",
+                "dv": "अलर्ट सिर्फ़ प्लान कार्ड के लेवल पर"
+              },
+              {
+                "en": "Apps hidden at work, no tip groups",
+                "hi": "Office mein apps chhupe, tip groups se bahar",
+                "dv": "ऑफ़िस में ऐप छिपे, टिप ग्रुप से बाहर"
+              },
+              {
+                "en": "Journal row before every order",
+                "hi": "Har order se pehle journal row",
+                "dv": "हर ऑर्डर से पहले जर्नल की लाइन"
+              },
+              {
+                "en": "A buddy who hears 'stopped'",
+                "hi": "Ek buddy jise 'band kiya' batate hain",
+                "dv": "एक साथी जिसे 'बंद किया' बताते हैं"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "h": {
+        "en": "The Daily Routine Card: four blocks, every day",
+        "hi": "Daily Routine Card: chaar block, har din",
+        "dv": "डेली रूटीन कार्ड: चार हिस्से, हर दिन"
+      },
+      "p": {
+        "en": "The Daily Routine Card is one page, beside your screen or as a photo on your phone, that says what to do and when. It has four blocks. Before the bell, 10 minutes (say 8:45 to 8:55, before the 9:00 pre-open): check your Day 19 calendar for a no-trade day, read yesterday's journal line, write your daily stop, check your sleep and mood, and write 'Today's job: follow the card.' During market hours: alerts and your checklist only, no tip groups, no news debates. After the close, 20 minutes: fill the journal (no-trade days too), scan the finished daily candles (Day 16), write tomorrow's plan card for any setup, and run the end-of-day AI review. At the weekend, 30 minutes: review the week; a rule changes only then, in writing, and only after 30 logged trades (Day 12).",
+        "hi": "Daily Routine Card ek page hai, screen ke paas ya phone mein photo ki tarah, jo batata hai ki kab kya karna hai. Ismein chaar block hain. Market khulne se pehle, 10 minute (maan lijiye 8:45 se 8:55, 9:00 ke pre-open se pehle): Day 19 ka calendar dekhiye ki aaj no-trade day toh nahi, kal ki journal line padhiye, apna daily stop likhiye, neend aur mood check kijiye, aur likhiye 'Aaj ka kaam: sirf card follow karna.' Market hours mein: sirf alerts aur checklist, na tip groups, na news debates. Close ke baad, 20 minute: journal bhariye (no-trade days bhi), poori ban chuki daily candles scan kijiye (Day 16), kisi setup ke liye kal ka plan card likh lijiye, aur end-of-day AI review chalaiye. Weekend par, 30 minute: hafte ka review kijiye; rule sirf tabhi badalta hai, likh kar, aur woh bhi 30 trades log hone ke baad hi (Day 12).",
+        "dv": "डेली रूटीन कार्ड एक पेज है, स्क्रीन के पास या फ़ोन में फ़ोटो की तरह, जो बताता है कि कब क्या करना है। इसमें चार हिस्से हैं। बाज़ार खुलने से पहले, 10 मिनट (मान लीजिए 8:45 से 8:55, 9:00 के प्री-ओपन से पहले): दिन 19 का कैलेंडर देखिए कि आज नो-ट्रेड डे तो नहीं, कल की जर्नल लाइन पढ़िए, अपना डेली स्टॉप लिखिए, नींद और मूड जाँचिए, और लिखिए 'आज का काम: सिर्फ़ कार्ड फ़ॉलो करना।' बाज़ार के समय: सिर्फ़ अलर्ट और चेकलिस्ट, न टिप ग्रुप, न न्यूज़ डिबेट। बाज़ार बंद होने के बाद, 20 मिनट: जर्नल भरिए (नो-ट्रेड डे भी), पूरी बन चुकी डेली कैंडल स्कैन कीजिए (दिन 16), किसी सेटअप के लिए कल का प्लान कार्ड लिख लीजिए, और दिन के आख़िर का AI रिव्यू चलाइए। वीकेंड पर, 30 मिनट: हफ़्ते का रिव्यू कीजिए; नियम सिर्फ़ तभी बदलता है, लिखकर, और वह भी 30 ट्रेड दर्ज होने के बाद ही (दिन 12)।"
+      },
+      "example": {
+        "en": "Priya's weekend block asks the same five questions every Saturday. Out of all my decisions, no-trade days included, how many kept every rule? Which emotion tag cost the most R? Did the daily stop or the weekly pause fire, and did I obey it? Which one habit do I fix next week? What did I do well? Her first card took 25 minutes to write. Now each block fits the time printed on it, and on a day with no setup the card still gets its tick: a no-trade day counts as following the rules.",
+        "hi": "Priya ka weekend block har Saturday wahi paanch sawaal poochta hai. Kul decisions mein se, no-trade days milakar, kitno mein har rule follow hua? Kis emotion tag ne sabse zyada R khaya? Daily stop ya weekly pause laga kya, aur maine use maana? Agle hafte kaunsi ek aadat sudhaarni hai? Maine kya achha kiya? Pehla card likhne mein use 25 minute lage. Ab har block utne hi time mein ho jaata hai jitna card par likha hai, aur jis din koi setup nahi, us din bhi card par tick lagta hai: no-trade day bhi rule follow karna hi hai.",
+        "dv": "प्रिया का वीकेंड वाला हिस्सा हर शनिवार वही पाँच सवाल पूछता है। कुल फ़ैसलों में से, नो-ट्रेड डे मिलाकर, कितनों में हर नियम माना गया? किस इमोशन टैग ने सबसे ज़्यादा R खाया? डेली स्टॉप या वीकली पॉज़ लगा क्या, और मैंने उसे माना? अगले हफ़्ते कौन-सी एक आदत सुधारनी है? मैंने क्या अच्छा किया? पहला कार्ड लिखने में उसे 25 मिनट लगे। अब हर हिस्सा उतने ही समय में हो जाता है जितना कार्ड पर लिखा है, और जिस दिन कोई सेटअप नहीं, उस दिन भी कार्ड पर टिक लगता है: नो-ट्रेड डे भी नियम मानना ही है।"
+      },
+      "remember": {
+        "en": "Plan before the bell, follow the card during the session, review after the close.",
+        "hi": "Market khulne se pehle plan, session ke dauraan card, close ke baad review.",
+        "dv": "खुलने से पहले प्लान, बाज़ार के दौरान कार्ड, बंद होने के बाद रिव्यू।"
+      },
+      "visual": {
+        "kind": "steps",
+        "title": {
+          "en": "A day on the card",
+          "hi": "Card par ek din",
+          "dv": "कार्ड पर एक दिन"
+        },
+        "caption": {
+          "en": "Swing traders with a day job do the first block before work and the after-close block in the evening. The times are a template: fit them to your day.",
+          "hi": "Naukri wale swing traders pehla block kaam se pehle aur close ke baad wala block shaam ko karte hain. Time sirf ek template hai: apne din ke hisaab se badliye.",
+          "dv": "नौकरी वाले स्विंग ट्रेडर पहला हिस्सा काम से पहले और बाज़ार बंद होने के बाद वाला हिस्सा शाम को करते हैं। समय सिर्फ़ एक टेम्पलेट है: अपने दिन के हिसाब से बदलिए।"
+        },
+        "items": [
+          {
+            "tag": "8:45",
+            "label": {
+              "en": "Before the bell",
+              "hi": "Market khulne se pehle",
+              "dv": "बाज़ार खुलने से पहले"
+            },
+            "sub": {
+              "en": "Events, daily stop, mood, one line",
+              "hi": "Events, daily stop, mood, ek line",
+              "dv": "इवेंट, डेली स्टॉप, मूड, एक लाइन"
+            }
+          },
+          {
+            "tag": "9:15",
+            "label": {
+              "en": "Market hours",
+              "hi": "Market hours",
+              "dv": "बाज़ार का समय"
+            },
+            "sub": {
+              "en": "Alerts and checklist only",
+              "hi": "Sirf alerts aur checklist",
+              "dv": "सिर्फ़ अलर्ट और चेकलिस्ट"
+            }
+          },
+          {
+            "tag": "-2R",
+            "label": {
+              "en": "Kill-switch",
+              "hi": "Kill-switch",
+              "dv": "किल-स्विच"
+            },
+            "sub": {
+              "en": "If hit: screen off till tomorrow",
+              "hi": "Hit ho toh: kal tak screen band",
+              "dv": "लग जाए तो: कल तक स्क्रीन बंद"
+            }
+          },
+          {
+            "tag": "15:30",
+            "label": {
+              "en": "After the close",
+              "hi": "Close ke baad",
+              "dv": "बाज़ार बंद होने के बाद"
+            },
+            "sub": {
+              "en": "Journal, scan, plan card, AI review",
+              "hi": "Journal, scan, plan card, AI review",
+              "dv": "जर्नल, स्कैन, प्लान कार्ड, AI रिव्यू"
+            }
+          },
+          {
+            "tag": "Sat",
+            "label": {
+              "en": "Weekend review",
+              "hi": "Weekend review",
+              "dv": "वीकेंड रिव्यू"
+            },
+            "sub": {
+              "en": "Five questions; rule changes only here, after 30 trades",
+              "hi": "Paanch sawaal; rule mein badlaav sirf yahin, 30 trades ke baad",
+              "dv": "पाँच सवाल; नियम में बदलाव सिर्फ़ यहीं, 30 ट्रेड के बाद"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "h": {
+        "en": "Your protection checklist: guard the money and the mind",
+        "hi": "Aapki protection checklist: paisa bhi bachaiye, mann bhi",
+        "dv": "आपकी सुरक्षा चेकलिस्ट: पैसा भी बचाइए, मन भी"
+      },
+      "p": {
+        "en": "Your money needs five checks, all from Week 1. Verify any adviser or analyst on sebi.gov.in before you pay; pay only into an account in that registered name, checked on SEBI Check (Day 7); never share an OTP, TPIN or password; complain first at the broker's or adviser's own grievance desk, then on SCORES or SMART ODR; and report fraud at cybercrime.gov.in or on 1930. Your mind needs checks too, because trading can slide into gambling without anyone noticing. The warning signs are borrowing to trade, hiding losses from family, chasing losses, losing sleep over positions and trading in secret at work. If you see even one, stop trading for a week, tell someone you trust, and if it still feels heavy, talk to a counsellor or call Tele-MANAS, the government's free mental-health helpline, on 14416. Asking for help is a strong move, not a weak one.",
+        "hi": "Paise ke liye paanch checks, sab Week 1 se. Kisi bhi adviser ya analyst ko paise dene se pehle sebi.gov.in par verify kijiye; paisa sirf usi registered naam wale account mein bhejiye, SEBI Check (Day 7) par check karke; OTP, TPIN ya password kabhi share mat kijiye; complaint pehle broker ya adviser ke apne grievance desk par, phir SCORES ya SMART ODR par; aur fraud ho toh cybercrime.gov.in ya 1930 par report kijiye. Mann ke liye bhi checks chahiye, kyunki trading chupchaap jua ban sakti hai aur kisi ko pata bhi nahi chalta. Warning signs yeh hain: trade ke liye udhaar lena, family se loss chhupana, loss ka peecha karna, positions ki wajah se neend na aana, aur office mein chhupke trade karna. Inmein se ek bhi dikhe, toh ek hafte ke liye trading band kijiye, kisi bharosemand insaan ko bataiye, aur phir bhi mann bhaari lage toh counsellor se baat kijiye, ya sarkar ki free mental-health helpline Tele-MANAS ko 14416 par call kijiye. Madad maangna mazbooti hai, kamzori nahi.",
+        "dv": "पैसे के लिए पाँच जाँच, सब पहले हफ़्ते से। किसी भी एडवाइज़र या एनालिस्ट को पैसे देने से पहले sebi.gov.in पर वेरिफ़ाई कीजिए; पैसा सिर्फ़ उसी रजिस्टर्ड नाम वाले अकाउंट में भेजिए, SEBI Check (दिन 7) पर जाँचकर; OTP, TPIN या पासवर्ड कभी शेयर मत कीजिए; शिकायत पहले ब्रोकर या एडवाइज़र के अपने शिकायत डेस्क (ग्रीवांस डेस्क) पर, फिर SCORES या SMART ODR पर; और धोखाधड़ी हो तो cybercrime.gov.in या 1930 पर रिपोर्ट कीजिए। मन के लिए भी जाँच चाहिए, क्योंकि ट्रेडिंग चुपचाप जुआ बन सकती है और किसी को पता भी नहीं चलता। चेतावनी के संकेत ये हैं: ट्रेड के लिए उधार लेना, परिवार से नुक़सान छिपाना, नुक़सान का पीछा करना, पोज़िशन की वजह से नींद न आना, और ऑफ़िस में छिपकर ट्रेड करना। इनमें से एक भी दिखे, तो एक हफ़्ते के लिए ट्रेडिंग बंद कीजिए, किसी भरोसेमंद इंसान को बताइए, और फिर भी मन भारी लगे तो काउंसलर से बात कीजिए, या सरकार की मुफ़्त मेंटल-हेल्थ हेल्पलाइन Tele-MANAS को 14416 पर कॉल कीजिए। मदद माँगना मज़बूती है, कमज़ोरी नहीं।"
+      },
+      "example": {
+        "en": "Aman looks honestly at his week: two trades placed in secret during office meetings, and a thought of taking a Rs 50,000 card loan 'to do it with real money and win it all back'. That makes three warning signs: chasing losses, trading in secret at work and planning to borrow. He stops paper trading for a full week, which also covers the -5R weekly pause he has already hit, tells Priya and his elder brother, and adds a line to his card: 'No trading money from loans or cards, ever.' Stage 1 runs on virtual money, which makes it the cheapest place to catch a habit like this.",
+        "hi": "Aman apne hafte ko imaandaari se dekhta hai: office meetings ke beech chhupke lagaye do trade, aur Rs 50,000 ka card loan lene ka khayal, 'asli paise se sab wapas nikaalne ke liye'. Yeh teen warning signs hain: loss ka peecha, office mein chhupke trade, aur udhaar ka plan. Woh poore ek hafte ke liye paper trading rok deta hai, jismein -5R wala weekly pause bhi aa jaata hai, Priya aur apne bade bhai ko bata deta hai, aur card par ek line jod deta hai: 'Trading ka paisa loan ya card se, kabhi nahi.' Stage 1 virtual paise par chalta hai, isliye aisi aadat pakadne ki isse sasti jagah koi nahi.",
+        "dv": "अमन अपने हफ़्ते को ईमानदारी से देखता है: ऑफ़िस की मीटिंग के बीच छिपकर लगाए दो ट्रेड, और Rs 50,000 का कार्ड लोन लेने का ख़याल, 'असली पैसे से सब वापस निकालने के लिए'। ये तीन चेतावनी के संकेत हैं: नुक़सान का पीछा, ऑफ़िस में छिपकर ट्रेड, और उधार लेने का इरादा। वह पूरे एक हफ़्ते के लिए पेपर ट्रेडिंग रोक देता है, जिसमें -5R वाला वीकली पॉज़ भी आ जाता है, प्रिया और अपने बड़े भाई को बता देता है, और कार्ड पर एक लाइन जोड़ देता है: 'ट्रेडिंग का पैसा लोन या कार्ड से, कभी नहीं।' Stage 1 वर्चुअल पैसे पर चलता है, इसलिए ऐसी आदत पकड़ने की इससे सस्ती जगह कोई नहीं।"
+      },
+      "remember": {
+        "en": "Protect the money with checks and the mind with people. Neither has to be done alone.",
+        "hi": "Paise ko checks se bachaiye, mann ko logon se. Dono akele karne ki zaroorat nahi.",
+        "dv": "पैसे को जाँच से बचाइए, मन को लोगों से। दोनों अकेले करने की ज़रूरत नहीं।"
+      },
+      "visual": {
+        "kind": "flow",
+        "title": {
+          "en": "If a warning sign shows up",
+          "hi": "Agar warning sign dikhe",
+          "dv": "अगर चेतावनी का संकेत दिखे"
+        },
+        "caption": {
+          "en": "Tele-MANAS: 14416, free, 24x7, in many Indian languages. Check the latest details at telemanas.mohfw.gov.in.",
+          "hi": "Tele-MANAS: 14416, free, 24x7, kai Indian bhashaon mein. Latest jaankari telemanas.mohfw.gov.in par dekhiye.",
+          "dv": "Tele-MANAS: 14416, मुफ़्त, 24x7, कई भारतीय भाषाओं में। ताज़ा जानकारी telemanas.mohfw.gov.in पर देखिए।"
+        },
+        "nodes": [
+          {
+            "label": {
+              "en": "Spot a sign",
+              "hi": "Sign pehchaaniye",
+              "dv": "संकेत पहचानिए"
+            },
+            "sub": {
+              "en": "Borrowing, hiding, chasing, no sleep",
+              "hi": "Udhaar, chhupana, peecha, neend nahi",
+              "dv": "उधार, छिपाना, पीछा, नींद नहीं"
+            },
+            "tone": "down"
+          },
+          {
+            "label": {
+              "en": "Stop for a week",
+              "hi": "Ek hafte ka break",
+              "dv": "एक हफ़्ते का ब्रेक"
+            },
+            "sub": {
+              "en": "Charts and apps closed",
+              "hi": "Charts aur apps band",
+              "dv": "चार्ट और ऐप बंद"
+            },
+            "tone": "gold"
+          },
+          {
+            "label": {
+              "en": "Tell someone",
+              "hi": "Kisi ko bataiye",
+              "dv": "किसी को बताइए"
+            },
+            "sub": {
+              "en": "Family or a trusted friend",
+              "hi": "Family ya bharosemand dost",
+              "dv": "परिवार या भरोसेमंद दोस्त"
+            },
+            "tone": "brand"
+          },
+          {
+            "label": {
+              "en": "Get help",
+              "hi": "Madad lijiye",
+              "dv": "मदद लीजिए"
+            },
+            "sub": {
+              "en": "Counsellor or Tele-MANAS 14416",
+              "hi": "Counsellor ya Tele-MANAS 14416",
+              "dv": "काउंसलर या Tele-MANAS 14416"
+            },
+            "tone": "up"
+          }
+        ]
+      }
+    }
+  ],
+  "key_terms": [
+    {
+      "term": {
+        "en": "Revenge trade",
+        "hi": "Revenge trade",
+        "dv": "रिवेंज ट्रेड"
+      },
+      "meaning": {
+        "en": "A trade taken to win back a loss, not because a rule gave a setup. Usually bigger and hastier than normal.",
+        "hi": "Loss wapas nikaalne ke liye liya gaya trade, kisi rule ke setup ki wajah se nahi. Aksar normal se bada aur jaldbaazi wala.",
+        "dv": "नुक़सान वापस निकालने के लिए लिया गया ट्रेड, किसी नियम के सेटअप की वजह से नहीं। अक्सर आम से बड़ा और जल्दबाज़ी वाला।"
+      }
+    },
+    {
+      "term": {
+        "en": "FOMO",
+        "hi": "FOMO",
+        "dv": "FOMO"
+      },
+      "meaning": {
+        "en": "Fear of missing out: jumping into a move that has already run, without your setup.",
+        "hi": "'Kahin chhoot na jaaye' wala darr: bina setup ke aise move mein kood jaana jo pehle hi chal chuka hai.",
+        "dv": "'कहीं छूट न जाए' वाला डर: बिना सेटअप के ऐसे मूव में कूद जाना जो पहले ही चल चुका है।"
+      }
+    },
+    {
+      "term": {
+        "en": "Loss aversion",
+        "hi": "Loss aversion",
+        "dv": "लॉस अवर्ज़न"
+      },
+      "meaning": {
+        "en": "A loss hurts more than an equal gain pleases, so we avoid booking losses, for example by moving a stop.",
+        "hi": "Loss utne hi bade gain ki khushi se zyada dukhta hai, isliye hum loss book karne se bachte hain, jaise stop khiska kar.",
+        "dv": "नुक़सान उतने ही बड़े फ़ायदे की ख़ुशी से ज़्यादा दुखता है, इसलिए हम नुक़सान बुक करने से बचते हैं, जैसे स्टॉप खिसकाकर।"
+      }
+    },
+    {
+      "term": {
+        "en": "Sunk cost",
+        "hi": "Sunk cost",
+        "dv": "संक कॉस्ट"
+      },
+      "meaning": {
+        "en": "Money already lost. It should not decide today's choice, because the market does not know your buying price.",
+        "hi": "Woh paisa jo ja chuka. Aaj ka faisla woh tay na kare, kyunki market ko aapka buying price pata hi nahi.",
+        "dv": "वह पैसा जो जा चुका। आज का फ़ैसला वह तय न करे, क्योंकि बाज़ार को आपका ख़रीद भाव पता ही नहीं।"
+      }
+    },
+    {
+      "term": {
+        "en": "Confirmation bias",
+        "hi": "Confirmation bias",
+        "dv": "कन्फ़र्मेशन बायस"
+      },
+      "meaning": {
+        "en": "Looking only for views that agree with a trade you have already taken.",
+        "hi": "Trade lene ke baad sirf wahi views dhoondhna jo aapse sehmat hon.",
+        "dv": "ट्रेड लेने के बाद सिर्फ़ वही राय ढूँढना जो आपसे सहमत हो।"
+      }
+    },
+    {
+      "term": {
+        "en": "Recency bias",
+        "hi": "Recency bias",
+        "dv": "रीसेंसी बायस"
+      },
+      "meaning": {
+        "en": "Giving the last few trades too much weight, such as dropping a rule after three losses.",
+        "hi": "Pichhle kuch trades ko zaroorat se zyada weight dena, jaise teen loss ke baad rule chhod dena.",
+        "dv": "पिछले कुछ ट्रेड को ज़रूरत से ज़्यादा वज़न देना, जैसे तीन लॉस के बाद नियम छोड़ देना।"
+      }
+    }
+  ],
+  "mindmap": {
+    "kind": "mindmap",
+    "center": {
+      "en": "Mind and routine",
+      "hi": "Mann aur routine",
+      "dv": "मन और रूटीन"
+    },
+    "branches": [
+      {
+        "label": {
+          "en": "The loud three",
+          "hi": "Teen khule dushman",
+          "dv": "तीन खुले दुश्मन"
+        },
+        "tone": "down",
+        "points": [
+          {
+            "en": "Revenge: win-it-back trades",
+            "hi": "Revenge: wapas nikaalne wale trade",
+            "dv": "रिवेंज: वापस निकालने वाले ट्रेड"
+          },
+          {
+            "en": "FOMO: chasing a move that left",
+            "hi": "FOMO: nikal chuke move ka peecha",
+            "dv": "FOMO: निकल चुके मूव का पीछा"
+          },
+          {
+            "en": "Overtrading: trades from boredom",
+            "hi": "Overtrading: boriyat ke trade",
+            "dv": "ओवरट्रेडिंग: बोरियत के ट्रेड"
+          },
+          {
+            "en": "Journal tags name the enemy",
+            "hi": "Journal tags dushman batate hain",
+            "dv": "जर्नल टैग दुश्मन बताते हैं"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "The quiet four",
+          "hi": "Chaar chupe dushman",
+          "dv": "चार छिपे दुश्मन"
+        },
+        "tone": "gold",
+        "points": [
+          {
+            "en": "Loss aversion: the moved stop",
+            "hi": "Loss aversion: khiska hua stop",
+            "dv": "लॉस अवर्ज़न: खिसका हुआ स्टॉप"
+          },
+          {
+            "en": "Sunk cost: 'till it comes back'",
+            "hi": "Sunk cost: 'wapas aane tak'",
+            "dv": "संक कॉस्ट: 'वापस आने तक'"
+          },
+          {
+            "en": "Confirmation: only views that agree",
+            "hi": "Confirmation: sirf sehmat views",
+            "dv": "कन्फ़र्मेशन: सिर्फ़ सहमत राय"
+          },
+          {
+            "en": "Recency: judging by three trades",
+            "hi": "Recency: teen trade se faisla",
+            "dv": "रीसेंसी: तीन ट्रेड से फ़ैसला"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Kill-switch",
+          "hi": "Kill-switch",
+          "dv": "किल-स्विच"
+        },
+        "tone": "brand",
+        "points": [
+          {
+            "en": "-2R: done for the day",
+            "hi": "-2R: aaj ke liye bas",
+            "dv": "-2R: आज के लिए बस"
+          },
+          {
+            "en": "-5R: pause and review",
+            "hi": "-5R: pause aur review",
+            "dv": "-5R: पॉज़ और रिव्यू"
+          },
+          {
+            "en": "No trades when angry, ill or tired",
+            "hi": "Gussa, bimaari, thakaan: trade nahi",
+            "dv": "ग़ुस्सा, बीमारी, थकान: ट्रेड नहीं"
+          },
+          {
+            "en": "Design, not willpower",
+            "hi": "Willpower nahi, design",
+            "dv": "विलपावर नहीं, डिज़ाइन"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Routine Card",
+          "hi": "Routine Card",
+          "dv": "रूटीन कार्ड"
+        },
+        "tone": "up",
+        "points": [
+          {
+            "en": "Before the bell: 10 minutes",
+            "hi": "Market khulne se pehle: 10 minute",
+            "dv": "खुलने से पहले: 10 मिनट"
+          },
+          {
+            "en": "Market hours: alerts only",
+            "hi": "Market hours: sirf alerts",
+            "dv": "बाज़ार के समय: सिर्फ़ अलर्ट"
+          },
+          {
+            "en": "After the close: journal, plan, AI review",
+            "hi": "Close ke baad: journal, plan, AI review",
+            "dv": "बंद होने के बाद: जर्नल, प्लान, AI रिव्यू"
+          },
+          {
+            "en": "Weekend: five questions",
+            "hi": "Weekend: paanch sawaal",
+            "dv": "वीकेंड: पाँच सवाल"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Protection",
+          "hi": "Protection",
+          "dv": "सुरक्षा"
+        },
+        "tone": "muted",
+        "points": [
+          {
+            "en": "SEBI check before paying",
+            "hi": "Paise se pehle SEBI check",
+            "dv": "पैसे से पहले SEBI जाँच"
+          },
+          {
+            "en": "OTP and TPIN stay with you",
+            "hi": "OTP aur TPIN sirf aapke paas",
+            "dv": "OTP और TPIN सिर्फ़ आपके पास"
+          },
+          {
+            "en": "Warning sign: stop, tell, get help",
+            "hi": "Warning sign: rukiye, bataiye, madad lijiye",
+            "dv": "चेतावनी का संकेत: रुकिए, बताइए, मदद लीजिए"
+          }
+        ]
+      }
+    ]
+  },
+  "kaam": {
+    "en": "Build your Daily Routine Card: find your costliest emotion, set the kill-switch in rupees, answer all seven biases and add your protection checklist.",
+    "hi": "Apna Daily Routine Card banaiye: sabse mehenga emotion dhoondhiye, kill-switch rupees mein set kijiye, saaton biases ka jawab likhiye aur protection checklist jodiye.",
+    "dv": "अपना डेली रूटीन कार्ड बनाइए: सबसे महँगा इमोशन ढूँढिए, किल-स्विच रुपये में तय कीजिए, सातों बायस का जवाब लिखिए और सुरक्षा चेकलिस्ट जोड़िए।"
+  },
+  "kaam_steps": [
+    {
+      "en": "Open your Day 12 journal sheet in Google Sheets. For each emotion tag since Day 12, add up the R and count the trades, then divide to get R per trade. Highlight the tag that cost the most R per trade.",
+      "hi": "Apni Day 12 wali journal sheet (Google Sheets) kholiye. Day 12 se har emotion tag ka R jodiye aur trades giniye, phir divide karke har trade ka R nikaaliye. Jis tag ne har trade par sabse zyada R khaya, use highlight kar dijiye.",
+      "dv": "अपनी दिन 12 वाली जर्नल शीट (Google Sheets) खोलिए। दिन 12 से हर इमोशन टैग का R जोड़िए और ट्रेड गिनिए, फिर भाग देकर हर ट्रेड का R निकालिए। जिस टैग ने हर ट्रेड पर सबसे ज़्यादा R खाया, उसे हाइलाइट कर दीजिए।"
+    },
+    {
+      "en": "On one page or a Google Sheet, write the four blocks of your Daily Routine Card with your own times: before the bell, market hours, after the close and the weekend.",
+      "hi": "Ek page ya Google Sheet par apne Daily Routine Card ke chaar block apne time ke saath likhiye: market khulne se pehle, market hours, close ke baad aur weekend.",
+      "dv": "एक पेज या Google Sheet पर अपने डेली रूटीन कार्ड के चार हिस्से अपने समय के साथ लिखिए: बाज़ार खुलने से पहले, बाज़ार का समय, बंद होने के बाद और वीकेंड।"
+    },
+    {
+      "en": "At the top, write your kill-switch in rupees and R: on Rs 10 lakh, daily stop -Rs 20,000 (-2R) and weekly pause -Rs 50,000 (-5R), plus the body rule: no new trades when angry, unwell or short of sleep.",
+      "hi": "Card ke upar apna kill-switch rupees aur R dono mein likhiye: Rs 10 lakh par daily stop -Rs 20,000 (-2R) aur weekly pause -Rs 50,000 (-5R), saath mein body rule: gussa, bimaari ya kam neend ho toh koi naya trade nahi.",
+      "dv": "कार्ड के ऊपर अपना किल-स्विच रुपये और R दोनों में लिखिए: Rs 10 लाख पर डेली स्टॉप -Rs 20,000 (-2R) और वीकली पॉज़ -Rs 50,000 (-5R), साथ में सेहत का नियम: ग़ुस्सा, बीमारी या कम नींद हो तो कोई नया ट्रेड नहीं।"
+    },
+    {
+      "en": "Under it, write a one-line answer to each of the seven, for example 'After any stop-out, chart closed for 10 minutes' (revenge), 'No setup, no trade' (FOMO, overtrading), 'My stop stays where my plan card put it' (loss aversion) and 'I judge a rule only after 30 trades' (recency).",
+      "hi": "Uske neeche saaton ka ek-ek line mein jawab likhiye, jaise 'Stop-out ke baad 10 minute chart band' (revenge), 'Setup nahi toh trade nahi' (FOMO, overtrading), 'Mera stop wahin rahega jahan plan card ne rakha' (loss aversion) aur 'Rule ka faisla sirf 30 trades ke baad' (recency).",
+      "dv": "उसके नीचे सातों का एक-एक लाइन में जवाब लिखिए, जैसे 'स्टॉप-आउट के बाद 10 मिनट चार्ट बंद' (रिवेंज), 'सेटअप नहीं तो ट्रेड नहीं' (FOMO, ओवरट्रेडिंग), 'मेरा स्टॉप वहीं रहेगा जहाँ प्लान कार्ड ने रखा' (लॉस अवर्ज़न) और 'नियम का फ़ैसला सिर्फ़ 30 ट्रेड के बाद' (रीसेंसी)।"
+    },
+    {
+      "en": "At the bottom, write your five money checks and the warning signs, with Tele-MANAS 14416 beside them.",
+      "hi": "Sabse neeche paise ke paanch checks aur warning signs likhiye, saath mein Tele-MANAS 14416.",
+      "dv": "सबसे नीचे पैसे की पाँच जाँच और चेतावनी के संकेत लिखिए, साथ में Tele-MANAS 14416।"
+    },
+    {
+      "en": "Run the AI Lab prompt 'End-of-day process review' on this week's journal rows: now if the market has closed, otherwise this evening after 3:30 pm. Paste only the ten journal columns, never names, account numbers or personal details.",
+      "hi": "AI Lab ka 'End-of-day process review' prompt is hafte ki journal rows par chalaiye: market band ho chuka ho toh abhi, warna aaj shaam 3:30 ke baad. Sirf journal ke das columns paste kijiye; naam, account number ya koi personal detail kabhi nahi.",
+      "dv": "AI Lab का 'दिन के आख़िर का प्रोसेस रिव्यू' प्रॉम्प्ट इस हफ़्ते की जर्नल लाइनों पर चलाइए: बाज़ार बंद हो चुका हो तो अभी, वरना आज शाम 3:30 के बाद। सिर्फ़ जर्नल के दस कॉलम पेस्ट कीजिए; नाम, अकाउंट नंबर या कोई निजी जानकारी कभी नहीं।"
+    }
+  ],
+  "kaam_min": 40,
+  "outcome": {
+    "en": "By the end you can name seven biases that break trading rules and write an answer to each, find your costliest emotion in your journal, set a kill-switch that is hard to break, run a four-block Daily Routine Card, and spot the warning signs that trading is turning into gambling.",
+    "hi": "Aaj ke baad aap trading rules todne wale saat biases pehchaan payenge aur har ek ka jawab likh payenge, journal mein apna sabse mehenga emotion dhoondh payenge, aisa kill-switch set kar payenge jo aasaani se na toote, chaar block wala Daily Routine Card chala payenge, aur pehchaan payenge ki kab trading jua banne lagi hai.",
+    "dv": "आज के बाद आप ट्रेडिंग के नियम तोड़ने वाले सात बायस पहचान पाएँगे और हर एक का जवाब लिख पाएँगे, जर्नल में अपना सबसे महँगा इमोशन ढूँढ पाएँगे, ऐसा किल-स्विच तय कर पाएँगे जो आसानी से न टूटे, चार हिस्सों वाला डेली रूटीन कार्ड चला पाएँगे, और पहचान पाएँगे कि कब ट्रेडिंग जुआ बनने लगी है।"
+  },
+  "tools": [
+    {
+      "en": "Your Day 12 journal sheet (Google Sheets)",
+      "hi": "Aapki Day 12 wali journal sheet (Google Sheets)",
+      "dv": "आपकी दिन 12 वाली जर्नल शीट (Google Sheets)"
+    },
+    {
+      "en": "Paper or Google Sheets for the card",
+      "hi": "Card ke liye paper ya Google Sheets",
+      "dv": "कार्ड के लिए काग़ज़ या Google Sheets"
+    },
+    {
+      "en": "Any AI chat",
+      "hi": "Koi bhi AI chat",
+      "dv": "कोई भी AI चैट"
+    },
+    {
+      "en": "SEBI website (sebi.gov.in) and Tele-MANAS (14416)",
+      "hi": "SEBI website (sebi.gov.in) aur Tele-MANAS (14416)",
+      "dv": "SEBI वेबसाइट (sebi.gov.in) और Tele-MANAS (14416)"
+    }
+  ],
+  "fun": {
+    "en": "'Which bias is this?' Write eight one-line trader confessions on chits, such as 'I moved my stop just this once' or 'Three losses, so this strategy is useless'. With classmates or family, take turns reading one aloud; the others name the bias and the card line that answers it. Alone? Sort the chits into the seven biases and write the answer on the back of each.",
+    "hi": "'Yeh kaunsa bias hai?' Aath parchiyon par trader ke ek-line wale confession likhiye, jaise 'Bas is baar stop khiska diya' ya 'Teen loss ho gaye, yeh strategy bekaar hai'. Classmates ya family ke saath baari-baari ek parchi padhiye; baaki log bias ka naam aur card ki woh line batayein jo iska jawab hai. Akele hain? Parchiyon ko saat biases mein baantiye aur har parchi ke peeche jawab likhiye.",
+    "dv": "'यह कौन-सा बायस है?' आठ पर्चियों पर ट्रेडर के एक-लाइन वाले कबूलनामे लिखिए, जैसे 'बस इस बार स्टॉप खिसका दिया' या 'तीन लॉस हो गए, यह स्ट्रैटेजी बेकार है'। साथियों या परिवार के साथ बारी-बारी एक पर्ची पढ़िए; बाक़ी लोग बायस का नाम और कार्ड की वह लाइन बताएँ जो इसका जवाब है। अकेले हैं? पर्चियों को सात बायस में बाँटिए और हर पर्ची के पीछे जवाब लिखिए।"
+  },
+  "compliance": "Educational content only, not investment advice and not counselling. Company names, prices and paper results in this lesson are made up for illustration; paper results are hypothetical, and past performance is not indicative of future results. For mental-health support, call Tele-MANAS on 14416. Stage 1 uses virtual money only. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
+  "prompts": [
+    {
+      "title": {
+        "en": "End-of-day process review",
+        "hi": "End-of-day process review",
+        "dv": "दिन के आख़िर का प्रोसेस रिव्यू"
+      },
+      "body": "You are my end-of-day process reviewer, not a market analyst. I paper-trade with virtual money. I will paste this week's journal rows with these ten columns: Date, Stock, Setup, Entry, Stop, Qty, Exit, R result, Rule broken?, Emotion (one of calm, FOMO, fear, bored, angry, overconfident). My kill-switch: daily stop at -2R, weekly pause at -5R. Reply in exactly five short lines: (1) rules followed vs broken, as a count; (2) the emotion tag most linked to a broken rule; (3) whether the daily stop or the weekly pause should have fired, and after which row; (4) one specific behaviour to change tomorrow; (5) one thing I did well. Label each line Fact (read directly from my rows) or Guess (your inference). If a field is missing, ask me instead of assuming. Do not comment on rupee profit or loss, do not suggest any stock, trade, entry, target or expected return for tomorrow, and do not give buy or sell advice. I will not paste names, account numbers or other personal details, so do not ask for them."
+    },
+    {
+      "title": {
+        "en": "Which bias is this?",
+        "hi": "Yeh kaunsa bias hai?",
+        "dv": "यह कौन-सा बायस है?"
+      },
+      "body": "Act as a calm trading-psychology coach for an Indian beginner who paper-trades with virtual money. Give me 8 short, made-up trader confessions, one at a time, for example 'I moved my stop lower just this once'. After each one, wait for my answer on which bias it shows: revenge trading, FOMO, overtrading, loss aversion, sunk cost, confirmation bias or recency bias. Then tell me whether I was right, explain in two simple sentences, and suggest one written rule that would prevent it. At the end, list the biases I missed most often. Use only made-up company names. Do not ask for personal or financial details, and do not give buy or sell advice, targets or return expectations."
+    },
+    {
+      "title": {
+        "en": "Stress-test my Routine Card",
+        "hi": "Mere Routine Card ka stress-test",
+        "dv": "मेरे रूटीन कार्ड का स्ट्रेस-टेस्ट"
+      },
+      "body": "Here is my Daily Routine Card for paper trading with virtual money: <paste your card>. Act as a strict but kind reviewer. For each block (before the bell, market hours, after the close, weekend), point out any step that is vague, depends on willpower instead of design, or would be easy to skip on a bad day, and suggest a more concrete version. Check that my kill-switch is written in both rupees and R, that I have a rule against trading when angry, unwell or short of sleep, and that my protection checklist and warning signs are included. Label each point Fact (it is in my card, or clearly missing from it) or Guess (your assumption about my habits). If my card contains a belief that sounds like a myth, such as 'I will stop when I feel it is enough', label it Kachra and explain why. Do not suggest any stock, trade idea, target or expected return, and do not give buy or sell advice."
+    }
+  ],
+  "journal_prompt": {
+    "en": "Recall your worst trading moment so far, on paper or real. What did your ego say just before it, in its exact words? Which line on your new card would have stopped you? And did you notice any warning sign in yourself this week?",
+    "hi": "Ab tak ka apna sabse bura trading pal yaad kijiye, paper par ya asli. Usse theek pehle aapke ego ne kya kaha tha, bilkul unhi shabdon mein? Aapke naye card ki kaunsi line aapko rok leti? Aur kya is hafte aapne khud mein koi warning sign dekha?",
+    "dv": "अब तक का अपना सबसे बुरा ट्रेडिंग पल याद कीजिए, पेपर पर या असली। उससे ठीक पहले आपके ईगो ने क्या कहा था, बिल्कुल उन्हीं शब्दों में? आपके नए कार्ड की कौन-सी लाइन आपको रोक लेती? और क्या इस हफ़्ते आपने ख़ुद में कोई चेतावनी का संकेत देखा?"
+  },
+  "motivation": {
+    "en": "You wrote this card on a calm day. On an angry day, it will remember your rules for you.",
+    "hi": "Yeh card aapne ek shaant din par likha. Gusse wale din yahi card aapke rules yaad rakhega.",
+    "dv": "यह कार्ड आपने एक शांत दिन पर लिखा। ग़ुस्से वाले दिन यही कार्ड आपके नियम याद रखेगा।"
+  },
+  "quiz": [
+    {
+      "stem": {
+        "en": "A classmate's journal since Day 12: 10 calm trades made +3.0R, 6 FOMO trades lost 2.4R, and 2 'angry' trades, both revenge trades, lost 3.0R. Which statement is correct?",
+        "hi": "Ek classmate ka Day 12 se journal: 10 calm trades ne +3.0R kamaya, 6 FOMO trades ne 2.4R ganwaya, aur 2 'gussa' wale trades ne, jo dono revenge trade the, 3.0R ganwaya. Kaunsi baat sahi hai?",
+        "dv": "एक साथी का दिन 12 से जर्नल: 10 शांत ट्रेडों ने +3.0R कमाया, 6 FOMO ट्रेडों ने 2.4R गँवाया, और 2 'ग़ुस्सा' वाले ट्रेडों ने, जो दोनों रिवेंज ट्रेड थे, 3.0R गँवाया। कौन-सी बात सही है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Revenge costs the most per trade: -1.5R each",
+            "hi": "Har trade ke hisaab se revenge sabse mehenga: -1.5R",
+            "dv": "हर ट्रेड के हिसाब से रिवेंज सबसे महँगा: -1.5R"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "FOMO costs the most per trade: -0.4R each",
+            "hi": "Har trade ke hisaab se FOMO sabse mehenga: -0.4R",
+            "dv": "हर ट्रेड के हिसाब से FOMO सबसे महँगा: -0.4R"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The total is +0.6R, so the tags do not matter",
+            "hi": "Total +0.6R hai, isliye tags se farq nahi padta",
+            "dv": "टोटल +0.6R है, इसलिए टैग से फ़र्क़ नहीं पड़ता"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Dropping the FOMO trades alone would give +0.6R",
+            "hi": "Sirf FOMO trades chhodne se woh +0.6R par hota",
+            "dv": "सिर्फ़ FOMO ट्रेड छोड़ने से वह +0.6R पर होता"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Per trade: revenge -3.0R ÷ 2 = -1.5R, FOMO -2.4R ÷ 6 = -0.4R, calm +3.0R ÷ 10 = +0.3R. The total is 3.0 - 2.4 - 3.0 = -2.4R, not +0.6R, and dropping FOMO alone gives 3.0 - 3.0 = 0R. In this journal FOMO is the most frequent enemy and revenge the most expensive, so both need a line on the card.",
+        "hi": "Har trade par: revenge -3.0R ÷ 2 = -1.5R, FOMO -2.4R ÷ 6 = -0.4R, calm +3.0R ÷ 10 = +0.3R. Total 3.0 - 2.4 - 3.0 = -2.4R hai, +0.6R nahi, aur sirf FOMO chhodne se 3.0 - 3.0 = 0R aata hai. Is journal mein FOMO sabse zyada baar aata hai aur revenge sabse mehenga hai, isliye dono ke liye card par ek line chahiye.",
+        "dv": "हर ट्रेड पर: रिवेंज -3.0R ÷ 2 = -1.5R, FOMO -2.4R ÷ 6 = -0.4R, शांत +3.0R ÷ 10 = +0.3R। टोटल 3.0 - 2.4 - 3.0 = -2.4R है, +0.6R नहीं, और सिर्फ़ FOMO छोड़ने से 3.0 - 3.0 = 0R आता है। इस जर्नल में FOMO सबसे ज़्यादा बार आता है और रिवेंज सबसे महँगा है, इसलिए दोनों के लिए कार्ड पर एक लाइन चाहिए।"
+      }
+    },
+    {
+      "stem": {
+        "en": "A classmate buys 1,000 shares at Rs 250 with a stop at Rs 240, so 1R = Rs 10,000. Near Rs 241 he moves the stop down to Rs 230, and the trade later exits there. What did moving the stop cost him?",
+        "hi": "Ek classmate Rs 250 par 1,000 shares khareedta hai, stop Rs 240 par, yaani 1R = Rs 10,000. Rs 241 ke paas woh stop neeche khiska kar Rs 230 kar deta hai, aur baad mein trade wahin exit hota hai. Stop khiskane ki keemat kya padi?",
+        "dv": "एक साथी Rs 250 पर 1,000 शेयर ख़रीदता है, स्टॉप Rs 240 पर, यानी 1R = Rs 10,000। Rs 241 के पास वह स्टॉप नीचे खिसकाकर Rs 230 कर देता है, और बाद में ट्रेड वहीं एग्ज़िट होता है। स्टॉप खिसकाने की क़ीमत क्या पड़ी?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "An extra Rs 10,000: the loss became 2R",
+            "hi": "Rs 10,000 extra: loss 2R ban gaya",
+            "dv": "Rs 10,000 ज़्यादा: नुक़सान 2R बन गया"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "An extra Rs 20,000: the loss became 3R",
+            "hi": "Rs 20,000 extra: loss 3R ban gaya",
+            "dv": "Rs 20,000 ज़्यादा: नुक़सान 3R बन गया"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "An extra Rs 5,000: the loss became 1.5R",
+            "hi": "Rs 5,000 extra: loss 1.5R ban gaya",
+            "dv": "Rs 5,000 ज़्यादा: नुक़सान 1.5R बन गया"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Nothing extra: a stop-out is 1R either way",
+            "hi": "Kuch extra nahi: stop-out har haal mein 1R",
+            "dv": "कुछ ज़्यादा नहीं: स्टॉप-आउट हर हाल में 1R"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Planned risk was 1,000 x (250 - 240) = Rs 10,000, or 1R. Exiting at Rs 230 lost 1,000 x 20 = Rs 20,000, or 2R, so moving the stop cost an extra Rs 10,000. That is loss aversion: to avoid booking a small loss, he accepted a bigger one. After entry, the plan card's stop does not move (Day 11).",
+        "hi": "Planned risk tha 1,000 x (250 - 240) = Rs 10,000, yaani 1R. Rs 230 par exit se loss hua 1,000 x 20 = Rs 20,000, yaani 2R, toh stop khiskane ne Rs 10,000 extra le liye. Yahi loss aversion hai: chhota loss book karne se bachne ke chakkar mein bada loss le liya. Entry ke baad plan card ka stop nahi hilta (Day 11).",
+        "dv": "तय रिस्क था 1,000 x (250 - 240) = Rs 10,000, यानी 1R। Rs 230 पर एग्ज़िट से नुक़सान हुआ 1,000 x 20 = Rs 20,000, यानी 2R, तो स्टॉप खिसकाने ने Rs 10,000 ज़्यादा ले लिए। यही लॉस अवर्ज़न है: छोटा नुक़सान बुक करने से बचने के चक्कर में बड़ा नुक़सान ले लिया। एंट्री के बाद प्लान कार्ड का स्टॉप नहीं हिलता (दिन 11)।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Assume each trade of a rule has about a 40% chance of winning. The rule has just lost three trades in a row, and Aman wants to drop it. What does the maths say?",
+        "hi": "Maan lijiye kisi rule ke har trade ke jeetne ka chance lagbhag 40% hai. Rule abhi lagataar teen trade haara hai, aur Aman use chhodna chahta hai. Maths kya kehti hai?",
+        "dv": "मान लीजिए किसी नियम के हर ट्रेड के जीतने का चांस लगभग 40% है। नियम अभी लगातार तीन ट्रेड हारा है, और अमन उसे छोड़ना चाहता है। हिसाब क्या कहता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Normal: about a 22% chance for three in a row",
+            "hi": "Normal hai: teen lagataar ke liye lagbhag 22% chance",
+            "dv": "आम बात है: लगातार तीन के लिए लगभग 22% चांस"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Very rare: below a 5% chance for three in a row",
+            "hi": "Bahut rare hai: teen lagataar ke liye 5% se kam chance",
+            "dv": "बहुत कम होता है: लगातार तीन के लिए 5% से कम चांस"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Broken: a 40% rule should never lose three in a row",
+            "hi": "Rule toot gaya: 40% wala rule kabhi teen lagataar nahi haarta",
+            "dv": "नियम टूट गया: 40% वाला नियम कभी लगातार तीन नहीं हारता"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "A win is now due, because the streak has to end",
+            "hi": "Ab jeet banti hai, kyunki streak ko khatam hona hi hai",
+            "dv": "अब जीत बनती है, क्योंकि स्ट्रीक को ख़त्म होना ही है"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Each trade loses about 60% of the time, so three given trades all lose 0.6 x 0.6 x 0.6 = 0.216, about 22%. Over 30 trades a streak like this almost always shows up somewhere. And the next trade is not due to win: its chance is still about 40%. Recency makes three trades feel like the whole truth, so judge a rule on 30 trades or more.",
+        "hi": "Har trade lagbhag 60% baar haarta hai, toh koi bhi teen trade lagataar haarne ka chance 0.6 x 0.6 x 0.6 = 0.216, yaani lagbhag 22% hai. 30 trades mein aisi streak kahin na kahin aa hi jaati hai. Aur ab jeet 'aani hi chahiye', aisa bhi nahi: agle trade ka chance bhi lagbhag 40% hi hai. Recency teen trade ko poora sach bana deti hai, isliye rule ko 30 ya usse zyada trades par judge kijiye.",
+        "dv": "हर ट्रेड लगभग 60% बार हारता है, तो कोई भी तीन ट्रेड लगातार हारने का चांस 0.6 x 0.6 x 0.6 = 0.216, यानी लगभग 22% है। 30 ट्रेड में ऐसी स्ट्रीक कहीं न कहीं आ ही जाती है। और अब जीत 'आनी ही चाहिए', ऐसा भी नहीं: अगले ट्रेड का चांस भी लगभग 40% ही है। रीसेंसी तीन ट्रेड को पूरा सच बना देती है, इसलिए नियम को 30 या उससे ज़्यादा ट्रेड पर परखिए।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Aman keeps breaking his -2R daily stop. Which change is the best example of 'design, not willpower'?",
+        "hi": "Aman baar-baar apna -2R daily stop tod deta hai. 'Willpower nahi, design' ki sabse achhi misaal kaunsa badlaav hai?",
+        "dv": "अमन बार-बार अपना -2R डेली स्टॉप तोड़ देता है। 'विलपावर नहीं, डिज़ाइन' की सबसे अच्छी मिसाल कौन-सा बदलाव है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Writing the limit before 9:15 and texting a buddy",
+            "hi": "9:15 se pehle limit likhna aur buddy ko message karna",
+            "dv": "9:15 से पहले सीमा लिखना और साथी को मैसेज करना"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Promising himself firmly to be more careful tomorrow",
+            "hi": "Khud se pakka waada ki kal se woh zyada dhyaan rakhega",
+            "dv": "ख़ुद से पक्का वादा कि कल से ज़्यादा ध्यान रखेगा"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Watching the screen longer so he can react faster",
+            "hi": "Screen zyada der dekhna taaki jaldi react kar sake",
+            "dv": "स्क्रीन ज़्यादा देर देखना ताकि जल्दी रिएक्ट कर सके"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Raising the daily stop to -3R so it trips less often",
+            "hi": "Daily stop badha kar -3R kar dena, taaki kam trip ho",
+            "dv": "डेली स्टॉप बढ़ाकर -3R कर देना, ताकि कम ट्रिप हो"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Design means deciding while calm and making the rule hard to break: a limit written in rupees before the market opens, and a buddy who hears 'stopped for today'. A promise leans on willpower, which is weakest right after losses. Watching the screen longer feeds overtrading, and loosening the limit only moves the problem further down.",
+        "hi": "Design ka matlab hai shaant rehte hue faisla karna aur rule ko todna mushkil bana dena: market khulne se pehle rupees mein likhi limit, aur ek buddy jise 'aaj ke liye band' bataya jaata hai. Waada willpower ke bharose hota hai, jo loss ke theek baad sabse kamzor hoti hai. Screen zyada der dekhna overtrading ko badhata hai, aur limit dheeli karna problem ko bas aage khiska deta hai.",
+        "dv": "डिज़ाइन का मतलब है शांत रहते हुए फ़ैसला करना और नियम को तोड़ना मुश्किल बना देना: बाज़ार खुलने से पहले रुपये में लिखी सीमा, और एक साथी जिसे 'आज के लिए बंद' बताया जाता है। वादा विलपावर के भरोसे होता है, जो नुक़सान के ठीक बाद सबसे कमज़ोर होती है। स्क्रीन ज़्यादा देर देखना ओवरट्रेडिंग को बढ़ाता है, और सीमा ढीली करना समस्या को बस आगे खिसका देता है।"
+      }
+    },
+    {
+      "stem": {
+        "en": "A friend tells Priya about his month. Which one is a warning sign that trading is turning into gambling, and calls for stopping and telling someone?",
+        "hi": "Ek dost Priya ko apne mahine ke baare mein batata hai. Inmein se kaunsi baat warning sign hai ki trading jua ban rahi hai, aur rukne aur kisi ko batane ka waqt hai?",
+        "dv": "एक दोस्त प्रिया को अपने महीने के बारे में बताता है। इनमें से कौन-सी बात चेतावनी का संकेत है कि ट्रेडिंग जुआ बन रही है, और रुकने और किसी को बताने का वक़्त है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Borrowing on a credit card to win back losses",
+            "hi": "Loss ki bharpai ke liye credit card se udhaar",
+            "dv": "नुक़सान की भरपाई के लिए क्रेडिट कार्ड से उधार"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Losing three trades in a row on his written rule",
+            "hi": "Apne likhe rule par lagataar teen trade haarna",
+            "dv": "अपने लिखे नियम पर लगातार तीन ट्रेड हार जाना"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Feeling annoyed for an evening after a stop-out",
+            "hi": "Stop-out ke baad ek shaam tak chidchida rehna",
+            "dv": "स्टॉप-आउट के बाद एक शाम चिड़चिड़ा रहना"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Taking no trades for a week as no setup appeared",
+            "hi": "Koi setup na aane par ek hafte tak koi trade nahi",
+            "dv": "कोई सेटअप न आने पर एक हफ़्ते तक कोई ट्रेड नहीं"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Borrowing to chase losses is a classic warning sign: borrowed money is never risk capital (Day 10), and the goal has become getting even instead of following a process. Three losses on a rule are a normal streak, annoyance after a loss is human, and a week with no setup is the rules working. The right response is to stop trading, tell someone you trust and, if it feels heavy, talk to a counsellor or call Tele-MANAS on 14416.",
+        "hi": "Loss ka peecha karne ke liye udhaar lena ek classic warning sign hai: udhaar ka paisa kabhi risk capital nahi hota (Day 10), aur maqsad process follow karne ki jagah 'barabar hona' ban gaya hai. Rule par teen loss normal streak hai, loss ke baad chidchidaapan insaani hai, aur bina setup ka hafta matlab rules kaam kar rahe hain. Sahi jawab hai: trading rokiye, kisi bharosemand insaan ko bataiye, aur mann bhaari lage toh counsellor se baat kijiye ya Tele-MANAS ko 14416 par call kijiye.",
+        "dv": "नुक़सान का पीछा करने के लिए उधार लेना एक जाना-पहचाना चेतावनी का संकेत है: उधार का पैसा कभी रिस्क कैपिटल नहीं होता (दिन 10), और मक़सद प्रोसेस फ़ॉलो करने की जगह 'बराबर होना' बन गया है। नियम पर तीन नुक़सान आम स्ट्रीक है, नुक़सान के बाद चिड़चिड़ापन इंसानी है, और बिना सेटअप का हफ़्ता मतलब नियम काम कर रहे हैं। सही जवाब है: ट्रेडिंग रोकिए, किसी भरोसेमंद इंसान को बताइए, और मन भारी लगे तो काउंसलर से बात कीजिए या Tele-MANAS को 14416 पर कॉल कीजिए।"
+      }
+    }
+  ]
+}

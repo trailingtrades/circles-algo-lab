@@ -1,0 +1,1297 @@
+{
+ "day": 2,
+ "title": {
+  "en": "Orders, liquidity and the real cost of a trade",
+  "hi": "Orders, liquidity aur trade ka asli kharcha",
+  "dv": "ऑर्डर, लिक्विडिटी और ट्रेड का असली ख़र्चा"
+ },
+ "tags": {
+  "concept": {
+   "en": "Order types, the order book and costs: the gap between the screen price and your price",
+   "hi": "Order types, order book aur kharche: screen ke price aur aapke price ka fark",
+   "dv": "ऑर्डर के टाइप, ऑर्डर बुक और ख़र्चे: स्क्रीन के भाव और आपके भाव का फ़र्क़"
+  },
+  "ai_lab": {
+   "en": "Order-type drill: AI sets the scene, you choose the order",
+   "hi": "Order-type drill: AI scene banaye, order aap chunein",
+   "dv": "ऑर्डर-टाइप ड्रिल: AI हालात बताए, ऑर्डर आप चुनें"
+  },
+  "psychology": {
+   "en": "The urge to act now",
+   "hi": "Abhi ke abhi kuch karne ki jaldi",
+   "dv": "अभी के अभी कुछ करने की जल्दी"
+  }
+ },
+ "strategy": null,
+ "duration_min": 75,
+ "story": {
+  "kind": "story",
+  "title": {
+   "en": "Why didn't I get Rs 101?",
+   "hi": "Mujhe Rs 101 kyun nahi mila?",
+   "dv": "मुझे Rs 101 क्यों नहीं मिला?"
+  },
+  "panels": [
+   {
+    "who": "narrator",
+    "say": {
+     "en": "Monday evening. Aman calls the mentor, upset. Priya joins the call.",
+     "hi": "Monday ki shaam. Aman pareshaan hokar mentor ko call karta hai. Priya bhi call par aa jaati hai.",
+     "dv": "सोमवार की शाम। अमन परेशान होकर मेंटर को कॉल करता है। प्रिया भी कॉल पर आ जाती है।"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "worried",
+    "say": {
+     "en": "Sir, at 9:20 this morning an alert said Bharat Pumps Ltd had won a big contract. The screen showed Rs 101, so I bought 300 shares at market. My average came to Rs 102.33. That is Rs 400 extra, in two seconds. Did the app cheat me?",
+     "hi": "Sir, aaj subah 9:20 par alert aaya ki Bharat Pumps Ltd ko ek bada contract mila hai. Screen par Rs 101 dikh raha tha, toh maine market order se 300 shares le liye. Average Rs 102.33 aaya. Do second mein Rs 400 zyada chale gaye. Kya app ne mujhe thag liya?",
+     "dv": "सर, आज सुबह 9:20 पर अलर्ट आया कि Bharat Pumps Ltd को एक बड़ा कॉन्ट्रैक्ट मिला है। स्क्रीन पर Rs 101 दिख रहा था, तो मैंने मार्केट ऑर्डर से 300 शेयर ले लिए। एवरेज Rs 102.33 आया। दो सेकंड में Rs 400 ज़्यादा चले गए। क्या ऐप ने मुझे ठग लिया?"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "thinking",
+    "say": {
+     "en": "One question first. Why a market order, and why in that very second?",
+     "hi": "Pehle ek sawaal. Market order hi kyun, aur theek usi second mein kyun?",
+     "dv": "पहले एक सवाल। मार्केट ऑर्डर ही क्यों, और ठीक उसी सेकंड में क्यों?"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "sad",
+    "say": {
+     "en": "I felt that if I waited even a minute, I would miss it. Honestly, I did not think at all.",
+     "hi": "Laga ki ek minute bhi ruka toh mauka nikal jayega. Sach kahun toh maine kuch socha hi nahi.",
+     "dv": "लगा कि एक मिनट भी रुका तो मौक़ा निकल जाएगा। सच कहूँ तो मैंने कुछ सोचा ही नहीं।"
+    }
+   },
+   {
+    "who": "priya",
+    "mood": "thinking",
+    "say": {
+     "en": "Sir, if he had put a limit order at Rs 101, would he have got all 300 shares at Rs 101?",
+     "hi": "Sir, agar woh Rs 101 ka limit order lagata, toh kya use saare 300 shares Rs 101 par mil jaate?",
+     "dv": "सर, अगर वह Rs 101 का लिमिट ऑर्डर लगाता, तो क्या उसे सारे 300 शेयर Rs 101 पर मिल जाते?"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "neutral",
+    "say": {
+     "en": "Not all of them. The screen shows the last trade; it does not show how many shares are waiting at that price. Only 100 shares were on offer at Rs 101; the next sellers wanted Rs 102 and Rs 104. A limit order would have got those 100 and left the rest waiting. Nobody cheated you, Aman. You chose speed, and today we will see what speed costs.",
+     "hi": "Saare nahi. Screen sirf last trade dikhati hai; yeh nahi dikhati ki us price par kitne shares bikne ke liye hain. Rs 101 par sirf 100 shares the; agle sellers Rs 102 aur Rs 104 maang rahe the. Limit order se woh 100 mil jaate, aur baaki order line mein wait karta. Aman, kisi ne aapko nahi thaga. Aapne speed chuni thi, aur aaj hum dekhenge ki speed ki keemat kya hoti hai.",
+     "dv": "सारे नहीं। स्क्रीन सिर्फ़ आख़िरी ट्रेड दिखाती है; यह नहीं दिखाती कि उस भाव पर कितने शेयर बिकने के लिए हैं। Rs 101 पर सिर्फ़ 100 शेयर थे; अगले बेचने वाले Rs 102 और Rs 104 माँग रहे थे। लिमिट ऑर्डर से वो 100 मिल जाते, और बाक़ी ऑर्डर लाइन में इंतज़ार करता। अमन, किसी ने आपको नहीं ठगा। आपने स्पीड चुनी थी, और आज हम देखेंगे कि स्पीड की क़ीमत क्या होती है।"
+    }
+   }
+  ],
+  "moral": {
+   "en": "The screen shows the last trade, not your price. Before you tap Buy, decide what matters more today: speed or price.",
+   "hi": "Screen last trade dikhati hai, aapka price nahi. Buy dabane se pehle tay kijiye ki aaj kya zyada zaroori hai: speed ya price.",
+   "dv": "स्क्रीन आख़िरी ट्रेड दिखाती है, आपका भाव नहीं। Buy दबाने से पहले तय कीजिए कि आज क्या ज़्यादा ज़रूरी है: स्पीड या भाव।"
+  }
+ },
+ "topics": [
+  {
+   "h": {
+    "en": "Bid, ask and spread: every share has two prices",
+    "hi": "Bid, ask aur spread: har share ke do price hote hain",
+    "dv": "बिड, आस्क और स्प्रेड: हर शेयर के दो भाव होते हैं"
+   },
+   "p": {
+    "en": "The price on your screen is the last traded price (LTP): the price of the most recent deal, not a price anyone is offering you now. At every moment there are two live prices. The bid is the highest price a buyer is ready to pay; the ask, also called the offer, is the lowest price a seller will accept. The gap between them is the spread. The queue of orders waiting at each price is the market depth, and NSE shows the best five prices on each side. A stock with a narrow spread and a deep queue is called liquid: you can buy or sell without pushing the price much.",
+    "hi": "Screen par jo price dikhta hai, woh last traded price (LTP) hai: sabse aakhri deal ka price, koi aisa price nahi jo abhi aapko offer ho raha ho. Har pal do live price chal rahe hote hain. Bid woh sabse ooncha price hai jo koi buyer dene ko taiyaar hai; ask, jise offer bhi kehte hain, woh sabse neecha price hai jis par koi seller bechne ko raazi hai. Dono ke beech ke fark ko spread kehte hain. Har price par line mein khade orders ko market depth kehte hain, aur NSE dono taraf ke best paanch price dikhata hai. Jis stock ka spread patla ho aur line lambi ho, use liquid kehte hain: usmein aap price ko zyada hilaye bina khareed-bech sakte hain.",
+    "dv": "स्क्रीन पर जो भाव दिखता है, वह लास्ट ट्रेडेड प्राइस (LTP) है: सबसे आख़िरी सौदे का भाव, कोई ऐसा भाव नहीं जो अभी आपको ऑफ़र हो रहा हो। हर पल दो लाइव भाव चल रहे होते हैं। बिड वह सबसे ऊँचा भाव है जो कोई ख़रीदार देने को तैयार है; आस्क, जिसे ऑफ़र भी कहते हैं, वह सबसे नीचा भाव है जिस पर कोई बेचने वाला राज़ी है। दोनों के बीच के फ़र्क़ को स्प्रेड कहते हैं। हर भाव पर लाइन में खड़े ऑर्डर को मार्केट डेप्थ कहते हैं, और NSE दोनों तरफ़ के सबसे अच्छे पाँच भाव दिखाता है। जिस स्टॉक का स्प्रेड पतला हो और लाइन लंबी हो, उसे लिक्विड कहते हैं: उसमें आप भाव को ज़्यादा हिलाए बिना ख़रीद-बेच सकते हैं।"
+   },
+   "example": {
+    "en": "At the sabzi mandi, the tomato seller asks Rs 40 a kilo and you offer Rs 36. Rs 40 is the ask, Rs 36 is the bid, and the Rs 4 gap is the spread; nothing is sold until one side changes its price. A busy NIFTY 50 company may show a bid of Rs 1,500.00 and an ask of Rs 1,500.10, a spread of just 10 paise. Bharat Pumps Ltd, a small company that trades rarely, shows a bid of Rs 100 and an ask of Rs 101: a Rs 1 spread, about 1% of the price, before your trade has even started.",
+    "hi": "Sabzi mandi mein tamatar wala Rs 40 kilo bolta hai aur aap Rs 36 lagate hain. Rs 40 ask hai, Rs 36 bid, aur Rs 4 ka fark spread; jab tak ek taraf wala apna price nahi badalta, sauda nahi hota. NIFTY 50 ki kisi busy company mein bid Rs 1,500.00 aur ask Rs 1,500.10 dikh sakta hai, yaani sirf 10 paise ka spread. Bharat Pumps Ltd ek chhoti company hai jismein trading kam hoti hai; wahan bid Rs 100 aur ask Rs 101 hai: Rs 1 ka spread, yaani price ka lagbhag 1%, trade shuru hone se pehle hi.",
+    "dv": "सब्ज़ी मंडी में टमाटर वाला Rs 40 किलो बोलता है और आप Rs 36 लगाते हैं। Rs 40 आस्क है, Rs 36 बिड, और Rs 4 का फ़र्क़ स्प्रेड; जब तक एक तरफ़ वाला अपना भाव नहीं बदलता, सौदा नहीं होता। NIFTY 50 की किसी बड़ी, ख़ूब ट्रेड होने वाली कंपनी में बिड Rs 1,500.00 और आस्क Rs 1,500.10 दिख सकता है, यानी सिर्फ़ 10 पैसे का स्प्रेड। Bharat Pumps Ltd एक छोटी कंपनी है, जिसमें ट्रेडिंग कम होती है; वहाँ बिड Rs 100 और आस्क Rs 101 है: Rs 1 का स्प्रेड, यानी भाव का लगभग 1%, ट्रेड शुरू होने से पहले ही।"
+   },
+   "remember": {
+    "en": "The screen shows the last deal. A market buy pays the ask; a market sell gets the bid.",
+    "hi": "Screen last deal dikhati hai. Market buy ask par hota hai, market sell bid par.",
+    "dv": "स्क्रीन आख़िरी सौदा दिखाती है। मार्केट बाय आस्क पर होता है, मार्केट सेल बिड पर।"
+   },
+   "visual": {
+    "kind": "bars",
+    "title": {
+     "en": "Bharat Pumps order book, 9:20",
+     "hi": "Bharat Pumps order book, 9:20 par",
+     "dv": "Bharat Pumps की ऑर्डर बुक, 9:20 पर"
+    },
+    "caption": {
+     "en": "Shares waiting at each price: sellers (red) above, buyers (green) below. Spread = Rs 101 - Rs 100 = Rs 1.",
+     "hi": "Har price par wait kar rahe shares: upar sellers (laal), neeche buyers (hare). Spread = Rs 101 - Rs 100 = Rs 1.",
+     "dv": "हर भाव पर इंतज़ार कर रहे शेयर: ऊपर बेचने वाले (लाल), नीचे ख़रीदार (हरे)। स्प्रेड = Rs 101 - Rs 100 = Rs 1।"
+    },
+    "items": [
+     {
+      "label": {
+       "en": "Ask Rs 104",
+       "hi": "Ask Rs 104",
+       "dv": "आस्क Rs 104"
+      },
+      "value": 200,
+      "tone": "down"
+     },
+     {
+      "label": {
+       "en": "Ask Rs 102",
+       "hi": "Ask Rs 102",
+       "dv": "आस्क Rs 102"
+      },
+      "value": 100,
+      "tone": "down"
+     },
+     {
+      "label": {
+       "en": "Ask Rs 101",
+       "hi": "Ask Rs 101",
+       "dv": "आस्क Rs 101"
+      },
+      "value": 100,
+      "tone": "down"
+     },
+     {
+      "label": {
+       "en": "Bid Rs 100",
+       "hi": "Bid Rs 100",
+       "dv": "बिड Rs 100"
+      },
+      "value": 150,
+      "tone": "up"
+     },
+     {
+      "label": {
+       "en": "Bid Rs 99.50",
+       "hi": "Bid Rs 99.50",
+       "dv": "बिड Rs 99.50"
+      },
+      "value": 300,
+      "tone": "up"
+     },
+     {
+      "label": {
+       "en": "Bid Rs 99",
+       "hi": "Bid Rs 99",
+       "dv": "बिड Rs 99"
+      },
+      "value": 250,
+      "tone": "up"
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Market or limit: speed or price",
+    "hi": "Market ya limit: speed chahiye ya price",
+    "dv": "मार्केट या लिमिट: स्पीड चाहिए या भाव"
+   },
+   "p": {
+    "en": "An order 'fills' when it is matched with an order on the other side and the trade actually happens. A market order says: fill me now, at whatever prices sellers are offering. It is fast, but in a thin order book it can eat through several price levels. A limit order says: fill me only at this price or better, so a limit buy at Rs 101 fills at Rs 101 or lower, never higher. The risk flips: a limit order protects your price but may fill only partly, or not at all; and since an order normally lasts only for that day (a 'day order'), whatever has not filled by the close is cancelled. The gap between the price you expected and the price you actually got is called slippage.",
+    "hi": "Order 'fill' hona yaani saamne wale order se match hokar sauda sach mein ho jaana. Market order ka matlab hai: mera order abhi fill karo, sellers jo bhi price maang rahe hon. Yeh tez hai, lekin patli order book mein yeh kai price levels kha jaata hai. Limit order ka matlab hai: mera order sirf is price ya isse behtar par fill karo; yaani Rs 101 ka limit buy Rs 101 ya usse kam par hi fill hoga, zyada par kabhi nahi. Yahan risk ulat jaata hai: limit order aapka price bachata hai, lekin ho sakta hai order aadha hi fill ho ya bilkul na ho; aur order aam taur par sirf usi din ke liye hota hai (ise 'day order' kehte hain), isliye close tak jo fill nahi hua, woh cancel ho jaata hai. Jo price aapne socha tha aur jo asal mein mila, unke fark ko slippage kehte hain.",
+    "dv": "ऑर्डर 'फ़िल' होना यानी सामने वाले ऑर्डर से मैच होकर सौदा सच में हो जाना। मार्केट ऑर्डर का मतलब है: मेरा ऑर्डर अभी फ़िल कर दो, बेचने वाले जो भी भाव माँग रहे हों। यह तेज़ है, लेकिन पतली ऑर्डर बुक में यह कई प्राइस लेवल खा जाता है। लिमिट ऑर्डर का मतलब है: मेरा ऑर्डर सिर्फ़ इस भाव या इससे बेहतर पर ही फ़िल करो; यानी Rs 101 का लिमिट बाय Rs 101 या उससे कम पर ही फ़िल होगा, ज़्यादा पर कभी नहीं। यहाँ रिस्क उलट जाता है: लिमिट ऑर्डर आपका भाव बचाता है, लेकिन हो सकता है ऑर्डर आधा ही फ़िल हो या बिल्कुल न हो; और ऑर्डर आम तौर पर सिर्फ़ उसी दिन के लिए होता है (इसे 'डे ऑर्डर' कहते हैं), इसलिए बाज़ार बंद होने तक जो फ़िल नहीं हुआ, वह कैंसिल हो जाता है। जो भाव आपने सोचा था और जो असल में मिला, उनके फ़र्क़ को स्लिपेज कहते हैं।"
+   },
+   "example": {
+    "en": "Aman's market buy for 300 shares of Bharat Pumps Ltd found only 100 shares on offer at Rs 101, so it also took 100 at Rs 102 and 100 at Rs 104. He paid Rs 30,700, an average of about Rs 102.33, instead of the Rs 30,300 he expected. A limit buy at Rs 101 would have filled 100 shares and left 200 waiting in the queue. In a liquid NIFTY 50 company, the same order would usually have filled at the best ask, or within 10 to 20 paise of it. Some brokers also cap how far a market order may travel; check what yours does.",
+    "hi": "Aman ne Bharat Pumps Ltd ke 300 shares ka market buy lagaya. Rs 101 par sirf 100 shares the, isliye order ne 100 shares Rs 102 par aur 100 shares Rs 104 par bhi utha liye. Usne Rs 30,300 ki jagah Rs 30,700 diye, yaani average lagbhag Rs 102.33. Rs 101 ka limit buy hota toh 100 shares fill ho jaate aur 200 line mein wait karte. NIFTY 50 ki kisi liquid company mein yahi order aam taur par best ask par, ya usse 10-20 paise ke andar fill ho jaata. Kuch brokers market order par ek limit bhi lagate hain ki woh kitna door tak ja sakta hai; apne broker ka rule check kar lijiye.",
+    "dv": "अमन ने Bharat Pumps Ltd के 300 शेयर का मार्केट बाय लगाया। Rs 101 पर सिर्फ़ 100 शेयर थे, इसलिए ऑर्डर ने 100 शेयर Rs 102 पर और 100 शेयर Rs 104 पर भी उठा लिए। उसने Rs 30,300 की जगह Rs 30,700 दिए, यानी एवरेज लगभग Rs 102.33। Rs 101 का लिमिट बाय होता, तो 100 शेयर मिल जाते और 200 लाइन में इंतज़ार करते। NIFTY 50 की किसी लिक्विड कंपनी में यही ऑर्डर आम तौर पर सबसे अच्छे आस्क पर, या उससे 10-20 पैसे के अंदर फ़िल हो जाता। कुछ ब्रोकर मार्केट ऑर्डर पर एक सीमा भी लगाते हैं कि वह कितनी दूर तक जा सकता है; अपने ब्रोकर का नियम देख लें।"
+   },
+   "remember": {
+    "en": "Market order: you choose speed and accept the price. Limit order: you choose the price and accept the wait, or no fill at all.",
+    "hi": "Market order: speed aapki, price market ka. Limit order: price aapka, par intezaar bhi aapko hi karna padega, aur ho sakta hai fill hi na ho.",
+    "dv": "मार्केट ऑर्डर: स्पीड आपकी, भाव बाज़ार का। लिमिट ऑर्डर: भाव आपका, पर इंतज़ार भी आपको ही करना पड़ेगा, और हो सकता है फ़िल ही न हो।"
+   },
+   "visual": {
+    "kind": "calc",
+    "title": {
+     "en": "What Aman's market order really cost",
+     "hi": "Aman ke market order ka asli hisaab",
+     "dv": "अमन के मार्केट ऑर्डर का असली हिसाब"
+    },
+    "caption": {
+     "en": "He paid Rs 30,700 for 300 shares: about Rs 102.33 each, not Rs 101.",
+     "hi": "300 shares ke liye Rs 30,700 gaye: har share lagbhag Rs 102.33 ka, Rs 101 ka nahi.",
+     "dv": "300 शेयर के लिए Rs 30,700 गए: हर शेयर लगभग Rs 102.33 का, Rs 101 का नहीं।"
+    },
+    "rows": [
+     {
+      "label": {
+       "en": "100 shares at Rs 101",
+       "hi": "100 shares Rs 101 par",
+       "dv": "100 शेयर Rs 101 पर"
+      },
+      "value": "Rs 10,100"
+     },
+     {
+      "label": {
+       "en": "100 shares at Rs 102",
+       "hi": "100 shares Rs 102 par",
+       "dv": "100 शेयर Rs 102 पर"
+      },
+      "value": "Rs 10,200",
+      "op": "+"
+     },
+     {
+      "label": {
+       "en": "100 shares at Rs 104",
+       "hi": "100 shares Rs 104 par",
+       "dv": "100 शेयर Rs 104 पर"
+      },
+      "value": "Rs 10,400",
+      "op": "+"
+     },
+     {
+      "label": {
+       "en": "Total paid",
+       "hi": "Kul diye",
+       "dv": "कुल दिए"
+      },
+      "value": "Rs 30,700",
+      "op": "="
+     },
+     {
+      "label": {
+       "en": "Expected: 300 x Rs 101",
+       "hi": "Socha tha: 300 x Rs 101",
+       "dv": "सोचा था: 300 x Rs 101"
+      },
+      "value": "Rs 30,300",
+      "op": "-"
+     }
+    ],
+    "result": {
+     "label": {
+      "en": "Extra paid (slippage)",
+      "hi": "Zyada diye (slippage)",
+      "dv": "ज़्यादा दिए (स्लिपेज)"
+     },
+     "value": "Rs 400"
+    }
+   }
+  },
+  {
+   "h": {
+    "en": "Stop-loss orders: a trigger, not a promise",
+    "hi": "Stop-loss order: trigger hai, vada nahi",
+    "dv": "स्टॉप-लॉस ऑर्डर: ट्रिगर है, वादा नहीं"
+   },
+   "p": {
+    "en": "A stop-loss is an exit you decide before the trade goes wrong. You place it as a stop-loss order with a trigger price: the order stays asleep until the price reaches or crosses the trigger. It comes in two kinds: an SL order (stop-loss limit) also carries a limit price, so once triggered it sells only at that limit or better; an SL-M order (stop-loss market) has no limit and sells at the next available price. Like other exchange orders, both last only for the day, so for shares you hold overnight you place the stop again each morning, or use a broker GTT (next topic). Neither kind promises your exit price. Four things can push your real exit below your plan: a gap at the open (the stock opens far below yesterday's close, skipping the prices in between), slippage in a fast fall, a price band (Day 1), or an SL order whose limit price is never reached.",
+    "hi": "Stop-loss woh exit hai jo aap trade bigadne se pehle hi tay kar lete hain. Ise aap stop-loss order ki tarah lagate hain, jismein ek trigger price hota hai: jab tak price trigger tak pahunch na jaye ya use paar na kar le, order soya rehta hai. Iske do type hain: SL order (stop-loss limit) mein ek limit price bhi hota hai, isliye trigger ke baad woh sirf us limit ya behtar price par bechta hai; SL-M order (stop-loss market) mein koi limit nahi hoti, woh agle available price par bech deta hai. Exchange ke baaki orders ki tarah dono sirf us din ke liye hote hain, isliye jo shares aap raat bhar rakhte hain unka stop har subah dobara lagaiye, ya broker ka GTT use kijiye (agla topic). Dono mein se koi bhi aapke exit price ka vada nahi karta. Chaar cheezein aapke asli exit ko plan se neeche le ja sakti hain: open par gap (stock kal ke close se kaafi neeche khulta hai, beech ke price chhod kar), tez girawat mein slippage, price band (Day 1), ya aisa SL order jiska limit price kabhi aaye hi nahi.",
+    "dv": "स्टॉप-लॉस वह एग्ज़िट है जो आप ट्रेड बिगड़ने से पहले ही तय कर लेते हैं। इसे आप स्टॉप-लॉस ऑर्डर की तरह लगाते हैं, जिसमें एक ट्रिगर प्राइस होता है: जब तक भाव ट्रिगर तक पहुँच न जाए या उसे पार न कर ले, ऑर्डर सोया रहता है। इसके दो टाइप हैं: SL ऑर्डर (स्टॉप-लॉस लिमिट) में एक लिमिट प्राइस भी होता है, इसलिए ट्रिगर के बाद वह सिर्फ़ उस लिमिट या बेहतर भाव पर बेचता है; SL-M ऑर्डर (स्टॉप-लॉस मार्केट) में कोई लिमिट नहीं होती, वह अगले मिलने वाले भाव पर बेच देता है। एक्सचेंज के बाक़ी ऑर्डर की तरह दोनों सिर्फ़ उसी दिन के लिए होते हैं, इसलिए जो शेयर आप रात भर रखते हैं उनका स्टॉप हर सुबह दोबारा लगाइए, या ब्रोकर का GTT इस्तेमाल कीजिए (अगला टॉपिक)। दोनों में से कोई भी आपके एग्ज़िट प्राइस का वादा नहीं करता। चार चीज़ें आपके असली एग्ज़िट को प्लान से नीचे ले जा सकती हैं: ओपन पर गैप (स्टॉक कल के बंद भाव से काफ़ी नीचे खुलता है, बीच के भाव छोड़कर), तेज़ गिरावट में स्लिपेज, प्राइस बैंड (दिन 1), या ऐसा SL ऑर्डर जिसका लिमिट प्राइस कभी आए ही नहीं।"
+   },
+   "example": {
+    "en": "Priya buys 50 shares of Gupta Cement Ltd at Rs 450 for delivery. Her exit is Rs 430, a planned loss of 50 x Rs 20 = Rs 1,000, so each morning before the open she places an SL-M sell with the trigger at Rs 430. One night bad news comes out, and the stock opens at Rs 410. At the open the price is already below her trigger, so her SL-M fires at once and sells near Rs 410. (Some brokers reject a stop whose trigger is already crossed; then she must sell herself, at Rs 410 or lower.) Either way the loss is about Rs 2,000, twice her plan. Had she used an SL order (stop-loss limit) with the trigger at Rs 430 and the limit at Rs 428, nothing would have sold, and she would still be holding as the price kept falling. Some brokers do not offer SL-M for every kind of trade; check yours.",
+    "hi": "Priya Gupta Cement Ltd ke 50 shares Rs 450 par delivery mein khareedti hai. Uska exit Rs 430 hai, yaani plan ke hisaab se loss 50 x Rs 20 = Rs 1,000, isliye woh har subah market khulne se pehle Rs 430 trigger wala SL-M sell laga deti hai. Ek raat buri khabar aati hai, aur stock Rs 410 par khulta hai. Open par price pehle se hi trigger ke neeche hai, isliye uska SL-M turant chal jaata hai aur lagbhag Rs 410 par bech deta hai. (Kuch brokers aisa stop reject kar dete hain jiska trigger pehle hi paar ho chuka ho; tab use khud bechna padta hai, Rs 410 ya usse bhi neeche.) Dono haalat mein loss lagbhag Rs 2,000, plan ka do guna. Agar usne Rs 430 trigger aur Rs 428 limit wala SL order (stop-loss limit) lagaya hota, toh kuch bhi nahi bikta, aur girte price ke saath shares uske paas hi pade rehte. Kuch brokers har tarah ke trade mein SL-M nahi dete; apna broker check kar lijiye.",
+    "dv": "प्रिया Gupta Cement Ltd के 50 शेयर Rs 450 पर डिलीवरी में ख़रीदती है। उसका एग्ज़िट Rs 430 है, यानी प्लान के हिसाब से लॉस 50 x Rs 20 = Rs 1,000, इसलिए वह हर सुबह बाज़ार खुलने से पहले Rs 430 ट्रिगर वाला SL-M सेल लगा देती है। एक रात बुरी ख़बर आती है, और स्टॉक Rs 410 पर खुलता है। ओपन पर भाव पहले से ही ट्रिगर के नीचे है, इसलिए उसका SL-M तुरंत चल जाता है और लगभग Rs 410 पर बेच देता है। (कुछ ब्रोकर ऐसा स्टॉप रिजेक्ट कर देते हैं जिसका ट्रिगर पहले ही पार हो चुका हो; तब उसे ख़ुद बेचना पड़ता है, Rs 410 या उससे भी नीचे।) दोनों हालत में लॉस लगभग Rs 2,000, प्लान का दोगुना। अगर उसने Rs 430 ट्रिगर और Rs 428 लिमिट वाला SL ऑर्डर (स्टॉप-लॉस लिमिट) लगाया होता, तो कुछ भी नहीं बिकता, और गिरते भाव के साथ शेयर उसके पास ही पड़े रहते। कुछ ब्रोकर हर तरह के ट्रेड में SL-M नहीं देते; अपने ब्रोकर से पता कर लें।"
+   },
+   "remember": {
+    "en": "A stop-loss decides when your exit order goes in. On a gap day, the market decides the price.",
+    "hi": "Stop-loss tay karta hai ki exit order kab jaayega. Gap wale din price market tay karta hai.",
+    "dv": "स्टॉप-लॉस तय करता है कि एग्ज़िट ऑर्डर कब जाएगा। गैप वाले दिन भाव बाज़ार तय करता है।"
+   },
+   "visual": {
+    "kind": "candles",
+    "title": {
+     "en": "A gap through the stop",
+     "hi": "Stop ke paar gap",
+     "dv": "स्टॉप के पार गैप"
+    },
+    "caption": {
+     "en": "Planned exit: Rs 430. The stock opened at Rs 410, already below the trigger, so the SL-M sold near Rs 410. Each candle is one trading day; Day 5 shows how to read them.",
+     "hi": "Plan wala exit: Rs 430. Stock seedha Rs 410 par khula, trigger se bhi neeche, isliye SL-M ne lagbhag Rs 410 par bech diya. Har candle ek trading day hai; inhe padhna Day 5 mein seekhenge.",
+     "dv": "प्लान वाला एग्ज़िट: Rs 430। स्टॉक सीधे Rs 410 पर खुला, ट्रिगर से भी नीचे, इसलिए SL-M ने लगभग Rs 410 पर बेच दिया। हर कैंडल एक ट्रेडिंग दिन है; इन्हें पढ़ना दिन 5 में सीखेंगे।"
+    },
+    "bars": [
+     [
+      438,
+      444,
+      436,
+      442
+     ],
+     [
+      442,
+      448,
+      440,
+      447
+     ],
+     [
+      447,
+      452,
+      445,
+      450
+     ],
+     [
+      450,
+      454,
+      446,
+      448
+     ],
+     [
+      448,
+      451,
+      441,
+      443
+     ],
+     [
+      443,
+      447,
+      437,
+      440
+     ],
+     [
+      410,
+      415,
+      404,
+      407
+     ],
+     [
+      407,
+      412,
+      401,
+      405
+     ]
+    ],
+    "levels": [
+     {
+      "y": 450,
+      "label": {
+       "en": "Entry 450",
+       "hi": "Entry 450",
+       "dv": "एंट्री 450"
+      },
+      "tone": "brand"
+     },
+     {
+      "y": 430,
+      "label": {
+       "en": "Trigger 430",
+       "hi": "Trigger 430",
+       "dv": "ट्रिगर 430"
+      },
+      "tone": "down"
+     }
+    ],
+    "marks": [
+     {
+      "i": 6,
+      "label": {
+       "en": "Opens 410",
+       "hi": "Khula 410",
+       "dv": "खुला 410"
+      },
+      "tone": "down"
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Delivery or intraday, and orders that wait",
+    "hi": "Delivery ya intraday, aur intezaar karne wale orders",
+    "dv": "डिलीवरी या इंट्राडे, और इंतज़ार करने वाले ऑर्डर"
+   },
+   "p": {
+    "en": "Every buy carries a product tag. Delivery (often shown as CNC) means you keep the shares; they reach your demat on T+1 and stay until you sell. Intraday (often shown as MIS) means the position must be closed the same day. If you do not close it, your broker does it for you at a cut-off time it sets before 3:30 pm; this is called auto square-off. GTT (Good Till Triggered) is different: it is a facility your broker offers, not an exchange order type. The broker holds your instruction, often for months, and sends an order to the exchange only when the price hits your trigger, and even that order can miss.",
+    "hi": "Har buy ke saath ek product tag lagta hai. Delivery (aksar CNC likha hota hai) ka matlab hai shares aap rakhenge; woh T+1 par aapke demat mein aa jaate hain aur tab tak rehte hain jab tak aap bech na dein. Intraday (aksar MIS likha hota hai) ka matlab hai position usi din band karni hai. Agar aapne band nahi ki, toh broker 3:30 se pehle apne tay kiye cut-off time par khud band kar deta hai; ise auto square-off kehte hain. GTT (Good Till Triggered) alag cheez hai: yeh broker ki di hui facility hai, exchange ka order type nahi. Broker aapka instruction apne paas rakhta hai, aksar mahino tak, aur exchange ko order tabhi bhejta hai jab price aapka trigger hit kare; aur woh order bhi miss ho sakta hai.",
+    "dv": "हर बाय के साथ एक प्रोडक्ट टैग लगता है। डिलीवरी (अक्सर CNC लिखा होता है) का मतलब है शेयर आप रखेंगे; वे T+1 पर आपके डीमैट में आ जाते हैं और तब तक रहते हैं जब तक आप बेच न दें। इंट्राडे (अक्सर MIS लिखा होता है) का मतलब है पोज़िशन उसी दिन बंद करनी है। अगर आपने बंद नहीं की, तो ब्रोकर 3:30 से पहले अपने तय किए कट-ऑफ़ टाइम पर ख़ुद बंद कर देता है; इसे ऑटो स्क्वेयर-ऑफ़ कहते हैं। GTT (गुड टिल ट्रिगर्ड) अलग चीज़ है: यह ब्रोकर की दी हुई सुविधा है, एक्सचेंज का ऑर्डर टाइप नहीं। ब्रोकर आपका निर्देश अपने पास रखता है, अक्सर महीनों तक, और एक्सचेंज को ऑर्डर तभी भेजता है जब भाव आपके ट्रिगर तक पहुँचे; और वह ऑर्डर भी फ़िल होने से रह सकता है।"
+   },
+   "example": {
+    "en": "Aman buys 40 shares of Sharma Textiles Ltd at Rs 250 as intraday, a Rs 10,000 position, and then gets stuck in a long office meeting. He never sells. Near the close, his broker's system sells all 40 shares at whatever the price is then, and some brokers add a fee for doing it. Had he tagged the buy as delivery, the shares would simply have reached his demat on T+1. Priya, meanwhile, holds Kiran Foods Ltd shares she bought at Rs 200 for delivery, and has set a GTT to sell them if the price falls to Rs 185, her stop; until that happens, the instruction sits with her broker, not on the exchange.",
+    "hi": "Aman Sharma Textiles Ltd ke 40 shares Rs 250 par intraday mein khareedta hai, yaani Rs 10,000 ki position, aur phir office ki lambi meeting mein phans jaata hai. Woh bechta hi nahi. Close ke kareeb broker ka system saare 40 shares us waqt ke price par bech deta hai, aur kuch brokers iske liye fee bhi lete hain. Agar usne buy ko delivery tag kiya hota, toh shares seedha T+1 par uske demat mein aa jaate. Udhar Priya ke paas Kiran Foods Ltd ke shares hain jo usne delivery mein Rs 200 par khareede the; usne GTT set kiya hai ki price Rs 185 tak gire toh shares bik jayein, yahi uska stop hai. Jab tak aisa nahi hota, yeh instruction uske broker ke paas pada hai, exchange par nahi.",
+    "dv": "अमन Sharma Textiles Ltd के 40 शेयर Rs 250 पर इंट्राडे में ख़रीदता है, यानी Rs 10,000 की पोज़िशन, और फिर ऑफ़िस की लंबी मीटिंग में फँस जाता है। वह बेचता ही नहीं। बाज़ार बंद होने के क़रीब ब्रोकर का सिस्टम सारे 40 शेयर उस वक़्त के भाव पर बेच देता है, और कुछ ब्रोकर इसके लिए फ़ीस भी लेते हैं। अगर उसने बाय को डिलीवरी टैग किया होता, तो शेयर सीधे T+1 पर उसके डीमैट में आ जाते। उधर प्रिया के पास Kiran Foods Ltd के शेयर हैं जो उसने डिलीवरी में Rs 200 पर ख़रीदे थे; उसने GTT सेट किया है कि भाव Rs 185 तक गिरे तो शेयर बिक जाएँ, यही उसका स्टॉप है। जब तक ऐसा नहीं होता, यह निर्देश उसके ब्रोकर के पास पड़ा है, एक्सचेंज पर नहीं।"
+   },
+   "remember": {
+    "en": "Intraday ends today, whether you close it or your broker does. A GTT waits at your broker, not at the exchange.",
+    "hi": "Intraday aaj hi khatam hota hai, band aap karein ya broker. GTT broker ke paas wait karta hai, exchange par nahi.",
+    "dv": "इंट्राडे आज ही ख़त्म होता है, बंद आप करें या ब्रोकर। GTT ब्रोकर के पास इंतज़ार करता है, एक्सचेंज पर नहीं।"
+   },
+   "visual": {
+    "kind": "flow",
+    "title": {
+     "en": "The life of a GTT",
+     "hi": "Ek GTT ka safar",
+     "dv": "एक GTT का सफ़र"
+    },
+    "caption": {
+     "en": "Validity and rules differ by broker. Check yours before you rely on a GTT.",
+     "hi": "Validity aur rules har broker ke alag hote hain. GTT par bharosa karne se pehle apne broker ke rules dekh lijiye.",
+     "dv": "वैलिडिटी और नियम हर ब्रोकर के अलग होते हैं। GTT पर भरोसा करने से पहले अपने ब्रोकर के नियम देख लें।"
+    },
+    "nodes": [
+     {
+      "label": {
+       "en": "You set a GTT",
+       "hi": "Aap GTT set karte hain",
+       "dv": "आप GTT सेट करते हैं"
+      },
+      "sub": {
+       "en": "Sell trigger Rs 185",
+       "hi": "Sell trigger Rs 185",
+       "dv": "सेल ट्रिगर Rs 185"
+      },
+      "tone": "brand"
+     },
+     {
+      "label": {
+       "en": "Broker holds it",
+       "hi": "Broker ke paas",
+       "dv": "ब्रोकर के पास"
+      },
+      "sub": {
+       "en": "Not at the exchange yet",
+       "hi": "Abhi exchange par nahi",
+       "dv": "अभी एक्सचेंज पर नहीं"
+      }
+     },
+     {
+      "label": {
+       "en": "Price hits Rs 185",
+       "hi": "Price Rs 185 hit karta hai",
+       "dv": "भाव Rs 185 छूता है"
+      },
+      "sub": {
+       "en": "Trigger reached",
+       "hi": "Trigger aa gaya",
+       "dv": "ट्रिगर आ गया"
+      },
+      "tone": "gold"
+     },
+     {
+      "label": {
+       "en": "Order to exchange",
+       "hi": "Exchange ko order",
+       "dv": "एक्सचेंज को ऑर्डर"
+      },
+      "sub": {
+       "en": "Usually a limit order",
+       "hi": "Aksar limit order",
+       "dv": "अक्सर लिमिट ऑर्डर"
+      }
+     },
+     {
+      "label": {
+       "en": "Fills, or not",
+       "hi": "Fill hua, ya nahi",
+       "dv": "फ़िल हुआ, या नहीं"
+      },
+      "sub": {
+       "en": "A gap can skip it",
+       "hi": "Gap mein chhoot sakta hai",
+       "dv": "गैप में छूट सकता है"
+      },
+      "tone": "down"
+     }
+    ],
+    "arrows": [
+     {
+      "en": "saved",
+      "hi": "save",
+      "dv": "सेव"
+     },
+     {
+      "en": "waits",
+      "hi": "wait",
+      "dv": "इंतज़ार"
+     },
+     {
+      "en": "sends",
+      "hi": "bhejta hai",
+      "dv": "भेजता है"
+     },
+     {
+      "en": "match?",
+      "hi": "match?",
+      "dv": "मैच?"
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Costs, the contract note and tax heads",
+    "hi": "Kharche, contract note aur tax ke heads",
+    "dv": "ख़र्चे, कॉन्ट्रैक्ट नोट और टैक्स के हेड"
+   },
+   "p": {
+    "en": "Besides the share price, every trade carries charges. The main ones are brokerage (your broker's fee), STT (Securities Transaction Tax, a tax the government charges on share trades), exchange transaction charges, SEBI fees, GST and stamp duty; some apply on both the buy and the sell, others on only one side. Brokerage differs from broker to broker; the other charges are set by the government, SEBI or the exchange and change from time to time, so this course never prints any rate. Your contract note, the official record your broker sends within a day of every trade, lists each charge in rupees. A few costs, such as depository (DP) charges when you sell delivery shares, show up in your broker's account statement instead. Tax on your gains is a separate matter: the tax head (the category your income falls under) depends on the kind of trade, as the chart shows.",
+    "hi": "Share ke price ke alawa har trade par kuch charges lagte hain. Main charges hain: brokerage (broker ki fees), STT (Securities Transaction Tax, share trades par sarkar ka tax), exchange transaction charges, SEBI fees, GST aur stamp duty; kuch buy aur sell dono par lagte hain, kuch sirf ek taraf. Brokerage har broker ka alag hota hai; baaki charges sarkar, SEBI ya exchange tay karte hain aur samay-samay par badalte rehte hain, isliye yeh course koi bhi rate print nahi karta. Aapka contract note, yaani woh official record jo broker har trade ke ek din ke andar bhejta hai, har charge rupaye mein dikhata hai. Kuch kharche, jaise delivery shares bechne par lagne wale DP (depository) charges, contract note mein nahi balki broker ke account statement mein dikhte hain. Munafe par tax alag baat hai: woh kis head (income ki category) mein aayega, yeh trade ke type par depend karta hai, jaisa chart mein dikh raha hai.",
+    "dv": "शेयर के भाव के अलावा हर ट्रेड पर कुछ चार्ज लगते हैं। मुख्य चार्ज हैं: ब्रोकरेज (ब्रोकर की फ़ीस), STT (सिक्योरिटीज़ ट्रांज़ैक्शन टैक्स, शेयर के सौदों पर सरकार का टैक्स), एक्सचेंज ट्रांज़ैक्शन चार्ज, SEBI फ़ीस, GST और स्टांप ड्यूटी; कुछ बाय और सेल दोनों पर लगते हैं, कुछ सिर्फ़ एक तरफ़। ब्रोकरेज हर ब्रोकर का अलग होता है; बाक़ी चार्ज सरकार, SEBI या एक्सचेंज तय करते हैं और समय-समय पर बदलते रहते हैं, इसलिए यह कोर्स कोई भी रेट नहीं छापता। आपका कॉन्ट्रैक्ट नोट, यानी वह ऑफ़िशियल रिकॉर्ड जो ब्रोकर हर ट्रेड के एक दिन के अंदर भेजता है, हर चार्ज रुपयों में दिखाता है। कुछ ख़र्चे, जैसे डिलीवरी शेयर बेचने पर लगने वाले DP (डिपॉज़िटरी) चार्ज, कॉन्ट्रैक्ट नोट में नहीं, ब्रोकर के अकाउंट स्टेटमेंट में दिखते हैं। मुनाफ़े पर टैक्स अलग बात है: वह किस हेड (इनकम की कैटेगरी) में आएगा, यह ट्रेड के टाइप पर निर्भर करता है, जैसा चार्ट में दिख रहा है।"
+   },
+   "example": {
+    "en": "Remember Aman's 20 shares of Sharma Textiles Ltd from Day 1's story, bought at Rs 250 (Rs 5,000)? He later sells them at Rs 254.50 (Rs 5,090). On screen, he made Rs 90. His two contract notes show the charges on the buy and on the sell, and his real profit is Rs 90 minus all of them. On a small trade, charges can take a big bite, and a trader who does ten buy-and-sell round trips a day pays charges on twenty orders. Keep every contract note: you will need them when you file your income tax return.",
+    "hi": "Day 1 wale Aman ke 20 shares yaad hain? Sharma Textiles Ltd, Rs 250 par (Rs 5,000). Baad mein woh unhe Rs 254.50 par bech deta hai (Rs 5,090). Screen ke hisaab se Rs 90 ka profit hua. Uske do contract notes buy aur sell dono ke charges dikhate hain, aur asli profit hai Rs 90 minus yeh saare charges. Chhote trade mein charges bada hissa kha sakte hain, aur jo trader din mein das baar khareed-bech ka chakkar lagata hai, woh bees orders par charges bharta hai. Har contract note sambhaal kar rakhiye: income tax return file karte waqt inki zaroorat padegi.",
+    "dv": "दिन 1 वाले अमन के 20 शेयर याद हैं? Sharma Textiles Ltd, Rs 250 पर (Rs 5,000)। बाद में वह उन्हें Rs 254.50 पर बेच देता है (Rs 5,090)। स्क्रीन के हिसाब से Rs 90 का प्रॉफ़िट हुआ। उसके दो कॉन्ट्रैक्ट नोट बाय और सेल दोनों के चार्ज दिखाते हैं, और असली प्रॉफ़िट निकलता है Rs 90 में से ये सारे चार्ज घटाकर। छोटे ट्रेड में चार्ज बड़ा हिस्सा खा सकते हैं, और जो ट्रेडर दिन में दस बार ख़रीद-बिक्री का चक्कर लगाता है, वह बीस ऑर्डर पर चार्ज भरता है। हर कॉन्ट्रैक्ट नोट सँभालकर रखिए: इनकम टैक्स रिटर्न फ़ाइल करते वक़्त इनकी ज़रूरत पड़ेगी।"
+   },
+   "remember": {
+    "en": "Your real profit is what your contract notes and account statement show, not what the screen showed.",
+    "hi": "Asli profit woh hai jo contract note aur account statement bataye, woh nahi jo screen ne dikhaya.",
+    "dv": "असली प्रॉफ़िट वह है जो कॉन्ट्रैक्ट नोट और अकाउंट स्टेटमेंट बताएँ, वह नहीं जो स्क्रीन ने दिखाया।"
+   },
+   "visual": {
+    "kind": "compare",
+    "title": {
+     "en": "Tax heads: concepts only",
+     "hi": "Tax heads: sirf concept",
+     "dv": "टैक्स हेड: सिर्फ़ कॉन्सेप्ट"
+    },
+    "caption": {
+     "en": "No rates here, on purpose. File your return on time so losses can be carried forward (set against certain gains in later years), and ask a CA for the current rules.",
+     "hi": "Yahan rates jaan-boojhkar nahi diye. Return time par file kijiye taaki loss aage carry forward ho sake (aage ke saalon ke kuch munafe se adjust ho sake), aur current rules ke liye CA se poochhiye.",
+     "dv": "यहाँ रेट जान-बूझकर नहीं दिए गए। रिटर्न समय पर फ़ाइल कीजिए ताकि लॉस आगे कैरी फ़ॉरवर्ड हो सके (आगे के सालों के कुछ मुनाफ़े से एडजस्ट हो सके), और मौजूदा नियमों के लिए CA से पूछिए।"
+    },
+    "cols": [
+     {
+      "head": {
+       "en": "Delivery",
+       "hi": "Delivery",
+       "dv": "डिलीवरी"
+      },
+      "tone": "brand",
+      "points": [
+       {
+        "en": "Gains = capital gains",
+        "hi": "Munafa = capital gains",
+        "dv": "मुनाफ़ा = कैपिटल गेन"
+       },
+       {
+        "en": "Short or long term, by holding period",
+        "hi": "Short ya long term, holding period ke hisaab se",
+        "dv": "शॉर्ट या लॉन्ग टर्म, होल्डिंग पीरियड के हिसाब से"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "Intraday",
+       "hi": "Intraday",
+       "dv": "इंट्राडे"
+      },
+      "tone": "gold",
+      "points": [
+       {
+        "en": "Speculative business income",
+        "hi": "Speculative business income",
+        "dv": "स्पेक्युलेटिव बिज़नेस इनकम"
+       },
+       {
+        "en": "Its losses have their own rules",
+        "hi": "Iske loss ke apne alag rules",
+        "dv": "इसके लॉस के अपने अलग नियम"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "F&O",
+       "hi": "F&O",
+       "dv": "F&O"
+      },
+      "tone": "muted",
+      "points": [
+       {
+        "en": "F&O = futures and options (Day 18)",
+        "hi": "F&O = futures and options (Day 18)",
+        "dv": "F&O = फ़्यूचर्स और ऑप्शंस (दिन 18)"
+       },
+       {
+        "en": "Business income",
+        "hi": "Business income",
+        "dv": "बिज़नेस इनकम"
+       },
+       {
+        "en": "Stage 1 does not trade F&O",
+        "hi": "Stage 1 mein F&O trade nahi",
+        "dv": "Stage 1 में F&O ट्रेड नहीं"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "The urge to act now",
+    "hi": "Abhi ke abhi kuch karne ki jaldi",
+    "dv": "अभी के अभी कुछ करने की जल्दी"
+   },
+   "p": {
+    "en": "Prices move every second, and a racing price makes the mind feel that waiting means losing. That feeling is the urge to act now: tapping Buy because something is moving, not because you have a plan. It leads straight into today's traps: a market order in a thin stock, no stop-loss, the wrong product tag, charges you never counted. The cure is not to be slow at everything. It is a short, fixed pause before every order, including your paper trades from Day 12. Our pause is twenty seconds and five questions: order type, price, exit, product and cost.",
+    "hi": "Price har second hilta hai, aur bhaagta hua price dimaag ko yeh ehsaas dilata hai ki rukna matlab haarna. Isi ehsaas ko kehte hain 'abhi ke abhi' wali jaldi: Buy isliye dabana kyunki kuch hil raha hai, isliye nahi ki aapke paas plan hai. Yahi jaldi seedha aaj ke jaalon mein le jaati hai: patle stock mein market order, stop-loss nahi, galat product tag, aur bina gine charges. Ilaaj yeh nahi ki aap har kaam dheere karein. Ilaaj hai har order se pehle ek chhota, fixed pause, Day 12 se shuru hone wale paper trades mein bhi. Hamara pause hai bees second aur paanch sawaal: order type, price, exit, product aur cost.",
+    "dv": "भाव हर सेकंड हिलता है, और भागता हुआ भाव दिमाग़ को यह एहसास दिलाता है कि रुकना मतलब हारना। इसी एहसास को कहते हैं 'अभी के अभी' वाली जल्दी: Buy इसलिए दबाना क्योंकि कुछ हिल रहा है, इसलिए नहीं कि आपके पास प्लान है। यही जल्दी सीधे आज के जालों में ले जाती है: पतले स्टॉक में मार्केट ऑर्डर, स्टॉप-लॉस नहीं, ग़लत प्रोडक्ट टैग, और बिना गिने चार्ज। इलाज यह नहीं कि आप हर काम धीरे करें। इलाज है हर ऑर्डर से पहले एक छोटा, तय पॉज़, दिन 12 से शुरू होने वाले पेपर ट्रेड में भी। हमारा पॉज़ है बीस सेकंड और पाँच सवाल: ऑर्डर टाइप, भाव, एग्ज़िट, प्रोडक्ट और ख़र्चा।"
+   },
+   "example": {
+    "en": "A Diwali flash sale shows a timer: 'Only 10 minutes left'. The timer is there to stop you checking prices elsewhere. On a trading app, a news alert and a big green candle do the same job. Aman's two-second rush cost him Rs 400 in slippage. Twenty seconds spent reading the order book would have shown him the thin queue before he tapped.",
+    "hi": "Diwali flash sale mein timer chalta hai: 'Sirf 10 minute baaki'. Yeh timer isliye hai taaki aap kahin aur price check na kar payein. Trading app par news alert aur ek bada green candle yahi kaam karte hain. Aman ki do second ki jaldi ki keemat thi Rs 400 ka slippage. Bees second order book padhne mein lagata, toh tap karne se pehle hi patli line dikh jaati.",
+    "dv": "दिवाली की फ़्लैश सेल में टाइमर चलता है: 'सिर्फ़ 10 मिनट बाक़ी'। यह टाइमर इसलिए है ताकि आप कहीं और दाम न देख पाएँ। ट्रेडिंग ऐप पर न्यूज़ अलर्ट और एक बड़ी हरी कैंडल यही काम करते हैं। अमन की दो सेकंड की जल्दी की क़ीमत थी Rs 400 का स्लिपेज। बीस सेकंड ऑर्डर बुक पढ़ने में लगाता, तो टैप करने से पहले ही पतली लाइन दिख जाती।"
+   },
+   "remember": {
+    "en": "If you cannot answer the five questions, you are not ready to tap.",
+    "hi": "Agar paanch sawaalon ke jawab nahi hain, toh abhi tap karne ka waqt nahi aaya.",
+    "dv": "अगर पाँच सवालों के जवाब नहीं हैं, तो अभी टैप करने का वक़्त नहीं आया।"
+   },
+   "visual": {
+    "kind": "steps",
+    "title": {
+     "en": "The 20-second pause",
+     "hi": "20 second ka pause",
+     "dv": "20 सेकंड का पॉज़"
+    },
+    "caption": {
+     "en": "Answer all five before every order, even on paper.",
+     "hi": "Har order se pehle paanchon ke jawab dijiye, paper trade mein bhi.",
+     "dv": "हर ऑर्डर से पहले पाँचों के जवाब दें, पेपर ट्रेड में भी।"
+    },
+    "items": [
+     {
+      "label": {
+       "en": "Order type?",
+       "hi": "Order type?",
+       "dv": "ऑर्डर टाइप?"
+      },
+      "sub": {
+       "en": "Market, limit, SL or SL-M",
+       "hi": "Market, limit, SL ya SL-M",
+       "dv": "मार्केट, लिमिट, SL या SL-M"
+      }
+     },
+     {
+      "label": {
+       "en": "Price?",
+       "hi": "Price?",
+       "dv": "भाव?"
+      },
+      "sub": {
+       "en": "Bid, ask and spread checked",
+       "hi": "Bid, ask aur spread dekh liya",
+       "dv": "बिड, आस्क और स्प्रेड देख लिया"
+      }
+     },
+     {
+      "label": {
+       "en": "Exit?",
+       "hi": "Exit?",
+       "dv": "एग्ज़िट?"
+      },
+      "sub": {
+       "en": "Stop trigger set before entry",
+       "hi": "Stop trigger entry se pehle tay",
+       "dv": "स्टॉप ट्रिगर एंट्री से पहले तय"
+      }
+     },
+     {
+      "label": {
+       "en": "Product?",
+       "hi": "Product?",
+       "dv": "प्रोडक्ट?"
+      },
+      "sub": {
+       "en": "Delivery or intraday",
+       "hi": "Delivery ya intraday",
+       "dv": "डिलीवरी या इंट्राडे"
+      }
+     },
+     {
+      "label": {
+       "en": "Cost?",
+       "hi": "Cost?",
+       "dv": "ख़र्चा?"
+      },
+      "sub": {
+       "en": "Charges counted, not ignored",
+       "hi": "Charges gin liye, ignore nahi kiye",
+       "dv": "चार्ज गिन लिए, नज़रअंदाज़ नहीं किए"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "key_terms": [
+  {
+   "term": {
+    "en": "Bid, ask and spread",
+    "hi": "Bid, ask aur spread",
+    "dv": "बिड, आस्क और स्प्रेड"
+   },
+   "meaning": {
+    "en": "Bid: the highest price a buyer will pay right now. Ask: the lowest price a seller will accept. Spread: the gap between the two.",
+    "hi": "Bid: abhi koi buyer jo sabse ooncha price dene ko taiyaar hai. Ask: sabse neecha price jis par seller bechne ko raazi hai. Spread: dono ka fark.",
+    "dv": "बिड: अभी कोई ख़रीदार जो सबसे ऊँचा भाव देने को तैयार है। आस्क: सबसे नीचा भाव, जिस पर बेचने वाला राज़ी है। स्प्रेड: दोनों का फ़र्क़।"
+   }
+  },
+  {
+   "term": {
+    "en": "Limit order",
+    "hi": "Limit order",
+    "dv": "लिमिट ऑर्डर"
+   },
+   "meaning": {
+    "en": "An order that fills only at your price or better. It protects the price but may fill partly or not at all.",
+    "hi": "Aisa order jo sirf aapke price ya usse behtar par fill hota hai. Price bachata hai, lekin ho sakta hai aadha fill ho ya bilkul na ho.",
+    "dv": "ऐसा ऑर्डर जो सिर्फ़ आपके भाव या उससे बेहतर पर फ़िल होता है। भाव बचाता है, लेकिन हो सकता है आधा फ़िल हो या बिल्कुल न हो।"
+   }
+  },
+  {
+   "term": {
+    "en": "Trigger price",
+    "hi": "Trigger price",
+    "dv": "ट्रिगर प्राइस"
+   },
+   "meaning": {
+    "en": "The price that wakes up an SL, SL-M or GTT. Reaching it releases your order into the market; it does not fix your exit price.",
+    "hi": "Woh price jo SL, SL-M ya GTT ko jagata hai. Wahan pahunchte hi aapka order market mein chala jaata hai; lekin aapka exit price isse tay nahi hota.",
+    "dv": "वह भाव जो SL, SL-M या GTT को जगाता है। वहाँ पहुँचते ही आपका ऑर्डर बाज़ार में चला जाता है; लेकिन आपका एग्ज़िट प्राइस इससे तय नहीं होता।"
+   }
+  },
+  {
+   "term": {
+    "en": "Slippage",
+    "hi": "Slippage",
+    "dv": "स्लिपेज"
+   },
+   "meaning": {
+    "en": "The gap between the price you expected and the price you actually got.",
+    "hi": "Jo price aapne socha tha aur jo asal mein mila, unka fark.",
+    "dv": "जो भाव आपने सोचा था और जो असल में मिला, उनका फ़र्क़।"
+   }
+  },
+  {
+   "term": {
+    "en": "GTT (Good Till Triggered)",
+    "hi": "GTT (Good Till Triggered)",
+    "dv": "GTT (गुड टिल ट्रिगर्ड)"
+   },
+   "meaning": {
+    "en": "A broker facility, not an exchange order type. The broker holds your instruction and sends an order only when the trigger is hit.",
+    "hi": "Broker ki facility, exchange ka order type nahi. Broker instruction apne paas rakhta hai aur trigger hit hone par hi order bhejta hai.",
+    "dv": "ब्रोकर की सुविधा, एक्सचेंज का ऑर्डर टाइप नहीं। ब्रोकर निर्देश अपने पास रखता है और ट्रिगर छूने पर ही ऑर्डर भेजता है।"
+   }
+  },
+  {
+   "term": {
+    "en": "Contract note",
+    "hi": "Contract note",
+    "dv": "कॉन्ट्रैक्ट नोट"
+   },
+   "meaning": {
+    "en": "The official record of your trades that your broker sends within a day, with every charge in rupees.",
+    "hi": "Aapke trades ka official record jo broker ek din ke andar bhejta hai, har charge rupaye mein.",
+    "dv": "आपके ट्रेड का ऑफ़िशियल रिकॉर्ड, जो ब्रोकर एक दिन के अंदर भेजता है, हर चार्ज रुपयों में।"
+   }
+  }
+ ],
+ "mindmap": {
+  "kind": "mindmap",
+  "center": {
+   "en": "Orders, liquidity, costs",
+   "hi": "Orders, liquidity, kharche",
+   "dv": "ऑर्डर, लिक्विडिटी, ख़र्चे"
+  },
+  "branches": [
+   {
+    "label": {
+     "en": "Order book",
+     "hi": "Order book",
+     "dv": "ऑर्डर बुक"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "Bid = buyers, ask = sellers",
+      "hi": "Bid = buyers, ask = sellers",
+      "dv": "बिड = ख़रीदार, आस्क = बेचने वाले"
+     },
+     {
+      "en": "Spread = ask minus bid",
+      "hi": "Spread = ask minus bid",
+      "dv": "स्प्रेड = आस्क माइनस बिड"
+     },
+     {
+      "en": "LTP = the last deal",
+      "hi": "LTP = aakhri deal",
+      "dv": "LTP = आख़िरी सौदा"
+     },
+     {
+      "en": "Liquid = narrow spread, deep queue",
+      "hi": "Liquid = patla spread, lambi line",
+      "dv": "लिक्विड = पतला स्प्रेड, लंबी लाइन"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Order types",
+     "hi": "Order types",
+     "dv": "ऑर्डर टाइप"
+    },
+    "tone": "gold",
+    "points": [
+     {
+      "en": "Market = speed, slippage risk",
+      "hi": "Market = speed, slippage ka risk",
+      "dv": "मार्केट = स्पीड, स्लिपेज का रिस्क"
+     },
+     {
+      "en": "Limit = price, may not fill",
+      "hi": "Limit = price, shayad fill na ho",
+      "dv": "लिमिट = भाव, शायद फ़िल न हो"
+     },
+     {
+      "en": "SL and SL-M wake at the trigger",
+      "hi": "SL aur SL-M trigger par jaagte hain",
+      "dv": "SL और SL-M ट्रिगर पर जागते हैं"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Stops can slip",
+     "hi": "Stop bhi fisal sakta hai",
+     "dv": "स्टॉप भी फिसल सकता है"
+    },
+    "tone": "down",
+    "points": [
+     {
+      "en": "Gaps jump past triggers",
+      "hi": "Gap trigger ke paar kood jaata hai",
+      "dv": "गैप ट्रिगर के पार कूद जाता है"
+     },
+     {
+      "en": "An SL (limit) order may never fill",
+      "hi": "SL (limit) order shayad kabhi fill na ho",
+      "dv": "SL (लिमिट) ऑर्डर शायद कभी फ़िल न हो"
+     },
+     {
+      "en": "Price bands can block exits",
+      "hi": "Price band exit rok sakta hai",
+      "dv": "प्राइस बैंड एग्ज़िट रोक सकता है"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Time",
+     "hi": "Time",
+     "dv": "समय"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "Day order ends at the close",
+      "hi": "Day order close par khatam",
+      "dv": "डे ऑर्डर बाज़ार बंद होते ही ख़त्म"
+     },
+     {
+      "en": "GTT waits at the broker",
+      "hi": "GTT broker ke paas wait karta hai",
+      "dv": "GTT ब्रोकर के पास इंतज़ार करता है"
+     },
+     {
+      "en": "Intraday: auto square-off",
+      "hi": "Intraday: auto square-off",
+      "dv": "इंट्राडे: ऑटो स्क्वेयर-ऑफ़"
+     },
+     {
+      "en": "Delivery: demat on T+1",
+      "hi": "Delivery: T+1 par demat",
+      "dv": "डिलीवरी: T+1 पर डीमैट"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Costs and tax",
+     "hi": "Kharche aur tax",
+     "dv": "ख़र्चे और टैक्स"
+    },
+    "tone": "gold",
+    "points": [
+     {
+      "en": "Charges on every order",
+      "hi": "Har order par charges",
+      "dv": "हर ऑर्डर पर चार्ज"
+     },
+     {
+      "en": "Contract note = real numbers",
+      "hi": "Contract note = asli numbers",
+      "dv": "कॉन्ट्रैक्ट नोट = असली आँकड़े"
+     },
+     {
+      "en": "Tax head by trade type; ask a CA",
+      "hi": "Tax head trade type se; CA se poochhiye",
+      "dv": "टैक्स हेड ट्रेड के टाइप से; CA से पूछें"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Your mind",
+     "hi": "Aapka mann",
+     "dv": "आपका मन"
+    },
+    "tone": "up",
+    "points": [
+     {
+      "en": "Notice the urge to act now",
+      "hi": "Abhi ke abhi wali jaldi pehchaniye",
+      "dv": "अभी के अभी वाली जल्दी पहचानिए"
+     },
+     {
+      "en": "20-second pause",
+      "hi": "20 second ka pause",
+      "dv": "20 सेकंड का पॉज़"
+     },
+     {
+      "en": "Five questions before every tap",
+      "hi": "Har tap se pehle paanch sawaal",
+      "dv": "हर टैप से पहले पाँच सवाल"
+     }
+    ]
+   }
+  ]
+ },
+ "kaam": {
+  "en": "Read a live order book on the NSE website, rebuild Aman's slippage in a sheet, and write your own five-question pause card.",
+  "hi": "NSE ki website par ek live order book padhiye, Aman ka slippage sheet mein khud nikaaliye, aur apna paanch sawaalon wala pause card likhiye.",
+  "dv": "NSE की वेबसाइट पर एक लाइव ऑर्डर बुक पढ़िए, अमन का स्लिपेज शीट में ख़ुद निकालिए, और अपना पाँच सवालों वाला पॉज़ कार्ड लिखिए।"
+ },
+ "kaam_steps": [
+  {
+   "en": "Open nseindia.com during market hours (9:15 am to 3:30 pm on a trading day). If the market is closed, do steps 1 to 3 on the next trading day and steps 4 to 6 today.",
+   "hi": "Market hours mein (trading day par subah 9:15 se dopahar 3:30 tak) nseindia.com kholiye. Agar market band hai, toh step 1 se 3 agle trading day par kijiye aur step 4 se 6 aaj hi kar lijiye.",
+   "dv": "बाज़ार के समय (ट्रेडिंग के दिन सुबह 9:15 से दोपहर 3:30 तक) nseindia.com खोलिए। अगर बाज़ार बंद है, तो स्टेप 1 से 3 अगले ट्रेडिंग दिन कीजिए और स्टेप 4 से 6 आज ही कर लीजिए।"
+  },
+  {
+   "en": "Pick any company from the NIFTY 50 list, open its quote page and note the best bid, best ask and spread from the order book. You are only reading, not choosing a stock to buy.",
+   "hi": "NIFTY 50 list se koi bhi ek company chuniye, uska quote page kholiye aur order book se best bid, best ask aur spread note kijiye. Aap sirf padh rahe hain, khareedne ke liye stock nahi chun rahe.",
+   "dv": "NIFTY 50 की लिस्ट से कोई भी एक कंपनी चुनिए, उसका क्वोट पेज खोलिए और ऑर्डर बुक से सबसे अच्छा बिड, सबसे अच्छा आस्क और स्प्रेड नोट कीजिए। आप सिर्फ़ पढ़ रहे हैं, ख़रीदने के लिए स्टॉक नहीं चुन रहे।"
+  },
+  {
+   "en": "Repeat for one company from the NIFTY Smallcap 250 list (an index of smaller companies). Work out each spread as a % of the price (spread / price x 100) and note which stock looks more liquid.",
+   "hi": "Yahi kaam NIFTY Smallcap 250 list (chhoti companies ka index) ki ek company ke liye dohraiye. Dono ka spread price ke % mein nikaaliye (spread / price x 100) aur note kijiye ki kaunsa stock zyada liquid lagta hai.",
+   "dv": "यही काम NIFTY Smallcap 250 (छोटी कंपनियों का इंडेक्स) की लिस्ट की एक कंपनी के लिए दोहराइए। दोनों का स्प्रेड भाव के % में निकालिए (स्प्रेड / भाव x 100) और नोट कीजिए कि कौन-सा स्टॉक ज़्यादा लिक्विड लगता है।"
+  },
+  {
+   "en": "In Google Sheets, type in the Bharat Pumps order book from today's lesson and work out the average price of a 300-share market buy. Only the ask side matters for a buy: =(100*101+100*102+100*104)/300. You should get about Rs 102.33.",
+   "hi": "Google Sheets mein aaj ke lesson wali Bharat Pumps ki order book type kijiye aur 300 shares ke market buy ka average price nikaaliye. Buy ke liye sirf ask side dekhni hai: =(100*101+100*102+100*104)/300. Jawab lagbhag Rs 102.33 aana chahiye.",
+   "dv": "Google Sheets में आज के लेसन वाली Bharat Pumps की ऑर्डर बुक टाइप कीजिए और 300 शेयर के मार्केट बाय का एवरेज प्राइस निकालिए। बाय के लिए सिर्फ़ आस्क वाली तरफ़ देखनी है: =(100*101+100*102+100*104)/300। जवाब लगभग Rs 102.33 आना चाहिए।"
+  },
+  {
+   "en": "On paper or in your phone's notes, write your five-question pause card (order type, price, exit, product, cost) and keep it where you will see it before every order.",
+   "hi": "Kaagaz par ya phone ke notes mein apna paanch sawaalon wala pause card likhiye (order type, price, exit, product, cost) aur use aisi jagah rakhiye jahan har order se pehle nazar pade.",
+   "dv": "काग़ज़ पर या फ़ोन के नोट्स में अपना पाँच सवालों वाला पॉज़ कार्ड लिखिए (ऑर्डर टाइप, भाव, एग्ज़िट, प्रोडक्ट, ख़र्चा) और उसे ऐसी जगह रखिए जहाँ हर ऑर्डर से पहले नज़र पड़े।"
+  },
+  {
+   "en": "Run the AI Lab prompt 'Order-type drill' and answer at least five scenarios. Mark every rule the AI says varies by broker as 'Not sure' until you check it yourself.",
+   "hi": "AI Lab ka 'Order-type drill' prompt chalaiye aur kam se kam paanch scenarios ke jawab dijiye. AI jo rule 'broker ke hisaab se alag' bataye, use tab tak 'Not sure' mark kijiye jab tak aap khud check na kar lein.",
+   "dv": "AI Lab का 'Order-type drill' प्रॉम्प्ट चलाइए और कम से कम पाँच सिचुएशन के जवाब दीजिए। AI जो नियम 'ब्रोकर के हिसाब से अलग' बताए, उसे तब तक 'Not sure' मार्क कीजिए जब तक आप ख़ुद जाँच न लें।"
+  }
+ ],
+ "kaam_min": 40,
+ "outcome": {
+  "en": "By the end you can read bid, ask, spread and depth; choose between market, limit, SL and SL-M orders knowing what each can cost you; explain why a stop-loss is not a promise; tell delivery from intraday and a GTT from an exchange order; and find your real costs in a contract note.",
+  "hi": "Aaj ke baad aap bid, ask, spread aur depth padh payenge; market, limit, SL aur SL-M mein se chun payenge aur jaanenge ki har ek ki keemat kya ho sakti hai; samjha payenge ki stop-loss vada kyun nahi hai; delivery aur intraday ka, aur GTT aur exchange order ka fark bata payenge; aur contract note mein apne asli kharche dhoondh payenge.",
+  "dv": "आज के बाद आप बिड, आस्क, स्प्रेड और डेप्थ पढ़ पाएँगे; मार्केट, लिमिट, SL और SL-M में से चुन पाएँगे और जानेंगे कि हर एक की क़ीमत क्या हो सकती है; समझा पाएँगे कि स्टॉप-लॉस वादा क्यों नहीं है; डिलीवरी और इंट्राडे का, और GTT और एक्सचेंज ऑर्डर का फ़र्क़ बता पाएँगे; और कॉन्ट्रैक्ट नोट में अपने असली ख़र्चे ढूँढ पाएँगे।"
+ },
+ "tools": [
+  {
+   "en": "NSE website (nseindia.com)",
+   "hi": "NSE website (nseindia.com)",
+   "dv": "NSE वेबसाइट (nseindia.com)"
+  },
+  {
+   "en": "Google Sheets",
+   "hi": "Google Sheets",
+   "dv": "Google Sheets"
+  },
+  {
+   "en": "Paper or phone notes",
+   "hi": "Paper ya phone ke notes",
+   "dv": "काग़ज़ या फ़ोन के नोट्स"
+  },
+  {
+   "en": "Any AI chat",
+   "hi": "Koi bhi AI chat",
+   "dv": "कोई भी AI चैट"
+  }
+ ],
+ "fun": {
+  "en": "Mandi order-book game (2 or more people): the 'sellers' write three slips, each with a price and a number of onion bags (2 to 4); the 'buyers' write three bid slips the same way. Line the slips up like an order book, sellers on top. A 'market buy' for 5 bags takes the cheapest seller slips first: work out the average price paid. Then try again with a limit price and see how many bags you get.",
+  "hi": "Mandi order-book game (do ya zyada log): 'sellers' teen parchiyan likhte hain, har ek par price aur pyaaz ki boriyon ki ginti (2 se 4); 'buyers' bhi isi tarah teen bid parchiyan likhte hain. Parchiyon ko order book ki tarah lagaiye, sellers upar. 5 boriyon ka 'market buy' sabse sasti seller parchiyan pehle uthata hai: average price nikaaliye. Phir limit price ke saath dobara kijiye aur dekhiye kitni boriyan milti hain.",
+  "dv": "मंडी ऑर्डर-बुक गेम (दो या ज़्यादा लोग): 'बेचने वाले' तीन पर्चियाँ लिखते हैं, हर एक पर भाव और प्याज़ की बोरियों की गिनती (2 से 4); 'ख़रीदार' भी इसी तरह तीन बिड पर्चियाँ लिखते हैं। पर्चियों को ऑर्डर बुक की तरह लगाइए, बेचने वाले ऊपर। 5 बोरियों का 'मार्केट बाय' सबसे सस्ती पर्चियाँ पहले उठाता है: एवरेज भाव निकालिए। फिर लिमिट प्राइस के साथ दोबारा कीजिए और देखिए कितनी बोरियाँ मिलती हैं।"
+ },
+ "compliance": "Educational content only, not investment advice. Stage 1 uses virtual money only. Charge and tax rates are never printed: read your own contract note and ask a CA. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
+ "prompts": [
+  {
+   "title": {
+    "en": "Order-type drill",
+    "hi": "Order-type drill",
+    "dv": "ऑर्डर-टाइप ड्रिल"
+   },
+   "body": "You are a patient teacher of Indian stock-market order types, talking to a complete beginner. Give me 8 short scenarios, one at a time, using only made-up company names (for example 'Bharat Pumps Ltd') and made-up prices. In each, I must choose a market order, a limit order, an SL (stop-loss limit) order, an SL-M order or a broker GTT, and say whether the trade should be delivery or intraday. Use only the equity cash segment (delivery or intraday shares); no futures or options scenarios. After each answer, tell me whether my choice fits the situation, what could go wrong (slippage, a partial fill, no fill, a gap past the trigger, auto square-off) and why. Label every rule you state as Checkable (on the NSE, BSE or SEBI website) or Not sure (it varies by broker or may have changed). Do not recommend any real stock, do not give buy or sell advice, and do not mention targets or expected returns."
+  },
+  {
+   "title": {
+    "en": "Read a contract note (sample)",
+    "hi": "Contract note padhna seekhiye (sample)",
+    "dv": "कॉन्ट्रैक्ट नोट पढ़ना सीखिए (सैंपल)"
+   },
+   "body": "Explain, line by line, what an Indian equity contract note contains: trade details, brokerage, STT, exchange transaction charges, SEBI fees, GST, stamp duty and the net amount. Build a sample for a made-up delivery trade of 10 shares of 'Gupta Cement Ltd' bought at Rs 450, but write every charge as 'X' instead of a number, because brokerage differs by broker and the other rates change over time. For each line, say whether it applies on the buy side, the sell side or both, and label that statement Checkable or Not sure. Then list three things I should check in my own contract note. Do not ask me to paste a real contract note or any personal details, do not state any tax or charge rate, and do not give buy or sell advice, targets or return expectations."
+  },
+  {
+   "title": {
+    "en": "Urge-to-act check",
+    "hi": "Jaldbaazi check",
+    "dv": "जल्दबाज़ी चेक"
+   },
+   "body": "Act as a calm trading-psychology coach. Ask me 6 short questions, one at a time, about how I behave when a price is moving fast: news alerts, big green candles, 'only today' offers, fear of missing out, and times I bought something in a hurry and regretted it. After my answers, tell me in plain words when my urge to act now is strongest, and help me write a five-question pause card I will answer before any order: order type, price, exit, product and cost. Do not ask for personal or financial details, do not suggest any stock or strategy, and do not give buy or sell advice, targets or return expectations."
+  }
+ ],
+ "journal_prompt": {
+  "en": "Recall one time you bought something in a hurry, in a sale, at a station stall or online, and later found you had paid more than you needed. What made you rush? Which of today's five pause questions would have slowed you down?",
+  "hi": "Ek aisa mauka yaad kijiye jab aapne jaldi mein kuch khareed liya, kisi sale mein, station ke stall par ya online, aur baad mein pata chala ki zaroorat se zyada de diya. Jaldi kis baat ki thi? Aaj ke paanch pause sawaalon mein se kaunsa aapko rok leta?",
+  "dv": "एक ऐसा मौक़ा याद कीजिए जब आपने जल्दी में कुछ ख़रीद लिया, किसी सेल में, स्टेशन के स्टॉल पर या ऑनलाइन, और बाद में पता चला कि ज़रूरत से ज़्यादा दे दिया। जल्दी किस बात की थी? आज के पाँच पॉज़ सवालों में से कौन-सा आपको रोक लेता?"
+ },
+ "motivation": {
+  "en": "Every tap on Buy hides three choices: how fast, at what price, and at what cost. Making them on purpose, one order at a time, is where discipline begins.",
+  "hi": "Buy ke har tap ke peeche teen faisle chhupe hote hain: kitni jaldi, kis price par, aur kitne kharche par. Inhe soch-samajhkar, ek-ek order karke lena hi discipline ki shuruaat hai.",
+  "dv": "Buy के हर टैप के पीछे तीन फ़ैसले छिपे होते हैं: कितनी जल्दी, किस भाव पर, और कितने ख़र्चे पर। इन्हें सोच-समझकर, एक-एक ऑर्डर करके लेना ही अनुशासन की शुरुआत है।"
+ },
+ "quiz": [
+  {
+   "stem": {
+    "en": "The order book of Kiran Foods Ltd shows a best bid of Rs 199.80 and a best ask of Rs 200.20. The last traded price is Rs 200.00. You place a small market buy. What is the spread, and near which price will you most likely buy?",
+    "hi": "Kiran Foods Ltd ki order book mein best bid Rs 199.80 aur best ask Rs 200.20 hai. Last traded price Rs 200.00 hai. Aap ek chhota market buy lagate hain. Spread kitna hai, aur aapki khareed kis price ke aas-paas hone ki sabse zyada ummeed hai?",
+    "dv": "Kiran Foods Ltd की ऑर्डर बुक में सबसे अच्छा बिड Rs 199.80 और सबसे अच्छा आस्क Rs 200.20 है। लास्ट ट्रेडेड प्राइस Rs 200.00 है। आप एक छोटा मार्केट बाय लगाते हैं। स्प्रेड कितना है, और आपकी ख़रीद किस भाव के आसपास होने की सबसे ज़्यादा उम्मीद है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Spread Rs 0.40; you buy near Rs 200.20",
+      "hi": "Spread Rs 0.40; khareed Rs 200.20 ke aas-paas",
+      "dv": "स्प्रेड Rs 0.40; ख़रीद Rs 200.20 के आसपास"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Spread Rs 0.40; you buy near Rs 199.80",
+      "hi": "Spread Rs 0.40; khareed Rs 199.80 ke aas-paas",
+      "dv": "स्प्रेड Rs 0.40; ख़रीद Rs 199.80 के आसपास"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Spread Rs 0.20; you buy at the LTP, Rs 200.00",
+      "hi": "Spread Rs 0.20; khareed LTP par, yaani Rs 200.00",
+      "dv": "स्प्रेड Rs 0.20; ख़रीद LTP पर, यानी Rs 200.00"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "No spread; you buy at exactly Rs 200.00",
+      "hi": "Koi spread nahi; khareed theek Rs 200.00 par",
+      "dv": "कोई स्प्रेड नहीं; ख़रीद ठीक Rs 200.00 पर"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Spread = ask - bid = Rs 200.20 - Rs 199.80 = Rs 0.40. A market buy is filled by sellers, so it takes the best ask, about Rs 200.20. The LTP is only the last deal, not a price anyone is offering you now. A small market sell would get the bid, about Rs 199.80.",
+    "hi": "Spread = ask - bid = Rs 200.20 - Rs 199.80 = Rs 0.40. Market buy ko sellers fill karte hain, isliye woh best ask, yaani lagbhag Rs 200.20 par hota hai. LTP sirf aakhri deal hai, koi aisa price nahi jo abhi aapko offer ho raha ho. Chhota market sell bid par, yaani lagbhag Rs 199.80 par hota.",
+    "dv": "स्प्रेड = आस्क - बिड = Rs 200.20 - Rs 199.80 = Rs 0.40। मार्केट बाय बेचने वालों के ऑर्डर से फ़िल होता है, इसलिए वह सबसे अच्छे आस्क, यानी लगभग Rs 200.20 पर होता है। LTP सिर्फ़ आख़िरी सौदा है, कोई ऐसा भाव नहीं जो अभी आपको ऑफ़र हो रहा हो। छोटा मार्केट सेल बिड पर, यानी लगभग Rs 199.80 पर होता।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Bharat Pumps Ltd is trading at Rs 100. Priya places a limit buy at Rs 98. During the day the price dips to Rs 99, then climbs to Rs 110. What happens to her order?",
+    "hi": "Bharat Pumps Ltd Rs 100 par trade ho raha hai. Priya Rs 98 ka limit buy lagati hai. Din mein price Rs 99 tak girta hai, phir Rs 110 tak chadh jaata hai. Uske order ka kya hota hai?",
+    "dv": "Bharat Pumps Ltd Rs 100 पर ट्रेड हो रहा है। प्रिया Rs 98 का लिमिट बाय लगाती है। दिन में भाव Rs 99 तक गिरता है, फिर Rs 110 तक चढ़ जाता है। उसके ऑर्डर का क्या होता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "It does not fill; Rs 98 was never reached",
+      "hi": "Fill nahi hota; price Rs 98 tak aaya hi nahi",
+      "dv": "फ़िल नहीं होता; भाव Rs 98 तक आया ही नहीं"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "It fills at Rs 99, the lowest price of the day",
+      "hi": "Rs 99 par fill hota hai, din ka sabse neecha price",
+      "dv": "Rs 99 पर फ़िल होता है, दिन का सबसे नीचा भाव"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "It fills at Rs 110 once the price starts rising",
+      "hi": "Price badhne par Rs 110 par fill ho jaata hai",
+      "dv": "भाव बढ़ने पर Rs 110 पर फ़िल हो जाता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "It fills at Rs 98, since a limit fixes the price",
+      "hi": "Rs 98 par fill hota hai, kyunki limit price fix karta hai",
+      "dv": "Rs 98 पर फ़िल होता है, क्योंकि लिमिट भाव तय कर देता है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "A limit buy fills only at the limit price or lower. The price never came down to Rs 98, so nothing filled, and as a day order it is cancelled at the close. That is the trade-off of a limit order: you control the price, but you may miss the move.",
+    "hi": "Limit buy sirf limit price ya usse kam par fill hota hai. Price kabhi Rs 98 tak aaya hi nahi, isliye kuch fill nahi hua, aur day order hone ki wajah se close par cancel ho gaya. Limit order ka yahi sauda hai: price aapke control mein rehta hai, lekin move chhoot sakta hai.",
+    "dv": "लिमिट बाय सिर्फ़ लिमिट प्राइस या उससे कम पर ही फ़िल होता है। भाव कभी Rs 98 तक आया ही नहीं, इसलिए कुछ फ़िल नहीं हुआ, और डे ऑर्डर होने की वजह से बाज़ार बंद होने पर कैंसिल हो गया। लिमिट ऑर्डर का यही सौदा है: भाव आपके कंट्रोल में रहता है, लेकिन चाल छूट सकती है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Priya holds 40 shares of Sharma Textiles Ltd, bought at Rs 260. Each morning before the open she places an SL-M sell with the trigger at Rs 245. One night bad news comes out, and the stock opens at Rs 230. What is her loss most likely to be?",
+    "hi": "Priya ke paas Sharma Textiles Ltd ke 40 shares hain, jo usne Rs 260 par khareede the. Woh har subah market khulne se pehle Rs 245 trigger wala SL-M sell lagati hai. Ek raat buri khabar aati hai, aur stock Rs 230 par khulta hai. Uska loss lagbhag kitna hone wala hai?",
+    "dv": "प्रिया के पास Sharma Textiles Ltd के 40 शेयर हैं, जो उसने Rs 260 पर ख़रीदे थे। वह हर सुबह बाज़ार खुलने से पहले Rs 245 ट्रिगर वाला SL-M सेल लगाती है। एक रात बुरी ख़बर आती है, और स्टॉक Rs 230 पर खुलता है। उसका लॉस लगभग कितना होने वाला है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "About Rs 1,200, selling near Rs 230",
+      "hi": "Lagbhag Rs 1,200, Rs 230 ke aas-paas bikkar",
+      "dv": "लगभग Rs 1,200, Rs 230 के आसपास बिककर"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Exactly Rs 600, selling at the Rs 245 trigger",
+      "hi": "Theek Rs 600, Rs 245 ke trigger par bikkar",
+      "dv": "ठीक Rs 600, Rs 245 के ट्रिगर पर बिककर"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Nothing yet; the SL-M waits for Rs 245 again",
+      "hi": "Abhi kuch nahi; SL-M dobara Rs 245 ka wait karega",
+      "dv": "अभी कुछ नहीं; SL-M दोबारा Rs 245 का इंतज़ार करेगा"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "About Rs 900, selling halfway at Rs 237.50",
+      "hi": "Lagbhag Rs 900, beech mein Rs 237.50 par bikkar",
+      "dv": "लगभग Rs 900, बीच में Rs 237.50 पर बिककर"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Her plan was a loss of Rs 15 a share: 40 x Rs 15 = Rs 600. But the stock opened at Rs 230, already below the trigger, so the SL-M woke up at the open and sold at the next available price, near Rs 230: 40 x Rs 30 = about Rs 1,200. If the broker rejects a stop whose trigger is already crossed, she must sell herself, again near Rs 230 or lower. A stop-loss decides when your exit order goes in. On a gap day, the market decides the price.",
+    "hi": "Plan Rs 15 per share ke loss ka tha: 40 x Rs 15 = Rs 600. Lekin stock Rs 230 par khula, trigger se bhi neeche, isliye SL-M open par hi jaag gaya aur shares agle available price, yaani Rs 230 ke aas-paas bik gaye: 40 x Rs 30 = lagbhag Rs 1,200. Agar broker aisa stop reject kar de jiska trigger pehle hi paar ho chuka ho, toh use khud bechna padega, phir bhi Rs 230 ke aas-paas ya usse neeche. Stop-loss tay karta hai ki exit order kab jaayega. Gap wale din price market tay karta hai.",
+    "dv": "प्लान Rs 15 प्रति शेयर के लॉस का था: 40 x Rs 15 = Rs 600। लेकिन स्टॉक Rs 230 पर खुला, ट्रिगर से भी नीचे, इसलिए SL-M ओपन पर ही जाग गया और शेयर अगले मिलने वाले भाव, यानी Rs 230 के आसपास बिक गए: 40 x Rs 30 = लगभग Rs 1,200। अगर ब्रोकर ऐसा स्टॉप रिजेक्ट कर दे जिसका ट्रिगर पहले ही पार हो चुका हो, तो उसे ख़ुद बेचना पड़ेगा, फिर भी Rs 230 के आसपास या उससे नीचे। स्टॉप-लॉस तय करता है कि एग्ज़िट ऑर्डर कब जाएगा। गैप वाले दिन भाव बाज़ार तय करता है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Aman sets a GTT on his broker app to buy Bharat Pumps Ltd if the price hits Rs 95. Which statement about this GTT is correct?",
+    "hi": "Aman apne broker app par GTT set karta hai ki price Rs 95 hit kare toh Bharat Pumps Ltd khareed liya jaye. Is GTT ke baare mein kaunsi baat sahi hai?",
+    "dv": "अमन अपने ब्रोकर ऐप पर GTT सेट करता है कि भाव Rs 95 छुए तो Bharat Pumps Ltd ख़रीद लिया जाए। इस GTT के बारे में कौन-सी बात सही है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "His broker holds it and sends an order only at the trigger",
+      "hi": "Broker ise apne paas rakhta hai aur trigger par hi order bhejta hai",
+      "dv": "ब्रोकर इसे अपने पास रखता है और ट्रिगर पर ही ऑर्डर भेजता है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "It sits in the exchange order book from the moment he sets it",
+      "hi": "Set karte hi yeh exchange ki order book mein baith jaata hai",
+      "dv": "सेट करते ही यह एक्सचेंज की ऑर्डर बुक में बैठ जाता है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Once triggered, it always fills at exactly Rs 95, even on a gap",
+      "hi": "Trigger hone par yeh hamesha theek Rs 95 par fill hota hai, gap mein bhi",
+      "dv": "ट्रिगर होने पर यह हमेशा ठीक Rs 95 पर फ़िल होता है, गैप में भी"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Like a day order, it is cancelled at 3:30 pm the same day",
+      "hi": "Day order ki tarah yeh usi din 3:30 baje cancel ho jaata hai",
+      "dv": "डे ऑर्डर की तरह यह उसी दिन 3:30 बजे कैंसिल हो जाता है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "GTT is a facility your broker offers, not an exchange order type. The broker keeps the instruction, often for months, and only when the price hits the trigger does it send a real order, usually a limit order, to the exchange. That order can still miss on a gap or in a fast market. Validity and rules differ by broker, so check yours.",
+    "hi": "GTT broker ki di hui facility hai, exchange ka order type nahi. Broker instruction apne paas rakhta hai, aksar mahino tak, aur jab price trigger hit karta hai tabhi exchange ko asli order bhejta hai, jo aksar limit order hota hai. Gap ya tez market mein woh order bhi miss ho sakta hai. Validity aur rules har broker ke alag hote hain, isliye apne broker ke rules check kijiye.",
+    "dv": "GTT ब्रोकर की दी हुई सुविधा है, एक्सचेंज का ऑर्डर टाइप नहीं। ब्रोकर निर्देश अपने पास रखता है, अक्सर महीनों तक, और जब भाव ट्रिगर तक पहुँचता है तभी एक्सचेंज को असली ऑर्डर भेजता है, जो अक्सर लिमिट ऑर्डर होता है। गैप या तेज़ बाज़ार में वह ऑर्डर भी फ़िल होने से रह सकता है। वैलिडिटी और नियम हर ब्रोकर के अलग होते हैं, इसलिए अपने ब्रोकर के नियम देख लें।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Aman buys 30 shares of Kiran Foods Ltd tagged as intraday (MIS). At 3:00 pm he still holds them and closes the app for the rest of the day. What most likely happens?",
+    "hi": "Aman Kiran Foods Ltd ke 30 shares intraday (MIS) tag ke saath khareedta hai. Dopahar 3:00 baje bhi shares uske paas hain, aur woh baaki din ke liye app band kar deta hai. Sabse zyada chance kis baat ka hai?",
+    "dv": "अमन Kiran Foods Ltd के 30 शेयर इंट्राडे (MIS) टैग के साथ ख़रीदता है। दोपहर 3:00 बजे भी शेयर उसके पास हैं, और वह बाक़ी दिन के लिए ऐप बंद कर देता है। सबसे ज़्यादा संभावना किस बात की है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "His broker squares them off before the close",
+      "hi": "Broker close se pehle unhe square off kar dega",
+      "dv": "ब्रोकर बाज़ार बंद होने से पहले उन्हें स्क्वेयर-ऑफ़ कर देगा"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "The shares reach his demat account on T+1",
+      "hi": "Shares T+1 par uske demat account mein aa jayenge",
+      "dv": "शेयर T+1 पर उसके डीमैट अकाउंट में आ जाएँगे"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "The position carries over to the next trading day",
+      "hi": "Position agle trading day tak chali jayegi",
+      "dv": "पोज़िशन अगले ट्रेडिंग दिन तक चली जाएगी"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "The exchange cancels the trade and refunds his money",
+      "hi": "Exchange trade cancel karke uska paisa lauta dega",
+      "dv": "एक्सचेंज ट्रेड कैंसिल करके उसका पैसा लौटा देगा"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "An intraday (MIS) position must be closed the same day. If you do not close it, your broker's system squares it off at a cut-off time it sets before 3:30 pm, at whatever the price is then, and some brokers charge a fee. Only a delivery (CNC) buy goes to your demat on T+1.",
+    "hi": "Intraday (MIS) position usi din band karni hoti hai. Agar aap band nahi karte, toh broker ka system 3:30 se pehle apne tay kiye cut-off time par, us waqt ke price par, use square off kar deta hai, aur kuch brokers iski fee bhi lete hain. Sirf delivery (CNC) wala buy T+1 par demat mein jaata hai.",
+    "dv": "इंट्राडे (MIS) पोज़िशन उसी दिन बंद करनी होती है। अगर आप बंद नहीं करते, तो ब्रोकर का सिस्टम 3:30 से पहले अपने तय किए कट-ऑफ़ टाइम पर, उस वक़्त के भाव पर, उसे स्क्वेयर-ऑफ़ कर देता है, और कुछ ब्रोकर इसकी फ़ीस भी लेते हैं। सिर्फ़ डिलीवरी (CNC) वाला बाय T+1 पर डीमैट में जाता है।"
+   }
+  }
+ ]
+}

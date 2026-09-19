@@ -1,0 +1,1204 @@
+{
+ "day": 18,
+ "title": {
+  "en": "F&O basics only: samjho, khelo mat",
+  "hi": "F&O ke basics: samjho, khelo mat",
+  "dv": "F&O की बुनियादी बातें: समझो, खेलो मत"
+ },
+ "tags": {
+  "concept": {
+   "en": "Futures and options: what they are, and why Stage 1 only studies them",
+   "hi": "Futures aur options: yeh hote kya hain, aur Stage 1 mein inhe sirf padhte kyun hain",
+   "dv": "फ़्यूचर्स और ऑप्शन: ये होते क्या हैं, और Stage 1 में इन्हें सिर्फ़ पढ़ते क्यों हैं"
+  },
+  "ai_lab": {
+   "en": "Option chain explainer: read it, do not trade it",
+   "hi": "Option chain explainer: padhiye, trade mat kijiye",
+   "dv": "ऑप्शन चेन एक्सप्लेनर: पढ़िए, ट्रेड मत कीजिए"
+  },
+  "psychology": {
+   "en": "The lottery-ticket mind",
+   "hi": "Lottery ticket wali soch",
+   "dv": "लॉटरी टिकट वाली सोच"
+  }
+ },
+ "strategy": null,
+ "duration_min": 75,
+ "story": {
+  "kind": "story",
+  "title": {
+   "en": "The one ticket everyone talks about",
+   "hi": "Woh ek ticket jiski sab baat karte hain",
+   "dv": "वह एक टिकट जिसकी सब बात करते हैं"
+  },
+  "panels": [
+   {
+    "who": "narrator",
+    "say": {
+     "en": "Thursday evening, just after the class video call. Aman holds his phone up to the camera. Priya has her notebook open.",
+     "hi": "Thursday shaam, class ki video call ke turant baad. Aman apna phone camera ke saamne kiye hue hai. Priya ki notebook khuli hai.",
+     "dv": "गुरुवार की शाम, क्लास की वीडियो कॉल के ठीक बाद। अमन अपना फ़ोन कैमरे के सामने किए हुए है। प्रिया की नोटबुक खुली है।"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "excited",
+    "say": {
+     "en": "Sir, look. My colleague bought NIFTY calls at Rs 4 and sold them at Rs 60 the same day. He put in about Rs 3,000 and took out about Rs 45,000. And the most he could ever lose was that Rs 3,000. That is low risk, right?",
+     "hi": "Sir, dekhiye. Mere colleague ne NIFTY ke calls Rs 4 mein liye aur usi din Rs 60 mein bech diye. Lagaye the karib Rs 3,000, nikale lagbhag Rs 45,000. Aur zyada se zyada loss bas wahi Rs 3,000 tha. Yeh toh low risk hua na?",
+     "dv": "सर, देखिए। मेरे कलीग ने NIFTY के कॉल Rs 4 में लिए और उसी दिन Rs 60 में बेच दिए। लगाए थे क़रीब Rs 3,000, निकाले लगभग Rs 45,000। और ज़्यादा से ज़्यादा नुक़सान बस वही Rs 3,000 था। यह तो कम रिस्क हुआ न?"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "thinking",
+    "say": {
+     "en": "Two questions, Aman. How many times did he buy Rs 4 calls before this? And how many of them ended at zero?",
+     "hi": "Aman, do sawaal. Isse pehle usne kitni baar aise Rs 4 wale calls khareede the? Aur unmein se kitne zero par khatam hue?",
+     "dv": "अमन, दो सवाल। इससे पहले उसने कितनी बार ऐसे Rs 4 वाले कॉल ख़रीदे थे? और उनमें से कितने ज़ीरो पर ख़त्म हुए?"
+    }
+   },
+   {
+    "who": "aman",
+    "mood": "worried",
+    "say": {
+     "en": "Umm... he never talks about those. He just says he tries every week.",
+     "hi": "Umm... unke baare mein toh woh kabhi baat hi nahi karta. Bas kehta hai ki har hafte try karta hai.",
+     "dv": "हम्म... उनके बारे में तो वह कभी बात ही नहीं करता। बस कहता है कि हर हफ़्ते कोशिश करता है।"
+    }
+   },
+   {
+    "who": "priya",
+    "mood": "thinking",
+    "say": {
+     "en": "Sir, so a small loss that repeats every week is not really small? And why was that call so cheap in the first place?",
+     "hi": "Sir, matlab har hafte hone wala chhota loss asal mein chhota nahi hai? Aur woh call itna sasta tha hi kyun?",
+     "dv": "सर, मतलब हर हफ़्ते होने वाला छोटा नुक़सान असल में छोटा नहीं है? और वह कॉल इतना सस्ता था ही क्यों?"
+    }
+   },
+   {
+    "who": "mentor",
+    "mood": "neutral",
+    "say": {
+     "en": "That is the right question, Priya. Cheap options are cheap for a reason. Today we learn what futures and options are, and why Stage 1 only studies them. F&O: samjho, khelo mat.",
+     "hi": "Bilkul sahi sawaal hai, Priya. Saste options kisi wajah se hi saste hote hain. Aaj hum seekhenge ki futures aur options kya hain, aur Stage 1 mein inhe sirf padhte kyun hain. F&O: samjho, khelo mat.",
+     "dv": "बिल्कुल सही सवाल है, प्रिया। सस्ते ऑप्शन किसी वजह से ही सस्ते होते हैं। आज हम सीखेंगे कि फ़्यूचर्स और ऑप्शन क्या हैं, और Stage 1 में इन्हें सिर्फ़ पढ़ते क्यों हैं। F&O: समझो, खेलो मत।"
+    }
+   }
+  ],
+  "moral": {
+   "en": "A small price is not the same as a small risk. Count the tickets that lost, not only the one that won.",
+   "hi": "Chhota price aur chhota risk ek baat nahi hai. Sirf jeetne wala ticket mat giniye, haarne wale bhi giniye.",
+   "dv": "छोटी क़ीमत और छोटा रिस्क एक बात नहीं है। सिर्फ़ जीतने वाला टिकट मत गिनिए, हारने वाले भी गिनिए।"
+  }
+ },
+ "topics": [
+  {
+   "h": {
+    "en": "Futures: a deal today, settled every evening",
+    "hi": "Futures: deal aaj, hisaab har shaam",
+    "dv": "फ़्यूचर्स: सौदा आज, हिसाब हर शाम"
+   },
+   "p": {
+    "en": "A futures contract is a deal made today to buy or sell something on a fixed later date, called the expiry, at a price agreed now. On NSE there are futures on indices such as NIFTY 50 and on many stocks. You cannot pick any quantity: each contract comes in a fixed size called a lot, set by the exchange and revised from time to time, and one lot is usually worth many lakh rupees. You do not pay the full value; the broker blocks a margin, a safety deposit that is only a part of it, with a minimum set by the exchange's clearing corporation. Every evening the day's profit or loss is settled in cash; this is mark-to-market (MTM). Controlling a big value with a small deposit is leverage, and it works in both directions.",
+    "hi": "Futures contract ek deal hai jo aaj hoti hai: price aaj tay ho jaata hai, lekin khareed-bikri aage ki ek tay date par hoti hai, jise expiry kehte hain. NSE par NIFTY 50 jaise indices aur kai stocks ke futures hote hain. Quantity aap apni marzi se nahi chun sakte: har contract ek fixed size mein aata hai jise lot kehte hain. Lot size exchange tay karta hai aur samay-samay par badalta bhi hai, aur ek lot aam taur par kai lakh rupaye ka hota hai. Poora paisa nahi dena padta. Broker sirf ek margin block karta hai, yaani ek tarah ka safety deposit jo contract value ka chhota hissa hota hai; kam se kam kitna ho, yeh exchange ki clearing corporation tay karti hai. Har shaam us din ka profit ya loss cash mein settle ho jaata hai; ise mark-to-market (MTM) kehte hain. Chhote deposit se badi value control karna leverage hai, aur yeh dono taraf kaam karta hai.",
+    "dv": "फ़्यूचर्स कॉन्ट्रैक्ट एक सौदा है जो आज होता है: भाव आज तय हो जाता है, लेकिन ख़रीद-बिक्री आगे की एक तय तारीख़ पर होती है, जिसे एक्सपायरी कहते हैं। NSE पर NIFTY 50 जैसे इंडेक्स और कई शेयरों के फ़्यूचर्स होते हैं। क्वांटिटी आप अपनी मर्ज़ी से नहीं चुन सकते: हर कॉन्ट्रैक्ट एक तय साइज़ में आता है जिसे लॉट कहते हैं। लॉट साइज़ एक्सचेंज तय करता है और समय-समय पर बदलता भी है, और एक लॉट आम तौर पर कई लाख रुपये का होता है। पूरा पैसा नहीं देना पड़ता। ब्रोकर सिर्फ़ एक मार्जिन ब्लॉक करता है, यानी एक तरह का सेफ़्टी डिपॉज़िट जो कॉन्ट्रैक्ट की वैल्यू का छोटा हिस्सा होता है; कम से कम कितना हो, यह एक्सचेंज की क्लियरिंग कॉर्पोरेशन तय करती है। हर शाम उस दिन का मुनाफ़ा या नुक़सान नक़द में सेटल हो जाता है; इसे मार्क-टू-मार्केट (MTM) कहते हैं। छोटे डिपॉज़िट से बड़ी वैल्यू कंट्रोल करना लेवरेज है, और यह दोनों तरफ़ काम करता है।"
+   },
+   "example": {
+    "en": "Think of booking Diwali mithai in September at today's rate with a small advance: the price is locked, but here the difference is settled every single day. In a made-up case, one lot of Bharat Pumps Ltd futures is 2,000 shares at Rs 800, a contract value of Rs 16,00,000, and the broker blocks Rs 3,20,000 as margin. If the price slips Rs 10 a day, Rs 20,000 leaves the account each evening. A 5% fall, Rs 40 a share, costs Rs 80,000, a quarter of the margin. A 20% fall would wipe out the whole margin, and a bigger fall costs more than you deposited. On the Rs 10 lakh challenge capital, 1R is Rs 10,000, so one Rs 10 slip is already 2R, the daily stop, and this one contract is 1.6 times the whole capital.",
+    "hi": "Sochiye, September mein hi Diwali ki mithai aaj ke rate par thoda advance dekar book kar di: rate lock ho gaya, bas yahan farak ka hisaab roz hota hai. Ek banawati example lijiye: Bharat Pumps Ltd futures ka ek lot 2,000 shares ka hai, price Rs 800, yaani contract value Rs 16,00,000, aur broker Rs 3,20,000 margin block karta hai. Agar price roz Rs 10 gire, toh har shaam account se Rs 20,000 nikal jaate hain. 5% ki girawat, yaani Rs 40 per share, ka matlab Rs 80,000 ka loss, margin ka ek-chauthai. 20% gire toh poora margin saaf, aur usse zyada gire toh loss aapke deposit se bhi bada ho jaata hai. Rs 10 lakh ki challenge capital par 1R Rs 10,000 hai, yaani sirf Rs 10 ki yeh girawat hi 2R hai, poora daily stop, aur akela yeh contract poori capital ka 1.6 guna hai.",
+    "dv": "सोचिए, सितंबर में ही दिवाली की मिठाई आज के रेट पर थोड़ा एडवांस देकर बुक कर दी: रेट लॉक हो गया, बस यहाँ फ़र्क़ का हिसाब रोज़ होता है। एक काल्पनिक उदाहरण लीजिए: Bharat Pumps Ltd फ़्यूचर्स का एक लॉट 2,000 शेयर का है, भाव Rs 800, यानी कॉन्ट्रैक्ट वैल्यू Rs 16,00,000, और ब्रोकर Rs 3,20,000 मार्जिन ब्लॉक करता है। अगर भाव रोज़ Rs 10 गिरे, तो हर शाम खाते से Rs 20,000 निकल जाते हैं। 5% की गिरावट, यानी Rs 40 प्रति शेयर, का मतलब Rs 80,000 का नुक़सान, मार्जिन का एक-चौथाई। 20% गिरे तो पूरा मार्जिन साफ़, और उससे ज़्यादा गिरे तो नुक़सान आपके डिपॉज़िट से भी बड़ा हो जाता है। Rs 10 लाख की चैलेंज कैपिटल पर 1R Rs 10,000 है, यानी सिर्फ़ Rs 10 की यह गिरावट ही 2R है, पूरा डेली स्टॉप, और अकेला यह कॉन्ट्रैक्ट पूरी कैपिटल का 1.6 गुना है।"
+   },
+   "remember": {
+    "en": "Margin is a deposit, not a limit. In futures, the loss can be bigger than the money you put down.",
+    "hi": "Margin ek deposit hai, limit nahi. Futures mein loss aapke lagaye paise se bhi bada ho sakta hai.",
+    "dv": "मार्जिन एक डिपॉज़िट है, सीमा नहीं। फ़्यूचर्स में नुक़सान आपके लगाए पैसे से भी बड़ा हो सकता है।"
+   },
+   "visual": {
+    "kind": "steps",
+    "title": {
+     "en": "MTM, one evening at a time",
+     "hi": "MTM, har shaam ka hisaab",
+     "dv": "MTM, हर शाम का हिसाब"
+    },
+    "caption": {
+     "en": "Made-up numbers: 1 lot = 2,000 shares, margin Rs 3,20,000 and nothing spare in the account. Losses leave your account every evening, not only at expiry, so even the first loss leaves you short of margin.",
+     "hi": "Banawati numbers: 1 lot = 2,000 shares, margin Rs 3,20,000, aur account mein extra kuch nahi. Loss har shaam account se nikalta hai, sirf expiry par nahi, isliye pehle hi loss ke baad margin kam pad jaata hai.",
+     "dv": "काल्पनिक आँकड़े: 1 लॉट = 2,000 शेयर, मार्जिन Rs 3,20,000, और खाते में अलग से कुछ नहीं। नुक़सान हर शाम खाते से निकलता है, सिर्फ़ एक्सपायरी पर नहीं, इसलिए पहले ही नुक़सान के बाद मार्जिन कम पड़ जाता है।"
+    },
+    "items": [
+     {
+      "tag": "Day 0",
+      "label": {
+       "en": "Bought 1 lot at Rs 800",
+       "hi": "1 lot Rs 800 par liya",
+       "dv": "1 लॉट Rs 800 पर लिया"
+      },
+      "sub": {
+       "en": "Margin of Rs 3,20,000 blocked",
+       "hi": "Rs 3,20,000 margin block",
+       "dv": "Rs 3,20,000 मार्जिन ब्लॉक"
+      }
+     },
+     {
+      "tag": "Day 1",
+      "label": {
+       "en": "Closes at Rs 790",
+       "hi": "Rs 790 par close",
+       "dv": "Rs 790 पर बंद"
+      },
+      "sub": {
+       "en": "Rs 20,000 debited",
+       "hi": "Rs 20,000 debit",
+       "dv": "Rs 20,000 खाते से कटे"
+      }
+     },
+     {
+      "tag": "Day 2",
+      "label": {
+       "en": "Closes at Rs 780",
+       "hi": "Rs 780 par close",
+       "dv": "Rs 780 पर बंद"
+      },
+      "sub": {
+       "en": "Another Rs 20,000 debited",
+       "hi": "Phir Rs 20,000 debit",
+       "dv": "फिर Rs 20,000 कटे"
+      }
+     },
+     {
+      "tag": "Day 3",
+      "label": {
+       "en": "Closes at Rs 770",
+       "hi": "Rs 770 par close",
+       "dv": "Rs 770 पर बंद"
+      },
+      "sub": {
+       "en": "Total so far: Rs 60,000",
+       "hi": "Ab tak kul: Rs 60,000",
+       "dv": "अब तक कुल: Rs 60,000"
+      }
+     },
+     {
+      "tag": "Any day",
+      "label": {
+       "en": "Margin call",
+       "hi": "Margin call",
+       "dv": "मार्जिन कॉल"
+      },
+      "sub": {
+       "en": "Balance below margin: top up, or the broker may close it",
+       "hi": "Balance margin se kam: paisa daliye, warna broker position band kar sakta hai",
+       "dv": "बैलेंस मार्जिन से कम: पैसा डालिए, वरना ब्रोकर पोज़ीशन बंद कर सकता है"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Options: a right for the buyer, a duty for the seller",
+    "hi": "Options: buyer ke paas haq, seller par zimmedari",
+    "dv": "ऑप्शन: ख़रीदार के पास हक़, बेचने वाले पर ज़िम्मेदारी"
+   },
+   "p": {
+    "en": "An option gives its buyer a right, but not a duty, to buy or sell at a fixed price on the expiry day. NSE options are European style: the right can be used only at expiry, but the option itself can be sold on the exchange on any trading day before that. A call option (CE) is the right to buy; a put option (PE) is the right to sell. The fixed price is the strike price, and the price of the right itself is the premium, which the buyer pays in full upfront. The seller, also called the writer, receives the premium and takes on the duty: if the buyer uses the right, the seller must honour it. Stock options expire monthly; weekly expiry exists only for a small set of benchmark index contracts, and expiry days have changed in recent years, so check the NSE website for the current calendar.",
+    "hi": "Option apne buyer ko ek haq deta hai, zimmedari nahi: expiry ke din ek tay price par khareedne ya bechne ka haq. NSE ke options European style hote hain: haq sirf expiry par use hota hai, lekin option ko expiry se pehle kisi bhi trading din exchange par bech sakte hain. Call option (CE) khareedne ka haq hai; put option (PE) bechne ka haq. Woh tay price strike price kehlata hai, aur is haq ki keemat premium hai, jo buyer poori ki poori pehle hi de deta hai. Seller, jise writer bhi kehte hain, premium le leta hai aur zimmedari utha leta hai: buyer ne apna haq use kiya, toh seller ko nibhana hi padega. Stock options monthly expire hote hain; weekly expiry sirf kuch chune hue benchmark index contracts mein hai, aur pichhle kuch saalon mein expiry ke din badle bhi hain, isliye current calendar NSE ki website par check kijiye.",
+    "dv": "ऑप्शन अपने ख़रीदार को एक हक़ देता है, ज़िम्मेदारी नहीं: एक्सपायरी के दिन एक तय भाव पर ख़रीदने या बेचने का हक़। NSE के ऑप्शन यूरोपियन स्टाइल होते हैं: हक़ सिर्फ़ एक्सपायरी पर इस्तेमाल होता है, लेकिन ऑप्शन को एक्सपायरी से पहले किसी भी ट्रेडिंग दिन एक्सचेंज पर बेचा जा सकता है। कॉल ऑप्शन (CE) ख़रीदने का हक़ है; पुट ऑप्शन (PE) बेचने का हक़। वह तय भाव स्ट्राइक प्राइस कहलाता है, और इस हक़ की क़ीमत प्रीमियम है, जो ख़रीदार पूरी की पूरी पहले ही दे देता है। बेचने वाला, जिसे राइटर भी कहते हैं, प्रीमियम ले लेता है और ज़िम्मेदारी उठा लेता है: ख़रीदार ने अपना हक़ इस्तेमाल किया, तो उसे निभाना ही पड़ेगा। स्टॉक ऑप्शन हर महीने एक्सपायर होते हैं; वीकली एक्सपायरी सिर्फ़ कुछ चुने हुए बेंचमार्क इंडेक्स कॉन्ट्रैक्ट में है, और पिछले कुछ सालों में एक्सपायरी के दिन बदले भी हैं, इसलिए मौजूदा कैलेंडर NSE की वेबसाइट पर देख लें।"
+   },
+   "example": {
+    "en": "It works like the token money on a flat booking. A young couple pays a non-refundable token of Rs 50,000 for the right to buy a flat at Rs 40 lakh when three months are up. The token is extra; it is not knocked off the Rs 40 lakh. If flats nearby jump to Rs 46 lakh, their right is valuable. If prices fall, they walk away and lose only the token. The builder keeps the token either way, but if prices jump, he must still sell at Rs 40 lakh. The couple is the call buyer, the token is the premium, Rs 40 lakh is the strike and the builder is the seller.",
+    "hi": "Yeh flat booking ke token jaisa hai. Ek young couple Rs 50,000 ka non-refundable token deta hai, is haq ke liye ki teen mahine poore hone par flat Rs 40 lakh mein khareed sake. Yeh token extra hai; Rs 40 lakh mein adjust nahi hota. Aas-paas ke flats Rs 46 lakh ke ho gaye, toh unka haq keemti ho gaya. Daam gir gaye, toh woh chhod kar nikal jaate hain aur sirf token jaata hai. Builder ke paas token toh har haal mein rehta hai, lekin daam badhe toh use flat Rs 40 lakh mein hi dena padega. Couple call buyer hai, token premium hai, Rs 40 lakh strike hai, aur builder seller hai.",
+    "dv": "यह फ़्लैट बुकिंग के टोकन जैसा है। एक युवा दंपति Rs 50,000 का नॉन-रिफ़ंडेबल टोकन देता है, इस हक़ के लिए कि तीन महीने पूरे होने पर फ़्लैट Rs 40 लाख में ख़रीद सके। यह टोकन अलग से है; Rs 40 लाख में एडजस्ट नहीं होता। आसपास के फ़्लैट Rs 46 लाख के हो गए, तो उनका हक़ क़ीमती हो गया। दाम गिर गए, तो वे छोड़कर निकल जाते हैं और सिर्फ़ टोकन जाता है। बिल्डर के पास टोकन तो हर हाल में रहता है, लेकिन दाम बढ़े तो उसे फ़्लैट Rs 40 लाख में ही देना पड़ेगा। दंपति कॉल ख़रीदार है, टोकन प्रीमियम है, Rs 40 लाख स्ट्राइक है, और बिल्डर बेचने वाला है।"
+   },
+   "remember": {
+    "en": "Buyer: pays the premium and holds a right. Seller: collects the premium and carries the duty, and the bigger risk.",
+    "hi": "Buyer: premium deta hai, haq rakhta hai. Seller: premium leta hai, zimmedari aur bada risk uthata hai.",
+    "dv": "ख़रीदार: प्रीमियम देता है, हक़ रखता है। बेचने वाला: प्रीमियम लेता है, ज़िम्मेदारी और बड़ा रिस्क उठाता है।"
+   },
+   "visual": {
+    "kind": "compare",
+    "title": {
+     "en": "Who sits where at the options table",
+     "hi": "Options ki table par kaun kahan",
+     "dv": "ऑप्शन की टेबल पर कौन कहाँ"
+    },
+    "caption": {
+     "en": "Every option has a buyer and a seller. In Stage 1 you sit in none of these seats, not even on paper.",
+     "hi": "Har option ka ek buyer hota hai aur ek seller. Stage 1 mein aap in mein se kisi kursi par nahi baithte, paper par bhi nahi.",
+     "dv": "हर ऑप्शन का एक ख़रीदार होता है और एक बेचने वाला। Stage 1 में आप इनमें से किसी कुर्सी पर नहीं बैठते, पेपर पर भी नहीं।"
+    },
+    "cols": [
+     {
+      "head": {
+       "en": "Call buyer (CE)",
+       "hi": "Call buyer (CE)",
+       "dv": "कॉल ख़रीदार (CE)"
+      },
+      "tone": "up",
+      "points": [
+       {
+        "en": "Right to buy at the strike",
+        "hi": "Strike par khareedne ka haq",
+        "dv": "स्ट्राइक पर ख़रीदने का हक़"
+       },
+       {
+        "en": "Pays the premium upfront",
+        "hi": "Premium pehle hi deta hai",
+        "dv": "प्रीमियम पहले ही देता है"
+       },
+       {
+        "en": "Gains if price rises enough",
+        "hi": "Price kaafi badhe toh fayda",
+        "dv": "भाव काफ़ी बढ़े तो फ़ायदा"
+       },
+       {
+        "en": "Worst case: premium lost",
+        "hi": "Sabse bura: premium gaya",
+        "dv": "सबसे बुरा: प्रीमियम गया"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "Put buyer (PE)",
+       "hi": "Put buyer (PE)",
+       "dv": "पुट ख़रीदार (PE)"
+      },
+      "tone": "gold",
+      "points": [
+       {
+        "en": "Right to sell at the strike",
+        "hi": "Strike par bechne ka haq",
+        "dv": "स्ट्राइक पर बेचने का हक़"
+       },
+       {
+        "en": "Pays the premium upfront",
+        "hi": "Premium pehle hi deta hai",
+        "dv": "प्रीमियम पहले ही देता है"
+       },
+       {
+        "en": "Gains if price falls enough",
+        "hi": "Price kaafi gire toh fayda",
+        "dv": "भाव काफ़ी गिरे तो फ़ायदा"
+       },
+       {
+        "en": "Worst case: premium lost",
+        "hi": "Sabse bura: premium gaya",
+        "dv": "सबसे बुरा: प्रीमियम गया"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "Seller (call or put)",
+       "hi": "Seller (call ya put)",
+       "dv": "बेचने वाला (कॉल या पुट)"
+      },
+      "tone": "down",
+      "points": [
+       {
+        "en": "Collects the premium",
+        "hi": "Premium le leta hai",
+        "dv": "प्रीमियम ले लेता है"
+       },
+       {
+        "en": "Must honour the buyer's right",
+        "hi": "Buyer ka haq nibhana padta hai",
+        "dv": "ख़रीदार का हक़ निभाना पड़ता है"
+       },
+       {
+        "en": "Loss can far exceed premium",
+        "hi": "Loss premium se kahin bada ho sakta hai",
+        "dv": "नुक़सान प्रीमियम से कहीं बड़ा हो सकता है"
+       },
+       {
+        "en": "Must keep margin",
+        "hi": "Margin rakhna zaroori",
+        "dv": "मार्जिन रखना ज़रूरी"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "ITM, ATM, OTM, and what a premium is made of",
+    "hi": "ITM, ATM, OTM, aur premium ke andar kya hota hai",
+    "dv": "ITM, ATM, OTM, और प्रीमियम के अंदर क्या होता है"
+   },
+   "p": {
+    "en": "Moneyness tells you where the strike sits against today's price. For a call, a strike below the current price is in the money (ITM), a strike close to it is at the money (ATM), and a strike above it is out of the money (OTM); for a put it is the mirror image. Every premium has two parts. Intrinsic value is what the option would be worth if it expired right now: for a call, the current price minus the strike, never below zero; for a put, the strike minus the current price, also never below zero. Time value is the rest, the price of hope that a move will come before expiry; it melts a little every day, fastest near expiry, like kulfi in the sun, and this is time decay. NIFTY premiums are quoted in points; one point is Rs 1 for every unit in the lot.",
+    "hi": "Moneyness batata hai ki strike aaj ke price ke muqable kahan khada hai. Call ke liye, current price se neeche wala strike in the money (ITM) hai, uske aas-paas wala at the money (ATM), aur upar wala out of the money (OTM); put ke liye bilkul ulta. Har premium ke do hisse hote hain. Intrinsic value woh hai jo option abhi isi pal expire ho toh milegi: call ke liye current price minus strike, aur yeh zero se neeche kabhi nahi jaati; put ke liye strike minus current price, yeh bhi zero se neeche nahi. Time value baaki bacha hissa hai, is umeed ki keemat ki expiry se pehle move aa jayega; yeh roz thodi-thodi pighalti hai, expiry ke paas sabse tez, jaise dhoop mein kulfi, aur ise time decay kehte hain. NIFTY ke premium points mein dikhte hain; ek point matlab lot ki har unit par Rs 1.",
+    "dv": "मनीनेस बताता है कि स्ट्राइक आज के भाव के मुक़ाबले कहाँ खड़ा है। कॉल के लिए, मौजूदा भाव से नीचे वाला स्ट्राइक इन द मनी (ITM) है, उसके आसपास वाला एट द मनी (ATM), और ऊपर वाला आउट ऑफ़ द मनी (OTM); पुट के लिए ठीक उल्टा। हर प्रीमियम के दो हिस्से होते हैं। इंट्रिंसिक वैल्यू वह है जो ऑप्शन अभी इसी पल एक्सपायर हो तो मिलेगी: कॉल के लिए मौजूदा भाव माइनस स्ट्राइक, और यह ज़ीरो से नीचे कभी नहीं जाती; पुट के लिए स्ट्राइक माइनस मौजूदा भाव, यह भी ज़ीरो से नीचे नहीं। टाइम वैल्यू बाक़ी बचा हिस्सा है, इस उम्मीद की क़ीमत कि एक्सपायरी से पहले मूव आ जाएगा; यह रोज़ थोड़ी-थोड़ी पिघलती है, एक्सपायरी के पास सबसे तेज़, जैसे धूप में कुल्फ़ी, और इसे टाइम डिके कहते हैं। NIFTY के प्रीमियम पॉइंट में दिखते हैं; एक पॉइंट मतलब लॉट की हर यूनिट पर Rs 1।"
+   },
+   "example": {
+    "en": "NIFTY 50 is at 24,150 (illustrative). The 24,000 call is ITM by 150 points, and its premium is 210, so intrinsic value is 150 and time value is 60. The 24,300 call is OTM, and its premium of 45 is all time value. If NIFTY sits at 24,150 until expiry, the 24,000 call ends at 150 and the 24,300 call ends at zero. And the 24,000 put is OTM: a right to sell at 24,000 is worth nothing to use when the market is at 24,150. Mirror image for puts: the 24,250 put is ITM by 100; if its premium is 150, intrinsic value is 100 and time value is 50.",
+    "hi": "NIFTY 50 24,150 par hai (illustrative). 24,000 ka call 150 points ITM hai aur uska premium 210 hai, toh intrinsic value 150 aur time value 60. 24,300 ka call OTM hai; uska 45 ka poora premium time value hi hai. Agar NIFTY expiry tak 24,150 par hi tika rahe, toh 24,000 ka call 150 par khatam hoga aur 24,300 ka call zero par. Aur 24,000 ka put OTM hai: jab market 24,150 par ho, tab 24,000 par bechne ka haq use karne mein koi fayda nahi. Put ke liye ulta: 24,250 ka put 100 points ITM hai; premium 150 ho, toh intrinsic value 100 aur time value 50.",
+    "dv": "NIFTY 50 24,150 पर है (काल्पनिक)। 24,000 का कॉल 150 पॉइंट ITM है और उसका प्रीमियम 210 है, तो इंट्रिंसिक वैल्यू 150 और टाइम वैल्यू 60। 24,300 का कॉल OTM है; उसका 45 का पूरा प्रीमियम टाइम वैल्यू ही है। अगर NIFTY एक्सपायरी तक 24,150 पर ही टिका रहे, तो 24,000 का कॉल 150 पर ख़त्म होगा और 24,300 का कॉल ज़ीरो पर। और 24,000 का पुट OTM है: जब बाज़ार 24,150 पर हो, तब 24,000 पर बेचने का हक़ इस्तेमाल करने में कोई फ़ायदा नहीं। पुट के लिए उल्टा: 24,250 का पुट 100 पॉइंट ITM है; प्रीमियम 150 हो, तो इंट्रिंसिक वैल्यू 100 और टाइम वैल्यू 50।"
+   },
+   "remember": {
+    "en": "Intrinsic value stays if the price stays. Time value melts every day, whether you watch it or not.",
+    "hi": "Price tika rahe toh intrinsic value bhi tiki rehti hai. Time value roz pighalti hai, aap dekhein ya na dekhein.",
+    "dv": "भाव टिका रहे तो इंट्रिंसिक वैल्यू भी टिकी रहती है। टाइम वैल्यू रोज़ पिघलती है, आप देखें या न देखें।"
+   },
+   "visual": {
+    "kind": "calc",
+    "title": {
+     "en": "Splitting one premium",
+     "hi": "Ek premium ke do hisse",
+     "dv": "एक प्रीमियम के दो हिस्से"
+    },
+    "caption": {
+     "en": "Illustrative numbers for a 24,000 call. An OTM call has zero intrinsic value, so its whole premium is time value.",
+     "hi": "24,000 call ke illustrative numbers. OTM call ki intrinsic value zero hoti hai, isliye uska poora premium time value hota hai.",
+     "dv": "24,000 कॉल के काल्पनिक आँकड़े। OTM कॉल की इंट्रिंसिक वैल्यू ज़ीरो होती है, इसलिए उसका पूरा प्रीमियम टाइम वैल्यू होता है।"
+    },
+    "rows": [
+     {
+      "label": {
+       "en": "NIFTY 50 level",
+       "hi": "NIFTY 50 ka level",
+       "dv": "NIFTY 50 का लेवल"
+      },
+      "value": "24,150"
+     },
+     {
+      "label": {
+       "en": "Call strike",
+       "hi": "Call ka strike",
+       "dv": "कॉल का स्ट्राइक"
+      },
+      "value": "24,000",
+      "op": "-"
+     },
+     {
+      "label": {
+       "en": "Intrinsic value",
+       "hi": "Intrinsic value",
+       "dv": "इंट्रिंसिक वैल्यू"
+      },
+      "value": "150",
+      "op": "="
+     },
+     {
+      "label": {
+       "en": "Premium on screen",
+       "hi": "Screen par premium",
+       "dv": "स्क्रीन पर प्रीमियम"
+      },
+      "value": "210"
+     },
+     {
+      "label": {
+       "en": "Intrinsic value",
+       "hi": "Intrinsic value",
+       "dv": "इंट्रिंसिक वैल्यू"
+      },
+      "value": "150",
+      "op": "-"
+     }
+    ],
+    "result": {
+     "label": {
+      "en": "Time value (melts by expiry)",
+      "hi": "Time value (expiry tak pighlegi)",
+      "dv": "टाइम वैल्यू (एक्सपायरी तक पिघलेगी)"
+     },
+     "value": "60"
+    }
+   }
+  },
+  {
+   "h": {
+    "en": "Payoff at expiry: who can lose how much",
+    "hi": "Expiry par payoff: kaun kitna haar sakta hai",
+    "dv": "एक्सपायरी पर पेऑफ़: कौन कितना हार सकता है"
+   },
+   "p": {
+    "en": "A payoff chart shows the profit or loss at expiry for every possible price. A futures buyer gains or loses one rupee for every rupee the price moves, in both directions. A call buyer loses the full premium if the price ends at or below the strike, and makes money only above the breakeven, which is the strike plus the premium. The call seller's line is the exact mirror: the premium is the most he can make, and his loss keeps growing as the price rises. Costs and taxes, which you read in your contract note, push every breakeven a little further away.",
+    "hi": "Payoff chart dikhata hai ki expiry par har mumkin price par profit ya loss kitna hoga. Futures buyer ko price ke har ek rupaye ke move par ek rupaya fayda ya nuksaan hota hai, dono taraf. Call buyer ka poora premium doob jaata hai agar price strike par ya usse neeche khatam ho, aur paisa tabhi banta hai jab price breakeven se upar jaaye; breakeven yaani strike plus premium. Call seller ki line bilkul ulti hai: premium hi uski sabse badi kamai hai, aur price jitna upar jaaye, uska loss utna badhta jaata hai. Costs aur tax, jo aap contract note mein padhte hain, har breakeven ko thoda aur door kar dete hain.",
+    "dv": "पेऑफ़ चार्ट दिखाता है कि एक्सपायरी पर हर मुमकिन भाव पर मुनाफ़ा या नुक़सान कितना होगा। फ़्यूचर्स ख़रीदार को भाव के हर एक रुपये के मूव पर एक रुपया फ़ायदा या नुक़सान होता है, दोनों तरफ़। कॉल ख़रीदार का पूरा प्रीमियम डूब जाता है अगर भाव स्ट्राइक पर या उससे नीचे ख़त्म हो, और पैसा तभी बनता है जब भाव ब्रेकईवन से ऊपर जाए; ब्रेकईवन यानी स्ट्राइक प्लस प्रीमियम। कॉल बेचने वाले की लाइन ठीक उल्टी है: प्रीमियम ही उसकी सबसे बड़ी कमाई है, और भाव जितना ऊपर जाए, उसका नुक़सान उतना बढ़ता जाता है। ख़र्च और टैक्स, जो आप कॉन्ट्रैक्ट नोट में पढ़ते हैं, हर ब्रेकईवन को थोड़ा और दूर कर देते हैं।"
+   },
+   "example": {
+    "en": "Now a fresh example, not the 210 call above: a 24,000 NIFTY call bought at 100 points. At expiry, if NIFTY ends at 23,800 or at 24,000, the buyer loses 100 points. At 24,100 he is at breakeven, and at 24,400 he gains 300 points. The seller has the opposite result at every level: plus 100 at 24,000, zero at 24,100 and minus 300 at 24,400. A futures buyer at 24,000 would be minus 200 at 23,800 and plus 400 at 24,400. These are per-unit, illustrative figures; one lot multiplies them many times over.",
+    "hi": "Ab ek naya example lijiye, upar wala 210 ka call nahi: 24,000 ka NIFTY call jo 100 points mein khareeda gaya. Expiry par NIFTY 23,800 par khatam ho ya 24,000 par, buyer ke 100 points gaye. 24,100 par woh breakeven par hai, aur 24,400 par use 300 points ka fayda. Seller ka result har level par ulta hai: 24,000 par plus 100, 24,100 par zero, aur 24,400 par minus 300. 24,000 par liya gaya futures 23,800 par minus 200 aur 24,400 par plus 400 hota. Yeh per unit, illustrative figures hain; ek lot inhe kai guna kar deta hai.",
+    "dv": "अब एक नया उदाहरण लीजिए, ऊपर वाला 210 का कॉल नहीं: 24,000 का NIFTY कॉल जो 100 पॉइंट में ख़रीदा गया। एक्सपायरी पर NIFTY 23,800 पर ख़त्म हो या 24,000 पर, ख़रीदार के 100 पॉइंट गए। 24,100 पर वह ब्रेकईवन पर है, और 24,400 पर उसे 300 पॉइंट का फ़ायदा। बेचने वाले का नतीजा हर लेवल पर उल्टा है: 24,000 पर प्लस 100, 24,100 पर ज़ीरो, और 24,400 पर माइनस 300। 24,000 पर लिया गया फ़्यूचर्स 23,800 पर माइनस 200 और 24,400 पर प्लस 400 होता। ये प्रति यूनिट, काल्पनिक आँकड़े हैं; एक लॉट इन्हें कई गुना कर देता है।"
+   },
+   "remember": {
+    "en": "The buyer's worst case is the premium. The seller's best case is the premium.",
+    "hi": "Buyer ka sabse bura haal: premium gaya. Seller ka sabse achha haal: premium mila.",
+    "dv": "ख़रीदार का सबसे बुरा हाल: प्रीमियम गया। बेचने वाले का सबसे अच्छा हाल: प्रीमियम मिला।"
+   },
+   "visual": {
+    "kind": "line",
+    "title": {
+     "en": "Payoff at expiry, per unit",
+     "hi": "Expiry par payoff, per unit",
+     "dv": "एक्सपायरी पर पेऑफ़, प्रति यूनिट"
+    },
+    "caption": {
+     "en": "Illustrative, per unit: a 24,000 call bought at 100, and a future bought at 24,000. X-axis: 23,500 to 24,500 in steps of 100. Each line crosses 0 where it breaks even: the future at 24,000, the call buyer and seller at 24,100.",
+     "hi": "Illustrative, per unit: 24,000 ka call 100 mein khareeda, aur 24,000 par liya future. X-axis: 23,500 se 24,500 tak, 100-100 ke steps. Har line 0 wahan cross karti hai jahan woh breakeven par hai: future 24,000 par, call buyer aur seller 24,100 par.",
+     "dv": "काल्पनिक, प्रति यूनिट: 24,000 का कॉल 100 में ख़रीदा, और 24,000 पर लिया फ़्यूचर। X-axis: 23,500 से 24,500 तक, 100-100 के स्टेप। हर लाइन 0 वहाँ पार करती है जहाँ वह ब्रेकईवन पर है: फ़्यूचर 24,000 पर, कॉल ख़रीदार और बेचने वाला 24,100 पर।"
+    },
+    "x_label": {
+     "en": "NIFTY at expiry",
+     "hi": "Expiry par NIFTY",
+     "dv": "एक्सपायरी पर NIFTY"
+    },
+    "y_label": {
+     "en": "Points",
+     "hi": "Points",
+     "dv": "पॉइंट"
+    },
+    "series": [
+     {
+      "name": {
+       "en": "Futures buyer",
+       "hi": "Futures buyer",
+       "dv": "फ़्यूचर्स ख़रीदार"
+      },
+      "tone": "gold",
+      "points": [
+       -500,
+       -400,
+       -300,
+       -200,
+       -100,
+       0,
+       100,
+       200,
+       300,
+       400,
+       500
+      ]
+     },
+     {
+      "name": {
+       "en": "Call buyer",
+       "hi": "Call buyer",
+       "dv": "कॉल ख़रीदार"
+      },
+      "tone": "up",
+      "points": [
+       -100,
+       -100,
+       -100,
+       -100,
+       -100,
+       -100,
+       0,
+       100,
+       200,
+       300,
+       400
+      ]
+     },
+     {
+      "name": {
+       "en": "Call seller",
+       "hi": "Call seller",
+       "dv": "कॉल बेचने वाला"
+      },
+      "tone": "down",
+      "points": [
+       100,
+       100,
+       100,
+       100,
+       100,
+       100,
+       0,
+       -100,
+       -200,
+       -300,
+       -400
+      ]
+     }
+    ],
+    "marks": [
+     {
+      "x": 5,
+      "label": {
+       "en": "Strike",
+       "hi": "Strike",
+       "dv": "स्ट्राइक"
+      }
+     },
+     {
+      "x": 6,
+      "label": {
+       "en": "Breakeven",
+       "hi": "Breakeven",
+       "dv": "ब्रेकईवन"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "h": {
+    "en": "Expiry, delivery and the option-chain words",
+    "hi": "Expiry, delivery aur option chain ke shabd",
+    "dv": "एक्सपायरी, डिलीवरी और ऑप्शन चेन के शब्द"
+   },
+   "p": {
+    "en": "Index F&O, such as NIFTY 50 contracts, is settled in cash: only the profit or loss moves. Stock F&O held to expiry is physically settled: real shares change hands for the full value, and an option that ends ITM is normally exercised (used) automatically, whether you remember it or not. A stock-future buyer or ITM call buyer may have to pay in full and take the shares; a future seller or ITM put buyer may have to hand over shares, and option sellers carry the mirror duty. An option chain is the table of all strikes for one expiry. Open interest (OI) is the number of contracts still open; each has one buyer and one seller, so OI shows how much is open, not which way the market will go. PCR, the put-call ratio (total put OI divided by total call OI), is only a word to recognise for now.",
+    "hi": "Index F&O, jaise NIFTY 50 ke contracts, cash mein settle hote hain: sirf profit ya loss ka paisa aata-jaata hai. Stock F&O expiry tak rakha, toh physically settle hota hai: asli shares ka len-den poori value par hota hai, aur jo option expiry par ITM ho, woh aam taur par apne aap exercise (use) ho jaata hai, aapko yaad ho ya na ho. Stock future ya ITM call ke buyer ko poora paisa dekar shares lene pad sakte hain; future ke seller ya ITM put ke buyer ko shares dene pad sakte hain, aur option seller par iski ulti zimmedari aati hai. Option chain ek table hai jismein ek expiry ke saare strikes hote hain. Open interest (OI) matlab kitne contracts abhi khule hain; har contract ke peeche ek buyer aur ek seller hota hai, isliye OI batata hai kitna khula hai, yeh nahi ki market kis taraf jayega. PCR yaani put-call ratio (total put OI ko total call OI se divide karke) abhi ke liye bas pehchaanne wala shabd hai.",
+    "dv": "इंडेक्स F&O, जैसे NIFTY 50 के कॉन्ट्रैक्ट, नक़द में सेटल होते हैं: सिर्फ़ मुनाफ़े या नुक़सान का पैसा आता-जाता है। स्टॉक F&O एक्सपायरी तक रखा, तो फ़िज़िकली सेटल होता है: असली शेयरों का लेन-देन पूरी वैल्यू पर होता है, और जो ऑप्शन एक्सपायरी पर ITM हो, वह आम तौर पर अपने-आप एक्सरसाइज़ (इस्तेमाल) हो जाता है, आपको याद हो या न हो। स्टॉक फ़्यूचर या ITM कॉल के ख़रीदार को पूरा पैसा देकर शेयर लेने पड़ सकते हैं; फ़्यूचर बेचने वाले या ITM पुट के ख़रीदार को शेयर देने पड़ सकते हैं, और ऑप्शन बेचने वाले पर इसकी उल्टी ज़िम्मेदारी आती है। ऑप्शन चेन एक टेबल है जिसमें एक एक्सपायरी के सारे स्ट्राइक होते हैं। ओपन इंटरेस्ट (OI) यानी कितने कॉन्ट्रैक्ट अभी खुले हैं; हर कॉन्ट्रैक्ट के पीछे एक ख़रीदार और एक बेचने वाला होता है, इसलिए OI बताता है कितना खुला है, यह नहीं कि बाज़ार किस तरफ़ जाएगा। PCR यानी पुट-कॉल रेशियो (कुल पुट OI को कुल कॉल OI से भाग देकर) अभी के लिए बस पहचानने वाला शब्द है।"
+   },
+   "example": {
+    "en": "Suppose Aman's colleague forgets to close a Bharat Pumps Ltd 780 call before expiry. The share closes at Rs 800 on expiry day, so the call is ITM. With a made-up lot of 2,000 shares, he may now have to pay 2,000 x Rs 780 = Rs 15,60,000 and take delivery of the shares. A small bet has turned into a demand for lakhs of rupees. Near expiry the exchange asks for extra margin on such positions and many brokers close them early; each broker's rules differ. One more thing, on NSE's option chain: if a strike shows 5,000 contracts open, each of those 5,000 has a buyer on one side and a seller on the other.",
+    "hi": "Maan lijiye Aman ka colleague Bharat Pumps Ltd ka 780 wala call expiry se pehle band karna bhool gaya. Expiry ke din share Rs 800 par band hua, toh call ITM hai. 2,000 shares ke banawati lot ke saath ab use 2,000 x Rs 780 = Rs 15,60,000 chuka kar shares ki delivery leni pad sakti hai. Chhota sa daav ab lakhon rupaye ki maang ban gaya. Expiry ke paas exchange aisi positions par extra margin maangta hai aur kai broker unhe pehle hi band kar dete hain; har broker ke rules alag hain. Ek aur baat, NSE ke option chain par: kisi strike par 5,000 contracts khule dikhein, toh un 5,000 mein se har ek ke ek taraf buyer hai aur doosri taraf seller.",
+    "dv": "मान लीजिए अमन का कलीग Bharat Pumps Ltd का 780 वाला कॉल एक्सपायरी से पहले बंद करना भूल गया। एक्सपायरी के दिन शेयर Rs 800 पर बंद हुआ, तो कॉल ITM है। 2,000 शेयर के काल्पनिक लॉट के साथ अब उसे 2,000 x Rs 780 = Rs 15,60,000 चुकाकर शेयर की डिलीवरी लेनी पड़ सकती है। छोटा-सा दाँव अब लाखों रुपये की माँग बन गया। एक्सपायरी के पास एक्सचेंज ऐसी पोज़ीशन पर ज़्यादा मार्जिन माँगता है और कई ब्रोकर उन्हें पहले ही बंद कर देते हैं; हर ब्रोकर के नियम अलग हैं। एक और बात, NSE के ऑप्शन चेन पर: किसी स्ट्राइक पर 5,000 कॉन्ट्रैक्ट खुले दिखें, तो उन 5,000 में से हर एक के एक तरफ़ ख़रीदार है और दूसरी तरफ़ बेचने वाला।"
+   },
+   "remember": {
+    "en": "Stock F&O held to expiry can turn into delivery. OI counts open contracts; it does not tell direction.",
+    "hi": "Expiry tak rakha stock F&O delivery ban sakta hai. OI khule contracts ginta hai; direction nahi batata.",
+    "dv": "एक्सपायरी तक रखा स्टॉक F&O डिलीवरी बन सकता है। OI खुले कॉन्ट्रैक्ट गिनता है; दिशा नहीं बताता।"
+   }
+  },
+  {
+   "h": {
+    "en": "Lottery ticket or insurance?",
+    "hi": "Lottery ticket ya insurance?",
+    "dv": "लॉटरी टिकट या इंश्योरेंस?"
+   },
+   "p": {
+    "en": "The only F&O-loss figure this course quotes: SEBI FY26 study (Aug 2026): 87.7% of individual F&O traders were in net loss, aggregate Rs 91,685 crore, average Rs 1.17 lakh per loss-making trader. The study reports outcomes, not the reason behind each loss. Separately, as this course's own teaching view: a cheap, far OTM option feels safe because the most you can lose is small, but its low price usually means the market sees a low chance of a payoff: it needs a big move, in the right direction, before time runs out. Losing a small premium again and again is still losing, like the No. 11 batter being backed for a century every match. So these tools make most sense as insurance, called a hedge. A protective put means holding a stock and buying a put on it, so that a big fall is partly covered, at the cost of the premium.",
+    "hi": "Is course mein F&O loss ka sirf yahi ek figure quote hota hai: SEBI FY26 study (Aug 2026): 87.7% individual F&O traders net loss mein the, aggregate Rs 91,685 crore, average Rs 1.17 lakh per loss-making trader. Yeh study batati hai ki kya hua; har loss ki wajah nahi batati. Alag se, is course ka apna nazariya: sasta, bahut door ka OTM option safe lagta hai kyunki zyada se zyada loss chhota dikhta hai, lekin kam price ka aam matlab hai ki market ko uske chalne ka chance kam lagta hai: use sahi direction mein bada move chahiye, aur woh bhi time khatam hone se pehle. Chhota premium baar-baar gawana bhi aakhir mein haarna hi hai, jaise har match mein No. 11 batter ki century par daav lagana. Isliye yeh tools sabse zyada insurance ki tarah kaam ke hain; ise hedge kehte hain. Protective put ka matlab hai ki aapke paas ek stock hai aur aap usi par put khareedte hain, taaki badi girawat kuch had tak cover ho jaaye; keemat hai premium.",
+    "dv": "इस कोर्स में F&O नुक़सान का सिर्फ़ यही एक आँकड़ा दिया जाता है: SEBI FY26 स्टडी (Aug 2026): 87.7% इंडिविजुअल F&O ट्रेडर नेट लॉस में थे, कुल Rs 91,685 करोड़, और घाटे वाले हर ट्रेडर पर औसतन Rs 1.17 लाख। यह स्टडी बताती है कि क्या हुआ; हर लॉस की वजह नहीं बताती। अलग से, इस कोर्स का अपना नज़रिया: सस्ता, बहुत दूर का OTM ऑप्शन सुरक्षित लगता है क्योंकि ज़्यादा से ज़्यादा नुक़सान छोटा दिखता है, लेकिन कम क़ीमत का आम मतलब है कि बाज़ार को उसके चलने का मौक़ा कम लगता है: उसे सही दिशा में बड़ा मूव चाहिए, और वह भी समय ख़त्म होने से पहले। छोटा प्रीमियम बार-बार गँवाना भी आख़िर में हारना ही है, जैसे हर मैच में नंबर 11 बल्लेबाज़ के शतक पर दाँव लगाना। इसलिए ये टूल सबसे ज़्यादा इंश्योरेंस की तरह काम के हैं; इसे हेज कहते हैं। प्रोटेक्टिव पुट का मतलब है कि आपके पास एक शेयर है और आप उसी पर पुट ख़रीदते हैं, ताकि बड़ी गिरावट कुछ हद तक कवर हो जाए; क़ीमत है प्रीमियम।"
+   },
+   "example": {
+    "en": "In a made-up case, Mr Verma, a long-time investor, holds Bharat Pumps Ltd shares bought at Rs 800 and pays Rs 15 a share for a 760 put. If the share crashes to Rs 680, the put is worth Rs 80 at expiry, so his loss is Rs 55 a share (Rs 40 down to the strike plus the Rs 15 premium) instead of Rs 120. Held to expiry, this stock put settles by delivery: he hands over the shares at Rs 760, which gives the same Rs 55 loss. If the share rises, the put expires worthless and the Rs 15 was the insurance cost. Two catches remain. Covering a basket of different stocks with a NIFTY put leaves basis risk, the gap between how your holdings move and how the hedge moves: if your stocks fall 15% while NIFTY falls 8%, the put covers only part of the damage. And one lot is usually far bigger than a beginner's portfolio, so for small amounts the cheapest hedge is a smaller position or more cash.",
+    "hi": "Ek banawati case lijiye. Verma ji barson se investor hain. Unke paas Bharat Pumps Ltd ke shares hain, Rs 800 par liye hue, aur woh 760 ke put ke liye Rs 15 per share dete hain. Share Rs 680 tak gir jaaye, toh expiry par put Rs 80 ka hoga, yaani unka loss Rs 120 ki jagah Rs 55 per share (strike tak Rs 40 ki girawat plus Rs 15 premium). Expiry tak rakha stock put delivery se settle hota hai: woh shares Rs 760 par de dete hain, aur loss wahi Rs 55 rehta hai. Share badh jaaye, toh put zero par expire hoga aur Rs 15 insurance ki keemat thi. Do pench phir bhi baaki hain. Alag-alag stocks ki tokri ko NIFTY put se cover karne mein basis risk rehta hai, yaani aapke stocks aur hedge ek jaisa nahi chalte: aapke stocks 15% gire aur NIFTY sirf 8%, toh put nuksaan ka ek hissa hi cover karega. Aur ek lot aam taur par beginner ke poore portfolio se kahin bada hota hai, isliye chhoti rakam ke liye sabse sasta hedge hai chhoti position ya zyada cash.",
+    "dv": "एक काल्पनिक केस लीजिए। वर्मा जी बरसों से निवेशक हैं। उनके पास Bharat Pumps Ltd के शेयर हैं, जो Rs 800 पर लिए थे, और वे 760 के पुट के लिए Rs 15 प्रति शेयर देते हैं। शेयर Rs 680 तक गिर जाए, तो एक्सपायरी पर पुट Rs 80 का होगा, यानी उनका नुक़सान Rs 120 की जगह Rs 55 प्रति शेयर (स्ट्राइक तक Rs 40 की गिरावट प्लस Rs 15 प्रीमियम)। एक्सपायरी तक रखा स्टॉक पुट डिलीवरी से सेटल होता है: वे शेयर Rs 760 पर दे देते हैं, और नुक़सान वही Rs 55 रहता है। शेयर बढ़ जाए, तो पुट ज़ीरो पर एक्सपायर होगा और Rs 15 इंश्योरेंस की क़ीमत थी। दो पेंच फिर भी बाक़ी हैं। अलग-अलग शेयरों की टोकरी को NIFTY पुट से कवर करने में बेसिस रिस्क रहता है, यानी आपके शेयर और हेज एक जैसे नहीं चलते: आपके शेयर 15% गिरें और NIFTY सिर्फ़ 8%, तो पुट नुक़सान का एक हिस्सा ही कवर करेगा। और एक लॉट आम तौर पर नए निवेशक के पूरे पोर्टफ़ोलियो से कहीं बड़ा होता है, इसलिए छोटी रक़म के लिए सबसे सस्ता हेज है छोटी पोज़ीशन या ज़्यादा कैश।"
+   },
+   "remember": {
+    "en": "Cheap is not the same as low risk. In Stage 1, F&O is for understanding only: samjho, khelo mat.",
+    "hi": "Sasta hona aur kam risk hona ek baat nahi. Stage 1 mein F&O sirf samajhne ke liye hai: samjho, khelo mat.",
+    "dv": "सस्ता होना और कम रिस्क होना एक बात नहीं। Stage 1 में F&O सिर्फ़ समझने के लिए है: समझो, खेलो मत।"
+   },
+   "visual": {
+    "kind": "bars",
+    "title": {
+     "en": "What the put changes, per share",
+     "hi": "Put se kya badla, per share",
+     "dv": "पुट से क्या बदला, प्रति शेयर"
+    },
+    "caption": {
+     "en": "Made-up case: shares bought at Rs 800 fall to Rs 680; a 760 put cost Rs 15. The Rs 15 premium is paid in every case, even if the share rises.",
+     "hi": "Banawati case: Rs 800 par liye shares Rs 680 tak gire; 760 ka put Rs 15 ka tha. Rs 15 premium har haal mein jaata hai, share badhe tab bhi.",
+     "dv": "काल्पनिक केस: Rs 800 पर लिए शेयर Rs 680 तक गिरे; 760 का पुट Rs 15 का था। Rs 15 प्रीमियम हर हाल में जाता है, शेयर बढ़े तब भी।"
+    },
+    "items": [
+     {
+      "label": {
+       "en": "No hedge",
+       "hi": "Bina hedge",
+       "dv": "बिना हेज"
+      },
+      "value": 120,
+      "tone": "down",
+      "display": "-Rs 120"
+     },
+     {
+      "label": {
+       "en": "With the put",
+       "hi": "Put ke saath",
+       "dv": "पुट के साथ"
+      },
+      "value": 55,
+      "tone": "gold",
+      "display": "-Rs 55"
+     },
+     {
+      "label": {
+       "en": "Premium paid",
+       "hi": "Diya gaya premium",
+       "dv": "दिया गया प्रीमियम"
+      },
+      "value": 15,
+      "tone": "muted",
+      "display": "-Rs 15"
+     }
+    ]
+   }
+  }
+ ],
+ "key_terms": [
+  {
+   "term": {
+    "en": "Futures contract",
+    "hi": "Futures contract",
+    "dv": "फ़्यूचर्स कॉन्ट्रैक्ट"
+   },
+   "meaning": {
+    "en": "A deal to buy or sell a fixed quantity (one lot) at a price agreed today, on a set expiry date. Both sides are bound to it.",
+    "hi": "Ek lot ko aaj tay hue price par, expiry ki date par khareedne ya bechne ki deal. Dono taraf wale isse bandhe hote hain.",
+    "dv": "एक लॉट को आज तय हुए भाव पर, एक्सपायरी की तारीख़ पर ख़रीदने या बेचने का सौदा। दोनों तरफ़ वाले इससे बँधे होते हैं।"
+   }
+  },
+  {
+   "term": {
+    "en": "Margin and MTM",
+    "hi": "Margin aur MTM",
+    "dv": "मार्जिन और MTM"
+   },
+   "meaning": {
+    "en": "Margin is the deposit the broker blocks. MTM (mark-to-market) settles the day's profit or loss in cash every evening; a loss can exceed the margin.",
+    "hi": "Margin woh deposit hai jo broker block karta hai. MTM (mark-to-market) har shaam din ka profit ya loss cash mein settle karta hai; loss margin se bada bhi ho sakta hai.",
+    "dv": "मार्जिन वह डिपॉज़िट है जो ब्रोकर ब्लॉक करता है। MTM (मार्क-टू-मार्केट) हर शाम दिन का मुनाफ़ा या नुक़सान नक़द में सेटल करता है; नुक़सान मार्जिन से बड़ा भी हो सकता है।"
+   }
+  },
+  {
+   "term": {
+    "en": "Call (CE) and put (PE)",
+    "hi": "Call (CE) aur put (PE)",
+    "dv": "कॉल (CE) और पुट (PE)"
+   },
+   "meaning": {
+    "en": "A call is the right to buy, a put the right to sell, at the strike price on expiry. The buyer pays a premium for the right; the seller carries the duty.",
+    "hi": "Call khareedne ka haq hai, put bechne ka, strike price par, expiry ke din. Buyer is haq ke liye premium deta hai; zimmedari seller ki hoti hai.",
+    "dv": "कॉल ख़रीदने का हक़ है, पुट बेचने का, स्ट्राइक प्राइस पर, एक्सपायरी के दिन। ख़रीदार इस हक़ के लिए प्रीमियम देता है; ज़िम्मेदारी बेचने वाले की होती है।"
+   }
+  },
+  {
+   "term": {
+    "en": "ITM, ATM, OTM",
+    "hi": "ITM, ATM, OTM",
+    "dv": "ITM, ATM, OTM"
+   },
+   "meaning": {
+    "en": "Where the strike sits against the current price. For a call: strike below the current price = in the money, near it = at the money, above it = out of the money. Mirror image for a put.",
+    "hi": "Strike current price ke muqable kahan hai. Call ke liye: strike agar current price se neeche ho = in the money, price ke paas = at the money, price se upar = out of the money. Put ke liye ulta.",
+    "dv": "स्ट्राइक मौजूदा भाव के मुक़ाबले कहाँ है। कॉल के लिए: स्ट्राइक अगर मौजूदा भाव से नीचे हो = इन द मनी, भाव के पास = एट द मनी, भाव से ऊपर = आउट ऑफ़ द मनी। पुट के लिए उल्टा।"
+   }
+  },
+  {
+   "term": {
+    "en": "Intrinsic value and time value",
+    "hi": "Intrinsic value aur time value",
+    "dv": "इंट्रिंसिक वैल्यू और टाइम वैल्यू"
+   },
+   "meaning": {
+    "en": "Intrinsic value is what the option is worth if it expired now. Time value is the rest of the premium; it shrinks towards zero by expiry (time decay).",
+    "hi": "Intrinsic value woh hai jo option abhi expire ho toh milegi. Time value premium ka baaki hissa hai; expiry tak yeh ghatkar zero ki taraf jaati hai (time decay).",
+    "dv": "इंट्रिंसिक वैल्यू वह है जो ऑप्शन अभी एक्सपायर हो तो मिलेगी। टाइम वैल्यू प्रीमियम का बाक़ी हिस्सा है; एक्सपायरी तक यह घटकर ज़ीरो की तरफ़ जाती है (टाइम डिके)।"
+   }
+  },
+  {
+   "term": {
+    "en": "Open interest (OI)",
+    "hi": "Open interest (OI)",
+    "dv": "ओपन इंटरेस्ट (OI)"
+   },
+   "meaning": {
+    "en": "The number of F&O contracts still open. Each one has a buyer and a seller, so OI shows how much is open, not the market's direction.",
+    "hi": "Kitne F&O contracts abhi khule hain, uski ginti. Har contract ka ek buyer aur ek seller hota hai, isliye OI batata hai kitna khula hai, market ki direction nahi.",
+    "dv": "कितने F&O कॉन्ट्रैक्ट अभी खुले हैं, उसकी गिनती। हर कॉन्ट्रैक्ट का एक ख़रीदार और एक बेचने वाला होता है, इसलिए OI बताता है कितना खुला है, बाज़ार की दिशा नहीं।"
+   }
+  }
+ ],
+ "mindmap": {
+  "kind": "mindmap",
+  "center": {
+   "en": "F&O: samjho, khelo mat",
+   "hi": "F&O: samjho, khelo mat",
+   "dv": "F&O: समझो, खेलो मत"
+  },
+  "branches": [
+   {
+    "label": {
+     "en": "Futures",
+     "hi": "Futures",
+     "dv": "फ़्यूचर्स"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "One lot = lakhs of exposure",
+      "hi": "Ek lot = lakhon ka exposure",
+      "dv": "एक लॉट = लाखों का एक्सपोज़र"
+     },
+     {
+      "en": "MTM every evening",
+      "hi": "Har shaam MTM",
+      "dv": "हर शाम MTM"
+     },
+     {
+      "en": "Margin is not the max loss",
+      "hi": "Margin max loss nahi hai",
+      "dv": "मार्जिन ही सबसे बड़ा नुक़सान नहीं"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Options",
+     "hi": "Options",
+     "dv": "ऑप्शन"
+    },
+    "tone": "gold",
+    "points": [
+     {
+      "en": "Call = right to buy",
+      "hi": "Call = khareedne ka haq",
+      "dv": "कॉल = ख़रीदने का हक़"
+     },
+     {
+      "en": "Put = right to sell",
+      "hi": "Put = bechne ka haq",
+      "dv": "पुट = बेचने का हक़"
+     },
+     {
+      "en": "Seller carries the duty",
+      "hi": "Zimmedari seller par",
+      "dv": "ज़िम्मेदारी बेचने वाले पर"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Premium",
+     "hi": "Premium",
+     "dv": "प्रीमियम"
+    },
+    "tone": "up",
+    "points": [
+     {
+      "en": "Intrinsic + time value",
+      "hi": "Intrinsic + time value",
+      "dv": "इंट्रिंसिक + टाइम वैल्यू"
+     },
+     {
+      "en": "Time value melts daily",
+      "hi": "Time value roz pighalti hai",
+      "dv": "टाइम वैल्यू रोज़ पिघलती है"
+     },
+     {
+      "en": "OTM = only time value",
+      "hi": "OTM = sirf time value",
+      "dv": "OTM = सिर्फ़ टाइम वैल्यू"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Payoff",
+     "hi": "Payoff",
+     "dv": "पेऑफ़"
+    },
+    "tone": "brand",
+    "points": [
+     {
+      "en": "Call breakeven = strike + premium",
+      "hi": "Call breakeven = strike + premium",
+      "dv": "कॉल ब्रेकईवन = स्ट्राइक + प्रीमियम"
+     },
+     {
+      "en": "Buyer's worst = premium",
+      "hi": "Buyer ka sabse bura = premium",
+      "dv": "ख़रीदार का सबसे बुरा = प्रीमियम"
+     },
+     {
+      "en": "Seller's best = premium",
+      "hi": "Seller ka sabse achha = premium",
+      "dv": "बेचने वाले का सबसे अच्छा = प्रीमियम"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Expiry and chain",
+     "hi": "Expiry aur chain",
+     "dv": "एक्सपायरी और चेन"
+    },
+    "tone": "gold",
+    "points": [
+     {
+      "en": "Index F&O: cash-settled",
+      "hi": "Index F&O: cash settlement",
+      "dv": "इंडेक्स F&O: नक़द सेटलमेंट"
+     },
+     {
+      "en": "Stock F&O: delivery if held",
+      "hi": "Stock F&O: rakha toh delivery",
+      "dv": "स्टॉक F&O: रखा तो डिलीवरी"
+     },
+     {
+      "en": "OI is not direction",
+      "hi": "OI direction nahi batata",
+      "dv": "OI दिशा नहीं बताता"
+     }
+    ]
+   },
+   {
+    "label": {
+     "en": "Your mind",
+     "hi": "Aapka mann",
+     "dv": "आपका मन"
+    },
+    "tone": "down",
+    "points": [
+     {
+      "en": "Cheap is not low risk",
+      "hi": "Sasta matlab kam risk nahi",
+      "dv": "सस्ता मतलब कम रिस्क नहीं"
+     },
+     {
+      "en": "Hedge = insurance, not a bet",
+      "hi": "Hedge = insurance, daav nahi",
+      "dv": "हेज = इंश्योरेंस, दाँव नहीं"
+     },
+     {
+      "en": "Stage 1: no F&O, not even paper",
+      "hi": "Stage 1: F&O nahi, paper par bhi nahi",
+      "dv": "Stage 1: F&O नहीं, पेपर पर भी नहीं"
+     }
+    ]
+   }
+  ]
+ },
+ "kaam": {
+  "en": "Read a real option chain without trading: find the ATM strike, split one premium, feel the size of one lot, and have AI check your reading.",
+  "hi": "Bina trade kiye ek asli option chain padhiye: ATM strike dhoondhiye, ek premium ke do hisse kijiye, ek lot ka size mehsoos kijiye, aur AI se apni reading check karwaiye.",
+  "dv": "बिना ट्रेड किए एक असली ऑप्शन चेन पढ़िए: ATM स्ट्राइक ढूँढिए, एक प्रीमियम के दो हिस्से कीजिए, एक लॉट का साइज़ महसूस कीजिए, और AI से अपनी रीडिंग चेक करवाइए।"
+ },
+ "kaam_steps": [
+  {
+   "en": "On nseindia.com, open the public option chain for NIFTY (no login or broker account needed; if it will not load on your phone, try a laptop browser). Pick the nearest expiry that is at least two trading days away, and write down the index level and the ATM strike.",
+   "hi": "nseindia.com par NIFTY ka public option chain kholiye (login ya broker account ki zaroorat nahi; phone par na khule toh laptop browser try kijiye). Sabse paas wali aisi expiry chuniye jo kam se kam do trading din door ho, aur index level aur ATM strike likh lijiye.",
+   "dv": "nseindia.com पर NIFTY का पब्लिक ऑप्शन चेन खोलिए (लॉगिन या ब्रोकर अकाउंट की ज़रूरत नहीं; फ़ोन पर न खुले तो लैपटॉप ब्राउज़र आज़माइए)। सबसे पास वाली ऐसी एक्सपायरी चुनिए जो कम से कम दो ट्रेडिंग दिन दूर हो, और इंडेक्स लेवल और ATM स्ट्राइक लिख लीजिए।"
+  },
+  {
+   "en": "In Google Sheets, copy five rows around the ATM strike: strike, call LTP, call OI, put LTP, put OI. (LTP, the last traded price, is the premium.)",
+   "hi": "Google Sheets mein ATM strike ke aas-paas ki paanch rows copy kijiye: strike, call LTP, call OI, put LTP, put OI. (LTP yaani last traded price hi premium hai.)",
+   "dv": "Google Sheets में ATM स्ट्राइक के आसपास की पाँच रो कॉपी कीजिए: स्ट्राइक, कॉल LTP, कॉल OI, पुट LTP, पुट OI। (LTP यानी लास्ट ट्रेडेड प्राइस ही प्रीमियम है।)"
+  },
+  {
+   "en": "Take the call two strikes below ATM (ITM) and the call two strikes above (OTM), and split each premium into intrinsic value (index level minus strike, never below zero) and time value. If time value comes out negative, that LTP is old; use a strike nearer ATM.",
+   "hi": "ATM se do strike neeche wala call (ITM) aur do strike upar wala call (OTM) lijiye, aur har premium ko intrinsic value (index level minus strike, zero se neeche nahi) aur time value mein baantiye. Time value minus mein aaye, toh woh LTP purana hai; ATM ke paas wala strike lijiye.",
+   "dv": "ATM से दो स्ट्राइक नीचे वाला कॉल (ITM) और दो स्ट्राइक ऊपर वाला कॉल (OTM) लीजिए, और हर प्रीमियम को इंट्रिंसिक वैल्यू (इंडेक्स लेवल माइनस स्ट्राइक, ज़ीरो से नीचे नहीं) और टाइम वैल्यू में बाँटिए। टाइम वैल्यू माइनस में आए, तो वह LTP पुराना है; ATM के पास वाला स्ट्राइक लीजिए।"
+  },
+  {
+   "en": "Search the NSE website for the current F&O market lot of NIFTY, then multiply it by the index level to see what one lot controls. Write that number in rupees. Then compare it with the 25% exposure cap on the Rs 10 lakh challenge capital (Rs 2,50,000).",
+   "hi": "NSE ki website par NIFTY ka current F&O market lot dhoondhiye, phir use index level se multiply karke dekhiye ki ek lot kitna control karta hai. Woh number rupayon mein likhiye. Phir ise Rs 10 lakh ki challenge capital ke 25% exposure cap (Rs 2,50,000) se milaiye.",
+   "dv": "NSE की वेबसाइट पर NIFTY का मौजूदा F&O मार्केट लॉट ढूँढिए, फिर उसे इंडेक्स लेवल से गुणा करके देखिए कि एक लॉट कितना कंट्रोल करता है। वह रक़म रुपयों में लिखिए। फिर इसे Rs 10 लाख की चैलेंज कैपिटल की 25% एक्सपोज़र सीमा (Rs 2,50,000) से मिलाइए।"
+  },
+  {
+   "en": "Run the AI Lab prompt 'Option chain explainer' with the rows you copied, and mark every line the AI labels Guess or Kachra. Never paste your PAN, client ID or any account details.",
+   "hi": "Copy ki hui rows ke saath AI Lab prompt 'Option chain explainer' chalaiye, aur har woh line mark kijiye jise AI ne Guess ya Kachra kaha. Apna PAN, client ID ya koi account detail kabhi paste mat kijiye.",
+   "dv": "कॉपी की हुई रो के साथ AI Lab प्रॉम्प्ट 'ऑप्शन चेन एक्सप्लेनर' चलाइए, और हर वह लाइन मार्क कीजिए जिसे AI ने गेस (Guess) या कचरा (Kachra) कहा। अपना PAN, क्लाइंट ID या कोई अकाउंट डिटेल कभी पेस्ट मत कीजिए।"
+  },
+  {
+   "en": "Stretch (any day this week, 5 minutes): pick an expiry at least two weeks away (the monthly one, or next month's if this month's is close) and note one far OTM call's premium and today's NIFTY level. Check both again 3 trading days later. If NIFTY is near the same level, most of the drop is usually time decay; if NIFTY moved a lot, write that the move changed the premium too.",
+   "hi": "Stretch (is hafte kabhi bhi, 5 minute): kam se kam do hafte door wali expiry chuniye (monthly, ya agar is mahine ki paas hai toh agle mahine ki), aur ek door ke OTM call ka premium aur aaj ka NIFTY level note kijiye. 3 trading days baad dono dobara dekhiye. NIFTY lagbhag wahin hai, toh premium ki zyadatar girawat aam taur par time decay hai; NIFTY kaafi hil gaya, toh likhiye ki move ne bhi premium badla.",
+   "dv": "स्ट्रेच (इस हफ़्ते कभी भी, 5 मिनट): कम से कम दो हफ़्ते दूर वाली एक्सपायरी चुनिए (मंथली, या अगर इस महीने की पास है तो अगले महीने की), और एक दूर के OTM कॉल का प्रीमियम और आज का NIFTY लेवल नोट कीजिए। 3 ट्रेडिंग दिन बाद दोनों दोबारा देखिए। NIFTY लगभग वहीं है, तो प्रीमियम की ज़्यादातर गिरावट आम तौर पर टाइम डिके है; NIFTY काफ़ी हिल गया, तो लिखिए कि मूव ने भी प्रीमियम बदला।"
+  }
+ ],
+ "kaam_min": 30,
+ "outcome": {
+  "en": "By the end you can explain a futures contract, margin and MTM; tell a call from a put and ITM from OTM; split a premium into intrinsic and time value; read a buyer's and a seller's payoff; say which F&O contracts end in delivery; and explain why Stage 1 only studies F&O.",
+  "hi": "Aaj ke baad aap futures contract, margin aur MTM samjha payenge; call aur put, ITM aur OTM mein farak bata payenge; premium ko intrinsic aur time value mein baant payenge; buyer aur seller ka payoff padh payenge; bata payenge ki kaunse F&O contracts delivery mein badalte hain; aur samjha payenge ki Stage 1 mein F&O sirf padha kyun jaata hai.",
+  "dv": "आज के बाद आप फ़्यूचर्स कॉन्ट्रैक्ट, मार्जिन और MTM समझा पाएँगे; कॉल और पुट, ITM और OTM में फ़र्क़ बता पाएँगे; प्रीमियम को इंट्रिंसिक और टाइम वैल्यू में बाँट पाएँगे; ख़रीदार और बेचने वाले का पेऑफ़ पढ़ पाएँगे; बता पाएँगे कि कौन-से F&O कॉन्ट्रैक्ट डिलीवरी में बदलते हैं; और समझा पाएँगे कि Stage 1 में F&O सिर्फ़ पढ़ा क्यों जाता है।"
+ },
+ "tools": [
+  {
+   "en": "NSE website option chain (nseindia.com)",
+   "hi": "NSE website ka option chain (nseindia.com)",
+   "dv": "NSE वेबसाइट का ऑप्शन चेन (nseindia.com)"
+  },
+  {
+   "en": "Google Sheets",
+   "hi": "Google Sheets",
+   "dv": "Google Sheets"
+  },
+  {
+   "en": "Any AI chat",
+   "hi": "Koi bhi AI chat",
+   "dv": "कोई भी AI चैट"
+  },
+  {
+   "en": "Notebook and pen",
+   "hi": "Notebook aur pen",
+   "dv": "नोटबुक और पेन"
+  }
+ ],
+ "fun": {
+  "en": "Lottery or insurance? On six chits, write six uses of options, for example 'buying a Rs 3 call two days before expiry', 'buying a put on shares you already hold', 'selling calls for weekly income', 'selling far OTM puts because they rarely pay out', 'buying a NIFTY put to cover a basket of mid-cap stocks', 'buying cheap calls on a company's results day'. With classmates or family, sort each chit into Lottery, Insurance or Big hidden risk, and defend your choice in one line. Alone? Sort them yourself, then ask an AI chat to challenge your sorting.",
+  "hi": "Lottery ya insurance? Chhe chits par options ke chhe istemaal likhiye, jaise 'expiry se do din pehle Rs 3 ka call khareedna', 'apne paas rakhe shares par put khareedna', 'weekly income ke liye calls bechna', 'door ke OTM puts bechna kyunki woh kam hi chalte hain', 'mid-cap stocks ki tokri ko cover karne ke liye NIFTY put khareedna', 'results ke din saste calls khareedna'. Classmates ya family ke saath har chit ko Lottery, Insurance ya Chhupa bada risk mein daaliye, aur ek line mein apni wajah bataiye. Akele hain? Khud sort kijiye, phir kisi AI chat se kahiye ki aapki sorting ko challenge kare.",
+  "dv": "लॉटरी या इंश्योरेंस? छह पर्चियों पर ऑप्शन के छह इस्तेमाल लिखिए, जैसे 'एक्सपायरी से दो दिन पहले Rs 3 का कॉल ख़रीदना', 'अपने पास रखे शेयरों पर पुट ख़रीदना', 'वीकली कमाई के लिए कॉल बेचना', 'दूर के OTM पुट बेचना क्योंकि वे कम ही चलते हैं', 'मिड-कैप शेयरों की टोकरी को कवर करने के लिए NIFTY पुट ख़रीदना', 'रिज़ल्ट के दिन सस्ते कॉल ख़रीदना'। क्लासमेट्स या परिवार के साथ हर पर्ची को लॉटरी, इंश्योरेंस या छिपा बड़ा रिस्क में डालिए, और एक लाइन में अपनी वजह बताइए। अकेले हैं? ख़ुद छाँटिए, फिर किसी AI चैट से कहिए कि आपकी छँटाई पर सवाल उठाए।"
+ },
+ "compliance": "Educational content only, not investment advice. Stage 1 uses virtual money only and places no F&O trades, not even on paper. Company names, prices, lots and premiums in the examples are made up for illustration; the SEBI FY26 figure is quoted from SEBI's study. Check NSE for current lot sizes and expiry days. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
+ "prompts": [
+  {
+   "title": {
+    "en": "Option chain explainer",
+    "hi": "Option chain explainer",
+    "dv": "ऑप्शन चेन एक्सप्लेनर"
+   },
+   "body": "You are a patient teacher of Indian derivatives, explaining to a complete beginner who is only studying F&O and will not trade it, not even on paper. I will paste a few rows from the public NIFTY option chain on the NSE website (strike, call premium, call OI, put premium, put OI) and the current index level. Using only my pasted numbers: (1) say which strike is ATM and why; (2) mark each strike as ITM, ATM or OTM, separately for calls and for puts; (3) split two premiums of my choice into intrinsic value and time value, showing the working; (4) explain what OI measures, why every open contract has both a buyer and a seller, and what OI cannot tell me; (5) explain in two plain lines what PCR (put-call ratio) means and why, on its own, it cannot tell me where the market will go; do not compute a PCR or read anything into one. Label every statement Fact (follows from my numbers or a definition), Guess (an opinion or estimate) or Kachra (a popular claim with no basis, such as 'max OI is a wall the market cannot cross'). Do not suggest any option to buy or sell, give no view on market direction, no strategy, no targets and no return expectations.\n\nIndex level: <paste here>\nChain rows: <paste here>"
+  },
+  {
+   "title": {
+    "en": "F&O myth-buster",
+    "hi": "F&O myth-buster",
+    "dv": "F&O मिथ-बस्टर"
+   },
+   "body": "List 8 beliefs that Indian beginners commonly hold about futures and options, for example 'a cheap option is low risk', 'my margin is the most I can lose', 'high OI at a strike means the market will stop there', 'stock options always settle in cash' and 'buying a NIFTY put fully protects any portfolio'. For each belief, label it Fact, Guess or Kachra, give a one-line correction in simple words, and name the official source (NSE, BSE or SEBI website, or the NISM Series VIII study material) where I can check it. Where a rule can change, such as lot sizes, expiry days or settlement rules, say so and tell me to check the latest on the NSE website. Do not recommend any stock, index or option, do not give buy or sell advice, and do not mention targets or expected returns."
+  },
+  {
+   "title": {
+    "en": "Lottery-ticket mind check",
+    "hi": "Lottery-ticket mind check",
+    "dv": "लॉटरी-टिकट सोच की जाँच"
+   },
+   "body": "Act as a calm trading-psychology coach. Ask me 6 short questions, one at a time, to find out whether I think about options like lottery tickets: how I react to screenshots of big option wins, whether I count the losing bets behind them, how I judge a 'small' premium that I might lose every week, and what I believe a low price tells me about the chance of a payoff. After my answers, give me a plain summary of any lottery-ticket thinking you noticed and one question I can ask myself whenever I see an F&O success story. Do not ask for any personal or financial details, do not suggest any stock, option or strategy, and do not give buy or sell advice, targets or return expectations."
+  }
+ ],
+ "journal_prompt": {
+  "en": "Which idea today changed how you see a cheap option? And in your own words: what does OI measure, and what does it not tell you?",
+  "hi": "Aaj ki kaunsi baat ne saste option ko dekhne ka aapka nazariya badla? Aur apne shabdon mein: OI kya naapta hai, aur kya nahi batata?",
+  "dv": "आज की कौन-सी बात ने सस्ते ऑप्शन को देखने का आपका नज़रिया बदला? और अपने शब्दों में: OI क्या मापता है, और क्या नहीं बताता?"
+ },
+ "motivation": {
+  "en": "Today you learnt a powerful tool well enough to know why you are leaving it alone for now. Many traders never learn that part.",
+  "hi": "Aaj aapne ek taqatwar tool itna samajh liya ki aap jaante hain use abhi kyun chhod rahe hain. Bahut se traders yeh hissa kabhi nahi seekhte.",
+  "dv": "आज आपने एक ताक़तवर टूल इतना समझ लिया कि आप जानते हैं उसे अभी क्यों छोड़ रहे हैं। बहुत से ट्रेडर यह हिस्सा कभी नहीं सीखते।"
+ },
+ "quiz": [
+  {
+   "stem": {
+    "en": "NIFTY 50 is at 23,880 (illustrative). The 23,700 call trades at a premium of 230. How does that premium split?",
+    "hi": "NIFTY 50 23,880 par hai (illustrative). 23,700 ka call 230 ke premium par trade ho raha hai. Yeh premium kaise bantega?",
+    "dv": "NIFTY 50 23,880 पर है (काल्पनिक)। 23,700 का कॉल 230 के प्रीमियम पर ट्रेड हो रहा है। यह प्रीमियम कैसे बँटेगा?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Intrinsic 180, time value 50",
+      "hi": "Intrinsic 180, time value 50",
+      "dv": "इंट्रिंसिक 180, टाइम वैल्यू 50"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Intrinsic 230, time value zero",
+      "hi": "Intrinsic 230, time value zero",
+      "dv": "इंट्रिंसिक 230, टाइम वैल्यू ज़ीरो"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Intrinsic 50, time value 180",
+      "hi": "Intrinsic 50, time value 180",
+      "dv": "इंट्रिंसिक 50, टाइम वैल्यू 180"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Intrinsic 0, time value 230",
+      "hi": "Intrinsic 0, time value 230",
+      "dv": "इंट्रिंसिक 0, टाइम वैल्यू 230"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "For a call, intrinsic value = index level minus strike, never below zero: 23,880 - 23,700 = 180. Time value is the rest of the premium: 230 - 180 = 50. If NIFTY stays where it is, that 50 melts away by expiry. Calling the whole 230 intrinsic ignores the part that decays.",
+    "hi": "Call ke liye intrinsic value = index level minus strike, zero se neeche nahi: 23,880 - 23,700 = 180. Time value premium ka baaki hissa hai: 230 - 180 = 50. NIFTY wahin tika rahe, toh yeh 50 expiry tak pighal jayega. Poore 230 ko intrinsic maan lena us hisse ko bhool jaana hai jo roz ghatta hai.",
+    "dv": "कॉल के लिए इंट्रिंसिक वैल्यू = इंडेक्स लेवल माइनस स्ट्राइक, ज़ीरो से नीचे नहीं: 23,880 - 23,700 = 180। टाइम वैल्यू प्रीमियम का बाक़ी हिस्सा है: 230 - 180 = 50। NIFTY वहीं टिका रहे, तो यह 50 एक्सपायरी तक पिघल जाएगा। पूरे 230 को इंट्रिंसिक मान लेना उस हिस्से को भूल जाना है जो रोज़ घटता है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "In a made-up case, someone buys a Kiran Foods Ltd 400 call at a premium of Rs 18. Ignoring costs, above what share price at expiry does the buyer start to make money?",
+    "hi": "Ek banawati case mein koi Kiran Foods Ltd ka 400 wala call Rs 18 premium par khareedta hai. Costs chhod dein, toh expiry par share kis price se upar jaaye tab buyer ko paisa banna shuru hoga?",
+    "dv": "एक काल्पनिक केस में कोई Kiran Foods Ltd का 400 वाला कॉल Rs 18 प्रीमियम पर ख़रीदता है। ख़र्च छोड़ दें, तो एक्सपायरी पर शेयर किस भाव से ऊपर जाए तब ख़रीदार को पैसा बनना शुरू होगा?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Above Rs 418",
+      "hi": "Rs 418 se upar",
+      "dv": "Rs 418 से ऊपर"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Above Rs 400, the strike",
+      "hi": "Rs 400 se upar, yaani strike",
+      "dv": "Rs 400 से ऊपर, यानी स्ट्राइक"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Above Rs 382",
+      "hi": "Rs 382 se upar",
+      "dv": "Rs 382 से ऊपर"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Above Rs 436",
+      "hi": "Rs 436 se upar",
+      "dv": "Rs 436 से ऊपर"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "A call buyer must first earn back the premium. Breakeven = strike + premium = 400 + 18 = Rs 418. Between Rs 400 and Rs 418 the call has some intrinsic value, but less than the Rs 18 paid, so it is still a loss. Costs push the real breakeven a little higher.",
+    "hi": "Call buyer ko pehle premium wapas kamana padta hai. Breakeven = strike + premium = 400 + 18 = Rs 418. Rs 400 aur Rs 418 ke beech call mein kuch intrinsic value hoti hai, lekin diye gaye Rs 18 se kam, isliye abhi bhi loss hai. Costs asli breakeven ko thoda aur upar le jaate hain.",
+    "dv": "कॉल ख़रीदार को पहले प्रीमियम वापस कमाना पड़ता है। ब्रेकईवन = स्ट्राइक + प्रीमियम = 400 + 18 = Rs 418। Rs 400 और Rs 418 के बीच कॉल में कुछ इंट्रिंसिक वैल्यू होती है, लेकिन दिए गए Rs 18 से कम, इसलिए अभी भी नुक़सान है। ख़र्च असली ब्रेकईवन को थोड़ा और ऊपर ले जाते हैं।"
+   }
+  },
+  {
+   "stem": {
+    "en": "In a made-up case, one lot of Gupta Cement Ltd futures is 1,500 shares, bought at Rs 1,000 with a margin of Rs 3,00,000. The price closes the day at Rs 980. What happens that evening?",
+    "hi": "Ek banawati case mein Gupta Cement Ltd futures ka ek lot 1,500 shares ka hai, Rs 1,000 par liya gaya, margin Rs 3,00,000. Us din price Rs 980 par close hota hai. Us shaam kya hoga?",
+    "dv": "एक काल्पनिक केस में Gupta Cement Ltd फ़्यूचर्स का एक लॉट 1,500 शेयर का है, Rs 1,000 पर लिया गया, मार्जिन Rs 3,00,000। उस दिन भाव Rs 980 पर बंद होता है। उस शाम क्या होगा?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "Rs 30,000 is debited from the account",
+      "hi": "Account se Rs 30,000 debit ho jayenge",
+      "dv": "खाते से Rs 30,000 कट जाएँगे"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Nothing, until the contract is closed",
+      "hi": "Kuch nahi, jab tak contract band na ho",
+      "dv": "कुछ नहीं, जब तक कॉन्ट्रैक्ट बंद न हो"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Only Rs 20 per lot is debited today",
+      "hi": "Aaj sirf Rs 20 per lot debit honge",
+      "dv": "आज सिर्फ़ Rs 20 प्रति लॉट कटेंगे"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "The loss waits until the expiry day ends",
+      "hi": "Loss expiry ka din khatam hone tak rukega",
+      "dv": "नुक़सान एक्सपायरी का दिन ख़त्म होने तक रुकेगा"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Futures are marked to market every evening. The price fell Rs 20 on 1,500 shares: 20 x 1,500 = Rs 30,000, debited the same day. The loss does not wait for expiry or for you to close. If losses keep eating into the margin, the broker asks for a top-up.",
+    "hi": "Futures ka mark-to-market har shaam hota hai. Price 1,500 shares par Rs 20 gira: 20 x 1,500 = Rs 30,000, usi din debit. Loss expiry ya position band hone ka intezaar nahi karta. Loss margin ko khata rahe, toh broker aur paisa maangta hai.",
+    "dv": "फ़्यूचर्स का मार्क-टू-मार्केट हर शाम होता है। भाव 1,500 शेयर पर Rs 20 गिरा: 20 x 1,500 = Rs 30,000, उसी दिन खाते से कटे। नुक़सान एक्सपायरी या पोज़ीशन बंद होने का इंतज़ार नहीं करता। नुक़सान मार्जिन को खाता रहे, तो ब्रोकर और पैसा माँगता है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "Suppose someone holds a Sharma Textiles Ltd stock call that is in the money at expiry, and forgets to close it. What can happen?",
+    "hi": "Maan lijiye kisi ke paas Sharma Textiles Ltd ka stock call hai jo expiry par in the money hai, aur woh use band karna bhool gaya. Kya ho sakta hai?",
+    "dv": "मान लीजिए किसी के पास Sharma Textiles Ltd का स्टॉक कॉल है जो एक्सपायरी पर इन द मनी है, और वह उसे बंद करना भूल गया। क्या हो सकता है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "They may have to pay for and take the shares",
+      "hi": "Use paise chuka kar shares lene pad sakte hain",
+      "dv": "उसे पैसे चुकाकर शेयर लेने पड़ सकते हैं"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "It is settled in cash, like a NIFTY option",
+      "hi": "NIFTY option ki tarah cash mein settle hoga",
+      "dv": "NIFTY ऑप्शन की तरह नक़द में सेटल होगा"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "It lapses at zero because it was not closed",
+      "hi": "Band nahi kiya, isliye zero par lapse hoga",
+      "dv": "बंद नहीं किया, इसलिए ज़ीरो पर लैप्स होगा"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "The exchange sells it at the day's best price",
+      "hi": "Exchange use din ke sabse achhe price par bech dega",
+      "dv": "एक्सचेंज उसे दिन के सबसे अच्छे भाव पर बेच देगा"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "Stock F&O held to expiry is physically settled. Not closing it does not make it lapse: an ITM option is normally exercised automatically. An in-the-money stock call means paying strike x lot size and taking delivery of the shares, which can run into lakhs of rupees. Index options such as NIFTY settle in cash, which is why people mix the two up. Broker rules near expiry differ, so a broker may also demand extra margin or close the position.",
+    "hi": "Expiry tak rakha stock F&O physically settle hota hai. Band na karne se yeh lapse nahi hota: ITM option aam taur par apne aap exercise ho jaata hai. In the money stock call ka matlab hai strike x lot size chukana aur shares ki delivery lena, jo lakhon rupaye tak ja sakta hai. NIFTY jaise index options cash mein settle hote hain, isiliye log dono ko mila dete hain. Expiry ke paas broker ke rules alag-alag hote hain, isliye broker extra margin bhi maang sakta hai ya position band kar sakta hai.",
+    "dv": "एक्सपायरी तक रखा स्टॉक F&O फ़िज़िकली सेटल होता है। बंद न करने से यह लैप्स नहीं होता: ITM ऑप्शन आम तौर पर अपने-आप एक्सरसाइज़ हो जाता है। इन द मनी स्टॉक कॉल का मतलब है स्ट्राइक x लॉट साइज़ चुकाना और शेयर की डिलीवरी लेना, जो लाखों रुपये तक जा सकता है। NIFTY जैसे इंडेक्स ऑप्शन नक़द में सेटल होते हैं, इसीलिए लोग दोनों को मिला देते हैं। एक्सपायरी के पास ब्रोकर के नियम अलग-अलग होते हैं, इसलिए ब्रोकर ज़्यादा मार्जिन भी माँग सकता है या पोज़ीशन बंद कर सकता है।"
+   }
+  },
+  {
+   "stem": {
+    "en": "A far OTM NIFTY call costs just Rs 3, with two days left to expiry. What does the low price most likely tell you?",
+    "hi": "NIFTY ka ek bahut door ka OTM call sirf Rs 3 ka hai, aur expiry mein do din bache hain. Itna kam price sabse zyada kis baat ka ishaara hai?",
+    "dv": "NIFTY का एक बहुत दूर का OTM कॉल सिर्फ़ Rs 3 का है, और एक्सपायरी में दो दिन बचे हैं। इतनी कम क़ीमत सबसे ज़्यादा किस बात का इशारा है?"
+   },
+   "options": [
+    {
+     "text": {
+      "en": "The market sees a small chance of a payoff",
+      "hi": "Market ko iske chalne ka chance kam dikhta hai",
+      "dv": "बाज़ार को इसके चलने का मौक़ा कम दिखता है"
+     },
+     "correct": true
+    },
+    {
+     "text": {
+      "en": "Its loss is small, so its risk is small too",
+      "hi": "Loss chhota hai, toh risk bhi chhota hai",
+      "dv": "नुक़सान छोटा है, तो रिस्क भी छोटा है"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "It is a bargain that most of the market missed",
+      "hi": "Yeh ek sasta sauda hai jo zyadatar market ne miss kar diya",
+      "dv": "यह एक सस्ता सौदा है जो ज़्यादातर बाज़ार से छूट गया"
+     },
+     "correct": false
+    },
+    {
+     "text": {
+      "en": "Cheap options have more room left to rise",
+      "hi": "Saste options mein badhne ki zyada jagah hoti hai",
+      "dv": "सस्ते ऑप्शन में बढ़ने की ज़्यादा जगह होती है"
+     },
+     "correct": false
+    }
+   ],
+   "explanation": {
+    "en": "An option's price reflects the chance of a payoff. A far OTM option two days before expiry has no intrinsic value and very little time left, so the market prices only a small chance. A small premium lost week after week is still a steady loss. Treating a cheap option as a low-risk bet is the lottery-ticket mind.",
+    "hi": "Option ka price uske chalne ke chance ko dikhata hai. Expiry se do din pehle bahut door ke OTM option mein intrinsic value zero hai aur time bhi bahut kam bacha hai, isliye market sirf chhota sa chance price karta hai. Har hafte gaya chhota premium bhi lagataar hota loss hi hai. Saste option ko kam risk wala daav samajhna hi lottery ticket wali soch hai.",
+    "dv": "ऑप्शन की क़ीमत उसके चलने के मौक़े को दिखाती है। एक्सपायरी से दो दिन पहले बहुत दूर के OTM ऑप्शन में इंट्रिंसिक वैल्यू ज़ीरो है और समय भी बहुत कम बचा है, इसलिए बाज़ार सिर्फ़ छोटा-सा मौक़ा आँकता है। हर हफ़्ते गया छोटा प्रीमियम भी लगातार होता नुक़सान ही है। सस्ते ऑप्शन को कम रिस्क वाला दाँव समझना ही लॉटरी टिकट वाली सोच है।"
+   }
+  }
+ ]
+}

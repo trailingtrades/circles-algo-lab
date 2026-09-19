@@ -1,0 +1,102 @@
+/* Lesson page (app/learn/(app)/session/[n]). Winners tokens only (--panel, --panel-2, --line,
+   --ink/-2/-3, --brand, --brand-soft, --bg). Phone-first. Reading blocks stop near 70 characters
+   so a lesson reads like a page, not a dashboard. Never white text on brand cyan. */
+
+.back { display: inline-flex; align-items: center; gap: 4px; font-size: 14px; min-height: 44px; }
+.head { max-width: 72ch; }
+.eyebrow { margin: 0; }
+.tags { margin: 10px 0 0; }
+
+/* ---- tab strip: scrolls sideways on narrow phones; the right-edge fade says there is more ---- */
+.tabsWrap { position: relative; margin-top: 20px; }
+.tabs { overflow-x: auto; overflow-y: hidden; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.tabs::-webkit-scrollbar { display: none; }
+.tabs > button { flex: 0 0 auto; white-space: nowrap; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; padding: 10px 14px; }
+@media (max-width: 420px) { .tabs > button { padding: 10px 9px; } } /* all five fit at 360px in every language; the scroll stays as a fallback */
+.tabsWrap[data-more="true"]::after { content: ""; position: absolute; top: 0; right: 0; bottom: 1px; width: 44px; pointer-events: none; background: linear-gradient(to right, transparent, var(--bg) 80%); }
+.tabDone { color: var(--vz-t-brand, var(--brand)); flex: 0 0 auto; }
+.panel { padding-top: 20px; }
+.panel:focus-visible { outline-offset: 4px; }
+.nextTab { max-width: 72ch; margin-top: 24px; display: flex; justify-content: flex-end; }
+.nextTab button { min-height: 44px; }
+
+/* ---- Learn ---- */
+.read { max-width: 72ch; }
+.read > * + * { margin-top: 20px; }
+.video { display: grid; gap: 10px; }
+.videoBar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; min-height: 44px; }
+.ok { display: inline-flex; align-items: center; gap: 6px; color: var(--vz-t-brand, var(--brand)); font-size: 14px; font-weight: 600; }
+
+.topics { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.topic { padding: 18px 16px; }
+@media (min-width: 640px) { .topic { padding: 24px; } }
+.num { display: block; font-family: var(--col-font-mono); font-size: 12px; letter-spacing: .04em; color: var(--ink-3); }
+.h { font-size: 18px; font-weight: 650; line-height: 1.35; margin: 4px 0 0; color: var(--ink); }
+.p { margin: 10px 0 0; font-size: 15.5px; line-height: 1.7; color: var(--ink); white-space: pre-line; }
+.example { margin-top: 16px; padding: 12px 14px; border: 1px solid var(--line); border-left: 3px solid var(--brand); border-radius: var(--r-sm); background: var(--panel-2); }
+.label { display: block; margin-bottom: 4px; font-size: 12.5px; font-weight: 700; letter-spacing: .02em; color: var(--vz-t-brand, var(--brand)); }
+.exP { margin: 6px 0 0; font-size: 14.5px; line-height: 1.65; color: var(--ink); white-space: pre-line; }
+.label + .exP { margin-top: 0; }
+.remember { margin: 14px 0 0; padding-top: 12px; border-top: 1px dashed var(--line-2); font-size: 14.5px; line-height: 1.6; color: var(--ink); }
+.remember strong { color: var(--vz-t-brand, var(--brand)); font-weight: 650; }
+
+.sectionH { font-size: 17px; font-weight: 650; margin: 0 0 10px; color: var(--ink); }
+.terms { margin: 0; display: grid; gap: 0; border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; }
+.term { display: grid; grid-template-columns: minmax(0, 32%) 1fr; gap: 14px; padding: 10px 14px; background: var(--panel); }
+.term + .term { border-top: 1px solid var(--line); }
+.term dt { font-weight: 650; font-size: 14.5px; color: var(--ink); }
+.term dd { margin: 0; font-size: 14.5px; line-height: 1.55; color: var(--ink-2); }
+@media (max-width: 520px) { .term { grid-template-columns: 1fr; gap: 2px; } }
+
+.motivation { margin: 28px 0 0; padding-top: 16px; border-top: 1px solid var(--line); font-size: 15px; line-height: 1.65; color: var(--ink-2); }
+
+.res { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.resItem { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 10px 14px; border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--panel); }
+.resText { display: grid; gap: 2px; min-width: 0; }
+.resName { font-weight: 600; font-size: 14.5px; color: var(--ink); overflow-wrap: anywhere; }
+.resMeta { font-size: 13px; color: var(--ink-2); display: inline-flex; align-items: center; gap: 6px; }
+.resOpen { min-height: 40px; text-decoration: none; }
+.soon { font-size: 13px; color: var(--ink-2); }
+
+/* ---- Today's task ---- */
+.kaam { padding: 18px 16px; border-color: var(--brand); }
+@media (min-width: 640px) { .kaam { padding: 24px; } }
+.kaamHead { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.kaamH { margin: 0; font-size: 13px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-2); }
+.mins { font-family: var(--col-font-mono); font-size: 13px; color: var(--ink-2); }
+.kaamBrief { margin: 10px 0 0; font-size: 16px; line-height: 1.6; font-weight: 500; color: var(--ink); white-space: pre-line; }
+.steps { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 8px; }
+.step { display: grid; grid-template-columns: 20px 22px 1fr; gap: 10px; align-items: start; min-height: 44px; padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--panel-2); cursor: pointer; }
+.step input { width: 18px; height: 18px; margin: 2px 0 0; accent-color: var(--brand); }
+.stepNum { font-family: var(--col-font-mono); font-size: 13px; color: var(--ink-3); padding-top: 2px; }
+.stepText { font-size: 15px; line-height: 1.55; color: var(--ink); }
+.stepDone .stepText { color: var(--ink-2); text-decoration: line-through; text-decoration-color: var(--ink-3); }
+.stepsNote { margin: 8px 0 0; font-size: 13px; color: var(--ink-2); }
+.kaamGrid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
+.box { padding: 14px 16px; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--panel); }
+.box p { margin: 6px 0 0; font-size: 14.5px; line-height: 1.6; color: var(--ink); }
+.boxH { margin: 0; font-size: 13px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--ink-2); }
+.tools { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; font-size: 14.5px; line-height: 1.5; color: var(--ink); }
+.box .muted, .muted { color: var(--ink-2); font-size: 13.5px; }
+.note { margin: 0; font-size: 13px; line-height: 1.55; color: var(--ink-2); }
+
+/* ---- AI Lab ---- */
+.lead { margin: 0; font-size: 15px; line-height: 1.6; color: var(--ink); }
+.stack { display: grid; gap: 12px; }
+
+/* ---- review-day callout and the unlock card ---- */
+.callout { margin-top: 20px; max-width: 72ch; display: flex; gap: 12px 16px; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 14px 16px; border: 1px solid var(--brand); border-radius: var(--r-md); background: var(--brand-soft); }
+.callout p { margin: 4px 0 0; font-size: 14.5px; line-height: 1.55; color: var(--ink); }
+.calloutH { margin: 0; font-size: 15px; font-weight: 650; color: var(--ink); }
+.gate { margin-top: 28px; max-width: 72ch; padding: 18px 16px; }
+@media (min-width: 640px) { .gate { padding: 24px; } }
+.gateH { margin: 0; font-size: 16px; font-weight: 650; color: var(--ink); }
+.gate ul { margin: 12px 0; }
+.mark { flex: 0 0 auto; }
+.markOk { flex: 0 0 auto; color: var(--vz-t-brand, var(--brand)); }
+.att { display: flex; align-items: flex-start; gap: 8px; margin: 0 0 14px; font-size: 13.5px; line-height: 1.55; color: var(--ink-2); }
+.att svg { margin-top: 2px; }
+.gateActions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.gateActions a { min-height: 44px; }
+.gateNote { margin: 0; font-size: 14px; color: var(--ink-2); }
+.preview { margin: 12px 0 0; font-size: 13px; color: var(--ink-2); }
