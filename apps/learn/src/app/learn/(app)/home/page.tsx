@@ -32,14 +32,14 @@ const S = {
   certTitle: t3("Your certificate checklist", "Aapki certificate checklist", "आपकी सर्टिफ़िकेट चेकलिस्ट"),
   certSub: t3("The final exam is behind you. See which certificate steps are still open.", "Final exam ho gaya. Dekhiye certificate ke kaun se steps abhi baaki hain.", "फ़ाइनल एग्ज़ाम हो गया। देखिए सर्टिफ़िकेट के कौन-से स्टेप अभी बाकी हैं।"),
   openCert: t3("Open certificate", "Certificate kholiye", "सर्टिफ़िकेट खोलिए"),
-  stageDone: t3("Stage 1 complete", "Stage 1 poora", "स्टेज 1 पूरा"),
-  nextStage: t3("Next: Stage 2 · CIRCLE W.I.N.N.E.R.S", "Agla: Stage 2 · CIRCLE W.I.N.N.E.R.S", "अगला: स्टेज 2 · CIRCLE W.I.N.N.E.R.S"),
-  stage2Open: t3("Your Stage 2 access is active. Start when you are ready.", "Aapka Stage 2 access active hai. Jab taiyaar hon, shuru kijiye.", "आपका स्टेज 2 एक्सेस चालू है। जब तैयार हों, शुरू कीजिए।"),
-  stage2Ask: t3("Stage 2 opens when your mentor enrols you. Have a look at what it covers.", "Stage 2 tab khulta hai jab aapke mentor aapko enrol karte hain. Tab tak dekh lijiye usmein kya hai.", "स्टेज 2 तब खुलता है जब आपके मेंटर आपको एनरोल करते हैं। तब तक देख लीजिए उसमें क्या है।"),
-  goStage2: t3("Go to Stage 2", "Stage 2 par jaiye", "स्टेज 2 पर जाइए"),
-  aboutStage2: t3("About Stage 2", "Stage 2 ke baare mein", "स्टेज 2 के बारे में"),
+  stageDone: t3("Stage 1 complete", "Stage 1 poora", "चरण 1 पूरा"),
+  nextStage: t3("Next: Stage 2 · CIRCLE W.I.N.N.E.R.S", "Agla: Stage 2 · CIRCLE W.I.N.N.E.R.S", "अगला: चरण 2 · CIRCLE W.I.N.N.E.R.S"),
+  stage2Open: t3("Your Stage 2 access is active. Start when you are ready.", "Aapka Stage 2 access active hai. Jab taiyaar hon, shuru kijiye.", "आपका चरण 2 एक्सेस चालू है। जब तैयार हों, शुरू कीजिए।"),
+  stage2Ask: t3("Stage 2 opens when your mentor enrols you. Have a look at what it covers.", "Stage 2 tab khulta hai jab aapke mentor aapko enrol karte hain. Tab tak dekh lijiye usmein kya hai.", "चरण 2 तब खुलता है जब आपके मेंटर आपको एनरोल करते हैं। तब तक देख लीजिए उसमें क्या है।"),
+  goStage2: t3("Go to Stage 2", "Stage 2 par jaiye", "चरण 2 पर जाइए"),
+  aboutStage2: t3("About Stage 2", "Stage 2 ke baare mein", "चरण 2 के बारे में"),
   viewCert: t3("View certificate", "Certificate dekhiye", "सर्टिफ़िकेट देखिए"),
-  route: t3("Your route through this stage", "Is stage mein aapka raasta", "इस स्टेज में आपका रास्ता"),
+  route: t3("Your route through this stage", "Is stage mein aapka raasta", "इस चरण में आपका रास्ता"),
   start: t3("Start", "Shuruaat", "शुरुआत"),
   finalExam: t3("Final exam", "Final exam", "फ़ाइनल एग्ज़ाम"),
   thisWeek: t3("This week", "Is hafte", "इस हफ़्ते"),
@@ -48,9 +48,9 @@ const S = {
 };
 /* Shown when the stage gate (nginx) sent the learner back from /winners/ or /one/: ?stage_denied=<reason>. */
 const DENIED = {
-  no_access: t3("That stage is not open on your account yet. It opens when your mentor enrols you.", "Ye stage abhi aapke account par khula nahi hai. Mentor ke enrol karte hi khul jayega.", "यह स्टेज अभी आपके अकाउंट पर खुला नहीं है। मेंटर के एनरोल करते ही खुल जाएगा।"),
-  not_started: t3("Your access to that stage has not started yet. It opens on the start date your mentor set.", "Us stage ka access abhi shuru nahi hua. Mentor ki rakhi start date par khulega.", "उस स्टेज का एक्सेस अभी शुरू नहीं हुआ है। मेंटर की तय की हुई शुरुआत की तारीख़ पर खुलेगा।"),
-  expired: t3("Your access to that stage has ended. Please talk to your mentor to extend it.", "Us stage ka access khatam ho gaya hai. Badhwane ke liye mentor se baat kijiye.", "उस स्टेज का एक्सेस ख़त्म हो गया है। बढ़वाने के लिए मेंटर से बात कीजिए।"),
+  no_access: t3("That stage is not open on your account yet. It opens when your mentor enrols you.", "Ye stage abhi aapke account par khula nahi hai. Mentor ke enrol karte hi khul jayega.", "यह चरण अभी आपके अकाउंट पर खुला नहीं है। मेंटर के एनरोल करते ही खुल जाएगा।"),
+  not_started: t3("Your access to that stage has not started yet. It opens on the start date your mentor set.", "Us stage ka access abhi shuru nahi hua. Mentor ki rakhi start date par khulega.", "उस चरण का एक्सेस अभी शुरू नहीं हुआ है। मेंटर की तय की हुई शुरुआत की तारीख़ पर खुलेगा।"),
+  expired: t3("Your access to that stage has ended. Please talk to your mentor to extend it.", "Us stage ka access khatam ho gaya hai. Badhwane ke liye mentor se baat kijiye.", "उस चरण का एक्सेस ख़त्म हो गया है। बढ़वाने के लिए मेंटर से बात कीजिए।"),
 };
 const dayOf = (d: number, n: number) => t3(`Day ${d} of ${n}`, `${n} din mein se Day ${d}`, `${n} दिनों में से दिन ${d}`);
 const sessionsOf = (d: number, n: number) => t3(`${d} of ${n} sessions done`, `${n} mein se ${d} sessions poore`, `${n} में से ${d} सेशन पूरे`);

@@ -12,9 +12,9 @@ import { LangSelect } from "./LangSelect";
 /* Server-rendered on purpose: the form, the SEBI number and the Tier-1 disclaimer are in the HTML
    itself (the old client-only page served an empty shell until JavaScript ran). */
 const S = {
-  kicker1: t3("Stage 1 · 5 Circles Academy", "Stage 1 · 5 Circles Academy", "स्टेज 1 · 5 Circles Academy"),
-  kicker2: t3("Stage 2 · 5 Circles Academy", "Stage 2 · 5 Circles Academy", "स्टेज 2 · 5 Circles Academy"),
-  kicker3: t3("Stage 3 · 5 Circles Academy", "Stage 3 · 5 Circles Academy", "स्टेज 3 · 5 Circles Academy"),
+  kicker1: t3("Stage 1 · 5 Circles Academy", "Stage 1 · 5 Circles Academy", "चरण 1 · 5 Circles Academy"),
+  kicker2: t3("Stage 2 · 5 Circles Academy", "Stage 2 · 5 Circles Academy", "चरण 2 · 5 Circles Academy"),
+  kicker3: t3("Stage 3 · 5 Circles Academy", "Stage 3 · 5 Circles Academy", "चरण 3 · 5 Circles Academy"),
   welcome: t3("Welcome back. Sign in to continue your course.", "Phir se swagat hai. Sign in karke course aage badhaiye.", "फिर से स्वागत है। साइन इन करके कोर्स आगे बढ़ाइए।"),
   // One quiet course rule, the same every day. No rotating slogans above a password field.
   rule: t3("One session a day. Risk first, entry later.", "Roz ek session. Pehle risk, entry baad mein.", "रोज़ एक सेशन। पहले रिस्क, एंट्री बाद में।"),

@@ -4,12 +4,12 @@ import { t3 } from "@/lib/i18n/lang";
 import { Home, ChevronRight, Lock } from "@/components/ui/Icon";
 
 const S = {
-  nav: t3("5 Circles Academy stages", "5 Circles Academy ke stages", "5 Circles Academy के स्टेज"),
+  nav: t3("5 Circles Academy stages", "5 Circles Academy ke stages", "5 Circles Academy के चरण"),
   // Same words as the WINNERS and O.N.E strips, so the ladder reads identically on all three stages.
   stage: t3("Stage", "Stage", "चरण"),
   soon: t3("soon", "jald", "जल्द"),
   locked: t3("locked", "band", "बंद"),
-  lockedWhy: t3("Opens when this stage is unlocked for you", "Ye stage aapke liye unlock hone par khulega", "यह स्टेज आपके लिए अनलॉक होने पर खुलेगा"),
+  lockedWhy: t3("Opens when this stage is unlocked for you", "Ye stage aapke liye unlock hone par khulega", "यह चरण आपके लिए अनलॉक होने पर खुलेगा"),
 };
 
 /* Academy strip — where this programme sits on the 5 Circles ladder, and the way back.

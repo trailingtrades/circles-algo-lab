@@ -10,7 +10,7 @@ import { T } from "@/lib/i18n/strings";
 import { t3, tr, type Lang } from "@/lib/i18n/lang";
 
 const S = {
-  eyebrow: t3("Stage 1 · CIRCLE S.M.A.R.T", "Stage 1 · CIRCLE S.M.A.R.T", "स्टेज 1 · CIRCLE S.M.A.R.T"),
+  eyebrow: t3("Stage 1 · CIRCLE S.M.A.R.T", "Stage 1 · CIRCLE S.M.A.R.T", "चरण 1 · CIRCLE S.M.A.R.T"),
   title: t3("Your path", "Aapka path", "आपका रास्ता"),
   certificate: t3("Certificate", "Certificate", "सर्टिफ़िकेट"),
   examAfter: t3("opens when this week's days are done", "is hafte ke saare din poore hone par khulega", "इस हफ़्ते के सारे दिन पूरे होने पर खुलेगा"),
@@ -18,12 +18,12 @@ const S = {
   readRules: t3("Read the rules", "Rules padhiye", "नियम पढ़िए"),
   attempted: t3("Attempted", "Attempt ho gaya", "अटेम्प्ट हो गया"),
   passed: t3("Passed", "Pass", "पास"),
-  nextTitle: t3("After this stage", "Is stage ke baad", "इस स्टेज के बाद"),
-  nextName: t3("Stage 2 · CIRCLE W.I.N.N.E.R.S", "Stage 2 · CIRCLE W.I.N.N.E.R.S", "स्टेज 2 · CIRCLE W.I.N.N.E.R.S"),
-  nextBody: t3("The next stage of the 5 Circles Academy. It builds on these 21 days, and your mentor opens it for you once Stage 1 is complete.", "5 Circles Academy ka agla stage. Ye inhi 21 dinon par aage banta hai, aur Stage 1 poora hone ke baad aapke mentor ise aapke liye kholte hain.", "5 Circles Academy का अगला स्टेज। यह इन्हीं 21 दिनों पर आगे बनता है, और स्टेज 1 पूरा होने के बाद आपके मेंटर इसे आपके लिए खोलते हैं।"),
-  nextOpen: t3("Your Stage 2 access is active.", "Aapka Stage 2 access active hai.", "आपका स्टेज 2 एक्सेस चालू है।"),
-  goStage2: t3("Go to Stage 2", "Stage 2 par jaiye", "स्टेज 2 पर जाइए"),
-  aboutStage2: t3("About Stage 2", "Stage 2 ke baare mein", "स्टेज 2 के बारे में"),
+  nextTitle: t3("After this stage", "Is stage ke baad", "इस चरण के बाद"),
+  nextName: t3("Stage 2 · CIRCLE W.I.N.N.E.R.S", "Stage 2 · CIRCLE W.I.N.N.E.R.S", "चरण 2 · CIRCLE W.I.N.N.E.R.S"),
+  nextBody: t3("The next stage of the 5 Circles Academy. It builds on these 21 days, and your mentor opens it for you once Stage 1 is complete.", "5 Circles Academy ka agla stage. Ye inhi 21 dinon par aage banta hai, aur Stage 1 poora hone ke baad aapke mentor ise aapke liye kholte hain.", "5 Circles Academy का अगला चरण। यह इन्हीं 21 दिनों पर आगे बनता है, और चरण 1 पूरा होने के बाद आपके मेंटर इसे आपके लिए खोलते हैं।"),
+  nextOpen: t3("Your Stage 2 access is active.", "Aapka Stage 2 access active hai.", "आपका चरण 2 एक्सेस चालू है।"),
+  goStage2: t3("Go to Stage 2", "Stage 2 par jaiye", "चरण 2 पर जाइए"),
+  aboutStage2: t3("About Stage 2", "Stage 2 ke baare mein", "चरण 2 के बारे में"),
 };
 const intro = (w: number, n: number, days: boolean) => days
   ? t3(`${w} weeks, ${n} days, one day at a time. Submit a day's quiz and journal and the next day opens.`, `${w} hafte, ${n} din, ek din mein ek. Kisi din ka quiz aur journal submit kijiye, agla din khul jayega.`, `${w} हफ़्ते, ${n} दिन, एक दिन में एक। किसी दिन का क्विज़ और जर्नल सबमिट कीजिए, अगला दिन खुल जाएगा।`)

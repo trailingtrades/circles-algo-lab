@@ -2644,7 +2644,7 @@
     "correct_index": 0,
     "explanation_en": "A put is the right to sell at the strike. Held to expiry, this stock put settles by delivery: he hands over his shares at Rs 480. So he loses Rs 20 a share down to the strike, plus the Rs 10 premium he paid: Rs 30 in all, against Rs 80 with no put. That is the hedge idea: the premium is the insurance cost, paid even when nothing goes wrong. In Stage 1 this is for understanding only: samjho, khelo mat.",
     "explanation_hi": "Put strike par bechne ka right hai. Expiry tak rakha jaaye, toh yeh stock put delivery se settle hota hai: woh apne shares Rs 480 par de deta hai. Isliye strike tak prati share Rs 20 gaye, upar se Rs 10 ka premium jo usne diya tha: kul Rs 30, jabki put ke bina Rs 80 jaate. Yahi hedge ka idea hai: premium insurance ki keemat hai, jo tab bhi dena padta hai jab kuch galat na ho. Stage 1 mein yeh sirf samajhne ke liye hai: samjho, khelo mat.",
-    "explanation_dv": "पुट, स्ट्राइक पर बेचने का अधिकार है। एक्सपायरी तक रखा जाए, तो यह स्टॉक पुट डिलीवरी से सेटल होता है: वह अपने शेयर Rs 480 पर दे देता है। इसलिए स्ट्राइक तक प्रति शेयर Rs 20 गए, ऊपर से Rs 10 का प्रीमियम जो उसने दिया था: कुल Rs 30, जबकि पुट के बिना Rs 80 जाते। यही हेज का आइडिया है: प्रीमियम बीमे की क़ीमत है, जो तब भी देनी पड़ती है जब कुछ ग़लत न हो। स्टेज 1 में यह सिर्फ़ समझने के लिए है: समझो, खेलो मत।",
+    "explanation_dv": "पुट, स्ट्राइक पर बेचने का अधिकार है। एक्सपायरी तक रखा जाए, तो यह स्टॉक पुट डिलीवरी से सेटल होता है: वह अपने शेयर Rs 480 पर दे देता है। इसलिए स्ट्राइक तक प्रति शेयर Rs 20 गए, ऊपर से Rs 10 का प्रीमियम जो उसने दिया था: कुल Rs 30, जबकि पुट के बिना Rs 80 जाते। यही हेज का आइडिया है: प्रीमियम बीमे की क़ीमत है, जो तब भी देनी पड़ती है जब कुछ ग़लत न हो। चरण 1 में यह सिर्फ़ समझने के लिए है: समझो, खेलो मत।",
     "marks": 1,
     "difficulty": 1
    },
@@ -2681,7 +2681,7 @@
     "correct_index": 2,
     "explanation_en": "The call seller receives the premium and takes on the duty to honour the buyer's right. His best case is keeping that premium; if the price rises far above the strike, his loss keeps growing. The buyer's worst case is losing the premium. So selling can look steady until one big move arrives, which is why F&O in Stage 1 is for understanding only: samjho, khelo mat.",
     "explanation_hi": "Call seller premium le leta hai aur buyer ke right ko nibhaane ki zimmedari utha leta hai. Uska best case bas woh premium rakh lena hai; agar price strike se kaafi upar chala gaya, toh uska loss badhta hi jaata hai. Buyer ka worst case premium ganwana hai. Isliye selling tab tak shaant dikh sakti hai jab tak ek bada move na aa jaaye, aur isiliye Stage 1 mein F&O sirf samajhne ke liye hai: samjho, khelo mat.",
-    "explanation_dv": "कॉल सेलर प्रीमियम ले लेता है और ख़रीदार के अधिकार को निभाने की ज़िम्मेदारी उठा लेता है। उसका सबसे अच्छा नतीजा बस वह प्रीमियम रख लेना है; अगर भाव स्ट्राइक से काफ़ी ऊपर चला गया, तो उसका घाटा बढ़ता ही जाता है। ख़रीदार का सबसे बुरा नतीजा प्रीमियम गँवाना है। इसलिए सेलिंग तब तक शांत दिख सकती है जब तक एक बड़ा मूव न आ जाए, और इसीलिए स्टेज 1 में F&O सिर्फ़ समझने के लिए है: समझो, खेलो मत।",
+    "explanation_dv": "कॉल सेलर प्रीमियम ले लेता है और ख़रीदार के अधिकार को निभाने की ज़िम्मेदारी उठा लेता है। उसका सबसे अच्छा नतीजा बस वह प्रीमियम रख लेना है; अगर भाव स्ट्राइक से काफ़ी ऊपर चला गया, तो उसका घाटा बढ़ता ही जाता है। ख़रीदार का सबसे बुरा नतीजा प्रीमियम गँवाना है। इसलिए सेलिंग तब तक शांत दिख सकती है जब तक एक बड़ा मूव न आ जाए, और इसीलिए चरण 1 में F&O सिर्फ़ समझने के लिए है: समझो, खेलो मत।",
     "marks": 1,
     "difficulty": 1
    },

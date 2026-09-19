@@ -35,7 +35,7 @@ const S = {
 
 const LEGAL = "https://circleoptionlab.com/legal/";
 const OFFICES = [
-  { city: t3("Kanpur", "Kanpur", "कानपुर"), lines: ["First Floor, Premises No. 134/244 C Block, Plot No. 245", "Govind Nagar, Kanpur, Uttar Pradesh 208006"] },
+  { city: t3("Kanpur", "Kanpur", "कानपुर"), lines: ["First Floor, Premises No. 124/244 C Block, Plot No. 245", "Govind Nagar, Kanpur, Uttar Pradesh 208006"] },
   { city: t3("Mumbai", "Mumbai", "मुंबई"), lines: ["A Wing, G-022, Express Zone Mall, W E Highway", "Next to Patel Vanika, Malad East, Mumbai, Maharashtra 400063"] },
 ];
 const PROTECT: [L | string, string][] = [

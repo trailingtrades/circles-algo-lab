@@ -3,7 +3,7 @@ import { t3, tr, type Lang } from "@/lib/i18n/lang";
 
 /* The way out of every auth dead end (bad invite, expired link, missing page): back to sign-in, the
    Academy landing, or a person on WhatsApp. No hooks, so server and client pages can both use it. */
-const WA = "https://wa.me/918120040440"; // the Academy's enrolment line, same as the landing's buttons
+const WA = "https://wa.me/916387497277"; // the Academy's enrolment line, same as the landing's buttons
 const S = {
   nav: t3("Other ways in", "Aur raaste", "दूसरे रास्ते"),
   signIn: t3("Back to sign in", "Sign in par wapas", "साइन इन पर वापस"),

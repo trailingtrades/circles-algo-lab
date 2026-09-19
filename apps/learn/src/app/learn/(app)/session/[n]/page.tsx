@@ -29,7 +29,7 @@ const S = {
   reviewH: t3("Weekly review day", "Weekly review ka din", "साप्ताहिक रिव्यू का दिन"),
   reviewP: t3("Revise the week, then take this week's Quiz Game. The exam page shows the rules before you start.", "Hafte ko dohraiye, phir is hafte ka Quiz Game dijiye. Shuru karne se pehle exam page par saare rules dikhenge.", "हफ़्ते को दोहराइए, फिर इस हफ़्ते का क्विज़ गेम दीजिए। शुरू करने से पहले एग्ज़ाम पेज पर सारे नियम दिखेंगे।"),
   gate: t3("To open the next session", "Agla session kholne ke liye", "अगला सेशन खोलने के लिए"),
-  gateLast: t3("To finish this stage", "Is stage ko poora karne ke liye", "इस स्टेज को पूरा करने के लिए"),
+  gateLast: t3("To finish this stage", "Is stage ko poora karne ke liye", "इस चरण को पूरा करने के लिए"),
   quizStep: t3("Submit the quiz", "Quiz submit kijiye", "क्विज़ सबमिट कीजिए"),
   journalStep: t3("Save one journal entry", "Ek journal entry save kijiye", "एक जर्नल एंट्री सेव कीजिए"),
   doneSr: t3("done", "ho gaya", "पूरा"),

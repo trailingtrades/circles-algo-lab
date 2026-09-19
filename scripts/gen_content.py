@@ -15,7 +15,7 @@ import tier1_w1, tier1_w2, tier1_w3, tier23  # noqa: E402
 import build_smart  # noqa: E402
 
 LEVELS = [
-  {"slug":"foundation","sequence":1,"title_en":"Stage 1 · Basic","title_hi":"Stage 1 · Basic","title_dv":"स्टेज 1 · बेसिक","subtitle_en":"Market + AI Foundation · 21 days · 2 strategies · Algo Level 1","subtitle_hi":"Market + AI Foundation · 21 din · 2 strategies · Algo Level 1","subtitle_dv":"मार्केट + AI की नींव · 21 दिन · 2 स्ट्रैटेजी · एल्गो लेवल 1","unlock_rule":"always"},
+  {"slug":"foundation","sequence":1,"title_en":"Stage 1 · Basic","title_hi":"Stage 1 · Basic","title_dv":"चरण 1 · बेसिक","subtitle_en":"Market + AI Foundation · 21 days · 2 strategies · Algo Level 1","subtitle_hi":"Market + AI Foundation · 21 din · 2 strategies · Algo Level 1","subtitle_dv":"मार्केट + AI की नींव · 21 दिन · 2 स्ट्रैटेजी · एल्गो लेवल 1","unlock_rule":"always"},
   {"slug":"intermediate","sequence":2,"title_en":"Level 2 · Advanced","title_hi":"Level 2 · Advanced","title_dv":"लेवल 2 · एडवांस्ड","subtitle_en":"Systematic Trader · 10 weeks · 6 strategies paper-deployed · Algo Level 2","subtitle_hi":"Systematic Trader · 10 hafte · 6 strategies paper-deploy · Algo Level 2","subtitle_dv":"सिस्टमैटिक ट्रेडर · 10 हफ़्ते · 6 स्ट्रैटेजी पेपर पर · एल्गो लेवल 2","unlock_rule":"previous_level_certificate"},
   {"slug":"advanced","sequence":3,"title_en":"Level 3 · Expert","title_hi":"Level 3 · Expert","title_dv":"लेवल 3 · एक्सपर्ट","subtitle_en":"Quant Desk · 20 weeks · 15 strategies in Python · Algo Level 3","subtitle_hi":"Quant Desk · 20 hafte · 15 strategies Python mein · Algo Level 3","subtitle_dv":"क्वांट डेस्क · 20 हफ़्ते · Python में 15 स्ट्रैटेजी · एल्गो लेवल 3","unlock_rule":"previous_level_certificate"},
 ]
@@ -113,7 +113,7 @@ exams = [
   {"level": "foundation", "week": 1, "title": "Week 1 Quiz Game", "title_hi": "Week 1 Quiz Game", "title_dv": "हफ़्ता 1 क्विज़ गेम", "total_marks": 30, "pass_marks": 18, "distinction_marks": 26, "time_limit_min": 30, "attempts_allowed": 2},
   {"level": "foundation", "week": 2, "title": "Week 2 Quiz Game", "title_hi": "Week 2 Quiz Game", "title_dv": "हफ़्ता 2 क्विज़ गेम", "total_marks": 30, "pass_marks": 18, "distinction_marks": 26, "time_limit_min": 30, "attempts_allowed": 2},
   {"level": "foundation", "week": 3, "title": "Week 3 Quiz Game", "title_hi": "Week 3 Quiz Game", "title_dv": "हफ़्ता 3 क्विज़ गेम", "total_marks": 30, "pass_marks": 18, "distinction_marks": 26, "time_limit_min": 30, "attempts_allowed": 2},
-  {"level": "foundation", "week": None, "title": "Stage 1 Final exam", "title_hi": "Stage 1 Final exam", "title_dv": "स्टेज 1 फ़ाइनल परीक्षा", "total_marks": 30, "pass_marks": 18, "distinction_marks": 26, "time_limit_min": 60, "attempts_allowed": 2},
+  {"level": "foundation", "week": None, "title": "Stage 1 Final exam", "title_hi": "Stage 1 Final exam", "title_dv": "चरण 1 फ़ाइनल परीक्षा", "total_marks": 30, "pass_marks": 18, "distinction_marks": 26, "time_limit_min": 60, "attempts_allowed": 2},
   {"level": "intermediate", "week": None, "title": "Level 2 Capstone assessment", "title_hi": "Level 2 Capstone assessment", "title_dv": "लेवल 2 कैपस्टोन मूल्यांकन", "total_marks": 36, "pass_marks": 22, "distinction_marks": 30, "time_limit_min": 60, "attempts_allowed": 2},
   {"level": "advanced", "week": None, "title": "Level 3 Capstone assessment", "title_hi": "Level 3 Capstone assessment", "title_dv": "लेवल 3 कैपस्टोन मूल्यांकन", "total_marks": 36, "pass_marks": 22, "distinction_marks": 30, "time_limit_min": 60, "attempts_allowed": 2},
 ]

@@ -8,7 +8,7 @@ import { NAV, isActive, staffNav, type Role } from "./navItems";
 import { Sun, Moon, Languages, ChevronDown } from "@/components/ui/Icon";
 
 const S = {
-  by: t3("Stage 1 · 5 Circles Academy", "Stage 1 · 5 Circles Academy", "स्टेज 1 · 5 Circles Academy"),
+  by: t3("Stage 1 · 5 Circles Academy", "Stage 1 · 5 Circles Academy", "चरण 1 · 5 Circles Academy"),
   academy: t3("5 Circles Academy home", "5 Circles Academy home", "5 Circles Academy होम"),
   menu: t3("Main menu", "Main menu", "मुख्य मेन्यू"),
   profile: t3("Your profile", "Aapki profile", "आपकी प्रोफ़ाइल"),
