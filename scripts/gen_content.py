@@ -3,17 +3,21 @@
 Tier 1 (foundation slug): 21 days, full content + quizzes + weekend exam banks, published.
 Tier 2 (intermediate slug): 10 weeks x 2 sessions, structured drafts, unpublished until content + quizzes are authored.
 Tier 3 (advanced slug): 20 weeks x 1 session, structured drafts, unpublished.
+Stage 1 (Tier 1) v3: when scripts/content_v3/smart/ holds all 21 day files it is the source (three languages,
+visuals, validated by content_v3/build_smart.py — see docs/SMART_CONTENT_SCHEMA.md); otherwise the v2 modules are used.
 Re-run: python3 scripts/gen_content.py  (idempotent; overwrites content/*.json)"""
-import json, os, sys, random
+import json, os, sys, random, hashlib
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "content_v2"))
+sys.path.insert(0, os.path.join(HERE, "content_v3"))
 ROOT = os.path.join(HERE, "..", "content")
 import tier1_w1, tier1_w2, tier1_w3, tier23  # noqa: E402
+import build_smart  # noqa: E402
 
 LEVELS = [
-  {"slug":"foundation","sequence":1,"title_en":"Tier 1 · Basic","title_hi":"Tier 1 · Basic","subtitle_en":"Market + AI Foundation · 21 days · 2 strategies · Algo Level 1","subtitle_hi":"Market + AI Foundation · 21 din · 2 strategies · Algo Level 1","unlock_rule":"always"},
-  {"slug":"intermediate","sequence":2,"title_en":"Tier 2 · Advanced","title_hi":"Tier 2 · Advanced","subtitle_en":"Systematic Trader · 10 weeks · 6 strategies paper-deployed · Algo Level 2","subtitle_hi":"Systematic Trader · 10 hafte · 6 strategies paper-deploy · Algo Level 2","unlock_rule":"previous_level_certificate"},
-  {"slug":"advanced","sequence":3,"title_en":"Tier 3 · Expert","title_hi":"Tier 3 · Expert","subtitle_en":"Quant Desk · 20 weeks · 15 strategies in Python · Algo Level 3","subtitle_hi":"Quant Desk · 20 hafte · 15 strategies Python mein · Algo Level 3","unlock_rule":"previous_level_certificate"},
+  {"slug":"foundation","sequence":1,"title_en":"Tier 1 · Basic","title_hi":"Tier 1 · Basic","title_dv":"टियर 1 · बेसिक","subtitle_en":"Market + AI Foundation · 21 days · 2 strategies · Algo Level 1","subtitle_hi":"Market + AI Foundation · 21 din · 2 strategies · Algo Level 1","subtitle_dv":"मार्केट + AI की नींव · 21 दिन · 2 स्ट्रैटेजी · एल्गो लेवल 1","unlock_rule":"always"},
+  {"slug":"intermediate","sequence":2,"title_en":"Tier 2 · Advanced","title_hi":"Tier 2 · Advanced","title_dv":"टियर 2 · एडवांस्ड","subtitle_en":"Systematic Trader · 10 weeks · 6 strategies paper-deployed · Algo Level 2","subtitle_hi":"Systematic Trader · 10 hafte · 6 strategies paper-deploy · Algo Level 2","subtitle_dv":"सिस्टमैटिक ट्रेडर · 10 हफ़्ते · 6 स्ट्रैटेजी पेपर पर · एल्गो लेवल 2","unlock_rule":"previous_level_certificate"},
+  {"slug":"advanced","sequence":3,"title_en":"Tier 3 · Expert","title_hi":"Tier 3 · Expert","title_dv":"टियर 3 · एक्सपर्ट","subtitle_en":"Quant Desk · 20 weeks · 15 strategies in Python · Algo Level 3","subtitle_hi":"Quant Desk · 20 hafte · 15 strategies Python mein · Algo Level 3","subtitle_dv":"क्वांट डेस्क · 20 हफ़्ते · Python में 15 स्ट्रैटेजी · एल्गो लेवल 3","unlock_rule":"previous_level_certificate"},
 ]
 ACCENTS = ["#00AEEF", "#134A9A", "#f5a623", "#4caf50"]
 GENERIC_PROMPT = """You are my research analyst. I am the decision-maker; you never place trades or give buy/sell advice.
@@ -27,18 +31,28 @@ Data:
 <paste here>"""
 
 def q_obj(t):
+  """Legacy v2 tuple -> question. The authored order always put the right answer first, so options are
+  shuffled with a seed taken from the stem (stable across runs) — the answer is no longer always A."""
   stem_en, stem_hi, opts, ex_en, ex_hi = t
   options = [{"en": oe, "hi": oh, "distractor": bool(d)} for (oe, oh, d) in opts]
-  correct = [i for i, (_, _, d) in enumerate(opts) if not d]
-  assert len(correct) == 1, stem_en
-  return {"stem_en": stem_en, "stem_hi": stem_hi, "options": options, "correct_index": correct[0], "explanation_en": ex_en, "explanation_hi": ex_hi, "marks": 1, "difficulty": 1}
+  assert sum(1 for o in options if not o["distractor"]) == 1, stem_en
+  random.Random(int(hashlib.sha1(stem_en.encode("utf-8")).hexdigest()[:8], 16)).shuffle(options)
+  correct = next(i for i, o in enumerate(options) if not o["distractor"])
+  return {"stem_en": stem_en, "stem_hi": stem_hi, "options": options, "correct_index": correct, "explanation_en": ex_en, "explanation_hi": ex_hi, "marks": 1, "difficulty": 1}
 
 levels, weeks, sessions, quizzes, exam_banks = [], [], [], [], []
 for L in LEVELS: levels.append(L)
 n = 0
 
 # ---- Tier 1 ----
-for wmod in (tier1_w1, tier1_w2, tier1_w3):
+V3 = build_smart.exists()
+if V3:
+  try:
+    w3, s3, q3, e3 = build_smart.build()
+  except build_smart.Bad as err:
+    print("CONTENT ERROR (scripts/content_v3/smart):", err); sys.exit(1)
+  weeks += w3; sessions += s3; quizzes += q3; exam_banks += e3; n = len(s3)
+for wmod in (() if V3 else (tier1_w1, tier1_w2, tier1_w3)):
   W = wmod.WEEK
   weeks.append({"level": "foundation", "number": W["number"], "title_en": W["title_en"], "title_hi": W["title_hi"], "theme_accent": W["accent"]})
   for s in wmod.SESSIONS:
@@ -55,13 +69,15 @@ for wmod in (tier1_w1, tier1_w2, tier1_w3):
     quizzes.append({"session": n, "questions": [q_obj(t) for t in s["quiz"]]})
   exam_banks.append({"level": "foundation", "week": W["number"], "questions": [dict(q_obj(t), marks=2) for t in wmod.EXAM]})
 
-# Tier 1 final: 30 questions sampled deterministically across the three weekly banks (10 each), 1 mark each.
-rng = random.Random(20260914)
-final_qs = []
-for b in exam_banks:
-  pick = rng.sample(b["questions"], 10)
-  final_qs += [dict(q, marks=1) for q in pick]
-exam_banks.append({"level": "foundation", "week": None, "questions": final_qs})
+# Tier 1 final. v3 authors its own 30-question bank (exam_final.json). Legacy v2: 30 questions sampled
+# deterministically across the three weekly banks (10 each), 1 mark each.
+if not V3:
+  rng = random.Random(20260914)
+  final_qs = []
+  for b in exam_banks:
+    pick = rng.sample(b["questions"], 10)
+    final_qs += [dict(q, marks=1) for q in pick]
+  exam_banks.append({"level": "foundation", "week": None, "questions": final_qs})
 
 # ---- Tier 2 ----
 for wi, (hi, en) in enumerate(tier23.T2_WEEKS, start=1):
@@ -88,12 +104,12 @@ for (wk, ph, te, th, concept, ai, psy, strat, topics, kaam, outcome, tools, fun,
 
 # ---- Exams ----
 exams = [
-  {"level": "foundation", "week": 1, "title": "Tier 1 Weekend Quiz Game 1", "total_marks": 30, "pass_marks": 18, "distinction_marks": 26, "time_limit_min": 30, "attempts_allowed": 2},
-  {"level": "foundation", "week": 2, "title": "Tier 1 Weekend Quiz Game 2", "total_marks": 30, "pass_marks": 18, "distinction_marks": 26, "time_limit_min": 30, "attempts_allowed": 2},
-  {"level": "foundation", "week": 3, "title": "Tier 1 Weekend Quiz Game 3", "total_marks": 30, "pass_marks": 18, "distinction_marks": 26, "time_limit_min": 30, "attempts_allowed": 2},
-  {"level": "foundation", "week": None, "title": "Tier 1 Final exam", "total_marks": 30, "pass_marks": 18, "distinction_marks": 26, "time_limit_min": 60, "attempts_allowed": 2},
-  {"level": "intermediate", "week": None, "title": "Tier 2 Capstone assessment", "total_marks": 36, "pass_marks": 22, "distinction_marks": 30, "time_limit_min": 60, "attempts_allowed": 2},
-  {"level": "advanced", "week": None, "title": "Tier 3 Capstone assessment", "total_marks": 36, "pass_marks": 22, "distinction_marks": 30, "time_limit_min": 60, "attempts_allowed": 2},
+  {"level": "foundation", "week": 1, "title": "Tier 1 Weekend Quiz Game 1", "title_hi": "Tier 1 Weekend Quiz Game 1", "title_dv": "टियर 1 वीकेंड क्विज़ गेम 1", "total_marks": 30, "pass_marks": 18, "distinction_marks": 26, "time_limit_min": 30, "attempts_allowed": 2},
+  {"level": "foundation", "week": 2, "title": "Tier 1 Weekend Quiz Game 2", "title_hi": "Tier 1 Weekend Quiz Game 2", "title_dv": "टियर 1 वीकेंड क्विज़ गेम 2", "total_marks": 30, "pass_marks": 18, "distinction_marks": 26, "time_limit_min": 30, "attempts_allowed": 2},
+  {"level": "foundation", "week": 3, "title": "Tier 1 Weekend Quiz Game 3", "title_hi": "Tier 1 Weekend Quiz Game 3", "title_dv": "टियर 1 वीकेंड क्विज़ गेम 3", "total_marks": 30, "pass_marks": 18, "distinction_marks": 26, "time_limit_min": 30, "attempts_allowed": 2},
+  {"level": "foundation", "week": None, "title": "Tier 1 Final exam", "title_hi": "Tier 1 Final exam", "title_dv": "टियर 1 फ़ाइनल परीक्षा", "total_marks": 30, "pass_marks": 18, "distinction_marks": 26, "time_limit_min": 60, "attempts_allowed": 2},
+  {"level": "intermediate", "week": None, "title": "Tier 2 Capstone assessment", "title_hi": "Tier 2 Capstone assessment", "title_dv": "टियर 2 कैपस्टोन मूल्यांकन", "total_marks": 36, "pass_marks": 22, "distinction_marks": 30, "time_limit_min": 60, "attempts_allowed": 2},
+  {"level": "advanced", "week": None, "title": "Tier 3 Capstone assessment", "title_hi": "Tier 3 Capstone assessment", "title_dv": "टियर 3 कैपस्टोन मूल्यांकन", "total_marks": 36, "pass_marks": 22, "distinction_marks": 30, "time_limit_min": 60, "attempts_allowed": 2},
 ]
 
 # ---- Resources ----

@@ -2,6 +2,7 @@
 @import "../styles/tokens.css";
 @import "../styles/tailwind-theme.css";
 @import "../styles/winners.css"; /* CIRCLE W.I.N.N.E.R.S skin — must come last so its bridge wins the cascade */
+@import "../styles/visuals.css"; /* teaching visuals (components/visuals); own class names only, so order does not matter */
 
 /* ---- responsive foundations (responsive-dashboard-layout SKILL.md §2) ---- */
 *, *::before, *::after { box-sizing: border-box; }
@@ -149,3 +150,19 @@ select.col-input { padding-right: 28px; }
 .lrn-topic__p { margin: 0; line-height: 1.6; font-size: var(--col-text-body, 14px); }
 .lrn-kaam { border-color: var(--col-brand); }
 .lrn-kaam__p { margin: 8px 0 0; font-size: 16px; line-height: 1.6; font-weight: 500; }
+
+/* ---- three languages ----
+   IBM Plex Sans has no Devanagari glyphs; name the system Devanagari faces so हिंदी renders in
+   a good font on every platform (Android: Noto, Windows: Nirmala UI, Apple: Kohinoor) and give
+   the taller script a little more line height. data-lang is stamped by the root layout. */
+:root, [data-theme=dark], [data-theme=light] {
+  --ff: "IBM Plex Sans", "Noto Sans Devanagari", "Nirmala UI", "Kohinoor Devanagari", "Mangal", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  --col-font-sans: var(--ff);
+}
+html[data-lang="dv"] body { line-height: 1.7; }
+html[data-lang="dv"] .lrn-title, html[data-lang="dv"] h1, html[data-lang="dv"] h2, html[data-lang="dv"] h3 { line-height: 1.4; }
+.lrn-langsel { position: relative; padding-right: 10px; }
+.lrn-langsel select { appearance: none; -webkit-appearance: none; background: transparent; border: 0; color: inherit; font: inherit; padding: 0 2px; cursor: pointer; }
+.lrn-langsel select:focus-visible { outline: none; }
+.lrn-langsel:focus-within { outline: 2px solid var(--brand); outline-offset: 2px; }
+.lrn-langsel option { color: #18232f; background: #fff; }

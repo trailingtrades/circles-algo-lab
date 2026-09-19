@@ -9,20 +9,39 @@ import quizBanks from "../../../../../content/quizzes/foundation.json";
 import examsJson from "../../../../../content/exams.json";
 import examBanks from "../../../../../content/exams/foundation.json";
 
+import { tr, type Lang, type Text } from "@/lib/i18n/lang";
+import { normalizeContent, type SessionContentV2 } from "./session-v2";
+
 export type LevelSlug = "foundation" | "intermediate" | "advanced";
-export interface Level { slug: LevelSlug; sequence: number; title_en: string; title_hi: string; subtitle_en: string; subtitle_hi: string; unlock_rule: string }
-export interface Week { level: LevelSlug; number: number; title_en: string; title_hi: string; theme_accent: string }
-export interface Prompt { title: string; level: string; platform: string; body: string }
-export interface Topic { h: string; p: string; scam_example?: boolean }
-export interface SessionContent { topics: Topic[]; kaam: string; outcome: string; tools: string[]; fun: string | null; compliance: string | null; journal_prompt: string }
-export interface Session { number: number; level: LevelSlug; week: number; day: number; course_day: number | null; title_en: string; title_hi: string; core_concept: string; ai_lab: string; psychology: string; strategy: string | null; duration_min: number; video_url: string | null; video_provider: string; is_published: boolean; draft: boolean; summary_hi: string; content: SessionContent; prompts: Prompt[] }
+/* Language columns: *_en English, *_hi Hinglish (Roman), *_dv Hindi (Devanagari; optional until seeded). */
+export interface Level { slug: LevelSlug; sequence: number; title_en: string; title_hi: string; title_dv?: string | null; subtitle_en: string; subtitle_hi: string; subtitle_dv?: string | null; unlock_rule: string }
+export interface Week { level: LevelSlug; number: number; title_en: string; title_hi: string; title_dv?: string | null; theme_accent: string }
+export interface Prompt { title: Text; level: string; platform: string; body: string }
+/** @deprecated the v1 name — use SessionContentV2 (lib/content/session-v2.ts). */
+export type SessionContent = SessionContentV2;
+export interface Session { number: number; level: LevelSlug; week: number; day: number; course_day: number | null; title_en: string; title_hi: string; title_dv?: string | null; core_concept: string; ai_lab: string; psychology: string; strategy: string | null; duration_min: number; video_url: string | null; video_provider: string; is_published: boolean; draft: boolean; summary_hi: string; content: SessionContentV2; prompts: Prompt[] }
 export interface Resource { level: LevelSlug | null; week: number | null; kind: "deck" | "handout" | "workbook" | "exam" | "excel" | "link"; file_name: string; note: string; storage_path: string | null }
-export interface QuizOption { en: string; hi: string; distractor: boolean }
-export interface QuizQuestionPublic { idx: number; stem_en: string; stem_hi: string; options: QuizOption[]; marks: number }
+/** What the browser may see for an option: the words only. Which option is right never leaves the server. */
+export interface QuizOption { en: string; hi: string; dv?: string }
+export interface QuizQuestionPublic { idx: number; stem_en: string; stem_hi: string; stem_dv?: string | null; options: QuizOption[]; marks: number }
+/** A bank row as stored in /content JSON (server-side; carries the answer). */
+type BankQuestion = { stem_en: string; stem_hi: string; stem_dv?: string; options: (QuizOption & { distractor?: boolean })[]; correct_index: number; explanation_en: string; explanation_hi: string; explanation_dv?: string; marks: number };
+/** Keep only the words of an option — the legacy `distractor` flag revealed the answer. */
+export const publicOption = (o: QuizOption & { distractor?: boolean }): QuizOption => (o.dv ? { en: o.en, hi: o.hi, dv: o.dv } : { en: o.en, hi: o.hi });
+
+/** A title / stem / explanation in the learner's language from its *_en / *_hi / *_dv fields (dv -> hi -> en fallback). */
+export function pick3(row: object, base: string, lang: Lang): string {
+  const r = row as Record<string, unknown>;
+  const v = (k: string) => (typeof r[`${base}_${k}`] === "string" ? (r[`${base}_${k}`] as string) : "");
+  return tr({ en: v("en"), hi: v("hi"), dv: v("dv") }, lang);
+}
+export const optionText = (o: QuizOption, lang: Lang) => tr({ en: o.en, hi: o.hi, dv: o.dv ?? "" }, lang);
 
 export const LEVELS = levelsJson as Level[];
 export const WEEKS = weeksJson as Week[];
-export const SESSIONS = ([...foundation, ...intermediate, ...advanced] as Session[]).sort((a, b) => a.number - b.number);
+export const SESSIONS = ([...foundation, ...intermediate, ...advanced] as unknown as Session[])
+  .map((s) => ({ ...s, content: normalizeContent(s.content) }))
+  .sort((a, b) => a.number - b.number);
 export const RESOURCES = resourcesJson as Resource[];
 
 export const getSession = (n: number) => SESSIONS.find((s) => s.number === n) ?? null;
@@ -36,14 +55,16 @@ export const weekOf = (s: Session) => WEEKS.find((w) => w.level === s.level && w
 export const levelOf = (slug: LevelSlug) => LEVELS.find((l) => l.slug === slug)!;
 
 /** Public view of a quiz bank: no correct_index, no explanation. Grading and explanations are server-only (actions.ts). */
+const QUIZ_BANKS = quizBanks as unknown as { session: number; questions: BankQuestion[] }[];
+const toPublic = (q: BankQuestion, idx: number): QuizQuestionPublic => ({ idx, stem_en: q.stem_en, stem_hi: q.stem_hi, stem_dv: q.stem_dv ?? null, options: q.options.map(publicOption), marks: q.marks });
+const toKey = (q: BankQuestion) => ({ correct_index: q.correct_index, explanation_en: q.explanation_en, explanation_hi: q.explanation_hi, explanation_dv: q.explanation_dv ?? "", marks: q.marks });
+export type AnswerKey = ReturnType<typeof toKey>;
 export function quizPublic(n: number): QuizQuestionPublic[] {
-  const bank = (quizBanks as { session: number; questions: { stem_en: string; stem_hi: string; options: QuizOption[]; marks: number }[] }[]).find((b) => b.session === n);
-  return (bank?.questions ?? []).map((q, idx) => ({ idx, stem_en: q.stem_en, stem_hi: q.stem_hi, options: q.options, marks: q.marks }));
+  return (QUIZ_BANKS.find((b) => b.session === n)?.questions ?? []).map(toPublic);
 }
 /** Server-only helper (never import from a client component). */
-export function quizAnswerKey(n: number) {
-  const bank = (quizBanks as { session: number; questions: { correct_index: number; explanation_en: string; explanation_hi: string; marks: number }[] }[]).find((b) => b.session === n);
-  return (bank?.questions ?? []).map((q) => ({ correct_index: q.correct_index, explanation_en: q.explanation_en, explanation_hi: q.explanation_hi, marks: q.marks }));
+export function quizAnswerKey(n: number): AnswerKey[] {
+  return (QUIZ_BANKS.find((b) => b.session === n)?.questions ?? []).map(toKey);
 }
 /** YouTube unlisted (decision Q6-A): accept a watch URL, youtu.be URL, or bare id; return the privacy-enhanced embed URL. */
 export function youtubeEmbed(url: string | null): string | null {
@@ -59,13 +80,13 @@ export const examKey = (e: ExamMeta) => `${e.level}-${e.week ? `w${e.week}` : "f
 export const getExam = (key: string) => EXAMS.find((e) => examKey(e) === key) ?? null;
 /** The exam a learner in this level-week should see next: the weekly exam if one exists, else the level final. */
 export const examForWeek = (level: LevelSlug, week: number) => EXAMS.find((e) => e.level === level && e.week === week) ?? EXAMS.find((e) => e.level === level && e.week === null) ?? null;
-type Bank = { level: string; week: number | null; questions: { stem_en: string; stem_hi: string; options: QuizOption[]; correct_index: number; explanation_en: string; explanation_hi: string; marks: number }[] };
-const EXAM_BANKS = examBanks as Bank[];
+type Bank = { level: string; week: number | null; questions: BankQuestion[] };
+const EXAM_BANKS = examBanks as unknown as Bank[];
 const bankFor = (key: string) => EXAM_BANKS.find((b) => `${b.level}-${b.week ? `w${b.week}` : "final"}` === key);
 export function examPublic(key: string): QuizQuestionPublic[] {
-  return (bankFor(key)?.questions ?? []).map((q, idx) => ({ idx, stem_en: q.stem_en, stem_hi: q.stem_hi, options: q.options, marks: q.marks }));
+  return (bankFor(key)?.questions ?? []).map(toPublic);
 }
 /** Server-only. */
-export function examAnswerKey(key: string) {
-  return (bankFor(key)?.questions ?? []).map((q) => ({ correct_index: q.correct_index, explanation_en: q.explanation_en, explanation_hi: q.explanation_hi, marks: q.marks }));
+export function examAnswerKey(key: string): AnswerKey[] {
+  return (bankFor(key)?.questions ?? []).map(toKey);
 }

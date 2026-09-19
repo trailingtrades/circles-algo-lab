@@ -8,16 +8,6 @@
     "stem_hi": "SENSEX kitni BSE companies track karta hai?",
     "options": [
      {
-      "en": "30",
-      "hi": "30",
-      "distractor": false
-     },
-     {
-      "en": "50",
-      "hi": "50",
-      "distractor": true
-     },
-     {
       "en": "100",
       "hi": "100",
       "distractor": true
@@ -26,9 +16,19 @@
       "en": "500",
       "hi": "500",
       "distractor": true
+     },
+     {
+      "en": "50",
+      "hi": "50",
+      "distractor": true
+     },
+     {
+      "en": "30",
+      "hi": "30",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "SENSEX = 30 BSE companies; NIFTY 50 = 50 NSE companies.",
     "explanation_hi": "SENSEX = 30 BSE; NIFTY 50 = 50 NSE.",
     "marks": 2,
@@ -39,16 +39,6 @@
     "stem_hi": "GTT order kya hai?",
     "options": [
      {
-      "en": "An order that waits for days until a trigger",
-      "hi": "Trigger tak dinon wait karne wala order",
-      "distractor": false
-     },
-     {
-      "en": "A market order",
-      "hi": "Market order",
-      "distractor": true
-     },
-     {
       "en": "A margin loan",
       "hi": "Margin loan",
       "distractor": true
@@ -57,9 +47,19 @@
       "en": "A tip",
       "hi": "Tip",
       "distractor": true
+     },
+     {
+      "en": "An order that waits for days until a trigger",
+      "hi": "Trigger tak dinon wait karne wala order",
+      "distractor": false
+     },
+     {
+      "en": "A market order",
+      "hi": "Market order",
+      "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Good-till-triggered: patient conditional orders.",
     "explanation_hi": "GTT: sabr wala conditional order.",
     "marks": 2,
@@ -70,16 +70,6 @@
     "stem_hi": "DII ka matlab:",
     "options": [
      {
-      "en": "Domestic institutional investors",
-      "hi": "Desi institutional investors",
-      "distractor": false
-     },
-     {
-      "en": "Direct index investment",
-      "hi": "Direct index investment",
-      "distractor": true
-     },
-     {
       "en": "Daily intraday index",
       "hi": "Daily intraday index",
       "distractor": true
@@ -88,9 +78,19 @@
       "en": "Delivery in installments",
       "hi": "Delivery in installments",
       "distractor": true
+     },
+     {
+      "en": "Direct index investment",
+      "hi": "Direct index investment",
+      "distractor": true
+     },
+     {
+      "en": "Domestic institutional investors",
+      "hi": "Desi institutional investors",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "Mutual funds, insurers and pension funds are DIIs.",
     "explanation_hi": "Mutual funds, insurance, pension funds DII hain.",
     "marks": 2,
@@ -101,9 +101,9 @@
     "stem_hi": "SEBI FY26 study (Aug 2026): individual F&O traders ka kul net loss lagbhag:",
     "options": [
      {
-      "en": "Rs 91,685 crore",
-      "hi": "Rs 91,685 crore",
-      "distractor": false
+      "en": "Rs 1 lakh",
+      "hi": "Rs 1 lakh",
+      "distractor": true
      },
      {
       "en": "Rs 9,000 crore",
@@ -111,9 +111,9 @@
       "distractor": true
      },
      {
-      "en": "Rs 1 lakh",
-      "hi": "Rs 1 lakh",
-      "distractor": true
+      "en": "Rs 91,685 crore",
+      "hi": "Rs 91,685 crore",
+      "distractor": false
      },
      {
       "en": "Zero",
@@ -121,7 +121,7 @@
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "87.7% in net loss, Rs 91,685 cr aggregate, Rs 1.17 lakh average per loss-making trader (SEBI FY26 study, Aug 2026).",
     "explanation_hi": "87.7% net loss, Rs 91,685 cr kul, Rs 1.17 lakh average (SEBI FY26 study, Aug 2026).",
     "marks": 2,
@@ -137,6 +137,11 @@
       "distractor": false
      },
      {
+      "en": "+1.5R",
+      "hi": "+1.5R",
+      "distractor": true
+     },
+     {
       "en": "-0.2R",
       "hi": "-0.2R",
       "distractor": true
@@ -144,11 +149,6 @@
      {
       "en": "0R",
       "hi": "0R",
-      "distractor": true
-     },
-     {
-      "en": "+1.5R",
-      "hi": "+1.5R",
       "distractor": true
      }
     ],
@@ -163,9 +163,9 @@
     "stem_hi": "10% risk par 7 lagataar haar lagbhag kitna capital le jaati hai?",
     "options": [
      {
-      "en": "About half the capital",
-      "hi": "Lagbhag aadha capital",
-      "distractor": false
+      "en": "All of it",
+      "hi": "Poora",
+      "distractor": true
      },
      {
       "en": "About 7%",
@@ -178,12 +178,12 @@
       "distractor": true
      },
      {
-      "en": "All of it",
-      "hi": "Poora",
-      "distractor": true
+      "en": "About half the capital",
+      "hi": "Lagbhag aadha capital",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "0.9 to the power 7 is about 0.48, so about 52% is gone.",
     "explanation_hi": "0.9^7 lagbhag 0.48, yaani 52% gaya.",
     "marks": 2,
@@ -199,8 +199,8 @@
       "distractor": false
      },
      {
-      "en": "The AI's own memory",
-      "hi": "AI ki apni yaad",
+      "en": "A rumour",
+      "hi": "Afwah",
       "distractor": true
      },
      {
@@ -209,8 +209,8 @@
       "distractor": true
      },
      {
-      "en": "A rumour",
-      "hi": "Afwah",
+      "en": "The AI's own memory",
+      "hi": "AI ki apni yaad",
       "distractor": true
      }
     ],
@@ -225,16 +225,6 @@
     "stem_hi": "Kaunsi format request prompt ko behtar banati hai?",
     "options": [
      {
-      "en": "'3 facts, 2 guesses, 1 kachra'",
-      "hi": "'3 facts, 2 guesses, 1 kachra'",
-      "distractor": false
-     },
-     {
-      "en": "'Tell me everything'",
-      "hi": "'Sab batao'",
-      "distractor": true
-     },
-     {
       "en": "'Should I buy?'",
       "hi": "'Kharidun kya?'",
       "distractor": true
@@ -243,9 +233,19 @@
       "en": "'Give a target'",
       "hi": "'Target do'",
       "distractor": true
+     },
+     {
+      "en": "'Tell me everything'",
+      "hi": "'Sab batao'",
+      "distractor": true
+     },
+     {
+      "en": "'3 facts, 2 guesses, 1 kachra'",
+      "hi": "'3 facts, 2 guesses, 1 kachra'",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "Format forces structure and makes verification easy.",
     "explanation_hi": "Format structure deta hai aur verify karna aasan.",
     "marks": 2,
@@ -256,13 +256,8 @@
     "stem_hi": "Daily chart par ek candle:",
     "options": [
      {
-      "en": "One trading day",
-      "hi": "Ek trading din",
-      "distractor": false
-     },
-     {
-      "en": "One hour",
-      "hi": "Ek ghanta",
+      "en": "One trade",
+      "hi": "Ek trade",
       "distractor": true
      },
      {
@@ -271,12 +266,17 @@
       "distractor": true
      },
      {
-      "en": "One trade",
-      "hi": "Ek trade",
+      "en": "One hour",
+      "hi": "Ek ghanta",
       "distractor": true
+     },
+     {
+      "en": "One trading day",
+      "hi": "Ek trading din",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "Timeframe = time per candle.",
     "explanation_hi": "Timeframe = ek candle ka waqt.",
     "marks": 2,
@@ -287,14 +287,14 @@
     "stem_hi": "Support zone par lambi neeche wali wick:",
     "options": [
      {
-      "en": "Rejection of lower prices",
-      "hi": "Neeche ke price ka rejection",
-      "distractor": false
-     },
-     {
       "en": "Sellers in full control",
       "hi": "Sellers ka poora control",
       "distractor": true
+     },
+     {
+      "en": "Rejection of lower prices",
+      "hi": "Neeche ke price ka rejection",
+      "distractor": false
      },
      {
       "en": "A guaranteed bounce",
@@ -307,7 +307,7 @@
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "explanation_en": "Wick = rejection. Context (support) gives it meaning; it is still a probability.",
     "explanation_hi": "Wick = rejection. Support ka context matlab deta hai; phir bhi probability.",
     "marks": 2,
@@ -318,27 +318,27 @@
     "stem_hi": "Support toot-ne par aksar ban jaata hai:",
     "options": [
      {
-      "en": "Resistance",
-      "hi": "Resistance",
-      "distractor": false
-     },
-     {
       "en": "Stronger support",
       "hi": "Aur strong support",
-      "distractor": true
-     },
-     {
-      "en": "A gap",
-      "hi": "Gap",
       "distractor": true
      },
      {
       "en": "VWAP",
       "hi": "VWAP",
       "distractor": true
+     },
+     {
+      "en": "Resistance",
+      "hi": "Resistance",
+      "distractor": false
+     },
+     {
+      "en": "A gap",
+      "hi": "Gap",
+      "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Role reversal is one of the most reliable structure ideas.",
     "explanation_hi": "Role reversal structure ka sabse bharosemand idea hai.",
     "marks": 2,
@@ -354,8 +354,8 @@
       "distractor": false
      },
      {
-      "en": "Old prices",
-      "hi": "Purane prices",
+      "en": "News",
+      "hi": "News",
       "distractor": true
      },
      {
@@ -364,8 +364,8 @@
       "distractor": true
      },
      {
-      "en": "News",
-      "hi": "News",
+      "en": "Old prices",
+      "hi": "Purane prices",
       "distractor": true
      }
     ],
@@ -390,13 +390,13 @@
       "distractor": true
      },
      {
-      "en": "Below 30",
-      "hi": "30 ke neeche",
+      "en": "Exactly 50",
+      "hi": "Exactly 50",
       "distractor": true
      },
      {
-      "en": "Exactly 50",
-      "hi": "Exactly 50",
+      "en": "Below 30",
+      "hi": "30 ke neeche",
       "distractor": true
      }
     ],
@@ -411,6 +411,11 @@
     "stem_hi": "1.5x ATR par SL kis liye hai?",
     "options": [
      {
+      "en": "Predict direction",
+      "hi": "Direction batana",
+      "distractor": true
+     },
+     {
       "en": "Sit outside normal daily noise",
       "hi": "Normal daily noise ke bahar rehna",
       "distractor": false
@@ -421,17 +426,12 @@
       "distractor": true
      },
      {
-      "en": "Predict direction",
-      "hi": "Direction batana",
-      "distractor": true
-     },
-     {
       "en": "Maximise trades",
       "hi": "Trades badhana",
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "explanation_en": "ATR-based stops avoid being shaken out by routine volatility.",
     "explanation_hi": "ATR SL routine volatility se bachata hai.",
     "marks": 2,
@@ -441,6 +441,11 @@
     "stem_en": "Survivorship bias in a calls sample means:",
     "stem_hi": "Calls sample mein survivorship bias ka matlab:",
     "options": [
+     {
+      "en": "The channel is honest",
+      "hi": "Channel imaandaar hai",
+      "distractor": true
+     },
      {
       "en": "You only see the calls that worked",
       "hi": "Sirf jo calls chali woh dikhti hain",
@@ -455,14 +460,9 @@
       "en": "Stops were always given",
       "hi": "SL hamesha diya",
       "distractor": true
-     },
-     {
-      "en": "The channel is honest",
-      "hi": "Channel imaandaar hai",
-      "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "explanation_en": "Deleted losers and dead channels never show up. Demand full history with stops.",
     "explanation_hi": "Deleted losers aur band channels kabhi nahi dikhte. Poori history maango.",
     "marks": 2,
@@ -479,16 +479,6 @@
     "stem_hi": "ORB entry window kab band hota hai?",
     "options": [
      {
-      "en": "11:00 am",
-      "hi": "11:00 am",
-      "distractor": false
-     },
-     {
-      "en": "9:30 am",
-      "hi": "9:30 am",
-      "distractor": true
-     },
-     {
       "en": "2:30 pm",
       "hi": "2:30 pm",
       "distractor": true
@@ -497,9 +487,19 @@
       "en": "3:30 pm",
       "hi": "3:30 pm",
       "distractor": true
+     },
+     {
+      "en": "11:00 am",
+      "hi": "11:00 am",
+      "distractor": false
+     },
+     {
+      "en": "9:30 am",
+      "hi": "9:30 am",
+      "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Entries 9:30 to 11:00; time-stop at 2:30 pm.",
     "explanation_hi": "Entry 9:30 se 11:00; time-stop 2:30.",
     "marks": 2,
@@ -510,9 +510,9 @@
     "stem_hi": "ORB ka SL:",
     "options": [
      {
-      "en": "1 ATR away or the other side of the range, whichever is nearer",
-      "hi": "1 ATR door ya range ka doosra side, jo paas ho",
-      "distractor": false
+      "en": "Nowhere; use a mental stop",
+      "hi": "Kahin nahi, mental stop",
+      "distractor": true
      },
      {
       "en": "A round number",
@@ -520,17 +520,17 @@
       "distractor": true
      },
      {
-      "en": "Nowhere; use a mental stop",
-      "hi": "Kahin nahi, mental stop",
-      "distractor": true
-     },
-     {
       "en": "5% away",
       "hi": "5% door",
       "distractor": true
+     },
+     {
+      "en": "1 ATR away or the other side of the range, whichever is nearer",
+      "hi": "1 ATR door ya range ka doosra side, jo paas ho",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "ATR-based or range-based, written before entry.",
     "explanation_hi": "ATR ya range se, entry se pehle likha.",
     "marks": 2,
@@ -540,11 +540,6 @@
     "stem_en": "Maximum ORB trades per instrument per day:",
     "stem_hi": "Ek instrument par din mein max ORB trades:",
     "options": [
-     {
-      "en": "One",
-      "hi": "Ek",
-      "distractor": false
-     },
      {
       "en": "Three",
       "hi": "Teen",
@@ -556,12 +551,17 @@
       "distractor": true
      },
      {
+      "en": "One",
+      "hi": "Ek",
+      "distractor": false
+     },
+     {
       "en": "Two",
       "hi": "Do",
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "One shot per instrument. No re-entries chasing the move.",
     "explanation_hi": "Ek hi. Move ke peeche re-entry nahi.",
     "marks": 2,
@@ -577,8 +577,8 @@
       "distractor": false
      },
      {
-      "en": "Rank students",
-      "hi": "Students rank karne",
+      "en": "Replace the stop",
+      "hi": "SL ki jagah",
       "distractor": true
      },
      {
@@ -587,8 +587,8 @@
       "distractor": true
      },
      {
-      "en": "Replace the stop",
-      "hi": "SL ki jagah",
+      "en": "Rank students",
+      "hi": "Students rank karne",
       "distractor": true
      }
     ],
@@ -608,13 +608,13 @@
       "distractor": false
      },
      {
-      "en": "Intraday",
-      "hi": "Intraday",
+      "en": "6 months",
+      "hi": "6 mahine",
       "distractor": true
      },
      {
-      "en": "6 months",
-      "hi": "6 mahine",
+      "en": "Intraday",
+      "hi": "Intraday",
       "distractor": true
      },
      {
@@ -634,9 +634,9 @@
     "stem_hi": "Course mein max open swing positions (paper):",
     "options": [
      {
-      "en": "Five",
-      "hi": "Paanch",
-      "distractor": false
+      "en": "Twenty",
+      "hi": "Bees",
+      "distractor": true
      },
      {
       "en": "One",
@@ -644,17 +644,17 @@
       "distractor": true
      },
      {
-      "en": "Twenty",
-      "hi": "Bees",
-      "distractor": true
-     },
-     {
       "en": "No limit",
       "hi": "Koi limit nahi",
       "distractor": true
+     },
+     {
+      "en": "Five",
+      "hi": "Paanch",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "Position limits are part of risk, not optional.",
     "explanation_hi": "Position limit risk ka hissa hai.",
     "marks": 2,
@@ -665,14 +665,14 @@
     "stem_hi": "Algo ladder mein Chartink:",
     "options": [
      {
-      "en": "Level 1: rules to screener/alerts, manual orders",
-      "hi": "Level 1: rules se screener/alerts, order manual",
-      "distractor": false
-     },
-     {
       "en": "Level 3: broker API",
       "hi": "Level 3: broker API",
       "distractor": true
+     },
+     {
+      "en": "Level 1: rules to screener/alerts, manual orders",
+      "hi": "Level 1: rules se screener/alerts, order manual",
+      "distractor": false
      },
      {
       "en": "An order router",
@@ -685,7 +685,7 @@
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "explanation_en": "Semi-automation. Alerts are not orders.",
     "explanation_hi": "Semi-automation. Alerts orders nahi hain.",
     "marks": 2,
@@ -727,16 +727,6 @@
     "stem_hi": "Rule card par hafte ka max loss:",
     "options": [
      {
-      "en": "5R",
-      "hi": "5R",
-      "distractor": false
-     },
-     {
-      "en": "50R",
-      "hi": "50R",
-      "distractor": true
-     },
-     {
       "en": "No weekly limit",
       "hi": "Koi weekly limit nahi",
       "distractor": true
@@ -745,9 +735,19 @@
       "en": "1R",
       "hi": "1R",
       "distractor": true
+     },
+     {
+      "en": "5R",
+      "hi": "5R",
+      "distractor": false
+     },
+     {
+      "en": "50R",
+      "hi": "50R",
+      "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Daily 2R or 2%, weekly 5R, then stop.",
     "explanation_hi": "Daily 2R ya 2%, weekly 5R, phir band.",
     "marks": 2,
@@ -758,9 +758,9 @@
     "stem_hi": "5 health checks mein kaunsa NAHI hai?",
     "options": [
      {
-      "en": "Price target",
-      "hi": "Price target",
-      "distractor": false
+      "en": "Cash flow",
+      "hi": "Cash flow",
+      "distractor": true
      },
      {
       "en": "Debt",
@@ -768,17 +768,17 @@
       "distractor": true
      },
      {
+      "en": "Price target",
+      "hi": "Price target",
+      "distractor": false
+     },
+     {
       "en": "Promoter pledge",
       "hi": "Promoter pledge",
       "distractor": true
-     },
-     {
-      "en": "Cash flow",
-      "hi": "Cash flow",
-      "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Growth, margins, debt, promoter/pledge, cash flow. No targets.",
     "explanation_hi": "Growth, margins, debt, promoter/pledge, cash flow. Target nahi.",
     "marks": 2,
@@ -789,16 +789,6 @@
     "stem_hi": "Day 12 health-check mein banks aur NBFC:",
     "options": [
      {
-      "en": "Skipped because debt metrics read differently",
-      "hi": "Skip, kyunki debt metrics alag padhte hain",
-      "distractor": false
-     },
-     {
-      "en": "Treated like any company",
-      "hi": "Baaki jaise",
-      "distractor": true
-     },
-     {
       "en": "Always red flags",
       "hi": "Hamesha red flag",
       "distractor": true
@@ -807,9 +797,19 @@
       "en": "Always safe",
       "hi": "Hamesha safe",
       "distractor": true
+     },
+     {
+      "en": "Skipped because debt metrics read differently",
+      "hi": "Skip, kyunki debt metrics alag padhte hain",
+      "distractor": false
+     },
+     {
+      "en": "Treated like any company",
+      "hi": "Baaki jaise",
+      "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Financials need a different lens; out of scope for Tier 1.",
     "explanation_hi": "Financials ka lens alag hai; Tier 1 se bahar.",
     "marks": 2,
@@ -820,16 +820,6 @@
     "stem_hi": "Break-even ke liye average profit per trade sabse zyada kis par depend karta hai?",
     "options": [
      {
-      "en": "All-in costs per round trip",
-      "hi": "Har round trip ki poori cost",
-      "distractor": false
-     },
-     {
-      "en": "Win-rate only",
-      "hi": "Sirf win-rate",
-      "distractor": true
-     },
-     {
       "en": "Broker's brand",
       "hi": "Broker ka brand",
       "distractor": true
@@ -838,9 +828,19 @@
       "en": "Screen size",
       "hi": "Screen size",
       "distractor": true
+     },
+     {
+      "en": "All-in costs per round trip",
+      "hi": "Har round trip ki poori cost",
+      "distractor": false
+     },
+     {
+      "en": "Win-rate only",
+      "hi": "Sirf win-rate",
+      "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Costs set the bar every trade must clear before profit.",
     "explanation_hi": "Cost woh bar hai jo har trade ko paar karni hai.",
     "marks": 2,
@@ -856,11 +856,6 @@
       "distractor": false
      },
      {
-      "en": "Fine if you are young",
-      "hi": "Jawaan ho to theek",
-      "distractor": true
-     },
-     {
       "en": "Recommended",
       "hi": "Recommended",
       "distractor": true
@@ -868,6 +863,11 @@
      {
       "en": "Cheaper",
       "hi": "Sasta",
+      "distractor": true
+     },
+     {
+      "en": "Fine if you are young",
+      "hi": "Jawaan ho to theek",
       "distractor": true
      }
     ],
@@ -882,9 +882,9 @@
     "stem_hi": "Bina out-of-sample period wali published curve:",
     "options": [
      {
-      "en": "Curve-fit to the past",
-      "hi": "Past par curve-fit",
-      "distractor": false
+      "en": "Live-verified",
+      "hi": "Live-verified",
+      "distractor": true
      },
      {
       "en": "Robust",
@@ -897,12 +897,12 @@
       "distractor": true
      },
      {
-      "en": "Live-verified",
-      "hi": "Live-verified",
-      "distractor": true
+      "en": "Curve-fit to the past",
+      "hi": "Past par curve-fit",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "Optimised in-sample results rarely survive new data.",
     "explanation_hi": "In-sample optimised results naye data par tikte nahi.",
     "marks": 2,
@@ -913,13 +913,8 @@
     "stem_hi": "SEBI retail algo framework mein unregistered algo providers:",
     "options": [
      {
-      "en": "Barred",
-      "hi": "Baar hain",
-      "distractor": false
-     },
-     {
-      "en": "Allowed with a disclaimer",
-      "hi": "Disclaimer ke saath allowed",
+      "en": "Encouraged",
+      "hi": "Encouraged",
       "distractor": true
      },
      {
@@ -928,12 +923,17 @@
       "distractor": true
      },
      {
-      "en": "Encouraged",
-      "hi": "Encouraged",
+      "en": "Barred",
+      "hi": "Baar hain",
+      "distractor": false
+     },
+     {
+      "en": "Allowed with a disclaimer",
+      "hi": "Disclaimer ke saath allowed",
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Broker-as-principal; Algo-ID on every order; unregistered providers barred.",
     "explanation_hi": "Broker principal; har order par Algo-ID; unregistered baar.",
     "marks": 2,
@@ -986,13 +986,13 @@
       "distractor": false
      },
      {
-      "en": "A VPN",
-      "hi": "VPN",
+      "en": "Nothing special",
+      "hi": "Kuch khaas nahi",
       "distractor": true
      },
      {
-      "en": "Nothing special",
-      "hi": "Kuch khaas nahi",
+      "en": "A VPN",
+      "hi": "VPN",
       "distractor": true
      },
      {
@@ -1012,11 +1012,6 @@
     "stem_hi": "Algo Level 1 ka exit artifact:",
     "options": [
      {
-      "en": "Flowchart + screener/alerts + 30-trade backtest",
-      "hi": "Flowchart + screener/alerts + 30-trade backtest",
-      "distractor": false
-     },
-     {
       "en": "A Python bot",
       "hi": "Python bot",
       "distractor": true
@@ -1027,12 +1022,17 @@
       "distractor": true
      },
      {
+      "en": "Flowchart + screener/alerts + 30-trade backtest",
+      "hi": "Flowchart + screener/alerts + 30-trade backtest",
+      "distractor": false
+     },
+     {
       "en": "A tips channel",
       "hi": "Tips channel",
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Every ladder level ends with something you built.",
     "explanation_hi": "Har level ek build par khatam.",
     "marks": 2,
@@ -1043,14 +1043,14 @@
     "stem_hi": "Alert ke baad 60 second kis liye?",
     "options": [
      {
-      "en": "Running the checklist the alert cannot check",
-      "hi": "Woh checklist jo alert check nahi kar sakta",
-      "distractor": false
-     },
-     {
       "en": "Placing the order fast",
       "hi": "Jaldi order",
       "distractor": true
+     },
+     {
+      "en": "Running the checklist the alert cannot check",
+      "hi": "Woh checklist jo alert check nahi kar sakta",
+      "distractor": false
      },
      {
       "en": "Asking the group",
@@ -1063,7 +1063,7 @@
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "explanation_en": "Alerts are not orders.",
     "explanation_hi": "Alerts orders nahi hain.",
     "marks": 2,
@@ -1074,27 +1074,27 @@
     "stem_hi": "Manual backtest ka equity curve:",
     "options": [
      {
-      "en": "Cumulative R over trades",
-      "hi": "Trades par cumulative R",
-      "distractor": false
-     },
-     {
       "en": "Price of the stock",
       "hi": "Stock ka price",
-      "distractor": true
-     },
-     {
-      "en": "Daily volume",
-      "hi": "Daily volume",
       "distractor": true
      },
      {
       "en": "Brokerage",
       "hi": "Brokerage",
       "distractor": true
+     },
+     {
+      "en": "Cumulative R over trades",
+      "hi": "Trades par cumulative R",
+      "distractor": false
+     },
+     {
+      "en": "Daily volume",
+      "hi": "Daily volume",
+      "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Cumulative R, with drawdown read from its peaks.",
     "explanation_hi": "Cumulative R, drawdown peaks se.",
     "marks": 2,
@@ -1115,13 +1115,13 @@
       "distractor": true
      },
      {
-      "en": "It looks reasonable",
-      "hi": "Reasonable lage",
+      "en": "The AI approves",
+      "hi": "AI approve kare",
       "distractor": true
      },
      {
-      "en": "The AI approves",
-      "hi": "AI approve kare",
+      "en": "It looks reasonable",
+      "hi": "Reasonable lage",
       "distractor": true
      }
     ],
@@ -1136,9 +1136,9 @@
     "stem_hi": "Futures mein MTM ka matlab:",
     "options": [
      {
-      "en": "Daily settlement of profit and loss",
-      "hi": "Roz profit/loss ka settlement",
-      "distractor": false
+      "en": "Premium decay",
+      "hi": "Premium decay",
+      "distractor": true
      },
      {
       "en": "Monthly expiry",
@@ -1146,9 +1146,9 @@
       "distractor": true
      },
      {
-      "en": "Premium decay",
-      "hi": "Premium decay",
-      "distractor": true
+      "en": "Daily settlement of profit and loss",
+      "hi": "Roz profit/loss ka settlement",
+      "distractor": false
      },
      {
       "en": "Lot size change",
@@ -1156,7 +1156,7 @@
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Futures P&L settles every day.",
     "explanation_hi": "Futures ka P&L roz settle.",
     "marks": 2,
@@ -1172,6 +1172,11 @@
       "distractor": false
      },
      {
+      "en": "Need no margin for sellers",
+      "hi": "Seller ko margin nahi",
+      "distractor": true
+     },
+     {
       "en": "Are the safest",
       "hi": "Sabse safe",
       "distractor": true
@@ -1179,11 +1184,6 @@
      {
       "en": "Never decay",
       "hi": "Kabhi decay nahi",
-      "distractor": true
-     },
-     {
-      "en": "Need no margin for sellers",
-      "hi": "Seller ko margin nahi",
       "distractor": true
      }
     ],
@@ -1198,13 +1198,8 @@
     "stem_hi": "Open interest (OI) kya hai?",
     "options": [
      {
-      "en": "Number of contracts currently open",
-      "hi": "Abhi khule contracts ki ginti",
-      "distractor": false
-     },
-     {
-      "en": "Today's volume",
-      "hi": "Aaj ka volume",
+      "en": "The strike",
+      "hi": "Strike",
       "distractor": true
      },
      {
@@ -1213,12 +1208,17 @@
       "distractor": true
      },
      {
-      "en": "The strike",
-      "hi": "Strike",
+      "en": "Today's volume",
+      "hi": "Aaj ka volume",
       "distractor": true
+     },
+     {
+      "en": "Number of contracts currently open",
+      "hi": "Abhi khule contracts ki ginti",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "OI = open positions, not traded volume.",
     "explanation_hi": "OI = khuli positions, volume nahi.",
     "marks": 2,
@@ -1229,14 +1229,14 @@
     "stem_hi": "Watchlist stock ke results se pehle swing rule:",
     "options": [
      {
+      "en": "Ignore",
+      "hi": "Ignore",
+      "distractor": true
+     },
+     {
       "en": "Exit or halve size; no new entry the day before",
       "hi": "Exit ya size aadha; ek din pehle nayi entry nahi",
       "distractor": false
-     },
-     {
-      "en": "Double up",
-      "hi": "Double",
-      "distractor": true
      },
      {
       "en": "Buy a call",
@@ -1244,12 +1244,12 @@
       "distractor": true
      },
      {
-      "en": "Ignore",
-      "hi": "Ignore",
+      "en": "Double up",
+      "hi": "Double",
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "explanation_en": "Overnight gap risk is highest around results.",
     "explanation_hi": "Results ke aas-paas gap risk sabse zyada.",
     "marks": 2,
@@ -1265,13 +1265,13 @@
       "distractor": false
      },
      {
-      "en": "Irrelevant",
-      "hi": "Irrelevant",
+      "en": "The best ORB day",
+      "hi": "Best ORB din",
       "distractor": true
      },
      {
-      "en": "The best ORB day",
-      "hi": "Best ORB din",
+      "en": "Irrelevant",
+      "hi": "Irrelevant",
       "distractor": true
      },
      {
@@ -1291,27 +1291,27 @@
     "stem_hi": "Overtrading aksar kis wajah se?",
     "options": [
      {
+      "en": "Good setups",
+      "hi": "Achhe setups",
+      "distractor": true
+     },
+     {
       "en": "Boredom and need for action",
       "hi": "Boredom aur action ki zaroorat",
       "distractor": false
      },
      {
-      "en": "Good setups",
-      "hi": "Achhe setups",
+      "en": "Rules",
+      "hi": "Rules",
       "distractor": true
      },
      {
       "en": "Low costs",
       "hi": "Kam cost",
       "distractor": true
-     },
-     {
-      "en": "Rules",
-      "hi": "Rules",
-      "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "explanation_en": "The routine card and checklist starve it.",
     "explanation_hi": "Routine card aur checklist ise khatam karte hain.",
     "marks": 2,
@@ -1321,11 +1321,6 @@
     "stem_en": "Weekly kill-switch level on the card:",
     "stem_hi": "Card par hafte ka kill-switch:",
     "options": [
-     {
-      "en": "5R loss: stop paper trading, review only",
-      "hi": "5R loss: paper trading band, sirf review",
-      "distractor": false
-     },
      {
       "en": "No weekly rule",
       "hi": "Koi weekly rule nahi",
@@ -1337,12 +1332,17 @@
       "distractor": true
      },
      {
+      "en": "5R loss: stop paper trading, review only",
+      "hi": "5R loss: paper trading band, sirf review",
+      "distractor": false
+     },
+     {
       "en": "1 trade",
       "hi": "1 trade",
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Machines need a kill-switch; so do humans.",
     "explanation_hi": "Machine ko kill-switch chahiye; insaan ko bhi.",
     "marks": 2,
@@ -1352,6 +1352,11 @@
     "stem_en": "The Tier 1 certificate can be verified by:",
     "stem_hi": "Tier 1 certificate verify hota hai:",
     "options": [
+     {
+      "en": "A screenshot",
+      "hi": "Screenshot",
+      "distractor": true
+     },
      {
       "en": "Its unique number and QR on the public verify page",
       "hi": "Unique number aur QR se public verify page par",
@@ -1363,17 +1368,12 @@
       "distractor": true
      },
      {
-      "en": "A screenshot",
-      "hi": "Screenshot",
-      "distractor": true
-     },
-     {
       "en": "It cannot be verified",
       "hi": "Verify nahi ho sakta",
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "explanation_en": "Every certificate has a tamper-evident verify link.",
     "explanation_hi": "Har certificate ka verify link.",
     "marks": 2,
@@ -1383,11 +1383,6 @@
     "stem_en": "Tier 2 adds:",
     "stem_hi": "Tier 2 mein aata hai:",
     "options": [
-     {
-      "en": "6 strategies paper-deployed no-code, options Greeks/IV, Backtest Level 2",
-      "hi": "6 strategies no-code paper-deploy, options Greeks/IV, Backtest Level 2",
-      "distractor": false
-     },
      {
       "en": "Live trading with 5 Circles' money",
       "hi": "5 Circles ke paise se live trading",
@@ -1402,9 +1397,14 @@
       "en": "Tips",
       "hi": "Tips",
       "distractor": true
+     },
+     {
+      "en": "6 strategies paper-deployed no-code, options Greeks/IV, Backtest Level 2",
+      "hi": "6 strategies no-code paper-deploy, options Greeks/IV, Backtest Level 2",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "The ladder continues: Level 2 automation in paper mode.",
     "explanation_hi": "Ladder aage: Level 2 automation paper mode mein.",
     "marks": 2,
@@ -1426,8 +1426,8 @@
       "distractor": false
      },
      {
-      "en": "The AI's own memory",
-      "hi": "AI ki apni yaad",
+      "en": "A rumour",
+      "hi": "Afwah",
       "distractor": true
      },
      {
@@ -1436,8 +1436,8 @@
       "distractor": true
      },
      {
-      "en": "A rumour",
-      "hi": "Afwah",
+      "en": "The AI's own memory",
+      "hi": "AI ki apni yaad",
       "distractor": true
      }
     ],
@@ -1457,8 +1457,8 @@
       "distractor": false
      },
      {
-      "en": "Old prices",
-      "hi": "Purane prices",
+      "en": "News",
+      "hi": "News",
       "distractor": true
      },
      {
@@ -1467,8 +1467,8 @@
       "distractor": true
      },
      {
-      "en": "News",
-      "hi": "News",
+      "en": "Old prices",
+      "hi": "Purane prices",
       "distractor": true
      }
     ],
@@ -1483,14 +1483,14 @@
     "stem_hi": "Support zone par lambi neeche wali wick:",
     "options": [
      {
-      "en": "Rejection of lower prices",
-      "hi": "Neeche ke price ka rejection",
-      "distractor": false
-     },
-     {
       "en": "Sellers in full control",
       "hi": "Sellers ka poora control",
       "distractor": true
+     },
+     {
+      "en": "Rejection of lower prices",
+      "hi": "Neeche ke price ka rejection",
+      "distractor": false
      },
      {
       "en": "A guaranteed bounce",
@@ -1503,7 +1503,7 @@
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "explanation_en": "Wick = rejection. Context (support) gives it meaning; it is still a probability.",
     "explanation_hi": "Wick = rejection. Support ka context matlab deta hai; phir bhi probability.",
     "marks": 1,
@@ -1514,16 +1514,6 @@
     "stem_hi": "Kaunsi format request prompt ko behtar banati hai?",
     "options": [
      {
-      "en": "'3 facts, 2 guesses, 1 kachra'",
-      "hi": "'3 facts, 2 guesses, 1 kachra'",
-      "distractor": false
-     },
-     {
-      "en": "'Tell me everything'",
-      "hi": "'Sab batao'",
-      "distractor": true
-     },
-     {
       "en": "'Should I buy?'",
       "hi": "'Kharidun kya?'",
       "distractor": true
@@ -1532,9 +1522,19 @@
       "en": "'Give a target'",
       "hi": "'Target do'",
       "distractor": true
+     },
+     {
+      "en": "'Tell me everything'",
+      "hi": "'Sab batao'",
+      "distractor": true
+     },
+     {
+      "en": "'3 facts, 2 guesses, 1 kachra'",
+      "hi": "'3 facts, 2 guesses, 1 kachra'",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "Format forces structure and makes verification easy.",
     "explanation_hi": "Format structure deta hai aur verify karna aasan.",
     "marks": 1,
@@ -1545,27 +1545,27 @@
     "stem_hi": "Support toot-ne par aksar ban jaata hai:",
     "options": [
      {
-      "en": "Resistance",
-      "hi": "Resistance",
-      "distractor": false
-     },
-     {
       "en": "Stronger support",
       "hi": "Aur strong support",
-      "distractor": true
-     },
-     {
-      "en": "A gap",
-      "hi": "Gap",
       "distractor": true
      },
      {
       "en": "VWAP",
       "hi": "VWAP",
       "distractor": true
+     },
+     {
+      "en": "Resistance",
+      "hi": "Resistance",
+      "distractor": false
+     },
+     {
+      "en": "A gap",
+      "hi": "Gap",
+      "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Role reversal is one of the most reliable structure ideas.",
     "explanation_hi": "Role reversal structure ka sabse bharosemand idea hai.",
     "marks": 1,
@@ -1576,9 +1576,9 @@
     "stem_hi": "10% risk par 7 lagataar haar lagbhag kitna capital le jaati hai?",
     "options": [
      {
-      "en": "About half the capital",
-      "hi": "Lagbhag aadha capital",
-      "distractor": false
+      "en": "All of it",
+      "hi": "Poora",
+      "distractor": true
      },
      {
       "en": "About 7%",
@@ -1591,12 +1591,12 @@
       "distractor": true
      },
      {
-      "en": "All of it",
-      "hi": "Poora",
-      "distractor": true
+      "en": "About half the capital",
+      "hi": "Lagbhag aadha capital",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "0.9 to the power 7 is about 0.48, so about 52% is gone.",
     "explanation_hi": "0.9^7 lagbhag 0.48, yaani 52% gaya.",
     "marks": 1,
@@ -1607,16 +1607,6 @@
     "stem_hi": "SENSEX kitni BSE companies track karta hai?",
     "options": [
      {
-      "en": "30",
-      "hi": "30",
-      "distractor": false
-     },
-     {
-      "en": "50",
-      "hi": "50",
-      "distractor": true
-     },
-     {
       "en": "100",
       "hi": "100",
       "distractor": true
@@ -1625,9 +1615,19 @@
       "en": "500",
       "hi": "500",
       "distractor": true
+     },
+     {
+      "en": "50",
+      "hi": "50",
+      "distractor": true
+     },
+     {
+      "en": "30",
+      "hi": "30",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "SENSEX = 30 BSE companies; NIFTY 50 = 50 NSE companies.",
     "explanation_hi": "SENSEX = 30 BSE; NIFTY 50 = 50 NSE.",
     "marks": 1,
@@ -1648,13 +1648,13 @@
       "distractor": true
      },
      {
-      "en": "Below 30",
-      "hi": "30 ke neeche",
+      "en": "Exactly 50",
+      "hi": "Exactly 50",
       "distractor": true
      },
      {
-      "en": "Exactly 50",
-      "hi": "Exactly 50",
+      "en": "Below 30",
+      "hi": "30 ke neeche",
       "distractor": true
      }
     ],
@@ -1669,6 +1669,11 @@
     "stem_hi": "1.5x ATR par SL kis liye hai?",
     "options": [
      {
+      "en": "Predict direction",
+      "hi": "Direction batana",
+      "distractor": true
+     },
+     {
       "en": "Sit outside normal daily noise",
       "hi": "Normal daily noise ke bahar rehna",
       "distractor": false
@@ -1679,17 +1684,12 @@
       "distractor": true
      },
      {
-      "en": "Predict direction",
-      "hi": "Direction batana",
-      "distractor": true
-     },
-     {
       "en": "Maximise trades",
       "hi": "Trades badhana",
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "explanation_en": "ATR-based stops avoid being shaken out by routine volatility.",
     "explanation_hi": "ATR SL routine volatility se bachata hai.",
     "marks": 1,
@@ -1699,6 +1699,11 @@
     "stem_en": "Survivorship bias in a calls sample means:",
     "stem_hi": "Calls sample mein survivorship bias ka matlab:",
     "options": [
+     {
+      "en": "The channel is honest",
+      "hi": "Channel imaandaar hai",
+      "distractor": true
+     },
      {
       "en": "You only see the calls that worked",
       "hi": "Sirf jo calls chali woh dikhti hain",
@@ -1713,14 +1718,9 @@
       "en": "Stops were always given",
       "hi": "SL hamesha diya",
       "distractor": true
-     },
-     {
-      "en": "The channel is honest",
-      "hi": "Channel imaandaar hai",
-      "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "explanation_en": "Deleted losers and dead channels never show up. Demand full history with stops.",
     "explanation_hi": "Deleted losers aur band channels kabhi nahi dikhte. Poori history maango.",
     "marks": 1,
@@ -1731,16 +1731,6 @@
     "stem_hi": "Day 12 health-check mein banks aur NBFC:",
     "options": [
      {
-      "en": "Skipped because debt metrics read differently",
-      "hi": "Skip, kyunki debt metrics alag padhte hain",
-      "distractor": false
-     },
-     {
-      "en": "Treated like any company",
-      "hi": "Baaki jaise",
-      "distractor": true
-     },
-     {
       "en": "Always red flags",
       "hi": "Hamesha red flag",
       "distractor": true
@@ -1749,9 +1739,19 @@
       "en": "Always safe",
       "hi": "Hamesha safe",
       "distractor": true
+     },
+     {
+      "en": "Skipped because debt metrics read differently",
+      "hi": "Skip, kyunki debt metrics alag padhte hain",
+      "distractor": false
+     },
+     {
+      "en": "Treated like any company",
+      "hi": "Baaki jaise",
+      "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Financials need a different lens; out of scope for Tier 1.",
     "explanation_hi": "Financials ka lens alag hai; Tier 1 se bahar.",
     "marks": 1,
@@ -1767,13 +1767,13 @@
       "distractor": false
      },
      {
-      "en": "Intraday",
-      "hi": "Intraday",
+      "en": "6 months",
+      "hi": "6 mahine",
       "distractor": true
      },
      {
-      "en": "6 months",
-      "hi": "6 mahine",
+      "en": "Intraday",
+      "hi": "Intraday",
       "distractor": true
      },
      {
@@ -1793,16 +1793,6 @@
     "stem_hi": "Rule card par hafte ka max loss:",
     "options": [
      {
-      "en": "5R",
-      "hi": "5R",
-      "distractor": false
-     },
-     {
-      "en": "50R",
-      "hi": "50R",
-      "distractor": true
-     },
-     {
       "en": "No weekly limit",
       "hi": "Koi weekly limit nahi",
       "distractor": true
@@ -1811,9 +1801,19 @@
       "en": "1R",
       "hi": "1R",
       "distractor": true
+     },
+     {
+      "en": "5R",
+      "hi": "5R",
+      "distractor": false
+     },
+     {
+      "en": "50R",
+      "hi": "50R",
+      "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Daily 2R or 2%, weekly 5R, then stop.",
     "explanation_hi": "Daily 2R ya 2%, weekly 5R, phir band.",
     "marks": 1,
@@ -1824,13 +1824,8 @@
     "stem_hi": "SEBI retail algo framework mein unregistered algo providers:",
     "options": [
      {
-      "en": "Barred",
-      "hi": "Baar hain",
-      "distractor": false
-     },
-     {
-      "en": "Allowed with a disclaimer",
-      "hi": "Disclaimer ke saath allowed",
+      "en": "Encouraged",
+      "hi": "Encouraged",
       "distractor": true
      },
      {
@@ -1839,12 +1834,17 @@
       "distractor": true
      },
      {
-      "en": "Encouraged",
-      "hi": "Encouraged",
+      "en": "Barred",
+      "hi": "Baar hain",
+      "distractor": false
+     },
+     {
+      "en": "Allowed with a disclaimer",
+      "hi": "Disclaimer ke saath allowed",
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Broker-as-principal; Algo-ID on every order; unregistered providers barred.",
     "explanation_hi": "Broker principal; har order par Algo-ID; unregistered baar.",
     "marks": 1,
@@ -1860,8 +1860,8 @@
       "distractor": false
      },
      {
-      "en": "Rank students",
-      "hi": "Students rank karne",
+      "en": "Replace the stop",
+      "hi": "SL ki jagah",
       "distractor": true
      },
      {
@@ -1870,8 +1870,8 @@
       "distractor": true
      },
      {
-      "en": "Replace the stop",
-      "hi": "SL ki jagah",
+      "en": "Rank students",
+      "hi": "Students rank karne",
       "distractor": true
      }
     ],
@@ -1891,11 +1891,6 @@
       "distractor": false
      },
      {
-      "en": "Fine if you are young",
-      "hi": "Jawaan ho to theek",
-      "distractor": true
-     },
-     {
       "en": "Recommended",
       "hi": "Recommended",
       "distractor": true
@@ -1903,6 +1898,11 @@
      {
       "en": "Cheaper",
       "hi": "Sasta",
+      "distractor": true
+     },
+     {
+      "en": "Fine if you are young",
+      "hi": "Jawaan ho to theek",
       "distractor": true
      }
     ],
@@ -1917,9 +1917,9 @@
     "stem_hi": "Bina out-of-sample period wali published curve:",
     "options": [
      {
-      "en": "Curve-fit to the past",
-      "hi": "Past par curve-fit",
-      "distractor": false
+      "en": "Live-verified",
+      "hi": "Live-verified",
+      "distractor": true
      },
      {
       "en": "Robust",
@@ -1932,12 +1932,12 @@
       "distractor": true
      },
      {
-      "en": "Live-verified",
-      "hi": "Live-verified",
-      "distractor": true
+      "en": "Curve-fit to the past",
+      "hi": "Past par curve-fit",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "Optimised in-sample results rarely survive new data.",
     "explanation_hi": "In-sample optimised results naye data par tikte nahi.",
     "marks": 1,
@@ -1948,16 +1948,6 @@
     "stem_hi": "ORB entry window kab band hota hai?",
     "options": [
      {
-      "en": "11:00 am",
-      "hi": "11:00 am",
-      "distractor": false
-     },
-     {
-      "en": "9:30 am",
-      "hi": "9:30 am",
-      "distractor": true
-     },
-     {
       "en": "2:30 pm",
       "hi": "2:30 pm",
       "distractor": true
@@ -1966,9 +1956,19 @@
       "en": "3:30 pm",
       "hi": "3:30 pm",
       "distractor": true
+     },
+     {
+      "en": "11:00 am",
+      "hi": "11:00 am",
+      "distractor": false
+     },
+     {
+      "en": "9:30 am",
+      "hi": "9:30 am",
+      "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Entries 9:30 to 11:00; time-stop at 2:30 pm.",
     "explanation_hi": "Entry 9:30 se 11:00; time-stop 2:30.",
     "marks": 1,
@@ -1978,11 +1978,6 @@
     "stem_en": "Maximum ORB trades per instrument per day:",
     "stem_hi": "Ek instrument par din mein max ORB trades:",
     "options": [
-     {
-      "en": "One",
-      "hi": "Ek",
-      "distractor": false
-     },
      {
       "en": "Three",
       "hi": "Teen",
@@ -1994,12 +1989,17 @@
       "distractor": true
      },
      {
+      "en": "One",
+      "hi": "Ek",
+      "distractor": false
+     },
+     {
       "en": "Two",
       "hi": "Do",
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "One shot per instrument. No re-entries chasing the move.",
     "explanation_hi": "Ek hi. Move ke peeche re-entry nahi.",
     "marks": 1,
@@ -2010,9 +2010,9 @@
     "stem_hi": "Course mein max open swing positions (paper):",
     "options": [
      {
-      "en": "Five",
-      "hi": "Paanch",
-      "distractor": false
+      "en": "Twenty",
+      "hi": "Bees",
+      "distractor": true
      },
      {
       "en": "One",
@@ -2020,17 +2020,17 @@
       "distractor": true
      },
      {
-      "en": "Twenty",
-      "hi": "Bees",
-      "distractor": true
-     },
-     {
       "en": "No limit",
       "hi": "Koi limit nahi",
       "distractor": true
+     },
+     {
+      "en": "Five",
+      "hi": "Paanch",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "Position limits are part of risk, not optional.",
     "explanation_hi": "Position limit risk ka hissa hai.",
     "marks": 1,
@@ -2040,11 +2040,6 @@
     "stem_en": "Weekly kill-switch level on the card:",
     "stem_hi": "Card par hafte ka kill-switch:",
     "options": [
-     {
-      "en": "5R loss: stop paper trading, review only",
-      "hi": "5R loss: paper trading band, sirf review",
-      "distractor": false
-     },
      {
       "en": "No weekly rule",
       "hi": "Koi weekly rule nahi",
@@ -2056,12 +2051,17 @@
       "distractor": true
      },
      {
+      "en": "5R loss: stop paper trading, review only",
+      "hi": "5R loss: paper trading band, sirf review",
+      "distractor": false
+     },
+     {
       "en": "1 trade",
       "hi": "1 trade",
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Machines need a kill-switch; so do humans.",
     "explanation_hi": "Machine ko kill-switch chahiye; insaan ko bhi.",
     "marks": 1,
@@ -2071,11 +2071,6 @@
     "stem_en": "Algo Level 1's exit artifact is:",
     "stem_hi": "Algo Level 1 ka exit artifact:",
     "options": [
-     {
-      "en": "Flowchart + screener/alerts + 30-trade backtest",
-      "hi": "Flowchart + screener/alerts + 30-trade backtest",
-      "distractor": false
-     },
      {
       "en": "A Python bot",
       "hi": "Python bot",
@@ -2087,12 +2082,17 @@
       "distractor": true
      },
      {
+      "en": "Flowchart + screener/alerts + 30-trade backtest",
+      "hi": "Flowchart + screener/alerts + 30-trade backtest",
+      "distractor": false
+     },
+     {
       "en": "A tips channel",
       "hi": "Tips channel",
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Every ladder level ends with something you built.",
     "explanation_hi": "Har level ek build par khatam.",
     "marks": 1,
@@ -2113,13 +2113,13 @@
       "distractor": true
      },
      {
-      "en": "It looks reasonable",
-      "hi": "Reasonable lage",
+      "en": "The AI approves",
+      "hi": "AI approve kare",
       "distractor": true
      },
      {
-      "en": "The AI approves",
-      "hi": "AI approve kare",
+      "en": "It looks reasonable",
+      "hi": "Reasonable lage",
       "distractor": true
      }
     ],
@@ -2134,14 +2134,14 @@
     "stem_hi": "Alert ke baad 60 second kis liye?",
     "options": [
      {
-      "en": "Running the checklist the alert cannot check",
-      "hi": "Woh checklist jo alert check nahi kar sakta",
-      "distractor": false
-     },
-     {
       "en": "Placing the order fast",
       "hi": "Jaldi order",
       "distractor": true
+     },
+     {
+      "en": "Running the checklist the alert cannot check",
+      "hi": "Woh checklist jo alert check nahi kar sakta",
+      "distractor": false
      },
      {
       "en": "Asking the group",
@@ -2154,7 +2154,7 @@
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "explanation_en": "Alerts are not orders.",
     "explanation_hi": "Alerts orders nahi hain.",
     "marks": 1,
@@ -2170,13 +2170,13 @@
       "distractor": false
      },
      {
-      "en": "A VPN",
-      "hi": "VPN",
+      "en": "Nothing special",
+      "hi": "Kuch khaas nahi",
       "distractor": true
      },
      {
-      "en": "Nothing special",
-      "hi": "Kuch khaas nahi",
+      "en": "A VPN",
+      "hi": "VPN",
       "distractor": true
      },
      {
@@ -2201,13 +2201,13 @@
       "distractor": false
      },
      {
-      "en": "Irrelevant",
-      "hi": "Irrelevant",
+      "en": "The best ORB day",
+      "hi": "Best ORB din",
       "distractor": true
      },
      {
-      "en": "The best ORB day",
-      "hi": "Best ORB din",
+      "en": "Irrelevant",
+      "hi": "Irrelevant",
       "distractor": true
      },
      {
@@ -2227,13 +2227,8 @@
     "stem_hi": "Open interest (OI) kya hai?",
     "options": [
      {
-      "en": "Number of contracts currently open",
-      "hi": "Abhi khule contracts ki ginti",
-      "distractor": false
-     },
-     {
-      "en": "Today's volume",
-      "hi": "Aaj ka volume",
+      "en": "The strike",
+      "hi": "Strike",
       "distractor": true
      },
      {
@@ -2242,12 +2237,17 @@
       "distractor": true
      },
      {
-      "en": "The strike",
-      "hi": "Strike",
+      "en": "Today's volume",
+      "hi": "Aaj ka volume",
       "distractor": true
+     },
+     {
+      "en": "Number of contracts currently open",
+      "hi": "Abhi khule contracts ki ginti",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "OI = open positions, not traded volume.",
     "explanation_hi": "OI = khuli positions, volume nahi.",
     "marks": 1,
@@ -2257,11 +2257,6 @@
     "stem_en": "Tier 2 adds:",
     "stem_hi": "Tier 2 mein aata hai:",
     "options": [
-     {
-      "en": "6 strategies paper-deployed no-code, options Greeks/IV, Backtest Level 2",
-      "hi": "6 strategies no-code paper-deploy, options Greeks/IV, Backtest Level 2",
-      "distractor": false
-     },
      {
       "en": "Live trading with 5 Circles' money",
       "hi": "5 Circles ke paise se live trading",
@@ -2276,9 +2271,14 @@
       "en": "Tips",
       "hi": "Tips",
       "distractor": true
+     },
+     {
+      "en": "6 strategies paper-deployed no-code, options Greeks/IV, Backtest Level 2",
+      "hi": "6 strategies no-code paper-deploy, options Greeks/IV, Backtest Level 2",
+      "distractor": false
      }
     ],
-    "correct_index": 0,
+    "correct_index": 3,
     "explanation_en": "The ladder continues: Level 2 automation in paper mode.",
     "explanation_hi": "Ladder aage: Level 2 automation paper mode mein.",
     "marks": 1,
@@ -2289,9 +2289,9 @@
     "stem_hi": "Futures mein MTM ka matlab:",
     "options": [
      {
-      "en": "Daily settlement of profit and loss",
-      "hi": "Roz profit/loss ka settlement",
-      "distractor": false
+      "en": "Premium decay",
+      "hi": "Premium decay",
+      "distractor": true
      },
      {
       "en": "Monthly expiry",
@@ -2299,9 +2299,9 @@
       "distractor": true
      },
      {
-      "en": "Premium decay",
-      "hi": "Premium decay",
-      "distractor": true
+      "en": "Daily settlement of profit and loss",
+      "hi": "Roz profit/loss ka settlement",
+      "distractor": false
      },
      {
       "en": "Lot size change",
@@ -2309,7 +2309,7 @@
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 2,
     "explanation_en": "Futures P&L settles every day.",
     "explanation_hi": "Futures ka P&L roz settle.",
     "marks": 1,
@@ -2319,6 +2319,11 @@
     "stem_en": "The Tier 1 certificate can be verified by:",
     "stem_hi": "Tier 1 certificate verify hota hai:",
     "options": [
+     {
+      "en": "A screenshot",
+      "hi": "Screenshot",
+      "distractor": true
+     },
      {
       "en": "Its unique number and QR on the public verify page",
       "hi": "Unique number aur QR se public verify page par",
@@ -2330,17 +2335,12 @@
       "distractor": true
      },
      {
-      "en": "A screenshot",
-      "hi": "Screenshot",
-      "distractor": true
-     },
-     {
       "en": "It cannot be verified",
       "hi": "Verify nahi ho sakta",
       "distractor": true
      }
     ],
-    "correct_index": 0,
+    "correct_index": 1,
     "explanation_en": "Every certificate has a tamper-evident verify link.",
     "explanation_hi": "Har certificate ka verify link.",
     "marks": 1,

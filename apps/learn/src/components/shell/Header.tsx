@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useLang } from "@/lib/i18n/LangProvider";
+import { LANGS, type Lang } from "@/lib/i18n/lang";
 import { NAV } from "./nav";
 import { Sun, Moon, Languages, BookOpen, Settings } from "@/components/ui/Icon";
 
@@ -11,7 +12,7 @@ import { Sun, Moon, Languages, BookOpen, Settings } from "@/components/ui/Icon";
    student chip on the right. Active chip is a --brand fill with --brand-ink
    text (never white on the dark cyan). */
 export function Header({ studentName, role }: { studentName?: string; role?: "student" | "mentor" | "admin" }) {
-  const { lang, setLang, theme, setTheme } = useLang();
+  const { lang, setLang, theme, setTheme, t } = useLang();
   const path = usePathname();
   const name = studentName?.trim() || "Student";
   // Staff-only chips: students never see these; the pages themselves re-check the role server-side.
@@ -40,9 +41,14 @@ export function Header({ studentName, role }: { studentName?: string; role?: "st
           ))}
         </nav>
         <div className="flex items-center gap-2">
-          <button type="button" className="lrn-langpill" aria-pressed={lang === "hi"} aria-label="Switch language" onClick={() => setLang(lang === "en" ? "hi" : "en")}>
-            <Languages size={15} strokeWidth={1.75} aria-hidden />{lang === "en" ? "EN" : "HI"}
-          </button>
+          {/* Native select: three choices, keyboard- and screen-reader-friendly, no menu JS. */}
+          <label className="lrn-langpill lrn-langsel" title={t("switchLang")}>
+            <Languages size={15} strokeWidth={1.75} aria-hidden />
+            <span className="sr-only">{t("language")}</span>
+            <select value={lang} onChange={(e) => setLang(e.target.value as Lang)} aria-label={t("switchLang")}>
+              {LANGS.map((l) => <option key={l.k} value={l.k}>{l.label}</option>)}
+            </select>
+          </label>
           <button type="button" className="lrn-iconbtn" aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"} onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
             {theme === "dark" ? <Sun size={17} strokeWidth={1.75} aria-hidden /> : <Moon size={17} strokeWidth={1.75} aria-hidden />}
           </button>

@@ -4,8 +4,10 @@
   "sequence": 1,
   "title_en": "Tier 1 · Basic",
   "title_hi": "Tier 1 · Basic",
+  "title_dv": "टियर 1 · बेसिक",
   "subtitle_en": "Market + AI Foundation · 21 days · 2 strategies · Algo Level 1",
   "subtitle_hi": "Market + AI Foundation · 21 din · 2 strategies · Algo Level 1",
+  "subtitle_dv": "मार्केट + AI की नींव · 21 दिन · 2 स्ट्रैटेजी · एल्गो लेवल 1",
   "unlock_rule": "always"
  },
  {
@@ -13,8 +15,10 @@
   "sequence": 2,
   "title_en": "Tier 2 · Advanced",
   "title_hi": "Tier 2 · Advanced",
+  "title_dv": "टियर 2 · एडवांस्ड",
   "subtitle_en": "Systematic Trader · 10 weeks · 6 strategies paper-deployed · Algo Level 2",
   "subtitle_hi": "Systematic Trader · 10 hafte · 6 strategies paper-deploy · Algo Level 2",
+  "subtitle_dv": "सिस्टमैटिक ट्रेडर · 10 हफ़्ते · 6 स्ट्रैटेजी पेपर पर · एल्गो लेवल 2",
   "unlock_rule": "previous_level_certificate"
  },
  {
@@ -22,8 +26,10 @@
   "sequence": 3,
   "title_en": "Tier 3 · Expert",
   "title_hi": "Tier 3 · Expert",
+  "title_dv": "टियर 3 · एक्सपर्ट",
   "subtitle_en": "Quant Desk · 20 weeks · 15 strategies in Python · Algo Level 3",
   "subtitle_hi": "Quant Desk · 20 hafte · 15 strategies Python mein · Algo Level 3",
+  "subtitle_dv": "क्वांट डेस्क · 20 हफ़्ते · Python में 15 स्ट्रैटेजी · एल्गो लेवल 3",
   "unlock_rule": "previous_level_certificate"
  }
 ]

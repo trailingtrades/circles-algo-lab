@@ -15,7 +15,7 @@ export async function createClient() {
   });
 }
 
-export type Viewer = { id: string; email: string | null; role: "student" | "mentor" | "admin"; status: "invited" | "active" | "suspended"; full_name: string; cohort_id: string | null; lang: "en" | "hi" };
+export type Viewer = { id: string; email: string | null; role: "student" | "mentor" | "admin"; status: "invited" | "active" | "suspended"; full_name: string; cohort_id: string | null; lang: "en" | "hi" | "dv" };
 
 /** Authenticated viewer + profile, or null. Never trusts the JWT for role: reads profiles under RLS. */
 export async function getViewer(): Promise<Viewer | null> {

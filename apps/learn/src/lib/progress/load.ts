@@ -3,6 +3,8 @@ import { createClient, getViewer } from "@/lib/supabase/server";
 import { supabaseConfigured } from "@/lib/supabase/env";
 import { SESSIONS, LEVELS, type LevelSlug } from "@/lib/content/course";
 import type { LearnerState } from "./gating";
+import { getLang } from "@/lib/i18n/server";
+import type { Lang } from "@/lib/i18n/lang";
 
 /** Demo state used when no Supabase project is wired (Phase 1–3 preview): sessions 1–2 done, 3 in progress. */
 export const DEMO: LearnerState = {
@@ -10,10 +12,10 @@ export const DEMO: LearnerState = {
   certificates: [], overrides: [], suspended: false,
 };
 
-export async function loadLearnerState(): Promise<{ state: LearnerState; demo: boolean; lang: "en" | "hi" }> {
-  if (!supabaseConfigured()) return { state: DEMO, demo: true, lang: "en" };
+export async function loadLearnerState(): Promise<{ state: LearnerState; demo: boolean; lang: Lang }> {
+  if (!supabaseConfigured()) return { state: DEMO, demo: true, lang: await getLang() };
   const v = await getViewer();
-  if (!v) return { state: DEMO, demo: true, lang: "en" };
+  if (!v) return { state: DEMO, demo: true, lang: await getLang() };
   const sb = await createClient();
   const [{ data: prog }, { data: attempts }, { data: journals }, { data: certs }, { data: overrides }, { data: sess }] = await Promise.all([
     sb.from("session_progress").select("session_id,watched_pct,handout_opened,completed_at").eq("user_id", v.id),
@@ -33,5 +35,5 @@ export async function loadLearnerState(): Promise<{ state: LearnerState; demo: b
   for (const c of certs ?? []) { const s = slug(c); if (s) state.certificates.push(s); }
   for (const o of overrides ?? []) { const s = slug(o); if (s) state.overrides.push(s); }
   void SESSIONS; void LEVELS;
-  return { state, demo: false, lang: v.lang };
+  return { state, demo: false, lang: await getLang(v.lang) };
 }

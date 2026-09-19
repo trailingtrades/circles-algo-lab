@@ -2,7 +2,9 @@
 """
 5C Learn compliance gate (master prompt §15). Scans UI source, content JSON and
 built HTML. Context-classes guarantee hits: the canonical disclaimer strings are
-whitelisted; quiz options flagged "distractor": true are whitelisted.
+whitelisted; quiz options flagged "distractor": true are whitelisted, and so are story panels spoken by the
+"tipster" (scam lessons quote the promise to teach it). Devanagari (हिंदी) is allowed only in the
+Devanagari slots: JSON keys "dv" / "*_dv", and TS/TSX lines that carry a dv: value or a t3(...) call.
 Usage: python3 scripts/ci/check_compliance.py <paths...>   Exit 1 on any failure.
 """
 import re, sys, os, json
@@ -13,7 +15,9 @@ TIER2 = "⚠️ Investment in securities market is subject to market risks. SEBI
 TIER3 = "— 5 Circles · SEBI RA INH000020004 · Investments subject to market risk"
 WHITELIST = [TIER1, TIER2, TIER3, CRED]
 
-BANNED = [r"guarante", r"assured?\s+return", r"risk[- ]free", r"sure[- ]?shot", r"100\s*%\s*accura", r"pakka\s+(profit|munafa)", r"munafa\s+pakka", r"loss\s+nahi\s+hoga", r"no[- ]loss", r"can'?t\s+lose", r"never\s+wrong", r"kabhi\s+galat\s+nahi", r"loss\s+hoga\s+hi\s+nahi", r"double\s+(your|apna)?\s*(money|paisa)", r"pakka\s+multibagger"]
+BANNED = [r"guarante", r"assured?\s+return", r"risk[- ]free", r"sure[- ]?shot", r"100\s*%\s*accura", r"pakka\s+(profit|munafa)", r"munafa\s+pakka", r"loss\s+nahi\s+hoga", r"no[- ]loss", r"can'?t\s+lose", r"never\s+wrong", r"kabhi\s+galat\s+nahi", r"loss\s+hoga\s+hi\s+nahi", r"double\s+(your|apna)?\s*(money|paisa)", r"pakka\s+multibagger",
+          r"zero[- ]risk", r"fixed\s+return", r"गारंटी", r"पक्का\s*(मुनाफ़ा|मुनाफा|प्रॉफ़िट|प्रॉफिट|रिटर्न)", r"(मुनाफ़ा|मुनाफा|रिटर्न)\s*पक्का",
+          r"निश्चित\s*(मुनाफ़ा|मुनाफा|रिटर्न)", r"जोखिम[\s-]*मुक्त", r"सुनिश्चित\s*रिटर्न", r"नो[\s-]*लॉस"]
 DEVANAGARI = re.compile(r"[ऀ-ॿ]")
 EMOJI = re.compile(r"[\U0001F000-\U0001FAFF☀-➿⬀-⯿️]")
 OLD_STAT = [r"\b93\s*%", r"1\.8\s*lakh\s*cr"]
@@ -31,15 +35,19 @@ def check_file(path):
   # 1. banned phrases (context-classed: distractors in JSON skipped)
   if path.endswith(".json"):
     try:
-      def walk(o):
+      def walk(o, key=""):
         if isinstance(o, dict):
-          if o.get("distractor") is True or o.get("scam_example") is True: return  # quiz distractors and labelled scam examples are legitimate context
-          for v in o.values(): walk(v)
+          # quiz distractors (legacy flag or v3 "correct": false), labelled scam examples and the tipster's
+          # story lines are legitimate context for scam wording
+          if o.get("distractor") is True or o.get("correct") is False or o.get("scam_example") is True or o.get("who") == "tipster": return
+          for k, v in o.items(): walk(v, k)
         elif isinstance(o, list):
-          for v in o: walk(v)
+          for v in o: walk(v, key)
         elif isinstance(o, str):
           for b in BANNED:
             if re.search(b, o, re.I): fails.append(f"banned /{b}/: {o[:80]}")
+          if DEVANAGARI.search(o) and not (key == "dv" or key.endswith("_dv")):
+            fails.append(f"Devanagari outside a dv slot (key '{key}'): {o[:60]!r}")
       walk(json.loads(raw))
     except json.JSONDecodeError as e: fails.append(f"invalid JSON: {e}")
   else:
@@ -47,15 +55,21 @@ def check_file(path):
       if "check_compliance" in path or "canonical" in path: break
       for b in BANNED:
         if re.search(b, line, re.I) and not re.search(r"BANNED|banned|distractor|prohibited", line): fails.append(f"line {i} banned /{b}/: {line.strip()[:80]}")
-  # 2. Devanagari
-  for m in DEVANAGARI.finditer(raw): fails.append(f"Devanagari U+{ord(m.group()):04X} at offset {m.start()}: {raw[max(0,m.start()-20):m.end()+10]!r}"); break
+  # 2. Devanagari: JSON is checked per key above; in source files only on lines that fill a dv slot
+  if not path.endswith(".json"):
+    for i, line in enumerate(raw.split("\n"), 1):
+      if DEVANAGARI.search(line) and not re.search(r"\bdv\s*[:=]|[\"']dv[\"']|\bt3\(|_dv\b|हिंदी|हिं\b|html_lang|LANGS", line):
+        fails.append(f"line {i}: Devanagari outside a dv slot: {line.strip()[:80]}"); break
   # 3. emoji outside whitelisted strings
   if not path.endswith(("check_compliance.py",)):
     for m in EMOJI.finditer(s): fails.append(f"emoji U+{ord(m.group()):04X} outside compliance strings: {s[max(0,m.start()-20):m.end()+10]!r}"); break
   # 4. stat stamping
   # The stat is always written as a percentage; a bare 87.7 inside a price series (287.7, 87.72) is not the stat.
   for m in re.finditer(r"(?<![\d.])87\.7\s*%", raw):
-    if "FY26" not in raw[max(0, m.start()-200):m.end()+200]: fails.append(f"87.7% at {m.start()} not within 200 chars of FY26")
+    # JSON question objects hold the stamp in the stem or explanation, a few hundred characters away once
+    # three languages and shuffled options sit in between — so JSON gets a wider window.
+    w = 900 if path.endswith(".json") else 200
+    if "FY26" not in raw[max(0, m.start()-w):m.end()+w]: fails.append(f"87.7% at {m.start()} not within {w} chars of FY26")
   for o in OLD_STAT:
     for m in re.finditer(o, raw):
       if not re.search(r"historical|series|PoP", raw[max(0,m.start()-120):m.end()+120], re.I): fails.append(f"old F&O stat /{o}/ at {m.start()} without historical-series label")
