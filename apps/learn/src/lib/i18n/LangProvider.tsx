@@ -36,12 +36,16 @@ function writeCookie(l: Lang) {
   document.cookie = `${LANG_COOKIE}=${l}; path=/; max-age=31536000; samesite=lax${location.protocol === "https:" ? "; secure" : ""}`;
 }
 
-const getLang = (): Lang => {
+/** The language this device actually chose (shared 5cd.lang, legacy fc_lang, or the cookie a switch
+ *  or sign-in wrote), or null when it never chose one. Null is NOT "en": the server's pick (the
+ *  signed-in learner's profile language, else English) stands, and nothing is pinned in its place. */
+function readChoice(): Lang | null {
   const shared = fromShared(loadShared("lang"));
   if (shared) return shared;
   const legacy = rawRead(LEGACY_LANG);
-  return legacy === "hi" ? "hi" : readCookie() ?? "en";
-};
+  if (legacy === "hi") return "hi";
+  return readCookie() ?? (legacy === "en" ? "en" : null);
+}
 const getTheme = (): Theme => {
   const shared = loadShared("theme");
   if (shared === "light" || shared === "dark") return shared;
@@ -54,6 +58,7 @@ const LangCtx = React.createContext<Ctx | null>(null);
 /** `initialLang` is what the server rendered with (cookie / profile), so the first client paint matches it. */
 export function LangProvider({ children, initialLang = "en" }: { children: React.ReactNode; initialLang?: Lang }) {
   const router = useRouter();
+  const getLang = React.useCallback((): Lang => readChoice() ?? initialLang, [initialLang]);
   const lang = React.useSyncExternalStore(subscribe, getLang, () => initialLang);
   const theme = React.useSyncExternalStore(subscribe, getTheme, () => "dark" as Theme);
   React.useEffect(() => {
@@ -68,17 +73,23 @@ export function LangProvider({ children, initialLang = "en" }: { children: React
   React.useEffect(() => {
     document.documentElement.lang = htmlLang(lang);
     document.documentElement.dataset.lang = lang;
-    // The choice came from somewhere the server could not see (WINNERS, the landing, another
-    // tab): store it in the cookie and re-render the server parts once.
-    if (readCookie() !== lang) { writeCookie(lang); if (lang !== initialLang) router.refresh(); }
+    // Keep the cookie in step with the client choice (WINNERS or the landing may have written
+    // only localStorage). A device with no choice writes nothing: pinning the fallback "en" here
+    // would hide the profile's language from every later server render.
+    if (readChoice() !== null && readCookie() !== lang) writeCookie(lang);
+    // Re-render the server parts whenever the client language differs from the one the server
+    // rendered with — wherever the switch came from (this tab, another tab, WINNERS, the landing).
+    // Another tab has already written the cookie by the time its storage event lands here, so the
+    // cookie check above cannot be the trigger. After the refresh RootLayout reads the new cookie,
+    // initialLang equals lang and this stops; with cookies blocked it runs once per full load.
+    if (lang !== initialLang) router.refresh();
   }, [lang, initialLang, router]);
   const setLang = React.useCallback((l: Lang) => {
     saveShared("lang", toShared(l));
     rawWrite(LEGACY_LANG, l === "en" ? "en" : "hi");
     writeCookie(l);
-    listeners.forEach((fn) => fn());
-    router.refresh();
-  }, [router]);
+    listeners.forEach((fn) => fn()); // the effect above does the one router.refresh()
+  }, []);
   const setTheme = React.useCallback((t: Theme) => { saveShared("theme", t); rawWrite(LEGACY_THEME, t); listeners.forEach((fn) => fn()); }, []);
   const t = React.useCallback((k: TKey) => tr(T[k], lang), [lang]);
   const tx = React.useCallback((x: Text | null | undefined) => tr(x, lang), [lang]);

@@ -3,9 +3,13 @@ name: Deploy 5C Learn (VPS /smart)
 # to the `smart-vps` GitHub release. The VPS (learn.optionlab.co.in) cannot accept inbound SSH from
 # GitHub runners (provider firewall allows only Rahul's IPs), so deploys are PULL-based: a systemd
 # timer on the box (smart-pull.timer -> /usr/local/bin/smart-pull.sh, every 2 min) downloads the new
-# asset, decrypts env.age with /root/.config/smart-deploy.key, swaps the release symlink and restarts
-# the `learn-smart` unit (127.0.0.1:3001 behind nginx snippet smart-app.conf).
-# Secrets travel ONLY inside env.age, encrypted to the VPS's age public key — the repo is public.
+# asset, decrypts smart-app.tgz.age and env.age with /root/.config/smart-deploy.key, swaps the release
+# symlink and restarts the `learn-smart` unit (127.0.0.1:3001 behind nginx snippet smart-app.conf).
+# Release assets on this repo are public, so NOTHING goes up in the clear: secrets travel inside env.age
+# and the server bundle (which carries the course content, exam and quiz answer keys included) inside
+# smart-app.tgz.age, both encrypted to the VPS's age public key. The box must run the smart-pull.sh from
+# apps/learn/deploy-vps/ that reads smart-app.tgz.age (an older copy only knows smart-app.tgz and never
+# deploys; the wait step below then fails on the build id).
 on:
   workflow_dispatch:
   push:
@@ -40,7 +44,7 @@ jobs:
           cp -r .next/static .next/standalone/apps/learn/.next/static
           cp -r public .next/standalone/apps/learn/public
           tar -C .next/standalone -czf /tmp/smart-app.tgz .
-      - name: Encrypt runtime env for the VPS
+      - name: Encrypt the bundle and runtime env for the VPS
         env:
           # Required: an empty value fails the deploy (without them the app would boot keyless).
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
@@ -80,28 +84,38 @@ jobs:
             put CERT_RENDER_MODE "$CERT_RENDER_MODE"
             put GITHUB_DISPATCH_TOKEN "$CERT_DISPATCH_TOKEN"
             [ -z "$CERT_DISPATCH_TOKEN" ] || put GITHUB_REPO "$CERT_DISPATCH_REPO"
+            # Served as "build" by /api/health; the wait step below checks it, so an old build still answering is not "live".
+            put SMART_BUILD_ID "$GITHUB_SHA" required
           } > /tmp/learn-smart.env
           echo "env.age carries: $(cut -d= -f1 /tmp/learn-smart.env | tr '\n' ' ')"
           age -e -r "$VPS_AGE_PUBKEY" -o /tmp/env.age /tmp/learn-smart.env
           rm /tmp/learn-smart.env
+          age -e -r "$VPS_AGE_PUBKEY" -o /tmp/smart-app.tgz.age /tmp/smart-app.tgz
+          rm /tmp/smart-app.tgz
       - name: Publish to the smart-vps release
         run: |
           gh release view smart-vps >/dev/null 2>&1 || \
             gh release create smart-vps --title "CIRCLE S.M.A.R.T VPS build" \
               --notes "Rolling release consumed by smart-pull.timer on the VPS. Do not delete."
-          # env first so a pull triggered by the new tgz never pairs it with a stale env.
-          gh release upload smart-vps /tmp/env.age /tmp/smart-app.tgz --clobber
+          # env first, in its own call (one call uploads its files in parallel), so a pull triggered by the
+          # new bundle never pairs it with a stale env.
+          gh release upload smart-vps /tmp/env.age --clobber
+          gh release upload smart-vps /tmp/smart-app.tgz.age --clobber
+          # Builds up to 19 Sep 2026 were published unencrypted as smart-app.tgz; take that copy down.
+          if gh release view smart-vps --json assets -q '.assets[].name' | grep -qx 'smart-app.tgz'; then
+            gh release delete-asset smart-vps smart-app.tgz --yes
+          fi
           echo "published $(git rev-parse --short HEAD)"
       - name: Wait for the VPS to pull and go live
         run: |
           H=learn.optionlab.co.in
-          echo "waiting for smart-pull.timer (runs every 2 min) ..."
+          echo "waiting for smart-pull.timer (runs every 2 min) to put build $GITHUB_SHA live ..."
           for i in $(seq 1 24); do
             sleep 15
             body=$(curl -s --resolve $H:443:200.141.9.107 https://$H/smart/api/health || true)
-            if echo "$body" | grep -q '"ok":true'; then echo "app is live after ~$((i*15))s"; ok=1; break; fi
+            if echo "$body" | grep -q '"ok":true' && echo "$body" | grep -qF "\"build\":\"$GITHUB_SHA\""; then echo "app is live after ~$((i*15))s"; ok=1; break; fi
           done
-          [ "${ok:-}" = "1" ] || { echo "::error::VPS did not serve /smart/api/health within 6 min — check smart-pull logs on the box"; exit 1; }
+          [ "${ok:-}" = "1" ] || { echo "::error::VPS did not serve build $GITHUB_SHA at /smart/api/health within 6 min (last answer: ${body:0:200}). Check /var/log/smart-pull.log on the box, and that /usr/local/bin/smart-pull.sh is the apps/learn/deploy-vps copy that reads smart-app.tgz.age"; exit 1; }
       - name: Smoke test
         run: |
           H=learn.optionlab.co.in

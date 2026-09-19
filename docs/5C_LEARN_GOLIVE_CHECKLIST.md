@@ -46,6 +46,27 @@ Between B and C, do not add quiz questions in the admin editor: 0010's one-quest
 old editor's default position 0.
 
 ### C · Merge the PR (Rahul) → automatic deploy (6–10 min)
+**First, right before you press Merge (2 min, once): clear the exam attempts the old page opened by itself.**
+The code running today starts an exam attempt as soon as a student merely opens an exam page. The new code grades
+every open attempt whose time is over when the exam page loads, so each of those untouched attempts would become a
+0-mark "attempt 1": the student's real sitting would then count as a retake (points capped at 80%, no Distinction).
+In short (Hinglish): Merge dabane se theek pehle ye ek query chalaiye, phir Merge.
+1. Supabase → SQL Editor → New query.
+2. Paste this and press Run (if Supabase warns that the query is destructive, confirm Run):
+   ```sql
+   with gone as (
+     delete from attempts
+     where exam_id is not null and submitted_at is null and autosaved_at is null and answers = '{}'::jsonb
+     returning id)
+   select count(*) as removed from gone;
+   ```
+3. Expect one row, `removed`, with a number (0 is fine). Press Merge within a few minutes.
+
+Only before the merge: the new build's Start button also creates an empty attempt, so after the merge this query
+could delete a real sitting. PR already merged? Skip it and tell Claude. Attempts with a saved answer or a submission
+are never touched. The app keeps grading empty expired attempts on purpose: deleting them at runtime would let a
+student press Start, read the paper, let the time run out and start again.
+
 `deploy-smart-vps.yml` builds, publishes, the VPS pulls within 2 minutes, then health and smoke tests. Wait for green.
 
 ### D · Migration 0011 after the deploy (Claude or Rahul, 2 min)

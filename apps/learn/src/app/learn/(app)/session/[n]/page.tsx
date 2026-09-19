@@ -81,7 +81,7 @@ export default async function SessionPage({ params }: { params: Promise<{ n: str
   // Same "Day N · SNN" label as the session cards on Home and Path.
   const eyebrow = `${pick3(level, "title", lang)} · ${say(T.week)} ${week.number} · ${dayText(s, lang)} · ${s.duration_min} ${say(T.minutes)}`;
   const tag = (label: L, v: Text | undefined, fallback: string | null) => { const text = tr(v, lang) || fallback; return text ? `${say(label)}: ${text}` : null; };
-  const tags = [tag(S.concept, c.tags?.concept, s.core_concept), tag(S.aiLab, c.tags?.ai_lab, s.ai_lab), tag(S.mindset, c.tags?.psychology, s.psychology), s.strategy ? `${say(S.strategy)}: ${s.strategy}` : null].filter(Boolean) as string[];
+  const tags = [tag(S.concept, c.tags?.concept, s.core_concept), tag(S.aiLab, c.tags?.ai_lab, s.ai_lab), tag(S.mindset, c.tags?.psychology, s.psychology), tag(S.strategy, c.tags?.strategy, s.strategy)].filter(Boolean) as string[];
   // Draft marker is for staff previewing unpublished content, never for learners.
   const staff = s.draft && supabaseConfigured() ? ["mentor", "admin"].includes((await getViewer())?.role ?? "") : false;
 

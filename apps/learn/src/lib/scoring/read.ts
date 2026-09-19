@@ -41,7 +41,8 @@ function labelOf(e: Raw, lang: Lang, k: Lookups): string {
     case "galti_log": { const n = sess(e.ref_id); return n ? `${x(E.galti)} · ${x(E.session)} ${n}` : x(E.galti); }
     case "journal_streak_week": return x(E.streak);
   }
-  if (e.ref_type?.startsWith("practice_")) { const g = (e.notes ?? "").match(/grade\s+([A-F])/i)?.[1]; return g ? `${x(E.practice)} · ${x(E.grade)} ${g.toUpperCase()}` : x(E.practice); }
+  // The grade is the note's last token: "process grade B" (first grade) or "regrade <grade id>: C to A" (the new grade).
+  if (e.ref_type?.startsWith("practice_")) { const g = (e.notes ?? "").match(/(?:\bprocess grade|\bto)\s+([A-F])\s*$/i)?.[1]; return g ? `${x(E.practice)} · ${x(E.grade)} ${g.toUpperCase()}` : x(E.practice); }
   // Overrides keep the reason the mentor typed; anything unknown loses its ids rather than showing them.
   return (e.notes ?? "").replace(UUID, "").replace(/\s{2,}/g, " ").trim() || e.kind;
 }

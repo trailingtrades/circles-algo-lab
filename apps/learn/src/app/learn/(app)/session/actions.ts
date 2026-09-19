@@ -165,8 +165,14 @@ export async function saveJournal(n: number, body: string, kind: string): Promis
     const { data: had } = await c.sb.from("journal_entries").select("id").eq("user_id", c.v.id).eq("session_id", c.sessionId).eq("kind", "friday_review").limit(1);
     if (had?.length) return c.fail("reviewDone");
   }
-  const { error } = await c.sb.from("journal_entries").insert({ user_id: c.v.id, session_id: c.sessionId, kind: k, body: text });
-  if (error) return oops(c, "journal", error);
+  // The weekly review is written with the service role: the database refuses one from the learner's own session
+  // (0011 guard_journal), so the checks above cannot be skipped by posting to PostgREST directly.
+  const row = { user_id: c.v.id, session_id: c.sessionId, kind: k, body: text };
+  const { error } = k === "friday_review" ? await createAdminClient().from("journal_entries").insert(row) : await c.sb.from("journal_entries").insert(row);
+  if (error) {
+    if (error.code === "23505") { refresh(); return c.fail("reviewDone"); } // journal_one_review: a second tab saved it first
+    return oops(c, "journal", error);
+  }
   await after(c, async () => {
     if (k === "galti_log") await awardDiscipline(c.v.id, c.s.level, "galti_log", c.sessionId, `galti-log, session ${n}`);
     if (k === "friday_review") await awardDiscipline(c.v.id, c.s.level, "friday_on_time", c.sessionId, `week ${c.s.week} review`);

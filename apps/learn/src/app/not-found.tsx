@@ -2,6 +2,8 @@ import Link from "next/link";
 import { ComplianceFooter } from "@/components/ui/ComplianceFooter";
 import { HelpCircle } from "@/components/ui/Icon";
 import { getLang } from "@/lib/i18n/server";
+import { getViewer } from "@/lib/supabase/server";
+import { supabaseConfigured } from "@/lib/supabase/env";
 import { t3, tr } from "@/lib/i18n/lang";
 import { AuthLinks } from "@/app/learn/AuthLinks";
 
@@ -12,7 +14,8 @@ const S = {
 };
 
 export default async function NotFound() {
-  const lang = await getLang();
+  // Same pick as the root layout (cookie, then the signed-in profile), so this text matches the footer.
+  const lang = await getLang(supabaseConfigured() ? (await getViewer())?.lang : null);
   return (
     <div className="lrn-shell">
       <main className="lrn-main flex items-center justify-center">

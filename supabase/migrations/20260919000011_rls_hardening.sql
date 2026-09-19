@@ -2,12 +2,13 @@
 -- A learner reaches Postgres through PostgREST with their own JWT: the public key plus their session cookie is
 -- enough to send any INSERT/UPDATE their grants allow. Everything that decides a score, an unlock, a certificate
 -- or a leaderboard place (quiz grading, exam grading, session completion, attempt numbers, exam deadlines,
--- journal timestamps) is already written by server actions with the service role (src/app/**/actions.ts), so
+-- journal timestamps, weekly reviews) is written by server actions with the service role (src/app/**/actions.ts), so
 -- this migration takes those fields away from `authenticated` and pins them with triggers:
 --   1. Table privileges: start from nothing, grant back exactly what the app writes with the learner's session.
 --   2. Guard triggers pin server-owned values, so a broader grant coming back later does not reopen the hole.
 --   3. Sessions the old "Mark as watched" upsert knocked back to in_progress are marked complete again.
---   4. One quiz attempt per session, one row per exam attempt number (catches double clicks and twin tabs).
+--   4. One quiz attempt per session, one row per exam attempt number, one weekly review per review-day session
+--      (catches double clicks and twin tabs).
 --   5. Consistency board: a weekly review counts once a week, and the week starts Monday 00:00 IST.
 --   6. Housekeeping: the go-live migrations ledger is not client-readable; tables without RLS are reported.
 --   7. Exam papers: quiz_questions rows of an exam are no longer readable by learners (session quizzes still are).
@@ -28,9 +29,14 @@ grant update (full_name, phone, display_alias, lang) on profiles to authenticate
 grant insert (user_id, symbol, full_why, full_why_2, top_risk, risk_answer, price_stop, why_stop, review_point, entry_date, qty, entry_price, is_virtual) on portfolio_rows to authenticated;
 grant update (user_id, symbol, full_why, full_why_2, top_risk, risk_answer, price_stop, why_stop, review_point, entry_date, qty, entry_price, is_virtual) on portfolio_rows to authenticated;
 grant delete on portfolio_rows to authenticated;                                                             -- portfolio/actions.ts (virtual only)
-grant insert (user_id, session_id, kind, body) on journal_entries to authenticated;                          -- session/actions.ts saveJournal; created_at = DB clock
+grant insert (user_id, session_id, kind, body) on journal_entries to authenticated;                          -- session/actions.ts saveJournal (reflection, galti_log); created_at = DB clock
 grant update (body) on journal_entries to authenticated;
 grant delete on journal_entries to authenticated;
+-- A weekly review ('friday_review') counts toward the certificate and the Consistency board, so saveJournal writes
+-- it with the service role after its checks (unlocked, review day, 10+ characters, once per session) and the guard
+-- below refuses one from a learner's session. Nor can a learner delete one: delete + rewrite in a later week would
+-- earn the board's weekly +2 again from the same review day.
+alter policy journal_delete on journal_entries using (user_id = auth.uid() and kind <> 'friday_review');
 -- Upserts from session/actions.ts. PostgREST's ON CONFLICT DO UPDATE sets every payload column, keys included,
 -- so the keys need UPDATE too (the trigger below pins them). completed_at is never granted.
 grant insert (user_id, session_id, status, watched_pct, handout_opened) on session_progress to authenticated;
@@ -81,11 +87,13 @@ end $$;
 drop trigger if exists guard_progress on session_progress;
 create trigger guard_progress before insert or update on session_progress for each row execute function app.guard_progress();
 
--- journal_entries: the Consistency board and the weekly-review rule count by kind and created_at.
+-- journal_entries: the Consistency board and the weekly-review rule count by kind and created_at. A weekly review
+-- is written by the server only (saveJournal checks the review day, the length and one per session first).
 create or replace function app.guard_journal() returns trigger language plpgsql as $$
 begin
   if not app.is_client() then return new; end if;
   if tg_op = 'INSERT' then
+    if new.kind = 'friday_review' then raise exception 'weekly reviews are written by the server' using errcode = '42501'; end if;
     new.created_at := now(); new.updated_at := now();
   else
     new.id := old.id; new.user_id := old.user_id; new.session_id := old.session_id; new.kind := old.kind; new.created_at := old.created_at;
@@ -104,8 +112,9 @@ update session_progress p
    and exists (select 1 from attempts a where a.user_id = p.user_id and a.session_id = p.session_id and a.submitted_at is not null)
    and exists (select 1 from journal_entries j where j.user_id = p.user_id and j.session_id = p.session_id);
 
--- ---------- 4. one attempt per quiz, one row per exam attempt number ----------
+-- ---------- 4. one attempt per quiz, one row per exam attempt number, one weekly review per session ----------
 -- submitQuiz checks for an earlier attempt and then inserts; two quick submits could both get through.
+-- saveJournal does the same for a weekly review (check, then insert).
 do $$
 begin
   if exists (select 1 from attempts where session_id is not null group by user_id, session_id having count(*) > 1) then
@@ -117,6 +126,11 @@ begin
     raise notice 'attempts_exam_no NOT created: two exam attempts share an attempt number. Once renumbered, run: create unique index attempts_exam_no on attempts(user_id, exam_id, attempt_no) where exam_id is not null';
   else
     create unique index if not exists attempts_exam_no on attempts(user_id, exam_id, attempt_no) where exam_id is not null;
+  end if;
+  if exists (select 1 from journal_entries where kind = 'friday_review' and session_id is not null group by user_id, session_id having count(*) > 1) then
+    raise notice 'journal_one_review NOT created: a learner has two weekly reviews on one session. Once one is left (or the extra is re-kinded to reflection), run: create unique index journal_one_review on journal_entries(user_id, session_id) where kind = ''friday_review''';
+  else
+    create unique index if not exists journal_one_review on journal_entries(user_id, session_id) where kind = 'friday_review';
   end if;
 end $$;
 

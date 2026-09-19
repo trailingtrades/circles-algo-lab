@@ -30,7 +30,7 @@ and falls back dv -> hi -> en if a string is missing — so never leave one empt
   "day": 1,                                   // 1..21 (Day 7/14/21 are weekly review days)
   "title": L,
   "tags": { "concept": L, "ai_lab": L, "psychology": L },
-  "strategy": null,                           // or a short English strategy name, e.g. "ORB"
+  "strategy": null,                           // or L for a strategy day, e.g. {"en": "Opening Range Breakout (ORB)", ...}
   "duration_min": 60,
   "story": StoryV,                            // opening story, 3-6 panels
   "topics": [                                 // 4-6 topics

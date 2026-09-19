@@ -158,6 +158,16 @@ async function main() {
     ok("A can write a journal entry the way the app does", je.rowCount === 1);
     r = await denied("update journal_entries set kind='friday_review' where id=$1", [je.rows[0].id]);
     ok("A cannot turn a reflection into a weekly review", r.denied, r.msg);
+    r = await denied("insert into journal_entries (user_id, session_id, kind, body) values ($1,$2,'friday_review','x')", [ids.A, sess]);
+    ok("A cannot write a weekly review directly (saveJournal writes it with the service role)", r.denied && /written by the server/.test(r.msg), r.msg);
+    await db.query("savepoint rv"); await db.query("reset role");
+    const rv = (await db.query("insert into journal_entries (user_id, session_id, kind, body) values ($1,$2,'friday_review','Week one review, from the server.') returning id", [ids.A, sess])).rows[0].id;
+    r = await denied("insert into journal_entries (user_id, session_id, kind, body) values ($1,$2,'friday_review','A second review, same session.')", [ids.A, sess]);
+    ok("one weekly review per learner and session (journal_one_review)", !!r.msg && /journal_one_review/.test(r.msg), r.msg);
+    await db.query("set local role authenticated");
+    r = await denied("delete from journal_entries where id=$1", [rv]);
+    ok("A cannot delete a weekly review (delete + rewrite would earn the board's +2 again)", r.denied || r.rows === 0, r.msg);
+    await db.query("rollback to savepoint rv"); await db.query("set local role authenticated");
     r = await denied("update journal_entries set body='edited note' where id=$1", [je.rows[0].id]);
     ok("A can edit own journal text", !r.denied && r.rows === 1, r.msg);
 

@@ -35,7 +35,9 @@ export async function updateProfile(_: ProfileState, form: FormData): Promise<Pr
   const display_alias = aliasRaw ? aliasRaw.slice(0, 24) : null;
   if (display_alias && display_alias.length < 2) return { error: tr(S.alias, lang) };
   const sb = await createClient();
-  const { error } = await sb.from("profiles").update({ full_name, phone, display_alias, lang }).eq("id", v.id);
+  let { error } = await sb.from("profiles").update({ full_name, phone, display_alias, lang }).eq("id", v.id);
+  // Before migration 0010 the lang check allows only en/hi: save the rest and let the cookie below carry "dv".
+  if (error?.code === "23514" && lang === "dv") ({ error } = await sb.from("profiles").update({ full_name, phone, display_alias }).eq("id", v.id));
   if (error) { console.error("[profile] update failed:", error.message); return { error: tr(S.failed, lang) }; }
   // The same cookie the header switch writes, so every server-rendered page follows the new choice at once.
   (await cookies()).set(LANG_COOKIE, lang, { path: "/", maxAge: 31_536_000, sameSite: "lax", secure: process.env.NODE_ENV === "production" });

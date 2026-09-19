@@ -81,9 +81,11 @@ export async function maybeIssue(userId: string, level: LevelSlug): Promise<Issu
   const cohort = (prof?.cohorts as unknown as { name: string } | null)?.name ?? "";
   // The name is frozen on the certificate row: the public verify page and the PDF show this, not the editable profile name.
   const learner_name = (prof?.full_name ?? "").trim();
-  const issued_on = new Date().toISOString().slice(0, 10);
-  let cert_no = newCertNo(level);
-  for (let i = 0; i < 5; i++) { const { data: clash } = await admin.from("certificates").select("id").eq("cert_no", cert_no).limit(1); if (!clash?.length) break; cert_no = newCertNo(level); }
+  // The IST calendar day (en-CA formats as YYYY-MM-DD), not the UTC one: a 01:30 IST finish must not print yesterday's date.
+  const issued_on = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
+  const year = Number(issued_on.slice(0, 4));
+  let cert_no = newCertNo(level, year);
+  for (let i = 0; i < 5; i++) { const { data: clash } = await admin.from("certificates").select("id").eq("cert_no", cert_no).limit(1); if (!clash?.length) break; cert_no = newCertNo(level, year); }
   const verify_hash = verifyHash(cert_no, userId, lv.id, issued_on);
   const base = { user_id: userId, level_id: lv.id, cohort_id: prof?.cohort_id ?? null, cert_no, issued_on, band: ev.band, verify_hash, status: "issued" };
   let ins = await admin.from("certificates").insert({ ...base, learner_name }).select("id,cert_no,status").single();

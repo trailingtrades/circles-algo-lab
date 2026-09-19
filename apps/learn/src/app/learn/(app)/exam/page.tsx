@@ -12,7 +12,7 @@ import { ArrowRight } from "@/components/ui/Icon";
 
 const S = {
   title: t3("Exams", "Exams", "एग्ज़ाम"),
-  lead: t3("Each exam is timed. Opening one shows its rules first; the timer starts only when you press Start.", "Har exam ka time fixed hai. Exam kholne par pehle uske rules dikhte hain; timer tabhi chalta hai jab aap Start dabate hain.", "हर एग्ज़ाम का समय तय है। एग्ज़ाम खोलने पर पहले उसके नियम दिखते हैं; टाइमर तभी चलता है जब आप Start दबाते हैं।"),
+  lead: t3("Each exam is timed. Opening one shows its rules first; the timer starts only when you press Start.", "Har exam ka time fixed hai. Exam kholne par pehle uske rules dikhte hain; timer tabhi chalta hai jab aap 'Shuru kijiye' dabate hain.", "हर एग्ज़ाम का समय तय है। एग्ज़ाम खोलने पर पहले उसके नियम दिखते हैं; टाइमर तभी चलता है जब आप 'शुरू करें' दबाते हैं।"),
   week: t3("Week", "Week", "हफ़्ता"),
   final: t3("Final exam", "Final exam", "फ़ाइनल एग्ज़ाम"),
   notTaken: t3("Not taken yet", "Abhi nahi diya", "अभी नहीं दिया"),

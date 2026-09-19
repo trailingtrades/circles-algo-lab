@@ -205,12 +205,17 @@ body{ font-variant-numeric: tabular-nums lining-nums; }
 
 /* ---------- 2e. Access gate: ring backdrop + kicker ---------- */
 .lrn-gate{ position: relative; }
+.lrn-gate > *{ position: relative; z-index: 1; }
+/* The rings live inside <main>, so top:50% is measured against the form area, not the whole page
+   (which includes the tall compliance footer). overflow-x:clip keeps the 120vw box inside a phone
+   viewport without making main a scroll container. */
+.lrn-gate .lrn-main{ overflow-x: clip; }
 .lrn-gate__rings{
-  position: absolute; left: 50%; top: 42%; transform: translate(-50%, -50%);
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
   width: min(560px, 120vw); aspect-ratio: 1; pointer-events: none; z-index: 0;
 }
 .lrn-gate__rings svg{ width: 100%; height: 100%; display: block; }
-.lrn-gate > *:not(.lrn-gate__rings){ position: relative; z-index: 1; }
+.lrn-gate .lrn-login{ position: relative; z-index: 1; }
 .lrn-kicker{
   font-size: var(--col-text-eyebrow); font-weight: 600; letter-spacing: var(--col-tracking-eyebrow);
   text-transform: uppercase; color: var(--ink-3);

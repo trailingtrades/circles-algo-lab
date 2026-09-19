@@ -15,11 +15,13 @@ function fromThisBox(req: NextRequest) {
   return LOOPBACK.has(last) && (host === "127.0.0.1" || host === "localhost" || host === "[::1]");
 }
 
-/** Deployment health. The public answer is liveness only ({ok}); no project host, key shape or
- *  secret flags, and no outbound call per hit. Never returns key material, even locally. */
+/** Deployment health. The public answer is liveness plus the commit this bundle was built from ({ok, build};
+ *  deploy-smart-vps.yml waits for its own commit here); no project host, key shape or secret flags, and no
+ *  outbound call per hit. Never returns key material, even locally. */
 export async function GET(req: NextRequest) {
   const headers = { "Cache-Control": "no-store" };
-  if (!fromThisBox(req)) return NextResponse.json({ ok: supabaseConfigured() }, { headers });
+  const build = process.env.SMART_BUILD_ID ?? null;
+  if (!fromThisBox(req)) return NextResponse.json({ ok: supabaseConfigured(), build }, { headers });
   const url = SUPABASE_URL.trim();
   const key = SUPABASE_ANON_KEY.trim();
   let auth: string = "not_checked";
@@ -33,6 +35,7 @@ export async function GET(req: NextRequest) {
   }
   return NextResponse.json({
     ok: auth === "ok",
+    build,
     supabase_url_host: url ? (() => { try { return new URL(url).host; } catch { return "invalid_url"; } })() : "missing",
     anon_key: key ? `${key.length} chars, ${key.startsWith("eyJ") ? "jwt" : key.startsWith("sb_publishable_") ? "publishable" : "unknown format"}` : "missing",
     anon_key_accepted_by_supabase: auth,

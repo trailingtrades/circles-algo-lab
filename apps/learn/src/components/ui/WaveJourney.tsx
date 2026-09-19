@@ -19,7 +19,8 @@ export type WaveStep = {
 
 const S = {
   here: t3("You are here", "Aap yahan hain", "आप यहाँ हैं"),
-  step: t3("Step", "Step", "चरण"),
+  // Not "charan" (Devanagari): the Academy strip above uses that for Stage, so "charan 4" would read as Circle Pro.
+  step: t3("Step", "Step", "कदम"),
 };
 
 const ICON: Record<WaveStep["kind"], React.ComponentType<IconProps>> = { start: Target, mid: BookOpen, end: ShieldCheck };

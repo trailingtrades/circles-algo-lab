@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-5C Learn compliance gate (master prompt §15). Scans UI source, content JSON and
+5C Learn compliance gate (master prompt §15). Scans UI source, CSS, content JSON and
 built HTML. Context-classes guarantee hits: the canonical disclaimer strings are
-whitelisted; quiz options flagged "distractor": true are whitelisted, and so are story panels spoken by the
-"tipster" (scam lessons quote the promise to teach it). Devanagari (हिंदी) is allowed only in the
+whitelisted; wrong quiz options ("distractor": true / "correct": false), labelled scam examples and story panels
+spoken by the "tipster" skip the banned-phrase check only (scam lessons quote the promise to teach it); reference
+rates and the Devanagari slot rule still apply inside them. Devanagari (हिंदी) is allowed only in the
 Devanagari slots: JSON keys "dv" / "*_dv", and TS/TSX lines that carry a dv: value or a t3(...) call.
 Usage: python3 scripts/ci/check_compliance.py <paths...>   Exit 1 on any failure.
 """
@@ -34,7 +35,14 @@ RATES = [r"(repo|रेपो)\s*(rate|रेट)[^.\n]{0,20}?\d+(\.\d+)?\s*%", 
 DEVANAGARI = re.compile(r"[ऀ-ॿ]")
 EMOJI = re.compile(r"[\U0001F000-\U0001FAFF☀-➿⬀-⯿️]")
 OLD_STAT = [r"\b93\s*%", r"1\.8\s*lakh\s*cr"]
-SRC_EXT = (".ts", ".tsx", ".json", ".html", ".md")
+SRC_EXT = (".ts", ".tsx", ".json", ".html", ".md", ".css")
+# Never white text on a cyan fill (#00AEEF / dark-theme --brand #22b8f5: ~2.5:1). The fill tokens that resolve to cyan
+# (winners.css bridges --col-brand and --col-button onto --brand) with literal white, in either order, inside one CSS
+# block, JSX style object or HTML tag. color: var(--brand-ink) is the sanctioned pairing (navy on dark, white only on
+# the light theme's AA blue), so only literal white counts.
+_CYAN_FILL = r"(?<![\w-])background(?:-color|Color)?\s*:\s*[\"']?\s*(?:var\(\s*--(?:brand|col-brand|col-button|accent)\s*\)|#00aeef\b|#22b8f5\b)"
+_WHITE_TEXT = r"(?<![\w-])color\s*:\s*[\"']?\s*(?:#fff(?:fff)?\b|white\b)"
+CYAN_WHITE = re.compile(rf"{_CYAN_FILL}[^{{}}<>]*?{_WHITE_TEXT}|{_WHITE_TEXT}[^{{}}<>]*?{_CYAN_FILL}", re.I)
 
 def strip_whitelisted(s):
   for w in WHITELIST: s = s.replace(w, " ")
@@ -45,20 +53,21 @@ def check_file(path):
   fails = []
   raw = unicodedata.normalize("NFC", open(path, encoding="utf-8", errors="replace").read())
   s = strip_whitelisted(raw)
-  # 1. banned phrases (context-classed: distractors in JSON skipped)
+  # 1. banned phrases (context-classed: under a distractor / scam example in JSON only BANNED is skipped, as scan.ts)
   if path.endswith(".json"):
     try:
-      def walk(o, key=""):
+      def walk(o, key="", scam=False):
         if isinstance(o, dict):
           # quiz distractors (legacy flag or v3 "correct": false), labelled scam examples and the tipster's
-          # story lines are legitimate context for scam wording
-          if o.get("distractor") is True or o.get("correct") is False or o.get("scam_example") is True or o.get("who") == "tipster": return
-          for k, v in o.items(): walk(v, k)
+          # story lines are legitimate context for scam wording; the flag carries down to every string under them
+          ctx = scam or o.get("distractor") is True or o.get("correct") is False or o.get("scam_example") is True or o.get("who") == "tipster"
+          for k, v in o.items(): walk(v, k, ctx)
         elif isinstance(o, list):
-          for v in o: walk(v, key)
+          for v in o: walk(v, key, scam)
         elif isinstance(o, str):
-          for b in BANNED:
-            if re.search(b, o, re.I): fails.append(f"banned /{b}/: {o[:80]}")
+          if not scam:
+            for b in BANNED:
+              if re.search(b, o, re.I): fails.append(f"banned /{b}/: {o[:80]}")
           for b in RATES:
             if re.search(b, o, re.I): fails.append(f"reference rate printed /{b}/: {o[:80]}")
           if DEVANAGARI.search(o) and not (key == "dv" or key.endswith("_dv")):
@@ -91,9 +100,9 @@ def check_file(path):
   for o in OLD_STAT:
     for m in re.finditer(o, raw):
       if not re.search(r"historical|series|PoP", raw[max(0,m.start()-120):m.end()+120], re.I): fails.append(f"old F&O stat /{o}/ at {m.start()} without historical-series label")
-  # 5. cyan fill + white text (CSS/TSX heuristics)
-  for m in re.finditer(r"background(?:-color)?\s*:\s*(?:var\(--col-brand\)|#00aeef)[^}]*color\s*:\s*(?:#fff(?:fff)?|white)", raw, re.I):
-    fails.append(f"cyan background with white text at {m.start()}")
+  # 5. cyan fill + white text (CSS / JSX style objects / inline HTML styles)
+  for m in CYAN_WHITE.finditer(raw):
+    fails.append(f"cyan background with white text at line {raw.count(chr(10), 0, m.start()) + 1}: {m.group()[:80]!r}")
   # 6. built HTML must carry the number + byte-identical Tier-1
   if path.endswith(".html") and "/.next/" in path and "/app/" in path and 'http-equiv="refresh"' not in raw and not path.endswith("_global-error.html"):  # _global-error.html is Next's internal pre-hydration shell; the custom src/app/global-error.tsx carries the footer at runtime
     if "INH000020004" not in raw: fails.append("rendered route missing INH000020004")

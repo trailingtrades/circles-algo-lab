@@ -86,7 +86,7 @@ export async function closeAttempt(c: Ctx, key: string, a: ExamAttempt, sent: un
   if (before >= c.row.attempts_allowed) return { error: x(limitMsg(c.row.attempts_allowed)) };
   const attemptNo = before + 1;
   let score = 0; const max = keyRows.reduce((s, q) => s + q.marks, 0);
-  const full: QResult[] = keyRows.map((q, idx) => { const chosen = answers[idx] ?? -1, right = chosen === q.correct_index; if (right) score += q.marks; return { idx, chosen, right, correct: q.correct_index, explanation: pick3(q, "explanation", c.lang) }; });
+  const full: QResult[] = keyRows.map((q, idx) => { const chosen = answers[idx] ?? -1, right = chosen === q.correct_index; if (right) score += q.marks; return { idx, chosen, right, correct: q.correct_index, explanation: { en: q.explanation_en, hi: q.explanation_hi, dv: q.explanation_dv } }; });
   const band = examBand(score, max, c.row), passed = band !== "fail";
   const { data: done, error } = await c.admin.from("attempts").update({ answers, score, max_score: max, passed, attempt_no: attemptNo, submitted_at: new Date(now).toISOString() }).eq("id", a.id).eq("user_id", c.v.id).eq("exam_id", c.row.id).is("submitted_at", null).select("id");
   if (error) return { error: x(MSG.saveFailed) };
@@ -98,7 +98,9 @@ export async function closeAttempt(c: Ctx, key: string, a: ExamAttempt, sent: un
   return { score, max, band, late, attemptNo, attemptsLeft, reveal, results: reveal ? full : full.map(({ idx, chosen, right }) => ({ idx, chosen, right })) };
 }
 
-/** Grade every open attempt whose time is over (the learner closed the tab). Returns the last one closed, for the intro screen. */
+/** Grade every open attempt whose time is over (the learner closed the tab). Returns the last one closed, for the intro screen.
+ *  Empty ones are graded too, never deleted: a Start-created attempt is empty until the first autosave, so deleting it would buy a free restart after reading the paper.
+ *  Empty attempts the pre-19-Sep build opened on page load are removed once, before the deploy (docs/5C_LEARN_GOLIVE_CHECKLIST.md, step C). */
 export async function closeExpired(c: Ctx, key: string): Promise<ExamResult | null> {
   let last: ExamResult | null = null;
   for (const a of (await listAttempts(c)).filter((t) => !t.submitted_at && expired(t, c.row))) { const r = await closeAttempt(c, key, a, null); if (!r.error) last = r; }

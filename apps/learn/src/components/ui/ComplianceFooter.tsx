@@ -1,7 +1,7 @@
 "use client";
 import { CREDENTIAL_LINE, TIER1, TIER2, COMPANY, SEBI_REG_NO } from "@/lib/compliance/strings";
 import { useLang } from "@/lib/i18n/LangProvider";
-import { t3, type L } from "@/lib/i18n/lang";
+import { t3, tr, type L, type Lang } from "@/lib/i18n/lang";
 
 /* Labels only are translated. Names, the registration line, addresses and the Tier-1/Tier-2
    disclaimers are legal text and stay verbatim in English on every screen. */
@@ -56,9 +56,11 @@ const SOCIAL: [string, string][] = [
 
 /** The site footer on every SMART screen: company and SEBI facts, investor-protection and policy
  *  links, the sister sites, then the verbatim disclaimer. This is the one place the credential line
- *  sits at the bottom of a page. Never collapsible, never clamped; the grievance route is always shown. */
-export function ComplianceFooter({ tier = 1 }: { tier?: 1 | 2 }) {
-  const { tx } = useLang();
+ *  sits at the bottom of a page. Never collapsible, never clamped; the grievance route is always shown.
+ *  `lang` pins the labels to one language (the English-only public verify page); without it they follow the header toggle. */
+export function ComplianceFooter({ tier = 1, lang }: { tier?: 1 | 2; lang?: Lang }) {
+  const ui = useLang();
+  const tx = (x: L) => tr(x, lang ?? ui.lang);
   const ext = (label: string, href: string) => (
     <a href={href} target="_blank" rel="noopener">{label}<span className="sr-only"> {tx(S.newTab)}</span></a>
   );

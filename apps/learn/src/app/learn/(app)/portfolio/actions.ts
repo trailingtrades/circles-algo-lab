@@ -2,11 +2,12 @@
 import { revalidatePath } from "next/cache";
 import { getViewer, createClient } from "@/lib/supabase/server";
 import { supabaseConfigured } from "@/lib/supabase/env";
-import { getLang } from "@/lib/i18n/server";
-import { t3, tr, type L, type Lang } from "@/lib/i18n/lang";
+import { t3, type L } from "@/lib/i18n/lang";
 
-/** `field` names the input to mark invalid; `saved` bumps on every successful save so the add-form can clear itself. */
-export type RowState = { error?: string; ok?: string; field?: string; saved?: number };
+/** `field` names the input to mark invalid; `saved` bumps on every successful save so the add-form can clear itself.
+ *  Messages travel as L (all three languages) and the client picks one with tx(), so a notice
+ *  follows the header toggle instead of staying in the language of the moment it was saved. */
+export type RowState = { error?: L; ok?: L; field?: string; saved?: number };
 
 const S = {
   preview: t3("Preview only: rows are not saved here.", "Ye sirf preview hai: yahan rows save nahi hoti.", "यह सिर्फ़ प्रीव्यू है: यहाँ रो सेव नहीं होतीं।"),
@@ -39,10 +40,9 @@ function amount(raw: string, whole: boolean) {
 
 /** Mock-portfolio row: virtual only. Full Why x2, top risk + answer, price-stop, Why-stop, review point are the Foundation artefact fields. */
 export async function upsertRow(_: RowState, form: FormData): Promise<RowState> {
-  if (!supabaseConfigured()) return { error: tr(S.preview, await getLang()) };
+  if (!supabaseConfigured()) return { error: S.preview };
   const v = await getViewer();
-  const lang: Lang = await getLang(v?.lang);
-  const err = (x: L, field?: string): RowState => ({ error: tr(x, lang), field });
+  const err = (x: L, field?: string): RowState => ({ error: x, field });
   if (!v || v.status !== "active") return err(S.signIn);
   const g = (k: string) => String(form.get(k) ?? "").trim();
   const id = g("id") || null;
@@ -64,18 +64,17 @@ export async function upsertRow(_: RowState, form: FormData): Promise<RowState> 
   // Raw database text ("invalid input syntax for type date") never reaches the learner.
   if (error) { console.error("[portfolio] save failed:", error.message); return err(S.failed); }
   revalidatePath("/learn/portfolio"); revalidatePath("/learn/score");
-  return { ok: tr(S.saved, lang), saved: Date.now() };
+  return { ok: S.saved, saved: Date.now() };
 }
 
 export async function deleteRow(_: RowState, form: FormData): Promise<RowState> {
-  if (!supabaseConfigured()) return { error: tr(S.preview, await getLang()) };
+  if (!supabaseConfigured()) return { error: S.preview };
   const v = await getViewer();
-  const lang = await getLang(v?.lang);
-  if (!v) return { error: tr(S.signIn, lang) };
+  if (!v) return { error: S.signIn };
   const id = String(form.get("id") ?? "");
-  if (!UUID.test(id)) return { error: tr(S.removeFailed, lang) };
+  if (!UUID.test(id)) return { error: S.removeFailed };
   const sb = await createClient();
   const { error } = await sb.from("portfolio_rows").delete().eq("id", id).eq("user_id", v.id);
-  if (error) { console.error("[portfolio] delete failed:", error.message); return { error: tr(S.removeFailed, lang) }; }
-  revalidatePath("/learn/portfolio"); return { ok: tr(S.removed, lang) };
+  if (error) { console.error("[portfolio] delete failed:", error.message); return { error: S.removeFailed }; }
+  revalidatePath("/learn/portfolio"); return { ok: S.removed };
 }

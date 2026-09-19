@@ -13,7 +13,7 @@ const S = {
   eyebrow: t3("Your cohort", "Aapka batch", "आपका बैच"),
   sample: t3("sample data", "sample data", "सैंपल डेटा"),
   title: t3("Leaderboard", "Leaderboard", "लीडरबोर्ड"),
-  privacy: t3("The top 10 are shown by name. Everyone else sees only their own row and band. Ranks are never emailed or sent on WhatsApp.", "Top 10 naam ke saath dikhte hain. Baaki sabko sirf apni row aur band dikhta hai. Rank kabhi email ya WhatsApp par nahi bheji jaati.", "टॉप 10 नाम के साथ दिखते हैं। बाकी सबको सिर्फ़ अपनी row और बैंड दिखता है। रैंक कभी ईमेल या WhatsApp पर नहीं भेजी जाती।"),
+  privacy: t3("The top 10 are shown by name. Everyone else sees only their own row and band. Ranks are never emailed or sent on WhatsApp.", "Top 10 naam ke saath dikhte hain. Baaki sabko sirf apni row aur band dikhta hai. Rank kabhi email ya WhatsApp par nahi bheji jaati.", "टॉप 10 नाम के साथ दिखते हैं। बाकी सबको सिर्फ़ अपनी रो और बैंड दिखता है। रैंक कभी ईमेल या WhatsApp पर नहीं भेजी जाती।"),
 };
 
 /** §10: Process Score only (never money) · cohort-scoped · top-10 named, others see own row + band · three boards · Tier-2 (the footer carries the credential line). */

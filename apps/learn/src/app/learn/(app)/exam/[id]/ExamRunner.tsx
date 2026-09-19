@@ -17,7 +17,7 @@ const S = {
   distinction: t3("Distinction", "Distinction", "डिस्टिंक्शन"),
   best: t3("Best so far", "Ab tak ka best", "अब तक का सबसे अच्छा"),
   rules: t3("Before you start", "Shuru karne se pehle", "शुरू करने से पहले"),
-  r1: t3("The timer starts when you press Start and keeps running even if you close this tab.", "Timer Start dabate hi chalu hota hai, aur tab band karne par bhi chalta rehta hai.", "टाइमर Start दबाते ही शुरू होता है और टैब बंद करने पर भी चलता रहता है।"),
+  r1: t3("The timer starts when you press Start and keeps running even if you close this tab.", "'Shuru kijiye' dabate hi timer chalu ho jaata hai, aur tab band karne par bhi chalta rehta hai.", "'शुरू करें' दबाते ही टाइमर शुरू हो जाता है और टैब बंद करने पर भी चलता रहता है।"),
   r2: t3("Your answers are saved every 15 seconds. If the connection drops, open this page again to continue.", "Aapke answers har 15 second mein save hote hain. Connection toote to yahi page dobara kholiye.", "आपके जवाब हर 15 सेकंड में सेव होते हैं। कनेक्शन टूटे तो यही पेज दोबारा खोलिए।"),
   r3: t3("When time is up the exam submits itself. Answers saved after the deadline are not counted.", "Time khatam hote hi exam apne aap submit ho jaata hai. Deadline ke baad ke answers count nahi hote.", "समय खत्म होते ही एग्ज़ाम अपने-आप सबमिट हो जाता है। डेडलाइन के बाद के जवाब नहीं गिने जाते।"),
   r4: t3("Your best attempt counts. If you do not pass, you can take it again; a retake is capped at 80% of the points.", "Aapka best attempt count hota hai. Pass na hon to dobara de sakte hain; retake mein 80% points tak hi milte hain.", "आपका सबसे अच्छा अटेम्प्ट गिना जाता है। पास न हों तो दोबारा दे सकते हैं; दोबारा देने पर 80% पॉइंट तक ही मिलते हैं।"),
@@ -62,9 +62,14 @@ const BAND: Record<Band, L> = { distinction: t3("Distinction", "Distinction", "�
  *  an attempt that is already running is resumed. Grading, deadlines and the attempt limit are all enforced in ../actions. */
 export function ExamRunner({ examKey, lang, questions: paper, facts, intro, readiness }: { examKey: string; lang: Lang; questions: ExamQuestion[] | null; facts: ExamFacts; intro: IntroView; readiness: string | null }) {
   const x = useCallback((l: L) => tr(l, lang), [lang]);
-  // The page sends the paper only while an attempt runs (so it re-renders in a new language); Start hands it over the first time.
-  const [started, setStarted] = useState<ExamQuestion[] | null>(null);
-  const questions = paper ?? started ?? [];
+  // The page sends the paper while an attempt runs (so it re-renders in a new language) and once the answers are revealed; Start hands it
+  // over the first time. Every submit re-renders this page, and a closed attempt with a retake left gets no paper, so the runner keeps
+  // the last one it was given: without it the reviewed list emptied on a resumed attempt, or fell back to the language of Start.
+  // Tracked against the previous prop (set during render, no empty flash) so a paper handed over by Start is not overwritten by a stale prop.
+  const [prevPaper, setPrevPaper] = useState(paper);
+  const [held, setHeld] = useState<ExamQuestion[] | null>(paper);
+  if (paper !== prevPaper) { setPrevPaper(paper); if (paper) setHeld(paper); }
+  const questions = paper ?? held ?? [];
   const router = useRouter();
   const [attempt, setAttempt] = useState<LiveAttempt | null>(intro.open);
   const [answers, setAnswers] = useState<Answers>(intro.open?.answers ?? {});
@@ -120,7 +125,7 @@ export function ExamRunner({ examKey, lang, questions: paper, facts, intro, read
   // At zero the exam submits itself; the server still decides what counts.
   useEffect(() => { if (left === 0 && attempt && !result) submit(); }, [left, attempt, result, submit]);
 
-  const begin = () => { setErr(null); start(async () => { try { const r = await startOrResume(examKey); if (r.attempt) { setStarted(r.questions ?? null); answersRef.current = r.attempt.answers ?? {}; ver.current = savedVer.current = 0; submitting.current = false; setAnswers(answersRef.current); setSaved(null); setLeft(null); setAttempt(r.attempt); } else setErr(r.error ?? x(S.offline)); } catch { setErr(x(S.offline)); } }); };
+  const begin = () => { setErr(null); start(async () => { try { const r = await startOrResume(examKey); if (r.attempt) { setHeld(r.questions ?? null); answersRef.current = r.attempt.answers ?? {}; ver.current = savedVer.current = 0; submitting.current = false; setAnswers(answersRef.current); setSaved(null); setLeft(null); setAttempt(r.attempt); } else setErr(r.error ?? x(S.offline)); } catch { setErr(x(S.offline)); } }); };
   const overview = () => { setResult(null); setAttempt(null); setErr(null); setConfirm(false); setLeft(null); router.refresh(); };
   const choose = (idx: number, i: number) => { const next = { ...answersRef.current, [idx]: i }; answersRef.current = next; ver.current++; setAnswers(next); setConfirm(false); };
 
@@ -189,6 +194,7 @@ export function ExamRunner({ examKey, lang, questions: paper, facts, intro, read
       <div className="lrn-quiz mt-4">
         {questions.map((q) => {
           const qr = r?.results?.find((y) => y.idx === q.idx);
+          const expl = qr?.explanation ? x(qr.explanation) : ""; // all three languages come back, so a switch after submit matches the stems
           return (
             <fieldset key={q.idx} className="col-card__inner lrn-q" disabled={done || pending || timeUp}>
               <legend className="lrn-q__stem">{q.idx + 1}. {q.stem}</legend>
@@ -206,7 +212,7 @@ export function ExamRunner({ examKey, lang, questions: paper, facts, intro, read
                 );
               })}
               {qr && qr.chosen < 0 && <p className="lrn-q__expl">{x(S.notAnswered)}</p>}
-              {qr?.correct !== undefined && <p className="lrn-q__expl"><strong>{x(S.correct)}:</strong> {q.options[qr.correct]}.{qr.explanation ? ` ${qr.explanation}` : ""}</p>}
+              {qr?.correct !== undefined && <p className="lrn-q__expl"><strong>{x(S.correct)}:</strong> {q.options[qr.correct]}.{expl ? ` ${expl}` : ""}</p>}
             </fieldset>
           );
         })}

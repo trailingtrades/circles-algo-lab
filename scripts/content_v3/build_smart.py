@@ -164,13 +164,25 @@ def load(name):
     try: return json.load(f)
     except json.JSONDecodeError as e: raise Bad(f"{name}: invalid JSON: {e}")
 
+# strategy is {en, hi, dv} (or a legacy English string / null). The sessions.strategy column keeps the English
+# name; the translated name rides in content.tags.strategy so the session header chip follows the learner's language.
+def strategy_en(d):
+  s = d.get("strategy")
+  return s["en"] if isinstance(s, dict) else s
+
+def tags_with_strategy(d):
+  s = d.get("strategy")
+  return {**d["tags"], "strategy": s} if isinstance(s, dict) else d["tags"]
+
 def validate_day(d, name):
   w = name
   if not isinstance(d.get("day"), int) or not 1 <= d["day"] <= 21: raise Bad(f"{w}: day 1..21")
   L(d.get("title"), f"{w}.title")
   tags = d.get("tags") or {}
   for k in ("concept", "ai_lab", "psychology"): L(tags.get(k), f"{w}.tags.{k}")
-  if d.get("strategy") is not None and not isinstance(d["strategy"], str): raise Bad(f"{w}.strategy: string or null")
+  s = d.get("strategy")
+  if isinstance(s, dict): L(s, f"{w}.strategy")
+  elif s is not None and not isinstance(s, str): raise Bad(f"{w}.strategy: {{en, hi, dv}}, string or null")
   visual(d.get("story"), f"{w}.story")
   if d["story"]["kind"] != "story": raise Bad(f"{w}.story: kind must be story")
   count(d.get("topics"), 4, 6, f"{w}.topics")
@@ -256,11 +268,11 @@ def build():
       "number": day, "level": "foundation", "week": week, "day": day - (week - 1) * 7, "course_day": day,
       "title_en": d["title"]["en"], "title_hi": d["title"]["hi"], "title_dv": d["title"]["dv"],
       "core_concept": d["tags"]["concept"]["en"], "ai_lab": d["tags"]["ai_lab"]["en"], "psychology": d["tags"]["psychology"]["en"],
-      "strategy": d.get("strategy"), "duration_min": d.get("duration_min", 60), "video_url": None, "video_provider": "youtube_unlisted",
+      "strategy": strategy_en(d), "duration_min": d.get("duration_min", 60), "video_url": None, "video_provider": "youtube_unlisted",
       "is_published": True, "draft": False, "summary_hi": d["outcome"]["hi"],
       "content": {"v": 2, "story": d["story"], "topics": d["topics"], "key_terms": d["key_terms"], "mindmap": d["mindmap"],
                   "kaam": d["kaam"], "kaam_steps": d["kaam_steps"], "kaam_min": d["kaam_min"], "outcome": d["outcome"], "tools": d["tools"],
-                  "fun": d.get("fun"), "compliance": d.get("compliance"), "journal_prompt": d["journal_prompt"], "motivation": d["motivation"], "tags": d["tags"]},
+                  "fun": d.get("fun"), "compliance": d.get("compliance"), "journal_prompt": d["journal_prompt"], "motivation": d["motivation"], "tags": tags_with_strategy(d)},
       "prompts": [{"title": p["title"], "level": "foundation", "platform": "any", "body": p["body"]} for p in d["prompts"]],
     })
     all_q.append((day, d["quiz"]))

@@ -1,21 +1,29 @@
 "use server";
 import { redirect } from "next/navigation";
+import { cookies } from "next/headers";
 import { createClient as createPublicClient } from "@supabase/supabase-js";
 import { createClient } from "@/lib/supabase/server";
 import { SUPABASE_ANON_KEY, SUPABASE_URL, supabaseConfigured } from "@/lib/supabase/env";
 import { getLang } from "@/lib/i18n/server";
-import { tr } from "@/lib/i18n/lang";
+import { isLang, LANG_COOKIE, tr } from "@/lib/i18n/lang";
 import { AUTH, authKey, authMessage, passwordProblem } from "@/lib/auth/messages";
 import { appUrl, safeAppPath, safeStagePath, siteOrigin } from "@/lib/auth/paths";
+import { authRateOk } from "@/lib/auth/rateLimit";
 
 export type AuthState = { error?: string; ok?: boolean };
 
 type Sb = Awaited<ReturnType<typeof createClient>>;
 /** Only ACTIVE profiles may hold a session. Supabase self sign-up is open on the project, so a stranger
- *  can have a valid password; the invite is what activates an account. Returns the status when refused. */
+ *  can have a valid password; the invite is what activates an account. Returns the status when refused.
+ *  An accepted sign-in also brings the profile's saved language to a device that never chose one
+ *  (no 5cd_lang cookie), so "every device you sign in on" holds; a device's own choice is kept. */
 async function refuseInactive(sb: Sb, userId: string): Promise<"suspended" | "inactive" | null> {
-  const { data: p } = await sb.from("profiles").select("status").eq("id", userId).maybeSingle();
-  if (p?.status === "active") return null;
+  const { data: p } = await sb.from("profiles").select("status,lang").eq("id", userId).maybeSingle();
+  if (p?.status === "active") {
+    const jar = await cookies();
+    if (isLang(p.lang) && !isLang(jar.get(LANG_COOKIE)?.value)) jar.set(LANG_COOKIE, p.lang, { path: "/", maxAge: 31_536_000, sameSite: "lax", secure: process.env.NODE_ENV === "production" });
+    return null;
+  }
   await sb.auth.signOut({ scope: "local" });
   return p?.status === "suspended" ? "suspended" : "inactive";
 }
@@ -26,6 +34,8 @@ export async function signIn(_: AuthState, form: FormData): Promise<AuthState> {
   const email = String(form.get("email") ?? "").trim().toLowerCase();
   const password = String(form.get("password") ?? "");
   if (!email || !password) return { error: tr(AUTH.missing, lang) };
+  // Checked here, not only in nginx: this action is also reachable at every (app) page URL (lib/auth/rateLimit.ts).
+  if (!(await authRateOk(email))) return { error: tr(AUTH.rate, lang) };
   const sb = await createClient();
   const { data, error } = await sb.auth.signInWithPassword({ email, password });
   if (error || !data.user) return { error: authMessage(error, lang) };
@@ -63,6 +73,7 @@ export async function requestReset(_: AuthState, form: FormData): Promise<AuthSt
   if (!supabaseConfigured()) return { error: tr(AUTH.unconfigured, lang) };
   const email = String(form.get("email") ?? "").trim().toLowerCase();
   if (!email) return { error: tr(AUTH.emailMissing, lang) };
+  if (!(await authRateOk(email))) return { error: tr(AUTH.rate, lang) };
   const pub = createPublicClient(SUPABASE_URL, SUPABASE_ANON_KEY, { auth: { flowType: "implicit", persistSession: false, autoRefreshToken: false, detectSessionInUrl: false } });
   const { error } = await pub.auth.resetPasswordForEmail(email, { redirectTo: appUrl("/learn/reset/confirm") });
   // Unknown addresses get the same answer as known ones; only "slow down" and "can't reach" are worth saying.

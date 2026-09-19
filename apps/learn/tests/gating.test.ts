@@ -18,7 +18,8 @@ ok("week review days are 7/14/21 for Tier 1", [7, 14, 21].every((n) => isWeekRev
 ok("every session has a prompt", SESSIONS.every((s) => s.prompts.length > 0));
 ok("fresh learner: session 1 not_started", gate(fresh, getSession(1)!).status === "not_started");
 ok("fresh learner: session 2 locked with reason naming session 1", (() => { const g = gate(fresh, getSession(2)!); return g.status === "locked" && /Session 1/.test(g.reason!) && g.unlockHref === "/learn/session/1"; })());
-ok("fresh learner: session 22 locked by level", /Stage 1 · Basic certificate/.test(gate(fresh, getSession(22)!).reason!));
+// Title comes from content/levels.json (generated), so the test reads it rather than hard-coding "Tier"/"Stage".
+ok("fresh learner: session 22 locked by level (reason names the foundation certificate)", (() => { const f = LEVELS.find((l) => l.slug === "foundation")!; const g = gate(fresh, getSession(22)!); return g.status === "locked" && !!f.title_en && g.reason!.includes(`${f.title_en} certificate`); })(), gate(fresh, getSession(22)!).reason ?? "");
 ok("fresh learner: next session is 1", nextSession(fresh)?.number === 1);
 const s1 = { ...fresh, sessions: { 1: done } };
 ok("after S1: S2 not_started, S3 locked", gate(s1, getSession(2)!).status === "not_started" && gate(s1, getSession(3)!).status === "locked");

@@ -67,8 +67,8 @@ export function RowForm({ row }: { row?: Row }) {
         <F s={s} err={`${p}-err`} id={`${p}-rp`} label={S.review} name="review_point" value={row?.review_point} />
       </div>
       <F s={s} err={`${p}-err`} id={`${p}-ws`} label={S.whyStop} name="why_stop" value={row?.why_stop} />
-      {s.error && <p id={`${p}-err`} className="lrn-error" role="alert">{s.error}</p>}
-      {s.ok && <p className="lrn-notice" role="status">{s.ok}</p>}
+      {s.error && <p id={`${p}-err`} className="lrn-error" role="alert">{tx(s.error)}</p>}
+      {s.ok && <p className="lrn-notice" role="status">{tx(s.ok)}</p>}
       <button className="col-btn col-btn--primary" disabled={pending}>{tx(row ? S.save : S.add)}</button>
     </form>
   );
@@ -76,5 +76,5 @@ export function RowForm({ row }: { row?: Row }) {
 export function DeleteButton({ id }: { id: string }) {
   const { tx } = useLang();
   const [s, action, pending] = useActionState(deleteRow, {});
-  return <form action={action} onSubmit={(e) => { if (!window.confirm(tx(S.confirm))) e.preventDefault(); }} className="mt-2"><input type="hidden" name="id" value={id} /><button className="col-btn col-btn--ghost col-btn--sm" disabled={pending}>{tx(S.remove)}</button>{s.error && <span className="lrn-error"> {s.error}</span>}</form>;
+  return <form action={action} onSubmit={(e) => { if (!window.confirm(tx(S.confirm))) e.preventDefault(); }} className="mt-2"><input type="hidden" name="id" value={id} /><button className="col-btn col-btn--ghost col-btn--sm" disabled={pending}>{tx(S.remove)}</button>{s.error && <span className="lrn-error"> {tx(s.error)}</span>}</form>;
 }

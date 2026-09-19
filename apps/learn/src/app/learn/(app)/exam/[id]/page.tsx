@@ -26,8 +26,9 @@ export default async function ExamPage({ params }: { params: Promise<{ id: strin
   const facts: ExamFacts = { count: bank.length, minutes: row?.time_limit_min ?? meta.time_limit_min, allowed: row?.attempts_allowed ?? meta.attempts_allowed, total: row?.total_marks ?? meta.total_marks, pass: row?.pass_marks ?? meta.pass_marks, distinction: row?.distinction_marks ?? meta.distinction_marks };
   const c = intro.state === "ready" ? intro.closed : null; // only the score of a timed-out attempt goes to the intro, never its per-question results
   const view: IntroView = intro.state === "ready" ? { state: "ready", used: intro.used, passed: intro.passed, best: intro.best, open: intro.open, closed: c && c.score != null ? { score: c.score, max: c.max, band: c.band, late: c.late } : null } : { state: intro.state, msg: intro.msg, used: 0, passed: false, best: null, open: null, closed: null };
-  // The paper goes to the browser only with a running attempt (words only; the runner must never import lib/content, which carries the keys).
-  const questions = view.open ? questionsFor(id, lang) : null;
+  // The paper goes to the browser only with a running attempt, or once no attempt can follow (passed, or none left: the answers were
+  // already revealed), so the reviewed list re-renders in a new language after submit. Words only; the runner must never import lib/content.
+  const questions = view.open || (view.state === "ready" && (view.passed || view.used >= facts.allowed)) ? questionsFor(id, lang) : null;
   // A soft nudge, not a lock: the certificate needs 90% of sessions, so the exam stays available.
   const scope = stageSessions(state, meta.level).filter((s) => (meta.week ? s.week === meta.week : true));
   const done = scope.filter((s) => isComplete(stateOf(state, s.number))).length;

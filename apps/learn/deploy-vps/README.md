@@ -21,14 +21,24 @@ reaches the box only by hand — the latest change set and its exact commands ar
 
 1. `.github/workflows/deploy-smart-vps.yml` builds the standalone bundle
    (`NEXT_PUBLIC_BASE_PATH=/smart`, `NEXT_OUTPUT_STANDALONE=1`) and uploads
-   `smart-app.tgz` + `env.age` to the rolling `smart-vps` GitHub release.
-   `env.age` holds the runtime env encrypted to the VPS's age public key
-   (private key: `/root/.config/smart-deploy.key`, never leaves the box).
+   `smart-app.tgz.age` + `env.age` to the rolling `smart-vps` GitHub release, then
+   deletes the plaintext `smart-app.tgz` older builds left there. Both are encrypted
+   to the VPS's age public key (private key: `/root/.config/smart-deploy.key`, never
+   leaves the box): release assets are as public as the repo, and the bundle carries
+   the course content with the exam and quiz answer keys.
+   The workflow then waits until `/smart/api/health` answers `"build":"<its commit>"`.
 2. On the VPS, `smart-pull.timer` runs `smart-pull.sh` every 2 minutes. A new
-   `smart-app.tgz` asset id triggers: download, decrypt env to `/etc/learn-smart.env`,
+   bundle asset id triggers: download and decrypt the bundle, decrypt env to `/etc/learn-smart.env`,
    extract to `/opt/learn-smart/releases/<id>-<ts>`, atomically repoint
    `/opt/learn-smart/current`, restart the `learn-smart` unit (node server.js on
    127.0.0.1:3001), health-check `/smart/api/health` for up to 60 s, keep 3 releases.
+   **The box copy must be the one that reads `smart-app.tgz.age`** (19 Sep 2026). It still
+   takes the old plaintext asset, so install it BEFORE merging the workflow change (`ssh_` from step 0 of `APPLY-2026-09-19.md`; `<branch>` = the PR branch):
+
+       git show origin/<branch>:apps/learn/deploy-vps/smart-pull.sh | ssh_ 'sed "s/\r$//" > /usr/local/bin/smart-pull.sh.new && bash -n /usr/local/bin/smart-pull.sh.new && chmod 755 /usr/local/bin/smart-pull.sh.new && mv /usr/local/bin/smart-pull.sh.new /usr/local/bin/smart-pull.sh && systemctl start smart-pull.service && tail -n 3 /var/log/smart-pull.log'
+
+   If the repo is made private, also put a fine-grained token (this repo only, Contents:
+   read-only) in `/root/.config/smart-gh-token` (chmod 600); without it the pull is anonymous.
 3. nginx serves the app via `snippets/smart-app.conf` (`location ^~ /smart` proxy);
    the static `/smart/about/` course page on disk wins with its longer prefix.
    Never add a `location = /smart` redirect to `/smart/` — Next canonicalises the

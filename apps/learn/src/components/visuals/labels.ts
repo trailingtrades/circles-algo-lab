@@ -19,11 +19,13 @@ export const VL = {
   volume: t3("Volume", "Volume", "वॉल्यूम"),
 } satisfies Record<string, L>;
 
+/** `hue` is the speaker name's TEXT colour (12px bold on --panel-2), so it must clear AA on both themes:
+ *  fill tokens (--c2, --c4, --bear, light --brand) do not. --who-* are theme-scoped in visuals.css. */
 export const CHAR: Record<Character, { name: L; hue: string }> = {
-  mentor: { name: t3("Mentor", "Mentor", "मेंटर"), hue: "var(--brand)" },
-  aman: { name: t3("Aman", "Aman", "अमन"), hue: "var(--c2)" },
-  priya: { name: t3("Priya", "Priya", "प्रिया"), hue: "var(--c4)" },
-  tipster: { name: t3("Tip-wala", "Tip-wala", "टिप-वाला"), hue: "var(--bear)" },
+  mentor: { name: t3("Mentor", "Mentor", "मेंटर"), hue: "var(--who-mentor)" },
+  aman: { name: t3("Aman", "Aman", "अमन"), hue: "var(--who-aman)" },
+  priya: { name: t3("Priya", "Priya", "प्रिया"), hue: "var(--who-priya)" },
+  tipster: { name: t3("Tip-wala", "Tip-wala", "टिप-वाला"), hue: "var(--bear-text)" },
   narrator: { name: t3("Meanwhile", "Udhar", "उधर"), hue: "var(--ink-3)" },
 };
 

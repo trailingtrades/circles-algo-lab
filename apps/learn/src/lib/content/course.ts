@@ -9,8 +9,14 @@ import quizBanks from "../../../../../content/quizzes/foundation.json";
 import examsJson from "../../../../../content/exams.json";
 import examBanks from "../../../../../content/exams/foundation.json";
 
-import { tr, type Lang, type Text } from "@/lib/i18n/lang";
+import type { Text } from "@/lib/i18n/lang";
 import { normalizeContent, type SessionContentV2 } from "./session-v2";
+import type { QuizOption, QuizQuestionPublic } from "./text";
+
+/* SERVER-ONLY at runtime: this module bundles every quiz and exam answer key. A "use client" file may
+ * import types from here, but must take pick3 / optionText from ./text (eslint and the post-build
+ * bundle check both enforce it). Re-exported so server callers keep one import. */
+export { pick3, optionText, type QuizOption, type QuizQuestionPublic } from "./text";
 
 export type LevelSlug = "foundation" | "intermediate" | "advanced";
 /* Language columns: *_en English, *_hi Hinglish (Roman), *_dv Hindi (Devanagari; optional until seeded). */
@@ -21,21 +27,10 @@ export interface Prompt { title: Text; level: string; platform: string; body: st
 export type SessionContent = SessionContentV2;
 export interface Session { number: number; level: LevelSlug; week: number; day: number; course_day: number | null; title_en: string; title_hi: string; title_dv?: string | null; core_concept: string; ai_lab: string; psychology: string; strategy: string | null; duration_min: number; video_url: string | null; video_provider: string; is_published: boolean; draft: boolean; summary_hi: string; content: SessionContentV2; prompts: Prompt[] }
 export interface Resource { level: LevelSlug | null; week: number | null; kind: "deck" | "handout" | "workbook" | "exam" | "excel" | "link"; file_name: string; note: string; storage_path: string | null }
-/** What the browser may see for an option: the words only. Which option is right never leaves the server. */
-export interface QuizOption { en: string; hi: string; dv?: string }
-export interface QuizQuestionPublic { idx: number; stem_en: string; stem_hi: string; stem_dv?: string | null; options: QuizOption[]; marks: number }
 /** A bank row as stored in /content JSON (server-side; carries the answer). */
 type BankQuestion = { stem_en: string; stem_hi: string; stem_dv?: string; options: (QuizOption & { distractor?: boolean })[]; correct_index: number; explanation_en: string; explanation_hi: string; explanation_dv?: string; marks: number };
 /** Keep only the words of an option — the legacy `distractor` flag revealed the answer. */
 export const publicOption = (o: QuizOption & { distractor?: boolean }): QuizOption => (o.dv ? { en: o.en, hi: o.hi, dv: o.dv } : { en: o.en, hi: o.hi });
-
-/** A title / stem / explanation in the learner's language from its *_en / *_hi / *_dv fields (dv -> hi -> en fallback). */
-export function pick3(row: object, base: string, lang: Lang): string {
-  const r = row as Record<string, unknown>;
-  const v = (k: string) => (typeof r[`${base}_${k}`] === "string" ? (r[`${base}_${k}`] as string) : "");
-  return tr({ en: v("en"), hi: v("hi"), dv: v("dv") }, lang);
-}
-export const optionText = (o: QuizOption, lang: Lang) => tr({ en: o.en, hi: o.hi, dv: o.dv ?? "" }, lang);
 
 export const LEVELS = levelsJson as Level[];
 export const WEEKS = weeksJson as Week[];

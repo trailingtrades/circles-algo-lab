@@ -53,8 +53,9 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
   return (
     <div className="lrn-shell lrn-gate">
       <AcademyStrip />
-      <div className="lrn-gate__rings" aria-hidden><RingsArt /></div>
       <main className="lrn-main flex flex-col items-center justify-center" style={{ paddingTop: 32 }}>
+        {/* Inside <main>, not the shell: the rings centre on the form, never behind the compliance footer. */}
+        <div className="lrn-gate__rings" aria-hidden><RingsArt /></div>
         <div className="lrn-login">
           <div className="flex justify-end mb-2"><LangSelect /></div>
           <div className="flex flex-col items-center gap-2 mb-6 text-center">

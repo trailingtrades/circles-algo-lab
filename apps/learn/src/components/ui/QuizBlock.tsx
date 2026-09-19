@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState, useTransition } from "react";
-import { pick3, optionText, type QuizQuestionPublic } from "@/lib/content/course";
+import { pick3, optionText, type QuizQuestionPublic } from "@/lib/content/text"; // never course.ts: it bundles the answer keys
 import { t3 } from "@/lib/i18n/lang";
 import { useLang } from "@/lib/i18n/LangProvider";
 import { submitQuiz, type QuizResult } from "@/app/learn/(app)/session/actions";

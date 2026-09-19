@@ -20,16 +20,20 @@
 @media (max-width: 640px) {
   .vz-flow { flex-direction: column; }
   .vz-flow__item { flex-direction: column; align-items: stretch; min-width: 0; }
+  /* the row layout's min-height:100% would resolve to the whole item (node + arrow) here */
+  .vz-flow__node { min-height: 0; }
   .vz-flow__arrow { align-self: center; flex-direction: row; gap: 6px; }
   .vz-flow__arrow svg { transform: rotate(90deg); }
   .vz-flow__arrowlbl { max-width: none; }
 }
 
 /* steps: vertical timeline */
-.vz-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
-.vz-steps__item { position: relative; display: grid; grid-template-columns: 44px 1fr; gap: 10px; padding: 0 0 14px; }
-.vz-steps__item:not(:last-child)::before { content: ""; position: absolute; left: 21px; top: 36px; bottom: 2px; width: 2px; background: var(--line-2); }
-.vz-steps__dot { width: 44px; height: 32px; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center; background: var(--brand-soft); color: var(--brand); font-family: var(--col-font-mono); font-weight: 700; font-size: 12.5px; border: 1px solid var(--brand); }
+/* The badge grows with its tag ("9:15 am", "Day 5-6"); the badge column is shared by every item
+   (subgrid) so labels stay aligned, and the rail is placed in that column so it stays centred. */
+.vz-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 0 10px; }
+.vz-steps__item { position: relative; display: grid; grid-column: 1 / -1; grid-template-columns: minmax(44px, max-content) minmax(0, 1fr); grid-template-columns: subgrid; column-gap: 10px; padding: 0 0 14px; }
+.vz-steps__item:not(:last-child)::before { content: ""; position: absolute; grid-column: 1 / 2; left: calc(50% - 1px); top: 36px; bottom: 2px; width: 2px; background: var(--line-2); }
+.vz-steps__dot { justify-self: center; min-width: 44px; height: 32px; padding: 0 8px; white-space: nowrap; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center; background: var(--brand-soft); color: var(--brand); font-family: var(--col-font-mono); font-weight: 700; font-size: 12.5px; border: 1px solid var(--brand); }
 .vz-steps__label { display: block; font-weight: 600; font-size: 14.5px; color: var(--ink); line-height: 1.35; padding-top: 5px; }
 .vz-steps__sub { display: block; font-size: 13px; color: var(--ink-2); line-height: 1.5; margin-top: 2px; }
 
@@ -60,16 +64,29 @@
 .vz-bars__fill { display: block; height: 100%; border-radius: 9999px; }
 .vz-bars__val { font-family: var(--col-font-mono); font-variant-numeric: tabular-nums; font-size: 13px; font-weight: 600; color: var(--ink); }
 
-/* svg charts */
-.vz-svg { display: block; width: 100%; height: auto; max-height: 340px; }
+/* svg charts. Visual.tsx draws each chart twice, a phone layout and a wide one; the container query shows
+   the phone one below 480px of chart width (CHART_BP there). Text in an SVG is sized in viewBox units and
+   shrinks with the drawing, so it is multiplied by --vz-k: viewBox width (--vz-w) over drawn width, clamped
+   to 1..--vz-kmax. That keeps it at the px size below while the chart is scaled down. The px sizes must
+   match FS in Visual.tsx, which keeps room for them. Without trig functions --vz-k stays 1. */
+.vz--line, .vz--candles { container-type: inline-size; }
+.vz-svg { display: block; width: 100%; height: auto; max-height: 340px; --vz-k: 1; }
+@supports (width: calc(1px * tan(atan2(1px, 1cqw)))) {
+  .vz-svg { --vz-k: clamp(1, tan(atan2(var(--vz-w, 1px), 100cqw)), var(--vz-kmax, 1)); }
+}
+.vz-svg--sm { display: none; }
+@container (width < 480px) {
+  .vz-svg--lg { display: none; }
+  .vz-svg--sm { display: block; }
+}
 .vz-grid { stroke: var(--line); stroke-width: 1; }
-.vz-tick { fill: var(--ink-3); font-family: var(--col-font-mono); font-size: 11px; }
-.vz-axis { fill: var(--ink-2); font-size: 12px; }
+.vz-tick { fill: var(--ink-3); font-family: var(--col-font-mono); font-size: calc(11px * var(--vz-k, 1)); }
+.vz-axis { fill: var(--ink-2); font-size: calc(12px * var(--vz-k, 1)); }
 .vz-markline { stroke: var(--ink-3); stroke-dasharray: 4 4; }
-.vz-marktext { fill: var(--ink-2); font-size: 12px; font-weight: 600; }
-.vz-leveltext { font-size: 12px; font-weight: 600; }
+.vz-marktext { fill: var(--ink-2); font-size: calc(12px * var(--vz-k, 1)); font-weight: 600; }
+.vz-leveltext { font-size: calc(12px * var(--vz-k, 1)); font-weight: 600; }
 .vz-leader { stroke: var(--ink-3); stroke-width: 1; stroke-dasharray: 3 3; }
-.vz-anattext { fill: var(--ink); font-size: 13px; font-weight: 600; }
+.vz-anattext { fill: var(--ink); font-size: calc(13px * var(--vz-k, 1)); font-weight: 600; }
 .vz-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 8px; font-size: 13px; color: var(--ink-2); }
 .vz-legend span { display: inline-flex; align-items: center; gap: 6px; }
 .vz-legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
@@ -95,6 +112,10 @@
 
 /* story: comic-strip panels */
 .vz-story { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); }
+/* Speaker-name text colours (labels.ts CHAR.hue). AA on --panel-2: dark #16233f 8.38/5.23/6.87,
+   light #eef3f9 4.91/7.08/5.51. Fill tokens --c2/--c4 and light --brand fail as 12px text. */
+[data-theme=dark] .vz-story { --who-aman: #2dd4bf; --who-priya: #818cf8; --who-mentor: var(--brand); }
+[data-theme=light] .vz-story { --who-aman: #0f766e; --who-priya: #4338ca; --who-mentor: #0a669f; }
 .vz-story__panel { display: grid; grid-template-columns: 52px 1fr; gap: 10px; align-items: start; }
 .vz-story__bubble { position: relative; padding: 9px 12px; border-radius: 4px var(--r-md) var(--r-md) var(--r-md); background: var(--panel-2); border: 1px solid var(--line); }
 .vz-story__bubble p { margin: 2px 0 0; font-size: 14px; line-height: 1.5; color: var(--ink); }

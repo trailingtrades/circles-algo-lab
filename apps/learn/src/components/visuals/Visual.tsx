@@ -51,7 +51,8 @@ function Steps({ v, lang }: { v: StepsV; lang: Lang }) {
       <ol className="vz-steps">
         {v.items.map((s, i) => (
           <li key={i} className="vz-steps__item">
-            <span className="vz-steps__dot" aria-hidden>{s.tag || i + 1}</span>
+            {/* the list already announces the step number; a tag (a time, a day) is content */}
+            <span className="vz-steps__dot" aria-hidden={s.tag ? undefined : true}>{s.tag || i + 1}</span>
             <div><span className="vz-steps__label">{tr(s.label, lang)}</span>{s.sub && <span className="vz-steps__sub">{tr(s.sub, lang)}</span>}</div>
           </li>
         ))}
@@ -113,120 +114,220 @@ function Bars({ v, lang }: { v: BarsV; lang: Lang }) {
   );
 }
 
-/* ---- SVG charts ---- */
+/* ---- SVG charts ----
+   SVG text is sized in viewBox units, so it shrinks with the drawing: a 600-wide chart squeezed into a phone card
+   set its 11px ticks at 5px. So each chart is laid out twice, at phone width (SM.W) and wide, and visuals.css shows
+   one by the chart's container width (CHART_BP). visuals.css also multiplies chart text by --vz-k, the viewBox
+   width over the drawn width clamped to 1..k, which keeps the text at its CSS px size while the drawing is scaled
+   down. Gutters and label bands are sized here for the text at that largest scale, k. */
+const CHART_BP = 480; // px of chart width below which the phone layout shows (the @container rule in visuals.css)
+const SM = { W: 300, k: 1.15 }; // phone layout: text keeps its full size down to 300 / 1.15 = 261px of chart width
+const FS = { tick: 11, axis: 12, mark: 12, level: 12, anat: 13 }; // px; must match the font sizes in visuals.css
+const ASC = 1.18, DESC = 0.34; // a line of text's box above and below its baseline, in em (Devanagari runs tall)
+const lineH = (fs: number) => fs * (ASC + DESC);
+const kFor = (W: number, sm: boolean) => (sm ? SM.k : Math.max(1, Math.ceil((W / CHART_BP) * 100) / 100));
+const up = (b: number[]) => b[3] >= b[0];
+const seriesTone = (tone: LineV["series"][number]["tone"], i: number) => toneFill(tone ?? (i === 0 ? "brand" : i === 1 ? "down" : "gold"));
+
+/** Advance width of a label in em, estimated on the wide side (IBM Plex Sans 600; Devanagari from the system face).
+ *  It sizes the room kept for chart text, so erring narrow would clip a label. */
+function em(s: string) {
+  let w = 0;
+  for (const ch of s) {
+    const c = ch.codePointAt(0) ?? 0;
+    if (c >= 0x900 && c <= 0x97f) w += (c >= 0x93e && c <= 0x940) || (c >= 0x949 && c <= 0x94c) ? 0.38 : c <= 0x903 || (c >= 0x93a && c <= 0x94f) || (c >= 0x951 && c <= 0x957) || c === 0x962 || c === 0x963 ? 0.06 : 0.74;
+    else w += " ,.:;()'|-".includes(ch) ? 0.32 : /[A-Z0-9%+=]/.test(ch) ? 0.7 : 0.58;
+  }
+  return w;
+}
 const fmt = (n: number) => (Math.abs(n) >= 1000 ? Math.round(n).toLocaleString("en-IN") : Number.isInteger(n) ? String(n) : n.toFixed(Math.abs(n) < 10 ? 2 : 1));
 function scale(min: number, max: number, top: number, bottom: number) {
   const span = max - min || 1;
   return (y: number) => bottom - ((y - min) / span) * (bottom - top);
 }
 
-function Line({ v, lang }: { v: LineV; lang: Lang }) {
-  const W = 600, H = 260, P = { l: 52, r: 16, t: 16, b: v.x_label ? 40 : 26 };
+function ChartSvg({ W, H, k, sm, label, children }: { W: number; H: number; k: number; sm: boolean; label: string; children: React.ReactNode }) {
+  return (
+    <svg className={`vz-svg vz-svg--${sm ? "sm" : "lg"}`} viewBox={`0 0 ${W} ${Math.ceil(H)}`} role="img" aria-label={label}
+      style={{ ["--vz-w" as string]: `${W}px`, ["--vz-kmax" as string]: String(k) }}>
+      {children}
+    </svg>
+  );
+}
+
+function LineSvg({ v, lang, sm }: { v: LineV; lang: Lang; sm: boolean }) {
+  const W = sm ? SM.W : 600, k = kFor(W, sm), plotH = sm ? 170 : 204;
+  const tick = FS.tick * k, axis = FS.axis * k, mark = FS.mark * k;
   const all = v.series.flatMap((s) => s.points);
   const lo = Math.min(...all), hi = Math.max(...all);
   const pad = (hi - lo) * 0.08 || Math.abs(hi) * 0.1 || 1;
   const min = lo - pad, max = hi + pad;
   const n = Math.max(...v.series.map((s) => s.points.length));
-  const x = (i: number) => P.l + (n <= 1 ? 0 : (i / (n - 1)) * (W - P.l - P.r));
-  const y = scale(min, max, P.t, H - P.b);
-  const ticks = [0, 1, 2, 3, 4].map((k) => min + ((max - min) * k) / 4);
+  const ticks = [0, 1, 2, 3, 4].map((i) => min + ((max - min) * i) / 4);
+  const xl = v.x_label ? tr(v.x_label, lang) : "", yl = v.y_label ? tr(v.y_label, lang) : "";
+  // Left gutter: the tick labels, and the y title turned on its side (the phone layout prints it above the plot).
+  const l = Math.ceil((yl && !sm ? lineH(axis) + 4 : 2) + Math.max(...ticks.map((t) => fmt(t).length)) * 0.62 * tick + 6);
+  const r = sm ? 10 : 16;
+  const x = (i: number) => l + (n <= 1 ? 0 : (i / (n - 1)) * (W - l - r));
+  // Marks sit in rows above the plot beside their line, flipped to its left near the right edge, and a row lower
+  // wherever they would run into an earlier mark.
+  const rows: [number, number][][] = [];
+  const marks = (v.marks ?? []).filter((m) => Number.isFinite(m.x)).map((m) => {
+    const text = tr(m.label, lang), mx = x(m.x), w = em(text) * mark;
+    let tx = mx + 4, anchor: "start" | "end" = "start";
+    if (tx + w > W - 2) {
+      if (mx - 4 - w >= 2) { tx = mx - 4; anchor = "end"; } else tx = Math.max(2, W - 2 - w);
+    }
+    const x0 = anchor === "end" ? tx - w : tx;
+    let row = 0;
+    while ((rows[row] ??= []).some(([a, b]) => x0 < b + 6 && x0 + w > a - 6)) row++;
+    rows[row].push([x0, x0 + w]);
+    return { text, mx, tx, anchor, row };
+  });
+  const title = sm && yl ? lineH(axis) + 4 : 0, rowH = lineH(mark) + 2;
+  const t = Math.max(title + rows.length * rowH + (rows.length ? 4 : 0), (ASC - 0.35) * tick + 2);
+  const H = t + plotH + (xl ? lineH(axis) + 8 : 10);
+  const y = scale(min, max, t, t + plotH);
+  const yx = ASC * axis + 1, ym = t + plotH / 2;
+  return (
+    <ChartSvg W={W} H={H} k={k} sm={sm} label={tr(v.title ?? v.series[0].name, lang)}>
+      {ticks.map((tv, i) => (
+        <g key={i}><line x1={l} x2={W - r} y1={y(tv)} y2={y(tv)} className="vz-grid" /><text x={l - 6} y={y(tv) + 0.35 * tick} textAnchor="end" className="vz-tick">{fmt(tv)}</text></g>
+      ))}
+      {marks.map((m, i) => (
+        <g key={`m${i}`}><line x1={m.mx} x2={m.mx} y1={title + m.row * rowH} y2={t + plotH} className="vz-markline" /><text x={m.tx} y={title + m.row * rowH + ASC * mark} textAnchor={m.anchor} className="vz-marktext">{m.text}</text></g>
+      ))}
+      {v.series.map((s, i) => (
+        <polyline key={i} fill="none" stroke={seriesTone(s.tone, i)} strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round"
+          points={s.points.map((p, j) => `${x(j).toFixed(1)},${y(p).toFixed(1)}`).join(" ")} />
+      ))}
+      {xl && <text x={(l + W - r) / 2} y={H - DESC * axis - 3} textAnchor="middle" className="vz-axis">{xl}</text>}
+      {yl && (sm
+        ? <text x={2} y={ASC * axis} className="vz-axis">{yl}</text>
+        : <text x={yx} y={ym} transform={`rotate(-90 ${yx} ${ym})`} textAnchor="middle" className="vz-axis">{yl}</text>)}
+    </ChartSvg>
+  );
+}
+
+function Line({ v, lang }: { v: LineV; lang: Lang }) {
   return (
     <Frame kind="line" title={v.title} caption={v.caption} lang={lang} chart>
-      <svg className="vz-svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={tr(v.title ?? v.series[0].name, lang)}>
-        {ticks.map((t, i) => (
-          <g key={i}><line x1={P.l} x2={W - P.r} y1={y(t)} y2={y(t)} className="vz-grid" /><text x={P.l - 6} y={y(t) + 4} textAnchor="end" className="vz-tick">{fmt(t)}</text></g>
-        ))}
-        {(v.marks ?? []).map((m, i) => (
-          <g key={`m${i}`}><line x1={x(m.x)} x2={x(m.x)} y1={P.t} y2={H - P.b} className="vz-markline" /><text x={x(m.x) + 4} y={P.t + 12} className="vz-marktext">{tr(m.label, lang)}</text></g>
-        ))}
-        {v.series.map((s, i) => (
-          <polyline key={i} fill="none" stroke={toneFill(s.tone ?? (i === 0 ? "brand" : i === 1 ? "down" : "gold"))} strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round"
-            points={s.points.map((p, k) => `${x(k).toFixed(1)},${y(p).toFixed(1)}`).join(" ")} />
-        ))}
-        {v.x_label && <text x={(P.l + W - P.r) / 2} y={H - 8} textAnchor="middle" className="vz-axis">{tr(v.x_label, lang)}</text>}
-        {v.y_label && <text x={12} y={P.t + 2} className="vz-axis" transform={`rotate(-90 12 ${P.t + 2})`} textAnchor="end">{tr(v.y_label, lang)}</text>}
-      </svg>
+      <LineSvg v={v} lang={lang} sm={false} />
+      <LineSvg v={v} lang={lang} sm />
       {v.series.length > 1 && (
         <div className="vz-legend">
-          {v.series.map((s, i) => <span key={i}><i style={{ background: toneFill(s.tone ?? (i === 0 ? "brand" : i === 1 ? "down" : "gold")) }} aria-hidden />{tr(s.name, lang)}</span>)}
+          {v.series.map((s, i) => <span key={i}><i style={{ background: seriesTone(s.tone, i) }} aria-hidden />{tr(s.name, lang)}</span>)}
         </div>
       )}
     </Frame>
   );
 }
 
+function CandleSvg({ v, bars, lang, sm }: { v: CandlesV; bars: CandlesV["bars"]; lang: Lang; sm: boolean }) {
+  const anatomy = !!v.anatomy;
+  const W = sm ? SM.W : anatomy ? 520 : Math.max(420, bars.length * 16 + 150);
+  const k = kFor(W, sm);
+  const tick = FS.tick * k, lvl = FS.level * k, mk = FS.mark * k, an = FS.anat * k;
+  const volH = v.volume?.length ? (sm ? 36 : 44) : 0;
+  const plotH = anatomy ? (sm ? 230 : 264) : sm ? 180 : 214;
+  const levels = (v.levels ?? []).map((lv) => ({ ...lv, text: tr(lv.label, lang) }));
+  const lo = Math.min(...bars.map((b) => b[2]), ...levels.map((lv) => lv.y)), hi = Math.max(...bars.map((b) => b[1]), ...levels.map((lv) => lv.y));
+  const pad = (hi - lo) * 0.08 || 1;
+  const ticks = anatomy ? [] : [0, 1, 2, 3].map((i) => lo - pad + ((hi - lo + 2 * pad) * i) / 3);
+  const volLabel = volH ? tr(VL.volume, lang) : "";
+  // Gutters: tick and volume labels on the left, level labels on the right (together at most 65% of the width);
+  // the anatomy view keeps both sides for its part labels.
+  const l = anatomy ? (sm ? 110 : 150) : Math.ceil(Math.max(...ticks.map((t) => fmt(t).length * 0.62), volLabel.length * 0.62, em(volLabel)) * tick + 10);
+  const r = anatomy ? l : Math.min(levels.length ? Math.ceil(Math.max(...levels.map((lv) => em(lv.text))) * lvl + 14) : 12, Math.max(12, W * 0.65 - l));
+  const step = (W - l - r) / bars.length;
+  const cw = anatomy ? Math.min(sm ? 28 : 46, step * 0.5) : Math.max(Math.min(4, step * 0.8), Math.min(14, step * 0.62));
+  const cx = (i: number) => l + step * (i + 0.5);
+  const yr = scale(lo - pad, hi + pad, 0, plotH); // measured from the plot's top edge, which is drawn at y = t
+  // Marks: centred on their candle but kept between the tick labels and the level labels (a label too wide for
+  // that gives up the level side first, then the tick side, never the chart's edges), and stepped further out
+  // (up for a high, down for a low) while they would overlap an earlier mark.
+  const boxes: number[][] = [];
+  const marks = (v.marks ?? []).filter((m) => bars[m.i]).map((m) => {
+    const b = bars[m.i], below = m.at === "low", text = tr(m.label, lang), w = em(text) * mk;
+    const inL = l - 2 + w / 2, inR = Math.max(W - Math.max(r - 4, 2) - w / 2, Math.min(inL, W - 2 - w / 2));
+    const tx = Math.max(Math.min(Math.max(cx(m.i), inL), inR), w / 2 + 2);
+    let base = below ? yr(b[2]) + 11 + ASC * mk : yr(b[1]) - 11 - DESC * mk;
+    const hit = () => boxes.find(([x0, x1, y0, y1]) => tx - w / 2 < x1 + 3 && tx + w / 2 > x0 - 3 && base - ASC * mk < y1 && base + DESC * mk > y0);
+    for (let n = 0, o = hit(); o && n < 6; n++, o = hit()) base = below ? o[3] + ASC * mk : o[2] - DESC * mk;
+    boxes.push([tx - w / 2, tx + w / 2, base - ASC * mk, base + DESC * mk]);
+    return { i: m.i, b, below, text, tone: m.tone, tx, base };
+  });
+  // Level labels sit beside their line in the right gutter, pushed apart where two levels are close.
+  const lv = levels.map((x) => ({ ...x, ly: yr(x.y), ty: 0 })).sort((a, b) => a.ly - b.ly);
+  lv.forEach((x, i) => { x.ty = Math.max(x.ly + 0.35 * lvl, i ? lv[i - 1].ty + 1.2 * lvl : -Infinity); });
+  // Anatomy labels hang off the first candle: parts on the left, prices on the right.
+  const a = bars[0], ax = cx(0);
+  const anat = anatomy ? ([
+    [a[1], VL.high, true], [Math.max(a[0], a[3]), up(a) ? VL.close : VL.open, true], [Math.min(a[0], a[3]), up(a) ? VL.open : VL.close, true], [a[2], VL.low, true],
+    [(a[1] + Math.max(a[0], a[3])) / 2, VL.upperWick, false], [(a[0] + a[3]) / 2, VL.body, false], [(a[2] + Math.min(a[0], a[3])) / 2, VL.lowerWick, false],
+  ] as [number, L, boolean][]).map(([py, lbl, right]) => ({ py, right, text: right ? `${tr(lbl, lang)} ${fmt(py)}` : tr(lbl, lang) })) : [];
+  const sideW = (right: boolean) => Math.max(0, ...anat.filter((x) => x.right === right).map((x) => em(x.text) * an));
+  const lead = Math.min(60, Math.max(10, Math.min(ax - sideW(false), W - ax - sideW(true)) - cw / 2 - 10));
+  // Vertical room: the plot sits between whatever text reaches above or below it.
+  const fs0 = anatomy ? an : tick;
+  const tops = [(0.35 - ASC) * fs0, ...boxes.map((bx) => bx[2]), ...lv.map((x) => x.ty - ASC * lvl)];
+  const bots = [plotH + (0.35 + DESC) * fs0, ...boxes.map((bx) => bx[3]), ...lv.map((x) => x.ty + DESC * lvl)];
+  const t = Math.ceil(2 - Math.min(...tops)), H = t + Math.max(...bots) + 4 + volH;
+  const Y = (p: number) => t + yr(p);
+  const vmax = Math.max(...(v.volume ?? [1]), 1);
+  return (
+    <ChartSvg W={W} H={H} k={k} sm={sm} label={tr(v.title ?? VL.illustrative, lang)}>
+      {ticks.map((tv, i) => <g key={i}><line x1={l} x2={W - r} y1={Y(tv)} y2={Y(tv)} className="vz-grid" /><text x={l - 6} y={Y(tv) + 0.35 * tick} textAnchor="end" className="vz-tick">{fmt(tv)}</text></g>)}
+      {lv.map((x, i) => (
+        <g key={`l${i}`}>
+          <line x1={l} x2={W - r + 4} y1={Y(x.y)} y2={Y(x.y)} stroke={toneFill(x.tone ?? "gold")} strokeWidth="1.6" strokeDasharray={x.dashed === false ? undefined : "6 4"} />
+          <text x={W - r + 8} y={t + x.ty} className="vz-leveltext" style={{ fill: toneText(x.tone ?? "gold") }}>{x.text}</text>
+        </g>
+      ))}
+      {bars.map((b, i) => {
+        const [o, h, lw, c] = b; const col = up(b) ? "var(--bull)" : "var(--bear)";
+        const top = Y(Math.max(o, c)), bot = Y(Math.min(o, c));
+        const vh = v.volume?.[i] != null ? (v.volume[i] / vmax) * (volH - 10) : 0;
+        return (
+          <g key={i}>
+            <line x1={cx(i)} x2={cx(i)} y1={Y(h)} y2={Y(lw)} stroke={col} strokeWidth={anatomy ? 3 : 1.4} />
+            <rect x={cx(i) - cw / 2} y={top} width={cw} height={Math.max(1.5, bot - top)} fill={col} rx={anatomy ? 3 : 1} />
+            {v.volume?.[i] != null && <rect x={cx(i) - cw / 2} y={H - 4 - vh} width={cw} height={vh} fill={col} opacity=".45" />}
+          </g>
+        );
+      })}
+      {marks.map((m, i) => (
+        <g key={`m${i}`}>
+          <path d={m.below ? `M${cx(m.i)} ${Y(m.b[2]) + 3} l-4 6 h8 z` : `M${cx(m.i)} ${Y(m.b[1]) - 3} l-4 -6 h8 z`} fill={toneFill(m.tone)} />
+          <text x={m.tx} y={t + m.base} textAnchor="middle" className="vz-marktext" style={{ fill: toneText(m.tone) }}>{m.text}</text>
+        </g>
+      ))}
+      {volH ? <text x={l - 6} y={H - volH / 2 + 0.35 * tick} textAnchor="end" className="vz-tick">{volLabel}</text> : null}
+      {anatomy && (
+        <g className="vz-anat">
+          {anat.map((x, i) => {
+            const yy = Y(x.py), s = x.right ? 1 : -1, x2 = ax + s * (cw / 2 + lead);
+            return (
+              <g key={i}>
+                <line x1={ax + s * (cw / 2 + 4)} x2={x2} y1={yy} y2={yy} className="vz-leader" />
+                <text x={x2 + s * 6} y={yy + 0.35 * an} textAnchor={x.right ? "start" : "end"} className="vz-anattext">{x.text}</text>
+              </g>
+            );
+          })}
+        </g>
+      )}
+    </ChartSvg>
+  );
+}
+
 function Candles({ v, lang }: { v: CandlesV; lang: Lang }) {
   const bars = v.bars.filter((b) => Array.isArray(b) && b.length === 4 && b.every((n) => Number.isFinite(n)));
   if (!bars.length) return null;
-  const anatomy = !!v.anatomy;
-  const W = anatomy ? 520 : Math.max(420, bars.length * 16 + 150);
-  const volH = v.volume?.length ? 44 : 0;
-  const H = anatomy ? 300 : 260 + volH;
-  const P = { l: anatomy ? 150 : 48, r: anatomy ? 150 : 100, t: 18, b: 18 + volH };
-  const levelYs = (v.levels ?? []).map((l) => l.y);
-  const lo = Math.min(...bars.map((b) => b[2]), ...levelYs), hi = Math.max(...bars.map((b) => b[1]), ...levelYs);
-  const pad = (hi - lo) * 0.08 || 1;
-  const y = scale(lo - pad, hi + pad, P.t, H - P.b);
-  const step = (W - P.l - P.r) / bars.length;
-  const cw = anatomy ? Math.min(46, step * 0.5) : Math.max(4, Math.min(14, step * 0.62));
-  const cx = (i: number) => P.l + step * (i + 0.5);
-  const up = (b: number[]) => b[3] >= b[0];
-  const vmax = Math.max(...(v.volume ?? [1]), 1);
-  const ticks = anatomy ? [] : [0, 1, 2, 3].map((k) => lo - pad + ((hi - lo + 2 * pad) * k) / 3);
-  // Anatomy labels hang off the first candle: parts on the left, prices on the right.
-  const a = bars[0];
-  const ax = cx(0);
   return (
     <Frame kind="candles" title={v.title} caption={v.caption} lang={lang} chart>
-      <svg className="vz-svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={tr(v.title ?? VL.illustrative, lang)}>
-        {ticks.map((t, i) => <g key={i}><line x1={P.l} x2={W - P.r} y1={y(t)} y2={y(t)} className="vz-grid" /><text x={P.l - 6} y={y(t) + 4} textAnchor="end" className="vz-tick">{fmt(t)}</text></g>)}
-        {(v.levels ?? []).map((l, i) => (
-          <g key={`l${i}`}>
-            <line x1={P.l} x2={W - P.r + 4} y1={y(l.y)} y2={y(l.y)} stroke={toneFill(l.tone ?? "gold")} strokeWidth="1.6" strokeDasharray={l.dashed === false ? undefined : "6 4"} />
-            <text x={W - P.r + 8} y={y(l.y) + 4} className="vz-leveltext" style={{ fill: toneText(l.tone ?? "gold") }}>{tr(l.label, lang)}</text>
-          </g>
-        ))}
-        {bars.map((b, i) => {
-          const [o, h, l, c] = b; const col = up(b) ? "var(--bull)" : "var(--bear)";
-          const top = y(Math.max(o, c)), bot = y(Math.min(o, c));
-          return (
-            <g key={i}>
-              <line x1={cx(i)} x2={cx(i)} y1={y(h)} y2={y(l)} stroke={col} strokeWidth={anatomy ? 3 : 1.4} />
-              <rect x={cx(i) - cw / 2} y={top} width={cw} height={Math.max(1.5, bot - top)} fill={col} rx={anatomy ? 3 : 1} />
-              {v.volume?.[i] != null && <rect x={cx(i) - cw / 2} y={H - 10 - (v.volume[i] / vmax) * (volH - 8)} width={cw} height={(v.volume[i] / vmax) * (volH - 8)} fill={col} opacity=".45" />}
-            </g>
-          );
-        })}
-        {(v.marks ?? []).filter((m) => bars[m.i]).map((m, i) => {
-          const b = bars[m.i]; const below = m.at === "low";
-          const py = below ? y(b[2]) + 16 : y(b[1]) - 10;
-          return (
-            <g key={`m${i}`}>
-              <path d={below ? `M${cx(m.i)} ${y(b[2]) + 3} l-4 6 h8 z` : `M${cx(m.i)} ${y(b[1]) - 3} l-4 -6 h8 z`} fill={toneFill(m.tone)} />
-              <text x={cx(m.i)} y={below ? py + 8 : py - 4} textAnchor="middle" className="vz-marktext" style={{ fill: toneText(m.tone) }}>{tr(m.label, lang)}</text>
-            </g>
-          );
-        })}
-        {v.volume?.length ? <text x={P.l} y={H - 2} className="vz-tick">{tr(VL.volume, lang)}</text> : null}
-        {anatomy && (
-          <g className="vz-anat">
-            {[
-              [a[1], VL.high, "r"], [Math.max(a[0], a[3]), up(a) ? VL.close : VL.open, "r"], [Math.min(a[0], a[3]), up(a) ? VL.open : VL.close, "r"], [a[2], VL.low, "r"],
-              [(a[1] + Math.max(a[0], a[3])) / 2, VL.upperWick, "l"], [(a[0] + a[3]) / 2, VL.body, "l"], [(a[2] + Math.min(a[0], a[3])) / 2, VL.lowerWick, "l"],
-            ].map(([py, lbl, side], i) => {
-              const yy = y(py as number); const right = side === "r";
-              const x2 = right ? ax + cw / 2 + 60 : ax - cw / 2 - 60;
-              return (
-                <g key={i}>
-                  <line x1={right ? ax + cw / 2 + 4 : ax - cw / 2 - 4} x2={x2} y1={yy} y2={yy} className="vz-leader" />
-                  <text x={right ? x2 + 6 : x2 - 6} y={yy + 4} textAnchor={right ? "start" : "end"} className="vz-anattext">{tr(lbl as L, lang)}{right ? ` ${fmt(py as number)}` : ""}</text>
-                </g>
-              );
-            })}
-          </g>
-        )}
-      </svg>
-      {anatomy && <p className="vz-note">{tr(up(a) ? VL.bullish : VL.bearish, lang)}</p>}
+      <CandleSvg v={v} bars={bars} lang={lang} sm={false} />
+      <CandleSvg v={v} bars={bars} lang={lang} sm />
+      {v.anatomy && <p className="vz-note">{tr(up(bars[0]) ? VL.bullish : VL.bearish, lang)}</p>}
     </Frame>
   );
 }

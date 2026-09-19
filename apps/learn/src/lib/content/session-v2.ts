@@ -34,8 +34,8 @@ export interface SessionContentV2 {
   journal_prompt: Text;
   /** Closing line: mature, process-first, never a promise of returns. */
   motivation?: Text;
-  /** Translated chips for the session header (core concept, AI lab, psychology). */
-  tags?: { concept?: Text; ai_lab?: Text; psychology?: Text };
+  /** Translated chips for the session header (core concept, AI lab, psychology, strategy). */
+  tags?: { concept?: Text; ai_lab?: Text; psychology?: Text; strategy?: Text };
 }
 
 const isObj = (x: unknown): x is Record<string, unknown> => typeof x === "object" && x !== null && !Array.isArray(x);

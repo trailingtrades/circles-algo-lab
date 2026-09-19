@@ -112,16 +112,28 @@ body { font-family: var(--col-font-sans); }
 .lrn-foot__disc { margin-top: var(--col-space-5); padding-top: var(--col-space-4); border-top: 1px solid var(--line); font-size: var(--col-text-dense); }
 .lrn-foot__base { margin-top: var(--col-space-3); font-size: var(--col-text-dense); color: var(--ink-3); }
 
+/* ---- margins that mt-* / mb-* must be able to override ----
+   Tailwind v4 utilities live in @layer utilities, and any unlayered rule beats any layered one, so a
+   margin set in the unlayered rules of this file silently cancels mt-* / mb-* on the same element.
+   Default margins for classes that are combined with margin utilities therefore sit in
+   @layer components (below utilities). Everything else in this file stays unlayered so it keeps
+   beating winners.css / tokens.css. .lrn-session__title / __sub and .lrn-list need no margin here:
+   preflight (@layer base) already zeroes it. */
+@layer components {
+  .lrn-title { margin: 0 0 var(--col-space-1); }
+  .lrn-notice, .lrn-error { margin: 0 0 12px; }
+}
+
 /* ---- components ---- */
 .lrn-ring { display: inline-block; }
 .lrn-ring__arc { transition: stroke-dashoffset var(--col-duration) var(--col-ease); }
 .lrn-session { display: flex; flex-direction: column; gap: var(--col-space-2); }
-.lrn-session__title { font-weight: 600; font-size: var(--col-text-body); margin: 0; }
-.lrn-session__sub { font-size: var(--col-text-body-sm); color: var(--col-dark-text-secondary); margin: 0; }
+.lrn-session__title { font-weight: 600; font-size: var(--col-text-body); }
+.lrn-session__sub { font-size: var(--col-text-body-sm); color: var(--col-dark-text-secondary); }
 .col-light .lrn-session__sub { color: var(--col-light-text-secondary); }
 .lrn-tags { display: flex; flex-wrap: wrap; gap: var(--col-space-1); }
 .lrn-num { font-family: var(--col-font-mono); font-variant-numeric: tabular-nums; }
-.lrn-title { font-size: var(--col-text-title); font-weight: 700; margin: 0 0 var(--col-space-1); line-height: var(--col-line-tight); }
+.lrn-title { font-size: var(--col-text-title); font-weight: 700; line-height: var(--col-line-tight); }
 .lrn-muted { color: var(--col-dark-text-secondary); }
 .col-light .lrn-muted { color: var(--col-light-text-secondary); }
 /* One amber (--col-warn = the Winners --gold-text: 5:1 on white, AA on dark) instead of two golds. */
@@ -132,9 +144,9 @@ body { font-family: var(--col-font-sans); }
 .lrn-field .col-input { width: 100%; }
 
 /* ---- auth / forms ---- */
-.lrn-error { display: flex; gap: 6px; align-items: flex-start; color: var(--col-down-dark); font-size: var(--col-text-body-sm); margin: 0 0 12px; }
+.lrn-error { display: flex; gap: 6px; align-items: flex-start; color: var(--col-down-dark); font-size: var(--col-text-body-sm); }
 .col-light .lrn-error { color: var(--col-down-light); }
-.lrn-notice { display: flex; gap: 6px; align-items: flex-start; color: var(--col-brand); font-size: var(--col-text-body-sm); margin: 0 0 12px; }
+.lrn-notice { display: flex; gap: 6px; align-items: flex-start; color: var(--col-brand); font-size: var(--col-text-body-sm); }
 .col-light .lrn-notice { color: var(--col-button); }
 .lrn-link { color: var(--col-brand); text-decoration: underline; text-underline-offset: 2px; }
 .col-light .lrn-link { color: var(--col-button); }
@@ -154,7 +166,7 @@ select.col-input { padding-right: 28px; }
 .lrn-cardlink:focus-visible { outline: 2px solid var(--col-brand); outline-offset: 2px; border-radius: var(--col-radius-card); }
 .lrn-video { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: var(--col-radius-inner); overflow: hidden; background: #000; }
 .lrn-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-.lrn-list { display: flex; flex-direction: column; gap: var(--col-space-3); margin: 0; padding: 0; list-style: none; }
+.lrn-list { display: flex; flex-direction: column; gap: var(--col-space-3); padding: 0; list-style: none; }
 .lrn-res { display: flex; align-items: center; justify-content: space-between; gap: var(--col-space-3); padding: var(--col-space-3); border: 1px solid var(--col-dark-border); flex-wrap: wrap; }
 .col-light .lrn-res { border-color: var(--col-light-border); }
 .lrn-prompt { border: 1px solid var(--col-dark-border); padding: var(--col-space-3); }
@@ -164,7 +176,10 @@ select.col-input { padding-right: 28px; }
 .lrn-quiz { display: flex; flex-direction: column; gap: var(--col-space-4); }
 .lrn-q { border: 1px solid var(--col-dark-border); padding: var(--col-space-3); margin: 0; min-width: 0; }
 .col-light .lrn-q { border-color: var(--col-light-border); }
-.lrn-q__stem { font-weight: 600; padding: 0 4px; }
+/* Floated so the legend sits inside the card: a normal legend straddles the fieldset's top border, which
+   left the first lines of any wrapped question outside the rounded card (quiz and exam runner). */
+.lrn-q__stem { font-weight: 600; float: left; width: 100%; padding: 0 4px; margin: 0 0 8px; }
+.lrn-q__stem + * { clear: both; }
 .lrn-opt { display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 4px 8px; border-radius: 6px; cursor: pointer; }
 .lrn-opt input { width: 18px; height: 18px; accent-color: var(--col-button); flex: 0 0 auto; }
 .lrn-opt--chosen { background: var(--brand-soft); }

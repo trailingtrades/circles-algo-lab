@@ -8,10 +8,10 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { supabaseConfigured } from "@/lib/supabase/env";
 import { isCertNo } from "@/lib/cert/number";
 import { verifyHash, hashesMatch, shortKey } from "@/lib/cert/hash";
-import { CREDENTIAL_LINE, TIER1, COMPANY, SEBI_REG_NO } from "@/lib/compliance/strings";
+import { COMPANY, SEBI_REG_NO } from "@/lib/compliance/strings";
 import { ShieldCheck, XCircle, Search, AlertCircle } from "@/components/ui/Icon";
-import { getLang } from "@/lib/i18n/server";
 import { AuthLinks } from "@/app/learn/AuthLinks";
+import { ComplianceFooter } from "@/components/ui/ComplianceFooter";
 
 // A verify URL names a learner: keep these pages out of search results.
 export const metadata: Metadata = { title: "Certificate verification · 5 Circles Academy", robots: { index: false, follow: false } };
@@ -21,7 +21,6 @@ type Result = ({ kind: "valid" | "revoked" } & Found) | { kind: "not_found" } | 
 type Row = { cert_no: string; user_id: string; level_id: string; issued_on: string; verify_hash: string; status: string; revoked_at: string | null; learner_name?: string | null; profiles: { full_name: string } | null; levels: { title_en: string } | null };
 const COLS = "cert_no,user_id,level_id,issued_on,verify_hash,status,revoked_at,profiles(full_name),levels(title_en)";
 const NOT_SEBI = "A Circle S.M.A.R.T certificate certifies course completion only. It is not a SEBI or NISM certification and confers no licence to advise.";
-const LEGAL = "https://circleoptionlab.com/legal";
 /** searchParams values arrive as string[] when a key repeats (?q=a&q=b): take the first, never crash. */
 const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v) ?? "";
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
@@ -58,9 +57,10 @@ export default async function VerifyPage({ params, searchParams }: { params: Pro
   const q = one(sp.q).trim(), k = one(sp.k) || null;
   const target = q || certId;
   const r = target === "lookup" ? null : await lookup(target, q ? null : k);
-  const lang = await getLang();
+  // A public credential page read by third-party verifiers: one language (English) throughout, whatever
+  // language cookie the browser carries. lang="en" also overrides <html lang>, which follows that cookie.
   return (
-    <div className="lrn-shell">
+    <div className="lrn-shell" lang="en">
       <main className="lrn-main" style={{ maxWidth: 760, margin: "0 auto", width: "100%" }}>
         <div className="flex items-center gap-3 mb-4"><Image src={BASE + "/brand/logo.png"} alt="5 Circles" width={40} height={40} /><div><div style={{ fontWeight: 700 }}>Circle S.M.A.R.T · Certificate verification</div><div className="col-eyebrow">{COMPANY.short} · {COMPANY.tagline}</div></div></div>
         {/* A plain GET form does not get the basePath added, so it is prefixed here. */}
@@ -79,31 +79,21 @@ export default async function VerifyPage({ params, searchParams }: { params: Pro
             {r.kind === "unconfigured" && <p style={{ margin: 0 }}>Verification is temporarily unavailable. Please try again later or write to {COMPANY.email}.</p>}
           </section>
         )}
-        {/* The bare lookup page and every "no" answer need a way on: sign-in, the Academy, or a person on WhatsApp. */}
-        {r?.kind !== "valid" && r?.kind !== "revoked" && <AuthLinks lang={lang} />}
+        {/* The bare lookup page and every "no" answer need a way on: sign-in, the Academy, or a person on WhatsApp.
+            A found certificate keeps just the learner sign-in (the footer carries the Academy and policy links). */}
+        {r?.kind === "valid" || r?.kind === "revoked"
+          ? <nav aria-label="Learner" className="flex justify-center mt-4" style={{ fontSize: "var(--col-text-body-sm)" }}><Link className="lrn-link" href="/learn">Learner sign in</Link></nav>
+          : <AuthLinks lang="en" />}
         <section className="col-card mt-4" aria-labelledby="issuer">
           <h2 id="issuer" className="col-eyebrow" style={{ margin: 0 }}>Issuing entity</h2>
           <p style={{ margin: "6px 0 0" }}><strong>{COMPANY.legal}</strong> · SEBI Registered Research Analyst (Non-Individual) · Reg. No. {SEBI_REG_NO} · registered {COMPANY.regGranted}</p>
           <p className="lrn-muted" style={{ margin: "4px 0 0", fontSize: "var(--col-text-body-sm)" }}>Principal Officer: {COMPANY.principalOfficer} · Compliance Officer: {COMPANY.complianceOfficer} · <a className="lrn-link" href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> · <a className="lrn-link" href="tel:+916387497277">{COMPANY.phone}</a></p>
           <p className="lrn-muted" style={{ margin: "4px 0 0", fontSize: "var(--col-text-body-sm)" }}>Grievances: write to the Compliance Officer. Unresolved matters may be escalated to <a className="lrn-link" href="https://scores.sebi.gov.in/" target="_blank" rel="noopener noreferrer">SEBI SCORES</a> or <a className="lrn-link" href="https://smartodr.in/login" target="_blank" rel="noopener noreferrer">SMART ODR</a>.</p>
+          <p style={{ margin: "8px 0 0", fontWeight: 600 }}>{NOT_SEBI}</p>
         </section>
       </main>
-      <footer className="lrn-footer" role="contentinfo">
-        <p className="lrn-footer__cred">{CREDENTIAL_LINE}</p>
-        <p style={{ fontWeight: 600 }}>{NOT_SEBI}</p>
-        <nav aria-label="Links" className="flex flex-wrap gap-3" style={{ margin: "10px 0" }}>
-          {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- the Academy landing lives at the domain root, outside the /smart basePath */}
-          <a className="lrn-link" href="/">5 Circles Academy home</a>
-          <Link className="lrn-link" href="/learn">Learner sign in</Link>
-          <a className="lrn-link" href="https://5circles.co" target="_blank" rel="noopener noreferrer">5circles.co</a>
-          <a className="lrn-link" href="https://circleoptionlab.com" target="_blank" rel="noopener noreferrer">circleoptionlab.com</a>
-          <a className="lrn-link" href={`${LEGAL}/terms/`} target="_blank" rel="noopener noreferrer">Terms</a>
-          <a className="lrn-link" href={`${LEGAL}/privacy/`} target="_blank" rel="noopener noreferrer">Privacy</a>
-          <a className="lrn-link" href={`${LEGAL}/investor-charter/`} target="_blank" rel="noopener noreferrer">Investor Charter</a>
-          <a className="lrn-link" href={`${LEGAL}/grievance/`} target="_blank" rel="noopener noreferrer">Grievance Redressal</a>
-        </nav>
-        <p>{TIER1}</p>
-      </footer>
+      {/* The site-wide company footer: credential line, offices, investor protection, policies, Tier-1 disclaimer. */}
+      <ComplianceFooter tier={1} lang="en" />
     </div>
   );
 }

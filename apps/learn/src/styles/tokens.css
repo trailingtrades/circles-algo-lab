@@ -204,7 +204,9 @@ html[data-lang="dv"] { --col-tracking-eyebrow: 0; }
 
 .col-btn--primary {
   background: var(--col-button);
-  color: #ffffff; /* only pairing verified AA-safe for this fill — never swap to --col-ink here */
+  /* winners.css bridges --col-button onto --brand, which is cyan #22b8f5 on the dark theme: white there is 2.5:1.
+     --brand-ink is navy on dark and white on the light theme's AA blue — same value winners.css already applies. */
+  color: var(--brand-ink);
 }
 .col-btn--primary:hover { opacity: 0.92; }
 .col-btn--primary:active { opacity: 0.85; }

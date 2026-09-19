@@ -2,8 +2,9 @@
 export type Band = "distinction" | "pass" | "fail";
 export type Answers = Record<number, number>;
 export type ExamAttempt = { id: string; attempt_no: number; started_at: string; deadline_at: string | null; answers: Answers; submitted_at: string | null; score: number | null; max_score: number | null };
-/** `correct` and `explanation` are present only when `reveal` is true (after a pass, or once no attempt is left). */
-export type QResult = { idx: number; chosen: number; right: boolean; correct?: number; explanation?: string };
+/** `correct` and `explanation` are present only when `reveal` is true (after a pass, or once no attempt is left).
+ *  The explanation carries all three languages (same shape as lib/i18n's L) so a language switch after submitting still matches the stems. */
+export type QResult = { idx: number; chosen: number; right: boolean; correct?: number; explanation?: { en: string; hi: string; dv: string } };
 export type ExamResult = { error?: string; score?: number; max?: number; band?: Band; late?: boolean; attemptNo?: number; attemptsLeft?: number; reveal?: boolean; results?: QResult[] };
 /** An attempt as handed to the browser, with the server clock at that moment so the countdown can correct for a wrong device clock. */
 export type LiveAttempt = ExamAttempt & { now: number };
