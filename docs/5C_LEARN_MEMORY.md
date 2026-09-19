@@ -17,7 +17,7 @@ Repo: github.com/trailingtrades/circles-algo-lab (default branch `main`)
 | Product | Where in repo | Live | Notes |
 |---|---|---|---|
 | Algo Lab (single-file HTML) | `/index.html` (repo root) | algo.circleoptionlab.com | Independent. Do not import 5C Learn code/CSS into it. |
-| 5C Learn (learner dashboard, Next.js + Supabase) | `/apps/learn/` + `/content/` + `/supabase/` + `/certificates/` + `/docs/` | Not deployed yet (Vercel config ready) | Independent. `apps/learn/vercel.json` ignoreCommand builds only on `apps/learn`, `content`, `supabase` changes. |
+| 5C Learn (learner dashboard, Next.js + Supabase) | `/apps/learn/` + `/content/` + `/supabase/` + `/certificates/` + `/docs/` | LIVE — learn.optionlab.co.in/smart/ (self-hosted on the VPS since 17 Sep; Vercel deleted — see Academy section) | Independent. `apps/learn/vercel.json` ignoreCommand builds only on `apps/learn`, `content`, `supabase` changes. |
 
 Rule: a task on one product must not edit the other's files. Check `git diff --stat` before commit.
 
@@ -32,7 +32,7 @@ Rule: a task on one product must not edit the other's files. Check `git diff --s
 - CI: `.github/workflows/learn-ci.yml`; gates in `scripts/ci/` (compliance, responsive, cert PDF)
 - Docs: `docs/5C_LEARN_HANDOFF_08Sep2026.md` (full handoff), `docs/5C_LEARN_DEPLOY_VERCEL.md`, phase gate reports `docs/5C_LEARN_PHASE0..6_*.md`
 - Static preview (12 screens, demo data, no JS): `docs/5C_LEARN_PREVIEW.html`
-- Env: `apps/learn/.env.example` committed; real keys never. `SUPABASE_SERVICE_ROLE_KEY` server-only. `CERT_SIGNING_SECRET` never rotated after first certificate.
+- Env: `apps/learn/.env.example` committed; real keys never. `SUPABASE_SERVICE_ROLE_KEY` server-only. `CERT_SIGNING_SECRET` regenerated 18 Sep 2026 (zero certs existed); never rotate it again once certificates ship.
 
 ## §1 Non-negotiables (always in force)
 1. SEBI Reg. No. INH000020004 on every screen. 2. Tier-1 disclaimer verbatim, never clamped/translated. 3. Never white text on #00AEEF. 4. No assured-returns language, EN or Hinglish. 5. Roman-script Hinglish only, zero Devanagari. 6. Leaderboard ranks PROCESS, never money. 7. No live market data/orders/advisory; virtual money only. 8. No emoji in product UI. 9. Broker-agnostic. 10. Only permitted F&O-loss stat: SEBI FY26 study (Aug 2026) 87.7% / Rs 91,685 cr / Rs 1.17 lakh, always stamped "SEBI FY26 study, Aug 2026". Never print repo rate, STT/cost rates, or the RBI reference rate (link to source instead).
@@ -50,7 +50,7 @@ Rule: a task on one product must not edit the other's files. Check `git diff --s
 3. Admin session editor does not yet expose the `content` jsonb field; edit via the .py files + generator until it does.
 4. Upload decks/handouts/templates to Storage and point `content/resources.json` at them.
 
-## Go-live status (16 Sep 2026) — LIVE
+## Go-live status (16 Sep 2026) — SUPERSEDED 17-18 Sep: app self-hosted on the VPS at learn.optionlab.co.in/smart/, Vercel project DELETED, keys rotated. Details in the Academy section. Historical notes below:
 - Site: https://circles-algo-lab.vercel.app (Vercel project `circles-algo-lab`, team `repo15`, root `apps/learn`). Domain `learn.5circles.co` NOT attached yet.
 - Supabase project `5c-learn`, ref `hcajzeykcdcxqidgmzep`, region ap-south-1. Migrations 0001-0007 applied; seeded: levels=3 weeks=33 sessions=61 published=21 quiz_q=105 exam_q=75 exams=6 admins=1.
 - Admin: trailingtrades@gmail.com (role admin, active). Password was set as a temporary one by the workflow; Rahul must change it via Forgot password.
