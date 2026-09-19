@@ -1,6 +1,11 @@
 /* Teaching visuals (components/visuals). Winners tokens only: --panel, --panel-2, --line,
    --ink/-2/-3, --brand, --bull/--bear/--gold (+ -text variants). Never white on brand cyan. */
 
+/* Tone colours used as TEXT. The fill tokens (--brand, --bull-text, --gold-text) sit at ~4.47:1 on the light
+   --panel-2 card, just under AA, so light theme gets one shade darker; dark theme keeps the tokens as they are. */
+:root, [data-theme=dark] { --vz-t-brand: var(--brand); --vz-t-up: var(--bull-text); --vz-t-down: var(--bear-text); --vz-t-gold: var(--gold-text); }
+[data-theme=light] { --vz-t-brand: #095a90; --vz-t-up: #166534; --vz-t-down: #991b1b; --vz-t-gold: #92400e; }
+
 .vz { margin: 16px 0 0; padding: 14px; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--panel); }
 .vz__head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
 .vz__title { font-weight: 650; font-size: 15px; color: var(--ink); }
@@ -33,7 +38,7 @@
 .vz-steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 0 10px; }
 .vz-steps__item { position: relative; display: grid; grid-column: 1 / -1; grid-template-columns: minmax(44px, max-content) minmax(0, 1fr); grid-template-columns: subgrid; column-gap: 10px; padding: 0 0 14px; }
 .vz-steps__item:not(:last-child)::before { content: ""; position: absolute; grid-column: 1 / 2; left: calc(50% - 1px); top: 36px; bottom: 2px; width: 2px; background: var(--line-2); }
-.vz-steps__dot { justify-self: center; min-width: 44px; height: 32px; padding: 0 8px; white-space: nowrap; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center; background: var(--brand-soft); color: var(--brand); font-family: var(--col-font-mono); font-weight: 700; font-size: 12.5px; border: 1px solid var(--brand); }
+.vz-steps__dot { justify-self: center; min-width: 44px; height: 32px; padding: 0 8px; white-space: nowrap; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center; background: var(--brand-soft); color: var(--vz-t-brand); font-family: var(--col-font-mono); font-weight: 700; font-size: 12.5px; border: 1px solid var(--brand); }
 .vz-steps__label { display: block; font-weight: 600; font-size: 14.5px; color: var(--ink); line-height: 1.35; padding-top: 5px; }
 .vz-steps__sub { display: block; font-size: 13px; color: var(--ink-2); line-height: 1.5; margin-top: 2px; }
 
@@ -53,7 +58,7 @@
 .vz-calc__val { font-family: var(--col-font-mono); font-variant-numeric: tabular-nums; font-weight: 600; color: var(--ink); white-space: nowrap; }
 .vz-calc__row--result { border-bottom: 0; background: var(--brand-soft); }
 .vz-calc__row--result .vz-calc__label { color: var(--ink); font-weight: 650; }
-.vz-calc__row--result .vz-calc__val { color: var(--brand); font-size: 15px; }
+.vz-calc__row--result .vz-calc__val { color: var(--vz-t-brand); font-size: 15px; }
 
 /* bars */
 .vz-bars { display: grid; gap: 10px; }

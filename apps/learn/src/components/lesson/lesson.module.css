@@ -14,7 +14,7 @@
 .tabs > button { flex: 0 0 auto; white-space: nowrap; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; padding: 10px 14px; }
 @media (max-width: 420px) { .tabs > button { padding: 10px 9px; } } /* all five fit at 360px in every language; the scroll stays as a fallback */
 .tabsWrap[data-more="true"]::after { content: ""; position: absolute; top: 0; right: 0; bottom: 1px; width: 44px; pointer-events: none; background: linear-gradient(to right, transparent, var(--bg) 80%); }
-.tabDone { color: var(--brand); flex: 0 0 auto; }
+.tabDone { color: var(--vz-t-brand, var(--brand)); flex: 0 0 auto; }
 .panel { padding-top: 20px; }
 .panel:focus-visible { outline-offset: 4px; }
 .nextTab { max-width: 72ch; margin-top: 24px; display: flex; justify-content: flex-end; }
@@ -25,7 +25,7 @@
 .read > * + * { margin-top: 20px; }
 .video { display: grid; gap: 10px; }
 .videoBar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; min-height: 44px; }
-.ok { display: inline-flex; align-items: center; gap: 6px; color: var(--brand); font-size: 14px; font-weight: 600; }
+.ok { display: inline-flex; align-items: center; gap: 6px; color: var(--vz-t-brand, var(--brand)); font-size: 14px; font-weight: 600; }
 
 .topics { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
 .topic { padding: 18px 16px; }
@@ -34,11 +34,11 @@
 .h { font-size: 18px; font-weight: 650; line-height: 1.35; margin: 4px 0 0; color: var(--ink); }
 .p { margin: 10px 0 0; font-size: 15.5px; line-height: 1.7; color: var(--ink); white-space: pre-line; }
 .example { margin-top: 16px; padding: 12px 14px; border: 1px solid var(--line); border-left: 3px solid var(--brand); border-radius: var(--r-sm); background: var(--panel-2); }
-.label { display: block; margin-bottom: 4px; font-size: 12.5px; font-weight: 700; letter-spacing: .02em; color: var(--brand); }
+.label { display: block; margin-bottom: 4px; font-size: 12.5px; font-weight: 700; letter-spacing: .02em; color: var(--vz-t-brand, var(--brand)); }
 .exP { margin: 6px 0 0; font-size: 14.5px; line-height: 1.65; color: var(--ink); white-space: pre-line; }
 .label + .exP { margin-top: 0; }
 .remember { margin: 14px 0 0; padding-top: 12px; border-top: 1px dashed var(--line-2); font-size: 14.5px; line-height: 1.6; color: var(--ink); }
-.remember strong { color: var(--brand); font-weight: 650; }
+.remember strong { color: var(--vz-t-brand, var(--brand)); font-weight: 650; }
 
 .sectionH { font-size: 17px; font-weight: 650; margin: 0 0 10px; color: var(--ink); }
 .terms { margin: 0; display: grid; gap: 0; border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; }
@@ -93,7 +93,7 @@
 .gateH { margin: 0; font-size: 16px; font-weight: 650; color: var(--ink); }
 .gate ul { margin: 12px 0; }
 .mark { flex: 0 0 auto; }
-.markOk { flex: 0 0 auto; color: var(--brand); }
+.markOk { flex: 0 0 auto; color: var(--vz-t-brand, var(--brand)); }
 .att { display: flex; align-items: flex-start; gap: 8px; margin: 0 0 14px; font-size: 13.5px; line-height: 1.55; color: var(--ink-2); }
 .att svg { margin-top: 2px; }
 .gateActions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }

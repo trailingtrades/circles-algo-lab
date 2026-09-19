@@ -31,5 +31,5 @@ export const CHAR: Record<Character, { name: L; hue: string }> = {
 
 /** Fill colour for a tone (bars, lines, candles, borders). */
 export const toneFill = (t?: Tone) => (t === "up" ? "var(--bull)" : t === "down" ? "var(--bear)" : t === "gold" ? "var(--gold)" : t === "muted" ? "var(--ink-3)" : "var(--brand)");
-/** Same tone as TEXT — the -text tokens clear AA on both themes. */
-export const toneText = (t?: Tone) => (t === "up" ? "var(--bull-text)" : t === "down" ? "var(--bear-text)" : t === "gold" ? "var(--gold-text)" : t === "muted" ? "var(--ink-2)" : "var(--brand)");
+/** Same tone as TEXT (--vz-t-* in visuals.css: AA on both themes, including the light --panel-2 cards). */
+export const toneText = (t?: Tone) => (t === "up" ? "var(--vz-t-up)" : t === "down" ? "var(--vz-t-down)" : t === "gold" ? "var(--vz-t-gold)" : t === "muted" ? "var(--ink-2)" : "var(--vz-t-brand)");
