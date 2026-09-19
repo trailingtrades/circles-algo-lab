@@ -18,7 +18,9 @@ echo "$(date -Is) deploying asset $id" >> "$LOG"
 curl -fsSL -o /tmp/smart-app.tgz "$tgz_url"
 if [ -n "$env_url" ]; then
   curl -fsSL -o /tmp/env.age "$env_url"
-  (umask 077; age -d -i /root/.config/smart-deploy.key /tmp/env.age > /etc/learn-smart.env); rm -f /tmp/env.age
+  # Decrypt beside the live file and swap only on success: a failed decrypt must not leave an empty
+  # env behind for the next restart (the unit restarts on its own).
+  (umask 077; age -d -i /root/.config/smart-deploy.key /tmp/env.age > /etc/learn-smart.env.new && mv /etc/learn-smart.env.new /etc/learn-smart.env); rm -f /tmp/env.age
 fi
 REL="$id-$(date +%Y%m%d%H%M%S)"
 mkdir -p "/opt/learn-smart/releases/$REL"
@@ -36,7 +38,7 @@ echo "$id" > "$STATE"
 # First deploy: swap the nginx redirect stub for the app proxy.
 SITE=/etc/nginx/sites-enabled/learn.optionlab.co.in
 if ! grep -q "snippets/smart-app.conf" "$SITE"; then
-  sed -i "s|include /etc/nginx/snippets/academy-paths.conf;|include /etc/nginx/snippets/academy-paths.conf;\n\n    include /etc/nginx/snippets/smart-app.conf;|" "$SITE"
+  sed -i --follow-symlinks "s|include /etc/nginx/snippets/academy-paths.conf;|include /etc/nginx/snippets/academy-paths.conf;\n\n    include /etc/nginx/snippets/smart-app.conf;|" "$SITE"
   [ -f /var/www/learn-5circles/smart/index.html ] && mv /var/www/learn-5circles/smart/index.html "/var/www/learn-5circles/smart/index.html.pre-app.$(date +%Y%m%d)"
   nginx -t && systemctl reload nginx
 fi

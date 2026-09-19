@@ -1,10 +1,25 @@
-import { NextResponse } from "next/server";
-import { SUPABASE_URL, SUPABASE_ANON_KEY, siteUrl } from "@/lib/supabase/env";
+import { NextResponse, type NextRequest } from "next/server";
+import { SUPABASE_URL, SUPABASE_ANON_KEY, siteUrl, supabaseConfigured } from "@/lib/supabase/env";
 
 export const dynamic = "force-dynamic";
 
-/** Deployment health: are the public Supabase settings present and accepted by the project? Never returns key material. */
-export async function GET() {
+const LOOPBACK = new Set(["127.0.0.1", "::1", "::ffff:127.0.0.1"]);
+
+/** Only the box itself (smart-pull.sh curls http://127.0.0.1:3001) sees configuration details.
+ *  Behind nginx, X-Forwarded-For always ends with the real client address ($proxy_add_x_forwarded_for
+ *  appends it; anything a client sends lands BEFORE it), and Next fills the header from the socket for
+ *  a direct request. So: last hop is loopback AND the Host is loopback. */
+function fromThisBox(req: NextRequest) {
+  const last = (req.headers.get("x-forwarded-for") ?? "").split(",").pop()?.trim() ?? "";
+  const host = (req.headers.get("host") ?? "").replace(/:\d+$/, "");
+  return LOOPBACK.has(last) && (host === "127.0.0.1" || host === "localhost" || host === "[::1]");
+}
+
+/** Deployment health. The public answer is liveness only ({ok}); no project host, key shape or
+ *  secret flags, and no outbound call per hit. Never returns key material, even locally. */
+export async function GET(req: NextRequest) {
+  const headers = { "Cache-Control": "no-store" };
+  if (!fromThisBox(req)) return NextResponse.json({ ok: supabaseConfigured() }, { headers });
   const url = SUPABASE_URL.trim();
   const key = SUPABASE_ANON_KEY.trim();
   let auth: string = "not_checked";
@@ -24,5 +39,5 @@ export async function GET() {
     site_url: siteUrl(),
     service_role_key_present: Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY),
     cert_signing_secret_present: Boolean(process.env.CERT_SIGNING_SECRET),
-  });
+  }, { headers });
 }

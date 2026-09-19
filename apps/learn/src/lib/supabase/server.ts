@@ -1,4 +1,5 @@
 import "server-only";
+import { cache } from "react";
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import { COOKIE_OPTIONS, SUPABASE_ANON_KEY, SUPABASE_URL } from "./env";
@@ -17,12 +18,14 @@ export async function createClient() {
 
 export type Viewer = { id: string; email: string | null; role: "student" | "mentor" | "admin"; status: "invited" | "active" | "suspended"; full_name: string; cohort_id: string | null; lang: "en" | "hi" | "dv" };
 
-/** Authenticated viewer + profile, or null. Never trusts the JWT for role: reads profiles under RLS. */
-export async function getViewer(): Promise<Viewer | null> {
+/** Authenticated viewer + profile, or null. Never trusts the JWT for role: reads profiles under RLS.
+ *  Memoised per request with React cache(): the layout, the page, loadLearnerState and loadScore all ask,
+ *  and each call was a Supabase auth round trip plus a profile read. */
+export const getViewer = cache(async (): Promise<Viewer | null> => {
   const sb = await createClient();
   const { data: { user } } = await sb.auth.getUser();
   if (!user) return null;
   const { data: p } = await sb.from("profiles").select("role,status,full_name,cohort_id,lang").eq("id", user.id).maybeSingle();
   if (!p) return null;
   return { id: user.id, email: user.email ?? null, ...p };
-}
+});

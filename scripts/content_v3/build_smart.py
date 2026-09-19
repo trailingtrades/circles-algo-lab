@@ -231,6 +231,12 @@ def balanced_targets(n, seed):
 def exists():
   return len(glob.glob(os.path.join(SRC, "day*.json"))) == 21
 
+EXAM_FILES = ((1, "exam_w1.json", 15, 2), (2, "exam_w2.json", 15, 2), (3, "exam_w3.json", 15, 2), (None, "exam_final.json", 30, 1))
+def exams_exist():
+  """All four v3 exam banks are authored. Until then build() returns no exam banks and gen_content.py keeps
+  the v2 weekend banks, so the 21 v3 days can ship before the exam papers are written."""
+  return all(os.path.exists(os.path.join(SRC, name)) for _, name, _, _ in EXAM_FILES)
+
 def build():
   """Returns (weeks, sessions, quizzes, exam_banks) for Tier 1. Raises Bad on any validation error."""
   weeks_src = load("weeks.json")
@@ -267,7 +273,7 @@ def build():
       out.append(shuffled(q, rng, targets[t])); t += 1
     quizzes.append({"session": day, "questions": out})
   exam_banks = []
-  for wk, name, size, marks in ((1, "exam_w1.json", 15, 2), (2, "exam_w2.json", 15, 2), (3, "exam_w3.json", 15, 2), (None, "exam_final.json", 30, 1)):
+  for wk, name, size, marks in (EXAM_FILES if exams_exist() else ()):
     b = load(name)
     if b.get("week") != wk: raise Bad(f"{name}: week must be {wk}")
     count(b.get("questions"), size, size, f"{name}.questions")

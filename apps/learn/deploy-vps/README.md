@@ -1,7 +1,21 @@
 # CIRCLE S.M.A.R.T — self-hosted on the VPS at learn.optionlab.co.in/smart/
 
 Since 17 Sep 2026 the app runs on the VPS (200.141.9.107), not Vercel. These are reference
-copies of the files installed on the box; the box is the source of truth.
+copies of the files installed on the box; the box is the source of truth. Anything changed here
+reaches the box only by hand — the latest change set and its exact commands are in
+`APPLY-2026-09-19.md`.
+
+| File here | On the box | What it is |
+|---|---|---|
+| `smart-app.conf` | `/etc/nginx/snippets/` | `/smart` proxy, `/smart/about/` static page, sign-in rate limit |
+| `academy-paths-gated.conf` | `/etc/nginx/snippets/` | `/winners/` `/one/` behind the stage gate, public `/about/` pages, `/fonts/` |
+| `academy-site.conf` | `/etc/nginx/snippets/` | landing `/`, branded 404, closed `/admin.html` (moved out of the server block 19 Sep) |
+| `learn-static-headers.conf` | `/etc/nginx/snippets/` | HSTS, CSP, Permissions-Policy etc. for every static location |
+| `legacy-app-paths.conf` | `/etc/nginx/snippets/` | Vercel-era `/learn` `/verify` `/api` → `/smart` 301s |
+| `learn-ratelimit.conf` | `/etc/nginx/conf.d/` | `limit_req_zone` for the sign-in/invite/reset POSTs (http context) |
+| `404.html` | `/var/www/learn-5circles/` | fallback branded not-found page; the Academy deploy's own `dist/404.html` wins (`apply-nginx.sh` never overwrites it) |
+| `learn-smart.service`, `smart-pull.sh`, `smart-pull.timer` | `/etc/systemd/system/`, `/usr/local/bin/` | app unit and pull deploy |
+| `apply-nginx.sh` | run from a copy in `/root/` | installs the nginx files with backup, `nginx -t` and auto-rollback |
 
 ## How a deploy works (pull-based — the provider firewall blocks inbound SSH from runners)
 
@@ -39,7 +53,14 @@ The gated nginx variant is `snippets/academy-paths-gated.conf` (kept in sync fro
 Enforcement is a one-line include swap in `/etc/nginx/sites-enabled/learn.optionlab.co.in`:
 
     # ON  (do this only after every current student has an account + grants)
-    sed -i 's|snippets/academy-paths.conf|snippets/academy-paths-gated.conf|' /etc/nginx/sites-enabled/learn.optionlab.co.in && nginx -t && systemctl reload nginx
+    sed -i --follow-symlinks 's|snippets/academy-paths.conf|snippets/academy-paths-gated.conf|' /etc/nginx/sites-enabled/learn.optionlab.co.in && nginx -t && systemctl reload nginx
 
     # OFF (instant rollback)
-    sed -i 's|snippets/academy-paths-gated.conf|snippets/academy-paths.conf|' /etc/nginx/sites-enabled/learn.optionlab.co.in && nginx -t && systemctl reload nginx
+    sed -i --follow-symlinks 's|snippets/academy-paths-gated.conf|snippets/academy-paths.conf|' /etc/nginx/sites-enabled/learn.optionlab.co.in && nginx -t && systemctl reload nginx
+
+`--follow-symlinks` matters: a plain `sed -i` on the sites-enabled symlink replaces it with a
+copy, and the next script that edits sites-available (deploy-academy.sh --setup) then edits a
+file nginx no longer reads. `apply-nginx.sh` always edits whatever the link resolves to.
+
+The course-detail pages `/winners/about/` and `/one/about/` are public in both variants (19 Sep:
+the gated snippet has its own ungated `^~` blocks for them).

@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
   // /content/*.json lives at the monorepo root (source of truth for course content); let Turbopack resolve it.
   turbopack: { root: path.join(__dirname, "..", "..") },
   outputFileTracingRoot: path.join(__dirname, "..", ".."),
+  // No "X-Powered-By: Next.js": it only tells a scanner which exploits to try.
+  poweredByHeader: false,
+  // Stops `next dev` from writing AGENTS.md / CLAUDE.md into this folder on every start.
+  agentRules: false,
   ...(basePath ? { basePath } : {}),
   // Under a basePath the image optimizer strips the prefix from src and then fails to find the
   // file internally; the only images are three tiny logos, so skip optimization entirely there.

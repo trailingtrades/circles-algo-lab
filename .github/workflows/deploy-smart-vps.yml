@@ -10,7 +10,8 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["apps/learn/**", "content/**", ".github/workflows/deploy-smart-vps.yml"]
+    # deploy-vps/ holds reference copies of box config (installed by hand), not app code.
+    paths: ["apps/learn/**", "content/**", ".github/workflows/deploy-smart-vps.yml", "!apps/learn/deploy-vps/**"]
 concurrency: { group: deploy-smart-vps, cancel-in-progress: false }
 permissions: { contents: write }
 jobs:
@@ -40,16 +41,47 @@ jobs:
           cp -r public .next/standalone/apps/learn/public
           tar -C .next/standalone -czf /tmp/smart-app.tgz .
       - name: Encrypt runtime env for the VPS
+        env:
+          # Required: an empty value fails the deploy (without them the app would boot keyless).
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          CERT_SIGNING_SECRET: ${{ secrets.CERT_SIGNING_SECRET }}
+          # Optional: each line is written only when its secret/variable is set, so an unset one stays unset in
+          # the app instead of becoming "" (an empty EMAIL_FROM= would override the code's default sender).
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM || vars.EMAIL_FROM }}
+          MASTER_ADMIN_EMAIL: ${{ secrets.MASTER_ADMIN_EMAIL }}
+          CERT_RENDER_MODE: ${{ secrets.CERT_RENDER_MODE || vars.CERT_RENDER_MODE }}
+          # Secret names may not start with GITHUB_, so the app's GITHUB_DISPATCH_TOKEN is saved as CERT_DISPATCH_TOKEN.
+          CERT_DISPATCH_TOKEN: ${{ secrets.CERT_DISPATCH_TOKEN }}
+          CERT_DISPATCH_REPO: ${{ github.repository }}
         run: |
           sudo apt-get install -y -qq age >/dev/null
           umask 077
-          cat > /tmp/learn-smart.env <<EOF
-          NEXT_PUBLIC_SUPABASE_URL=$NEXT_PUBLIC_SUPABASE_URL
-          NEXT_PUBLIC_SUPABASE_ANON_KEY=$NEXT_PUBLIC_SUPABASE_ANON_KEY
-          NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL
-          SUPABASE_SERVICE_ROLE_KEY=${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-          CERT_SIGNING_SECRET=${{ secrets.CERT_SIGNING_SECRET }}
-          EOF
+          put() { # KEY VALUE [required] -> one KEY=VALUE line on stdout. Values are never echoed.
+            local v; v=$(printf '%s' "$2" | tr -d '\r' | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')
+            if [ -z "$v" ]; then [ -z "$3" ] || { echo "::error::$1 is empty — add it under Settings → Secrets and variables → Actions" >&2; exit 1; }; return 0; fi
+            case "$v" in *$'\n'*) echo "::error::$1 spans several lines — re-save it as a single line" >&2; exit 1;; esac
+            printf '%s=%s\n' "$1" "$v"
+          }
+          # Optional values that are set but malformed are skipped with a warning rather than shipped.
+          M="${MASTER_ADMIN_EMAIL//[[:space:]]/}"
+          [ -z "$M" ] || [[ "$M" =~ ^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$ ]] || { echo "::warning::MASTER_ADMIN_EMAIL is not a plain email address — not written"; M=; }
+          case "$CERT_RENDER_MODE" in ""|local|dispatch) ;; *) echo "::warning::CERT_RENDER_MODE must be local or dispatch — not written"; CERT_RENDER_MODE=;; esac
+          case "$EMAIL_FROM" in ""|*@*) ;; *) echo "::warning::EMAIL_FROM has no address in it — not written"; EMAIL_FROM=;; esac
+          {
+            put NEXT_PUBLIC_SUPABASE_URL "$NEXT_PUBLIC_SUPABASE_URL" required
+            put NEXT_PUBLIC_SUPABASE_ANON_KEY "$NEXT_PUBLIC_SUPABASE_ANON_KEY" required
+            put NEXT_PUBLIC_SITE_URL "$NEXT_PUBLIC_SITE_URL" required
+            put SUPABASE_SERVICE_ROLE_KEY "$SUPABASE_SERVICE_ROLE_KEY" required
+            put CERT_SIGNING_SECRET "$CERT_SIGNING_SECRET" required
+            put RESEND_API_KEY "$RESEND_API_KEY"
+            put EMAIL_FROM "$EMAIL_FROM"
+            put MASTER_ADMIN_EMAIL "$M"
+            put CERT_RENDER_MODE "$CERT_RENDER_MODE"
+            put GITHUB_DISPATCH_TOKEN "$CERT_DISPATCH_TOKEN"
+            [ -z "$CERT_DISPATCH_TOKEN" ] || put GITHUB_REPO "$CERT_DISPATCH_REPO"
+          } > /tmp/learn-smart.env
+          echo "env.age carries: $(cut -d= -f1 /tmp/learn-smart.env | tr '\n' ' ')"
           age -e -r "$VPS_AGE_PUBKEY" -o /tmp/env.age /tmp/learn-smart.env
           rm /tmp/learn-smart.env
       - name: Publish to the smart-vps release

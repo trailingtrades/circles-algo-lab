@@ -6,8 +6,6 @@ import type { L } from "./lang";
 export type { Lang } from "./lang";
 
 export const T = {
-  welcome: { en: "Welcome back. Sign in to continue your course.", hi: "Wapas aane ka shukriya. Sign in karke apna course aage badhaiye.", dv: "फिर से स्वागत है। साइन इन करके अपना कोर्स आगे बढ़ाइए।" },
-  inviteHint: { en: "Need an invite link? Ask your mentor.", hi: "Invite link chahiye? Apne mentor se poochhiye.", dv: "इनवाइट लिंक चाहिए? अपने मेंटर से पूछिए।" },
   rankNote: { en: "This score is about your process, not your profit.", hi: "Ye score aapke process ka hai, profit ka nahi.", dv: "यह स्कोर आपके प्रोसेस का है, मुनाफ़े का नहीं।" },
   virtual: { en: "VIRTUAL — no real money", hi: "VIRTUAL — asli paisa nahi", dv: "वर्चुअल — असली पैसा नहीं" },
   emptyTitle: { en: "Nothing here yet", hi: "Abhi yahan kuch nahi hai", dv: "अभी यहाँ कुछ नहीं है" },

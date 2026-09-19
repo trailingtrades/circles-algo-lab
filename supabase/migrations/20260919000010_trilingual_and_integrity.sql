@@ -13,6 +13,9 @@ alter table weeks add column if not exists title_dv text;
 alter table sessions add column if not exists title_dv text;
 alter table quiz_questions add column if not exists stem_dv text;
 alter table quiz_questions add column if not exists explanation_dv text;
+-- exams.title has been English only; exams.json now carries the Hinglish and Hindi titles too.
+alter table exams add column if not exists title_hi text;
+alter table exams add column if not exists title_dv text;
 
 -- 3. Answer key: students may read quiz options, never correct_index or explanations before submitting.
 --    Re-assert the column-level grant (now including stem_dv).
@@ -47,8 +50,21 @@ update certificates c set learner_name = p.full_name from profiles p where p.id 
 do $$
 begin
   if exists (select 1 from certificates where status = 'issued' group by user_id, level_id having count(*) > 1) then
-    raise notice 'certificates_one_issued NOT created: duplicate issued certificates exist — revoke the extras, then re-run';
+    raise notice 'certificates_one_issued NOT created: duplicate issued certificates exist. Revoke the extras, then run: create unique index certificates_one_issued on certificates(user_id, level_id) where status = ''issued''';
   else
     create unique index if not exists certificates_one_issued on certificates(user_id, level_id) where status = 'issued';
+  end if;
+end $$;
+
+-- 6. Exams: one weekly exam per (level, week) and one final (week_id null) per level. The seed used to
+--    insert-if-missing, so marks or time limits changed in exams.json never reached the DB; with this key it
+--    upserts. Two partial indexes rather than NULLS NOT DISTINCT, so this works on any Postgres version.
+do $$
+begin
+  if exists (select 1 from exams group by level_id, week_id having count(*) > 1) then
+    raise notice 'exams_level_week / exams_level_final NOT created: two exam rows share a level+week. Merge them (the seed upserts on this key), then run: create unique index exams_level_week on exams(level_id, week_id) where week_id is not null; create unique index exams_level_final on exams(level_id) where week_id is null';
+  else
+    create unique index if not exists exams_level_week on exams(level_id, week_id) where week_id is not null;
+    create unique index if not exists exams_level_final on exams(level_id) where week_id is null;
   end if;
 end $$;

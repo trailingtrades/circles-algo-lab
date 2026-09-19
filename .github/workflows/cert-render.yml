@@ -1,12 +1,15 @@
 name: Render certificate PDF
-# Vercel's Node runtime cannot run WeasyPrint (needs Python + Pango/Cairo). The app inserts the certificate row and
-# fires a repository_dispatch; this job renders the PDF on Linux and uploads it to Supabase Storage.
-# Required repo secrets: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, CERT_SIGNING_SECRET, NEXT_PUBLIC_SITE_URL
+# The VPS app does not ship WeasyPrint (needs Python + Pango/Cairo). With CERT_RENDER_MODE=dispatch it inserts the
+# certificate row and fires a repository_dispatch (token: repo secret CERT_DISPATCH_TOKEN, written into the VPS env as
+# GITHUB_DISPATCH_TOKEN by deploy-smart-vps.yml); this job renders the PDF on Linux and uploads it to Supabase Storage.
+# Required repo secrets: SUPABASE_SERVICE_ROLE_KEY, CERT_SIGNING_SECRET.
 on:
   repository_dispatch:
     types: [render-certificate]
   workflow_dispatch:
     inputs: { certificate_id: { description: "certificates.id (uuid)", required: true } }
+permissions: { contents: read }
+concurrency: { group: "cert-render-${{ github.event.client_payload.certificate_id || github.event.inputs.certificate_id }}", cancel-in-progress: false }
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -17,9 +20,13 @@ jobs:
       - run: pip install -q weasyprint qrcode[pil] requests
       - name: Render + upload
         env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          # Public values, same as deploy-smart-vps.yml. The SUPABASE_URL / NEXT_PUBLIC_SITE_URL secrets were
+          # mis-pasted or pointed at retired hosts, and SITE_URL goes into the QR verify link printed on the PDF.
+          SUPABASE_URL: https://hcajzeykcdcxqidgmzep.supabase.co
+          SITE_URL: https://learn.optionlab.co.in/smart
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           CERT_SIGNING_SECRET: ${{ secrets.CERT_SIGNING_SECRET }}
-          SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
           CERT_ID: ${{ github.event.client_payload.certificate_id || github.event.inputs.certificate_id }}
-        run: python3 certificates/render_from_db.py "$CERT_ID"
+        run: |
+          [[ "$CERT_ID" =~ ^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$ ]] || { echo "::error::certificate_id must be a uuid"; exit 1; }
+          python3 certificates/render_from_db.py "$CERT_ID"

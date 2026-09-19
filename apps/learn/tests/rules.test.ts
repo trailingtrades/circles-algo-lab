@@ -1,4 +1,4 @@
-import { quizPoints, examPoints, practicePoints, computeScore, nextActions } from "../src/lib/scoring/rules";
+import { quizPoints, examPoints, practicePoints, computeScore, nextActions, examBand, bandLabel } from "../src/lib/scoring/rules";
 let pass = 0, fail = 0; const ok = (n: string, c: boolean, d = "") => { if (c) pass++; else fail++; console.log(`${c ? "  ok  " : "  FAIL"} ${n} ${d}`); };
 ok("quiz 2/3 -> 6.67", quizPoints(2, 3) === 6.67);
 ok("weekly exam full marks -> 50", examPoints(20, 20, 1, false) === 50);
@@ -12,4 +12,11 @@ ok("TS mirror caps attendance at 200 and applies override", c.attendance === 200
 const na = nextActions({ components: c, openSession: 3, sessionsMissingAttendance: [2], pendingExam: { key: "foundation-w1", title: "Foundation Week 1 exam", isFinal: false }, fridayDue: true, portfolioRowsComplete: 1, level: "foundation" });
 ok("next actions: 3 items, exam first (50 pts)", na.length === 3 && na[0].points === 50 && na[0].href === "/learn/exam/foundation-w1");
 ok("next actions Hinglish has no Devanagari", na.every((a) => !/[ऀ-ॿ]/.test(a.labelHi)));
+ok("next actions carry a हिंदी label in Devanagari", na.every((a) => /[ऀ-ॿ]/.test(a.labelDv) && a.label.length > 0));
+ok("leaderboard bands read in all three languages (position only)", bandLabel("Keep going", "en") === "Keep going" && bandLabel("Keep going", "hi") === "Lage rahiye" && /[ऀ-ॿ]/.test(bandLabel("Keep going", "dv")) && bandLabel("Top 25%", "dv").includes("25%") && bandLabel("unknown", "dv") === "unknown");
+// Exam band comes from the exam's own marks (Tier 1: pass 18/30, distinction 26/30), not the old 30/36 constant.
+const T1 = { total_marks: 30, pass_marks: 18, distinction_marks: 26 };
+ok("Tier 1 exam: 25/30 is pass (the old 30/36 rule called it distinction), 26/30 distinction", examBand(25, 30, T1) === "pass" && examBand(26, 30, T1) === "distinction");
+ok("Tier 1 exam: 18/30 pass, 17/30 fail", examBand(18, 30, T1) === "pass" && examBand(17, 30, T1) === "fail");
+ok("exam band scales when the bank's max differs from total_marks", examBand(52, 60, T1) === "distinction" && examBand(51, 60, T1) === "pass");
 console.log(`\n${pass} passed, ${fail} failed`); process.exit(fail ? 1 : 0);

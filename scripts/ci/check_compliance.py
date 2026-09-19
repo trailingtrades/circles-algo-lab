@@ -7,7 +7,7 @@ whitelisted; quiz options flagged "distractor": true are whitelisted, and so are
 Devanagari slots: JSON keys "dv" / "*_dv", and TS/TSX lines that carry a dv: value or a t3(...) call.
 Usage: python3 scripts/ci/check_compliance.py <paths...>   Exit 1 on any failure.
 """
-import re, sys, os, json
+import re, sys, os, json, unicodedata
 HERE = os.path.dirname(__file__)
 TIER1 = open(os.path.join(HERE, "canonical/tier1.txt"), encoding="utf-8").read()
 CRED = open(os.path.join(HERE, "canonical/credential.txt"), encoding="utf-8").read()
@@ -15,9 +15,22 @@ TIER2 = "⚠️ Investment in securities market is subject to market risks. SEBI
 TIER3 = "— 5 Circles · SEBI RA INH000020004 · Investments subject to market risk"
 WHITELIST = [TIER1, TIER2, TIER3, CRED]
 
-BANNED = [r"guarante", r"assured?\s+return", r"risk[- ]free", r"sure[- ]?shot", r"100\s*%\s*accura", r"pakka\s+(profit|munafa)", r"munafa\s+pakka", r"loss\s+nahi\s+hoga", r"no[- ]loss", r"can'?t\s+lose", r"never\s+wrong", r"kabhi\s+galat\s+nahi", r"loss\s+hoga\s+hi\s+nahi", r"double\s+(your|apna)?\s*(money|paisa)", r"pakka\s+multibagger",
-          r"zero[- ]risk", r"fixed\s+return", r"गारंटी", r"पक्का\s*(मुनाफ़ा|मुनाफा|प्रॉफ़िट|प्रॉफिट|रिटर्न)", r"(मुनाफ़ा|मुनाफा|रिटर्न)\s*पक्का",
-          r"निश्चित\s*(मुनाफ़ा|मुनाफा|रिटर्न)", r"जोखिम[\s-]*मुक्त", r"सुनिश्चित\s*रिटर्न", r"नो[\s-]*लॉस"]
+# Mirrors src/lib/compliance/scan.ts (BANNED + BANNED_DV + RATES): keep the two lists in step.
+BANNED = [r"guarante", r"assured?\s+(returns?|profits?|income)", r"risk[- ]free", r"sure[- ]?shot", r"100\s*%\s*accura", r"pakka\s+(profit|munafa|return)", r"(profit|munafa|return)\s+pakka", r"loss\s+nahi\s+hoga", r"no[- ]loss", r"can'?t\s+lose", r"never\s+wrong", r"kabhi\s+galat\s+nahi", r"loss\s+hoga\s+hi\s+nahi", r"double\s+(your|apna)?\s*(money|paisa)", r"pakka\s+multibagger",
+          r"zero[- ]risk", r"fixed\s+returns?",
+          # हिंदी (text is NFC-normalised first, so the nukta is always a separate ़ and is optional here)
+          r"गारंटी",
+          r"पक्का\s*(मुनाफ़?ा|प्रॉफ़?िट|रिटर्न|कमाई)",
+          r"(मुनाफ़?ा|प्रॉफ़?िट|रिटर्न|कमाई)\s*पक्का",
+          r"(निश्चित|सुनिश्चित|तय|फ़?िक्स्ड)\s*(मुनाफ़?ा|रिटर्न|कमाई)(?!\s*(का|के|की)\s*वाद)",
+          r"जोखिम[\s-]*(मुक्त|रहित)",
+          r"(ज़?ीरो|शून्य)\s*(रिस्क|जोखिम)",
+          r"रिस्क[\s-]*फ़?्री",
+          r"नो[\s-]*लॉस",
+          r"(नुकसान|लॉस)\s*(कभी\s*)?नहीं\s*होगा",
+          r"पैसा\s*डबल"]
+# Reference rates are never printed (they go stale and read as advice). Checked even inside scam examples.
+RATES = [r"(repo|रेपो)\s*(rate|रेट)[^.\n]{0,20}?\d+(\.\d+)?\s*%", r"\bSTT\b[^.\n]{0,20}?\d+(\.\d+)?\s*%", r"RBI\s+reference\s+rate[^.\n]{0,25}?\d"]
 DEVANAGARI = re.compile(r"[ऀ-ॿ]")
 EMOJI = re.compile(r"[\U0001F000-\U0001FAFF☀-➿⬀-⯿️]")
 OLD_STAT = [r"\b93\s*%", r"1\.8\s*lakh\s*cr"]
@@ -30,7 +43,7 @@ def strip_whitelisted(s):
 
 def check_file(path):
   fails = []
-  raw = open(path, encoding="utf-8", errors="replace").read()
+  raw = unicodedata.normalize("NFC", open(path, encoding="utf-8", errors="replace").read())
   s = strip_whitelisted(raw)
   # 1. banned phrases (context-classed: distractors in JSON skipped)
   if path.endswith(".json"):
@@ -46,6 +59,8 @@ def check_file(path):
         elif isinstance(o, str):
           for b in BANNED:
             if re.search(b, o, re.I): fails.append(f"banned /{b}/: {o[:80]}")
+          for b in RATES:
+            if re.search(b, o, re.I): fails.append(f"reference rate printed /{b}/: {o[:80]}")
           if DEVANAGARI.search(o) and not (key == "dv" or key.endswith("_dv")):
             fails.append(f"Devanagari outside a dv slot (key '{key}'): {o[:60]!r}")
       walk(json.loads(raw))
@@ -53,8 +68,11 @@ def check_file(path):
   else:
     for i, line in enumerate(s.split("\n"), 1):
       if "check_compliance" in path or "canonical" in path: break
+      if re.search(r"BANNED|banned|distractor|prohibited|RATES", line): continue
       for b in BANNED:
-        if re.search(b, line, re.I) and not re.search(r"BANNED|banned|distractor|prohibited", line): fails.append(f"line {i} banned /{b}/: {line.strip()[:80]}")
+        if re.search(b, line, re.I): fails.append(f"line {i} banned /{b}/: {line.strip()[:80]}")
+      for b in RATES:
+        if re.search(b, line, re.I): fails.append(f"line {i} reference rate printed: {line.strip()[:80]}")
   # 2. Devanagari: JSON is checked per key above; in source files only on lines that fill a dv slot
   if not path.endswith(".json"):
     for i, line in enumerate(raw.split("\n"), 1):

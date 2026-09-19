@@ -105,9 +105,19 @@ Rule: a task on one product must not edit the other's files. Check `git diff --s
 
 ## AITC course pack (wired 16 Sep 2026)
 - Drive folder `1dtZn1iqD59sS_ujpa2NJ6if8glvhA0kk` (owner rsaraogi746@gmail.com, anyone-with-link) = full v1 pack: per tier 4 weekly decks, 4 handouts, 3 weekly exams + final, workbook; plus Foundation mock portfolio (4 Sep copy). All 37 files linked in `scripts/gen_content.py` resources (regenerate with `python3 scripts/gen_content.py`).
-- MISMATCH: v1 packs are 4 weeks/tier; Curriculum v2 is 3/10/20 weeks. Foundation Week-4 deck/handout parked at level scope pending a re-cut. Tier 2/3 week numbers are the v1 pack's, not v2's.
+- MISMATCH: v1 packs are 4 weeks/tier; Curriculum v2 is 3/10/20 weeks. Tier 2/3 week numbers are the v1 pack's, not v2's.
+- 19 Sep: the printed exam papers (all tiers) and the Question Bank link were REMOVED from resources (they carry answers; students sit exams in the app), and so were the Foundation v1 Week-4 deck/handout. The Drive files themselves are still anyone-with-link: restrict them in Drive (git history still has the old links).
 - Links depend on the folder staying anyone-with-link (or student-shared). Duplicates in Drive: Foundation W1 deck ×3 (v1_1 newest, linked), Candlestick_Basics ×6, Chart_Patterns ×2, Curriculum_Index ×2 — clean up.
 - Still pending: Tier 1 Rule Card/Journal/Sizing templates, Tier 2 capstone template, Tier 3 starter repo. Handoff doc in folder: 5C_AITC_HANDOFF_02Sep2026.md.
+
+## 19 Sep 2026 — eleven-agent pass + integration (worktree `claude/5c-learn-memory-project-9f5bf9`, NOT committed/deployed)
+- Go-live workflow `golive-setup.yml`: steps `check | migrate | seed | admin | recover | all`; the old `link` and `temp-password` steps (they printed credentials in public logs) are gone. `recover` only asks Supabase to email the admin a reset link. `until=<14-digit prefix>` stops `migrate` after that migration.
+- Migration order: apply 0010 (`until=20260919000010`), deploy the app, THEN 0011 (RLS hardening + one-quiz-attempt index + Consistency board fix + exam rows of quiz_questions no longer learner-readable).
+- Secrets still MISSING in GitHub (checked 19 Sep): MASTER_ADMIN_EMAIL (until set, admin/master.ts keeps its literal owner-email fallback; delete it once the secret is live), RESEND_API_KEY + EMAIL_FROM (invite/certificate emails skipped), CERT_RENDER_MODE=dispatch + CERT_DISPATCH_TOKEN (GitHub forbids GITHUB_* secret names; the deploy writes it to the app as GITHUB_DISPATCH_TOKEN) — without them certificate PDFs never render on the VPS.
+- nginx change set: `apps/learn/deploy-vps/APPLY-2026-09-19.md` + `apply-nginx.sh` (backup + auto-rollback). Adds HSTS/CSP/Permissions-Policy on static paths, public /winners/about/ /one/about/, branded 404 (the Academy deploy owns /404.html), /admin.html closed, sign-in POST rate limit (429 body `rate_limited`, the forms show "Too many attempts"), gate reason `?stage_denied=no_access|not_started|expired` on Home. NOT applied yet — record the `/root/nginx-backup-<timestamp>` folder here once it is.
+- New app routes: `/smart/api/auth/signout` (WINNERS and O.N.E "Sign out" links point here — deploy S.M.A.R.T first), `/smart/api/auth/blocked` (ends a suspended/inactive session). `/api/gate/<stage>` also returns an opaque `uid`.
+- Naming: the app says Stage/Week/Day, never Tier. Level titles are now "Stage 1 · Basic", "Level 2 · Advanced", "Level 3 · Expert"; exams "Week N Quiz Game" / "Stage 1 Final exam". Seeding pushes these into the DB, and certificate PDFs print levels.title_en.
+- Content: Stage 1 builds from `scripts/content_v3/smart/` (21 trilingual days). Until exam_w1..3.json + exam_final.json exist there, `gen_content.py` keeps the v2 weekend banks and a final DRAWN FROM THEM (so the final's answers are known after the weekly quizzes). `content/` must be regenerated and committed with the code (CI checks it).
 
 ## Known open items
 Q8 domain; Compliance Officer @5circles.co email; second signatory; quiz banks for sessions 6–60; 11 exam papers; videos; deck/handout uploads.

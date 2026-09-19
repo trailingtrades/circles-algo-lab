@@ -275,21 +275,21 @@ function Story({ v, lang }: { v: StoryV; lang: Lang }) {
   );
 }
 
-/** Draws any teaching visual. Unknown or malformed specs render nothing rather than breaking the lesson. */
+/** Draws any teaching visual. Unknown or malformed specs render nothing rather than breaking the lesson: each
+ *  kind is drawn only when the fields it needs are there. (A try/catch here never caught anything: React
+ *  renders the returned element later, outside this function.) */
 export function Visual({ v, lang }: { v: V | null | undefined; lang: Lang }) {
   if (!v || typeof v !== "object") return null;
-  try {
-    switch (v.kind) {
-      case "flow": return v.nodes?.length ? <Flow v={v} lang={lang} /> : null;
-      case "steps": return v.items?.length ? <Steps v={v} lang={lang} /> : null;
-      case "compare": return v.cols?.length ? <Compare v={v} lang={lang} /> : null;
-      case "calc": return v.rows && v.result ? <Calc v={v} lang={lang} /> : null;
-      case "bars": return v.items?.length ? <Bars v={v} lang={lang} /> : null;
-      case "line": return v.series?.length && v.series.every((s) => s.points?.length) ? <Line v={v} lang={lang} /> : null;
-      case "candles": return v.bars?.length ? <Candles v={v} lang={lang} /> : null;
-      case "mindmap": return v.branches?.length ? <Mindmap v={v} lang={lang} /> : null;
-      case "story": return v.panels?.length ? <Story v={v} lang={lang} /> : null;
-      default: return null;
-    }
-  } catch { return null; }
+  switch (v.kind) {
+    case "flow": return v.nodes?.length ? <Flow v={v} lang={lang} /> : null;
+    case "steps": return v.items?.length ? <Steps v={v} lang={lang} /> : null;
+    case "compare": return v.cols?.length ? <Compare v={v} lang={lang} /> : null;
+    case "calc": return v.rows && v.result ? <Calc v={v} lang={lang} /> : null;
+    case "bars": return v.items?.length ? <Bars v={v} lang={lang} /> : null;
+    case "line": return v.series?.length && v.series.every((s) => s.points?.length) ? <Line v={v} lang={lang} /> : null;
+    case "candles": return v.bars?.length ? <Candles v={v} lang={lang} /> : null;
+    case "mindmap": return v.branches?.length ? <Mindmap v={v} lang={lang} /> : null;
+    case "story": return v.panels?.length ? <Story v={v} lang={lang} /> : null;
+    default: return null;
+  }
 }

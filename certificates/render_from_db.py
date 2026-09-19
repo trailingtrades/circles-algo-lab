@@ -8,12 +8,23 @@ from build_cert import render  # noqa: E402
 url, key, site = os.environ["SUPABASE_URL"].rstrip("/"), os.environ["SUPABASE_SERVICE_ROLE_KEY"], os.environ.get("SITE_URL", "").rstrip("/")
 H = {"apikey": key, "Authorization": f"Bearer {key}"}
 cid = sys.argv[1]
-r = requests.get(f"{url}/rest/v1/certificates", headers=H, params={"id": f"eq.{cid}", "select": "id,cert_no,user_id,level_id,issued_on,band,verify_hash,cohort_id,profiles(full_name),levels(title_en),cohorts(name)"}); r.raise_for_status()
+COLS = "id,cert_no,user_id,level_id,issued_on,band,verify_hash,cohort_id,profiles(full_name),levels(title_en),cohorts(name)"
+# learner_name (migration 0010) is the name frozen at issue; the verify page shows it, so the PDF must too.
+r = requests.get(f"{url}/rest/v1/certificates", headers=H, params={"id": f"eq.{cid}", "select": COLS + ",learner_name"})
+if r.status_code == 400: r = requests.get(f"{url}/rest/v1/certificates", headers=H, params={"id": f"eq.{cid}", "select": COLS})  # before 0010
+r.raise_for_status()
 rows = r.json(); assert rows, f"certificate {cid} not found"; c = rows[0]
+name = (c.get("learner_name") or "").strip() or c["profiles"]["full_name"]
+# Sessions in the certificate's level (Tier 1 has 21), the same count the app's own renderer prints.
+w = requests.get(f"{url}/rest/v1/weeks", headers=H, params={"level_id": f"eq.{c['level_id']}", "select": "id"}); w.raise_for_status()
+week_ids = [x["id"] for x in w.json()]
+s = requests.get(f"{url}/rest/v1/sessions", headers=H, params={"week_id": f"in.({','.join(week_ids)})", "select": "id"}) if week_ids else None
+if s is not None: s.raise_for_status()
+sessions = len(s.json()) if s is not None else 0
 # Re-derive the HMAC as a tamper check before rendering anything
 expected = hmac.new(os.environ["CERT_SIGNING_SECRET"].encode(), f"{c['cert_no']}|{c['user_id']}|{c['level_id']}|{c['issued_on']}".encode(), hashlib.sha256).hexdigest()
 assert hmac.compare_digest(expected, c["verify_hash"]), "verify_hash mismatch — refusing to render"
-data = {"learner_name": c["profiles"]["full_name"], "level_title": c["levels"]["title_en"], "cohort_name": (c.get("cohorts") or {}).get("name", ""), "session_count": 20,
+data = {"learner_name": name, "level_title": c["levels"]["title_en"], "cohort_name": (c.get("cohorts") or {}).get("name", ""), "session_count": sessions or 21,
         "band": c["band"], "cert_no": c["cert_no"], "issued_on": c["issued_on"], "verify_url": f"{site}/verify/{c['cert_no']}?k={expected[:12]}"}
 pdf = render(data)
 path = f"{c['user_id']}/{c['cert_no']}.pdf"

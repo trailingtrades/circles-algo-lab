@@ -4,7 +4,8 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 URL="${DATABASE_URL:-postgresql://postgres@localhost:5499/learn_test}"
 BASE="${URL%/*}/postgres"; DB="${URL##*/}"
-psql "$BASE" -qc "drop database if exists $DB" -c "create database $DB"
+# Options before the URL: Windows psql stops reading options at the first plain argument (Linux getopt does not).
+psql -q -c "drop database if exists $DB" -c "create database $DB" "$BASE"
 for f in "$ROOT"/supabase/tests/00_local_auth_shim.sql "$ROOT"/supabase/migrations/*.sql; do
-  echo "== $(basename "$f")"; psql "$URL" -v ON_ERROR_STOP=1 -q -f "$f"
+  echo "== $(basename "$f")"; psql -v ON_ERROR_STOP=1 -q -f "$f" "$URL"
 done

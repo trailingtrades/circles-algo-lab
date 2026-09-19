@@ -16,4 +16,7 @@ ok("grade D artefact fails", !evaluate({ ...base, artefactsGraded: [{ grade: "D"
 ok("2 Friday reviews fails", !evaluate({ ...base, fridayReviews: 2 }).ok);
 ok("suspended fails and band null", !evaluate({ ...base, suspended: true }).ok && evaluate({ ...base, suspended: true }).band === null);
 ok("checklist has 6 items with Hinglish labels, no Devanagari", evaluate(base).items.length === 6 && evaluate(base).items.every((x) => !/[ऀ-ॿ]/.test(x.labelHi)));
+ok("checklist reads in three languages: en, Hinglish (Roman), हिंदी (Devanagari)", evaluate(base).items.every((x) => !!x.text.en && !/[ऀ-ॿ]/.test(x.text.en) && !!x.text.hi && !/[ऀ-ॿ]/.test(x.text.hi) && /[ऀ-ॿ]/.test(x.text.dv) && x.labelDv === x.text.dv));
+ok("distinction uses the final exam's own marks: 25/30 pass, 26/30 distinction (Tier 1)", evaluate({ ...base, finalPct: 25 / 30, distinctionPct: 26 / 30 }).band === "pass" && evaluate({ ...base, finalPct: 26 / 30, distinctionPct: 26 / 30 }).band === "distinction");
+ok("a capped retake score sets the band, the raw best still meets the pass rule", (() => { const r = evaluate({ ...base, finalPct: 0.9, bandPct: 0.72, distinctionPct: 26 / 30 }); return r.ok && r.band === "pass"; })());
 console.log(`\n${pass} passed, ${fail} failed`); process.exit(fail ? 1 : 0);

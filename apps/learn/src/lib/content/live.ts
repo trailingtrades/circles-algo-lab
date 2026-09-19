@@ -33,10 +33,11 @@ export async function liveQuizPublic(n: number): Promise<QuizQuestionPublic[]> {
   const sb = await createClient();
   const { data: s } = await sb.from("sessions").select("id").eq("number", n).maybeSingle(); if (!s) return [];
   // Same order as liveQuizKey: position i on screen is graded against key row i.
-  let { data, error } = await sb.from("quiz_questions").select(`${PUB_COLS},stem_dv`).eq("session_id", s.id).order("sequence").order("id");
+  // Typed as the narrower row so the retry without stem_dv (pre-0010 database) can reuse the same variables.
+  let { data, error }: { data: PubRow[] | null; error: unknown } = await sb.from("quiz_questions").select(`${PUB_COLS},stem_dv`).eq("session_id", s.id).order("sequence").order("id");
   if (error) ({ data, error } = await sb.from("quiz_questions").select(PUB_COLS).eq("session_id", s.id).order("sequence").order("id"));
   if (!data?.length) return [];
-  return (data as PubRow[]).map((q, idx) => ({ idx, stem_en: q.stem_en, stem_hi: q.stem_hi, stem_dv: q.stem_dv ?? null, options: ((q.options as QuizOption[]) ?? []).map(publicOption), marks: q.marks }));
+  return data.map((q, idx) => ({ idx, stem_en: q.stem_en, stem_hi: q.stem_hi, stem_dv: q.stem_dv ?? null, options: ((q.options as QuizOption[]) ?? []).map(publicOption), marks: q.marks }));
 }
 
 /** Server-only answer key from the DB (service role: authenticated users cannot read correct_index). */
@@ -45,8 +46,9 @@ export async function liveQuizKey(n: number): Promise<AnswerKey[]> {
   const admin = createAdminClient();
   const { data: s } = await admin.from("sessions").select("id").eq("number", n).maybeSingle(); if (!s) return quizAnswerKey(n);
   const KEY_COLS = "correct_index,explanation_en,explanation_hi,marks,sequence";
-  let { data, error } = await admin.from("quiz_questions").select(`${KEY_COLS},explanation_dv`).eq("session_id", s.id).order("sequence").order("id");
+  type KeyRow = { correct_index: number; explanation_en: string; explanation_hi: string; explanation_dv?: string | null; marks: number };
+  let { data, error }: { data: KeyRow[] | null; error: unknown } = await admin.from("quiz_questions").select(`${KEY_COLS},explanation_dv`).eq("session_id", s.id).order("sequence").order("id");
   if (error) ({ data, error } = await admin.from("quiz_questions").select(KEY_COLS).eq("session_id", s.id).order("sequence").order("id"));
-  return ((data ?? []) as { correct_index: number; explanation_en: string; explanation_hi: string; explanation_dv?: string | null; marks: number }[])
+  return (data ?? [])
     .map((q) => ({ correct_index: q.correct_index, explanation_en: q.explanation_en, explanation_hi: q.explanation_hi, explanation_dv: q.explanation_dv ?? "", marks: q.marks }));
 }

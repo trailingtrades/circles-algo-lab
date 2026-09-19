@@ -1,52 +1,90 @@
 name: Go-live setup (Supabase)
-# One-shot, idempotent production setup. Run from Actions → "Go-live setup (Supabase)" → Run workflow.
-#   1. Applies supabase/migrations/*.sql in order (never the local auth shim).
-#   2. Seeds course content from /content (npm run db:seed). Never the demo seed.
-#   3. Creates the first admin in Supabase Auth (if missing) and sets profiles.role='admin', status='active'.
-#   4. Prints a summary. Re-running is safe: migrations use IF NOT EXISTS, seed upserts, admin step is skipped if present.
-# Required repo secrets: SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, SUPABASE_DB_URL (Postgres connection string from
-# Supabase → Project Settings → Database, "Session" pooler or direct), FIRST_ADMIN_EMAIL.
-# Optional: FIRST_ADMIN_NAME (default "Rahul Sarawgi").
+# Idempotent production setup. Run from Actions → "Go-live setup (Supabase)" → Run workflow → pick a step.
+#   check    row counts + RLS coverage, read-only (also runs after migrate, seed, admin and all).
+#   migrate  applies supabase/migrations/*.sql not yet recorded in public._migrations (never the local auth shim);
+#            the optional `until` input stops after that 14-digit prefix, so one migration can wait for a deploy.
+#   seed     upserts course content from /content (npm run db:seed). Never the demo seed.
+#   admin    creates the first admin in Supabase Auth if missing, sets profiles.role='admin', status='active',
+#            then asks Supabase to email that account a password-reset link.
+#   recover  only asks Supabase to email the admin a password-reset link (locked out, or rotating the password).
+#   all      migrate + seed + admin + check.
+# The repo is PUBLIC, so these logs are too: nothing here prints a password, token, link or the admin email
+# (it is masked). The old `link` and `temp-password` steps printed credentials and were removed on 19 Sep 2026.
+# Password resets reach the admin by email only; the link works in any browser once Supabase's "Reset password"
+# email template points at {{ .SiteURL }}/api/auth/callback?token_hash={{ .TokenHash }}&type=recovery&next=/learn/reset/confirm
+# Required repo secrets: SUPABASE_SERVICE_ROLE_KEY, SUPABASE_DB_URL (Postgres connection string from Supabase →
+# Project Settings → Database, "Session" pooler or direct). admin/recover/all also need FIRST_ADMIN_EMAIL (just the
+# address, nothing else). Optional: FIRST_ADMIN_NAME (default "Rahul Sarawgi").
 on:
   workflow_dispatch:
     inputs:
       step:
-        description: "all | migrate | seed | admin | check | link (one-time set-password link) | temp-password (set and print a temporary admin password)"
-        required: true
-        default: "all"
+        description: "What to run (check is read-only)"
+        type: choice
+        options: [check, migrate, seed, admin, recover, all]
+        default: check
+      until:
+        description: "migrate only: stop after this migration's 14-digit prefix (e.g. 20260919000010). Empty = apply all."
+        required: false
+        default: ""
+permissions: { contents: read }
 jobs:
   setup:
     runs-on: ubuntu-latest
-    # Reads each value from Repository secrets, then the "production" Environment secrets, then Variables —
-    # whichever place it was saved in.
+    # Reads each value from Repository secrets, then the "production" Environment secrets — whichever place it was
+    # saved in. The admin email is read from secrets only: variables are printed unmasked in public logs.
     environment: production
     env:
       DATABASE_URL: ${{ secrets.SUPABASE_DB_URL || vars.SUPABASE_DB_URL }}
       SUPABASE_URL: ${{ secrets.SUPABASE_URL || vars.SUPABASE_URL }}
       SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || vars.SUPABASE_SERVICE_ROLE_KEY }}
-      FIRST_ADMIN_EMAIL: ${{ secrets.FIRST_ADMIN_EMAIL || vars.FIRST_ADMIN_EMAIL || 'trailingtrades@gmail.com' }}
+      FIRST_ADMIN_EMAIL: ${{ secrets.FIRST_ADMIN_EMAIL }}
       FIRST_ADMIN_NAME: ${{ secrets.FIRST_ADMIN_NAME || vars.FIRST_ADMIN_NAME || 'Rahul Sarawgi' }}
       STEP: ${{ github.event.inputs.step }}
-      SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL_LIVE || 'https://learn.optionlab.co.in/smart' }}
+      UNTIL: ${{ github.event.inputs.until }}
+      SITE_URL: https://learn.optionlab.co.in/smart
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
+        if: env.STEP == 'seed' || env.STEP == 'all'
         with: { node-version: 22, cache: npm, cache-dependency-path: apps/learn/package-lock.json }
       - run: sudo apt-get install -y -q postgresql-client >/dev/null
+        if: env.STEP != 'recover'
       - name: Preflight
         run: |
-          for v in DATABASE_URL SUPABASE_URL SUPABASE_SERVICE_ROLE_KEY FIRST_ADMIN_EMAIL; do
+          case "$STEP" in check|migrate|seed|admin|recover|all) ;; *) echo "::error::unknown step '$STEP'"; exit 1;; esac
+          [[ -z "$UNTIL" || "$UNTIL" =~ ^[0-9]{14}$ ]] || { echo "::error::until must be empty or a 14-digit migration prefix like 20260919000010"; exit 1; }
+          need="SUPABASE_SERVICE_ROLE_KEY"; [ "$STEP" = recover ] || need="DATABASE_URL $need"
+          for v in $need; do
             [ -n "${!v}" ] || { echo "::error::$v is empty. Add it at Settings → Secrets and variables → Actions → Repository secrets (tab 'Secrets', not 'Variables'; not Dependabot/Codespaces)."; missing=1; }
           done
           [ -z "$missing" ] || exit 1
-          case "$DATABASE_URL" in *supabase.co*|*supabase.com*|*pooler.supabase*) ;; *) echo "::error::SUPABASE_DB_URL does not look like a Supabase connection string"; exit 1;; esac
-          psql "$DATABASE_URL" -qtc "select 'db ok: ' || current_database() || ' ' || version()"
+          # Project URL: derive from the DB connection string's project ref (postgres.<ref>@ or db.<ref>.supabase.co);
+          # fall back to the SUPABASE_URL secret. Public either way (it ships to every browser).
+          REF=$(echo "$DATABASE_URL" | grep -oE 'postgres\.[a-z0-9]{20}|db\.[a-z0-9]{20}\.supabase' | head -1 | sed -E 's/^(postgres|db)\.//; s/\.supabase$//' || true)
+          if [ -n "$REF" ]; then U="https://$REF.supabase.co"; else U="$(echo "$SUPABASE_URL" | tr -d '[:space:]' | sed 's#/*$##')"; fi
+          case "$U" in https://*.supabase.co) echo "SUPABASE_URL=$U" >> "$GITHUB_ENV"; echo "project url: $U";; *) echo "::error::could not determine the Supabase project URL (set SUPABASE_DB_URL, or SUPABASE_URL to https://<ref>.supabase.co)"; exit 1;; esac
+          if [ "$STEP" = admin ] || [ "$STEP" = recover ] || [ "$STEP" = all ]; then
+            # The last token that is an email, so a pasted "FIRST_ADMIN_EMAIL=me@x.com" / "NAME value" line still works.
+            # No built-in fallback address: a wrong secret stops here instead of acting on someone else's account.
+            E="$(echo "$FIRST_ADMIN_EMAIL" | tr -s '[:space:]=:' '\n' | sed 's/^FIRST_ADMIN_EMAIL//' | grep -E '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' | tail -1 | tr 'A-Z' 'a-z' || true)"
+            [ -n "$E" ] || { echo "::error::FIRST_ADMIN_EMAIL is missing or is not a plain email address. Re-save the repository secret with only the address."; exit 1; }
+            echo "::add-mask::$E"
+            echo "ADMIN_EMAIL=$E" >> "$GITHUB_ENV"
+            echo "admin email: set (masked)"
+          fi
+          if [ "$STEP" != recover ]; then
+            case "$DATABASE_URL" in *supabase.co*|*supabase.com*|*pooler.supabase*) ;; *) echo "::error::SUPABASE_DB_URL does not look like a Supabase connection string"; exit 1;; esac
+            psql "$DATABASE_URL" -qtc "select 'db ok: ' || current_database() || ' ' || version()"
+          fi
       - name: Migrate
         if: env.STEP == 'all' || env.STEP == 'migrate'
         run: |
           psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -qc "create table if not exists public._migrations (name text primary key, applied_at timestamptz not null default now())"
           for f in supabase/migrations/*.sql; do
             n=$(basename "$f")
+            # `until` lets a migration that the live code is not ready for wait for the deploy (e.g. 0011 after 0010).
+            if [ -n "$UNTIL" ] && [[ "${n:0:14}" > "$UNTIL" ]]; then echo "== $n (after until=$UNTIL, left for a later run)"; continue; fi
             if [ "$(psql "$DATABASE_URL" -qtAc "select 1 from public._migrations where name='$n'")" = "1" ]; then echo "== $n (already applied, skipped)"; continue; fi
             echo "== $n"
             psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -q -f "$f" || { echo "::error::migration $n failed; see log"; exit 1; }
@@ -60,76 +98,47 @@ jobs:
         if: env.STEP == 'all' || env.STEP == 'admin'
         run: |
           set -e
-          # Project URL: derive from the DB connection string's project ref (postgres.<ref>@ or db.<ref>.supabase.co); fall back to the secret.
-          # Admin email: use the secret only if it looks like an email; otherwise the owner's address.
-          # Take the last whitespace-separated token that is an email (a pasted "NAME value" line still yields the value).
-          E="$(echo "$FIRST_ADMIN_EMAIL" | tr -s '[:space:]' '\n' | grep -E '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' | tail -1 | tr 'A-Z' 'a-z')"
-          if [ -n "$E" ]; then FIRST_ADMIN_EMAIL="$E"; else echo "::warning::FIRST_ADMIN_EMAIL secret is not a valid email; using trailingtrades@gmail.com"; FIRST_ADMIN_EMAIL="trailingtrades@gmail.com"; fi
-          export FIRST_ADMIN_EMAIL
-          REF=$(echo "$DATABASE_URL" | grep -oE 'postgres\.[a-z0-9]{20}|db\.[a-z0-9]{20}\.supabase' | head -1 | sed -E 's/^(postgres|db)\.//; s/\.supabase$//')
-          if [ -n "$REF" ]; then SUPABASE_URL="https://$REF.supabase.co"; else SUPABASE_URL="$(echo "$SUPABASE_URL" | tr -d '[:space:]' | sed 's#/*$##')"; fi
-          case "$SUPABASE_URL" in https://*.supabase.co) ;; *) echo "::error::could not determine project URL"; exit 1;; esac
-          echo "project url: $SUPABASE_URL"
           KEY="$(echo "$SUPABASE_SERVICE_ROLE_KEY" | tr -d '[:space:]')"
           H=(-H "apikey: $KEY" -H "Authorization: Bearer $KEY" -H "Content-Type: application/json")
           api() { # method path [body] -> prints body, fails with status+body on non-2xx
             local out code; out=$(curl -s -w '\n%{http_code}' "${H[@]}" -X "$1" "$SUPABASE_URL$2" ${3:+-d "$3"}); code=${out##*$'\n'}; out=${out%$'\n'*}
-            case "$code" in 2*) printf '%s' "$out";; *) echo "::error::Supabase Auth API $1 $2 -> HTTP $code: ${out:0:400}" >&2; return 1;; esac
+            case "$code" in 2*) printf '%s' "$out";; *) echo "::error::Supabase Auth API $1 ${2%%\?*} -> HTTP $code: ${out:0:300}" >&2; return 1;; esac
           }
           users=$(api GET "/auth/v1/admin/users?page=1&per_page=1000")
-          existing=$(printf '%s' "$users" | python3 -c "import json,sys,os; u=[x for x in json.load(sys.stdin).get('users',[]) if x.get('email','').lower()==os.environ['FIRST_ADMIN_EMAIL']]; print(u[0]['id'] if u else '')")
+          existing=$(printf '%s' "$users" | python3 -c "import json,sys,os; u=[x for x in json.load(sys.stdin).get('users',[]) if x.get('email','').lower()==os.environ['ADMIN_EMAIL']]; print(u[0]['id'] if u else '')")
           # Repair a user created earlier with a mangled address (e.g. 'FIRST_ADMIN_EMAILme@x.com'): rename it to the correct email.
           if [ -z "$existing" ]; then
-            bad=$(printf '%s' "$users" | python3 -c "import json,sys,os; e=os.environ['FIRST_ADMIN_EMAIL']; u=[x for x in json.load(sys.stdin).get('users',[]) if x.get('email','').lower().endswith(e) and x.get('email','').lower()!=e]; print(u[0]['id'] if u else '')")
+            bad=$(printf '%s' "$users" | python3 -c "import json,sys,os; e=os.environ['ADMIN_EMAIL']; u=[x for x in json.load(sys.stdin).get('users',[]) if x.get('email','').lower().endswith(e) and x.get('email','').lower()!=e]; print(u[0]['id'] if u else '')")
             if [ -n "$bad" ]; then
-              api PUT "/auth/v1/admin/users/$bad" "{\"email\":\"$FIRST_ADMIN_EMAIL\",\"email_confirm\":true}" >/dev/null && existing=$bad && echo "repaired email of auth user $bad"
+              body=$(python3 -c "import json,os; print(json.dumps({'email':os.environ['ADMIN_EMAIL'],'email_confirm':True}))")
+              api PUT "/auth/v1/admin/users/$bad" "$body" >/dev/null && existing=$bad && echo "repaired the email of auth user $bad"
             fi
           fi
           if [ -z "$existing" ]; then
-            body=$(python3 -c "import json,os; print(json.dumps({'email':os.environ['FIRST_ADMIN_EMAIL'].strip(),'email_confirm':True,'user_metadata':{'full_name':os.environ['FIRST_ADMIN_NAME']}}))")
+            body=$(python3 -c "import json,os; print(json.dumps({'email':os.environ['ADMIN_EMAIL'],'email_confirm':True,'user_metadata':{'full_name':os.environ['FIRST_ADMIN_NAME']}}))")
             existing=$(api POST "/auth/v1/admin/users" "$body" | python3 -c "import json,sys; print(json.load(sys.stdin)['id'])")
             echo "created auth user $existing"
           else
             echo "auth user exists: $existing"
           fi
           psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -qc "select set_config('request.jwt.claims', '{\"role\":\"service_role\"}', false); insert into profiles (id, full_name) values ('$existing', '$FIRST_ADMIN_NAME') on conflict (id) do nothing; update profiles set role='admin', status='active', full_name=coalesce(nullif(full_name,''),'$FIRST_ADMIN_NAME') where id='$existing';"
-          # Password: send a recovery link so the admin sets their own password (never stored in CI).
-          if api POST "/auth/v1/recover" "{\"email\":\"$(echo "$FIRST_ADMIN_EMAIL" | tr -d '[:space:]')\"}" >/dev/null; then echo "password-reset email sent to $FIRST_ADMIN_EMAIL"; else echo "::warning::could not send reset email; use Supabase Auth -> Users -> Send password recovery"; fi
-      - name: Set-password link
-        if: env.STEP == 'link'
+          echo "profile: role=admin, status=active"
+      - name: Password-reset email
+        if: env.STEP == 'all' || env.STEP == 'admin' || env.STEP == 'recover'
         run: |
-          set -e
-          E="$(echo "$FIRST_ADMIN_EMAIL" | tr -s '[:space:]' '\n' | grep -E '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' | tail -1 | tr 'A-Z' 'a-z')"; E="${E:-trailingtrades@gmail.com}"
-          REF=$(echo "$DATABASE_URL" | grep -oE 'postgres\.[a-z0-9]{20}' | head -1 | sed 's/^postgres\.//'); U="https://$REF.supabase.co"
+          # Supabase sends the email; this job never sees the link. Prints the HTTP status only.
           K="$(echo "$SUPABASE_SERVICE_ROLE_KEY" | tr -d '[:space:]')"
-          SITE="${SITE_URL:-https://learn.optionlab.co.in/smart}"
-          out=$(curl -s -w '\n%{http_code}' -H "apikey: $K" -H "Authorization: Bearer $K" -H "Content-Type: application/json" -X POST "$U/auth/v1/admin/generate_link" -d "{\"type\":\"recovery\",\"email\":\"$E\",\"options\":{\"redirect_to\":\"$SITE/api/auth/callback?next=/learn/reset/confirm\"}}")
-          code=${out##*$'\n'}; body=${out%$'\n'*}
-          [ "$code" = "200" ] || { echo "::error::generate_link -> HTTP $code: ${body:0:300}"; exit 1; }
-          th=$(printf '%s' "$body" | python3 -c "import json,sys; print(json.load(sys.stdin)['hashed_token'])")
-          echo "::notice::One-time set-password link for $E (valid ~1 hour, open it once in a browser):"
-          echo ""; echo "$SITE/api/auth/callback?token_hash=$th&type=recovery&next=/learn/reset/confirm"; echo ""
-      - name: Temporary password
-        if: env.STEP == 'temp-password'
-        run: |
-          set -e
-          E="$(echo "$FIRST_ADMIN_EMAIL" | tr -s '[:space:]' '\n' | grep -E '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$' | tail -1 | tr 'A-Z' 'a-z')"; E="${E:-trailingtrades@gmail.com}"
-          REF=$(echo "$DATABASE_URL" | grep -oE 'postgres\.[a-z0-9]{20}' | head -1 | sed 's/^postgres\.//'); U="https://$REF.supabase.co"
-          K="$(echo "$SUPABASE_SERVICE_ROLE_KEY" | tr -d '[:space:]')"
-          H=(-H "apikey: $K" -H "Authorization: Bearer $K" -H "Content-Type: application/json")
-          export E
-          id=$(curl -sf "${H[@]}" "$U/auth/v1/admin/users?page=1&per_page=1000" | python3 -c "import json,sys,os; u=[x for x in json.load(sys.stdin).get('users',[]) if x.get('email','').lower()==os.environ['E']]; print(u[0]['id'] if u else '')")
-          [ -n "$id" ] || { echo "::error::no auth user for $E; run step=admin first"; exit 1; }
-          PW="5C-$(openssl rand -hex 6)-Learn"
-          out=$(curl -s -w '\n%{http_code}' "${H[@]}" -X PUT "$U/auth/v1/admin/users/$id" -d "{\"password\":\"$PW\",\"email_confirm\":true}"); code=${out##*$'\n'}
-          [ "$code" = "200" ] || { echo "::error::set password -> HTTP $code: ${out:0:300}"; exit 1; }
-          # Verify the credentials against the Auth password grant (prints status and error only, never tokens).
-          v=$(curl -s -w '\n%{http_code}' -H "apikey: $K" -H "Content-Type: application/json" -X POST "$U/auth/v1/token?grant_type=password" -d "{\"email\":\"$E\",\"password\":\"$PW\"}"); vc=${v##*$'\n'}; vb=${v%$'\n'*}
-          if [ "$vc" = "200" ]; then echo "password grant check: OK (HTTP 200)"; else echo "::warning::password grant check failed: HTTP $vc: $(printf '%s' "$vb" | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('error_description') or d.get('msg') or d.get('error') or d)" 2>/dev/null | head -c 200)"; fi
-          echo "::notice::Temporary password set for $E. Sign in at ${SITE_URL:-https://learn.optionlab.co.in/smart}/learn and change it afterwards (Forgot password)."
-          echo ""; echo "email:    $E"; echo "password: $PW"; echo ""
+          RT=$(python3 -c "import urllib.parse,os; print(urllib.parse.quote(os.environ['SITE_URL']+'/api/auth/callback?next=/learn/reset/confirm', safe=''))")
+          body=$(python3 -c "import json,os; print(json.dumps({'email':os.environ['ADMIN_EMAIL']}))")
+          code=$(curl -s -o /dev/null -w '%{http_code}' -H "apikey: $K" -H "Content-Type: application/json" -X POST "$SUPABASE_URL/auth/v1/recover?redirect_to=$RT" -d "$body")
+          case "$code" in
+            2*) echo "::notice::Password-reset email requested for the admin account (HTTP $code). Check the admin inbox; the link is valid for about an hour.";;
+            429) echo "::warning::Supabase is rate-limiting auth emails (HTTP 429). Wait an hour, or use Supabase → Authentication → Users → the admin → Send password recovery.";;
+            *) echo "::error::Supabase /recover answered HTTP $code. Use Supabase → Authentication → Users → the admin → Send password recovery."; exit 1;;
+          esac
       - name: Check
-        if: env.STEP != 'link' && env.STEP != 'temp-password'
+        if: env.STEP != 'recover'
         run: |
           psql "$DATABASE_URL" -qtc "select 'levels='||(select count(*) from levels)||' weeks='||(select count(*) from weeks)||' sessions='||(select count(*) from sessions)||' published='||(select count(*) from sessions where is_published)||' quiz_q='||(select count(*) from quiz_questions where session_id is not null)||' exam_q='||(select count(*) from quiz_questions where exam_id is not null)||' exams='||(select count(*) from exams)||' admins='||(select count(*) from profiles where role='admin')"
           psql "$DATABASE_URL" -qtc "select 'rls tables without policy: '||coalesce(string_agg(c.relname, ','),'none') from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and c.relkind='r' and c.relrowsecurity and not exists (select 1 from pg_policy p where p.polrelid=c.oid)"
+          psql "$DATABASE_URL" -qtc "select 'migrations applied: '||count(*)||', latest '||coalesce(max(name),'none') from public._migrations" 2>/dev/null || echo " migrations applied: none yet (no _migrations table)"

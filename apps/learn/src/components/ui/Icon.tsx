@@ -43,6 +43,8 @@ function createIcon(displayName: string, children: React.ReactNode) {
         strokeLinecap="round"
         strokeLinejoin="round"
         aria-hidden={rest["aria-label"] ? undefined : true}
+        role={rest["aria-label"] ? "img" : undefined}
+        focusable="false"
         {...rest}
       >
         {children}
@@ -478,7 +480,6 @@ export const ShieldCheck = createIcon(
 );  // source: shield-check.svg
 
 
-/** Every icon in this file, for icon-picker UIs or tests. */
 export const BookOpen = createIcon(
   "BookOpen",
   <>
@@ -487,6 +488,83 @@ export const BookOpen = createIcon(
   </>
 );  // source: book-open.svg
 
+
+/** circle — lucide-static (ISC), 51st glyph added for the session gate checklist. Same shell, not hand-drawn. */
+export const Circle = createIcon("Circle", <circle cx="12" cy="12" r="10" />);
+
+/* sun / moon / languages — lucide-static (ISC), added for the Winners-style header
+   (theme + language pills). Glyphs verbatim from source, same shell. */
+export const Sun = createIcon(
+  "Sun",
+  <>
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2" />
+      <path d="M12 20v2" />
+      <path d="m4.93 4.93 1.41 1.41" />
+      <path d="m17.66 17.66 1.41 1.41" />
+      <path d="M2 12h2" />
+      <path d="M20 12h2" />
+      <path d="m6.34 17.66-1.41 1.41" />
+      <path d="m19.07 4.93-1.41 1.41" />
+  </>
+);  // source: sun.svg
+
+export const Moon = createIcon(
+  "Moon",
+  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+);  // source: moon.svg
+
+export const Languages = createIcon(
+  "Languages",
+  <>
+      <path d="m5 8 6 6" />
+      <path d="m4 14 6-6 2-3" />
+      <path d="M2 5h12" />
+      <path d="M7 2h1" />
+      <path d="m22 22-5-10-5 10" />
+      <path d="M14 18h6" />
+  </>
+);  // source: languages.svg
+
+/* house / map / award / briefcase / mail / phone — added for the trilingual nav and the company
+   footer. Geometry from the circleoptionlab-design icon set (Lucide/Feather lineage), same shell. */
+export const Home = createIcon(
+  "Home",
+  <>
+      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+      <path d="M9 22V12h6v10" />
+  </>
+);  // source: home.svg
+
+export const MapIcon = createIcon(
+  "Map",
+  <path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4zM8 2v16M16 6v16" />
+);  // source: map.svg (exported as MapIcon so it never shadows the global Map)
+
+export const Award = createIcon(
+  "Award",
+  <path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM8.21 13.89 7 23l5-3 5 3-1.21-9.12" />
+);  // source: award.svg
+
+export const Briefcase = createIcon(
+  "Briefcase",
+  <>
+      <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+  </>
+);  // source: briefcase.svg
+
+export const Mail = createIcon(
+  "Mail",
+  <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM22 7l-10 6L2 7" />
+);  // source: mail.svg
+
+export const Phone = createIcon(
+  "Phone",
+  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+);  // source: phone.svg
+
+/** Every icon in this file, for icon-picker UIs or tests. Kept last so it can list all of them. */
 export const ICONS = {
   TrendingUp,
   TrendingDown,
@@ -539,41 +617,14 @@ export const ICONS = {
   Shield,
   ShieldCheck,
   BookOpen,
+  Circle,
+  Sun,
+  Moon,
+  Languages,
+  Home,
+  MapIcon,
+  Award,
+  Briefcase,
+  Mail,
+  Phone,
 } as const;
-
-/** circle — lucide-static (ISC), 51st glyph added for the session gate checklist. Same shell, not hand-drawn. */
-export const Circle = createIcon("Circle", <circle cx="12" cy="12" r="10" />);
-
-/* sun / moon / languages — lucide-static (ISC), added for the Winners-style header
-   (theme + language pills). Glyphs verbatim from source, same shell. */
-export const Sun = createIcon(
-  "Sun",
-  <>
-      <circle cx="12" cy="12" r="4" />
-      <path d="M12 2v2" />
-      <path d="M12 20v2" />
-      <path d="m4.93 4.93 1.41 1.41" />
-      <path d="m17.66 17.66 1.41 1.41" />
-      <path d="M2 12h2" />
-      <path d="M20 12h2" />
-      <path d="m6.34 17.66-1.41 1.41" />
-      <path d="m19.07 4.93-1.41 1.41" />
-  </>
-);  // source: sun.svg
-
-export const Moon = createIcon(
-  "Moon",
-  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-);  // source: moon.svg
-
-export const Languages = createIcon(
-  "Languages",
-  <>
-      <path d="m5 8 6 6" />
-      <path d="m4 14 6-6 2-3" />
-      <path d="M2 5h12" />
-      <path d="M7 2h1" />
-      <path d="m22 22-5-10-5 10" />
-      <path d="M14 18h6" />
-  </>
-);  // source: languages.svg

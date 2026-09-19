@@ -1,6 +1,7 @@
 /**
  * Demo cohort seed (Phase 6, decision Q1-A). Fake names, fake emails (@example.invalid), one admin, one mentor, 12 students
- * with varied progress so every screen has data. Safe to delete: `delete from cohorts where name like 'DEMO-%'` cascades.
+ * with varied progress so every screen has data. Re-runnable: it first clears the demo accounts' own activity rows (fixed ids
+ * d0000000-..., emails @example.invalid); score events are append-only and award() skips a repeat, so points never double.
  *   DATABASE_URL=... npx tsx scripts/seed-demo.ts      (local Postgres with the auth shim; on Supabase use the admin API to create auth users first)
  */
 import { Client } from "pg";
@@ -10,6 +11,9 @@ async function main() {
   await db.query("begin");
   await db.query("delete from cohorts where name like 'DEMO-%'");
   const uid = (i: number) => `d0000000-0000-4000-8000-${String(i).padStart(12, "0")}`;
+  const demoIds = [1, 2, ...NAMES.map((_, i) => 10 + i)].map(uid);
+  // One quiz attempt per session is a unique index now (migration 0011), so a second run must start from a clean slate.
+  for (const t of ["attempts", "session_progress", "journal_entries", "portfolio_rows", "practice_grades"]) await db.query(`delete from ${t} where user_id = any($1)`, [demoIds]);
   const mk = async (i: number, email: string, name: string) => { await db.query("insert into auth.users (id,email,raw_user_meta_data) values ($1,$2,$3) on conflict (id) do update set email=excluded.email", [uid(i), email, { full_name: name }]); await db.query("update profiles set full_name=$2 where id=$1", [uid(i), name]); };
   await mk(1, "admin@example.invalid", "Rahul Sarawgi"); await db.query("update profiles set role='admin', status='active' where id=$1", [uid(1)]);
   await mk(2, "mentor@example.invalid", "Abhishek Mentor"); await db.query("update profiles set role='mentor', status='active' where id=$1", [uid(2)]);

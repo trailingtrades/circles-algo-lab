@@ -4,8 +4,9 @@
    1. VERBATIM token blocks from the live Winners build
       (docs/winners-reference/tokens.css = template.html lines 27–90).
       Do not edit values here — every tuned one carries the reason
-      in the comment above it. The only change is the restored
-      closing brace of [data-theme=light], cut off in extraction.
+      in the comment above it. The only changes are the restored
+      closing brace of [data-theme=light], cut off in extraction, and
+      the dropped @font-face (tokens.css declares the face once).
    2. A bridge that points the legacy --col-* variables (still
       referenced by tokens.css component classes and globals.css)
       at the Winners tokens, plus the component recipes Winners
@@ -15,11 +16,9 @@
 
 /* ---------- 1. Winners tokens, verbatim ---------- */
 
-/* IBM Plex Sans — the CircleOptionLab face, self-hosted at /fonts/ on the learn host.
-   The offline single file and the artifact have no /fonts/, and simply fall back to the
-   system stack below; nothing else depends on the file being there. */
-@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:100 700;font-display:swap;
-  src:url("/fonts/IBMPlexSans-var.woff2") format("woff2")}
+/* The Winners build declares its own IBM Plex Sans @font-face here. SMART loads the same face
+   once, from tokens.css, through the bundler so the /smart basePath is applied — a second
+   declaration made every page download the font twice. */
 :root{
   --bull:#16a34a; --bull-soft:#16a34a22;
   --bear:#f0554e; --bear-soft:#f0554e22;
@@ -109,6 +108,10 @@
   --col-ease: var(--ease);
   --col-dark-glow-blue: var(--brand-soft);
 }
+/* Input outline: --line (1.2:1) and --line-2 (1.9:1) are too faint for a form field's edge;
+   these clear 3:1 against both the field and the card behind it. */
+[data-theme=dark]{ --input-line:#64748b; }
+[data-theme=light]{ --input-line:#7c8ca3; }
 
 /* ---------- 2b. Fills that carried hardcoded white text ----------
    Cyan fills take --brand-ink navy (dark); on light --brand is the AA blue and
@@ -117,15 +120,14 @@
 .lrn-skip{ background: var(--brand); color: var(--brand-ink); }
 .lrn-bar__fill{ background: var(--brand); }
 .lrn-nav-item[aria-current="page"], .lrn-opt--chosen{ background: var(--brand-soft); }
-[data-theme=light] .lrn-nav-item[aria-current="page"]{ color: var(--brand); background: var(--brand-soft); }
 .lrn-check input, .lrn-opt input{ accent-color: var(--brand); }
 
 /* Cards pick up the Winners diagonal gradient, hairline and inset glow. */
 .col-card{ background: var(--card-grad); border-color: var(--card-line); box-shadow: var(--glow); }
 .col-light .col-card{ background: var(--card-grad); border-color: var(--card-line); }
 .col-table thead th{ background: var(--panel); }
-.col-input{ background: var(--bg-2); }
-.col-light .col-input{ background: var(--bg-2); }
+.col-input{ background: var(--bg-2); border-color: var(--input-line); }
+.col-light .col-input{ background: var(--bg-2); border-color: var(--input-line); }
 .lrn-prompt__body{ background: var(--panel-2); }
 .col-light .lrn-prompt__body{ background: var(--panel-2); }
 .lrn-bar__track{ background: var(--panel-2); }
@@ -137,28 +139,34 @@
 body{ font-variant-numeric: tabular-nums lining-nums; }
 
 /* ---------- 2c. Wordmark ----------
+   The gradient belongs to the programme name only: the header lockup and the sign-in H1.
+   Anywhere else .wm (a learner's name in a greeting) is plain bold ink — gradient text as
+   everyday emphasis is what makes a page look generated.
    Text-bearing gradients stop at #0093D6 — near-black on navy is 2.19:1, so the
    ramp never runs darker than this. Large text only (AA-large at 3:1 on white). */
-.wm{
+.wm{ font-weight: 700; }
+.lrn-brand__name.wm, h1.wm{
   background: linear-gradient(92deg, var(--c1), var(--brand) 45%, #0093D6);
   -webkit-background-clip: text; background-clip: text;
   color: transparent; -webkit-text-fill-color: transparent;
-  font-weight: 700; letter-spacing: -0.01em;
+  letter-spacing: -0.01em;
 }
-[data-theme=light] .wm{ background: linear-gradient(92deg, #0093D6, var(--brand) 60%, #0b5f96); -webkit-background-clip: text; background-clip: text; }
+[data-theme=light] .lrn-brand__name.wm, [data-theme=light] h1.wm{ background: linear-gradient(92deg, #0093D6, var(--brand) 60%, #0b5f96); -webkit-background-clip: text; background-clip: text; }
 
 /* ---------- 2d. Centered container + header (matches the live Winners header:
    brand lockup, icon pill-nav group, language pill, theme icon, student chip) ---------- */
 .lrn-max{ width: 100%; max-width: var(--maxw); margin-inline: auto; }
 .lrn-main > .lrn-max{ display: block; }
 .lrn-brand__by{ font-size: 11px; color: var(--ink-3); display: block; line-height: 1.1; }
+/* Overflowing pills scroll from the FIRST one: the bar is centred by its grid cell (globals.css),
+   never by justify-content:center inside the scroller, which pushed "Home" past the scroll origin.
+   A thin scrollbar stays so a clipped bar still looks scrollable. */
 .lrn-pillnav{
   display: none; align-items: center; gap: 2px;
   padding: 3px; border: 1px solid var(--line); border-radius: 9999px;
-  background: var(--panel); min-width: 0; overflow-x: auto; scrollbar-width: none;
+  background: var(--panel); min-width: 0; overflow-x: auto; scrollbar-width: thin;
 }
-.lrn-pillnav::-webkit-scrollbar{ display: none; }
-@media (min-width: 768px){ .lrn-pillnav{ display: inline-flex; } .lrn-sidebar{ display: none !important; } }
+@media (min-width: 768px){ .lrn-pillnav{ display: inline-flex; } }
 .lrn-pill{
   display: inline-flex; align-items: center; gap: 7px;
   height: 34px; padding: 0 14px; border-radius: 9999px;
@@ -184,8 +192,9 @@ body{ font-variant-numeric: tabular-nums lining-nums; }
   height: 36px; padding: 2px 12px 2px 2px; border: 1px solid var(--line);
   border-radius: 9999px; background: var(--panel);
   font-size: var(--col-text-body-sm); font-weight: 600; color: var(--ink);
-  max-width: 180px;
+  max-width: 180px; text-decoration: none; flex: 0 0 auto;
 }
+.lrn-student:hover{ border-color: var(--line-2); }
 .lrn-student__ava{
   width: 28px; height: 28px; border-radius: 9999px; flex: 0 0 auto;
   display: inline-flex; align-items: center; justify-content: center;
@@ -193,7 +202,6 @@ body{ font-variant-numeric: tabular-nums lining-nums; }
   font-size: 12px; font-weight: 700; text-transform: uppercase;
 }
 .lrn-student__name{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-@media (max-width: 519px){ .lrn-student__name{ display: none; } .lrn-student{ padding-right: 2px; } }
 
 /* ---------- 2e. Access gate: ring backdrop + kicker ---------- */
 .lrn-gate{ position: relative; }
@@ -204,7 +212,7 @@ body{ font-variant-numeric: tabular-nums lining-nums; }
 .lrn-gate__rings svg{ width: 100%; height: 100%; display: block; }
 .lrn-gate > *:not(.lrn-gate__rings){ position: relative; z-index: 1; }
 .lrn-kicker{
-  font-size: var(--col-text-eyebrow); font-weight: 600; letter-spacing: .14em;
+  font-size: var(--col-text-eyebrow); font-weight: 600; letter-spacing: var(--col-tracking-eyebrow);
   text-transform: uppercase; color: var(--ink-3);
 }
 
@@ -250,31 +258,20 @@ body{ font-variant-numeric: tabular-nums lining-nums; }
 .lrn-avail{
   display: inline-flex; align-items: center; height: 24px; padding: 0 12px;
   border-radius: 9999px; background: var(--brand-soft); color: var(--brand);
-  font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  font-size: 11px; font-weight: 700; letter-spacing: var(--col-tracking-eyebrow); text-transform: uppercase;
 }
-.lrn-avail--done{ background: var(--bull-soft); color: var(--pill-bull); }
+/* Light: the AA blue on its own 12% tint is 4.2:1 at 11px; navy on the same tint is 7.2:1. */
+[data-theme=light] .lrn-avail{ color: var(--col-navy); }
 
-/* ---------- 2h. Segmented ring panel + icon stat tiles ---------- */
+/* ---------- 2h. Segmented ring panel ---------- */
 .lrn-segring{ display: block; }
 .lrn-segring__seg{ transition: stroke var(--col-duration) var(--ease); }
 .lrn-ringpanel{
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   padding: var(--col-space-5) var(--col-space-6);
 }
-.lrn-statrow{ display: grid; gap: var(--col-space-3); grid-template-columns: repeat(auto-fit, minmax(min(100%, 168px), 1fr)); }
-.lrn-stat{ display: flex; align-items: center; gap: var(--col-space-3); padding: var(--col-space-4); }
-.lrn-stat__ico{
-  width: 42px; height: 42px; border-radius: 12px; flex: 0 0 auto;
-  display: inline-flex; align-items: center; justify-content: center;
-  background: var(--brand-soft); color: var(--brand);
-}
-.lrn-stat .lrn-num{ font-size: 22px; font-weight: 700; margin: 0; line-height: 1.15; }
-.lrn-stat__lbl{
-  font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
-  color: var(--ink-3); margin: 2px 0 0;
-}
 
-/* ---------- 2i. Continue-learning bar + phase-banner roadmap ---------- */
+/* ---------- 2i. Continue-learning card ---------- */
 .lrn-continue{ display: flex; align-items: center; gap: var(--col-space-4); flex-wrap: wrap; }
 .lrn-tile-ico{
   width: 56px; height: 56px; border-radius: 14px; flex: 0 0 auto;
@@ -283,30 +280,9 @@ body{ font-variant-numeric: tabular-nums lining-nums; }
 }
 .lrn-continue__body{ flex: 1 1 260px; min-width: 0; }
 .lrn-continue__kick{
-  font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  font-size: 11px; font-weight: 700; letter-spacing: var(--col-tracking-eyebrow); text-transform: uppercase;
   color: var(--brand); margin: 0 0 2px;
 }
-.lrn-continue__meta{ display: flex; align-items: center; gap: 10px; margin-top: 8px; }
-.lrn-continue__meta .lrn-bar__track{ flex: 1 1 auto; margin-top: 0; max-width: 320px; }
-.lrn-continue__pct{ font-size: var(--col-text-dense); color: var(--ink-3); white-space: nowrap; }
-.lrn-phases{ display: flex; flex-direction: column; gap: var(--col-space-3); }
-.lrn-phase{
-  display: flex; align-items: center; gap: var(--col-space-4);
-  padding: var(--col-space-4) var(--col-space-5);
-  text-decoration: none; color: inherit; flex-wrap: wrap;
-}
-.lrn-phase__kick{
-  font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
-  color: var(--brand); margin: 0 0 2px;
-}
-/* Gold is for achievement/milestone moments only — the CURRENT milestone row. */
-.lrn-phase--now{ border-color: var(--gold); }
-.lrn-phase--now .lrn-phase__kick{ color: var(--gold-text); }
-.lrn-phase--now .lrn-tile-ico{ background: var(--gold-soft); color: var(--gold-text); }
-.lrn-phase__body{ flex: 1 1 260px; min-width: 0; }
-.lrn-phase__title{ font-size: 16px; font-weight: 700; margin: 0; }
-.lrn-phase__sub{ font-size: var(--col-text-body-sm); color: var(--ink-2); margin: 2px 0 0; }
-.lrn-phase__count{ font-size: var(--col-text-body); font-weight: 700; color: var(--ink-2); white-space: nowrap; }
 
 /* Long tag chips wrap instead of overflowing their fixed 24px height. */
 .lrn-tags .col-chip{ height: auto; min-height: 24px; padding-top: 3px; padding-bottom: 3px; white-space: normal; }
@@ -314,59 +290,36 @@ body{ font-variant-numeric: tabular-nums lining-nums; }
 /* ---------- 2j. Hero ---------- */
 .lrn-hero{ display: flex; flex-wrap: wrap; align-items: stretch; gap: var(--col-space-4) var(--col-space-6); }
 .lrn-hero__txt{ flex: 1 1 320px; min-width: 0; align-self: center; }
-.lrn-hero__txt .lrn-title{ font-size: clamp(30px, 3.4vw, 44px); line-height: 1.12; margin: 6px 0 10px; }
+/* Hero title matches the O.N.E dashboard scale exactly. */
+.lrn-hero__txt .lrn-title{ font-size: clamp(1.6rem, 4vw, 2.4rem); letter-spacing: -.03em; line-height: 1.12; margin: 6px 0 10px; }
 .lrn-hero__ring{ flex: 0 1 340px; }
 
-/* ---------- 2h. Sign-in gate polish (18 Sep 2026) ----------
-   The gate is the first screen every student sees, every day: glowing brand mark,
-   slowly turning rings, and a daily process-focused line ("Today's focus") above the
-   form. Motion respects prefers-reduced-motion; the quote card reuses card tokens. */
-.lrn-login__logo{
-  display: inline-flex; padding: 10px; border-radius: 9999px;
-  background: radial-gradient(closest-side, var(--brand-soft), transparent 75%);
-  box-shadow: 0 0 44px 6px var(--brand-soft);
-}
-.lrn-gate__rings svg{ animation: lrn-gate-turn 240s linear infinite; transform-origin: 50% 50%; }
-@keyframes lrn-gate-turn{ to{ transform: rotate(360deg); } }
-@media (prefers-reduced-motion: reduce){ .lrn-gate__rings svg{ animation: none; } }
-.lrn-quote{
-  margin: 0 0 14px; padding: 12px 16px;
-  border: 1px solid var(--line); border-left: 3px solid var(--brand);
-  border-radius: 12px; background: var(--panel-2);
-}
-.lrn-quote__label{
-  display: block; font-family: var(--font-mono, "IBM Plex Mono", monospace);
-  font-size: var(--col-text-eyebrow); font-weight: 600;
-  letter-spacing: .16em; text-transform: uppercase; color: var(--brand);
-  margin-bottom: 4px;
-}
-.lrn-quote__text{ margin: 0; font-size: 15px; font-weight: 500; line-height: 1.5; color: var(--ink); }
-.lrn-login .col-card{ backdrop-filter: blur(6px); }
-.lrn-login .col-btn--primary{ transition: transform .15s ease, box-shadow .15s ease; }
-.lrn-login .col-btn--primary:hover{ transform: translateY(-1px); box-shadow: 0 6px 18px -6px var(--brand); }
+/* ---------- 2k. Sign-in gate (18 Sep 2026, calmed 19 Sep) ----------
+   The still ring backdrop behind the form. No glow halo,
+   no spinning rings, no frosted card, no lifting button: one quiet surface, like the rest. */
+.lrn-gate__rings{ opacity: .7; }
 
-/* ---------- 2i. Two-row header (18 Sep 2026) ----------
-   Staff chips (Mentor/Admin) made the single header row overflow behind the right-side
-   controls; on desktop the pill nav now sits on its own centred second row. Phone keeps
-   the sidebar + bottom nav, untouched. */
-@media (min-width: 768px){
-  .col-header > .lrn-max{ flex-wrap: wrap; }
-  .col-header .lrn-pillnav{ order: 3; flex-basis: 100%; justify-content: center; margin-top: 4px; }
-}
-
-/* ---------- 2j. Academy strip + wave journey (18 Sep 2026) ----------
+/* ---------- 2l. Academy strip + wave journey (18 Sep 2026) ----------
    Ported from the CIRCLE O.N.E header/dashboard so all three stages read identically:
-   the ladder strip above the header, and the wave journey diagram on Home. */
+   the ladder strip above the header, and the wave journey diagram on Home. On phones the
+   strip scrolls sideways instead of hiding the other stages. No opacity on text (it fell
+   under AA); a locked stage is a quiet outline, not a link. */
+.lrn-acadwrap{ padding: 0 16px; }
 .acad{ display:flex; align-items:center; gap:6px; padding:8px 0 0; font-size:.72rem;
-  letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3); flex-wrap:wrap; }
+  letter-spacing:var(--col-tracking-eyebrow); text-transform:uppercase; color:var(--ink-3); flex-wrap:wrap; }
+.acad a, .acad .on, .acad .soon, .acad .lock{ display:inline-flex; align-items:center; gap:5px; white-space:nowrap; }
 .acad a{ color:var(--ink-2); text-decoration:none; padding:3px 9px;
   border:1px solid var(--line); border-radius:999px; background:var(--panel); }
 .acad a:hover{ border-color:var(--brand); color:var(--ink); }
-.acad a.home{ border-color:#22b8f566; color:var(--ink); }
+.acad a.home{ border-color:var(--line-2); color:var(--ink); }
 .acad .on{ padding:3px 9px; border-radius:999px; background:var(--brand); color:var(--brand-ink); font-weight:700; }
-.acad .soon{ padding:3px 9px; border-radius:999px; border:1px dashed var(--line-2); opacity:.7; }
-.acad .sep{ opacity:.35; }
-@media(max-width:640px){ .acad{ font-size:.66rem; } .acad .sib,.acad .soon,.acad .sep{ display:none; } }
+.acad .soon{ padding:3px 9px; border-radius:999px; border:1px dashed var(--line-2); color:var(--ink-2); }
+.acad .lock{ padding:3px 9px; border-radius:999px; border:1px solid var(--line); color:var(--ink-2); cursor:default; }
+.acad .sep{ flex:0 0 auto; color:var(--ink-3); }
+@media(max-width:640px){
+  .acad{ flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; font-size:11px; padding-bottom:2px; }
+  .acad::-webkit-scrollbar{ display:none; }
+}
 
 .wave{ position:relative; padding:12px 0 4px; border-radius:12px; border:1px solid var(--line);
   background:var(--panel); background-image:linear-gradient(to bottom right,#16233f,#0f1520 55%,#0c1322); overflow:hidden; }
@@ -377,14 +330,16 @@ body{ font-variant-numeric: tabular-nums lining-nums; }
   text-align:center; width:150px; pointer-events:auto; transform:translate(-50%,-20px); text-decoration:none; }
 .wv-n .dot{ width:38px; height:38px; border-radius:50%; display:grid; place-items:center;
   background:var(--panel); border:2px solid var(--line-2); color:var(--ink-3); }
-.wv-n.done .dot{ background:#4caf50; border-color:#4caf50; color:#fff; }
-.wv-n.cur .dot{ background:var(--brand); border-color:var(--brand); color:var(--brand-ink); box-shadow:0 0 0 8px rgba(34,184,245,.16); }
-.wv-n.end .dot{ width:46px; height:46px; border-color:#f5a524; color:#f5a524; background:rgba(245,165,36,.16); }
-.wv-n.end.done .dot{ background:#f5a524; color:#1a1206; }
-.wv-n .k{ font-size:.62rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); }
-.wv-n.cur .k{ color:var(--brand); } .wv-n.done .k{ color:#4caf50; }
+/* Done = solid brand (the stroke is brand too), current = outlined with a soft ring, the end
+   milestone = the one gold. Glyphs on fills use the paired ink token, never white on green. */
+.wv-n.done .dot{ background:var(--brand); border-color:var(--brand); color:var(--brand-ink); }
+.wv-n.cur .dot{ background:var(--panel); border-color:var(--brand); color:var(--brand); box-shadow:0 0 0 4px var(--brand-soft); }
+.wv-n.end .dot{ width:46px; height:46px; border-color:var(--gold); color:var(--gold-text); background:var(--gold-soft); }
+.wv-n.end.done .dot{ background:var(--gold); color:#1a1206; }
+.wv-n .k{ font-size:11px; font-weight:700; letter-spacing:var(--col-tracking-eyebrow); text-transform:uppercase; color:var(--ink-3); }
+.wv-n.cur .k{ color:var(--brand); } .wv-n.done .k{ color:var(--ink-2); }
 .wv-n .t{ font-size:.8rem; font-weight:700; line-height:1.2; color:var(--ink); }
-.wv-n .p{ font-size:.68rem; color:var(--ink-3); }
+.wv-n .p{ font-size:11px; color:var(--ink-3); }
 .wv-mobile{ display:none; }
 @media(max-width:760px){
   .wave svg,.wv-nodes{ display:none; }
@@ -394,12 +349,15 @@ body{ font-variant-numeric: tabular-nums lining-nums; }
   .wv-m:first-child{ border-top:0; }
   .wv-m .dot{ width:30px; height:30px; border-radius:50%; display:grid; place-items:center;
     background:var(--panel); border:2px solid var(--line-2); color:var(--ink-3); }
-  .wv-m.done .dot{ background:#4caf50; border-color:#4caf50; color:#fff; }
-  .wv-m.cur .dot{ background:var(--brand); border-color:var(--brand); color:var(--brand-ink); }
+  .wv-m.done .dot{ background:var(--brand); border-color:var(--brand); color:var(--brand-ink); }
+  .wv-m.cur .dot{ background:var(--panel); border-color:var(--brand); color:var(--brand); }
   .wv-m .t{ font-size:.82rem; font-weight:700; color:var(--ink); }
-  .wv-m .p{ font-size:.68rem; color:var(--brand); }
+  .wv-m .p{ font-size:11px; color:var(--brand); }
   .wv-m .pct{ font-size:.72rem; color:var(--ink-3); }
 }
 
-/* Hero title matches the O.N.E dashboard scale exactly. */
-.lrn-hero__txt .lrn-title{ font-size: clamp(1.6rem, 4vw, 2.4rem); letter-spacing: -.03em; }
+
+/* ---------- 2m. हिंदी: no tracking, no uppercase ----------
+   Letter-spacing pulls Devanagari conjuncts and matras apart, and text-transform does nothing useful
+   to them. Exact attribute match: Hinglish is tagged hi-Latn, and :lang(hi) would catch it too. */
+html[lang="hi"] :is(.lrn-kicker, .col-eyebrow, .lrn-avail, .lrn-continue__kick, .wv-n .k, .acad, .lrn-foot__h){ letter-spacing: 0; text-transform: none; }
