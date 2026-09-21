@@ -3,140 +3,48 @@
   "questions": [
     {
       "stem": {
-        "en": "On a daily chart, a stock's ATR 14 reads Rs 15. What does that number tell you?",
-        "hi": "Daily chart par ek stock ka ATR 14 Rs 15 dikha raha hai. Yeh number aapko kya batata hai?",
-        "dv": "डेली चार्ट पर एक स्टॉक का ATR 14 Rs 15 दिखा रहा है। यह नंबर आपको क्या बताता है?"
+        "en": "Gupta Cement Ltd and Bharat Pumps Ltd both close near Rs 500 on the daily chart. Gupta's ATR 14 is Rs 8; Bharat's is Rs 20. Under the course rules, what follows?",
+        "hi": "Gupta Cement Ltd aur Bharat Pumps Ltd dono daily chart par Rs 500 ke aas-paas close hote hain. Gupta ka ATR 14 Rs 8 hai; Bharat ka Rs 20. Course ke rules se iska kya matlab nikalta hai?",
+        "dv": "Gupta Cement Ltd और Bharat Pumps Ltd दोनों डेली चार्ट पर Rs 500 के आसपास क्लोज़ होते हैं। Gupta Cement का ATR 14 Rs 8 है; Bharat Pumps का Rs 20। कोर्स के नियमों से इसका क्या मतलब निकलता है?"
       },
       "options": [
         {
           "text": {
-            "en": "An ordinary day moves it about Rs 15, either way",
-            "hi": "Aam din mein yeh lagbhag Rs 15 hilta hai, kisi bhi taraf",
-            "dv": "आम दिन में यह लगभग Rs 15 हिलता है, किसी भी तरफ़"
+            "en": "Bharat's swing stop sits Rs 30 away, so its size is smaller",
+            "hi": "Bharat ka swing stop Rs 30 door lagta hai, isliye uska size chhota rahega",
+            "dv": "Bharat Pumps का स्विंग स्टॉप Rs 30 दूर लगता है, इसलिए उसका साइज़ छोटा है"
           },
           "correct": true
         },
         {
           "text": {
-            "en": "Price is likely to rise about Rs 15 tomorrow",
-            "hi": "Kal price shayad Rs 15 ke aas-paas upar jaayega",
-            "dv": "कल प्राइस शायद Rs 15 के आसपास ऊपर जाएगा"
+            "en": "Bharat moves more, so it is the likelier of the two to rise",
+            "hi": "Bharat zyada hilta hai, isliye dono mein iske badhne ke chances zyada hain",
+            "dv": "Bharat Pumps ज़्यादा हिलता है, इसलिए दोनों में इसके बढ़ने की संभावना ज़्यादा है"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "The stock is Rs 15 above its fair value today",
-            "hi": "Aaj stock apni sahi value se Rs 15 upar chal raha hai",
-            "dv": "आज स्टॉक अपनी सही वैल्यू से Rs 15 ऊपर चल रहा है"
+            "en": "Both get the same stop and size, since both cost about Rs 500",
+            "hi": "Dono ka stop aur size ek jaisa hoga, kyunki dono lagbhag Rs 500 ke hain",
+            "dv": "दोनों का स्टॉप और साइज़ एक जैसा होगा, क्योंकि दोनों लगभग Rs 500 के हैं"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "Buyers have been Rs 15 stronger than sellers lately",
-            "hi": "Pichhle kuch dinon se buyers sellers par Rs 15 bhaari hain",
-            "dv": "पिछले कुछ दिनों से ख़रीदार बेचने वालों पर Rs 15 भारी हैं"
+            "en": "Bharat's stop should also sit just Rs 12 away, to cut its risk",
+            "hi": "Risk kam karne ke liye Bharat ka stop bhi sirf Rs 12 door lagna chahiye",
+            "dv": "रिस्क कम करने के लिए Bharat Pumps का स्टॉप भी सिर्फ़ Rs 12 दूर लगना चाहिए"
           },
           "correct": false
         }
       ],
       "explanation": {
-        "en": "ATR averages the true range of the last 14 candles, gaps included, so on a daily chart it is the size of a typical day's move. It says nothing about direction and nothing about value. In this course its job is practical: the swing stop goes 1.5 x ATR below entry, so an ordinary day's wiggle does not knock you out.",
-        "hi": "ATR pichhli 14 candles ki true range ka average hai, aur gaps bhi isi mein gine jaate hain. Toh daily chart par yeh bata deta hai ki ek normal din mein price kitna chalta hai. Direction ke baare mein yeh kuch nahi kehta, value ke baare mein bhi nahi. Course mein iska kaam seedha hai: swing stop entry se 1.5 x ATR neeche lagta hai, taaki roz ka normal wiggle aapko bahar na kar de.",
-        "dv": "ATR पिछली 14 कैंडल की ट्रू रेंज का औसत है, और गैप भी इसी में गिने जाते हैं। तो डेली चार्ट पर यह बता देता है कि एक आम दिन में प्राइस कितना चलता है। दिशा के बारे में यह कुछ नहीं कहता, वैल्यू के बारे में भी नहीं। कोर्स में इसका काम सीधा है: स्विंग स्टॉप एंट्री से 1.5 x ATR नीचे लगता है, ताकि रोज़ का आम उतार-चढ़ाव आपको बाहर न कर दे।"
-      }
-    },
-    {
-      "stem": {
-        "en": "In the EMA Pullback Swing, relative strength (RS) is not the same as RSI. What does RS compare?",
-        "hi": "EMA Pullback Swing mein relative strength (RS) aur RSI ek cheez nahi hain. RS asal mein kya compare karta hai?",
-        "dv": "EMA पुलबैक स्विंग में रिलेटिव स्ट्रेंथ (RS) और RSI एक चीज़ नहीं हैं। RS असल में किसकी तुलना करता है?"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "The stock's 3-month % change with NIFTY 50's",
-            "hi": "Stock ka 3 mahine ka % change, NIFTY 50 ke saath",
-            "dv": "स्टॉक का 3 महीने का % बदलाव, NIFTY 50 के साथ"
-          },
-          "correct": true
-        },
-        {
-          "text": {
-            "en": "Average gains with average losses over 14 candles",
-            "hi": "14 candles ke average gains, average losses ke saath",
-            "dv": "14 कैंडल के औसत फ़ायदे, औसत नुक़सान के साथ"
-          },
-          "correct": false
-        },
-        {
-          "text": {
-            "en": "Today's close with the stock's own EMA 20",
-            "hi": "Aaj ka close, stock ke apne EMA 20 ke saath",
-            "dv": "आज का क्लोज़, स्टॉक के अपने EMA 20 के साथ"
-          },
-          "correct": false
-        },
-        {
-          "text": {
-            "en": "The stock's volume with its 20-day average volume",
-            "hi": "Stock ka volume, uske 20 din ke average volume ke saath",
-            "dv": "स्टॉक का वॉल्यूम, उसके 20 दिन के औसत वॉल्यूम के साथ"
-          },
-          "correct": false
-        }
-      ],
-      "explanation": {
-        "en": "RS = the stock's % change minus NIFTY 50's % change over the same 3 months, about 63 trading days, and Rule 4 needs it to be positive. RSI is the one that compares average gains with average losses over 14 candles: a stock against its own recent days. With only 3 open slots, RS helps you spend them on stocks that have been leading the market, not trailing it.",
-        "hi": "RS = stock ka % change minus NIFTY 50 ka % change, same 3 mahine ke liye, yaani lagbhag 63 trading days. Rule 4 kehta hai ki yeh positive hona chahiye. 14 candles ke average gains aur average losses ko compare karna RSI ka kaam hai, jo stock ko uske apne pichhle dinon se milata hai. Aapke paas sirf 3 open slots hain, toh RS ki madad se woh slots un stocks par lagaiye jo market se aage chal rahe hain, peeche nahi.",
-        "dv": "RS = स्टॉक का % बदलाव माइनस NIFTY 50 का % बदलाव, उन्हीं 3 महीनों में, यानी लगभग 63 ट्रेडिंग दिन। रूल 4 कहता है कि यह पॉज़िटिव होना चाहिए। 14 कैंडल के औसत फ़ायदे और औसत नुक़सान की तुलना RSI का काम है, जो स्टॉक को उसके अपने पिछले दिनों से मिलाता है। आपके पास सिर्फ़ 3 ओपन स्लॉट हैं, तो RS की मदद से ये स्लॉट उन स्टॉक पर लगाएँ जो मार्केट से आगे चल रहे हैं, पीछे नहीं।"
-      }
-    },
-    {
-      "stem": {
-        "en": "Which of these can count as risk capital?",
-        "hi": "Inmein se kaunsa paisa risk capital maana ja sakta hai?",
-        "dv": "इनमें से कौन-सा पैसा रिस्क कैपिटल माना जा सकता है?"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Savings left after bills, emergency fund and goals",
-            "hi": "Bills, emergency fund aur goals ke baad bachi savings",
-            "dv": "बिल, इमरजेंसी फ़ंड और लक्ष्यों के बाद बची हुई बचत"
-          },
-          "correct": true
-        },
-        {
-          "text": {
-            "en": "A personal loan you plan to repay from trading profit",
-            "hi": "Personal loan, jo trading ke profit se chukane ka plan hai",
-            "dv": "पर्सनल लोन, जिसे ट्रेडिंग के मुनाफ़े से चुकाने का प्लान है"
-          },
-          "correct": false
-        },
-        {
-          "text": {
-            "en": "Half of your emergency fund, since it sits idle",
-            "hi": "Emergency fund ka aadha hissa, kyunki woh khaali pada hai",
-            "dv": "इमरजेंसी फ़ंड का आधा हिस्सा, क्योंकि वह यूँ ही पड़ा है"
-          },
-          "correct": false
-        },
-        {
-          "text": {
-            "en": "Margin your broker lends you on top of your cash",
-            "hi": "Broker ka diya margin, jo aapke cash ke upar milta hai",
-            "dv": "ब्रोकर का दिया मार्जिन, जो आपके कैश के ऊपर मिलता है"
-          },
-          "correct": false
-        }
-      ],
-      "explanation": {
-        "en": "Risk capital is money you could lose completely without changing your rent, your EMIs or your sleep, and it comes last: bills first, then an emergency fund of about 3 to 6 months of essential expenses, then long-term goals. Borrowed money never qualifies, whether a personal loan or a broker's margin, because the repayment is due whether the trade wins or loses. An emergency fund is not idle money; it is your safety net.",
-        "hi": "Risk capital woh paisa hai jo poora chala jaaye toh bhi aapka rent, EMI ya neend na badle. Aur yeh sabse aakhir mein aata hai: pehle bills, phir 3 se 6 mahine ke zaroori kharch jitna emergency fund, phir long-term goals. Udhaar ka paisa kabhi risk capital nahi hota, chahe personal loan ho ya broker ka margin, kyunki trade jeete ya haare, chukana toh padega hi. Emergency fund khaali pada paisa nahi hai; woh aapka safety net hai.",
-        "dv": "रिस्क कैपिटल वह पैसा है जो पूरा चला जाए तो भी आपका किराया, EMI या नींद न बदले। और यह सबसे आख़िर में आता है: पहले बिल, फिर 3 से 6 महीने के ज़रूरी ख़र्च जितना इमरजेंसी फ़ंड, फिर लंबे समय के लक्ष्य। उधार का पैसा कभी रिस्क कैपिटल नहीं होता, चाहे पर्सनल लोन हो या ब्रोकर का मार्जिन, क्योंकि ट्रेड जीते या हारे, चुकाना तो पड़ेगा ही। इमरजेंसी फ़ंड यूँ ही पड़ा पैसा नहीं है; वह आपकी सुरक्षा है।"
+        "en": "ATR 14 measures size, never direction: an ordinary day moves Gupta Cement about Rs 8 and Bharat Pumps about Rs 20. The swing stop goes 1.5 x ATR below entry: Rs 12 for Gupta, Rs 30 for Bharat. Size then follows the stop: Rs 10,000 ÷ Rs 30 = 333 shares for Bharat. For Gupta the formula alone says 833 shares, far more than the 25% cap allows, so the cap sets its size, close to 500 shares. A Rs 12 stop on Bharat would sit inside its everyday wiggle, the noise, and ordinary moves would knock it out. The same Rs 10,000 of risk simply buys fewer shares of the stock that moves more.",
+        "hi": "ATR 14 size naapta hai, direction kabhi nahi: ek aam din Gupta Cement ko lagbhag Rs 8 hilata hai aur Bharat Pumps ko lagbhag Rs 20. Swing stop entry se 1.5 x ATR neeche lagta hai: Gupta ke liye Rs 12, Bharat ke liye Rs 30. Phir size stop ke hisaab se aata hai: Bharat ke liye Rs 10,000 ÷ Rs 30 = 333 shares. Gupta ke liye akela formula 833 shares kehta hai, jo 25% cap se kahin zyada hai, isliye wahan size cap tay karta hai, lagbhag 500 shares. Bharat par Rs 12 ka stop uske roz ke wiggle, yaani noise, ke andar baithega, aur aam moves hi use hit kar denge. Wahi Rs 10,000 ka risk bas zyada hilne wale stock ke kam shares khareedta hai.",
+        "dv": "ATR 14 साइज़ नापता है, दिशा कभी नहीं: एक आम दिन Gupta Cement को लगभग Rs 8 हिलाता है और Bharat Pumps को लगभग Rs 20। स्विंग स्टॉप एंट्री से 1.5 x ATR नीचे लगता है: Gupta Cement के लिए Rs 12, Bharat Pumps के लिए Rs 30। फिर साइज़ स्टॉप के हिसाब से आता है: Bharat Pumps के लिए Rs 10,000 ÷ Rs 30 = 333 शेयर। Gupta Cement के लिए अकेला फ़ॉर्मूला 833 शेयर कहता है, जो 25% कैप से कहीं ज़्यादा है, इसलिए वहाँ साइज़ कैप तय करता है, लगभग 500 शेयर। Bharat Pumps पर Rs 12 का स्टॉप उसकी रोज़ की हलचल, यानी नॉइज़, के अंदर बैठेगा, और आम उतार-चढ़ाव ही उसे हिट कर देंगे। वही Rs 10,000 का रिस्क बस ज़्यादा हिलने वाले स्टॉक के कम शेयर ख़रीदता है।"
       }
     },
     {
@@ -150,7 +58,7 @@
           "text": {
             "en": "It restarts at every open, so it describes one day",
             "hi": "Yeh har open par reset hota hai, bas ek din ka hisaab hai",
-            "dv": "यह हर ओपन पर रीसेट होता है, बस एक दिन का हिसाब है"
+            "dv": "यह हर ओपन पर फिर से शुरू होता है, बस एक दिन का हिसाब है"
           },
           "correct": true
         },
@@ -187,232 +95,140 @@
     },
     {
       "stem": {
-        "en": "A stock's EMA 20 is Rs 300, above an EMA 50 of Rs 288 that stood at Rs 280 ten trading days ago. It closes at Rs 304, and RSI(14) is 62. Under the EMA Pullback rules, what is the verdict?",
-        "hi": "Ek stock ka EMA 20 Rs 300 hai, jo Rs 288 wale EMA 50 se upar hai; das trading din pehle EMA 50 Rs 280 par tha. Close Rs 304 hai aur RSI(14) 62 hai. EMA Pullback rules ke hisaab se faisla kya hai?",
-        "dv": "एक स्टॉक का EMA 20 Rs 300 है, जो Rs 288 वाले EMA 50 से ऊपर है; दस ट्रेडिंग दिन पहले EMA 50 Rs 280 पर था। क्लोज़ Rs 304 है और RSI(14) 62 है। EMA पुलबैक के नियमों के हिसाब से फ़ैसला क्या है?"
+        "en": "Thursday evening, Priya writes her EMA Pullback plan card: maximum entry Rs 520, stop distance Rs 16, capital Rs 10 lakh, 1% risk, 25% cap. Aman says, 'Size it tomorrow, once you know the actual open.' What goes on her card tonight?",
+        "hi": "Thursday shaam Priya apna EMA Pullback plan card likhti hai: maximum entry Rs 520, stop distance Rs 16, capital Rs 10 lakh, 1% risk, 25% cap. Aman kehta hai, 'Size kal tay karna, jab asli open pata chal jaaye.' Aaj raat uske card par kya jaata hai?",
+        "dv": "गुरुवार शाम प्रिया अपना EMA पुलबैक प्लान कार्ड लिखती है: मैक्सिमम एंट्री Rs 520, स्टॉप डिस्टेंस Rs 16, कैपिटल Rs 10 लाख, 1% रिस्क, 25% कैप। अमन कहता है, 'साइज़ कल तय करना, जब असली ओपन पता चल जाए।' आज रात उसके कार्ड पर क्या जाता है?"
       },
       "options": [
         {
           "text": {
-            "en": "It fails Rule 3: RSI 62 has not cooled to 40-50",
-            "hi": "Rule 3 mein fail: RSI 62 hai, 40-50 tak thanda nahi",
-            "dv": "रूल 3 में फ़ेल: RSI 62 है, 40 से 50 चाहिए"
+            "en": "480 shares, fixed tonight: any open at or below Rs 520 stays inside 25%",
+            "hi": "480 shares, aaj raat hi tay: Rs 520 ya usse neeche ka har open 25% ke andar",
+            "dv": "480 शेयर, आज रात ही तय: Rs 520 या उससे नीचे का कोई भी ओपन 25% के अंदर रहेगा"
           },
           "correct": true
         },
         {
           "text": {
-            "en": "It passes all three rules and goes to the RS check",
-            "hi": "Teeno rules pass hain, ab yeh RS check par jaayega",
-            "dv": "तीनों रूल पास हैं, अब यह RS चेक पर जाएगा"
+            "en": "625 shares from the 1% rule; the cap is checked once the trade is open",
+            "hi": "1% rule se 625 shares; cap tab check hoga jab trade khul jaaye",
+            "dv": "1% नियम से 625 शेयर; कैप तब चेक होगा जब ट्रेड खुल जाए"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "It fails Rule 2: the close must be below EMA 20",
-            "hi": "Rule 2 mein fail: close EMA 20 ke neeche hona chahiye",
-            "dv": "रूल 2 में फ़ेल: क्लोज़ EMA 20 से नीचे होना चाहिए"
+            "en": "No size yet: if it opens at Rs 505, the cap will allow 495 shares",
+            "hi": "Abhi koi size nahi: agar Rs 505 par khula, toh cap 495 shares allow karega",
+            "dv": "अभी कोई साइज़ नहीं: अगर Rs 505 पर खुला, तो कैप 495 शेयर की इजाज़त देगा"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "It fails Rule 1: EMA 50 is not rising fast enough",
-            "hi": "Rule 1 mein fail: EMA 50 kaafi tezi se nahi chadh raha",
-            "dv": "रूल 1 में फ़ेल: EMA 50 काफ़ी तेज़ी से नहीं चढ़ रहा"
+            "en": "480 shares tonight, topped up at the open if the open comes in lower",
+            "hi": "Aaj raat 480 shares, aur open neeche aaya toh open par aur shares jodna",
+            "dv": "आज रात 480 शेयर, और ओपन नीचे आया तो ओपन पर और शेयर जोड़ना"
           },
           "correct": false
         }
       ],
       "explanation": {
-        "en": "Rule 1 passes: EMA 20 is above EMA 50, and EMA 50 is higher than it was 10 trading days ago. Rule 2 passes: Rs 304 is about 1.3% above EMA 20, inside the 2% band on either side, and above EMA 50. Rule 3 fails: RSI 62 means the stock has not cooled into the 40-50 zone. It stays off the watchlist for now; a later dip may bring it back.",
-        "hi": "Rule 1 pass hai: EMA 20, EMA 50 ke upar hai, aur EMA 50 ab Rs 288 hai, das trading din pehle ke Rs 280 se upar. Rule 2 bhi pass hai: Rs 304, EMA 20 se lagbhag 1.3% upar hai, dono taraf ke 2% band ke andar, aur EMA 50 ke upar bhi. Rule 3 fail hai: RSI 62 ka matlab stock abhi 40-50 wale zone tak thanda nahi hua. Filhaal yeh watchlist se bahar rahega; aage ek dip ise wapas la sakta hai.",
-        "dv": "रूल 1 पास है: EMA 20, EMA 50 के ऊपर है, और EMA 50 अब Rs 288 है, दस ट्रेडिंग दिन पहले के Rs 280 से ऊपर। रूल 2 भी पास है: Rs 304, EMA 20 से लगभग 1.3% ऊपर है, दोनों तरफ़ के 2% बैंड के अंदर, और EMA 50 के ऊपर भी। रूल 3 फ़ेल है: RSI 62 का मतलब है कि स्टॉक अभी 40-50 वाले ज़ोन तक ठंडा नहीं हुआ। फ़िलहाल यह वॉचलिस्ट से बाहर रहेगा; आगे एक डिप इसे वापस ला सकता है।"
+        "en": "The formula gives Rs 10,000 ÷ Rs 16 = 625 shares, but 625 x Rs 520 = Rs 3,25,000, above the Rs 2,50,000 cap. The course checks the cap the evening before, at the maximum entry, the most she could pay: Rs 2,50,000 ÷ Rs 520 = 480.8, rounded down to 480. Her real risk is 480 x Rs 16 = Rs 7,680, about 0.77R: the 1% is a ceiling, not a goal. That size holds at any open she accepts, because every accepted open is Rs 520 or lower. A swing trader does not watch the open, so the whole card, size included, is written tonight and not edited after. Sizing at the open, or topping up at a lower open, is a new plan made on the fly.",
+        "hi": "Formula deta hai Rs 10,000 ÷ Rs 16 = 625 shares, par 625 x Rs 520 = Rs 3,25,000, jo Rs 2,50,000 ke cap se upar hai. Course cap ek shaam pehle check karta hai, maximum entry par, yaani sabse zyada jo woh de sakti hai: Rs 2,50,000 ÷ Rs 520 = 480.8, round down karke 480. Uska asli risk 480 x Rs 16 = Rs 7,680 hai, lagbhag 0.77R: 1% ek upper limit hai, target nahi. Yeh size har us open par tikta hai jo woh accept karegi, kyunki har accepted open Rs 520 ya usse neeche hi hoga. Swing trader open dekhta nahi, isliye poora card, size samet, aaj raat likha jaata hai aur baad mein badla nahi jaata. Open par size tay karna, ya neeche ke open par shares jodna, chalte-chalte bana naya plan hai.",
+        "dv": "फ़ॉर्मूला देता है Rs 10,000 ÷ Rs 16 = 625 शेयर, पर 625 x Rs 520 = Rs 3,25,000, जो Rs 2,50,000 के कैप से ऊपर है। कोर्स कैप एक शाम पहले चेक करता है, मैक्सिमम एंट्री पर, यानी सबसे ज़्यादा जो वह दे सकती है: Rs 2,50,000 ÷ Rs 520 = 480.8, राउंड डाउन करके 480। उसका असली रिस्क 480 x Rs 16 = Rs 7,680 है, लगभग 0.77R: 1% ऊपरी सीमा है, लक्ष्य नहीं। यह साइज़ हर उस ओपन पर टिकता है जिसे वह मानेगी, क्योंकि हर माना गया ओपन Rs 520 या उससे नीचे ही होगा। स्विंग ट्रेडर ओपन देखता नहीं, इसलिए पूरा कार्ड, साइज़ समेत, आज रात लिखा जाता है और बाद में बदला नहीं जाता। ओपन पर साइज़ तय करना, या नीचे के ओपन पर शेयर जोड़ना, चलते-चलते बना नया प्लान है।"
       }
     },
     {
       "stem": {
-        "en": "A swing trade on the EMA Pullback rule card enters at Rs 440, and ATR(14) is Rs 16. Where do the stop and the profit exit go?",
-        "hi": "EMA Pullback rule card par ek swing trade Rs 440 par enter hota hai, aur ATR(14) Rs 16 hai. Stop aur profit exit kahan lagenge?",
-        "dv": "EMA पुलबैक रूल कार्ड पर एक स्विंग ट्रेड Rs 440 पर एंटर होता है, और ATR(14) Rs 16 है। स्टॉप और प्रॉफ़िट एग्ज़िट कहाँ लगेंगे?"
+        "en": "Priya has three open swing trades: Gupta Cement Ltd (cement), Kiran Foods Ltd (food products) and Bharat Pumps Ltd (pumps). Today Sharma Textiles Ltd, from a sector she does not hold, makes a clean signal day. What do her house limits say?",
+        "hi": "Priya ke teen swing trades khule hain: Gupta Cement Ltd (cement), Kiran Foods Ltd (food products) aur Bharat Pumps Ltd (pumps). Aaj Sharma Textiles Ltd, ek aise sector se jo uske paas nahi hai, saaf signal day banata hai. Uski house limits kya kehti hain?",
+        "dv": "प्रिया के तीन स्विंग ट्रेड खुले हैं: Gupta Cement Ltd (सीमेंट), Kiran Foods Ltd (फ़ूड प्रोडक्ट्स) और Bharat Pumps Ltd (पंप)। आज Sharma Textiles Ltd, एक ऐसे सेक्टर से जो उसके पास नहीं है, साफ़ सिग्नल डे बनाता है। उसकी हाउस लिमिट क्या कहती हैं?"
       },
       "options": [
         {
           "text": {
-            "en": "Stop Rs 416, profit exit Rs 500",
-            "hi": "Stop Rs 416, profit exit Rs 500",
-            "dv": "स्टॉप Rs 416, प्रॉफ़िट एग्ज़िट Rs 500"
+            "en": "No new plan: three trades are already open",
+            "hi": "Koi naya plan nahi: teen trades pehle se khule hain",
+            "dv": "कोई नया प्लान नहीं: तीन ट्रेड पहले से ही खुले हैं"
           },
           "correct": true
         },
         {
           "text": {
-            "en": "Stop Rs 424, profit exit Rs 480",
-            "hi": "Stop Rs 424, profit exit Rs 480",
-            "dv": "स्टॉप Rs 424, प्रॉफ़िट एग्ज़िट Rs 480"
+            "en": "Plan it: a new sector adds no correlation",
+            "hi": "Plan kijiye: naya sector koi correlation nahi jodta",
+            "dv": "प्लान करें: नया सेक्टर कोई कोरिलेशन नहीं जोड़ता"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "Stop Rs 416, profit exit Rs 488",
-            "hi": "Stop Rs 416, profit exit Rs 488",
-            "dv": "स्टॉप Rs 416, प्रॉफ़िट एग्ज़िट Rs 488"
+            "en": "Plan it at half size, so total risk stays near 3R",
+            "hi": "Aadhe size mein plan kijiye, taaki total risk 3R ke paas rahe",
+            "dv": "आधे साइज़ में प्लान करें, ताकि कुल रिस्क 3R के पास रहे"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "Stop Rs 416, no profit exit: let it run",
-            "hi": "Stop Rs 416, profit exit nahi: chalne dijiye",
-            "dv": "स्टॉप Rs 416, प्रॉफ़िट एग्ज़िट नहीं: चलने दें"
+            "en": "Close her weakest open trade early to make room",
+            "hi": "Sabse kamzor khula trade jaldi band karke jagah banaiye",
+            "dv": "सबसे कमज़ोर खुला ट्रेड जल्दी बंद करके जगह बनाएँ"
           },
           "correct": false
         }
       ],
       "explanation": {
-        "en": "The stop goes 1.5 x ATR below entry: 1.5 x Rs 16 = Rs 24, so Rs 440 - Rs 24 = Rs 416. That Rs 24 per share is your 1R. The profit exit waits 2.5R above entry: 2.5 x Rs 24 = Rs 60, so Rs 500. Rs 424 uses only 1 x ATR, and Rs 488 is a 2R profit exit, the ORB number, not this card's 2.5R. Every card has an exit plan: if neither is hit by the close of day 15, the time exit takes you out at the next open.",
-        "hi": "Stop entry se 1.5 x ATR neeche lagta hai: 1.5 x Rs 16 = Rs 24, toh Rs 440 - Rs 24 = Rs 416. Yahi Rs 24 per share aapka 1R hai. Profit exit entry se 2.5R upar wait karta hai: 2.5 x Rs 24 = Rs 60, yaani Rs 500. Rs 424 mein sirf 1 x ATR liya gaya hai, aur Rs 488 2R ka profit exit hai, jo ORB ka number hai, is card ka 2.5R nahi. Har card par exit plan likha hota hai: agar day 15 ke close tak dono mein se kuch hit na ho, toh time exit aapko agle open par bahar kar deta hai.",
-        "dv": "स्टॉप एंट्री से 1.5 x ATR नीचे लगता है: 1.5 x Rs 16 = Rs 24, तो Rs 440 - Rs 24 = Rs 416। यही Rs 24 प्रति शेयर आपका 1R है। प्रॉफ़िट एग्ज़िट एंट्री से 2.5R ऊपर इंतज़ार करता है: 2.5 x Rs 24 = Rs 60, यानी Rs 500। Rs 424 में सिर्फ़ 1 x ATR लिया गया है, और Rs 488 2R का प्रॉफ़िट एग्ज़िट है, जो ORB का नंबर है, इस कार्ड का 2.5R नहीं। हर कार्ड पर एग्ज़िट प्लान लिखा होता है: अगर दिन 15 के क्लोज़ तक दोनों में से कुछ हिट न हो, तो टाइम एग्ज़िट आपको अगले ओपन पर बाहर कर देता है।"
+        "en": "The course allows at most 3 open trades at a time, so no more than 3R of planned risk is live at once. The sector check helps choose which setups get a slot; it never adds a fourth slot. Half size is a size set by feeling, and closing a trade early to make room edits its plan card after entry. She writes 'Skipped: 3 trades open', and a skip made by a written rule still earns its adherence point. When a slot frees up, a later signal can use it.",
+        "hi": "Course ek waqt mein zyada se zyada 3 open trades allow karta hai, taaki ek saath 3R se zyada planned risk na ho. Sector check yeh chunne mein madad karta hai ki kaunse setup ko slot mile; woh chautha slot kabhi nahi jodta. Aadha size feeling se tay hua size hai, aur jagah banane ke liye trade jaldi band karna entry ke baad plan card badalna hai. Woh likhti hai 'Skipped: 3 trades open', aur likhe rule se kiye skip ko bhi adherence ka point milta hai. Jab koi slot khaali hoga, tab agla signal use le sakta hai.",
+        "dv": "कोर्स एक समय में ज़्यादा से ज़्यादा 3 खुले ट्रेड की इजाज़त देता है, ताकि एक साथ 3R से ज़्यादा प्लान किया हुआ रिस्क न हो। सेक्टर चेक यह चुनने में मदद करता है कि किस सेटअप को स्लॉट मिले; वह चौथा स्लॉट कभी नहीं जोड़ता। आधा साइज़ मन से तय किया गया साइज़ है, और जगह बनाने के लिए ट्रेड जल्दी बंद करना एंट्री के बाद प्लान कार्ड बदलना है। वह लिखती है 'Skipped: 3 ट्रेड खुले हैं', और लिखे नियम से छोड़ने पर भी एडहेरेंस का पॉइंट मिलता है। जब कोई स्लॉट ख़ाली होगा, तब अगला सिग्नल उसे ले सकता है।"
       }
     },
     {
       "stem": {
-        "en": "Capital Rs 10 lakh, 1% risk, 25% cap. A swing entry is Rs 600 with ATR(14) of Rs 10. How many shares does the plan card allow, and how much is really at risk?",
-        "hi": "Capital Rs 10 lakh, 1% risk, 25% cap. Swing entry Rs 600 hai aur ATR(14) Rs 10. Plan card kitne shares ki ijazat deta hai, aur asal mein kitna risk par hai?",
-        "dv": "कैपिटल Rs 10 लाख, 1% रिस्क, 25% कैप। स्विंग एंट्री Rs 600 है और ATR(14) Rs 10। प्लान कार्ड कितने शेयर की इजाज़त देता है, और असल में कितना रिस्क पर है?"
+        "en": "On a day's leave, Aman runs ORB on paper. One of his swing trades opened below its stop this morning and was logged at -1.7R. At 9:50 his first ORB trade stopped out for -0.4R. At 10:20 another NIFTY 50 stock gives an ORB signal that passes both checks. What do the rules say?",
+        "hi": "Chhutti ke din Aman paper par ORB chala raha hai. Aaj subah uska ek swing trade apne stop ke neeche khula aur -1.7R likha gaya. 9:50 par uska pehla ORB trade -0.4R par stop out hua. 10:20 par ek aur NIFTY 50 stock ORB signal deta hai jo dono checks pass karta hai. Rules kya kehte hain?",
+        "dv": "छुट्टी के दिन अमन पेपर पर ORB चला रहा है। आज सुबह उसका एक स्विंग ट्रेड अपने स्टॉप से नीचे खुला और -1.7R लिखा गया। 9:50 पर उसका पहला ORB ट्रेड -0.4R पर स्टॉप आउट हुआ। 10:20 पर एक और NIFTY 50 स्टॉक ORB सिग्नल देता है जो दोनों चेक पास करता है। नियम क्या कहते हैं?"
       },
       "options": [
         {
           "text": {
-            "en": "416 shares, risking about Rs 6,240",
-            "hi": "416 shares, risk lagbhag Rs 6,240",
-            "dv": "416 शेयर, रिस्क लगभग Rs 6,240"
+            "en": "Stop for today: the day's losses add up to -2.1R, past the -2R stop",
+            "hi": "Aaj ke liye bas: din ka loss -2.1R ho gaya, -2R stop se aage",
+            "dv": "आज के लिए बस: दिन का नुक़सान -2.1R हो गया, -2R स्टॉप से आगे"
           },
           "correct": true
         },
         {
           "text": {
-            "en": "666 shares, risking about Rs 9,990",
-            "hi": "666 shares, risk lagbhag Rs 9,990",
-            "dv": "666 शेयर, रिस्क लगभग Rs 9,990"
+            "en": "Take it: ORB allows two stop-outs a day, and he has had only one",
+            "hi": "Le lijiye: ORB din mein do stop-outs allow karta hai, abhi ek hi hua hai",
+            "dv": "ले लें: ORB दिन में दो स्टॉप-आउट की इजाज़त देता है, अभी एक ही हुआ है"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "1,000 shares, risking about Rs 10,000",
-            "hi": "1,000 shares, risk lagbhag Rs 10,000",
-            "dv": "1,000 शेयर, रिस्क लगभग Rs 10,000"
+            "en": "Take it: the swing trade's loss counts only towards the weekly total",
+            "hi": "Le lijiye: swing trade ka loss sirf weekly total mein ginta hai",
+            "dv": "ले लें: स्विंग ट्रेड का नुक़सान सिर्फ़ हफ़्ते के टोटल में गिना जाता है"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "416 shares, risking the full Rs 10,000",
-            "hi": "416 shares, risk poore Rs 10,000 ka",
-            "dv": "416 शेयर, रिस्क पूरे Rs 10,000 का"
+            "en": "Take it at half size, so that today's damage stays small",
+            "hi": "Aadhe size mein lijiye, taaki aaj ka nuksaan chhota rahe",
+            "dv": "आधे साइज़ में लें, ताकि आज का नुक़सान छोटा रहे"
           },
           "correct": false
         }
       ],
       "explanation": {
-        "en": "The stop goes 1.5 x Rs 10 = Rs 15 below entry, at Rs 585. The formula gives Rs 10,000 ÷ Rs 15 = 666 shares, but 666 x Rs 600 = Rs 3,99,600, far above the Rs 2,50,000 cap. The cap allows Rs 2,50,000 ÷ Rs 600 = 416.7, rounded down to 416. The real planned risk is 416 x Rs 15 = Rs 6,240, about 0.62R. The 1% is a ceiling, not a goal; you never widen the stop or add shares to fill it.",
-        "hi": "Stop entry se 1.5 x Rs 10 = Rs 15 neeche, Rs 585 par lagta hai. Formula Rs 10,000 ÷ Rs 15 = 666 shares deta hai, lekin 666 x Rs 600 = Rs 3,99,600, jo Rs 2,50,000 ke cap se kaafi upar hai. Cap Rs 2,50,000 ÷ Rs 600 = 416.7 allow karta hai, round down karke 416. Asli planned risk 416 x Rs 15 = Rs 6,240 hai, lagbhag 0.62R. 1% ek ceiling hai, goal nahi; use poora karne ke liye na stop chauda kijiye, na shares badhaiye.",
-        "dv": "स्टॉप एंट्री से 1.5 x Rs 10 = Rs 15 नीचे, Rs 585 पर लगता है। फ़ॉर्मूला Rs 10,000 ÷ Rs 15 = 666 शेयर देता है, लेकिन 666 x Rs 600 = Rs 3,99,600, जो Rs 2,50,000 के कैप से काफ़ी ऊपर है। कैप Rs 2,50,000 ÷ Rs 600 = 416.7 की इजाज़त देता है, नीचे राउंड करके 416। असली प्लान किया हुआ रिस्क 416 x Rs 15 = Rs 6,240 है, लगभग 0.62R। 1% एक ऊपरी सीमा है, लक्ष्य नहीं; उसे पूरा करने के लिए न स्टॉप चौड़ा करें, न शेयर बढ़ाएँ।"
-      }
-    },
-    {
-      "stem": {
-        "en": "Aman planned an EMA Pullback entry in Kiran Foods Ltd. Next morning it opens Rs 3 below the signal day's low. 'Cheaper than planned, even better,' he says. What does the rule card say?",
-        "hi": "Aman ne Kiran Foods Ltd mein EMA Pullback entry plan ki thi. Agli subah stock signal-day ke low se Rs 3 neeche khulta hai. Aman kehta hai, 'Plan se bhi sasta, yeh toh aur achha hai.' Rule card kya kehta hai?",
-        "dv": "अमन ने Kiran Foods Ltd में EMA पुलबैक एंट्री प्लान की थी। अगली सुबह स्टॉक सिग्नल वाले दिन के लो से Rs 3 नीचे खुलता है। अमन कहता है, 'प्लान से भी सस्ता, यह तो और अच्छा है।' रूल कार्ड क्या कहता है?"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Skip it: the signal has already failed",
-            "hi": "Skip: signal pehle hi fail ho chuka hai",
-            "dv": "छोड़ें: सिग्नल पहले ही फ़ेल हो चुका है"
-          },
-          "correct": true
-        },
-        {
-          "text": {
-            "en": "Enter: a lower price means a smaller risk",
-            "hi": "Entry lijiye: kam price matlab kam risk",
-            "dv": "एंट्री लें: कम प्राइस मतलब कम रिस्क"
-          },
-          "correct": false
-        },
-        {
-          "text": {
-            "en": "Enter, but with half the planned quantity",
-            "hi": "Entry lijiye, par plan ki aadhi quantity se",
-            "dv": "एंट्री लें, पर प्लान की आधी क्वांटिटी से"
-          },
-          "correct": false
-        },
-        {
-          "text": {
-            "en": "Wait until it climbs back to the signal close",
-            "hi": "Signal close tak wapas chadhne ka wait kijiye",
-            "dv": "सिग्नल क्लोज़ तक वापस चढ़ने का इंतज़ार करें"
-          },
-          "correct": false
-        }
-      ],
-      "explanation": {
-        "en": "The plan card has two skip limits: an open above the maximum entry, and an open below the signal day's low. Opening below that low means the signal has already failed. The stop is entry minus 1.5 x ATR, so a lower entry pulls the stop down with it: the risk per share does not shrink, and a lower price is no bargain. Half the quantity, or waiting for the signal close, would be a new plan made on the fly. He writes 'Skipped: below signal-day low', and that skip still scores 1 for adherence.",
-        "hi": "Plan card mein skip ki do limits hain: maximum entry se upar open, aur signal-day ke low se neeche open. Us low ke neeche khulne ka matlab hai ki signal pehle hi fail ho chuka hai. Stop entry se 1.5 x ATR neeche lagta hai, toh kam entry ke saath stop bhi neeche aata hai: risk per share kam nahi hota, aur sasta price koi bargain nahi hai. Aadhi quantity ho ya signal close ka wait, dono chalte-chalte bane naye plan hain. Woh 'Skipped: signal-day low ke neeche' likhta hai, aur is skip ko bhi adherence mein 1 point milta hai.",
-        "dv": "प्लान कार्ड में छोड़ने की दो लिमिट हैं: मैक्सिमम एंट्री से ऊपर ओपन, और सिग्नल वाले दिन के लो से नीचे ओपन। उस लो से नीचे खुलने का मतलब है कि सिग्नल पहले ही फ़ेल हो चुका है। स्टॉप एंट्री से 1.5 x ATR नीचे लगता है, तो कम एंट्री के साथ स्टॉप भी नीचे आता है: प्रति शेयर रिस्क कम नहीं होता, और सस्ता प्राइस कोई मौक़ा नहीं है। आधी क्वांटिटी हो या सिग्नल क्लोज़ का इंतज़ार, दोनों चलते-चलते बने नए प्लान हैं। वह 'Skipped: सिग्नल वाले दिन के लो से नीचे' लिखता है, और इस फ़ैसले को भी एडहेरेंस में 1 पॉइंट मिलता है।"
-      }
-    },
-    {
-      "stem": {
-        "en": "ORB paper replay: Gupta Cement Ltd's opening range is Rs 700 to Rs 712. The 9:55 candle closes at Rs 715, above VWAP, but its volume is below its 20-candle average. What do the rules say?",
-        "hi": "ORB paper replay: Gupta Cement Ltd ki opening range Rs 700 se Rs 712 hai. 9:55 wali candle Rs 715 par close hoti hai, VWAP ke upar, lekin uska volume apne 20-candle average se kam hai. Rules kya kehte hain?",
-        "dv": "ORB पेपर रीप्ले: Gupta Cement Ltd की ओपनिंग रेंज Rs 700 से Rs 712 है। 9:55 वाली कैंडल Rs 715 पर क्लोज़ होती है, VWAP के ऊपर, लेकिन उसका वॉल्यूम अपने 20-कैंडल औसत से कम है। नियम क्या कहते हैं?"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "No entry yet: the volume check has failed",
-            "hi": "Abhi entry nahi: volume check fail hai",
-            "dv": "अभी एंट्री नहीं: वॉल्यूम चेक फ़ेल है"
-          },
-          "correct": true
-        },
-        {
-          "text": {
-            "en": "Go long at the next open: the close is outside",
-            "hi": "Agle open par long: close range ke bahar hai",
-            "dv": "अगले ओपन पर लॉन्ग: क्लोज़ रेंज के बाहर है"
-          },
-          "correct": false
-        },
-        {
-          "text": {
-            "en": "Go long now at Rs 715, before the move runs away",
-            "hi": "Abhi Rs 715 par long, move nikal jaane se pehle",
-            "dv": "अभी Rs 715 पर लॉन्ग, मूव निकल जाने से पहले"
-          },
-          "correct": false
-        },
-        {
-          "text": {
-            "en": "Go long, with the stop tightened to Rs 708",
-            "hi": "Long lijiye, stop tight karke Rs 708 par",
-            "dv": "लॉन्ग लें, स्टॉप टाइट करके Rs 708 पर"
-          },
-          "correct": false
-        }
-      ],
-      "explanation": {
-        "en": "ORB needs a 5-minute close outside the range and two checks that agree: price on the right side of VWAP, and breakout-candle volume above its 20-candle average. This close passes the first check and fails the second, so it is not a signal. A later candle can still qualify if it passes both and the entry open comes by 11:00. Buying at Rs 715 right now, or shrinking the stop, would be rules invented mid-trade.",
-        "hi": "ORB ko range ke bahar 5-minute close chahiye, aur do checks, jo dono pass hone chahiye: price VWAP ki sahi taraf ho, aur breakout candle ka volume uske 20-candle average se zyada ho. Yeh close pehla check pass karta hai, doosra fail, isliye yeh signal nahi hai. Baad ki koi candle abhi bhi qualify kar sakti hai, agar dono checks pass kare aur entry wala open 11:00 tak aa jaaye. Abhi Rs 715 par kharidna ya stop chhota karna, dono beech trade mein banaye gaye naye rules hain.",
-        "dv": "ORB को रेंज के बाहर 5-मिनट क्लोज़ चाहिए, और दो चेक, जो दोनों पास होने चाहिए: प्राइस VWAP की सही तरफ़ हो, और ब्रेकआउट कैंडल का वॉल्यूम उसके 20-कैंडल औसत से ज़्यादा हो। यह क्लोज़ पहला चेक पास करता है, दूसरा फ़ेल, इसलिए यह सिग्नल नहीं है। बाद की कोई कैंडल अब भी क्वालिफ़ाई कर सकती है, अगर दोनों चेक पास करे और एंट्री वाला ओपन 11:00 तक आ जाए। अभी Rs 715 पर ख़रीदना या स्टॉप छोटा करना, दोनों बीच ट्रेड में बनाए गए नए नियम हैं।"
+        "en": "The daily stop counts every loss of the day, whatever the strategy: -1.7R + -0.4R = -2.1R, past the -2R kill-switch. ORB's 'two stop-outs' line is an extra brake, whichever comes first, not a second allowance. Half size is a size chosen by feeling. He closes the app and logs 'No trade: daily stop', which still earns its adherence point; tomorrow he starts fresh at the normal size. The swing loss also shows why a stop is a plan, not a promise of your exit price: a gap below the stop turned a planned 1R loss into 1.7R.",
+        "hi": "Daily stop din ka har loss ginta hai, strategy koi bhi ho: -1.7R + -0.4R = -2.1R, jo -2R ke kill-switch se aage hai. ORB ki 'do stop-outs' wali line ek extra brake hai, jo pehle aaye woh laagu, koi doosri chhoot nahi. Aadha size feeling se chuna gaya size hai. Woh app band karta hai aur likhta hai 'No trade: daily stop', aur is faisle ko bhi adherence ka point milta hai; kal woh normal size ke saath naye sire se shuru karega. Swing loss yeh bhi dikhata hai ki stop ek plan hai, exit price ka vaada nahi: stop ke neeche gap ne planned 1R ke loss ko 1.7R bana diya.",
+        "dv": "डेली स्टॉप दिन का हर नुक़सान गिनता है, स्ट्रैटेजी कोई भी हो: -1.7R + -0.4R = -2.1R, जो -2R के किल-स्विच से आगे है। ORB की 'दो स्टॉप-आउट' वाली लाइन एक अतिरिक्त ब्रेक है, जो पहले आए वह लागू, कोई दूसरी छूट नहीं। आधा साइज़ मन से चुना गया साइज़ है। वह ऐप बंद करता है और लिखता है 'No trade: डेली स्टॉप', और इस फ़ैसले को भी एडहेरेंस का पॉइंट मिलता है; कल वह नॉर्मल साइज़ के साथ नए सिरे से शुरू करेगा। स्विंग का नुक़सान यह भी दिखाता है कि स्टॉप एक प्लान है, एग्ज़िट प्राइस का वादा नहीं: स्टॉप से नीचे गैप ने प्लान किए गए 1R के नुक़सान को 1.7R बना दिया।"
       }
     },
     {
@@ -463,140 +279,232 @@
     },
     {
       "stem": {
-        "en": "Aman's paper week has 8 decisions: 2 no-setup days when he stayed out, 1 no-setup day when he traded anyway, 3 trades that kept every rule, 1 setup skipped because it gapped past his maximum entry, and 1 trade where he moved the stop further away and closed at +1.5R. What is his adherence score?",
-        "hi": "Aman ke paper week mein 8 decisions hain: 2 no-setup din jab woh bahar raha, 1 no-setup din jab usne phir bhi trade le liya, 3 trades jinmein har rule follow hua, 1 setup jo max entry se upar gap hone ki wajah se skip kiya, aur 1 trade jismein usne stop aur door khiska diya aur woh +1.5R par band hua. Uska adherence score kya hai?",
-        "dv": "अमन के पेपर हफ़्ते में 8 फ़ैसले हैं: 2 नो-सेटअप दिन जब वह बाहर रहा, 1 नो-सेटअप दिन जब उसने फिर भी ट्रेड ले लिया, 3 ट्रेड जिनमें हर नियम माना गया, 1 सेटअप जो मैक्स एंट्री से ऊपर गैप होने की वजह से छोड़ा, और 1 ट्रेड जिसमें उसने स्टॉप और दूर खिसका दिया और वह +1.5R पर बंद हुआ। उसका एडहेरेंस स्कोर क्या है?"
+        "en": "Which of these can count as risk capital?",
+        "hi": "Inmein se kaunsa paisa risk capital maana ja sakta hai?",
+        "dv": "इनमें से कौन-सा पैसा रिस्क कैपिटल माना जा सकता है?"
       },
       "options": [
         {
           "text": {
-            "en": "75%: 6 points from 8 decisions",
-            "hi": "75%: 8 decisions mein se 6 points",
-            "dv": "75%: 8 फ़ैसलों में से 6 पॉइंट"
+            "en": "Savings left after bills, emergency fund and goals",
+            "hi": "Bills, emergency fund aur goals ke baad bachi hui savings",
+            "dv": "बिल, इमरजेंसी फ़ंड और लंबे लक्ष्यों के बाद बची हुई बचत"
           },
           "correct": true
         },
         {
           "text": {
-            "en": "80%: no-setup days are left out",
-            "hi": "80%: no-setup din gine nahi jaate",
-            "dv": "80%: नो-सेटअप दिन गिने नहीं जाते"
+            "en": "A personal loan you plan to repay from trading profit",
+            "hi": "Personal loan, jo trading ke profit se chukane ka plan hai",
+            "dv": "पर्सनल लोन, जिसे ट्रेडिंग के मुनाफ़े से चुकाने का प्लान है"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "62.5%: a skipped setup scores 0",
-            "hi": "62.5%: skip kiye setup ko 0 milta hai",
-            "dv": "62.5%: छोड़े गए सेटअप को 0 मिलता है"
+            "en": "Half of your emergency fund, since it sits idle",
+            "hi": "Emergency fund ka aadha hissa, kyunki woh khaali pada hai",
+            "dv": "इमरजेंसी फ़ंड का आधा हिस्सा, क्योंकि वह यूँ ही पड़ा है"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "87.5%: the winning trade earns its point",
-            "hi": "87.5%: jeete hue trade ko bhi point milta hai",
-            "dv": "87.5%: जीते हुए ट्रेड को भी पॉइंट मिलता है"
+            "en": "Margin your broker lends you on top of your cash",
+            "hi": "Broker ka diya margin, jo aapke cash ke upar milta hai",
+            "dv": "ब्रोकर का दिया मार्जिन, जो आपके कैश के ऊपर मिलता है"
           },
           "correct": false
         }
       ],
       "explanation": {
-        "en": "Each decision scores 1 or 0. Points: 2 for staying out on no-setup days, 3 for the rule-kept trades and 1 for the skip, because skipping by a written rule is on-rule. The no-setup trade and the moved stop score 0, win or lose. So 6 ÷ 8 = 75%. No-setup days stay in the count, and profit never enters the score.",
-        "hi": "Har decision ko 1 ya 0 milta hai. Points: no-setup dinon mein bahar rehne ke 2, rule wale trades ke 3, aur skip ka 1, kyunki likhe hue rule se skip karna rule follow karna hi hai. No-setup din ka trade aur khiskaya hua stop 0 paate hain, profit hua ho ya loss. Toh 6 ÷ 8 = 75%. No-setup din ginti mein rehte hain, aur profit score mein kabhi nahi aata.",
-        "dv": "हर फ़ैसले को 1 या 0 मिलता है। पॉइंट: नो-सेटअप दिनों में बाहर रहने के 2, नियम वाले ट्रेड के 3, और छोड़ने का 1, क्योंकि लिखे हुए नियम से सेटअप छोड़ना नियम मानना ही है। नो-सेटअप दिन का ट्रेड और खिसकाया हुआ स्टॉप 0 पाते हैं, मुनाफ़ा हुआ हो या नुक़सान। तो 6 ÷ 8 = 75%। नो-सेटअप दिन गिनती में रहते हैं, और मुनाफ़ा स्कोर में कभी नहीं आता।"
+        "en": "Risk capital is money you could lose completely without changing your rent, your EMIs or your sleep, and it comes last: bills first, then an emergency fund of about 3 to 6 months of essential expenses, then long-term goals. Borrowed money never qualifies, whether a personal loan or a broker's margin, because the repayment is due whether the trade wins or loses. An emergency fund is not idle money; it is your safety net.",
+        "hi": "Risk capital woh paisa hai jo poora chala jaaye toh bhi aapka rent, EMI ya neend na badle. Aur yeh sabse aakhir mein aata hai: pehle bills, phir 3 se 6 mahine ke zaroori kharch jitna emergency fund, phir long-term goals. Udhaar ka paisa kabhi risk capital nahi hota, chahe personal loan ho ya broker ka margin, kyunki trade jeete ya haare, chukana toh padega hi. Emergency fund khaali pada paisa nahi hai; woh aapka safety net hai.",
+        "dv": "रिस्क कैपिटल वह पैसा है जो पूरा चला जाए तो भी आपका किराया, EMI या नींद न बदले। और यह सबसे आख़िर में आता है: पहले बिल, फिर 3 से 6 महीने के ज़रूरी ख़र्च जितना इमरजेंसी फ़ंड, फिर लंबे समय के लक्ष्य। उधार का पैसा कभी रिस्क कैपिटल नहीं होता, चाहे पर्सनल लोन हो या ब्रोकर का मार्जिन, क्योंकि ट्रेड जीते या हारे, चुकाना तो पड़ेगा ही। इमरजेंसी फ़ंड यूँ ही पड़ा पैसा नहीं है; वह आपकी सुरक्षा है।"
       }
     },
     {
       "stem": {
-        "en": "You read four lines on a strategy page. Using the five backtest checks, which line alone is enough to treat the page as an advertisement?",
-        "hi": "Ek strategy page par aap chaar lines padhte hain. Backtest ke paanch checks lagaiye: kaunsi ek line akele hi page ko advertisement maanne ke liye kaafi hai?",
-        "dv": "एक स्ट्रैटेजी पेज पर आप चार लाइनें पढ़ते हैं। बैकटेस्ट के पाँच चेक लगाएँ: कौन-सी एक लाइन अकेले ही पेज को विज्ञापन मानने के लिए काफ़ी है?"
+        "en": "Priya compares two NIFTY 50 index funds over the same year, using made-up figures: NIFTY 50 rose 12.0%, Fund A 11.8% and Fund B 11.1%. What is the fairest reading?",
+        "hi": "Priya ek hi saal ke liye do NIFTY 50 index funds compare karti hai, banaaye hue figures ke saath: NIFTY 50 12.0% badha, Fund A 11.8% aur Fund B 11.1%. Sabse sahi reading kya hai?",
+        "dv": "प्रिया एक ही साल के लिए दो NIFTY 50 इंडेक्स फ़ंड की तुलना करती है, बनाए हुए आँकड़ों के साथ: NIFTY 50 12.0% बढ़ा, फ़ंड A 11.8% और फ़ंड B 11.1%। सबसे सही मतलब क्या है?"
       },
       "options": [
         {
           "text": {
-            "en": "Drawdown: not shown anywhere on the page or chart",
-            "hi": "Drawdown: page ya chart par kahin nahi dikhaya gaya",
-            "dv": "ड्रॉडाउन: पेज या चार्ट पर कहीं नहीं दिखाया गया"
+            "en": "Fund A tracked NIFTY 50 more closely; costs pull every copy a little off",
+            "hi": "Fund A ne NIFTY 50 ko zyada kareeb se copy kiya; costs har copy ko thoda hata dete hain",
+            "dv": "फ़ंड A ने NIFTY 50 की ज़्यादा क़रीबी नक़ल की; ख़र्चे हर नक़ल को थोड़ा हटा देते हैं"
           },
           "correct": true
         },
         {
           "text": {
-            "en": "140 trades across five years, including two falling years",
-            "hi": "Paanch saal mein 140 trades, do girte saalon ke saath",
-            "dv": "पाँच साल में 140 ट्रेड, दो गिरते सालों के साथ"
+            "en": "Fund A's manager picked better stocks this year than Fund B's manager",
+            "hi": "Fund A ke manager ne is saal Fund B ke manager se behtar stocks chune",
+            "dv": "फ़ंड A के मैनेजर ने इस साल फ़ंड B के मैनेजर से बेहतर स्टॉक चुने"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "Results are shown after charges and slippage",
-            "hi": "Results charges aur slippage ke baad ke dikhaye hain",
-            "dv": "नतीजे चार्ज और स्लिपेज के बाद के दिखाए गए हैं"
+            "en": "Fund B is the better buy now, since it has more ground left to catch up",
+            "hi": "Ab Fund B behtar hai, kyunki use abhi zyada peechhe se barabari karni hai",
+            "dv": "अब फ़ंड B बेहतर है, क्योंकि उसे अभी ज़्यादा पीछे से बराबरी करनी है"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "Re-tested on two years its settings were not tuned on",
-            "hi": "Un do saalon par dobara test, jin par settings tune nahi hui",
-            "dv": "उन दो सालों पर दोबारा टेस्ट, जिन पर सेटिंग्स ट्यून नहीं हुईं"
+            "en": "An index fund must match NIFTY 50 exactly, so both are breaking rules",
+            "hi": "Index fund ko NIFTY 50 se bilkul match karna chahiye, toh dono rules tod rahe hain",
+            "dv": "इंडेक्स फ़ंड को NIFTY 50 से बिल्कुल मैच करना चाहिए, तो दोनों नियम तोड़ रहे हैं"
           },
           "correct": false
         }
       ],
       "explanation": {
-        "en": "The other three lines are what an honest page shows: enough trades across falling years, costs taken out, and an out-of-sample test. A missing drawdown fails the drawdown check. Drawdown is how far the curve fell from a high before making a new one, the pain you would have had to sit through; a page that hides it hides the part that tests whether anyone could have stayed with the rule. One missing or failed check is enough to call a page an advertisement, not evidence.",
-        "hi": "Baaki teen lines woh hain jo ek imaandaar page dikhata hai: girte saalon samet kaafi trades, costs ke baad ke results, aur ek out-of-sample test. Drawdown ka na hona drawdown wala check fail karta hai. Drawdown batata hai ki curve kisi high se naya high banne se pehle kitna gira, yaani woh dard jo aapko sehna padta; jo page ise chhupata hai, woh wahi hissa chhupata hai jisse pata chalta ki koi is rule ke saath tik bhi paata ya nahi. Ek bhi check missing ya fail ho, toh woh page advertisement hai, saboot nahi.",
-        "dv": "बाक़ी तीन लाइनें वे हैं जो एक ईमानदार पेज दिखाता है: गिरते सालों समेत काफ़ी ट्रेड, ख़र्चों के बाद के नतीजे, और एक आउट-ऑफ़-सैंपल टेस्ट। ड्रॉडाउन का न होना ड्रॉडाउन वाला चेक फ़ेल करता है। ड्रॉडाउन बताता है कि कर्व किसी हाई से नया हाई बनने से पहले कितना गिरा, यानी वह दर्द जो आपको सहना पड़ता; जो पेज इसे छिपाता है, वह वही हिस्सा छिपाता है जिससे पता चलता कि कोई इस नियम के साथ टिक भी पाता या नहीं। एक भी चेक ग़ायब या फ़ेल हो, तो वह पेज विज्ञापन है, सबूत नहीं।"
+        "en": "An index fund has no stock-picking manager; it copies the index. No copy is perfect: the expense ratio, cash kept for withdrawals and trading costs pull its return a little away from the index. Fund A trailed NIFTY 50 by 0.2 points and Fund B by 0.9, so Fund A copied it more closely this year. Fund houses report this yearly gap as the tracking difference; tracking error measures how much the gap wobbles from day to day, and for both, smaller means a closer copy. Past figures are not a forecast, and no rule says a fund that trailed will catch up. Read each fund's expense ratio, tracking difference and tracking error on the fund house website or its factsheet; which fund suits your own goals is a question for a SEBI-registered Investment Adviser.",
+        "hi": "Index fund mein stock chunne wala manager nahi hota; woh index ki copy karta hai. Koi copy perfect nahi hoti: expense ratio, withdrawals ke liye rakha cash aur trading costs uske return ko index se thoda door kar dete hain. Fund A, NIFTY 50 se 0.2 point peechhe raha aur Fund B 0.9 point, isliye is saal Fund A ne index ko zyada kareeb se copy kiya. Fund houses is saalana farak ko tracking difference ke naam se batate hain; tracking error batata hai ki yeh farak din-ba-din kitna dagmagata hai, aur dono jitne chhote, copy utni kareeb. Pichhle figures forecast nahi hote, aur aisa koi niyam nahi ki peechhe reh gaya fund barabari kar lega. Har fund ka expense ratio, tracking difference aur tracking error fund house ki website ya uski factsheet mein padhiye; aapke apne goals ke liye kaunsa fund theek hai, yeh sawaal SEBI-registered Investment Adviser ke liye hai.",
+        "dv": "इंडेक्स फ़ंड में स्टॉक चुनने वाला मैनेजर नहीं होता; वह इंडेक्स की नक़ल करता है। कोई नक़ल परफ़ेक्ट नहीं होती: एक्सपेंस रेशियो, निकासी के लिए रखा कैश और ट्रेडिंग के ख़र्चे उसके रिटर्न को इंडेक्स से थोड़ा दूर कर देते हैं। फ़ंड A, NIFTY 50 से 0.2 पॉइंट पीछे रहा और फ़ंड B 0.9 पॉइंट, इसलिए इस साल फ़ंड A ने इंडेक्स की ज़्यादा क़रीबी नक़ल की। फ़ंड हाउस इस सालाना फ़र्क़ को ट्रैकिंग डिफ़रेंस के नाम से बताते हैं; ट्रैकिंग एरर बताता है कि यह फ़र्क़ दिन-ब-दिन कितना डगमगाता है, और दोनों जितने छोटे, नक़ल उतनी क़रीब। पिछले आँकड़े भविष्यवाणी नहीं होते, और ऐसा कोई नियम नहीं कि पीछे रह गया फ़ंड बराबरी कर लेगा। हर फ़ंड का एक्सपेंस रेशियो, ट्रैकिंग डिफ़रेंस और ट्रैकिंग एरर फ़ंड हाउस की वेबसाइट या उसकी फ़ैक्टशीट में पढ़ें; आपके अपने लक्ष्यों के लिए कौन-सा फ़ंड ठीक है, यह सवाल SEBI-रजिस्टर्ड इन्वेस्टमेंट एडवाइज़र के लिए है।"
       }
     },
     {
       "stem": {
-        "en": "Priya reviews four decisions from her paper week. Which one is the most dangerous for her habits?",
-        "hi": "Priya apne paper week ke chaar decisions review kar rahi hai. Inmein se kaunsa uski aadaton ke liye sabse khatarnaak hai?",
-        "dv": "प्रिया अपने पेपर हफ़्ते के चार फ़ैसले रिव्यू कर रही है। इनमें से कौन-सा उसकी आदतों के लिए सबसे ख़तरनाक है?"
+        "en": "A stock's EMA 20 is Rs 300, above an EMA 50 of Rs 288 that stood at Rs 280 ten trading days ago. It closes at Rs 304, and RSI(14) is 62. Under the EMA Pullback rules, what is the verdict?",
+        "hi": "Ek stock ka EMA 20 Rs 300 hai, jo Rs 288 wale EMA 50 se upar hai; das trading din pehle EMA 50 Rs 280 par tha. Close Rs 304 hai aur RSI(14) 62 hai. EMA Pullback rules ke hisaab se faisla kya hai?",
+        "dv": "एक स्टॉक का EMA 20 Rs 300 है, जो Rs 288 वाले EMA 50 से ऊपर है; दस ट्रेडिंग दिन पहले EMA 50 Rs 280 पर था। क्लोज़ Rs 304 है और RSI(14) 62 है। EMA पुलबैक के नियमों के हिसाब से फ़ैसला क्या है?"
       },
       "options": [
         {
           "text": {
-            "en": "A FOMO entry before her signal, closed at +1.6R",
-            "hi": "Signal se pehle FOMO wali entry, +1.6R par band",
-            "dv": "सिग्नल से पहले FOMO वाली एंट्री, +1.6R पर बंद"
+            "en": "It fails Rule 3: RSI 62 has not cooled to 40-50",
+            "hi": "Rule 3 mein fail: RSI 62 hai, 40-50 tak thanda nahi",
+            "dv": "रूल 3 में फ़ेल: RSI 62 है, 40 से 50 चाहिए"
           },
           "correct": true
         },
         {
           "text": {
-            "en": "A trade that kept every rule and closed at -1.1R",
-            "hi": "Har rule maan kar liya trade, jo -1.1R par band hua",
-            "dv": "हर नियम मानकर लिया गया ट्रेड, जो -1.1R पर बंद हुआ"
+            "en": "It passes all three rules and goes to the RS check",
+            "hi": "Teeno rules pass hain, ab yeh RS check par jaayega",
+            "dv": "तीनों रूल पास हैं, अब यह RS चेक पर जाएगा"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "A stop moved lower mid-trade, closed at -1.7R",
-            "hi": "Trade ke beech stop neeche khiskaya, -1.7R par band",
-            "dv": "ट्रेड के बीच स्टॉप नीचे खिसकाया, -1.7R पर बंद"
+            "en": "It fails Rule 2: the close must be below EMA 20",
+            "hi": "Rule 2 mein fail: close EMA 20 ke neeche hona chahiye",
+            "dv": "रूल 2 में फ़ेल: क्लोज़ EMA 20 से नीचे होना चाहिए"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "A trade that kept every rule and closed at +2.4R",
-            "hi": "Har rule maan kar liya trade, jo +2.4R par band hua",
-            "dv": "हर नियम मानकर लिया गया ट्रेड, जो +2.4R पर बंद हुआ"
+            "en": "It fails Rule 1: EMA 50 is not rising fast enough",
+            "hi": "Rule 1 mein fail: EMA 50 kaafi tezi se nahi chadh raha",
+            "dv": "रूल 1 में फ़ेल: EMA 50 काफ़ी तेज़ी से नहीं चढ़ रहा"
           },
           "correct": false
         }
       ],
       "explanation": {
-        "en": "Two of the four broke a rule, and both score 0. The moved-stop trade closed at -1.7R, and that loss itself warns her to fix the habit. The FOMO entry is more dangerous because it won: the +1.6R teaches her that breaking rules pays, so she is likely to repeat it. The two rule-kept trades are correct trades, whatever their result. Grade the decision, not the result, and write one fix for next week.",
-        "hi": "Chaar mein se do mein rule toota, aur dono ko 0 milta hai. Stop khiskane wala trade -1.7R par band hua, aur wahi loss use habit theek karne ki chetavni deta hai. FOMO wali entry zyada khatarnaak hai kyunki woh jeet gayi: +1.6R use sikhata hai ki rule todna faayde ka sauda hai, isliye woh ise dohra sakti hai. Rule maan kar liye gaye dono trades sahi trades hain, result jo bhi ho. Result nahi, decision ko grade kijiye, aur agle week ke liye ek fix likhiye.",
-        "dv": "चार में से दो में नियम टूटा, और दोनों को 0 मिलता है। स्टॉप खिसकाने वाला ट्रेड -1.7R पर बंद हुआ, और वही नुक़सान उसे आदत सुधारने की चेतावनी देता है। FOMO वाली एंट्री ज़्यादा ख़तरनाक है, क्योंकि वह जीत गई: +1.6R उसे सिखाता है कि नियम तोड़ना फ़ायदे का सौदा है, इसलिए वह इसे दोहरा सकती है। नियम मानकर लिए गए दोनों ट्रेड सही ट्रेड हैं, नतीजा जो भी हो। नतीजे को नहीं, फ़ैसले को ग्रेड करें, और अगले हफ़्ते के लिए एक सुधार लिखें।"
+        "en": "Rule 1 passes: EMA 20 is above EMA 50, and EMA 50 is higher than it was 10 trading days ago. Rule 2 passes: Rs 304 is about 1.3% above EMA 20, inside the 2% band on either side, and above EMA 50. Rule 3 fails: RSI 62 means the stock has not cooled into the 40-50 zone. It stays off the watchlist for now; a later dip may bring it back.",
+        "hi": "Rule 1 pass hai: EMA 20, EMA 50 ke upar hai, aur EMA 50 ab Rs 288 hai, das trading din pehle ke Rs 280 se upar. Rule 2 bhi pass hai: Rs 304, EMA 20 se lagbhag 1.3% upar hai, dono taraf ke 2% band ke andar, aur EMA 50 ke upar bhi. Rule 3 fail hai: RSI 62 ka matlab stock abhi 40-50 wale zone tak thanda nahi hua. Filhaal yeh watchlist se bahar rahega; aage ek dip ise wapas la sakta hai.",
+        "dv": "रूल 1 पास है: EMA 20, EMA 50 के ऊपर है, और EMA 50 अब Rs 288 है, दस ट्रेडिंग दिन पहले के Rs 280 से ऊपर। रूल 2 भी पास है: Rs 304, EMA 20 से लगभग 1.3% ऊपर है, दोनों तरफ़ के 2% बैंड के अंदर, और EMA 50 के ऊपर भी। रूल 3 फ़ेल है: RSI 62 का मतलब है कि स्टॉक अभी 40-50 वाले ज़ोन तक ठंडा नहीं हुआ। फ़िलहाल यह वॉचलिस्ट से बाहर रहेगा; आगे एक डिप इसे वापस ला सकता है।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Aman planned an EMA Pullback entry in Kiran Foods Ltd. Next morning it opens Rs 3 below the signal day's low. 'Cheaper than planned, even better,' he says. What does the rule card say?",
+        "hi": "Aman ne Kiran Foods Ltd mein EMA Pullback entry plan ki thi. Agli subah stock signal-day ke low se Rs 3 neeche khulta hai. Aman kehta hai, 'Plan se bhi sasta, yeh toh aur achha hai.' Rule card kya kehta hai?",
+        "dv": "अमन ने Kiran Foods Ltd में EMA पुलबैक एंट्री प्लान की थी। अगली सुबह स्टॉक सिग्नल वाले दिन के लो से Rs 3 नीचे खुलता है। अमन कहता है, 'प्लान से भी सस्ता, यह तो और अच्छा है।' रूल कार्ड क्या कहता है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Skip it: the signal has already failed",
+            "hi": "Skip: signal pehle hi fail ho chuka hai",
+            "dv": "छोड़ें: सिग्नल पहले ही फ़ेल हो चुका है"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "Enter: a lower price means a smaller risk",
+            "hi": "Entry lijiye: kam price matlab kam risk",
+            "dv": "एंट्री लें: कम प्राइस मतलब कम रिस्क"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Enter, but with half the planned quantity",
+            "hi": "Entry lijiye, par plan ki aadhi quantity se",
+            "dv": "एंट्री लें, पर प्लान की आधी क्वांटिटी से"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Wait until it climbs back to the signal close",
+            "hi": "Signal close tak wapas chadhne ka wait kijiye",
+            "dv": "सिग्नल क्लोज़ तक वापस चढ़ने का इंतज़ार करें"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "The plan card has two skip limits: an open above the maximum entry, and an open below the signal day's low. Opening below that low means the signal has already failed. The stop is entry minus 1.5 x ATR, so a lower entry pulls the stop down with it: the risk per share does not shrink, and a lower price is no bargain. Half the quantity, or waiting for the signal close, would be a new plan made on the fly. He writes 'Skipped: below signal-day low', and that skip still scores 1 for adherence.",
+        "hi": "Plan card mein skip ki do limits hain: maximum entry se upar open, aur signal-day ke low se neeche open. Us low ke neeche khulne ka matlab hai ki signal pehle hi fail ho chuka hai. Stop entry se 1.5 x ATR neeche lagta hai, toh kam entry ke saath stop bhi neeche aata hai: risk per share kam nahi hota, aur sasta price koi bargain nahi hai. Aadhi quantity ho ya signal close ka wait, dono chalte-chalte bane naye plan hain. Woh 'Skipped: signal-day low ke neeche' likhta hai, aur is skip ko bhi adherence mein 1 point milta hai.",
+        "dv": "प्लान कार्ड में छोड़ने की दो लिमिट हैं: मैक्सिमम एंट्री से ऊपर ओपन, और सिग्नल वाले दिन के लो से नीचे ओपन। उस लो से नीचे खुलने का मतलब है कि सिग्नल पहले ही फ़ेल हो चुका है। स्टॉप एंट्री से 1.5 x ATR नीचे लगता है, तो कम एंट्री के साथ स्टॉप भी नीचे आता है: प्रति शेयर रिस्क कम नहीं होता, और सस्ता प्राइस कोई मौक़ा नहीं है। आधी क्वांटिटी हो या सिग्नल क्लोज़ का इंतज़ार, दोनों चलते-चलते बने नए प्लान हैं। वह 'Skipped: सिग्नल वाले दिन के लो से नीचे' लिखता है, और इस फ़ैसले को भी एडहेरेंस में 1 पॉइंट मिलता है।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Priya's journal sheet has the ten columns. Above them sits a header with her name, PAN and client ID, and a photo of an old contract note sits in another tab. She wants the 'Journal detective' prompt to find patterns. What should she paste into the AI chat?",
+        "hi": "Priya ki journal sheet mein das columns hain. Unke upar ek header hai jismein uska naam, PAN aur client ID hai, aur ek purane contract note ki photo doosre tab mein padi hai. Woh chahti hai ki 'Journal detective' prompt patterns dhoondhe. AI chat mein use kya paste karna chahiye?",
+        "dv": "प्रिया की जर्नल शीट में दस कॉलम हैं। उनके ऊपर एक हेडर है जिसमें उसका नाम, PAN और क्लाइंट ID है, और एक पुराने कॉन्ट्रैक्ट नोट की फ़ोटो दूसरे टैब में पड़ी है। वह चाहती है कि 'Journal detective' प्रॉम्प्ट पैटर्न ढूँढे। AI चैट में उसे क्या पेस्ट करना चाहिए?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Only the ten columns; her name, PAN, client ID and contract note stay out",
+            "hi": "Sirf das columns; naam, PAN, client ID aur contract note bahar rahenge",
+            "dv": "सिर्फ़ दस कॉलम; नाम, PAN, क्लाइंट ID और कॉन्ट्रैक्ट नोट बाहर रहेंगे"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "The whole sheet, so the AI can check her real charges and her results",
+            "hi": "Poori sheet, taaki AI uske asli charges aur results check kar sake",
+            "dv": "पूरी शीट, ताकि AI उसके असली चार्ज और नतीजे चेक कर सके"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The ten columns minus Emotion, since her feelings are private matters",
+            "hi": "Emotion ko chhod kar das columns, kyunki feelings private hoti hain",
+            "dv": "इमोशन को छोड़कर दस कॉलम, क्योंकि भावनाएँ निजी होती हैं"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The ten columns plus the contract note, so her costs come out exact",
+            "hi": "Das columns ke saath contract note bhi, taaki costs ekdum sahi niklein",
+            "dv": "दस कॉलम के साथ कॉन्ट्रैक्ट नोट भी, ताकि ख़र्चे एकदम सही निकलें"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "Copy only the ten columns into any AI chat. Never paste your name, PAN, client ID, account numbers, a contract note, passwords or OTPs; the AI needs none of them to find patterns. The Emotion column is the useful part: it shows which feelings travel with broken rules. Paper trades already carry the 0.1R allowance, so a contract note adds nothing here. Ask the AI to label each claim Fact or Guess, check every count against your sheet, because AI can miscount, and then you decide what changes.",
+        "hi": "Kisi bhi AI chat mein sirf das columns copy kijiye. Apna naam, PAN, client ID, account numbers, contract note, password ya OTP kabhi paste mat kijiye; patterns dhoondhne ke liye AI ko inmein se kuch nahi chahiye. Emotion column hi kaam ka hissa hai: yeh dikhata hai ki kaunsi feelings toote rules ke saath aati hain. Paper trades mein 0.1R allowance pehle se hai, isliye yahan contract note kuch nahi jodta. AI se har claim par Fact ya Guess ka label lagwaiye, har ginti apni sheet se milaiye, kyunki AI galat gin sakta hai, aur phir faisla aap kijiye ki kya badalna hai.",
+        "dv": "किसी भी AI चैट में सिर्फ़ दस कॉलम कॉपी करें। अपना नाम, PAN, क्लाइंट ID, अकाउंट नंबर, कॉन्ट्रैक्ट नोट, पासवर्ड या OTP कभी पेस्ट न करें; पैटर्न ढूँढने के लिए AI को इनमें से कुछ नहीं चाहिए। इमोशन कॉलम ही काम का हिस्सा है: यह दिखाता है कि कौन-सी भावनाएँ टूटे नियमों के साथ आती हैं। पेपर ट्रेड में 0.1R अलाउंस पहले से है, इसलिए यहाँ कॉन्ट्रैक्ट नोट कुछ नहीं जोड़ता। AI से हर दावे पर Fact या Guess का लेबल लगवाएँ, हर गिनती अपनी शीट से मिलाएँ, क्योंकि AI ग़लत गिन सकता है, और फिर फ़ैसला आप करें कि क्या बदलना है।"
       }
     },
     {
@@ -647,48 +555,140 @@
     },
     {
       "stem": {
-        "en": "An advert shows 60 trades and +9R, with costs left out. Suppose charges and slippage cost 0.15R per trade, an illustrative figure. What would the account really have made?",
-        "hi": "Ek advert 60 trades aur +9R dikhata hai, costs ke bina. Maan lijiye charges aur slippage har trade par 0.15R lete hain, sirf samjhane ke liye. Account ne asal mein kitna banaya hota?",
-        "dv": "एक विज्ञापन 60 ट्रेड और +9R दिखाता है, ख़र्चों के बिना। मान लीजिए चार्ज और स्लिपेज हर ट्रेड पर 0.15R लेते हैं, सिर्फ़ समझाने के लिए। अकाउंट ने असल में कितना बनाया होता?"
+        "en": "ORB paper replay: Gupta Cement Ltd's opening range is Rs 700 to Rs 712. The 9:55 candle closes at Rs 715, above VWAP, but its volume is below its 20-candle average. What do the rules say?",
+        "hi": "ORB paper replay: Gupta Cement Ltd ki opening range Rs 700 se Rs 712 hai. 9:55 wali candle Rs 715 par close hoti hai, VWAP ke upar, lekin uska volume apne 20-candle average se kam hai. Rules kya kehte hain?",
+        "dv": "ORB पेपर रीप्ले: Gupta Cement Ltd की ओपनिंग रेंज Rs 700 से Rs 712 है। 9:55 वाली कैंडल Rs 715 पर क्लोज़ होती है, VWAP के ऊपर, लेकिन उसका वॉल्यूम अपने 20-कैंडल औसत से कम है। नियम क्या कहते हैं?"
       },
       "options": [
         {
           "text": {
-            "en": "0R: 60 x 0.15R eats up the whole +9R",
-            "hi": "0R: 60 x 0.15R poore 9R kha jaata hai",
-            "dv": "0R: 60 x 0.15R मिलकर पूरा +9R खा जाते हैं"
+            "en": "No entry yet: the volume check has failed",
+            "hi": "Abhi entry nahi: volume check fail hai",
+            "dv": "अभी एंट्री नहीं: वॉल्यूम चेक फ़ेल है"
           },
           "correct": true
         },
         {
           "text": {
-            "en": "+8.85R: the 0.15R comes off only once",
-            "hi": "+8.85R: 0.15R sirf ek baar katta hai",
-            "dv": "+8.85R: 0.15R सिर्फ़ एक बार कटता है"
+            "en": "Go long at the next open: the close is outside",
+            "hi": "Agle open par long: close range ke bahar hai",
+            "dv": "अगले ओपन पर लॉन्ग: क्लोज़ रेंज के बाहर है"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "+9R: costs do not change the R result",
-            "hi": "+9R: costs se R result nahi badalta",
-            "dv": "+9R: ख़र्चों से R नतीजा नहीं बदलता"
+            "en": "Go long now at Rs 715, before the move runs away",
+            "hi": "Abhi Rs 715 par long, move nikal jaane se pehle",
+            "dv": "अभी Rs 715 पर लॉन्ग, मूव निकल जाने से पहले"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "+7.5R: costs trim about a sixth of the result",
-            "hi": "+7.5R: costs result ka lagbhag chhatha hissa kaatte hain",
-            "dv": "+7.5R: ख़र्चे नतीजे का लगभग छठा हिस्सा काटते हैं"
+            "en": "Go long, with the stop tightened to Rs 708",
+            "hi": "Long lijiye, stop tight karke Rs 708 par",
+            "dv": "लॉन्ग लें, स्टॉप टाइट करके Rs 708 पर"
           },
           "correct": false
         }
       ],
       "explanation": {
-        "en": "Costs are paid on every trade, win or lose: 60 x 0.15R = 9R, so the +9R on the page shrinks to about 0R. At Rs 10,000 per R, the advert implies Rs 90,000, while the account would have made roughly nothing after all that screen time. The more trades a strategy takes, the more a missing cost line hides. The 0.15R here is only an illustration; your own contract note shows the real charges.",
-        "hi": "Costs har trade par lagte hain, jeet ho ya haar: 60 x 0.15R = 9R, toh page ka +9R ghat kar lagbhag 0R reh jaata hai. Rs 10,000 per R par advert Rs 90,000 ka ishaara karta hai, jabki itne screen time ke baad account mein lagbhag kuch nahi bachta. Strategy jitne zyada trades leti hai, cost wali line ka gayab hona utna hi zyada chhupata hai. Yahan 0.15R sirf misaal hai; asli charges aapka apna contract note dikhata hai.",
-        "dv": "ख़र्चे हर ट्रेड पर लगते हैं, जीत हो या हार: 60 x 0.15R = 9R, तो पेज का +9R घटकर लगभग 0R रह जाता है। Rs 10,000 प्रति R पर विज्ञापन Rs 90,000 का इशारा करता है, जबकि इतने स्क्रीन टाइम के बाद अकाउंट में लगभग कुछ नहीं बचता। स्ट्रैटेजी जितने ज़्यादा ट्रेड लेती है, ख़र्च वाली लाइन का ग़ायब होना उतना ही ज़्यादा छिपाता है। यहाँ 0.15R सिर्फ़ एक उदाहरण है; असली चार्ज आपका अपना कॉन्ट्रैक्ट नोट दिखाता है।"
+        "en": "ORB needs a 5-minute close outside the range and two checks that agree: price on the right side of VWAP, and breakout-candle volume above its 20-candle average. This close passes the first check and fails the second, so it is not a signal. A later candle can still qualify if it passes both and the entry open comes by 11:00. Buying at Rs 715 right now, or shrinking the stop, would be rules invented mid-trade.",
+        "hi": "ORB ko range ke bahar 5-minute close chahiye, aur do checks, jo dono pass hone chahiye: price VWAP ki sahi taraf ho, aur breakout candle ka volume uske 20-candle average se zyada ho. Yeh close pehla check pass karta hai, doosra fail, isliye yeh signal nahi hai. Baad ki koi candle abhi bhi qualify kar sakti hai, agar dono checks pass kare aur entry wala open 11:00 tak aa jaaye. Abhi Rs 715 par kharidna ya stop chhota karna, dono beech trade mein banaye gaye naye rules hain.",
+        "dv": "ORB को रेंज के बाहर 5-मिनट क्लोज़ चाहिए, और दो चेक, जो दोनों पास होने चाहिए: प्राइस VWAP की सही तरफ़ हो, और ब्रेकआउट कैंडल का वॉल्यूम उसके 20-कैंडल औसत से ज़्यादा हो। यह क्लोज़ पहला चेक पास करता है, दूसरा फ़ेल, इसलिए यह सिग्नल नहीं है। बाद की कोई कैंडल अब भी क्वालिफ़ाई कर सकती है, अगर दोनों चेक पास करे और एंट्री वाला ओपन 11:00 तक आ जाए। अभी Rs 715 पर ख़रीदना या स्टॉप छोटा करना, दोनों बीच ट्रेड में बनाए गए नए नियम हैं।"
+      }
+    },
+    {
+      "stem": {
+        "en": "You read four lines on a strategy page. Using the five backtest checks, which line alone is enough to treat the page as an advertisement?",
+        "hi": "Ek strategy page par aap chaar lines padhte hain. Backtest ke paanch checks lagaiye: kaunsi ek line akele hi page ko advertisement maanne ke liye kaafi hai?",
+        "dv": "एक स्ट्रैटेजी पेज पर आप चार लाइनें पढ़ते हैं। बैकटेस्ट के पाँच चेक लगाएँ: कौन-सी एक लाइन अकेले ही पेज को विज्ञापन मानने के लिए काफ़ी है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Drawdown: not shown anywhere on the page or chart",
+            "hi": "Drawdown: page ya chart par kahin bhi nahi dikhaya gaya",
+            "dv": "ड्रॉडाउन: पेज या चार्ट पर कहीं नहीं दिखाया गया"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "140 trades across five years, including two falling years",
+            "hi": "Paanch saal mein 140 trades, do girte saalon ke saath",
+            "dv": "पाँच साल में 140 ट्रेड, दो गिरते सालों के साथ"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Results are shown after charges and slippage",
+            "hi": "Results charges aur slippage ke baad ke dikhaye hain",
+            "dv": "नतीजे चार्ज और स्लिपेज के बाद के दिखाए गए हैं"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Re-tested on two years its settings were not tuned on",
+            "hi": "Un do saalon par dobara test, jin par settings tune nahi hui",
+            "dv": "उन दो सालों पर दोबारा टेस्ट, जिन पर सेटिंग्स ट्यून नहीं हुईं"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "The other three lines are what an honest page shows: enough trades across falling years, costs taken out, and an out-of-sample test. A missing drawdown fails the drawdown check. Drawdown is how far the curve fell from a high before making a new one, the pain you would have had to sit through; a page that hides it hides the part that tests whether anyone could have stayed with the rule. One missing or failed check is enough to call a page an advertisement, not evidence.",
+        "hi": "Baaki teen lines woh hain jo ek imaandaar page dikhata hai: girte saalon samet kaafi trades, costs ke baad ke results, aur ek out-of-sample test. Drawdown ka na hona drawdown wala check fail karta hai. Drawdown batata hai ki curve kisi high se naya high banne se pehle kitna gira, yaani woh dard jo aapko sehna padta; jo page ise chhupata hai, woh wahi hissa chhupata hai jisse pata chalta ki koi is rule ke saath tik bhi paata ya nahi. Ek bhi check missing ya fail ho, toh woh page advertisement hai, saboot nahi.",
+        "dv": "बाक़ी तीन लाइनें वे हैं जो एक ईमानदार पेज दिखाता है: गिरते सालों समेत काफ़ी ट्रेड, ख़र्चों के बाद के नतीजे, और एक आउट-ऑफ़-सैंपल टेस्ट। ड्रॉडाउन का न होना ड्रॉडाउन वाला चेक फ़ेल करता है। ड्रॉडाउन बताता है कि कर्व किसी हाई से नया हाई बनने से पहले कितना गिरा, यानी वह दर्द जो आपको सहना पड़ता; जो पेज इसे छिपाता है, वह वही हिस्सा छिपाता है जिससे पता चलता कि कोई इस नियम के साथ टिक भी पाता या नहीं। एक भी चेक ग़ायब या फ़ेल हो, तो वह पेज विज्ञापन है, सबूत नहीं।"
+      }
+    },
+    {
+      "stem": {
+        "en": "A finfluencer's paid group shows an INH number on its page. Priya searches that number in the Research Analyst list on sebi.gov.in: the name, the number, and the email and phone number on SEBI's record all match the group's page. What has she learnt?",
+        "hi": "Ek finfluencer ka paid group apne page par ek INH number dikhata hai. Priya sebi.gov.in par Research Analyst list mein woh number search karti hai: naam, number, aur SEBI record par diya email aur phone number, sab group ke page se match karte hain. Usne kya jaana?",
+        "dv": "एक फ़िनफ़्लुएंसर का पेड ग्रुप अपने पेज पर एक INH नंबर दिखाता है। प्रिया sebi.gov.in पर रिसर्च एनालिस्ट लिस्ट में वह नंबर सर्च करती है: नाम, नंबर, और SEBI रिकॉर्ड पर दिया ईमेल और फ़ोन नंबर, सब ग्रुप के पेज से मैच करते हैं। उसने क्या जाना?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "The finfluencer is registered: that is a minimum check, not proof of skill",
+            "hi": "Finfluencer registered hai: yeh sirf minimum check hai, kisi skill ka saboot nahi",
+            "dv": "फ़िनफ़्लुएंसर रजिस्टर्ड है: यह बस न्यूनतम जाँच है, किसी हुनर का सबूत नहीं"
+          },
+          "correct": true
+        },
+        {
+          "text": {
+            "en": "SEBI has checked the group's calls, so its screenshots can be trusted",
+            "hi": "SEBI ne group ke calls check kiye hain, toh uske screenshots par bharosa kar sakte hain",
+            "dv": "SEBI ने ग्रुप के कॉल चेक किए हैं, तो उसके स्क्रीनशॉट पर भरोसा कर सकते हैं"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "Nothing: any page can print an INH number, so the list proves nothing",
+            "hi": "Kuch nahi: koi bhi page INH number chhaap sakta hai, list kuch saabit nahi karti",
+            "dv": "कुछ नहीं: कोई भी पेज INH नंबर छाप सकता है, लिस्ट कुछ साबित नहीं करती"
+          },
+          "correct": false
+        },
+        {
+          "text": {
+            "en": "The group's calls are now fine to forward to friends as SEBI-approved",
+            "hi": "Ab group ke calls doston ko SEBI-approved bata kar forward kar sakte hain",
+            "dv": "अब ग्रुप के कॉल दोस्तों को SEBI-अप्रूव्ड बताकर फ़ॉरवर्ड कर सकते हैं"
+          },
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "en": "In India, paid buy or sell advice needs SEBI registration as a Research Analyst (INH) or an Investment Adviser (INA), and when the name, number and contact details on SEBI's record all match, this finfluencer holds one; fraudsters sometimes copy a real RA's name and number, which is why the email and phone must match too. That is the minimum check, not proof of skill: SEBI does not approve anyone's calls or results, and screenshots of winners prove nothing, since losing calls are simply not posted. The list is exactly what exposes a fake: had the name, number or contact details not matched, or had no INH or INA number been shown and the name found nothing, she would treat the group as unregistered. Either way she forwards no one's calls, and a matching number is no reason to join or pay.",
+        "hi": "India mein paise lekar buy ya sell ki salah dene ke liye SEBI registration chahiye, Research Analyst (INH) ya Investment Adviser (INA) ke roop mein, aur jab naam, number aur SEBI record ke contact details sab match karein, tab is finfluencer ke paas yeh registration hai; dhokebaaz kabhi-kabhi kisi asli RA ka naam aur number copy kar lete hain, isliye email aur phone ka match hona bhi zaroori hai. Yeh minimum check hai, skill ka saboot nahi: SEBI kisi ke calls ya results approve nahi karta, aur jeete hue calls ke screenshots kuch saabit nahi karte, kyunki haare hue calls post hi nahi hote. Yahi list nakli ko pakadti hai: agar naam, number ya contact details match na hote, ya koi INH ya INA number dikhaya hi na gaya hota aur naam se kuch na milta, toh woh group ko unregistered maanti. Dono haalat mein woh kisi ke calls forward nahi karti, aur number match hona join karne ya paise dene ki wajah nahi hai.",
+        "dv": "भारत में पैसे लेकर ख़रीदने या बेचने की सलाह देने के लिए SEBI रजिस्ट्रेशन चाहिए, रिसर्च एनालिस्ट (INH) या इन्वेस्टमेंट एडवाइज़र (INA) के रूप में, और जब नाम, नंबर और SEBI रिकॉर्ड के कॉन्टैक्ट डिटेल सब मैच करें, तब इस फ़िनफ़्लुएंसर के पास यह रजिस्ट्रेशन है; धोखेबाज़ कभी-कभी किसी असली RA का नाम और नंबर कॉपी कर लेते हैं, इसलिए ईमेल और फ़ोन का मैच होना भी ज़रूरी है। यह न्यूनतम जाँच है, हुनर का सबूत नहीं: SEBI किसी के कॉल या नतीजे अप्रूव नहीं करता, और जीते हुए कॉल के स्क्रीनशॉट कुछ साबित नहीं करते, क्योंकि हारे हुए कॉल पोस्ट ही नहीं होते। यही लिस्ट नक़ली को पकड़ती है: अगर नाम, नंबर या कॉन्टैक्ट डिटेल मैच न होते, या कोई INH या INA नंबर दिखाया ही न गया होता और नाम से कुछ न मिलता, तो वह ग्रुप को अनरजिस्टर्ड मानती। दोनों हालत में वह किसी के कॉल फ़ॉरवर्ड नहीं करती, और नंबर मैच होना जॉइन करने या पैसे देने की वजह नहीं है।"
       }
     }
   ]

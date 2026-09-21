@@ -14,14 +14,14 @@ const complete = (r: Row) => !!(r.full_why && r.full_why_2 && r.top_risk && r.ri
 
 const S = {
   title: t3("Mock portfolio", "Mock portfolio", "मॉक पोर्टफ़ोलियो"),
-  intro: t3("Rs 10,00,000 of virtual money and up to 5 watchlist rows. A row counts as practice work only when every field is filled: two Full Whys, the top risk and your answer to it, a price-stop, a Why-stop and a review point. There are no live prices and no profit or loss here. Your mentor grades the process.", "Rs 10,00,000 virtual paisa aur watchlist mein zyada se zyada 5 rows. Row tabhi practice kaam mein ginti hai jab saare fields bhare hon: do Full Why, sabse bada risk aur uska jawab, price-stop, Why-stop aur review point. Yahan koi live price nahi, koi profit ya loss nahi. Mentor aapke process ko grade karte hain.", "Rs 10,00,000 का वर्चुअल पैसा और वॉचलिस्ट में ज़्यादा से ज़्यादा 5 रो। रो तभी प्रैक्टिस काम में गिनी जाती है जब सारे फ़ील्ड भरे हों: दो फ़ुल व्हाई, सबसे बड़ा जोखिम और उसका जवाब, प्राइस-स्टॉप, व्हाई-स्टॉप और रिव्यू पॉइंट। यहाँ कोई लाइव कीमत नहीं, कोई मुनाफ़ा या नुकसान नहीं। मेंटर आपके प्रोसेस को ग्रेड करते हैं।"),
+  intro: t3("Rs 10,00,000 of virtual money and up to 5 Portfolio rows. A row counts as practice work only when every field is filled: two Full Whys, the top risk and your answer to it, a price-stop, a Why-stop and a review point. There are no live prices and no profit or loss here. Your mentor grades the process.", "Rs 10,00,000 virtual paisa aur zyada se zyada 5 Portfolio rows. Row tabhi practice kaam mein ginti hai jab saare fields bhare hon: do Full Why, sabse bada risk aur uska jawab, price-stop, Why-stop aur review point. Yahan koi live price nahi, koi profit ya loss nahi. Mentor aapke process ko grade karte hain.", "Rs 10,00,000 का वर्चुअल पैसा और ज़्यादा से ज़्यादा 5 Portfolio रो। रो तभी प्रैक्टिस काम में गिनी जाती है जब सारे फ़ील्ड भरे हों: दो फ़ुल व्हाई, सबसे बड़ा जोखिम और उसका जवाब, प्राइस-स्टॉप, व्हाई-स्टॉप और रिव्यू पॉइंट। यहाँ कोई लाइव कीमत नहीं, कोई मुनाफ़ा या नुकसान नहीं। मेंटर आपके प्रोसेस को ग्रेड करते हैं।"),
   practice: t3("Practice work", "Practice kaam", "प्रैक्टिस काम"),
   rowsDone: t3("rows complete", "rows poori", "रो पूरी"),
   grading: t3("Your mentor grades each complete row on process, A to F. The outcome (+ or −) is shown separately and never scored.", "Mentor har poori row ko process par A se F tak grade karte hain. Outcome (+ ya −) alag dikhta hai aur uske number nahi milte.", "मेंटर हर पूरी रो को प्रोसेस पर A से F तक ग्रेड करते हैं। नतीजा (+ या −) अलग दिखता है और उसके अंक नहीं मिलते।"),
-  review: t3("Weekly review is on your Path", "Weekly review aapke Path par hai", "वीकली रिव्यू आपके पाथ पर है"),
+  review: t3("Weekly review is on your Path", "Weekly review aapke Path par hai", "साप्ताहिक रिव्यू आपके पाथ पर है"),
   add: t3("Add a row", "Nayi row jodiye", "नई रो जोड़ें"),
-  full: t3("Watchlist full (5 of 5)", "Watchlist bhar gayi (5/5)", "वॉचलिस्ट भर गई (5/5)"),
-  watchlist: t3("Your watchlist", "Aapki watchlist", "आपकी वॉचलिस्ट"),
+  full: t3("Portfolio rows full (5 of 5)", "Portfolio rows bhar gayi (5/5)", "Portfolio रो भर गईं (5/5)"),
+  yourRows: t3("Your Portfolio rows", "Aapki Portfolio rows", "आपकी Portfolio रो"),
   none: t3("No rows yet. Add your first one above.", "Abhi koi row nahi. Upar se pehli row jodiye.", "अभी कोई रो नहीं। ऊपर से पहली रो जोड़िए।"),
   virtual: t3("virtual", "virtual", "वर्चुअल"),
   complete: t3("Complete", "Poori", "पूरी"),
@@ -53,7 +53,7 @@ export default async function PortfolioPage() {
         </section>
         <section className="col-card" aria-labelledby="pf-add"><h2 id="pf-add" className="col-eyebrow" style={{ margin: 0 }}>{tr(rows.length < 5 ? S.add : S.full, lang)}</h2>{rows.length < 5 && <RowForm />}</section>
       </div>
-      <h2 className="col-eyebrow mt-6 mb-3 flex items-center gap-2">{tr(S.watchlist, lang)} <span className="lrn-virtual">{tr(S.virtual, lang)}</span></h2>
+      <h2 className="col-eyebrow mt-6 mb-3 flex items-center gap-2">{tr(S.yourRows, lang)} <span className="lrn-virtual">{tr(S.virtual, lang)}</span></h2>
       {rows.length === 0 && <p className="lrn-muted">{tr(S.none, lang)}</p>}
       <div className="lrn-list">
         {rows.map((r) => { const g = grades.find((x) => x.ref_id === r.id); return (

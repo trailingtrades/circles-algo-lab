@@ -130,3 +130,31 @@
 .vz-story__panel--narr p { margin: 0; padding: 8px 12px; border-left: 3px solid var(--ink-3); font-size: 13.5px; font-style: italic; color: var(--ink-2); background: transparent; }
 .vz-story__moral { margin: 12px 0 0; padding: 10px 12px; border-radius: var(--r-sm); background: var(--brand-soft); color: var(--ink); font-size: 14px; line-height: 1.5; }
 .vz-ava { display: block; }
+
+/* table: ruled rows. A wide table scrolls sideways inside its card on a phone (each column keeps at least 7.5em),
+   never the page. Rules use --line-2, which still shows on the dark --panel-2 card. Blank rows are for filling in.
+   width:0 + min-width:100% gives the scroll box no intrinsic width, so a grid or flex parent (the topic list is a
+   grid) cannot be stretched by a wide table; the box still fills its card. */
+.vz-table__wrap { width: 0; min-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; border: 1px solid var(--line-2); border-radius: var(--r-sm); background: var(--panel-2); }
+.vz-table__wrap:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+.vz-table { width: 100%; border-collapse: collapse; font-size: 13.5px; line-height: 1.45; color: var(--ink); }
+.vz-table th, .vz-table td { min-width: 7.5em; padding: 8px 10px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line-2); }
+.vz-table th + th, .vz-table td + td { border-left: 1px solid var(--line); }
+.vz-table thead th { background: var(--brand-soft); font-size: 13px; font-weight: 650; color: var(--ink); }
+.vz-table tbody tr:last-child td { border-bottom: 0; }
+.vz-table__num { font-family: var(--col-font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.vz-table__blank td { height: 2.5em; }
+
+/* Printing (a handout or workbook page): light paper whatever the theme, every cell ruled, the whole table
+   shown (no scroll box), the header repeated on each page, and blank rows tall enough to write in. */
+@media print {
+  .vz--table { background: #fff; border-color: #9aa5b1; }
+  .vz--table .vz__title, .vz--table .vz__cap, .vz--table .vz-note { color: #111; }
+  .vz-table__wrap { overflow: visible; border: 0; border-radius: 0; background: #fff; }
+  .vz-table { color: #111; font-size: 10.5pt; }
+  .vz-table th, .vz-table td, .vz-table th + th, .vz-table td + td, .vz-table tbody tr:last-child td { min-width: 0; border: 1px solid #6b7785; }
+  .vz-table thead { display: table-header-group; }
+  .vz-table thead th { background: #e8eef4; color: #111; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .vz-table tr { break-inside: avoid; }
+  .vz-table__blank td { height: 9mm; }
+}

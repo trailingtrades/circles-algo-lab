@@ -255,9 +255,9 @@
         "dv": "नतीजा: दिखाया 80%, असली 60%, और फिर भी घाटा"
       },
       "p": {
-        "en": "Apply both rules to all 20 practice calls (the full list is in today's AI Lab prompt; do the task first if you want to test yourself). Five had no stop, so 25% of the channel's calls cannot be measured at all. Of the 15 measurable calls, 9 hit the target and 6 hit the stop: a hit-rate of 60%, not 80%. Each of the 15 calls with a stop set its target 5% away and its stop 10% away, so a win earns +0.5R and a loss costs -1R, a 1:0.5 payoff. Day 3's formula gives a breakeven win-rate of 1 ÷ (1 + 0.5), about 67%, so 60% loses money even before costs.",
-        "hi": "Dono rules saari 20 practice calls par lagaiye (poori list aaj ke AI Lab prompt mein hai; khud ko test karna ho toh pehle task kar lijiye). Paanch calls mein stop tha hi nahi, yaani channel ki 25% calls naapi hi nahi ja sakti. Bachi 15 measurable calls mein se 9 ne target hit kiya aur 6 ka stop hit hua: hit-rate 60%, 80% nahi. Stop wali har call mein target 5% door tha aur stop 10% door, isliye jeet par +0.5R milta hai aur haar par -1R jaata hai, yaani 1:0.5 ka payoff. Day 3 ka formula kehta hai ki is payoff par breakeven win-rate 1 ÷ (1 + 0.5), yaani lagbhag 67% chahiye, isliye 60% par costs se pehle hi ghaata hai.",
-        "dv": "दोनों नियम सारी 20 प्रैक्टिस कॉल पर लगाइए (पूरी लिस्ट आज के AI Lab प्रॉम्प्ट में है; ख़ुद को परखना हो तो पहले टास्क कर लीजिए)। पाँच कॉल में स्टॉप था ही नहीं, यानी चैनल की 25% कॉल मापी ही नहीं जा सकतीं। बची 15 कॉल में से 9 ने टारगेट हिट किया और 6 का स्टॉप हिट हुआ: हिट-रेट 60%, 80% नहीं। स्टॉप वाली हर कॉल में टारगेट 5% दूर था और स्टॉप 10% दूर, इसलिए जीत पर +0.5R मिलता है और हार पर -1R जाता है, यानी 1:0.5 का पेऑफ़। दिन 3 का फ़ॉर्मूला कहता है कि इस पेऑफ़ पर ब्रेकईवन विन-रेट 1 ÷ (1 + 0.5), यानी लगभग 67% चाहिए, इसलिए 60% पर ख़र्च से पहले ही घाटा है।"
+        "en": "Apply both rules to all 20 practice calls (the full set is under 'Your template' in today's task; do the task first if you want to test yourself). Five had no stop, so 25% of the channel's calls cannot be measured at all. Of the 15 measurable calls, 9 hit the target and 6 hit the stop: a hit-rate of 60%, not 80%. Each of the 15 calls with a stop set its target 5% away and its stop 10% away, so a win earns +0.5R and a loss costs -1R, a 1:0.5 payoff. Day 3's formula gives a breakeven win-rate of 1 ÷ (1 + 0.5), about 67%, so 60% loses money even before costs.",
+        "hi": "Dono rules saari 20 practice calls par lagaiye (poora set aaj ke kaam mein 'Aapka template' ke neeche hai; khud ko test karna ho toh pehle task kar lijiye). Paanch calls mein stop tha hi nahi, yaani channel ki 25% calls naapi hi nahi ja sakti. Bachi 15 measurable calls mein se 9 ne target hit kiya aur 6 ka stop hit hua: hit-rate 60%, 80% nahi. Stop wali har call mein target 5% door tha aur stop 10% door, isliye jeet par +0.5R milta hai aur haar par -1R jaata hai, yaani 1:0.5 ka payoff. Day 3 ka formula kehta hai ki is payoff par breakeven win-rate 1 ÷ (1 + 0.5), yaani lagbhag 67% chahiye, isliye 60% par costs se pehle hi ghaata hai.",
+        "dv": "दोनों नियम सारी 20 प्रैक्टिस कॉल पर लगाइए (पूरा सेट आज के काम में 'आपका टेम्पलेट' के नीचे है; ख़ुद को परखना हो तो पहले टास्क कर लीजिए)। पाँच कॉल में स्टॉप था ही नहीं, यानी चैनल की 25% कॉल मापी ही नहीं जा सकतीं। बची 15 कॉल में से 9 ने टारगेट हिट किया और 6 का स्टॉप हिट हुआ: हिट-रेट 60%, 80% नहीं। स्टॉप वाली हर कॉल में टारगेट 5% दूर था और स्टॉप 10% दूर, इसलिए जीत पर +0.5R मिलता है और हार पर -1R जाता है, यानी 1:0.5 का पेऑफ़। दिन 3 का फ़ॉर्मूला कहता है कि इस पेऑफ़ पर ब्रेकईवन विन-रेट 1 ÷ (1 + 0.5), यानी लगभग 67% चाहिए, इसलिए 60% पर ख़र्च से पहले ही घाटा है।"
       },
       "example": {
         "en": "Three of the channel's 12 'wins' fall away: the 'both touched' day, and two calls that touched their target but never had a stop. Now count it in rupees. If each call risked 1R = Rs 10,000 (1% of the Rs 10 lakh challenge capital), 9 wins add Rs 45,000 and 6 losses take away Rs 60,000: a net loss of Rs 15,000 before charges. Of the five no-stop calls, two reached their target, one only after first falling 25%; the other three are still down 14% to 26%.",
@@ -301,9 +301,9 @@
         "dv": "रेड फ़्लैग: नकली ऐप और WhatsApp के 'इन्वेस्टमेंट ग्रुप'"
       },
       "p": {
-        "en": "Tips are often only the first step of a bigger trap. In a common pattern, a stranger adds you to a WhatsApp or Telegram group where a 'professor' posts big profits, then asks you to install an app or open a 'VIP institutional account' that no SEBI-registered broker runs. The app shows fast profits, but when you try to withdraw, you are told to pay a 'fee' or 'tax' first. Another pattern is pump-and-dump: a group hypes a small, thinly traded share so members buy, while the operators, the people running the scheme, sell to them at the top. Learn the red-flag words, quoted here as scam wording so you can spot them: 'sure-shot', 'jackpot', '100% accuracy', 'operator news', 'upper circuit pakka', 'limited seats'.",
-        "hi": "Bade jaal ki shuruaat aksar ek tip se hoti hai. Ek aam pattern: koi anjaan aapko WhatsApp ya Telegram group mein add kar deta hai, jahan ek 'professor' bade profits post karta hai, phir aapse ek app install karwata hai ya 'VIP institutional account' khulwata hai, jo kisi SEBI-registered broker ka nahi hota. App mein profit tezi se badhta dikhta hai, lekin withdraw karne jaiye toh pehle 'fee' ya 'tax' bharne ko kaha jaata hai. Doosra pattern pump-and-dump hai: group kisi chhote, kam trade hone wale share ko hype karta hai, members khareed lete hain, aur operators, yaani scheme chalane wale log, oopar unhi ko bech kar nikal jaate hain. Red-flag words pehchaan lijiye; yeh scam ki bhasha hai, yahan sirf pehchaan ke liye likhi hai: 'sure-shot', 'jackpot', '100% accuracy', 'operator news', 'upper circuit pakka', 'limited seats'.",
-        "dv": "बड़े जाल की शुरुआत अक्सर एक टिप से होती है। एक आम पैटर्न: कोई अनजान आपको WhatsApp या Telegram ग्रुप में जोड़ देता है, जहाँ एक 'प्रोफ़ेसर' बड़े प्रॉफ़िट पोस्ट करता है, फिर आपसे एक ऐप इंस्टॉल करवाता है या 'VIP इंस्टीट्यूशनल अकाउंट' खुलवाता है, जो किसी SEBI-रजिस्टर्ड ब्रोकर का नहीं होता। ऐप में प्रॉफ़िट तेज़ी से बढ़ता दिखता है, लेकिन पैसा निकालने जाएँ तो पहले 'फ़ीस' या 'टैक्स' भरने को कहा जाता है। दूसरा पैटर्न पंप-एंड-डंप है: ग्रुप किसी छोटे, कम ट्रेड होने वाले शेयर को हवा देता है, मेंबर ख़रीद लेते हैं, और ऑपरेटर, यानी खेल चलाने वाले लोग, ऊपर उन्हीं को बेचकर निकल जाते हैं। रेड-फ़्लैग शब्द पहचान लीजिए; यह स्कैम की भाषा है, यहाँ सिर्फ़ पहचान के लिए लिखी है: 'श्योर-शॉट', 'जैकपॉट', '100% एक्यूरेसी', 'ऑपरेटर न्यूज़', 'अपर सर्किट पक्का', 'लिमिटेड सीटें'।"
+        "en": "Tips are often only the first step of a bigger trap. In a common pattern, a stranger adds you to a WhatsApp or Telegram group where a 'professor' posts big profits, then asks you to install an app or open a 'VIP institutional account' that no SEBI-registered broker runs. The app shows fast profits, but when you try to withdraw, you are told to pay a 'fee' or 'tax' first. Fake apps often copy a real broker's name and logo, so check before you install any trading app: find the broker on SEBI's list of registered stock brokers or in the NSE or BSE member directory, then install only from the official Google Play or App Store listing whose developer (publisher) is that same registered broker; the broker's own website should link to that listing. Never install an app from an APK file or from a link sent on WhatsApp, Telegram or SMS. Another pattern is pump-and-dump: a group hypes a small, thinly traded share so members buy, while the operators, the people running the scheme, sell to them at the top. Learn the red-flag words, quoted here as scam wording so you can spot them: 'sure-shot', 'jackpot', '100% accuracy', 'operator news', 'upper circuit pakka', 'limited seats'.",
+        "hi": "Bade jaal ki shuruaat aksar ek tip se hoti hai. Ek aam pattern: koi anjaan aapko WhatsApp ya Telegram group mein add kar deta hai, jahan ek 'professor' bade profits post karta hai, phir aapse ek app install karwata hai ya 'VIP institutional account' khulwata hai, jo kisi SEBI-registered broker ka nahi hota. App mein profit tezi se badhta dikhta hai, lekin withdraw karne jaiye toh pehle 'fee' ya 'tax' bharne ko kaha jaata hai. Fake apps aksar kisi asli broker ka naam aur logo copy karte hain, isliye koi bhi trading app install karne se pehle check kijiye: broker ko SEBI ki registered stock brokers ki list mein, ya NSE ya BSE ki member directory mein dhoondhiye, phir app sirf us official Google Play ya App Store listing se install kijiye jiska developer (publisher) wahi registered broker ho; broker ki apni website ko bhi usi listing ka link dena chahiye. APK file se, ya WhatsApp, Telegram ya SMS par aaye link se, kabhi app install mat kijiye. Doosra pattern pump-and-dump hai: group kisi chhote, kam trade hone wale share ko hype karta hai, members khareed lete hain, aur operators, yaani scheme chalane wale log, oopar unhi ko bech kar nikal jaate hain. Red-flag words pehchaan lijiye; yeh scam ki bhasha hai, yahan sirf pehchaan ke liye likhi hai: 'sure-shot', 'jackpot', '100% accuracy', 'operator news', 'upper circuit pakka', 'limited seats'.",
+        "dv": "बड़े जाल की शुरुआत अक्सर एक टिप से होती है। एक आम पैटर्न: कोई अनजान आपको WhatsApp या Telegram ग्रुप में जोड़ देता है, जहाँ एक 'प्रोफ़ेसर' बड़े प्रॉफ़िट पोस्ट करता है, फिर आपसे एक ऐप इंस्टॉल करवाता है या 'VIP इंस्टीट्यूशनल अकाउंट' खुलवाता है, जो किसी SEBI-रजिस्टर्ड ब्रोकर का नहीं होता। ऐप में प्रॉफ़िट तेज़ी से बढ़ता दिखता है, लेकिन पैसा निकालने जाएँ तो पहले 'फ़ीस' या 'टैक्स' भरने को कहा जाता है। नकली ऐप अक्सर किसी असली ब्रोकर का नाम और लोगो कॉपी करते हैं, इसलिए कोई भी ट्रेडिंग ऐप इंस्टॉल करने से पहले जाँचिए: ब्रोकर को SEBI की रजिस्टर्ड स्टॉक ब्रोकर्स की लिस्ट में, या NSE या BSE की मेंबर डायरेक्टरी में ढूँढिए, फिर ऐप सिर्फ़ उस ऑफ़िशियल Google Play या App Store लिस्टिंग से इंस्टॉल कीजिए जिसका डेवलपर (पब्लिशर) वही रजिस्टर्ड ब्रोकर हो; ब्रोकर की अपनी वेबसाइट को भी उसी लिस्टिंग का लिंक देना चाहिए। APK फ़ाइल से, या WhatsApp, Telegram या SMS पर आए लिंक से, कभी ऐप इंस्टॉल मत कीजिए। दूसरा पैटर्न पंप-एंड-डंप है: ग्रुप किसी छोटे, कम ट्रेड होने वाले शेयर को हवा देता है, मेंबर ख़रीद लेते हैं, और ऑपरेटर, यानी खेल चलाने वाले लोग, ऊपर उन्हीं को बेचकर निकल जाते हैं। रेड-फ़्लैग शब्द पहचान लीजिए; यह स्कैम की भाषा है, यहाँ सिर्फ़ पहचान के लिए लिखी है: 'श्योर-शॉट', 'जैकपॉट', '100% एक्यूरेसी', 'ऑपरेटर न्यूज़', 'अपर सर्किट पक्का', 'लिमिटेड सीटें'।"
       },
       "example": {
         "en": "Aman's colleague is added to such a group and sends Rs 50,000 to a bank account in a person's name. Two weeks later the app shows Rs 1,80,000. When he asks to withdraw, the 'support team' wants a 20% 'release fee', Rs 36,000, first. That balance was only a number on a screen. A registered broker accepts money only from your own bank account, into an account in the broker's name (by UPI, only to an ID containing '@valid'), and never asks for a 'fee' or 'tax' up front to release your own money.",
@@ -333,7 +333,7 @@
             "tone": "down",
             "points": [
               { "en": "A stranger adds you to a group", "hi": "Anjaan aapko group mein add karta hai", "dv": "अनजान आपको ग्रुप में जोड़ता है" },
-              { "en": "App not from a registered broker", "hi": "App kisi registered broker ka nahi", "dv": "ऐप किसी रजिस्टर्ड ब्रोकर का नहीं" },
+              { "en": "App sent as a link or APK file", "hi": "App link ya APK file se bheja gaya", "dv": "ऐप लिंक या APK फ़ाइल से भेजा गया" },
               { "en": "Money goes to a person's account", "hi": "Paisa kisi aadmi ke account mein", "dv": "पैसा किसी व्यक्ति के अकाउंट में" },
               { "en": "Fee demanded before withdrawal", "hi": "Nikalne se pehle fee ki maang", "dv": "निकालने से पहले फ़ीस की माँग" },
               { "en": "UPI to a random personal ID", "hi": "UPI kisi personal ID par", "dv": "UPI किसी निजी ID पर" }
@@ -344,7 +344,7 @@
             "tone": "up",
             "points": [
               { "en": "You choose it and open the account", "hi": "Aap khud chunte hain, khud account kholte hain", "dv": "आप ख़ुद चुनते हैं, ख़ुद अकाउंट खोलते हैं" },
-              { "en": "Registration you can check with SEBI", "hi": "Registration SEBI par check ho sakta hai", "dv": "रजिस्ट्रेशन SEBI पर जाँचा जा सकता है" },
+              { "en": "Official store app; publisher matches SEBI's list", "hi": "Official store ka app; publisher SEBI list se match", "dv": "ऑफ़िशियल स्टोर का ऐप; पब्लिशर SEBI लिस्ट से मेल खाए" },
               { "en": "Money only to an account in its name", "hi": "Paisa sirf broker ke naam wale account mein", "dv": "पैसा सिर्फ़ ब्रोकर के नाम वाले अकाउंट में" },
               { "en": "Your funds paid back to your bank", "hi": "Aapka paisa aapke bank mein wapas", "dv": "आपका पैसा आपके बैंक में वापस" },
               { "en": "UPI? Its ID has '@valid'", "hi": "UPI se? ID mein '@valid'", "dv": "UPI से? ID में '@valid'" }
@@ -463,6 +463,14 @@
         "hi": "Securities market ka online dispute resolution portal. Entity ka grievance desk (ya SCORES) complaint na suljhaye, toh pehle ek conciliator dono taraf ko samjhaute tak laane ki koshish karta hai; baat na bane, toh ek arbitrator faisla karta hai.",
         "dv": "सिक्योरिटीज़ मार्केट का ऑनलाइन विवाद-निपटारा पोर्टल। संस्था का ग्रीवांस डेस्क (या SCORES) शिकायत न सुलझाए, तो पहले एक मध्यस्थ दोनों पक्षों में सुलह कराने की कोशिश करता है; बात न बने, तो एक आर्बिट्रेटर (पंच) फ़ैसला करता है।"
       }
+    },
+    {
+      "term": { "en": "APK (sideloaded app)", "hi": "APK (sideloaded app)", "dv": "APK (साइडलोडेड ऐप)" },
+      "meaning": {
+        "en": "An app file installed from a link instead of the official Google Play or App Store listing. Fake trading apps spread this way; install a broker's app only from the store listing that the broker's own website points to.",
+        "hi": "Aisi app file jo official Google Play ya App Store listing ki jagah kisi link se install ki jaaye. Fake trading apps isi tarah failte hain; broker ka app sirf us store listing se install kijiye jiska link broker ki apni website deti hai.",
+        "dv": "ऐसी ऐप फ़ाइल जो ऑफ़िशियल Google Play या App Store लिस्टिंग की जगह किसी लिंक से इंस्टॉल की जाए। नकली ट्रेडिंग ऐप इसी तरह फैलते हैं; ब्रोकर का ऐप सिर्फ़ उस स्टोर लिस्टिंग से इंस्टॉल कीजिए जिसका लिंक ब्रोकर की अपनी वेबसाइट देती है।"
+      }
     }
   ],
   "mindmap": {
@@ -531,25 +539,20 @@
     ]
   },
   "kaam": {
-    "en": "Audit the mentor's 20 practice tips, check one registration on SEBI's site and learn the complaint path, then take Quiz Game 1.",
-    "hi": "Mentor ke 20 practice tips ka audit kijiye, SEBI ki site par ek registration check kijiye aur complaint ka raasta samajhiye, phir Quiz Game 1 dijiye.",
-    "dv": "मेंटर के 20 प्रैक्टिस टिप्स का ऑडिट कीजिए, SEBI की साइट पर एक रजिस्ट्रेशन जाँचिए और शिकायत का रास्ता समझिए, फिर क्विज़ गेम 1 दीजिए।"
+    "en": "Audit the mentor's 20 practice tips, check one SEBI registration and one trading app, write your Week 1 review in the journal, then take Quiz Game 1.",
+    "hi": "Mentor ke 20 practice tips ka audit kijiye, SEBI par ek registration aur ek trading app check kijiye, journal mein apna Week 1 review likhiye, phir Quiz Game 1 dijiye.",
+    "dv": "मेंटर के 20 प्रैक्टिस टिप्स का ऑडिट कीजिए, SEBI पर एक रजिस्ट्रेशन और एक ट्रेडिंग ऐप जाँचिए, जर्नल में पहले हफ़्ते का रिव्यू लिखिए, फिर क्विज़ गेम 1 दीजिए।"
   },
   "kaam_steps": [
     {
-      "en": "Run the AI Lab prompt 'Audit the practice set', check three rows of its table against the list in the prompt, then paste it into a new Google Sheet (or copy it into your notebook).",
-      "hi": "AI Lab ka 'Practice set ka audit' prompt chalaiye, uski table ki teen rows prompt wali list se milaiye, phir use ek nayi Google Sheet mein paste kijiye (ya notebook mein utaar lijiye).",
-      "dv": "AI Lab का 'प्रैक्टिस सेट का ऑडिट' प्रॉम्प्ट चलाइए, उसकी टेबल की तीन लाइनें प्रॉम्प्ट वाली लिस्ट से मिलाइए, फिर उसे एक नई Google Sheet में पेस्ट कीजिए (या नोटबुक में उतार लीजिए)।"
+      "en": "Open the two Practice set tables below and fill the last column for all 20 calls, on paper or in a Google Sheet copy: +0.5R for a target hit, -1R for a stop hit or a 'both touched' day, 'unmeasurable' where no stop was given, plus any red flag you spot.",
+      "hi": "Neeche ki dono Practice set tables kholiye aur saari 20 calls ka aakhri column bhariye, kaagaz par ya Google Sheet ki copy mein: target hit par +0.5R, stop hit ya 'dono touch' wale din par -1R, jahan stop diya hi nahi wahan 'unmeasurable', aur jo bhi red flag dikhe woh bhi.",
+      "dv": "नीचे की दोनों प्रैक्टिस सेट टेबल खोलिए और सारी 20 कॉल का आख़िरी कॉलम भरिए, काग़ज़ पर या Google Sheet की कॉपी में: टारगेट हिट पर +0.5R, स्टॉप हिट या 'दोनों छुए' वाले दिन पर -1R, जहाँ स्टॉप दिया ही नहीं वहाँ 'unmeasurable' (न मापी जा सकने वाली), और जो भी रेड फ़्लैग दिखे वो भी।"
     },
     {
-      "en": "Fill the R column yourself: +0.5 for a target hit, -1 for a stop hit or a 'both touched' day, and 'unmeasurable' where no stop was given.",
-      "hi": "R column khud bhariye: target hit par +0.5, stop hit ya 'dono touch' wale din par -1, aur jahan stop diya hi nahi, wahan 'unmeasurable'.",
-      "dv": "R कॉलम ख़ुद भरिए: टारगेट हिट पर +0.5, स्टॉप हिट या 'दोनों छुए' वाले दिन पर -1, और जहाँ स्टॉप दिया ही नहीं, वहाँ 'unmeasurable' (न मापी जा सकने वाली) लिखिए।"
-    },
-    {
-      "en": "Work out the hit-rate, the average R and the no-stop share, then paste your three numbers into the same AI chat to check your working.",
-      "hi": "Hit-rate, average R aur bina stop wali calls ka hissa nikaliye, phir teeno numbers usi AI chat mein paste karke apna hisaab check karwaiye.",
-      "dv": "हिट-रेट, औसत R और बिना स्टॉप वाली कॉल का हिस्सा निकालिए, फिर तीनों नंबर उसी AI चैट में पेस्ट करके अपना हिसाब जँचवाइए।"
+      "en": "Work out three numbers: the hit-rate on calls with a stop, the average R per measurable call and the share of calls with no stop. Check your working with the AI Lab prompt 'Audit the practice set', or against 'The result' topic above if you have no AI chat.",
+      "hi": "Teen numbers nikaliye: stop wali calls par hit-rate, har measurable call ka average R, aur bina stop wali calls ka hissa. Apna hisaab AI Lab ke 'Practice set ka audit' prompt se check kijiye, ya AI chat na ho toh upar ke 'Result' wale topic se milaiye.",
+      "dv": "तीन नंबर निकालिए: स्टॉप वाली कॉल पर हिट-रेट, हर मापने लायक़ कॉल का औसत R, और बिना स्टॉप वाली कॉल का हिस्सा। अपना हिसाब AI Lab के 'प्रैक्टिस सेट का ऑडिट' प्रॉम्प्ट से जँचवाइए, या AI चैट न हो तो ऊपर के 'नतीजा' वाले टॉपिक से मिलाइए।"
     },
     {
       "en": "On sebi.gov.in, search for 'Recognised Intermediaries', open the Research Analyst or Investment Adviser list, and check one adviser or 'guru' you have seen online (or INH000020004 if you have none): match the name and the number. Do not message them.",
@@ -557,27 +560,33 @@
       "dv": "sebi.gov.in पर 'Recognised Intermediaries' ढूँढिए, Research Analyst या Investment Adviser की लिस्ट खोलिए, और ऑनलाइन देखे किसी एक एडवाइज़र या 'गुरु' का रजिस्ट्रेशन जाँचिए (कोई न हो तो INH000020004): नाम और नंबर मिलाइए। उन्हें मैसेज मत कीजिए।"
     },
     {
-      "en": "Open scores.sebi.gov.in and smartodr.in, and write one line in your journal on when you would use each.",
-      "hi": "scores.sebi.gov.in aur smartodr.in kholiye, aur journal mein ek-ek line likhiye ki kab kaunsa use karenge.",
-      "dv": "scores.sebi.gov.in और smartodr.in खोलिए, और जर्नल में एक-एक लाइन लिखिए कि कब कौन-सा इस्तेमाल करेंगे।"
+      "en": "Check one trading app you use or have heard of (no account needed): on its official Google Play or App Store listing, read the developer (publisher) name, then find that name in SEBI's list of registered stock brokers (Recognised Intermediaries) or in the NSE or BSE member directory (a small difference such as 'Ltd' for 'Limited' is normal; if the publisher is a different company, check that the broker's own website links to that exact store listing). Never install an app from an APK file or a link someone sent you.",
+      "hi": "Koi ek trading app check kijiye jo aap use karte hain ya jiska naam suna hai (account ki zaroorat nahi): uski official Google Play ya App Store listing par developer (publisher) ka naam padhiye, phir wahi naam SEBI ki registered stock brokers ki list (Recognised Intermediaries) mein, ya NSE ya BSE ki member directory mein dhoondhiye ('Limited' ki jagah 'Ltd' jaisa chhota farq normal hai; publisher koi doosri company ho toh check kijiye ki broker ki apni website usi store listing ka link deti hai). APK file se, ya kisi ke bheje link se, kabhi app install mat kijiye.",
+      "dv": "कोई एक ट्रेडिंग ऐप जाँचिए जो आप इस्तेमाल करते हैं या जिसका नाम सुना है (अकाउंट की ज़रूरत नहीं): उसकी ऑफ़िशियल Google Play या App Store लिस्टिंग पर डेवलपर (पब्लिशर) का नाम पढ़िए, फिर वही नाम SEBI की रजिस्टर्ड स्टॉक ब्रोकर्स की लिस्ट (Recognised Intermediaries) में, या NSE या BSE की मेंबर डायरेक्टरी में ढूँढिए ('Limited' की जगह 'Ltd' जैसा छोटा फ़र्क़ आम है; पब्लिशर कोई दूसरी कंपनी हो तो जाँचिए कि ब्रोकर की अपनी वेबसाइट उसी स्टोर लिस्टिंग का लिंक देती है)। APK फ़ाइल से, या किसी के भेजे लिंक से, कभी ऐप इंस्टॉल मत कीजिए।"
     },
     {
-      "en": "Finish with Quiz Game 1, the Week 1 exam, once the five Week 1 questions feel easy. It is not counted in today's 45-minute task.",
-      "hi": "Aakhir mein Quiz Game 1, yaani Week 1 exam, dijiye, jab Week 1 ke paanch sawaal aasaan lagne lagein. Yeh aaj ke 45 minute ke kaam mein nahi gina gaya.",
-      "dv": "आख़िर में क्विज़ गेम 1, यानी पहले हफ़्ते का एग्ज़ाम, दीजिए, जब पहले हफ़्ते के पाँच सवाल आसान लगने लगें। यह आज के 45 मिनट के काम में नहीं गिना गया है।"
+      "en": "In today's journal, choose 'Weekly review' as the entry type and answer the Week 1 review template below, including one line on when you would use SCORES (scores.sebi.gov.in), SMART ODR (smartodr.in) or 1930. This review counts towards your certificate.",
+      "hi": "Aaj ke journal mein entry type 'Weekly review' chuniye aur neeche ke Week 1 review template ke jawab likhiye, saath mein ek line ki aap kab SCORES (scores.sebi.gov.in), SMART ODR (smartodr.in) ya 1930 use karenge. Yeh review aapke certificate mein ginta hai.",
+      "dv": "आज के जर्नल में एंट्री का टाइप 'साप्ताहिक रिव्यू' चुनिए और नीचे के पहले हफ़्ते के रिव्यू टेम्पलेट के जवाब लिखिए, साथ में एक लाइन कि आप कब SCORES (scores.sebi.gov.in), SMART ODR (smartodr.in) या 1930 इस्तेमाल करेंगे। यह रिव्यू आपके सर्टिफ़िकेट में गिना जाता है।"
+    },
+    {
+      "en": "Finish with Quiz Game 1, the Week 1 exam, once the five Week 1 questions feel easy. It is not counted in today's 50-minute task, but attempting all three weekly Quiz Games is one of the certificate checks.",
+      "hi": "Aakhir mein Quiz Game 1, yaani Week 1 exam, dijiye, jab Week 1 ke paanch sawaal aasaan lagne lagein. Yeh aaj ke 50 minute ke kaam mein nahi gina gaya, lekin teenon weekly Quiz Games dena certificate ki ek shart hai.",
+      "dv": "आख़िर में क्विज़ गेम 1, यानी पहले हफ़्ते का एग्ज़ाम, दीजिए, जब पहले हफ़्ते के पाँच सवाल आसान लगने लगें। यह आज के 50 मिनट के काम में नहीं गिना गया है, लेकिन तीनों वीकली क्विज़ गेम देना सर्टिफ़िकेट की एक शर्त है।"
     }
   ],
-  "kaam_min": 45,
+  "kaam_min": 50,
   "outcome": {
-    "en": "By the end you can test any tip with five Week 1 questions, audit a set of calls for hit-rate, R and missing stops, spot fake-app and WhatsApp-group red flags, check a SEBI registration, and name the complaint path: grievance desk first, then SCORES or SMART ODR.",
-    "hi": "Aaj ke baad aap kisi bhi tip ko Week 1 ke paanch sawaalon se parakh payenge, calls ke ek set ka hit-rate, R aur missing stops ke liye audit kar payenge, fake app aur WhatsApp group ke red flags pehchaan payenge, SEBI registration check kar payenge, aur complaint ka raasta bata payenge: pehle grievance desk, phir SCORES ya SMART ODR.",
-    "dv": "आज के बाद आप किसी भी टिप को पहले हफ़्ते के पाँच सवालों से परख पाएँगे, कॉल के एक सेट का हिट-रेट, R और ग़ायब स्टॉप के लिए ऑडिट कर पाएँगे, नकली ऐप और WhatsApp ग्रुप के रेड फ़्लैग पहचान पाएँगे, SEBI रजिस्ट्रेशन जाँच पाएँगे, और शिकायत का रास्ता बता पाएँगे: पहले ग्रीवांस डेस्क, फिर SCORES या SMART ODR।"
+    "en": "By the end you can test any tip with five Week 1 questions, audit a set of calls for hit-rate, R and missing stops, spot fake-app and WhatsApp-group red flags, check a SEBI registration and a trading app's publisher, name the complaint path (grievance desk first, then SCORES or SMART ODR), and write a weekly review.",
+    "hi": "Aaj ke baad aap kisi bhi tip ko Week 1 ke paanch sawaalon se parakh payenge, calls ke ek set ka hit-rate, R aur missing stops ke liye audit kar payenge, fake app aur WhatsApp group ke red flags pehchaan payenge, SEBI registration aur trading app ka publisher check kar payenge, complaint ka raasta bata payenge (pehle grievance desk, phir SCORES ya SMART ODR), aur weekly review likh payenge.",
+    "dv": "आज के बाद आप किसी भी टिप को पहले हफ़्ते के पाँच सवालों से परख पाएँगे, कॉल के एक सेट का हिट-रेट, R और ग़ायब स्टॉप के लिए ऑडिट कर पाएँगे, नकली ऐप और WhatsApp ग्रुप के रेड फ़्लैग पहचान पाएँगे, SEBI रजिस्ट्रेशन और ट्रेडिंग ऐप का पब्लिशर जाँच पाएँगे, शिकायत का रास्ता बता पाएँगे (पहले ग्रीवांस डेस्क, फिर SCORES या SMART ODR), और साप्ताहिक रिव्यू लिख पाएँगे।"
   },
   "tools": [
     { "en": "Google Sheets", "hi": "Google Sheets", "dv": "Google Sheets" },
     { "en": "Any AI chat", "hi": "Koi bhi AI chat", "dv": "कोई भी AI चैट" },
     { "en": "SEBI website (sebi.gov.in)", "hi": "SEBI website (sebi.gov.in)", "dv": "SEBI वेबसाइट (sebi.gov.in)" },
-    { "en": "SCORES (scores.sebi.gov.in) and SMART ODR (smartodr.in)", "hi": "SCORES (scores.sebi.gov.in) aur SMART ODR (smartodr.in)", "dv": "SCORES (scores.sebi.gov.in) और SMART ODR (smartodr.in)" }
+    { "en": "SCORES (scores.sebi.gov.in) and SMART ODR (smartodr.in)", "hi": "SCORES (scores.sebi.gov.in) aur SMART ODR (smartodr.in)", "dv": "SCORES (scores.sebi.gov.in) और SMART ODR (smartodr.in)" },
+    { "en": "Your phone's app store (Google Play or App Store)", "hi": "Phone ka app store (Google Play ya App Store)", "dv": "फ़ोन का ऐप स्टोर (Google Play या App Store)" }
   ],
   "fun": {
     "en": "Audit race: with classmates or family, everyone audits the same 20 practice calls at the same time. The first to fill every row of the R column correctly, with the working shown, wins; the lesson's totals are only for checking. Alone? Time yourself, then try the 60-second red-flag hunt in the AI Lab.",
@@ -588,7 +597,7 @@
   "prompts": [
     {
       "title": { "en": "Audit the practice set", "hi": "Practice set ka audit", "dv": "प्रैक्टिस सेट का ऑडिट" },
-      "body": "I am a beginner doing a practice audit for my trading course. Below is a made-up set of 20 stock tips created by my course mentor for training. The stock names are placeholders and none of this is real market data. Step 1: lay the 20 calls out as a table I can paste into Google Sheets, with the columns Stock, Entry, Stop, Target, Outcome and R result. Leave the R result column empty and do not calculate anything yet. Then wait for me. Step 2: when I paste my three numbers (hit-rate on the calls that had a stop, average R per measurable call, and the share of calls with no stop), check my working step by step using two rules: a call with no stop is 'unmeasurable' and is left out of the hit-rate and the R average; if one daily candle touched both the target and the stop, count it as a stop hit. Explain any mistake in simple words. Do not recommend any stock, do not give buy or sell advice, and do not suggest price targets or expected returns for any real security.\n\nThe practice set (entry / stop / target / outcome):\nStock A: 200 / 180 / 210 / target hit\nStock B: 480 / 432 / 504 / stop hit\nStock C: 120 / 108 / 126 / target hit\nStock D: 1000 / 900 / 1050 / target hit\nStock E: 340 / 306 / 357 / stop hit\nStock F: 60 / 54 / 63 / target hit\nStock G: 760 / 684 / 798 / one daily candle touched both\nStock H: 260 / 234 / 273 / target hit\nStock I: 900 / 810 / 945 / stop hit\nStock J: 140 / 126 / 147 / target hit\nStock K: 420 / 378 / 441 / target hit\nStock L: 580 / 522 / 609 / stop hit\nStock M: 80 / 72 / 84 / target hit\nStock N: 1200 / 1080 / 1260 / stop hit\nStock O: 300 / 270 / 315 / target hit\nStock P: 220 / no stop given / 240 / now at 187\nStock Q: 640 / no stop given / 700 / fell to 480 first, then reached target before month-end\nStock R: 95 / no stop given / 110 / now at 70\nStock S: 1500 / no stop given / 1650 / now at 1290\nStock T: 410 / no stop given / 450 / target hit"
+      "body": "I am a beginner doing a practice audit for my trading course. Below is a made-up set of 20 stock tips created by my course mentor for training; the stock names are placeholders and none of this is real market data. I have already filled in my own R result for every call and worked out three numbers: the hit-rate on the calls that had a stop, the average R per measurable call, and the share of calls with no stop. Step 1: ask me to paste my R column and my three numbers, then wait. Step 2: check each R entry and each number step by step with two rules: a call with no stop is 'unmeasurable' and is left out of the hit-rate and the R average; if one daily candle touched both the target and the stop, count it as a stop hit (-1R). Explain any mistake in simple words. Step 3: list the red flags you can see in this set, such as missing stops, deleted losing posts and a 'both touched' day shown as a win, as a plain list. Do not recommend any stock, do not give buy or sell advice, and do not suggest price targets or expected returns for any real security.\n\nThe practice set (entry / stop / target / outcome):\nStock A: 200 / 180 / 210 / target hit\nStock B: 480 / 432 / 504 / stop hit (post deleted)\nStock C: 120 / 108 / 126 / target hit\nStock D: 1000 / 900 / 1050 / target hit\nStock E: 340 / 306 / 357 / stop hit (post deleted)\nStock F: 60 / 54 / 63 / target hit\nStock G: 760 / 684 / 798 / one daily candle touched both (posted as target hit)\nStock H: 260 / 234 / 273 / target hit\nStock I: 900 / 810 / 945 / stop hit (post deleted)\nStock J: 140 / 126 / 147 / target hit\nStock K: 420 / 378 / 441 / target hit\nStock L: 580 / 522 / 609 / stop hit (post deleted)\nStock M: 80 / 72 / 84 / target hit\nStock N: 1200 / 1080 / 1260 / stop hit (post deleted)\nStock O: 300 / 270 / 315 / target hit\nStock P: 220 / no stop given / 240 / now at 187\nStock Q: 640 / no stop given / 700 / fell to 480 first, then reached target before month-end (posted as target hit)\nStock R: 95 / no stop given / 110 / now at 70\nStock S: 1500 / no stop given / 1650 / now at 1290\nStock T: 410 / no stop given / 450 / target hit"
     },
     {
       "title": { "en": "60-second red-flag hunt", "hi": "60 second ka red-flag hunt", "dv": "60 सेकंड की रेड-फ़्लैग खोज" },
@@ -596,13 +605,13 @@
     },
     {
       "title": { "en": "Verify and escalate", "hi": "Verify aur escalate", "dv": "जाँचें और शिकायत आगे बढ़ाएँ" },
-      "body": "Act as a careful investor-protection guide for India, talking to a complete beginner. In short numbered steps, explain: (1) how to check on sebi.gov.in whether a person or firm is a SEBI-registered Research Analyst or Investment Adviser, and which details must match; (2) signs that someone may be using another entity's registration number; (3) the complaint path when a registered broker or adviser does not solve a problem: the entity's grievance desk, SEBI SCORES and SMART ODR; (4) where to report fraud by people who are not registered at all. Label every statement Fact (checkable on an official website), Guess (you are unsure or it may have changed) or Kachra (a popular myth), and end with a list of the steps I should re-check on the official sites because menus and rules change. Do not ask for any personal details, do not name or judge any real adviser or company, and do not give buy or sell advice, targets or return expectations."
+      "body": "Act as a careful investor-protection guide for India, talking to a complete beginner. In short numbered steps, explain: (1) how to check on sebi.gov.in whether a person or firm is a SEBI-registered Research Analyst or Investment Adviser, and which details must match; (2) signs that someone may be using another entity's registration number; (3) the complaint path when a registered broker or adviser does not solve a problem: the entity's grievance desk, SEBI SCORES and SMART ODR; (4) where to report fraud by people who are not registered at all; (5) how to check that a trading app is genuine before installing it: the broker on SEBI's list of stock brokers or the exchange member directory, and the same name as the developer on the official app-store listing, never an APK file or a link from a chat. Label every statement Fact (checkable on an official website), Guess (you are unsure or it may have changed) or Kachra (a popular myth), and end with a list of the steps I should re-check on the official sites because menus and rules change. Do not ask for any personal details, do not name or judge any real adviser or company, and do not give buy or sell advice, targets or return expectations."
     }
   ],
   "journal_prompt": {
-    "en": "What hit-rate, average R and no-stop share did your audit find, and how far were they from the '80%' banner? Which of the five Week 1 questions is still the shakiest for you? Write numbers only, never the name of a real channel or person.",
-    "hi": "Aapke audit mein hit-rate, average R aur bina stop wali calls ka hissa kitna nikla, aur woh '80%' wale banner se kitna door tha? Week 1 ke paanch sawaalon mein se kaunsa abhi bhi sabse kachcha lagta hai? Sirf numbers likhiye, kisi asli channel ya insaan ka naam kabhi nahi.",
-    "dv": "आपके ऑडिट में हिट-रेट, औसत R और बिना स्टॉप वाली कॉल का हिस्सा कितना निकला, और वो '80%' वाले बैनर से कितना दूर था? पहले हफ़्ते के पाँच सवालों में से कौन-सा अभी भी सबसे कच्चा लगता है? सिर्फ़ नंबर लिखिए, किसी असली चैनल या व्यक्ति का नाम कभी नहीं।"
+    "en": "Weekly review (choose 'Weekly review' as the entry type; it counts towards your certificate): what hit-rate, average R and no-stop share did your audit find, and how far were they from the '80%' banner? Which of the five Week 1 questions is still the shakiest for you? Write numbers only, never the name of a real channel or person.",
+    "hi": "Weekly review (entry type mein 'Weekly review' chuniye; yeh certificate mein ginta hai): aapke audit mein hit-rate, average R aur bina stop wali calls ka hissa kitna nikla, aur woh '80%' wale banner se kitna door tha? Week 1 ke paanch sawaalon mein se kaunsa abhi bhi sabse kachcha lagta hai? Sirf numbers likhiye, kisi asli channel ya insaan ka naam kabhi nahi.",
+    "dv": "साप्ताहिक रिव्यू (एंट्री के टाइप में 'साप्ताहिक रिव्यू' चुनिए; यह सर्टिफ़िकेट में गिना जाता है): आपके ऑडिट में हिट-रेट, औसत R और बिना स्टॉप वाली कॉल का हिस्सा कितना निकला, और वो '80%' वाले बैनर से कितना दूर था? पहले हफ़्ते के पाँच सवालों में से कौन-सा अभी भी सबसे कच्चा लगता है? सिर्फ़ नंबर लिखिए, किसी असली चैनल या व्यक्ति का नाम कभी नहीं।"
   },
   "motivation": {
     "en": "A shortcut promises to get you there faster. A process only tells you honestly where you stand, and at the end of Week 1, that is exactly what you need.",
@@ -665,9 +674,9 @@
       "options": [
         {
           "text": {
-            "en": "Escalate it on SEBI's SCORES portal",
-            "hi": "SEBI ke SCORES portal par escalate kijiye",
-            "dv": "SEBI के SCORES पोर्टल पर शिकायत आगे बढ़ाइए"
+            "en": "Take it to SEBI's SCORES portal, with proof",
+            "hi": "Proof ke saath SEBI ke SCORES portal par le jaiye",
+            "dv": "सबूत के साथ SEBI के SCORES पोर्टल पर ले जाइए"
           },
           "correct": true
         },
@@ -803,9 +812,9 @@
       "options": [
         {
           "text": {
-            "en": "Name and number match SEBI's list",
-            "hi": "Naam aur number SEBI ki list se match hon",
-            "dv": "नाम और नंबर SEBI की लिस्ट से मेल खाएँ"
+            "en": "Its name and number match SEBI's list",
+            "hi": "Uska naam aur number SEBI ki list se match hon",
+            "dv": "उसका नाम और नंबर SEBI की लिस्ट से मेल खाएँ"
           },
           "correct": true
         },
@@ -838,6 +847,155 @@
         "en": "Followers and screenshots can be bought or cherry-picked, and a certificate photo can be copied from someone else. Only SEBI's own list tells you whether that name holds that number, and the fee should go to an account in the same registered name. If the name does not match, pay nothing and report the page. If you pay by UPI, the ID of a registered analyst should contain '@valid', and SEBI Check can confirm it.",
         "hi": "Followers aur screenshots khareede ya chun-chun kar dikhaye ja sakte hain, aur certificate ki photo kisi aur se copy ho sakti hai. Sirf SEBI ki apni list batati hai ki woh number usi naam ka hai ya nahi, aur fee bhi usi registered naam wale account mein jaani chahiye. Naam match na ho, toh paisa mat dijiye aur page report kijiye. UPI se paisa dena ho, toh registered analyst ki ID mein '@valid' hona chahiye, aur SEBI Check par ise check kar sakte hain.",
         "dv": "फ़ॉलोअर और स्क्रीनशॉट ख़रीदे या चुन-चुनकर दिखाए जा सकते हैं, और सर्टिफ़िकेट की फ़ोटो किसी और से कॉपी हो सकती है। सिर्फ़ SEBI की अपनी लिस्ट बताती है कि वो नंबर उसी नाम का है या नहीं, और फ़ीस भी उसी रजिस्टर्ड नाम वाले अकाउंट में जानी चाहिए। नाम मेल न खाए, तो पैसा मत दीजिए और पेज रिपोर्ट कीजिए। UPI से पैसा देना हो, तो रजिस्टर्ड एनालिस्ट की ID में '@valid' होना चाहिए, और SEBI Check पर इसे जाँच सकते हैं।"
+      }
+    }
+  ],
+  "artefacts": [
+    {
+      "title": {
+        "en": "Practice set, calls A to J",
+        "hi": "Practice set, calls A se J",
+        "dv": "प्रैक्टिस सेट, कॉल A से J"
+      },
+      "note": {
+        "en": "A mentor-made set from a make-believe channel; the calls are placeholders, not real stocks. Every stop here is 10% below entry and every target 5% above.",
+        "hi": "Mentor ka banaya set, ek nakli channel ka; calls sirf placeholders hain, asli stocks nahi. Yahan har stop entry se 10% neeche hai aur har target 5% upar.",
+        "dv": "मेंटर का बनाया सेट, एक नक़ली चैनल का; कॉल सिर्फ़ प्लेसहोल्डर हैं, असली स्टॉक नहीं। यहाँ हर स्टॉप एंट्री से 10% नीचे है और हर टारगेट 5% ऊपर।"
+      },
+      "visual": {
+        "kind": "table",
+        "head": [
+          { "en": "Call", "hi": "Call", "dv": "कॉल" },
+          { "en": "Entry (Rs)", "hi": "Entry (Rs)", "dv": "एंट्री (Rs)" },
+          { "en": "Stop (Rs)", "hi": "Stop (Rs)", "dv": "स्टॉप (Rs)" },
+          { "en": "Target (Rs)", "hi": "Target (Rs)", "dv": "टारगेट (Rs)" },
+          { "en": "What happened", "hi": "Kya hua", "dv": "क्या हुआ" },
+          { "en": "Your R / red flag", "hi": "Aapka R / red flag", "dv": "आपका R / रेड फ़्लैग" }
+        ],
+        "rows": [
+          ["A", "200", "180", "210", { "en": "Target hit", "hi": "Target hit", "dv": "टारगेट हिट" }, ""],
+          ["B", "480", "432", "504", { "en": "Stop hit; post deleted", "hi": "Stop hit; post delete", "dv": "स्टॉप हिट; पोस्ट डिलीट" }, ""],
+          ["C", "120", "108", "126", { "en": "Target hit", "hi": "Target hit", "dv": "टारगेट हिट" }, ""],
+          ["D", "1000", "900", "1050", { "en": "Target hit", "hi": "Target hit", "dv": "टारगेट हिट" }, ""],
+          ["E", "340", "306", "357", { "en": "Stop hit; post deleted", "hi": "Stop hit; post delete", "dv": "स्टॉप हिट; पोस्ट डिलीट" }, ""],
+          ["F", "60", "54", "63", { "en": "Target hit", "hi": "Target hit", "dv": "टारगेट हिट" }, ""],
+          [
+            "G",
+            "760",
+            "684",
+            "798",
+            { "en": "One daily candle touched both; posted as target hit", "hi": "Ek daily candle ne dono chhue; target hit bata kar post", "dv": "एक डेली कैंडल ने दोनों छुए; टारगेट हिट बताकर पोस्ट" },
+            ""
+          ],
+          ["H", "260", "234", "273", { "en": "Target hit", "hi": "Target hit", "dv": "टारगेट हिट" }, ""],
+          ["I", "900", "810", "945", { "en": "Stop hit; post deleted", "hi": "Stop hit; post delete", "dv": "स्टॉप हिट; पोस्ट डिलीट" }, ""],
+          ["J", "140", "126", "147", { "en": "Target hit", "hi": "Target hit", "dv": "टारगेट हिट" }, ""]
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Practice set, calls K to T",
+        "hi": "Practice set, calls K se T",
+        "dv": "प्रैक्टिस सेट, कॉल K से T"
+      },
+      "note": {
+        "en": "K to O follow the same 10% stop and 5% target. P to T gave no stop at all, so their R cannot be measured: write 'unmeasurable' and note what happened.",
+        "hi": "K se O mein bhi wahi 10% stop aur 5% target hai. P se T mein stop tha hi nahi, isliye unka R naapa nahi ja sakta: 'unmeasurable' likhiye aur note kijiye ki kya hua.",
+        "dv": "K से O में भी वही 10% स्टॉप और 5% टारगेट है। P से T में स्टॉप था ही नहीं, इसलिए उनका R मापा नहीं जा सकता: 'unmeasurable' लिखिए और नोट कीजिए कि क्या हुआ।"
+      },
+      "visual": {
+        "kind": "table",
+        "head": [
+          { "en": "Call", "hi": "Call", "dv": "कॉल" },
+          { "en": "Entry (Rs)", "hi": "Entry (Rs)", "dv": "एंट्री (Rs)" },
+          { "en": "Stop (Rs)", "hi": "Stop (Rs)", "dv": "स्टॉप (Rs)" },
+          { "en": "Target (Rs)", "hi": "Target (Rs)", "dv": "टारगेट (Rs)" },
+          { "en": "What happened", "hi": "Kya hua", "dv": "क्या हुआ" },
+          { "en": "Your R / red flag", "hi": "Aapka R / red flag", "dv": "आपका R / रेड फ़्लैग" }
+        ],
+        "rows": [
+          ["K", "420", "378", "441", { "en": "Target hit", "hi": "Target hit", "dv": "टारगेट हिट" }, ""],
+          ["L", "580", "522", "609", { "en": "Stop hit; post deleted", "hi": "Stop hit; post delete", "dv": "स्टॉप हिट; पोस्ट डिलीट" }, ""],
+          ["M", "80", "72", "84", { "en": "Target hit", "hi": "Target hit", "dv": "टारगेट हिट" }, ""],
+          ["N", "1200", "1080", "1260", { "en": "Stop hit; post deleted", "hi": "Stop hit; post delete", "dv": "स्टॉप हिट; पोस्ट डिलीट" }, ""],
+          ["O", "300", "270", "315", { "en": "Target hit", "hi": "Target hit", "dv": "टारगेट हिट" }, ""],
+          [
+            "P",
+            "220",
+            { "en": "None given", "hi": "Nahi diya", "dv": "नहीं दिया" },
+            "240",
+            { "en": "Now at 187; still 'running'", "hi": "Ab 187 par; abhi bhi 'running'", "dv": "अब 187 पर; अब भी 'चालू'" },
+            ""
+          ],
+          [
+            "Q",
+            "640",
+            { "en": "None given", "hi": "Nahi diya", "dv": "नहीं दिया" },
+            "700",
+            { "en": "Fell to 480 first, then hit target; posted as target hit", "hi": "Pehle 480 tak gira, phir target; target hit bata kar post", "dv": "पहले 480 तक गिरा, फिर टारगेट; टारगेट हिट बताकर पोस्ट" },
+            ""
+          ],
+          [
+            "R",
+            "95",
+            { "en": "None given", "hi": "Nahi diya", "dv": "नहीं दिया" },
+            "110",
+            { "en": "Now at 70; still 'running'", "hi": "Ab 70 par; abhi bhi 'running'", "dv": "अब 70 पर; अब भी 'चालू'" },
+            ""
+          ],
+          [
+            "S",
+            "1500",
+            { "en": "None given", "hi": "Nahi diya", "dv": "नहीं दिया" },
+            "1650",
+            { "en": "Now at 1290; still 'running'", "hi": "Ab 1290 par; abhi bhi 'running'", "dv": "अब 1290 पर; अब भी 'चालू'" },
+            ""
+          ],
+          ["T", "410", { "en": "None given", "hi": "Nahi diya", "dv": "नहीं दिया" }, "450", { "en": "Target hit", "hi": "Target hit", "dv": "टारगेट हिट" }, ""]
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Week 1 review",
+        "hi": "Week 1 review",
+        "dv": "पहले हफ़्ते का रिव्यू"
+      },
+      "note": {
+        "en": "Write your answers in today's journal with the entry type 'Weekly review'; it counts towards your certificate. Numbers only, no real names.",
+        "hi": "Apne jawab aaj ke journal mein entry type 'Weekly review' chun kar likhiye; yeh certificate mein ginta hai. Sirf numbers, koi asli naam nahi.",
+        "dv": "अपने जवाब आज के जर्नल में एंट्री का टाइप 'साप्ताहिक रिव्यू' चुनकर लिखिए; यह सर्टिफ़िकेट में गिना जाता है। सिर्फ़ नंबर, कोई असली नाम नहीं।"
+      },
+      "visual": {
+        "kind": "table",
+        "head": [
+          { "en": "Question", "hi": "Sawaal", "dv": "सवाल" },
+          { "en": "Your answer (numbers or one line)", "hi": "Aapka jawab (numbers ya ek line)", "dv": "आपका जवाब (नंबर या एक लाइन)" }
+        ],
+        "rows": [
+          [{ "en": "My hit-rate on calls with a stop", "hi": "Stop wali calls par mera hit-rate", "dv": "स्टॉप वाली कॉल पर मेरा हिट-रेट" }, ""],
+          [{ "en": "My average R per measurable call", "hi": "Har measurable call ka mera average R", "dv": "हर मापने लायक़ कॉल का मेरा औसत R" }, ""],
+          [{ "en": "Share of calls with no stop", "hi": "Bina stop wali calls ka hissa", "dv": "बिना स्टॉप वाली कॉल का हिस्सा" }, ""],
+          [{ "en": "How far that is from the '80%' banner", "hi": "Yeh '80%' wale banner se kitna door hai", "dv": "यह '80%' वाले बैनर से कितना दूर है" }, ""],
+          [
+            { "en": "Shakiest Week 1 question, and the day to reread", "hi": "Week 1 ka sabse kachcha sawaal, aur kaunsa din dobara padhna hai", "dv": "पहले हफ़्ते का सबसे कच्चा सवाल, और कौन-सा दिन दोबारा पढ़ना है" },
+            ""
+          ],
+          [
+            { "en": "Registration and app checks: did the names match?", "hi": "Registration aur app check: naam match hue?", "dv": "रजिस्ट्रेशन और ऐप की जाँच: नाम मेल खाए?" },
+            ""
+          ],
+          [
+            { "en": "When I would use the grievance desk, SCORES, SMART ODR or 1930", "hi": "Grievance desk, SCORES, SMART ODR ya 1930 kab use karna hai", "dv": "ग्रीवांस डेस्क, SCORES, SMART ODR या 1930 कब इस्तेमाल करना है" },
+            ""
+          ],
+          [
+            { "en": "My FII/DII flow log (Day 1): did any one evening's flow tell me what the next day did?", "hi": "Mera FII/DII flow log (Day 1): kya kisi ek shaam ke flow ne bataya ki agle din kya hua?", "dv": "मेरा FII/DII फ़्लो लॉग (दिन 1): क्या किसी एक शाम के फ़्लो ने बताया कि अगले दिन क्या हुआ?" },
+            ""
+          ],
+          [{ "en": "One habit I carry into Week 2", "hi": "Ek aadat jo Week 2 mein saath le jaani hai", "dv": "एक आदत जो दूसरे हफ़्ते में साथ ले जानी है" }, ""]
+        ]
       }
     }
   ]

@@ -223,12 +223,12 @@
    "p": {
     "en": "A fill is the price at which an order actually gets done; on paper you decide it yourself, so it is easy to write a price you only saw after the day was over. Start with three house rules. One: your entry is the next day's open, and only if it opens inside your plan's two limits (Day 11), never the day's low. A sell waiting at your profit exit counts only if price trades above it, because sellers who queued at that price earlier fill first (Day 1); if the day opens above it, your exit is that open. Two: a daily candle does not show which came first, so if one candle touches both your stop and your profit exit, count the stop (Day 7). Three: take 0.1R off every closed trade for costs (brokerage, STT, exchange charges, GST, stamp duty) and slippage, the small amount a real order fills worse than the screen price; this is a practice allowance, not a real rate.",
     "hi": "Fill woh price hai jis par order sach mein execute hota hai; paper par yeh aap khud tay karte hain, isliye woh price likh dena aasaan hai jo din khatam hone ke baad dikha. Shuruaat teen house rules se. Ek: entry agle din ka open hai, aur woh bhi tabhi jab stock aapke plan ki dono limits ke andar khule (Day 11), din ka low kabhi nahi. Profit exit par lagaya sell order tabhi maaniye jab price uske upar trade kare, kyunki us price par pehle se line mein khade sellers ka order pehle fill hota hai (Day 1); aur agar din hi uske upar khule, toh exit wahi open hai. Do: daily candle yeh nahi batati ki pehle kya hua, isliye agar ek hi candle aapke stop aur profit exit dono ko chhoo le, toh stop hi giniye (Day 7). Teen: har band trade se 0.1R kaatiye, costs (brokerage, STT, exchange charges, GST, stamp duty) aur slippage ke liye; slippage yaani asli order ka screen price se thoda kharab price par fill hona, aur yeh practice allowance hai, koi asli rate nahi.",
-    "dv": "फ़िल वह भाव है जिस पर ऑर्डर सच में पूरा होता है; पेपर पर यह आप ख़ुद तय करते हैं, इसलिए वह भाव लिख देना आसान है जो दिन ख़त्म होने के बाद दिखा। शुरुआत तीन हाउस रूल से। एक: एंट्री अगले दिन का ओपन है, और वह भी तभी जब स्टॉक आपके प्लान की दोनों सीमाओं के अंदर खुले (दिन 11), दिन का लो कभी नहीं। प्रॉफ़िट एग्ज़िट पर लगा सेल ऑर्डर तभी मानिए जब भाव उसके ऊपर ट्रेड करे, क्योंकि उस भाव पर पहले से लाइन में लगे सेलर का ऑर्डर पहले भरता है (दिन 1); और अगर दिन ही उसके ऊपर खुले, तो एग्ज़िट वही ओपन है। दो: डेली कैंडल यह नहीं बताती कि पहले क्या हुआ, इसलिए अगर एक ही कैंडल आपके स्टॉप और प्रॉफ़िट एग्ज़िट दोनों को छू ले, तो स्टॉप ही गिनिए (दिन 7)। तीन: हर बंद ट्रेड से 0.1R काटिए, कॉस्ट (ब्रोकरेज, STT, एक्सचेंज चार्ज, GST, स्टांप ड्यूटी) और स्लिपेज के लिए; स्लिपेज यानी असली ऑर्डर का स्क्रीन वाले भाव से थोड़ा ख़राब भाव पर भरना, और यह प्रैक्टिस अलाउंस है, कोई असली रेट नहीं।"
+    "dv": "फ़िल वह भाव है जिस पर ऑर्डर सच में पूरा होता है; पेपर पर यह आप ख़ुद तय करते हैं, इसलिए वह भाव लिख देना आसान है जो दिन ख़त्म होने के बाद दिखा। शुरुआत तीन हाउस रूल से। एक: एंट्री अगले दिन का ओपन है, और वह भी तभी जब स्टॉक आपके प्लान की दोनों सीमाओं के अंदर खुले (दिन 11), दिन का लो कभी नहीं। प्रॉफ़िट एग्ज़िट पर लगा सेल ऑर्डर तभी मानिए जब भाव उसके ऊपर ट्रेड करे, क्योंकि उस भाव पर पहले से लाइन में लगे सेलर का ऑर्डर पहले फ़िल होता है (दिन 1); और अगर दिन ही उसके ऊपर खुले, तो एग्ज़िट वही ओपन है। दो: डेली कैंडल यह नहीं बताती कि पहले क्या हुआ, इसलिए अगर एक ही कैंडल आपके स्टॉप और प्रॉफ़िट एग्ज़िट दोनों को छू ले, तो स्टॉप ही गिनिए (दिन 7)। तीन: हर बंद ट्रेड से 0.1R काटिए, कॉस्ट (ब्रोकरेज, STT, एक्सचेंज चार्ज, GST, स्टांप ड्यूटी) और स्लिपेज के लिए; स्लिपेज यानी असली ऑर्डर का स्क्रीन वाले भाव से थोड़ा ख़राब भाव पर भरना, और यह प्रैक्टिस अलाउंस है, कोई असली रेट नहीं।"
    },
    "example": {
     "en": "Back to the Day 11 worked plan for Gupta Cement Ltd: signal close Rs 400, maximum entry Rs 406, skip below Rs 390, stop distance Rs 18, 555 shares. Friday opened at Rs 404, inside both limits, so the entry is Rs 404, the stop Rs 386 and the profit exit Rs 449. Eleven trading days later the stock opened at Rs 441 and rose to Rs 452, trading above Rs 449, so the sell fills at Rs 449. Aman, on the same setup, wrote Friday's low of Rs 398 as his entry and that later day's high of Rs 452 as his exit: Rs 54 a share, from two prices he chose only after seeing the chart, and with no costs. No plan written the evening before could have given him either price. The honest result is 2.4R, about Rs 24,000 on the challenge capital, and many trades will end far less neatly.",
     "hi": "Wapas chaliye Day 11 ke Gupta Cement Ltd wale plan par: signal close Rs 400, maximum entry Rs 406, Rs 390 se neeche khule toh skip, stop ki doori Rs 18, 555 shares. Friday Rs 404 par khula, dono limits ke andar, isliye entry Rs 404, stop Rs 386 aur profit exit Rs 449. Gyarah trading din baad stock Rs 441 par khula aur Rs 452 tak gaya, Rs 449 ke upar trade hua, isliye sell Rs 449 par fill hoti hai. Aman ne usi setup par Friday ka low Rs 398 entry likha aur us baad wale din ka high Rs 452 exit likha: har share par Rs 54, woh bhi aise do prices se jo usne chart dekhne ke baad chune, aur bina costs. Pichhli shaam likha koi bhi plan use yeh prices de hi nahi sakta tha. Imaandaar result 2.4R hai, challenge capital par lagbhag Rs 24,000, aur bahut se trades itni safai se khatam nahi honge.",
-    "dv": "वापस चलिए दिन 11 के Gupta Cement Ltd वाले प्लान पर: सिग्नल क्लोज़ Rs 400, मैक्सिमम एंट्री Rs 406, Rs 390 से नीचे खुले तो छोड़ना, स्टॉप की दूरी Rs 18, 555 शेयर। शुक्रवार Rs 404 पर खुला, दोनों सीमाओं के अंदर, इसलिए एंट्री Rs 404, स्टॉप Rs 386 और प्रॉफ़िट एग्ज़िट Rs 449। ग्यारह ट्रेडिंग दिन बाद स्टॉक Rs 441 पर खुला और Rs 452 तक गया, Rs 449 के ऊपर ट्रेड हुआ, इसलिए बिक्री Rs 449 पर भरती है। अमन ने उसी सेटअप पर शुक्रवार का लो Rs 398 एंट्री लिखा और उस बाद वाले दिन का हाई Rs 452 एग्ज़िट लिखा: हर शेयर पर Rs 54, वह भी ऐसे दो भावों से जो उसने चार्ट देखने के बाद चुने, और बिना कॉस्ट। पिछली शाम लिखा कोई भी प्लान उसे ये भाव दे ही नहीं सकता था। ईमानदार नतीजा 2.4R है, चैलेंज कैपिटल पर लगभग Rs 24,000, और बहुत-से ट्रेड इतनी सफ़ाई से ख़त्म नहीं होंगे।"
+    "dv": "वापस चलिए दिन 11 के Gupta Cement Ltd वाले प्लान पर: सिग्नल क्लोज़ Rs 400, मैक्सिमम एंट्री Rs 406, Rs 390 से नीचे खुले तो छोड़ना, स्टॉप की दूरी Rs 18, 555 शेयर। शुक्रवार Rs 404 पर खुला, दोनों सीमाओं के अंदर, इसलिए एंट्री Rs 404, स्टॉप Rs 386 और प्रॉफ़िट एग्ज़िट Rs 449। ग्यारह ट्रेडिंग दिन बाद स्टॉक Rs 441 पर खुला और Rs 452 तक गया, Rs 449 के ऊपर ट्रेड हुआ, इसलिए बिक्री Rs 449 पर फ़िल होती है। अमन ने उसी सेटअप पर शुक्रवार का लो Rs 398 एंट्री लिखा और उस बाद वाले दिन का हाई Rs 452 एग्ज़िट लिखा: हर शेयर पर Rs 54, वह भी ऐसे दो भावों से जो उसने चार्ट देखने के बाद चुने, और बिना कॉस्ट। पिछली शाम लिखा कोई भी प्लान उसे ये भाव दे ही नहीं सकता था। ईमानदार नतीजा 2.4R है, चैलेंज कैपिटल पर लगभग Rs 24,000, और बहुत-से ट्रेड इतनी सफ़ाई से ख़त्म नहीं होंगे।"
    },
    "remember": {
     "en": "If you could not have traded at that price, it does not go in your journal.",
@@ -457,24 +457,24 @@
   },
   {
    "h": {
-    "en": "Your journal: ten columns, one row per decision",
-    "hi": "Aapka journal: das columns, har decision ki ek row",
-    "dv": "आपका जर्नल: दस कॉलम, हर फ़ैसले की एक रो"
+    "en": "Your journal: ten columns. Your Portfolio row: seven parts",
+    "hi": "Aapka journal: das columns. Aapki Portfolio row: saat hisse",
+    "dv": "आपका जर्नल: दस कॉलम। आपकी Portfolio रो: सात हिस्से"
    },
    "p": {
-    "en": "A trade journal is a logbook where every decision is written the same way, every time. Ours has ten columns: date, stock, setup, entry, stop, quantity, exit and R result, plus two honesty columns, 'Rule broken?' and 'Emotion'. Put the plan's two limits in the Setup cell (for example 'EMA Pullback, max 406, skip below 390'); once the entry is known, add the profit exit ('exit 449'). On days you do not trade, write 'No setup' or 'Skipped: <which rule>' there. R result is your rupee gain or loss ÷ Rs 10,000 (1R on the challenge capital, Day 9), minus the 0.1R allowance. For a full-size trade this is almost exactly your gain or loss per share ÷ planned risk per share (entry minus stop), Day 3's R, so a Rs 200 share and a Rs 2,000 share sit on the same scale. If the 25% cap cut your quantity, the rupee way records the smaller risk you really took, for example -0.9R instead of -1R (Day 14). Emotion is one word from a fixed menu (calm, FOMO, fear, bored, angry or overconfident; FOMO means fear of missing out, the pull to jump in because a price is running), because one honest word is easier to count later than a paragraph. Keep every row in one Google Sheet, list your open paper positions on the app's Portfolio page, and write one line about your day in this lesson's Journal tab.",
-    "hi": "Trade journal ek logbook hai jismein har decision har baar ek hi tareeke se likha jaata hai. Hamare journal mein das columns hain: date, stock, setup, entry, stop, quantity, exit aur R result, aur do honesty columns, 'Rule broken?' aur 'Emotion'. Plan ki dono limits Setup wale cell mein likhiye (jaise 'EMA Pullback, max 406, skip below 390'); entry pata chalne par profit exit bhi jod dijiye ('exit 449'). Jis din trade na ho, wahan 'No setup' ya 'Skipped: <kaunsa rule>' likhiye. R result = rupaye mein gain ya loss ÷ Rs 10,000 (challenge capital par 1R, Day 9), phir 0.1R allowance ghataiye. Poore size ke trade mein yeh lagbhag har share ke gain ya loss ÷ har share ke planned risk (entry minus stop) ke barabar hai, yaani Day 3 wala R, isliye Rs 200 aur Rs 2,000 wale share ek hi paimane par aa jaate hain. Agar 25% cap ne quantity kaati ho, toh rupaye wala tareeka wahi chhota risk likhta hai jo aapne sach mein liya, jaise -1R ki jagah -0.9R (Day 14). Emotion ek fixed menu se sirf ek shabd hai (calm, FOMO, darr, bore, gussa ya over-confident; FOMO yaani 'fear of missing out', price bhaagta dekh kar kood padne ki bechaini), kyunki ek imaandaar shabd baad mein ginna ek paragraph se kahin aasaan hai. Saari rows ek Google Sheet mein rakhiye, khuli paper positions app ke Portfolio page par daaliye, aur din ke baare mein ek line is lesson ke Journal tab mein likhiye.",
-    "dv": "ट्रेड जर्नल एक लॉगबुक है, जिसमें हर फ़ैसला हर बार एक ही तरीक़े से लिखा जाता है। हमारे जर्नल में दस कॉलम हैं: तारीख़, स्टॉक, सेटअप, एंट्री, स्टॉप, क्वांटिटी, एग्ज़िट और R रिज़ल्ट, और दो ईमानदारी वाले कॉलम, 'Rule broken?' और 'Emotion'। प्लान की दोनों सीमाएँ Setup वाले सेल में लिखिए (जैसे 'EMA Pullback, max 406, skip below 390'); एंट्री पता चलने पर प्रॉफ़िट एग्ज़िट भी जोड़ दीजिए ('exit 449')। जिस दिन ट्रेड न हो, वहाँ 'No setup' या 'Skipped: <कौन-सा नियम>' लिखिए। R रिज़ल्ट = रुपये में फ़ायदा या नुक़सान ÷ Rs 10,000 (चैलेंज कैपिटल पर 1R, दिन 9), फिर 0.1R अलाउंस घटाइए। पूरे साइज़ के ट्रेड में यह लगभग हर शेयर के फ़ायदे या नुक़सान ÷ हर शेयर के प्लान किए रिस्क (एंट्री माइनस स्टॉप) के बराबर है, यानी दिन 3 वाला R, इसलिए Rs 200 और Rs 2,000 वाले शेयर एक ही पैमाने पर आ जाते हैं। अगर 25% कैप ने क्वांटिटी काटी हो, तो रुपये वाला तरीक़ा वही छोटा रिस्क दर्ज करता है जो आपने सच में लिया, जैसे -1R की जगह -0.9R (दिन 14)। इमोशन एक तय मेन्यू से सिर्फ़ एक शब्द है (शांत, FOMO, डर, बोरियत, ग़ुस्सा या ओवर-कॉन्फ़िडेंट; FOMO यानी 'fear of missing out', भाव भागता देखकर कूद पड़ने की बेचैनी), क्योंकि एक ईमानदार शब्द बाद में गिनना एक पैराग्राफ़ से कहीं आसान है। सारी रो एक Google Sheet में रखिए, खुली पेपर पोज़िशन ऐप के Portfolio पेज पर डालिए, और दिन के बारे में एक लाइन इस लेसन के Journal टैब में लिखिए।"
+    "en": "A trade journal is a logbook where every decision is written the same way, every time. Ours has ten columns: date, stock, setup, entry, stop, quantity, exit and R result, plus two honesty columns, 'Rule broken?' and 'Emotion'; the template in Today's task shows what goes in each. On a day you do not trade, the Setup cell says 'No setup' or 'Skipped: <which rule>'. R result is your rupee gain or loss ÷ Rs 10,000 (1R on the challenge capital, Day 9), minus the 0.1R allowance. For a full-size trade that is almost exactly your gain or loss per share ÷ your planned risk per share (Day 3), so a Rs 200 share and a Rs 2,000 share sit on the same scale; a trade the 25% cap cut records the smaller risk you really took, for example -0.9R instead of -1R (Day 14). Emotion is one word from a fixed menu: calm, FOMO (fear of missing out, the pull to jump in because a price is running), fear, bored, angry or overconfident; one honest word is easier to count later than a paragraph. The journal records every decision. The app's Portfolio page holds up to five rows, one per stock you have thought through in full, whether you took the paper trade or kept it on your watchlist: your first paper trade starts one, and Days 15, 16 and 19 each ask you to add one. Each row has seven parts: two Full Whys (a business reason and a second, independent reason), the top risk and your answer to it, a price-stop, a Why-stop ('the idea is wrong if...') and a review point. Your mentor grades each complete row on process, and five rows graded C or better are one of the six certificate checks (Day 21). A row is a written plan, not an open trade: it stays on the page when a trade closes, and the open-trade limit is still 3.",
+    "hi": "Trade journal ek logbook hai jismein har decision har baar ek hi tareeke se likha jaata hai. Hamare journal mein das columns hain: date, stock, setup, entry, stop, quantity, exit aur R result, aur do honesty columns, 'Rule broken?' aur 'Emotion'; har column mein kya likhna hai, yeh Aaj Ka Kaam wala template dikhata hai. Jis din trade na ho, Setup cell mein 'No setup' ya 'Skipped: <kaunsa rule>' likhiye. R result = rupaye mein gain ya loss ÷ Rs 10,000 (challenge capital par 1R, Day 9), phir 0.1R allowance ghataiye. Poore size ke trade mein yeh lagbhag har share ka gain ya loss ÷ har share ka planned risk hai (Day 3), isliye Rs 200 aur Rs 2,000 wale share ek hi paimane par aa jaate hain; aur jis trade ko 25% cap ne kaata, uska R wahi chhota risk dikhata hai jo aapne sach mein liya, jaise -1R ki jagah -0.9R (Day 14). Emotion ek fixed menu se sirf ek shabd hai: calm, FOMO ('fear of missing out', price bhaagta dekh kar kood padne ki bechaini), darr, bore, gussa ya over-confident; ek imaandaar shabd baad mein ginna ek paragraph se kahin aasaan hai. Journal har decision likhta hai. App ke Portfolio page par zyada se zyada paanch rows aati hain, har us stock ki ek row jise aapne poori tarah socha hai, chahe paper trade liya ho ya woh watchlist par hi raha: pehla paper trade ek row shuru karta hai, aur Day 15, 16 aur 19 ek-ek row jodne ko kehte hain. Har row ke saat hisse hain: do Full Why (business ka reason aur doosra, alag reason), sabse bada risk aur us risk ka aapka jawab, price-stop, Why-stop ('idea galat sabit hoga agar...') aur review point. Mentor har poori row ko process par grade karte hain, aur C ya behtar grade wali paanch rows certificate ke chhe checks mein se ek hain (Day 21). Row ek likha hua plan hai, khula trade nahi: trade band hone par bhi row page par rehti hai, aur khule trades ki limit ab bhi 3 hai.",
+    "dv": "ट्रेड जर्नल एक लॉगबुक है, जिसमें हर फ़ैसला हर बार एक ही तरीक़े से लिखा जाता है। हमारे जर्नल में दस कॉलम हैं: तारीख़, स्टॉक, सेटअप, एंट्री, स्टॉप, क्वांटिटी, एग्ज़िट और R रिज़ल्ट, और दो ईमानदारी वाले कॉलम, 'Rule broken?' और 'Emotion'; हर कॉलम में क्या लिखना है, यह 'आज का काम' वाला टेम्पलेट दिखाता है। जिस दिन ट्रेड न हो, Setup सेल में 'No setup' या 'Skipped: <कौन-सा नियम>' लिखिए। R रिज़ल्ट = रुपये में फ़ायदा या नुक़सान ÷ Rs 10,000 (चैलेंज कैपिटल पर 1R, दिन 9), फिर 0.1R अलाउंस घटाइए। पूरे साइज़ के ट्रेड में यह लगभग हर शेयर का फ़ायदा या नुक़सान ÷ हर शेयर का प्लान किया रिस्क है (दिन 3), इसलिए Rs 200 और Rs 2,000 वाले शेयर एक ही पैमाने पर आ जाते हैं; और जिस ट्रेड को 25% कैप ने काटा, उसका R वही छोटा रिस्क दिखाता है जो आपने सच में लिया, जैसे -1R की जगह -0.9R (दिन 14)। इमोशन एक तय मेन्यू से सिर्फ़ एक शब्द है: शांत, FOMO ('fear of missing out', भाव भागता देखकर कूद पड़ने की बेचैनी), डर, बोरियत, ग़ुस्सा या ओवर-कॉन्फ़िडेंट; एक ईमानदार शब्द बाद में गिनना एक पैराग्राफ़ से कहीं आसान है। जर्नल हर फ़ैसला दर्ज करता है। ऐप के Portfolio पेज पर ज़्यादा से ज़्यादा पाँच रो आती हैं, हर उस स्टॉक की एक रो जिसे आपने पूरी तरह सोचा है, चाहे पेपर ट्रेड लिया हो या वह वॉचलिस्ट पर ही रहा: पहला पेपर ट्रेड एक रो शुरू करता है, और दिन 15, 16 और 19 एक-एक रो जोड़ने को कहते हैं। हर रो के सात हिस्से हैं: दो फ़ुल व्हाई (बिज़नेस का कारण और दूसरा, अलग कारण), सबसे बड़ा जोखिम और उस जोखिम का आपका जवाब, प्राइस-स्टॉप, व्हाई-स्टॉप ('आइडिया ग़लत साबित होगा अगर...') और रिव्यू पॉइंट। मेंटर हर पूरी रो को प्रोसेस पर ग्रेड करते हैं, और C या बेहतर ग्रेड वाली पाँच रो सर्टिफ़िकेट की छह शर्तों में से एक हैं (दिन 21)। रो एक लिखा हुआ प्लान है, खुला ट्रेड नहीं: ट्रेड बंद होने पर भी रो पेज पर रहती है, और खुले ट्रेड की सीमा अब भी 3 है।"
    },
    "example": {
-    "en": "Two rows from Priya's sheet. Row 1: No setup, no trade, emotion 'bored'. Row 2, completed when the trade closed: Gupta Cement Ltd, EMA Pullback, entry Rs 404, stop Rs 386, 555 shares, exit Rs 449, R result +2.4R, Rule broken? 'none', emotion 'calm'. Like a cricket scorer, she writes down every ball, including the dot balls. Two weeks from now, these plain rows will show her things her memory would quietly have edited out.",
-    "hi": "Priya ki sheet ki do rows. Row 1: No setup, koi trade nahi, emotion 'bore'. Row 2, trade band hone par poori hui: Gupta Cement Ltd, EMA Pullback, entry Rs 404, stop Rs 386, 555 shares, exit Rs 449, R result +2.4R, Rule broken? 'none', emotion 'calm'. Cricket ke scorer ki tarah woh har ball likhti hai, dot balls bhi. Do hafte baad yahi seedhi-saadi rows use woh cheezein dikhayengi jo uski yaaddasht chupchaap edit kar deti.",
-    "dv": "प्रिया की शीट की दो रो। रो 1: No setup, कोई ट्रेड नहीं, इमोशन 'बोरियत'। रो 2, ट्रेड बंद होने पर पूरी हुई: Gupta Cement Ltd, EMA Pullback, एंट्री Rs 404, स्टॉप Rs 386, 555 शेयर, एग्ज़िट Rs 449, R रिज़ल्ट +2.4R, Rule broken? 'none', इमोशन 'शांत'। क्रिकेट के स्कोरर की तरह वह हर गेंद लिखती है, डॉट बॉल भी। दो हफ़्ते बाद यही सीधी-सादी रो उसे वो बातें दिखाएँगी, जो उसकी याददाश्त चुपचाप एडिट कर देती।"
+    "en": "Two rows from Priya's sheet. Row 1: No setup, no trade, emotion 'bored'. Row 2, completed when the trade closed: Gupta Cement Ltd, EMA Pullback, entry Rs 404, stop Rs 386, 555 shares, exit Rs 449, R result +2.4R, Rule broken? 'none', emotion 'calm'. Like a cricket scorer, she writes down every ball, including the dot balls. On the day she entered, she also started this trade's Portfolio row, in virtual money: Full Why 2 'EMA Pullback signal in an uptrend, stronger than NIFTY 50 over 3 months'; top risk 'bad news overnight gaps it below my stop'; her answer 'the size keeps even a 1.5R gap near Rs 15,000, and I will log the real exit'; price-stop Rs 386; Why-stop 'sales fall two quarters in a row'; review point 'the next results date'. Full Why 1, the business reason, waits for Day 15's health check; until then the page marks the row Incomplete, since a row counts only when all seven parts are filled.",
+    "hi": "Priya ki sheet ki do rows. Row 1: No setup, koi trade nahi, emotion 'bore'. Row 2, trade band hone par poori hui: Gupta Cement Ltd, EMA Pullback, entry Rs 404, stop Rs 386, 555 shares, exit Rs 449, R result +2.4R, Rule broken? 'none', emotion 'calm'. Cricket ke scorer ki tarah woh har ball likhti hai, dot balls bhi. Jis din entry hui, usi din usne is trade ki Portfolio row bhi shuru ki, virtual paise mein: Full Why 2 'uptrend mein EMA Pullback signal, 3 mahine mein NIFTY 50 se mazboot'; sabse bada risk 'raat ki koi buri khabar ise stop ke neeche gap kar de'; uska jawab 'size aisa hai ki 1.5R ka gap bhi lagbhag Rs 15,000 ka hi hoga, aur main asli exit hi likhungi'; price-stop Rs 386; Why-stop 'lagatar do quarter sales giri'; review point 'agli results date'. Full Why 1, yaani business ka reason, Day 15 ke health check tak rukta hai; tab tak page row ko Adhoori dikhata hai, kyunki row tabhi ginti hai jab saaton hisse bhare hon.",
+    "dv": "प्रिया की शीट की दो रो। रो 1: No setup, कोई ट्रेड नहीं, इमोशन 'बोरियत'। रो 2, ट्रेड बंद होने पर पूरी हुई: Gupta Cement Ltd, EMA Pullback, एंट्री Rs 404, स्टॉप Rs 386, 555 शेयर, एग्ज़िट Rs 449, R रिज़ल्ट +2.4R, Rule broken? 'none', इमोशन 'शांत'। क्रिकेट के स्कोरर की तरह वह हर गेंद लिखती है, डॉट बॉल भी। जिस दिन एंट्री हुई, उसी दिन उसने इस ट्रेड की Portfolio रो भी शुरू की, वर्चुअल पैसे में: फ़ुल व्हाई 2 'अपट्रेंड में EMA Pullback सिग्नल, 3 महीने में NIFTY 50 से मज़बूत'; सबसे बड़ा जोखिम 'रात की कोई बुरी ख़बर इसे स्टॉप के नीचे गैप कर दे'; उसका जवाब 'साइज़ ऐसा है कि 1.5R का गैप भी लगभग Rs 15,000 का ही होगा, और मैं असली एग्ज़िट ही लिखूँगी'; प्राइस-स्टॉप Rs 386; व्हाई-स्टॉप 'लगातार दो तिमाही बिक्री गिरी'; रिव्यू पॉइंट 'अगली नतीजों की तारीख़'। फ़ुल व्हाई 1, यानी बिज़नेस का कारण, दिन 15 के हेल्थ चेक तक रुकता है; तब तक पेज रो को 'अधूरी' दिखाता है, क्योंकि रो तभी गिनी जाती है जब सातों हिस्से भरे हों।"
    },
    "remember": {
-    "en": "Every decision gets a row, even the decision to do nothing.",
-    "hi": "Har decision ki row banti hai, kuch na karne ke decision ki bhi.",
-    "dv": "हर फ़ैसले की रो बनती है, कुछ न करने के फ़ैसले की भी।"
+    "en": "Every decision gets a journal row, even the decision to do nothing. Each stock you think through in full, up to five, also gets a seven-part Portfolio row.",
+    "hi": "Har decision ki journal row banti hai, kuch na karne ke decision ki bhi. Jis stock ko aap poori tarah sochte hain, uski saat hisson wali Portfolio row bhi banti hai, zyada se zyada paanch.",
+    "dv": "हर फ़ैसले की जर्नल रो बनती है, कुछ न करने के फ़ैसले की भी। जिस स्टॉक को आप पूरी तरह सोचते हैं, उसकी सात हिस्सों वाली Portfolio रो भी बनती है, ज़्यादा से ज़्यादा पाँच।"
    },
    "visual": {
     "kind": "steps",
@@ -744,7 +744,7 @@
    "meaning": {
     "en": "The price at which an order actually gets done. On paper, your entry is the next open inside your plan's limits, and a sell at your profit exit fills only if price trades above it.",
     "hi": "Woh price jis par order sach mein execute hota hai. Paper par entry agle din ka open hai, plan ki limits ke andar; profit exit wali sell tabhi fill hoti hai jab price uske upar trade kare.",
-    "dv": "वह भाव जिस पर ऑर्डर सच में पूरा होता है। पेपर पर एंट्री अगले दिन का ओपन है, प्लान की सीमाओं के अंदर; प्रॉफ़िट एग्ज़िट वाली बिक्री तभी भरती है जब भाव उसके ऊपर ट्रेड करे।"
+    "dv": "वह भाव जिस पर ऑर्डर सच में पूरा होता है। पेपर पर एंट्री अगले दिन का ओपन है, प्लान की सीमाओं के अंदर; प्रॉफ़िट एग्ज़िट वाली बिक्री तभी फ़िल होती है जब भाव उसके ऊपर ट्रेड करे।"
    }
   },
   {
@@ -793,6 +793,30 @@
     "en": "Points ÷ decisions: 1 for each decision that followed your rule card, 0 for any broken rule. Profit is never counted.",
     "hi": "Points ÷ decisions: rule card follow karne wale har decision ko 1, rule tootne par 0. Profit kabhi nahi gina jaata.",
     "dv": "पॉइंट ÷ फ़ैसले: रूल कार्ड मानने वाले हर फ़ैसले को 1, नियम टूटने पर 0। प्रॉफ़िट कभी नहीं गिना जाता।"
+   }
+  },
+  {
+   "term": {
+    "en": "Portfolio row",
+    "hi": "Portfolio row",
+    "dv": "Portfolio रो"
+   },
+   "meaning": {
+    "en": "A seven-part record, on the app's Portfolio page, of one stock you thought through in full (a paper trade or a watchlist stock): two Full Whys, the top risk and your answer, a price-stop, a Why-stop and a review point. Five rows graded C or better are a certificate check.",
+    "hi": "App ke Portfolio page par ek poori tarah soche gaye stock (paper trade ya watchlist stock) ka saat hisson wala record: do Full Why, sabse bada risk aur aapka jawab, price-stop, Why-stop aur review point. C ya behtar grade wali paanch rows certificate ka ek check hain.",
+    "dv": "ऐप के Portfolio पेज पर एक पूरी तरह सोचे गए स्टॉक (पेपर ट्रेड या वॉचलिस्ट स्टॉक) का सात हिस्सों वाला रिकॉर्ड: दो फ़ुल व्हाई, सबसे बड़ा जोखिम और आपका जवाब, प्राइस-स्टॉप, व्हाई-स्टॉप और रिव्यू पॉइंट। C या बेहतर ग्रेड वाली पाँच रो सर्टिफ़िकेट की एक शर्त हैं।"
+   }
+  },
+  {
+   "term": {
+    "en": "Why-stop",
+    "hi": "Why-stop",
+    "dv": "व्हाई-स्टॉप"
+   },
+   "meaning": {
+    "en": "The fact that would prove your reason wrong, written before entry: 'the idea is wrong if...'. The price-stop watches the price; the Why-stop watches your reason.",
+    "hi": "Woh fact jo aapke reason ko galat sabit kar de, entry se pehle likha hua: 'idea galat sabit hoga agar...'. Price-stop price par nazar rakhta hai; Why-stop aapke reason par.",
+    "dv": "वह तथ्य जो आपके कारण को ग़लत साबित कर दे, एंट्री से पहले लिखा हुआ: 'आइडिया ग़लत साबित होगा अगर...'। प्राइस-स्टॉप भाव पर नज़र रखता है; व्हाई-स्टॉप आपके कारण पर।"
    }
   }
  ],
@@ -901,6 +925,11 @@
       "en": "One emotion word",
       "hi": "Ek emotion shabd",
       "dv": "इमोशन का एक शब्द"
+     },
+     {
+      "en": "Portfolio row: 7 parts, graded",
+      "hi": "Portfolio row: 7 hisse, grade milta hai",
+      "dv": "Portfolio रो: 7 हिस्से, ग्रेड मिलता है"
      }
     ]
    },
@@ -957,15 +986,15 @@
   ]
  },
  "kaam": {
-  "en": "Set up your honest paper journal and log your first decision: about 30 minutes today, then about 20 minutes each evening for the scan and your row.",
-  "hi": "Apna imaandaar paper journal banaiye aur pehla decision log kijiye: aaj lagbhag 30 minute, phir har shaam scan aur row ke liye lagbhag 20 minute.",
-  "dv": "अपना ईमानदार पेपर जर्नल बनाइए और पहला फ़ैसला दर्ज कीजिए: आज लगभग 30 मिनट, फिर हर शाम स्कैन और रो के लिए लगभग 20 मिनट।"
+  "en": "Set up your honest paper journal, log your first decision and start your first seven-part Portfolio row: about 35 minutes today, then about 20 minutes each evening for the scan and your row.",
+  "hi": "Apna imaandaar paper journal banaiye, pehla decision log kijiye aur pehli saat hisson wali Portfolio row shuru kijiye: aaj lagbhag 35 minute, phir har shaam scan aur row ke liye lagbhag 20 minute.",
+  "dv": "अपना ईमानदार पेपर जर्नल बनाइए, पहला फ़ैसला दर्ज कीजिए और पहली सात हिस्सों वाली Portfolio रो शुरू कीजिए: आज लगभग 35 मिनट, फिर हर शाम स्कैन और रो के लिए लगभग 20 मिनट।"
  },
  "kaam_steps": [
   {
-   "en": "In Google Sheets, create a sheet with ten headers: Date, Stock, Setup, Entry, Stop, Qty, Exit, R result, Rule broken?, Emotion.",
-   "hi": "Google Sheets mein ek sheet banaiye jismein das headers hon: Date, Stock, Setup, Entry, Stop, Qty, Exit, R result, Rule broken?, Emotion.",
-   "dv": "Google Sheets में एक शीट बनाइए, जिसमें दस हेडर हों: Date, Stock, Setup, Entry, Stop, Qty, Exit, R result, Rule broken?, Emotion।"
+   "en": "In Google Sheets, create a sheet with the ten headers from the template below: Date, Stock, Setup, Entry, Stop, Qty, Exit, R result, Rule broken?, Emotion. No Sheets? Rule the same ten columns in a notebook.",
+   "hi": "Google Sheets mein neeche diye template ke das headers wali sheet banaiye: Date, Stock, Setup, Entry, Stop, Qty, Exit, R result, Rule broken?, Emotion. Sheets nahi? Notebook mein yahi das columns bana lijiye.",
+   "dv": "Google Sheets में नीचे दिए टेम्पलेट के दस हेडर वाली शीट बनाइए: Date, Stock, Setup, Entry, Stop, Qty, Exit, R result, Rule broken?, Emotion। Sheets नहीं? नोटबुक में यही दस कॉलम बना लीजिए।"
   },
   {
    "en": "After the 3:30 pm close, run your Day 11 screener, add its results to your watchlist, and on a free TradingView daily chart check whether any watchlist stock added in the last 5 trading days made a signal day: a close above the previous day's high.",
@@ -973,19 +1002,19 @@
    "dv": "3:30 के क्लोज़ के बाद दिन 11 वाला स्क्रीनर चलाइए, नतीजों को वॉचलिस्ट में डालिए, और TradingView के फ़्री डेली चार्ट पर देखिए कि पिछले 5 ट्रेडिंग दिनों में जुड़े किसी वॉचलिस्ट स्टॉक ने सिग्नल डे बनाया या नहीं: क्लोज़ पिछले दिन के हाई के ऊपर।"
   },
   {
-   "en": "Before tomorrow's open, write one row: for a signal, a plan (stock; maximum entry = signal close + 0.5 x ATR; skip if it opens below the signal-day low; stop distance 1.5 x ATR; quantity from the Day 9 formula, cut to the 25% cap at the maximum entry; profit exit 2.5R; time exit day 15), otherwise 'No setup'.",
-   "hi": "Kal ke open se pehle ek row likhiye: signal ho toh plan (stock; maximum entry = signal close + 0.5 x ATR; signal-day ke low se neeche khule toh skip; stop ki doori 1.5 x ATR; Day 9 ke formula se quantity, maximum entry par 25% cap tak; 2.5R par profit exit; day 15 par time exit), warna 'No setup'.",
-   "dv": "कल के ओपन से पहले एक रो लिखिए: सिग्नल हो तो प्लान (स्टॉक; मैक्सिमम एंट्री = सिग्नल क्लोज़ + 0.5 x ATR; सिग्नल वाले दिन के लो से नीचे खुले तो छोड़ना; स्टॉप की दूरी 1.5 x ATR; दिन 9 के फ़ॉर्मूले से क्वांटिटी, मैक्सिमम एंट्री पर 25% कैप तक; 2.5R पर प्रॉफ़िट एग्ज़िट; दिन 15 पर टाइम एग्ज़िट), वरना 'No setup'।"
+   "en": "This evening, write one row for tomorrow: for a signal, a plan (stock; maximum entry = signal close + 0.5 x ATR; skip if it opens below the signal-day low; stop distance 1.5 x ATR; quantity = the smaller of Rs 10,000 ÷ stop distance and Rs 2,50,000 ÷ maximum entry, both rounded down; profit exit 2.5R; time exit day 15), otherwise 'No setup'.",
+   "hi": "Aaj shaam hi kal ke liye ek row likhiye: signal ho toh plan (stock; maximum entry = signal close + 0.5 x ATR; signal-day ke low se neeche khule toh skip; stop ki doori 1.5 x ATR; quantity = Rs 10,000 ÷ stop ki doori aur Rs 2,50,000 ÷ maximum entry mein se jo chhoti ho, dono round down karke; 2.5R par profit exit; day 15 par time exit), warna 'No setup'.",
+   "dv": "आज शाम ही कल के लिए एक रो लिखिए: सिग्नल हो तो प्लान (स्टॉक; मैक्सिमम एंट्री = सिग्नल क्लोज़ + 0.5 x ATR; सिग्नल वाले दिन के लो से नीचे खुले तो छोड़ना; स्टॉप की दूरी 1.5 x ATR; क्वांटिटी = Rs 10,000 ÷ स्टॉप की दूरी और Rs 2,50,000 ÷ मैक्सिमम एंट्री में से जो छोटी हो, दोनों नीचे राउंड करके; 2.5R पर प्रॉफ़िट एग्ज़िट; दिन 15 पर टाइम एग्ज़िट), वरना 'No setup'।"
   },
   {
-   "en": "Tomorrow evening, check the daily candle. If it opened inside your two limits, your entry is the open, your stop is the open minus 1.5 x ATR, and your profit exit is the open plus 2.5 x that stop distance; if it opened outside them, write 'Skipped: gap' (that still earns its point).",
-   "hi": "Kal shaam daily candle dekhiye. Agar woh aapki dono limits ke andar khula, toh entry wahi open hai, stop = open minus 1.5 x ATR, aur profit exit = open plus 2.5 x stop ki doori; agar bahar khula, toh 'Skipped: gap' likhiye (iska bhi point milta hai).",
-   "dv": "कल शाम डेली कैंडल देखिए। अगर वह आपकी दोनों सीमाओं के अंदर खुला, तो एंट्री वही ओपन है, स्टॉप = ओपन माइनस 1.5 x ATR, और प्रॉफ़िट एग्ज़िट = ओपन प्लस 2.5 x स्टॉप की दूरी; अगर बाहर खुला, तो 'Skipped: gap' लिखिए (इसका भी पॉइंट मिलता है)।"
+   "en": "Tomorrow evening, check the daily candle and finish the row. If it opened inside your two limits, your entry is the open, your stop is the open minus 1.5 x ATR and your profit exit is the open plus 2.5 x that stop distance; if not, write 'Skipped: gap', which still earns its point. Then fill 'Rule broken?' and one emotion word.",
+   "hi": "Kal shaam daily candle dekhiye aur row poori kijiye. Agar woh dono limits ke andar khula, toh entry wahi open hai, stop = open minus 1.5 x ATR aur profit exit = open plus 2.5 x stop ki doori; nahi toh 'Skipped: gap' likhiye, iska bhi point milta hai. Phir 'Rule broken?' aur ek emotion shabd bhariye.",
+   "dv": "कल शाम डेली कैंडल देखिए और रो पूरी कीजिए। अगर वह दोनों सीमाओं के अंदर खुला, तो एंट्री वही ओपन है, स्टॉप = ओपन माइनस 1.5 x ATR और प्रॉफ़िट एग्ज़िट = ओपन प्लस 2.5 x स्टॉप की दूरी; नहीं तो 'Skipped: gap' लिखिए, इसका भी पॉइंट मिलता है। फिर 'Rule broken?' और इमोशन का एक शब्द भरिए।"
   },
   {
-   "en": "Fill the two honesty columns, 'Rule broken?' and one emotion word. The point needs no extra column: 'none' in 'Rule broken?' is 1, anything else is 0 (for a trade, once it has closed).",
-   "hi": "Dono honesty columns bhariye, 'Rule broken?' aur ek emotion shabd. Point ke liye alag column nahi chahiye: 'Rule broken?' mein 'none' ho toh 1, kuch aur ho toh 0 (trade ho toh uske band hone ke baad).",
-   "dv": "दोनों ईमानदारी वाले कॉलम भरिए, 'Rule broken?' और इमोशन का एक शब्द। पॉइंट के लिए अलग कॉलम नहीं चाहिए: 'Rule broken?' में 'none' हो तो 1, कुछ और हो तो 0 (ट्रेड हो तो उसके बंद होने के बाद)।"
+   "en": "On the day your first paper trade is entered, open the app's Portfolio page and add its row in virtual money (symbol, entry date, quantity, entry price), then the parts you can fill today: price-stop, Full Why 2, top risk, your answer to it, Why-stop and review point, as in Priya's model below. Add Full Why 1, the business reason, after Day 15.",
+   "hi": "Jis din aapka pehla paper trade enter ho, app ka Portfolio page kholiye aur uski row virtual paise mein jodiye (symbol, entry date, quantity, entry price), phir woh hisse jo aaj bhar sakte hain: price-stop, Full Why 2, sabse bada risk, us risk ka jawab, Why-stop aur review point, neeche Priya ke model ki tarah. Full Why 1, yaani business ka reason, Day 15 ke baad jodiye.",
+   "dv": "जिस दिन आपका पहला पेपर ट्रेड एंटर हो, ऐप का Portfolio पेज खोलिए और उसकी रो वर्चुअल पैसे में जोड़िए (सिंबल, एंट्री डेट, क्वांटिटी, एंट्री भाव), फिर वे हिस्से जो आज भर सकते हैं: प्राइस-स्टॉप, फ़ुल व्हाई 2, सबसे बड़ा जोखिम, उसका जवाब, व्हाई-स्टॉप और रिव्यू पॉइंट, नीचे प्रिया के मॉडल की तरह। फ़ुल व्हाई 1, यानी बिज़नेस का कारण, दिन 15 के बाद जोड़िए।"
   },
   {
    "en": "Stretch, after five rows (15 minutes): paste only the ten columns into any AI with the 'Journal detective' prompt and check every Fact against your sheet.",
@@ -993,11 +1022,446 @@
    "dv": "स्ट्रेच, पाँच रो के बाद (15 मिनट): सिर्फ़ दस कॉलम 'Journal detective' प्रॉम्प्ट के साथ किसी भी AI में पेस्ट कीजिए, और हर फ़ैक्ट को अपनी शीट से मिलाइए।"
   }
  ],
- "kaam_min": 30,
+ "kaam_min": 35,
+ "artefacts": [
+  {
+   "title": {
+    "en": "Trade journal template: the ten columns",
+    "hi": "Trade journal template: das columns",
+    "dv": "ट्रेड जर्नल टेम्पलेट: दस कॉलम"
+   },
+   "note": {
+    "en": "In Google Sheets, type the ten column names across row 1; each decision then gets one row below. 'none' in 'Rule broken?' scores 1 point, anything else 0.",
+    "hi": "Google Sheets ki pehli row mein yeh das column naam likhiye; phir har decision ki neeche ek row. 'Rule broken?' mein 'none' = 1 point, kuch aur = 0.",
+    "dv": "Google Sheets की पहली रो में ये दस कॉलम के नाम लिखिए; फिर हर फ़ैसले की नीचे एक रो। 'Rule broken?' में 'none' = 1 पॉइंट, कुछ और = 0।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Column",
+      "hi": "Column",
+      "dv": "कॉलम"
+     },
+     {
+      "en": "What you write",
+      "hi": "Kya likhein",
+      "dv": "क्या लिखें"
+     },
+     {
+      "en": "Priya: a trade",
+      "hi": "Priya: ek trade",
+      "dv": "प्रिया: एक ट्रेड"
+     },
+     {
+      "en": "Priya: no setup",
+      "hi": "Priya: no setup",
+      "dv": "प्रिया: No setup"
+     }
+    ],
+    "rows": [
+     [
+      {
+       "en": "Date",
+       "hi": "Date",
+       "dv": "Date"
+      },
+      {
+       "en": "The evening you write the plan",
+       "hi": "Jis shaam plan likha",
+       "dv": "जिस शाम प्लान लिखा"
+      },
+      "03-09",
+      "02-09"
+     ],
+     [
+      {
+       "en": "Stock",
+       "hi": "Stock",
+       "dv": "Stock"
+      },
+      {
+       "en": "The share's name; '-' on a no-setup day",
+       "hi": "Share ka naam; no-setup din '-'",
+       "dv": "शेयर का नाम; बिना सेटअप वाले दिन '-'"
+      },
+      "Gupta Cement Ltd",
+      "-"
+     ],
+     [
+      {
+       "en": "Setup",
+       "hi": "Setup",
+       "dv": "Setup"
+      },
+      {
+       "en": "Strategy and plan limits, or 'No setup' / 'Skipped: <rule>'",
+       "hi": "Strategy aur plan ki limits, ya 'No setup' / 'Skipped: <rule>'",
+       "dv": "स्ट्रैटेजी और प्लान की सीमाएँ, या 'No setup' / 'Skipped: <नियम>'"
+      },
+      {
+       "en": "EMA Pullback, max 406, skip below 390, exit 449",
+       "hi": "EMA Pullback, max 406, 390 se neeche skip, exit 449",
+       "dv": "EMA Pullback, मैक्स 406, 390 से नीचे छोड़ें, एग्ज़िट 449"
+      },
+      {
+       "en": "No setup",
+       "hi": "No setup",
+       "dv": "No setup"
+      }
+     ],
+     [
+      {
+       "en": "Entry",
+       "hi": "Entry",
+       "dv": "Entry"
+      },
+      {
+       "en": "Next day's open, only if inside both limits",
+       "hi": "Agle din ka open, sirf dono limits ke andar ho toh",
+       "dv": "अगले दिन का ओपन, सिर्फ़ दोनों सीमाओं के अंदर हो तो"
+      },
+      "Rs 404",
+      "-"
+     ],
+     [
+      {
+       "en": "Stop",
+       "hi": "Stop",
+       "dv": "Stop"
+      },
+      {
+       "en": "Entry minus 1.5 x ATR",
+       "hi": "Entry minus 1.5 x ATR",
+       "dv": "एंट्री माइनस 1.5 x ATR"
+      },
+      "Rs 386",
+      "-"
+     ],
+     [
+      {
+       "en": "Qty",
+       "hi": "Qty",
+       "dv": "Qty"
+      },
+      {
+       "en": "Smaller of Rs 10,000 ÷ stop distance and Rs 2,50,000 ÷ max entry, rounded down",
+       "hi": "Rs 10,000 ÷ stop ki doori aur Rs 2,50,000 ÷ max entry mein se chhota, round down",
+       "dv": "Rs 10,000 ÷ स्टॉप की दूरी और Rs 2,50,000 ÷ मैक्स एंट्री में से छोटा, नीचे राउंड"
+      },
+      {
+       "en": "555 (the cap allows 615)",
+       "hi": "555 (cap 615 tak deta)",
+       "dv": "555 (कैप 615 तक देता)"
+      },
+      "-"
+     ],
+     [
+      {
+       "en": "Exit",
+       "hi": "Exit",
+       "dv": "Exit"
+      },
+      {
+       "en": "The price you really got: stop, profit exit, gap open or time exit",
+       "hi": "Jo price sach mein mila: stop, profit exit, gap wala open ya time exit",
+       "dv": "जो भाव सच में मिला: स्टॉप, प्रॉफ़िट एग्ज़िट, गैप वाला ओपन या टाइम एग्ज़िट"
+      },
+      "Rs 449",
+      "-"
+     ],
+     [
+      {
+       "en": "R result",
+       "hi": "R result",
+       "dv": "R result"
+      },
+      {
+       "en": "Rupees ÷ Rs 10,000, minus 0.1R",
+       "hi": "Rupaye ÷ Rs 10,000, minus 0.1R",
+       "dv": "रुपये ÷ Rs 10,000, माइनस 0.1R"
+      },
+      "+2.4R",
+      "-"
+     ],
+     [
+      {
+       "en": "Rule broken?",
+       "hi": "Rule broken?",
+       "dv": "Rule broken?"
+      },
+      {
+       "en": "'none', or the name of the rule",
+       "hi": "'none', ya toote rule ka naam",
+       "dv": "'none', या टूटे नियम का नाम"
+      },
+      {
+       "en": "none",
+       "hi": "none",
+       "dv": "none"
+      },
+      {
+       "en": "none",
+       "hi": "none",
+       "dv": "none"
+      }
+     ],
+     [
+      {
+       "en": "Emotion",
+       "hi": "Emotion",
+       "dv": "Emotion"
+      },
+      {
+       "en": "One word: calm, FOMO, fear, bored, angry, overconfident",
+       "hi": "Ek shabd: calm, FOMO, darr, bore, gussa, over-confident",
+       "dv": "एक शब्द: शांत, FOMO, डर, बोरियत, ग़ुस्सा, ओवर-कॉन्फ़िडेंट"
+      },
+      {
+       "en": "calm",
+       "hi": "calm",
+       "dv": "शांत"
+      },
+      {
+       "en": "bored",
+       "hi": "bore",
+       "dv": "बोरियत"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "title": {
+    "en": "Portfolio row: Priya's model, in virtual money",
+    "hi": "Portfolio row: Priya ka model, virtual paise mein",
+    "dv": "Portfolio रो: प्रिया का मॉडल, वर्चुअल पैसे में"
+   },
+   "note": {
+    "en": "Up to 5 rows stay on the page, for trades you took or watchlist stocks you planned in full; a row is not an open trade, and never more than 3 trades are open at once. A row counts only when all seven parts are filled; add Full Why 1 after Day 15.",
+    "hi": "Page par 5 rows tak rehti hain, liye gaye trades ki ya poori tarah plan kiye watchlist stocks ki; row khula trade nahi hai, aur ek saath 3 se zyada trades khule kabhi nahi. Row tabhi ginti hai jab saaton hisse bhare hon; Full Why 1 Day 15 ke baad jodiye.",
+    "dv": "पेज पर 5 रो तक रहती हैं, लिए गए ट्रेड की या पूरी तरह प्लान किए वॉचलिस्ट स्टॉक की; रो खुला ट्रेड नहीं है, और एक साथ 3 से ज़्यादा ट्रेड खुले कभी नहीं। रो तभी गिनी जाती है जब सातों हिस्से भरे हों; फ़ुल व्हाई 1 दिन 15 के बाद जोड़िए।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Part",
+      "hi": "Hissa",
+      "dv": "हिस्सा"
+     },
+     {
+      "en": "The question it answers",
+      "hi": "Kaunsa sawaal",
+      "dv": "कौन-सा सवाल"
+     },
+     {
+      "en": "Priya's row: Gupta Cement Ltd",
+      "hi": "Priya ki row: Gupta Cement Ltd",
+      "dv": "प्रिया की रो: Gupta Cement Ltd"
+     }
+    ],
+    "rows": [
+     [
+      {
+       "en": "Full Why 1 (business reason)",
+       "hi": "Full Why 1 (business ka reason)",
+       "dv": "फ़ुल व्हाई 1 (बिज़नेस का कारण)"
+      },
+      {
+       "en": "Why this business?",
+       "hi": "Yeh business kyun?",
+       "dv": "यही बिज़नेस क्यों?"
+      },
+      {
+       "en": "Sales and profit rose three years running; debt is low (her Day 15 health card)",
+       "hi": "Teen saal lagatar sales aur profit badhe; karz kam hai (uska Day 15 health card)",
+       "dv": "तीन साल लगातार बिक्री और मुनाफ़ा बढ़े; क़र्ज़ कम है (उसका दिन 15 का हेल्थ कार्ड)"
+      }
+     ],
+     [
+      {
+       "en": "Full Why 2 (a second, independent reason)",
+       "hi": "Full Why 2 (doosra, alag reason)",
+       "dv": "फ़ुल व्हाई 2 (दूसरा, अलग कारण)"
+      },
+      {
+       "en": "What else says yes, apart from the business?",
+       "hi": "Business ke alawa aur kya haan kehta hai?",
+       "dv": "बिज़नेस के अलावा और क्या हाँ कहता है?"
+      },
+      {
+       "en": "EMA Pullback signal in an uptrend; stronger than NIFTY 50 over 3 months",
+       "hi": "Uptrend mein EMA Pullback signal; 3 mahine mein NIFTY 50 se mazboot",
+       "dv": "अपट्रेंड में EMA Pullback सिग्नल; 3 महीने में NIFTY 50 से मज़बूत"
+      }
+     ],
+     [
+      {
+       "en": "Top risk",
+       "hi": "Sabse bada risk",
+       "dv": "सबसे बड़ा जोखिम"
+      },
+      {
+       "en": "What could hurt most?",
+       "hi": "Sabse zyada nuksaan kya kar sakta hai?",
+       "dv": "सबसे ज़्यादा नुक़सान क्या कर सकता है?"
+      },
+      {
+       "en": "Bad news overnight gaps it below the stop",
+       "hi": "Raat ki buri khabar ise stop ke neeche gap kar de",
+       "dv": "रात की बुरी ख़बर इसे स्टॉप के नीचे गैप कर दे"
+      }
+     ],
+     [
+      {
+       "en": "Your answer to that risk",
+       "hi": "Us risk ka aapka jawab",
+       "dv": "उस जोखिम का आपका जवाब"
+      },
+      {
+       "en": "What will you do about it?",
+       "hi": "Aap uske liye kya karenge?",
+       "dv": "आप उसके लिए क्या करेंगे?"
+      },
+      {
+       "en": "Size keeps even a 1.5R gap near Rs 15,000; log the real exit",
+       "hi": "Size aisa ki 1.5R ka gap bhi lagbhag Rs 15,000; asli exit hi likhna",
+       "dv": "साइज़ ऐसा कि 1.5R का गैप भी लगभग Rs 15,000; असली एग्ज़िट ही लिखना"
+      }
+     ],
+     [
+      {
+       "en": "Price-stop",
+       "hi": "Price-stop",
+       "dv": "प्राइस-स्टॉप"
+      },
+      {
+       "en": "Where does price say you are wrong?",
+       "hi": "Price kahan bolta hai ki aap galat hain?",
+       "dv": "भाव कहाँ बताता है कि आप ग़लत हैं?"
+      },
+      {
+       "en": "Rs 386, from her plan card (404 - 18)",
+       "hi": "Rs 386, plan card se (404 - 18)",
+       "dv": "Rs 386, प्लान कार्ड से (404 - 18)"
+      }
+     ],
+     [
+      {
+       "en": "Why-stop",
+       "hi": "Why-stop",
+       "dv": "व्हाई-स्टॉप"
+      },
+      {
+       "en": "What fact would prove the idea wrong?",
+       "hi": "Kaunsa fact idea ko galat sabit karega?",
+       "dv": "कौन-सा तथ्य आइडिया को ग़लत साबित करेगा?"
+      },
+      {
+       "en": "Sales fall two quarters in a row",
+       "hi": "Lagatar do quarter sales giri",
+       "dv": "लगातार दो तिमाही बिक्री गिरी"
+      }
+     ],
+     [
+      {
+       "en": "Review point",
+       "hi": "Review point",
+       "dv": "रिव्यू पॉइंट"
+      },
+      {
+       "en": "When will you look again?",
+       "hi": "Dobara kab dekhenge?",
+       "dv": "दोबारा कब देखेंगे?"
+      },
+      {
+       "en": "The next results date",
+       "hi": "Agli results date",
+       "dv": "अगली नतीजों की तारीख़"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "title": {
+    "en": "How your mentor grades a row: A, C and D",
+    "hi": "Mentor row ko kaise grade karte hain: A, C aur D",
+    "dv": "मेंटर रो को कैसे ग्रेड करते हैं: A, C और D"
+   },
+   "note": {
+    "en": "B sits between A and C, and grades run A to F: a row graded D or below does not count yet. The same guide comes back on Day 21, and profit never changes a grade.",
+    "hi": "B, A aur C ke beech hai, aur grade A se F tak hote hain: D ya usse neeche wali row abhi ginti mein nahi aati. Yahi guide Day 21 par phir aayegi, aur profit se grade kabhi nahi badalta.",
+    "dv": "B, A और C के बीच है, और ग्रेड A से F तक होते हैं: D या उससे नीचे वाली रो अभी गिनती में नहीं आती। यही गाइड दिन 21 पर फिर आएगी, और मुनाफ़े से ग्रेड कभी नहीं बदलता।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Grade",
+      "hi": "Grade",
+      "dv": "ग्रेड"
+     },
+     {
+      "en": "What the row shows",
+      "hi": "Row mein kya dikhta hai",
+      "dv": "रो में क्या दिखता है"
+     },
+     {
+      "en": "Counts for the certificate?",
+      "hi": "Certificate mein ginti?",
+      "dv": "सर्टिफ़िकेट में गिनती?"
+     }
+    ],
+    "rows": [
+     [
+      "A",
+      {
+       "en": "All seven parts. Two specific Whys that do not lean on each other, a price-stop in rupees, a testable Why-stop, and a review date or trigger.",
+       "hi": "Saaton hisse. Do saaf Why jo ek-doosre par tike na hon, rupees mein price-stop, test ho sakne wala Why-stop, aur review ki date ya trigger.",
+       "dv": "सातों हिस्से। दो साफ़ व्हाई जो एक-दूसरे पर टिके न हों, रुपये में प्राइस-स्टॉप, जाँचा जा सकने वाला व्हाई-स्टॉप, और रिव्यू की तारीख़ या ट्रिगर।"
+      },
+      {
+       "en": "Yes",
+       "hi": "Haan",
+       "dv": "हाँ"
+      }
+     ],
+     [
+      "C",
+      {
+       "en": "All seven parts filled, but one is vague: Why 2 repeats Why 1, the Why-stop cannot be tested, or the review point just says 'later'.",
+       "hi": "Saaton hisse bhare, par ek dhundhla: Why 2 Why 1 ko hi dohraata hai, Why-stop test nahi ho sakta, ya review point mein bas 'baad mein' likha hai.",
+       "dv": "सातों हिस्से भरे, पर एक धुँधला: व्हाई 2 व्हाई 1 को ही दोहराता है, व्हाई-स्टॉप जाँचा नहीं जा सकता, या रिव्यू पॉइंट में बस 'बाद में' लिखा है।"
+      },
+      {
+       "en": "Yes; sharpen the vague part next time",
+       "hi": "Haan; agli baar dhundhla hissa saaf kijiye",
+       "dv": "हाँ; अगली बार धुँधला हिस्सा साफ़ कीजिए"
+      }
+     ],
+     [
+      "D",
+      {
+       "en": "A part is missing or copied, a tip or 'everyone is buying' is used as a Why, or there is no Why-stop.",
+       "hi": "Koi hissa gayab ya copy kiya hua, tip ya 'sab khareed rahe hain' ko Why banaya, ya Why-stop hai hi nahi.",
+       "dv": "कोई हिस्सा ग़ायब या कॉपी किया हुआ, टिप या 'सब ख़रीद रहे हैं' को व्हाई बनाया, या व्हाई-स्टॉप है ही नहीं।"
+      },
+      {
+       "en": "Not yet: fix the weak part and ask your mentor to grade it again",
+       "hi": "Abhi nahi: kamzor hissa theek kijiye aur mentor se dobara grade karne ko kahiye",
+       "dv": "अभी नहीं: कमज़ोर हिस्सा ठीक कीजिए और मेंटर से दोबारा ग्रेड करने को कहिए"
+      }
+     ]
+    ]
+   }
+  }
+ ],
  "outcome": {
-  "en": "By the end you can paper-trade with fills you could really have got, record a gap through your stop honestly, keep a ten-column journal with one emotion word per row, and score your own adherence as points ÷ decisions.",
-  "hi": "Aaj ke baad aap aise fills ke saath paper trade kar payenge jo sach mein mil sakte the, stop ke paar gap ko imaandaari se record kar payenge, har row mein ek emotion shabd ke saath das columns ka journal rakh payenge, aur apna adherence score points ÷ decisions se khud nikaal payenge.",
-  "dv": "आज के बाद आप ऐसे फ़िल के साथ पेपर ट्रेड कर पाएँगे जो सच में मिल सकते थे, स्टॉप के पार गैप को ईमानदारी से दर्ज कर पाएँगे, हर रो में इमोशन के एक शब्द के साथ दस कॉलम का जर्नल रख पाएँगे, और अपना एडहेरेंस स्कोर पॉइंट ÷ फ़ैसले के रूप में ख़ुद निकाल पाएँगे।"
+  "en": "By the end you can paper-trade with fills you could really have got, record a gap through your stop honestly, keep a ten-column journal with one emotion word per row, score your own adherence as points ÷ decisions, and start a seven-part Portfolio row your mentor can grade.",
+  "hi": "Aaj ke baad aap aise fills ke saath paper trade kar payenge jo sach mein mil sakte the, stop ke paar gap ko imaandaari se record kar payenge, har row mein ek emotion shabd ke saath das columns ka journal rakh payenge, apna adherence score points ÷ decisions se khud nikaal payenge, aur saat hisson wali Portfolio row shuru kar payenge jise mentor grade kar sakein.",
+  "dv": "आज के बाद आप ऐसे फ़िल के साथ पेपर ट्रेड कर पाएँगे जो सच में मिल सकते थे, स्टॉप के पार गैप को ईमानदारी से दर्ज कर पाएँगे, हर रो में इमोशन के एक शब्द के साथ दस कॉलम का जर्नल रख पाएँगे, अपना एडहेरेंस स्कोर पॉइंट ÷ फ़ैसले के रूप में ख़ुद निकाल पाएँगे, और सात हिस्सों वाली Portfolio रो शुरू कर पाएँगे जिसे मेंटर ग्रेड कर सकें।"
  },
  "tools": [
   {
@@ -1022,9 +1486,9 @@
   }
  ],
  "fun": {
-  "en": "Scorebook swap: after your first week, swap journal sheets with a classmate (only the ten columns, no names or personal details) and score each other's adherence without looking at profit or loss. If your score for yourself is higher than theirs for you, find the row where you went easy on yourself. Stock names in the sheet are a record, not tips: never act on them or forward them.",
-  "hi": "Scorebook swap: pehle hafte ke baad kisi classmate ke saath journal sheet badal lijiye (sirf das columns, koi naam ya personal detail nahi) aur profit-loss dekhe bina ek-doosre ka adherence score nikaaliye. Agar aapka apne liye score unke diye score se zyada hai, toh woh row dhoondhiye jahan aapne khud par narmi barti. Sheet ke stock names sirf record hain, tips nahi: na un par trade kijiye, na aage forward kijiye.",
-  "dv": "स्कोरबुक स्वैप: पहले हफ़्ते के बाद किसी साथी के साथ जर्नल शीट बदल लीजिए (सिर्फ़ दस कॉलम, कोई नाम या निजी जानकारी नहीं) और प्रॉफ़िट-लॉस देखे बिना एक-दूसरे का एडहेरेंस स्कोर निकालिए। अगर आपका अपने लिए दिया स्कोर उनके दिए स्कोर से ज़्यादा है, तो वह रो ढूँढिए जहाँ आपने ख़ुद पर नरमी बरती। शीट में स्टॉक के नाम सिर्फ़ रिकॉर्ड हैं, टिप्स नहीं: न उन पर ट्रेड कीजिए, न आगे भेजिए।"
+  "en": "Scorebook swap: after your first week, swap journal sheets with a classmate (only the ten columns, no names or personal details) and score each other's adherence without looking at profit or loss. If your score for yourself is higher than theirs for you, find the row where you went easy on yourself. Stock names in the sheet are a record, not tips: never act on them or forward them. Then swap one Portfolio row with a partner and grade it A, C or D with the guide in Today's task; tell them the one part that would lift it a grade.",
+  "hi": "Scorebook swap: pehle hafte ke baad kisi classmate ke saath journal sheet badal lijiye (sirf das columns, koi naam ya personal detail nahi) aur profit-loss dekhe bina ek-doosre ka adherence score nikaaliye. Agar aapka apne liye score unke diye score se zyada hai, toh woh row dhoondhiye jahan aapne khud par narmi barti. Sheet ke stock names sirf record hain, tips nahi: na un par trade kijiye, na aage forward kijiye. Phir partner ke saath ek Portfolio row badliye aur Aaj Ka Kaam wali guide se use A, C ya D grade dijiye; unhe woh ek hissa bataiye jo row ko ek grade upar le jaaye.",
+  "dv": "स्कोरबुक स्वैप: पहले हफ़्ते के बाद किसी साथी के साथ जर्नल शीट बदल लीजिए (सिर्फ़ दस कॉलम, कोई नाम या निजी जानकारी नहीं) और प्रॉफ़िट-लॉस देखे बिना एक-दूसरे का एडहेरेंस स्कोर निकालिए। अगर आपका अपने लिए दिया स्कोर उनके दिए स्कोर से ज़्यादा है, तो वह रो ढूँढिए जहाँ आपने ख़ुद पर नरमी बरती। शीट में स्टॉक के नाम सिर्फ़ रिकॉर्ड हैं, टिप्स नहीं: न उन पर ट्रेड कीजिए, न आगे भेजिए। फिर पार्टनर के साथ एक Portfolio रो बदलिए और 'आज का काम' वाली गाइड से उसे A, C या D ग्रेड दीजिए; उन्हें वह एक हिस्सा बताइए जो रो को एक ग्रेड ऊपर ले जाए।"
  },
  "compliance": "Educational content only, not investment advice. Company names, prices and paper results in this lesson are made up for illustration; paper results are hypothetical, and past performance is not indicative of future results. Stage 1 uses virtual money only. No affiliation with any tool named. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
  "prompts": [
@@ -1042,15 +1506,15 @@
     "hi": "Honest fill check",
     "dv": "ईमानदार फ़िल चेक"
    },
-   "body": "Act as a strict paper-trading auditor for a beginner who uses virtual money only. I will describe one paper trade: the plan I wrote the evening before (signal close, signal-day low, ATR(14), maximum entry, stop distance, quantity), the daily candles (open, high, low, close) of the following days, the entry and exit I recorded, and my virtual capital of Rs 10,00,000 with 1R = Rs 10,000. Check my record against these rules: (a) the entry is the next day's open, and only if that open is at or below the maximum entry (signal close + 0.5 x ATR) and not below the signal-day low; otherwise the trade is skipped; the stop is the entry minus 1.5 x ATR, and the profit exit is the entry plus 2.5 x that stop distance; (b) a sell waiting at the profit exit counts only if the price traded above it, and a touch does not count; if a day opened above it, the exit is that open; (c) if a day opened below my stop, the exit is that opening price, not the stop; (d) if one daily candle touched both my stop and my profit exit, the stop counts; (e) the R result is (exit - entry) x quantity divided by Rs 10,000 (1R), and 0.1R is subtracted from every closed trade for costs and slippage; for a full-size trade this is almost exactly (exit - entry) divided by (entry - stop); (f) quantity must not exceed Rs 10,000 divided by the stop distance, rounded down, and the position value must not exceed 25% of capital; (g) if a day's low reached my stop but the day did not open below it, the exit is the stop; (h) if the stock was locked at its lower price band, the exit is the first price it traded at afterwards, usually a later open; (i) if neither the stop nor the profit exit was hit by the close of the 15th trading day after entry (the entry day counts as day 1), the exit is the next open. Tell me which rule, if any, my record breaks, and recompute the honest R result step by step, showing the arithmetic. Label each statement Fact (follows from my numbers) or Guess. Do not recommend any stock, and give no buy or sell advice, targets or return expectations."
+   "body": "Act as a strict paper-trading auditor for a beginner who uses virtual money only. I will describe one paper trade: the plan I wrote the evening before (signal close, signal-day low, ATR(14), maximum entry, stop distance, quantity), the daily candles (open, high, low, close) of the following days, the entry and exit I recorded, and my virtual capital of Rs 10,00,000 with 1R = Rs 10,000. Check my record against these rules: (a) the entry is the next day's open, and only if that open is at or below the maximum entry (signal close + 0.5 x ATR) and not below the signal-day low; otherwise the trade is skipped; the stop is the entry minus 1.5 x ATR, and the profit exit is the entry plus 2.5 x that stop distance; (b) a sell waiting at the profit exit counts only if the price traded above it, and a touch does not count; if a day opened above it, the exit is that open; (c) if a day opened below my stop, the exit is that opening price, not the stop; (d) if one daily candle touched both my stop and my profit exit, the stop counts; (e) the R result is (exit - entry) x quantity divided by Rs 10,000 (1R), and 0.1R is subtracted from every closed trade for costs and slippage; for a full-size trade this is almost exactly (exit - entry) divided by (entry - stop); (f) quantity must not exceed the smaller of Rs 10,000 divided by the stop distance and Rs 2,50,000 (25% of capital) divided by the maximum entry price, both rounded down; the quantity is fixed the evening before, so a lower open does not raise it; (g) if a day's low reached my stop but the day did not open below it, the exit is the stop; (h) if the stock was locked at its lower price band, the exit is the first price it traded at afterwards, usually a later open; (i) if neither the stop nor the profit exit was hit by the close of the 15th trading day after entry (the entry day counts as day 1), the exit is the next open. Tell me which rule, if any, my record breaks, and recompute the honest R result step by step, showing the arithmetic. Label each statement Fact (follows from my numbers) or Guess. Do not recommend any stock, and give no buy or sell advice, targets or return expectations."
   },
   {
    "title": {
-    "en": "Paper or real?",
-    "hi": "Paper ya asli?",
-    "dv": "पेपर या असली?"
+    "en": "Portfolio row check",
+    "hi": "Portfolio row check",
+    "dv": "Portfolio रो चेक"
    },
-   "body": "Act as a calm trading-psychology coach. I have just started paper trading with virtual money. Ask me 6 short questions, one at a time, to check whether I treat paper trades as less real than real ones: whether I sized by my formula, whether I moved a stop, whether I took a trade without a written plan, whether I recorded prices I only saw afterwards, and how I felt on days with no setup. After my answers, tell me plainly where 'it is only paper' thinking shows up, and suggest one habit to fix it. Do not ask for any personal or financial details, do not suggest any stock or strategy, and give no buy or sell advice, targets or return expectations."
+   "body": "You are a strict but kind coach for an Indian beginner who paper-trades with virtual money only. I will paste one row from my practice portfolio with seven parts: Full Why 1 (a business reason), Full Why 2 (a second, independent reason), the top risk, my answer to that risk, a price-stop, a Why-stop (the fact that would prove the idea wrong) and a review point (a date or trigger to look again). The company may be made up, and I have removed all personal details. For each part, say whether it is Specific (a checkable fact, number or date), Vague (true but too general to check) or Missing, and quote my words. Check that the two Whys are really independent of each other, that the Why-stop could actually be proved true or false, that the price-stop is a price, and that the review point is a date or a clear trigger. Then say which band the row is closest to: A (all seven parts: two specific Whys that do not lean on each other, a price-stop in rupees, a testable Why-stop, and a review date or trigger), C (all seven filled, but one is vague: Why 2 repeats Why 1, the Why-stop cannot be tested, or the review point just says 'later') or D (a part is missing or copied, a tip or 'everyone is buying' is used as a Why, or there is no Why-stop), and suggest one rewrite for the weakest part. This is practice feedback only; my mentor gives the real grade. Do not judge whether the company or the trade is good, do not recommend any stock, and give no buy or sell advice, targets or return expectations.\n\nMy row:\n<paste here>"
   }
  ],
  "journal_prompt": {
@@ -1153,7 +1617,7 @@
    "explanation": {
     "en": "The day opened below the stop, so a real stop order would have been triggered at the open: the exit is Rs 279. Loss per share: 300 - 279 = Rs 21. Planned risk per share: 300 - 285 = Rs 15. 21 ÷ 15 = 1.4R, and the 0.1R allowance makes it -1.5R. The stop was the plan; the gap decided the exit. (An SL-M order would sell near that open; an SL-limit order might not fill at all.)",
     "hi": "Din stop se neeche khula, isliye asli stop order open par hi trigger ho jaata: exit Rs 279 hai. Har share par loss: 300 - 279 = Rs 21. Har share ka planned risk: 300 - 285 = Rs 15. 21 ÷ 15 = 1.4R, aur 0.1R allowance ke baad -1.5R. Stop plan tha; exit gap ne tay kiya. (SL-M order us open ke aas-paas bik jaata; SL-limit order shayad fill hi na hota.)",
-    "dv": "दिन स्टॉप से नीचे खुला, इसलिए असली स्टॉप ऑर्डर ओपन पर ही ट्रिगर हो जाता: एग्ज़िट Rs 279 है। हर शेयर पर लॉस: 300 - 279 = Rs 21। हर शेयर का प्लान किया रिस्क: 300 - 285 = Rs 15। 21 ÷ 15 = 1.4R, और 0.1R अलाउंस के बाद -1.5R। स्टॉप प्लान था; एग्ज़िट गैप ने तय किया। (SL-M ऑर्डर उस ओपन के आसपास बिक जाता; SL-limit ऑर्डर शायद भरता ही नहीं।)"
+    "dv": "दिन स्टॉप से नीचे खुला, इसलिए असली स्टॉप ऑर्डर ओपन पर ही ट्रिगर हो जाता: एग्ज़िट Rs 279 है। हर शेयर पर लॉस: 300 - 279 = Rs 21। हर शेयर का प्लान किया रिस्क: 300 - 285 = Rs 15। 21 ÷ 15 = 1.4R, और 0.1R अलाउंस के बाद -1.5R। स्टॉप प्लान था; एग्ज़िट गैप ने तय किया। (SL-M ऑर्डर उस ओपन के आसपास बिक जाता; SL-limit ऑर्डर शायद फ़िल ही नहीं होता।)"
    }
   },
   {
@@ -1211,17 +1675,17 @@
    "options": [
     {
      "text": {
-      "en": "Which emotions show up with my broken rules?",
-      "hi": "Toote rules ke saath kaunse emotions dikhte hain?",
-      "dv": "मेरे टूटे नियमों के साथ कौन-से इमोशन दिखते हैं?"
+      "en": "Which emotion words show up on days I broke a rule?",
+      "hi": "Jin dinon rule toota, un dinon kaunse emotion shabd dikhte hain?",
+      "dv": "जिन दिनों नियम टूटा, उन दिनों इमोशन के कौन-से शब्द दिखते हैं?"
      },
      "correct": true
     },
     {
      "text": {
-      "en": "Which stock from my list should I trade next?",
-      "hi": "Meri list ka kaunsa stock main agla trade karun?",
-      "dv": "मेरी लिस्ट का कौन-सा स्टॉक मैं अगला ट्रेड करूँ?"
+      "en": "Which stock from my list should I buy next week?",
+      "hi": "Meri list ka kaunsa stock main agle hafte khareedun?",
+      "dv": "मेरी लिस्ट का कौन-सा स्टॉक मैं अगले हफ़्ते ख़रीदूँ?"
      },
      "correct": false
     },
@@ -1273,9 +1737,9 @@
     },
     {
      "text": {
-      "en": "Not logged at all, as it was only paper money",
-      "hi": "Log hi nahi karna, kyunki paisa toh paper ka tha",
-      "dv": "दर्ज ही नहीं करना, क्योंकि पैसा तो पेपर का था"
+      "en": "Not logged, as it was only paper money",
+      "hi": "Log nahi karna, paisa toh paper ka tha",
+      "dv": "दर्ज नहीं करना, पैसा तो पेपर का था"
      },
      "correct": false
     },

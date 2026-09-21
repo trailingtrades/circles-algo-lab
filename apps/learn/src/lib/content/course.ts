@@ -26,7 +26,10 @@ export interface Prompt { title: Text; level: string; platform: string; body: st
 /** @deprecated the v1 name — use SessionContentV2 (lib/content/session-v2.ts). */
 export type SessionContent = SessionContentV2;
 export interface Session { number: number; level: LevelSlug; week: number; day: number; course_day: number | null; title_en: string; title_hi: string; title_dv?: string | null; core_concept: string; ai_lab: string; psychology: string; strategy: string | null; duration_min: number; video_url: string | null; video_provider: string; is_published: boolean; draft: boolean; summary_hi: string; content: SessionContentV2; prompts: Prompt[] }
-export interface Resource { level: LevelSlug | null; week: number | null; kind: "deck" | "handout" | "workbook" | "exam" | "excel" | "link"; file_name: string; note: string; storage_path: string | null }
+/** A file or link on the Resources page / a session's Class material. `lang` marks one language copy of a file
+ *  ("en" English, "hi" Hinglish: Hindi readers get "hi"); `day` pins a file to one Stage 1 course day (1-21).
+ *  storage_path is a web link or an in-app path ("/learn/..."). Selection rules: lib/content/resources.ts. */
+export interface Resource { level: LevelSlug | null; week: number | null; day?: number | null; lang?: "en" | "hi" | null; kind: "deck" | "handout" | "workbook" | "exam" | "excel" | "link"; file_name: string; note: string; storage_path: string | null }
 /** A bank row as stored in /content JSON (server-side; carries the answer). */
 type BankQuestion = { stem_en: string; stem_hi: string; stem_dv?: string; options: (QuizOption & { distractor?: boolean })[]; correct_index: number; explanation_en: string; explanation_hi: string; explanation_dv?: string; marks: number };
 /** Keep only the words of an option — the legacy `distractor` flag revealed the answer. */

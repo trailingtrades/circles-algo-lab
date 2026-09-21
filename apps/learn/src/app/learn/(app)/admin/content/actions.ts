@@ -30,6 +30,7 @@ function visualProblem(v: unknown): string | null {
     calc: () => !!arr(v.rows) && isObj(v.result), bars: () => !!arr(v.items)?.length,
     line: () => !!arr(v.series)?.length && arr(v.series)!.every((s) => isObj(s) && !!arr(s.points)?.length),
     candles: () => !!arr(v.bars)?.length, mindmap: () => !!arr(v.branches)?.length && v.center != null, story: () => !!arr(v.panels)?.length,
+    table: () => !!arr(v.head)?.length && !!arr(v.rows) && arr(v.rows)!.every((r) => arr(r)?.length === arr(v.head)!.length && arr(r)!.every(isText)),
   };
   return ok[v.kind as string]() ? null : `${v.kind as string} is missing its data (see docs/SMART_CONTENT_SCHEMA.md)`;
 }
@@ -51,6 +52,15 @@ function contentProblems(c: unknown): string[] {
   if (!arr(c.tools)?.every(isText)) p.push("tools: an array of text");
   if (c.kaam_steps != null && !arr(c.kaam_steps)?.every(isText)) p.push("kaam_steps: an array of text");
   if (c.kaam_min != null && !(typeof c.kaam_min === "number" && c.kaam_min > 0 && c.kaam_min <= 240)) p.push("kaam_min: minutes, 1 to 240");
+  if (c.artefacts != null) {
+    const a = arr(c.artefacts);
+    if (!a || a.length > 3) p.push("artefacts: an array of at most 3 {title, note?, visual}");
+    else a.forEach((x, i) => {
+      if (!isObj(x) || !isText(x.title) || (x.note != null && !isText(x.note))) { p.push(`artefacts[${i}]: needs title (and an optional note) as text`); return; }
+      if (isObj(x.visual) && (x.visual.kind === "story" || x.visual.kind === "mindmap")) { p.push(`artefacts[${i}].visual: story and mindmap are not templates`); return; }
+      const e = visualProblem(x.visual); if (e) p.push(`artefacts[${i}].visual: ${e}`);
+    });
+  }
   if (c.key_terms != null && !arr(c.key_terms)?.every((k) => isObj(k) && isText(k.term) && isText(k.meaning))) p.push("key_terms: [{term, meaning}]");
   if (c.story != null) { const e = isObj(c.story) && c.story.kind === "story" ? visualProblem(c.story) : "needs kind \"story\""; if (e) p.push(`story: ${e}`); }
   if (c.mindmap != null) { const e = isObj(c.mindmap) && c.mindmap.kind === "mindmap" ? visualProblem(c.mindmap) : "needs kind \"mindmap\""; if (e) p.push(`mindmap: ${e}`); }

@@ -3,7 +3,8 @@ import { revalidatePath, refresh } from "next/cache";
 import { getViewer, createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { supabaseConfigured } from "@/lib/supabase/env";
-import { SESSIONS, RESOURCES, isWeekReviewDay, youtubeEmbed, type Session } from "@/lib/content/course";
+import { SESSIONS, isWeekReviewDay, youtubeEmbed, type Session } from "@/lib/content/course";
+import { sessionHasHandout } from "@/lib/content/resources";
 import { liveSession, liveQuizKey } from "@/lib/content/live";
 import { loadLearnerState } from "@/lib/progress/load";
 import { gate } from "@/lib/progress/gating";
@@ -25,13 +26,13 @@ const E = {
   notReady: t3("This session is not set up yet. Please tell your mentor.", "Ye session abhi set up nahi hua hai. Apne mentor ko bataiye.", "यह सेशन अभी सेट अप नहीं हुआ है। अपने मेंटर को बताइए।"),
   failed: t3("Could not save. Check your internet and try again.", "Save nahi ho paaya. Internet check karke dobara try kijiye.", "सेव नहीं हो पाया। इंटरनेट देखकर दोबारा कोशिश कीजिए।"),
   noVideo: t3("This session has no class video.", "Is session ka class video nahi hai.", "इस सेशन का क्लास वीडियो नहीं है।"),
-  noHandout: t3("This week has no handout yet.", "Is hafte ka handout abhi nahi aaya hai.", "इस हफ़्ते का हैंडआउट अभी नहीं आया है।"),
+  noHandout: t3("This session has no handout yet.", "Is session ka handout abhi nahi aaya hai.", "इस सेशन का हैंडआउट अभी नहीं आया है।"),
   noQuiz: t3("The quiz for this session is not ready yet.", "Is session ka quiz abhi taiyaar nahi hai.", "इस सेशन का क्विज़ अभी तैयार नहीं है।"),
   quizDone: t3("You have already submitted this quiz. It has one attempt.", "Ye quiz aap submit kar chuke hain. Isme ek hi attempt hota hai.", "यह क्विज़ आप सबमिट कर चुके हैं। इसमें एक ही अटेम्प्ट होता है।"),
   quizBusy: t3("Your answers are already being checked.", "Aapke answers check ho rahe hain, ek second.", "आपके जवाब चेक हो रहे हैं, एक पल रुकिए।"),
   tooShort: t3("Write at least 10 characters.", "Kam se kam 10 characters likhiye.", "कम से कम 10 अक्षर लिखिए।"),
   tooLong: t3("Keep it under 4,000 characters.", "4,000 characters se kam rakhiye.", "4,000 अक्षरों से कम रखिए।"),
-  reviewDone: t3("This week's review is already saved. Choose Reflection for another note.", "Is hafte ka review save ho chuka hai. Aur note ke liye Reflection chuniye.", "इस हफ़्ते का रिव्यू सेव हो चुका है। और नोट के लिए रिफ़्लेक्शन चुनिए।"),
+  reviewDone: t3("This week's review is already saved. Choose Reflection for another note.", "Is hafte ka review save ho chuka hai. Aur note ke liye Reflection chuniye.", "इस हफ़्ते का साप्ताहिक रिव्यू सेव हो चुका है। और नोट के लिए रिफ़्लेक्शन चुनिए।"),
   journalSaved: t3("Journal saved.", "Journal save ho gaya.", "जर्नल सेव हो गया।"),
 } satisfies Record<string, L>;
 
@@ -39,8 +40,8 @@ const E = {
    attempt while the first is in flight (one Node process on the VPS); the DB check below covers the rest. */
 const grading = new Set<string>();
 
-/** The week has a handout with a real link (attendance asks for it only then). */
-const hasHandout = (s: Session) => RESOURCES.some((r) => r.level === s.level && r.week === s.week && r.kind === "handout" && !!r.storage_path?.startsWith("http"));
+/** The session has a handout a student can open (attendance asks for it only then). Same rows the session page shows. */
+const hasHandout = (s: Session) => sessionHasHandout(s);
 
 /** Everything a write needs, after the checks every write shares: configured, a valid session number,
  *  an active learner, and the session UNLOCKED for this learner (a replayed request cannot skip ahead). */
@@ -204,7 +205,7 @@ async function maybeComplete(userId: string, s: Session, sessionId: string) {
 
 /** Attendance points (§9), idempotent per session via award()'s ref. With a class video: 80%+ watched.
  *  Without one (all of Tier 1 today) the lesson itself is the class, so: the session finished.
- *  Either way the week's handout must have been opened when the week has one. */
+ *  Either way the session's handout (its week's, or one pinned to its day) must have been opened when there is one. */
 async function maybeAttendance(userId: string, s: Session, sessionId: string) {
   const admin = createAdminClient();
   const { data } = await admin.from("session_progress").select("watched_pct,handout_opened,status").eq("user_id", userId).eq("session_id", sessionId).maybeSingle();

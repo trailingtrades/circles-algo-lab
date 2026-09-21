@@ -105,9 +105,9 @@
     "dv": "एल्गोरिदम, यानी एल्गो, स्टेप्स की एक तय लिस्ट है, जो हर बार बिल्कुल एक ही तरह फ़ॉलो होती है, जैसे चाय की रेसिपी जो कहती है '2 मिनट उबालो', न कि 'थोड़ी देर उबालो'। डिस्क्रिशनरी ट्रेडर हर बार नए सिरे से फ़ैसला करता है ('आज चार्ट अच्छा लग रहा है'); सिस्टमैटिक ट्रेडर एक बार फ़ैसला करता है, नियम लिख लेता है, और फिर उसी पर चलता है। टेस्टेबल नियम में तीन बातें होती हैं: वह ऑब्जेक्टिव हो (दो लोग पढ़ें तो जवाब एक ही आए), उसमें नंबर हो, और समय तय हो (कौन-सी कैंडल, और कब जाँची जाएगी)। पास, मज़बूत, सेफ़ या 'लगभग' जैसे शब्द इस टेस्ट में फ़ेल हो जाते हैं; इन्हें हम 'शायद' वाले शब्द कहते हैं। एल्गो लेवल 1 दिन 11 के स्क्रीनर से शुरू हो गया था। आज फ़्लोचार्ट और अलर्ट जुड़ेंगे, और दिन 17 में हाथ से बैकटेस्ट।"
    },
    "example": {
-    "en": "Aman never copied the Day 11 card; his own note said: 'Enter when an uptrending stock comes near EMA 20 and RSI is not too high; keep a safe stop.' Priya helps him hunt the shayad words and finds four. 'Uptrending' becomes 'EMA 20 above EMA 50 on the daily chart, and EMA 50 higher than 10 trading days ago'. 'Near' becomes 'daily close within 2% of EMA 20, above or below it, and still above EMA 50'; with EMA 20 at Rs 500 on Gupta Cement Ltd, that means a close from Rs 490 to Rs 510. 'Not too high' becomes 'RSI 14 between 40 and 50', and 'safe stop' becomes '1.5 x ATR 14 below the planned entry'. That is exactly the Day 11 card, and now anyone reading it gets the same answer.",
-    "hi": "Aman ne Day 11 ka card copy hi nahi kiya tha; uske apne note mein likha tha: 'Jab uptrend wala stock EMA 20 ke paas aaye aur RSI zyada high na ho, tab enter karo; stop safe rakho.' Priya uske saath shayad-hunt karti hai aur chaar vague baatein nikalti hain. 'Uptrend' bana 'daily chart par EMA 20, EMA 50 ke upar, aur EMA 50 das trading din pehle se upar'. 'Paas' bana 'daily close EMA 20 se 2% ke andar, upar ya neeche, aur EMA 50 ke upar'; Gupta Cement Ltd par EMA 20 Rs 500 hai, toh close Rs 490 se Rs 510 ke beech hona chahiye. 'Zyada high na ho' bana 'RSI 14, 40 aur 50 ke beech', aur 'safe stop' bana 'planned entry se 1.5 x ATR 14 neeche'. Yeh bilkul Day 11 wala card hai, aur ab jo bhi padhe, jawab ek hi aayega.",
-    "dv": "अमन ने दिन 11 का कार्ड कॉपी ही नहीं किया था; उसके अपने नोट में लिखा था: 'जब अपट्रेंड वाला स्टॉक EMA 20 के पास आए और RSI ज़्यादा ऊँचा न हो, तब एंट्री लो; स्टॉप सेफ़ रखो।' प्रिया उसके साथ 'शायद' वाले शब्द ढूँढती है, तो चार निकलते हैं। 'अपट्रेंड' बना 'डेली चार्ट पर EMA 20, EMA 50 के ऊपर, और EMA 50 दस ट्रेडिंग दिन पहले से ऊपर'। 'पास' बना 'डेली क्लोज़ EMA 20 से 2% के अंदर, ऊपर या नीचे, और EMA 50 के ऊपर'; Gupta Cement Ltd पर EMA 20, Rs 500 है, तो क्लोज़ Rs 490 से Rs 510 के बीच होना चाहिए। 'ज़्यादा ऊँचा न हो' बना 'RSI 14, 40 और 50 के बीच', और 'सेफ़ स्टॉप' बना 'प्लान की गई एंट्री से 1.5 x ATR 14 नीचे'। यह बिल्कुल दिन 11 वाला कार्ड है, और अब जो भी पढ़े, जवाब एक ही आएगा।"
+    "en": "Aman never copied the Day 11 card; his own note said: 'Enter when an uptrending stock comes near EMA 20 and RSI is not too high; keep a safe stop.' Priya helps him hunt the shayad words and finds four. 'Uptrending' becomes 'EMA 20 above EMA 50 on the daily chart, and EMA 50 higher than 10 trading days ago'. 'Near' becomes 'daily close within 2% of EMA 20, above or below it, and still above EMA 50'; with EMA 20 at Rs 440 on Gupta Cement Ltd, that means a close from Rs 431.20 to Rs 448.80. 'Not too high' becomes 'RSI 14 between 40 and 50', and 'safe stop' becomes '1.5 x ATR 14 below the planned entry'. That is exactly the Day 11 card, and now anyone reading it gets the same answer.",
+    "hi": "Aman ne Day 11 ka card copy hi nahi kiya tha; uske apne note mein likha tha: 'Jab uptrend wala stock EMA 20 ke paas aaye aur RSI zyada high na ho, tab enter karo; stop safe rakho.' Priya uske saath shayad-hunt karti hai aur chaar vague baatein nikalti hain. 'Uptrend' bana 'daily chart par EMA 20, EMA 50 ke upar, aur EMA 50 das trading din pehle se upar'. 'Paas' bana 'daily close EMA 20 se 2% ke andar, upar ya neeche, aur EMA 50 ke upar'; Gupta Cement Ltd par EMA 20 Rs 440 hai, toh close Rs 431.20 se Rs 448.80 ke beech hona chahiye. 'Zyada high na ho' bana 'RSI 14, 40 aur 50 ke beech', aur 'safe stop' bana 'planned entry se 1.5 x ATR 14 neeche'. Yeh bilkul Day 11 wala card hai, aur ab jo bhi padhe, jawab ek hi aayega.",
+    "dv": "अमन ने दिन 11 का कार्ड कॉपी ही नहीं किया था; उसके अपने नोट में लिखा था: 'जब अपट्रेंड वाला स्टॉक EMA 20 के पास आए और RSI ज़्यादा ऊँचा न हो, तब एंट्री लो; स्टॉप सेफ़ रखो।' प्रिया उसके साथ 'शायद' वाले शब्द ढूँढती है, तो चार निकलते हैं। 'अपट्रेंड' बना 'डेली चार्ट पर EMA 20, EMA 50 के ऊपर, और EMA 50 दस ट्रेडिंग दिन पहले से ऊपर'। 'पास' बना 'डेली क्लोज़ EMA 20 से 2% के अंदर, ऊपर या नीचे, और EMA 50 के ऊपर'; Gupta Cement Ltd पर EMA 20, Rs 440 है, तो क्लोज़ Rs 431.20 से Rs 448.80 के बीच होना चाहिए। 'ज़्यादा ऊँचा न हो' बना 'RSI 14, 40 और 50 के बीच', और 'सेफ़ स्टॉप' बना 'प्लान की गई एंट्री से 1.5 x ATR 14 नीचे'। यह बिल्कुल दिन 11 वाला कार्ड है, और अब जो भी पढ़े, जवाब एक ही आएगा।"
    },
    "remember": {
     "en": "If two people can read your rule and reach different answers, it is not a rule yet.",
@@ -197,14 +197,14 @@
     "dv": "फ़्लोचार्ट: आपका रूल कार्ड, हाँ/ना के बॉक्स में"
    },
    "p": {
-    "en": "A flowchart is a drawing of your rules in three shapes: an oval for start and end, a diamond for a yes/no question, and a rectangle for an action. Every diamond has exactly two exits; for your setup, 'yes' goes to the next box and 'no' goes straight to NO TRADE. Put the chart checks first and the risk checks after them: stop, size, the 25% exposure cap, the limit of 3 open trades, and whether your -2R daily stop or -5R weekly pause is already hit. Before the chart boxes, add one gate from Days 11 and 15: the stock has passed the health card and has no results date in the next 15 trading days. If you cannot draw a box without writing 'maybe', the rule behind it is not ready. An AI can draft your flowchart in seconds, but it often gets a detail wrong, such as using an intraday ATR for a daily rule or dropping the next-morning gap check, so checking the draft is your job.",
-    "hi": "Flowchart aapke rules ki drawing hai, teen shapes mein: shuru aur end ke liye oval, haan/na sawaal ke liye diamond, aur kisi kaam ke liye rectangle. Har diamond se sirf do raaste nikalte hain; aapke setup mein 'haan' agle box par jaata hai aur 'na' seedha NO TRADE par. Pehle chart wale checks rakhiye, phir risk wale: stop, size, 25% exposure cap, 3 open trades ki limit, aur kya aaj ka -2R daily stop ya hafte ka -5R pause lag chuka hai. Chart wale boxes se pehle Day 11 aur Day 15 ka ek gate jodiye: stock health card pass kar chuka ho, aur agle 15 trading days mein uski results date na ho. Agar kisi box ko bina 'shayad' likhe draw nahi kar pa rahe, toh uske peeche ka rule abhi taiyaar nahi hai. AI aapka flowchart seconds mein draft kar deta hai, lekin aksar koi detail galat kar deta hai, jaise daily rule ke liye intraday ATR le lena ya agli subah ka gap check bhool jaana; isliye draft check karna aapka kaam hai.",
-    "dv": "फ़्लोचार्ट आपके नियमों की ड्रॉइंग है, तीन आकारों में: शुरू और ख़त्म के लिए ओवल, हाँ/ना वाले सवाल के लिए डायमंड, और किसी काम के लिए रेक्टैंगल। हर डायमंड से सिर्फ़ दो रास्ते निकलते हैं; आपके सेटअप में 'हाँ' अगले बॉक्स पर जाता है और 'ना' सीधा NO TRADE पर। पहले चार्ट वाली जाँच रखिए, फिर रिस्क वाली: स्टॉप, साइज़, 25% एक्सपोज़र की सीमा, 3 खुले ट्रेड की लिमिट, और क्या आज का -2R डेली स्टॉप या हफ़्ते का -5R पॉज़ लग चुका है। चार्ट वाले बॉक्स से पहले दिन 11 और दिन 15 का एक गेट जोड़िए: स्टॉक हेल्थ कार्ड पास कर चुका हो, और अगले 15 ट्रेडिंग दिन में उसकी नतीजों की तारीख़ न हो। अगर किसी बॉक्स को बिना 'शायद' लिखे नहीं बना पा रहे, तो उसके पीछे का नियम अभी तैयार नहीं है। AI आपका फ़्लोचार्ट कुछ सेकंड में ड्राफ़्ट कर देता है, लेकिन अक्सर कोई बारीकी ग़लत कर देता है, जैसे डेली नियम के लिए इंट्राडे ATR ले लेना या अगली सुबह का गैप चेक भूल जाना; इसलिए ड्राफ़्ट जाँचना आपका काम है।"
+    "en": "A flowchart is a drawing of your rules in three shapes: an oval for start and end, a diamond for a yes/no question, and a rectangle for an action. Every diamond has exactly two exits; for your setup, 'yes' goes to the next box and 'no' goes straight to NO TRADE. Put the chart checks first and the risk checks after them: stop, size, the 25% exposure cap, the limit of 3 open trades, and whether your -2R daily stop or -5R weekly pause is already hit. Before the chart boxes, add one gate from Days 11 and 15: the stock has passed the health card, has no results date in the next 15 trading days and has no bonus or split on NSE's corporate actions page. If you cannot draw a box without writing 'maybe', the rule behind it is not ready. An AI can draft your flowchart in seconds, but it often gets a detail wrong, such as using an intraday ATR for a daily rule or dropping the next-morning gap check, so checking the draft is your job. In a notebook or a sheet, the same flowchart can be written as a table with a YES and a NO exit for every question, like Priya's below.",
+    "hi": "Flowchart aapke rules ki drawing hai, teen shapes mein: shuru aur end ke liye oval, haan/na sawaal ke liye diamond, aur kisi kaam ke liye rectangle. Har diamond se sirf do raaste nikalte hain; aapke setup mein 'haan' agle box par jaata hai aur 'na' seedha NO TRADE par. Pehle chart wale checks rakhiye, phir risk wale: stop, size, 25% exposure cap, 3 open trades ki limit, aur kya aaj ka -2R daily stop ya hafte ka -5R pause lag chuka hai. Chart wale boxes se pehle Day 11 aur Day 15 ka ek gate jodiye: stock health card pass kar chuka ho, agle 15 trading days mein uski results date na ho, aur NSE ke corporate actions page par bonus ya split na ho. Agar kisi box ko bina 'shayad' likhe draw nahi kar pa rahe, toh uske peeche ka rule abhi taiyaar nahi hai. AI aapka flowchart seconds mein draft kar deta hai, lekin aksar koi detail galat kar deta hai, jaise daily rule ke liye intraday ATR le lena ya agli subah ka gap check bhool jaana; isliye draft check karna aapka kaam hai. Notebook ya sheet mein yahi flowchart ek table ki tarah bhi likha ja sakta hai, jismein har sawaal ka ek YES aur ek NO raasta ho, jaise neeche Priya ka hai.",
+    "dv": "फ़्लोचार्ट आपके नियमों की ड्रॉइंग है, तीन आकारों में: शुरू और ख़त्म के लिए ओवल, हाँ/ना वाले सवाल के लिए डायमंड, और किसी काम के लिए रेक्टैंगल। हर डायमंड से सिर्फ़ दो रास्ते निकलते हैं; आपके सेटअप में 'हाँ' अगले बॉक्स पर जाता है और 'ना' सीधा NO TRADE पर। पहले चार्ट वाली जाँच रखिए, फिर रिस्क वाली: स्टॉप, साइज़, 25% एक्सपोज़र की सीमा, 3 खुले ट्रेड की लिमिट, और क्या आज का -2R डेली स्टॉप या हफ़्ते का -5R पॉज़ लग चुका है। चार्ट वाले बॉक्स से पहले दिन 11 और दिन 15 का एक गेट जोड़िए: स्टॉक हेल्थ कार्ड पास कर चुका हो, अगले 15 ट्रेडिंग दिन में उसकी नतीजों की तारीख़ न हो, और NSE के कॉर्पोरेट एक्शन पेज पर बोनस या स्प्लिट न हो। अगर किसी बॉक्स को बिना 'शायद' लिखे नहीं बना पा रहे, तो उसके पीछे का नियम अभी तैयार नहीं है। AI आपका फ़्लोचार्ट कुछ सेकंड में ड्राफ़्ट कर देता है, लेकिन अक्सर कोई बारीकी ग़लत कर देता है, जैसे डेली नियम के लिए इंट्राडे ATR ले लेना या अगली सुबह का गैप चेक भूल जाना; इसलिए ड्राफ़्ट जाँचना आपका काम है। नोटबुक या शीट में यही फ़्लोचार्ट एक टेबल की तरह भी लिखा जा सकता है, जिसमें हर सवाल का एक YES और एक NO रास्ता हो, जैसे नीचे प्रिया का है।"
    },
    "example": {
-    "en": "After Thursday's close, Priya runs Gupta Cement Ltd through her flowchart on Rs 10 lakh of virtual capital. Cleared? Yes: it passed her health card, and no results date falls in the next 15 trading days. Trend up? Yes: EMA 20 is above EMA 50, and EMA 50 is higher than 10 trading days ago. On Tuesday it closed within 2% of EMA 20 with RSI 14 at 45, and its 3-month RS is above 0 (it beat NIFTY 50), so it is already on her watchlist. Signal day? Yes: today's candle closed at Rs 505, above Wednesday's high. Risk fits? Yes: she has fewer than 3 open trades and no -2R or -5R pause. Paper plan: ATR 14 is Rs 10, so the stop will be 1.5 x 10 = Rs 15 below the entry, and her maximum entry is 505 + 0.5 x 10 = Rs 510. Size = Rs 10,000 / 15 = 666 shares (rounded down), worth up to Rs 3,39,660, which breaks the 25% cap of Rs 2,50,000, so the plan box cuts it to 490 shares (Rs 2,49,900 even at Rs 510). The flowchart caught what her eyes might have missed.",
-    "hi": "Thursday ke close ke baad Priya Rs 10 lakh ke virtual capital par Gupta Cement Ltd ko apne flowchart mein daalti hai. Clear hai? Haan: health card pass hai, aur agle 15 trading days mein koi results date nahi. Trend upar? Haan: EMA 20, EMA 50 ke upar hai, aur EMA 50 das trading din pehle se upar. Tuesday ko close EMA 20 se 2% ke andar tha, RSI 14 = 45, aur 3 mahine ka RS 0 se upar hai (NIFTY 50 se aage), isliye stock pehle se watchlist par hai. Signal day? Haan: aaj ki candle Rs 505 par, Wednesday ke high ke upar close hui. Risk fit? Haan: 3 se kam open trades hain aur -2R ya -5R wala pause nahi laga. Paper plan: ATR 14 Rs 10 hai, toh stop entry se 1.5 x 10 = Rs 15 neeche hoga, aur maximum entry 505 + 0.5 x 10 = Rs 510. Size = Rs 10,000 / 15 = 666 shares (neeche round), jinki value Rs 3,39,660 tak ja sakti hai; yeh Rs 2,50,000 wala 25% cap tod deti hai, isliye plan box ise 490 shares par le aata hai (Rs 510 par bhi Rs 2,49,900). Jo baat aankh se chhoot sakti thi, flowchart ne pakad li.",
-    "dv": "गुरुवार के क्लोज़ के बाद प्रिया Rs 10 लाख की वर्चुअल कैपिटल पर Gupta Cement Ltd को अपने फ़्लोचार्ट से गुज़ारती है। क्लियर है? हाँ: हेल्थ कार्ड पास है, और अगले 15 ट्रेडिंग दिन में नतीजों की कोई तारीख़ नहीं। ट्रेंड ऊपर? हाँ: EMA 20, EMA 50 के ऊपर है, और EMA 50 दस ट्रेडिंग दिन पहले से ऊपर। मंगलवार को क्लोज़ EMA 20 से 2% के अंदर था, RSI 14 = 45, और 3 महीने का RS 0 से ऊपर है (NIFTY 50 से आगे), इसलिए स्टॉक पहले से वॉचलिस्ट पर है। सिग्नल डे? हाँ: आज की कैंडल Rs 505 पर, बुधवार के हाई के ऊपर क्लोज़ हुई। रिस्क फ़िट? हाँ: 3 से कम खुले ट्रेड हैं और -2R या -5R वाला पॉज़ नहीं लगा। पेपर प्लान: ATR 14, Rs 10 है, तो स्टॉप एंट्री से 1.5 x 10 = Rs 15 नीचे होगा, और मैक्सिमम एंट्री 505 + 0.5 x 10 = Rs 510। साइज़ = Rs 10,000 / 15 = 666 शेयर (नीचे राउंड), जिनकी वैल्यू Rs 3,39,660 तक जा सकती है; यह Rs 2,50,000 वाली 25% सीमा तोड़ देती है, इसलिए प्लान बॉक्स इसे 490 शेयर पर ले आता है (Rs 510 पर भी Rs 2,49,900)। जो बात आँख से छूट सकती थी, वह फ़्लोचार्ट ने पकड़ ली।"
+    "en": "After Thursday's close, Priya runs Gupta Cement Ltd through her flowchart on Rs 10 lakh of virtual capital. Cleared? Yes: it passed her health card, no results date falls in the next 15 trading days, and NSE's corporate actions page shows no bonus or split. Trend up? Yes: EMA 20 is above EMA 50, and EMA 50 is higher than 10 trading days ago. On Tuesday it closed within 2% of EMA 20 with RSI 14 at 45, and its 3-month RS is above 0 (it beat NIFTY 50), so it is already on her watchlist. Signal day? Yes: today's candle closed at Rs 445, above Wednesday's high of Rs 442. Risk fits? Yes: she has fewer than 3 open trades and no -2R or -5R pause. Paper plan: ATR 14 is Rs 10, so the stop will be 1.5 x 10 = Rs 15 below the entry, and her maximum entry is 445 + 0.5 x 10 = Rs 450. Size = Rs 10,000 / 15 = 666 shares (rounded down), worth up to Rs 2,99,700 at Rs 450, which breaks the 25% cap of Rs 2,50,000, so the plan box cuts it to 555 shares (Rs 2,49,750 even at Rs 450). The flowchart caught what her eyes might have missed.",
+    "hi": "Thursday ke close ke baad Priya Rs 10 lakh ke virtual capital par Gupta Cement Ltd ko apne flowchart mein daalti hai. Clear hai? Haan: health card pass hai, agle 15 trading days mein koi results date nahi, aur NSE ke corporate actions page par koi bonus ya split nahi. Trend upar? Haan: EMA 20, EMA 50 ke upar hai, aur EMA 50 das trading din pehle se upar. Tuesday ko close EMA 20 se 2% ke andar tha, RSI 14 = 45, aur 3 mahine ka RS 0 se upar hai (NIFTY 50 se aage), isliye stock pehle se watchlist par hai. Signal day? Haan: aaj ki candle Rs 445 par, Wednesday ke Rs 442 wale high ke upar close hui. Risk fit? Haan: 3 se kam open trades hain aur -2R ya -5R wala pause nahi laga. Paper plan: ATR 14 Rs 10 hai, toh stop entry se 1.5 x 10 = Rs 15 neeche hoga, aur maximum entry 445 + 0.5 x 10 = Rs 450. Size = Rs 10,000 / 15 = 666 shares (neeche round), jinki value Rs 450 par Rs 2,99,700 tak ja sakti hai; yeh Rs 2,50,000 wala 25% cap tod deti hai, isliye plan box ise 555 shares par le aata hai (Rs 450 par bhi Rs 2,49,750). Jo baat aankh se chhoot sakti thi, flowchart ne pakad li.",
+    "dv": "गुरुवार के क्लोज़ के बाद प्रिया Rs 10 लाख की वर्चुअल कैपिटल पर Gupta Cement Ltd को अपने फ़्लोचार्ट से गुज़ारती है। क्लियर है? हाँ: हेल्थ कार्ड पास है, अगले 15 ट्रेडिंग दिन में नतीजों की कोई तारीख़ नहीं, और NSE के कॉर्पोरेट एक्शन पेज पर कोई बोनस या स्प्लिट नहीं। ट्रेंड ऊपर? हाँ: EMA 20, EMA 50 के ऊपर है, और EMA 50 दस ट्रेडिंग दिन पहले से ऊपर। मंगलवार को क्लोज़ EMA 20 से 2% के अंदर था, RSI 14 = 45, और 3 महीने का RS 0 से ऊपर है (NIFTY 50 से आगे), इसलिए स्टॉक पहले से वॉचलिस्ट पर है। सिग्नल डे? हाँ: आज की कैंडल Rs 445 पर, बुधवार के Rs 442 वाले हाई के ऊपर क्लोज़ हुई। रिस्क फ़िट? हाँ: 3 से कम खुले ट्रेड हैं और -2R या -5R वाला पॉज़ नहीं लगा। पेपर प्लान: ATR 14, Rs 10 है, तो स्टॉप एंट्री से 1.5 x 10 = Rs 15 नीचे होगा, और मैक्सिमम एंट्री 445 + 0.5 x 10 = Rs 450। साइज़ = Rs 10,000 / 15 = 666 शेयर (नीचे राउंड), जिनकी वैल्यू Rs 450 पर Rs 2,99,700 तक जा सकती है; यह Rs 2,50,000 वाली 25% सीमा तोड़ देती है, इसलिए प्लान बॉक्स इसे 555 शेयर पर ले आता है (Rs 450 पर भी Rs 2,49,750)। जो बात आँख से छूट सकती थी, वह फ़्लोचार्ट ने पकड़ ली।"
    },
    "remember": {
     "en": "Every diamond is a yes/no question; one 'no' anywhere means no trade. Action boxes, like sizing, only calculate.",
@@ -212,119 +212,219 @@
     "dv": "हर डायमंड हाँ/ना वाला सवाल है; कहीं भी एक 'ना' आया, तो ट्रेड नहीं। एक्शन बॉक्स, जैसे साइज़, सिर्फ़ हिसाब लगाते हैं।"
    },
    "visual": {
-    "kind": "flow",
+    "kind": "table",
     "title": {
-     "en": "Priya's EMA Pullback flowchart",
-     "hi": "Priya ka EMA Pullback flowchart",
-     "dv": "प्रिया का EMA Pullback फ़्लोचार्ट"
+     "en": "Priya's EMA Pullback flowchart, box by box",
+     "hi": "Priya ka EMA Pullback flowchart, box dar box",
+     "dv": "प्रिया का EMA Pullback फ़्लोचार्ट, बॉक्स-दर-बॉक्स"
     },
     "caption": {
-     "en": "Run in the evening, after the day's close. Boxes 1-3 put a stock on the watchlist; the signal day can come within the next 5 trading days. Every 'no' goes straight to NO TRADE.",
-     "hi": "Shaam ko, din ke close ke baad chalaiye. Box 1-3 stock ko watchlist par daalte hain; signal day agle 5 trading din mein aa sakta hai. Har 'na' seedha NO TRADE par jaata hai.",
-     "dv": "शाम को, दिन के क्लोज़ के बाद चलाइए। बॉक्स 1-3 स्टॉक को वॉचलिस्ट पर डालते हैं; सिग्नल डे अगले 5 ट्रेडिंग दिनों में आ सकता है। हर 'ना' सीधा NO TRADE पर जाता है।"
+     "en": "Run it in the evening, after the official close. Follow YES down the list; any NO leaves at once. On paper, draw ovals for start and end, diamonds for questions and rectangles for actions.",
+     "hi": "Ise shaam ko, official close ke baad chalaiye. YES par list mein neeche badhiye; koi bhi NO aaye toh wahin bahar. Kaagaz par shuru aur ant ke liye oval, sawaalon ke liye diamond aur kaamon ke liye rectangle banaiye.",
+     "dv": "इसे शाम को, ऑफ़िशियल क्लोज़ के बाद चलाइए। YES पर लिस्ट में नीचे बढ़िए; कोई भी NO आए तो वहीं बाहर। काग़ज़ पर शुरू और अंत के लिए ओवल, सवालों के लिए डायमंड और कामों के लिए रेक्टैंगल बनाइए।"
     },
-    "nodes": [
+    "head": [
      {
-      "label": {
-       "en": "Cleared?",
-       "hi": "Clear hai?",
-       "dv": "क्लियर है?"
-      },
-      "sub": {
-       "en": "Health card passed; no results in 15 trading days",
-       "hi": "Health card pass; 15 trading days mein results nahi",
-       "dv": "हेल्थ कार्ड पास; 15 ट्रेडिंग दिन में नतीजे नहीं"
-      },
-      "tone": "brand"
+      "en": "#",
+      "hi": "#",
+      "dv": "#"
      },
      {
-      "label": {
-       "en": "Trend up?",
-       "hi": "Trend upar?",
-       "dv": "ट्रेंड ऊपर?"
-      },
-      "sub": {
-       "en": "EMA 20 > EMA 50; EMA 50 > 10 days ago",
-       "hi": "EMA 20 > EMA 50; EMA 50, 10 din pehle se upar",
-       "dv": "EMA 20 > EMA 50; EMA 50, 10 दिन पहले से ऊपर"
-      }
+      "en": "Shape",
+      "hi": "Shape",
+      "dv": "आकार"
      },
      {
-      "label": {
-       "en": "Pullback & RS?",
-       "hi": "Pullback & RS?",
-       "dv": "पुलबैक और RS?"
-      },
-      "sub": {
-       "en": "Within 2% of EMA 20; RSI 40-50; RS above 0",
-       "hi": "EMA 20 se 2% ke andar; RSI 40-50; RS 0 se upar",
-       "dv": "EMA 20 से 2% के अंदर; RSI 40-50; RS 0 से ऊपर"
-      }
+      "en": "Question or action",
+      "hi": "Sawaal ya kaam",
+      "dv": "सवाल या काम"
      },
      {
-      "label": {
-       "en": "Signal day?",
-       "hi": "Signal day?",
-       "dv": "सिग्नल डे?"
-      },
-      "sub": {
-       "en": "Close above prior day's high",
-       "hi": "Close pichhle din ke high ke upar",
-       "dv": "क्लोज़ पिछले दिन के हाई के ऊपर"
-      }
+      "en": "YES",
+      "hi": "YES",
+      "dv": "YES (हाँ)"
      },
      {
-      "label": {
-       "en": "Risk fits?",
-       "hi": "Risk fit?",
-       "dv": "रिस्क फ़िट?"
-      },
-      "sub": {
-       "en": "Under 3 open trades; no -2R/-5R pause",
-       "hi": "3 se kam open trades; -2R/-5R pause nahi",
-       "dv": "3 से कम खुले ट्रेड; -2R/-5R पॉज़ नहीं"
-      }
-     },
-     {
-      "label": {
-       "en": "Paper plan",
-       "hi": "Paper plan",
-       "dv": "पेपर प्लान"
-      },
-      "sub": {
-       "en": "Stop 1.5 x ATR; 1% size, cut to 25% cap; next-open limits",
-       "hi": "Stop 1.5 x ATR; 1% size, 25% cap tak kam; agle open ki limits",
-       "dv": "स्टॉप 1.5 x ATR; 1% साइज़, 25% सीमा तक कम; अगले ओपन की सीमा"
-      },
-      "tone": "up"
+      "en": "NO",
+      "hi": "NO",
+      "dv": "NO (ना)"
      }
     ],
-    "arrows": [
-     {
-      "en": "yes",
-      "hi": "haan",
-      "dv": "हाँ"
-     },
-     {
-      "en": "yes",
-      "hi": "haan",
-      "dv": "हाँ"
-     },
-     {
-      "en": "yes",
-      "hi": "haan",
-      "dv": "हाँ"
-     },
-     {
-      "en": "yes",
-      "hi": "haan",
-      "dv": "हाँ"
-     },
-     {
-      "en": "yes",
-      "hi": "haan",
-      "dv": "हाँ"
-     }
+    "rows": [
+     [
+      "1",
+      {
+       "en": "Oval",
+       "hi": "Oval",
+       "dv": "ओवल"
+      },
+      {
+       "en": "Start: after the close, open the daily chart",
+       "hi": "Start: close ke baad daily chart kholiye",
+       "dv": "शुरू: क्लोज़ के बाद डेली चार्ट खोलिए"
+      },
+      "→ 2",
+      "-"
+     ],
+     [
+      "2",
+      {
+       "en": "Diamond",
+       "hi": "Diamond",
+       "dv": "डायमंड"
+      },
+      {
+       "en": "Cleared? Health card passed; no results in the next 15 trading days; no bonus or split on NSE's corporate actions page",
+       "hi": "Clear hai? Health card pass; agle 15 trading din mein results nahi; NSE ke corporate actions page par bonus ya split nahi",
+       "dv": "क्लियर है? हेल्थ कार्ड पास; अगले 15 ट्रेडिंग दिनों में नतीजे नहीं; NSE के कॉर्पोरेट एक्शन पेज पर बोनस या स्प्लिट नहीं"
+      },
+      "→ 3",
+      {
+       "en": "NO TRADE",
+       "hi": "NO TRADE",
+       "dv": "NO TRADE"
+      }
+     ],
+     [
+      "3",
+      {
+       "en": "Diamond",
+       "hi": "Diamond",
+       "dv": "डायमंड"
+      },
+      {
+       "en": "Trend up? EMA 20 above EMA 50; EMA 50 higher than 10 trading days ago",
+       "hi": "Trend upar? EMA 20, EMA 50 ke upar; EMA 50, 10 trading din pehle se upar",
+       "dv": "ट्रेंड ऊपर? EMA 20, EMA 50 के ऊपर; EMA 50, 10 ट्रेडिंग दिन पहले से ऊपर"
+      },
+      "→ 4",
+      {
+       "en": "NO TRADE",
+       "hi": "NO TRADE",
+       "dv": "NO TRADE"
+      }
+     ],
+     [
+      "4",
+      {
+       "en": "Diamond",
+       "hi": "Diamond",
+       "dv": "डायमंड"
+      },
+      {
+       "en": "Pullback and RS? Close within 2% of EMA 20 and above EMA 50; RSI 14 at 40-50; RS vs NIFTY 50 above 0",
+       "hi": "Pullback aur RS? Close EMA 20 se 2% ke andar aur EMA 50 ke upar; RSI 14, 40-50; NIFTY 50 ke muqable RS 0 se upar",
+       "dv": "पुलबैक और RS? क्लोज़ EMA 20 से 2% के अंदर और EMA 50 के ऊपर; RSI 14, 40-50; NIFTY 50 के मुक़ाबले RS 0 से ऊपर"
+      },
+      "→ 5",
+      {
+       "en": "NO TRADE",
+       "hi": "NO TRADE",
+       "dv": "NO TRADE"
+      }
+     ],
+     [
+      "5",
+      {
+       "en": "Diamond",
+       "hi": "Diamond",
+       "dv": "डायमंड"
+      },
+      {
+       "en": "Signal day? Today's close above the previous day's high",
+       "hi": "Signal day? Aaj ka close pichhle din ke high ke upar",
+       "dv": "सिग्नल डे? आज का क्लोज़ पिछले दिन के हाई के ऊपर"
+      },
+      "→ 6",
+      {
+       "en": "Not today; drop it after 5 trading days",
+       "hi": "Aaj nahi; 5 trading din baad list se hataiye",
+       "dv": "आज नहीं; 5 ट्रेडिंग दिन बाद लिस्ट से हटाइए"
+      }
+     ],
+     [
+      "6",
+      {
+       "en": "Diamond",
+       "hi": "Diamond",
+       "dv": "डायमंड"
+      },
+      {
+       "en": "Risk fits? Fewer than 3 open trades; no -2R day or -5R week already hit",
+       "hi": "Risk fit? 3 se kam open trades; -2R wala din ya -5R wala hafta pehle se nahi",
+       "dv": "रिस्क फ़िट? 3 से कम खुले ट्रेड; -2R वाला दिन या -5R वाला हफ़्ता पहले से नहीं"
+      },
+      "→ 7",
+      {
+       "en": "NO TRADE",
+       "hi": "NO TRADE",
+       "dv": "NO TRADE"
+      }
+     ],
+     [
+      "7",
+      {
+       "en": "Rectangle",
+       "hi": "Rectangle",
+       "dv": "रेक्टैंगल"
+      },
+      {
+       "en": "Paper plan: stop 1.5 x ATR 14; max entry = close + 0.5 x ATR 14; size = Rs 10,000 ÷ stop, cut to the 25% cap at the max entry",
+       "hi": "Paper plan: stop 1.5 x ATR 14; max entry = close + 0.5 x ATR 14; size = Rs 10,000 ÷ stop, max entry par 25% cap tak kam",
+       "dv": "पेपर प्लान: स्टॉप 1.5 x ATR 14; मैक्स एंट्री = क्लोज़ + 0.5 x ATR 14; साइज़ = Rs 10,000 ÷ स्टॉप, मैक्स एंट्री पर 25% सीमा तक कम"
+      },
+      "→ 8",
+      "-"
+     ],
+     [
+      "8",
+      {
+       "en": "Diamond",
+       "hi": "Diamond",
+       "dv": "डायमंड"
+      },
+      {
+       "en": "Next day: did it open between the signal-day low and the max entry?",
+       "hi": "Agle din: kya open signal-day low aur max entry ke beech hua?",
+       "dv": "अगले दिन: क्या ओपन सिग्नल-डे लो और मैक्स एंट्री के बीच हुआ?"
+      },
+      "→ 9",
+      {
+       "en": "NO TRADE: write 'Skipped'",
+       "hi": "NO TRADE: 'Skipped' likhiye",
+       "dv": "NO TRADE: 'Skipped' लिखिए"
+      }
+     ],
+     [
+      "9",
+      {
+       "en": "Rectangle",
+       "hi": "Rectangle",
+       "dv": "रेक्टैंगल"
+      },
+      {
+       "en": "Paper entry at that open; write the journal row",
+       "hi": "Us open par paper entry; journal row likhiye",
+       "dv": "उसी ओपन पर पेपर एंट्री; जर्नल रो लिखिए"
+      },
+      "→ 10",
+      "-"
+     ],
+     [
+      "10",
+      {
+       "en": "Oval",
+       "hi": "Oval",
+       "dv": "ओवल"
+      },
+      {
+       "en": "End",
+       "hi": "End",
+       "dv": "अंत"
+      },
+      "-",
+      "-"
+     ]
     ]
    }
   },
@@ -335,14 +435,14 @@
     "dv": "अलर्ट बजता है, फ़ैसला आप करते हैं"
    },
    "p": {
-    "en": "A screener scans many stocks and lists the ones that meet your conditions; an alert is a message a platform sends the moment a condition becomes true, such as price crossing a level. An alert is not an order, because it cannot see your rule card, your position size or your open trades; when the machine only watches while you decide and place the order, that is called semi-automation, and Stage 1 goes no further. A price alert rings when price merely touches a level, often with just a wick, while your rule usually needs a candle to close beyond it. On TradingView, an alert on a drawn line can be set to 'Once per bar close', which waits for the candle to finish; a plain price alert cannot. So treat every alert like a pressure-cooker whistle: it tells you to check the dal, not to serve it. Run your 60-second after-alert checklist, which you write in today's task, and let any NO end it.",
-    "hi": "Screener bahut saare stocks scan karke unki list deta hai jo aapki conditions poori karte hain; alert woh message hai jo platform usi pal bhejta hai jab koi condition sach ho jaaye, jaise price kisi level ko cross kar de. Alert order nahi hai, kyunki use na aapka rule card dikhta hai, na position size, na open trades; jab machine sirf dekhti hai aur faisla aap lete hain, order bhi aap hi lagate hain, use semi-automation kehte hain, aur Stage 1 isse aage nahi jaata. Price alert tab bhi baj jaata hai jab price level ko bas chhoo le, aksar sirf wick se, jabki aapka rule aksar candle ka level ke paar close maangta hai. TradingView par kheenchi hui line wale alert mein 'Once per bar close' trigger chuna ja sakta hai, jo candle poori hone tak rukta hai; seedha price alert yeh nahi kar sakta. Isliye har alert ko pressure cooker ki seeti samjhiye: seeti batati hai ki daal dekh lo, yeh nahi ki paros do. Alert ke baad ki 60 second wali checklist chalaiye, jo aap aaj ke kaam mein likhenge, aur ek bhi NO aaye toh baat wahin khatam.",
-    "dv": "स्क्रीनर बहुत सारे स्टॉक स्कैन करके उनकी लिस्ट देता है, जो आपकी शर्तें पूरी करते हैं; अलर्ट वह मैसेज है जो प्लेटफ़ॉर्म उसी पल भेजता है जब कोई शर्त सच हो जाए, जैसे भाव किसी लेवल को पार कर जाए। अलर्ट ऑर्डर नहीं है, क्योंकि उसे न आपका रूल कार्ड दिखता है, न पोज़िशन साइज़, न खुले ट्रेड; जब मशीन सिर्फ़ देखती है और फ़ैसला आप लेते हैं, ऑर्डर भी आप ही लगाते हैं, उसे सेमी-ऑटोमेशन कहते हैं, और Stage 1 इससे आगे नहीं जाता। प्राइस अलर्ट तब भी बज जाता है जब भाव लेवल को बस छू ले, अक्सर सिर्फ़ विक से, जबकि आपका नियम अक्सर कैंडल का लेवल के पार क्लोज़ माँगता है। TradingView पर खींची गई लाइन वाले अलर्ट में 'Once per bar close' ट्रिगर चुना जा सकता है, जो कैंडल पूरी होने तक रुकता है; सीधा प्राइस अलर्ट यह नहीं कर सकता। इसलिए हर अलर्ट को प्रेशर कुकर की सीटी समझिए: सीटी बताती है कि दाल देख लो, यह नहीं कि परोस दो। अलर्ट के बाद की 60 सेकंड वाली चेकलिस्ट चलाइए, जो आप आज के काम में लिखेंगे, और एक भी NO आए तो बात वहीं ख़त्म।"
+    "en": "A screener scans many stocks and lists the ones that meet your conditions; an alert is a message a platform sends the moment a condition becomes true, such as price crossing a level. An alert is not an order, because it cannot see your rule card, your position size or your open trades; when the machine only watches while you decide and place the order, that is called semi-automation, and Stage 1 goes no further. A plain price alert rings when price merely touches a level, often with just a wick, while your rule usually needs a candle to close beyond it. Some alert types can wait for the candle to close (TradingView calls this 'Once per bar close'), but the free plan allows only a few active alerts, its limits change, and this course never needs an indicator or drawing alert. The free path is simple: a price alert at a level you worked out the evening before, or a fixed after-close check, and every alert treated like a pressure-cooker whistle: it tells you to check the dal, not to serve it. Then run your 60-second after-alert checklist (Your template), and let any NO end it.",
+    "hi": "Screener bahut saare stocks scan karke unki list deta hai jo aapki conditions poori karte hain; alert woh message hai jo platform usi pal bhejta hai jab koi condition sach ho jaaye, jaise price kisi level ko cross kar de. Alert order nahi hai, kyunki use na aapka rule card dikhta hai, na position size, na open trades; jab machine sirf dekhti hai aur faisla aap lete hain, order bhi aap hi lagate hain, use semi-automation kehte hain, aur Stage 1 isse aage nahi jaata. Seedha price alert tab bhi baj jaata hai jab price level ko bas chhoo le, aksar sirf wick se, jabki aapka rule aksar candle ka level ke paar close maangta hai. Kuch alert types candle poori hone tak ruk sakte hain (TradingView ise 'Once per bar close' kehta hai), lekin free plan mein bas kuch hi active alerts milte hain, uski limits badalti rehti hain, aur is course ko kabhi indicator ya drawing alert ki zaroorat nahi padti. Free raasta seedha hai: pichhli shaam nikaale gaye level par price alert, ya close ke baad ka ek fixed check, aur har alert pressure cooker ki seeti ki tarah: seeti batati hai ki daal dekh lo, yeh nahi ki paros do. Phir alert ke baad ki 60 second wali checklist chalaiye ('Aapka template'), aur ek bhi NO aaye toh baat wahin khatam.",
+    "dv": "स्क्रीनर बहुत सारे स्टॉक स्कैन करके उनकी लिस्ट देता है, जो आपकी शर्तें पूरी करते हैं; अलर्ट वह मैसेज है जो प्लेटफ़ॉर्म उसी पल भेजता है जब कोई शर्त सच हो जाए, जैसे भाव किसी लेवल को पार कर जाए। अलर्ट ऑर्डर नहीं है, क्योंकि उसे न आपका रूल कार्ड दिखता है, न पोज़िशन साइज़, न खुले ट्रेड; जब मशीन सिर्फ़ देखती है और फ़ैसला आप लेते हैं, ऑर्डर भी आप ही लगाते हैं, उसे सेमी-ऑटोमेशन कहते हैं, और चरण 1 इससे आगे नहीं जाता। सीधा प्राइस अलर्ट तब भी बज जाता है जब भाव लेवल को बस छू ले, अक्सर सिर्फ़ विक से, जबकि आपका नियम अक्सर कैंडल का लेवल के पार क्लोज़ माँगता है। कुछ तरह के अलर्ट कैंडल पूरी होने तक रुक सकते हैं (TradingView इसे 'Once per bar close' कहता है), लेकिन फ़्री प्लान में बस कुछ ही एक्टिव अलर्ट मिलते हैं, उसकी सीमाएँ बदलती रहती हैं, और इस कोर्स को कभी इंडिकेटर या ड्रॉइंग अलर्ट की ज़रूरत नहीं पड़ती। फ़्री रास्ता सीधा है: पिछली शाम निकाले गए लेवल पर प्राइस अलर्ट, या क्लोज़ के बाद की एक तय जाँच, और हर अलर्ट प्रेशर कुकर की सीटी की तरह: सीटी बताती है कि दाल देख लो, यह नहीं कि परोस दो। फिर अलर्ट के बाद की 60 सेकंड वाली चेकलिस्ट चलाइए ('आपका टेम्पलेट'), और एक भी NO आए तो बात वहीं ख़त्म।"
    },
    "example": {
-    "en": "On a day's leave from office, Aman tries the optional ORB on paper, since today he can watch from 9:15 to 11:00. Today the 9:15-9:30 range of Bharat Pumps Ltd (a heavily traded stock, as on Day 13) is Rs 994 to Rs 1,000, so he can set his alert at Rs 1,000 only after 9:30, once the range exists. At 9:40 a wick pokes above Rs 1,000, up to Rs 1,001.50, and the alert rings, but the 5-minute candle closes at Rs 999, back inside the range: rule not met. The 9:55 candle closes at Rs 1,002.50, above the range. Only now does he run his checklist, including Day 13's VWAP and volume checks; his paper entry is the next candle's open, Rs 1,002.50, and the stop sits at the other side of the range, Rs 994, so the risk is Rs 8.50 a share.",
-    "hi": "Office se ek din ki chhutti par Aman optional ORB paper par try karta hai, kyunki aaj woh 9:15 se 11:00 tak dekh sakta hai. Aaj Bharat Pumps Ltd (bahut zyada trade hone wala stock, jaise Day 13 mein) ki 9:15-9:30 wali range Rs 994 se Rs 1,000 hai, isliye Rs 1,000 ka alert woh 9:30 ke baad hi laga sakta hai, jab range ban chuki ho. 9:40 par ek wick Rs 1,000 ke upar, Rs 1,001.50 tak jaati hai aur alert baj jaata hai, lekin 5-minute candle Rs 999 par close hoti hai, wapas range ke andar: rule poora nahi hua. 9:55 wali candle Rs 1,002.50 par close hoti hai, range ke upar. Ab jaakar woh checklist chalata hai, Day 13 ke VWAP aur volume checks ke saath; paper entry agli candle ka open, Rs 1,002.50, hai aur stop range ki doosri taraf, Rs 994 par, toh risk Rs 8.50 per share.",
-    "dv": "ऑफ़िस से एक दिन की छुट्टी पर अमन ऑप्शनल ORB पेपर पर आज़माता है, क्योंकि आज वह 9:15 से 11:00 तक देख सकता है। आज Bharat Pumps Ltd (बहुत ज़्यादा ट्रेड होने वाला स्टॉक, जैसे दिन 13 में) की 9:15-9:30 वाली रेंज Rs 994 से Rs 1,000 है, इसलिए Rs 1,000 का अलर्ट वह 9:30 के बाद ही लगा सकता है, जब रेंज बन चुकी हो। 9:40 पर एक विक Rs 1,000 के ऊपर, Rs 1,001.50 तक जाती है और अलर्ट बज जाता है, लेकिन 5-मिनट की कैंडल Rs 999 पर क्लोज़ होती है, वापस रेंज के अंदर: नियम पूरा नहीं हुआ। 9:55 वाली कैंडल Rs 1,002.50 पर क्लोज़ होती है, रेंज के ऊपर। अब जाकर वह चेकलिस्ट चलाता है, दिन 13 की VWAP और वॉल्यूम जाँच के साथ; पेपर एंट्री अगली कैंडल का ओपन, Rs 1,002.50, है और स्टॉप रेंज की दूसरी तरफ़, Rs 994 पर, तो रिस्क Rs 8.50 प्रति शेयर।"
+    "en": "On a day's leave from office, Aman tries the optional ORB on paper, since today he can watch from 9:15 to 11:00. Today the 9:15-9:30 range of Bharat Pumps Ltd (a heavily traded stock, as on Day 13) is Rs 994 to Rs 1,000, so he can set his alert at Rs 1,000 only after 9:30, once the range exists. At 9:40 a wick pokes above Rs 1,000, up to Rs 1,001.50, and the alert rings, but the 5-minute candle closes at Rs 999, back inside the range: rule not met. The 9:55 candle closes at Rs 1,002.50, above the range. Only now does he run his after-alert checklist, including Day 13's VWAP and volume checks (his answers at 9:40 and 9:55 are under Your template); his paper entry is the next candle's open, Rs 1,002.50, and the stop sits at the other side of the range, Rs 994, so the risk is Rs 8.50 a share.",
+    "hi": "Office se ek din ki chhutti par Aman optional ORB paper par try karta hai, kyunki aaj woh 9:15 se 11:00 tak dekh sakta hai. Aaj Bharat Pumps Ltd (bahut zyada trade hone wala stock, jaise Day 13 mein) ki 9:15-9:30 wali range Rs 994 se Rs 1,000 hai, isliye Rs 1,000 ka alert woh 9:30 ke baad hi laga sakta hai, jab range ban chuki ho. 9:40 par ek wick Rs 1,000 ke upar, Rs 1,001.50 tak jaati hai aur alert baj jaata hai, lekin 5-minute candle Rs 999 par close hoti hai, wapas range ke andar: rule poora nahi hua. 9:55 wali candle Rs 1,002.50 par close hoti hai, range ke upar. Ab jaakar woh alert ke baad wali checklist chalata hai, Day 13 ke VWAP aur volume checks ke saath (9:40 aur 9:55 par uske jawab 'Aapka template' mein hain); paper entry agli candle ka open, Rs 1,002.50, hai aur stop range ki doosri taraf, Rs 994 par, toh risk Rs 8.50 per share.",
+    "dv": "ऑफ़िस से एक दिन की छुट्टी पर अमन ऑप्शनल ORB पेपर पर आज़माता है, क्योंकि आज वह 9:15 से 11:00 तक देख सकता है। आज Bharat Pumps Ltd (बहुत ज़्यादा ट्रेड होने वाला स्टॉक, जैसे दिन 13 में) की 9:15-9:30 वाली रेंज Rs 994 से Rs 1,000 है, इसलिए Rs 1,000 का अलर्ट वह 9:30 के बाद ही लगा सकता है, जब रेंज बन चुकी हो। 9:40 पर एक विक Rs 1,000 के ऊपर, Rs 1,001.50 तक जाती है और अलर्ट बज जाता है, लेकिन 5-मिनट की कैंडल Rs 999 पर क्लोज़ होती है, वापस रेंज के अंदर: नियम पूरा नहीं हुआ। 9:55 वाली कैंडल Rs 1,002.50 पर क्लोज़ होती है, रेंज के ऊपर। अब जाकर वह अलर्ट के बाद वाली चेकलिस्ट चलाता है, दिन 13 की VWAP और वॉल्यूम जाँच के साथ (9:40 और 9:55 पर उसके जवाब 'आपका टेम्पलेट' में हैं); पेपर एंट्री अगली कैंडल का ओपन, Rs 1,002.50, है और स्टॉप रेंज की दूसरी तरफ़, Rs 994 पर, तो रिस्क Rs 8.50 प्रति शेयर।"
    },
    "remember": {
     "en": "An alert means 'look now', never 'buy now'. The rule, the checklist and the order stay with you.",
@@ -474,14 +574,14 @@
     "dv": "डेली नियम को पूरी बनी डेली कैंडल चाहिए"
    },
    "p": {
-    "en": "A daily candle is final only after the market closes and the exchange sets the official closing price; for many large stocks this now comes from a closing auction that ends a few minutes after 3:30 pm (check nseindia.com for current timings). Until then its close, and every EMA and RSI value built on it, can still change. So an alert or scan at 3:00 pm is reading an unfinished candle, and its 'yes' can turn into a 'no' by the close. For a swing rule like EMA Pullback, run your screener after the close, in the evening, and write the plan that evening: entry at the next day's open, with a maximum entry of the signal close plus 0.5 x ATR 14. Next morning, skip the trade if the stock opens above that maximum, because the gap has gone past your plan, or below the signal day's low, because the signal has already failed, as Day 11 taught. Keep alerts few and tidy: name each one after its rule and delete old ones every week, because a phone that rings all day teaches you to ignore it.",
-    "hi": "Daily candle tabhi final hoti hai jab market band ho jaaye aur exchange official closing price tay kar de; kai bade stocks mein yeh ab closing auction se tay hota hai, jo 3:30 ke kuch minute baad khatam hota hai (latest timing nseindia.com par dekhiye). Tab tak uska close, aur us par bani har EMA aur RSI value, badal sakti hai. Isliye 3:00 baje ka alert ya scan adhoori candle padh raha hota hai, aur uska 'haan' close tak 'na' ban sakta hai. EMA Pullback jaise swing rule ke liye screener close ke baad, shaam ko chalaiye, aur plan usi shaam likhiye: entry agle din ke open par, aur maximum entry signal close plus 0.5 x ATR 14. Agli subah agar stock us maximum se upar khule, toh skip kijiye, kyunki gap aapke plan se aage nikal gaya; aur signal day ke low se neeche khule, toh bhi skip, kyunki signal pehle hi fail ho chuka hai, jaise Day 11 mein seekha tha. Alerts kam aur saaf rakhiye: har alert ka naam uske rule par rakhiye aur purane alerts har hafte delete kar dijiye, kyunki din bhar bajne wala phone aapko use ignore karna sikha deta hai.",
-    "dv": "डेली कैंडल तभी फ़ाइनल होती है जब बाज़ार बंद हो जाए और एक्सचेंज ऑफ़िशियल क्लोज़िंग प्राइस तय कर दे; कई बड़े स्टॉक्स में यह अब क्लोज़िंग ऑक्शन से तय होता है, जो 3:30 के कुछ मिनट बाद ख़त्म होता है (ताज़ा टाइमिंग nseindia.com पर देखें)। तब तक उसका क्लोज़, और उस पर बनी हर EMA और RSI वैल्यू, बदल सकती है। इसलिए 3:00 बजे का अलर्ट या स्कैन अधूरी कैंडल पढ़ रहा होता है, और उसका 'हाँ' क्लोज़ तक 'ना' बन सकता है। EMA Pullback जैसे स्विंग नियम के लिए स्क्रीनर क्लोज़ के बाद, शाम को चलाइए, और प्लान उसी शाम लिखिए: एंट्री अगले दिन के ओपन पर, और मैक्सिमम एंट्री सिग्नल क्लोज़ प्लस 0.5 x ATR 14। अगली सुबह अगर स्टॉक उस मैक्सिमम से ऊपर खुले, तो छोड़ दीजिए, क्योंकि गैप आपके प्लान से आगे निकल गया; और सिग्नल डे के लो से नीचे खुले, तो भी छोड़ दीजिए, क्योंकि सिग्नल पहले ही फ़ेल हो चुका है, जैसा दिन 11 में सीखा था। अलर्ट कम और साफ़-सुथरे रखिए: हर अलर्ट का नाम उसके नियम पर रखिए और पुराने अलर्ट हर हफ़्ते डिलीट कर दीजिए, क्योंकि दिन भर बजने वाला फ़ोन आपको उसे अनदेखा करना सिखा देता है।"
+    "en": "A daily candle is final only after the market closes and the exchange sets the official closing price. Since 3 August 2026, stocks that have F&O contracts stop continuous trading at 3:15 pm, and a closing auction (about 3:15 to 3:35 pm) sets one closing price; other stocks trade on to 3:30 pm, and their close is the volume-weighted average price of roughly the last 30 minutes (check nseindia.com for the latest). Until then the close, and every EMA and RSI value built on it, can still change, so an alert or scan at 3:00 pm is reading an unfinished candle, and its 'yes' can turn into a 'no' by the close. For a swing rule like EMA Pullback, run your screener after the close, in the evening, and write the plan that evening: entry at the next day's open, with a maximum entry of the signal close plus 0.5 x ATR 14. Next morning, skip the trade if the stock opens above that maximum, because the gap has gone past your plan, or below the signal day's low, because the signal has already failed, as Day 11 taught. Keep alerts few and tidy: name each one after its rule and delete old ones every week, because a phone that rings all day teaches you to ignore it.",
+    "hi": "Daily candle tabhi final hoti hai jab market band ho jaaye aur exchange official closing price tay kar de. 3 August 2026 se, jin stocks ke F&O contracts hain, unmein continuous trading 3:15 baje ruk jaati hai, aur ek closing auction (lagbhag 3:15 se 3:35 tak) ek closing price tay karta hai; baaki stocks 3:30 tak trade hote hain, aur unka close lagbhag aakhri 30 minute ka volume-weighted average price hota hai (latest jaankari nseindia.com par dekhiye). Tab tak close, aur us par bani har EMA aur RSI value, badal sakti hai, isliye 3:00 baje ka alert ya scan adhoori candle padh raha hota hai, aur uska 'haan' close tak 'na' ban sakta hai. EMA Pullback jaise swing rule ke liye screener close ke baad, shaam ko chalaiye, aur plan usi shaam likhiye: entry agle din ke open par, aur maximum entry signal close plus 0.5 x ATR 14. Agli subah agar stock us maximum se upar khule, toh skip kijiye, kyunki gap aapke plan se aage nikal gaya; aur signal day ke low se neeche khule, toh bhi skip, kyunki signal pehle hi fail ho chuka hai, jaise Day 11 mein seekha tha. Alerts kam aur saaf rakhiye: har alert ka naam uske rule par rakhiye aur purane alerts har hafte delete kar dijiye, kyunki din bhar bajne wala phone aapko use ignore karna sikha deta hai.",
+    "dv": "डेली कैंडल तभी फ़ाइनल होती है जब बाज़ार बंद हो जाए और एक्सचेंज ऑफ़िशियल क्लोज़िंग प्राइस तय कर दे। 3 अगस्त 2026 से, जिन स्टॉक्स के F&O कॉन्ट्रैक्ट हैं, उनमें लगातार ट्रेडिंग 3:15 बजे रुक जाती है, और एक क्लोज़िंग ऑक्शन (लगभग 3:15 से 3:35 तक) एक क्लोज़िंग प्राइस तय करता है; बाक़ी स्टॉक 3:30 तक ट्रेड होते हैं, और उनका क्लोज़ लगभग आख़िरी 30 मिनट का वॉल्यूम-वेटेड औसत भाव होता है (ताज़ा जानकारी nseindia.com पर देखें)। तब तक क्लोज़, और उस पर बनी हर EMA और RSI वैल्यू, बदल सकती है, इसलिए 3:00 बजे का अलर्ट या स्कैन अधूरी कैंडल पढ़ रहा होता है, और उसका 'हाँ' क्लोज़ तक 'ना' बन सकता है। EMA Pullback जैसे स्विंग नियम के लिए स्क्रीनर क्लोज़ के बाद, शाम को चलाइए, और प्लान उसी शाम लिखिए: एंट्री अगले दिन के ओपन पर, और मैक्सिमम एंट्री सिग्नल क्लोज़ प्लस 0.5 x ATR 14। अगली सुबह अगर स्टॉक उस मैक्सिमम से ऊपर खुले, तो छोड़ दीजिए, क्योंकि गैप आपके प्लान से आगे निकल गया; और सिग्नल डे के लो से नीचे खुले, तो भी छोड़ दीजिए, क्योंकि सिग्नल पहले ही फ़ेल हो चुका है, जैसा दिन 11 में सीखा था। अलर्ट कम और साफ़-सुथरे रखिए: हर अलर्ट का नाम उसके नियम पर रखिए और पुराने अलर्ट हर हफ़्ते डिलीट कर दीजिए, क्योंकि दिन भर बजने वाला फ़ोन आपको उसे अनदेखा करना सिखा देता है।"
    },
    "example": {
-    "en": "On Kiran Foods Ltd, yesterday's high was Rs 302, and Day 11's signal day needs a daily close above it. At 3:00 pm the price is Rs 304, so the signal looks true, and a pre-close alert fires. A late sell-off pulls the day's official close down to Rs 301, below Rs 302: the finished candle says NO. Aman, who acted on the 3:00 alert, now holds a paper trade his own rules reject; Priya, who scanned at 7 pm, simply moves on. You need no broker app for this: a free TradingView alert, or a 7 pm phone reminder to run your screener, does the job.",
-    "hi": "Kiran Foods Ltd ka kal ka high Rs 302 tha, aur Day 11 ke signal day ke liye daily close usse upar hona chahiye. 3:00 baje price Rs 304 hai, toh signal sach lagta hai, aur pre-close alert baj jaata hai. Aakhri minutes ki selling se din ka official close Rs 301 par aa jaata hai, Rs 302 se neeche: poori bani candle ka jawab NO hai. Aman ne 3:00 wale alert par paper trade le liya tha, jise ab uske apne rules hi reject kar rahe hain; Priya ne shaam 7 baje scan kiya aur aage badh gayi. Iske liye broker app ki zaroorat nahi: TradingView ka free alert, ya screener chalane ke liye shaam 7 baje ka phone reminder, dono se kaam ho jaata hai.",
-    "dv": "Kiran Foods Ltd का कल का हाई Rs 302 था, और दिन 11 के सिग्नल डे के लिए डेली क्लोज़ उससे ऊपर होना चाहिए। 3:00 बजे भाव Rs 304 है, तो सिग्नल सच लगता है, और प्री-क्लोज़ अलर्ट बज जाता है। आख़िरी मिनटों की बिकवाली से दिन का ऑफ़िशियल क्लोज़ Rs 301 पर आ जाता है, Rs 302 से नीचे: पूरी बनी कैंडल का जवाब NO है। अमन ने 3:00 वाले अलर्ट पर पेपर ट्रेड ले लिया था, जिसे अब उसके अपने नियम ही नकार रहे हैं; प्रिया ने शाम 7 बजे स्कैन किया और आगे बढ़ गई। इसके लिए ब्रोकर ऐप की ज़रूरत नहीं: TradingView का फ़्री अलर्ट, या स्क्रीनर चलाने के लिए शाम 7 बजे का फ़ोन रिमाइंडर, दोनों से काम हो जाता है।"
+    "en": "On Kiran Foods Ltd, yesterday's high was Rs 472, and Day 11's signal day needs a daily close above it. At 3:00 pm the price is Rs 474, so the signal looks true, and a pre-close alert fires. A late sell-off pulls the day's official close down to Rs 471, below Rs 472: the finished candle says NO. Aman, who acted on the 3:00 alert, now holds a paper trade his own rules reject; Priya, who scanned at 7 pm, simply moves on. You need no broker app and no paid plan for this: a free price alert at Rs 472, set the evening before, only tells you to look, and a 7 pm phone reminder to run your screener does the rest.",
+    "hi": "Kiran Foods Ltd ka kal ka high Rs 472 tha, aur Day 11 ke signal day ke liye daily close usse upar hona chahiye. 3:00 baje price Rs 474 hai, toh signal sach lagta hai, aur pre-close alert baj jaata hai. Aakhri minutes ki selling se din ka official close Rs 471 par aa jaata hai, Rs 472 se neeche: poori bani candle ka jawab NO hai. Aman ne 3:00 wale alert par paper trade le liya tha, jise ab uske apne rules hi reject kar rahe hain; Priya ne shaam 7 baje scan kiya aur aage badh gayi. Iske liye na broker app chahiye, na paid plan: pichhli shaam Rs 472 par lagaya free price alert sirf dekhne ko kehta hai, aur screener chalane ke liye shaam 7 baje ka phone reminder baaki kaam kar deta hai.",
+    "dv": "Kiran Foods Ltd का कल का हाई Rs 472 था, और दिन 11 के सिग्नल डे के लिए डेली क्लोज़ उससे ऊपर होना चाहिए। 3:00 बजे भाव Rs 474 है, तो सिग्नल सच लगता है, और प्री-क्लोज़ अलर्ट बज जाता है। आख़िरी मिनटों की बिकवाली से दिन का ऑफ़िशियल क्लोज़ Rs 471 पर आ जाता है, Rs 472 से नीचे: पूरी बनी कैंडल का जवाब NO है। अमन ने 3:00 वाले अलर्ट पर पेपर ट्रेड ले लिया था, जिसे अब उसके अपने नियम ही नकार रहे हैं; प्रिया ने शाम 7 बजे स्कैन किया और आगे बढ़ गई। इसके लिए न ब्रोकर ऐप चाहिए, न पेड प्लान: पिछली शाम Rs 472 पर लगाया फ़्री प्राइस अलर्ट सिर्फ़ देखने को कहता है, और स्क्रीनर चलाने के लिए शाम 7 बजे का फ़ोन रिमाइंडर बाक़ी काम कर देता है।"
    },
    "remember": {
     "en": "Swing rules read a finished candle: scan in the evening, act the next morning.",
@@ -496,9 +596,9 @@
      "dv": "स्विंग का एक दिन, क्रम से"
     },
     "caption": {
-     "en": "A 3:00 pm alert reads an unfinished candle. Your rule reads the official close.",
-     "hi": "3:00 baje ka alert adhoori candle padhta hai. Aapka rule official close padhta hai.",
-     "dv": "3:00 बजे का अलर्ट अधूरी कैंडल पढ़ता है। आपका नियम ऑफ़िशियल क्लोज़ पढ़ता है।"
+     "en": "A 3:00 pm alert reads an unfinished candle. Your rule reads the official close. Closing timings as of Aug 2026; check nseindia.com for the latest.",
+     "hi": "3:00 baje ka alert adhoori candle padhta hai. Aapka rule official close padhta hai. Closing ki timing Aug 2026 ke hisaab se; latest nseindia.com par dekhiye.",
+     "dv": "3:00 बजे का अलर्ट अधूरी कैंडल पढ़ता है। आपका नियम ऑफ़िशियल क्लोज़ पढ़ता है। क्लोज़िंग का समय Aug 2026 के हिसाब से; ताज़ा जानकारी nseindia.com पर देखें।"
     },
     "items": [
      {
@@ -522,9 +622,9 @@
        "dv": "ऑफ़िशियल क्लोज़"
       },
       "sub": {
-       "en": "Exchange sets it; candle final",
-       "hi": "Exchange tay karta hai; candle final",
-       "dv": "एक्सचेंज तय करता है; कैंडल फ़ाइनल"
+       "en": "F&O stocks: closing auction; others: last-30-minute average",
+       "hi": "F&O stocks: closing auction; baaki: aakhri 30 minute ka average",
+       "dv": "F&O स्टॉक: क्लोज़िंग ऑक्शन; बाक़ी: आख़िरी 30 मिनट का औसत"
       }
      },
      {
@@ -583,7 +683,7 @@
    "example": {
     "en": "A colleague in Aman's office has written a small program that places orders through his broker's API. It runs only through that broker, from a registered static IP (a fixed internet address), with a two-factor login (password plus OTP) whose session ends every day, and an Algo-ID on each order. When Aman asks for a copy, the colleague says no: sharing it with anyone beyond his spouse, dependent children or dependent parents would make him an algo provider, which needs exchange empanelment. Stage 1 itself places no automated orders at all; your Level 1 kit is rules, a flowchart and alerts.",
     "hi": "Aman ke office ke ek colleague ne ek chhota program likha hai jo broker ke API se order lagata hai. Yeh sirf usi broker ke through chalta hai, registered static IP (internet ka fixed address) se, two-factor login (password plus OTP) ke saath, jiska session roz khatam ho jaata hai, aur har order par Algo-ID ke saath. Aman ne copy maangi toh colleague ne mana kar diya: spouse, dependent bachchon ya dependent maa-baap ke alawa kisi ko share karte hi woh algo provider ban jaata, jiske liye exchange empanelment chahiye. Stage 1 mein toh koi automated order lagta hi nahi; aapka Level 1 kit hai rules, flowchart aur alerts.",
-    "dv": "अमन के ऑफ़िस के एक साथी ने एक छोटा प्रोग्राम लिखा है, जो ब्रोकर के API से ऑर्डर लगाता है। यह सिर्फ़ उसी ब्रोकर के ज़रिए चलता है, रजिस्टर्ड स्टैटिक IP (इंटरनेट का फ़िक्स्ड पता) से, टू-फ़ैक्टर लॉगिन (पासवर्ड और OTP) के साथ, जिसका सेशन रोज़ ख़त्म हो जाता है, और हर ऑर्डर पर Algo-ID के साथ। अमन ने कॉपी माँगी तो साथी ने मना कर दिया: पत्नी, उस पर निर्भर बच्चों या उस पर निर्भर माता-पिता के अलावा किसी को शेयर करते ही वह एल्गो प्रोवाइडर बन जाता, जिसके लिए एक्सचेंज में एम्पैनलमेंट चाहिए। Stage 1 में तो कोई ऑटोमेटेड ऑर्डर लगता ही नहीं; आपका लेवल 1 किट है नियम, फ़्लोचार्ट और अलर्ट।"
+    "dv": "अमन के ऑफ़िस के एक साथी ने एक छोटा प्रोग्राम लिखा है, जो ब्रोकर के API से ऑर्डर लगाता है। यह सिर्फ़ उसी ब्रोकर के ज़रिए चलता है, रजिस्टर्ड स्टैटिक IP (इंटरनेट का फ़िक्स्ड पता) से, टू-फ़ैक्टर लॉगिन (पासवर्ड और OTP) के साथ, जिसका सेशन रोज़ ख़त्म हो जाता है, और हर ऑर्डर पर Algo-ID के साथ। अमन ने कॉपी माँगी तो साथी ने मना कर दिया: पत्नी, उस पर निर्भर बच्चों या उस पर निर्भर माता-पिता के अलावा किसी को शेयर करते ही वह एल्गो प्रोवाइडर बन जाता, जिसके लिए एक्सचेंज में एम्पैनलमेंट चाहिए। चरण 1 में तो कोई ऑटोमेटेड ऑर्डर लगता ही नहीं; आपका लेवल 1 किट है नियम, फ़्लोचार्ट और अलर्ट।"
    },
    "remember": {
     "en": "A legal algo runs through a broker with an Algo-ID on every order, and anyone selling one must be exchange-empanelled. Trading losses stay yours.",
@@ -834,6 +934,30 @@
     "hi": "Exchange ki di hui pehchaan jo algo ke har order par number plate ki tarah lagti hai, taaki har order trace ho sake.",
     "dv": "एक्सचेंज की दी हुई पहचान, जो एल्गो के हर ऑर्डर पर नंबर प्लेट की तरह लगती है, ताकि हर ऑर्डर ट्रेस हो सके।"
    }
+  },
+  {
+   "term": {
+    "en": "Screener",
+    "hi": "Screener",
+    "dv": "स्क्रीनर"
+   },
+   "meaning": {
+    "en": "A tool that filters many stocks by your written conditions, usually after the close. It holds some rules; any rule it cannot hold, you check by eye on the chart.",
+    "hi": "Ek tool jo aapki likhi conditions se bahut saare stocks filter karta hai, aam taur par close ke baad. Kuch rules woh pakad leta hai; jo nahi pakad pata, use aap chart par aankh se check karte hain.",
+    "dv": "एक टूल जो आपकी लिखी शर्तों से बहुत सारे स्टॉक फ़िल्टर करता है, आम तौर पर क्लोज़ के बाद। कुछ नियम वह पकड़ लेता है; जो नहीं पकड़ पाता, उसे आप चार्ट पर आँख से जाँचते हैं।"
+   }
+  },
+  {
+   "term": {
+    "en": "Official close",
+    "hi": "Official close",
+    "dv": "ऑफ़िशियल क्लोज़"
+   },
+   "meaning": {
+    "en": "The day's closing price set by the exchange: by a closing auction for stocks with F&O contracts, or by the volume-weighted average price of roughly the last 30 minutes for others. Daily rules read this price.",
+    "hi": "Exchange ka tay kiya din ka closing price: F&O contracts wale stocks mein closing auction se, baaki mein lagbhag aakhri 30 minute ke volume-weighted average price se. Daily rules isi price ko padhte hain.",
+    "dv": "एक्सचेंज का तय किया दिन का क्लोज़िंग भाव: F&O कॉन्ट्रैक्ट वाले स्टॉक्स में क्लोज़िंग ऑक्शन से, बाक़ी में लगभग आख़िरी 30 मिनट के वॉल्यूम-वेटेड औसत भाव से। डेली नियम इसी भाव को पढ़ते हैं।"
+   }
   }
  ],
  "mindmap": {
@@ -913,14 +1037,14 @@
       "dv": "छूना क्लोज़ नहीं"
      },
      {
-      "en": "Swing: scan in the evening",
-      "hi": "Swing: shaam ko scan",
-      "dv": "स्विंग: शाम को स्कैन"
+      "en": "Swing: scan after the close",
+      "hi": "Swing: close ke baad scan",
+      "dv": "स्विंग: क्लोज़ के बाद स्कैन"
      },
      {
-      "en": "Name them, prune them",
-      "hi": "Naam do, purane hatao",
-      "dv": "नाम दें, पुराने हटाएँ"
+      "en": "Free: price alert or 7 pm check",
+      "hi": "Free: price alert ya 7 baje check",
+      "dv": "फ़्री: प्राइस अलर्ट या 7 बजे जाँच"
      }
     ]
    },
@@ -982,47 +1106,642 @@
   ]
  },
  "kaam": {
-  "en": "Build your Algo Level 1 kit: a shayad-free rule card, a paper flowchart, one named alert and an after-alert checklist. About 40 minutes; the ORB flowchart is an optional stretch.",
-  "hi": "Apna Algo Level 1 kit banaiye: shayad-free rule card, kaagaz par flowchart, ek naam wala alert aur alert ke baad ki checklist. Lagbhag 40 minute; ORB ka flowchart optional stretch hai.",
-  "dv": "अपना एल्गो लेवल 1 किट बनाइए: 'शायद' वाले शब्दों के बिना रूल कार्ड, काग़ज़ पर फ़्लोचार्ट, एक नाम वाला अलर्ट और अलर्ट के बाद की चेकलिस्ट। लगभग 40 मिनट; ORB का फ़्लोचार्ट ऑप्शनल स्ट्रेच है।"
+  "en": "Build your Algo Level 1 kit: a shayad-free rule card, a paper flowchart, one free price alert or a 7 pm check, and an after-alert checklist, then add a Portfolio row. About 45 minutes; the ORB flowchart is an optional stretch, with its answer key under Your template.",
+  "hi": "Apna Algo Level 1 kit banaiye: bina shayad ka rule card, kaagaz par flowchart, ek free price alert ya shaam 7 baje ka check, aur alert ke baad ki checklist, phir ek Portfolio row jodiye. Lagbhag 45 minute; ORB flowchart optional stretch hai, uska answer key 'Aapka template' mein hai.",
+  "dv": "अपना एल्गो लेवल 1 किट बनाइए: बिना 'शायद' वाला रूल कार्ड, काग़ज़ पर फ़्लोचार्ट, एक फ़्री प्राइस अलर्ट या शाम 7 बजे की जाँच, और अलर्ट के बाद की चेकलिस्ट, फिर एक पोर्टफ़ोलियो रो जोड़िए। लगभग 45 मिनट; ORB फ़्लोचार्ट ऑप्शनल स्ट्रेच है, उसकी आंसर की 'आपका टेम्पलेट' में है।"
  },
  "kaam_steps": [
   {
-   "en": "Open your Day 11 EMA Pullback rule card and check every line for three things: a number, a candle and a time. Underline any shayad word (near, strong, safe, lagbhag) or missing time ('which close?') and rewrite it as a yes/no test.",
-   "hi": "Apna Day 11 wala EMA Pullback rule card kholiye aur har line mein teen cheezein check kijiye: number, candle aur time. Jahan bhi shayad word (paas, strong, safe, lagbhag) ho ya time missing ho ('kaunsa close?'), use underline karke haan/na test mein likh dijiye.",
-   "dv": "अपना दिन 11 वाला EMA Pullback रूल कार्ड खोलिए और हर लाइन में तीन चीज़ें देखिए: नंबर, कैंडल और समय। जहाँ भी 'शायद' वाला शब्द (पास, मज़बूत, सेफ़, लगभग) हो या समय ग़ायब हो ('कौन-सा क्लोज़?'), उसे अंडरलाइन करके हाँ/ना टेस्ट में लिख दीजिए।"
+   "en": "Copy the 'Rule card, shayad-free' template under Your template and rewrite your Day 11 EMA Pullback card line by line: every line needs a number, a candle and a time, and the 'Checked by' column says whether your free screener, a price alert or your own eyes check it.",
+   "hi": "'Aapka template' se 'Rule card, bina shayad ke' copy kijiye aur apna Day 11 EMA Pullback card line-by-line dobara likhiye: har line mein number, candle aur time chahiye, aur 'Kaun check karta hai' column batata hai ki use free screener, price alert ya aapki apni aankhen check karengi.",
+   "dv": "'आपका टेम्पलेट' से 'रूल कार्ड, बिना शायद के' कॉपी कीजिए और अपना दिन 11 वाला EMA Pullback कार्ड लाइन-दर-लाइन दोबारा लिखिए: हर लाइन में नंबर, कैंडल और समय चाहिए, और 'कौन जाँचता है' कॉलम बताता है कि उसे फ़्री स्क्रीनर, प्राइस अलर्ट या आपकी अपनी आँखें जाँचेंगी।"
   },
   {
-   "en": "On paper, draw the flowchart: an oval to start, a diamond for each yes/no question, a rectangle for each action, and every 'no' arrow going to NO TRADE. Take a photo.",
-   "hi": "Kaagaz par flowchart banaiye: start ke liye oval, har haan/na sawaal ke liye diamond, har kaam ke liye rectangle, aur har 'na' wala arrow NO TRADE par. Photo le lijiye.",
-   "dv": "काग़ज़ पर फ़्लोचार्ट बनाइए: शुरू के लिए ओवल, हर हाँ/ना सवाल के लिए डायमंड, हर काम के लिए रेक्टैंगल, और हर 'ना' वाला तीर NO TRADE पर। फ़ोटो ले लीजिए।"
+   "en": "On paper, draw the flowchart: an oval to start, a diamond for each yes/no question, a rectangle for each action, and every 'no' arrow going to NO TRADE. Check it against Priya's table in the lesson, then take a photo.",
+   "hi": "Kaagaz par flowchart banaiye: shuru mein oval, har haan/na sawaal ke liye diamond, har kaam ke liye rectangle, aur har 'na' ka arrow NO TRADE par. Lesson mein Priya ki table se milaiye, phir photo le lijiye.",
+   "dv": "काग़ज़ पर फ़्लोचार्ट बनाइए: शुरू में ओवल, हर हाँ/ना सवाल के लिए डायमंड, हर काम के लिए रेक्टैंगल, और हर 'ना' का तीर NO TRADE पर। लेसन में प्रिया की टेबल से मिलाइए, फिर फ़ोटो ले लीजिए।"
   },
   {
    "en": "Run the AI Lab prompt 'Flowchart drafter' with your rule card, compare its draft with yours, and write down one box it missed, merged or got wrong; if it got every box right, write the one box you had to fix in your own drawing.",
    "hi": "Apne rule card ke saath AI Lab ka 'Flowchart drafter' prompt chalaiye, uska draft apne flowchart se milaiye, aur ek box likhiye jo usne chhoda, mila diya ya galat banaya; agar sab sahi hai, toh woh box likhiye jo aapko apni drawing mein theek karna pada.",
-   "dv": "अपने रूल कार्ड के साथ AI Lab का 'Flowchart drafter' प्रॉम्प्ट चलाइए, उसका ड्राफ़्ट अपने फ़्लोचार्ट से मिलाइए, और एक बॉक्स लिखिए जो उसने छोड़ा, मिला दिया या ग़लत बनाया; अगर सब सही है, तो वह बॉक्स लिखिए जो आपको अपनी ड्रॉइंग में ठीक करना पड़ा।"
+   "dv": "अपने रूल कार्ड के साथ AI Lab का 'फ़्लोचार्ट ड्राफ़्टर' प्रॉम्प्ट चलाइए, उसका ड्राफ़्ट अपने फ़्लोचार्ट से मिलाइए, और एक बॉक्स लिखिए जो उसने छोड़ा, मिला दिया या ग़लत बनाया; अगर सब सही है, तो वह बॉक्स लिखिए जो आपको अपनी ड्रॉइंग में ठीक करना पड़ा।"
   },
   {
-   "en": "On a free TradingView chart of NIFTY 50 (alerts need a free sign-up, not a broker account), open the daily chart, draw a horizontal line at yesterday's high, and create an alert on that line with the trigger 'Once per bar close', so it checks only the finished daily candle. Name it 'LOOK only: daily close above line'. A plain price alert cannot wait for the close. If you would rather not sign up, or the free plan's one alert is already in use, set a 7 pm phone reminder instead.",
-   "hi": "TradingView ke free chart par NIFTY 50 ka daily chart kholiye (alert ke liye free sign-up chahiye, broker account nahi). Kal ke high par ek horizontal line kheenchiye aur usi line par alert banaiye, trigger 'Once per bar close' rakhiye, taaki alert sirf poori bani daily candle dekhe. Naam rakhiye 'LOOK only: daily close line ke upar'. Seedha price alert close ka wait nahi kar sakta. Sign-up nahi karna, ya free plan ka ek alert pehle se laga hai, toh shaam 7 baje ka phone reminder laga dijiye.",
-   "dv": "TradingView के फ़्री चार्ट पर NIFTY 50 का डेली चार्ट खोलिए (अलर्ट के लिए फ़्री साइन-अप चाहिए, ब्रोकर अकाउंट नहीं)। कल के हाई पर एक हॉरिज़ॉन्टल लाइन खींचिए और उसी लाइन पर अलर्ट बनाइए, ट्रिगर 'Once per bar close' रखिए, ताकि अलर्ट सिर्फ़ पूरी बनी डेली कैंडल देखे। नाम रखिए 'LOOK only: daily close लाइन के ऊपर'। सीधा प्राइस अलर्ट क्लोज़ का इंतज़ार नहीं कर सकता। साइन-अप नहीं करना, या फ़्री प्लान का एक अलर्ट पहले से लगा है, तो शाम 7 बजे का फ़ोन रिमाइंडर लगा दीजिए।"
+   "en": "Free alert path: after today's close, note today's high of NIFTY 50 (or of one watchlist stock) and set one plain price alert at that level on a free TradingView chart (a free sign-up, no broker account), named 'LOOK only: close above today's high'. If it rings tomorrow, it only means look; your rule still reads tomorrow's official close. Would rather not sign up, or no free alert left? Set a daily 7 pm phone reminder for your after-close check instead.",
+   "hi": "Free alert ka raasta: aaj ke close ke baad NIFTY 50 (ya kisi ek watchlist stock) ka aaj ka high note kijiye aur free TradingView chart par usi level par ek seedha price alert lagaiye (free sign-up, broker account nahi), naam rakhiye 'LOOK only: aaj ke high ke upar close'. Kal yeh baje toh matlab sirf itna ki dekhiye; aapka rule phir bhi kal ka official close hi padhega. Sign up nahi karna, ya free alert bacha nahi? Toh close ke baad wale check ke liye roz shaam 7 baje ka phone reminder lagaiye.",
+   "dv": "फ़्री अलर्ट का रास्ता: आज के क्लोज़ के बाद NIFTY 50 (या किसी एक वॉचलिस्ट स्टॉक) का आज का हाई नोट कीजिए और फ़्री TradingView चार्ट पर उसी लेवल पर एक सीधा प्राइस अलर्ट लगाइए (फ़्री साइन-अप, ब्रोकर अकाउंट नहीं), नाम रखिए 'LOOK only: आज के हाई के ऊपर क्लोज़'। कल यह बजे तो मतलब सिर्फ़ इतना कि देखिए; आपका नियम फिर भी कल का ऑफ़िशियल क्लोज़ ही पढ़ेगा। साइन-अप नहीं करना, या फ़्री अलर्ट बचा नहीं? तो क्लोज़ के बाद वाली जाँच के लिए रोज़ शाम 7 बजे का फ़ोन रिमाइंडर लगाइए।"
   },
   {
-   "en": "In Google Sheets or your notes, write your after-alert checklist: six yes/no items, then the closing line 'Any NO = no trade' (the AI Lab prompt 'After-the-alert checklist' can draft it; you check it). Add an alert log with four columns: time, alert name, valid Y/N, reason.",
-   "hi": "Google Sheets ya notes mein alert ke baad ki checklist likhiye: chhe haan/na points, aur aakhir mein alag line 'Any NO = no trade' (AI Lab ka 'After-the-alert checklist' prompt draft bana sakta hai; check aap kijiye). Saath mein chaar columns wala alert log banaiye: time, alert ka naam, valid Y/N, wajah.",
-   "dv": "Google Sheets या नोट्स में अलर्ट के बाद की चेकलिस्ट लिखिए: छह हाँ/ना पॉइंट, और आख़िर में अलग लाइन 'Any NO = no trade' (AI Lab का 'After-the-alert checklist' प्रॉम्प्ट ड्राफ़्ट बना सकता है; जाँच आप कीजिए)। साथ में चार कॉलम वाला अलर्ट लॉग बनाइए: समय, अलर्ट का नाम, सही Y/N, वजह।"
+   "en": "Copy the after-alert checklist (Your template) into Google Sheets or your notes, rewrite check 3 for your own rule card, and add an alert log with four columns: time, alert name, valid Y/N, reason. The AI Lab prompt 'After-the-alert checklist' can draft one for you to check.",
+   "hi": "Alert ke baad ki checklist ('Aapka template') Google Sheets ya notes mein copy kijiye, check 3 apne rule card ke hisaab se likhiye, aur chaar columns ka alert log jodiye: time, alert ka naam, valid Y/N, wajah. AI Lab ka prompt 'Alert ke baad ki checklist' ek draft bana sakta hai, jise aap check karenge.",
+   "dv": "अलर्ट के बाद की चेकलिस्ट ('आपका टेम्पलेट') Google Sheets या नोट्स में कॉपी कीजिए, चेक 3 अपने रूल कार्ड के हिसाब से लिखिए, और चार कॉलम का अलर्ट लॉग जोड़िए: समय, अलर्ट का नाम, सही Y/N, वजह। AI Lab का प्रॉम्प्ट 'अलर्ट के बाद की चेकलिस्ट' एक ड्राफ़्ट बना सकता है, जिसे आप जाँचेंगे।"
   },
   {
-   "en": "Optional stretch (15 minutes): if you follow ORB, draw its flowchart too, starting with 'Is it past 9:30, and is the range known?'",
-   "hi": "Optional stretch (15 minute): agar aap ORB follow karte hain, toh uska flowchart bhi banaiye; pehla box ho 'Kya 9:30 ho gaye, aur range pata hai?'",
-   "dv": "ऑप्शनल स्ट्रेच (15 मिनट): अगर आप ORB फ़ॉलो करते हैं, तो उसका फ़्लोचार्ट भी बनाइए; पहला बॉक्स हो 'क्या 9:30 बज गए, और रेंज पता है?'"
+   "en": "Add one more Portfolio row (virtual) for a watchlist stock that passed its health card and your flowchart's boxes 2 to 4: Full Why 1 = its card result; Full Why 2 = the chart boxes it passed (3 and 4), not the card again; top risk = 'a results gap' and your answer = 'box 2: no results date in the next 15 trading days'; price-stop = 1.5 x ATR 14 below your planned entry; Why-stop = the box that would turn NO (for example 'EMA 20 closes below EMA 50'); review point = its next results date. No stock passed? Write 'none passed' in your journal: that is the flowchart doing its job.",
+   "hi": "Ek aur Portfolio row (virtual) jodiye, kisi aise watchlist stock ke liye jo health card aur aapke flowchart ke box 2 se 4 pass kar chuka ho: Full Why 1 = uska card result; Full Why 2 = jo chart boxes pass hue (3 aur 4), card dobara nahi; sabse bada risk = 'results ka gap' aur aapka jawab = 'box 2: agle 15 trading din mein koi results date nahi'; price-stop = planned entry se 1.5 x ATR 14 neeche; Why-stop = woh box jo NO ho jaaye (jaise 'EMA 20, EMA 50 ke neeche close ho'); review point = agli results date. Koi stock pass nahi hua? Journal mein 'koi pass nahi' likhiye: flowchart apna kaam kar raha hai.",
+   "dv": "एक और पोर्टफ़ोलियो रो (वर्चुअल) जोड़िए, किसी ऐसे वॉचलिस्ट स्टॉक के लिए जो हेल्थ कार्ड और आपके फ़्लोचार्ट के बॉक्स 2 से 4 पास कर चुका हो: फ़ुल व्हाई 1 = उसका कार्ड रिज़ल्ट; फ़ुल व्हाई 2 = जो चार्ट बॉक्स पास हुए (3 और 4), कार्ड दोबारा नहीं; सबसे बड़ा जोखिम = 'नतीजों का गैप' और आपका जवाब = 'बॉक्स 2: अगले 15 ट्रेडिंग दिनों में नतीजों की कोई तारीख़ नहीं'; प्राइस-स्टॉप = प्लान की गई एंट्री से 1.5 x ATR 14 नीचे; व्हाई-स्टॉप = वह बॉक्स जो NO हो जाए (जैसे 'EMA 20, EMA 50 के नीचे क्लोज़ हो'); रिव्यू पॉइंट = अगली रिज़ल्ट डेट। कोई स्टॉक पास नहीं हुआ? जर्नल में 'कोई पास नहीं' लिखिए: फ़्लोचार्ट अपना काम कर रहा है।"
   }
  ],
- "kaam_min": 40,
+ "kaam_min": 45,
+ "artefacts": [
+  {
+   "title": {
+    "en": "Rule card, shayad-free: who checks what",
+    "hi": "Rule card, bina shayad ke: kaun kya check karta hai",
+    "dv": "रूल कार्ड, बिना शायद के: कौन क्या जाँचता है"
+   },
+   "note": {
+    "en": "Copy it and change only what your own Day 11 card says differently. Any rule a free screener cannot hold, you check by eye on the chart.",
+    "hi": "Ise copy kijiye aur sirf wahi badliye jo aapka apna Day 11 card alag kehta hai. Jo rule free screener nahi pakad pata, use aap chart par aankh se check kijiye.",
+    "dv": "इसे कॉपी कीजिए और सिर्फ़ वही बदलिए जो आपका अपना दिन 11 वाला कार्ड अलग कहता है। जो नियम फ़्री स्क्रीनर नहीं पकड़ पाता, उसे आप चार्ट पर आँख से जाँचिए।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Rule",
+      "hi": "Rule",
+      "dv": "नियम"
+     },
+     {
+      "en": "Testable version",
+      "hi": "Testable version",
+      "dv": "टेस्टेबल रूप"
+     },
+     {
+      "en": "Checked by",
+      "hi": "Kaun check karta hai",
+      "dv": "कौन जाँचता है"
+     },
+     {
+      "en": "When",
+      "hi": "Kab",
+      "dv": "कब"
+     }
+    ],
+    "rows": [
+     [
+      {
+       "en": "Watchlist gate",
+       "hi": "Watchlist gate",
+       "dv": "वॉचलिस्ट गेट"
+      },
+      {
+       "en": "Health card passed; no results date in the next 15 trading days; no bonus or split on NSE's corporate actions page",
+       "hi": "Health card pass; agle 15 trading din mein results date nahi; NSE ke corporate actions page par bonus ya split nahi",
+       "dv": "हेल्थ कार्ड पास; अगले 15 ट्रेडिंग दिनों में नतीजों की तारीख़ नहीं; NSE के कॉर्पोरेट एक्शन पेज पर बोनस या स्प्लिट नहीं"
+      },
+      {
+       "en": "You: card, NSE announcements and corporate actions",
+       "hi": "Aap: card, NSE announcements aur corporate actions",
+       "dv": "आप: कार्ड, NSE की घोषणाएँ और कॉर्पोरेट एक्शन"
+      },
+      {
+       "en": "Before adding a stock",
+       "hi": "Stock jodne se pehle",
+       "dv": "स्टॉक जोड़ने से पहले"
+      }
+     ],
+     [
+      {
+       "en": "Trend",
+       "hi": "Trend",
+       "dv": "ट्रेंड"
+      },
+      {
+       "en": "EMA 20 above EMA 50 on the daily chart",
+       "hi": "Daily chart par EMA 20, EMA 50 ke upar",
+       "dv": "डेली चार्ट पर EMA 20, EMA 50 के ऊपर"
+      },
+      {
+       "en": "Free screener",
+       "hi": "Free screener",
+       "dv": "फ़्री स्क्रीनर"
+      },
+      {
+       "en": "Evening, after the close",
+       "hi": "Shaam, close ke baad",
+       "dv": "शाम, क्लोज़ के बाद"
+      }
+     ],
+     [
+      {
+       "en": "Trend rising",
+       "hi": "Trend badh raha",
+       "dv": "बढ़ता ट्रेंड"
+      },
+      {
+       "en": "EMA 50 higher than 10 trading days ago",
+       "hi": "EMA 50, 10 trading din pehle se upar",
+       "dv": "EMA 50, 10 ट्रेडिंग दिन पहले से ऊपर"
+      },
+      {
+       "en": "You, by eye: free screeners may not hold it",
+       "hi": "Aap, aankh se: free screener shayad na pakde",
+       "dv": "आप, आँख से: फ़्री स्क्रीनर शायद न पकड़े"
+      },
+      {
+       "en": "Evening, after the close",
+       "hi": "Shaam, close ke baad",
+       "dv": "शाम, क्लोज़ के बाद"
+      }
+     ],
+     [
+      {
+       "en": "Pullback",
+       "hi": "Pullback",
+       "dv": "पुलबैक"
+      },
+      {
+       "en": "Daily close within 2% of EMA 20, above or below, and above EMA 50",
+       "hi": "Daily close EMA 20 se 2% ke andar, upar ya neeche, aur EMA 50 ke upar",
+       "dv": "डेली क्लोज़ EMA 20 से 2% के अंदर, ऊपर या नीचे, और EMA 50 के ऊपर"
+      },
+      {
+       "en": "Free screener",
+       "hi": "Free screener",
+       "dv": "फ़्री स्क्रीनर"
+      },
+      {
+       "en": "Evening, after the close",
+       "hi": "Shaam, close ke baad",
+       "dv": "शाम, क्लोज़ के बाद"
+      }
+     ],
+     [
+      {
+       "en": "Cool-down",
+       "hi": "Cool-down",
+       "dv": "कूल-डाउन"
+      },
+      {
+       "en": "RSI 14 between 40 and 50",
+       "hi": "RSI 14, 40 aur 50 ke beech",
+       "dv": "RSI 14, 40 और 50 के बीच"
+      },
+      {
+       "en": "Free screener",
+       "hi": "Free screener",
+       "dv": "फ़्री स्क्रीनर"
+      },
+      {
+       "en": "Evening, after the close",
+       "hi": "Shaam, close ke baad",
+       "dv": "शाम, क्लोज़ के बाद"
+      }
+     ],
+     [
+      {
+       "en": "Strength",
+       "hi": "Strength",
+       "dv": "मज़बूती"
+      },
+      {
+       "en": "3-month % change minus NIFTY 50's is above 0",
+       "hi": "3 mahine ka % change minus NIFTY 50 ka, 0 se upar",
+       "dv": "3 महीने का % बदलाव माइनस NIFTY 50 का, 0 से ऊपर"
+      },
+      {
+       "en": "You: the stock/NIFTY line on the chart",
+       "hi": "Aap: chart par stock/NIFTY wali line",
+       "dv": "आप: चार्ट पर स्टॉक/NIFTY वाली लाइन"
+      },
+      {
+       "en": "Evening, after the close",
+       "hi": "Shaam, close ke baad",
+       "dv": "शाम, क्लोज़ के बाद"
+      }
+     ],
+     [
+      {
+       "en": "Signal day",
+       "hi": "Signal day",
+       "dv": "सिग्नल डे"
+      },
+      {
+       "en": "Daily close above the previous day's high, within 5 trading days",
+       "hi": "Daily close pichhle din ke high ke upar, 5 trading din ke andar",
+       "dv": "डेली क्लोज़ पिछले दिन के हाई के ऊपर, 5 ट्रेडिंग दिनों के अंदर"
+      },
+      {
+       "en": "Price alert says look; you read the close",
+       "hi": "Price alert kehta hai dekho; close aap padhte hain",
+       "dv": "प्राइस अलर्ट कहता है देखो; क्लोज़ आप पढ़ते हैं"
+      },
+      {
+       "en": "Evening, after the close",
+       "hi": "Shaam, close ke baad",
+       "dv": "शाम, क्लोज़ के बाद"
+      }
+     ],
+     [
+      {
+       "en": "Stop and size",
+       "hi": "Stop aur size",
+       "dv": "स्टॉप और साइज़"
+      },
+      {
+       "en": "Stop 1.5 x ATR 14 below entry; qty = Rs 10,000 ÷ stop, cut to the 25% cap at the max entry",
+       "hi": "Stop entry se 1.5 x ATR 14 neeche; qty = Rs 10,000 ÷ stop, max entry par 25% cap tak kam",
+       "dv": "स्टॉप एंट्री से 1.5 x ATR 14 नीचे; मात्रा = Rs 10,000 ÷ स्टॉप, मैक्स एंट्री पर 25% सीमा तक कम"
+      },
+      {
+       "en": "You, with a calculator",
+       "hi": "Aap, calculator se",
+       "dv": "आप, कैलकुलेटर से"
+      },
+      {
+       "en": "Evening plan",
+       "hi": "Shaam ka plan",
+       "dv": "शाम का प्लान"
+      }
+     ],
+     [
+      {
+       "en": "Entry",
+       "hi": "Entry",
+       "dv": "एंट्री"
+      },
+      {
+       "en": "Next day's open, only if it is between the signal-day low and close + 0.5 x ATR 14",
+       "hi": "Agle din ka open, sirf tab jab woh signal-day low aur close + 0.5 x ATR 14 ke beech ho",
+       "dv": "अगले दिन का ओपन, सिर्फ़ तब जब वह सिग्नल-डे लो और क्लोज़ + 0.5 x ATR 14 के बीच हो"
+      },
+      {
+       "en": "You",
+       "hi": "Aap",
+       "dv": "आप"
+      },
+      {
+       "en": "Next evening, from the day's open",
+       "hi": "Agli shaam, din ke open se",
+       "dv": "अगली शाम, दिन के ओपन से"
+      }
+     ],
+     [
+      {
+       "en": "Risk limits",
+       "hi": "Risk limits",
+       "dv": "रिस्क की सीमाएँ"
+      },
+      {
+       "en": "Fewer than 3 open trades; no -2R day and no -5R week already hit",
+       "hi": "3 se kam open trades; -2R wala din aur -5R wala hafta pehle se nahi",
+       "dv": "3 से कम खुले ट्रेड; -2R वाला दिन और -5R वाला हफ़्ता पहले से नहीं"
+      },
+      {
+       "en": "You",
+       "hi": "Aap",
+       "dv": "आप"
+      },
+      {
+       "en": "Before every entry",
+       "hi": "Har entry se pehle",
+       "dv": "हर एंट्री से पहले"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "title": {
+    "en": "After-alert checklist: 60 seconds, six yes/no checks",
+    "hi": "Alert ke baad ki checklist: 60 second, chhe haan/na checks",
+    "dv": "अलर्ट के बाद की चेकलिस्ट: 60 सेकंड, छह हाँ/ना जाँच"
+   },
+   "note": {
+    "en": "Any NO = no trade. For your evening swing scan, put your trend, pullback, RSI and RS boxes in check 3.",
+    "hi": "Koi bhi NO = no trade. Shaam ke swing scan ke liye check 3 mein apne trend, pullback, RSI aur RS wale boxes likhiye.",
+    "dv": "कोई भी NO = no trade। शाम के स्विंग स्कैन के लिए चेक 3 में अपने ट्रेंड, पुलबैक, RSI और RS वाले बॉक्स लिखिए।"
+   },
+   "visual": {
+    "kind": "table",
+    "caption": {
+     "en": "Model answers from Aman's paper ORB morning in Bharat Pumps Ltd (range Rs 994-1,000).",
+     "hi": "Aman ki Bharat Pumps Ltd wali paper ORB subah ke model jawab (range Rs 994-1,000).",
+     "dv": "अमन की Bharat Pumps Ltd वाली पेपर ORB सुबह के मॉडल जवाब (रेंज Rs 994-1,000)।"
+    },
+    "head": [
+     {
+      "en": "#",
+      "hi": "#",
+      "dv": "#"
+     },
+     {
+      "en": "Check",
+      "hi": "Check",
+      "dv": "जाँच"
+     },
+     {
+      "en": "Aman, 9:40",
+      "hi": "Aman, 9:40",
+      "dv": "अमन, 9:40"
+     },
+     {
+      "en": "Aman, 9:55",
+      "hi": "Aman, 9:55",
+      "dv": "अमन, 9:55"
+     }
+    ],
+    "rows": [
+     [
+      "1",
+      {
+       "en": "I looked at the chart myself, not just the alert text",
+       "hi": "Maine khud chart dekha, sirf alert ka message nahi",
+       "dv": "मैंने ख़ुद चार्ट देखा, सिर्फ़ अलर्ट का मैसेज नहीं"
+      },
+      {
+       "en": "Yes",
+       "hi": "Haan",
+       "dv": "हाँ"
+      },
+      {
+       "en": "Yes",
+       "hi": "Haan",
+       "dv": "हाँ"
+      }
+     ],
+     [
+      "2",
+      {
+       "en": "The candle my rule needs has closed beyond the level (a touch or a wick does not count)",
+       "hi": "Mere rule wali candle level ke paar close hui (touch ya wick nahi ginta)",
+       "dv": "मेरे नियम वाली कैंडल लेवल के पार क्लोज़ हुई (टच या विक नहीं गिना जाता)"
+      },
+      {
+       "en": "NO: wick only, closed at 999",
+       "hi": "NO: sirf wick, close 999 par",
+       "dv": "NO: सिर्फ़ विक, क्लोज़ 999 पर"
+      },
+      {
+       "en": "Yes: closed at 1,002.50",
+       "hi": "Haan: close 1,002.50 par",
+       "dv": "हाँ: क्लोज़ 1,002.50 पर"
+      }
+     ],
+     [
+      "3",
+      {
+       "en": "The rule-card checks the alert cannot see all pass (ORB: VWAP side, volume, before 11:00)",
+       "hi": "Rule card ke woh checks jo alert nahi dekh sakta, sab pass (ORB: VWAP ki side, volume, 11:00 se pehle)",
+       "dv": "रूल कार्ड की वे जाँचें जो अलर्ट नहीं देख सकता, सब पास (ORB: VWAP की तरफ़, वॉल्यूम, 11:00 से पहले)"
+      },
+      "-",
+      {
+       "en": "Yes",
+       "hi": "Haan",
+       "dv": "हाँ"
+      }
+     ],
+     [
+      "4",
+      {
+       "en": "Stop and size worked out: 1% rule, cut to the 25% cap",
+       "hi": "Stop aur size nikaala: 1% rule, 25% cap tak kam",
+       "dv": "स्टॉप और साइज़ निकाला: 1% नियम, 25% सीमा तक कम"
+      },
+      "-",
+      {
+       "en": "Yes: stop Rs 994; 249 shares (25% cap)",
+       "hi": "Haan: stop Rs 994; 249 shares (25% cap)",
+       "dv": "हाँ: स्टॉप Rs 994; 249 शेयर (25% सीमा)"
+      }
+     ],
+     [
+      "5",
+      {
+       "en": "Fewer than 3 open trades; no -2R day or -5R week already hit",
+       "hi": "3 se kam open trades; -2R wala din ya -5R wala hafta pehle se nahi",
+       "dv": "3 से कम खुले ट्रेड; -2R वाला दिन या -5R वाला हफ़्ता पहले से नहीं"
+      },
+      "-",
+      {
+       "en": "Yes",
+       "hi": "Haan",
+       "dv": "हाँ"
+      }
+     ],
+     [
+      "6",
+      {
+       "en": "Alert-log row written: time, alert name, valid Y/N, reason",
+       "hi": "Alert log ki row likhi: time, alert ka naam, valid Y/N, wajah",
+       "dv": "अलर्ट लॉग की रो लिखी: समय, अलर्ट का नाम, सही Y/N, वजह"
+      },
+      {
+       "en": "Yes: 'N, touch only'",
+       "hi": "Haan: 'N, sirf touch'",
+       "dv": "हाँ: 'N, सिर्फ़ टच'"
+      },
+      {
+       "en": "Yes: 'Y, close above'",
+       "hi": "Haan: 'Y, close upar'",
+       "dv": "हाँ: 'Y, क्लोज़ ऊपर'"
+      }
+     ],
+     [
+      "",
+      {
+       "en": "Decision",
+       "hi": "Faisla",
+       "dv": "फ़ैसला"
+      },
+      {
+       "en": "NO TRADE",
+       "hi": "NO TRADE",
+       "dv": "NO TRADE"
+      },
+      {
+       "en": "Paper entry at the next open, Rs 1,002.50",
+       "hi": "Agle open par paper entry, Rs 1,002.50",
+       "dv": "अगले ओपन पर पेपर एंट्री, Rs 1,002.50"
+      }
+     ]
+    ],
+    "blank_rows": 0
+   }
+  },
+  {
+   "title": {
+    "en": "ORB flowchart: answer key (optional stretch)",
+    "hi": "ORB flowchart: answer key (optional stretch)",
+    "dv": "ORB फ़्लोचार्ट: आंसर की (ऑप्शनल स्ट्रेच)"
+   },
+   "note": {
+    "en": "If you follow ORB, draw your own flowchart first, then compare it box by box. The rules are Day 13's.",
+    "hi": "Agar aap ORB follow karte hain, toh pehle apna flowchart khud banaiye, phir box dar box milaiye. Rules Day 13 wale hain.",
+    "dv": "अगर आप ORB अपनाते हैं, तो पहले अपना फ़्लोचार्ट ख़ुद बनाइए, फिर बॉक्स-दर-बॉक्स मिलाइए। नियम दिन 13 वाले हैं।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "#",
+      "hi": "#",
+      "dv": "#"
+     },
+     {
+      "en": "Question or action",
+      "hi": "Sawaal ya kaam",
+      "dv": "सवाल या काम"
+     },
+     {
+      "en": "YES",
+      "hi": "YES",
+      "dv": "YES (हाँ)"
+     },
+     {
+      "en": "NO",
+      "hi": "NO",
+      "dv": "NO (ना)"
+     }
+    ],
+    "rows": [
+     [
+      "1",
+      {
+       "en": "Start: free to watch 9:15-11:00, and again at 14:30?",
+       "hi": "Start: 9:15-11:00 aur phir 14:30 par dekh sakte hain?",
+       "dv": "शुरू: 9:15-11:00 और फिर 14:30 पर देख सकते हैं?"
+      },
+      "→ 2",
+      {
+       "en": "No ORB today",
+       "hi": "Aaj ORB nahi",
+       "dv": "आज ORB नहीं"
+      }
+     ],
+     [
+      "2",
+      {
+       "en": "A NIFTY 50 stock that opened inside yesterday's range (no gap)?",
+       "hi": "NIFTY 50 ka stock jo kal ki range ke andar khula (gap nahi)?",
+       "dv": "NIFTY 50 का स्टॉक जो कल की रेंज के अंदर खुला (गैप नहीं)?"
+      },
+      "→ 3",
+      {
+       "en": "NO TRADE",
+       "hi": "NO TRADE",
+       "dv": "NO TRADE"
+      }
+     ],
+     [
+      "3",
+      {
+       "en": "No results or big company news today, and away from its price band?",
+       "hi": "Aaj results ya badi company news nahi, aur price band se door?",
+       "dv": "आज नतीजे या कंपनी की बड़ी ख़बर नहीं, और प्राइस बैंड से दूर?"
+      },
+      "→ 4",
+      {
+       "en": "NO TRADE",
+       "hi": "NO TRADE",
+       "dv": "NO TRADE"
+      }
+     ],
+     [
+      "4",
+      {
+       "en": "Room left: above -2R, under 2 stop-outs, under 3 open, no ORB trade in this stock yet?",
+       "hi": "Gunjaaish baaki: -2R se upar, 2 se kam stop-out, 3 se kam open, is stock mein abhi tak ORB trade nahi?",
+       "dv": "गुंजाइश बाक़ी: -2R से ऊपर, 2 से कम स्टॉप-आउट, 3 से कम खुले, इस स्टॉक में अभी तक ORB ट्रेड नहीं?"
+      },
+      "→ 5",
+      {
+       "en": "NO TRADE",
+       "hi": "NO TRADE",
+       "dv": "NO TRADE"
+      }
+     ],
+     [
+      "5",
+      {
+       "en": "Past 9:30, with the 9:15-9:30 high and low marked?",
+       "hi": "9:30 ke baad, aur 9:15-9:30 ka high aur low mark?",
+       "dv": "9:30 के बाद, और 9:15-9:30 का हाई और लो मार्क?"
+      },
+      "→ 6",
+      {
+       "en": "Wait: no trade before 9:30",
+       "hi": "Rukiye: 9:30 se pehle trade nahi",
+       "dv": "रुकिए: 9:30 से पहले ट्रेड नहीं"
+      }
+     ],
+     [
+      "6",
+      {
+       "en": "A 5-minute candle closed outside the range?",
+       "hi": "Koi 5-minute candle range ke bahar close hui?",
+       "dv": "कोई 5-मिनट कैंडल रेंज के बाहर क्लोज़ हुई?"
+      },
+      "→ 7",
+      {
+       "en": "Keep watching till 11:00",
+       "hi": "11:00 tak dekhte rahiye",
+       "dv": "11:00 तक देखते रहिए"
+      }
+     ],
+     [
+      "7",
+      {
+       "en": "Long: price above VWAP (short: below), and that candle's volume above its 20-candle average?",
+       "hi": "Long: price VWAP ke upar (short: neeche), aur us candle ka volume 20-candle average se upar?",
+       "dv": "लॉन्ग: भाव VWAP के ऊपर (शॉर्ट: नीचे), और उस कैंडल का वॉल्यूम 20-कैंडल औसत से ऊपर?"
+      },
+      "→ 8",
+      {
+       "en": "Not this candle: back to 6",
+       "hi": "Yeh candle nahi: wapas 6 par",
+       "dv": "यह कैंडल नहीं: वापस 6 पर"
+      }
+     ],
+     [
+      "8",
+      {
+       "en": "Does the next candle open by 11:00?",
+       "hi": "Kya agli candle 11:00 tak khulti hai?",
+       "dv": "क्या अगली कैंडल 11:00 तक खुलती है?"
+      },
+      "→ 9",
+      {
+       "en": "NO TRADE",
+       "hi": "NO TRADE",
+       "dv": "NO TRADE"
+      }
+     ],
+     [
+      "9",
+      {
+       "en": "Plan: stop at the other side of the range; size = the smaller of the 1% rule and the 25% cap; 2R profit exit",
+       "hi": "Plan: stop range ki doosri taraf; size = 1% rule aur 25% cap mein jo chhota ho; 2R par profit exit",
+       "dv": "प्लान: स्टॉप रेंज की दूसरी तरफ़; साइज़ = 1% नियम और 25% सीमा में जो छोटा हो; 2R पर प्रॉफ़िट एग्ज़िट"
+      },
+      "→ 10",
+      "-"
+     ],
+     [
+      "10",
+      {
+       "en": "Paper entry at that open; exit at the stop, 2R or 14:30, always the same day",
+       "hi": "Us open par paper entry; exit stop, 2R ya 14:30 par, hamesha usi din",
+       "dv": "उसी ओपन पर पेपर एंट्री; एग्ज़िट स्टॉप, 2R या 14:30 पर, हमेशा उसी दिन"
+      },
+      {
+       "en": "→ End",
+       "hi": "→ End",
+       "dv": "→ अंत"
+      },
+      "-"
+     ]
+    ]
+   }
+  }
+ ],
  "outcome": {
-  "en": "By the end you can turn vague trading ideas into testable yes/no rules, draw them as a flowchart, treat an alert as a signal to look rather than to buy, time daily checks after the close, and explain SEBI's retail algo rules and why a magic bot is a red flag.",
-  "hi": "Aaj ke baad aap vague trading ideas ko testable haan/na rules mein badal payenge, unka flowchart bana payenge, alert ko 'dekhne ka ishaara' samjhenge, 'kharidne ka' nahi, daily checks close ke baad karenge, aur samjha payenge ki SEBI ke retail algo rules kya kehte hain aur magic bot red flag kyun hai.",
-  "dv": "आज के बाद आप गोल-मोल ट्रेडिंग आइडिया को टेस्टेबल हाँ/ना नियमों में बदल पाएँगे, उनका फ़्लोचार्ट बना पाएँगे, अलर्ट को 'देखने का इशारा' मानेंगे, 'ख़रीदने का' नहीं, डेली जाँच क्लोज़ के बाद करेंगे, और समझा पाएँगे कि SEBI के रिटेल एल्गो नियम क्या कहते हैं और जादुई बॉट रेड फ़्लैग क्यों है।"
+  "en": "By the end you can turn vague trading ideas into testable yes/no rules, draw them as a flowchart with a YES and a NO exit at every question, say which checks a free screener or a price alert can do and which you do yourself, time daily checks after the official close, and explain SEBI's retail algo rules and why a magic bot is a red flag.",
+  "hi": "Aaj ke baad aap vague trading ideas ko testable haan/na rules mein badal payenge, unka aisa flowchart bana payenge jismein har sawaal ka ek YES aur ek NO raasta ho, bata payenge ki kaunse checks free screener ya price alert kar sakta hai aur kaunse aap khud karenge, daily checks official close ke baad karenge, aur samjha payenge ki SEBI ke retail algo rules kya kehte hain aur magic bot red flag kyun hai.",
+  "dv": "आज के बाद आप गोल-मोल ट्रेडिंग आइडिया को टेस्टेबल हाँ/ना नियमों में बदल पाएँगे, उनका ऐसा फ़्लोचार्ट बना पाएँगे जिसमें हर सवाल का एक YES और एक NO रास्ता हो, बता पाएँगे कि कौन-सी जाँच फ़्री स्क्रीनर या प्राइस अलर्ट कर सकता है और कौन-सी आप ख़ुद करेंगे, डेली जाँच ऑफ़िशियल क्लोज़ के बाद करेंगे, और समझा पाएँगे कि SEBI के रिटेल एल्गो नियम क्या कहते हैं और जादुई बॉट रेड फ़्लैग क्यों है।"
  },
  "tools": [
   {
@@ -1036,9 +1755,9 @@
    "dv": "काग़ज़ और पेन (draw.io, फ़्री डायग्राम साइट, ऑप्शनल)"
   },
   {
-   "en": "TradingView free chart and alerts",
-   "hi": "TradingView free chart aur alerts",
-   "dv": "TradingView फ़्री चार्ट और अलर्ट"
+   "en": "TradingView free chart and one price alert",
+   "hi": "TradingView free chart aur ek price alert",
+   "dv": "TradingView फ़्री चार्ट और एक प्राइस अलर्ट"
   },
   {
    "en": "Google Sheets or notes",
@@ -1049,12 +1768,17 @@
    "en": "Any AI chat",
    "hi": "Koi bhi AI chat",
    "dv": "कोई भी AI चैट"
+  },
+  {
+   "en": "The app's Portfolio page",
+   "hi": "App ka Portfolio page",
+   "dv": "ऐप का पोर्टफ़ोलियो पेज"
   }
  ],
  "fun": {
-  "en": "Flowchart Duel: swap flowcharts with a classmate or family member and score each out of 4: every box is a yes/no question or an action, every 'no' goes to NO TRADE, the risk checks (stop, size, 25% cap, 3 open trades, -2R daily stop, -5R weekly pause, the results-date check) are there, and the daily-close timing is there. Learning alone? Score yours against Priya's flowchart and count the missing boxes.",
-  "hi": "Flowchart Duel: kisi classmate ya family member ke saath flowchart exchange kijiye aur har ek ko 4 mein se score dijiye: har box haan/na sawaal ya kaam hai, har 'na' NO TRADE par jaata hai, risk checks (stop, size, 25% cap, 3 open trades, -2R daily stop, -5R weekly pause, results-date check) maujood hain, aur daily close ki timing likhi hai. Akele seekh rahe hain? Apna flowchart Priya ke flowchart se milaiye aur chhoote hue boxes giniye.",
-  "dv": "फ़्लोचार्ट मुक़ाबला: किसी साथी या परिवार के सदस्य के साथ फ़्लोचार्ट बदलिए और हर एक को 4 में से नंबर दीजिए: हर बॉक्स हाँ/ना सवाल या काम है, हर 'ना' NO TRADE पर जाता है, रिस्क वाली जाँच (स्टॉप, साइज़, 25% सीमा, 3 खुले ट्रेड, -2R डेली स्टॉप, -5R हफ़्ते का पॉज़, नतीजों की तारीख़ वाला चेक) मौजूद है, और डेली क्लोज़ की टाइमिंग लिखी है। अकेले सीख रहे हैं? अपना फ़्लोचार्ट प्रिया के फ़्लोचार्ट से मिलाइए और छूटे हुए बॉक्स गिनिए।"
+  "en": "Flowchart Duel: swap flowcharts with a classmate or family member and score each out of 4: every box is a yes/no question or an action; every 'no' goes to NO TRADE; the risk checks are there (stop, size, 25% cap, 3 open trades, -2R daily stop, -5R weekly pause, results date); the daily-close timing is there. Bonus round: read one line of your partner's rule card aloud and give them 10 seconds to spot the shayad word. Learning alone? Score yours against Priya's table in the lesson and count the missing boxes.",
+  "hi": "Flowchart Duel: kisi classmate ya family member ke saath flowchart exchange kijiye aur har ek ko 4 mein se score dijiye: har box haan/na sawaal ya kaam hai; har 'na' NO TRADE par jaata hai; risk checks maujood hain (stop, size, 25% cap, 3 open trades, -2R daily stop, -5R weekly pause, results date); daily close ki timing likhi hai. Bonus round: partner ke rule card ki ek line zor se padhiye aur use 10 second dijiye shayad wala shabd pakadne ke liye. Akele seekh rahe hain? Apna flowchart lesson mein Priya ki table se milaiye aur chhoote hue boxes giniye.",
+  "dv": "फ़्लोचार्ट मुक़ाबला: किसी साथी या परिवार के सदस्य के साथ फ़्लोचार्ट बदलिए और हर एक को 4 में से नंबर दीजिए: हर बॉक्स हाँ/ना सवाल या काम है; हर 'ना' NO TRADE पर जाता है; रिस्क वाली जाँच मौजूद है (स्टॉप, साइज़, 25% सीमा, 3 खुले ट्रेड, -2R डेली स्टॉप, -5R हफ़्ते का पॉज़, नतीजों की तारीख़); डेली क्लोज़ की टाइमिंग लिखी है। बोनस राउंड: साथी के रूल कार्ड की एक लाइन ज़ोर से पढ़िए और उसे 'शायद' वाला शब्द पकड़ने के लिए 10 सेकंड दीजिए। अकेले सीख रहे हैं? अपना फ़्लोचार्ट लेसन में प्रिया की टेबल से मिलाइए और छूटे हुए बॉक्स गिनिए।"
  },
  "compliance": "Educational content only, not investment advice. Investment in securities market is subject to market risks. Company names, prices and the bot advert are made up for illustration; no algo, bot or algo provider is endorsed. Stage 1 uses virtual money only and places no automated orders. No affiliation with any charting or diagram site named. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
  "prompts": [
@@ -1064,7 +1788,7 @@
     "hi": "Flowchart drafter",
     "dv": "फ़्लोचार्ट ड्राफ़्टर"
    },
-   "body": "You are a patient teacher helping a beginner turn a written swing-trading rule card into a flowchart. I will paste my rule card below (the EMA Pullback Swing on daily charts: EMA 20 above EMA 50, with EMA 50 higher than 10 trading days ago, a close within 2% of EMA 20 and above EMA 50, RSI 14 between 40 and 50, 3-month relative strength vs NIFTY 50 above zero, a signal day that closes above the previous day's high, and a stop at 1.5 x ATR 14 below entry). First, list every vague word in my card (such as near, strong, safe or about) and suggest a testable yes/no version with a number and a time (which candle, and when it is checked). Then write the flowchart as numbered nodes: each node is either a yes/no question or an action, written as 'if yes go to N / if no go to NO TRADE'. Include nodes for: the daily candle being closed (checked in the evening, after the exchange's official close), the health-card pass and no results date in the next 15 trading days, the trend filter, the pullback condition, RSI, relative strength, the signal day, the stop from 1.5 x ATR 14 on the daily chart, position size from the 1% rule, the 25% exposure cap, the limit of 3 open trades, the -2R daily stop and -5R weekly pause, entry at the next day's open (skipped if it opens above the signal close plus 0.5 x ATR 14, or below the signal day's low), and a journal entry. Mark any node you added on your own as Guess so I can check it. Do not name any real stock, do not give buy or sell advice, and do not mention targets or expected returns.\n\nMy rule card:\n<paste here>"
+   "body": "You are a patient teacher helping a beginner turn a written swing-trading rule card into a flowchart. I will paste my rule card below (the EMA Pullback Swing on daily charts: EMA 20 above EMA 50, with EMA 50 higher than 10 trading days ago, a close within 2% of EMA 20 and above EMA 50, RSI 14 between 40 and 50, 3-month relative strength vs NIFTY 50 above zero, a signal day that closes above the previous day's high, and a stop at 1.5 x ATR 14 below entry). First, list every vague word in my card (such as near, strong, safe or about) and suggest a testable yes/no version with a number and a time (which candle, and when it is checked). Then write the flowchart as a table with the columns #, shape (oval, diamond or rectangle), question or action, YES (go to N) and NO (NO TRADE or wait). For each node, also say whether a free stock screener can check it after the close or I must check it by eye on the chart. Include nodes for: the daily candle being closed (checked in the evening, after the exchange's official close), the health-card pass, no results date in the next 15 trading days and no bonus or split on the NSE corporate actions page, the trend filter, the pullback condition, RSI, relative strength, the signal day, the stop from 1.5 x ATR 14 on the daily chart, position size from the 1% rule, the 25% exposure cap, the limit of 3 open trades, the -2R daily stop and -5R weekly pause, entry at the next day's open (skipped if it opens above the signal close plus 0.5 x ATR 14, or below the signal day's low), and a journal entry. Mark any node you added on your own as Guess so I can check it. Do not name any real stock, do not give buy or sell advice, and do not mention targets or expected returns.\n\nMy rule card:\n<paste here>"
   },
   {
    "title": {
@@ -1072,7 +1796,7 @@
     "hi": "Alert ke baad ki checklist",
     "dv": "अलर्ट के बाद की चेकलिस्ट"
    },
-   "body": "Write a 60-second checklist I will run every time a screener or price alert fires, for a daily EMA pullback swing rule card that I will paste below. Give exactly 6 yes/no items. Cover: I have looked at the chart myself; the candle my rule needs has closed (a touch or a wick does not count); the rule-card conditions the alert cannot check; stop and position size computed from the 1% rule; the 25% exposure cap, the limit of 3 open trades, and no -2R daily stop or -5R weekly pause already hit; and an alert-log row with time, alert name, valid Y/N and reason. End with the line 'Any NO = no trade.' Then explain in 3 short lines why an alert is not an order. Do not name any real stock, do not give buy or sell advice, and do not mention targets or expected returns.\n\nMy rule card:\n<paste here>"
+   "body": "Write a 60-second checklist I will run every time a screener or price alert fires, for a daily EMA pullback swing rule card that I will paste below. On a free charting plan I use only plain price alerts at levels I work out the evening before, so an alert can ring on a touch or a wick before any candle has closed. Give exactly 6 yes/no items. Cover: I have looked at the chart myself; the candle my rule needs has closed (a touch or a wick does not count); the rule-card conditions the alert cannot check; stop and position size computed from the 1% rule; the 25% exposure cap, the limit of 3 open trades, and no -2R daily stop or -5R weekly pause already hit; and an alert-log row with time, alert name, valid Y/N and reason. End with the line 'Any NO = no trade.' Then explain in 3 short lines why an alert is not an order. Do not name any real stock, do not give buy or sell advice, and do not mention targets or expected returns.\n\nMy rule card:\n<paste here>"
   },
   {
    "title": {
@@ -1188,9 +1912,9 @@
   },
   {
    "stem": {
-    "en": "The opening range high of Sharma Textiles Ltd is Rs 180. A price alert set at Rs 180 rings when a 5-minute wick pokes up to Rs 181.20, but the candle closes at Rs 179.40. Aman's rule needs a 5-minute close above the range. What does the alert mean?",
-    "hi": "Sharma Textiles Ltd ki opening range ka high Rs 180 hai. Rs 180 par laga price alert tab baj jaata hai jab ek 5-minute wick Rs 181.20 tak jaati hai, lekin candle Rs 179.40 par close hoti hai. Aman ke rule ko range ke upar 5-minute close chahiye. Is alert ka matlab kya hai?",
-    "dv": "Sharma Textiles Ltd की ओपनिंग रेंज का हाई Rs 180 है। Rs 180 पर लगा प्राइस अलर्ट तब बज जाता है जब एक 5-मिनट की विक Rs 181.20 तक जाती है, लेकिन कैंडल Rs 179.40 पर क्लोज़ होती है। अमन के नियम को रेंज के ऊपर 5-मिनट का क्लोज़ चाहिए। इस अलर्ट का मतलब क्या है?"
+    "en": "The opening range high of Sharma Textiles Ltd is Rs 612. A price alert set at Rs 612 rings when a 5-minute wick pokes up to Rs 613.20, but the candle closes at Rs 611.40. Aman's rule needs a 5-minute close above the range. What does the alert mean?",
+    "hi": "Sharma Textiles Ltd ki opening range ka high Rs 612 hai. Rs 612 par laga price alert tab baj jaata hai jab ek 5-minute wick Rs 613.20 tak jaati hai, lekin candle Rs 611.40 par close hoti hai. Aman ke rule ko range ke upar 5-minute close chahiye. Is alert ka matlab kya hai?",
+    "dv": "Sharma Textiles Ltd की ओपनिंग रेंज का हाई Rs 612 है। Rs 612 पर लगा प्राइस अलर्ट तब बज जाता है जब एक 5-मिनट की विक Rs 613.20 तक जाती है, लेकिन कैंडल Rs 611.40 पर क्लोज़ होती है। अमन के नियम को रेंज के ऊपर 5-मिनट का क्लोज़ चाहिए। इस अलर्ट का मतलब क्या है?"
    },
    "options": [
     {
@@ -1227,9 +1951,9 @@
     }
    ],
    "explanation": {
-    "en": "A price alert fires on a touch, and a touch can be only a wick. The rule asks for a 5-minute close above Rs 180, and this candle closed at Rs 179.40, back inside the range. The alert did its job, which is to make you look. Wait for a candle to close beyond the range, then run the checklist.",
-    "hi": "Price alert touch par bajta hai, aur touch sirf wick bhi ho sakta hai. Rule Rs 180 ke upar 5-minute close maangta hai, aur yeh candle Rs 179.40 par, wapas range ke andar close hui. Alert ne apna kaam kar diya, yaani aapko dekhne ko kaha. Range ke bahar candle close hone ka intezaar kijiye, phir checklist chalaiye.",
-    "dv": "प्राइस अलर्ट छूने पर बजता है, और छूना सिर्फ़ विक भी हो सकता है। नियम Rs 180 के ऊपर 5-मिनट का क्लोज़ माँगता है, और यह कैंडल Rs 179.40 पर, वापस रेंज के अंदर क्लोज़ हुई। अलर्ट ने अपना काम कर दिया, यानी आपको देखने को कहा। रेंज के बाहर कैंडल क्लोज़ होने का इंतज़ार कीजिए, फिर चेकलिस्ट चलाइए।"
+    "en": "A price alert fires on a touch, and a touch can be only a wick. The rule asks for a 5-minute close above Rs 612, and this candle closed at Rs 611.40, back inside the range. The alert did its job, which is to make you look. Wait for a candle to close beyond the range, then run the checklist.",
+    "hi": "Price alert touch par bajta hai, aur touch sirf wick bhi ho sakta hai. Rule Rs 612 ke upar 5-minute close maangta hai, aur yeh candle Rs 611.40 par, wapas range ke andar close hui. Alert ne apna kaam kar diya, yaani aapko dekhne ko kaha. Range ke bahar candle close hone ka intezaar kijiye, phir checklist chalaiye.",
+    "dv": "प्राइस अलर्ट छूने पर बजता है, और छूना सिर्फ़ विक भी हो सकता है। नियम Rs 612 के ऊपर 5-मिनट का क्लोज़ माँगता है, और यह कैंडल Rs 611.40 पर, वापस रेंज के अंदर क्लोज़ हुई। अलर्ट ने अपना काम कर दिया, यानी आपको देखने को कहा। रेंज के बाहर कैंडल क्लोज़ होने का इंतज़ार कीजिए, फिर चेकलिस्ट चलाइए।"
    }
   },
   {
@@ -1241,17 +1965,17 @@
    "options": [
     {
      "text": {
-      "en": "Wait for the close, then check in the evening",
-      "hi": "Close ka wait, phir shaam ko check",
-      "dv": "क्लोज़ का इंतज़ार, फिर शाम को जाँच"
+      "en": "Wait for the official close, then check the rule in the evening",
+      "hi": "Official close ka intezaar, phir shaam ko rule check",
+      "dv": "ऑफ़िशियल क्लोज़ का इंतज़ार, फिर शाम को नियम की जाँच"
      },
      "correct": true
     },
     {
      "text": {
-      "en": "Place the paper order now, since the alert has fired",
-      "hi": "Abhi paper order lagao, alert toh aa gaya hai",
-      "dv": "अभी पेपर ऑर्डर लगाओ, अलर्ट तो आ गया है"
+      "en": "Place the paper order now, since the alert has already fired",
+      "hi": "Abhi paper order lagao, alert toh aa hi gaya hai",
+      "dv": "अभी पेपर ऑर्डर लगाओ, अलर्ट तो आ ही गया है"
      },
      "correct": false
     },
@@ -1265,7 +1989,7 @@
     },
     {
      "text": {
-      "en": "Switch to a 5-minute chart so alerts come sooner",
+      "en": "Switch to a 5-minute chart so the alerts come sooner",
       "hi": "5-minute chart par shift ho jao, alert jaldi aayega",
       "dv": "5-मिनट चार्ट पर चले जाओ, ताकि अलर्ट जल्दी आए"
      },
@@ -1273,9 +1997,9 @@
     }
    ],
    "explanation": {
-    "en": "At 3:00 pm the daily candle is not finished, so its close, EMA and RSI can still change, and a 'yes' can become a 'no' by the close. A daily rule is checked on the finished candle: scan after the close and plan the next morning. Splitting the order or switching to a faster chart only hides the timing mistake.",
-    "hi": "3:00 baje daily candle poori nahi bani hoti, isliye uska close, EMA aur RSI abhi badal sakte hain, aur 'haan' close tak 'na' ban sakta hai. Daily rule poori bani candle par check hota hai: close ke baad scan, aur agli subah ka plan. Order ko aadha-aadha karna ya tez chart par jaana, timing ki galti ko bas chhupa deta hai.",
-    "dv": "3:00 बजे डेली कैंडल पूरी नहीं बनी होती, इसलिए उसका क्लोज़, EMA और RSI अभी बदल सकते हैं, और 'हाँ' क्लोज़ तक 'ना' बन सकता है। डेली नियम पूरी बनी कैंडल पर जाँचा जाता है: क्लोज़ के बाद स्कैन, और अगली सुबह का प्लान। ऑर्डर को आधा-आधा करना या तेज़ चार्ट पर जाना, टाइमिंग की ग़लती को बस छिपा देता है।"
+    "en": "At 3:00 pm the daily candle is not finished: for stocks with F&O contracts the closing auction sets the close after 3:15 pm, and for others it is the average of roughly the last 30 minutes. So the close, EMA and RSI can still change, and a 'yes' can become a 'no'. A daily rule is checked on the finished candle: scan after the close and plan the next morning. Splitting the order or switching to a faster chart only hides the timing mistake.",
+    "hi": "3:00 baje daily candle poori nahi bani hoti: F&O contracts wale stocks ka close 3:15 ke baad closing auction tay karta hai, aur baaki ka close lagbhag aakhri 30 minute ka average hota hai. Isliye close, EMA aur RSI abhi badal sakte hain, aur 'haan' 'na' ban sakta hai. Daily rule poori bani candle par check hota hai: close ke baad scan, aur agli subah ka plan. Order ko aadha-aadha karna ya tez chart par jaana, timing ki galti ko bas chhupa deta hai.",
+    "dv": "3:00 बजे डेली कैंडल पूरी नहीं बनी होती: F&O कॉन्ट्रैक्ट वाले स्टॉक्स का क्लोज़ 3:15 के बाद क्लोज़िंग ऑक्शन तय करता है, और बाक़ी का क्लोज़ लगभग आख़िरी 30 मिनट का औसत होता है। इसलिए क्लोज़, EMA और RSI अभी बदल सकते हैं, और 'हाँ' 'ना' बन सकता है। डेली नियम पूरी बनी कैंडल पर जाँचा जाता है: क्लोज़ के बाद स्कैन, और अगली सुबह का प्लान। ऑर्डर को आधा-आधा करना या तेज़ चार्ट पर जाना, टाइमिंग की ग़लती को बस छिपा देता है।"
    }
   },
   {

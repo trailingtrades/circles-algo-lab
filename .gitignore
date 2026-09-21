@@ -1,2 +1,5 @@
 
 __pycache__/
+
+# Stage 1 mentor-edition decks (quiz answers in notes) - never commit or serve
+.mentor-decks/

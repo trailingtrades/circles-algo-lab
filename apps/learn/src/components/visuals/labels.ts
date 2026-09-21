@@ -17,6 +17,7 @@ export const VL = {
   bullish: t3("Green candle: close above open", "Green candle: close, open se upar", "हरी कैंडल: क्लोज़, ओपन से ऊपर"),
   bearish: t3("Red candle: close below open", "Red candle: close, open se neeche", "लाल कैंडल: क्लोज़, ओपन से नीचे"),
   volume: t3("Volume", "Volume", "वॉल्यूम"),
+  table: t3("Table", "Table", "टेबल"),
 } satisfies Record<string, L>;
 
 /** `hue` is the speaker name's TEXT colour (12px bold on --panel-2), so it must clear AA on both themes:

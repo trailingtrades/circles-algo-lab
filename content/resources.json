@@ -8,14 +8,6 @@
   "storage_path": "https://drive.google.com/file/d/1D03lWibwVrePE_iQHc_ae4LPnXI-y7HM/view"
  },
  {
-  "level": "foundation",
-  "week": null,
-  "kind": "workbook",
-  "file_name": "Stage 1 Rule Card + Journal + Sizing templates (Google Sheets)",
-  "note": "coming soon",
-  "storage_path": null
- },
- {
   "level": "intermediate",
   "week": null,
   "kind": "workbook",
@@ -48,84 +40,12 @@
   "storage_path": "https://drive.google.com/file/d/1MJsyuDyzMdXUTBBjojRQoA_G3_Z-pgWL/view"
  },
  {
-  "level": "foundation",
-  "week": 1,
-  "kind": "deck",
-  "file_name": "5Circles_Candlestick_Basics (Google Slides)",
-  "note": "candles, trend, S/R — pairs with Session 5",
-  "storage_path": "https://docs.google.com/presentation/d/1XUH2eezNFWBp_3UebzPCo4O6zdOMbes6Q2XKL1Q_P-0/edit"
- },
- {
-  "level": "foundation",
-  "week": 1,
-  "kind": "deck",
-  "file_name": "5Circles_Chart_Patterns (Google Slides)",
-  "note": "price structure and patterns — pairs with Sessions 5-6",
-  "storage_path": "https://docs.google.com/presentation/d/1OCWV7Yr-8n-UU5VyJrTJyIaMy7Qlt5iEzmKRpiqPDXE/edit"
- },
- {
   "level": null,
   "week": null,
   "kind": "link",
   "file_name": "AI Trading Course — Curriculum Index (Google Sheet)",
   "note": "week and session index of the curriculum",
   "storage_path": "https://docs.google.com/spreadsheets/d/1ZzMybEjVJpPpG6DFqsJyd5RceOJHgrCwNkYT1f8vIh4/edit"
- },
- {
-  "level": "foundation",
-  "week": 1,
-  "kind": "deck",
-  "file_name": "5C_AITC_Foundation_Week1_Deck_v1_1.pptx",
-  "note": "Week 1 class deck",
-  "storage_path": "https://drive.google.com/file/d/1NDaZPAPzi5qGpku0QaNMXywM6-pjj0Ne/view"
- },
- {
-  "level": "foundation",
-  "week": 1,
-  "kind": "handout",
-  "file_name": "5C_AITC_Foundation_Handout1_v1.pdf",
-  "note": "Week 1 handout",
-  "storage_path": "https://drive.google.com/file/d/1KXPGM1iyOqSWpsXqdTWcUsl3brMgfF2z/view"
- },
- {
-  "level": "foundation",
-  "week": 2,
-  "kind": "deck",
-  "file_name": "5C_AITC_Foundation_Week2_Deck_v1.pptx",
-  "note": "Week 2 class deck",
-  "storage_path": "https://drive.google.com/file/d/1TP7OgK3eG19wg__qh_W6AYQCbmj9lMXd/view"
- },
- {
-  "level": "foundation",
-  "week": 2,
-  "kind": "handout",
-  "file_name": "5C_AITC_Foundation_Handout2_v1.pdf",
-  "note": "Week 2 handout",
-  "storage_path": "https://drive.google.com/file/d/1NNnlWCRMH6JhkAWRHOE5U0B1bsGdHrq8/view"
- },
- {
-  "level": "foundation",
-  "week": 3,
-  "kind": "deck",
-  "file_name": "5C_AITC_Foundation_Week3_Deck_v1.pptx",
-  "note": "Week 3 class deck",
-  "storage_path": "https://drive.google.com/file/d/1zAmk7chCNGzUt_DWJpL13AH8JpZwUZfp/view"
- },
- {
-  "level": "foundation",
-  "week": 3,
-  "kind": "handout",
-  "file_name": "5C_AITC_Foundation_Handout3_v1.pdf",
-  "note": "Week 3 handout",
-  "storage_path": "https://drive.google.com/file/d/1S0oIzQuv_TsHp6n_uSnGdLQ4AkQcLrfu/view"
- },
- {
-  "level": "foundation",
-  "week": null,
-  "kind": "workbook",
-  "file_name": "5C_AITC_Foundation_Workbook_v1.pdf",
-  "note": "Stage 1 workbook",
-  "storage_path": "https://drive.google.com/file/d/1cThjak0q4GXy_DXPXDSjzLOXZdjyX0Z-/view"
  },
  {
   "level": "intermediate",
@@ -270,5 +190,113 @@
   "file_name": "5C_AITC_Advanced_Workbook_v1.pdf",
   "note": "Level 3 workbook",
   "storage_path": "https://drive.google.com/file/d/1JwSxWTXH-rnXMvXeP1-3ztRekVhxB_gI/view"
+ },
+ {
+  "level": "foundation",
+  "week": 1,
+  "lang": "en",
+  "kind": "handout",
+  "file_name": "CIRCLE-SMART_Week1_Handout_EN.pdf",
+  "note": "Week 1 handout (English)",
+  "storage_path": "/learn/files/stage1/CIRCLE-SMART_Week1_Handout_EN.pdf"
+ },
+ {
+  "level": "foundation",
+  "week": 1,
+  "lang": "hi",
+  "kind": "handout",
+  "file_name": "CIRCLE-SMART_Week1_Handout_HINGLISH.pdf",
+  "note": "Week 1 handout (Hinglish)",
+  "storage_path": "/learn/files/stage1/CIRCLE-SMART_Week1_Handout_HINGLISH.pdf"
+ },
+ {
+  "level": "foundation",
+  "week": 1,
+  "lang": "en",
+  "kind": "deck",
+  "file_name": "CIRCLE-SMART_Week1_Deck_EN.pptx",
+  "note": "Week 1 class deck (English)",
+  "storage_path": "/learn/files/stage1/CIRCLE-SMART_Week1_Deck_EN.pptx"
+ },
+ {
+  "level": "foundation",
+  "week": 1,
+  "lang": "hi",
+  "kind": "deck",
+  "file_name": "CIRCLE-SMART_Week1_Deck_HINGLISH.pptx",
+  "note": "Week 1 class deck (Hinglish)",
+  "storage_path": "/learn/files/stage1/CIRCLE-SMART_Week1_Deck_HINGLISH.pptx"
+ },
+ {
+  "level": "foundation",
+  "week": 2,
+  "lang": "en",
+  "kind": "handout",
+  "file_name": "CIRCLE-SMART_Week2_Handout_EN.pdf",
+  "note": "Week 2 handout (English)",
+  "storage_path": "/learn/files/stage1/CIRCLE-SMART_Week2_Handout_EN.pdf"
+ },
+ {
+  "level": "foundation",
+  "week": 2,
+  "lang": "hi",
+  "kind": "handout",
+  "file_name": "CIRCLE-SMART_Week2_Handout_HINGLISH.pdf",
+  "note": "Week 2 handout (Hinglish)",
+  "storage_path": "/learn/files/stage1/CIRCLE-SMART_Week2_Handout_HINGLISH.pdf"
+ },
+ {
+  "level": "foundation",
+  "week": 2,
+  "lang": "en",
+  "kind": "deck",
+  "file_name": "CIRCLE-SMART_Week2_Deck_EN.pptx",
+  "note": "Week 2 class deck (English)",
+  "storage_path": "/learn/files/stage1/CIRCLE-SMART_Week2_Deck_EN.pptx"
+ },
+ {
+  "level": "foundation",
+  "week": 2,
+  "lang": "hi",
+  "kind": "deck",
+  "file_name": "CIRCLE-SMART_Week2_Deck_HINGLISH.pptx",
+  "note": "Week 2 class deck (Hinglish)",
+  "storage_path": "/learn/files/stage1/CIRCLE-SMART_Week2_Deck_HINGLISH.pptx"
+ },
+ {
+  "level": "foundation",
+  "week": 3,
+  "lang": "en",
+  "kind": "handout",
+  "file_name": "CIRCLE-SMART_Week3_Handout_EN.pdf",
+  "note": "Week 3 handout (English)",
+  "storage_path": "/learn/files/stage1/CIRCLE-SMART_Week3_Handout_EN.pdf"
+ },
+ {
+  "level": "foundation",
+  "week": 3,
+  "lang": "hi",
+  "kind": "handout",
+  "file_name": "CIRCLE-SMART_Week3_Handout_HINGLISH.pdf",
+  "note": "Week 3 handout (Hinglish)",
+  "storage_path": "/learn/files/stage1/CIRCLE-SMART_Week3_Handout_HINGLISH.pdf"
+ },
+ {
+  "level": "foundation",
+  "week": 3,
+  "lang": "en",
+  "kind": "deck",
+  "file_name": "CIRCLE-SMART_Week3_Deck_EN.pptx",
+  "note": "Week 3 class deck (English)",
+  "storage_path": "/learn/files/stage1/CIRCLE-SMART_Week3_Deck_EN.pptx"
+ },
+ {
+  "level": "foundation",
+  "week": 3,
+  "lang": "hi",
+  "kind": "deck",
+  "file_name": "CIRCLE-SMART_Week3_Deck_HINGLISH.pptx",
+  "note": "Week 3 class deck (Hinglish)",
+  "storage_path": "/learn/files/stage1/CIRCLE-SMART_Week3_Deck_HINGLISH.pptx"
  }
 ]

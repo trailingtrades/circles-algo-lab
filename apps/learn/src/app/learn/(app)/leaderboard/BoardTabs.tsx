@@ -8,7 +8,7 @@ type Tab = "process" | "consistency" | "improved";
 /* Every board ranks process (score points, journal days, reviews). None of them can show money. */
 const TABS: { k: Tab; label: L; sub: L }[] = [
   { k: "process", label: t3("Process Score", "Process Score", "प्रोसेस स्कोर"), sub: t3("Total so far, out of 1000.", "Ab tak ka total, 1000 mein se.", "अब तक का कुल, 1000 में से।") },
-  { k: "consistency", label: t3("Consistency", "Consistency", "नियमितता"), sub: t3("One point for each day you wrote in your journal this week, two for the weekly review. Starts again every Monday.", "Is hafte jis din journal likha, uska 1 point; weekly review ke 2. Har Monday se phir shuru.", "इस हफ़्ते जिस दिन जर्नल लिखा, उसका 1 पॉइंट; हफ़्ते के रिव्यू के 2। हर सोमवार से फिर शुरू।") },
+  { k: "consistency", label: t3("Consistency", "Consistency", "नियमितता"), sub: t3("One point for each day you wrote in your journal this week, two for the weekly review. Starts again every Monday.", "Is hafte jis din journal likha, uska 1 point; weekly review ke 2. Har Monday se phir shuru.", "इस हफ़्ते जिस दिन जर्नल लिखा, उसका 1 पॉइंट; साप्ताहिक रिव्यू के 2। हर सोमवार से फिर शुरू।") },
   { k: "improved", label: t3("Most improved", "Sabse zyada sudhaar", "सबसे ज़्यादा सुधार"), sub: t3("Process points earned in the last 14 days.", "Pichhle 14 din mein kamaaye process points.", "पिछले 14 दिन में मिले प्रोसेस पॉइंट।") },
 ];
 const S = {

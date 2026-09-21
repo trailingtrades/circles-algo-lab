@@ -28,6 +28,12 @@ jobs:
           n=$(ls scripts/content_v3/smart/day*.json 2>/dev/null | wc -l)
           if [ "$n" -eq 21 ]; then python3 scripts/content_v3/build_smart.py
           else echo "content_v3: $n of 21 day files present, validator skipped (content still built from content_v2)"; fi
+      # Warning only: the Stage 1 handout PDFs / decks in apps/learn/files/stage1/ were exported from the current
+      # day files (manifest.json sha256 vs scripts/content_v3/smart/dayNN.json). A stale export never blocks a merge.
+      - name: Stage 1 exports are current (warning only)
+        working-directory: .
+        continue-on-error: true
+        run: python3 scripts/ci/check_stage1_exports.py
       - name: content/ is up to date with its generator
         working-directory: .
         env: { PYTHONDONTWRITEBYTECODE: "1" }

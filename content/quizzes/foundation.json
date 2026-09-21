@@ -8,7 +8,7 @@
     "stem_dv": "प्रिया शुक्रवार को Gupta Cement Ltd के 10 शेयर ख़रीदती है। सोमवार आम ट्रेडिंग दिन है। T+1 सेटलमेंट में शेयर उसके डीमैट में कब आने चाहिए?",
     "options": [
      {
-      "en": "On Friday itself, within minutes",
+      "en": "On Friday, within a few minutes",
       "hi": "Friday ko hi, kuch minute mein",
       "dv": "शुक्रवार को ही, कुछ मिनट में",
       "distractor": true
@@ -45,71 +45,71 @@
     "stem_dv": "एक काल्पनिक इंडेक्स में तीन कंपनियाँ हैं। A का वज़न 60% है और उसका शेयर 3% गिरता है। B का वज़न 25% है और उसका शेयर 2% चढ़ता है। C का वज़न 15% है और उसका शेयर भी 2% चढ़ता है। इंडेक्स लगभग कितना हिलेगा?",
     "options": [
      {
-      "en": "It falls about 3.0%",
-      "hi": "Lagbhag 3% girega",
-      "dv": "लगभग 3% गिरेगा",
+      "en": "It falls about 3.0%: the biggest company sets the move",
+      "hi": "Lagbhag 3% girega: sabse badi company hi move tay karti hai",
+      "dv": "लगभग 3% गिरेगा: सबसे बड़ी कंपनी ही चाल तय करती है",
       "distractor": true
      },
      {
-      "en": "It stays exactly flat",
-      "hi": "Bilkul flat rahega",
-      "dv": "बिल्कुल फ़्लैट रहेगा",
+      "en": "It rises about 1.0%: just add the three moves",
+      "hi": "Lagbhag 1% chadhega: teeno moves ko seedha jod dijiye",
+      "dv": "लगभग 1% चढ़ेगा: तीनों चालों को सीधे जोड़ दीजिए",
       "distractor": true
      },
      {
-      "en": "It falls about 1.0%",
-      "hi": "Lagbhag 1% girega",
-      "dv": "लगभग 1% गिरेगा",
+      "en": "It falls about 1.0%: A's heavy weight outweighs B and C",
+      "hi": "Lagbhag 1% girega: A ka bhaari weight B aur C par bhaari padta hai",
+      "dv": "लगभग 1% गिरेगा: A का भारी वज़न B और C पर भारी पड़ता है",
       "distractor": false
      },
      {
-      "en": "It rises about 0.3%",
-      "hi": "Lagbhag 0.3% chadhega",
-      "dv": "लगभग 0.3% चढ़ेगा",
+      "en": "It rises about 0.3%: two of the three shares rose",
+      "hi": "Lagbhag 0.3% chadhega: teen mein se do shares chadhe",
+      "dv": "लगभग 0.3% चढ़ेगा: तीन में से दो शेयर चढ़े",
       "distractor": true
      }
     ],
     "correct_index": 2,
-    "explanation_en": "Multiply each move by its weight: 60% x -3% = -1.8%, 25% x +2% = +0.5%, 15% x +2% = +0.3%. Total: -1.0%. Two companies rose, yet the heavyweight pulled the index down. A plain average of the three moves (+0.3%) ignores weight.",
-    "explanation_hi": "Har move ko uske weight se multiply kijiye: 60% x -3% = -1.8%, 25% x +2% = +0.5%, 15% x +2% = +0.3%. Total: -1.0%. Do companies chadhi, phir bhi heavyweight ne index ko neeche kheench liya. Teeno moves ka seedha average (+0.3%) weight ko ignore kar deta hai.",
-    "explanation_dv": "हर चाल को उसके वज़न से गुणा कीजिए: 60% x -3% = -1.8%, 25% x +2% = +0.5%, 15% x +2% = +0.3%। कुल: -1.0%। दो कंपनियाँ चढ़ीं, फिर भी भारी कंपनी ने इंडेक्स को नीचे खींच लिया। तीनों चालों का सीधा एवरेज (+0.3%) वज़न को नज़रअंदाज़ कर देता है।",
+    "explanation_en": "Multiply each move by its weight: 60% x -3% = -1.8%, 25% x +2% = +0.5%, 15% x +2% = +0.3%. Total: -1.0%. Two companies rose, yet the heavyweight pulled the index down. A plain average of the three moves (+0.3%) or their plain sum (+1%) ignores weight, and A alone at -3% ignores the other two.",
+    "explanation_hi": "Har move ko uske weight se multiply kijiye: 60% x -3% = -1.8%, 25% x +2% = +0.5%, 15% x +2% = +0.3%. Total: -1.0%. Do companies chadhi, phir bhi heavyweight ne index ko neeche kheench liya. Teeno moves ka seedha average (+0.3%) ya seedha jod (+1%) weight ko ignore karta hai, aur sirf A ka -3% baaki do ko ignore karta hai.",
+    "explanation_dv": "हर चाल को उसके वज़न से गुणा कीजिए: 60% x -3% = -1.8%, 25% x +2% = +0.5%, 15% x +2% = +0.3%। कुल: -1.0%। दो कंपनियाँ चढ़ीं, फिर भी भारी कंपनी ने इंडेक्स को नीचे खींच लिया। तीनों चालों का सीधा एवरेज (+0.3%) या सीधा जोड़ (+1%) वज़न को नज़रअंदाज़ करता है, और सिर्फ़ A का -3% बाक़ी दो को नज़रअंदाज़ करता है।",
     "marks": 1,
     "difficulty": 1
    },
    {
-    "stem_en": "After settlement, where are the shares you bought actually held?",
-    "stem_hi": "Settlement ke baad aapke khareede hue shares asal mein kahan rakhe hote hain?",
-    "stem_dv": "सेटलमेंट के बाद आपके ख़रीदे हुए शेयर असल में कहाँ रखे होते हैं?",
+    "stem_en": "Priya opened her demat account through her broker, who is her depository participant (DP). After settlement, where are the shares she bought actually held?",
+    "stem_hi": "Priya ne apna demat account apne broker ke through khola, jo uska depository participant (DP) hai. Settlement ke baad uske khareede hue shares asal mein kahan rakhe hote hain?",
+    "stem_dv": "प्रिया ने अपना डीमैट अकाउंट अपने ब्रोकर के ज़रिए खोला, जो उसका डिपॉज़िटरी पार्टिसिपेंट (DP) है। सेटलमेंट के बाद उसके ख़रीदे हुए शेयर असल में कहाँ रखे होते हैं?",
     "options": [
      {
-      "en": "At the exchange, until you sell them",
-      "hi": "Exchange ke paas, jab tak aap bech na dein",
-      "dv": "एक्सचेंज के पास, जब तक आप बेच न दें",
+      "en": "At the exchange, until the day she sells them",
+      "hi": "Exchange ke paas, jab tak woh unhe bech na de",
+      "dv": "एक्सचेंज के पास, जब तक वह उन्हें बेच न दे",
       "distractor": true
      },
      {
-      "en": "With SEBI, in a central share locker",
-      "hi": "SEBI ke paas, ek central share locker mein",
-      "dv": "SEBI के पास, एक सेंट्रल शेयर लॉकर में",
+      "en": "With SEBI, in one central locker for all investors",
+      "hi": "SEBI ke paas, sab investors ke ek central locker mein",
+      "dv": "SEBI के पास, सब इन्वेस्टरों के एक सेंट्रल लॉकर में",
       "distractor": true
      },
      {
-      "en": "In your demat, at NSDL or CDSL",
-      "hi": "Aapke demat mein, NSDL ya CDSL ke paas",
-      "dv": "आपके डीमैट में, NSDL या CDSL के पास",
+      "en": "In her own demat account at NSDL or CDSL, in her name",
+      "hi": "Uske apne demat account mein, NSDL ya CDSL ke paas, uske naam par",
+      "dv": "उसके अपने डीमैट अकाउंट में, NSDL या CDSL के पास, उसके नाम पर",
       "distractor": false
      },
      {
-      "en": "In your broker's own company account",
-      "hi": "Broker ki apni company ke account mein",
-      "dv": "ब्रोकर की अपनी कंपनी के अकाउंट में",
+      "en": "In her broker's own company account, since the broker is her DP",
+      "hi": "Broker ki apni company ke account mein, kyunki broker uska DP hai",
+      "dv": "ब्रोकर की अपनी कंपनी के अकाउंट में, क्योंकि ब्रोकर उसका DP है",
       "distractor": true
      }
     ],
     "correct_index": 2,
-    "explanation_en": "Shares sit in electronic form in your own demat account, held at a depository (NSDL or CDSL) in your name. The broker carries your orders, the exchange matches trades and SEBI makes the rules. Check the statement your depository sends you, and never share your OTP or TPIN.",
-    "explanation_hi": "Shares electronic form mein aapke apne demat account mein rehte hain, depository (NSDL ya CDSL) ke paas, aapke naam par. Broker aapke orders le jaata hai, exchange trades match karta hai, aur SEBI rules banata hai. Depository jo statement bhejti hai use check karte rahiye, aur OTP ya TPIN kabhi share mat kijiye.",
-    "explanation_dv": "शेयर इलेक्ट्रॉनिक रूप में आपके अपने डीमैट अकाउंट में रहते हैं, डिपॉज़िटरी (NSDL या CDSL) के पास, आपके नाम पर। ब्रोकर आपके ऑर्डर ले जाता है, एक्सचेंज ट्रेड मैच करता है, और SEBI नियम बनाता है। डिपॉज़िटरी जो स्टेटमेंट भेजती है, उसे देखते रहिए, और OTP या TPIN कभी शेयर न करें।",
+    "explanation_en": "Shares sit in electronic form in her own demat account, held at a depository (NSDL or CDSL) in her name. The broker, as her DP, opens and services the account and carries her orders; it does not own her shares. The exchange matches trades and SEBI makes the rules. Check the statement your depository sends you, and never share your OTP or TPIN.",
+    "explanation_hi": "Shares electronic form mein uske apne demat account mein rehte hain, depository (NSDL ya CDSL) ke paas, uske naam par. Broker uska DP hai: account kholta aur sambhalta hai aur orders le jaata hai, lekin shares uske nahi hote. Exchange trades match karta hai, aur SEBI rules banata hai. Depository jo statement bhejti hai use check karte rahiye, aur OTP ya TPIN kabhi share mat kijiye.",
+    "explanation_dv": "शेयर इलेक्ट्रॉनिक रूप में उसके अपने डीमैट अकाउंट में रहते हैं, डिपॉज़िटरी (NSDL या CDSL) के पास, उसके नाम पर। ब्रोकर उसका DP है: अकाउंट खोलता और सँभालता है और ऑर्डर ले जाता है, लेकिन शेयर उसके नहीं होते। एक्सचेंज ट्रेड मैच करता है, और SEBI नियम बनाता है। डिपॉज़िटरी जो स्टेटमेंट भेजती है, उसे देखते रहिए, और OTP या TPIN कभी शेयर न करें।",
     "marks": 1,
     "difficulty": 1
    },
@@ -230,9 +230,9 @@
     "difficulty": 1
    },
    {
-    "stem_en": "Bharat Pumps Ltd is trading at Rs 100. Priya places a limit buy at Rs 98. During the day the price dips to Rs 99, then climbs to Rs 110. What happens to her order?",
-    "stem_hi": "Bharat Pumps Ltd Rs 100 par trade ho raha hai. Priya Rs 98 ka limit buy lagati hai. Din mein price Rs 99 tak girta hai, phir Rs 110 tak chadh jaata hai. Uske order ka kya hota hai?",
-    "stem_dv": "Bharat Pumps Ltd Rs 100 पर ट्रेड हो रहा है। प्रिया Rs 98 का लिमिट बाय लगाती है। दिन में भाव Rs 99 तक गिरता है, फिर Rs 110 तक चढ़ जाता है। उसके ऑर्डर का क्या होता है?",
+    "stem_en": "Joshi Pipes Ltd is trading at Rs 100. Priya places a limit buy at Rs 98. During the day the price dips to Rs 99, then climbs to Rs 110. What happens to her order?",
+    "stem_hi": "Joshi Pipes Ltd Rs 100 par trade ho raha hai. Priya Rs 98 ka limit buy lagati hai. Din mein price Rs 99 tak girta hai, phir Rs 110 tak chadh jaata hai. Uske order ka kya hota hai?",
+    "stem_dv": "Joshi Pipes Ltd Rs 100 पर ट्रेड हो रहा है। प्रिया Rs 98 का लिमिट बाय लगाती है। दिन में भाव Rs 99 तक गिरता है, फिर Rs 110 तक चढ़ जाता है। उसके ऑर्डर का क्या होता है?",
     "options": [
      {
       "en": "It fills at Rs 110 once the price starts rising",
@@ -247,9 +247,9 @@
       "distractor": true
      },
      {
-      "en": "It fills at Rs 99, the lowest price of the day",
-      "hi": "Rs 99 par fill hota hai, din ka sabse neecha price",
-      "dv": "Rs 99 पर फ़िल होता है, दिन का सबसे नीचा भाव",
+      "en": "It fills at Rs 99, the day's low",
+      "hi": "Rs 99 par fill hota hai, din ka low",
+      "dv": "Rs 99 पर फ़िल होता है, दिन का लो",
       "distractor": true
      },
      {
@@ -267,51 +267,51 @@
     "difficulty": 1
    },
    {
-    "stem_en": "Priya holds 40 shares of Sharma Textiles Ltd, bought at Rs 260. Each morning before the open she places an SL-M sell with the trigger at Rs 245. One night bad news comes out, and the stock opens at Rs 230. What is her loss most likely to be?",
-    "stem_hi": "Priya ke paas Sharma Textiles Ltd ke 40 shares hain, jo usne Rs 260 par khareede the. Woh har subah market khulne se pehle Rs 245 trigger wala SL-M sell lagati hai. Ek raat buri khabar aati hai, aur stock Rs 230 par khulta hai. Uska loss lagbhag kitna hone wala hai?",
-    "stem_dv": "प्रिया के पास Sharma Textiles Ltd के 40 शेयर हैं, जो उसने Rs 260 पर ख़रीदे थे। वह हर सुबह बाज़ार खुलने से पहले Rs 245 ट्रिगर वाला SL-M सेल लगाती है। एक रात बुरी ख़बर आती है, और स्टॉक Rs 230 पर खुलता है। उसका लॉस लगभग कितना होने वाला है?",
+    "stem_en": "Priya holds 40 shares of Sharma Textiles Ltd, bought at Rs 260. Every evening she places an SL-M sell with the trigger at Rs 245 as an AMO. One night bad news comes out, and the stock opens at Rs 230. What is her loss most likely to be?",
+    "stem_hi": "Priya ke paas Sharma Textiles Ltd ke 40 shares hain, jo usne Rs 260 par khareede the. Woh har shaam Rs 245 trigger wala SL-M sell AMO ki tarah lagati hai. Ek raat buri khabar aati hai, aur stock Rs 230 par khulta hai. Uska loss lagbhag kitna hone wala hai?",
+    "stem_dv": "प्रिया के पास Sharma Textiles Ltd के 40 शेयर हैं, जो उसने Rs 260 पर ख़रीदे थे। वह हर शाम Rs 245 ट्रिगर वाला SL-M सेल AMO की तरह लगाती है। एक रात बुरी ख़बर आती है, और स्टॉक Rs 230 पर खुलता है। उसका लॉस लगभग कितना होने वाला है?",
     "options": [
      {
-      "en": "About Rs 900, selling halfway at Rs 237.50",
-      "hi": "Lagbhag Rs 900, beech mein Rs 237.50 par bikkar",
-      "dv": "लगभग Rs 900, बीच में Rs 237.50 पर बिककर",
+      "en": "About Rs 900: the order sells halfway down, at Rs 237.50",
+      "hi": "Lagbhag Rs 900: order beech mein, Rs 237.50 par bikega",
+      "dv": "लगभग Rs 900: ऑर्डर बीच में, Rs 237.50 पर बिकेगा",
       "distractor": true
      },
      {
-      "en": "About Rs 1,200, selling near Rs 230",
-      "hi": "Lagbhag Rs 1,200, Rs 230 ke aas-paas bikkar",
-      "dv": "लगभग Rs 1,200, Rs 230 के आसपास बिककर",
+      "en": "About Rs 1,200: her exit comes near the Rs 230 open, not Rs 245",
+      "hi": "Lagbhag Rs 1,200: exit Rs 230 ke open ke paas hoga, Rs 245 par nahi",
+      "dv": "लगभग Rs 1,200: एग्ज़िट Rs 230 के ओपन के पास होगा, Rs 245 पर नहीं",
       "distractor": false
      },
      {
-      "en": "Nothing yet; the SL-M waits for Rs 245 again",
-      "hi": "Abhi kuch nahi; SL-M dobara Rs 245 ka wait karega",
-      "dv": "अभी कुछ नहीं; SL-M दोबारा Rs 245 का इंतज़ार करेगा",
+      "en": "Nothing yet: the stop waits for the price to return to Rs 245",
+      "hi": "Abhi kuch nahi: stop price ke Rs 245 par lautne ka wait karega",
+      "dv": "अभी कुछ नहीं: स्टॉप भाव के Rs 245 पर लौटने का इंतज़ार करेगा",
       "distractor": true
      },
      {
-      "en": "Exactly Rs 600, selling at the Rs 245 trigger",
-      "hi": "Theek Rs 600, Rs 245 ke trigger par bikkar",
-      "dv": "ठीक Rs 600, Rs 245 के ट्रिगर पर बिककर",
+      "en": "Exactly Rs 600: a stop always sells at its Rs 245 trigger",
+      "hi": "Theek Rs 600: stop hamesha Rs 245 ke trigger par hi bechta hai",
+      "dv": "ठीक Rs 600: स्टॉप हमेशा Rs 245 के ट्रिगर पर ही बेचता है",
       "distractor": true
      }
     ],
     "correct_index": 1,
-    "explanation_en": "Her plan was a loss of Rs 15 a share: 40 x Rs 15 = Rs 600. But the stock opened at Rs 230, already below the trigger, so the SL-M woke up at the open and sold at the next available price, near Rs 230: 40 x Rs 30 = about Rs 1,200. If the broker rejects a stop whose trigger is already crossed, she must sell herself, again near Rs 230 or lower. A stop-loss decides when your exit order goes in. On a gap day, the market decides the price.",
-    "explanation_hi": "Plan Rs 15 per share ke loss ka tha: 40 x Rs 15 = Rs 600. Lekin stock Rs 230 par khula, trigger se bhi neeche, isliye SL-M open par hi jaag gaya aur shares agle available price, yaani Rs 230 ke aas-paas bik gaye: 40 x Rs 30 = lagbhag Rs 1,200. Agar broker aisa stop reject kar de jiska trigger pehle hi paar ho chuka ho, toh use khud bechna padega, phir bhi Rs 230 ke aas-paas ya usse neeche. Stop-loss tay karta hai ki exit order kab jaayega. Gap wale din price market tay karta hai.",
-    "explanation_dv": "प्लान Rs 15 प्रति शेयर के लॉस का था: 40 x Rs 15 = Rs 600। लेकिन स्टॉक Rs 230 पर खुला, ट्रिगर से भी नीचे, इसलिए SL-M ओपन पर ही जाग गया और शेयर अगले मिलने वाले भाव, यानी Rs 230 के आसपास बिक गए: 40 x Rs 30 = लगभग Rs 1,200। अगर ब्रोकर ऐसा स्टॉप रिजेक्ट कर दे जिसका ट्रिगर पहले ही पार हो चुका हो, तो उसे ख़ुद बेचना पड़ेगा, फिर भी Rs 230 के आसपास या उससे नीचे। स्टॉप-लॉस तय करता है कि एग्ज़िट ऑर्डर कब जाएगा। गैप वाले दिन भाव बाज़ार तय करता है।",
+    "explanation_en": "Her plan was a loss of Rs 15 a share: 40 x Rs 15 = Rs 600. But her AMO reaches the exchange only at 9:15, and by then the pre-open has set the price at Rs 230, below her trigger. Many brokers reject a sell stop whose trigger is already above the price, and she must sell herself; some systems trigger it at once. Either way she exits near Rs 230: 40 x Rs 30 = about Rs 1,200. A stop-loss decides when your exit order goes in. On a gap day, the market decides the price.",
+    "explanation_hi": "Plan Rs 15 per share ke loss ka tha: 40 x Rs 15 = Rs 600. Lekin uska AMO exchange tak 9:15 par hi pahunchta hai, aur tab tak pre-open price ko Rs 230 par tay kar chuka hota hai, trigger se neeche. Kai brokers aisa sell stop reject kar dete hain jiska trigger pehle se price ke upar ho, tab use khud bechna padta hai; kuch systems use turant trigger kar dete hain. Dono haalat mein exit Rs 230 ke aas-paas: 40 x Rs 30 = lagbhag Rs 1,200. Stop-loss tay karta hai ki exit order kab jaayega. Gap wale din price market tay karta hai.",
+    "explanation_dv": "प्लान Rs 15 प्रति शेयर के लॉस का था: 40 x Rs 15 = Rs 600। लेकिन उसका AMO एक्सचेंज तक 9:15 पर ही पहुँचता है, और तब तक प्री-ओपन भाव को Rs 230 पर तय कर चुका होता है, ट्रिगर से नीचे। कई ब्रोकर ऐसा सेल स्टॉप रिजेक्ट कर देते हैं जिसका ट्रिगर पहले से भाव के ऊपर हो, तब उसे ख़ुद बेचना पड़ता है; कुछ सिस्टम उसे तुरंत ट्रिगर कर देते हैं। दोनों हालत में एग्ज़िट Rs 230 के आसपास: 40 x Rs 30 = लगभग Rs 1,200। स्टॉप-लॉस तय करता है कि एग्ज़िट ऑर्डर कब जाएगा। गैप वाले दिन भाव बाज़ार तय करता है।",
     "marks": 1,
     "difficulty": 1
    },
    {
-    "stem_en": "Aman sets a GTT on his broker app to buy Bharat Pumps Ltd if the price hits Rs 95. Which statement about this GTT is correct?",
-    "stem_hi": "Aman apne broker app par GTT set karta hai ki price Rs 95 hit kare toh Bharat Pumps Ltd khareed liya jaye. Is GTT ke baare mein kaunsi baat sahi hai?",
-    "stem_dv": "अमन अपने ब्रोकर ऐप पर GTT सेट करता है कि भाव Rs 95 छुए तो Bharat Pumps Ltd ख़रीद लिया जाए। इस GTT के बारे में कौन-सी बात सही है?",
+    "stem_en": "Aman sets a GTT on his broker app to buy Joshi Pipes Ltd if the price hits Rs 95. Which statement about this GTT is correct?",
+    "stem_hi": "Aman apne broker app par GTT set karta hai ki price Rs 95 hit kare toh Joshi Pipes Ltd khareed liya jaye. Is GTT ke baare mein kaunsi baat sahi hai?",
+    "stem_dv": "अमन अपने ब्रोकर ऐप पर GTT सेट करता है कि भाव Rs 95 छुए तो Joshi Pipes Ltd ख़रीद लिया जाए। इस GTT के बारे में कौन-सी बात सही है?",
     "options": [
      {
-      "en": "Like a day order, it is cancelled at 3:30 pm the same day",
-      "hi": "Day order ki tarah yeh usi din 3:30 baje cancel ho jaata hai",
-      "dv": "डे ऑर्डर की तरह यह उसी दिन 3:30 बजे कैंसिल हो जाता है",
+      "en": "Like a day order, it is cancelled at the close the same day",
+      "hi": "Day order ki tarah yeh usi din close par cancel ho jaata hai",
+      "dv": "डे ऑर्डर की तरह यह उसी दिन बाज़ार बंद होने पर कैंसिल हो जाता है",
       "distractor": true
      },
      {
@@ -341,9 +341,9 @@
     "difficulty": 1
    },
    {
-    "stem_en": "Aman buys 30 shares of Kiran Foods Ltd tagged as intraday (MIS). At 3:00 pm he still holds them and closes the app for the rest of the day. What most likely happens?",
-    "stem_hi": "Aman Kiran Foods Ltd ke 30 shares intraday (MIS) tag ke saath khareedta hai. Dopahar 3:00 baje bhi shares uske paas hain, aur woh baaki din ke liye app band kar deta hai. Sabse zyada chance kis baat ka hai?",
-    "stem_dv": "अमन Kiran Foods Ltd के 30 शेयर इंट्राडे (MIS) टैग के साथ ख़रीदता है। दोपहर 3:00 बजे भी शेयर उसके पास हैं, और वह बाक़ी दिन के लिए ऐप बंद कर देता है। सबसे ज़्यादा संभावना किस बात की है?",
+    "stem_en": "Aman buys 30 shares of Kiran Foods Ltd tagged as intraday (MIS). At 1:00 pm he still holds them and closes the app for the rest of the day. What most likely happens?",
+    "stem_hi": "Aman Kiran Foods Ltd ke 30 shares intraday (MIS) tag ke saath khareedta hai. Dopahar 1:00 baje bhi shares uske paas hain, aur woh baaki din ke liye app band kar deta hai. Sabse zyada chance kis baat ka hai?",
+    "stem_dv": "अमन Kiran Foods Ltd के 30 शेयर इंट्राडे (MIS) टैग के साथ ख़रीदता है। दोपहर 1:00 बजे भी शेयर उसके पास हैं, और वह बाक़ी दिन के लिए ऐप बंद कर देता है। सबसे ज़्यादा संभावना किस बात की है?",
     "options": [
      {
       "en": "The position carries over to the next trading day",
@@ -371,9 +371,9 @@
      }
     ],
     "correct_index": 3,
-    "explanation_en": "An intraday (MIS) position must be closed the same day. If you do not close it, your broker's system squares it off at a cut-off time it sets before 3:30 pm, at whatever the price is then, and some brokers charge a fee. Only a delivery (CNC) buy goes to your demat on T+1.",
-    "explanation_hi": "Intraday (MIS) position usi din band karni hoti hai. Agar aap band nahi karte, toh broker ka system 3:30 se pehle apne tay kiye cut-off time par, us waqt ke price par, use square off kar deta hai, aur kuch brokers iski fee bhi lete hain. Sirf delivery (CNC) wala buy T+1 par demat mein jaata hai.",
-    "explanation_dv": "इंट्राडे (MIS) पोज़िशन उसी दिन बंद करनी होती है। अगर आप बंद नहीं करते, तो ब्रोकर का सिस्टम 3:30 से पहले अपने तय किए कट-ऑफ़ टाइम पर, उस वक़्त के भाव पर, उसे स्क्वेयर-ऑफ़ कर देता है, और कुछ ब्रोकर इसकी फ़ीस भी लेते हैं। सिर्फ़ डिलीवरी (CNC) वाला बाय T+1 पर डीमैट में जाता है।",
+    "explanation_en": "An intraday (MIS) position must be closed the same day. If you do not close it, your broker's system squares it off at a cut-off time it sets near the end of the day, at whatever the price is then, and some brokers charge a fee. Every broker's cut-off is different, so check yours. Only a delivery (CNC) buy goes to your demat on T+1.",
+    "explanation_hi": "Intraday (MIS) position usi din band karni hoti hai. Agar aap band nahi karte, toh broker ka system din ke aakhir mein apne tay kiye cut-off time par, us waqt ke price par, use square off kar deta hai, aur kuch brokers iski fee bhi lete hain. Har broker ka cut-off alag hota hai, isliye apna check kar lijiye. Sirf delivery (CNC) wala buy T+1 par demat mein jaata hai.",
+    "explanation_dv": "इंट्राडे (MIS) पोज़िशन उसी दिन बंद करनी होती है। अगर आप बंद नहीं करते, तो ब्रोकर का सिस्टम दिन के आख़िर में अपने तय किए कट-ऑफ़ टाइम पर, उस वक़्त के भाव पर, उसे स्क्वेयर-ऑफ़ कर देता है, और कुछ ब्रोकर इसकी फ़ीस भी लेते हैं। हर ब्रोकर का कट-ऑफ़ अलग होता है, इसलिए अपना देख लीजिए। सिर्फ़ डिलीवरी (CNC) वाला बाय T+1 पर डीमैट में जाता है।",
     "marks": 1,
     "difficulty": 1
    }
@@ -536,9 +536,9 @@
     "stem_dv": "प्रिया के नियम ने 100 प्रैक्टिस ट्रेड में 55% विन-रेट और पॉज़िटिव एक्सपेक्टेंसी दिखाई। अब वो लगातार 5 ट्रेड हार गया है। सबसे समझदारी भरा क़दम क्या है?",
     "options": [
      {
-      "en": "Drop the rule at once, since five losses prove it has stopped working",
-      "hi": "Rule turant chhod de, kyunki paanch haar saabit karti hain ki woh kaam karna band kar chuka hai",
-      "dv": "नियम तुरंत छोड़ दे, क्योंकि पाँच हार साबित करती हैं कि वो काम करना बंद कर चुका है",
+      "en": "Drop the rule, since five losses in a row prove it no longer works",
+      "hi": "Rule chhod de, kyunki lagataar paanch haar saabit karti hain ki woh ab kaam nahi karta",
+      "dv": "नियम छोड़ दे, क्योंकि लगातार पाँच हार साबित करती हैं कि वो अब काम नहीं करता",
       "distractor": true
      },
      {
@@ -554,16 +554,16 @@
       "distractor": true
      },
      {
-      "en": "Pause, and check she followed her rules; such streaks are common",
-      "hi": "Ruk kar check kare ki rules follow hue; aisi streak aam hai",
-      "dv": "रुककर जाँचे कि नियम माने गए; ऐसी स्ट्रीक आम है",
+      "en": "Pause and check she followed her rules; 5 losses in a row are common here",
+      "hi": "Ruk kar check kare ki rules follow hue; lagataar 5 haar yahan aam baat hai",
+      "dv": "रुककर जाँचे कि नियम माने गए; लगातार 5 हार यहाँ आम बात है",
       "distractor": false
      }
     ],
     "correct_index": 3,
-    "explanation_en": "At a 55% win-rate, at least one run of 5 losses in 100 trades happens about 65% of the time, so a streak alone does not prove the rule is broken. First check whether she followed her rules and whether costs or market conditions have changed. Doubling up turns a normal streak into a deep drawdown, and no win is ever 'due': the market does not remember her last five trades. Later in the course you will learn a house rule to pause and review after a run like this.",
-    "explanation_hi": "55% win-rate par, 100 trades mein kam se kam ek baar lagataar 5 haar lagbhag 65% baar aati hai, isliye sirf streak se yeh saabit nahi hota ki rule toot gaya. Pehle check kijiye ki rules follow hue ya nahi, aur costs ya market ke halaat badle ya nahi. Size double karne se normal streak gehra drawdown ban jaati hai, aur koi jeet kabhi 'banti' nahi: market ko uske pichhle paanch trades yaad nahi rehte. Aage course mein aap aisi streak ke baad rukne aur review karne ka ek house rule seekhenge.",
-    "explanation_dv": "55% विन-रेट पर, 100 ट्रेड में कम से कम एक बार लगातार 5 हार लगभग 65% बार आती है, इसलिए सिर्फ़ स्ट्रीक से ये साबित नहीं होता कि नियम टूट गया। पहले जाँचिए कि नियम माने गए या नहीं, और कॉस्ट या बाज़ार के हालात बदले या नहीं। साइज़ डबल करने से नॉर्मल स्ट्रीक गहरा ड्रॉडाउन बन जाती है, और कोई जीत कभी 'बनती' नहीं: बाज़ार को उसके पिछले पाँच ट्रेड याद नहीं रहते। आगे कोर्स में आप ऐसी स्ट्रीक के बाद रुकने और रिव्यू करने का एक हाउस रूल सीखेंगे।",
+    "explanation_en": "At a 55% win-rate, at least one run of 5 losses in 100 trades happens about 65% of the time, so a streak alone does not prove the rule is broken. First check whether she followed her rules and whether costs or market conditions have changed. Doubling up turns a normal streak into a deep drawdown, and no win is ever 'due': the market does not remember her last five trades. From Day 9 the house rules make this automatic: stop for the day after -2R, and pause to review after -5R in a week.",
+    "explanation_hi": "55% win-rate par, 100 trades mein kam se kam ek baar lagataar 5 haar lagbhag 65% baar aati hai, isliye sirf streak se yeh saabit nahi hota ki rule toot gaya. Pehle check kijiye ki rules follow hue ya nahi, aur costs ya market ke halaat badle ya nahi. Size double karne se normal streak gehra drawdown ban jaati hai, aur koi jeet kabhi 'banti' nahi: market ko uske pichhle paanch trades yaad nahi rehte. Day 9 se house rules yeh kaam apne aap karwayenge: -2R ke baad us din trading band, aur hafte mein -5R ke baad ruk kar review.",
+    "explanation_dv": "55% विन-रेट पर, 100 ट्रेड में कम से कम एक बार लगातार 5 हार लगभग 65% बार आती है, इसलिए सिर्फ़ स्ट्रीक से ये साबित नहीं होता कि नियम टूट गया। पहले जाँचिए कि नियम माने गए या नहीं, और कॉस्ट या बाज़ार के हालात बदले या नहीं। साइज़ डबल करने से नॉर्मल स्ट्रीक गहरा ड्रॉडाउन बन जाती है, और कोई जीत कभी 'बनती' नहीं: बाज़ार को उसके पिछले पाँच ट्रेड याद नहीं रहते। दिन 9 से हाउस रूल ये काम अपने-आप करवाएँगे: -2R के बाद उस दिन ट्रेडिंग बंद, और हफ़्ते में -5R के बाद रुककर रिव्यू।",
     "marks": 1,
     "difficulty": 1
    }
@@ -652,34 +652,34 @@
     "stem_dv": "प्रिया के चाचा चाहते हैं कि AI चैट उनके कॉन्ट्रैक्ट नोट के चार्ज समझाए। PDF में उनका नाम, PAN, क्लाइंट कोड और पता है। मदद लेने का सबसे सुरक्षित तरीक़ा क्या है?",
     "options": [
      {
-      "en": "Type only the charge names into the chat",
-      "hi": "Sirf charges ke naam chat mein type karein",
-      "dv": "सिर्फ़ चार्ज के नाम चैट में टाइप करें",
+      "en": "Type only the charge names into the chat, and leave his identity out",
+      "hi": "Chat mein sirf charges ke naam type karein, unki pehchaan bahar rakhein",
+      "dv": "चैट में सिर्फ़ चार्ज के नाम टाइप करें, उनकी पहचान बाहर रखें",
       "distractor": false
      },
      {
-      "en": "Upload it, then delete the chat",
-      "hi": "Upload karein, phir chat delete kar dein",
-      "dv": "अपलोड करें, फिर चैट डिलीट कर दें",
+      "en": "Upload it in a temporary chat, so nothing is kept once he closes it",
+      "hi": "Temporary chat mein upload karein, taaki band karte hi kuch save na rahe",
+      "dv": "टेम्परेरी चैट में अपलोड करें, ताकि बंद करते ही कुछ सेव न रहे",
       "distractor": true
      },
      {
-      "en": "Upload it, but only to a paid AI subscription",
-      "hi": "Upload karein, par sirf paid AI subscription mein",
-      "dv": "अपलोड करें, पर सिर्फ़ पेड AI सब्सक्रिप्शन में",
+      "en": "Upload it, but only on a paid AI plan, where files stay private",
+      "hi": "Upload karein, par sirf paid AI plan par, jahan files private rehti hain",
+      "dv": "अपलोड करें, पर सिर्फ़ पेड AI प्लान पर, जहाँ फ़ाइलें प्राइवेट रहती हैं",
       "distractor": true
      },
      {
-      "en": "Upload the PDF; AI chats keep all data private",
-      "hi": "PDF upload karein; AI chat sab private rakhta hai",
-      "dv": "PDF अपलोड करें; AI चैट सब प्राइवेट रखता है",
+      "en": "Upload the PDF as it is; AI chats keep all uploaded data private",
+      "hi": "PDF waise hi upload kar dein; AI chats saara upload kiya data private rakhte hain",
+      "dv": "PDF वैसे ही अपलोड कर दें; AI चैट सारा अपलोड किया डेटा प्राइवेट रखते हैं",
       "distractor": true
      }
     ],
     "correct_index": 0,
-    "explanation_en": "An AI does not need anyone's identity to explain what brokerage, STT or stamp duty pay for. Whatever you upload may be stored or leaked, even on a paid plan, and a name, PAN and client code are exactly what a fraudster wants. Deleting the chat later does not undo what was already sent. Describe the part you need; never upload a document that identifies a person.",
-    "explanation_hi": "Brokerage, STT ya stamp duty kis cheez ka paisa hai, yeh samjhane ke liye AI ko kisi ki pehchaan nahi chahiye. Jo bhi upload hota hai, woh store ya leak ho sakta hai, paid plan mein bhi; aur naam, PAN, client code hi toh fraudster ko chahiye. Baad mein chat delete karne se bheja hua data wapas nahi aata. Jo hissa chahiye, bas uske baare mein likhiye; kisi ki pehchaan wala document kabhi upload mat kijiye.",
-    "explanation_dv": "ब्रोकरेज, STT या स्टांप ड्यूटी किस चीज़ का पैसा है, ये समझाने के लिए AI को किसी की पहचान नहीं चाहिए। जो भी अपलोड होता है, वो सेव या लीक हो सकता है, पेड प्लान में भी; और नाम, PAN, क्लाइंट कोड ही तो धोखेबाज़ को चाहिए। बाद में चैट डिलीट करने से भेजा हुआ डेटा वापस नहीं आता। जो हिस्सा चाहिए, बस उसके बारे में लिखिए; किसी की पहचान वाला डॉक्यूमेंट कभी अपलोड मत कीजिए।",
+    "explanation_en": "An AI does not need anyone's identity to explain what brokerage, STT or stamp duty pay for. Whatever you upload may be stored or leaked, even on a paid plan, and a name, PAN and client code are exactly what a fraudster wants. A temporary chat, or deleting the chat later, still sends the file to the company's servers first, so it does not make a PAN safe to share. Describe the part you need; never upload a document that identifies a person.",
+    "explanation_hi": "Brokerage, STT ya stamp duty kis cheez ka paisa hai, yeh samjhane ke liye AI ko kisi ki pehchaan nahi chahiye. Jo bhi upload hota hai, woh store ya leak ho sakta hai, paid plan mein bhi; aur naam, PAN, client code hi toh fraudster ko chahiye. Temporary chat, ya baad mein chat delete karna, file ko pehle company ke servers tak bhej hi deta hai; isliye isse PAN share karna safe nahi ho jaata. Jo hissa chahiye, bas uske baare mein likhiye; kisi ki pehchaan wala document kabhi upload mat kijiye.",
+    "explanation_dv": "ब्रोकरेज, STT या स्टांप ड्यूटी किस चीज़ का पैसा है, ये समझाने के लिए AI को किसी की पहचान नहीं चाहिए। जो भी अपलोड होता है, वो सेव या लीक हो सकता है, पेड प्लान में भी; और नाम, PAN, क्लाइंट कोड ही तो धोखेबाज़ को चाहिए। टेम्परेरी चैट, या बाद में चैट डिलीट करना, फ़ाइल को पहले कंपनी के सर्वर तक भेज ही देता है; इसलिए इससे PAN शेयर करना सुरक्षित नहीं हो जाता। जो हिस्सा चाहिए, बस उसके बारे में लिखिए; किसी की पहचान वाला डॉक्यूमेंट कभी अपलोड मत कीजिए।",
     "marks": 1,
     "difficulty": 1
    },
@@ -780,9 +780,9 @@
       "distractor": true
      },
      {
-      "en": "A green candle, though the stock is down Rs 5 today",
-      "hi": "Hari candle, halanki share aaj Rs 5 neeche hai",
-      "dv": "हरी कैंडल, हालाँकि शेयर आज Rs 5 नीचे है",
+      "en": "A green candle, even though the stock is down Rs 5 on the day",
+      "hi": "Hari candle, bhale hi share aaj Rs 5 neeche hai",
+      "dv": "हरी कैंडल, भले ही शेयर आज Rs 5 नीचे है",
       "distractor": false
      },
      {
@@ -860,9 +860,9 @@
       "distractor": true
      },
      {
-      "en": "The rise came on below-average volume: 0.75 times",
-      "hi": "Yeh rise average se kam volume par hua: 0.75 guna",
-      "dv": "यह बढ़त एवरेज से कम वॉल्यूम पर हुई: 0.75 गुना",
+      "en": "The rise came on below-average volume: only 0.75 times",
+      "hi": "Yeh rise average se kam volume par hua: sirf 0.75 guna",
+      "dv": "यह बढ़त एवरेज से कम वॉल्यूम पर हुई: सिर्फ़ 0.75 गुना",
       "distractor": false
      }
     ],
@@ -879,9 +879,9 @@
     "stem_dv": "आपके पास Bharat Pumps Ltd के 30 शेयर हैं, जिनका भाव अभी Rs 800 है। कंपनी हर शेयर पर एक फ़्री बोनस शेयर देती है, और अगले दिन रॉ चार्ट भाव को लगभग Rs 400 पर, यानी 50% के 'क्रैश' के साथ दिखाता है। आपकी होल्डिंग का क्या हुआ?",
     "options": [
      {
-      "en": "30 shares plus a cash payout of about Rs 12,000",
-      "hi": "30 shares aur lagbhag Rs 12,000 ka cash payout",
-      "dv": "30 शेयर और लगभग Rs 12,000 का कैश पेआउट",
+      "en": "30 shares plus about Rs 12,000 in cash",
+      "hi": "30 shares aur lagbhag Rs 12,000 cash",
+      "dv": "30 शेयर और लगभग Rs 12,000 नक़द",
       "distractor": true
      },
      {
@@ -928,7 +928,7 @@
       "distractor": false
      },
      {
-      "en": "Five greens in a row show that buyers have taken control",
+      "en": "Five greens in a row show buyers have taken control",
       "hi": "Lagataar paanch hari candles ka matlab buyers ne control le liya",
       "dv": "लगातार पाँच हरी कैंडल का मतलब ख़रीदारों ने कंट्रोल ले लिया",
       "distractor": true
@@ -1001,9 +1001,9 @@
       "distractor": true
      },
      {
-      "en": "A likely fake-out: no close above, weak volume",
-      "hi": "Shayad fake-out: upar close nahi, volume kamzor",
-      "dv": "शायद फ़ेक-आउट: ऊपर क्लोज़ नहीं, वॉल्यूम कमज़ोर",
+      "en": "A likely fake-out: no close above the zone, weak volume",
+      "hi": "Shayad fake-out: zone ke upar close nahi, volume kamzor",
+      "dv": "शायद फ़ेक-आउट: ज़ोन के ऊपर क्लोज़ नहीं, वॉल्यूम कमज़ोर",
       "distractor": false
      },
      {
@@ -1106,9 +1106,9 @@
     "stem_dv": "मान लीजिए अमन ने ख़रीदने से पहले यह नियम लिख लिया था: अगर Bharat Pumps अपने Rs 498-510 के सपोर्ट ज़ोन के नीचे बंद हो, तो एग्ज़िट। यह Rs 488 पर बंद होता है, एवरेज से लगभग दोगुने वॉल्यूम पर, और अमन कहता है, 'तीन बार टिका है; कुछ दिन और दे देता हूँ।' अमन का यह फ़ैसला किस चीज़ की मिसाल है?",
     "options": [
      {
-      "en": "Level ka moh: hope overriding his own rule",
-      "hi": "Level ka moh: umeed ne rule tudwa diya",
-      "dv": "लेवल का मोह: उम्मीद ने नियम तुड़वा दिया",
+      "en": "Level ka moh: hope overriding the rule he wrote",
+      "hi": "Level ka moh: umeed ne apna likha rule tudwa diya",
+      "dv": "लेवल का मोह: उम्मीद ने अपना लिखा नियम तुड़वा दिया",
       "distractor": false
      },
      {
@@ -1191,9 +1191,9 @@
       "distractor": true
      },
      {
-      "en": "Escalate it on SEBI's SCORES portal",
-      "hi": "SEBI ke SCORES portal par escalate kijiye",
-      "dv": "SEBI के SCORES पोर्टल पर शिकायत आगे बढ़ाइए",
+      "en": "Take it to SEBI's SCORES portal, with proof",
+      "hi": "Proof ke saath SEBI ke SCORES portal par le jaiye",
+      "dv": "सबूत के साथ SEBI के SCORES पोर्टल पर ले जाइए",
       "distractor": false
      },
      {
@@ -1308,9 +1308,9 @@
       "distractor": true
      },
      {
-      "en": "Name and number match SEBI's list",
-      "hi": "Naam aur number SEBI ki list se match hon",
-      "dv": "नाम और नंबर SEBI की लिस्ट से मेल खाएँ",
+      "en": "Its name and number match SEBI's list",
+      "hi": "Uska naam aur number SEBI ki list se match hon",
+      "dv": "उसका नाम और नंबर SEBI की लिस्ट से मेल खाएँ",
       "distractor": false
      },
      {
@@ -1375,9 +1375,9 @@
     "stem_dv": "पहले घंटे में Kiran Foods Ltd के 200 शेयर Rs 100 पर और 800 शेयर Rs 110 पर ट्रेड होते हैं। अब तक का VWAP क्या है?",
     "options": [
      {
-      "en": "Rs 108: weighted by shares traded",
-      "hi": "Rs 108: shares ke hisaab se weighted",
-      "dv": "Rs 108: शेयरों के हिसाब से वेटेड",
+      "en": "Rs 108: each price weighted by the shares traded at it",
+      "hi": "Rs 108: har price, us par trade hue shares ke hisaab se weighted",
+      "dv": "Rs 108: हर भाव, उस पर ट्रेड हुए शेयरों के हिसाब से वेटेड",
       "distractor": false
      },
      {
@@ -1387,22 +1387,22 @@
       "distractor": true
      },
      {
-      "en": "Rs 105: halfway between the two prices",
-      "hi": "Rs 105: dono prices ke theek beech mein",
-      "dv": "Rs 105: दोनों भावों के ठीक बीच में",
+      "en": "Rs 105: exactly halfway between the two prices",
+      "hi": "Rs 105: dono prices ke bilkul beech mein",
+      "dv": "Rs 105: दोनों भावों के बिल्कुल बीच में",
       "distractor": true
      },
      {
-      "en": "Rs 110: the last traded price",
-      "hi": "Rs 110: aakhri trade ka price",
-      "dv": "Rs 110: आख़िरी ट्रेड का भाव",
+      "en": "Rs 110: the price where most shares traded",
+      "hi": "Rs 110: woh price jahan sabse zyada shares trade hue",
+      "dv": "Rs 110: वह भाव जहाँ सबसे ज़्यादा शेयर ट्रेड हुए",
       "distractor": true
      }
     ],
     "correct_index": 0,
-    "explanation_en": "VWAP = (200 x Rs 100 + 800 x Rs 110) ÷ 1,000 = (Rs 20,000 + Rs 88,000) ÷ 1,000 = Rs 108. It sits nearer Rs 110 because four times as many shares traded there. Rs 105 is the plain average, which ignores volume. Rs 102 puts the 20% weight on the wrong price.",
-    "explanation_hi": "VWAP = (200 x Rs 100 + 800 x Rs 110) ÷ 1,000 = (Rs 20,000 + Rs 88,000) ÷ 1,000 = Rs 108. Yeh Rs 110 ke paas hai, kyunki wahan chaar guna shares trade hue. Rs 105 seedha average hai, jo volume ko ignore kar deta hai. Rs 102 mein 20% weight galat price par lag gaya.",
-    "explanation_dv": "VWAP = (200 x Rs 100 + 800 x Rs 110) ÷ 1,000 = (Rs 20,000 + Rs 88,000) ÷ 1,000 = Rs 108। यह Rs 110 के पास है, क्योंकि वहाँ चार गुना शेयर ट्रेड हुए। Rs 105 सीधा एवरेज है, जो वॉल्यूम को नज़रअंदाज़ कर देता है। Rs 102 में 20% वज़न ग़लत भाव पर लग गया।",
+    "explanation_en": "VWAP = (200 x Rs 100 + 800 x Rs 110) ÷ 1,000 = (Rs 20,000 + Rs 88,000) ÷ 1,000 = Rs 108. It sits nearer Rs 110 because four times as many shares traded there, but the 200 shares at Rs 100 still count, so it is not Rs 110. Rs 105 is the plain average, which ignores volume. Rs 102 puts the 20% weight on the wrong price.",
+    "explanation_hi": "VWAP = (200 x Rs 100 + 800 x Rs 110) ÷ 1,000 = (Rs 20,000 + Rs 88,000) ÷ 1,000 = Rs 108. Yeh Rs 110 ke paas hai, kyunki wahan chaar guna shares trade hue, lekin Rs 100 wale 200 shares bhi ginti mein hain, isliye jawab Rs 110 nahi. Rs 105 seedha average hai, jo volume ko ignore kar deta hai. Rs 102 mein 20% weight galat price par lag gaya.",
+    "explanation_dv": "VWAP = (200 x Rs 100 + 800 x Rs 110) ÷ 1,000 = (Rs 20,000 + Rs 88,000) ÷ 1,000 = Rs 108। यह Rs 110 के पास है, क्योंकि वहाँ चार गुना शेयर ट्रेड हुए, लेकिन Rs 100 वाले 200 शेयर भी गिनती में हैं, इसलिए जवाब Rs 110 नहीं। Rs 105 सीधा एवरेज है, जो वॉल्यूम को नज़रअंदाज़ कर देता है। Rs 102 में 20% वज़न ग़लत भाव पर लग गया।",
     "marks": 1,
     "difficulty": 1
    },
@@ -1583,9 +1583,9 @@
       "distractor": true
      },
      {
-      "en": "312 shares, set by the 25% cap",
-      "hi": "312 shares, 25% cap ke hisaab se",
-      "dv": "312 शेयर, 25% कैप के हिसाब से",
+      "en": "312 shares: the 25% cap, Rs 2,50,000 ÷ Rs 800",
+      "hi": "312 shares: 25% cap, Rs 2,50,000 ÷ Rs 800",
+      "dv": "312 शेयर: 25% कैप, Rs 2,50,000 ÷ Rs 800",
       "distractor": false
      }
     ],
@@ -1597,39 +1597,39 @@
     "difficulty": 1
    },
    {
-    "stem_en": "You hold 400 shares of Kiran Foods Ltd bought at Rs 250, with a stop at Rs 225, so 1R = Rs 10,000. After bad news the stock opens at Rs 205, and your stop sells at the open. What is the loss in R?",
-    "stem_hi": "Aapke paas Kiran Foods Ltd ke 400 shares hain, Rs 250 par khareede, stop Rs 225 par, yaani 1R = Rs 10,000. Buri khabar ke baad stock Rs 205 par khulta hai, aur aapka stop opening par bech deta hai. Loss kitne R ka hua?",
-    "stem_dv": "आपके पास Kiran Foods Ltd के 400 शेयर हैं, Rs 250 पर ख़रीदे, स्टॉप Rs 225 पर, यानी 1R = Rs 10,000। बुरी ख़बर के बाद स्टॉक Rs 205 पर खुलता है, और आपका स्टॉप ओपनिंग पर बेच देता है। नुक़सान कितने R का हुआ?",
+    "stem_en": "A week into paper trading, your virtual account shows Rs 9,70,000. You hold 400 shares of Kiran Foods Ltd bought at Rs 250, with the stop at Rs 225. After bad news the stock opens at Rs 205, and your stop sells at the open. What is the loss in R?",
+    "stem_hi": "Paper trading ke ek hafte baad aapka virtual account Rs 9,70,000 dikha raha hai. Aapke paas Kiran Foods Ltd ke 400 shares hain, Rs 250 par khareede, stop Rs 225 par. Buri khabar ke baad stock Rs 205 par khulta hai, aur aapka stop opening par bech deta hai. Loss kitne R ka hua?",
+    "stem_dv": "पेपर ट्रेडिंग के एक हफ़्ते बाद आपका वर्चुअल अकाउंट Rs 9,70,000 दिखा रहा है। आपके पास Kiran Foods Ltd के 400 शेयर हैं, Rs 250 पर ख़रीदे, स्टॉप Rs 225 पर। बुरी ख़बर के बाद स्टॉक Rs 205 पर खुलता है, और आपका स्टॉप ओपनिंग पर बेच देता है। नुक़सान कितने R का हुआ?",
     "options": [
      {
-      "en": "1.8R, about Rs 18,000",
-      "hi": "1.8R, lagbhag Rs 18,000",
-      "dv": "1.8R, लगभग Rs 18,000",
+      "en": "1.8R: Rs 18,000 ÷ the fixed Rs 10,000",
+      "hi": "1.8R: Rs 18,000 ÷ fixed Rs 10,000",
+      "dv": "1.8R: Rs 18,000 ÷ फ़िक्स Rs 10,000",
       "distractor": false
      },
      {
-      "en": "1R, because the stop caps it",
-      "hi": "1R, kyunki stop ne rok diya",
-      "dv": "1R, क्योंकि स्टॉप ने रोक दिया",
+      "en": "1R, because the stop-loss caps the loss",
+      "hi": "1R, kyunki stop-loss ne loss rok diya",
+      "dv": "1R, क्योंकि स्टॉप-लॉस ने नुक़सान रोक दिया",
       "distractor": true
      },
      {
-      "en": "4.5R, about Rs 45,000",
-      "hi": "4.5R, lagbhag Rs 45,000",
-      "dv": "4.5R, लगभग Rs 45,000",
+      "en": "About 1.86R: Rs 18,000 ÷ Rs 9,700",
+      "hi": "Lagbhag 1.86R: Rs 18,000 ÷ Rs 9,700",
+      "dv": "लगभग 1.86R: Rs 18,000 ÷ Rs 9,700",
       "distractor": true
      },
      {
-      "en": "0.8R, about Rs 8,000",
-      "hi": "0.8R, lagbhag Rs 8,000",
-      "dv": "0.8R, लगभग Rs 8,000",
+      "en": "0.8R: only the Rs 8,000 slip below the stop",
+      "hi": "0.8R: sirf stop ke neeche wala Rs 8,000 ka slip",
+      "dv": "0.8R: सिर्फ़ स्टॉप के नीचे की Rs 8,000 की फिसलन",
       "distractor": true
      }
     ],
     "correct_index": 0,
-    "explanation_en": "Loss = 400 x (250 - 205) = 400 x Rs 45 = Rs 18,000. Divide by 1R (Rs 10,000) and you get 1.8R. The stop was a plan to exit at Rs 225, but the first price available after the gap was Rs 205. Rs 8,000 is only the extra slip below the stop, not the whole loss.",
-    "explanation_hi": "Loss = 400 x (250 - 205) = 400 x Rs 45 = Rs 18,000. Ise 1R (Rs 10,000) se divide kijiye, 1.8R aata hai. Stop Rs 225 par exit ka plan tha, lekin gap ke baad pehla milne wala price Rs 205 tha. Rs 8,000 toh sirf stop se neeche ka extra slippage hai, poora loss nahi.",
-    "explanation_dv": "नुक़सान = 400 x (250 - 205) = 400 x Rs 45 = Rs 18,000। इसे 1R (Rs 10,000) से भाग दें, 1.8R आता है। स्टॉप Rs 225 पर एग्ज़िट का प्लान था, लेकिन गैप के बाद पहला मिलने वाला प्राइस Rs 205 था। Rs 8,000 तो सिर्फ़ स्टॉप से नीचे की एक्स्ट्रा फिसलन है, पूरा नुक़सान नहीं।",
+    "explanation_en": "Loss = 400 x (250 - 205) = 400 x Rs 45 = Rs 18,000. In the challenge 1R stays fixed at Rs 10,000, 1% of the starting Rs 10 lakh, even though the account now shows Rs 9,70,000, so the loss is 18,000 ÷ 10,000 = 1.8R. The stop was a plan to exit at Rs 225, but the first price available after the gap was Rs 205. Rs 8,000 is only the extra slip below the stop, not the whole loss.",
+    "explanation_hi": "Loss = 400 x (250 - 205) = 400 x Rs 45 = Rs 18,000. Challenge mein 1R Rs 10,000 par fixed rehta hai, yaani shuruaati Rs 10 lakh ka 1%, bhale hi account ab Rs 9,70,000 dikha raha ho, isliye loss 18,000 ÷ 10,000 = 1.8R hai. Stop Rs 225 par exit ka plan tha, lekin gap ke baad pehla milne wala price Rs 205 tha. Rs 8,000 toh sirf stop se neeche ka extra slippage hai, poora loss nahi.",
+    "explanation_dv": "नुक़सान = 400 x (250 - 205) = 400 x Rs 45 = Rs 18,000। चैलेंज में 1R, Rs 10,000 पर फ़िक्स रहता है, यानी शुरुआती Rs 10 लाख का 1%, भले ही अकाउंट अब Rs 9,70,000 दिखा रहा हो, इसलिए नुक़सान 18,000 ÷ 10,000 = 1.8R है। स्टॉप Rs 225 पर एग्ज़िट का प्लान था, लेकिन गैप के बाद पहला मिलने वाला प्राइस Rs 205 था। Rs 8,000 तो सिर्फ़ स्टॉप से नीचे की एक्स्ट्रा फिसलन है, पूरा नुक़सान नहीं।",
     "marks": 1,
     "difficulty": 1
    },
@@ -1651,9 +1651,9 @@
       "distractor": true
      },
      {
-      "en": "It is closer to one big bet on cement",
-      "hi": "Yeh cement par ek bade daon jaisa hai",
-      "dv": "यह सीमेंट पर एक बड़े दाँव जैसा है",
+      "en": "It is really one big bet on cement shares",
+      "hi": "Yeh asal mein cement shares par ek bada daon hai",
+      "dv": "यह असल में सीमेंट शेयरों पर एक बड़ा दाँव है",
       "distractor": false
      },
      {
@@ -1671,9 +1671,9 @@
     "difficulty": 1
    },
    {
-    "stem_en": "On a day's leave from work, Priya's only trade today gapped below her stop at the open and closed at -2R. At 1:30 pm a clean setup appears that fits all her rules. What do the course rules say?",
-    "stem_hi": "Office se chhutti ke din, Priya ka aaj ka akela trade opening par stop ke neeche gap se khula aur -2R par band hua. Dopahar 1:30 baje ek saaf setup aata hai jo uske saare rules par fit hai. Course ke rules kya kehte hain?",
-    "stem_dv": "ऑफ़िस से छुट्टी के दिन, प्रिया का आज का अकेला ट्रेड ओपनिंग पर स्टॉप के नीचे गैप से खुला और -2R पर बंद हुआ। दोपहर 1:30 बजे एक साफ़ सेटअप आता है जो उसके सारे नियमों पर फ़िट है। कोर्स के नियम क्या कहते हैं?",
+    "stem_en": "On a day's leave from work, Priya has one trade open. The stock opens with a gap below her stop, and the exit costs her -2R. At 1:30 pm a clean setup appears that fits all her rules. What do the course rules say?",
+    "stem_hi": "Office se chhutti ke din Priya ka ek trade open hai. Stock uske stop ke neeche gap ke saath khulta hai, aur exit par use -2R ka loss hota hai. Dopahar 1:30 baje ek saaf setup aata hai jo uske saare rules par fit hai. Course ke rules kya kehte hain?",
+    "stem_dv": "ऑफ़िस से छुट्टी के दिन प्रिया का एक ट्रेड खुला है। स्टॉक उसके स्टॉप के नीचे गैप के साथ खुलता है, और एग्ज़िट पर उसे -2R का नुक़सान होता है। दोपहर 1:30 बजे एक साफ़ सेटअप आता है जो उसके सारे नियमों पर फ़िट है। कोर्स के नियम क्या कहते हैं?",
     "options": [
      {
       "en": "Take it, but only with a tighter stop",
@@ -1718,27 +1718,27 @@
     "stem_dv": "अमन का पसंदीदा YouTuber घर से पूरे दिन 5 मिनट के चार्ट पर स्कैल्पिंग करता है। अमन सुबह 9:30 से शाम 6:30 तक ऑफ़िस में होता है, डिनर के बाद 20 मिनट ख़ाली है, और ओवरनाइट पोज़िशन खुली हो तब भी चैन से सो लेता है। अमन के दिन में कौन-सा स्टाइल फ़िट बैठता है?",
     "options": [
      {
-      "en": "Opening Range Breakout from 9:15 to 11:00",
-      "hi": "Opening Range Breakout, 9:15 se 11:00 tak",
-      "dv": "Opening Range Breakout, 9:15 से 11:00 तक",
+      "en": "Opening Range Breakout from 9:15 to 11:00 each morning",
+      "hi": "Opening Range Breakout, roz subah 9:15 se 11:00 tak",
+      "dv": "Opening Range Breakout, रोज़ सुबह 9:15 से 11:00 तक",
       "distractor": true
      },
      {
-      "en": "Scalping like the YouTuber, from office",
-      "hi": "YouTuber jaisi scalping, office se hi",
-      "dv": "YouTuber जैसी स्कैल्पिंग, ऑफ़िस से ही",
+      "en": "Scalping like the YouTuber, done from his office desk",
+      "hi": "YouTuber jaisi scalping, office ki desk se hi",
+      "dv": "YouTuber जैसी स्कैल्पिंग, ऑफ़िस की डेस्क से ही",
       "distractor": true
      },
      {
-      "en": "Swing trading, checked after the close",
-      "hi": "Swing trading, close ke baad check karke",
-      "dv": "स्विंग ट्रेडिंग, क्लोज़ के बाद चेक करके",
+      "en": "Swing trading, planned in the evening after the close",
+      "hi": "Swing trading, shaam ko close ke baad plan karke",
+      "dv": "स्विंग ट्रेडिंग, शाम को क्लोज़ के बाद प्लान करके",
       "distractor": false
      },
      {
-      "en": "Intraday trades squeezed between meetings",
-      "hi": "Meetings ke beech-beech mein kiye intraday trades",
-      "dv": "मीटिंग के बीच-बीच में ठूँसे हुए इंट्राडे ट्रेड",
+      "en": "Intraday trades squeezed in between his office meetings",
+      "hi": "Office meetings ke beech-beech mein kiye intraday trades",
+      "dv": "ऑफ़िस मीटिंग के बीच-बीच में ठूँसे हुए इंट्राडे ट्रेड",
       "distractor": true
      }
     ],
@@ -1755,9 +1755,9 @@
     "stem_dv": "प्रिया का SIP हर महीने की 5 तारीख़ को एक फ़ंड में Rs 6,000 डालता है। पहले महीने NAV Rs 60 है, दूसरे महीने Rs 40 और तीसरे महीने Rs 50। तीन महीने बाद उसके पास कितनी यूनिट हैं?",
     "options": [
      {
-      "en": "370 units: 100 + 150 + 120",
-      "hi": "370 units: 100 + 150 + 120",
-      "dv": "370 यूनिट: 100 + 150 + 120",
+      "en": "370 units: 100, then 150, then 120",
+      "hi": "370 units: 100, phir 150, phir 120",
+      "dv": "370 यूनिट: 100, फिर 150, फिर 120",
       "distractor": false
      },
      {
@@ -1767,9 +1767,9 @@
       "distractor": true
      },
      {
-      "en": "360 units: Rs 18,000 ÷ Rs 50",
-      "hi": "360 units: Rs 18,000 ÷ Rs 50",
-      "dv": "360 यूनिट: Rs 18,000 ÷ Rs 50",
+      "en": "360 units: Rs 18,000 ÷ the Rs 50 average NAV",
+      "hi": "360 units: Rs 18,000 ÷ Rs 50 ka average NAV",
+      "dv": "360 यूनिट: Rs 18,000 ÷ Rs 50 का एवरेज NAV",
       "distractor": true
      },
      {
@@ -1792,9 +1792,9 @@
     "stem_dv": "अमन का ज़रूरी ख़र्च Rs 30,000 महीना है और उसका इमरजेंसी फ़ंड अभी सिर्फ़ दो महीने का है। एक दोस्त कहता है, 'Rs 1 लाख का पर्सनल लोन ले लो, ट्रेडिंग शुरू करो और प्रॉफ़िट से चुका देना।' अमन के लिए अभी सही क़दम क्या है?",
     "options": [
      {
-      "en": "Finish the emergency fund; take no loan",
-      "hi": "Emergency fund poora karo; loan nahi",
-      "dv": "इमरजेंसी फ़ंड पूरा करो; लोन नहीं",
+      "en": "Finish the emergency fund first and take no loan of any kind",
+      "hi": "Pehle emergency fund poora karo, aur kisi bhi tarah ka loan nahi",
+      "dv": "पहले इमरजेंसी फ़ंड पूरा करो, और किसी भी तरह का लोन नहीं",
       "distractor": false
      },
      {
@@ -1804,13 +1804,13 @@
       "distractor": true
      },
      {
-      "en": "Borrow from family, since it has no interest",
+      "en": "Borrow from family instead, since it has no interest",
       "hi": "Family se le lo, usmein byaaj toh lagta nahi",
       "dv": "परिवार से ले लो, उसमें ब्याज तो लगता नहीं",
       "distractor": true
      },
      {
-      "en": "Skip the loan and trade with his Rs 60,000 savings",
+      "en": "Skip the loan and trade his Rs 60,000 of savings",
       "hi": "Loan chhodo, apni Rs 60,000 ki savings se trade karo",
       "dv": "लोन छोड़ो, अपनी Rs 60,000 की बचत से ट्रेड करो",
       "distractor": true
@@ -1854,9 +1854,9 @@
      }
     ],
     "correct_index": 0,
-    "explanation_en": "An ETF is listed on the exchange, so you buy it through a broker and a demat account at live prices, paying the bid-ask spread. An index fund is bought from the fund house at that day's NAV, with no demat needed. Both aim to copy the index, not beat it; after the expense ratio, the fund's return is usually a little below the index.",
-    "explanation_hi": "ETF exchange par listed hota hai, isliye use broker aur demat account ke through live price par khareedte hain, aur bid-ask spread bhi dena padta hai. Index fund fund house se us din ke NAV par milta hai, demat ki zaroorat nahi. Dono ka kaam index ko copy karna hai, use beat karna nahi; expense ratio katne ke baad fund ka return aam taur par index se thoda kam hi rehta hai.",
-    "explanation_dv": "ETF एक्सचेंज पर लिस्टेड होता है, इसलिए उसे ब्रोकर और डीमैट अकाउंट के ज़रिए लाइव भाव पर ख़रीदते हैं, और बिड-आस्क स्प्रेड भी देना पड़ता है। इंडेक्स फ़ंड फ़ंड हाउस से उस दिन के NAV पर मिलता है, डीमैट की ज़रूरत नहीं। दोनों का काम इंडेक्स को कॉपी करना है, उससे आगे निकलना नहीं; एक्सपेंस रेशियो कटने के बाद फ़ंड का रिटर्न आम तौर पर इंडेक्स से थोड़ा कम ही रहता है।",
+    "explanation_en": "An ETF is listed on the exchange, so you buy it through a broker and a demat account at live prices, paying the bid-ask spread. An index fund is bought from the fund house at that day's NAV, with no demat needed. Both aim to copy the index, not beat it; after the expense ratio, the fund's return is usually a little below the index. How closely it follows is measured as tracking error.",
+    "explanation_hi": "ETF exchange par listed hota hai, isliye use broker aur demat account ke through live price par khareedte hain, aur bid-ask spread bhi dena padta hai. Index fund fund house se us din ke NAV par milta hai, demat ki zaroorat nahi. Dono ka kaam index ko copy karna hai, use beat karna nahi; expense ratio katne ke baad fund ka return aam taur par index se thoda kam hi rehta hai. Woh index ko kitni kareebi se follow karta hai, yeh tracking error batata hai.",
+    "explanation_dv": "ETF एक्सचेंज पर लिस्टेड होता है, इसलिए उसे ब्रोकर और डीमैट अकाउंट के ज़रिए लाइव भाव पर ख़रीदते हैं, और बिड-आस्क स्प्रेड भी देना पड़ता है। इंडेक्स फ़ंड फ़ंड हाउस से उस दिन के NAV पर मिलता है, डीमैट की ज़रूरत नहीं। दोनों का काम इंडेक्स को कॉपी करना है, उससे आगे निकलना नहीं; एक्सपेंस रेशियो कटने के बाद फ़ंड का रिटर्न आम तौर पर इंडेक्स से थोड़ा कम ही रहता है। वह इंडेक्स को कितनी क़रीबी से फ़ॉलो करता है, यह ट्रैकिंग एरर बताता है।",
     "marks": 1,
     "difficulty": 1
    },
@@ -1940,39 +1940,39 @@
     "difficulty": 1
    },
    {
-    "stem_en": "Entry at the next open is Rs 250, ATR(14) is Rs 8, virtual capital is Rs 10 lakh and risk is 1% per trade. What stop and quantity does the rule card give?",
-    "stem_hi": "Agle open par entry Rs 250 hai, ATR(14) Rs 8, virtual capital Rs 10 lakh aur risk har trade par 1%. Rule card ke hisaab se stop aur quantity kya hogi?",
-    "stem_dv": "अगले ओपन पर एंट्री Rs 250 है, ATR(14) Rs 8, वर्चुअल पूँजी Rs 10 लाख और हर ट्रेड पर रिस्क 1%। रूल कार्ड के हिसाब से स्टॉप और क्वांटिटी क्या होगी?",
+    "stem_en": "Evening plan: signal close Rs 247 and ATR(14) Rs 6, so the maximum entry is Rs 250. Virtual capital is Rs 10 lakh, risk is 1% per trade and no position may be worth more than 25% of capital. What goes on the plan card?",
+    "stem_hi": "Shaam ka plan: signal close Rs 247 aur ATR(14) Rs 6, isliye maximum entry Rs 250. Virtual capital Rs 10 lakh, har trade par risk 1%, aur koi position capital ke 25% se zyada ki nahi ho sakti. Plan card par kya likha jaayega?",
+    "stem_dv": "शाम का प्लान: सिग्नल क्लोज़ Rs 247 और ATR(14) Rs 6, इसलिए मैक्सिमम एंट्री Rs 250। वर्चुअल पूँजी Rs 10 लाख, हर ट्रेड पर रिस्क 1%, और कोई पोज़िशन पूँजी के 25% से ज़्यादा की नहीं हो सकती। प्लान कार्ड पर क्या लिखा जाएगा?",
     "options": [
      {
-      "en": "Stop Rs 226, 416 shares",
-      "hi": "Stop Rs 226, 416 shares",
-      "dv": "स्टॉप Rs 226, 416 शेयर",
+      "en": "Stop distance Rs 9; 1,012 shares, the cap at Rs 247",
+      "hi": "Stop ki doori Rs 9; 1,012 shares, Rs 247 par cap",
+      "dv": "स्टॉप की दूरी Rs 9; 1,012 शेयर, कैप Rs 247 पर",
       "distractor": true
      },
      {
-      "en": "Stop Rs 238, 40 shares",
-      "hi": "Stop Rs 238, 40 shares",
-      "dv": "स्टॉप Rs 238, 40 शेयर",
+      "en": "Stop distance Rs 6; 1,000 shares, the cap at Rs 250",
+      "hi": "Stop ki doori Rs 6; 1,000 shares, Rs 250 par cap",
+      "dv": "स्टॉप की दूरी Rs 6; 1,000 शेयर, कैप Rs 250 पर",
       "distractor": true
      },
      {
-      "en": "Stop Rs 242, 1,250 shares",
-      "hi": "Stop Rs 242, 1,250 shares",
-      "dv": "स्टॉप Rs 242, 1,250 शेयर",
+      "en": "Stop distance Rs 9; 1,111 shares from the 1% rule",
+      "hi": "Stop ki doori Rs 9; 1% rule se 1,111 shares",
+      "dv": "स्टॉप की दूरी Rs 9; 1% नियम से 1,111 शेयर",
       "distractor": true
      },
      {
-      "en": "Stop Rs 238, 833 shares",
-      "hi": "Stop Rs 238, 833 shares",
-      "dv": "स्टॉप Rs 238, 833 शेयर",
+      "en": "Stop distance Rs 9; 1,000 shares, the cap at Rs 250",
+      "hi": "Stop ki doori Rs 9; 1,000 shares, Rs 250 par cap",
+      "dv": "स्टॉप की दूरी Rs 9; 1,000 शेयर, कैप Rs 250 पर",
       "distractor": false
      }
     ],
     "correct_index": 3,
-    "explanation_en": "1.5 x Rs 8 = Rs 12, so the stop is Rs 250 - Rs 12 = Rs 238. Quantity = Rs 10,000 ÷ Rs 12 = 833.3, rounded down to 833. The position is 833 x Rs 250 = Rs 2,08,250, about 20.8% of capital, inside the 25% cap. 40 shares divides the risk by the price instead of the stop distance; Rs 242 uses 1 x ATR and Rs 226 uses 3 x ATR.",
-    "explanation_hi": "1.5 x Rs 8 = Rs 12, toh stop hai Rs 250 - Rs 12 = Rs 238. Quantity = Rs 10,000 ÷ Rs 12 = 833.3, neeche round karke 833. Position hai 833 x Rs 250 = Rs 2,08,250, yaani capital ka lagbhag 20.8%, 25% cap ke andar. 40 shares wala jawab risk ko stop distance ki jagah price se divide karta hai; Rs 242 mein 1 x ATR laga hai aur Rs 226 mein 3 x ATR.",
-    "explanation_dv": "1.5 x Rs 8 = Rs 12, तो स्टॉप है Rs 250 - Rs 12 = Rs 238। क्वांटिटी = Rs 10,000 ÷ Rs 12 = 833.3, नीचे राउंड करके 833। पोज़िशन है 833 x Rs 250 = Rs 2,08,250, यानी पूँजी का लगभग 20.8%, 25% की सीमा के अंदर। 40 शेयर वाला जवाब रिस्क को स्टॉप की दूरी की जगह भाव से भाग देता है; Rs 242 में 1 x ATR लगा है और Rs 226 में 3 x ATR।",
+    "explanation_en": "Stop distance = 1.5 x Rs 6 = Rs 9, so the 1% rule gives Rs 10,000 ÷ 9 = 1,111 shares. The cap is checked the evening before at the maximum entry, the highest price you might pay: 1,111 x Rs 250 = Rs 2,77,750, 27.8% of capital, above the cap. So the card says Rs 2,50,000 ÷ Rs 250 = 1,000 shares, which stays inside the cap at any open up to Rs 250, and the planned risk is 1,000 x Rs 9 = Rs 9,000, or 0.9R. Rs 6 is only 1 x ATR, and 1,012 shares checks the cap at the signal close, which an open at Rs 250 would break.",
+    "explanation_hi": "Stop ki doori = 1.5 x Rs 6 = Rs 9, toh 1% rule se Rs 10,000 ÷ 9 = 1,111 shares bante hain. Cap pichhli shaam maximum entry par check hota hai, yaani us sabse oonche price par jo aap de sakte hain: 1,111 x Rs 250 = Rs 2,77,750, capital ka 27.8%, cap se upar. Isliye card par Rs 2,50,000 ÷ Rs 250 = 1,000 shares likhe jaate hain, jo Rs 250 tak ke kisi bhi open par cap ke andar rehte hain, aur planned risk 1,000 x Rs 9 = Rs 9,000, yaani 0.9R. Rs 6 sirf 1 x ATR hai, aur 1,012 shares wala jawab cap ko signal close par check karta hai, jo Rs 250 ke open par toot jaata.",
+    "explanation_dv": "स्टॉप की दूरी = 1.5 x Rs 6 = Rs 9, तो 1% नियम से Rs 10,000 ÷ 9 = 1,111 शेयर बनते हैं। कैप पिछली शाम मैक्सिमम एंट्री पर जाँचा जाता है, यानी उस सबसे ऊँचे भाव पर जो आप दे सकते हैं: 1,111 x Rs 250 = Rs 2,77,750, पूँजी का 27.8%, कैप से ऊपर। इसलिए कार्ड पर Rs 2,50,000 ÷ Rs 250 = 1,000 शेयर लिखे जाते हैं, जो Rs 250 तक के किसी भी ओपन पर कैप के अंदर रहते हैं, और प्लान किया रिस्क 1,000 x Rs 9 = Rs 9,000, यानी 0.9R। Rs 6 सिर्फ़ 1 x ATR है, और 1,012 शेयर वाला जवाब कैप को सिग्नल क्लोज़ पर जाँचता है, जो Rs 250 के ओपन पर टूट जाता।",
     "marks": 1,
     "difficulty": 1
    },
@@ -2025,9 +2025,9 @@
       "distractor": true
      },
      {
-      "en": "Only A, the one that beat NIFTY 50",
-      "hi": "Sirf A, jo NIFTY 50 se aage raha",
-      "dv": "सिर्फ़ A, जो NIFTY 50 से आगे रहा",
+      "en": "Only A, the one stock that beat NIFTY 50's 4% rise",
+      "hi": "Sirf A, akela stock jo NIFTY 50 ke 4% se aage raha",
+      "dv": "सिर्फ़ A, अकेला स्टॉक जो NIFTY 50 के 4% से आगे रहा",
       "distractor": false
      },
      {
@@ -2056,15 +2056,15 @@
     "stem_dv": "एक फ़्री डेटा साइट पर Bharat Pumps Ltd आज 50% डाउन दिख रहा है, RSI 15 के आसपास और ATR दोगुने से ज़्यादा। NSE के कॉर्पोरेट एक्शन पेज के मुताबिक़ आज 1:1 बोनस लागू हुआ है। सही मतलब क्या है?",
     "options": [
      {
-      "en": "A genuine crash: holders lost half their money",
-      "hi": "Asli crash: holders ka aadha paisa doob gaya",
-      "dv": "असली क्रैश: शेयरहोल्डरों का आधा पैसा डूब गया",
+      "en": "A genuine crash: holders have lost half their money today",
+      "hi": "Asli crash: holders ka aadha paisa aaj doob gaya",
+      "dv": "असली क्रैश: शेयरहोल्डरों का आधा पैसा आज डूब गया",
       "distractor": true
      },
      {
-      "en": "Mostly the bonus; recheck it on adjusted data",
-      "hi": "Zyadatar bonus ka asar; adjusted data dekhein",
-      "dv": "ज़्यादातर बोनस का असर; एडजस्टेड डेटा देखें",
+      "en": "Mostly the bonus; recheck the chart on adjusted data",
+      "hi": "Zyadatar bonus ka asar; chart adjusted data par dobara dekhein",
+      "dv": "ज़्यादातर बोनस का असर; चार्ट एडजस्टेड डेटा पर दोबारा देखें",
       "distractor": false
      },
      {
@@ -2162,7 +2162,7 @@
     "correct_index": 3,
     "explanation_en": "The day opened below the stop, so a real stop order would have been triggered at the open: the exit is Rs 279. Loss per share: 300 - 279 = Rs 21. Planned risk per share: 300 - 285 = Rs 15. 21 ÷ 15 = 1.4R, and the 0.1R allowance makes it -1.5R. The stop was the plan; the gap decided the exit. (An SL-M order would sell near that open; an SL-limit order might not fill at all.)",
     "explanation_hi": "Din stop se neeche khula, isliye asli stop order open par hi trigger ho jaata: exit Rs 279 hai. Har share par loss: 300 - 279 = Rs 21. Har share ka planned risk: 300 - 285 = Rs 15. 21 ÷ 15 = 1.4R, aur 0.1R allowance ke baad -1.5R. Stop plan tha; exit gap ne tay kiya. (SL-M order us open ke aas-paas bik jaata; SL-limit order shayad fill hi na hota.)",
-    "explanation_dv": "दिन स्टॉप से नीचे खुला, इसलिए असली स्टॉप ऑर्डर ओपन पर ही ट्रिगर हो जाता: एग्ज़िट Rs 279 है। हर शेयर पर लॉस: 300 - 279 = Rs 21। हर शेयर का प्लान किया रिस्क: 300 - 285 = Rs 15। 21 ÷ 15 = 1.4R, और 0.1R अलाउंस के बाद -1.5R। स्टॉप प्लान था; एग्ज़िट गैप ने तय किया। (SL-M ऑर्डर उस ओपन के आसपास बिक जाता; SL-limit ऑर्डर शायद भरता ही नहीं।)",
+    "explanation_dv": "दिन स्टॉप से नीचे खुला, इसलिए असली स्टॉप ऑर्डर ओपन पर ही ट्रिगर हो जाता: एग्ज़िट Rs 279 है। हर शेयर पर लॉस: 300 - 279 = Rs 21। हर शेयर का प्लान किया रिस्क: 300 - 285 = Rs 15। 21 ÷ 15 = 1.4R, और 0.1R अलाउंस के बाद -1.5R। स्टॉप प्लान था; एग्ज़िट गैप ने तय किया। (SL-M ऑर्डर उस ओपन के आसपास बिक जाता; SL-limit ऑर्डर शायद फ़िल ही नहीं होता।)",
     "marks": 1,
     "difficulty": 1
    },
@@ -2209,15 +2209,15 @@
     "stem_dv": "अमन दो हफ़्ते की जर्नल रो, बिना किसी निजी जानकारी के, एक AI चैट में पेस्ट करता है। कौन-सी रिक्वेस्ट इस कोर्स के AI इस्तेमाल करने के तरीक़े में फ़िट बैठती है?",
     "options": [
      {
-      "en": "Which stock from my list should I trade next?",
-      "hi": "Meri list ka kaunsa stock main agla trade karun?",
-      "dv": "मेरी लिस्ट का कौन-सा स्टॉक मैं अगला ट्रेड करूँ?",
+      "en": "Which stock from my list should I buy next week?",
+      "hi": "Meri list ka kaunsa stock main agle hafte khareedun?",
+      "dv": "मेरी लिस्ट का कौन-सा स्टॉक मैं अगले हफ़्ते ख़रीदूँ?",
       "distractor": true
      },
      {
-      "en": "Which emotions show up with my broken rules?",
-      "hi": "Toote rules ke saath kaunse emotions dikhte hain?",
-      "dv": "मेरे टूटे नियमों के साथ कौन-से इमोशन दिखते हैं?",
+      "en": "Which emotion words show up on days I broke a rule?",
+      "hi": "Jin dinon rule toota, un dinon kaunse emotion shabd dikhte hain?",
+      "dv": "जिन दिनों नियम टूटा, उन दिनों इमोशन के कौन-से शब्द दिखते हैं?",
       "distractor": false
      },
      {
@@ -2258,9 +2258,9 @@
       "distractor": true
      },
      {
-      "en": "Not logged at all, as it was only paper money",
-      "hi": "Log hi nahi karna, kyunki paisa toh paper ka tha",
-      "dv": "दर्ज ही नहीं करना, क्योंकि पैसा तो पेपर का था",
+      "en": "Not logged, as it was only paper money",
+      "hi": "Log nahi karna, paisa toh paper ka tha",
+      "dv": "दर्ज नहीं करना, पैसा तो पेपर का था",
       "distractor": true
      },
      {
@@ -2325,9 +2325,9 @@
     "stem_dv": "कैपिटल Rs 10,00,000 है। Kiran Foods Ltd में एक पेपर ORB शॉर्ट: एंट्री Rs 400, स्टॉप रेंज हाई Rs 408 पर। 1% रूल और 25% कैप दोनों लगाकर आप कितने शेयर शॉर्ट करेंगे?",
     "options": [
      {
-      "en": "2,500 shares",
-      "hi": "2,500 shares",
-      "dv": "2,500 शेयर",
+      "en": "25 shares",
+      "hi": "25 shares",
+      "dv": "25 शेयर",
       "distractor": true
      },
      {
@@ -2350,9 +2350,9 @@
      }
     ],
     "correct_index": 2,
-    "explanation_en": "For a short, risk per share is stop minus entry: Rs 408 - Rs 400 = Rs 8. The 1% rule allows Rs 10,000 ÷ 8 = 1,250 shares, worth Rs 5 lakh. The 25% cap allows Rs 2,50,000 ÷ 400 = 625 shares. Take the smaller, 625; your risk is 625 x Rs 8 = Rs 5,000. Cash shorts are allowed, but only intraday.",
-    "explanation_hi": "Short mein per share risk = stop minus entry: Rs 408 - Rs 400 = Rs 8. 1% rule se Rs 10,000 ÷ 8 = 1,250 shares bante hain, jo Rs 5 lakh ke hain. 25% cap Rs 2,50,000 ÷ 400 = 625 shares tak hi allow karta hai. Jo chhota hai, 625, wahi lijiye; risk 625 x Rs 8 = Rs 5,000 hoga. Cash mein short allowed hai, par sirf intraday.",
-    "explanation_dv": "शॉर्ट में प्रति शेयर रिस्क = स्टॉप माइनस एंट्री: Rs 408 - Rs 400 = Rs 8। 1% रूल से Rs 10,000 ÷ 8 = 1,250 शेयर बनते हैं, जो Rs 5 लाख के हैं। 25% कैप Rs 2,50,000 ÷ 400 = 625 शेयर तक ही इजाज़त देता है। जो छोटा है, 625, वही लें; रिस्क 625 x Rs 8 = Rs 5,000 होगा। कैश में शॉर्ट की इजाज़त है, पर सिर्फ़ इंट्राडे।",
+    "explanation_en": "For a short, risk per share is stop minus entry: Rs 408 - Rs 400 = Rs 8. The 1% rule allows Rs 10,000 ÷ 8 = 1,250 shares, worth Rs 5 lakh. The 25% cap allows Rs 2,50,000 ÷ 400 = 625 shares. Take the smaller, 625; your risk is 625 x Rs 8 = Rs 5,000. Cash shorts are allowed, but only intraday. Dividing Rs 10,000 by the price (25 shares) mixes up your risk with your position size.",
+    "explanation_hi": "Short mein per share risk = stop minus entry: Rs 408 - Rs 400 = Rs 8. 1% rule se Rs 10,000 ÷ 8 = 1,250 shares bante hain, jo Rs 5 lakh ke hain. 25% cap Rs 2,50,000 ÷ 400 = 625 shares tak hi allow karta hai. Jo chhota hai, 625, wahi lijiye; risk 625 x Rs 8 = Rs 5,000 hoga. Cash mein short allowed hai, par sirf intraday. Rs 10,000 ko price se divide karna (25 shares) risk aur position size ko aapas mein mila deta hai.",
+    "explanation_dv": "शॉर्ट में प्रति शेयर रिस्क = स्टॉप माइनस एंट्री: Rs 408 - Rs 400 = Rs 8। 1% रूल से Rs 10,000 ÷ 8 = 1,250 शेयर बनते हैं, जो Rs 5 लाख के हैं। 25% कैप Rs 2,50,000 ÷ 400 = 625 शेयर तक ही इजाज़त देता है। जो छोटा है, 625, वही लें; रिस्क 625 x Rs 8 = Rs 5,000 होगा। कैश में शॉर्ट की इजाज़त है, पर सिर्फ़ इंट्राडे। Rs 10,000 को भाव से भाग देना (25 शेयर) रिस्क और पोज़िशन साइज़ को आपस में मिला देता है।",
     "marks": 1,
     "difficulty": 1
    },
@@ -2368,9 +2368,9 @@
       "distractor": true
      },
      {
-      "en": "He must buy the shares back before today's close",
-      "hi": "Use aaj close se pehle hi shares wapas khareedne honge",
-      "dv": "उसे आज क्लोज़ से पहले ही शेयर वापस ख़रीदने होंगे",
+      "en": "He must buy the shares back before the market closes today",
+      "hi": "Use aaj market band hone se pehle hi shares wapas khareedne honge",
+      "dv": "उसे आज बाज़ार बंद होने से पहले ही शेयर वापस ख़रीदने होंगे",
       "distractor": false
      },
      {
@@ -2411,9 +2411,9 @@
       "distractor": true
      },
      {
-      "en": "Skip ORB in this stock today: it is a gap day",
-      "hi": "Aaj is stock mein ORB nahi: yeh gap day hai",
-      "dv": "आज इस स्टॉक में ORB नहीं: यह गैप वाला दिन है",
+      "en": "Skip ORB in this stock today, as it is a gap day",
+      "hi": "Aaj is stock mein ORB skip kijiye, kyunki yeh gap day hai",
+      "dv": "आज इस स्टॉक में ORB छोड़िए, क्योंकि यह गैप वाला दिन है",
       "distractor": false
      },
      {
@@ -2473,39 +2473,39 @@
   "session": 14,
   "questions": [
    {
-    "stem_en": "Virtual capital is Rs 10,00,000. You risk 1% per trade, and no position may exceed 25% of capital. Entry is Rs 400 and the stop is Rs 390. How many shares do you buy?",
-    "stem_hi": "Virtual capital Rs 10,00,000 hai. Har trade par 1% risk, aur koi position capital ke 25% se zyada nahi ho sakti. Entry Rs 400 hai aur stop Rs 390. Aap kitne shares khareedenge?",
-    "stem_dv": "वर्चुअल कैपिटल Rs 10,00,000 है। हर ट्रेड पर 1% रिस्क, और कोई पोज़ीशन कैपिटल के 25% से ज़्यादा नहीं हो सकती। एंट्री Rs 400 है और स्टॉप Rs 390। आप कितने शेयर ख़रीदेंगे?",
+    "stem_en": "A bot page says: '220 trades from 2018 to 2023, results after all charges, tested through the 2020 crash, re-tested on 2024 data the settings never saw, worst single month -4%.' Which of the five checks is still open?",
+    "stem_hi": "Ek bot page kehta hai: '2018 se 2023 tak 220 trades, saare charges ke baad ke results, 2020 ke crash mein bhi test kiya, 2024 ke us data par dobara test kiya jo settings ne kabhi dekha nahi, sabse bura ek mahina -4%.' Paanch checks mein se kaunsa abhi bhi khula hai?",
+    "stem_dv": "एक बॉट पेज कहता है: '2018 से 2023 तक 220 ट्रेड, सारे चार्ज के बाद के नतीजे, 2020 की भारी गिरावट में भी टेस्ट किया, 2024 के उस डेटा पर दोबारा टेस्ट किया जो सेटिंग्स ने कभी देखा नहीं, सबसे बुरा एक महीना -4%।' पाँच चेक में से कौन-सा अब भी खुला है?",
     "options": [
      {
-      "en": "25 shares",
-      "hi": "25 shares",
-      "dv": "25 शेयर",
+      "en": "Out-of-sample: one year of new data proves nothing at all",
+      "hi": "Out-of-sample: ek saal ka naya data kuch bhi saabit nahi karta",
+      "dv": "आउट-ऑफ़-सैंपल: एक साल का नया डेटा कुछ भी साबित नहीं करता",
       "distractor": true
      },
      {
-      "en": "1,000 shares",
-      "hi": "1,000 shares",
-      "dv": "1,000 शेयर",
+      "en": "Trade count: 220 trades over six years is too thin to trust",
+      "hi": "Trade count: chhe saal mein 220 trades bharose ke liye bahut kam hain",
+      "dv": "ट्रेड की गिनती: छह साल में 220 ट्रेड भरोसे के लिए बहुत कम हैं",
       "distractor": true
      },
      {
-      "en": "625 shares",
-      "hi": "625 shares",
-      "dv": "625 शेयर",
+      "en": "Drawdown: a worst month is not the deepest fall from a peak",
+      "hi": "Drawdown: sabse bura mahina, peak se sabse gehri girawat nahi hai",
+      "dv": "ड्रॉडाउन: सबसे बुरा महीना, पीक से सबसे गहरी गिरावट नहीं है",
       "distractor": false
      },
      {
-      "en": "2,500 shares",
-      "hi": "2,500 shares",
-      "dv": "2,500 शेयर",
+      "en": "None: every check is answered, so the page is real evidence",
+      "hi": "Koi nahi: har check ka jawab hai, isliye page asli saboot hai",
+      "dv": "कोई नहीं: हर चेक का जवाब है, इसलिए पेज असली सबूत है",
       "distractor": true
      }
     ],
     "correct_index": 2,
-    "explanation_en": "Risk first: 1% of Rs 10,00,000 is Rs 10,000, and the stop is Rs 10 away, so 10,000 ÷ 10 = 1,000 shares. But 1,000 x Rs 400 = Rs 4,00,000, which is 40% of capital. The 25% cap allows Rs 2,50,000 ÷ Rs 400 = 625 shares, so the real risk is 625 x Rs 10 = Rs 6,250. Dividing Rs 10,000 by the price (25 shares) or putting in all the capital (2,500 shares) are the two common mistakes.",
-    "explanation_hi": "Pehle risk: Rs 10,00,000 ka 1% = Rs 10,000, aur stop Rs 10 door hai, toh 10,000 ÷ 10 = 1,000 shares. Lekin 1,000 x Rs 400 = Rs 4,00,000, jo capital ka 40% hai. 25% cap sirf Rs 2,50,000 ÷ Rs 400 = 625 shares ki ijaazat deta hai, toh asli risk 625 x Rs 10 = Rs 6,250. Rs 10,000 ko price se divide karna (25 shares) ya poora capital laga dena (2,500 shares), yeh do aam galtiyan hain.",
-    "explanation_dv": "पहले रिस्क: Rs 10,00,000 का 1% = Rs 10,000, और स्टॉप Rs 10 दूर है, तो 10,000 ÷ 10 = 1,000 शेयर। लेकिन 1,000 x Rs 400 = Rs 4,00,000, जो कैपिटल का 40% है। 25% की सीमा सिर्फ़ Rs 2,50,000 ÷ Rs 400 = 625 शेयर की इजाज़त देती है, तो असली रिस्क 625 x Rs 10 = Rs 6,250। Rs 10,000 को प्राइस से भाग देना (25 शेयर) या पूरा कैपिटल लगा देना (2,500 शेयर), ये दो आम ग़लतियाँ हैं।",
+    "explanation_en": "Four checks are answered: costs (after all charges), trade count (220, more than the 100 this course wants for confidence), a falling market (the 2020 crash) and out-of-sample (2024 data the settings never saw). Drawdown is not. A worst month says how bad one calendar month was; drawdown is how far the curve fell from a high before it made a new one, and a fall can run across months: -4%, -3% and -4% in a row is a fall of about 11%, with no month worse than -4%. Until the page shows its maximum drawdown and how long it lasted, mark it Unclear, and the page stays an advertisement.",
+    "explanation_hi": "Chaar checks ka jawab hai: costs (saare charges ke baad), trade count (220, is course ke confidence wale 100 se zyada), girta market (2020 ka crash) aur out-of-sample (2024 ka data jo settings ne kabhi dekha nahi). Drawdown ka jawab nahi hai. Sabse bura mahina sirf ek calendar mahine ka haal batata hai; drawdown batata hai ki curve kisi high se naya high banane se pehle kitna gira, aur yeh girawat kai mahinon tak chal sakti hai: lagatar -4%, -3% aur -4% matlab lagbhag 11% ki girawat, jabki koi bhi mahina -4% se bura nahi tha. Jab tak page maximum drawdown aur woh kitne samay chala, yeh na dikhaye, ise Unclear likhiye, aur page advertisement hi rehta hai.",
+    "explanation_dv": "चार चेक का जवाब है: ख़र्चे (सारे चार्ज के बाद), ट्रेड की गिनती (220, इस कोर्स के भरोसे वाले 100 से ज़्यादा), गिरता बाज़ार (2020 की भारी गिरावट) और आउट-ऑफ़-सैंपल (2024 का डेटा जो सेटिंग्स ने कभी देखा नहीं)। ड्रॉडाउन का जवाब नहीं है। सबसे बुरा महीना सिर्फ़ एक कैलेंडर महीने का हाल बताता है; ड्रॉडाउन बताता है कि कर्व किसी हाई से नया हाई बनाने से पहले कितना गिरा, और यह गिरावट कई महीनों तक चल सकती है: लगातार -4%, -3% और -4% यानी लगभग 11% की गिरावट, जबकि कोई भी महीना -4% से बुरा नहीं था। जब तक पेज मैक्सिमम ड्रॉडाउन और वह कितने समय चला, यह न दिखाए, इसे Unclear लिखिए, और पेज विज्ञापन ही रहता है।",
     "marks": 1,
     "difficulty": 1
    },
@@ -2626,9 +2626,9 @@
     "stem_dv": "एक WhatsApp ग्रुप आने वाले IPO का GMP Rs 120 बता रहा है। वह प्रिया के कज़िन को स्पेशल कोटे से '1 लॉट, कन्फ़र्म' का ऑफ़र देता है, अगर वह आज ही Rs 15,000 किसी व्यक्ति की UPI ID पर भेज दे। कौन-सी बात इस स्कैम को सबसे साफ़ पकड़ती है?",
     "options": [
      {
-      "en": "A real IPO only blocks money in your account",
-      "hi": "Asli IPO mein paisa aapke hi account mein block hota hai",
-      "dv": "असली IPO में पैसा सिर्फ़ आपके अकाउंट में ब्लॉक होता है",
+      "en": "A real IPO only blocks money in your own bank account",
+      "hi": "Asli IPO mein paisa sirf aapke apne bank account mein block hota hai",
+      "dv": "असली IPO में पैसा सिर्फ़ आपके अपने बैंक अकाउंट में ब्लॉक होता है",
       "distractor": false
      },
      {
@@ -2668,27 +2668,27 @@
     "stem_dv": "Sharma Textiles Ltd Rs 8 का डिविडेंड घोषित करती है। गुरुवार एक्स-डेट भी है और रिकॉर्ड डेट भी। अमन डिविडेंड के चक्कर में बुधवार को 40 शेयर ख़रीदता है; प्रिया गुरुवार सुबह 40 शेयर ख़रीदती है। सामान्य T+1 साइकिल में डिविडेंड किसे मिलेगा?",
     "options": [
      {
-      "en": "Neither, as settlement ends on Friday",
-      "hi": "Koi nahi, kyunki settlement Friday ko hai",
-      "dv": "कोई नहीं, क्योंकि सेटलमेंट शुक्रवार को है",
+      "en": "Neither: the list is taken after Friday's settlement",
+      "hi": "Kisi ko nahi: list Friday ke settlement ke baad banti hai",
+      "dv": "किसी को नहीं: लिस्ट शुक्रवार के सेटलमेंट के बाद बनती है",
       "distractor": true
      },
      {
-      "en": "Only Aman, who bought on Wednesday",
-      "hi": "Sirf Aman, jisne Wednesday ko khareeda",
-      "dv": "सिर्फ़ अमन, जिसने बुधवार को ख़रीदा",
+      "en": "Only Aman: his Wednesday buy settles on Thursday",
+      "hi": "Sirf Aman: uski Wednesday ki khareed Thursday ko settle hoti hai",
+      "dv": "सिर्फ़ अमन: उसकी बुधवार की ख़रीद गुरुवार को सेटल होती है",
       "distractor": false
      },
      {
-      "en": "Both, as both own shares that week",
-      "hi": "Dono, kyunki dono ke paas shares hain",
-      "dv": "दोनों, क्योंकि दोनों के पास शेयर हैं",
+      "en": "Both of them, since both bought before Friday",
+      "hi": "Dono ko, kyunki dono ne Friday se pehle khareeda",
+      "dv": "दोनों को, क्योंकि दोनों ने शुक्रवार से पहले ख़रीदा",
       "distractor": true
      },
      {
-      "en": "Only Priya, who held on the record date",
-      "hi": "Sirf Priya, jiske paas record date par share tha",
-      "dv": "सिर्फ़ प्रिया, जिसके पास रिकॉर्ड डेट पर शेयर था",
+      "en": "Only Priya: she owns the shares on the ex-date",
+      "hi": "Sirf Priya: ex-date par shares uske paas hain",
+      "dv": "सिर्फ़ प्रिया: एक्स-डेट पर शेयर उसके पास हैं",
       "distractor": true
      }
     ],
@@ -2705,27 +2705,27 @@
     "stem_dv": "अमन एक CEO का इंटरव्यू देखता है जिसमें 500 नए स्टोर की बात है, और उसे पूरा यक़ीन हो जाता है कि कंपनी अच्छा करेगी। उसने कंपनी के अकाउंट खोले ही नहीं। कौन-सी आदत उसे स्टोरी बायस से सबसे अच्छे से बचाएगी?",
     "options": [
      {
-      "en": "Score the card first, and hear the story last",
-      "hi": "Pehle card score karein, kahani sabse baad mein",
-      "dv": "पहले कार्ड स्कोर करें, कहानी सबसे बाद में",
+      "en": "Score the card from the filings first; hear the story last",
+      "hi": "Pehle filings se card score karo; kahani sabse baad mein suno",
+      "dv": "पहले फ़ाइलिंग से कार्ड स्कोर करो; कहानी सबसे बाद में सुनो",
       "distractor": false
      },
      {
-      "en": "Watch two more interviews to confirm the plan",
-      "hi": "Plan confirm karne ke liye do aur interview dekhein",
-      "dv": "प्लान कन्फ़र्म करने के लिए दो और इंटरव्यू देखें",
+      "en": "Watch two more interviews to be sure the plan is real",
+      "hi": "Do aur interview dekho, taaki pata chale ki plan asli hai",
+      "dv": "दो और इंटरव्यू देखो, ताकि पता चले कि प्लान असली है",
       "distractor": true
      },
      {
-      "en": "Ask an AI whether the company will do well",
-      "hi": "AI se poochhein ki company achha karegi ya nahi",
-      "dv": "AI से पूछें कि कंपनी अच्छा करेगी या नहीं",
+      "en": "Ask an AI chat whether the company will do well",
+      "hi": "AI chat se poochho ki company achha karegi ya nahi",
+      "dv": "AI चैट से पूछो कि कंपनी अच्छा करेगी या नहीं",
       "distractor": true
      },
      {
-      "en": "Buy a small amount now and check numbers later",
-      "hi": "Abhi thoda sa khareed lein, numbers baad mein dekhein",
-      "dv": "अभी थोड़ा-सा ख़रीद लें, नंबर बाद में देखें",
+      "en": "Buy a small amount now and check the numbers later",
+      "hi": "Abhi thoda sa khareed lo, numbers baad mein check karo",
+      "dv": "अभी थोड़ा-सा ख़रीद लो, नंबर बाद में जाँचो",
       "distractor": true
      }
     ],
@@ -2742,27 +2742,27 @@
     "stem_dv": "एक काल्पनिक कंपनी के लिए प्रिया का कार्ड: तीन साल में सेल्स ऊपर, मार्जिन स्थिर, डेट-टू-इक्विटी 0.4 और तीन साल का कैश फ़्लो प्रॉफ़िट के क़रीब। लेकिन प्रमोटर के 35% शेयर गिरवी हैं। कोर्स के नियमों के हिसाब से क्या होगा?",
     "options": [
      {
-      "en": "It stays, since only one of five checks failed",
-      "hi": "Rehta hai, kyunki paanch mein se sirf ek check fail hua",
-      "dv": "रहता है, क्योंकि पाँच में से सिर्फ़ एक चेक फ़ेल हुआ",
+      "en": "It stays, since only one of the five checks failed",
+      "hi": "List mein rehta hai, kyunki paanch mein se sirf ek check fail hua",
+      "dv": "लिस्ट में रहता है, क्योंकि पाँच में से सिर्फ़ एक चेक फ़ेल हुआ",
       "distractor": true
      },
      {
-      "en": "It leaves: pledge above 10% is a knock-out",
-      "hi": "Bahar: 10% se zyada pledge knock-out hai",
-      "dv": "बाहर: 10% से ज़्यादा प्लेज नॉक-आउट है",
+      "en": "It leaves the list: a pledge above 10% is a knock-out",
+      "hi": "List se bahar: 10% se zyada pledge knock-out hai",
+      "dv": "लिस्ट से बाहर: 10% से ज़्यादा प्लेज नॉक-आउट है",
       "distractor": false
      },
      {
-      "en": "It stays if the chart shows a clean uptrend",
-      "hi": "Chart mein saaf uptrend ho toh rehta hai",
-      "dv": "चार्ट में साफ़ अपट्रेंड हो तो रहता है",
+      "en": "It stays if the chart also shows a clean uptrend",
+      "hi": "List mein rehta hai, agar chart bhi saaf uptrend dikhaye",
+      "dv": "लिस्ट में रहता है, अगर चार्ट भी साफ़ अपट्रेंड दिखाए",
       "distractor": true
      },
      {
-      "en": "It stays, but only with half the usual position",
-      "hi": "Rehta hai, par sirf aadhi position ke saath",
-      "dv": "रहता है, पर सिर्फ़ आधी पोज़ीशन के साथ",
+      "en": "It stays, but only with half of the usual position size",
+      "hi": "List mein rehta hai, par sirf aadhe position size ke saath",
+      "dv": "लिस्ट में रहता है, पर सिर्फ़ आधे पोज़िशन साइज़ के साथ",
       "distractor": true
      }
     ],
@@ -2779,21 +2779,21 @@
     "stem_dv": "तीन साल में एक काल्पनिक कंपनी का नेट प्रॉफ़िट Rs 20, 24 और 28 करोड़ है। उसका ऑपरेटिंग कैश फ़्लो Rs 18, 6 और 4 करोड़ है। कोर्स का कैश-फ़्लो चेक क्या कहता है?",
     "options": [
      {
-      "en": "No flag, since profit rose every year",
+      "en": "No flag, since profit rose every single year",
       "hi": "Flag nahi, kyunki profit har saal badha",
       "dv": "फ़्लैग नहीं, क्योंकि प्रॉफ़िट हर साल बढ़ा",
       "distractor": true
      },
      {
-      "en": "Flag: 3-year cash is below half of profit",
-      "hi": "Flag: teen saal ka cash profit ke aadhe se kam",
-      "dv": "फ़्लैग: तीन साल का कैश प्रॉफ़िट के आधे से कम",
+      "en": "Flag: 3-year cash is below half of 3-year profit",
+      "hi": "Flag: teen saal ka cash teen saal ke profit ke aadhe se kam hai",
+      "dv": "फ़्लैग: तीन साल का कैश तीन साल के प्रॉफ़िट के आधे से कम है",
       "distractor": false
      },
      {
-      "en": "No flag: year one's cash was close to profit",
-      "hi": "Flag nahi: pehle saal ka cash profit ke kareeb tha",
-      "dv": "फ़्लैग नहीं: पहले साल का कैश प्रॉफ़िट के क़रीब था",
+      "en": "No flag: year one's cash was close to its profit",
+      "hi": "Flag nahi: saal 1 ka cash uske profit ke kareeb tha",
+      "dv": "फ़्लैग नहीं: साल 1 का कैश उसके प्रॉफ़िट के क़रीब था",
       "distractor": true
      },
      {
@@ -2811,39 +2811,39 @@
     "difficulty": 1
    },
    {
-    "stem_en": "Bharat Pumps Ltd closes at Rs 1,500. The next morning, the ex-date of a split from face value Rs 10 to Rs 2, it trades near Rs 300. What happened to the value of a 20-share holding?",
-    "stem_hi": "Bharat Pumps Ltd Rs 1,500 par band hota hai. Agli subah face value Rs 10 se Rs 2 wale split ki ex-date hai, aur share lagbhag Rs 300 par trade kar raha hai. 20 shares ki holding ki value ka kya hua?",
-    "stem_dv": "Bharat Pumps Ltd Rs 1,500 पर बंद होता है। अगली सुबह फ़ेस वैल्यू Rs 10 से Rs 2 वाले स्प्लिट की एक्स-डेट है, और शेयर लगभग Rs 300 पर ट्रेड हो रहा है। 20 शेयर की होल्डिंग की वैल्यू का क्या हुआ?",
+    "stem_en": "Aman's colleague has held 50 shares of Anand Snacks Ltd for two years; the share is at Rs 200. The company offers 1 new share for every 5 held, at Rs 140, and after the ex-date the price moves towards Rs 190. If the colleague simply ignores the offer, what happens?",
+    "stem_hi": "Aman ke colleague ke paas do saal se Anand Snacks Ltd ke 50 shares hain; share Rs 200 par hai. Company har 5 shares par 1 naya share Rs 140 mein offer karti hai, aur ex-date ke baad price Rs 190 ki taraf jaata hai. Agar colleague offer ko bas chhod de, toh kya hota hai?",
+    "stem_dv": "अमन के सहकर्मी के पास दो साल से Anand Snacks Ltd के 50 शेयर हैं; शेयर Rs 200 पर है। कंपनी हर 5 शेयर पर 1 नया शेयर Rs 140 में ऑफ़र करती है, और एक्स-डेट के बाद भाव Rs 190 की तरफ़ जाता है। अगर सहकर्मी ऑफ़र को बस छोड़ दे, तो क्या होता है?",
     "options": [
      {
-      "en": "Down slightly: a fee is taken for the split",
-      "hi": "Thodi kam: split ke liye fee kat jaati hai",
-      "dv": "थोड़ी कम: स्प्लिट के लिए फ़ीस कट जाती है",
+      "en": "He gains, because the share is now Rs 10 cheaper",
+      "hi": "Use fayda hai, kyunki share ab Rs 10 sasta hai",
+      "dv": "उसे फ़ायदा है, क्योंकि शेयर अब Rs 10 सस्ता है",
       "distractor": true
      },
      {
-      "en": "Down 80%: 20 shares now at Rs 300 each",
-      "hi": "80% kam: 20 shares ab Rs 300 wale",
-      "dv": "80% कम: 20 शेयर अब Rs 300 वाले",
+      "en": "Nothing changes: an offer he ignores costs him nothing",
+      "hi": "Kuch nahi badalta: chhoda hua offer uska kuch nahi leta",
+      "dv": "कुछ नहीं बदलता: छोड़ा हुआ ऑफ़र उसका कुछ नहीं लेता",
       "distractor": true
      },
      {
-      "en": "About the same: now 100 shares at Rs 300",
-      "hi": "Lagbhag wahi: ab Rs 300 ke 100 shares",
-      "dv": "लगभग वही: अब Rs 300 के 100 शेयर",
+      "en": "He is about Rs 500 worse off: his 10 unused rights lapse",
+      "hi": "Use lagbhag Rs 500 ka nuksaan: uske 10 bina use kiye rights bekaar ho jaate hain",
+      "dv": "उसे लगभग Rs 500 का नुक़सान: उसके 10 बिना इस्तेमाल किए राइट बेकार हो जाते हैं",
       "distractor": false
      },
      {
-      "en": "Up five times: the holder now has 100 shares",
-      "hi": "Paanch guni: ab holder ke paas 100 shares",
-      "dv": "पाँच गुनी: अब होल्डर के पास 100 शेयर",
+      "en": "He must still pay Rs 1,400 for his 10 new shares",
+      "hi": "Use phir bhi apne 10 naye shares ke Rs 1,400 dene honge",
+      "dv": "उसे फिर भी अपने 10 नए शेयरों के Rs 1,400 देने होंगे",
       "distractor": true
      }
     ],
     "correct_index": 2,
-    "explanation_en": "A split from face value Rs 10 to Rs 2 turns each share into five, and the price adjusts to about a fifth. Before: 20 x Rs 1,500 = Rs 30,000. After: 100 x Rs 300 = Rs 30,000. Nothing was lost or gained, and nothing became cheap. An unadjusted chart shows this as a crash and throws off EMA, RSI and ATR, so check the NSE corporate actions page before reading any sudden large gap. No fee is taken from your holding for a split.",
-    "explanation_hi": "Face value Rs 10 se Rs 2 wala split har share ko paanch mein baant deta hai, aur price lagbhag paanchwa hissa reh jaata hai. Pehle: 20 x Rs 1,500 = Rs 30,000. Baad mein: 100 x Rs 300 = Rs 30,000. Na kuch gaya, na kuch aaya, aur na kuch sasta hua. Unadjusted chart ise crash jaisa dikhata hai aur EMA, RSI aur ATR ko bigaad deta hai, isliye kisi bhi achanak bade gap ko padhne se pehle NSE ka corporate actions page dekhiye. Split ke liye aapki holding se koi fee nahi kat-ti.",
-    "explanation_dv": "फ़ेस वैल्यू Rs 10 से Rs 2 वाला स्प्लिट हर शेयर को पाँच में बाँट देता है, और भाव लगभग पाँचवाँ हिस्सा रह जाता है। पहले: 20 x Rs 1,500 = Rs 30,000। बाद में: 100 x Rs 300 = Rs 30,000। न कुछ गया, न कुछ आया, और न कुछ सस्ता हुआ। अनएडजस्टेड चार्ट इसे क्रैश जैसा दिखाता है और EMA, RSI और ATR को बिगाड़ देता है, इसलिए किसी भी अचानक बड़े गैप को पढ़ने से पहले NSE का कॉर्पोरेट ऐक्शन पेज देखिए। स्प्लिट के लिए आपकी होल्डिंग से कोई फ़ीस नहीं कटती।",
+    "explanation_en": "Every 5 shares carry the right to buy 1 new share at Rs 140, so his 50 shares carry 10 rights. After the ex-date the price tends towards (5 x 200 + 140) ÷ 6 = Rs 190. Ignored, his 50 shares are worth 50 x Rs 190 = Rs 9,500 instead of Rs 10,000, and the 10 rights lapse worthless: about Rs 500 gone, 10 x (190 - 140). Nobody pays unless they apply; applying (Rs 1,400 for 10 shares) or selling the rights on the exchange keeps the value. A lower price after a rights issue is not a bargain.",
+    "explanation_hi": "Har 5 shares ke saath 1 naya share Rs 140 mein lene ka right milta hai, isliye uske 50 shares par 10 rights hain. Ex-date ke baad price (5 x 200 + 140) ÷ 6 = Rs 190 ki taraf jaata hai. Chhod diya toh uske 50 shares ki value 50 x Rs 190 = Rs 9,500 rehti hai, Rs 10,000 nahi, aur 10 rights bekaar ho jaate hain: lagbhag Rs 500 gaye, 10 x (190 - 140). Apply kiye bina kisi ko paise nahi dene padte; apply karna (10 shares ke Rs 1,400) ya rights exchange par bechna value bachata hai. Rights issue ke baad kam price koi sasta sauda nahi hai.",
+    "explanation_dv": "हर 5 शेयर के साथ 1 नया शेयर Rs 140 में लेने का राइट मिलता है, इसलिए उसके 50 शेयरों पर 10 राइट हैं। एक्स-डेट के बाद भाव (5 x 200 + 140) ÷ 6 = Rs 190 की तरफ़ जाता है। छोड़ दिया तो उसके 50 शेयरों की वैल्यू 50 x Rs 190 = Rs 9,500 रहती है, Rs 10,000 नहीं, और 10 राइट बेकार हो जाते हैं: लगभग Rs 500 गए, 10 x (190 - 140)। अप्लाई किए बिना किसी को पैसे नहीं देने पड़ते; अप्लाई करना (10 शेयरों के Rs 1,400) या राइट एक्सचेंज पर बेचना वैल्यू बचाता है। राइट्स इश्यू के बाद कम भाव कोई सस्ता सौदा नहीं है।",
     "marks": 1,
     "difficulty": 1
    }
@@ -2927,9 +2927,9 @@
     "difficulty": 1
    },
    {
-    "stem_en": "The opening range high of Sharma Textiles Ltd is Rs 180. A price alert set at Rs 180 rings when a 5-minute wick pokes up to Rs 181.20, but the candle closes at Rs 179.40. Aman's rule needs a 5-minute close above the range. What does the alert mean?",
-    "stem_hi": "Sharma Textiles Ltd ki opening range ka high Rs 180 hai. Rs 180 par laga price alert tab baj jaata hai jab ek 5-minute wick Rs 181.20 tak jaati hai, lekin candle Rs 179.40 par close hoti hai. Aman ke rule ko range ke upar 5-minute close chahiye. Is alert ka matlab kya hai?",
-    "stem_dv": "Sharma Textiles Ltd की ओपनिंग रेंज का हाई Rs 180 है। Rs 180 पर लगा प्राइस अलर्ट तब बज जाता है जब एक 5-मिनट की विक Rs 181.20 तक जाती है, लेकिन कैंडल Rs 179.40 पर क्लोज़ होती है। अमन के नियम को रेंज के ऊपर 5-मिनट का क्लोज़ चाहिए। इस अलर्ट का मतलब क्या है?",
+    "stem_en": "The opening range high of Sharma Textiles Ltd is Rs 612. A price alert set at Rs 612 rings when a 5-minute wick pokes up to Rs 613.20, but the candle closes at Rs 611.40. Aman's rule needs a 5-minute close above the range. What does the alert mean?",
+    "stem_hi": "Sharma Textiles Ltd ki opening range ka high Rs 612 hai. Rs 612 par laga price alert tab baj jaata hai jab ek 5-minute wick Rs 613.20 tak jaati hai, lekin candle Rs 611.40 par close hoti hai. Aman ke rule ko range ke upar 5-minute close chahiye. Is alert ka matlab kya hai?",
+    "stem_dv": "Sharma Textiles Ltd की ओपनिंग रेंज का हाई Rs 612 है। Rs 612 पर लगा प्राइस अलर्ट तब बज जाता है जब एक 5-मिनट की विक Rs 613.20 तक जाती है, लेकिन कैंडल Rs 611.40 पर क्लोज़ होती है। अमन के नियम को रेंज के ऊपर 5-मिनट का क्लोज़ चाहिए। इस अलर्ट का मतलब क्या है?",
     "options": [
      {
       "en": "Look now; the rule is not met yet",
@@ -2957,9 +2957,9 @@
      }
     ],
     "correct_index": 0,
-    "explanation_en": "A price alert fires on a touch, and a touch can be only a wick. The rule asks for a 5-minute close above Rs 180, and this candle closed at Rs 179.40, back inside the range. The alert did its job, which is to make you look. Wait for a candle to close beyond the range, then run the checklist.",
-    "explanation_hi": "Price alert touch par bajta hai, aur touch sirf wick bhi ho sakta hai. Rule Rs 180 ke upar 5-minute close maangta hai, aur yeh candle Rs 179.40 par, wapas range ke andar close hui. Alert ne apna kaam kar diya, yaani aapko dekhne ko kaha. Range ke bahar candle close hone ka intezaar kijiye, phir checklist chalaiye.",
-    "explanation_dv": "प्राइस अलर्ट छूने पर बजता है, और छूना सिर्फ़ विक भी हो सकता है। नियम Rs 180 के ऊपर 5-मिनट का क्लोज़ माँगता है, और यह कैंडल Rs 179.40 पर, वापस रेंज के अंदर क्लोज़ हुई। अलर्ट ने अपना काम कर दिया, यानी आपको देखने को कहा। रेंज के बाहर कैंडल क्लोज़ होने का इंतज़ार कीजिए, फिर चेकलिस्ट चलाइए।",
+    "explanation_en": "A price alert fires on a touch, and a touch can be only a wick. The rule asks for a 5-minute close above Rs 612, and this candle closed at Rs 611.40, back inside the range. The alert did its job, which is to make you look. Wait for a candle to close beyond the range, then run the checklist.",
+    "explanation_hi": "Price alert touch par bajta hai, aur touch sirf wick bhi ho sakta hai. Rule Rs 612 ke upar 5-minute close maangta hai, aur yeh candle Rs 611.40 par, wapas range ke andar close hui. Alert ne apna kaam kar diya, yaani aapko dekhne ko kaha. Range ke bahar candle close hone ka intezaar kijiye, phir checklist chalaiye.",
+    "explanation_dv": "प्राइस अलर्ट छूने पर बजता है, और छूना सिर्फ़ विक भी हो सकता है। नियम Rs 612 के ऊपर 5-मिनट का क्लोज़ माँगता है, और यह कैंडल Rs 611.40 पर, वापस रेंज के अंदर क्लोज़ हुई। अलर्ट ने अपना काम कर दिया, यानी आपको देखने को कहा। रेंज के बाहर कैंडल क्लोज़ होने का इंतज़ार कीजिए, फिर चेकलिस्ट चलाइए।",
     "marks": 1,
     "difficulty": 1
    },
@@ -2975,28 +2975,28 @@
       "distractor": true
      },
      {
-      "en": "Wait for the close, then check in the evening",
-      "hi": "Close ka wait, phir shaam ko check",
-      "dv": "क्लोज़ का इंतज़ार, फिर शाम को जाँच",
+      "en": "Wait for the official close, then check the rule in the evening",
+      "hi": "Official close ka intezaar, phir shaam ko rule check",
+      "dv": "ऑफ़िशियल क्लोज़ का इंतज़ार, फिर शाम को नियम की जाँच",
       "distractor": false
      },
      {
-      "en": "Place the paper order now, since the alert has fired",
-      "hi": "Abhi paper order lagao, alert toh aa gaya hai",
-      "dv": "अभी पेपर ऑर्डर लगाओ, अलर्ट तो आ गया है",
+      "en": "Place the paper order now, since the alert has already fired",
+      "hi": "Abhi paper order lagao, alert toh aa hi gaya hai",
+      "dv": "अभी पेपर ऑर्डर लगाओ, अलर्ट तो आ ही गया है",
       "distractor": true
      },
      {
-      "en": "Switch to a 5-minute chart so alerts come sooner",
+      "en": "Switch to a 5-minute chart so the alerts come sooner",
       "hi": "5-minute chart par shift ho jao, alert jaldi aayega",
       "dv": "5-मिनट चार्ट पर चले जाओ, ताकि अलर्ट जल्दी आए",
       "distractor": true
      }
     ],
     "correct_index": 1,
-    "explanation_en": "At 3:00 pm the daily candle is not finished, so its close, EMA and RSI can still change, and a 'yes' can become a 'no' by the close. A daily rule is checked on the finished candle: scan after the close and plan the next morning. Splitting the order or switching to a faster chart only hides the timing mistake.",
-    "explanation_hi": "3:00 baje daily candle poori nahi bani hoti, isliye uska close, EMA aur RSI abhi badal sakte hain, aur 'haan' close tak 'na' ban sakta hai. Daily rule poori bani candle par check hota hai: close ke baad scan, aur agli subah ka plan. Order ko aadha-aadha karna ya tez chart par jaana, timing ki galti ko bas chhupa deta hai.",
-    "explanation_dv": "3:00 बजे डेली कैंडल पूरी नहीं बनी होती, इसलिए उसका क्लोज़, EMA और RSI अभी बदल सकते हैं, और 'हाँ' क्लोज़ तक 'ना' बन सकता है। डेली नियम पूरी बनी कैंडल पर जाँचा जाता है: क्लोज़ के बाद स्कैन, और अगली सुबह का प्लान। ऑर्डर को आधा-आधा करना या तेज़ चार्ट पर जाना, टाइमिंग की ग़लती को बस छिपा देता है।",
+    "explanation_en": "At 3:00 pm the daily candle is not finished: for stocks with F&O contracts the closing auction sets the close after 3:15 pm, and for others it is the average of roughly the last 30 minutes. So the close, EMA and RSI can still change, and a 'yes' can become a 'no'. A daily rule is checked on the finished candle: scan after the close and plan the next morning. Splitting the order or switching to a faster chart only hides the timing mistake.",
+    "explanation_hi": "3:00 baje daily candle poori nahi bani hoti: F&O contracts wale stocks ka close 3:15 ke baad closing auction tay karta hai, aur baaki ka close lagbhag aakhri 30 minute ka average hota hai. Isliye close, EMA aur RSI abhi badal sakte hain, aur 'haan' 'na' ban sakta hai. Daily rule poori bani candle par check hota hai: close ke baad scan, aur agli subah ka plan. Order ko aadha-aadha karna ya tez chart par jaana, timing ki galti ko bas chhupa deta hai.",
+    "explanation_dv": "3:00 बजे डेली कैंडल पूरी नहीं बनी होती: F&O कॉन्ट्रैक्ट वाले स्टॉक्स का क्लोज़ 3:15 के बाद क्लोज़िंग ऑक्शन तय करता है, और बाक़ी का क्लोज़ लगभग आख़िरी 30 मिनट का औसत होता है। इसलिए क्लोज़, EMA और RSI अभी बदल सकते हैं, और 'हाँ' 'ना' बन सकता है। डेली नियम पूरी बनी कैंडल पर जाँचा जाता है: क्लोज़ के बाद स्कैन, और अगली सुबह का प्लान। ऑर्डर को आधा-आधा करना या तेज़ चार्ट पर जाना, टाइमिंग की ग़लती को बस छिपा देता है।",
     "marks": 1,
     "difficulty": 1
    },
@@ -3066,9 +3066,9 @@
       "distractor": true
      },
      {
-      "en": "-1.70R: the loss to the Rs 376 open, plus costs",
-      "hi": "-1.70R: Rs 376 ke open tak ka loss, plus costs",
-      "dv": "-1.70R: Rs 376 के ओपन तक का घाटा, और ख़र्च",
+      "en": "-1.70R: the loss to the Rs 376 open, plus 0.1R of costs",
+      "hi": "-1.70R: Rs 376 ke open tak ka loss, plus 0.1R costs",
+      "dv": "-1.70R: Rs 376 के ओपन तक का घाटा, और 0.1R ख़र्च",
       "distractor": false
      }
     ],
@@ -3117,12 +3117,12 @@
     "difficulty": 1
    },
    {
-    "stem_en": "Aman's daily signal is confirmed only when the exchange sets the day's official close, just after 3:30 pm. In his backtest he logs every entry at that same candle's low. What is wrong?",
-    "stem_hi": "Aman ka daily signal tabhi confirm hota hai jab exchange 3:30 ke thodi der baad din ka official close tay karta hai. Backtest mein woh har entry usi candle ke low par log karta hai. Galti kya hai?",
-    "stem_dv": "अमन का डेली सिग्नल तभी कन्फ़र्म होता है जब एक्सचेंज 3:30 के थोड़ी देर बाद दिन का आधिकारिक क्लोज़ तय करता है। बैकटेस्ट में वह हर एंट्री उसी कैंडल के लो पर लॉग करता है। ग़लती क्या है?",
+    "stem_en": "Aman's daily signal is confirmed only once the exchange sets the day's official closing price, after trading ends. In his backtest he logs every entry at that same candle's low. What is wrong?",
+    "stem_hi": "Aman ka daily signal tabhi confirm hota hai jab trading khatam hone ke baad exchange din ka official closing price tay karta hai. Backtest mein woh har entry usi candle ke low par log karta hai. Galti kya hai?",
+    "stem_dv": "अमन का डेली सिग्नल तभी कन्फ़र्म होता है जब ट्रेडिंग ख़त्म होने के बाद एक्सचेंज दिन का आधिकारिक क्लोज़िंग भाव तय करता है। बैकटेस्ट में वह हर एंट्री उसी कैंडल के लो पर लॉग करता है। ग़लती क्या है?",
     "options": [
      {
-      "en": "He logs a price nobody knew until the day ended",
+      "en": "He logs a price nobody knew until the day was over",
       "hi": "Woh aisa price leta hai jo din khatam hone par hi pata chala",
       "dv": "वह ऐसा भाव लॉग करता है जो दिन ख़त्म होने पर ही पता चला",
       "distractor": false
@@ -3134,14 +3134,14 @@
       "distractor": true
      },
      {
-      "en": "Daily charts are unfit for any backtesting",
+      "en": "Daily charts are unfit for any kind of backtest",
       "hi": "Daily charts kisi bhi tarah ke backtest ke laayak nahi hote",
-      "dv": "डेली चार्ट किसी भी बैकटेस्ट के लायक़ नहीं होते",
+      "dv": "डेली चार्ट किसी भी तरह के बैकटेस्ट के लायक़ नहीं होते",
       "distractor": true
      },
      {
       "en": "He should log the candle's high instead, to be safe",
-      "hi": "Safe rehne ke liye use usi candle ka high hi log karna chahiye",
+      "hi": "Safe rehne ke liye use usi candle ka high log karna chahiye",
       "dv": "सुरक्षित रहने के लिए उसे उसी कैंडल का हाई लॉग करना चाहिए",
       "distractor": true
      }
@@ -3165,28 +3165,28 @@
       "distractor": true
      },
      {
-      "en": "Survivorship bias: dropped-out names are missing",
-      "hi": "Survivorship bias: index se bahar hui companies gayab",
-      "dv": "सर्वाइवरशिप बायस: इंडेक्स से बाहर हुई कंपनियाँ ग़ायब",
+      "en": "Survivorship bias: names that dropped out since 2019 are missing",
+      "hi": "Survivorship bias: 2019 ke baad index se bahar hui companies gayab",
+      "dv": "सर्वाइवरशिप बायस: 2019 के बाद इंडेक्स से बाहर हुई कंपनियाँ ग़ायब",
       "distractor": false
      },
      {
-      "en": "Cost error: large companies carry no charges",
-      "hi": "Cost error: badi companies par charges nahi lagte",
-      "dv": "ख़र्च की ग़लती: बड़ी कंपनियों पर चार्ज नहीं लगते",
+      "en": "Cost error: large index companies carry no charges",
+      "hi": "Cost error: badi index companies par charges nahi lagte",
+      "dv": "ख़र्च की ग़लती: बड़ी इंडेक्स कंपनियों पर चार्ज नहीं लगते",
       "distractor": true
      },
      {
-      "en": "Curve-fitting: she has tuned her EMA settings",
-      "hi": "Curve-fitting: usne EMA settings tune ki hain",
-      "dv": "कर्व-फ़िटिंग: उसने EMA सेटिंग ट्यून की हैं",
+      "en": "Curve-fitting: she has tuned her EMA settings to this list",
+      "hi": "Curve-fitting: usne EMA settings is list ke hisaab se tune ki hain",
+      "dv": "कर्व-फ़िटिंग: उसने EMA सेटिंग इस लिस्ट के हिसाब से ट्यून की हैं",
       "distractor": true
      }
     ],
     "correct_index": 1,
-    "explanation_en": "Today's NIFTY 50 list is made of companies that did well enough to be in the index now. Companies that dropped out since 2019, often after heavy falls, are missing, so the test sees only survivors and looks better than reality. At Level 1, build the list from the companies that were in the index in 2019, and note the survivorship risk in the report. Costs still apply to every stock, large or small.",
-    "explanation_hi": "Aaj ki NIFTY 50 list un companies se bani hai jo itna achha kar paayin ki aaj index mein hain. 2019 ke baad jo companies bahar ho gayin, aksar bhaari giraavat ke baad, woh list mein hain hi nahi, toh test sirf survivors ko dekhta hai aur asliyat se behtar dikhta hai. Level 1 par list un companies se banaiye jo 2019 mein index mein thi, aur report mein survivorship risk note kijiye. Costs har stock par lagti hain, bada ho ya chhota.",
-    "explanation_dv": "आज की NIFTY 50 लिस्ट उन कंपनियों से बनी है जो इतना अच्छा कर पाईं कि आज इंडेक्स में हैं। 2019 के बाद जो कंपनियाँ बाहर हो गईं, अक्सर भारी गिरावट के बाद, वे लिस्ट में हैं ही नहीं, तो टेस्ट सिर्फ़ बचे हुए नामों को देखता है और असलियत से बेहतर दिखता है। लेवल 1 पर लिस्ट उन कंपनियों से बनाइए जो 2019 में इंडेक्स में थीं, और रिपोर्ट में सर्वाइवरशिप रिस्क नोट कीजिए। ख़र्च हर स्टॉक पर लगता है, बड़ा हो या छोटा।",
+    "explanation_en": "Today's NIFTY 50 list is made of companies that did well enough to be in the index now. Companies that dropped out since 2019, often after heavy falls, are missing, so the test sees only survivors and looks better than reality. At Level 1, rebuild the list as it stood in 2019 from the index-change press releases on niftyindices.com, keep every name your random draw gives, and note any survivorship risk left in the report. Costs still apply to every stock, large or small.",
+    "explanation_hi": "Aaj ki NIFTY 50 list un companies se bani hai jo itna achha kar paayin ki aaj index mein hain. 2019 ke baad jo companies bahar ho gayin, aksar bhaari giraavat ke baad, woh list mein hain hi nahi, toh test sirf survivors ko dekhta hai aur asliyat se behtar dikhta hai. Level 1 par niftyindices.com ke index-badlaav wale press releases se 2019 jaisi list dobara banaiye, random draw ka har naam rakhiye, aur jo survivorship risk bacha ho use report mein note kijiye. Costs har stock par lagti hain, bada ho ya chhota.",
+    "explanation_dv": "आज की NIFTY 50 लिस्ट उन कंपनियों से बनी है जो इतना अच्छा कर पाईं कि आज इंडेक्स में हैं। 2019 के बाद जो कंपनियाँ बाहर हो गईं, अक्सर भारी गिरावट के बाद, वे लिस्ट में हैं ही नहीं, तो टेस्ट सिर्फ़ बचे हुए नामों को देखता है और असलियत से बेहतर दिखता है। लेवल 1 पर niftyindices.com की इंडेक्स-बदलाव वाली प्रेस रिलीज़ से 2019 जैसी लिस्ट दोबारा बनाइए, रैंडम ड्रॉ का हर नाम रखिए, और जो सर्वाइवरशिप रिस्क बचा हो उसे रिपोर्ट में नोट कीजिए। ख़र्च हर स्टॉक पर लगता है, बड़ा हो या छोटा।",
     "marks": 1,
     "difficulty": 1
    },
@@ -3208,15 +3208,15 @@
       "distractor": true
      },
      {
-      "en": "Keep tweaking until it reaches 90%",
-      "hi": "90% aane tak tweak karta rahe",
-      "dv": "90% आने तक बदलाव करता रहे",
+      "en": "Keep tweaking the settings until it reaches 90%",
+      "hi": "Settings tab tak tweak karta rahe jab tak 90% na aa jaaye",
+      "dv": "सेटिंग तब तक बदलता रहे जब तक 90% न आ जाए",
       "distractor": true
      },
      {
-      "en": "Test the new version on 30 fresh trades",
-      "hi": "Naya version 30 naye trades par parkhe",
-      "dv": "नया वर्ज़न 30 नए ट्रेड पर परखे",
+      "en": "Freeze it, then test it on 30 fresh trades",
+      "hi": "Ise freeze karke 30 naye trades par parkhe",
+      "dv": "इसे फ़्रीज़ करके 30 नए ट्रेड पर परखे",
       "distractor": false
      }
     ],
@@ -3307,39 +3307,39 @@
     "difficulty": 1
    },
    {
-    "stem_en": "In a made-up case, one lot of Gupta Cement Ltd futures is 1,500 shares, bought at Rs 1,000 with a margin of Rs 3,00,000. The price closes the day at Rs 980. What happens that evening?",
-    "stem_hi": "Ek banawati case mein Gupta Cement Ltd futures ka ek lot 1,500 shares ka hai, Rs 1,000 par liya gaya, margin Rs 3,00,000. Us din price Rs 980 par close hota hai. Us shaam kya hoga?",
-    "stem_dv": "एक काल्पनिक केस में Gupta Cement Ltd फ़्यूचर्स का एक लॉट 1,500 शेयर का है, Rs 1,000 पर लिया गया, मार्जिन Rs 3,00,000। उस दिन भाव Rs 980 पर बंद होता है। उस शाम क्या होगा?",
+    "stem_en": "In a made-up case, one lot of Gupta Cement Ltd futures is 3,750 shares, bought at Rs 400 with a margin of Rs 3,00,000. The price closes the day at Rs 392. What happens that evening?",
+    "stem_hi": "Ek banawati case mein Gupta Cement Ltd futures ka ek lot 3,750 shares ka hai, Rs 400 par liya gaya, margin Rs 3,00,000. Us din price Rs 392 par close hota hai. Us shaam kya hoga?",
+    "stem_dv": "एक काल्पनिक केस में Gupta Cement Ltd फ़्यूचर्स का एक लॉट 3,750 शेयर का है, Rs 400 पर लिया गया, मार्जिन Rs 3,00,000। उस दिन भाव Rs 392 पर बंद होता है। उस शाम क्या होगा?",
     "options": [
      {
-      "en": "Only Rs 20 per lot is debited today",
-      "hi": "Aaj sirf Rs 20 per lot debit honge",
-      "dv": "आज सिर्फ़ Rs 20 प्रति लॉट कटेंगे",
+      "en": "Only Rs 8 per lot is debited, the fall in price",
+      "hi": "Sirf Rs 8 per lot debit honge, yaani price ki girawat",
+      "dv": "सिर्फ़ Rs 8 प्रति लॉट कटेंगे, यानी भाव की गिरावट",
       "distractor": true
      },
      {
-      "en": "Nothing, until the contract is closed",
-      "hi": "Kuch nahi, jab tak contract band na ho",
-      "dv": "कुछ नहीं, जब तक कॉन्ट्रैक्ट बंद न हो",
+      "en": "Nothing yet: MTM waits until the contract is closed",
+      "hi": "Abhi kuch nahi: MTM contract band hone tak rukta hai",
+      "dv": "अभी कुछ नहीं: MTM कॉन्ट्रैक्ट बंद होने तक रुकता है",
       "distractor": true
      },
      {
-      "en": "Rs 30,000 is debited from the account",
-      "hi": "Account se Rs 30,000 debit ho jayenge",
-      "dv": "खाते से Rs 30,000 कट जाएँगे",
+      "en": "Rs 30,000 is debited from the account that same evening",
+      "hi": "Usi shaam account se Rs 30,000 debit ho jayenge",
+      "dv": "उसी शाम खाते से Rs 30,000 कट जाएँगे",
       "distractor": false
      },
      {
-      "en": "The loss waits until the expiry day ends",
-      "hi": "Loss expiry ka din khatam hone tak rukega",
-      "dv": "नुक़सान एक्सपायरी का दिन ख़त्म होने तक रुकेगा",
+      "en": "The loss is held back until the expiry day ends",
+      "hi": "Loss expiry ka din khatam hone tak roka jaata hai",
+      "dv": "नुक़सान एक्सपायरी का दिन ख़त्म होने तक रोका जाता है",
       "distractor": true
      }
     ],
     "correct_index": 2,
-    "explanation_en": "Futures are marked to market every evening. The price fell Rs 20 on 1,500 shares: 20 x 1,500 = Rs 30,000, debited the same day. The loss does not wait for expiry or for you to close. If losses keep eating into the margin, the broker asks for a top-up.",
-    "explanation_hi": "Futures ka mark-to-market har shaam hota hai. Price 1,500 shares par Rs 20 gira: 20 x 1,500 = Rs 30,000, usi din debit. Loss expiry ya position band hone ka intezaar nahi karta. Loss margin ko khata rahe, toh broker aur paisa maangta hai.",
-    "explanation_dv": "फ़्यूचर्स का मार्क-टू-मार्केट हर शाम होता है। भाव 1,500 शेयर पर Rs 20 गिरा: 20 x 1,500 = Rs 30,000, उसी दिन खाते से कटे। नुक़सान एक्सपायरी या पोज़ीशन बंद होने का इंतज़ार नहीं करता। नुक़सान मार्जिन को खाता रहे, तो ब्रोकर और पैसा माँगता है।",
+    "explanation_en": "Futures are marked to market every evening. The price fell Rs 8 on 3,750 shares: 8 x 3,750 = Rs 30,000, debited the same day. The loss does not wait for expiry or for you to close. If losses keep eating into the margin, the broker asks for a top-up.",
+    "explanation_hi": "Futures ka mark-to-market har shaam hota hai. Price 3,750 shares par Rs 8 gira: 8 x 3,750 = Rs 30,000, usi din debit. Loss expiry ya position band hone ka intezaar nahi karta. Loss margin ko khata rahe, toh broker aur paisa maangta hai.",
+    "explanation_dv": "फ़्यूचर्स का मार्क-टू-मार्केट हर शाम होता है। भाव 3,750 शेयर पर Rs 8 गिरा: 8 x 3,750 = Rs 30,000, उसी दिन खाते से कटे। नुक़सान एक्सपायरी या पोज़ीशन बंद होने का इंतज़ार नहीं करता। नुक़सान मार्जिन को खाता रहे, तो ब्रोकर और पैसा माँगता है।",
     "marks": 1,
     "difficulty": 1
    },
@@ -3423,9 +3423,9 @@
   "session": 19,
   "questions": [
    {
-    "stem_en": "Aman holds 250 shares of Kiran Foods Ltd, bought at Rs 800 with a stop at Rs 760, so 1R = Rs 10,000. Results come out after the close, and the next morning the stock opens at Rs 680. His stop fills at the open. What did the trade lose?",
-    "stem_hi": "Aman ke paas Kiran Foods Ltd ke 250 shares hain, Rs 800 par khareede, stop Rs 760 par, yaani 1R = Rs 10,000. Market band hone ke baad results aate hain, aur agli subah stock Rs 680 par khulta hai. Stop open par hi fill hota hai. Is trade mein kitna loss hua?",
-    "stem_dv": "अमन के पास Kiran Foods Ltd के 250 शेयर हैं, Rs 800 पर ख़रीदे, स्टॉप Rs 760 पर, यानी 1R = Rs 10,000। बाज़ार बंद होने के बाद नतीजे आते हैं, और अगली सुबह स्टॉक Rs 680 पर खुलता है। स्टॉप ओपन पर ही फ़िल होता है। इस ट्रेड में कितना नुक़सान हुआ?",
+    "stem_en": "Aman holds 250 shares of Bharat Pumps Ltd, bought at Rs 800 with a stop at Rs 760, so 1R = Rs 10,000. Results come out after the close, and the next morning the stock opens at Rs 680. His stop fills at the open. What did the trade lose?",
+    "stem_hi": "Aman ke paas Bharat Pumps Ltd ke 250 shares hain, Rs 800 par khareede, stop Rs 760 par, yaani 1R = Rs 10,000. Market band hone ke baad results aate hain, aur agli subah stock Rs 680 par khulta hai. Stop open par hi fill hota hai. Is trade mein kitna loss hua?",
+    "stem_dv": "अमन के पास Bharat Pumps Ltd के 250 शेयर हैं, Rs 800 पर ख़रीदे, स्टॉप Rs 760 पर, यानी 1R = Rs 10,000। बाज़ार बंद होने के बाद नतीजे आते हैं, और अगली सुबह स्टॉक Rs 680 पर खुलता है। स्टॉप ओपन पर ही फ़िल होता है। इस ट्रेड में कितना नुक़सान हुआ?",
     "options": [
      {
       "en": "1.5R, about Rs 15,000",
@@ -3557,9 +3557,9 @@
       "distractor": true
      },
      {
-      "en": "Check the board-meeting notice on NSE or BSE",
-      "hi": "NSE ya BSE par board meeting ka notice check karein",
-      "dv": "NSE या BSE पर बोर्ड मीटिंग का नोटिस देखें",
+      "en": "Check the board-meeting notice on NSE or BSE yourself",
+      "hi": "NSE ya BSE par board meeting ka notice khud check kijiye",
+      "dv": "NSE या BSE पर बोर्ड मीटिंग का नोटिस ख़ुद देखिए",
       "distractor": false
      }
     ],
@@ -3650,9 +3650,9 @@
     "difficulty": 1
    },
    {
-    "stem_en": "A classmate buys 1,000 shares at Rs 250 with a stop at Rs 240, so 1R = Rs 10,000. Near Rs 241 he moves the stop down to Rs 230, and the trade later exits there. What did moving the stop cost him?",
-    "stem_hi": "Ek classmate Rs 250 par 1,000 shares khareedta hai, stop Rs 240 par, yaani 1R = Rs 10,000. Rs 241 ke paas woh stop neeche khiska kar Rs 230 kar deta hai, aur baad mein trade wahin exit hota hai. Stop khiskane ki keemat kya padi?",
-    "stem_dv": "एक साथी Rs 250 पर 1,000 शेयर ख़रीदता है, स्टॉप Rs 240 पर, यानी 1R = Rs 10,000। Rs 241 के पास वह स्टॉप नीचे खिसकाकर Rs 230 कर देता है, और बाद में ट्रेड वहीं एग्ज़िट होता है। स्टॉप खिसकाने की क़ीमत क्या पड़ी?",
+    "stem_en": "A classmate buys 400 shares at Rs 300 with a stop at Rs 275, so 1R = Rs 10,000. Near Rs 276 he moves the stop down to Rs 250, and the trade later exits there. What did moving the stop cost him?",
+    "stem_hi": "Ek classmate Rs 300 par 400 shares khareedta hai, stop Rs 275 par, yaani 1R = Rs 10,000. Rs 276 ke paas woh stop neeche khiska kar Rs 250 kar deta hai, aur baad mein trade wahin exit hota hai. Stop khiskane ki keemat kya padi?",
+    "stem_dv": "एक साथी Rs 300 पर 400 शेयर ख़रीदता है, स्टॉप Rs 275 पर, यानी 1R = Rs 10,000। Rs 276 के पास वह स्टॉप नीचे खिसकाकर Rs 250 कर देता है, और बाद में ट्रेड वहीं एग्ज़िट होता है। स्टॉप खिसकाने की क़ीमत क्या पड़ी?",
     "options": [
      {
       "en": "An extra Rs 20,000: the loss became 3R",
@@ -3680,9 +3680,9 @@
      }
     ],
     "correct_index": 3,
-    "explanation_en": "Planned risk was 1,000 x (250 - 240) = Rs 10,000, or 1R. Exiting at Rs 230 lost 1,000 x 20 = Rs 20,000, or 2R, so moving the stop cost an extra Rs 10,000. That is loss aversion: to avoid booking a small loss, he accepted a bigger one. After entry, the plan card's stop does not move (Day 11).",
-    "explanation_hi": "Planned risk tha 1,000 x (250 - 240) = Rs 10,000, yaani 1R. Rs 230 par exit se loss hua 1,000 x 20 = Rs 20,000, yaani 2R, toh stop khiskane ne Rs 10,000 extra le liye. Yahi loss aversion hai: chhota loss book karne se bachne ke chakkar mein bada loss le liya. Entry ke baad plan card ka stop nahi hilta (Day 11).",
-    "explanation_dv": "तय रिस्क था 1,000 x (250 - 240) = Rs 10,000, यानी 1R। Rs 230 पर एग्ज़िट से नुक़सान हुआ 1,000 x 20 = Rs 20,000, यानी 2R, तो स्टॉप खिसकाने ने Rs 10,000 ज़्यादा ले लिए। यही लॉस अवर्ज़न है: छोटा नुक़सान बुक करने से बचने के चक्कर में बड़ा नुक़सान ले लिया। एंट्री के बाद प्लान कार्ड का स्टॉप नहीं हिलता (दिन 11)।",
+    "explanation_en": "Planned risk was 400 x (300 - 275) = Rs 10,000, or 1R. Exiting at Rs 250 lost 400 x 50 = Rs 20,000, or 2R, so moving the stop cost an extra Rs 10,000. That is loss aversion: to avoid booking a small loss, he accepted a bigger one. After entry, the plan card's stop does not move (Day 11).",
+    "explanation_hi": "Planned risk tha 400 x (300 - 275) = Rs 10,000, yaani 1R. Rs 250 par exit se loss hua 400 x 50 = Rs 20,000, yaani 2R, toh stop khiskane ne Rs 10,000 extra le liye. Yahi loss aversion hai: chhota loss book karne se bachne ke chakkar mein bada loss le liya. Entry ke baad plan card ka stop nahi hilta (Day 11).",
+    "explanation_dv": "तय रिस्क था 400 x (300 - 275) = Rs 10,000, यानी 1R। Rs 250 पर एग्ज़िट से नुक़सान हुआ 400 x 50 = Rs 20,000, यानी 2R, तो स्टॉप खिसकाने ने Rs 10,000 ज़्यादा ले लिए। यही लॉस अवर्ज़न है: छोटा नुक़सान बुक करने से बचने के चक्कर में बड़ा नुक़सान ले लिया। एंट्री के बाद प्लान कार्ड का स्टॉप नहीं हिलता (दिन 11)।",
     "marks": 1,
     "difficulty": 1
    },
@@ -3710,9 +3710,9 @@
       "distractor": true
      },
      {
-      "en": "Normal: about a 22% chance for three in a row",
-      "hi": "Normal hai: teen lagataar ke liye lagbhag 22% chance",
-      "dv": "आम बात है: लगातार तीन के लिए लगभग 22% चांस",
+      "en": "Normal: about a 22% chance of three losses in a row",
+      "hi": "Normal hai: teen lagataar loss ka lagbhag 22% chance",
+      "dv": "आम बात है: लगातार तीन नुक़सान का लगभग 22% चांस",
       "distractor": false
      }
     ],
@@ -3784,9 +3784,9 @@
       "distractor": true
      },
      {
-      "en": "Borrowing on a credit card to win back losses",
-      "hi": "Loss ki bharpai ke liye credit card se udhaar",
-      "dv": "नुक़सान की भरपाई के लिए क्रेडिट कार्ड से उधार",
+      "en": "Borrowing on a credit card to win back his losses",
+      "hi": "Apne loss ki bharpai ke liye credit card se udhaar",
+      "dv": "अपने नुक़सान की भरपाई के लिए क्रेडिट कार्ड से उधार",
       "distractor": false
      }
     ],
@@ -3803,9 +3803,9 @@
   "session": 21,
   "questions": [
    {
-    "stem_en": "At 7 pm, Priya's EMA Pullback rule gives a valid setup on Bharat Pumps Ltd, every flowchart box says yes, and her backtest showed a positive edge. Her written no-trade rule, from her Day 11 card, says: no new swing entry if the company's results fall within the next 15 trading days. Results are due in 2 trading days. What does her system say?",
-    "stem_hi": "Shaam 7 baje Priya ka EMA Pullback rule Bharat Pumps Ltd par valid setup deta hai, flowchart ka har box yes kehta hai, aur uske backtest ne positive edge dikhaya tha. Uske Day 11 wale card ka no-trade rule kehta hai: company ke results agle 15 trading days ke andar hon toh koi nayi swing entry nahi. Results 2 trading days mein aane wale hain. Uska system kya kehta hai?",
-    "stem_dv": "शाम 7 बजे प्रिया का EMA Pullback नियम Bharat Pumps Ltd पर सही सेटअप देता है, फ़्लोचार्ट का हर बॉक्स 'हाँ' कहता है, और उसके बैकटेस्ट ने पॉज़िटिव एज दिखाया था। उसके दिन 11 वाले कार्ड का नो-ट्रेड नियम कहता है: कंपनी के नतीजे अगले 15 ट्रेडिंग दिन के अंदर हों तो कोई नई स्विंग एंट्री नहीं। नतीजे 2 ट्रेडिंग दिन में आने वाले हैं। उसका सिस्टम क्या कहता है?",
+    "stem_en": "At 7 pm, Priya's EMA Pullback rule gives a valid setup on Bharat Pumps Ltd, every chart box in her flowchart says yes, and her backtest showed a positive edge. Her written no-trade rule, from her Day 11 card, says: no new swing entry if the company's results fall within the next 15 trading days. Results are due in 2 trading days. What does her system say?",
+    "stem_hi": "Shaam 7 baje Priya ka EMA Pullback rule Bharat Pumps Ltd par valid setup deta hai, flowchart ka har chart box yes kehta hai, aur uske backtest ne positive edge dikhaya tha. Uske Day 11 wale card ka no-trade rule kehta hai: company ke results agle 15 trading days ke andar hon toh koi nayi swing entry nahi. Results 2 trading days mein aane wale hain. Uska system kya kehta hai?",
+    "stem_dv": "शाम 7 बजे प्रिया का EMA Pullback नियम Bharat Pumps Ltd पर सही सेटअप देता है, फ़्लोचार्ट का हर चार्ट बॉक्स 'हाँ' कहता है, और उसके बैकटेस्ट ने पॉज़िटिव एज दिखाया था। उसके दिन 11 वाले कार्ड का नो-ट्रेड नियम कहता है: कंपनी के नतीजे अगले 15 ट्रेडिंग दिन के अंदर हों तो कोई नई स्विंग एंट्री नहीं। नतीजे 2 ट्रेडिंग दिन में आने वाले हैं। उसका सिस्टम क्या कहता है?",
     "options": [
      {
       "en": "No trade: the calendar rule overrides the setup",
@@ -3909,7 +3909,7 @@
     "correct_index": 0,
     "explanation_en": "An OTP or login lets whoever holds it place any order in Aman's name, and the losses stay his. The offer fails Day 16's checks at once: no broker, no Algo-ID, no registration to verify, and options, which Stage 1 does not trade at all. A small test or a free trial still hands over his account. Share nothing, check any name on sebi.gov.in, keep screenshots and report the message at cybercrime.gov.in.",
     "explanation_hi": "OTP ya login jiske paas ho, woh Aman ke naam se koi bhi order laga sakta hai, aur loss Aman ka hi rahega. Offer Day 16 ke checks mein turant fail ho jaata hai: na broker, na Algo-ID, na verify karne layak registration, aur options, jo Stage 1 mein bilkul trade nahi hote. Chhota test ho ya free trial, account toh phir bhi saunpna padega. Kuch share mat kijiye, koi bhi naam sebi.gov.in par check kijiye, screenshots rakhiye aur message cybercrime.gov.in par report kijiye.",
-    "explanation_dv": "OTP या लॉगिन जिसके पास हो, वह अमन के नाम से कोई भी ऑर्डर लगा सकता है, और नुक़सान अमन का ही रहेगा। ऑफ़र दिन 16 की जाँच में तुरंत फ़ेल हो जाता है: न ब्रोकर, न Algo-ID, न जाँचने लायक़ रजिस्ट्रेशन, और ऑप्शंस, जो Stage 1 में बिल्कुल ट्रेड नहीं होते। छोटा टेस्ट हो या फ़्री ट्रायल, अकाउंट तो फिर भी सौंपना पड़ेगा। कुछ शेयर न करें, कोई भी नाम sebi.gov.in पर जाँचें, स्क्रीनशॉट रखें और मैसेज की शिकायत cybercrime.gov.in पर करें।",
+    "explanation_dv": "OTP या लॉगिन जिसके पास हो, वह अमन के नाम से कोई भी ऑर्डर लगा सकता है, और नुक़सान अमन का ही रहेगा। ऑफ़र दिन 16 की जाँच में तुरंत फ़ेल हो जाता है: न ब्रोकर, न Algo-ID, न जाँचने लायक़ रजिस्ट्रेशन, और ऑप्शंस, जो चरण 1 में बिल्कुल ट्रेड नहीं होते। छोटा टेस्ट हो या फ़्री ट्रायल, अकाउंट तो फिर भी सौंपना पड़ेगा। कुछ शेयर न करें, कोई भी नाम sebi.gov.in पर जाँचें, स्क्रीनशॉट रखें और मैसेज की शिकायत cybercrime.gov.in पर करें।",
     "marks": 1,
     "difficulty": 1
    },
@@ -3919,9 +3919,9 @@
     "stem_dv": "एक सीखने वाली फ़ाइनल परीक्षा Distinction के साथ पास करती है। उसके पेपर अकाउंट में दिन 12 से 12 ट्रेड पर +Rs 38,000 दिख रहा है, और उनमें से 5 ट्रेड में नियम टूटा था। इसका सबसे सही मतलब क्या है?",
     "options": [
      {
-      "en": "She knows the basics; 12 trades prove little",
-      "hi": "Basics aa gaye, par 12 trades kaafi nahi",
-      "dv": "बुनियादी बातें आ गईं, पर 12 ट्रेड काफ़ी नहीं",
+      "en": "She knows the basics, but 12 trades prove little",
+      "hi": "Basics aa gaye, par 12 trades se bahut kam saabit hota hai",
+      "dv": "बुनियादी बातें आ गईं, पर 12 ट्रेड से बहुत कम साबित होता है",
       "distractor": false
      },
      {
@@ -3946,7 +3946,7 @@
     "correct_index": 0,
     "explanation_en": "An exam tests knowledge, not trading. Twelve trades in one stretch of market are far below the 30 needed even to judge a rule, and further still from the 100 that start to give confidence. With 5 of the 12 trades breaking a rule, the Rs 38,000 is not a test of her rules at all. The certificate is not a readiness signal, and F&O stays shut in Stage 1: samjho, khelo mat.",
     "explanation_hi": "Exam knowledge test karta hai, trading nahi. Market ke ek hi daur ke 12 trades, rule judge karne ke liye zaroori 30 se bhi bahut kam hain, aur confidence dene wale 100 se toh aur bhi door. 12 mein se 5 trades mein rule toota, isliye Rs 38,000 uske rules ka test hai hi nahi. Certificate ready hone ka signal nahi hai, aur Stage 1 mein F&O ka darwaza band hai: samjho, khelo mat.",
-    "explanation_dv": "परीक्षा ज्ञान परखती है, ट्रेडिंग नहीं। बाज़ार के एक ही दौर के 12 ट्रेड, नियम परखने के लिए ज़रूरी 30 से भी बहुत कम हैं, और भरोसा देने वाले 100 से तो और भी दूर। 12 में से 5 ट्रेड में नियम टूटा, इसलिए Rs 38,000 उसके नियमों की परख है ही नहीं। सर्टिफ़िकेट तैयार होने का संकेत नहीं है, और Stage 1 में F&O का दरवाज़ा बंद है: समझो, खेलो मत।",
+    "explanation_dv": "परीक्षा ज्ञान परखती है, ट्रेडिंग नहीं। बाज़ार के एक ही दौर के 12 ट्रेड, नियम परखने के लिए ज़रूरी 30 से भी बहुत कम हैं, और भरोसा देने वाले 100 से तो और भी दूर। 12 में से 5 ट्रेड में नियम टूटा, इसलिए Rs 38,000 उसके नियमों की परख है ही नहीं। सर्टिफ़िकेट तैयार होने का संकेत नहीं है, और चरण 1 में F&O का दरवाज़ा बंद है: समझो, खेलो मत।",
     "marks": 1,
     "difficulty": 1
    },
@@ -3962,9 +3962,9 @@
       "distractor": true
      },
      {
-      "en": "25%: Rs 1,00,000 on Rs 4,00,000",
-      "hi": "25%: Rs 4,00,000 par Rs 1,00,000",
-      "dv": "25%: Rs 4,00,000 पर Rs 1,00,000",
+      "en": "25%: Rs 1,00,000 back on a smaller base of Rs 4,00,000",
+      "hi": "25%: chhote base Rs 4,00,000 par Rs 1,00,000 wapas",
+      "dv": "25%: छोटे बेस Rs 4,00,000 पर Rs 1,00,000 वापस",
       "distractor": false
      },
      {

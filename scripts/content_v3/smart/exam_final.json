@@ -11,8 +11,8 @@
     {
      "text": {
       "en": "Orders are collected and one opening price is worked out",
-      "hi": "Orders jama hote hain aur ek opening price tay hota hai",
-      "dv": "ऑर्डर जमा होते हैं और एक ओपनिंग भाव तय होता है"
+      "hi": "Orders jama kiye jaate hain aur unse ek opening price tay hota hai",
+      "dv": "ऑर्डर जमा किए जाते हैं और उनसे एक ओपनिंग भाव तय होता है"
      },
      "correct": true
     },
@@ -42,9 +42,9 @@
     }
    ],
    "explanation": {
-    "en": "NSE's pre-open runs from 9:00 to 9:15 am. Orders are collected, and the exchange works out one opening price from them, so the day does not begin with a scramble of random first trades. The normal session then runs from 9:15 am to 3:30 pm. This is also why a daily candle's open usually comes from the pre-open, not from the first 5-minute candle. Timings can change, so check the NSE website for the latest.",
-    "hi": "NSE ka pre-open 9:00 se 9:15 tak chalta hai. Is dauraan orders jama kiye jaate hain, aur exchange unse ek opening price nikaal leta hai, taaki din pehle kuch random trades ki bhaagdaud se shuru na ho. Uske baad normal session 9:15 se 3:30 tak chalta hai. Isiliye daily candle ka open aam taur par pre-open se aata hai, pehli 5-minute candle se nahi. Timings badal sakti hain, toh latest ke liye NSE ki website zaroor dekhiye.",
-    "dv": "NSE का प्री-ओपन 9:00 से 9:15 तक चलता है। इस दौरान ऑर्डर जमा किए जाते हैं, और एक्सचेंज उनसे एक ओपनिंग भाव निकालता है, ताकि दिन पहले कुछ बेतरतीब सौदों की भागदौड़ से शुरू न हो। इसके बाद आम सेशन 9:15 से 3:30 तक चलता है। इसीलिए डेली कैंडल का ओपन आम तौर पर प्री-ओपन से आता है, पहली 5-मिनट कैंडल से नहीं। समय बदल सकता है, इसलिए ताज़ा जानकारी के लिए NSE की वेबसाइट ज़रूर देखें।"
+    "en": "NSE's pre-open runs from 9:00 to 9:15 am. Orders are collected, and the exchange works out one opening price from them, so the day does not begin with a scramble of random first trades. Continuous trading then starts at 9:15 am. Since 3 August 2026 it ends at 3:15 pm for stocks that have F&O contracts, where a closing auction sets the close; other stocks trade on to 3:30 pm. This is also why a daily candle's open can differ a little from the first 5-minute candle's open. Timings can change, so check the NSE website for the latest.",
+    "hi": "NSE ka pre-open 9:00 se 9:15 tak chalta hai. Is dauraan orders jama kiye jaate hain, aur exchange unse ek opening price nikaal leta hai, taaki din pehle kuch random trades ki bhaagdaud se shuru na ho. Phir 9:15 se continuous trading shuru hoti hai. 3 August 2026 se, jin stocks ke F&O contracts hain unmein yeh 3:15 par ruk jaati hai aur ek closing auction close tay karta hai; baaki stocks 3:30 tak trade hote hain. Isiliye daily candle ka open pehli 5-minute candle ke open se thoda alag ho sakta hai. Timings badal sakti hain, toh latest ke liye NSE ki website zaroor dekhiye.",
+    "dv": "NSE का प्री-ओपन 9:00 से 9:15 तक चलता है। इस दौरान ऑर्डर जमा किए जाते हैं, और एक्सचेंज उनसे एक ओपनिंग भाव निकालता है, ताकि दिन पहले कुछ बेतरतीब सौदों की भागदौड़ से शुरू न हो। फिर 9:15 से लगातार ट्रेडिंग शुरू होती है। 3 अगस्त 2026 से, जिन शेयरों के F&O कॉन्ट्रैक्ट हैं, उनमें यह 3:15 पर रुक जाती है और एक क्लोज़िंग ऑक्शन क्लोज़ तय करता है; बाक़ी शेयर 3:30 तक ट्रेड होते हैं। इसीलिए डेली कैंडल का ओपन पहली 5-मिनट कैंडल के ओपन से थोड़ा अलग हो सकता है। समय बदल सकता है, इसलिए ताज़ा जानकारी के लिए NSE की वेबसाइट ज़रूर देखें।"
    }
   },
   {
@@ -56,9 +56,9 @@
    "options": [
     {
      "text": {
-      "en": "Her contract note, which lists each charge in rupees",
-      "hi": "Apna contract note: har charge rupees mein",
-      "dv": "अपना कॉन्ट्रैक्ट नोट: हर चार्ज रुपयों में"
+      "en": "Her contract note for that trade, which lists every charge in rupees",
+      "hi": "Us trade ka apna contract note, jismein har charge rupees mein likha hai",
+      "dv": "उस ट्रेड का अपना कॉन्ट्रैक्ट नोट, जिसमें हर चार्ज रुपयों में लिखा है"
      },
      "correct": true
     },
@@ -141,48 +141,48 @@
   },
   {
    "stem": {
-    "en": "A normal NSE session runs from 9:15 am to 3:30 pm. How many candles does it make on a 15-minute chart?",
-    "hi": "NSE ka normal session subah 9:15 se dopahar 3:30 tak chalta hai. 15-minute chart par isse kitni candles banti hain?",
-    "dv": "NSE का आम सेशन सुबह 9:15 से दोपहर 3:30 तक चलता है। 15-मिनट चार्ट पर इससे कितनी कैंडल बनती हैं?"
+    "en": "Before her first paper trade, Priya writes four notes about stop orders on her pause card. Which note is correct?",
+    "hi": "Apne pehle paper trade se pehle, Priya apne pause card par stop orders ke baare mein chaar notes likhti hai. Kaun sa note sahi hai?",
+    "dv": "अपने पहले पेपर ट्रेड से पहले, प्रिया अपने पॉज़ कार्ड पर स्टॉप ऑर्डर के बारे में चार नोट लिखती है। कौन-सा नोट सही है?"
    },
    "options": [
     {
      "text": {
-      "en": "25 candles",
-      "hi": "25 candles",
-      "dv": "25 कैंडल"
+      "en": "My trigger only releases the exit order; a gap, a price band or an unfilled SL can cost me more than 1R",
+      "hi": "Trigger sirf mera exit order bhejta hai; gap, price band ya na bhara SL mujhe 1R se zyada nuksaan de sakta hai",
+      "dv": "ट्रिगर सिर्फ़ मेरा एग्ज़िट ऑर्डर भेजता है; गैप, प्राइस बैंड या न भरा SL मुझे 1R से ज़्यादा नुक़सान दे सकता है"
      },
      "correct": true
     },
     {
      "text": {
-      "en": "24 candles",
-      "hi": "24 candles",
-      "dv": "24 कैंडल"
+      "en": "An SL-M sell always fills at exactly its trigger price, even when the stock opens far below it",
+      "hi": "SL-M sell hamesha theek trigger price par fill hota hai, chahe stock usse kaafi neeche khule",
+      "dv": "SL-M सेल हमेशा ठीक ट्रिगर प्राइस पर भरता है, चाहे शेयर उससे काफ़ी नीचे खुले"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "26 candles",
-      "hi": "26 candles",
-      "dv": "26 कैंडल"
+      "en": "An SL sell with a limit is the safer choice on a gap day, as it always gets me out near my trigger",
+      "hi": "Gap wale din limit wala SL sell zyada safe hai, kyunki woh hamesha trigger ke paas bahar nikaal deta hai",
+      "dv": "गैप वाले दिन लिमिट वाला SL सेल ज़्यादा सुरक्षित है, क्योंकि वह हमेशा ट्रिगर के पास बाहर निकाल देता है"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "375 candles",
-      "hi": "375 candles",
-      "dv": "375 कैंडल"
+      "en": "A GTT stop waits at the exchange for months, so at my trigger it fills ahead of other orders",
+      "hi": "GTT stop mahino tak exchange par intezaar karta hai, isliye trigger par baaki orders se pehle fill hota hai",
+      "dv": "GTT स्टॉप महीनों तक एक्सचेंज पर इंतज़ार करता है, इसलिए ट्रिगर पर बाक़ी ऑर्डरों से पहले भरता है"
      },
      "correct": false
     }
    ],
    "explanation": {
-    "en": "From 9:15 am to 3:30 pm is 6 hours and 15 minutes, or 375 minutes, and 375 ÷ 15 = 25. (375 would be the count on a 1-minute chart.) Each 15-minute candle joins three 5-minute candles: the first open, the highest high, the lowest low and the last close. On a daily chart the whole session is one candle. Read the direction on the bigger candle and the timing on the smaller one.",
-    "hi": "9:15 se 3:30 tak 6 ghante 15 minute hote hain, yaani 375 minute, aur 375 ÷ 15 = 25. (375 candles toh 1-minute chart par banti hain.) Har 15-minute candle teen 5-minute candles ko jodkar banti hai: pehla open, sabse ooncha high, sabse neecha low aur aakhri close. Daily chart par poora session ek hi candle hota hai. Direction badi candle par padhiye, aur timing chhoti candle par.",
-    "dv": "9:15 से 3:30 तक 6 घंटे 15 मिनट होते हैं, यानी 375 मिनट, और 375 ÷ 15 = 25। (375 कैंडल तो 1-मिनट चार्ट पर बनती हैं।) हर 15-मिनट कैंडल तीन 5-मिनट कैंडलों को जोड़कर बनती है: पहला ओपन, सबसे ऊँचा हाई, सबसे नीचा लो और आख़िरी क्लोज़। डेली चार्ट पर पूरा सेशन एक ही कैंडल होता है। दिशा बड़ी कैंडल पर पढ़ें, और टाइमिंग छोटी कैंडल पर।"
+    "en": "A stop-loss order has a trigger price: reaching it only releases your exit order, and neither kind of stop promises your exit price. An SL-M sells at the next available price, so after a gap-down open it sells near that open, far below the trigger. An SL carries a limit, so on a gap it may not sell at all, and you keep holding as the price falls. At a lower price band there may be almost no buyers, so any sell can wait in the queue. A GTT is a broker facility, not an exchange order: the broker holds it and sends an order only at the trigger, and even that order can miss. So a planned 1R loss can land in the journal as 1.5R or more. Rules on stops differ by broker, so check yours.",
+    "hi": "Stop-loss order ka ek trigger price hota hai: wahan pahunchne par bas aapka exit order exchange ki taraf chhoot jaata hai, aur koi bhi stop aapke exit price ka vaada nahi karta. SL-M agle milne wale price par bechta hai, isliye gap-down open ke baad woh open ke aas-paas bikta hai, trigger se kaafi neeche. SL mein limit hoti hai, isliye gap par woh shayad bike hi nahi, aur girte price mein share aapke paas hi rehta hai. Lower price band par khareedne wale lagbhag nahi hote, isliye koi bhi sell line mein atka reh sakta hai. GTT broker ki facility hai, exchange ka order nahi: broker use sambhaal kar rakhta hai aur trigger par hi order bhejta hai, aur woh order bhi chook sakta hai. Isiliye planned 1R ka loss journal mein 1.5R ya usse zyada bhi aa sakta hai. Stops ke rules har broker ke alag hote hain, apne broker ke rules zaroor dekhiye.",
+    "dv": "स्टॉप-लॉस ऑर्डर का एक ट्रिगर प्राइस होता है: वहाँ पहुँचने पर बस आपका एग्ज़िट ऑर्डर छूटता है, और कोई भी स्टॉप आपके एग्ज़िट भाव का वादा नहीं करता। SL-M अगले मिलने वाले भाव पर बेचता है, इसलिए गैप-डाउन ओपन के बाद वह ओपन के आसपास बिकता है, ट्रिगर से काफ़ी नीचे। SL में लिमिट होती है, इसलिए गैप पर वह शायद बिके ही नहीं, और गिरते भाव में शेयर आपके पास ही रहता है। लोअर प्राइस बैंड पर ख़रीदार लगभग नहीं होते, इसलिए कोई भी सेल ऑर्डर लाइन में अटका रह सकता है। GTT ब्रोकर की सुविधा है, एक्सचेंज का ऑर्डर नहीं: ब्रोकर उसे सँभालकर रखता है और ट्रिगर पर ही ऑर्डर भेजता है, और वह ऑर्डर भी चूक सकता है। इसीलिए प्लान किया 1R का घाटा जर्नल में 1.5R या उससे ज़्यादा भी आ सकता है। स्टॉप के नियम हर ब्रोकर के अलग होते हैं, अपने ब्रोकर के नियम ज़रूर देखें।"
    }
   },
   {
@@ -242,7 +242,7 @@
      "text": {
       "en": "No full gap, since today's low of Rs 507 is inside yesterday's range",
       "hi": "Full gap nahi, kyunki aaj ka low Rs 507 kal ki range ke andar hai",
-      "dv": "फ़ुल गैप नहीं, क्योंकि लो Rs 507 कल की रेंज में है"
+      "dv": "फ़ुल गैप नहीं, क्योंकि आज का लो Rs 507 कल की रेंज में है"
      },
      "correct": true
     },
@@ -272,55 +272,55 @@
     }
    ],
    "explanation": {
-    "en": "In a full gap-up, today's low is above yesterday's high, so an empty space is left on the chart. Here the open of Rs 514 was above yesterday's high of Rs 510, but the day dipped to Rs 507, back inside yesterday's range, so the space was traded through the same morning and no gap remains. News often calls any open above yesterday's close a 'gap-up'; on the chart, check the low. And a label like 'breakaway' is given only in hindsight, never on the same day.",
-    "hi": "Full gap-up mein aaj ka low kal ke high se upar hota hai, isliye chart par ek khaali jagah chhoot jaati hai. Yahan Rs 514 ka open kal ke high Rs 510 se upar tha, lekin din Rs 507 tak aa gaya, yaani wapas kal ki range ke andar, toh woh khaali jagah usi subah trade ho gayi aur koi gap nahi bacha. News aksar kal ke close se upar ke har open ko 'gap-up' keh deti hai; chart par low check kijiye. Aur 'breakaway' jaisa label baad mein hi diya jaata hai, usi din kabhi nahi.",
-    "dv": "फ़ुल गैप-अप में आज का लो कल के हाई से ऊपर होता है, इसलिए चार्ट पर एक ख़ाली जगह छूट जाती है। यहाँ Rs 514 का ओपन कल के हाई Rs 510 से ऊपर था, लेकिन दिन Rs 507 तक आ गया, यानी वापस कल की रेंज के अंदर, तो वह ख़ाली जगह उसी सुबह ट्रेड हो गई और कोई गैप नहीं बचा। न्यूज़ अक्सर कल के क्लोज़ से ऊपर के हर ओपन को 'गैप-अप' कह देती है; चार्ट पर लो देखें। और 'ब्रेकअवे' जैसा लेबल बाद में ही दिया जाता है, उसी दिन कभी नहीं।"
+    "en": "In a full gap-up, today's low is above yesterday's high, so an empty space is left on the chart. Here the open of Rs 514 was above yesterday's high of Rs 510, but the day dipped to Rs 507, back inside yesterday's range, so the space was traded through the same day and no gap remains. News often calls any open above yesterday's close a 'gap-up'; on the chart, check the low. And a label like 'breakaway' is given only in hindsight, never on the same day.",
+    "hi": "Full gap-up mein aaj ka low kal ke high se upar hota hai, isliye chart par ek khaali jagah chhoot jaati hai. Yahan Rs 514 ka open kal ke high Rs 510 se upar tha, lekin din Rs 507 tak aa gaya, yaani wapas kal ki range ke andar, toh woh khaali jagah usi din trade ho gayi aur koi gap nahi bacha. News aksar kal ke close se upar ke har open ko 'gap-up' keh deti hai; chart par low check kijiye. Aur 'breakaway' jaisa label baad mein hi diya jaata hai, usi din kabhi nahi.",
+    "dv": "फ़ुल गैप-अप में आज का लो कल के हाई से ऊपर होता है, इसलिए चार्ट पर एक ख़ाली जगह छूट जाती है। यहाँ Rs 514 का ओपन कल के हाई Rs 510 से ऊपर था, लेकिन दिन Rs 507 तक आ गया, यानी वापस कल की रेंज के अंदर, तो वह ख़ाली जगह उसी दिन ट्रेड हो गई और कोई गैप नहीं बचा। न्यूज़ अक्सर कल के क्लोज़ से ऊपर के हर ओपन को 'गैप-अप' कह देती है; चार्ट पर लो देखें। और 'ब्रेकअवे' जैसा लेबल बाद में ही दिया जाता है, उसी दिन कभी नहीं।"
    }
   },
   {
    "stem": {
-    "en": "Yesterday's daily candle of Gupta Cement Ltd had a high of Rs 250 and a low of Rs 240. Today's candle has a high of Rs 248 and a low of Rs 243. Which of the course's five patterns is today's candle?",
-    "hi": "Gupta Cement Ltd ki kal ki daily candle ka high Rs 250 aur low Rs 240 tha. Aaj ki candle ka high Rs 248 aur low Rs 243 hai. Course ke paanch patterns mein se aaj ki candle kaun si hai?",
-    "dv": "Gupta Cement Ltd की कल की डेली कैंडल का हाई Rs 250 और लो Rs 240 था। आज की कैंडल का हाई Rs 248 और लो Rs 243 है। कोर्स के पाँच पैटर्न में से आज की कैंडल कौन-सी है?"
+    "en": "Aman's colleague wants an AI chat to fix his small Google Sheets script. The script pulls prices through his broker's API, and its code holds his API key and secret. Which way follows the course's data-hygiene rule?",
+    "hi": "Aman ka ek colleague chahta hai ki AI chat uski chhoti Google Sheets script theek kare. Script uske broker ke API se prices laati hai, aur uske code mein uski API key aur secret likhe hain. Course ke data-hygiene rule ke hisaab se kaun sa tareeka sahi hai?",
+    "dv": "अमन का एक साथी चाहता है कि AI चैट उसकी छोटी Google Sheets स्क्रिप्ट ठीक करे। स्क्रिप्ट उसके ब्रोकर के API से भाव लाती है, और उसके कोड में उसकी API key और सीक्रेट लिखे हैं। कोर्स के डेटा-हाइजीन नियम के हिसाब से कौन-सा तरीक़ा सही है?"
    },
    "options": [
     {
      "text": {
-      "en": "An inside bar: a pause in yesterday's range",
-      "hi": "Inside bar: kal ki range ke andar thehraav",
-      "dv": "इनसाइड बार: कल की रेंज में ठहराव"
+      "en": "Swap the key and secret for XXXX first; the AI needs only the code",
+      "hi": "Pehle key aur secret ki jagah XXXX likhiye; AI ko sirf code chahiye",
+      "dv": "पहले key और सीक्रेट की जगह XXXX लिखिए; AI को सिर्फ़ कोड चाहिए"
      },
      "correct": true
     },
     {
      "text": {
-      "en": "A bullish engulfing: today's range is smaller",
-      "hi": "Bullish engulfing: aaj ki range chhoti hai",
-      "dv": "बुलिश एंगल्फ़िंग: आज की रेंज छोटी है"
+      "en": "Paste it all: a key is useless to anyone without his phone's OTP",
+      "hi": "Sab paste kar dijiye: uske phone ke OTP ke bina key kisi kaam ki nahi",
+      "dv": "सब पेस्ट कर दीजिए: उसके फ़ोन के OTP के बिना key किसी काम की नहीं"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "A hammer: its low stayed above yesterday's low",
-      "hi": "Hammer: iska low kal ke low se upar raha",
-      "dv": "हैमर: इसका लो कल के लो से ऊपर रहा"
+      "en": "Paste it all in a temporary chat, since such chats are safe for keys",
+      "hi": "Sab temporary chat mein paste kijiye, kyunki aisi chat keys ke liye safe hai",
+      "dv": "सब टेम्परेरी चैट में पेस्ट कीजिए, क्योंकि ऐसी चैट keys के लिए सुरक्षित है"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "A shooting star: its high stopped below Rs 250",
-      "hi": "Shooting star: iska high Rs 250 se neeche ruka",
-      "dv": "शूटिंग स्टार: इसका हाई Rs 250 से नीचे रुका"
+      "en": "Paste it all: an API key that only reads prices needs no hiding",
+      "hi": "Sab paste kar dijiye: jo API key sirf prices padhti hai, use chhupane ki zaroorat nahi",
+      "dv": "सब पेस्ट कर दीजिए: जो API key सिर्फ़ भाव पढ़ती है, उसे छिपाने की ज़रूरत नहीं"
      },
      "correct": false
     }
    ],
    "explanation": {
-    "en": "An inside bar is a candle whose whole range, high to low, sits within the previous candle's range: Rs 243 to Rs 248 fits inside Rs 240 to Rs 250. It shows a pause. Engulfing needs a body that fully covers the previous body, and a hammer or a shooting star needs one long wick, at least twice the body, after a fall or a rise. Alone, an inside bar means little; at a tested zone it becomes a clue worth noting.",
-    "hi": "Inside bar woh candle hai jiski poori range, high se low tak, pichhli candle ki range ke andar baithti hai: Rs 243 se Rs 248, Rs 240 se Rs 250 ke andar hai. Yeh ek thehraav dikhata hai. Engulfing ke liye body ko pichhli body poori dhakni hoti hai, aur hammer ya shooting star ke liye ek lamba wick chahiye, body se kam se kam do guna, girawat ya tezi ke baad. Akele inside bar ka zyada matlab nahi; tested zone par yeh note karne layak clue ban jaata hai.",
-    "dv": "इनसाइड बार वह कैंडल है जिसकी पूरी रेंज, हाई से लो तक, पिछली कैंडल की रेंज के अंदर बैठती है: Rs 243 से Rs 248, Rs 240 से Rs 250 के अंदर है। यह एक ठहराव दिखाता है। एंगल्फ़िंग के लिए बॉडी को पिछली बॉडी पूरी ढकनी होती है, और हैमर या शूटिंग स्टार के लिए एक लंबी विक चाहिए, बॉडी से कम से कम दोगुनी, गिरावट या तेज़ी के बाद। अकेले इनसाइड बार का ज़्यादा मतलब नहीं; टेस्ट हुए ज़ोन पर यह नोट करने लायक़ सुराग़ बन जाता है।"
+    "en": "An API key and its secret let a program act on an account, like a spare key to a house: the same key that reads prices can often place orders too. Whatever you paste into an AI chat may be stored, used to improve the product or exposed in a leak, and a temporary chat does not make a key, PAN, OTP or password safe to paste. The AI needs only the code, so replace the key and secret with placeholders such as XXXX and put the real ones back yourself. The same rule covers PAN, Aadhaar, client ID, passwords, OTPs and TPIN.",
+    "hi": "API key aur uska secret kisi program ko account par kaam karne dete hain, jaise ghar ki doosri chaabi: jo key prices padhti hai, woh aksar orders bhi laga sakti hai. AI chat mein jo bhi paste karte hain, woh store ho sakta hai, product sudhaarne mein istemaal ho sakta hai ya kisi leak mein bahar aa sakta hai, aur temporary chat se key, PAN, OTP ya password paste karna safe nahi ho jaata. AI ko sirf code chahiye, isliye key aur secret ki jagah XXXX jaise placeholder likhiye aur asli wale baad mein khud daaliye. Yahi rule PAN, Aadhaar, client ID, passwords, OTP aur TPIN par bhi laagu hota hai.",
+    "dv": "API key और उसका सीक्रेट किसी प्रोग्राम को खाते पर काम करने देते हैं, जैसे घर की दूसरी चाबी: जो key भाव पढ़ती है, वह अक्सर ऑर्डर भी लगा सकती है। AI चैट में जो भी पेस्ट करते हैं, वह स्टोर हो सकता है, प्रोडक्ट सुधारने में इस्तेमाल हो सकता है या किसी लीक में बाहर आ सकता है, और टेम्परेरी चैट से key, PAN, OTP या पासवर्ड पेस्ट करना सुरक्षित नहीं हो जाता। AI को सिर्फ़ कोड चाहिए, इसलिए key और सीक्रेट की जगह XXXX जैसे प्लेसहोल्डर लिखिए और असली वाले बाद में ख़ुद डालिए। यही नियम PAN, आधार, क्लाइंट ID, पासवर्ड, OTP और TPIN पर भी लागू होता है।"
    }
   },
   {
@@ -424,9 +424,9 @@
    "options": [
     {
      "text": {
-      "en": "A pump-and-dump: members buy while the operators sell to them",
-      "hi": "Pump-and-dump: members kharidte hain aur operators unhi ko bechte hain",
-      "dv": "पंप-एंड-डंप: मेंबर ख़रीदते हैं और ऑपरेटर उन्हीं को बेचते हैं"
+      "en": "A pump-and-dump: members buy while the operators sell to them at the top",
+      "hi": "Pump-and-dump: members kharidte hain aur operators top par unhi ko bechte hain",
+      "dv": "पंप-एंड-डंप: मेंबर ख़रीदते हैं और ऑपरेटर ऊपर के भाव पर उन्हीं को बेचते हैं"
      },
      "correct": true
     },
@@ -555,94 +555,94 @@
   },
   {
    "stem": {
-    "en": "Bad news gaps a stock below the stop, and a trade planned to lose 1R closes at -2R. What does that cost a trader who risks 1% per trade, and one who risks 10%?",
-    "hi": "Buri khabar se stock stop ke neeche gap ho jaata hai, aur jis trade mein 1R ka loss plan tha, woh -2R par band hota hai. Jo trader har trade par 1% risk leta hai, aur jo 10% leta hai, dono ka kitna nuksaan hua?",
-    "dv": "बुरी ख़बर से स्टॉक स्टॉप के नीचे गैप हो जाता है, और जिस ट्रेड में 1R का घाटा प्लान था, वह -2R पर बंद होता है। जो ट्रेडर हर ट्रेड पर 1% रिस्क लेता है, और जो 10% लेता है, दोनों का कितना नुक़सान हुआ?"
+    "en": "Aman writes his Risk Card from memory for the Rs 10 lakh paper challenge. Which of his four lines breaks the course's house rules?",
+    "hi": "Aman Rs 10 lakh wale paper challenge ke liye apna Risk Card yaad se likhta hai. Uski chaar lines mein se kaun si course ke house rules todti hai?",
+    "dv": "अमन Rs 10 लाख वाले पेपर चैलेंज के लिए अपना रिस्क कार्ड याद से लिखता है। उसकी चार लाइनों में से कौन-सी कोर्स के हाउस रूल तोड़ती है?"
    },
    "options": [
     {
      "text": {
-      "en": "2% of capital at 1% risk; 20% at 10% risk",
-      "hi": "1% risk par capital ka 2%; 10% risk par 20%",
-      "dv": "1% रिस्क पर कैपिटल का 2%; 10% रिस्क पर 20%"
+      "en": "Open trades: up to 4 at a time, if each is in a different sector",
+      "hi": "Open trades: ek saath 4 tak, bas har ek alag sector mein ho",
+      "dv": "खुले ट्रेड: एक साथ 4 तक, बस हर एक अलग सेक्टर में हो"
      },
      "correct": true
     },
     {
      "text": {
-      "en": "2% of capital either way: R is the same",
-      "hi": "Dono ka capital ka 2%: R toh ek hi hai",
-      "dv": "दोनों का कैपिटल का 2%: R तो एक ही है"
+      "en": "Risk per trade: Rs 10,000 (1R), fixed for the whole challenge",
+      "hi": "Har trade ka risk: Rs 10,000 (1R), poore challenge mein fixed",
+      "dv": "हर ट्रेड का रिस्क: Rs 10,000 (1R), पूरे चैलेंज में तय"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "1% and 10%: the stop caps each loss at 1R",
-      "hi": "1% aur 10%: stop har loss ko 1R par rok deta hai",
-      "dv": "1% और 10%: स्टॉप हर घाटे को 1R पर रोक देता है"
+      "en": "Daily stop: no new trade today after -Rs 20,000 (-2R)",
+      "hi": "Daily stop: -Rs 20,000 (-2R) ke baad aaj koi naya trade nahi",
+      "dv": "डेली स्टॉप: -Rs 20,000 (-2R) के बाद आज कोई नया ट्रेड नहीं"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "Nothing yet: a gap loss is recovered the next day",
-      "hi": "Abhi kuch nahi: gap ka loss agle din wapas aa jaata hai",
-      "dv": "अभी कुछ नहीं: गैप का घाटा अगले दिन वापस आ जाता है"
+      "en": "Weekly pause: review my journal after -Rs 50,000 (-5R) in a week",
+      "hi": "Weekly pause: hafte mein -Rs 50,000 (-5R) ke baad journal review",
+      "dv": "वीकली पॉज़: हफ़्ते में -Rs 50,000 (-5R) के बाद जर्नल की समीक्षा"
      },
      "correct": false
     }
    ],
    "explanation": {
-    "en": "R scales with your risk per trade. At 1% risk, -2R is -2% of capital: a dent. At 10% risk, the same gap costs 20%, and a 20% loss needs a 25% gain just to get back. A stop sets your plan, not your exit price; gaps and circuits can push a loss past 1R. That is why the course sizes every trade at 1%, so a bad surprise stays survivable.",
-    "hi": "R aapke per-trade risk ke saath chhota-bada hota hai. 1% risk par -2R matlab capital ka -2%: bas ek chot. 10% risk par wahi gap 20% le jaata hai, aur 20% ke loss se wapas aane ke liye 25% ka gain chahiye. Stop aapka plan tay karta hai, exit price nahi; gap aur circuit loss ko 1R se aage le ja sakte hain. Isiliye course har trade 1% par size karta hai, taaki buri surprise bhi jhel li jaaye.",
-    "dv": "R आपके हर ट्रेड के रिस्क के साथ छोटा-बड़ा होता है। 1% रिस्क पर -2R यानी कैपिटल का -2%: बस एक चोट। 10% रिस्क पर वही गैप 20% ले जाता है, और 20% के घाटे से वापस आने के लिए 25% का गेन चाहिए। स्टॉप आपका प्लान तय करता है, एग्ज़िट भाव नहीं; गैप और सर्किट घाटे को 1R से आगे ले जा सकते हैं। इसीलिए कोर्स हर ट्रेड 1% पर साइज़ करता है, ताकि बुरा झटका भी झेला जा सके।"
+    "en": "The course allows at most 3 open trades, so no more than 3R, about 3% of capital, is planned risk at once; a different sector for each is needed as well, not instead. The other three lines are right. 1R is 1% of the starting capital, Rs 10,000, and it stays fixed for the whole challenge. The daily stop, the kill-switch for humans, ends the day at -2R (-Rs 20,000), with no 'one last trade to recover'. At -5R in a week (-Rs 50,000) you pause and read your journal before the next trade. Write the card while you are calm, and keep it next to your chart.",
+    "hi": "Course ek saath zyada se zyada 3 open trades ki ijazat deta hai, taaki ek waqt mein 3R, yaani capital ka lagbhag 3%, se zyada planned risk na ho; har trade ka alag sector hona bhi zaroori hai, par woh 3 ki limit ki jagah nahi leta. Baaki teen lines sahi hain. 1R shuruaati capital ka 1% hai, Rs 10,000, aur poore challenge mein fixed rehta hai. Daily stop, yaani insaanon ka kill-switch, -2R (-Rs 20,000) par din khatam kar deta hai; 'bas ek aakhri trade, loss wapas laane ke liye' ki koi chhoot nahi. Hafte mein -5R (-Rs 50,000) par ruk kar agle trade se pehle journal padhiye. Card shaant mann se likhiye aur chart ke paas rakhiye.",
+    "dv": "कोर्स एक साथ ज़्यादा से ज़्यादा 3 खुले ट्रेड की इजाज़त देता है, ताकि एक समय में 3R, यानी कैपिटल का लगभग 3%, से ज़्यादा प्लान किया हुआ रिस्क न हो; हर ट्रेड का अलग सेक्टर होना भी ज़रूरी है, पर वह 3 की लिमिट की जगह नहीं लेता। बाक़ी तीन लाइनें सही हैं। 1R शुरुआती कैपिटल का 1% है, Rs 10,000, और पूरे चैलेंज में तय रहता है। डेली स्टॉप, यानी इंसानों का किल-स्विच, -2R (-Rs 20,000) पर दिन ख़त्म कर देता है; 'बस एक आख़िरी ट्रेड, घाटा वापस लाने के लिए' की कोई छूट नहीं। हफ़्ते में -5R (-Rs 50,000) पर रुककर अगले ट्रेड से पहले जर्नल पढ़िए। कार्ड शांत मन से लिखिए और चार्ट के पास रखिए।"
    }
   },
   {
    "stem": {
-    "en": "Priya's virtual capital is Rs 10 lakh. For an intraday paper trade, entry is Rs 200 and the stop is Rs 196. A friend says, 'Your broker gives 5x leverage, so size it on Rs 50 lakh.' What quantity do the course rules allow?",
-    "hi": "Priya ka virtual capital Rs 10 lakh hai. Ek intraday paper trade mein entry Rs 200 hai aur stop Rs 196. Ek dost kehta hai, 'Tumhara broker 5x leverage deta hai, toh Rs 50 lakh par size karo.' Course ke rules kitni quantity ki ijazat dete hain?",
-    "dv": "प्रिया का वर्चुअल कैपिटल Rs 10 लाख है। एक इंट्राडे पेपर ट्रेड में एंट्री Rs 200 है और स्टॉप Rs 196। एक दोस्त कहता है, 'तुम्हारा ब्रोकर 5x लेवरेज देता है, तो Rs 50 लाख पर साइज़ करो।' कोर्स के नियम कितनी क्वांटिटी की इजाज़त देते हैं?"
+    "en": "Aman's virtual capital is Rs 10 lakh. On a day's leave from office, his ORB paper trade has an entry of Rs 250 and a stop of Rs 245. A friend says, 'Your broker gives 5x leverage, so size it on Rs 50 lakh.' What quantity do the course rules allow?",
+    "hi": "Aman ka virtual capital Rs 10 lakh hai. Office se chhutti wale din uske ORB paper trade mein entry Rs 250 hai aur stop Rs 245. Ek dost kehta hai, 'Tumhara broker 5x leverage deta hai, toh Rs 50 lakh par size karo.' Course ke rules kitni quantity ki ijazat dete hain?",
+    "dv": "अमन का वर्चुअल कैपिटल Rs 10 लाख है। ऑफ़िस से छुट्टी वाले दिन उसके ORB पेपर ट्रेड में एंट्री Rs 250 है और स्टॉप Rs 245। एक दोस्त कहता है, 'तुम्हारा ब्रोकर 5x लेवरेज देता है, तो Rs 50 लाख पर साइज़ करो।' कोर्स के नियम कितनी क्वांटिटी की इजाज़त देते हैं?"
    },
    "options": [
     {
      "text": {
-      "en": "1,250 shares: both limits use her own Rs 10 lakh",
-      "hi": "1,250 shares: dono limits apne Rs 10 lakh par",
-      "dv": "1,250 शेयर: दोनों लिमिट अपने Rs 10 लाख पर"
+      "en": "1,000 shares: the 25% cap on his own Rs 10 lakh is the smaller limit",
+      "hi": "1,000 shares: apne Rs 10 lakh par 25% ka cap chhoti limit hai",
+      "dv": "1,000 शेयर: अपने Rs 10 लाख पर 25% का कैप छोटी लिमिट है"
      },
      "correct": true
     },
     {
      "text": {
-      "en": "2,500 shares, since the 1% rule alone decides the quantity",
-      "hi": "2,500 shares, kyunki quantity akela 1% rule tay karta hai",
-      "dv": "2,500 शेयर, क्योंकि क्वांटिटी अकेला 1% नियम तय करता है"
+      "en": "2,000 shares, since the 1% rule alone decides the quantity",
+      "hi": "2,000 shares, kyunki quantity akela 1% rule tay karta hai",
+      "dv": "2,000 शेयर, क्योंकि क्वांटिटी अकेला 1% नियम तय करता है"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "6,250 shares: 25% of the Rs 50 lakh leverage limit",
-      "hi": "6,250 shares: Rs 50 lakh ki leverage limit ka 25%",
-      "dv": "6,250 शेयर: Rs 50 लाख की लेवरेज लिमिट का 25%"
+      "en": "5,000 shares: 25% of the Rs 50 lakh leverage limit",
+      "hi": "5,000 shares: Rs 50 lakh ki leverage limit ka 25%",
+      "dv": "5,000 शेयर: Rs 50 लाख की लेवरेज लिमिट का 25%"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "12,500 shares: 1% of Rs 50 lakh, divided by Rs 4 risk",
-      "hi": "12,500 shares: Rs 50 lakh ka 1%, Rs 4 risk se divide karke",
-      "dv": "12,500 शेयर: Rs 50 लाख का 1%, Rs 4 रिस्क से भाग देकर"
+      "en": "10,000 shares: 1% of Rs 50 lakh, divided by Rs 5 risk",
+      "hi": "10,000 shares: Rs 50 lakh ka 1%, Rs 5 risk se divide karke",
+      "dv": "10,000 शेयर: Rs 50 लाख का 1%, Rs 5 रिस्क से भाग देकर"
      },
      "correct": false
     }
    ],
    "explanation": {
-    "en": "Leverage lets a broker give you a position bigger than your cash, but it changes neither limit: both are measured on your own capital. The formula gives Rs 10,000 ÷ Rs 4 = 2,500 shares, worth Rs 5,00,000, which is above the 25% cap of Rs 2,50,000. The cap allows Rs 2,50,000 ÷ Rs 200 = 1,250 shares, so she takes the smaller number. Sizing on borrowed buying power would put five times the planned rupees at risk.",
-    "hi": "Leverage se broker aapko cash se badi position de deta hai, lekin isse koi bhi limit nahi badalti: dono aapke apne capital par naapi jaati hain. Formula Rs 10,000 ÷ Rs 4 = 2,500 shares deta hai, jinki value Rs 5,00,000 hai, jo 25% ke cap Rs 2,50,000 se upar hai. Cap Rs 2,50,000 ÷ Rs 200 = 1,250 shares ki ijazat deta hai, toh woh chhota number leti hai. Udhaar ki buying power par size karti, toh plan se paanch guna rupees risk par hote.",
-    "dv": "लेवरेज से ब्रोकर आपको कैश से बड़ी पोज़िशन दे देता है, लेकिन इससे कोई भी लिमिट नहीं बदलती: दोनों आपके अपने कैपिटल पर नापी जाती हैं। फ़ॉर्मूला Rs 10,000 ÷ Rs 4 = 2,500 शेयर देता है, जिनकी क़ीमत Rs 5,00,000 है, जो 25% के कैप Rs 2,50,000 से ऊपर है। कैप Rs 2,50,000 ÷ Rs 200 = 1,250 शेयर की इजाज़त देता है, तो वह छोटी संख्या लेती है। उधार की बाइंग पावर पर साइज़ करती, तो प्लान से पाँच गुना रुपये रिस्क पर होते।"
+    "en": "Leverage lets a broker give you a position bigger than your cash, but it changes neither limit: both are measured on your own capital. The formula gives Rs 10,000 ÷ Rs 5 = 2,000 shares, worth Rs 5,00,000, which is above the 25% cap of Rs 2,50,000. The cap allows Rs 2,50,000 ÷ Rs 250 = 1,000 shares, so he takes the smaller number. Sizing on borrowed buying power would put five times the planned rupees at risk.",
+    "hi": "Leverage se broker aapko cash se badi position de deta hai, lekin isse koi bhi limit nahi badalti: dono aapke apne capital par naapi jaati hain. Formula Rs 10,000 ÷ Rs 5 = 2,000 shares deta hai, jinki value Rs 5,00,000 hai, jo 25% ke cap Rs 2,50,000 se upar hai. Cap Rs 2,50,000 ÷ Rs 250 = 1,000 shares ki ijazat deta hai, toh woh chhota number leta hai. Udhaar ki buying power par size karta, toh plan se paanch guna rupees risk par hote.",
+    "dv": "लेवरेज से ब्रोकर आपको कैश से बड़ी पोज़िशन दे देता है, लेकिन इससे कोई भी लिमिट नहीं बदलती: दोनों आपके अपने कैपिटल पर नापी जाती हैं। फ़ॉर्मूला Rs 10,000 ÷ Rs 5 = 2,000 शेयर देता है, जिनकी क़ीमत Rs 5,00,000 है, जो 25% के कैप Rs 2,50,000 से ऊपर है। कैप Rs 2,50,000 ÷ Rs 250 = 1,000 शेयर की इजाज़त देता है, तो वह छोटी संख्या लेता है। उधार की बाइंग पावर पर साइज़ करता, तो प्लान से पाँच गुना रुपये रिस्क पर होते।"
    }
   },
   {
@@ -716,17 +716,17 @@
     },
     {
      "text": {
-      "en": "A scheme that buys more units only when the NAV is high",
-      "hi": "Ek scheme jo sirf NAV oonchi hone par zyada units kharidti hai",
-      "dv": "एक स्कीम जो सिर्फ़ NAV ऊँची होने पर ज़्यादा यूनिट ख़रीदती है"
+      "en": "A plan that buys the same number of units each month, whatever the NAV",
+      "hi": "Ek plan jo har mahine utni hi units kharidta hai, NAV jo bhi ho",
+      "dv": "एक प्लान जो हर महीने उतनी ही यूनिट ख़रीदता है, NAV जो भी हो"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "A kind of bank deposit that pays a set amount every month",
-      "hi": "Ek tarah ka bank deposit jo har mahine tay rakam deta hai",
-      "dv": "एक तरह का बैंक डिपॉज़िट जो हर महीने तय रक़म देता है"
+      "en": "A bank deposit that pays a set sum each month",
+      "hi": "Ek bank deposit jo har mahine tay rakam deta hai",
+      "dv": "एक बैंक डिपॉज़िट जो हर महीने तय रक़म देता है"
      },
      "correct": false
     }
@@ -787,14 +787,14 @@
    "stem": {
     "en": "Priya's paper trade in Bharat Pumps Ltd has a profit exit at Rs 450 and a stop at Rs 402. The next day it opens at Rs 438, reaches a high of exactly Rs 450, dips to a low of Rs 432 and closes at Rs 441. What goes in her journal?",
     "hi": "Bharat Pumps Ltd mein Priya ke paper trade ka profit exit Rs 450 par hai aur stop Rs 402 par. Agle din woh Rs 438 par khulta hai, high theek Rs 450 tak jaata hai, low Rs 432 tak aata hai, aur Rs 441 par close hota hai. Uske journal mein kya likha jaayega?",
-    "dv": "Bharat Pumps Ltd में प्रिया के पेपर ट्रेड का प्रॉफ़िट एग्ज़िट Rs 450 पर है और स्टॉप Rs 402 पर। अगले दिन वह Rs 438 पर खुलता है, हाई ठीक Rs 450 तक जाता है, लो Rs 432 तक आता है, और Rs 441 पर बंद होता है। उसकी जर्नल में क्या लिखा जाएगा?"
+    "dv": "Bharat Pumps Ltd में प्रिया के पेपर ट्रेड का प्रॉफ़िट एग्ज़िट Rs 450 पर है और स्टॉप Rs 402 पर। अगले दिन वह Rs 438 पर खुलता है, हाई ठीक Rs 450 तक जाता है, लो Rs 432 तक आता है, और Rs 441 पर बंद होता है। उसके जर्नल में क्या लिखा जाएगा?"
    },
    "options": [
     {
      "text": {
       "en": "Still open, since the high only touched Rs 450, never above",
-      "hi": "Trade khula hai, kyunki high ne Rs 450 bas chhua",
-      "dv": "ट्रेड खुला है, क्योंकि हाई ने Rs 450 बस छुआ"
+      "hi": "Trade khula hai, kyunki high ne Rs 450 bas chhua, upar nahi gaya",
+      "dv": "ट्रेड अभी खुला है, क्योंकि हाई ने Rs 450 बस छुआ, उसके ऊपर नहीं गया"
      },
      "correct": true
     },
@@ -923,48 +923,48 @@
   },
   {
    "stem": {
-    "en": "A made-up company has 50 crore shares, and each trades at Rs 400. What is its market cap?",
-    "hi": "Ek made-up company ke 50 crore shares hain, aur har share Rs 400 par trade karta hai. Iska market cap kitna hai?",
-    "dv": "एक काल्पनिक कंपनी के 50 करोड़ शेयर हैं, और हर शेयर Rs 400 पर ट्रेड करता है। इसका मार्केट कैप कितना है?"
+    "en": "Monday, 8:50 am. Priya slept three hours after a family wedding. Her Day 19 calendar is clear, and last night's plan card holds one valid setup. She also wants to widen her RSI band to 35-55 before the open. What does her Daily Routine Card say?",
+    "hi": "Somvaar, subah 8:50. Ek family wedding ke baad Priya sirf teen ghante soyi hai. Uska Day 19 wala calendar saaf hai, aur kal raat ke plan card mein ek valid setup hai. Woh market khulne se pehle apna RSI band 35-55 tak chauda bhi karna chahti hai. Uska Daily Routine Card kya kehta hai?",
+    "dv": "सोमवार, सुबह 8:50। एक पारिवारिक शादी के बाद प्रिया सिर्फ़ तीन घंटे सोई है। उसका दिन 19 वाला कैलेंडर साफ़ है, और कल रात के प्लान कार्ड में एक वैलिड सेटअप है। वह बाज़ार खुलने से पहले अपना RSI बैंड 35-55 तक चौड़ा भी करना चाहती है। उसका डेली रूटीन कार्ड क्या कहता है?"
    },
    "options": [
     {
      "text": {
-      "en": "Rs 20,000 crore",
-      "hi": "Rs 20,000 crore",
-      "dv": "Rs 20,000 करोड़"
+      "en": "No new trade today; the RSI change waits for a weekend review, in writing, after 30 trades",
+      "hi": "Aaj koi naya trade nahi; RSI ka badlaav weekend review tak rukega, likh kar, 30 trades ke baad",
+      "dv": "आज कोई नया ट्रेड नहीं; RSI का बदलाव वीकेंड रिव्यू तक रुकेगा, लिखकर, 30 ट्रेड के बाद"
      },
      "correct": true
     },
     {
      "text": {
-      "en": "Rs 2,000 crore",
-      "hi": "Rs 2,000 crore",
-      "dv": "Rs 2,000 करोड़"
+      "en": "Take the planned trade, since it was written while calm, and change the RSI band now",
+      "hi": "Planned trade le lijiye, kyunki woh shaant mann se likha tha, aur RSI band abhi badal dijiye",
+      "dv": "प्लान किया ट्रेड ले लीजिए, क्योंकि वह शांत मन से लिखा था, और RSI बैंड अभी बदल दीजिए"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "Rs 2,00,000 crore",
-      "hi": "Rs 2,00,000 crore",
-      "dv": "Rs 2,00,000 करोड़"
+      "en": "Take the planned trade at half size, and change the RSI band after today's close",
+      "hi": "Planned trade aadhe size par lijiye, aur RSI band aaj ke close ke baad badliye",
+      "dv": "प्लान किया ट्रेड आधे साइज़ पर लीजिए, और RSI बैंड आज के क्लोज़ के बाद बदलिए"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "Rs 200 crore",
-      "hi": "Rs 200 crore",
-      "dv": "Rs 200 करोड़"
+      "en": "Take the planned trade as it is; only the RSI change has to wait for the weekend",
+      "hi": "Planned trade jaisa hai waisa lijiye; sirf RSI ka badlaav weekend tak rukega",
+      "dv": "प्लान किया ट्रेड जैसा है वैसा लीजिए; सिर्फ़ RSI का बदलाव वीकेंड तक रुकेगा"
      },
      "correct": false
     }
    ],
    "explanation": {
-    "en": "Market cap is share price x total number of shares: Rs 400 x 50 crore = Rs 20,000 crore, the price tag of the whole company. Its tier depends on rank, not on a fixed rupee amount: under SEBI's rule for mutual funds, the top 100 companies are large caps, 101 to 250 are mid caps, and the rest are small caps. AMFI updates that list every six months, so check amfiindia.com.",
-    "hi": "Market cap = share price x kul shares: Rs 400 x 50 crore = Rs 20,000 crore, yaani poori company ka price tag. Company kis tier mein hai, yeh rank se tay hota hai, kisi fixed rupee amount se nahi: mutual funds ke liye SEBI ke rule mein top 100 companies large cap hain, 101 se 250 mid cap, aur baaki small cap. AMFI yeh list har chhe mahine update karta hai, toh amfiindia.com par dekhiye.",
-    "dv": "मार्केट कैप = शेयर का भाव x कुल शेयर: Rs 400 x 50 करोड़ = Rs 20,000 करोड़, यानी पूरी कंपनी का प्राइस टैग। कंपनी किस टियर में है, यह रैंक से तय होता है, किसी तय रुपये की रक़म से नहीं: म्यूचुअल फ़ंड के लिए SEBI के नियम में टॉप 100 कंपनियाँ लार्ज कैप हैं, 101 से 250 मिड कैप, और बाक़ी स्मॉल कैप। AMFI यह लिस्ट हर छह महीने अपडेट करता है, तो amfiindia.com पर देखें।"
+    "en": "Her card carries a body rule next to the kill-switch: angry, unwell or short of sleep means no new trades that day, even one planned while calm, because a tired brain is a poor risk manager. A setup skipped by a written rule still earns its adherence point. Rules change only in the weekend block, in writing, and only after 30 logged trades; widening a band at 8:50 am is deciding in the moment, which the card exists to prevent. Discipline here is design, not willpower: decided on a calm day, followed on a hard one.",
+    "hi": "Uske card mein kill-switch ke saath body rule bhi hai: gussa ho, tabiyat kharab ho ya neend poori na hui ho, toh us din koi naya trade nahi, chahe woh shaant mann se plan kiya gaya ho, kyunki thaka hua dimaag achha risk manager nahi hota. Likhe hue rule ki wajah se chhoda gaya setup bhi adherence ka point kamaata hai. Rules sirf weekend block mein badalte hain, likh kar, aur woh bhi 30 logged trades ke baad; subah 8:50 par band chauda karna usi pal ka faisla hai, jise rokne ke liye hi card bana hai. Yahan discipline design hai, willpower nahi: shaant din par tay kiya, mushkil din par follow kiya.",
+    "dv": "उसके कार्ड में किल-स्विच के साथ सेहत का नियम भी है: ग़ुस्सा हो, तबीयत ख़राब हो या नींद पूरी न हुई हो, तो उस दिन कोई नया ट्रेड नहीं, चाहे वह शांत मन से प्लान किया गया हो, क्योंकि थका हुआ दिमाग़ अच्छा रिस्क मैनेजर नहीं होता। लिखे हुए नियम की वजह से छोड़ा गया सेटअप भी एडहेरेंस का पॉइंट कमाता है। नियम सिर्फ़ वीकेंड वाले हिस्से में बदलते हैं, लिखकर, और वह भी 30 दर्ज ट्रेडों के बाद; सुबह 8:50 पर बैंड चौड़ा करना उसी पल का फ़ैसला है, जिसे रोकने के लिए ही कार्ड बना है। यहाँ अनुशासन डिज़ाइन है, विलपावर नहीं: शांत दिन पर तय किया, मुश्किल दिन पर निभाया।"
    }
   },
   {
@@ -1063,38 +1063,38 @@
    "stem": {
     "en": "Row 17 of Priya's 30-trade hand backtest reads: entry Rs 300, stop Rs 288, exit 'day-15 time exit' at the next open, Rs 300. The course takes a 0.1R cost allowance off every trade. What should go in the net R and win columns?",
     "hi": "Priya ke 30-trade hand backtest ki row 17 mein likha hai: entry Rs 300, stop Rs 288, exit 'day-15 time exit', agle open par Rs 300. Course har trade se 0.1R ka cost allowance ghatata hai. Net R aur win wale columns mein kya jaana chahiye?",
-    "dv": "प्रिया के 30-ट्रेड हाथ वाले बैकटेस्ट की पंक्ति 17 में लिखा है: एंट्री Rs 300, स्टॉप Rs 288, एग्ज़िट 'दिन-15 टाइम एग्ज़िट', अगले ओपन पर Rs 300। कोर्स हर ट्रेड से 0.1R का कॉस्ट अलाउंस घटाता है। नेट R और जीत वाले कॉलम में क्या जाना चाहिए?"
+    "dv": "प्रिया के हाथ से किए 30-ट्रेड बैकटेस्ट की पंक्ति 17 में लिखा है: एंट्री Rs 300, स्टॉप Rs 288, एग्ज़िट 'दिन-15 टाइम एग्ज़िट', अगले ओपन पर Rs 300। कोर्स हर ट्रेड से 0.1R का कॉस्ट अलाउंस घटाता है। नेट R और जीत वाले कॉलम में क्या जाना चाहिए?"
    },
    "options": [
     {
      "text": {
-      "en": "-0.10R, a small loss after costs",
-      "hi": "-0.10R, costs ke baad chhota sa loss",
-      "dv": "-0.10R, कॉस्ट के बाद छोटा-सा घाटा"
+      "en": "-0.10R, and a loss: 0R gross, minus the 0.1R allowance",
+      "hi": "-0.10R, aur loss: 0R gross, minus 0.1R ka allowance",
+      "dv": "-0.10R, और घाटा: 0R ग्रॉस, घटा 0.1R का अलाउंस"
      },
      "correct": true
     },
     {
      "text": {
-      "en": "0R, a scratch trade left out of her stats",
-      "hi": "0R, ek scratch trade jo stats se bahar rahega",
-      "dv": "0R, एक स्क्रैच ट्रेड जो आँकड़ों से बाहर रहेगा"
+      "en": "0R, a scratch trade left out of her stats entirely",
+      "hi": "0R, ek scratch trade jo uske stats se poori tarah bahar rahega",
+      "dv": "0R, एक स्क्रैच ट्रेड जो आँकड़ों से पूरी तरह बाहर रहेगा"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "+0.1R, since the time exit saved her stop",
-      "hi": "+0.1R, kyunki time exit ne stop bacha liya",
-      "dv": "+0.1R, क्योंकि टाइम एग्ज़िट ने स्टॉप बचा लिया"
+      "en": "+0.1R, since the time exit saved her from the stop",
+      "hi": "+0.1R, kyunki time exit ne use stop se bacha liya",
+      "dv": "+0.1R, क्योंकि टाइम एग्ज़िट ने उसे स्टॉप से बचा लिया"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "0R, counted as a win since nothing was lost",
-      "hi": "0R, jeet gina jaayega kyunki kuch gaya nahi",
-      "dv": "0R, जीत गिनी जाएगी क्योंकि कुछ गया नहीं"
+      "en": "0R, counted as a win since no money was lost at all",
+      "hi": "0R, jeet gina jaayega kyunki koi paisa gaya hi nahi",
+      "dv": "0R, जीत गिनी जाएगी क्योंकि कोई पैसा गया ही नहीं"
      },
      "correct": false
     }
@@ -1107,48 +1107,48 @@
   },
   {
    "stem": {
-    "en": "On a backtest trade's signal day, NIFTY 50's EMA 20 is above its EMA 50. EMA 20 is higher than it was 10 trading days earlier, but EMA 50 is lower. How should Priya tag the market phase?",
-    "hi": "Backtest ke ek trade ke signal day par NIFTY 50 ka EMA 20 uske EMA 50 ke upar hai. EMA 20 apni 10 trading din pehle wali value se upar hai, lekin EMA 50 apni 10 trading din pehle wali value se neeche hai. Priya ko market phase ka kya tag lagana chahiye?",
-    "dv": "बैकटेस्ट के एक ट्रेड के सिग्नल डे पर NIFTY 50 का EMA 20 उसके EMA 50 के ऊपर है। EMA 20 अपनी 10 ट्रेडिंग दिन पहले वाली वैल्यू से ऊपर है, लेकिन EMA 50 अपनी 10 ट्रेडिंग दिन पहले वाली वैल्यू से नीचे है। प्रिया को मार्केट फ़ेज़ का क्या टैग लगाना चाहिए?"
+    "en": "Priya's free price alert at Rs 250, a level she worked out the evening before, rings at 10:10 am while she is at work. What has the alert done, and what is left to her?",
+    "hi": "Priya ka free price alert Rs 250 par hai, ek level jo usne pichhli shaam nikaala tha. Woh subah 10:10 baje bajta hai, jab woh office mein hai. Alert ne kya kiya hai, aur uske haath mein kya bacha hai?",
+    "dv": "प्रिया का फ़्री प्राइस अलर्ट Rs 250 पर है, एक लेवल जो उसने पिछली शाम निकाला था। वह सुबह 10:10 बजे बजता है, जब वह ऑफ़िस में है। अलर्ट ने क्या किया है, और उसके हाथ में क्या बचा है?"
    },
    "options": [
     {
      "text": {
-      "en": "Sideways: 'up' needs both EMAs higher than 10 days ago",
-      "hi": "Sideways: 'up' ke liye dono EMA 10 din pehle se oonche chahiye",
-      "dv": "साइडवेज़: 'अप' के लिए दोनों EMA 10 दिन पहले से ऊँचे चाहिए"
+      "en": "Only told her to look; the rule check, size, open-trade count and any order are all hers",
+      "hi": "Sirf dekhne ko kaha; rule check, size, open trades ki ginti aur koi bhi order, sab uske haath mein",
+      "dv": "सिर्फ़ देखने को कहा; नियम की जाँच, साइज़, खुले ट्रेडों की गिनती और कोई भी ऑर्डर, सब उसके हाथ में"
      },
      "correct": true
     },
     {
      "text": {
-      "en": "Up: EMA 20 is above EMA 50, and that alone sets the phase",
-      "hi": "Up: EMA 20 EMA 50 ke upar hai, aur phase akele isi se tay hota hai",
-      "dv": "अप: EMA 20, EMA 50 के ऊपर है, और फ़ेज़ अकेले इसी से तय होता है"
+      "en": "Placed her planned paper buy at Rs 250, since the level came from her own plan card",
+      "hi": "Uska planned paper buy Rs 250 par laga diya, kyunki level uske apne plan card se tha",
+      "dv": "उसका प्लान किया पेपर बाय Rs 250 पर लगा दिया, क्योंकि लेवल उसके अपने प्लान कार्ड से था"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "Down: EMA 50 is falling, and the slower line sets the phase",
-      "hi": "Down: EMA 50 gir raha hai, aur phase dheemi line tay karti hai",
-      "dv": "डाउन: EMA 50 गिर रहा है, और फ़ेज़ धीमी लाइन तय करती है"
+      "en": "Checked her rule card as well, since it was set at a level taken from her own plan",
+      "hi": "Uska rule card bhi check kar liya, kyunki alert uske apne plan ke level par laga tha",
+      "dv": "उसका रूल कार्ड भी जाँच लिया, क्योंकि अलर्ट उसके अपने प्लान के लेवल पर लगा था"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "Untagged: skip the trade until the two EMAs agree on direction",
-      "hi": "Koi tag nahi: jab tak dono EMA ek direction par na hon, trade chhod do",
-      "dv": "कोई टैग नहीं: जब तक दोनों EMA एक दिशा पर न हों, ट्रेड छोड़ दें"
+      "en": "Confirmed the signal, so the only step left is to place the order before it runs",
+      "hi": "Signal confirm kar diya, ab bas price bhaagne se pehle order lagana baaki hai",
+      "dv": "सिग्नल कन्फ़र्म कर दिया, अब बस भाव भागने से पहले ऑर्डर लगाना बाक़ी है"
      },
      "correct": false
     }
    ],
    "explanation": {
-    "en": "The course's tag is strict. Up: EMA 20 above EMA 50, and both higher than 10 trading days earlier. Down: EMA 20 below EMA 50, and both lower. Anything else is sideways, and here EMA 50 has not risen, so the tag is sideways. The tag never removes a trade from the log. Tagging every trade shows whether the results came from one kind of market; about 100 trades across up, down and sideways phases start to give confidence.",
-    "hi": "Course ka tag strict hai. Up: EMA 20, EMA 50 ke upar, aur dono apni 10 trading din pehle wali value se upar. Down: EMA 20, EMA 50 ke neeche, aur dono us value se neeche. Baaki sab sideways hai, aur yahan EMA 50 badha nahi, toh tag sideways hai. Tag ki wajah se koi trade log se hataaya nahi jaata. Har trade ko tag karne se pata chalta hai ki results sirf ek tarah ke market se toh nahi aaye; up, down aur sideways teeno phases mein lagbhag 100 trades hon, tab bharosa banna shuru hota hai.",
-    "dv": "कोर्स का टैग सख़्त है। अप: EMA 20, EMA 50 के ऊपर, और दोनों अपनी 10 ट्रेडिंग दिन पहले वाली वैल्यू से ऊपर। डाउन: EMA 20, EMA 50 के नीचे, और दोनों उस वैल्यू से नीचे। बाक़ी सब साइडवेज़ है, और यहाँ EMA 50 बढ़ा नहीं, तो टैग साइडवेज़ है। टैग की वजह से कोई ट्रेड लॉग से हटाया नहीं जाता। हर ट्रेड को टैग करने से पता चलता है कि नतीजे सिर्फ़ एक तरह के बाज़ार से तो नहीं आए; अप, डाउन और साइडवेज़ तीनों फ़ेज़ में लगभग 100 ट्रेड हों, तब भरोसा बनना शुरू होता है।"
+    "en": "An alert is a message, not an order. It watches one condition, here a price touch, and cannot see her rule card, her position size or her open trades; a plain price alert can even ring on a wick while her rule needs a candle to close beyond the level. So the alert means 'look now', and she runs her after-alert checklist, where any NO ends it. A daily swing rule reads the official close, so that check happens in the evening. Wiring an alert to place orders by itself would turn it into an algo under SEBI's framework, and Stage 1 places no automated orders.",
+    "hi": "Alert ek message hai, order nahi. Woh ek hi condition dekhta hai, yahan price ka touch, aur uska rule card, position size ya open trades nahi dekh sakta; ek saadha price alert toh wick par bhi baj sakta hai, jabki uske rule ko level ke paar candle ka close chahiye. Isliye alert ka matlab hai 'abhi dekho', aur woh apni 'alert ke baad ki checklist' chalaati hai, jismein koi bhi NO baat khatam kar deta hai. Daily swing rule official close padhta hai, isliye woh check shaam ko hota hai. Alert ko khud order lagane ke liye jod diya, toh SEBI ke framework mein woh algo ban jaata hai, aur Stage 1 mein koi automatic order nahi lagta.",
+    "dv": "अलर्ट एक मैसेज है, ऑर्डर नहीं। वह एक ही शर्त देखता है, यहाँ भाव का टच, और उसका रूल कार्ड, पोज़िशन साइज़ या खुले ट्रेड नहीं देख सकता; एक सादा प्राइस अलर्ट तो विक पर भी बज सकता है, जबकि उसके नियम को लेवल के पार कैंडल का क्लोज़ चाहिए। इसलिए अलर्ट का मतलब है 'अभी देखो', और वह अपनी 'अलर्ट के बाद की चेकलिस्ट' चलाती है, जिसमें कोई भी NO बात ख़त्म कर देता है। डेली स्विंग नियम आधिकारिक क्लोज़ पढ़ता है, इसलिए वह जाँच शाम को होती है। अलर्ट को ख़ुद ऑर्डर लगाने के लिए जोड़ दिया, तो SEBI के फ़्रेमवर्क में वह एल्गो बन जाता है, और चरण 1 में कोई ऑटोमैटिक ऑर्डर नहीं लगता।"
    }
   },
   {
@@ -1160,9 +1160,9 @@
    "options": [
     {
      "text": {
-      "en": "Rs 30: Rs 20 to the strike, plus the Rs 10 premium",
-      "hi": "Rs 30: strike tak Rs 20, plus Rs 10 ka premium",
-      "dv": "Rs 30: स्ट्राइक तक Rs 20, ऊपर से Rs 10 का प्रीमियम"
+      "en": "Rs 30: Rs 20 down to the Rs 480 strike, plus the Rs 10 premium",
+      "hi": "Rs 30: Rs 480 ke strike tak Rs 20, plus Rs 10 ka premium",
+      "dv": "Rs 30: Rs 480 की स्ट्राइक तक Rs 20, ऊपर से Rs 10 का प्रीमियम"
      },
      "correct": true
     },
@@ -1214,9 +1214,9 @@
     },
     {
      "text": {
-      "en": "The rise in price above the strike",
-      "hi": "Strike ke upar price ki poori tezi",
-      "dv": "स्ट्राइक के ऊपर भाव की पूरी तेज़ी"
+      "en": "The full rise above the strike",
+      "hi": "Strike ke upar ki poori tezi",
+      "dv": "स्ट्राइक के ऊपर की पूरी तेज़ी"
      },
      "correct": false
     },
@@ -1252,9 +1252,9 @@
    "options": [
     {
      "text": {
-      "en": "Index funds must buy it around then: watch for unusual volume",
-      "hi": "Tab index funds ko ise kharidna hoga: volume asaamanya ho sakta hai",
-      "dv": "तब इंडेक्स फ़ंडों को इसे ख़रीदना होगा: वॉल्यूम असामान्य हो सकता है"
+      "en": "Index funds must buy it around then: heavy volume, but not a signal",
+      "hi": "Tab index funds ko ise kharidna hoga: bhaari volume, par signal nahi",
+      "dv": "तब इंडेक्स फ़ंडों को इसे ख़रीदना होगा: भारी वॉल्यूम, पर सिग्नल नहीं"
      },
      "correct": true
     },
@@ -1284,16 +1284,16 @@
     }
    ],
    "explanation": {
-    "en": "Index changes are announced weeks ahead and take effect on a set date. Around that date, index funds must buy the stock coming in and sell the one going out, so both can see unusual volume and sharp moves. Mark it on your event calendar, with the date from the NSE Indices press release on niftyindices.com. Joining an index says the company is large and actively traded; it says nothing certain about the next price.",
-    "hi": "Index ke badlaav hafton pehle announce hote hain aur ek tay tareekh se laagu hote hain. Us tareekh ke aas-paas index funds ko aane wala stock kharidna aur jaane wala stock bechna padta hai, isliye dono mein asaamanya volume aur tez moves dikh sakte hain. Ise apne event calendar par likhiye, tareekh niftyindices.com par NSE Indices ki press release se lijiye. Index mein aane ka matlab hai company badi hai aur usmein khoob trading hoti hai; agle price ke baare mein yeh kuch pakka nahi batata.",
-    "dv": "इंडेक्स के बदलाव हफ़्तों पहले घोषित होते हैं और एक तय तारीख़ से लागू होते हैं। उस तारीख़ के आसपास इंडेक्स फ़ंडों को आने वाला स्टॉक ख़रीदना और जाने वाला स्टॉक बेचना पड़ता है, इसलिए दोनों में असामान्य वॉल्यूम और तेज़ मूव दिख सकते हैं। इसे अपने इवेंट कैलेंडर पर लिखें, तारीख़ niftyindices.com पर NSE Indices की प्रेस रिलीज़ से लें। इंडेक्स में आने का मतलब है कंपनी बड़ी है और उसमें ख़ूब ट्रेडिंग होती है; अगले भाव के बारे में यह कुछ पक्का नहीं बताता।"
+    "en": "Index changes are announced weeks ahead and take effect on a set date. Index funds and ETFs that copy the index must then buy the stock coming in and sell the one going out, usually near the close of the last day before the change, so both can show heavy volume that says nothing about the business. Mark the date on your event calendar, from the NSE Indices press release on niftyindices.com. Joining an index says the company is large and actively traded; it says nothing certain about the next price.",
+    "hi": "Index ke badlaav hafton pehle announce hote hain aur ek tay tareekh se laagu hote hain. Index ko copy karne wale index funds aur ETFs ko tab aane wala stock kharidna aur jaane wala stock bechna padta hai, aam taur par badlaav se pehle ke aakhri din ke close ke aas-paas, isliye dono mein bhaari volume dikh sakta hai jo business ke baare mein kuch nahi batata. Yeh tareekh niftyindices.com par NSE Indices ki press release se lekar apne event calendar par likhiye. Index mein aane ka matlab hai company badi hai aur usmein khoob trading hoti hai; agle price ke baare mein yeh kuch pakka nahi batata.",
+    "dv": "इंडेक्स के बदलाव हफ़्तों पहले घोषित होते हैं और एक तय तारीख़ से लागू होते हैं। इंडेक्स को कॉपी करने वाले इंडेक्स फ़ंड और ETF को तब आने वाला स्टॉक ख़रीदना और जाने वाला स्टॉक बेचना पड़ता है, आम तौर पर बदलाव से पहले के आख़िरी दिन के क्लोज़ के आसपास, इसलिए दोनों में भारी वॉल्यूम दिख सकता है जो कारोबार के बारे में कुछ नहीं बताता। यह तारीख़ niftyindices.com पर NSE Indices की प्रेस रिलीज़ से लेकर अपने इवेंट कैलेंडर पर लिखें। इंडेक्स में आने का मतलब है कंपनी बड़ी है और उसमें ख़ूब ट्रेडिंग होती है; अगले भाव के बारे में यह कुछ पक्का नहीं बताता।"
    }
   },
   {
    "stem": {
     "en": "This week Aman's rules produced 3 setups, but his paper journal shows 9 trades. The extra 6 are tagged 'bored'. What is his journal showing him?",
     "hi": "Is hafte Aman ke rules ne 3 setups diye, lekin uske paper journal mein 9 trades hain. Baaki 6 par 'bored' ka tag hai. Uska journal use kya dikha raha hai?",
-    "dv": "इस हफ़्ते अमन के नियमों ने 3 सेटअप दिए, लेकिन उसकी पेपर जर्नल में 9 ट्रेड हैं। बाक़ी 6 पर 'बोर' का टैग है। उसकी जर्नल उसे क्या दिखा रही है?"
+    "dv": "इस हफ़्ते अमन के नियमों ने 3 सेटअप दिए, लेकिन उसके पेपर जर्नल में 9 ट्रेड हैं। बाक़ी 6 पर 'बोर' का टैग है। उसका जर्नल उसे क्या दिखा रहा है?"
    },
    "options": [
     {

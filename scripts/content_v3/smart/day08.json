@@ -35,9 +35,9 @@
    {
     "who": "narrator",
     "say": {
-     "en": "Sunday evening. Aman shares his laptop screen on a video call. His chart has so many coloured lines that it looks like a house lit up for Diwali.",
-     "hi": "Sunday shaam. Aman video call par apni laptop screen share karta hai. Chart par itni rang-birangi lines hain ki woh Diwali par saja hua ghar lag raha hai.",
-     "dv": "रविवार की शाम। अमन वीडियो कॉल पर अपनी लैपटॉप स्क्रीन शेयर करता है। चार्ट पर इतनी रंग-बिरंगी लाइनें हैं कि वह दिवाली पर सजा हुआ घर लग रहा है।"
+     "en": "Sunday night. The weekly class call is over, but Aman asks the mentor and Priya to stay on for five more minutes and shares his laptop screen. His chart has so many coloured lines that it looks like a house lit up for Diwali.",
+     "hi": "Sunday raat. Hafte ki class call khatam ho chuki hai, lekin Aman mentor aur Priya se paanch minute aur rukne ko kehta hai aur apni laptop screen share karta hai. Chart par itni rang-birangi lines hain ki woh Diwali par saja hua ghar lag raha hai.",
+     "dv": "रविवार की रात। हफ़्ते की क्लास कॉल ख़त्म हो चुकी है, लेकिन अमन मेंटर और प्रिया से पाँच मिनट और रुकने को कहता है और अपनी लैपटॉप स्क्रीन शेयर करता है। चार्ट पर इतनी रंग-बिरंगी लाइनें हैं कि वह दिवाली पर सजा हुआ घर लग रहा है।"
     }
    },
    {
@@ -198,9 +198,9 @@
     "dv": "EMA 20 और EMA 50: ट्रेंड का फ़िल्टर, ख़रीदने का बटन नहीं"
    },
    "p": {
-    "en": "This course uses one pair of EMAs on the daily chart: EMA 20 (about one month of trading days) and EMA 50 (about two and a half months). When EMA 20 is above EMA 50 and EMA 50 is rising, the course reads the trend as up and studies only buying setups, on paper; if either condition fails, it stays out. That is a filter: it tells you which side to look at, not when to enter. The moment the two lines cross is called a crossover. In a sideways market the lines go flat and cross again and again, flipping the 'signal' each time; this is called a whipsaw, and it is where many EMA users keep taking small losses.",
-    "hi": "Is course mein daily chart par EMA ka ek hi joda use hota hai: EMA 20 (lagbhag ek mahine ke trading days) aur EMA 50 (lagbhag dhai mahine). Jab EMA 20, EMA 50 ke upar ho aur EMA 50 upar ki taraf badh raha ho, toh course trend ko up maanta hai aur paper par sirf buy wale setups dekhta hai; in dono mein se ek bhi shart toote, toh course door rehta hai. Yeh ek filter hai: batata hai kis taraf dekhna hai, entry kab leni hai yeh nahi. Jis pal dono lines ek-doosre ko cross karti hain, use crossover kehte hain. Sideways market mein lines flat ho jaati hain aur baar-baar cross karti hain, har baar 'signal' palat jaata hai; ise whipsaw kehte hain, aur kai EMA users yahin chhote-chhote loss khaate rehte hain.",
-    "dv": "इस कोर्स में डेली चार्ट पर EMA की एक ही जोड़ी इस्तेमाल होती है: EMA 20 (लगभग एक महीने के ट्रेडिंग दिन) और EMA 50 (लगभग ढाई महीने)। जब EMA 20, EMA 50 के ऊपर हो और EMA 50 ऊपर की ओर बढ़ रहा हो, तो कोर्स ट्रेंड को अप मानता है और पेपर पर सिर्फ़ ख़रीदने वाले सेटअप देखता है; इन दोनों में से एक भी शर्त टूटे, तो कोर्स दूर रहता है। यह एक फ़िल्टर है: बताता है कि किस तरफ़ देखना है, एंट्री कब लेनी है यह नहीं। जिस पल दोनों लाइनें एक-दूसरे को काटती हैं, उसे क्रॉसओवर कहते हैं। साइडवेज़ बाज़ार में लाइनें सपाट हो जाती हैं और बार-बार क्रॉस करती हैं, हर बार 'सिग्नल' पलट जाता है; इसे व्हिपसॉ कहते हैं, और कई EMA इस्तेमाल करने वाले यहीं छोटे-छोटे लॉस खाते रहते हैं।"
+    "en": "This course uses one pair of EMAs on the daily chart: EMA 20 (about one month of trading days) and EMA 50 (about two and a half months). When EMA 20 is above EMA 50 and EMA 50 is rising, the course reads the trend as up and studies only buying setups, on paper; if either condition fails, it stays out. 'Rising' has an exact test, which Day 11 uses: EMA 50 is higher today than it was 10 trading days ago. That is a filter: it tells you which side to look at, not when to enter. The moment the two lines cross is called a crossover. In a sideways market the lines go flat and cross again and again, flipping the 'signal' each time; this is called a whipsaw, and it is where many EMA users keep taking small losses.",
+    "hi": "Is course mein daily chart par EMA ka ek hi joda use hota hai: EMA 20 (lagbhag ek mahine ke trading days) aur EMA 50 (lagbhag dhai mahine). Jab EMA 20, EMA 50 ke upar ho aur EMA 50 upar ki taraf badh raha ho, toh course trend ko up maanta hai aur paper par sirf buy wale setups dekhta hai; in dono mein se ek bhi shart toote, toh course door rehta hai. 'Badh raha hai' ka ek seedha test hai, jo Day 11 use karega: aaj ka EMA 50, 10 trading days pehle wale EMA 50 se upar ho. Yeh ek filter hai: batata hai kis taraf dekhna hai, entry kab leni hai yeh nahi. Jis pal dono lines ek-doosre ko cross karti hain, use crossover kehte hain. Sideways market mein lines flat ho jaati hain aur baar-baar cross karti hain, har baar 'signal' palat jaata hai; ise whipsaw kehte hain, aur kai EMA users yahin chhote-chhote loss khaate rehte hain.",
+    "dv": "इस कोर्स में डेली चार्ट पर EMA की एक ही जोड़ी इस्तेमाल होती है: EMA 20 (लगभग एक महीने के ट्रेडिंग दिन) और EMA 50 (लगभग ढाई महीने)। जब EMA 20, EMA 50 के ऊपर हो और EMA 50 ऊपर की ओर बढ़ रहा हो, तो कोर्स ट्रेंड को अप मानता है और पेपर पर सिर्फ़ ख़रीदने वाले सेटअप देखता है; इन दोनों में से एक भी शर्त टूटे, तो कोर्स दूर रहता है। 'बढ़ रहा है' की एक सीधी जाँच है, जो दिन 11 इस्तेमाल करेगा: आज का EMA 50, 10 ट्रेडिंग दिन पहले वाले EMA 50 से ऊपर हो। यह एक फ़िल्टर है: बताता है कि किस तरफ़ देखना है, एंट्री कब लेनी है यह नहीं। जिस पल दोनों लाइनें एक-दूसरे को काटती हैं, उसे क्रॉसओवर कहते हैं। साइडवेज़ बाज़ार में लाइनें सपाट हो जाती हैं और बार-बार क्रॉस करती हैं, हर बार 'सिग्नल' पलट जाता है; इसे व्हिपसॉ कहते हैं, और कई EMA इस्तेमाल करने वाले यहीं छोटे-छोटे लॉस खाते रहते हैं।"
    },
    "example": {
     "en": "Look at the chart below. While the trend ran, EMA 20 stayed above EMA 50 and price stayed above both. Then price went sideways between about Rs 191 and Rs 210, and the two lines crossed four times in roughly 30 sessions. Trading every crossover, Aman would have bought near the top of the range and sold near the bottom, again and again. A flat EMA 50 is your warning that the filter has gone quiet.",
@@ -502,9 +502,9 @@
     "dv": "RSI (रिलेटिव स्ट्रेंथ इंडेक्स) मोमेंटम नापता है, यानी भाव कितनी ताक़त से चल रहा है। यह पिछली 14 कैंडल की सारी बढ़त और सारी गिरावट अलग-अलग जोड़ता है, दोनों टोटल को 14 से भाग देता है, दोनों एवरेज की तुलना करता है, और जवाब 0 से 100 के पैमाने पर दिखाता है। 70 के ऊपर को अक्सर ओवरबॉट और 30 के नीचे को ओवरसोल्ड कहते हैं, लेकिन ये सिर्फ़ नाम हैं: मज़बूत अपट्रेंड में RSI हफ़्तों तक 70 के ऊपर रह सकता है और भाव चढ़ता रहता है। ओवरबॉट अपने आप में बेचने का सिग्नल नहीं है। मोटे तौर पर, अपट्रेंड में RSI लगभग 40 से 80 के बीच झूलता है, और डाउनट्रेंड में लगभग 20 से 60 के बीच। दिन 11 की स्ट्रैटेजी अपट्रेंड के अंदर RSI के लगभग 40-50 तक आने वाले डिप को देखती है; यह इस कोर्स का प्रैक्टिस नियम है, बाज़ार का क़ानून नहीं।"
    },
    "example": {
-    "en": "Over the last 14 days, Kiran Foods Ltd rose on 9 days by a total of Rs 36 and fell on 5 days by a total of Rs 12. Total gains are three times total losses, so the gain-to-loss ratio is 36 / 12 = 3, and RSI = 100 - 100 / (1 + 3) = 75. (Formula books call this ratio RS; it is not the relative strength vs NIFTY 50 you will meet on Day 11.) That 75 says only one thing: buyers have been stronger lately. It says nothing about tomorrow. When Aman sold at RSI 70, he read a speedometer as a stop sign.",
-    "hi": "Pichhle 14 dinon mein Kiran Foods Ltd 9 din chadha, kul Rs 36, aur 5 din gira, kul Rs 12. Kul gain, kul loss ka teen guna hai, isliye gain aur loss ka ratio = 36 / 12 = 3, aur RSI = 100 - 100 / (1 + 3) = 75. (Kitabon mein is ratio ko RS kehte hain; yeh Day 11 wali NIFTY 50 ke muqable relative strength nahi hai.) Yeh 75 sirf ek baat kehta hai: haal mein buyers zyada taaqatwar rahe. Kal ke baare mein yeh kuch nahi kehta. Aman ne RSI 70 par bech kar speedometer ki reading ko stop sign samajh liya tha.",
-    "dv": "पिछले 14 दिनों में Kiran Foods Ltd 9 दिन चढ़ा, कुल Rs 36, और 5 दिन गिरा, कुल Rs 12। कुल फ़ायदा, कुल नुक़सान का तीन गुना है, इसलिए फ़ायदे और नुक़सान का अनुपात = 36 / 12 = 3, और RSI = 100 - 100 / (1 + 3) = 75। (किताबों में इस अनुपात को RS कहते हैं; यह दिन 11 वाली NIFTY 50 के मुक़ाबले रिलेटिव स्ट्रेंथ नहीं है।) यह 75 सिर्फ़ एक बात कहता है: हाल में ख़रीदार ज़्यादा ताक़तवर रहे। कल के बारे में यह कुछ नहीं कहता। अमन ने RSI 70 पर बेचकर स्पीडोमीटर की रीडिंग को स्टॉप साइन समझ लिया था।"
+    "en": "Over the last 14 days, Kiran Foods Ltd rose on 9 days by a total of Rs 36 and fell on 5 days by a total of Rs 12. Both totals are divided by 14, so the 14s cancel: the gain-to-loss ratio is 36 ÷ 12 = 3, and RSI = 100 - 100 ÷ (1 + 3) = 100 - 25 = 75. (Formula books call this ratio RS; it is not the relative strength vs NIFTY 50 you will meet on Day 11. Platforms smooth later readings, so your chart may show a slightly different number.) That 75 says only one thing: buyers have been stronger lately. It says nothing about tomorrow. When Aman sold at RSI 70, he read a speedometer as a stop sign; the chart below replays that sale.",
+    "hi": "Pichhle 14 dinon mein Kiran Foods Ltd 9 din chadha, kul Rs 36, aur 5 din gira, kul Rs 12. Dono totals ko 14 se divide karte hain, isliye 14 cancel ho jaata hai: gain aur loss ka ratio = 36 ÷ 12 = 3, aur RSI = 100 - 100 ÷ (1 + 3) = 100 - 25 = 75. (Kitabon mein is ratio ko RS kehte hain; yeh Day 11 wali NIFTY 50 ke muqable relative strength nahi hai. Platforms aage ki readings ko smooth karte hain, isliye aapke chart par number thoda alag dikh sakta hai.) Yeh 75 sirf ek baat kehta hai: haal mein buyers zyada taaqatwar rahe. Kal ke baare mein yeh kuch nahi kehta. Aman ne RSI 70 par bech kar speedometer ki reading ko stop sign samajh liya tha; neeche ka chart wahi sauda dobara dikhata hai.",
+    "dv": "पिछले 14 दिनों में Kiran Foods Ltd 9 दिन चढ़ा, कुल Rs 36, और 5 दिन गिरा, कुल Rs 12। दोनों टोटल को 14 से भाग देते हैं, इसलिए 14 कट जाता है: फ़ायदे और नुक़सान का अनुपात = 36 ÷ 12 = 3, और RSI = 100 - 100 ÷ (1 + 3) = 100 - 25 = 75। (किताबों में इस अनुपात को RS कहते हैं; यह दिन 11 वाली NIFTY 50 के मुक़ाबले रिलेटिव स्ट्रेंथ नहीं है। प्लेटफ़ॉर्म आगे की रीडिंग को स्मूद करते हैं, इसलिए आपके चार्ट पर नंबर थोड़ा अलग दिख सकता है।) यह 75 सिर्फ़ एक बात कहता है: हाल में ख़रीदार ज़्यादा ताक़तवर रहे। कल के बारे में यह कुछ नहीं कहता। अमन ने RSI 70 पर बेचकर स्पीडोमीटर की रीडिंग को स्टॉप साइन समझ लिया था; नीचे का चार्ट वही सौदा दोबारा दिखाता है।"
    },
    "remember": {
     "en": "A high RSI means a strong run, not a coming fall.",
@@ -512,61 +512,182 @@
     "dv": "ऊँचे RSI का मतलब है तेज़ चाल, आने वाली गिरावट नहीं।"
    },
    "visual": {
-    "kind": "calc",
+    "kind": "line",
     "title": {
-     "en": "RSI 14, worked by hand",
-     "hi": "RSI 14, haath se hisaab",
-     "dv": "RSI 14, हाथ से हिसाब"
+     "en": "RSI above 70, price still rising",
+     "hi": "RSI 70 ke upar, price phir bhi chadhta raha",
+     "dv": "RSI 70 के ऊपर, भाव फिर भी चढ़ता रहा"
     },
     "caption": {
-     "en": "Both totals are divided by 14, so the 14s cancel and the ratio = 36 ÷ 12. Platforms smooth later readings, so your chart's number can differ a little.",
-     "hi": "Dono totals ko 14 se divide karte hain, isliye 14 cancel ho jaata hai aur ratio = 36 ÷ 12. Platforms aage ki readings ko smooth karte hain, isliye aapke chart ka number thoda alag ho sakta hai.",
-     "dv": "दोनों टोटल को 14 से भाग देते हैं, इसलिए 14 कट जाता है और अनुपात = 36 ÷ 12। प्लेटफ़ॉर्म आगे की रीडिंग को स्मूद करते हैं, इसलिए आपके चार्ट का नंबर थोड़ा अलग हो सकता है।"
+     "en": "Illustrative shape of Aman's Kiran Foods Ltd sale. Price is drawn on a rescaled axis so it fits on one chart with RSI; read its shape, not its rupee level. RSI 14 closed above 70 on the day he sold and stayed above 70 for almost four weeks; price kept climbing for three of them, about 8% higher. 'Overbought' was a label, not a top.",
+     "hi": "Aman ke Kiran Foods Ltd wale saude ka misaal ke liye banaya roop. Price ko badle hue scale par dikhaya gaya hai taaki woh RSI ke saath ek hi chart mein aa jaaye; iska shape dekhiye, rupaye ka level nahi. Jis din usne becha, us din RSI 14, 70 ke upar close hua aur lagbhag chaar hafte 70 ke upar hi raha; unmein se teen hafte price chadhta raha, lagbhag 8% upar. 'Overbought' ek label tha, top nahi.",
+     "dv": "अमन के Kiran Foods Ltd वाले सौदे का उदाहरण के लिए बनाया गया रूप। भाव को बदले हुए पैमाने पर दिखाया गया है ताकि वह RSI के साथ एक ही चार्ट में आ जाए; इसका आकार देखिए, रुपये का स्तर नहीं। जिस दिन उसने बेचा, उस दिन RSI 14, 70 के ऊपर क्लोज़ हुआ और लगभग चार हफ़्ते 70 के ऊपर ही रहा; उनमें से तीन हफ़्ते भाव चढ़ता रहा, लगभग 8% ऊपर। 'ओवरबॉट' एक लेबल था, टॉप नहीं।"
     },
-    "rows": [
+    "x_label": {
+     "en": "Trading days",
+     "hi": "Trading days",
+     "dv": "ट्रेडिंग के दिन"
+    },
+    "y_label": {
+     "en": "Price (scaled) / RSI",
+     "hi": "Price (scaled) / RSI",
+     "dv": "भाव (स्केल बदला) / RSI"
+    },
+    "series": [
      {
-      "label": {
-       "en": "Total gain, 9 up days",
-       "hi": "Kul gain, 9 up days",
-       "dv": "कुल फ़ायदा, 9 चढ़ने वाले दिन"
+      "name": {
+       "en": "Price",
+       "hi": "Price",
+       "dv": "भाव"
       },
-      "value": "Rs 36"
+      "tone": "brand",
+      "points": [
+       84.0,
+       84.7,
+       84.2,
+       85.0,
+       85.5,
+       85.1,
+       86.1,
+       86.9,
+       86.7,
+       87.9,
+       89.0,
+       89.8,
+       89.3,
+       90.3,
+       91.1,
+       90.6,
+       91.5,
+       92.3,
+       93.0,
+       92.5,
+       93.5,
+       94.3,
+       93.8,
+       94.7,
+       95.4,
+       96.2,
+       95.5,
+       95.7,
+       95.2,
+       94.4,
+       93.8,
+       94.1,
+       93.3,
+       93.5,
+       93.8
+      ]
      },
      {
-      "label": {
-       "en": "Total loss, 5 down days",
-       "hi": "Kul loss, 5 down days",
-       "dv": "कुल नुक़सान, 5 गिरने वाले दिन"
+      "name": {
+       "en": "RSI 14",
+       "hi": "RSI 14",
+       "dv": "RSI 14"
       },
-      "value": "Rs 12",
-      "op": "÷"
+      "tone": "gold",
+      "points": [
+       54.1,
+       57.9,
+       54.4,
+       58.7,
+       61.2,
+       58.2,
+       63.0,
+       66.4,
+       64.8,
+       69.5,
+       73.0,
+       75.3,
+       71.3,
+       74.2,
+       76.3,
+       72.4,
+       74.9,
+       76.9,
+       78.5,
+       74.5,
+       77.0,
+       78.9,
+       74.9,
+       77.1,
+       78.7,
+       80.4,
+       74.8,
+       75.4,
+       71.3,
+       65.4,
+       61.2,
+       62.5,
+       57.1,
+       58.1,
+       59.5
+      ]
      },
      {
-      "label": {
-       "en": "Gain ÷ loss ratio",
-       "hi": "Gain ÷ loss ratio",
-       "dv": "फ़ायदा ÷ नुक़सान अनुपात"
+      "name": {
+       "en": "RSI 70 line",
+       "hi": "RSI 70 ki line",
+       "dv": "RSI 70 की लाइन"
       },
-      "value": "3",
-      "op": "="
-     },
-     {
-      "label": {
-       "en": "100 ÷ (1 + ratio)",
-       "hi": "100 ÷ (1 + ratio)",
-       "dv": "100 ÷ (1 + अनुपात)"
-      },
-      "value": "25"
+      "tone": "muted",
+      "points": [
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70,
+       70
+      ]
      }
     ],
-    "result": {
-     "label": {
-      "en": "RSI = 100 - 25",
-      "hi": "RSI = 100 - 25",
-      "dv": "RSI = 100 - 25"
+    "marks": [
+     {
+      "x": 10,
+      "label": {
+       "en": "Aman sold",
+       "hi": "Aman ne becha",
+       "dv": "अमन ने बेचा"
+      }
      },
-     "value": "75"
-    }
+     {
+      "x": 25,
+      "label": {
+       "en": "3 weeks later",
+       "hi": "3 hafte baad",
+       "dv": "3 हफ़्ते बाद"
+      }
+     }
+    ]
    }
   },
   {
@@ -598,9 +719,9 @@
      "dv": "स्टॉप: नॉइज़ के अंदर या बाहर"
     },
     "caption": {
-     "en": "ATR 14 here is Rs 12. A normal dip hit the tight stop at Rs 495; the 1.5 x ATR stop at Rs 482 was not touched. The stop lines count only from the entry candle on. Price could just as easily have kept falling to Rs 482.",
-     "hi": "Yahan ATR 14 Rs 12 hai. Ek normal dip ne Rs 495 wala tight stop hit kar diya; Rs 482 wala 1.5 x ATR stop chhua tak nahi gaya. Stop ki lines entry wali candle ke baad se hi maayne rakhti hain. Price Rs 482 tak girta bhi reh sakta tha.",
-     "dv": "यहाँ ATR 14 Rs 12 है। एक आम गिरावट ने Rs 495 वाला टाइट स्टॉप हिट कर दिया; Rs 482 वाला 1.5 x ATR स्टॉप छुआ तक नहीं गया। स्टॉप की लाइनें एंट्री वाली कैंडल के बाद से ही मायने रखती हैं। भाव Rs 482 तक गिरता भी रह सकता था।"
+     "en": "ATR 14 here is Rs 12. The entry is at the close of the entry candle, so the stop lines count only after that close. The next ordinary dip hit the tight stop at Rs 495; the 1.5 x ATR stop at Rs 482 was not touched. Price could just as easily have kept falling to Rs 482.",
+     "hi": "Yahan ATR 14 Rs 12 hai. Entry, entry wali candle ke close par hai, isliye stop ki lines usi close ke baad se maayne rakhti hain. Agli hi normal dip ne Rs 495 wala tight stop hit kar diya; Rs 482 wala 1.5 x ATR stop chhua tak nahi gaya. Price Rs 482 tak girta bhi reh sakta tha.",
+     "dv": "यहाँ ATR 14 Rs 12 है। एंट्री, एंट्री वाली कैंडल के क्लोज़ पर है, इसलिए स्टॉप की लाइनें उसी क्लोज़ के बाद से मायने रखती हैं। अगली ही आम गिरावट ने Rs 495 वाला टाइट स्टॉप हिट कर दिया; Rs 482 वाला 1.5 x ATR स्टॉप छुआ तक नहीं गया। भाव Rs 482 तक गिरता भी रह सकता था।"
     },
     "bars": [
      [
@@ -814,9 +935,9 @@
     "dv": "4 टूल का नियम: कम मीटर, साफ़ नज़र"
    },
    "p": {
-    "en": "Indicator overload is the habit of adding tool after tool, hoping the next one will remove all doubt. It backfires. Most indicators are cooked from the same closing prices, so when they agree it is one opinion repeated, and when they disagree you freeze, or quietly pick the one that says what you want to hear. This course keeps four tools: the EMA 20/50 pair counts as one, then RSI 14, ATR 14, and VWAP on intraday charts only. Platforms come with their own default settings, so open each tool's settings and type these numbers yourself. For every tool, write a four-line card: what it measures, when it helps, when it misleads, and how this course uses it; a tool whose limits you cannot write down does not stay on your chart.",
-    "hi": "Indicator overload woh aadat hai jismein hum ek ke baad ek tool jodte jaate hain, is umeed mein ki agla tool saara doubt khatam kar dega. Hota ulta hai. Zyadatar indicators unhi closing prices se pakaaye jaate hain, isliye jab sab ek hi baat kehte hain toh woh ek hi raay hai jo dohraayi ja rahi hai, aur jab alag-alag baat kehte hain toh aap atak jaate hain, ya chupchaap wahi chun lete hain jo aapke mann ki baat keh raha ho. Is course mein chaar tools hain: EMA 20/50 ka joda ek gina jaata hai, phir RSI 14, ATR 14, aur VWAP sirf intraday charts par. Har platform ki apni default settings hoti hain, isliye har tool ki settings kholkar yeh numbers khud daaliye. Har tool ke liye chaar line ka card likhiye: kya naapta hai, kab kaam aata hai, kab dhokha deta hai, aur course mein iska kya kaam hai; jis tool ki limits aap likh nahi sakte, use chart se hata dijiye.",
-    "dv": "इंडिकेटर ओवरलोड वह आदत है, जिसमें हम एक के बाद एक टूल जोड़ते जाते हैं, इस उम्मीद में कि अगला टूल सारा शक दूर कर देगा। होता उल्टा है। ज़्यादातर इंडिकेटर उन्हीं क्लोज़िंग भावों से पकाए जाते हैं, इसलिए जब सब एक ही बात कहते हैं तो वह एक ही राय है जो दोहराई जा रही है, और जब अलग-अलग बात कहते हैं तो आप अटक जाते हैं, या चुपचाप वही चुन लेते हैं जो आपके मन की बात कह रहा हो। इस कोर्स में चार टूल हैं: EMA 20/50 की जोड़ी एक गिनी जाती है, फिर RSI 14, ATR 14, और VWAP सिर्फ़ इंट्राडे चार्ट पर। हर प्लेटफ़ॉर्म की अपनी डिफ़ॉल्ट सेटिंग होती है, इसलिए हर टूल की सेटिंग खोलकर ये नंबर ख़ुद डालिए। हर टूल के लिए चार लाइन का कार्ड लिखिए: क्या नापता है, कब काम आता है, कब धोखा देता है, और कोर्स में इसका क्या काम है; जिस टूल की सीमाएँ आप लिख नहीं सकते, उसे चार्ट से हटा दीजिए।"
+    "en": "Indicator overload is the habit of adding tool after tool, hoping the next one will remove all doubt. It backfires. Most indicators are cooked from the same closing prices, so when they agree it is one opinion repeated, and when they disagree you freeze, or quietly pick the one that says what you want to hear. This course keeps four tools: the EMA 20/50 pair counts as one, then RSI 14, ATR 14, and VWAP on intraday charts only. Platforms come with their own default settings, so open each tool's settings and type these numbers yourself. For every tool, write a four-line card: what it measures, when it helps, when it misleads, and how this course uses it; a tool whose limits you cannot write down does not stay on your chart. A filled model card for all four tools is in Today's task, under Your template.",
+    "hi": "Indicator overload woh aadat hai jismein hum ek ke baad ek tool jodte jaate hain, is umeed mein ki agla tool saara doubt khatam kar dega. Hota ulta hai. Zyadatar indicators unhi closing prices se pakaaye jaate hain, isliye jab sab ek hi baat kehte hain toh woh ek hi raay hai jo dohraayi ja rahi hai, aur jab alag-alag baat kehte hain toh aap atak jaate hain, ya chupchaap wahi chun lete hain jo aapke mann ki baat keh raha ho. Is course mein chaar tools hain: EMA 20/50 ka joda ek gina jaata hai, phir RSI 14, ATR 14, aur VWAP sirf intraday charts par. Har platform ki apni default settings hoti hain, isliye har tool ki settings kholkar yeh numbers khud daaliye. Har tool ke liye chaar line ka card likhiye: kya naapta hai, kab kaam aata hai, kab dhokha deta hai, aur course mein iska kya kaam hai; jis tool ki limits aap likh nahi sakte, use chart se hata dijiye. Chaaron tools ka bhara hua model card Aaj Ka Kaam mein, Aapka template ke neeche hai.",
+    "dv": "इंडिकेटर ओवरलोड वह आदत है, जिसमें हम एक के बाद एक टूल जोड़ते जाते हैं, इस उम्मीद में कि अगला टूल सारा शक दूर कर देगा। होता उल्टा है। ज़्यादातर इंडिकेटर उन्हीं क्लोज़िंग भावों से पकाए जाते हैं, इसलिए जब सब एक ही बात कहते हैं तो वह एक ही राय है जो दोहराई जा रही है, और जब अलग-अलग बात कहते हैं तो आप अटक जाते हैं, या चुपचाप वही चुन लेते हैं जो आपके मन की बात कह रहा हो। इस कोर्स में चार टूल हैं: EMA 20/50 की जोड़ी एक गिनी जाती है, फिर RSI 14, ATR 14, और VWAP सिर्फ़ इंट्राडे चार्ट पर। हर प्लेटफ़ॉर्म की अपनी डिफ़ॉल्ट सेटिंग होती है, इसलिए हर टूल की सेटिंग खोलकर ये नंबर ख़ुद डालिए। हर टूल के लिए चार लाइन का कार्ड लिखिए: क्या नापता है, कब काम आता है, कब धोखा देता है, और कोर्स में इसका क्या काम है; जिस टूल की सीमाएँ आप लिख नहीं सकते, उसे चार्ट से हटा दीजिए। चारों टूल का भरा हुआ मॉडल कार्ड 'आज का काम' में, 'आपका टेम्पलेट' के नीचे है।"
    },
    "example": {
     "en": "Think of a car dashboard. The speedometer (RSI) shows how fast you are going, the rear-view mirror (the EMA pair) shows the road behind you, and the bumpiness of the road (ATR) tells you how much room to leave. Add ten more dials and you stop looking at the road. Aman's 'seven green lights' were mostly one closing price read seven ways, which is why they turned green together, and later turned red together.",
@@ -932,14 +1053,14 @@
   },
   {
    "term": {
-    "en": "Whipsaw",
-    "hi": "Whipsaw",
-    "dv": "व्हिपसॉ"
+    "en": "Crossover and whipsaw",
+    "hi": "Crossover aur whipsaw",
+    "dv": "क्रॉसओवर और व्हिपसॉ"
    },
    "meaning": {
-    "en": "When a signal flips back and forth in a sideways market, handing you small losses on both sides.",
-    "hi": "Jab sideways market mein signal baar-baar palatta hai aur dono taraf chhote-chhote loss de jaata hai.",
-    "dv": "जब साइडवेज़ बाज़ार में सिग्नल बार-बार पलटता है और दोनों तरफ़ छोटे-छोटे लॉस दे जाता है।"
+    "en": "A crossover is the moment EMA 20 crosses EMA 50. In a sideways market the lines cross again and again, and each false flip, which hands you a small loss, is a whipsaw.",
+    "hi": "Crossover woh pal hai jab EMA 20, EMA 50 ko cross karta hai. Sideways market mein lines baar-baar cross karti hain, aur har jhoothi palti, jo ek chhota loss de jaati hai, whipsaw kehlaati hai.",
+    "dv": "क्रॉसओवर वह पल है जब EMA 20, EMA 50 को काटता है। साइडवेज़ बाज़ार में लाइनें बार-बार क्रॉस करती हैं, और हर झूठी पलटी, जो एक छोटा लॉस दे जाती है, व्हिपसॉ कहलाती है।"
    }
   },
   {
@@ -956,6 +1077,18 @@
   },
   {
    "term": {
+    "en": "Overbought / oversold",
+    "hi": "Overbought / oversold",
+    "dv": "ओवरबॉट / ओवरसोल्ड"
+   },
+   "meaning": {
+    "en": "Names for RSI above 70 and below 30. They describe a strong run, not a signal: in a strong trend RSI can stay above 70 for weeks.",
+    "hi": "RSI 70 ke upar aur 30 ke neeche ke naam. Yeh tez chaal ka bayaan hain, signal nahi: strong trend mein RSI hafton tak 70 ke upar reh sakta hai.",
+    "dv": "RSI के 70 के ऊपर और 30 के नीचे होने के नाम। ये तेज़ चाल का बयान हैं, सिग्नल नहीं: मज़बूत ट्रेंड में RSI हफ़्तों तक 70 के ऊपर रह सकता है।"
+   }
+  },
+  {
+   "term": {
     "en": "ATR 14 and true range",
     "hi": "ATR 14 aur true range",
     "dv": "ATR 14 और ट्रू रेंज"
@@ -964,6 +1097,18 @@
     "en": "True range is a candle's full move, gaps included; ATR 14 averages the last 14. It shows how much price moves, not which way.",
     "hi": "True range ek candle ki poori chaal hai, gap samet; ATR 14 pichhli 14 ka average hai. Yeh batata hai price kitna chalta hai, kis taraf nahi.",
     "dv": "ट्रू रेंज एक कैंडल की पूरी चाल है, गैप समेत; ATR 14 पिछली 14 का एवरेज है। यह बताता है कि भाव कितना चलता है, किस तरफ़ नहीं।"
+   }
+  },
+  {
+   "term": {
+    "en": "Noise",
+    "hi": "Noise",
+    "dv": "नॉइज़"
+   },
+   "meaning": {
+    "en": "The normal day-to-day wiggle in price. A stop placed inside it gets hit by ordinary moves, so the course keeps the swing stop 1.5 x ATR away.",
+    "hi": "Price ki roz ki normal hil-dul. Iske andar laga stop aam chaal se hi hit ho jaata hai, isliye course swing stop ko 1.5 x ATR door rakhta hai.",
+    "dv": "भाव का रोज़ का आम उतार-चढ़ाव। इसके अंदर लगा स्टॉप आम चाल से ही हिट हो जाता है, इसलिए कोर्स स्विंग स्टॉप को 1.5 x ATR दूर रखता है।"
    }
   },
   {
@@ -1059,6 +1204,11 @@
       "en": "Uptrend: about 40-80",
       "hi": "Uptrend: lagbhag 40-80",
       "dv": "अपट्रेंड: लगभग 40-80"
+     },
+     {
+      "en": "Can stay high for weeks",
+      "hi": "Hafton tak upar reh sakta hai",
+      "dv": "हफ़्तों तक ऊपर रह सकता है"
      }
     ]
    },
@@ -1156,14 +1306,14 @@
    "dv": "EMA 20, EMA 50, RSI 14 और ATR 14 जोड़िए, हर लेंथ ख़ुद टाइप कीजिए। अगर फ़्री प्लान इतने इंडिकेटर न लगाने दे, तो एक Moving Average Ribbon लगाइए: पहली दो लाइनों का टाइप EMA और लेंथ 20 और 50 कर दीजिए, बाक़ी दो छिपा दीजिए, और RSI और ATR बारी-बारी से लगाइए।"
   },
   {
-   "en": "Scroll back to one sideways stretch where the two EMAs crossed back and forth, and note its start and end dates in your sheet or notebook.",
-   "hi": "Chart ko peeche scroll karke ek aisa sideways daur dhoondhiye jahan dono EMAs baar-baar cross hue, aur uske shuru aur khatam hone ki dates sheet ya notebook mein note kijiye.",
-   "dv": "चार्ट को पीछे स्क्रॉल करके एक ऐसा साइडवेज़ दौर ढूँढिए जहाँ दोनों EMA बार-बार क्रॉस हुए, और उसके शुरू और ख़त्म होने की तारीख़ें शीट या नोटबुक में नोट कीजिए।"
+   "en": "Scroll back to one sideways stretch where the two EMAs crossed back and forth, and write its start and end dates in your Chart notes (Your template).",
+   "hi": "Chart ko peeche scroll karke ek aisa sideways daur dhoondhiye jahan dono EMAs baar-baar cross hue, aur uske shuru aur khatam hone ki dates apne Chart notes (Aapka template) mein likhiye.",
+   "dv": "चार्ट को पीछे स्क्रॉल करके एक ऐसा साइडवेज़ दौर ढूँढिए जहाँ दोनों EMA बार-बार क्रॉस हुए, और उसके शुरू और ख़त्म होने की तारीख़ें अपने चार्ट नोट्स (आपका टेम्पलेट) में लिखिए।"
   },
   {
-   "en": "Read the latest ATR value and complete one line in your sheet: 'NIFTY 50 normally moves about ___ points a day.'",
-   "hi": "ATR ki sabse taaza value padhiye aur sheet mein ek line poori kijiye: 'NIFTY 50 aam taur par din mein lagbhag ___ points chalta hai.'",
-   "dv": "ATR की सबसे ताज़ा वैल्यू पढ़िए और शीट में एक लाइन पूरी कीजिए: 'NIFTY 50 आम तौर पर दिन में लगभग ___ पॉइंट चलता है।'"
+   "en": "Read the latest ATR value and fill the two ATR lines in your Chart notes: NIFTY 50's normal daily move in points, and 1.5 times it.",
+   "hi": "ATR ki sabse taaza value padhiye aur Chart notes ki dono ATR lines bhariye: NIFTY 50 ki din ki normal chaal points mein, aur uska 1.5 guna.",
+   "dv": "ATR की सबसे ताज़ा वैल्यू पढ़िए और चार्ट नोट्स की दोनों ATR लाइनें भरिए: NIFTY 50 की दिन की आम चाल पॉइंट में, और उसका 1.5 गुना।"
   },
   {
    "en": "Open a 5-minute chart of any NIFTY 50 company (an index has no volume of its own, so it has no VWAP), remove RSI or ATR if the free plan needs room, add VWAP, and scroll back to see it restart at 9:15 each day.",
@@ -1171,16 +1321,341 @@
    "dv": "किसी भी NIFTY 50 कंपनी का 5 मिनट का चार्ट खोलिए (इंडेक्स का अपना वॉल्यूम नहीं होता, इसलिए उसका VWAP नहीं बनता), फ़्री प्लान जगह न दे तो RSI या ATR हटा दीजिए, VWAP जोड़िए, और पीछे स्क्रॉल करके देखिए कि वह रोज़ 9:15 पर नए सिरे से कैसे शुरू होता है।"
   },
   {
-   "en": "Run the AI Lab prompt 'When does it mislead?', paste the four cards into your sheet, and check each Fact / Guess / Kachra label the AI gave; change any you disagree with.",
-   "hi": "AI Lab ka prompt 'Kab dhokha deta hai?' chalaiye, chaaron cards sheet mein paste kijiye, aur AI ke lagaye Fact / Guess / Kachra labels check kijiye; jo galat lage, badal dijiye.",
-   "dv": "AI Lab का प्रॉम्प्ट 'कब धोखा देता है?' चलाइए, चारों कार्ड शीट में पेस्ट कीजिए, और AI के लगाए Fact / Guess / Kachra लेबल जाँचिए; जो ग़लत लगे, बदल दीजिए।"
+   "en": "Run the AI Lab prompt 'When does it mislead?', compare its four cards with the model Tool Card in Your template, and change any Fact / Guess / Kachra label you disagree with.",
+   "hi": "AI Lab ka prompt 'Kab dhokha deta hai?' chalaiye, uske chaaron cards ko Aapka template wale model Tool Card se milaiye, aur jo Fact / Guess / Kachra label galat lage, badal dijiye.",
+   "dv": "AI Lab का प्रॉम्प्ट 'कब धोखा देता है?' चलाइए, उसके चारों कार्ड को 'आपका टेम्पलेट' वाले मॉडल टूल कार्ड से मिलाइए, और जो Fact / Guess / Kachra लेबल ग़लत लगे, बदल दीजिए।"
   }
  ],
  "kaam_min": 40,
+ "artefacts": [
+  {
+   "title": {
+    "en": "Tool Card: the model answer",
+    "hi": "Tool Card: model jawab",
+    "dv": "टूल कार्ड: मॉडल जवाब"
+   },
+   "note": {
+    "en": "Check the AI's four cards against this one. Before you add any fifth tool, fill the blank row for it; if you cannot fill 'Misleads when', it stays off your chart.",
+    "hi": "AI ke chaaron cards isi se milaiye. Koi paanchva tool jodne se pehle uske liye khaali row bhariye; 'Kab dhokha deta hai' na bhar sakein, toh woh chart par nahi aayega.",
+    "dv": "AI के चारों कार्ड इसी से मिलाइए। कोई पाँचवाँ टूल जोड़ने से पहले उसके लिए ख़ाली रो भरिए; 'कब धोखा देता है' न भर सकें, तो वह चार्ट पर नहीं आएगा।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Tool",
+      "hi": "Tool",
+      "dv": "टूल"
+     },
+     {
+      "en": "Measures",
+      "hi": "Kya naapta hai",
+      "dv": "क्या नापता है"
+     },
+     {
+      "en": "Helps when",
+      "hi": "Kab kaam aata hai",
+      "dv": "कब काम आता है"
+     },
+     {
+      "en": "Misleads when",
+      "hi": "Kab dhokha deta hai",
+      "dv": "कब धोखा देता है"
+     },
+     {
+      "en": "Course use",
+      "hi": "Course mein kaam",
+      "dv": "कोर्स में काम"
+     }
+    ],
+    "rows": [
+     [
+      "EMA 20/50",
+      {
+       "en": "Trend direction, smoothed and late",
+       "hi": "Trend ki disha, smooth aur late",
+       "dv": "ट्रेंड की दिशा, स्मूद और देर से"
+      },
+      {
+       "en": "A clear trend on the daily chart",
+       "hi": "Daily chart par saaf trend ho",
+       "dv": "डेली चार्ट पर साफ़ ट्रेंड हो"
+      },
+      {
+       "en": "Sideways markets: flat lines, whipsaw crosses",
+       "hi": "Sideways market: flat lines, whipsaw wale cross",
+       "dv": "साइडवेज़ बाज़ार: सपाट लाइनें, व्हिपसॉ वाले क्रॉस"
+      },
+      {
+       "en": "Filter only: EMA 20 above a rising EMA 50",
+       "hi": "Sirf filter: EMA 20 upar, EMA 50 chadhta hua",
+       "dv": "सिर्फ़ फ़िल्टर: EMA 20 ऊपर, EMA 50 चढ़ता हुआ"
+      }
+     ],
+     [
+      "RSI 14",
+      {
+       "en": "Momentum: recent gains vs losses, 0-100",
+       "hi": "Momentum: haal ke gain vs loss, 0-100",
+       "dv": "मोमेंटम: हाल के फ़ायदे बनाम नुक़सान, 0-100"
+      },
+      {
+       "en": "Spotting a dip inside an uptrend",
+       "hi": "Uptrend ke andar dip pehchanna",
+       "dv": "अपट्रेंड के अंदर डिप पहचानना"
+      },
+      {
+       "en": "Strong trends: above 70 for weeks, still not a sell",
+       "hi": "Strong trend: hafton 70 ke upar, phir bhi sell signal nahi",
+       "dv": "मज़बूत ट्रेंड: हफ़्तों 70 के ऊपर, फिर भी बेचने का सिग्नल नहीं"
+      },
+      {
+       "en": "Day 11: a dip to about 40-50 in an uptrend",
+       "hi": "Day 11: uptrend mein lagbhag 40-50 tak dip",
+       "dv": "दिन 11: अपट्रेंड में लगभग 40-50 तक डिप"
+      }
+     ],
+     [
+      "ATR 14",
+      {
+       "en": "Typical candle size, gaps included",
+       "hi": "Aam candle ka size, gap samet",
+       "dv": "आम कैंडल का साइज़, गैप समेत"
+      },
+      {
+       "en": "Placing a stop outside the noise",
+       "hi": "Stop ko noise se bahar rakhna",
+       "dv": "स्टॉप को नॉइज़ से बाहर रखना"
+      },
+      {
+       "en": "Read as direction; it jumps after news or gaps",
+       "hi": "Ise direction samajhna; news ya gap ke baad uchhalta hai",
+       "dv": "इसे दिशा समझना; ख़बर या गैप के बाद उछलता है"
+      },
+      {
+       "en": "Swing stop 1.5 x ATR below entry",
+       "hi": "Swing stop entry se 1.5 x ATR neeche",
+       "dv": "स्विंग स्टॉप एंट्री से 1.5 x ATR नीचे"
+      }
+     ],
+     [
+      "VWAP",
+      {
+       "en": "The day's volume-weighted average price",
+       "hi": "Din ka volume-weighted average price",
+       "dv": "दिन का वॉल्यूम-वेटेड औसत भाव"
+      },
+      {
+       "en": "Intraday: is price above or below the day's average?",
+       "hi": "Intraday: price din ke average ke upar hai ya neeche?",
+       "dv": "इंट्राडे: भाव दिन के औसत के ऊपर है या नीचे?"
+      },
+      {
+       "en": "Daily charts, indices (no volume), the first minutes",
+       "hi": "Daily chart, index (volume nahi), shuru ke kuch minute",
+       "dv": "डेली चार्ट, इंडेक्स (वॉल्यूम नहीं), शुरू के कुछ मिनट"
+      },
+      {
+       "en": "Intraday only: one check in Day 13's ORB",
+       "hi": "Sirf intraday: Day 13 ke ORB ka ek check",
+       "dv": "सिर्फ़ इंट्राडे: दिन 13 के ORB की एक जाँच"
+      }
+     ]
+    ],
+    "blank_rows": 1
+   }
+  },
+  {
+   "title": {
+    "en": "Chart notes",
+    "hi": "Chart notes",
+    "dv": "चार्ट नोट्स"
+   },
+   "note": {
+    "en": "Fill the last column as you do steps 1 to 5. Write what your chart shows, not what you expect it to show.",
+    "hi": "Steps 1 se 5 karte-karte aakhri column bhariye. Wahi likhiye jo chart dikhata hai, woh nahi jo aap dekhna chahte hain.",
+    "dv": "स्टेप 1 से 5 करते हुए आख़िरी कॉलम भरिए। वही लिखिए जो चार्ट दिखाता है, वह नहीं जो आप देखना चाहते हैं।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Check",
+      "hi": "Check",
+      "dv": "जाँच"
+     },
+     {
+      "en": "What to write",
+      "hi": "Kya likhna hai",
+      "dv": "क्या लिखना है"
+     },
+     {
+      "en": "Mine",
+      "hi": "Mera",
+      "dv": "मेरा"
+     }
+    ],
+    "rows": [
+     [
+      {
+       "en": "Removed lines (step 1)",
+       "hi": "Hataayi gayi lines (step 1)",
+       "dv": "हटाई गई लाइनें (स्टेप 1)"
+      },
+      {
+       "en": "Each indicator you took off, and what it really measured",
+       "hi": "Har hataaya gaya indicator, aur woh asal mein kya naapta tha",
+       "dv": "हर हटाया गया इंडिकेटर, और वह असल में क्या नापता था"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "Sideways stretch (step 3)",
+       "hi": "Sideways daur (step 3)",
+       "dv": "साइडवेज़ दौर (स्टेप 3)"
+      },
+      {
+       "en": "Start and end dates, and how many EMA crosses",
+       "hi": "Shuru aur khatam ki dates, aur kitne EMA cross",
+       "dv": "शुरू और ख़त्म की तारीख़ें, और कितने EMA क्रॉस"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "ATR 14 (step 4)",
+       "hi": "ATR 14 (step 4)",
+       "dv": "ATR 14 (स्टेप 4)"
+      },
+      {
+       "en": "NIFTY 50 normally moves about ___ points a day",
+       "hi": "NIFTY 50 aam taur par din mein lagbhag ___ points chalta hai",
+       "dv": "NIFTY 50 आम तौर पर दिन में लगभग ___ पॉइंट चलता है"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "1.5 x ATR (step 4)",
+       "hi": "1.5 x ATR (step 4)",
+       "dv": "1.5 x ATR (स्टेप 4)"
+      },
+      {
+       "en": "That ATR x 1.5 = ___ points: the swing stop distance",
+       "hi": "Wahi ATR x 1.5 = ___ points: swing stop ki doori",
+       "dv": "वही ATR x 1.5 = ___ पॉइंट: स्विंग स्टॉप की दूरी"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "VWAP (step 5)",
+       "hi": "VWAP (step 5)",
+       "dv": "VWAP (स्टेप 5)"
+      },
+      {
+       "en": "Did VWAP restart at 9:15 each day? Yes / No",
+       "hi": "Kya VWAP roz 9:15 par naye sire se shuru hua? Haan / Nahi",
+       "dv": "क्या VWAP रोज़ 9:15 पर नए सिरे से शुरू हुआ? हाँ / नहीं"
+      },
+      ""
+     ]
+    ]
+   }
+  },
+  {
+   "title": {
+    "en": "Answer key: 'Check my maths'",
+    "hi": "Answer key: 'Mera hisaab check kijiye'",
+    "dv": "सही जवाब: 'मेरा हिसाब जाँचिए'"
+   },
+   "note": {
+    "en": "Run the AI Lab prompt 'Check my maths', then tick each AI answer against this key. If they differ, find the step that went wrong before you trust either.",
+    "hi": "AI Lab ka prompt 'Mera hisaab check kijiye' chalaiye, phir AI ke har jawab ko is key se milaiye. Farak ho, toh kisi par bharosa karne se pehle woh step dhoondhiye jo galat hua.",
+    "dv": "AI Lab का प्रॉम्प्ट 'मेरा हिसाब जाँचिए' चलाइए, फिर AI के हर जवाब को इन सही जवाबों से मिलाइए। फ़र्क़ हो, तो किसी पर भरोसा करने से पहले वह स्टेप ढूँढिए जो ग़लत हुआ।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Question",
+      "hi": "Sawaal",
+      "dv": "सवाल"
+     },
+     {
+      "en": "Working",
+      "hi": "Hisaab",
+      "dv": "हिसाब"
+     },
+     {
+      "en": "Answer",
+      "hi": "Jawab",
+      "dv": "जवाब"
+     }
+    ],
+    "rows": [
+     [
+      "(a) SMA 5",
+      {
+       "en": "(100 + 102 + 104 + 106 + 118) ÷ 5 = 530 ÷ 5",
+       "hi": "(100 + 102 + 104 + 106 + 118) ÷ 5 = 530 ÷ 5",
+       "dv": "(100 + 102 + 104 + 106 + 118) ÷ 5 = 530 ÷ 5"
+      },
+      "Rs 106"
+     ],
+     [
+      "(b) VWAP",
+      {
+       "en": "Rs 2,03,600 ÷ 1,000 shares; plain average (200 + 202 + 205) ÷ 3 = Rs 202.33",
+       "hi": "Rs 2,03,600 ÷ 1,000 shares; seedha average (200 + 202 + 205) ÷ 3 = Rs 202.33",
+       "dv": "Rs 2,03,600 ÷ 1,000 शेयर; सीधा औसत (200 + 202 + 205) ÷ 3 = Rs 202.33"
+      },
+      "Rs 203.60"
+     ],
+     [
+      "(c) RSI",
+      {
+       "en": "36 ÷ 12 = 3; 100 - 100 ÷ (1 + 3) = 100 - 25",
+       "hi": "36 ÷ 12 = 3; 100 - 100 ÷ (1 + 3) = 100 - 25",
+       "dv": "36 ÷ 12 = 3; 100 - 100 ÷ (1 + 3) = 100 - 25"
+      },
+      "75"
+     ],
+     [
+      {
+       "en": "(d) Stop, 1.5 x ATR",
+       "hi": "(d) Stop, 1.5 x ATR",
+       "dv": "(d) स्टॉप, 1.5 x ATR"
+      },
+      {
+       "en": "1.5 x Rs 12 = Rs 18; Rs 500 - Rs 18",
+       "hi": "1.5 x Rs 12 = Rs 18; Rs 500 - Rs 18",
+       "dv": "1.5 x Rs 12 = Rs 18; Rs 500 - Rs 18"
+      },
+      "Rs 482"
+     ],
+     [
+      {
+       "en": "(e) True range, gap day",
+       "hi": "(e) True range, gap wala din",
+       "dv": "(e) ट्रू रेंज, गैप वाला दिन"
+      },
+      {
+       "en": "Previous close 100, high 108, low 105. High - low = 3; high - previous close = 8; low - previous close = 5. Take the largest.",
+       "hi": "Pichhla close 100, high 108, low 105. High - low = 3; high - pichhla close = 8; low - pichhla close = 5. Sabse bada lijiye.",
+       "dv": "पिछला क्लोज़ 100, हाई 108, लो 105। हाई - लो = 3; हाई - पिछला क्लोज़ = 8; लो - पिछला क्लोज़ = 5। सबसे बड़ा लीजिए।"
+      },
+      "Rs 8"
+     ]
+    ]
+   }
+  }
+ ],
  "outcome": {
-  "en": "By the end you can explain why every indicator lags, set up EMA 20/50, RSI 14 and ATR 14 (plus VWAP on intraday charts), say what each one measures and when it misleads, and work out an RSI reading, a VWAP and a 1.5 x ATR stop distance by hand.",
-  "hi": "Aaj ke baad aap samjha payenge ki har indicator late kyun hota hai, EMA 20/50, RSI 14 aur ATR 14 (intraday par VWAP bhi) set kar payenge, bata payenge ki har tool kya naapta hai aur kab dhokha deta hai, aur RSI, VWAP aur 1.5 x ATR stop ki doori haath se nikaal payenge.",
-  "dv": "आज के बाद आप समझा पाएँगे कि हर इंडिकेटर देर से क्यों बोलता है, EMA 20/50, RSI 14 और ATR 14 (इंट्राडे पर VWAP भी) सेट कर पाएँगे, बता पाएँगे कि हर टूल क्या नापता है और कब धोखा देता है, और RSI, VWAP और 1.5 x ATR स्टॉप की दूरी हाथ से निकाल पाएँगे।"
+  "en": "By the end you can explain why every indicator lags, set up EMA 20/50, RSI 14 and ATR 14 (plus VWAP on intraday charts), say what each one measures and when it misleads, check an AI-drafted tool card against a model, and work out an RSI reading, a true range, a VWAP and a 1.5 x ATR stop distance by hand.",
+  "hi": "Aaj ke baad aap samjha payenge ki har indicator late kyun hota hai, EMA 20/50, RSI 14 aur ATR 14 (intraday par VWAP bhi) set kar payenge, bata payenge ki har tool kya naapta hai aur kab dhokha deta hai, AI ke banaye tool card ko model card se check kar payenge, aur RSI, true range, VWAP aur 1.5 x ATR stop ki doori haath se nikaal payenge.",
+  "dv": "आज के बाद आप समझा पाएँगे कि हर इंडिकेटर देर से क्यों बोलता है, EMA 20/50, RSI 14 और ATR 14 (इंट्राडे पर VWAP भी) सेट कर पाएँगे, बता पाएँगे कि हर टूल क्या नापता है और कब धोखा देता है, AI के बनाए टूल कार्ड को मॉडल कार्ड से जाँच पाएँगे, और RSI, ट्रू रेंज, VWAP और 1.5 x ATR स्टॉप की दूरी हाथ से निकाल पाएँगे।"
  },
  "tools": [
   {
@@ -1225,7 +1700,7 @@
     "hi": "Mera hisaab check kijiye",
     "dv": "मेरा हिसाब जाँचिए"
    },
-   "body": "Act as a careful maths tutor. Use only the numbers I give and show every step. (a) Five daily closes: 100, 102, 104, 106, 118. Calculate the 5-day simple moving average. (b) In one morning, 100 shares traded at Rs 200, 300 at Rs 202 and 600 at Rs 205. Calculate the VWAP and the plain average of the three prices, and explain the difference in two lines. (c) Over 14 days, total gains were Rs 36 and total losses Rs 12. Calculate the first RSI reading. (d) Entry Rs 500 and ATR 14 = Rs 12. Find the stop 1.5 x ATR below entry. After each answer, show me a Google Sheets formula I can use to recheck it myself, and mark any step you are unsure of as Guess. These are made-up numbers for learning; do not give buy or sell advice, targets or return expectations."
+   "body": "Act as a careful maths tutor. Use only the numbers I give and show every step. (a) Five daily closes: 100, 102, 104, 106, 118. Calculate the 5-day simple moving average. (b) In one morning, 100 shares traded at Rs 200, 300 at Rs 202 and 600 at Rs 205. Calculate the VWAP and the plain average of the three prices, and explain the difference in two lines. (c) Over 14 days, total gains were Rs 36 and total losses Rs 12. Calculate the first RSI reading. (d) Entry Rs 500 and ATR 14 = Rs 12. Find the stop 1.5 x ATR below entry. (e) Yesterday's close was Rs 100; today's high is Rs 108 and today's low is Rs 105. Give today's high-low range and its true range, showing all three distances. After each answer, show me a Google Sheets formula I can use to recheck it myself, and mark any step you are unsure of as Guess. These are made-up numbers for learning; do not give buy or sell advice, targets or return expectations."
   },
   {
    "title": {
@@ -1302,25 +1777,25 @@
    "options": [
     {
      "text": {
-      "en": "Rs 108: weighted by shares traded",
-      "hi": "Rs 108: shares ke hisaab se weighted",
-      "dv": "Rs 108: शेयरों के हिसाब से वेटेड"
+      "en": "Rs 108: each price weighted by the shares traded at it",
+      "hi": "Rs 108: har price, us par trade hue shares ke hisaab se weighted",
+      "dv": "Rs 108: हर भाव, उस पर ट्रेड हुए शेयरों के हिसाब से वेटेड"
      },
      "correct": true
     },
     {
      "text": {
-      "en": "Rs 105: halfway between the two prices",
-      "hi": "Rs 105: dono prices ke theek beech mein",
-      "dv": "Rs 105: दोनों भावों के ठीक बीच में"
+      "en": "Rs 105: exactly halfway between the two prices",
+      "hi": "Rs 105: dono prices ke bilkul beech mein",
+      "dv": "Rs 105: दोनों भावों के बिल्कुल बीच में"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "Rs 110: the last traded price",
-      "hi": "Rs 110: aakhri trade ka price",
-      "dv": "Rs 110: आख़िरी ट्रेड का भाव"
+      "en": "Rs 110: the price where most shares traded",
+      "hi": "Rs 110: woh price jahan sabse zyada shares trade hue",
+      "dv": "Rs 110: वह भाव जहाँ सबसे ज़्यादा शेयर ट्रेड हुए"
      },
      "correct": false
     },
@@ -1334,9 +1809,9 @@
     }
    ],
    "explanation": {
-    "en": "VWAP = (200 x Rs 100 + 800 x Rs 110) ÷ 1,000 = (Rs 20,000 + Rs 88,000) ÷ 1,000 = Rs 108. It sits nearer Rs 110 because four times as many shares traded there. Rs 105 is the plain average, which ignores volume. Rs 102 puts the 20% weight on the wrong price.",
-    "hi": "VWAP = (200 x Rs 100 + 800 x Rs 110) ÷ 1,000 = (Rs 20,000 + Rs 88,000) ÷ 1,000 = Rs 108. Yeh Rs 110 ke paas hai, kyunki wahan chaar guna shares trade hue. Rs 105 seedha average hai, jo volume ko ignore kar deta hai. Rs 102 mein 20% weight galat price par lag gaya.",
-    "dv": "VWAP = (200 x Rs 100 + 800 x Rs 110) ÷ 1,000 = (Rs 20,000 + Rs 88,000) ÷ 1,000 = Rs 108। यह Rs 110 के पास है, क्योंकि वहाँ चार गुना शेयर ट्रेड हुए। Rs 105 सीधा एवरेज है, जो वॉल्यूम को नज़रअंदाज़ कर देता है। Rs 102 में 20% वज़न ग़लत भाव पर लग गया।"
+    "en": "VWAP = (200 x Rs 100 + 800 x Rs 110) ÷ 1,000 = (Rs 20,000 + Rs 88,000) ÷ 1,000 = Rs 108. It sits nearer Rs 110 because four times as many shares traded there, but the 200 shares at Rs 100 still count, so it is not Rs 110. Rs 105 is the plain average, which ignores volume. Rs 102 puts the 20% weight on the wrong price.",
+    "hi": "VWAP = (200 x Rs 100 + 800 x Rs 110) ÷ 1,000 = (Rs 20,000 + Rs 88,000) ÷ 1,000 = Rs 108. Yeh Rs 110 ke paas hai, kyunki wahan chaar guna shares trade hue, lekin Rs 100 wale 200 shares bhi ginti mein hain, isliye jawab Rs 110 nahi. Rs 105 seedha average hai, jo volume ko ignore kar deta hai. Rs 102 mein 20% weight galat price par lag gaya.",
+    "dv": "VWAP = (200 x Rs 100 + 800 x Rs 110) ÷ 1,000 = (Rs 20,000 + Rs 88,000) ÷ 1,000 = Rs 108। यह Rs 110 के पास है, क्योंकि वहाँ चार गुना शेयर ट्रेड हुए, लेकिन Rs 100 वाले 200 शेयर भी गिनती में हैं, इसलिए जवाब Rs 110 नहीं। Rs 105 सीधा एवरेज है, जो वॉल्यूम को नज़रअंदाज़ कर देता है। Rs 102 में 20% वज़न ग़लत भाव पर लग गया।"
    }
   },
   {

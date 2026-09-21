@@ -1,7 +1,8 @@
 export const dynamic = "force-dynamic";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { SESSIONS, RESOURCES, weekOf, levelOf, youtubeEmbed, isWeekReviewDay, getExam, pick3, type ExamMeta } from "@/lib/content/course";
+import { SESSIONS, weekOf, levelOf, youtubeEmbed, isWeekReviewDay, getExam, pick3, type ExamMeta } from "@/lib/content/course";
+import { sessionMaterial, sessionHasHandout } from "@/lib/content/resources";
 import { liveSession, liveQuizPublic, liveQuizKey } from "@/lib/content/live";
 import { loadLearnerState } from "@/lib/progress/load";
 import { gate, stateOf, isComplete } from "@/lib/progress/gating";
@@ -14,7 +15,7 @@ import { QuizBlock } from "@/components/ui/QuizBlock";
 import { LearnPanel, KaamPanel, AiPanel, resourceItems } from "@/components/lesson/panels";
 import { VideoBlock, ResourceList, JournalForm } from "@/components/lesson/interactive";
 import { grade, type Graded } from "@/components/lesson/grade";
-import { ArrowRight, CheckCircle, ChevronLeft, Circle } from "@/components/ui/Icon";
+import { ArrowRight, CheckCircle, ChevronLeft, Circle, Download } from "@/components/ui/Icon";
 import css from "@/components/lesson/lesson.module.css";
 import { dayText } from "@/components/ui/SessionCard";
 import { SessionTabs } from "./SessionTabs";
@@ -34,9 +35,9 @@ const S = {
   journalStep: t3("Save one journal entry", "Ek journal entry save kijiye", "एक जर्नल एंट्री सेव कीजिए"),
   doneSr: t3("done", "ho gaya", "पूरा"),
   todoSr: t3("not done yet", "abhi baaki hai", "अभी बाकी है"),
-  attVideoHandout: t3("Attendance points (not needed to unlock): watch at least 80% of the class video and open this week's handout.", "Attendance points (unlock ke liye zaroori nahi): class video ka kam se kam 80% dekhiye aur is hafte ka handout kholiye.", "अटेंडेंस पॉइंट (अनलॉक के लिए ज़रूरी नहीं): क्लास वीडियो का कम से कम 80% देखिए और इस हफ़्ते का हैंडआउट खोलिए।"),
+  attVideoHandout: t3("Attendance points (not needed to unlock): watch at least 80% of the class video and open the handout (under Class material).", "Attendance points (unlock ke liye zaroori nahi): class video ka kam se kam 80% dekhiye aur handout kholiye (Class material mein).", "अटेंडेंस पॉइंट (अनलॉक के लिए ज़रूरी नहीं): क्लास वीडियो का कम से कम 80% देखिए और हैंडआउट खोलिए (क्लास मटीरियल में)।"),
   attVideo: t3("Attendance points (not needed to unlock): watch at least 80% of the class video.", "Attendance points (unlock ke liye zaroori nahi): class video ka kam se kam 80% dekhiye.", "अटेंडेंस पॉइंट (अनलॉक के लिए ज़रूरी नहीं): क्लास वीडियो का कम से कम 80% देखिए।"),
-  attHandout: t3("Attendance points: finish this session and open this week's handout (under Class material).", "Attendance points: ye session poora kijiye aur is hafte ka handout kholiye (Class material mein).", "अटेंडेंस पॉइंट: यह सेशन पूरा कीजिए और इस हफ़्ते का हैंडआउट खोलिए (क्लास मटीरियल में)।"),
+  attHandout: t3("Attendance points: finish this session and open the handout (under Class material).", "Attendance points: ye session poora kijiye aur handout kholiye (Class material mein).", "अटेंडेंस पॉइंट: यह सेशन पूरा कीजिए और हैंडआउट खोलिए (क्लास मटीरियल में)।"),
   attDone: t3("Attendance points are added when you finish this session.", "Ye session poora karte hi attendance points jud jaate hain.", "यह सेशन पूरा करते ही अटेंडेंस पॉइंट जुड़ जाते हैं।"),
   complete: t3("Session complete.", "Session poora ho gaya.", "सेशन पूरा हो गया।"),
   next: t3("Next session", "Agla session", "अगला सेशन"),
@@ -44,7 +45,8 @@ const S = {
   cert: t3("Certificate", "Certificate", "सर्टिफ़िकेट"),
   waitNext: t3("The next session opens once both are done.", "Dono ho jaane par agla session khul jaayega.", "दोनों होने पर अगला सेशन खुल जाएगा।"),
   waitLast: t3("Finish both, then take the final exam.", "Dono poore kijiye, phir final exam dijiye.", "दोनों पूरे कीजिए, फिर फ़ाइनल एग्ज़ाम दीजिए।"),
-  preview: t3("Preview: progress is not saved on this page.", "Preview: is page par progress save nahi hoti.", "प्रीव्यू: इस पेज पर प्रोग्रेस सेव नहीं होती।"),
+  print: t3("Print / Save as PDF", "Print / PDF save kijiye", "प्रिंट / PDF सेव कीजिए"),
+  preview: t3("Preview: progress is not saved on this page.","Preview: is page par progress save nahi hoti.", "प्रीव्यू: इस पेज पर प्रोग्रेस सेव नहीं होती।"),
 };
 
 /** exams.json carries title_hi / title_dv; ExamMeta only types the English title. */
@@ -99,8 +101,11 @@ export default async function SessionPage({ params }: { params: Promise<{ n: str
 
   const [quiz, review] = await Promise.all([liveQuizPublic(n), !demo && st.quiz_submitted ? loadReview(n) : null]);
   const embed = youtubeEmbed(s.video_url);
-  const material = RESOURCES.filter((r) => r.level === s.level && r.week === s.week && (r.kind === "deck" || r.kind === "handout"));
-  const handout = material.some((r) => r.kind === "handout" && r.storage_path?.startsWith("http"));
+  // Decks and handouts for this session in the reader's language, filtered like the Resources page (hiddenBecause:
+  // no private Drive files, nothing without a link). Until Stage 1's v3 files exist there are none, and attendance is
+  // the finished session alone; once a v3 handout is listed, opening it counts too.
+  const material = sessionMaterial(s, lang);
+  const handout = sessionHasHandout(s);
   const reviewDay = isWeekReviewDay(s);
   const weekExam = reviewDay ? getExam(`${s.level}-w${s.week}`) : null;
   const nextInLevel = SESSIONS.find((x) => x.level === s.level && x.number > s.number);
@@ -113,6 +118,8 @@ export default async function SessionPage({ params }: { params: Promise<{ n: str
   return (
     <>
       {header}
+      {/* Stage 1: the whole day (all five tabs, quiz without answers) as an A4 page to print or save as PDF. */}
+      {s.level === "foundation" && <p className="mt-3"><Link href={`/learn/print/day/${s.number}?lang=${lang}`} className="col-btn col-btn--ghost col-btn--sm"><Download size={14} aria-hidden /> {say(S.print)}</Link></p>}
       {weekExam && (
         <section className={css.callout} aria-labelledby="review-h">
           <div><h2 id="review-h" className={css.calloutH}>{say(S.reviewH)}</h2><p>{say(S.reviewP)}</p></div>

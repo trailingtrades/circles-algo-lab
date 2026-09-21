@@ -6,6 +6,16 @@ Source of truth for Stage 1 (Tier 1, 21 days): one JSON file per day in
 `python scripts/gen_content.py` validates everything, then writes `content/*.json`
 (what the app and the DB seed read). Never hand-edit `content/*.json`.
 
+Validate while you write (from the repo root; on Windows prefix `PYTHONIOENCODING=utf-8`):
+
+```
+python scripts/content_v3/build_smart.py day09.json      # one day
+python scripts/content_v3/build_smart.py exam_w1.json    # one exam bank
+python scripts/content_v3/build_smart.py                 # everything, as gen_content.py does
+```
+
+Single-file mode also checks that file's quiz stems against every other day quiz and exam bank.
+
 Tier 2 / Tier 3 drafts still come from `scripts/content_v2/tier23.py`.
 
 ## Three languages — every learner-facing string is an `L`
@@ -39,11 +49,14 @@ and falls back dv -> hi -> en if a string is missing — so never leave one empt
       "remember": L,                          // optional: one-line takeaway
       "visual": Visual }                      // optional: at least 2 topics per day carry one
   ],
-  "key_terms": [ { "term": L, "meaning": L } ],   // 3-6 new words of the day
+  "key_terms": [ { "term": L, "meaning": L } ],   // 3-8 new words of the day
   "mindmap": MindmapV,                        // recap at the end
   "kaam": L,                                  // one-line brief of today's task
   "kaam_steps": [L],                          // 3-6 checklist steps, each one action
   "kaam_min": 15,
+  "artefacts": [                              // optional, 0-3: the templates / model cards today's task builds
+    { "title": L, "note": L, "visual": Visual }   // note optional; visual is any kind except story and mindmap
+  ],
   "outcome": L,                               // "By the end you can ..."
   "tools": [L],
   "fun": L,                                   // cohort activity, or null
@@ -63,7 +76,29 @@ Write the correct option in any position — the generator shuffles options with
 seed so the right answer is spread across A/B/C/D.
 
 Exam bank (`exam_wN.json`, `exam_final.json`):
-`{ "week": 1 | null, "questions": [ quiz item, ... ] }` — 15 per weekend Quiz Game, 30 in the final.
+`{ "week": 1 | null, "questions": [ quiz item, ... ] }` — 15 per weekend Quiz Game (`week` 1, 2, 3),
+30 in the final (`week` null).
+
+### Answer length: no "pick the longest / shortest" shortcut
+
+The validator measures the ENGLISH text of the four options, in characters (after trimming spaces).
+"Unique longest" means the correct option is longer than each of the other three; "unique shortest"
+means it is shorter than each of them (a tie counts as neither).
+
+| file | questions | correct option is the unique LONGEST in | correct option is the unique SHORTEST in |
+|---|---|---|---|
+| `dayNN.json` quiz | 5 | 1 or 2 questions | at most 1 question |
+| `exam_w1/2/3.json` | 15 | 3 to 6 questions | at most 4 questions |
+| `exam_final.json` | 30 | 6 to 12 questions | at most 8 questions |
+
+How to fix a failing file without making it worse:
+- Lengthen the right answer where the full truth needs the words ("Rs 1,250 — the 25% cap is smaller than the 1% rule's 2,500").
+- Give distractors the same shape and detail as the right answer, so a learner has to think, not measure.
+- Never pad with filler, and never make a wrong option obviously silly: every option must be a mistake a real beginner makes.
+- The error names the question indexes that are unique longest / shortest today.
+
+Every stem must be new: no two questions anywhere in the day quizzes and the four exam banks may share a stem
+(compared in lower case with punctuation removed). Test the same idea with a new situation instead.
 
 ## Visuals (`apps/learn/src/lib/content/visuals.ts`)
 
@@ -80,11 +115,72 @@ All numbers in charts are illustrative. Keep chart labels short (1-3 words).
 | `candles` | price action | `{ kind, title?, caption?, bars: [[o,h,l,c]] (1-40), anatomy?, volume?, levels?: [{y, label, tone?, dashed?}], marks?: [{i, label, tone?, at?}] }` |
 | `mindmap` | the day's recap | `{ kind, center: L, branches: [{label, tone?, points: [L] (1-4)}] (3-6) }` |
 | `story` | the opening hook | `{ kind, title?, panels: [{who, say, mood?}] (3-6), moral? }` |
+| `table` | a sample journal, a card, a log, a template to fill in | `{ kind, title?, caption?, head: [L] (2-6), rows: [[cell, ...]] (0-14), blank_rows?: 0-12, note?: L }` |
+
+### `table`
+
+```json
+{ "kind": "table",
+  "title":   { "en": "Priya's journal, first 3 trades", "hi": "Priya ka journal, pehle 3 trades", "dv": "प्रिया का जर्नल, पहले 3 ट्रेड" },
+  "head": [ { "en": "Date", "hi": "Date", "dv": "तारीख़" },
+            { "en": "Stock", "hi": "Stock", "dv": "स्टॉक" },
+            { "en": "Result (R)", "hi": "Result (R)", "dv": "नतीजा (R)" },
+            { "en": "Rule followed?", "hi": "Rule follow hua?", "dv": "नियम माना?" } ],
+  "rows": [ [ "02-09", { "en": "Gupta Cement Ltd", "hi": "Gupta Cement Ltd", "dv": "Gupta Cement Ltd" }, "+1.8R", { "en": "Yes", "hi": "Haan", "dv": "हाँ" } ],
+            [ "04-09", { "en": "Sharma Textiles Ltd", "hi": "Sharma Textiles Ltd", "dv": "Sharma Textiles Ltd" }, "-1.0R", { "en": "Yes", "hi": "Haan", "dv": "हाँ" } ] ],
+  "blank_rows": 5,
+  "note": { "en": "Copy the blank rows into your notebook or a Google Sheet.", "hi": "Khaali rows apni notebook ya Google Sheet mein copy kijiye.", "dv": "ख़ाली रो अपनी नोटबुक या Google Sheet में कॉपी कीजिए।" } }
+```
+
+- `head`: 2-6 column headings. `rows`: 0-14 rows, each with exactly one cell per heading.
+- A cell is an `L`, or a plain string of at most 24 characters for numbers and symbols only
+  (`"Rs 1,250"`, `"-"`, `"1.5R"`, `"9:15"`, `"02-09"`). A plain string prints the same in all three
+  languages, so any lowercase word of 4+ letters (`"done"`, `"lakh"`, `"days"`) makes the validator ask
+  for an `L`. `""` is an empty cell (a partly filled template row).
+- `blank_rows`: 0-12 empty ruled rows for the learner to fill in. `rows` + `blank_rows` must be at least 1.
+- `note`: one short line under the table (how to use it). `caption` is the usual figure caption.
+- On a phone a wide table scrolls sideways inside its card; printed, it is light with every cell ruled and
+  blank rows tall enough to write in. Keep headings short (1-3 words) so 4-6 columns still read well.
 
 `tone`: `brand` | `up` (green) | `down` (red) | `gold` | `muted`.
 Story characters (`who`): `mentor` (calm senior teacher), `aman`, `priya` (beginners),
 `tipster` (the WhatsApp-tip seller — scam stories only), `narrator` (caption box).
 `mood`: `neutral` | `happy` | `worried` | `thinking` | `sad` | `excited`.
+
+## Templates and model cards (`artefacts`)
+
+When the task asks a learner to BUILD something (a Risk Card, a rule card, a journal, a backtest log, a
+calendar, a Routine Card ...), show a model of it in `artefacts`. The app draws them in the Today's task tab
+under "Your template" / "Aapka template" / "आपका टेम्पलेट", after the checklist; the printed workbook is
+built from the same data.
+
+```json
+"artefacts": [
+  { "title": { "en": "Risk Card", "hi": "Risk Card", "dv": "रिस्क कार्ड" },
+    "note":  { "en": "Fill it once; keep it next to your chart.", "hi": "Ek baar bhariye; chart ke paas rakhiye.", "dv": "एक बार भरिए; चार्ट के पास रखिए।" },
+    "visual": { "kind": "table", "head": [ {"en": "Rule", "hi": "Rule", "dv": "नियम"}, {"en": "My number", "hi": "Mera number", "dv": "मेरा नंबर"} ],
+                "rows": [ [ {"en": "Capital (virtual)", "hi": "Capital (virtual)", "dv": "कैपिटल (वर्चुअल)"}, "Rs 10,00,000" ],
+                          [ {"en": "1R = 1% risk", "hi": "1R = 1% risk", "dv": "1R = 1% रिस्क"}, "Rs 10,000" ] ],
+                "blank_rows": 4 } }
+]
+```
+
+- 0-3 items per day. Fields: `title` (L, required), `note` (L, optional), `visual` (required). No other fields.
+- `visual` may be any kind except `story` and `mindmap`: usually `table`; `compare`, `steps`, `flow`, `calc`
+  also work. Leave `visual.title` out: the artefact `title` is the heading.
+- A model card shows the house numbers (docs/SMART_COURSE_BIBLE.md) and made-up names only; a template
+  uses `blank_rows` for the learner's own entries.
+- The same compliance rules apply to every string (no promise words, no rates, no real stocks).
+
+## Class files (`content/resources.json`)
+
+Decks, handouts and workbooks are rows in `scripts/gen_content.py` (`STAGE1_V3_FILES` for the Stage 1 v3
+files), not part of the day JSON:
+`{ "level": "foundation", "week": 1-3, "day"?: 1-21, "lang"?: "en" | "hi", "kind": "deck" | "handout" | "workbook",
+"file_name": "...", "note": "...", "storage_path": "https://..." or "/learn/..." }`.
+One row per language copy: English readers get `en`, Hinglish and Hindi readers get `hi`, and a reader falls
+back to whichever copy exists. `day` pins a file to one day (its week is filled in). A day lists its week's
+(and its own) decks and handouts; attendance asks for "handout opened" only while one is listed.
 
 ## Non-negotiables the validator enforces
 
@@ -99,3 +195,6 @@ Story characters (`who`): `mentor` (calm senior teacher), `aman`, `priya` (begin
 5. Virtual money only; Stage 1 places no F&O trades, not even paper ("F&O = samjho, khelo mat").
 6. `hi` has zero Devanagari; `en` has zero Devanagari; `dv` is mostly Devanagari.
 7. No emoji anywhere.
+8. No answer-length shortcut: see "Answer length" above (per day quiz, per weekly bank, final).
+9. No repeated question stem across the 21 day quizzes and the four exam banks.
+10. Counts: 4-6 topics (at least 2 with a visual), 3-8 key terms, 3-6 task steps, 0-3 artefacts, 1-3 prompts, 5 quiz questions.

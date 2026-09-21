@@ -3,8 +3,10 @@
 
 Source: scripts/content_v3/smart/{weeks.json, day01.json .. day21.json, exam_w1.json .. exam_w3.json, exam_final.json}
 Format: docs/SMART_CONTENT_SCHEMA.md. Called by scripts/gen_content.py; run alone to validate only:
-    python scripts/content_v3/build_smart.py            # validate, print a summary
-    python scripts/content_v3/build_smart.py day05.json # validate one file (quick loop while authoring)
+    python scripts/content_v3/build_smart.py                # validate everything, print a summary
+    python scripts/content_v3/build_smart.py day05.json     # validate one day (quick loop while authoring)
+    python scripts/content_v3/build_smart.py exam_w1.json   # validate one exam bank
+Single-file mode also checks the file's quiz stems against every other day quiz and exam bank.
 """
 import json, os, re, sys, random, glob
 
@@ -31,6 +33,12 @@ TONES = {"brand", "up", "down", "gold", "muted"}
 CHARS = {"mentor", "aman", "priya", "tipster", "narrator"}
 MOODS = {"neutral", "happy", "worried", "thinking", "sad", "excited"}
 OPS = {"+", "-", "x", "÷", "="}
+# A table cell may be a plain string only for numbers and symbols ("Rs 1,250", "-", "1.5R", "9:15"): it prints the
+# same in all three languages, so any lowercase word of 4+ letters ("done", "lakh", "days") has to be an L instead.
+CELL_MAX = 24
+CELL_WORD_RE = re.compile(r"\b[a-z]{4,}\b")
+# Artefacts are templates and model cards: any visual except the day's own story and recap map.
+ARTEFACT_KINDS_BANNED = {"story", "mindmap"}
 
 class Bad(Exception):
   pass
@@ -144,9 +152,33 @@ def visual(v, where):
       if p.get("mood") is not None and p["mood"] not in MOODS: raise Bad(f"{where}.panels[{i}].mood: one of {sorted(MOODS)}")
       L(p.get("say"), f"{where}.panels[{i}].say", allow_banned=p["who"] == "tipster")
     opt_L(v.get("moral"), f"{where}.moral")
+  elif k == "table":
+    extra = set(v) - {"kind", "title", "caption", "head", "rows", "blank_rows", "note"}
+    if extra: raise Bad(f"{where}: unknown table field(s) {sorted(extra)} (allowed: title, caption, head, rows, blank_rows, note)")
+    count(v.get("head"), 2, 6, f"{where}.head")
+    for i, h in enumerate(v["head"]): L(h, f"{where}.head[{i}]")
+    count(v.get("rows"), 0, 14, f"{where}.rows")
+    for i, row in enumerate(v["rows"]):
+      count(row, len(v["head"]), len(v["head"]), f"{where}.rows[{i}] (one cell per head column)")
+      for j, cell in enumerate(row): table_cell(cell, f"{where}.rows[{i}][{j}]")
+    blank = v.get("blank_rows", 0)
+    if isinstance(blank, bool) or not isinstance(blank, int) or not 0 <= blank <= 12: raise Bad(f"{where}.blank_rows: whole number 0-12")
+    if len(v["rows"]) + blank < 1: raise Bad(f"{where}: a table needs at least one row or one blank row")
+    opt_L(v.get("note"), f"{where}.note")
   else:
     raise Bad(f"{where}: unknown visual kind '{k}'")
   return v
+
+def table_cell(c, where):
+  """A table cell: an L, or a plain string of at most 24 characters for numbers and symbols (see CELL_WORD_RE)."""
+  if isinstance(c, dict): return L(c, where)
+  if not isinstance(c, str): raise Bad(f"{where}: a cell is {{en, hi, dv}} or a short string, got {c!r}")
+  if len(c) > CELL_MAX: raise Bad(f"{where}: a plain-string cell is at most {CELL_MAX} characters (use {{en, hi, dv}} for words): {c[:40]}")
+  if DEVA.search(c) or EMOJI.search(c): raise Bad(f"{where}: a plain-string cell is Latin numbers/symbols only: {c}")
+  if BANNED_RE.search(c) or RATES_RE.search(c): raise Bad(f"{where}: {c!r} is not allowed in learner text")
+  m = CELL_WORD_RE.search(c)
+  if m: raise Bad(f"{where}: '{m.group(0)}' is a word, so this cell needs all three languages: {{\"en\": ..., \"hi\": ..., \"dv\": ...}}")
+  return c
 
 def quiz_item(q, where):
   L(q.get("stem"), f"{where}.stem")
@@ -157,6 +189,64 @@ def quiz_item(q, where):
   for i, o in enumerate(opts): L(o.get("text"), f"{where}.options[{i}]", allow_banned=o.get("correct") is not True)
   L(q.get("explanation"), f"{where}.explanation")
   return q
+
+# ---- answer-length cue ----
+# 21 Sep 2026 audit: the correct option was never the longest (0 of 180) and often the unique shortest, so
+# "always pick the shortest" came close to the pass mark. Each quiz or bank must now make the right answer the
+# UNIQUE longest English option in a set band of questions, and the unique shortest in only a few.
+# (questions, longest min, longest max, shortest max)
+LENGTH_RULES = {"day": (5, 1, 2, 1), "week": (15, 3, 6, 4), "final": (30, 6, 12, 8)}
+
+def length_profile(qs):
+  """Indices of the questions whose correct option is the unique longest / unique shortest English option."""
+  longest, shortest = [], []
+  for i, q in enumerate(qs):
+    lens = [len(o["text"]["en"].strip()) for o in q["options"]]
+    right = next(j for j, o in enumerate(q["options"]) if o.get("correct") is True)
+    others = [n for j, n in enumerate(lens) if j != right]
+    if lens[right] > max(others): longest.append(i)
+    if lens[right] < min(others): shortest.append(i)
+  return longest, shortest
+
+def check_length_cue(qs, where, kind):
+  _, lo, hi, short_max = LENGTH_RULES[kind]
+  longest, shortest = length_profile(qs)
+  problems = []
+  if not lo <= len(longest) <= hi:
+    problems.append(f"the correct option is the unique longest English option in {len(longest)} question(s) {longest} — make it {lo}-{hi}")
+  if len(shortest) > short_max:
+    problems.append(f"the correct option is the unique shortest English option in {len(shortest)} question(s) {shortest} — at most {short_max}")
+  if problems:
+    raise Bad(f"{where} answer-length cue: " + "; ".join(problems) + " (lengthen the right answer where it is the plain truth, trim or pad distractors, keep every option honest)")
+
+# ---- duplicate stems across day quizzes and exam banks ----
+def stem_key(s):
+  return " ".join(re.sub(r"[^a-z0-9%]+", " ", s.lower()).split())
+
+def stems_of(name, data):
+  """[(where, English stem)] for a day file or an exam bank, read without validating it."""
+  if not isinstance(data, dict): return []
+  qs = (data.get("quiz") if name.startswith("day") else data.get("questions")) or []
+  if not isinstance(qs, list): return []
+  label = "quiz" if name.startswith("day") else "questions"
+  return [(f"{name}.{label}[{i}]", q["stem"]["en"]) for i, q in enumerate(qs) if isinstance(q, dict) and isinstance(q.get("stem"), dict) and isinstance(q["stem"].get("en"), str)]
+
+def check_duplicate_stems(pairs, only=None):
+  """pairs = [(where, stem)]. Raises on any stem used twice; with `only`, just the duplicates that involve that file."""
+  seen = {}
+  for where, stem in pairs: seen.setdefault(stem_key(stem), []).append(where)
+  dup = [v for v in seen.values() if len(v) > 1 and (only is None or any(w.startswith(only + ".") for w in v))]
+  if dup: raise Bad(f"duplicate quiz/exam stems (write a new question, do not copy one): {dup[:4]}")
+
+def all_stem_pairs():
+  """Stems of every day quiz and exam bank. A file that does not parse right now (someone is mid-edit) is skipped
+  here: it fails on its own when validated, and must not fail the file being checked."""
+  pairs = []
+  for p in sorted(glob.glob(os.path.join(SRC, "day*.json")) + glob.glob(os.path.join(SRC, "exam_*.json"))):
+    name = os.path.basename(p)
+    try: pairs += stems_of(name, load(name))
+    except Bad: continue
+  return pairs
 
 def load(name):
   p = os.path.join(SRC, name)
@@ -192,7 +282,7 @@ def validate_day(d, name):
     opt_L(t.get("example"), f"{w}.topics[{i}].example", allow_banned=bool(t.get("scam_example"))); opt_L(t.get("remember"), f"{w}.topics[{i}].remember")
     if t.get("visual") is not None: visual(t["visual"], f"{w}.topics[{i}].visual"); nvis += 1
   if nvis < 2: raise Bad(f"{w}: at least 2 topics need a visual (found {nvis})")
-  count(d.get("key_terms"), 3, 6, f"{w}.key_terms")
+  count(d.get("key_terms"), 3, 8, f"{w}.key_terms")
   for i, k in enumerate(d["key_terms"]): L(k.get("term"), f"{w}.key_terms[{i}].term"); L(k.get("meaning"), f"{w}.key_terms[{i}].meaning")
   visual(d.get("mindmap"), f"{w}.mindmap")
   if d["mindmap"]["kind"] != "mindmap": raise Bad(f"{w}.mindmap: kind must be mindmap")
@@ -203,6 +293,7 @@ def validate_day(d, name):
   L(d.get("outcome"), f"{w}.outcome")
   count(d.get("tools"), 1, 6, f"{w}.tools")
   for i, t in enumerate(d["tools"]): L(t, f"{w}.tools[{i}]")
+  artefacts(d.get("artefacts"), f"{w}.artefacts")
   opt_L(d.get("fun"), f"{w}.fun")
   if d.get("compliance") is not None:
     c = d["compliance"]
@@ -217,7 +308,35 @@ def validate_day(d, name):
   L(d.get("motivation"), f"{w}.motivation")
   count(d.get("quiz"), 5, 5, f"{w}.quiz")
   for i, q in enumerate(d["quiz"]): quiz_item(q, f"{w}.quiz[{i}]")
+  check_length_cue(d["quiz"], f"{w}.quiz", "day")
   return d
+
+def artefacts(a, where):
+  """Optional: 0-3 model cards / templates shown under 'Your template' in Today's task. {title, note?, visual}."""
+  if a is None: return []
+  count(a, 0, 3, where)
+  for i, x in enumerate(a):
+    if not isinstance(x, dict): raise Bad(f"{where}[{i}]: {{title, note?, visual}}")
+    extra = set(x) - {"title", "note", "visual"}
+    if extra: raise Bad(f"{where}[{i}]: unknown field(s) {sorted(extra)} (allowed: title, note, visual)")
+    L(x.get("title"), f"{where}[{i}].title"); opt_L(x.get("note"), f"{where}[{i}].note")
+    v = x.get("visual")
+    if isinstance(v, dict) and v.get("kind") in ARTEFACT_KINDS_BANNED: raise Bad(f"{where}[{i}].visual: kind {v['kind']} is not a template (use table, compare, steps, flow, calc ...)")
+    visual(v, f"{where}[{i}].visual")
+  return a
+
+EXAM_FILES = ((1, "exam_w1.json", 15, 2), (2, "exam_w2.json", 15, 2), (3, "exam_w3.json", 15, 2), (None, "exam_final.json", 30, 1))
+
+def validate_exam(b, name):
+  """One exam bank: its week, its size, every question, and the answer-length cue."""
+  spec = next((x for x in EXAM_FILES if x[1] == name), None)
+  if not spec: raise Bad(f"{name}: not an exam bank this course knows ({', '.join(x[1] for x in EXAM_FILES)})")
+  wk, _, size, _ = spec
+  if not isinstance(b, dict) or b.get("week") != wk: raise Bad(f"{name}: week must be {wk}")
+  count(b.get("questions"), size, size, f"{name}.questions")
+  for i, q in enumerate(b["questions"]): quiz_item(q, f"{name}.questions[{i}]")
+  check_length_cue(b["questions"], f"{name}.questions", "final" if wk is None else "week")
+  return b
 
 # ---- conversion ----
 def shuffled(q, rng, target):
@@ -243,7 +362,6 @@ def balanced_targets(n, seed):
 def exists():
   return len(glob.glob(os.path.join(SRC, "day*.json"))) == 21
 
-EXAM_FILES = ((1, "exam_w1.json", 15, 2), (2, "exam_w2.json", 15, 2), (3, "exam_w3.json", 15, 2), (None, "exam_final.json", 30, 1))
 def exams_exist():
   """All four v3 exam banks are authored. Until then build() returns no exam banks and gen_content.py keeps
   the v2 weekend banks, so the 21 v3 days can ship before the exam papers are written."""
@@ -275,6 +393,7 @@ def build():
                   "fun": d.get("fun"), "compliance": d.get("compliance"), "journal_prompt": d["journal_prompt"], "motivation": d["motivation"], "tags": tags_with_strategy(d)},
       "prompts": [{"title": p["title"], "level": "foundation", "platform": "any", "body": p["body"]} for p in d["prompts"]],
     })
+    if d.get("artefacts"): sessions[-1]["content"]["artefacts"] = d["artefacts"]
     all_q.append((day, d["quiz"]))
   targets = balanced_targets(sum(len(q) for _, q in all_q), 20260919)
   t = 0
@@ -286,37 +405,36 @@ def build():
     quizzes.append({"session": day, "questions": out})
   exam_banks = []
   for wk, name, size, marks in (EXAM_FILES if exams_exist() else ()):
-    b = load(name)
-    if b.get("week") != wk: raise Bad(f"{name}: week must be {wk}")
-    count(b.get("questions"), size, size, f"{name}.questions")
-    for i, q in enumerate(b["questions"]): quiz_item(q, f"{name}.questions[{i}]")
+    b = validate_exam(load(name), name)
     tg = balanced_targets(size, 7000 + (wk or 9))
     rng = random.Random(5000 + (wk or 9))
     exam_banks.append({"level": "foundation", "week": wk, "questions": [dict(shuffled(q, rng, tg[i]), marks=marks) for i, q in enumerate(b["questions"])]})
-  stems = {}
-  for qz in quizzes:
-    for q in qz["questions"]: stems.setdefault(q["stem_en"].strip().lower(), []).append(f"S{qz['session']}")
-  dup = {k: v for k, v in stems.items() if len(v) > 1}
-  if dup: raise Bad(f"duplicate quiz stems: {list(dup.items())[:3]}")
-  longest = sum(1 for qz in quizzes for q in qz["questions"] if max(range(4), key=lambda i: len(q["options"][i]["en"])) == q["correct_index"])
-  total = sum(len(qz["questions"]) for qz in quizzes)
-  if longest / total > 0.4:
-    raise Bad(f"the correct option is the longest English option in {longest}/{total} session questions (max 40%) — lengthen the distractors")
+  # One stem, one question: day quizzes and exam banks are checked against each other.
+  check_duplicate_stems([p for day, qs in all_q for p in stems_of(f"day{day:02d}.json", {"quiz": qs})]
+                        + [p for _, name, _, _ in (EXAM_FILES if exams_exist() else ()) for p in stems_of(name, load(name))])
   return weeks, sessions, quizzes, exam_banks
 
+def validate_file(name):
+  """Single-file mode: the file on its own, then its stems against every other day quiz and exam bank."""
+  if name.startswith("day"): validate_day(load(name), name)
+  elif name.startswith("exam"): validate_exam(load(name), name)
+  else: raise Bad(f"{name}: pass a dayNN.json or exam_*.json file (or nothing, to validate everything)")
+  check_duplicate_stems(all_stem_pairs(), only=name)
+
 if __name__ == "__main__":
+  if len(sys.argv) > 1:
+    failed = 0
+    for n in sys.argv[1:]:
+      n = os.path.basename(n)
+      try:
+        validate_file(n); print("ok", n)
+      except Bad as err:
+        failed += 1; print("CONTENT ERROR:", err)
+    sys.exit(1 if failed else 0)
   try:
-    if len(sys.argv) > 1:
-      for n in sys.argv[1:]:
-        n = os.path.basename(n)
-        if n.startswith("day"): validate_day(load(n), n)
-        elif n.startswith("exam"):
-          b = load(n)
-          for i, q in enumerate(b.get("questions") or []): quiz_item(q, f"{n}.questions[{i}]")
-        print("ok", n)
-    else:
-      w, s, q, e = build()
-      nv = sum(1 + sum(1 for t in x["content"]["topics"] if t.get("visual")) + 1 for x in s)
-      print(f"Stage 1 OK: {len(w)} weeks, {len(s)} days, {sum(len(x['questions']) for x in q)} quiz Q, {sum(len(b['questions']) for b in e)} exam Q, {nv} visuals")
+    w, s, q, e = build()
+    nv = sum(1 + sum(1 for t in x["content"]["topics"] if t.get("visual")) + 1 for x in s)
+    na = sum(len(x["content"].get("artefacts") or []) for x in s)
+    print(f"Stage 1 OK: {len(w)} weeks, {len(s)} days, {sum(len(x['questions']) for x in q)} quiz Q, {sum(len(b['questions']) for b in e)} exam Q, {nv} visuals, {na} artefacts")
   except Bad as err:
     print("CONTENT ERROR:", err); sys.exit(1)

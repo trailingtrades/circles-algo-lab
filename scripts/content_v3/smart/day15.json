@@ -105,9 +105,9 @@
         "dv": "चार्ट बताता है कि भाव क्या कर रहा है, यह नहीं कि उसके नीचे का बिज़नेस कितना सेहतमंद है। इसलिए इस कोर्स में फ़ंडामेंटल एनालिसिस (कंपनी के अकाउंट पढ़कर उसके बिज़नेस को परखना) सिर्फ़ एक फ़िल्टर है, प्राइस टारगेट निकालने का तरीक़ा नहीं। कोई स्टॉक आपकी स्विंग वॉचलिस्ट में आने से पहले एक छोटा हेल्थ चेक पास करे: नंबर कहाँ मिलते हैं यह पता हो तो लगभग पाँच मिनट, पहली बार ज़्यादा समय लगेगा। मार्केट कैपिटलाइज़ेशन यानी मार्केट कैप = शेयर का भाव x कुल शेयरों की गिनती, मतलब पूरी कंपनी का प्राइस टैग। म्यूचुअल फ़ंड के लिए SEBI के नियम में मार्केट कैप के हिसाब से टॉप 100 कंपनियाँ लार्ज कैप हैं, 101 से 250 तक मिड कैप, और बाक़ी स्मॉल कैप। AMFI (म्यूचुअल फ़ंड इंडस्ट्री की संस्था) यह लिस्ट हर छह महीने में जारी करती है, इसलिए कंपनी का टियर बदल भी सकता है। ताज़ा लिस्ट amfiindia.com पर देख लीजिए। सेक्टर मतलब एक ही तरह का बिज़नेस करने वाली कंपनियों का ग्रुप, जैसे बैंक, IT, फ़ार्मा या सीमेंट।"
       },
       "example": {
-        "en": "Anand Snacks Ltd has 5 crore shares trading at Rs 200, so its market cap is Rs 1,000 crore. On the AMFI list it ranks far below 250, well outside the top 500: a small cap. It is not even in the NIFTY 500 that Day 11's screener starts from. Small caps usually swing harder and trade in thinner volume, so the spread and slippage from Day 2 bite more, and pump-and-dump tip groups love them. Sectors matter too: shares in one sector often move together, so three open trades in three cement companies are closer to one big bet than to three small ones (Day 9).",
-        "hi": "Anand Snacks Ltd ke 5 crore shares hain aur price Rs 200 hai, toh market cap Rs 1,000 crore hua. AMFI list mein iska rank 250 se bahut neeche hai, top 500 se bhi bahar: yaani small cap. Yeh toh us NIFTY 500 mein bhi nahi hai jahan se Day 11 ka screener shuru hota hai. Small caps aam taur par zyada tezi se upar-neeche hote hain aur inmein volume kam hota hai, isliye Day 2 wala spread aur slippage zyada chubhta hai. Pump-and-dump wale tip groups ko bhi yahi pasand aate hain. Sector bhi maayne rakhta hai: ek sector ke shares aksar saath chalte hain, isliye teen cement companies mein teen khule trades asal mein ek bade bet jaise hain, teen chhote nahi (Day 9).",
-        "dv": "Anand Snacks Ltd के 5 करोड़ शेयर हैं और भाव Rs 200 है, तो मार्केट कैप Rs 1,000 करोड़ हुआ। AMFI लिस्ट में इसका रैंक 250 से बहुत नीचे है, टॉप 500 से भी बाहर: यानी स्मॉल कैप। यह तो उस NIFTY 500 में भी नहीं है जहाँ से दिन 11 का स्क्रीनर शुरू होता है। स्मॉल कैप आम तौर पर ज़्यादा तेज़ी से ऊपर-नीचे होते हैं और इनमें वॉल्यूम कम होता है, इसलिए दिन 2 वाला स्प्रेड और स्लिपेज ज़्यादा चुभता है। पंप-एंड-डंप वाले टिप ग्रुप को भी यही पसंद आते हैं। सेक्टर भी मायने रखता है: एक सेक्टर के शेयर अक्सर साथ चलते हैं, इसलिए तीन सीमेंट कंपनियों में तीन खुले ट्रेड असल में एक बड़े दाँव जैसे हैं, तीन छोटों जैसे नहीं (दिन 9)।"
+        "en": "Anand Snacks Ltd has 5 crore shares trading at Rs 200, so its market cap is Rs 1,000 crore. On the AMFI list it ranks far below 250, well outside the top 500: a small cap. It is not even in the NIFTY 500 that Day 11's screener starts from. Small caps usually swing harder and trade in thinner volume, so the spread and slippage from Day 2 bite more, and pump-and-dump tip groups love them. Sectors matter too: shares in one sector often move together, so three open trades in three cement companies are closer to one big bet than to three small ones (Day 9). So write each watchlist stock's sector, shown on its NSE quote page, next to its card.",
+        "hi": "Anand Snacks Ltd ke 5 crore shares hain aur price Rs 200 hai, toh market cap Rs 1,000 crore hua. AMFI list mein iska rank 250 se bahut neeche hai, top 500 se bhi bahar: yaani small cap. Yeh toh us NIFTY 500 mein bhi nahi hai jahan se Day 11 ka screener shuru hota hai. Small caps aam taur par zyada tezi se upar-neeche hote hain aur inmein volume kam hota hai, isliye Day 2 wala spread aur slippage zyada chubhta hai. Pump-and-dump wale tip groups ko bhi yahi pasand aate hain. Sector bhi maayne rakhta hai: ek sector ke shares aksar saath chalte hain, isliye teen cement companies mein teen khule trades asal mein ek bade bet jaise hain, teen chhote nahi (Day 9). Isliye har watchlist stock ka sector, jo uske NSE quote page par likha hota hai, uske card ke saath note kijiye.",
+        "dv": "Anand Snacks Ltd के 5 करोड़ शेयर हैं और भाव Rs 200 है, तो मार्केट कैप Rs 1,000 करोड़ हुआ। AMFI लिस्ट में इसका रैंक 250 से बहुत नीचे है, टॉप 500 से भी बाहर: यानी स्मॉल कैप। यह तो उस NIFTY 500 में भी नहीं है जहाँ से दिन 11 का स्क्रीनर शुरू होता है। स्मॉल कैप आम तौर पर ज़्यादा तेज़ी से ऊपर-नीचे होते हैं और इनमें वॉल्यूम कम होता है, इसलिए दिन 2 वाला स्प्रेड और स्लिपेज ज़्यादा चुभता है। पंप-एंड-डंप वाले टिप ग्रुप को भी यही पसंद आते हैं। सेक्टर भी मायने रखता है: एक सेक्टर के शेयर अक्सर साथ चलते हैं, इसलिए तीन सीमेंट कंपनियों में तीन खुले ट्रेड असल में एक बड़े दाँव जैसे हैं, तीन छोटों जैसे नहीं (दिन 9)। इसलिए हर वॉचलिस्ट स्टॉक का सेक्टर, जो उसके NSE कोट पेज पर लिखा होता है, उसके कार्ड के साथ नोट कीजिए।"
       },
       "remember": {
         "en": "The chart tells you about the price. The health check tells you about the business. You need both.",
@@ -167,14 +167,14 @@
         "dv": "चेक 1 से 3: ग्रोथ, मार्जिन, कर्ज़"
       },
       "p": {
-        "en": "Every number you need is in the company's own filings: quarterly results and the annual report on nseindia.com or bseindia.com. Free data sites copy them and can lag, so match them against the filing. Check 1, growth: is revenue (sales, the money earned from selling goods or services) in the latest year (year 3) higher than in the first of your three years (year 1)? Check 2, margin: operating margin is how many rupees out of every Rs 100 of sales stay after running costs like raw material, salaries and rent. Check 3, debt: debt-to-equity (D/E) compares borrowed money with the owners' money in the business, and interest coverage says how many times the profit before interest and tax covers the interest bill. Read the direction over three years, not one quarter.",
-        "hi": "Jitne numbers chahiye, sab company ki apni filings mein milte hain: nseindia.com ya bseindia.com par quarterly results aur annual report. Free data sites wahi numbers copy karti hain aur kabhi-kabhi peeche reh jaati hain, isliye filing se mila lijiye. Check 1, growth: kya latest saal (saal 3) ka revenue (sales, yaani saamaan ya service bechkar kamaya paisa) teen saal mein se pehle saal (saal 1) se zyada hai? Check 2, margin: operating margin batata hai ki har Rs 100 ki sales mein se raw material, salary aur kiraye jaise chalane ke kharche nikalne ke baad kitne rupaye bachte hain. Check 3, debt: debt-to-equity (D/E) udhaar liye paise ko business mein lage maalikon ke paise se compare karta hai, aur interest coverage batata hai ki interest aur tax se pehle ka profit interest ke bill ko kitni baar cover karta hai. Ek quarter nahi, teen saal ki direction dekhiye.",
-        "dv": "जितने नंबर चाहिए, सब कंपनी की अपनी फ़ाइलिंग में मिलते हैं: nseindia.com या bseindia.com पर तिमाही नतीजे और सालाना रिपोर्ट। फ़्री डेटा साइटें वही नंबर कॉपी करती हैं और कभी-कभी पीछे रह जाती हैं, इसलिए फ़ाइलिंग से मिला लीजिए। चेक 1, ग्रोथ: क्या लेटेस्ट साल (साल 3) का रेवेन्यू (सेल्स, यानी सामान या सर्विस बेचकर कमाया पैसा) तीन सालों में से पहले साल (साल 1) से ज़्यादा है? चेक 2, मार्जिन: ऑपरेटिंग मार्जिन बताता है कि हर Rs 100 की सेल्स में से कच्चा माल, सैलरी और किराए जैसे चलाने के ख़र्च निकालने के बाद कितने रुपये बचते हैं। चेक 3, कर्ज़: डेट-टू-इक्विटी (D/E) उधार लिए पैसे की तुलना बिज़नेस में लगे मालिकों के पैसे से करता है, और इंटरेस्ट कवरेज बताता है कि ब्याज और टैक्स से पहले का प्रॉफ़िट ब्याज के बिल को कितनी बार कवर करता है। एक तिमाही नहीं, तीन साल की दिशा देखिए।"
+        "en": "Every number you need is in the company's own filings: quarterly results and the annual report on nseindia.com or bseindia.com. Free data sites copy them and can lag, so match the latest year against the filing. Check 1, growth: is revenue (sales, the money earned from selling goods or services) in the latest year (year 3) higher than in the first of your three years (year 1)? Check 2, margin: operating margin is how many rupees out of every Rs 100 of sales stay after running costs like raw material, salaries and rent; the filing has no 'operating profit' line, so work it out as sales minus (total expenses minus finance costs minus depreciation). Check 3, debt: debt-to-equity (D/E) compares borrowed money with the owners' money in the business, and interest cover is operating profit minus depreciation, divided by finance costs (the interest bill): how many times the business's own profit can pay its interest. Read the direction over three years, not one quarter.",
+        "hi": "Jitne numbers chahiye, sab company ki apni filings mein milte hain: nseindia.com ya bseindia.com par quarterly results aur annual report. Free data sites wahi numbers copy karti hain aur kabhi-kabhi peeche reh jaati hain, isliye latest saal filing se mila lijiye. Check 1, growth: kya latest saal (saal 3) ka revenue (sales, yaani saamaan ya service bechkar kamaya paisa) teen saal mein se pehle saal (saal 1) se zyada hai? Check 2, margin: operating margin batata hai ki har Rs 100 ki sales mein se raw material, salary aur kiraye jaise chalane ke kharche nikalne ke baad kitne rupaye bachte hain; filing mein 'operating profit' ki koi line nahi hoti, isliye khud nikaaliye: sales minus (total expenses minus finance costs minus depreciation). Check 3, debt: debt-to-equity (D/E) udhaar liye paise ko business mein lage maalikon ke paise se compare karta hai, aur interest cover hai operating profit minus depreciation, bhaag finance costs (interest ka bill): yaani business ka apna profit interest ko kitni baar chuka sakta hai. Ek quarter nahi, teen saal ki direction dekhiye.",
+        "dv": "जितने नंबर चाहिए, सब कंपनी की अपनी फ़ाइलिंग में मिलते हैं: nseindia.com या bseindia.com पर तिमाही नतीजे और सालाना रिपोर्ट। फ़्री डेटा साइटें वही नंबर कॉपी करती हैं और कभी-कभी पीछे रह जाती हैं, इसलिए लेटेस्ट साल फ़ाइलिंग से मिला लीजिए। चेक 1, ग्रोथ: क्या लेटेस्ट साल (साल 3) का रेवेन्यू (सेल्स, यानी सामान या सर्विस बेचकर कमाया पैसा) तीन सालों में से पहले साल (साल 1) से ज़्यादा है? चेक 2, मार्जिन: ऑपरेटिंग मार्जिन बताता है कि हर Rs 100 की सेल्स में से कच्चा माल, सैलरी और किराए जैसे चलाने के ख़र्च निकालने के बाद कितने रुपये बचते हैं; फ़ाइलिंग में 'ऑपरेटिंग प्रॉफ़िट' की कोई लाइन नहीं होती, इसलिए ख़ुद निकालिए: सेल्स माइनस (कुल ख़र्च माइनस फ़ाइनेंस कॉस्ट माइनस डेप्रिसिएशन)। चेक 3, कर्ज़: डेट-टू-इक्विटी (D/E) उधार लिए पैसे की तुलना बिज़नेस में लगे मालिकों के पैसे से करता है, और इंटरेस्ट कवर है ऑपरेटिंग प्रॉफ़िट माइनस डेप्रिसिएशन, भाग फ़ाइनेंस कॉस्ट (ब्याज का बिल): यानी बिज़नेस का अपना प्रॉफ़िट ब्याज को कितनी बार चुका सकता है। एक तिमाही नहीं, तीन साल की दिशा देखिए।"
       },
       "example": {
-        "en": "Bharat Pumps Ltd: sales rose from Rs 420 crore in year 1 to Rs 500 crore in year 3, so growth is up. Operating profit is Rs 60 crore, so Rs 12 of every Rs 100 of sales is left, about the same 12% as in year 1. After Rs 15 crore of depreciation (the yearly wear and tear of its machines), its profit before interest and tax is Rs 45 crore. But it has borrowed Rs 300 crore against Rs 250 crore of owners' money, and that Rs 45 crore covers the Rs 30 crore interest bill only 1.5 times. Think of a family whose EMIs eat most of the salary: one bad quarter, or a credit-rating downgrade (an agency lowering its view of the company's ability to repay), and the share can gap down.",
-        "hi": "Bharat Pumps Ltd: sales saal 1 ke Rs 420 crore se saal 3 mein Rs 500 crore ho gayi, yaani growth upar hai. Operating profit Rs 60 crore hai, matlab har Rs 100 ki sales mein Rs 12 bachte hain, lagbhag wahi 12% jo saal 1 mein tha. Depreciation (machines ki saalana ghisaai) ke Rs 15 crore ke baad interest aur tax se pehle ka profit Rs 45 crore bachta hai. Lekin company ne maalikon ke Rs 250 crore ke saamne Rs 300 crore udhaar le rakha hai, aur yeh Rs 45 crore Rs 30 crore ke interest ko sirf 1.5 baar cover karta hai. Us parivaar ki tarah sochiye jiski salary ka bada hissa EMI mein chala jaata hai: ek kharaab quarter, ya credit rating downgrade (rating agency ka maanna ki company ki udhaar chukane ki taakat kam hui hai), aur share gap-down khul sakta hai.",
-        "dv": "Bharat Pumps Ltd: सेल्स साल 1 के Rs 420 करोड़ से साल 3 में Rs 500 करोड़ हो गई, यानी ग्रोथ ऊपर है। ऑपरेटिंग प्रॉफ़िट Rs 60 करोड़ है, मतलब हर Rs 100 की सेल्स में Rs 12 बचते हैं, लगभग वही 12% जो साल 1 में था। डेप्रिसिएशन (मशीनों की सालाना घिसाई) के Rs 15 करोड़ के बाद ब्याज और टैक्स से पहले का प्रॉफ़िट Rs 45 करोड़ बचता है। लेकिन कंपनी ने मालिकों के Rs 250 करोड़ के सामने Rs 300 करोड़ उधार ले रखा है, और यह Rs 45 करोड़ Rs 30 करोड़ के ब्याज को सिर्फ़ 1.5 बार कवर करता है। उस परिवार की तरह सोचिए जिसकी सैलरी का बड़ा हिस्सा EMI में चला जाता है: एक ख़राब तिमाही, या क्रेडिट रेटिंग डाउनग्रेड (रेटिंग एजेंसी का मानना कि कंपनी की उधार चुकाने की ताक़त कम हुई है), और शेयर गैप-डाउन खुल सकता है।"
+        "en": "Bharat Pumps Ltd: sales rose from Rs 4,200 crore in year 1 to Rs 5,000 crore in year 3, so growth is up. Operating profit is Rs 600 crore, so Rs 12 of every Rs 100 of sales is left, about the same 12% as in year 1. After Rs 150 crore of depreciation (the yearly wear and tear of its machines), Rs 450 crore is left before interest and tax. But it has borrowed Rs 3,000 crore against Rs 2,500 crore of owners' money, and that Rs 450 crore covers the Rs 300 crore interest bill only 1.5 times. Think of a family whose EMIs eat most of the salary: one bad quarter, or a credit-rating downgrade (an agency lowering its view of the company's ability to repay), and the share can gap down.",
+        "hi": "Bharat Pumps Ltd: sales saal 1 ke Rs 4,200 crore se saal 3 mein Rs 5,000 crore ho gayi, yaani growth upar hai. Operating profit Rs 600 crore hai, matlab har Rs 100 ki sales mein Rs 12 bachte hain, lagbhag wahi 12% jo saal 1 mein tha. Depreciation (machines ki saalana ghisaai) ke Rs 150 crore ke baad interest aur tax se pehle Rs 450 crore bachte hain. Lekin company ne maalikon ke Rs 2,500 crore ke saamne Rs 3,000 crore udhaar le rakha hai, aur yeh Rs 450 crore Rs 300 crore ke interest ko sirf 1.5 baar cover karta hai. Us parivaar ki tarah sochiye jiski salary ka bada hissa EMI mein chala jaata hai: ek kharaab quarter, ya credit rating downgrade (rating agency ka maanna ki company ki udhaar chukane ki taakat kam hui hai), aur share gap-down khul sakta hai.",
+        "dv": "Bharat Pumps Ltd: सेल्स साल 1 के Rs 4,200 करोड़ से साल 3 में Rs 5,000 करोड़ हो गई, यानी ग्रोथ ऊपर है। ऑपरेटिंग प्रॉफ़िट Rs 600 करोड़ है, मतलब हर Rs 100 की सेल्स में Rs 12 बचते हैं, लगभग वही 12% जो साल 1 में था। डेप्रिसिएशन (मशीनों की सालाना घिसाई) के Rs 150 करोड़ के बाद ब्याज और टैक्स से पहले Rs 450 करोड़ बचते हैं। लेकिन कंपनी ने मालिकों के Rs 2,500 करोड़ के सामने Rs 3,000 करोड़ उधार ले रखा है, और यह Rs 450 करोड़ Rs 300 करोड़ के ब्याज को सिर्फ़ 1.5 बार कवर करता है। उस परिवार की तरह सोचिए जिसकी सैलरी का बड़ा हिस्सा EMI में चला जाता है: एक ख़राब तिमाही, या क्रेडिट रेटिंग डाउनग्रेड (रेटिंग एजेंसी का मानना कि कंपनी की उधार चुकाने की ताक़त कम हुई है), और शेयर गैप-डाउन खुल सकता है।"
       },
       "remember": {
         "en": "No need to memorise numbers: read the direction over three years, then apply the written cut-offs.",
@@ -189,9 +189,9 @@
           "dv": "Bharat Pumps: चेक 1 से 3"
         },
         "caption": {
-          "en": "Course rule: debt-to-equity above 1, or interest cover below 2, is a debt flag. These are teaching cut-offs, not laws.",
-          "hi": "Course ka rule: debt-to-equity 1 se upar, ya interest cover 2 se neeche ho, toh debt ka flag. Yeh seekhne ke cut-off hain, kanoon nahi.",
-          "dv": "कोर्स का नियम: डेट-टू-इक्विटी 1 से ऊपर, या इंटरेस्ट कवर 2 से नीचे हो, तो कर्ज़ का फ़्लैग। ये सीखने के लिए कट-ऑफ़ हैं, क़ानून नहीं।"
+          "en": "Course rule: debt-to-equity above 1, or interest cover below 2, is a debt flag. This cover leaves out other income (such as interest on deposits), so a data site that includes it may show a higher number. These are teaching cut-offs, not laws.",
+          "hi": "Course ka rule: debt-to-equity 1 se upar, ya interest cover 2 se neeche ho, toh debt ka flag. Is cover mein other income (jaise deposits par mila interest) shaamil nahi hai, isliye jo data site use jodti hai, woh zyada number dikha sakti hai. Yeh seekhne ke cut-off hain, kanoon nahi.",
+          "dv": "कोर्स का नियम: डेट-टू-इक्विटी 1 से ऊपर, या इंटरेस्ट कवर 2 से नीचे हो, तो कर्ज़ का फ़्लैग। इस कवर में अदर इनकम (जैसे डिपॉज़िट पर मिला ब्याज) शामिल नहीं है, इसलिए जो डेटा साइट उसे जोड़ती है, वह ज़्यादा नंबर दिखा सकती है। ये सीखने के लिए कट-ऑफ़ हैं, क़ानून नहीं।"
         },
         "rows": [
           {
@@ -200,7 +200,7 @@
               "hi": "Saal 1 ki sales",
               "dv": "साल 1 की सेल्स"
             },
-            "value": "Rs 420 cr"
+            "value": "Rs 4,200 cr"
           },
           {
             "label": {
@@ -208,29 +208,29 @@
               "hi": "Saal 3 ki sales: growth upar",
               "dv": "साल 3 की सेल्स: ग्रोथ ऊपर"
             },
-            "value": "Rs 500 cr"
+            "value": "Rs 5,000 cr"
           },
           {
             "label": {
-              "en": "Operating margin: 60 ÷ 500",
-              "hi": "Operating margin: 60 ÷ 500",
-              "dv": "ऑपरेटिंग मार्जिन: 60 ÷ 500"
+              "en": "Operating margin: 600 ÷ 5,000",
+              "hi": "Operating margin: 600 ÷ 5,000",
+              "dv": "ऑपरेटिंग मार्जिन: 600 ÷ 5,000"
             },
             "value": "12%"
           },
           {
             "label": {
-              "en": "Debt-to-equity: 300 ÷ 250",
-              "hi": "Debt-to-equity: 300 ÷ 250",
-              "dv": "डेट-टू-इक्विटी: 300 ÷ 250"
+              "en": "Debt-to-equity: 3,000 ÷ 2,500",
+              "hi": "Debt-to-equity: 3,000 ÷ 2,500",
+              "dv": "डेट-टू-इक्विटी: 3,000 ÷ 2,500"
             },
             "value": "1.2"
           },
           {
             "label": {
-              "en": "Interest cover: 45 ÷ 30",
-              "hi": "Interest cover: 45 ÷ 30",
-              "dv": "इंटरेस्ट कवर: 45 ÷ 30"
+              "en": "Interest cover: (600 - 150) ÷ 300",
+              "hi": "Interest cover: (600 - 150) ÷ 300",
+              "dv": "इंटरेस्ट कवर: (600 - 150) ÷ 300"
             },
             "value": "1.5x"
           }
@@ -373,14 +373,14 @@
         "dv": "कार्ड का स्कोर: पहले नियम, कहानी सबसे बाद में"
       },
       "p": {
-        "en": "Now score the card with written rules: in this course, a pledge above 10% of promoter shares, or a pledge % that has gone up two quarters in a row, knocks a stock off your swing watchlist on its own. The other four checks are counted (sales in year 3 below year 1; margin down in both year 2 and year 3; D/E above 1 or interest cover below 2; 3-year cash below half of 3-year profit, or 3-year profit or cash at zero or below), and two or more counted flags also take it off; write the reason in your journal. The check does not fit banks and NBFCs (non-bank lenders), because borrowing and lending is their business, so in Stage 1 keep them off your swing watchlist. From now on, the card comes before the chart: a stock that fails it never reaches your swing flowchart (Day 16). Let AI do the clerk's work of calculating, but paste only numbers you copied yourself, check every figure it uses, and make the decision yourself. Story bias is our habit of trusting a vivid story, such as a new product, a famous CEO or 'the next giant', over dull numbers; that is why the card comes first and the story comes last.",
-        "hi": "Ab likhe hue rules se card ka score nikaaliye: is course mein promoter ke 10% se zyada shares pledge hon, ya pledge % lagatar do quarter se badh raha ho, toh sirf yahi ek baat stock ko swing watchlist se bahar kar deti hai. Baaki chaar checks gine jaate hain (saal 3 ki sales saal 1 se kam; margin saal 2 aur saal 3 dono mein gira; D/E 1 se upar ya interest cover 2 se neeche; teen saal ka cash teen saal ke profit ke aadhe se kam, ya teen saal ka profit ya cash zero ya usse neeche), aur do ya zyada counted flags aaye toh bhi stock bahar; wajah journal mein likh lijiye. Banks aur NBFCs (bank ke alawa udhaar dene wali companies) par yeh check fit nahi hota, kyunki udhaar lena aur dena hi unka business hai, isliye Stage 1 mein unhe swing watchlist se bahar rakhiye. Ab se card chart se pehle aata hai: jo stock ismein fail ho, woh aapke swing flowchart (Day 16) tak pahunchta hi nahi. Hisaab-kitaab ka kaam AI se karwaiye, lekin sirf wahi numbers paste kijiye jo aapne khud copy kiye hain, AI ke har number ko check kijiye, aur faisla khud kijiye. Story bias hamari woh aadat hai jismein ek chamakdar kahani, jaise naya product, mashhoor CEO ya 'agla giant', sookhe numbers par bhaari pad jaati hai; isiliye card pehle aata hai aur kahani sabse baad mein.",
-        "dv": "अब लिखे हुए नियमों से कार्ड का स्कोर निकालिए: इस कोर्स में प्रमोटर के 10% से ज़्यादा शेयर गिरवी हों, या प्लेज % लगातार दो तिमाही से बढ़ रहा हो, तो सिर्फ़ यही एक बात स्टॉक को स्विंग वॉचलिस्ट से बाहर कर देती है। बाक़ी चार चेक गिने जाते हैं (साल 3 की सेल्स साल 1 से कम; मार्जिन साल 2 और साल 3 दोनों में गिरा; D/E 1 से ऊपर या इंटरेस्ट कवर 2 से नीचे; तीन साल का कैश तीन साल के प्रॉफ़िट के आधे से कम, या तीन साल का प्रॉफ़िट या कैश ज़ीरो या उससे नीचे), और दो या ज़्यादा फ़्लैग आए तो भी स्टॉक बाहर; वजह जर्नल में लिख लीजिए। बैंक और NBFC (बैंक के अलावा उधार देने वाली कंपनियाँ) पर यह चेक फ़िट नहीं होता, क्योंकि उधार लेना और देना ही उनका बिज़नेस है, इसलिए Stage 1 में उन्हें स्विंग वॉचलिस्ट से बाहर रखिए। अब से कार्ड चार्ट से पहले आता है: जो स्टॉक इसमें फ़ेल हो, वह आपके स्विंग फ़्लोचार्ट (दिन 16) तक पहुँचता ही नहीं। हिसाब-किताब का काम AI से करवाइए, लेकिन सिर्फ़ वही नंबर पेस्ट कीजिए जो आपने ख़ुद कॉपी किए हैं, AI के हर नंबर को जाँचिए, और फ़ैसला ख़ुद कीजिए। स्टोरी बायस हमारी वह आदत है जिसमें एक चमकदार कहानी, जैसे नया प्रोडक्ट, मशहूर CEO या 'अगला दिग्गज', सूखे नंबरों पर भारी पड़ जाती है; इसीलिए कार्ड पहले आता है और कहानी सबसे बाद में।"
+        "en": "Now score the card with written rules: in this course, a pledge above 10% of promoter shares, or a pledge % that has gone up two quarters in a row, knocks a stock off your swing watchlist on its own. The other four checks are counted (sales in year 3 below year 1; margin down in both year 2 and year 3; D/E above 1 or interest cover below 2; 3-year cash below half of 3-year profit, or 3-year profit or cash at zero or below), and two or more counted flags also take it off; write the reason in your journal. The check does not fit banks, NBFCs (non-bank lenders) and insurers, because borrowing, lending or investing other people's money is their business, so in Stage 1 keep them off your swing watchlist. From now on, the card comes before the chart: a stock that fails it never reaches your swing flowchart (Day 16), and a stock that passes carries its card result into a Portfolio row as Full Why 1, the business reason. Let AI do the clerk's work of calculating, but paste only numbers you copied yourself, check every figure it uses, and make the decision yourself. Story bias is our habit of trusting a vivid story, such as a new product, a famous CEO or 'the next giant', over dull numbers; that is why the card comes first and the story comes last.",
+        "hi": "Ab likhe hue rules se card ka score nikaaliye: is course mein promoter ke 10% se zyada shares pledge hon, ya pledge % lagatar do quarter se badh raha ho, toh sirf yahi ek baat stock ko swing watchlist se bahar kar deti hai. Baaki chaar checks gine jaate hain (saal 3 ki sales saal 1 se kam; margin saal 2 aur saal 3 dono mein gira; D/E 1 se upar ya interest cover 2 se neeche; teen saal ka cash teen saal ke profit ke aadhe se kam, ya teen saal ka profit ya cash zero ya usse neeche), aur do ya zyada counted flags aaye toh bhi stock bahar; wajah journal mein likh lijiye. Banks, NBFCs (bank ke alawa udhaar dene wali companies) aur insurance companies par yeh check fit nahi hota, kyunki udhaar lena-dena ya logon ka paisa invest karna hi unka business hai, isliye Stage 1 mein unhe swing watchlist se bahar rakhiye. Ab se card chart se pehle aata hai: jo stock ismein fail ho, woh aapke swing flowchart (Day 16) tak pahunchta hi nahi, aur jo pass ho, uska card result Portfolio row mein Full Why 1, yaani business ka reason, ban jaata hai. Hisaab-kitaab ka kaam AI se karwaiye, lekin sirf wahi numbers paste kijiye jo aapne khud copy kiye hain, AI ke har number ko check kijiye, aur faisla khud kijiye. Story bias hamari woh aadat hai jismein ek chamakdar kahani, jaise naya product, mashhoor CEO ya 'agla giant', sookhe numbers par bhaari pad jaati hai; isiliye card pehle aata hai aur kahani sabse baad mein.",
+        "dv": "अब लिखे हुए नियमों से कार्ड का स्कोर निकालिए: इस कोर्स में प्रमोटर के 10% से ज़्यादा शेयर गिरवी हों, या प्लेज % लगातार दो तिमाही से बढ़ रहा हो, तो सिर्फ़ यही एक बात स्टॉक को स्विंग वॉचलिस्ट से बाहर कर देती है। बाक़ी चार चेक गिने जाते हैं (साल 3 की सेल्स साल 1 से कम; मार्जिन साल 2 और साल 3 दोनों में गिरा; D/E 1 से ऊपर या इंटरेस्ट कवर 2 से नीचे; तीन साल का कैश तीन साल के प्रॉफ़िट के आधे से कम, या तीन साल का प्रॉफ़िट या कैश ज़ीरो या उससे नीचे), और दो या ज़्यादा फ़्लैग आए तो भी स्टॉक बाहर; वजह जर्नल में लिख लीजिए। बैंक, NBFC (बैंक के अलावा उधार देने वाली कंपनियाँ) और बीमा कंपनियों पर यह चेक फ़िट नहीं होता, क्योंकि उधार लेना-देना या लोगों का पैसा निवेश करना ही उनका बिज़नेस है, इसलिए चरण 1 में उन्हें स्विंग वॉचलिस्ट से बाहर रखिए। अब से कार्ड चार्ट से पहले आता है: जो स्टॉक इसमें फ़ेल हो, वह आपके स्विंग फ़्लोचार्ट (दिन 16) तक पहुँचता ही नहीं, और जो पास हो, उसका कार्ड रिज़ल्ट पोर्टफ़ोलियो रो में फ़ुल व्हाई 1, यानी बिज़नेस का कारण, बन जाता है। हिसाब-किताब का काम AI से करवाइए, लेकिन सिर्फ़ वही नंबर पेस्ट कीजिए जो आपने ख़ुद कॉपी किए हैं, AI के हर नंबर को जाँचिए, और फ़ैसला ख़ुद कीजिए। स्टोरी बायस हमारी वह आदत है जिसमें एक चमकदार कहानी, जैसे नया प्रोडक्ट, मशहूर CEO या 'अगला दिग्गज', सूखे नंबरों पर भारी पड़ जाती है; इसीलिए कार्ड पहले आता है और कहानी सबसे बाद में।"
       },
       "example": {
-        "en": "Priya's card for Bharat Pumps: growth up, margin steady, debt flagged, no pledge, and three-year cash of Rs 27 crore against Rs 30 crore of profit. One counted flag, so it stays on her list with 'debt: watch' in her journal. Anand Snacks: 45% of promoter shares pledged, a knock-out on its own, plus three-year cash of minus Rs 12 crore against Rs 30 crore of profit. It stays off her list, however exciting the 500-store story sounds. Aman still likes the story. Liking it is allowed; trading on it is not.",
-        "hi": "Bharat Pumps ke liye Priya ka card: growth upar, margin steady, debt par flag, pledge zero, aur teen saal ka cash Rs 27 crore, profit Rs 30 crore ke saamne. Sirf ek counted flag, isliye stock uski list mein rehta hai, journal mein 'debt: nazar rakho' ke saath. Anand Snacks: promoter ke 45% shares pledge, jo akele hi knock-out hai, upar se teen saal ka cash minus Rs 12 crore, profit Rs 30 crore ke saamne. Stock uski list mein aata hi nahi, 500 stores wali kahani chahe kitni bhi achhi lage. Aman ko kahani ab bhi pasand hai. Pasand karna chalega; us par trade karna nahi.",
-        "dv": "Bharat Pumps के लिए प्रिया का कार्ड: ग्रोथ ऊपर, मार्जिन स्थिर, कर्ज़ पर फ़्लैग, प्लेज ज़ीरो, और तीन साल का कैश Rs 27 करोड़, प्रॉफ़िट Rs 30 करोड़ के सामने। सिर्फ़ एक फ़्लैग, इसलिए स्टॉक उसकी लिस्ट में रहता है, जर्नल में 'कर्ज़: नज़र रखें' के साथ। Anand Snacks: प्रमोटर के 45% शेयर गिरवी, जो अकेले ही नॉक-आउट है, ऊपर से तीन साल का कैश माइनस Rs 12 करोड़, प्रॉफ़िट Rs 30 करोड़ के सामने। स्टॉक उसकी लिस्ट में आता ही नहीं, 500 स्टोर वाली कहानी चाहे कितनी भी अच्छी लगे। अमन को कहानी अब भी पसंद है। पसंद करना चलेगा; उस पर ट्रेड करना नहीं।"
+        "en": "Priya's card for Bharat Pumps: growth up, margin steady, debt flagged, no pledge, and three-year cash of Rs 270 crore against Rs 300 crore of profit. One counted flag, so it stays on her list with 'debt: watch' in her journal. Anand Snacks: 45% of promoter shares pledged, a knock-out on its own, plus three-year cash of minus Rs 12 crore against Rs 30 crore of profit. It stays off her list, however exciting the 500-store story sounds. Aman still likes the story. Liking it is allowed; trading on it is not.",
+        "hi": "Bharat Pumps ke liye Priya ka card: growth upar, margin steady, debt par flag, pledge zero, aur teen saal ka cash Rs 270 crore, profit Rs 300 crore ke saamne. Sirf ek counted flag, isliye stock uski list mein rehta hai, journal mein 'debt: nazar rakho' ke saath. Anand Snacks: promoter ke 45% shares pledge, jo akele hi knock-out hai, upar se teen saal ka cash minus Rs 12 crore, profit Rs 30 crore ke saamne. Stock uski list mein aata hi nahi, 500 stores wali kahani chahe kitni bhi achhi lage. Aman ko kahani ab bhi pasand hai. Pasand karna chalega; us par trade karna nahi.",
+        "dv": "Bharat Pumps के लिए प्रिया का कार्ड: ग्रोथ ऊपर, मार्जिन स्थिर, कर्ज़ पर फ़्लैग, प्लेज ज़ीरो, और तीन साल का कैश Rs 270 करोड़, प्रॉफ़िट Rs 300 करोड़ के सामने। सिर्फ़ एक फ़्लैग, इसलिए स्टॉक उसकी लिस्ट में रहता है, जर्नल में 'कर्ज़: नज़र रखें' के साथ। Anand Snacks: प्रमोटर के 45% शेयर गिरवी, जो अकेले ही नॉक-आउट है, ऊपर से तीन साल का कैश माइनस Rs 12 करोड़, प्रॉफ़िट Rs 30 करोड़ के सामने। स्टॉक उसकी लिस्ट में आता ही नहीं, 500 स्टोर वाली कहानी चाहे कितनी भी अच्छी लगे। अमन को कहानी अब भी पसंद है। पसंद करना चलेगा; उस पर ट्रेड करना नहीं।"
       },
       "remember": {
         "en": "Written rules score the card. The story does not, and neither does the AI.",
@@ -459,19 +459,19 @@
             "tone": "muted",
             "points": [
               {
-                "en": "Banks and NBFCs",
-                "hi": "Banks aur NBFCs",
-                "dv": "बैंक और NBFC"
+                "en": "Banks, NBFCs and insurers",
+                "hi": "Banks, NBFCs aur insurers",
+                "dv": "बैंक, NBFC और बीमा कंपनियाँ"
               },
               {
-                "en": "Lending is their business",
-                "hi": "Udhaar dena hi unka business",
-                "dv": "उधार देना ही उनका बिज़नेस"
+                "en": "Lending or insuring is their business",
+                "hi": "Udhaar ya insurance hi unka business",
+                "dv": "उधार या बीमा ही उनका बिज़नेस"
               },
               {
                 "en": "Stage 1: keep them off the list",
                 "hi": "Stage 1 mein list se bahar",
-                "dv": "Stage 1 में लिस्ट से बाहर"
+                "dv": "चरण 1 में लिस्ट से बाहर"
               }
             ]
           }
@@ -485,19 +485,19 @@
         "dv": "कॉर्पोरेट ऐक्शन: जब कंपनी आपके शेयरों में बदलाव करती है"
       },
       "p": {
-        "en": "A corporate action is a company decision that changes what each shareholder holds or receives. A dividend is cash paid on each share out of profits, and on the ex-date the price usually drops by about that amount. A bonus gives free extra shares (1:1 means one new share for each one you hold), and a split cuts each share into smaller ones: face value, a fixed book amount per share and not its price, going from Rs 10 to Rs 2 turns one share into five. In both, the price adjusts down in the same ratio, your total value stays the same, and an unadjusted chart shows a gap that has nothing to do with the business. A rights issue offers you new shares at a set price, usually below the market; you can apply, sell the right on the exchange or ignore it, and ignoring costs you, because the price adjusts down and the unused right lapses worthless. In a buyback the company buys back some of its shares at a price it announces, and the chart is not adjusted.",
-        "hi": "Corporate action company ka woh faisla hai jo badal deta hai ki har shareholder ke paas kya hai ya use kya milega. Dividend profit mein se har share par diya gaya cash hai, aur ex-date par price aam taur par lagbhag utna hi gir jaata hai. Bonus mein free extra shares milte hain (1:1 matlab har ek share par ek naya share), aur split mein har share chhote shares mein bant jaata hai: face value, yaani har share ki ek fixed kitaabi rakam, market price nahi, Rs 10 se Rs 2 hui toh ek share paanch ban jaata hai. Dono mein price usi ratio mein neeche adjust hota hai, aapki kul value wahi rehti hai, aur unadjusted chart par aisa gap dikhta hai jiska business se koi lena-dena nahi. Rights issue mein tay price par, aam taur par market se kam, naye shares offer hote hain; aap apply kar sakte hain, right exchange par bech sakte hain ya chhod sakte hain, aur chhodna mehenga padta hai, kyunki price neeche adjust hota hai aur chhoda hua right bekaar ho jaata hai. Buyback mein company apne kuch shares ek announce kiye hue price par wapas khareedti hai, aur chart adjust nahi hota.",
-        "dv": "कॉर्पोरेट ऐक्शन कंपनी का वह फ़ैसला है जो बदल देता है कि हर शेयरहोल्डर के पास क्या है या उसे क्या मिलेगा। डिविडेंड प्रॉफ़िट में से हर शेयर पर दिया गया कैश है, और एक्स-डेट पर भाव आम तौर पर लगभग उतना ही गिर जाता है। बोनस में मुफ़्त एक्स्ट्रा शेयर मिलते हैं (1:1 मतलब हर एक शेयर पर एक नया शेयर), और स्प्लिट में हर शेयर छोटे शेयरों में बँट जाता है: फ़ेस वैल्यू, यानी हर शेयर की एक तय किताबी रक़म, बाज़ार भाव नहीं, Rs 10 से Rs 2 हुई तो एक शेयर पाँच बन जाता है। दोनों में भाव उसी रेशियो में नीचे एडजस्ट होता है, आपकी कुल वैल्यू वही रहती है, और अनएडजस्टेड चार्ट पर ऐसा गैप दिखता है जिसका बिज़नेस से कोई लेना-देना नहीं। राइट्स इश्यू में तय भाव पर, आम तौर पर बाज़ार से कम, नए शेयर ऑफ़र होते हैं; आप अप्लाई कर सकते हैं, राइट एक्सचेंज पर बेच सकते हैं या छोड़ सकते हैं, और छोड़ना महँगा पड़ता है, क्योंकि भाव नीचे एडजस्ट होता है और छोड़ा हुआ राइट बेकार हो जाता है। बायबैक में कंपनी अपने कुछ शेयर एक घोषित भाव पर वापस ख़रीदती है, और चार्ट एडजस्ट नहीं होता।"
+        "en": "A corporate action is a company decision that changes what each shareholder holds or receives. A dividend is cash paid on each share out of profits, and on the ex-date the price usually drops by about that amount. A bonus gives free extra shares (1:1 means one new share for each one you hold), and a split cuts each share into smaller ones (face value, a fixed book amount per share and not its price, going from Rs 10 to Rs 2 turns one share into five); in both, the price adjusts in the same ratio and your total value stays the same. A rights issue offers holders new shares at a set price, usually below the market: you can apply, sell your right (the rights entitlement) on the exchange, or ignore it, and ignoring costs you, because the price adjusts down and the unused right lapses worthless. In a buyback the company buys back some shares at a price it announces; if holders offer more than it wants, only part of yours is accepted (the acceptance ratio), and the chart is not adjusted. Dividends and buybacks have their own tax rules: ask a CA.",
+        "hi": "Corporate action company ka woh faisla hai jo badal deta hai ki har shareholder ke paas kya hai ya use kya milega. Dividend profit mein se har share par diya gaya cash hai, aur ex-date par price aam taur par lagbhag utna hi gir jaata hai. Bonus mein free extra shares milte hain (1:1 matlab har ek share par ek naya share), aur split mein har share chhote shares mein bant jaata hai (face value, yaani har share ki ek fixed kitaabi rakam, market price nahi, Rs 10 se Rs 2 hui toh ek share paanch ban jaata hai); dono mein price usi ratio mein adjust hota hai aur aapki kul value wahi rehti hai. Rights issue mein shareholders ko tay price par, aam taur par market se kam, naye shares offer hote hain: aap apply kar sakte hain, apna right (rights entitlement) exchange par bech sakte hain, ya chhod sakte hain, aur chhodna mehenga padta hai, kyunki price neeche adjust hota hai aur bina use kiya right bekaar ho jaata hai. Buyback mein company apne kuch shares ek announce kiye hue price par wapas khareedti hai; agar shareholders company ki zaroorat se zyada shares dein, toh aapke shares ka sirf ek hissa accept hota hai (acceptance ratio), aur chart adjust nahi hota. Dividend aur buyback ke tax ke apne rules hain: CA se poochhiye.",
+        "dv": "कॉर्पोरेट ऐक्शन कंपनी का वह फ़ैसला है जो बदल देता है कि हर शेयरहोल्डर के पास क्या है या उसे क्या मिलेगा। डिविडेंड प्रॉफ़िट में से हर शेयर पर दिया गया कैश है, और एक्स-डेट पर भाव आम तौर पर लगभग उतना ही गिर जाता है। बोनस में मुफ़्त एक्स्ट्रा शेयर मिलते हैं (1:1 मतलब हर एक शेयर पर एक नया शेयर), और स्प्लिट में हर शेयर छोटे शेयरों में बँट जाता है (फ़ेस वैल्यू, यानी हर शेयर की एक तय किताबी रक़म, बाज़ार भाव नहीं, Rs 10 से Rs 2 हुई तो एक शेयर पाँच बन जाता है); दोनों में भाव उसी रेशियो में एडजस्ट होता है और आपकी कुल वैल्यू वही रहती है। राइट्स इश्यू में शेयरहोल्डरों को तय भाव पर, आम तौर पर बाज़ार से कम, नए शेयर ऑफ़र होते हैं: आप अप्लाई कर सकते हैं, अपना राइट (राइट्स एंटाइटलमेंट) एक्सचेंज पर बेच सकते हैं, या छोड़ सकते हैं, और छोड़ना महँगा पड़ता है, क्योंकि भाव नीचे एडजस्ट होता है और बिना इस्तेमाल किया राइट बेकार हो जाता है। बायबैक में कंपनी अपने कुछ शेयर एक घोषित भाव पर वापस ख़रीदती है; अगर शेयरहोल्डर कंपनी की ज़रूरत से ज़्यादा शेयर दें, तो आपके शेयरों का सिर्फ़ एक हिस्सा स्वीकार होता है (एक्सेप्टेंस रेशियो), और चार्ट एडजस्ट नहीं होता। डिविडेंड और बायबैक के टैक्स के अपने नियम हैं: CA से पूछिए।"
       },
       "example": {
-        "en": "Aman's 'crash': some weeks back, Gupta Cement Ltd closed at Rs 818 on a Thursday and opened near Rs 409 on Friday, the ex-date of a 1:1 bonus. Someone holding 100 shares worth Rs 81,800 now holds 200 shares at Rs 409: still Rs 81,800. The extra 100 shares reach the demat account a day or two after the record date, so do not panic if Friday's holding still shows 100. Nothing became cheap. Most charting sites adjust old prices for splits and bonuses, but unadjusted data shows a fake 50% gap, and EMA, RSI and ATR read it as a real fall (Day 11). Before believing any sudden, very large gap, check the corporate actions page on nseindia.com.",
-        "hi": "Aman ka 'crash': kuch hafte pehle Gupta Cement Ltd ek Thursday ko Rs 818 par band hua aur Friday ko lagbhag Rs 409 par khula, kyunki Friday 1:1 bonus ki ex-date thi. Jiske paas Rs 81,800 ke 100 shares the, uske paas ab Rs 409 ke 200 shares hain: phir bhi Rs 81,800. Extra 100 shares record date ke ek-do din baad demat mein aate hain, isliye Friday ko holding mein 100 hi dikhein toh ghabraiye mat. Kuch sasta nahi hua. Zyadatar charting sites purane prices ko split aur bonus ke hisaab se adjust kar deti hain, lekin unadjusted data mein 50% ka nakli gap dikhta hai, aur EMA, RSI aur ATR use asli girawat samajh lete hain (Day 11). Kisi bhi achanak bahut bade gap par bharosa karne se pehle nseindia.com par corporate actions page check kijiye.",
-        "dv": "अमन का 'क्रैश': कुछ हफ़्ते पहले Gupta Cement Ltd एक गुरुवार को Rs 818 पर बंद हुआ और शुक्रवार को लगभग Rs 409 पर खुला, क्योंकि शुक्रवार 1:1 बोनस की एक्स-डेट थी। जिसके पास Rs 81,800 के 100 शेयर थे, उसके पास अब Rs 409 के 200 शेयर हैं: फिर भी Rs 81,800। एक्स्ट्रा 100 शेयर रिकॉर्ड डेट के एक-दो दिन बाद डीमैट में आते हैं, इसलिए शुक्रवार को होल्डिंग में 100 ही दिखें तो घबराइए मत। कुछ सस्ता नहीं हुआ। ज़्यादातर चार्टिंग साइटें पुराने भावों को स्प्लिट और बोनस के हिसाब से एडजस्ट कर देती हैं, लेकिन अनएडजस्टेड डेटा में 50% का नक़ली गैप दिखता है, और EMA, RSI और ATR उसे असली गिरावट समझ लेते हैं (दिन 11)। किसी भी अचानक बहुत बड़े गैप पर भरोसा करने से पहले nseindia.com पर कॉर्पोरेट ऐक्शन का पेज देखिए।"
+        "en": "Aman's 'crash' (chart below): some weeks back, Gupta Cement Ltd closed at Rs 818 on a Thursday and opened near Rs 409 on Friday, the ex-date of a 1:1 bonus. 100 shares worth Rs 81,800 became 200 shares at Rs 409, still Rs 81,800; the extra 100 reach the demat a day or two after the record date, so do not panic if Friday still shows 100. Rights and buybacks are where your choice matters. Say you hold 100 shares at Rs 800 and the company offers 1 new share for every 4 held, at Rs 600: after the ex-date the price tends towards (4 x 800 + 600) ÷ 5 = Rs 760. Apply, and you pay Rs 15,000 and hold 125 shares worth Rs 95,000, your Rs 80,000 plus what you paid; sell your 25 rights at about Rs 160 each (760 - 600) and you still have about Rs 80,000; ignore them and you are left with Rs 76,000. In a buyback at Rs 900 that accepts only 10 of your 100 shares, you get Rs 9,000, Rs 1,000 more than those 10 fetch at Rs 800, and the other 90 stay with you. Before believing any sudden, very large gap, check the corporate actions page on nseindia.com.",
+        "hi": "Aman ka 'crash' (neeche chart): kuch hafte pehle Gupta Cement Ltd ek Thursday ko Rs 818 par band hua aur Friday ko lagbhag Rs 409 par khula, kyunki Friday 1:1 bonus ki ex-date thi. Rs 81,800 ke 100 shares ab Rs 409 ke 200 shares ban gaye, phir bhi Rs 81,800; extra 100 shares record date ke ek-do din baad demat mein aate hain, isliye Friday ko 100 hi dikhein toh ghabraiye mat. Rights aur buyback mein aapka faisla maayne rakhta hai. Maan lijiye aapke paas Rs 800 ke 100 shares hain, aur company har 4 shares par 1 naya share Rs 600 mein offer karti hai: ex-date ke baad price (4 x 800 + 600) ÷ 5 = Rs 760 ki taraf jaata hai. Apply kiya toh Rs 15,000 dekar 125 shares milte hain, jinki value Rs 95,000 hai, yaani aapke Rs 80,000 plus jo aapne diya; apne 25 rights lagbhag Rs 160 prati right (760 - 600) par beche toh bhi lagbhag Rs 80,000 bache rehte hain; chhod diye toh sirf Rs 76,000 bachte hain. Rs 900 ke buyback mein agar aapke 100 mein se sirf 10 shares accept hon, toh aapko Rs 9,000 milte hain, jo Rs 800 ke bhaav se Rs 1,000 zyada hain, aur baaki 90 shares aapke paas rehte hain. Kisi bhi achanak bahut bade gap par bharosa karne se pehle nseindia.com par corporate actions page check kijiye.",
+        "dv": "अमन का 'क्रैश' (नीचे चार्ट): कुछ हफ़्ते पहले Gupta Cement Ltd एक गुरुवार को Rs 818 पर बंद हुआ और शुक्रवार को लगभग Rs 409 पर खुला, क्योंकि शुक्रवार 1:1 बोनस की एक्स-डेट थी। Rs 81,800 के 100 शेयर अब Rs 409 के 200 शेयर बन गए, फिर भी Rs 81,800; एक्स्ट्रा 100 शेयर रिकॉर्ड डेट के एक-दो दिन बाद डीमैट में आते हैं, इसलिए शुक्रवार को 100 ही दिखें तो घबराइए मत। राइट्स और बायबैक में आपका फ़ैसला मायने रखता है। मान लीजिए आपके पास Rs 800 के 100 शेयर हैं, और कंपनी हर 4 शेयर पर 1 नया शेयर Rs 600 में ऑफ़र करती है: एक्स-डेट के बाद भाव (4 x 800 + 600) ÷ 5 = Rs 760 की तरफ़ जाता है। अप्लाई किया तो Rs 15,000 देकर 125 शेयर मिलते हैं, जिनकी वैल्यू Rs 95,000 है, यानी आपके Rs 80,000 और जो आपने दिया; अपने 25 राइट लगभग Rs 160 प्रति राइट (760 - 600) पर बेचे, तो भी लगभग Rs 80,000 बचे रहते हैं; छोड़ दिए तो सिर्फ़ Rs 76,000 बचते हैं। Rs 900 के बायबैक में अगर आपके 100 में से सिर्फ़ 10 शेयर स्वीकार हों, तो आपको Rs 9,000 मिलते हैं, जो Rs 800 के भाव से Rs 1,000 ज़्यादा हैं, और बाक़ी 90 शेयर आपके पास रहते हैं। किसी भी अचानक बहुत बड़े गैप पर भरोसा करने से पहले nseindia.com पर कॉर्पोरेट ऐक्शन का पेज देखिए।"
       },
       "remember": {
-        "en": "A bonus or split changes the number of shares, not the value of what you own.",
-        "hi": "Bonus ya split shares ki ginti badalta hai, aapki holding ki value nahi.",
-        "dv": "बोनस या स्प्लिट शेयरों की गिनती बदलता है, आपकी होल्डिंग की वैल्यू नहीं।"
+        "en": "A bonus or split changes the number of shares, not the value of what you own. In a rights issue, ignoring the offer is the one choice that costs you.",
+        "hi": "Bonus ya split shares ki ginti badalta hai, aapki holding ki value nahi. Rights issue mein offer chhod dena hi woh ek faisla hai jo aapko nuksaan deta hai.",
+        "dv": "बोनस या स्प्लिट शेयरों की गिनती बदलता है, आपकी होल्डिंग की वैल्यू नहीं। राइट्स इश्यू में ऑफ़र छोड़ देना ही वह एक फ़ैसला है जो आपको नुक़सान देता है।"
       },
       "visual": {
         "kind": "candles",
@@ -507,9 +507,9 @@
           "dv": "क्रैश? नहीं, 1:1 बोनस"
         },
         "caption": {
-          "en": "Unadjusted daily chart of Gupta Cement. 100 shares x Rs 818 = 200 shares x Rs 409 = Rs 81,800.",
-          "hi": "Gupta Cement ka unadjusted daily chart. 100 shares x Rs 818 = 200 shares x Rs 409 = Rs 81,800.",
-          "dv": "Gupta Cement का अनएडजस्टेड डेली चार्ट। 100 शेयर x Rs 818 = 200 शेयर x Rs 409 = Rs 81,800।"
+          "en": "Unadjusted daily chart of Gupta Cement. 100 shares x Rs 818 = 200 shares x Rs 409 = Rs 81,800. On unadjusted data, EMA, RSI and ATR read this gap as a real fall (Day 11).",
+          "hi": "Gupta Cement ka unadjusted daily chart. 100 shares x Rs 818 = 200 shares x Rs 409 = Rs 81,800. Unadjusted data par EMA, RSI aur ATR is gap ko asli girawat samajh lete hain (Day 11).",
+          "dv": "Gupta Cement का अनएडजस्टेड डेली चार्ट। 100 शेयर x Rs 818 = 200 शेयर x Rs 409 = Rs 81,800। अनएडजस्टेड डेटा पर EMA, RSI और ATR इस गैप को असली गिरावट समझ लेते हैं (दिन 11)।"
         },
         "bars": [
           [
@@ -610,9 +610,9 @@
         "dv": "रिकॉर्ड डेट और एक्स-डेट: फ़ायदा किसे मिलेगा"
       },
       "p": {
-        "en": "The record date is the day the company takes the list of shareholders from the depositories; whoever is on that list gets the dividend, bonus or rights. The ex-date is the first day the share trades without that benefit. Because India's equity settlement is T+1, the ex-date and the record date now fall on the same day. So to qualify, you must buy by the trading day before the ex-date; a purchase on the ex-date settles one day too late. On the ex-date the price usually opens lower by about the dividend, so a dividend is not free money, and it counts as your taxable income (ask a CA). Dates and rules can change, so always check the corporate actions page on nseindia.com.",
-        "hi": "Record date woh din hai jab company depositories se shareholders ki list leti hai; jo us list mein hai, use dividend, bonus ya rights milte hain. Ex-date woh pehla din hai jab share us fayde ke bina trade hota hai. India mein equity settlement T+1 hai, isliye ab ex-date aur record date ek hi din padte hain. Matlab fayda lena hai toh ex-date se pichhle trading day tak khareedna hoga; ex-date par khareeda toh settlement ek din late hoga. Ex-date par price aam taur par lagbhag dividend jitna neeche khulta hai, isliye dividend free ka paisa nahi hai, aur yeh aapki taxable income mein gina jaata hai (CA se poochhiye). Dates aur rules badal sakte hain, isliye hamesha nseindia.com par corporate actions page check kijiye.",
-        "dv": "रिकॉर्ड डेट वह दिन है जब कंपनी डिपॉज़िटरी से शेयरहोल्डरों की लिस्ट लेती है; जो उस लिस्ट में है, उसे डिविडेंड, बोनस या राइट्स मिलते हैं। एक्स-डेट वह पहला दिन है जब शेयर उस फ़ायदे के बिना ट्रेड होता है। भारत में इक्विटी सेटलमेंट T+1 है, इसलिए अब एक्स-डेट और रिकॉर्ड डेट एक ही दिन पड़ते हैं। मतलब फ़ायदा लेना है तो एक्स-डेट से पिछले ट्रेडिंग दिन तक ख़रीदना होगा; एक्स-डेट पर ख़रीदा तो सेटलमेंट एक दिन देर से होगा। एक्स-डेट पर भाव आम तौर पर लगभग डिविडेंड जितना नीचे खुलता है, इसलिए डिविडेंड मुफ़्त का पैसा नहीं है, और यह आपकी इनकम में जुड़कर टैक्स के दायरे में आता है (CA से पूछिए)। तारीख़ें और नियम बदल सकते हैं, इसलिए हमेशा nseindia.com पर कॉर्पोरेट ऐक्शन का पेज देखिए।"
+        "en": "The record date is the day the company takes the list of shareholders from the depositories; whoever is on that list gets the dividend, bonus or rights. The ex-date is the first day the share trades without that benefit. Because India's equity settlement is T+1, the ex-date and the record date now fall on the same day, so to qualify you must buy by the trading day before the ex-date. A buyer on the ex-date does not get the dividend, because that purchase settles a day too late; a shareholder who sells on the ex-date still gets it, because that sale settles after the list is taken. On the ex-date the price usually opens lower by about the dividend, so a dividend is not free money, and it counts as your taxable income (ask a CA). Dates and rules can change, so always check the corporate actions page on nseindia.com.",
+        "hi": "Record date woh din hai jab company depositories se shareholders ki list leti hai; jo us list mein hai, use dividend, bonus ya rights milte hain. Ex-date woh pehla din hai jab share us fayde ke bina trade hota hai. India mein equity settlement T+1 hai, isliye ab ex-date aur record date ek hi din padte hain, aur fayda lena hai toh ex-date se pichhle trading day tak khareedna hoga. Ex-date par khareedne wale ko dividend nahi milta, kyunki uski kharid ek din late settle hoti hai; ex-date par bechne wale shareholder ko dividend phir bhi milta hai, kyunki uski bikri list banne ke baad settle hoti hai. Ex-date par price aam taur par lagbhag dividend jitna neeche khulta hai, isliye dividend free ka paisa nahi hai, aur yeh aapki taxable income mein gina jaata hai (CA se poochhiye). Dates aur rules badal sakte hain, isliye hamesha nseindia.com par corporate actions page check kijiye.",
+        "dv": "रिकॉर्ड डेट वह दिन है जब कंपनी डिपॉज़िटरी से शेयरहोल्डरों की लिस्ट लेती है; जो उस लिस्ट में है, उसे डिविडेंड, बोनस या राइट्स मिलते हैं। एक्स-डेट वह पहला दिन है जब शेयर उस फ़ायदे के बिना ट्रेड होता है। भारत में इक्विटी सेटलमेंट T+1 है, इसलिए अब एक्स-डेट और रिकॉर्ड डेट एक ही दिन पड़ते हैं, और फ़ायदा लेना है तो एक्स-डेट से पिछले ट्रेडिंग दिन तक ख़रीदना होगा। एक्स-डेट पर ख़रीदने वाले को डिविडेंड नहीं मिलता, क्योंकि उसकी ख़रीद एक दिन देर से सेटल होती है; एक्स-डेट पर बेचने वाले शेयरहोल्डर को डिविडेंड फिर भी मिलता है, क्योंकि उसकी बिक्री लिस्ट बनने के बाद सेटल होती है। एक्स-डेट पर भाव आम तौर पर लगभग डिविडेंड जितना नीचे खुलता है, इसलिए डिविडेंड मुफ़्त का पैसा नहीं है, और यह आपकी इनकम में जुड़कर टैक्स के दायरे में आता है (CA से पूछिए)। तारीख़ें और नियम बदल सकते हैं, इसलिए हमेशा nseindia.com पर कॉर्पोरेट ऐक्शन का पेज देखिए।"
       },
       "example": {
         "en": "Sharma Textiles Ltd declares a Rs 12 dividend, and Tuesday is both the ex-date and the record date. Priya buys 50 shares on Monday at Rs 612, paying Rs 30,600; they settle on Tuesday, so she is on the list. On Tuesday the share opens near Rs 600. Her 50 shares are now worth about Rs 30,000, plus Rs 600 of dividend (50 x Rs 12): Rs 30,600, about what she paid, before tax and costs; the Rs 600 itself arrives on the payment date. Aman buys on Tuesday at Rs 600 and gets no dividend, but he paid Rs 12 a share less. Neither of them got anything for free. Day 19 adds ex-dates to your no-trade calendar.",
@@ -763,6 +763,30 @@
         "hi": "Record date: jis din shareholders ki list li jaati hai. Ex-date: pehla din jab share fayde ke bina trade hota hai. T+1 mein dono ek hi din padte hain.",
         "dv": "रिकॉर्ड डेट: जिस दिन शेयरहोल्डरों की लिस्ट ली जाती है। एक्स-डेट: पहला दिन जब शेयर फ़ायदे के बिना ट्रेड होता है। T+1 में दोनों एक ही दिन पड़ते हैं।"
       }
+    },
+    {
+      "term": {
+        "en": "Interest cover",
+        "hi": "Interest cover",
+        "dv": "इंटरेस्ट कवर"
+      },
+      "meaning": {
+        "en": "Operating profit minus depreciation, divided by finance costs: how many times the business's own profit can pay its interest bill. Below 2 is a course debt flag.",
+        "hi": "Operating profit minus depreciation, bhaag finance costs: business ka apna profit interest ka bill kitni baar chuka sakta hai. 2 se neeche course mein debt ka flag hai.",
+        "dv": "ऑपरेटिंग प्रॉफ़िट माइनस डेप्रिसिएशन, भाग फ़ाइनेंस कॉस्ट: बिज़नेस का अपना प्रॉफ़िट ब्याज का बिल कितनी बार चुका सकता है। 2 से नीचे कोर्स में कर्ज़ का फ़्लैग है।"
+      }
+    },
+    {
+      "term": {
+        "en": "Rights issue and buyback",
+        "hi": "Rights issue aur buyback",
+        "dv": "राइट्स इश्यू और बायबैक"
+      },
+      "meaning": {
+        "en": "Rights issue: new shares offered to holders at a set price; you can apply or sell the right, and ignoring it loses value. Buyback: the company buys shares back at a set price, often accepting only part of what you offer.",
+        "hi": "Rights issue: shareholders ko tay price par naye shares ka offer; aap apply kar sakte hain ya right bech sakte hain, aur chhodne se value ghatti hai. Buyback: company tay price par shares wapas khareedti hai, aur aksar aapke diye shares ka sirf ek hissa accept karti hai.",
+        "dv": "राइट्स इश्यू: शेयरहोल्डरों को तय भाव पर नए शेयरों का ऑफ़र; आप अप्लाई कर सकते हैं या राइट बेच सकते हैं, और छोड़ने से वैल्यू घटती है। बायबैक: कंपनी तय भाव पर शेयर वापस ख़रीदती है, और अक्सर आपके दिए शेयरों का सिर्फ़ एक हिस्सा स्वीकार करती है।"
+      }
     }
   ],
   "mindmap": {
@@ -892,9 +916,14 @@
             "dv": "डिविडेंड, बोनस, स्प्लिट"
           },
           {
-            "en": "Rights issue, buyback",
-            "hi": "Rights issue, buyback",
-            "dv": "राइट्स इश्यू, बायबैक"
+            "en": "Rights: apply, sell or lose",
+            "hi": "Rights: apply, becho ya gavao",
+            "dv": "राइट्स: अप्लाई, बेचो या गँवाओ"
+          },
+          {
+            "en": "Buyback: part accepted",
+            "hi": "Buyback: kuch hissa accept",
+            "dv": "बायबैक: कुछ हिस्सा स्वीकार"
           },
           {
             "en": "Fake gaps on unadjusted charts",
@@ -931,47 +960,487 @@
     ]
   },
   "kaam": {
-    "en": "Score one stock from your Day 11 swing watchlist with the 5-check card, and read one real corporate action on the NSE site (about 50 minutes; a second company is an optional stretch).",
-    "hi": "Apni Day 11 wali swing watchlist ke ek stock ka 5-check card score kijiye, aur NSE site par ek asli corporate action padhiye (lagbhag 50 minute; doosri company optional stretch hai).",
-    "dv": "अपनी दिन 11 वाली स्विंग वॉचलिस्ट के एक स्टॉक का 5-चेक कार्ड स्कोर कीजिए, और NSE साइट पर एक असली कॉर्पोरेट ऐक्शन पढ़िए (लगभग 50 मिनट; दूसरी कंपनी ऑप्शनल स्ट्रेच है)।"
+    "en": "Score the mentor's practice filing on the Health Card and check it with AI, then card one real stock from your watchlist, turn a pass into a Portfolio row, and read one real corporate action (steps 1, 2 and 6 take about 55 minutes; the real-stock card and its Portfolio row, steps 3-5, take about 30 minutes more and can be finished tomorrow evening, before Day 16's flowchart).",
+    "hi": "Mentor ki practice filing ko Health Card par score kijiye aur AI se check kijiye, phir apni watchlist ke ek asli stock ka card banaiye, pass ho toh use Portfolio row mein badliye, aur ek asli corporate action padhiye (step 1, 2 aur 6 mein lagbhag 55 minute; asli stock ka card aur uski Portfolio row, step 3-5, lagbhag 30 minute aur lete hain aur kal shaam, Day 16 ke flowchart se pehle, bhi kiye ja sakte hain).",
+    "dv": "मेंटर की प्रैक्टिस फ़ाइलिंग को हेल्थ कार्ड पर स्कोर कीजिए और AI से जाँचिए, फिर अपनी वॉचलिस्ट के एक असली स्टॉक का कार्ड बनाइए, पास हो तो उसे पोर्टफ़ोलियो रो में बदलिए, और एक असली कॉर्पोरेट ऐक्शन पढ़िए (स्टेप 1, 2 और 6 में लगभग 55 मिनट; असली स्टॉक का कार्ड और उसकी पोर्टफ़ोलियो रो, स्टेप 3-5, लगभग 30 मिनट और लेते हैं और कल शाम, दिन 16 के फ़्लोचार्ट से पहले, भी किए जा सकते हैं)।"
   },
   "kaam_steps": [
     {
-      "en": "On nseindia.com, open one stock from your Day 11 swing watchlist or screener list (never one from a tip, and not a bank or NBFC, since the card does not fit lenders). Find its shareholding pattern for the last four quarters and note the promoter holding and the pledged part as a % of promoter shares, not of all shares. The filing may show it as 'encumbered', which also counts similar locks on shares; if that is the only figure, use it. NSE's Pledged data page shows both. If the company has no promoter, write 'no promoter'.",
-      "hi": "nseindia.com par apni Day 11 wali swing watchlist ya screener list ka ek stock kholiye (tip wala kabhi nahi, aur bank ya NBFC bhi nahi, kyunki yeh card udhaar dene wali companies par fit nahi hota). Pichhle chaar quarters ka shareholding pattern dhoondhiye aur promoter holding aur pledge wala hissa promoter ke shares ke % mein note kijiye, kul shares ke % mein nahi. Filing mein yeh 'encumbered' likha ho sakta hai, jismein pledge jaise doosre lock bhi gine jaate hain; sirf wahi number mile toh wahi lijiye. NSE ka Pledged data page dono dikhata hai. Koi promoter nahi hai toh 'no promoter' likh dijiye.",
-      "dv": "nseindia.com पर अपनी दिन 11 वाली स्विंग वॉचलिस्ट या स्क्रीनर लिस्ट का एक स्टॉक खोलिए (टिप वाला कभी नहीं, और बैंक या NBFC भी नहीं, क्योंकि यह कार्ड उधार देने वाली कंपनियों पर फ़िट नहीं होता)। पिछली चार तिमाहियों का शेयरहोल्डिंग पैटर्न ढूँढिए और प्रमोटर होल्डिंग और गिरवी वाला हिस्सा प्रमोटर के शेयरों के % में नोट कीजिए, कुल शेयरों के % में नहीं। फ़ाइलिंग में इसे 'encumbered' लिखा हो सकता है, जिसमें गिरवी जैसी दूसरी रोक भी गिनी जाती है; सिर्फ़ वही नंबर मिले तो वही लीजिए। NSE का Pledged data पेज दोनों दिखाता है। कोई प्रमोटर नहीं है तो 'no promoter' लिख दीजिए।"
+      "en": "Under Your template, open the Kiran Foods Ltd practice filing (made-up numbers) and fill the Practice column of the Health Card with a phone calculator: operating profit and margin for each year, D/E, interest cover, 3-year cash against 3-year profit, and the pledge.",
+      "hi": "'Aapka template' mein Kiran Foods Ltd ki practice filing (made-up numbers) kholiye aur phone calculator se Health Card ka Practice column bhariye: har saal ka operating profit aur margin, D/E, interest cover, teen saal ka cash teen saal ke profit ke saamne, aur pledge.",
+      "dv": "'आपका टेम्पलेट' में Kiran Foods Ltd की प्रैक्टिस फ़ाइलिंग (काल्पनिक नंबर) खोलिए और फ़ोन कैलकुलेटर से हेल्थ कार्ड का प्रैक्टिस कॉलम भरिए: हर साल का ऑपरेटिंग प्रॉफ़िट और मार्जिन, D/E, इंटरेस्ट कवर, तीन साल का कैश तीन साल के प्रॉफ़िट के सामने, और प्लेज।"
     },
     {
-      "en": "From the latest two annual results (each also shows the year before, so you get three years), copy into a Google Sheet: sales (revenue from operations), total expenses, finance costs, depreciation, net profit and net cash from operating activities for all three years, plus total borrowings (non-current plus current), total equity (share capital plus other equity) and profit before tax for the latest year. Use consolidated figures if the company files them, and the same kind for every year. The filing has no 'operating profit' line; the AI prompt works it out. A free data site is fine if you tick the latest year against the filing.",
-      "hi": "Latest do annual results se (har ek mein pichhla saal bhi hota hai, toh teen saal mil jaate hain) ek Google Sheet mein copy kijiye: teeno saal ki sales (revenue from operations), total expenses, finance costs, depreciation, net profit aur net cash from operating activities, aur sirf latest saal ke total borrowings (non-current plus current), total equity (share capital plus other equity) aur profit before tax. Company consolidated figures deti hai toh wahi lijiye, aur har saal ek hi tarah ke. Filing mein 'operating profit' ki koi line nahi hoti; AI prompt use khud nikaal lega. Free data site bhi chalegi, bas latest saal ke numbers filing se mila kar tick kar lijiye.",
-      "dv": "लेटेस्ट दो सालाना नतीजों से (हर एक में पिछला साल भी होता है, तो तीन साल मिल जाते हैं) एक Google Sheet में कॉपी कीजिए: तीनों साल की सेल्स (revenue from operations), total expenses, फ़ाइनेंस कॉस्ट, डेप्रिसिएशन, नेट प्रॉफ़िट और net cash from operating activities, और सिर्फ़ लेटेस्ट साल का कुल उधार (non-current और current), टोटल इक्विटी (शेयर कैपिटल और अदर इक्विटी मिलाकर) और टैक्स से पहले का प्रॉफ़िट। कंपनी consolidated आँकड़े देती है तो वही लीजिए, और हर साल एक ही तरह के। फ़ाइलिंग में 'ऑपरेटिंग प्रॉफ़िट' की कोई लाइन नहीं होती; AI प्रॉम्प्ट उसे ख़ुद निकाल लेगा। फ़्री डेटा साइट भी चलेगी, बस लेटेस्ट साल के नंबर फ़ाइलिंग से मिलाकर टिक कर लीजिए।"
+      "en": "Paste the practice filing's numbers into the AI Lab prompt 'Fill my health card', tick every number the AI used against the filing, and compare its flags with yours and with the answer key under the card.",
+      "hi": "Practice filing ke numbers AI Lab ke prompt 'Fill my health card' mein paste kijiye, AI ke use kiye har number ko filing se milakar tick kijiye, aur uske flags ko apne flags aur card ke neeche diye answer key se milaiye.",
+      "dv": "प्रैक्टिस फ़ाइलिंग के नंबर AI Lab के प्रॉम्प्ट 'मेरा हेल्थ कार्ड भरो' में पेस्ट कीजिए, AI के इस्तेमाल किए हर नंबर को फ़ाइलिंग से मिलाकर टिक कीजिए, और उसके फ़्लैग को अपने फ़्लैग और कार्ड के नीचे दी आंसर की से मिलाइए।"
     },
     {
-      "en": "Paste only those numbers, plus the company's sector from its NSE page, into the AI Lab prompt 'Fill my health card', then tick every number the AI used against your sheet.",
-      "hi": "Sirf yahi numbers, aur NSE page par likha company ka sector, AI Lab ke prompt 'Fill my health card' mein paste kijiye, phir AI ke istemaal kiye har number ko apni sheet se mila kar tick kijiye.",
-      "dv": "सिर्फ़ यही नंबर, और NSE पेज पर लिखा कंपनी का सेक्टर, AI Lab के प्रॉम्प्ट 'मेरा हेल्थ कार्ड भरो' में पेस्ट कीजिए, फिर AI के इस्तेमाल किए हर नंबर को अपनी शीट से मिलाकर टिक कीजिए।"
+      "en": "Now card one real stock from your Day 11 watchlist or an open paper trade (never one from a tip; not a bank, NBFC or insurer). On its nseindia.com page note the sector, and in its shareholding pattern for the last four quarters note the pledged part as a % of promoter shares ('encumbered' counts too; if there is no promoter, write 'no promoter').",
+      "hi": "Ab apni Day 11 watchlist ya kisi open paper trade ka ek asli stock lijiye (tip wala kabhi nahi; bank, NBFC ya insurer nahi). Uske nseindia.com page par sector note kijiye, aur pichhle chaar quarter ke shareholding pattern mein pledge wala hissa promoter shares ke % ke roop mein likhiye ('encumbered' bhi ginta hai; promoter na ho toh 'no promoter' likhiye).",
+      "dv": "अब अपनी दिन 11 की वॉचलिस्ट या किसी खुले पेपर ट्रेड का एक असली स्टॉक लीजिए (टिप वाला कभी नहीं; बैंक, NBFC या बीमा कंपनी नहीं)। उसके nseindia.com पेज पर सेक्टर नोट कीजिए, और पिछली चार तिमाहियों के शेयरहोल्डिंग पैटर्न में गिरवी वाला हिस्सा प्रमोटर शेयरों के % के रूप में लिखिए ('encumbered' भी गिना जाता है; प्रमोटर न हो तो 'no promoter' लिखिए)।"
     },
     {
-      "en": "Score the card yourself with the course rules, then write the result and one reason in your journal. Do not post the company name in any group: your card is practice, not a tip.",
-      "hi": "Course ke rules se card ka score khud nikaaliye, phir result aur ek wajah journal mein likhiye. Company ka naam kisi group mein mat daaliye: aapka card practice hai, tip nahi.",
-      "dv": "कोर्स के नियमों से कार्ड का स्कोर ख़ुद निकालिए, फिर नतीजा और एक वजह जर्नल में लिखिए। कंपनी का नाम किसी ग्रुप में मत डालिए: आपका कार्ड प्रैक्टिस है, टिप नहीं।"
+      "en": "For the same stock, take three years of sales, total expenses, finance costs, depreciation, net profit and operating cash flow, plus the latest borrowings and equity, from its annual results or a free data site (tick the latest year against the filing), and fill the Your stock column. Write the result and the deciding check in your journal; never post the name in a group.",
+      "hi": "Usi stock ke liye teen saal ki sales, total expenses, finance costs, depreciation, net profit aur operating cash flow, aur latest borrowings aur equity, uske annual results ya kisi free data site se lijiye (latest saal filing se milakar tick kijiye), aur Aapka stock column bhariye. Result aur faisla karne wala check journal mein likhiye; naam kisi group mein kabhi post mat kijiye.",
+      "dv": "उसी स्टॉक के लिए तीन साल की सेल्स, कुल ख़र्च, फ़ाइनेंस कॉस्ट, डेप्रिसिएशन, नेट प्रॉफ़िट और ऑपरेटिंग कैश फ़्लो, और लेटेस्ट उधार और इक्विटी, उसके सालाना नतीजों या किसी फ़्री डेटा साइट से लीजिए (लेटेस्ट साल फ़ाइलिंग से मिलाकर टिक कीजिए), और 'आपका स्टॉक' कॉलम भरिए। नतीजा और फ़ैसला करने वाला चेक जर्नल में लिखिए; नाम किसी ग्रुप में कभी पोस्ट मत कीजिए।"
     },
     {
-      "en": "On nseindia.com, open the corporate actions list, pick one recent dividend, bonus or split, and note its ex-date and record date. Find that date on a free TradingView chart and see what the price did. For a split or bonus the chart is usually already adjusted, so expect no gap. For a dividend, compare the ex-date open with the previous close; a small dividend can hide inside a normal day's move.",
-      "hi": "nseindia.com par corporate actions ki list kholiye, koi haal ka dividend, bonus ya split chuniye, aur uski ex-date aur record date note kijiye. Wahi date TradingView ke free chart par dhoondhiye aur dekhiye ki price ne kya kiya. Split ya bonus mein chart aam taur par pehle se adjusted hota hai, isliye gap nahi dikhega. Dividend mein ex-date ke open ko pichhle close se milaiye; chhota dividend normal din ki halchal mein chhup sakta hai.",
-      "dv": "nseindia.com पर कॉर्पोरेट ऐक्शन की लिस्ट खोलिए, कोई हाल का डिविडेंड, बोनस या स्प्लिट चुनिए, और उसकी एक्स-डेट और रिकॉर्ड डेट नोट कीजिए। वही तारीख़ TradingView के फ़्री चार्ट पर ढूँढिए और देखिए कि भाव ने क्या किया। स्प्लिट या बोनस में चार्ट आम तौर पर पहले से एडजस्टेड होता है, इसलिए गैप नहीं दिखेगा। डिविडेंड में एक्स-डेट के ओपन को पिछले क्लोज़ से मिलाइए; छोटा डिविडेंड आम दिन के उतार-चढ़ाव में छिप सकता है।"
+      "en": "If it passes, open the app's Portfolio page and add one complete row (virtual; a row can be a stock you have studied, not only a trade you took: leave entry date, qty and entry price blank until you enter a paper trade, and it does not count as an open trade): Full Why 1 = your card result and the check that decided it; Full Why 2 = your Day 11 chart reason; the top risk and your answer to it; price-stop = the stop from your Day 11 plan card (1.5 x ATR 14 below entry); Why-stop = the card check that would knock it out; review point = its next results date. If it fails, write why in your journal instead.",
+      "hi": "Pass ho toh app ka Portfolio page kholiye aur ek poori row (virtual) jodiye; row sirf liye gaye trade ki nahi, padhe hue stock ki bhi ho sakti hai: jab tak paper trade enter na ho, entry date, qty aur entry price khaali chhodiye, aur yeh open trade mein nahi gini jaati. Row mein: Full Why 1 = aapka card result aur faisla karne wala check; Full Why 2 = aapka Day 11 wala chart reason; sabse bada risk aur uska aapka jawab; price-stop = aapke Day 11 plan card ka stop (entry se 1.5 x ATR 14 neeche); Why-stop = card ka woh check jo ise bahar kar dega; review point = agli results date. Fail ho toh wajah journal mein likhiye.",
+      "dv": "पास हो तो ऐप का पोर्टफ़ोलियो पेज खोलिए और एक पूरी रो (वर्चुअल) जोड़िए; रो सिर्फ़ लिए गए ट्रेड की नहीं, पढ़े हुए स्टॉक की भी हो सकती है: जब तक पेपर ट्रेड एंटर न हो, एंट्री डेट, मात्रा और एंट्री कीमत ख़ाली छोड़िए, और यह खुले ट्रेड में नहीं गिनी जाती। रो में: फ़ुल व्हाई 1 = आपका कार्ड रिज़ल्ट और फ़ैसला करने वाला चेक; फ़ुल व्हाई 2 = आपका दिन 11 वाला चार्ट का कारण; सबसे बड़ा जोखिम और उसका आपका जवाब; प्राइस-स्टॉप = आपके दिन 11 प्लान कार्ड का स्टॉप (एंट्री से 1.5 x ATR 14 नीचे); व्हाई-स्टॉप = कार्ड का वह चेक जो इसे बाहर कर देगा; रिव्यू पॉइंट = अगली रिज़ल्ट डेट। फ़ेल हो तो वजह जर्नल में लिखिए।"
     },
     {
-      "en": "Stretch, about 30 minutes more: repeat the card for a company in a different sector and note which check was hardest to find.",
-      "hi": "Stretch, lagbhag 30 minute aur: kisi doosre sector ki company ka card banaiye aur note kijiye ki kaunsa check dhoondhna sabse mushkil tha.",
-      "dv": "स्ट्रेच, लगभग 30 मिनट और: किसी दूसरे सेक्टर की कंपनी का कार्ड बनाइए और नोट कीजिए कि कौन-सा चेक ढूँढना सबसे मुश्किल था।"
+      "en": "On nseindia.com, open the corporate actions list, pick one recent dividend, bonus, split, rights issue or buyback, and fill a blank row of 'Corporate actions in numbers' for a made-up 100 shares, with its ex-date and record date. For a dividend, compare the ex-date open with the previous close on a free TradingView chart.",
+      "hi": "nseindia.com par corporate actions ki list kholiye, koi haal ka dividend, bonus, split, rights issue ya buyback chuniye, aur made-up 100 shares ke liye 'Corporate actions, numbers mein' ki ek khaali row bhariye, uski ex-date aur record date ke saath. Dividend ho toh free TradingView chart par ex-date ka open pichhle close se milaiye.",
+      "dv": "nseindia.com पर कॉर्पोरेट ऐक्शन की लिस्ट खोलिए, कोई हाल का डिविडेंड, बोनस, स्प्लिट, राइट्स इश्यू या बायबैक चुनिए, और काल्पनिक 100 शेयरों के लिए 'कॉर्पोरेट ऐक्शन, नंबरों में' की एक ख़ाली रो भरिए, उसकी एक्स-डेट और रिकॉर्ड डेट के साथ। डिविडेंड हो तो फ़्री TradingView चार्ट पर एक्स-डेट का ओपन पिछले क्लोज़ से मिलाइए।"
     }
   ],
-  "kaam_min": 50,
+  "kaam_min": 55,
+  "artefacts": [
+    {
+      "title": {
+        "en": "Practice filing: Kiran Foods Ltd (made up)",
+        "hi": "Practice filing: Kiran Foods Ltd (made-up)",
+        "dv": "प्रैक्टिस फ़ाइलिंग: Kiran Foods Ltd (काल्पनिक)"
+      },
+      "note": {
+        "en": "Shareholding pattern, last 4 quarters: promoters hold 52%, and 0% of promoter shares are pledged in every quarter.",
+        "hi": "Shareholding pattern, pichhle 4 quarter: promoters ke paas 52%, aur har quarter mein promoter shares ka 0% pledge.",
+        "dv": "शेयरहोल्डिंग पैटर्न, पिछली 4 तिमाही: प्रमोटरों के पास 52%, और हर तिमाही में प्रमोटर शेयरों का 0% गिरवी।"
+      },
+      "visual": {
+        "kind": "table",
+        "caption": {
+          "en": "Mentor-made numbers in Rs crore, laid out like a real annual-results filing. Sector: FMCG (packaged foods).",
+          "hi": "Mentor ke banaye numbers, Rs crore mein, asli annual-results filing ki tarah. Sector: FMCG (packaged foods).",
+          "dv": "मेंटर के बनाए नंबर, Rs करोड़ में, असली सालाना नतीजों की फ़ाइलिंग की तरह। सेक्टर: FMCG (पैकेज्ड फ़ूड)।"
+        },
+        "head": [
+          {
+            "en": "Line (Rs crore)",
+            "hi": "Line (Rs crore)",
+            "dv": "लाइन (Rs करोड़)"
+          },
+          {
+            "en": "Year 1",
+            "hi": "Saal 1",
+            "dv": "साल 1"
+          },
+          {
+            "en": "Year 2",
+            "hi": "Saal 2",
+            "dv": "साल 2"
+          },
+          {
+            "en": "Year 3",
+            "hi": "Saal 3",
+            "dv": "साल 3"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "en": "Sales (revenue from operations)",
+              "hi": "Sales (revenue from operations)",
+              "dv": "सेल्स (रेवेन्यू फ़्रॉम ऑपरेशंस)"
+            },
+            "8,000",
+            "8,500",
+            "9,000"
+          ],
+          [
+            {
+              "en": "Total expenses",
+              "hi": "Total expenses",
+              "dv": "कुल ख़र्च (total expenses)"
+            },
+            "7,140",
+            "7,660",
+            "8,010"
+          ],
+          [
+            {
+              "en": "of which: finance costs",
+              "hi": "Inmein se: finance costs",
+              "dv": "इनमें से: फ़ाइनेंस कॉस्ट"
+            },
+            "60",
+            "55",
+            "50"
+          ],
+          [
+            {
+              "en": "of which: depreciation",
+              "hi": "Inmein se: depreciation",
+              "dv": "इनमें से: डेप्रिसिएशन"
+            },
+            "200",
+            "210",
+            "220"
+          ],
+          [
+            {
+              "en": "Net profit",
+              "hi": "Net profit",
+              "dv": "नेट प्रॉफ़िट"
+            },
+            "645",
+            "630",
+            "742"
+          ],
+          [
+            {
+              "en": "Net cash from operating activities",
+              "hi": "Net cash from operating activities",
+              "dv": "ऑपरेटिंग गतिविधियों से नेट कैश"
+            },
+            "600",
+            "520",
+            "760"
+          ],
+          [
+            {
+              "en": "Total borrowings (latest year only)",
+              "hi": "Total borrowings (sirf latest saal)",
+              "dv": "कुल उधार (सिर्फ़ लेटेस्ट साल)"
+            },
+            "-",
+            "-",
+            "900"
+          ],
+          [
+            {
+              "en": "Total equity (latest year only)",
+              "hi": "Total equity (sirf latest saal)",
+              "dv": "कुल इक्विटी (सिर्फ़ लेटेस्ट साल)"
+            },
+            "-",
+            "-",
+            "4,500"
+          ]
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Health Card: model, practice and yours",
+        "hi": "Health Card: model, practice aur aapka",
+        "dv": "हेल्थ कार्ड: मॉडल, प्रैक्टिस और आपका"
+      },
+      "note": {
+        "en": "Answer key for the Practice column: operating profit 1,120, 1,105 and 1,260, so margins 14.0%, 13.0% and 14.0% (down once, not twice: no flag); D/E 900 ÷ 4,500 = 0.2; interest cover (1,260 - 220) ÷ 50 = 20.8x; 3-year cash 1,880 against 3-year profit 2,017. Kiran Foods Ltd has 0 counted flags and no knock-out, so it stays on the list. A different count? Find the rule you misread before you card your own stock.",
+        "hi": "Practice column ka answer key: operating profit 1,120, 1,105 aur 1,260, yaani margin 14.0%, 13.0% aur 14.0% (ek hi baar gira, do baar nahi: flag nahi); D/E 900 ÷ 4,500 = 0.2; interest cover (1,260 - 220) ÷ 50 = 20.8x; teen saal ka cash 1,880, teen saal ke profit 2,017 ke saamne. Kiran Foods Ltd mein 0 counted flags aur koi knock-out nahi, isliye woh list mein rehta hai. Aapki ginti alag aayi? Apne stock ka card banane se pehle woh rule dhoondhiye jise aapne galat padha.",
+        "dv": "प्रैक्टिस कॉलम की आंसर की: ऑपरेटिंग प्रॉफ़िट 1,120, 1,105 और 1,260, यानी मार्जिन 14.0%, 13.0% और 14.0% (एक ही बार गिरा, दो बार नहीं: फ़्लैग नहीं); D/E 900 ÷ 4,500 = 0.2; इंटरेस्ट कवर (1,260 - 220) ÷ 50 = 20.8x; तीन साल का कैश 1,880, तीन साल के प्रॉफ़िट 2,017 के सामने। Kiran Foods Ltd में 0 गिने गए फ़्लैग और कोई नॉक-आउट नहीं, इसलिए वह लिस्ट में रहता है। आपकी गिनती अलग आई? अपने स्टॉक का कार्ड बनाने से पहले वह नियम ढूँढिए जिसे आपने ग़लत पढ़ा।"
+      },
+      "visual": {
+        "kind": "table",
+        "head": [
+          {
+            "en": "Check (flag if...)",
+            "hi": "Check (flag kab...)",
+            "dv": "चेक (फ़्लैग कब...)"
+          },
+          {
+            "en": "Priya: Bharat Pumps",
+            "hi": "Priya: Bharat Pumps",
+            "dv": "प्रिया: Bharat Pumps"
+          },
+          {
+            "en": "Practice: Kiran Foods",
+            "hi": "Practice: Kiran Foods",
+            "dv": "प्रैक्टिस: Kiran Foods"
+          },
+          {
+            "en": "Your stock",
+            "hi": "Aapka stock",
+            "dv": "आपका स्टॉक"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "en": "Sector",
+              "hi": "Sector",
+              "dv": "सेक्टर"
+            },
+            {
+              "en": "Capital goods (pumps)",
+              "hi": "Capital goods (pumps)",
+              "dv": "कैपिटल गुड्स (पंप)"
+            },
+            "",
+            ""
+          ],
+          [
+            {
+              "en": "1 Growth: sales in year 3 below year 1?",
+              "hi": "1 Growth: saal 3 ki sales saal 1 se kam?",
+              "dv": "1 ग्रोथ: साल 3 की सेल्स साल 1 से कम?"
+            },
+            {
+              "en": "Rs 4,200 to 5,000 cr: up, no flag",
+              "hi": "Rs 4,200 se 5,000 cr: upar, flag nahi",
+              "dv": "Rs 4,200 से 5,000 करोड़: ऊपर, फ़्लैग नहीं"
+            },
+            "",
+            ""
+          ],
+          [
+            {
+              "en": "2 Margin: down in year 2 and again in year 3?",
+              "hi": "2 Margin: saal 2 mein gira aur saal 3 mein phir gira?",
+              "dv": "2 मार्जिन: साल 2 में गिरा और साल 3 में फिर गिरा?"
+            },
+            {
+              "en": "11.9%, 12.0%, 12.0%: no flag",
+              "hi": "11.9%, 12.0%, 12.0%: flag nahi",
+              "dv": "11.9%, 12.0%, 12.0%: फ़्लैग नहीं"
+            },
+            "",
+            ""
+          ],
+          [
+            {
+              "en": "3 Debt: D/E above 1, or interest cover below 2?",
+              "hi": "3 Debt: D/E 1 se upar, ya interest cover 2 se neeche?",
+              "dv": "3 कर्ज़: D/E 1 से ऊपर, या इंटरेस्ट कवर 2 से नीचे?"
+            },
+            {
+              "en": "D/E 1.2; cover 1.5x: FLAG",
+              "hi": "D/E 1.2; cover 1.5x: FLAG",
+              "dv": "D/E 1.2; कवर 1.5x: फ़्लैग"
+            },
+            "",
+            ""
+          ],
+          [
+            {
+              "en": "4 Pledge: above 10%, or up 2 quarters in a row? (knock-out)",
+              "hi": "4 Pledge: 10% se zyada, ya lagatar 2 quarter se badha? (knock-out)",
+              "dv": "4 प्लेज: 10% से ज़्यादा, या लगातार 2 तिमाही से बढ़ा? (नॉक-आउट)"
+            },
+            {
+              "en": "0% in all 4 quarters: no",
+              "hi": "Chaaron quarter 0%: nahi",
+              "dv": "चारों तिमाही 0%: नहीं"
+            },
+            "",
+            ""
+          ],
+          [
+            {
+              "en": "5 Cash: 3-year cash under half of 3-year profit, or either at zero or below?",
+              "hi": "5 Cash: teen saal ka cash teen saal ke profit ke aadhe se kam, ya dono mein se koi zero ya neeche?",
+              "dv": "5 कैश: तीन साल का कैश तीन साल के प्रॉफ़िट के आधे से कम, या दोनों में से कोई ज़ीरो या नीचे?"
+            },
+            {
+              "en": "Rs 270 cr vs Rs 300 cr: no flag",
+              "hi": "Rs 270 cr vs Rs 300 cr: flag nahi",
+              "dv": "Rs 270 करोड़ बनाम Rs 300 करोड़: फ़्लैग नहीं"
+            },
+            "",
+            ""
+          ],
+          [
+            {
+              "en": "Knock-out?",
+              "hi": "Knock-out?",
+              "dv": "नॉक-आउट?"
+            },
+            {
+              "en": "No",
+              "hi": "Nahi",
+              "dv": "नहीं"
+            },
+            "",
+            ""
+          ],
+          [
+            {
+              "en": "Counted flags (2 or more = out)",
+              "hi": "Counted flags (2 ya zyada = bahar)",
+              "dv": "गिने गए फ़्लैग (2 या ज़्यादा = बाहर)"
+            },
+            {
+              "en": "1 (debt)",
+              "hi": "1 (debt)",
+              "dv": "1 (कर्ज़)"
+            },
+            "",
+            ""
+          ],
+          [
+            {
+              "en": "Decision and one reason",
+              "hi": "Faisla aur ek wajah",
+              "dv": "फ़ैसला और एक वजह"
+            },
+            {
+              "en": "Stays; journal: 'debt: watch'",
+              "hi": "List mein; journal: 'debt: nazar rakho'",
+              "dv": "लिस्ट में; जर्नल: 'कर्ज़: नज़र रखें'"
+            },
+            "",
+            ""
+          ],
+          [
+            {
+              "en": "Portfolio row: Full Why 1",
+              "hi": "Portfolio row: Full Why 1",
+              "dv": "पोर्टफ़ोलियो रो: फ़ुल व्हाई 1"
+            },
+            {
+              "en": "Card: 1 flag (debt), no pledge, sales up 3 years",
+              "hi": "Card: 1 flag (debt), pledge nahi, 3 saal sales upar",
+              "dv": "कार्ड: 1 फ़्लैग (कर्ज़), प्लेज नहीं, 3 साल सेल्स ऊपर"
+            },
+            "-",
+            ""
+          ]
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Corporate actions in numbers",
+        "hi": "Corporate actions, numbers mein",
+        "dv": "कॉर्पोरेट ऐक्शन, नंबरों में"
+      },
+      "note": {
+        "en": "Use a blank row for the action you read on nseindia.com: write its ex-date and record date in the first cell.",
+        "hi": "Jo action aapne nseindia.com par padha, uske liye khaali row bhariye: pehle cell mein uski ex-date aur record date likhiye.",
+        "dv": "जो ऐक्शन आपने nseindia.com पर पढ़ा, उसके लिए ख़ाली रो भरिए: पहले सेल में उसकी एक्स-डेट और रिकॉर्ड डेट लिखिए।"
+      },
+      "visual": {
+        "kind": "table",
+        "caption": {
+          "en": "A made-up holding of 100 shares at Rs 800 (Rs 80,000), before tax and costs. Prices after are what the arithmetic says; real prices also move with the market.",
+          "hi": "Made-up holding: Rs 800 ke 100 shares (Rs 80,000), tax aur kharchon se pehle. Baad ke price hisaab se nikle hain; asli price market ke saath bhi hilte hain.",
+          "dv": "काल्पनिक होल्डिंग: Rs 800 के 100 शेयर (Rs 80,000), टैक्स और ख़र्चों से पहले। बाद के भाव हिसाब से निकले हैं; असली भाव बाज़ार के साथ भी हिलते हैं।"
+        },
+        "head": [
+          {
+            "en": "Action",
+            "hi": "Action",
+            "dv": "ऐक्शन"
+          },
+          {
+            "en": "Shares after",
+            "hi": "Baad mein shares",
+            "dv": "बाद में शेयर"
+          },
+          {
+            "en": "Price after",
+            "hi": "Baad mein price",
+            "dv": "बाद में भाव"
+          },
+          {
+            "en": "Your value",
+            "hi": "Aapki value",
+            "dv": "आपकी वैल्यू"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "en": "Rs 10 dividend",
+              "hi": "Rs 10 dividend",
+              "dv": "Rs 10 डिविडेंड"
+            },
+            "100",
+            "~Rs 790",
+            {
+              "en": "Rs 79,000 + Rs 1,000 cash",
+              "hi": "Rs 79,000 + Rs 1,000 cash",
+              "dv": "Rs 79,000 + Rs 1,000 कैश"
+            }
+          ],
+          [
+            {
+              "en": "1:1 bonus",
+              "hi": "1:1 bonus",
+              "dv": "1:1 बोनस"
+            },
+            "200",
+            "~Rs 400",
+            "Rs 80,000"
+          ],
+          [
+            {
+              "en": "Split: face value Rs 10 to Rs 2",
+              "hi": "Split: face value Rs 10 se Rs 2",
+              "dv": "स्प्लिट: फ़ेस वैल्यू Rs 10 से Rs 2"
+            },
+            "500",
+            "~Rs 160",
+            "Rs 80,000"
+          ],
+          [
+            {
+              "en": "Rights, 1 for every 4 at Rs 600: apply, pay Rs 15,000",
+              "hi": "Rights, har 4 par 1, Rs 600 mein: apply, Rs 15,000 diye",
+              "dv": "राइट्स, हर 4 पर 1, Rs 600 में: अप्लाई, Rs 15,000 दिए"
+            },
+            "125",
+            "~Rs 760",
+            {
+              "en": "Rs 95,000 (80,000 + 15,000 paid)",
+              "hi": "Rs 95,000 (80,000 + 15,000 diye)",
+              "dv": "Rs 95,000 (80,000 + 15,000 दिए)"
+            }
+          ],
+          [
+            {
+              "en": "Rights: sell your 25 rights",
+              "hi": "Rights: apne 25 rights beche",
+              "dv": "राइट्स: अपने 25 राइट बेचे"
+            },
+            "100",
+            "~Rs 760",
+            {
+              "en": "Rs 76,000 + ~Rs 4,000 cash",
+              "hi": "Rs 76,000 + ~Rs 4,000 cash",
+              "dv": "Rs 76,000 + ~Rs 4,000 कैश"
+            }
+          ],
+          [
+            {
+              "en": "Rights: ignore them",
+              "hi": "Rights: chhod diye",
+              "dv": "राइट्स: छोड़ दिए"
+            },
+            "100",
+            "~Rs 760",
+            {
+              "en": "Rs 76,000 (Rs 4,000 lost)",
+              "hi": "Rs 76,000 (Rs 4,000 gaye)",
+              "dv": "Rs 76,000 (Rs 4,000 गए)"
+            }
+          ],
+          [
+            {
+              "en": "Buyback at Rs 900: 10 of your 100 accepted",
+              "hi": "Buyback Rs 900 par: aapke 100 mein se 10 accept",
+              "dv": "बायबैक Rs 900 पर: आपके 100 में से 10 स्वीकार"
+            },
+            "90",
+            "~Rs 800",
+            {
+              "en": "Rs 72,000 + Rs 9,000 cash = Rs 81,000",
+              "hi": "Rs 72,000 + Rs 9,000 cash = Rs 81,000",
+              "dv": "Rs 72,000 + Rs 9,000 कैश = Rs 81,000"
+            }
+          ]
+        ],
+        "blank_rows": 2
+      }
+    }
+  ],
   "outcome": {
-    "en": "By the end you can run a five-check health filter on a company from its own filings, score it with written rules, explain market-cap tiers and sectors, and read a dividend, bonus, split, rights issue or buyback with its ex-date and record date.",
-    "hi": "Is session ke baad aap kisi company ki apni filings se 5-check health filter chala paayenge, likhe hue rules se uska score nikaal paayenge, market-cap tiers aur sectors samjha paayenge, aur dividend, bonus, split, rights issue ya buyback ko uski ex-date aur record date ke saath padh paayenge.",
-    "dv": "इस सेशन के बाद आप किसी कंपनी की अपनी फ़ाइलिंग से 5-चेक हेल्थ फ़िल्टर चला पाएँगे, लिखे हुए नियमों से उसका स्कोर निकाल पाएँगे, मार्केट-कैप के टियर और सेक्टर समझा पाएँगे, और डिविडेंड, बोनस, स्प्लिट, राइट्स इश्यू या बायबैक को उसकी एक्स-डेट और रिकॉर्ड डेट के साथ पढ़ पाएँगे।"
+    "en": "By the end you can run a five-check health filter on a company from its own filings, score it with written rules, turn a passing card into a Portfolio row, explain market-cap tiers and sectors, and work out what a dividend, bonus, split, rights issue or buyback does to your shares, with its ex-date and record date.",
+    "hi": "Is session ke baad aap kisi company ki apni filings se 5-check health filter chala paayenge, likhe hue rules se uska score nikaal paayenge, pass hue card ko Portfolio row mein badal paayenge, market-cap tiers aur sectors samjha paayenge, aur hisaab laga paayenge ki dividend, bonus, split, rights issue ya buyback aapke shares ke saath kya karta hai, uski ex-date aur record date ke saath.",
+    "dv": "इस सेशन के बाद आप किसी कंपनी की अपनी फ़ाइलिंग से 5-चेक हेल्थ फ़िल्टर चला पाएँगे, लिखे हुए नियमों से उसका स्कोर निकाल पाएँगे, पास हुए कार्ड को पोर्टफ़ोलियो रो में बदल पाएँगे, मार्केट-कैप के टियर और सेक्टर समझा पाएँगे, और हिसाब लगा पाएँगे कि डिविडेंड, बोनस, स्प्लिट, राइट्स इश्यू या बायबैक आपके शेयरों के साथ क्या करता है, उसकी एक्स-डेट और रिकॉर्ड डेट के साथ।"
   },
   "tools": [
     {
@@ -993,12 +1462,17 @@
       "en": "Any AI chat",
       "hi": "Koi bhi AI chat",
       "dv": "कोई भी AI चैट"
+    },
+    {
+      "en": "The app's Portfolio page",
+      "hi": "App ka Portfolio page",
+      "dv": "ऐप का पोर्टफ़ोलियो पेज"
     }
   ],
   "fun": {
-    "en": "Report-card round: each learner scores one company privately, then shares only the number of flags and which check was hardest to find. Company names are never shared.",
-    "hi": "Report-card round: har learner ek company ka card akele score kare, phir group mein sirf flags ki ginti aur sabse mushkil check bataye. Company ka naam kabhi share nahi hota.",
-    "dv": "रिपोर्ट-कार्ड राउंड: हर लर्नर एक कंपनी का कार्ड अकेले स्कोर करे, फिर ग्रुप में सिर्फ़ फ़्लैग की गिनती और सबसे मुश्किल चेक बताए। कंपनी का नाम कभी शेयर नहीं होता।"
+    "en": "Flag-count reveal: everyone scores the Kiran Foods practice filing alone in 10 minutes, writes the flag count on a chit, and all chits are opened together. Anyone whose count differs reads aloud the rule that tripped them. Round two, Story vs Numbers: one person reads Aman's '500 stores' line in a TV-anchor voice, and the others call out which of the five checks would test it. Learning alone? Play both rounds with the answer key under the Health Card. No real company names are shared.",
+    "hi": "Flag-count reveal: sab log 10 minute mein akele Kiran Foods ki practice filing score karte hain, flags ki ginti ek parchi par likhte hain, aur saari parchiyan ek saath kholi jaati hain. Jiski ginti alag ho, woh zor se woh rule padhta hai jisne use uljhaya. Doosra round, Story vs Numbers: ek insaan TV anchor ki awaaz mein Aman ki '500 stores' wali line padhta hai, aur baaki batate hain ki paanch mein se kaunsa check use parkhega. Akele seekh rahe hain? Dono round Health Card ke neeche diye answer key ke saath kheliye. Kisi asli company ka naam share nahi hota.",
+    "dv": "फ़्लैग-काउंट रिवील: सब लोग 10 मिनट में अकेले Kiran Foods की प्रैक्टिस फ़ाइलिंग स्कोर करते हैं, फ़्लैग की गिनती एक पर्ची पर लिखते हैं, और सारी पर्चियाँ एक साथ खोली जाती हैं। जिसकी गिनती अलग हो, वह ज़ोर से वह नियम पढ़ता है जिसने उसे उलझाया। दूसरा राउंड, कहानी बनाम नंबर: एक व्यक्ति TV एंकर की आवाज़ में अमन की '500 स्टोर' वाली लाइन पढ़ता है, और बाक़ी बताते हैं कि पाँच में से कौन-सा चेक उसे परखेगा। अकेले सीख रहे हैं? दोनों राउंड हेल्थ कार्ड के नीचे दी आंसर की के साथ खेलिए। किसी असली कंपनी का नाम शेयर नहीं होता।"
   },
   "compliance": "Educational content only, not investment advice. Company names and example figures are made up for illustration, and no fair value, target price or buy/sell view is given. No affiliation with any website or tool named. Stage 1 uses virtual money only. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
   "prompts": [
@@ -1008,7 +1482,7 @@
         "hi": "Fill my health card",
         "dv": "मेरा हेल्थ कार्ड भरो"
       },
-      "body": "You are a careful assistant helping a beginner run a 5-check health filter on one listed Indian company. I will paste the company's sector and numbers I copied myself from its annual results (consolidated if available) for 3 years (year 1 is the oldest, year 3 the latest): sales (revenue from operations), total expenses, finance costs, depreciation, net profit and net cash from operating activities for each year; for the latest year, total borrowings (non-current plus current), total equity (share capital plus other equity) and profit before tax; and, for the last 4 quarters, promoter holding % and pledged shares as a % of promoter shares (or 'no promoter'). If the sector I give is a bank, NBFC or insurer, say the check does not fit and stop. Use ONLY the numbers I paste. If a number is missing, write 'missing' and never fill it from memory. Work out operating profit = sales - (total expenses - finance costs - depreciation), and operating margin = operating profit / sales, for each year. For each check (growth, margin, debt, promoter pledge, cash flow) show the calculation, the direction (better / flat / worse) and whether it triggers any of these course flags: sales in year 3 lower than year 1; operating margin lower in year 2 than year 1 AND lower in year 3 than year 2; latest debt-to-equity (total borrowings / total equity) above 1 or interest coverage ((profit before tax + finance costs) / finance costs) below 2; pledge above 10% of promoter shares or pledge % up two quarters in a row (a knock-out; if there is no promoter, write no promoter); 3-year operating cash flow below half of 3-year net profit, or 3-year net profit or 3-year operating cash flow at zero or below. If finance costs are zero, write 'no interest' and do not flag coverage. If total equity is zero or negative, count a debt flag. Do not make the final decision for me: end with the list of numbers I should re-check in the filings. Do not give a valuation, fair value, target price, rating or any buy or sell view, and do not mention expected returns. Do not ask me for any personal details.\n\nNumbers:\n<paste here>"
+      "body": "You are a careful assistant helping a beginner run a 5-check health filter on one listed Indian company, or on a made-up practice company from my course. I will paste the company's sector and numbers I copied myself from its annual results (consolidated if available) for 3 years (year 1 is the oldest, year 3 the latest): sales (revenue from operations), total expenses, finance costs, depreciation, net profit and net cash from operating activities for each year; for the latest year, total borrowings (non-current plus current) and total equity (share capital plus other equity); and, for the last 4 quarters, promoter holding % and pledged shares as a % of promoter shares (or 'no promoter'). If the sector I give is a bank, NBFC or insurer, say the check does not fit and stop. Use ONLY the numbers I paste. If a number is missing, write 'missing' and never fill it from memory. For each year work out operating profit = sales - (total expenses - finance costs - depreciation) and operating margin = operating profit / sales. For the latest year work out interest cover = (operating profit - depreciation) / finance costs; this leaves out other income, so say that a data site's figure may differ. For each check (growth, margin, debt, promoter pledge, cash flow) show the calculation, the direction (better / flat / worse) and whether it triggers any of these course flags: sales in year 3 lower than year 1; operating margin lower in year 2 than year 1 AND lower in year 3 than year 2; latest debt-to-equity (total borrowings / total equity) above 1 or interest cover below 2; pledge above 10% of promoter shares or pledge % up two quarters in a row (a knock-out; if there is no promoter, write no promoter); 3-year operating cash flow below half of 3-year net profit, or 3-year net profit or 3-year operating cash flow at zero or below. If finance costs are zero, write 'no interest' and do not flag interest cover. If total equity is zero or negative, count a debt flag. Do not make the final decision for me: end with the number of knock-outs, the number of counted flags, and the list of numbers I should re-check in the filings. Do not give a valuation, fair value, target price, rating or any buy or sell view, and do not mention expected returns. Do not ask me for any personal details.\n\nNumbers:\n<paste here>"
     },
     {
       "title": {
@@ -1020,11 +1494,11 @@
     },
     {
       "title": {
-        "en": "Corporate actions in numbers",
-        "hi": "Corporate actions numbers mein",
-        "dv": "कॉर्पोरेट ऐक्शन नंबरों में"
+        "en": "Check my corporate action",
+        "hi": "Mera corporate action check karo",
+        "dv": "मेरा कॉर्पोरेट ऐक्शन जाँचो"
       },
-      "body": "Using a made-up Indian company where I hold 100 shares at Rs 800 each, show in a simple table what happens to my number of shares, the price per share and my total value after each of these: a Rs 10 dividend, a 1:1 bonus, a split from face value Rs 10 to Rs 2, a rights issue of 1 new share for every 4 held at Rs 600 (once if I apply, once if I ignore it), and a buyback at Rs 900 in which 10 of my 100 shares are accepted. Then explain record date versus ex-date under India's T+1 settlement in 4 short lines. Label each statement Fact, Guess or Kachra, and list the facts I should confirm on the NSE website because rules can change. Do not recommend any stock, do not give buy or sell advice, and do not mention targets or expected returns."
+      "body": "I read a corporate action on the NSE website and I will paste its type (dividend, bonus, split, rights issue or buyback), the ratio or amount, the issue or buyback price if any, the ex-date and the record date. Using a made-up holding of 100 shares at the previous close I give you, show in a simple table my number of shares, the price per share and my total value before and after. For a rights issue, show three rows (I apply, I sell my rights, I ignore them) and work out the theoretical ex-rights price step by step. For a buyback, show the result if only part of my shares is accepted, and explain what an acceptance ratio is. Then check the row I filled in myself, pasted below, and point out any line I got wrong. Explain record date versus ex-date under India's T+1 settlement in 3 short lines. Label each statement Fact, Guess or Kachra, list the facts I should confirm on the NSE website because rules can change, and say that tax questions go to a CA. Do not recommend any stock, do not give buy or sell advice, and do not mention targets or expected returns.\n\nCorporate action and previous close:\n<paste here>\n\nMy row:\n<paste here>"
     }
   ],
   "journal_prompt": {
@@ -1047,33 +1521,33 @@
       "options": [
         {
           "text": {
-            "en": "Only Aman, who bought on Wednesday",
-            "hi": "Sirf Aman, jisne Wednesday ko khareeda",
-            "dv": "सिर्फ़ अमन, जिसने बुधवार को ख़रीदा"
+            "en": "Only Aman: his Wednesday buy settles on Thursday",
+            "hi": "Sirf Aman: uski Wednesday ki khareed Thursday ko settle hoti hai",
+            "dv": "सिर्फ़ अमन: उसकी बुधवार की ख़रीद गुरुवार को सेटल होती है"
           },
           "correct": true
         },
         {
           "text": {
-            "en": "Only Priya, who held on the record date",
-            "hi": "Sirf Priya, jiske paas record date par share tha",
-            "dv": "सिर्फ़ प्रिया, जिसके पास रिकॉर्ड डेट पर शेयर था"
+            "en": "Only Priya: she owns the shares on the ex-date",
+            "hi": "Sirf Priya: ex-date par shares uske paas hain",
+            "dv": "सिर्फ़ प्रिया: एक्स-डेट पर शेयर उसके पास हैं"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "Both, as both own shares that week",
-            "hi": "Dono, kyunki dono ke paas shares hain",
-            "dv": "दोनों, क्योंकि दोनों के पास शेयर हैं"
+            "en": "Both of them, since both bought before Friday",
+            "hi": "Dono ko, kyunki dono ne Friday se pehle khareeda",
+            "dv": "दोनों को, क्योंकि दोनों ने शुक्रवार से पहले ख़रीदा"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "Neither, as settlement ends on Friday",
-            "hi": "Koi nahi, kyunki settlement Friday ko hai",
-            "dv": "कोई नहीं, क्योंकि सेटलमेंट शुक्रवार को है"
+            "en": "Neither: the list is taken after Friday's settlement",
+            "hi": "Kisi ko nahi: list Friday ke settlement ke baad banti hai",
+            "dv": "किसी को नहीं: लिस्ट शुक्रवार के सेटलमेंट के बाद बनती है"
           },
           "correct": false
         }
@@ -1093,33 +1567,33 @@
       "options": [
         {
           "text": {
-            "en": "Score the card first, and hear the story last",
-            "hi": "Pehle card score karein, kahani sabse baad mein",
-            "dv": "पहले कार्ड स्कोर करें, कहानी सबसे बाद में"
+            "en": "Score the card from the filings first; hear the story last",
+            "hi": "Pehle filings se card score karo; kahani sabse baad mein suno",
+            "dv": "पहले फ़ाइलिंग से कार्ड स्कोर करो; कहानी सबसे बाद में सुनो"
           },
           "correct": true
         },
         {
           "text": {
-            "en": "Watch two more interviews to confirm the plan",
-            "hi": "Plan confirm karne ke liye do aur interview dekhein",
-            "dv": "प्लान कन्फ़र्म करने के लिए दो और इंटरव्यू देखें"
+            "en": "Watch two more interviews to be sure the plan is real",
+            "hi": "Do aur interview dekho, taaki pata chale ki plan asli hai",
+            "dv": "दो और इंटरव्यू देखो, ताकि पता चले कि प्लान असली है"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "Buy a small amount now and check numbers later",
-            "hi": "Abhi thoda sa khareed lein, numbers baad mein dekhein",
-            "dv": "अभी थोड़ा-सा ख़रीद लें, नंबर बाद में देखें"
+            "en": "Buy a small amount now and check the numbers later",
+            "hi": "Abhi thoda sa khareed lo, numbers baad mein check karo",
+            "dv": "अभी थोड़ा-सा ख़रीद लो, नंबर बाद में जाँचो"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "Ask an AI whether the company will do well",
-            "hi": "AI se poochhein ki company achha karegi ya nahi",
-            "dv": "AI से पूछें कि कंपनी अच्छा करेगी या नहीं"
+            "en": "Ask an AI chat whether the company will do well",
+            "hi": "AI chat se poochho ki company achha karegi ya nahi",
+            "dv": "AI चैट से पूछो कि कंपनी अच्छा करेगी या नहीं"
           },
           "correct": false
         }
@@ -1139,33 +1613,33 @@
       "options": [
         {
           "text": {
-            "en": "It leaves: pledge above 10% is a knock-out",
-            "hi": "Bahar: 10% se zyada pledge knock-out hai",
-            "dv": "बाहर: 10% से ज़्यादा प्लेज नॉक-आउट है"
+            "en": "It leaves the list: a pledge above 10% is a knock-out",
+            "hi": "List se bahar: 10% se zyada pledge knock-out hai",
+            "dv": "लिस्ट से बाहर: 10% से ज़्यादा प्लेज नॉक-आउट है"
           },
           "correct": true
         },
         {
           "text": {
-            "en": "It stays, since only one of five checks failed",
-            "hi": "Rehta hai, kyunki paanch mein se sirf ek check fail hua",
-            "dv": "रहता है, क्योंकि पाँच में से सिर्फ़ एक चेक फ़ेल हुआ"
+            "en": "It stays, since only one of the five checks failed",
+            "hi": "List mein rehta hai, kyunki paanch mein se sirf ek check fail hua",
+            "dv": "लिस्ट में रहता है, क्योंकि पाँच में से सिर्फ़ एक चेक फ़ेल हुआ"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "It stays, but only with half the usual position",
-            "hi": "Rehta hai, par sirf aadhi position ke saath",
-            "dv": "रहता है, पर सिर्फ़ आधी पोज़ीशन के साथ"
+            "en": "It stays, but only with half of the usual position size",
+            "hi": "List mein rehta hai, par sirf aadhe position size ke saath",
+            "dv": "लिस्ट में रहता है, पर सिर्फ़ आधे पोज़िशन साइज़ के साथ"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "It stays if the chart shows a clean uptrend",
-            "hi": "Chart mein saaf uptrend ho toh rehta hai",
-            "dv": "चार्ट में साफ़ अपट्रेंड हो तो रहता है"
+            "en": "It stays if the chart also shows a clean uptrend",
+            "hi": "List mein rehta hai, agar chart bhi saaf uptrend dikhaye",
+            "dv": "लिस्ट में रहता है, अगर चार्ट भी साफ़ अपट्रेंड दिखाए"
           },
           "correct": false
         }
@@ -1185,15 +1659,15 @@
       "options": [
         {
           "text": {
-            "en": "Flag: 3-year cash is below half of profit",
-            "hi": "Flag: teen saal ka cash profit ke aadhe se kam",
-            "dv": "फ़्लैग: तीन साल का कैश प्रॉफ़िट के आधे से कम"
+            "en": "Flag: 3-year cash is below half of 3-year profit",
+            "hi": "Flag: teen saal ka cash teen saal ke profit ke aadhe se kam hai",
+            "dv": "फ़्लैग: तीन साल का कैश तीन साल के प्रॉफ़िट के आधे से कम है"
           },
           "correct": true
         },
         {
           "text": {
-            "en": "No flag, since profit rose every year",
+            "en": "No flag, since profit rose every single year",
             "hi": "Flag nahi, kyunki profit har saal badha",
             "dv": "फ़्लैग नहीं, क्योंकि प्रॉफ़िट हर साल बढ़ा"
           },
@@ -1201,9 +1675,9 @@
         },
         {
           "text": {
-            "en": "No flag: year one's cash was close to profit",
-            "hi": "Flag nahi: pehle saal ka cash profit ke kareeb tha",
-            "dv": "फ़्लैग नहीं: पहले साल का कैश प्रॉफ़िट के क़रीब था"
+            "en": "No flag: year one's cash was close to its profit",
+            "hi": "Flag nahi: saal 1 ka cash uske profit ke kareeb tha",
+            "dv": "फ़्लैग नहीं: साल 1 का कैश उसके प्रॉफ़िट के क़रीब था"
           },
           "correct": false
         },
@@ -1224,48 +1698,48 @@
     },
     {
       "stem": {
-        "en": "Bharat Pumps Ltd closes at Rs 1,500. The next morning, the ex-date of a split from face value Rs 10 to Rs 2, it trades near Rs 300. What happened to the value of a 20-share holding?",
-        "hi": "Bharat Pumps Ltd Rs 1,500 par band hota hai. Agli subah face value Rs 10 se Rs 2 wale split ki ex-date hai, aur share lagbhag Rs 300 par trade kar raha hai. 20 shares ki holding ki value ka kya hua?",
-        "dv": "Bharat Pumps Ltd Rs 1,500 पर बंद होता है। अगली सुबह फ़ेस वैल्यू Rs 10 से Rs 2 वाले स्प्लिट की एक्स-डेट है, और शेयर लगभग Rs 300 पर ट्रेड हो रहा है। 20 शेयर की होल्डिंग की वैल्यू का क्या हुआ?"
+        "en": "Aman's colleague has held 50 shares of Anand Snacks Ltd for two years; the share is at Rs 200. The company offers 1 new share for every 5 held, at Rs 140, and after the ex-date the price moves towards Rs 190. If the colleague simply ignores the offer, what happens?",
+        "hi": "Aman ke colleague ke paas do saal se Anand Snacks Ltd ke 50 shares hain; share Rs 200 par hai. Company har 5 shares par 1 naya share Rs 140 mein offer karti hai, aur ex-date ke baad price Rs 190 ki taraf jaata hai. Agar colleague offer ko bas chhod de, toh kya hota hai?",
+        "dv": "अमन के सहकर्मी के पास दो साल से Anand Snacks Ltd के 50 शेयर हैं; शेयर Rs 200 पर है। कंपनी हर 5 शेयर पर 1 नया शेयर Rs 140 में ऑफ़र करती है, और एक्स-डेट के बाद भाव Rs 190 की तरफ़ जाता है। अगर सहकर्मी ऑफ़र को बस छोड़ दे, तो क्या होता है?"
       },
       "options": [
         {
           "text": {
-            "en": "About the same: now 100 shares at Rs 300",
-            "hi": "Lagbhag wahi: ab Rs 300 ke 100 shares",
-            "dv": "लगभग वही: अब Rs 300 के 100 शेयर"
+            "en": "He is about Rs 500 worse off: his 10 unused rights lapse",
+            "hi": "Use lagbhag Rs 500 ka nuksaan: uske 10 bina use kiye rights bekaar ho jaate hain",
+            "dv": "उसे लगभग Rs 500 का नुक़सान: उसके 10 बिना इस्तेमाल किए राइट बेकार हो जाते हैं"
           },
           "correct": true
         },
         {
           "text": {
-            "en": "Down 80%: 20 shares now at Rs 300 each",
-            "hi": "80% kam: 20 shares ab Rs 300 wale",
-            "dv": "80% कम: 20 शेयर अब Rs 300 वाले"
+            "en": "Nothing changes: an offer he ignores costs him nothing",
+            "hi": "Kuch nahi badalta: chhoda hua offer uska kuch nahi leta",
+            "dv": "कुछ नहीं बदलता: छोड़ा हुआ ऑफ़र उसका कुछ नहीं लेता"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "Up five times: the holder now has 100 shares",
-            "hi": "Paanch guni: ab holder ke paas 100 shares",
-            "dv": "पाँच गुनी: अब होल्डर के पास 100 शेयर"
+            "en": "He must still pay Rs 1,400 for his 10 new shares",
+            "hi": "Use phir bhi apne 10 naye shares ke Rs 1,400 dene honge",
+            "dv": "उसे फिर भी अपने 10 नए शेयरों के Rs 1,400 देने होंगे"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "Down slightly: a fee is taken for the split",
-            "hi": "Thodi kam: split ke liye fee kat jaati hai",
-            "dv": "थोड़ी कम: स्प्लिट के लिए फ़ीस कट जाती है"
+            "en": "He gains, because the share is now Rs 10 cheaper",
+            "hi": "Use fayda hai, kyunki share ab Rs 10 sasta hai",
+            "dv": "उसे फ़ायदा है, क्योंकि शेयर अब Rs 10 सस्ता है"
           },
           "correct": false
         }
       ],
       "explanation": {
-        "en": "A split from face value Rs 10 to Rs 2 turns each share into five, and the price adjusts to about a fifth. Before: 20 x Rs 1,500 = Rs 30,000. After: 100 x Rs 300 = Rs 30,000. Nothing was lost or gained, and nothing became cheap. An unadjusted chart shows this as a crash and throws off EMA, RSI and ATR, so check the NSE corporate actions page before reading any sudden large gap. No fee is taken from your holding for a split.",
-        "hi": "Face value Rs 10 se Rs 2 wala split har share ko paanch mein baant deta hai, aur price lagbhag paanchwa hissa reh jaata hai. Pehle: 20 x Rs 1,500 = Rs 30,000. Baad mein: 100 x Rs 300 = Rs 30,000. Na kuch gaya, na kuch aaya, aur na kuch sasta hua. Unadjusted chart ise crash jaisa dikhata hai aur EMA, RSI aur ATR ko bigaad deta hai, isliye kisi bhi achanak bade gap ko padhne se pehle NSE ka corporate actions page dekhiye. Split ke liye aapki holding se koi fee nahi kat-ti.",
-        "dv": "फ़ेस वैल्यू Rs 10 से Rs 2 वाला स्प्लिट हर शेयर को पाँच में बाँट देता है, और भाव लगभग पाँचवाँ हिस्सा रह जाता है। पहले: 20 x Rs 1,500 = Rs 30,000। बाद में: 100 x Rs 300 = Rs 30,000। न कुछ गया, न कुछ आया, और न कुछ सस्ता हुआ। अनएडजस्टेड चार्ट इसे क्रैश जैसा दिखाता है और EMA, RSI और ATR को बिगाड़ देता है, इसलिए किसी भी अचानक बड़े गैप को पढ़ने से पहले NSE का कॉर्पोरेट ऐक्शन पेज देखिए। स्प्लिट के लिए आपकी होल्डिंग से कोई फ़ीस नहीं कटती।"
+        "en": "Every 5 shares carry the right to buy 1 new share at Rs 140, so his 50 shares carry 10 rights. After the ex-date the price tends towards (5 x 200 + 140) ÷ 6 = Rs 190. Ignored, his 50 shares are worth 50 x Rs 190 = Rs 9,500 instead of Rs 10,000, and the 10 rights lapse worthless: about Rs 500 gone, 10 x (190 - 140). Nobody pays unless they apply; applying (Rs 1,400 for 10 shares) or selling the rights on the exchange keeps the value. A lower price after a rights issue is not a bargain.",
+        "hi": "Har 5 shares ke saath 1 naya share Rs 140 mein lene ka right milta hai, isliye uske 50 shares par 10 rights hain. Ex-date ke baad price (5 x 200 + 140) ÷ 6 = Rs 190 ki taraf jaata hai. Chhod diya toh uske 50 shares ki value 50 x Rs 190 = Rs 9,500 rehti hai, Rs 10,000 nahi, aur 10 rights bekaar ho jaate hain: lagbhag Rs 500 gaye, 10 x (190 - 140). Apply kiye bina kisi ko paise nahi dene padte; apply karna (10 shares ke Rs 1,400) ya rights exchange par bechna value bachata hai. Rights issue ke baad kam price koi sasta sauda nahi hai.",
+        "dv": "हर 5 शेयर के साथ 1 नया शेयर Rs 140 में लेने का राइट मिलता है, इसलिए उसके 50 शेयरों पर 10 राइट हैं। एक्स-डेट के बाद भाव (5 x 200 + 140) ÷ 6 = Rs 190 की तरफ़ जाता है। छोड़ दिया तो उसके 50 शेयरों की वैल्यू 50 x Rs 190 = Rs 9,500 रहती है, Rs 10,000 नहीं, और 10 राइट बेकार हो जाते हैं: लगभग Rs 500 गए, 10 x (190 - 140)। अप्लाई किए बिना किसी को पैसे नहीं देने पड़ते; अप्लाई करना (10 शेयरों के Rs 1,400) या राइट एक्सचेंज पर बेचना वैल्यू बचाता है। राइट्स इश्यू के बाद कम भाव कोई सस्ता सौदा नहीं है।"
       }
     }
   ]

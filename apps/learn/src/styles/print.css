@@ -1,0 +1,186 @@
+/* Stage 1 printable handout: /learn/print/week/[w] and /learn/print/day/[n] (app/learn/(app)/print/).
+   Imported by the handout component only; every selector is .prt-* or scoped under .prt-doc, and the page box is
+   the NAMED page "prt", so printing any other screen is untouched.
+   - Light paper whatever the site theme: the handout root carries data-theme="light", so the Winners tokens and the
+     teaching visuals (visuals.css) resolve to their light values inside it.
+   - A4. Each day starts on a new page; a visual, a quiz question, a table row or a prompt is never split.
+   - The running footer (credential line + page number) is an @page margin box. Its text is written by the page
+     itself from lib/compliance/strings.ts (CREDENTIAL_LINE), so the legal wording has one source; its look is here.
+   - Backgrounds print even when the browser's "Background graphics" box is off (print-color-adjust: exact), so no
+     white-on-colour text ever prints as white on white. */
+
+@page prt {
+  size: A4;
+  margin: 14mm 14mm 17mm 14mm;
+  @bottom-center { font-family: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif; font-size: 7.5pt; color: #47596b; vertical-align: middle; }
+}
+
+/* ---------- screen: a sheet of paper inside the app shell ---------- */
+.prt-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; max-width: 210mm; margin: 0 auto 16px; }
+.prt-bar__back { display: inline-flex; align-items: center; gap: 4px; }
+.prt-bar__langs { display: inline-flex; flex-wrap: wrap; gap: 4px; }
+.prt-bar__lang { display: inline-flex; align-items: center; min-height: 36px; padding: 0 12px; border-radius: 9999px; border: 1px solid var(--line-2); color: var(--ink); font-size: 13px; font-weight: 600; text-decoration: none; }
+.prt-bar__lang[aria-current="true"] { background: var(--brand-soft); border-color: var(--brand); }
+.prt-bar__grow { flex: 1 1 auto; }
+.prt-bar__tip { flex-basis: 100%; margin: 0; font-size: 13px; color: var(--ink-2); }
+
+.prt-doc {
+  max-width: 210mm; margin: 0 auto; padding: 14mm; border: 1px solid var(--line); border-radius: 6px;
+  background: #fff; color: var(--ink); box-shadow: 0 12px 40px -18px #00000066;
+  font-family: var(--ff); font-size: 15px; line-height: 1.6;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.prt-doc * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+@media (max-width: 640px) { .prt-doc { padding: 16px; } }
+/* zero-specificity resets, so every .prt-* rule below wins over them */
+:where(.prt-doc) :where(h1, h2, h3, h4) { margin: 0; color: var(--ink); font-weight: 700; line-height: 1.25; }
+:where(.prt-doc) :where(p) { margin: 0; }
+:where(.prt-doc) :where(a) { color: inherit; }
+/* Tailwind's preflight strips list bullets; these lists are read as lists */
+.prt-howto ul, .prt-cell ul { list-style: disc; }
+.prt-doc[data-lang="dv"] { line-height: 1.75; }
+.prt-doc[data-lang="dv"] :where(h1, h2, h3, h4) { line-height: 1.45; }
+.prt-muted { color: var(--ink-2); font-size: 13px; }
+.prt-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+.prt-pagetitle { font-size: 26px; padding-bottom: 10px; margin-bottom: 14px; border-bottom: 3px solid var(--brand); }
+.prt-block { margin-top: 22px; }
+
+/* ---------- cover ---------- */
+.prt-cover { display: flex; flex-direction: column; gap: 22px; }
+.prt-cover__top { display: flex; align-items: center; gap: 12px; padding-bottom: 14px; border-bottom: 3px solid var(--brand); }
+.prt-cover__top img { flex: 0 0 auto; }
+.prt-brand { display: block; font-size: 18px; font-weight: 700; color: var(--ink); }
+.prt-cred { display: block; font-size: 11.5px; color: var(--ink-2); }
+.prt-kicker { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--vz-t-brand); }
+.prt-cover__title { font-size: 34px; line-height: 1.15; margin-top: 6px; }
+.prt-cover__week { display: block; margin-bottom: 6px; font-size: 16px; letter-spacing: .06em; text-transform: uppercase; color: var(--vz-t-brand); }
+.prt-cover__sub { margin-top: 8px; font-size: 16px; color: var(--ink-2); }
+.prt-cover__days { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.prt-cover__days li { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+.prt-cover__dn { font-weight: 700; color: var(--vz-t-brand); font-variant-numeric: tabular-nums; }
+.prt-howto { padding: 14px 16px; border-left: 4px solid var(--brand); border-radius: 10px; background: var(--panel-2); }
+.prt-howto__h { font-size: 14px; margin-bottom: 6px; }
+.prt-howto ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 13.5px; }
+.prt-cover__foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; font-size: 12px; color: var(--ink-2); }
+
+/* single-day print: a slim masthead instead of a cover */
+.prt-mast { display: flex; align-items: center; gap: 12px; padding-bottom: 12px; margin-bottom: 18px; border-bottom: 1px solid var(--line); }
+
+/* ---------- contents ---------- */
+.prt-toc { list-style: none; margin: 0; padding: 0; }
+.prt-toc > li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.prt-toc a { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 12px; font-weight: 650; text-decoration: none; }
+.prt-toc__day { color: var(--vz-t-brand); font-variant-numeric: tabular-nums; }
+.prt-toc__topics { margin: 4px 0 0 88px; font-size: 12.5px; color: var(--ink-2); }
+.prt-toc__each { margin-top: 14px; }
+
+/* ---------- a day ---------- */
+.prt-day { margin-top: 40px; }
+.prt-dayhead { padding-bottom: 12px; margin-bottom: 14px; border-bottom: 3px solid var(--brand); }
+.prt-daytitle { margin-top: 4px; font-size: 26px; }
+.prt-tags { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.prt-tags li { padding: 3px 10px; border-radius: 9999px; background: var(--brand-soft); font-size: 12px; color: var(--ink); }
+.prt-h { display: flex; align-items: center; gap: 8px; margin: 24px 0 10px; font-size: 18px; }
+.prt-h::before { content: ""; flex: 0 0 4px; height: 1.05em; border-radius: 2px; background: var(--brand); }
+.prt-topics { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
+.prt-topic { padding-top: 14px; border-top: 1px solid var(--line); }
+.prt-topic:first-child { padding-top: 0; border-top: 0; }
+.prt-topic__head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 6px; }
+.prt-num { font-size: 14px; font-weight: 700; color: var(--vz-t-brand); font-variant-numeric: tabular-nums; }
+.prt-topic__h { font-size: 16.5px; }
+.prt-p { white-space: pre-line; }
+.prt-p + .prt-p { margin-top: 8px; }
+.prt-example { margin-top: 12px; padding: 10px 14px; border-left: 3px solid var(--gold); border-radius: 8px; background: var(--panel-2); }
+.prt-label { display: block; margin-bottom: 4px; font-size: 11.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--vz-t-gold); }
+.prt-remember { margin-top: 10px; padding: 8px 12px; border: 1px dashed var(--brand); border-radius: 8px; }
+.prt-terms { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 12px; margin: 0; }
+@media (max-width: 560px) { .prt-terms { grid-template-columns: 1fr; } }
+.prt-term { padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; }
+.prt-term dt { font-weight: 700; }
+.prt-term dd { margin: 2px 0 0; font-size: 13.5px; color: var(--ink-2); }
+
+/* today's task */
+.prt-task__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px; }
+.prt-task__head .prt-h { margin-bottom: 6px; }
+.prt-mins { font-size: 13px; font-weight: 700; color: var(--vz-t-brand); }
+.prt-brief { font-weight: 600; }
+.prt-steps { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 8px; }
+.prt-steps li { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 8px; align-items: start; }
+.prt-box { display: block; width: 15px; height: 15px; margin-top: .3em; border: 1.5px solid var(--ink-2); border-radius: 3px; background: #fff; }
+.prt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 10px; margin-top: 14px; }
+.prt-cell { padding: 10px 12px; border-radius: 8px; background: var(--panel-2); font-size: 14px; }
+.prt-cell__h { margin-bottom: 4px; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
+.prt-cell ul { margin: 0; padding-left: 16px; }
+.prt-cell .prt-muted { margin-top: 6px; }
+.prt-note { margin-top: 10px; font-size: 12.5px; color: var(--ink-2); }
+.prt-artefact { margin-top: 14px; }
+.prt-artefact__h { font-size: 15px; }
+.prt-artefact__note { margin-top: 4px; font-size: 13.5px; color: var(--ink-2); }
+
+/* AI Lab */
+.prt-lead { font-weight: 600; }
+.prt-ai .prt-muted { margin-top: 6px; }
+.prt-prompt { margin-top: 12px; border: 1px solid var(--line-2); border-radius: 8px; overflow: hidden; }
+.prt-prompt__h { padding: 8px 12px; border-bottom: 1px solid var(--line); background: var(--panel-2); font-size: 14.5px; }
+.prt-prompt__body { margin: 0; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; font-family: "IBM Plex Mono", ui-monospace, Consolas, monospace; font-size: 12px; line-height: 1.5; color: var(--ink); }
+.prt-reply { color: var(--ink-2); }
+
+/* journal, closing line */
+.prt-lines { margin-top: 6px; }
+.prt-lines span { display: block; height: 9mm; border-bottom: 1px solid var(--line-2); }
+.prt-journal .prt-muted { margin-top: 8px; }
+.prt-motivation { margin-top: 22px; padding: 12px 16px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-style: italic; text-align: center; }
+
+/* quiz (no answers here: they are on the Answers page) */
+/* block, not grid: Chromium honours "keep with next" (break-after: avoid) into a block list, not into a grid */
+.prt-qs { list-style: none; margin: 10px 0 0; padding: 0; }
+.prt-q + .prt-q { margin-top: 14px; }
+.prt-q__stem { font-weight: 600; }
+.prt-q__n { margin-right: 4px; color: var(--vz-t-brand); font-weight: 700; }
+.prt-opts { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 5px; }
+.prt-opts li { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 8px; align-items: start; font-size: 14px; }
+.prt-opt__l { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border: 1.5px solid var(--ink-2); border-radius: 50%; font-size: 11.5px; font-weight: 700; line-height: 1; }
+
+/* answers */
+.prt-ans-day + .prt-ans-day { margin-top: 6px; }
+.prt-ans { list-style: none; margin: 0; padding: 0; }
+.prt-ans__item { padding: 8px 0; border-bottom: 1px solid var(--line); }
+.prt-ans__key { margin-right: 6px; font-weight: 700; color: var(--vz-t-up); font-variant-numeric: tabular-nums; }
+.prt-ans__why { margin-top: 3px; font-size: 13px; color: var(--ink-2); }
+
+/* last page */
+.prt-legal p + p { margin-top: 10px; }
+.prt-company { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 14px; margin: 14px 0 0; font-size: 13.5px; }
+.prt-company dt { color: var(--ink-2); }
+.prt-company dd { margin: 0; overflow-wrap: anywhere; }
+.prt-disclaimer { padding: 12px 14px; border: 1.5px solid var(--ink-2); border-radius: 8px; font-size: 13px; }
+
+/* ---------- paper ---------- */
+@media print {
+  html:has(.prt-doc), body:has(.prt-doc) { background: #fff !important; }
+  /* the app shell (strip, header, nav, site footer, phone bar) stays on screen only; the handout carries its own
+     credential line on every page and the full disclaimer on its last page */
+  body:has(.prt-doc) .lrn-shell > :not(.lrn-body) { display: none !important; }
+  /* plain blocks all the way down: inside a flex container Chromium does not honour "keep with next" */
+  body:has(.prt-doc) :is(.lrn-shell, .lrn-body, .lrn-main, .lrn-max) { display: block !important; min-height: 0 !important; max-width: none !important; margin: 0 !important; padding: 0 !important; }
+  .prt-bar, nextjs-portal { display: none !important; }
+  .prt-doc { page: prt; max-width: none; margin: 0; padding: 0; border: 0; border-radius: 0; box-shadow: none; font-size: 10.5pt; line-height: 1.5; }
+  .prt-doc[data-lang="dv"] { line-height: 1.65; }
+  .prt-cover { min-height: 258mm; break-after: page; }
+  .prt-cover__foot { margin-top: auto; }
+  .prt-contents { break-after: page; }
+  .prt-day { margin-top: 0; break-before: page; }
+  .prt-doc--day .prt-day { break-before: auto; }
+  .prt-answers, .prt-legal { break-before: page; }
+  /* never split these; a heading always stays with what follows it */
+  .prt-doc .vz:not(.vz--table), .prt-q, .prt-term, .prt-cell, .prt-example, .prt-remember, .prt-prompt, .prt-howto,
+  .prt-toc > li, .prt-cover__days li, .prt-steps li, .prt-ans__item, .prt-motivation, .prt-disclaimer, .prt-company,
+  .prt-dayhead, .prt-lines { break-inside: avoid; }
+  .prt-doc :is(h2, h3, h4), .prt-topic__head, .prt-task__head, .prt-artefact__h, .prt-artefact__note { break-after: avoid; }
+  /* the short lead-in lines under a section heading travel with what they introduce */
+  .prt-brief, .prt-ai > .prt-lead, .prt-ai > .prt-muted:not(:last-child), .prt-journal > .prt-p, .prt-lines,
+  .prt-quiz > .prt-muted, .prt-answers > .prt-muted { break-after: avoid; break-inside: avoid; }
+  .prt-qs, .prt-q:first-child, .prt-steps, .prt-lines, .prt-ai > .prt-prompt:first-of-type { break-before: avoid; }
+  .prt-doc p { orphans: 3; widows: 3; }
+  .prt-doc a { text-decoration: none; }
+}
