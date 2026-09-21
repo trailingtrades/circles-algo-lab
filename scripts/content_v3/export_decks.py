@@ -139,6 +139,12 @@ def sha256(path):
     return h.hexdigest()
 
 
+def text_sha256(path):
+    """sha256 of a text file with CRLF read as LF, so a Windows checkout (core.autocrlf) and CI agree."""
+    with open(path, "rb") as f:
+        return hashlib.sha256(f.read().replace(b"\r\n", b"\n")).hexdigest()
+
+
 def git(*args):
     try:
         return subprocess.run(["git", *args], cwd=REPO, capture_output=True, text=True, timeout=30).stdout.strip()
@@ -166,7 +172,7 @@ def write_manifest(out_dir, made):
         prev[os.path.basename(path)] = {
             "name": os.path.basename(path), "kind": "deck", "week": week, "lang": lang,
             "bytes": os.path.getsize(path), "slides": n, "sha256": sha256(path),
-            "days": {d: sha256(os.path.join(bs.SRC, d)) for d in days if os.path.exists(os.path.join(bs.SRC, d))}}
+            "days": {d: text_sha256(os.path.join(bs.SRC, d)) for d in days if os.path.exists(os.path.join(bs.SRC, d))}}
     manifest.setdefault("about", "Stage 1 class files in this folder, with the sha256 of every "
                                  "scripts/content_v3/smart/dayNN.json each one was built from.")
     manifest.setdefault("exports", {})

@@ -66,7 +66,9 @@ for (const k of DEMO_BLOCK) delete env[k];
 // ---- 2. which day files, and is content/ generated from them? ----
 const dayFiles = Array.from({ length: 21 }, (_, i) => `day${String(i + 1).padStart(2, "0")}.json`).filter((f) => existsSync(join(DAYS, f)));
 if (dayFiles.length !== 21) fail(`scripts/content_v3/smart has ${dayFiles.length} of 21 day files`);
-const dayHash = Object.fromEntries(dayFiles.map((f) => [f, sha256(readFileSync(join(DAYS, f)))]));
+/** Text files hash with CRLF read as LF, so a Windows checkout (core.autocrlf) and CI agree. */
+const textSha256 = (buf) => sha256(Buffer.from(buf.toString("latin1").replace(/\r\n/g, "\n"), "latin1"));
+const dayHash = Object.fromEntries(dayFiles.map((f) => [f, textSha256(readFileSync(join(DAYS, f)))]));
 
 function contentBehind() {
   const sessions = JSON.parse(readFileSync(join(ROOT, CONTENT[0]), "utf8"));
@@ -205,7 +207,7 @@ manifest = {
       validator: validation,
       content_in_sync: behind.length === 0,
       content_behind: behind,
-      content: Object.fromEntries(CONTENT.map((p) => [p, sha256(readFileSync(join(ROOT, p)))])),
+      content: Object.fromEntries(CONTENT.map((p) => [p, textSha256(readFileSync(join(ROOT, p)))])),
       files: merged,
     },
   },

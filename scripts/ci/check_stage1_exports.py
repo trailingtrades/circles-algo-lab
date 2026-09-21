@@ -27,6 +27,12 @@ def sha256(path):
   return h.hexdigest()
 
 
+def text_sha256(path):
+  """sha256 of a text file with CRLF read as LF, so a Windows checkout (core.autocrlf) and CI agree."""
+  with open(path, "rb") as f:
+    return hashlib.sha256(f.read().replace(b"\r\n", b"\n")).hexdigest()
+
+
 def warn(msg):
   print(f"::warning title=Stage 1 exports::{msg}" if GH else f"WARNING: {msg}")
 
@@ -49,7 +55,7 @@ def main(argv):
     return 1 if strict else 0
   now = {}
   for f in sorted(os.listdir(DAYS)) if os.path.isdir(DAYS) else []:
-    if f.startswith("day") and f.endswith(".json"): now[f] = sha256(os.path.join(DAYS, f))
+    if f.startswith("day") and f.endswith(".json"): now[f] = text_sha256(os.path.join(DAYS, f))
   problems, listed, checked = 0, set(), 0
   for name, sec in sections(m).items():
     if sec.get("content_in_sync") is False:
