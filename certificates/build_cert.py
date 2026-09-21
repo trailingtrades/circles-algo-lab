@@ -22,7 +22,7 @@ def render(data: dict) -> bytes:
     verify_url = data["verify_url"]
     vals = {
         "learner_name": data["learner_name"], "level_title": data["level_title"], "cohort_name": data["cohort_name"],
-        "session_count": str(data.get("session_count", 20)), "band": "Distinction" if data["band"] == "distinction" else "Pass",
+        "session_count": str(data.get("session_count", 21)), "band": "Distinction" if data["band"] == "distinction" else "Pass",
         "cert_no": data["cert_no"], "issued_on": data["issued_on"], "year": data["issued_on"][-4:] if "-" not in data["issued_on"] else data["issued_on"][:4],
         "verify_url_display": verify_url.replace("https://", "").replace("http://", "").split("?")[0],
     }

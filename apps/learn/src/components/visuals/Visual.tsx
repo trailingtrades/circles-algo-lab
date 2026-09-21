@@ -1,5 +1,5 @@
 import { tr, type Lang, type L } from "@/lib/i18n/lang";
-import type { Visual as V, FlowV, StepsV, CompareV, CalcV, BarsV, LineV, CandlesV, MindmapV, StoryV } from "@/lib/content/visuals";
+import type { Visual as V, FlowV, StepsV, CompareV, CalcV, BarsV, LineV, CandlesV, MindmapV, StoryV, TableV, Cell } from "@/lib/content/visuals";
 import { VL, CHAR, toneFill, toneText } from "./labels";
 import { Avatar } from "./Avatar";
 
@@ -376,10 +376,39 @@ function Story({ v, lang }: { v: StoryV; lang: Lang }) {
   );
 }
 
+/** A ruled table. It scrolls sideways inside its card on a phone rather than widening the page (the wrapper is a
+ *  focusable, named region so keyboard users can scroll it too; its name is the table's title, else the heading it
+ *  sits under). Plain-string cells are numbers or symbols, set in tabular figures; blank_rows adds empty ruled rows
+ *  to fill in, which is what makes a table a template. */
+function Table({ v, lang, label }: { v: TableV; lang: Lang; label?: string }) {
+  const blank = Math.max(0, Math.min(12, Math.floor(Number(v.blank_rows) || 0)));
+  const cols = v.head.length;
+  const cell = (c: Cell | undefined) => (c == null ? "" : typeof c === "string" ? c : tr(c, lang));
+  return (
+    <Frame kind="table" title={v.title} caption={v.caption} lang={lang}>
+      <div className="vz-table__wrap" role="region" aria-label={v.title ? tr(v.title, lang) : label || tr(VL.table, lang)} tabIndex={0}>
+        <table className="vz-table">
+          <thead><tr>{v.head.map((h, j) => <th key={j} scope="col">{tr(h, lang)}</th>)}</tr></thead>
+          <tbody>
+            {(v.rows ?? []).map((r, i) => (
+              <tr key={i}>{Array.from({ length: cols }, (_, j) => <td key={j} className={typeof r?.[j] === "string" ? "vz-table__num" : undefined}>{cell(r?.[j])}</td>)}</tr>
+            ))}
+            {Array.from({ length: blank }, (_, i) => (
+              <tr key={`b${i}`} className="vz-table__blank">{Array.from({ length: cols }, (_, j) => <td key={j} />)}</tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      {v.note && <p className="vz-note">{tr(v.note, lang)}</p>}
+    </Frame>
+  );
+}
+
 /** Draws any teaching visual. Unknown or malformed specs render nothing rather than breaking the lesson: each
  *  kind is drawn only when the fields it needs are there. (A try/catch here never caught anything: React
- *  renders the returned element later, outside this function.) */
-export function Visual({ v, lang }: { v: V | null | undefined; lang: Lang }) {
+ *  renders the returned element later, outside this function.) `label` names a table's scroll region when the
+ *  table has no title of its own (pass the heading it sits under). */
+export function Visual({ v, lang, label }: { v: V | null | undefined; lang: Lang; label?: string }) {
   if (!v || typeof v !== "object") return null;
   switch (v.kind) {
     case "flow": return v.nodes?.length ? <Flow v={v} lang={lang} /> : null;
@@ -391,6 +420,7 @@ export function Visual({ v, lang }: { v: V | null | undefined; lang: Lang }) {
     case "candles": return v.bars?.length ? <Candles v={v} lang={lang} /> : null;
     case "mindmap": return v.branches?.length ? <Mindmap v={v} lang={lang} /> : null;
     case "story": return v.panels?.length ? <Story v={v} lang={lang} /> : null;
+    case "table": return v.head?.length && Array.isArray(v.rows) ? <Table v={v} lang={lang} label={label} /> : null;
     default: return null;
   }
 }

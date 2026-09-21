@@ -1,0 +1,250 @@
+{
+ "about": "Stage 1 class files in this folder, with the sha256 of every scripts/content_v3/smart/dayNN.json each one was built from. scripts/ci/check_stage1_exports.py warns (non-blocking) when a day file changed after its export.",
+ "exports": {
+  "handouts": {
+   "generator": "apps/learn/scripts/export-stage1.mjs",
+   "generated_at": "2026-09-21T07:03:44.622Z",
+   "git_commit": "9ab2fe14542a0dc832f7211ec84390164343f277",
+   "git_dirty": true,
+   "validator": "ok",
+   "content_in_sync": true,
+   "content_behind": [],
+   "content": {
+    "content/sessions/foundation.json": "776b9cb82b1e82fe4bd8df0c5796d7e066554c05778114fcc27d37b93b3713e4",
+    "content/quizzes/foundation.json": "669f8d75bf180b0227530c1b90b9a69bfd744f9c3183c0c83062c0559f168f9a"
+   },
+   "files": [
+    {
+     "name": "CIRCLE-SMART_Week1_Handout_EN.pdf",
+     "kind": "handout",
+     "week": 1,
+     "lang": "en",
+     "bytes": 4035092,
+     "pages": 93,
+     "sha256": "9d548af361930c45b3a827831d5d0e67e5ed79b32344d1614334aa13c19b064d",
+     "days": {
+      "day01.json": "97ba645d0b802ba9b90c6abb9e085bc6dbbb91c2b251c4b475479c3bca367fe5",
+      "day02.json": "8e076974a967858fa043067381382cbeef45d5ff9878c82e40da2ce9d30125cd",
+      "day03.json": "9c284df6c5bca0cb215736f9b0bbdca2aa89d8dfef68cd10f2abd25b5dc78fbe",
+      "day04.json": "d147ab7933fbccde297531346221c2a226b1ff9dc3ca7a0acaeb8bb1aa56db8d",
+      "day05.json": "3b0a2b69d19897ca8272a4aa2222f7294e5d8a25af6c455f4536412ac12d562c",
+      "day06.json": "449645c1de6f814df79877c2b92c835386707424561d35198c00cf26a2444bbc",
+      "day07.json": "57309f4dcaa70964e54d9d456d0752ced45c5aa5b50b583936ee919b3f97b780"
+     }
+    },
+    {
+     "name": "CIRCLE-SMART_Week1_Handout_HINGLISH.pdf",
+     "kind": "handout",
+     "week": 1,
+     "lang": "hi",
+     "bytes": 4075695,
+     "pages": 99,
+     "sha256": "0204251baf9ec63e986e8a5c9a7e117b53ba4925dba5c2b2e9a4a150b63542d2",
+     "days": {
+      "day01.json": "97ba645d0b802ba9b90c6abb9e085bc6dbbb91c2b251c4b475479c3bca367fe5",
+      "day02.json": "8e076974a967858fa043067381382cbeef45d5ff9878c82e40da2ce9d30125cd",
+      "day03.json": "9c284df6c5bca0cb215736f9b0bbdca2aa89d8dfef68cd10f2abd25b5dc78fbe",
+      "day04.json": "d147ab7933fbccde297531346221c2a226b1ff9dc3ca7a0acaeb8bb1aa56db8d",
+      "day05.json": "3b0a2b69d19897ca8272a4aa2222f7294e5d8a25af6c455f4536412ac12d562c",
+      "day06.json": "449645c1de6f814df79877c2b92c835386707424561d35198c00cf26a2444bbc",
+      "day07.json": "57309f4dcaa70964e54d9d456d0752ced45c5aa5b50b583936ee919b3f97b780"
+     }
+    },
+    {
+     "name": "CIRCLE-SMART_Week2_Handout_EN.pdf",
+     "kind": "handout",
+     "week": 2,
+     "lang": "en",
+     "bytes": 4062452,
+     "pages": 97,
+     "sha256": "9b23c9c749dcde405c7ec2744ac347609c17b82e08aec11db3a55672279c3785",
+     "days": {
+      "day08.json": "c0e90699d5cda2620d8232d77ce603e5d72d867dd95a927e071aec2d17dba613",
+      "day09.json": "3eec6d8f662d4f6635365049e6052d95befd8dbc12466a1148fd10e4e7de3a99",
+      "day10.json": "e1cda6d3aeea1177cfd267019f720665fb0a20b698a147aa65fa65f8a37a2be9",
+      "day11.json": "4ffd72091bf421875f4571b4a460b619dcf0bdc4c9f4173703d27717a4f81b60",
+      "day12.json": "5ffdfb1a2b5356a2413ec6c463ebca78b654ab6b4167217e1b5497753897af53",
+      "day13.json": "72c4bad2801a23e0745b9db107bb15e8dc101b3fa4da687a572e3ef0305ae704",
+      "day14.json": "8ffd1a10e70e5540a73d7204d4db484af362cd3361d8e4f42116f13ce1391e4c"
+     }
+    },
+    {
+     "name": "CIRCLE-SMART_Week2_Handout_HINGLISH.pdf",
+     "kind": "handout",
+     "week": 2,
+     "lang": "hi",
+     "bytes": 4110326,
+     "pages": 102,
+     "sha256": "179903c5a385cc3446b9548bb19acc68613b76f6d86b26a87ae5f747b403533a",
+     "days": {
+      "day08.json": "c0e90699d5cda2620d8232d77ce603e5d72d867dd95a927e071aec2d17dba613",
+      "day09.json": "3eec6d8f662d4f6635365049e6052d95befd8dbc12466a1148fd10e4e7de3a99",
+      "day10.json": "e1cda6d3aeea1177cfd267019f720665fb0a20b698a147aa65fa65f8a37a2be9",
+      "day11.json": "4ffd72091bf421875f4571b4a460b619dcf0bdc4c9f4173703d27717a4f81b60",
+      "day12.json": "5ffdfb1a2b5356a2413ec6c463ebca78b654ab6b4167217e1b5497753897af53",
+      "day13.json": "72c4bad2801a23e0745b9db107bb15e8dc101b3fa4da687a572e3ef0305ae704",
+      "day14.json": "8ffd1a10e70e5540a73d7204d4db484af362cd3361d8e4f42116f13ce1391e4c"
+     }
+    },
+    {
+     "name": "CIRCLE-SMART_Week3_Handout_EN.pdf",
+     "kind": "handout",
+     "week": 3,
+     "lang": "en",
+     "bytes": 4142544,
+     "pages": 102,
+     "sha256": "c037ce573f9260592ef72977d1dfdd4e1eae366383f30fbc27f2a517a7d10167",
+     "days": {
+      "day15.json": "620bedcce6294d7ad46d21504ad2293c50dc7ebb3b435a135807080da00ed0db",
+      "day16.json": "a4872c8c5456d1db92e25d06e4cd55a2d95af9149b8c40de47e8798976021a01",
+      "day17.json": "f21a6f03f1d81d47922fe9c4327b3e7bf814f9c59f21018ec2570367fbd2838a",
+      "day18.json": "81b487dfc95e8cde69a98db6059f05560828a944f80839407936d6be9ed11375",
+      "day19.json": "d1fe90ee557bbe6128dac5f4286011ddcf2d393a43e70360122b510583a05e75",
+      "day20.json": "444510a6fa24878c3e657eac36372584a361d2d184a5c342bfcf5d80fd15f921",
+      "day21.json": "6b62b510b550df298c5c114f713a8cfb87d6c8f40db7129438ae50e523bfa84f"
+     }
+    },
+    {
+     "name": "CIRCLE-SMART_Week3_Handout_HINGLISH.pdf",
+     "kind": "handout",
+     "week": 3,
+     "lang": "hi",
+     "bytes": 4183302,
+     "pages": 107,
+     "sha256": "05cd4ba4407bac499c003b1872b977d57bdf49056151b49f8a845fa1e5af7f82",
+     "days": {
+      "day15.json": "620bedcce6294d7ad46d21504ad2293c50dc7ebb3b435a135807080da00ed0db",
+      "day16.json": "a4872c8c5456d1db92e25d06e4cd55a2d95af9149b8c40de47e8798976021a01",
+      "day17.json": "f21a6f03f1d81d47922fe9c4327b3e7bf814f9c59f21018ec2570367fbd2838a",
+      "day18.json": "81b487dfc95e8cde69a98db6059f05560828a944f80839407936d6be9ed11375",
+      "day19.json": "d1fe90ee557bbe6128dac5f4286011ddcf2d393a43e70360122b510583a05e75",
+      "day20.json": "444510a6fa24878c3e657eac36372584a361d2d184a5c342bfcf5d80fd15f921",
+      "day21.json": "6b62b510b550df298c5c114f713a8cfb87d6c8f40db7129438ae50e523bfa84f"
+     }
+    }
+   ]
+  },
+  "decks": {
+   "generator": "scripts/content_v3/export_decks.py",
+   "generated_at": "2026-09-21T07:05:15Z",
+   "git_commit": "9ab2fe14542a0dc832f7211ec84390164343f277",
+   "git_dirty": true,
+   "validator": "ok",
+   "note": "Decks are built from the day files directly (not from content/*.json).",
+   "files": [
+    {
+     "name": "CIRCLE-SMART_Week1_Deck_EN.pptx",
+     "kind": "deck",
+     "week": 1,
+     "lang": "en",
+     "bytes": 891361,
+     "slides": 165,
+     "sha256": "87286bc7792d8b95f1a9addc4fe890593cdd081625f2168970f80d5b36bfa03e",
+     "days": {
+      "day01.json": "97ba645d0b802ba9b90c6abb9e085bc6dbbb91c2b251c4b475479c3bca367fe5",
+      "day02.json": "8e076974a967858fa043067381382cbeef45d5ff9878c82e40da2ce9d30125cd",
+      "day03.json": "9c284df6c5bca0cb215736f9b0bbdca2aa89d8dfef68cd10f2abd25b5dc78fbe",
+      "day04.json": "d147ab7933fbccde297531346221c2a226b1ff9dc3ca7a0acaeb8bb1aa56db8d",
+      "day05.json": "3b0a2b69d19897ca8272a4aa2222f7294e5d8a25af6c455f4536412ac12d562c",
+      "day06.json": "449645c1de6f814df79877c2b92c835386707424561d35198c00cf26a2444bbc",
+      "day07.json": "57309f4dcaa70964e54d9d456d0752ced45c5aa5b50b583936ee919b3f97b780",
+      "day08.json": "c0e90699d5cda2620d8232d77ce603e5d72d867dd95a927e071aec2d17dba613"
+     }
+    },
+    {
+     "name": "CIRCLE-SMART_Week1_Deck_HINGLISH.pptx",
+     "kind": "deck",
+     "week": 1,
+     "lang": "hi",
+     "bytes": 905702,
+     "slides": 166,
+     "sha256": "f85cb886a670796c7f438e107322a4fa2502a3b3898e92abf786b211b110846f",
+     "days": {
+      "day01.json": "97ba645d0b802ba9b90c6abb9e085bc6dbbb91c2b251c4b475479c3bca367fe5",
+      "day02.json": "8e076974a967858fa043067381382cbeef45d5ff9878c82e40da2ce9d30125cd",
+      "day03.json": "9c284df6c5bca0cb215736f9b0bbdca2aa89d8dfef68cd10f2abd25b5dc78fbe",
+      "day04.json": "d147ab7933fbccde297531346221c2a226b1ff9dc3ca7a0acaeb8bb1aa56db8d",
+      "day05.json": "3b0a2b69d19897ca8272a4aa2222f7294e5d8a25af6c455f4536412ac12d562c",
+      "day06.json": "449645c1de6f814df79877c2b92c835386707424561d35198c00cf26a2444bbc",
+      "day07.json": "57309f4dcaa70964e54d9d456d0752ced45c5aa5b50b583936ee919b3f97b780",
+      "day08.json": "c0e90699d5cda2620d8232d77ce603e5d72d867dd95a927e071aec2d17dba613"
+     }
+    },
+    {
+     "name": "CIRCLE-SMART_Week2_Deck_EN.pptx",
+     "kind": "deck",
+     "week": 2,
+     "lang": "en",
+     "bytes": 918646,
+     "slides": 170,
+     "sha256": "6c6419ac026f021dc1381ad29402c23650ae343a8622188e31868411e55081a8",
+     "days": {
+      "day08.json": "c0e90699d5cda2620d8232d77ce603e5d72d867dd95a927e071aec2d17dba613",
+      "day09.json": "3eec6d8f662d4f6635365049e6052d95befd8dbc12466a1148fd10e4e7de3a99",
+      "day10.json": "e1cda6d3aeea1177cfd267019f720665fb0a20b698a147aa65fa65f8a37a2be9",
+      "day11.json": "4ffd72091bf421875f4571b4a460b619dcf0bdc4c9f4173703d27717a4f81b60",
+      "day12.json": "5ffdfb1a2b5356a2413ec6c463ebca78b654ab6b4167217e1b5497753897af53",
+      "day13.json": "72c4bad2801a23e0745b9db107bb15e8dc101b3fa4da687a572e3ef0305ae704",
+      "day14.json": "8ffd1a10e70e5540a73d7204d4db484af362cd3361d8e4f42116f13ce1391e4c",
+      "day15.json": "620bedcce6294d7ad46d21504ad2293c50dc7ebb3b435a135807080da00ed0db"
+     }
+    },
+    {
+     "name": "CIRCLE-SMART_Week2_Deck_HINGLISH.pptx",
+     "kind": "deck",
+     "week": 2,
+     "lang": "hi",
+     "bytes": 932086,
+     "slides": 171,
+     "sha256": "4897fa9ff51a90a21c3f75d8e3ccfaab3a2999b40e806626696ebe2010866ce2",
+     "days": {
+      "day08.json": "c0e90699d5cda2620d8232d77ce603e5d72d867dd95a927e071aec2d17dba613",
+      "day09.json": "3eec6d8f662d4f6635365049e6052d95befd8dbc12466a1148fd10e4e7de3a99",
+      "day10.json": "e1cda6d3aeea1177cfd267019f720665fb0a20b698a147aa65fa65f8a37a2be9",
+      "day11.json": "4ffd72091bf421875f4571b4a460b619dcf0bdc4c9f4173703d27717a4f81b60",
+      "day12.json": "5ffdfb1a2b5356a2413ec6c463ebca78b654ab6b4167217e1b5497753897af53",
+      "day13.json": "72c4bad2801a23e0745b9db107bb15e8dc101b3fa4da687a572e3ef0305ae704",
+      "day14.json": "8ffd1a10e70e5540a73d7204d4db484af362cd3361d8e4f42116f13ce1391e4c",
+      "day15.json": "620bedcce6294d7ad46d21504ad2293c50dc7ebb3b435a135807080da00ed0db"
+     }
+    },
+    {
+     "name": "CIRCLE-SMART_Week3_Deck_EN.pptx",
+     "kind": "deck",
+     "week": 3,
+     "lang": "en",
+     "bytes": 950548,
+     "slides": 175,
+     "sha256": "2658c33c00d2d21a8775ba7da740f9340ac6318dd2ed627cb7883fec1c7f2c05",
+     "days": {
+      "day15.json": "620bedcce6294d7ad46d21504ad2293c50dc7ebb3b435a135807080da00ed0db",
+      "day16.json": "a4872c8c5456d1db92e25d06e4cd55a2d95af9149b8c40de47e8798976021a01",
+      "day17.json": "f21a6f03f1d81d47922fe9c4327b3e7bf814f9c59f21018ec2570367fbd2838a",
+      "day18.json": "81b487dfc95e8cde69a98db6059f05560828a944f80839407936d6be9ed11375",
+      "day19.json": "d1fe90ee557bbe6128dac5f4286011ddcf2d393a43e70360122b510583a05e75",
+      "day20.json": "444510a6fa24878c3e657eac36372584a361d2d184a5c342bfcf5d80fd15f921",
+      "day21.json": "6b62b510b550df298c5c114f713a8cfb87d6c8f40db7129438ae50e523bfa84f"
+     }
+    },
+    {
+     "name": "CIRCLE-SMART_Week3_Deck_HINGLISH.pptx",
+     "kind": "deck",
+     "week": 3,
+     "lang": "hi",
+     "bytes": 965852,
+     "slides": 176,
+     "sha256": "d0c26b119da1acb1e7ce29daa84669edd2046932a97480a538a680dcfe19a7f9",
+     "days": {
+      "day15.json": "620bedcce6294d7ad46d21504ad2293c50dc7ebb3b435a135807080da00ed0db",
+      "day16.json": "a4872c8c5456d1db92e25d06e4cd55a2d95af9149b8c40de47e8798976021a01",
+      "day17.json": "f21a6f03f1d81d47922fe9c4327b3e7bf814f9c59f21018ec2570367fbd2838a",
+      "day18.json": "81b487dfc95e8cde69a98db6059f05560828a944f80839407936d6be9ed11375",
+      "day19.json": "d1fe90ee557bbe6128dac5f4286011ddcf2d393a43e70360122b510583a05e75",
+      "day20.json": "444510a6fa24878c3e657eac36372584a361d2d184a5c342bfcf5d80fd15f921",
+      "day21.json": "6b62b510b550df298c5c114f713a8cfb87d6c8f40db7129438ae50e523bfa84f"
+     }
+    }
+   ]
+  }
+ }
+}

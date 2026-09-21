@@ -1,7 +1,8 @@
-# CIRCLE S.M.A.R.T — Stage 1 course bible (v3, 19 Sep 2026)
+# CIRCLE S.M.A.R.T — Stage 1 course bible (v3, 19 Sep 2026; updated 21 Sep 2026)
 
 One page every lesson author and reviewer follows so 21 days tell ONE consistent story.
-File format: `docs/SMART_CONTENT_SCHEMA.md`. Built from the professor audits of 19 Sep 2026.
+File format: `docs/SMART_CONTENT_SCHEMA.md`. Built from the professor audits of 19 Sep 2026; the 21 Sep
+update adds the closing auction, the TradingView free-plan rule, the fixed 1R, the 25% cap timing and the ORB row.
 
 ## The promise (how we describe Stage 1)
 21 days, 3 weeks x 7. A complete beginner learns how the Indian market works, how to read a
@@ -13,22 +14,24 @@ Next step after Stage 1: **Stage 2, CIRCLE W.I.N.N.E.R.S**.
 | Rule | Value |
 |---|---|
 | Challenge capital (virtual) | Rs 10,00,000 (Rs 10 lakh) — the app's Portfolio page uses this. Examples may also show Rs 1,00,000 to make scaling obvious. |
-| Risk per trade | 1% of capital (Rs 10,000 on the challenge capital) = 1R |
-| Position size | quantity = (capital x 1%) / (entry - stop), rounded down |
-| Max exposure per position | 25% of capital |
-| Max open trades | 3 at a time (so at most 3R at risk) |
-| Daily stop ("kill-switch for humans") | stop for the day after -2R (two full losses) |
+| Risk per trade | 1R = Rs 10,000, 1% of the Rs 10 lakh starting capital, FIXED for the whole challenge: it does not grow after wins or shrink after losses, so every trade in the journal is measured with the same ruler (Day 9). A loss is always rupees ÷ Rs 10,000, even when the account shows less than Rs 10 lakh. |
+| Position size | quantity = (capital x 1%) / (entry - stop), rounded down; in the challenge that is Rs 10,000 (the fixed 1R) / (entry - stop). Then apply the 25% cap and take the smaller quantity. |
+| Max exposure per position | 25% of capital, computed at the maximum planned entry price, the evening before (never at the actual open). ORB exception: ORB has no evening plan, so size and cap are worked out between the breakout close and the next open, using that close as the planned entry (Day 13). |
+| Max open trades | 3 at a time, each in a different sector (so at most 3R at risk) |
+| Daily stop ("kill-switch for humans") | stop for the day after -2R (two full losses). ORB adds a second line: two stop-outs or -2R, whichever comes first (Day 13). |
 | Weekly pause | pause and review after -5R in a week |
 | Chart tools (the "4 tools") | EMA 20 + EMA 50 (one pair), RSI 14, ATR 14 — plus VWAP on intraday charts only |
 | Swing stop | 1.5 x ATR(14) below entry |
 | Default challenge strategy | EMA Pullback Swing (suits people with a day job). ORB is optional, only for those who can watch 9:15-11:00. |
-| Opening range (ORB) | the first 15 minutes, 9:15-9:30; stop at the other side of the range; liquid cash stocks only |
+| Opening range (ORB) | the first 15 minutes, 9:15-9:30; stop at the other side of the range; liquid cash stocks only; square off the same day; the 25% cap is worked out at the breakout close (ORB has no evening plan); daily limit: two stop-outs or -2R, whichever comes first |
 | Paper trading starts | Day 12 |
 | Samples | 30 trades minimum before judging a rule; 100 for confidence |
 
 ## Facts to state carefully (say "check the NSE/SEBI site for the latest" where it can change)
 - Equity cash settlement is T+1 (an optional same-day cycle exists for a limited list of stocks — "check with your broker").
-- NSE equity: pre-open 9:00-9:15, normal session 9:15-15:30 on trading days; holidays and Muhurat trading are announced by the exchange.
+- NSE equity: pre-open 9:00-9:15, normal session 9:15-15:30 on trading days (for stocks that have F&O contracts, continuous trading ends at 3:15 pm; see the closing auction below); holidays and Muhurat trading are announced by the exchange.
+- Closing Auction Session (CAS), effective 3 Aug 2026 (SEBI circular of 16 Jan 2026, implemented by NSE and BSE): for stocks that have F&O contracts, continuous trading in the cash market ends at 3:15 pm and a closing auction (about 3:15-3:35 pm, with a random close near 3:28-3:30) sets ONE closing price. Other stocks keep continuous trading to 3:30 pm, and their closing price is the volume-weighted average of roughly the last 30 minutes. Equity derivatives now trade till 3:40 pm. Say "check NSE for the latest". Broker intraday auto square-off times are set by each broker: never print one; say "check your broker's cut-off".
+- TradingView free (Basic) plan: it allows only a small number of active alerts, and the limits change. Never print a number, and never make a task depend on indicator or technical alerts on the free plan. The free-tools path is: price alerts at levels worked out the evening before, or a fixed daily after-close manual check / screener run.
 - Price bands / circuit limits are set by the exchange per stock; index-based market-wide circuit breakers exist. Do not list percentages.
 - FII is now officially FPI (Foreign Portfolio Investor): write "FII/FPI".
 - GTT is a broker facility, not an exchange order type; an SL order has a trigger price; a stop-loss does NOT promise your exit price (gaps, slippage, circuits, an SL-limit that does not fill).
@@ -43,12 +46,14 @@ Next step after Stage 1: **Stage 2, CIRCLE W.I.N.N.E.R.S**.
 ## Compliance lines (never break)
 - The only F&O-loss statistic: "SEBI FY26 study (Aug 2026): 87.7% of individual F&O traders were in net loss, aggregate Rs 91,685 crore, average Rs 1.17 lakh per loss-making trader." Quote it as is. Never attach a cause to it ("because of leverage") — any explanation is the course's own teaching view, in a separate sentence.
 - Never use the word "guarantee" (even negated) — CI blocks it. Say "promise" / "vada" / "वादा".
-- No real stock names in examples: use NIFTY 50, BANKNIFTY, SENSEX, or made-up companies (Sharma Textiles Ltd, Gupta Cement Ltd, Bharat Pumps Ltd, Kiran Foods Ltd). No buy/sell calls, targets or return expectations anywhere.
+- No real stock names in examples: use NIFTY 50, BANKNIFTY, SENSEX, or made-up companies (Sharma Textiles Ltd, Gupta Cement Ltd, Bharat Pumps Ltd, Kiran Foods Ltd, Anand Snacks Ltd, Mehta Solar Ltd, Joshi Pipes Ltd, Desai Power Ltd). Keep each one's profile consistent: Mehta Solar Ltd and Joshi Pipes Ltd are small, thinly traded stocks (Day 2's order book, around Rs 80-100); Desai Power Ltd is a large company (it joins NIFTY 50 on Day 19). In Hindi (dv) text the company name stays in Latin letters. No buy/sell calls, targets or return expectations anywhere.
 - Stage 1 places NO F&O trades, not even on paper: "F&O = samjho, khelo mat".
 - Broker-agnostic: no task may require opening a broker account. Offer the no-account path (TradingView free chart, the app's Portfolio page, Google Sheets).
 - Never tell learners to join a tips channel; scam exercises use a mentor-made practice dataset.
 - AI hygiene: never paste PAN, client ID, contract notes with personal data, passwords, OTPs or API keys into any AI. Never forward AI output to others as buy/sell calls (that can be unregistered advice).
 - Internal notes ("pending sign-off", "draft") never appear in learner text.
+- Quizzes and exams: the right answer must not be findable by its length (no "always pick the longest / shortest"), and no question stem is reused anywhere in Stage 1. The validator enforces both (limits in `docs/SMART_CONTENT_SCHEMA.md`).
+- Anything the task asks the learner to build (a card, a journal, a log, a calendar) is shown as a model or template in the day's `artefacts`, using these house numbers.
 
 ## Voice
 A mature, warm professor who has seen many beginners lose money and wants this one to last.

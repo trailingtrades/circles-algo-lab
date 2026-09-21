@@ -3,20 +3,56 @@
   "questions": [
     {
       "stem": {
-        "en": "In the journey of a trade, what does the clearing corporation do?",
-        "hi": "Ek trade ke safar mein clearing corporation ka kaam kya hai?",
-        "dv": "एक ट्रेड के सफ़र में क्लियरिंग कॉर्पोरेशन का काम क्या है?"
+        "en": "Aman sells 20 shares of Kiran Foods Ltd from his demat on a Tuesday. Wednesday is an exchange holiday. Under T+1, on which day is this sale normally settled?",
+        "hi": "Aman Tuesday ko apne demat se Kiran Foods Ltd ke 20 shares bechta hai. Wednesday ko exchange holiday hai. T+1 ke hisaab se yeh sale aam taur par kis din settle hogi?",
+        "dv": "अमन मंगलवार को अपने डीमैट से Kiran Foods Ltd के 20 शेयर बेचता है। बुधवार को एक्सचेंज की छुट्टी है। T+1 के हिसाब से यह बिक्री आम तौर पर किस दिन सेटल होगी?"
       },
       "options": [
-        { "text": { "en": "It stands between buyer and seller in every trade", "hi": "Har trade mein buyer aur seller ke beech khadi rehti hai", "dv": "हर ट्रेड में ख़रीदार और बेचने वाले के बीच खड़ी रहती है" }, "correct": true },
-        { "text": { "en": "It holds your shares in electronic form, in your name", "hi": "Aapke shares electronic form mein, aapke naam par rakhti hai", "dv": "आपके शेयर इलेक्ट्रॉनिक रूप में, आपके नाम पर रखती है" }, "correct": false },
-        { "text": { "en": "It checks you have enough money before sending your order", "hi": "Order bhejne se pehle check karti hai ki aapke paise poore hain", "dv": "ऑर्डर भेजने से पहले देखती है कि आपके पैसे पूरे हैं या नहीं" }, "correct": false },
-        { "text": { "en": "It matches buy and sell orders by best price, then time", "hi": "Buy aur sell orders ko pehle best price, phir time se milaati hai", "dv": "ख़रीद-बिक्री के ऑर्डर पहले बेस्ट भाव, फिर समय के हिसाब से मिलाती है" }, "correct": false }
+        { "text": { "en": "Thursday, the next trading day after Tuesday", "hi": "Thursday ko, jo Tuesday ke baad agla trading day hai", "dv": "गुरुवार को, जो मंगलवार के बाद अगला ट्रेडिंग दिन है" }, "correct": true },
+        { "text": { "en": "Wednesday, since settlement runs on holidays too", "hi": "Wednesday ko, kyunki settlement holiday par bhi chalta hai", "dv": "बुधवार को, क्योंकि सेटलमेंट छुट्टी पर भी चलता है" }, "correct": false },
+        { "text": { "en": "Friday, since a holiday adds a day", "hi": "Friday ko, kyunki holiday ek din badha deta hai", "dv": "शुक्रवार को, क्योंकि छुट्टी एक दिन बढ़ा देती है" }, "correct": false },
+        { "text": { "en": "Tuesday itself, as the shares were already his", "hi": "Tuesday ko hi, kyunki shares pehle se uske the", "dv": "मंगलवार को ही, क्योंकि शेयर पहले से उसके थे" }, "correct": false }
       ],
       "explanation": {
-        "en": "Each link in the chain has one job. The broker checks your money and sends the order, the exchange matches buyers and sellers, and the depository (NSDL or CDSL) holds shares in your demat. The clearing corporation becomes the buyer to every seller and the seller to every buyer, so neither side has to trust a stranger to pay or deliver.",
-        "hi": "Is chain mein har kadi ka apna kaam hai. Broker aapke paise check karke order aage bhejta hai, exchange buyers aur sellers ko milaata hai, aur depository (NSDL ya CDSL) shares ko aapke demat mein rakhti hai. Clearing corporation har seller ke liye buyer ban jaati hai aur har buyer ke liye seller, taaki paise ya shares ke liye kisi ko anjaan party par bharosa na karna pade.",
-        "dv": "इस चेन में हर कड़ी का अपना काम है। ब्रोकर आपके पैसे देखकर ऑर्डर आगे भेजता है, एक्सचेंज ख़रीदारों और बेचने वालों को मिलाता है, और डिपॉज़िटरी (NSDL या CDSL) शेयर आपके डीमैट में रखती है। क्लियरिंग कॉर्पोरेशन हर बेचने वाले के लिए ख़रीदार बन जाती है और हर ख़रीदार के लिए बेचने वाली, ताकि पैसे या शेयर के लिए किसी को अनजान पार्टी पर भरोसा न करना पड़े।"
+        "en": "T+1 counts trading days, not calendar days. The first trading day after Tuesday is Thursday: the Wednesday holiday is simply skipped, and it does not add an extra day on top. A sale follows the same T+1 cycle as a purchase, even though the shares were already in his demat. The exchange announces its holiday list in advance.",
+        "hi": "T+1 trading days ginta hai, calendar days nahi. Tuesday ke baad pehla trading day Thursday hai: Wednesday ki holiday bas skip ho jaati hai, woh upar se ek extra din nahi jodti. Sale bhi usi T+1 cycle par settle hoti hai jis par khareed, chahe shares pehle se demat mein hon. Exchange apni holiday list pehle se announce kar deta hai.",
+        "dv": "T+1 ट्रेडिंग दिन गिनता है, कैलेंडर दिन नहीं। मंगलवार के बाद पहला ट्रेडिंग दिन गुरुवार है: बुधवार की छुट्टी बस छोड़ दी जाती है, वह ऊपर से एक दिन और नहीं जोड़ती। बिक्री भी उसी T+1 चक्र पर सेटल होती है जिस पर ख़रीद, चाहे शेयर पहले से डीमैट में हों। एक्सचेंज अपनी छुट्टियों की लिस्ट पहले से बता देता है।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Aman gets a call from a man who says he is 'from NSE'. He warns that Aman's demat will be frozen tonight unless Aman reads out his TPIN and the OTP just sent to his phone. What should Aman do?",
+        "hi": "Aman ko ek aadmi ka call aata hai jo kehta hai ki woh 'NSE se' bol raha hai. Woh dhamkata hai ki agar Aman ne apna TPIN aur abhi phone par aaya OTP nahi bataya, toh aaj raat uska demat freeze ho jaayega. Aman ko kya karna chahiye?",
+        "dv": "अमन को एक आदमी का कॉल आता है जो कहता है कि वह 'NSE से' बोल रहा है। वह धमकाता है कि अगर अमन ने अपना TPIN और अभी फ़ोन पर आया OTP नहीं बताया, तो आज रात उसका डीमैट फ़्रीज़ हो जाएगा। अमन को क्या करना चाहिए?"
+      },
+      "options": [
+        { "text": { "en": "Share nothing and hang up: no genuine exchange or broker asks for these", "hi": "Kuch na bataye aur call kaat de: koi asli exchange ya broker yeh nahi maangta", "dv": "कुछ न बताए और कॉल काट दे: कोई असली एक्सचेंज या ब्रोकर यह नहीं माँगता" }, "correct": true },
+        { "text": { "en": "Read out only the OTP, since it expires in a few minutes anyway", "hi": "Sirf OTP bata de, woh toh waise bhi kuch minute mein expire ho jaata hai", "dv": "सिर्फ़ OTP बता दे, वह तो वैसे भी कुछ मिनट में एक्सपायर हो जाता है" }, "correct": false },
+        { "text": { "en": "Share the TPIN, since it can only approve sales, not purchases", "hi": "TPIN bata de, kyunki usse sirf bikri approve hoti hai, khareed nahi", "dv": "TPIN बता दे, क्योंकि उससे सिर्फ़ बिक्री मंज़ूर होती है, ख़रीद नहीं" }, "correct": false },
+        { "text": { "en": "Ask for the caller's NSE employee ID first, then share both", "hi": "Pehle caller se uski NSE employee ID maange, phir dono bata de", "dv": "पहले कॉल करने वाले से उसकी NSE एम्प्लॉई ID माँगे, फिर दोनों बता दे" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "No genuine broker, exchange or SEBI official ever asks for your password, OTP or TPIN (Day 1). The TPIN approves selling shares out of your demat, which is exactly what a fraudster wants, and an OTP can approve a login or a payment. An ID read out on a call proves nothing, and NSE does not even hold your demat: NSDL or CDSL do, through your DP. Hang up, check your account only through your broker's official app or website, and report the call at cybercrime.gov.in. If money or shares have already gone, call 1930 at once.",
+        "hi": "Koi bhi asli broker, exchange ya SEBI ka official aapse password, OTP ya TPIN kabhi nahi maangta (Day 1). TPIN se demat se shares bechne ki approval jaati hai, yaani fraudster ko theek yahi chahiye; aur OTP se login ya payment approve ho sakta hai. Call par sunaayi gayi ID kuch saabit nahi karti, aur NSE aapka demat rakhta hi nahi: woh NSDL ya CDSL ke paas hota hai, aapke DP ke through. Call kaatiye, apna account sirf broker ke official app ya website se check kijiye, aur call ki report cybercrime.gov.in par kijiye. Agar paisa ya shares ja chuke hain, toh turant 1930 par call kijiye.",
+        "dv": "कोई भी असली ब्रोकर, एक्सचेंज या SEBI का अधिकारी आपसे पासवर्ड, OTP या TPIN कभी नहीं माँगता (दिन 1)। TPIN से डीमैट से शेयर बेचने की मंज़ूरी जाती है, यानी धोखेबाज़ को ठीक यही चाहिए; और OTP से लॉगिन या पेमेंट मंज़ूर हो सकता है। कॉल पर सुनाई गई ID कुछ साबित नहीं करती, और NSE आपका डीमैट रखता ही नहीं: वह NSDL या CDSL के पास होता है, आपके DP के ज़रिए। कॉल काटिए, अपना अकाउंट सिर्फ़ ब्रोकर के ऑफ़िशियल ऐप या वेबसाइट से देखिए, और कॉल की रिपोर्ट cybercrime.gov.in पर कीजिए। अगर पैसा या शेयर जा चुके हैं, तो तुरंत 1930 पर कॉल कीजिए।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Priya and Aman each hold 100 shares of Gupta Cement Ltd, bought at Rs 460 for delivery. Each evening both place a stop for the next day as an AMO, with the trigger at Rs 450: Priya's is an SL-M sell, and Aman's is an SL sell with its limit at Rs 448. After bad news one night, the stock opens at Rs 436 and keeps sliding. What is most likely?",
+        "hi": "Priya aur Aman dono ke paas Gupta Cement Ltd ke 100-100 shares hain, jo Rs 460 par delivery mein khareede the. Dono har shaam agle din ka stop AMO ki tarah lagate hain, trigger Rs 450 par: Priya ka SL-M sell hai, aur Aman ka SL sell jiski limit Rs 448 hai. Ek raat buri khabar aati hai, aur stock Rs 436 par khulta hai aur phisalta rehta hai. Sabse zyada kya hone ki sambhavna hai?",
+        "dv": "प्रिया और अमन दोनों के पास Gupta Cement Ltd के 100-100 शेयर हैं, जो Rs 460 पर डिलीवरी में ख़रीदे थे। दोनों हर शाम अगले दिन का स्टॉप AMO की तरह लगाते हैं, ट्रिगर Rs 450 पर: प्रिया का SL-M सेल है, और अमन का SL सेल जिसकी लिमिट Rs 448 है। एक रात बुरी ख़बर आती है, और स्टॉक Rs 436 पर खुलता है और फिसलता रहता है। सबसे ज़्यादा क्या होने की संभावना है?"
+      },
+      "options": [
+        { "text": { "en": "Priya exits near Rs 436 or lower; Aman's SL does not fill, so he still holds", "hi": "Priya Rs 436 ke aas-paas ya usse neeche nikalti hai; Aman ka SL fill nahi hota, woh abhi bhi shares pakde baitha hai", "dv": "प्रिया Rs 436 के आसपास या उससे नीचे निकलती है; अमन का SL फ़िल नहीं होता, वह अब भी शेयर पकड़े बैठा है" }, "correct": true },
+        { "text": { "en": "Both exit at Rs 450, since both stops carry the same trigger", "hi": "Dono Rs 450 par nikalte hain, kyunki dono stops ka trigger ek hi hai", "dv": "दोनों Rs 450 पर निकलते हैं, क्योंकि दोनों स्टॉप का ट्रिगर एक ही है" }, "correct": false },
+        { "text": { "en": "Priya exits at Rs 450 and Aman at Rs 448, his limit price", "hi": "Priya Rs 450 par nikalti hai aur Aman Rs 448 par, apne limit price par", "dv": "प्रिया Rs 450 पर निकलती है और अमन Rs 448 पर, अपने लिमिट प्राइस पर" }, "correct": false },
+        { "text": { "en": "Aman does better: his limit makes sure he sells at Rs 448 at worst", "hi": "Aman behtar rehta hai: uski limit ki wajah se woh bure se bure haal mein Rs 448 par bechega", "dv": "अमन बेहतर रहता है: उसकी लिमिट की वजह से वह बुरे से बुरे हाल में Rs 448 पर बेचेगा" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "A stop decides when your exit order goes in, not the price you get (Day 2). The Rs 436 open is already below the Rs 450 trigger. Priya's SL-M either fires into the market at once, or her broker rejects it and she has to sell by hand; either way she exits near Rs 436, or lower if the slide goes on: a loss of about Rs 2,400 against the Rs 1,000 she planned. Aman's SL may sell only at Rs 448 or better, and the price is already below that, so nothing sells and he is still holding as it falls. Neither kind of stop promises your exit price.",
+        "hi": "Stop yeh tay karta hai ki aapka exit order kab jaayega, yeh nahi ki price kya milega (Day 2). Rs 436 ka open pehle hi Rs 450 ke trigger se neeche hai. Priya ka SL-M ya toh turant market mein chala jaata hai, ya broker use reject kar deta hai aur Priya ko khud bechna padta hai; dono haalat mein woh lagbhag Rs 436 par, ya girawat jaari rahe toh usse bhi neeche, nikalti hai: plan ke Rs 1,000 ki jagah lagbhag Rs 2,400 ka loss. Aman ka SL sirf Rs 448 ya behtar price par bech sakta hai, aur price pehle hi usse neeche hai, isliye kuch nahi bikta aur girte price ke saath woh abhi bhi shares pakde baitha hai. Dono mein se koi bhi stop aapke exit price ka vada nahi karta.",
+        "dv": "स्टॉप यह तय करता है कि आपका एग्ज़िट ऑर्डर कब जाएगा, यह नहीं कि भाव क्या मिलेगा (दिन 2)। Rs 436 का ओपन पहले ही Rs 450 के ट्रिगर से नीचे है। प्रिया का SL-M या तो तुरंत बाज़ार में चला जाता है, या ब्रोकर उसे रिजेक्ट कर देता है और प्रिया को ख़ुद बेचना पड़ता है; दोनों हालात में वह लगभग Rs 436 पर, या गिरावट जारी रहे तो उससे भी नीचे, निकलती है: प्लान के Rs 1,000 की जगह लगभग Rs 2,400 का लॉस। अमन का SL सिर्फ़ Rs 448 या बेहतर भाव पर बेच सकता है, और भाव पहले ही उससे नीचे है, इसलिए कुछ नहीं बिकता और गिरते भाव के साथ वह अब भी शेयर पकड़े बैठा है। दोनों में से कोई भी स्टॉप आपके एग्ज़िट प्राइस का वादा नहीं करता।"
       }
     },
     {
@@ -39,74 +75,20 @@
     },
     {
       "stem": {
-        "en": "What is an AI chat's 'knowledge cutoff'?",
-        "hi": "AI chat ka 'knowledge cutoff' kya hota hai?",
-        "dv": "किसी AI चैट का 'नॉलेज कटऑफ़' क्या होता है?"
+        "en": "At 9:18 a news alert says Mehta Solar Ltd has won a big order, and a tall green candle is forming. Aman's thumb is already on Buy. What does Day 2 tell him to do first?",
+        "hi": "9:18 par ek news alert aata hai ki Mehta Solar Ltd ko bada order mila hai, aur ek lambi hari candle ban rahi hai. Aman ka angootha Buy par pahunch chuka hai. Day 2 ke hisaab se use sabse pehle kya karna chahiye?",
+        "dv": "9:18 पर एक न्यूज़ अलर्ट आता है कि Mehta Solar Ltd को बड़ा ऑर्डर मिला है, और एक लंबी हरी कैंडल बन रही है। अमन का अँगूठा Buy पर पहुँच चुका है। दिन 2 के हिसाब से उसे सबसे पहले क्या करना चाहिए?"
       },
       "options": [
-        { "text": { "en": "The date its training text ends", "hi": "Woh date jahan uska training text khatam hota hai", "dv": "वह तारीख़ जहाँ उसका ट्रेनिंग टेक्स्ट ख़त्म होता है" }, "correct": true },
-        { "text": { "en": "The date its answers were last checked by experts", "hi": "Woh date jab experts ne uske jawab aakhri baar check kiye", "dv": "वह तारीख़ जब एक्सपर्ट ने उसके जवाब आख़िरी बार जाँचे" }, "correct": false },
-        { "text": { "en": "The point in a long chat where it starts making things up", "hi": "Lambi chat mein woh point jahan se woh baatein gadhne lagta hai", "dv": "लंबी चैट में वह पॉइंट जहाँ से वह बातें गढ़ने लगता है" }, "correct": false },
-        { "text": { "en": "The time each day after which it stops searching the web", "hi": "Din ka woh time jiske baad woh web search band kar deta hai", "dv": "दिन का वह समय जिसके बाद वह वेब सर्च बंद कर देता है" }, "correct": false }
+        { "text": { "en": "The 20-second pause: order type, price, exit, product, cost", "hi": "20 second ka pause: order type, price, exit, product, cost", "dv": "20 सेकंड का पॉज़: ऑर्डर टाइप, भाव, एग्ज़िट, प्रोडक्ट, ख़र्चा" }, "correct": true },
+        { "text": { "en": "Buy at market now, and set the stop-loss once the order has filled", "hi": "Abhi market par khareede, aur order fill hone ke baad stop-loss lagaye", "dv": "अभी मार्केट पर ख़रीदे, और ऑर्डर फ़िल होने के बाद स्टॉप-लॉस लगाए" }, "correct": false },
+        { "text": { "en": "Buy a small quantity now as a test, and write down the plan later", "hi": "Test ke liye abhi thodi quantity khareede, aur plan baad mein likhe", "dv": "टेस्ट के लिए अभी थोड़ी क्वांटिटी ख़रीदे, और प्लान बाद में लिखे" }, "correct": false },
+        { "text": { "en": "Wait for the group chat to confirm the news, then buy at market", "hi": "Group chat mein news confirm hone ka intezaar kare, phir market par khareede", "dv": "ग्रुप चैट में ख़बर कन्फ़र्म होने का इंतज़ार करे, फिर मार्केट पर ख़रीदे" }, "correct": false }
       ],
       "explanation": {
-        "en": "An LLM learns from text up to a certain date and may know nothing after it: new results, new rules, today's prices. That is why an old model may still say Indian shares settle on T+2, though the market moved fully to T+1 in January 2023. Stating something false with full confidence is a different problem, called hallucination. The fix for both is the same: paste the source yourself and check the quote.",
-        "hi": "LLM ek tay date tak ke text se seekhta hai, aur uske baad ki cheezein shayad jaanta hi nahi: naye results, naye rules, aaj ke prices. Isiliye koi purana model ab bhi keh sakta hai ki Indian shares T+2 par settle hote hain, jabki market January 2023 mein poori tarah T+1 par aa chuka hai. Poore confidence se galat baat bol dena alag problem hai, jise hallucination kehte hain. Dono ka ilaaj ek hi hai: source khud paste kijiye aur quote check kijiye.",
-        "dv": "LLM एक तय तारीख़ तक के टेक्स्ट से सीखता है, और उसके बाद की चीज़ें शायद जानता ही नहीं: नए रिज़ल्ट, नए नियम, आज के भाव। इसीलिए कोई पुराना मॉडल अब भी कह सकता है कि भारतीय शेयर T+2 पर सेटल होते हैं, जबकि बाज़ार जनवरी 2023 में पूरी तरह T+1 पर आ चुका है। पूरे भरोसे से ग़लत बात बोल देना अलग समस्या है, जिसे हैलुसिनेशन कहते हैं। दोनों का इलाज एक ही है: सोर्स ख़ुद पेस्ट करें और कोट जाँचें।"
-      }
-    },
-    {
-      "stem": {
-        "en": "Priya plans swing trades that she will hold for days or weeks. In which order should she read her charts?",
-        "hi": "Priya aise swing trades plan karti hai jinhe woh kuch din ya hafton tak hold karegi. Use charts kis order mein padhne chahiye?",
-        "dv": "प्रिया ऐसे स्विंग ट्रेड प्लान करती है जिन्हें वह कुछ दिन या हफ़्तों तक होल्ड करेगी। उसे चार्ट किस क्रम में पढ़ने चाहिए?"
-      },
-      "options": [
-        { "text": { "en": "Weekly for direction, then daily for timing", "hi": "Direction ke liye weekly, phir timing ke liye daily", "dv": "दिशा के लिए वीकली, फिर टाइमिंग के लिए डेली" }, "correct": true },
-        { "text": { "en": "Daily for direction, then weekly to time the entry", "hi": "Direction ke liye daily, phir entry timing ke liye weekly", "dv": "दिशा के लिए डेली, फिर एंट्री की टाइमिंग के लिए वीकली" }, "correct": false },
-        { "text": { "en": "15-minute for direction, then daily for timing", "hi": "Direction ke liye 15-minute, phir timing ke liye daily", "dv": "दिशा के लिए 15-मिनट, फिर टाइमिंग के लिए डेली" }, "correct": false },
-        { "text": { "en": "Only the 5-minute chart, since it shows the most detail", "hi": "Sirf 5-minute chart, kyunki usmein sabse zyada detail hai", "dv": "सिर्फ़ 5-मिनट चार्ट, क्योंकि उसमें सबसे ज़्यादा डिटेल है" }, "correct": false }
-      ],
-      "explanation": {
-        "en": "Read the direction on the higher timeframe and the timing on the lower one, never the other way round. A swing trader holds for days or weeks, so the weekly chart gives the big picture and the daily chart gives the timing. Lower timeframes such as 5 or 15 minutes carry a lot of noise, meaning small random moves; they suit an intraday trader, not her.",
-        "hi": "Direction hamesha bade timeframe par padhiye aur timing chhote par, kabhi ulta nahi. Swing trader kuch din ya hafton tak hold karta hai, isliye weekly chart badi tasveer dikhata hai aur daily chart timing deta hai. 5 ya 15-minute jaise chhote timeframes mein bahut noise hota hai, yaani chhoti random moves; yeh intraday trader ke kaam ki cheez hai, Priya ke nahi.",
-        "dv": "दिशा हमेशा बड़े टाइमफ़्रेम पर पढ़ें और टाइमिंग छोटे पर, कभी उल्टा नहीं। स्विंग ट्रेडर कुछ दिन या हफ़्तों तक होल्ड करता है, इसलिए वीकली चार्ट बड़ी तस्वीर दिखाता है और डेली चार्ट टाइमिंग देता है। 5 या 15-मिनट जैसे छोटे टाइमफ़्रेम में बहुत नॉइज़ होता है, यानी छोटी-छोटी रैंडम चालें; यह इंट्राडे ट्रेडर के काम की चीज़ है, प्रिया के नहीं।"
-      }
-    },
-    {
-      "stem": {
-        "en": "A line chart usually joins which price from each period?",
-        "hi": "Line chart aam taur par har period ka kaun sa price jodta hai?",
-        "dv": "लाइन चार्ट आम तौर पर हर पीरियड का कौन-सा भाव जोड़ता है?"
-      },
-      "options": [
-        { "text": { "en": "The closing price", "hi": "Closing price", "dv": "क्लोज़िंग भाव" }, "correct": true },
-        { "text": { "en": "The opening price", "hi": "Opening price", "dv": "ओपनिंग भाव" }, "correct": false },
-        { "text": { "en": "The day's high price", "hi": "Us din ka high price", "dv": "उस दिन का हाई भाव" }, "correct": false },
-        { "text": { "en": "The average of high and low", "hi": "High aur low ka average", "dv": "हाई और लो का औसत" }, "correct": false }
-      ],
-      "explanation": {
-        "en": "A line chart joins each period's closing price. It looks clean, but it hides the open, the high and the low, so a day with a big swing and a small net change looks calm. A candle chart shows all four prices, OHLC, which is why this course reads candles.",
-        "hi": "Line chart har period ka closing price jodta hai. Dikhne mein saaf lagta hai, lekin open, high aur low chhup jaate hain, isliye bade utaar-chadhaav wala din bhi, agar net badlaav chhota ho, shaant dikhta hai. Candle chart chaaron price, yaani OHLC, dikhata hai, isiliye yeh course candles padhta hai.",
-        "dv": "लाइन चार्ट हर पीरियड का क्लोज़िंग भाव जोड़ता है। देखने में साफ़ लगता है, लेकिन ओपन, हाई और लो छिप जाते हैं, इसलिए बड़े उतार-चढ़ाव वाला दिन भी, अगर कुल बदलाव छोटा हो, शांत दिखता है। कैंडल चार्ट चारों भाव, यानी OHLC, दिखाता है, इसीलिए यह कोर्स कैंडल पढ़ता है।"
-      }
-    },
-    {
-      "stem": {
-        "en": "A rule's average win is 3R and its average loss is 1R. Before costs, what is the lowest win-rate at which it stops losing money?",
-        "hi": "Ek rule ki average jeet 3R hai aur average loss 1R. Costs se pehle, kam se kam kitna win-rate chahiye taaki yeh nuksaan mein na rahe?",
-        "dv": "किसी नियम की औसत जीत 3R है और औसत लॉस 1R। कॉस्ट से पहले, कम से कम कितना विन-रेट चाहिए ताकि यह घाटे में न रहे?"
-      },
-      "options": [
-        { "text": { "en": "25%", "hi": "25%", "dv": "25%" }, "correct": true },
-        { "text": { "en": "About 33%", "hi": "Lagbhag 33%", "dv": "लगभग 33%" }, "correct": false },
-        { "text": { "en": "50%", "hi": "50%", "dv": "50%" }, "correct": false },
-        { "text": { "en": "75%", "hi": "75%", "dv": "75%" }, "correct": false }
-      ],
-      "explanation": {
-        "en": "Breakeven win-rate = 1 ÷ (1 + reward per 1R of risk) = 1 ÷ (1 + 3) = 25%. Check it: in 100 trades, 25 wins x 3R = 75R and 75 losses x 1R = 75R, so the net is zero. 33% is 1 ÷ 3, which forgets the +1; 75% is 3 ÷ 4, the share of trades you can afford to lose, not the share you must win; 50% is true only for a 1:1 payoff. Costs push the real breakeven a little higher.",
-        "hi": "Breakeven win-rate = 1 ÷ (1 + har 1R risk par reward) = 1 ÷ (1 + 3) = 25%. Khud check kar lijiye: 100 trades mein 25 jeet x 3R = 75R, aur 75 loss x 1R = 75R, yaani net zero. 33% bas 1 ÷ 3 hai, jismein +1 chhoot gaya; 75% asal mein 3 ÷ 4 hai, yaani kitne trades aap haar sakte hain, na ki kitne jeetne zaroori hain; aur 50% sirf 1:1 payoff par sahi hai. Costs jodne par asli breakeven thoda aur upar chala jaata hai.",
-        "dv": "ब्रेकईवन विन-रेट = 1 ÷ (1 + हर 1R रिस्क पर रिवॉर्ड) = 1 ÷ (1 + 3) = 25%। ख़ुद जाँच लें: 100 ट्रेड में 25 जीत x 3R = 75R, और 75 लॉस x 1R = 75R, यानी कुल मिलाकर बराबर। 33% बस 1 ÷ 3 है, जिसमें +1 छूट गया; 75% असल में 3 ÷ 4 है, यानी कितने ट्रेड आप हार सकते हैं, न कि कितने जीतने ज़रूरी हैं; और 50% सिर्फ़ 1:1 पेऑफ़ पर सही है। कॉस्ट जोड़ने पर असली ब्रेकईवन थोड़ा और ऊपर चला जाता है।"
+        "en": "This is the urge to act now: a racing price makes waiting feel like losing (Day 2). The cure is a short, fixed pause before every order, even on paper: which order type, what price (bid, ask and spread), where the exit is, delivery or intraday, and what it will cost. Mehta Solar Ltd is a thin stock in Day 2's practice order book, so a market order there can slip badly. A stop set 'later' is often never set, a 'test' buy is still an unplanned trade, and a group chat is not a source. If he cannot answer the five questions, he is not ready to tap.",
+        "hi": "Yeh 'abhi ke abhi' wali jaldi hai: bhaagta hua price rukne ko haarne jaisa mehsoos karata hai (Day 2). Ilaaj hai har order se pehle ek chhota, fixed pause, paper par bhi: kaunsa order type, kya price (bid, ask aur spread), exit kahan hai, delivery ya intraday, aur kitna kharcha lagega. Day 2 ki practice order book mein Mehta Solar Ltd ek patla stock hai, isliye wahan market order bahut slip kar sakta hai. 'Baad mein' lagaya jaane wala stop aksar kabhi lagta hi nahi, 'test' wali khareed bhi bina plan ka trade hi hai, aur group chat koi source nahi hai. Agar paanch sawaalon ke jawab nahi hain, toh abhi tap karne ka waqt nahi aaya.",
+        "dv": "यह 'अभी के अभी' वाली जल्दी है: भागता हुआ भाव रुकने को हारने जैसा महसूस कराता है (दिन 2)। इलाज है हर ऑर्डर से पहले एक छोटा, तय पॉज़, पेपर पर भी: कौन-सा ऑर्डर टाइप, क्या भाव (बिड, आस्क और स्प्रेड), एग्ज़िट कहाँ है, डिलीवरी या इंट्राडे, और कितना ख़र्चा लगेगा। दिन 2 की प्रैक्टिस ऑर्डर बुक में Mehta Solar Ltd एक पतला स्टॉक है, इसलिए वहाँ मार्केट ऑर्डर बहुत स्लिप कर सकता है। 'बाद में' लगाया जाने वाला स्टॉप अक्सर कभी लगता ही नहीं, 'टेस्ट' वाली ख़रीद भी बिना प्लान का ट्रेड ही है, और ग्रुप चैट कोई सोर्स नहीं है। अगर पाँच सवालों के जवाब नहीं हैं, तो अभी टैप करने का वक़्त नहीं आया।"
       }
     },
     {
@@ -129,60 +111,6 @@
     },
     {
       "stem": {
-        "en": "Aman's practice plan: 200 shares of Gupta Cement Ltd at Rs 150, for delivery. Each morning before the open he places an SL (stop-loss limit) sell: trigger Rs 145, limit Rs 144. One night bad news comes out and the stock opens at Rs 141, so his order does not fill. Later that day he sells by hand at Rs 138. What is the result in R?",
-        "hi": "Aman ka practice plan: Gupta Cement Ltd ke 200 shares Rs 150 par, delivery mein. Har subah market khulne se pehle woh ek SL (stop-loss limit) sell lagata hai: trigger Rs 145, limit Rs 144. Ek raat buri khabar aati hai, stock Rs 141 par khulta hai, isliye uska order fill nahi hota. Usi din baad mein woh khud Rs 138 par bechta hai. Result R mein kitna hai?",
-        "dv": "अमन का प्रैक्टिस प्लान: Gupta Cement Ltd के 200 शेयर Rs 150 पर, डिलीवरी में। हर सुबह बाज़ार खुलने से पहले वह एक SL (स्टॉप-लॉस लिमिट) सेल लगाता है: ट्रिगर Rs 145, लिमिट Rs 144। एक रात बुरी ख़बर आती है, स्टॉक Rs 141 पर खुलता है, इसलिए उसका ऑर्डर फ़िल नहीं होता। उसी दिन बाद में वह ख़ुद Rs 138 पर बेचता है। नतीजा R में कितना है?"
-      },
-      "options": [
-        { "text": { "en": "-2.4R, a real loss of Rs 2,400", "hi": "-2.4R, yaani asli loss Rs 2,400", "dv": "-2.4R, यानी असली लॉस Rs 2,400" }, "correct": true },
-        { "text": { "en": "-1R, since the stop caps the loss", "hi": "-1R, kyunki stop loss ko rok deta hai", "dv": "-1R, क्योंकि स्टॉप लॉस को रोक देता है" }, "correct": false },
-        { "text": { "en": "-1.2R, a sale at the Rs 144 limit", "hi": "-1.2R, yaani Rs 144 ki limit par sale", "dv": "-1.2R, यानी Rs 144 की लिमिट पर बिक्री" }, "correct": false },
-        { "text": { "en": "-12R, since it fell Rs 12 a share", "hi": "-12R, kyunki share Rs 12 gir gaya", "dv": "-12R, क्योंकि शेयर Rs 12 गिर गया" }, "correct": false }
-      ],
-      "explanation": {
-        "en": "1R is the planned risk: (Rs 150 - Rs 145) x 200 = Rs 1,000. The stock opened below his Rs 144 limit, so the SL order woke up but found no buyer at his price. The actual loss is (Rs 150 - Rs 138) x 200 = Rs 2,400, and Rs 2,400 ÷ Rs 1,000 = -2.4R. -1R assumes a stop fixes the exit price; -1.2R assumes the limit filled. R is always the rupees lost divided by the planned risk, never rupees per share.",
-        "hi": "1R planned risk hai: (Rs 150 - Rs 145) x 200 = Rs 1,000. Stock uski Rs 144 ki limit se neeche khula, isliye SL order jaag toh gaya, par uske price par koi buyer nahi mila. Asli loss (Rs 150 - Rs 138) x 200 = Rs 2,400 hua, aur Rs 2,400 ÷ Rs 1,000 = -2.4R. -1R maan leta hai ki stop exit price tay kar deta hai; -1.2R maan leta hai ki limit fill ho gayi. R hamesha rupaye ka loss ÷ planned risk hota hai, per share rupaye kabhi nahi.",
-        "dv": "1R प्लान किया हुआ रिस्क है: (Rs 150 - Rs 145) x 200 = Rs 1,000। स्टॉक उसकी Rs 144 की लिमिट से नीचे खुला, इसलिए SL ऑर्डर जाग तो गया, पर उसके भाव पर कोई ख़रीदार नहीं मिला। असली लॉस (Rs 150 - Rs 138) x 200 = Rs 2,400 हुआ, और Rs 2,400 ÷ Rs 1,000 = -2.4R। -1R मान लेता है कि स्टॉप एग्ज़िट का भाव तय कर देता है; -1.2R मान लेता है कि लिमिट फ़िल हो गई। R हमेशा रुपयों का लॉस ÷ प्लान किया हुआ रिस्क होता है, प्रति शेयर रुपये कभी नहीं।"
-      }
-    },
-    {
-      "stem": {
-        "en": "Bharat Pumps Ltd's order book shows sellers offering 50 shares at Rs 60, 50 at Rs 61 and 100 at Rs 63. Aman places a market buy for 150 shares. What average price does he pay?",
-        "hi": "Bharat Pumps Ltd ki order book mein sellers 50 shares Rs 60 par, 50 Rs 61 par aur 100 Rs 63 par de rahe hain. Aman 150 shares ka market buy lagata hai. Uska average buy price kitna aata hai?",
-        "dv": "Bharat Pumps Ltd की ऑर्डर बुक में बेचने वाले 50 शेयर Rs 60 पर, 50 Rs 61 पर और 100 Rs 63 पर दे रहे हैं। अमन 150 शेयर का मार्केट बाय लगाता है। उसका औसत ख़रीद भाव कितना आता है?"
-      },
-      "options": [
-        { "text": { "en": "About Rs 61.33 a share", "hi": "Lagbhag Rs 61.33 per share", "dv": "लगभग Rs 61.33 प्रति शेयर" }, "correct": true },
-        { "text": { "en": "Rs 60, the best ask", "hi": "Rs 60, jo best ask hai", "dv": "Rs 60, जो बेस्ट आस्क है" }, "correct": false },
-        { "text": { "en": "Rs 61, the middle level", "hi": "Rs 61, jo beech ka level hai", "dv": "Rs 61, जो बीच का लेवल है" }, "correct": false },
-        { "text": { "en": "Rs 63, the highest ask", "hi": "Rs 63, jo sabse ooncha ask hai", "dv": "Rs 63, जो सबसे ऊँचा आस्क है" }, "correct": false }
-      ],
-      "explanation": {
-        "en": "A market order eats through the queue until it is full: 50 x Rs 60 = Rs 3,000, 50 x Rs 61 = Rs 3,050 and 50 x Rs 63 = Rs 3,150. Total Rs 9,200 ÷ 150 = about Rs 61.33, which is Rs 200 more than the Rs 9,000 he expected at Rs 60. That extra is slippage. A limit buy at Rs 60 would have filled 50 shares and left 100 waiting.",
-        "hi": "Market order queue ko tab tak khaata jaata hai jab tak poora na bhar jaaye: 50 x Rs 60 = Rs 3,000, 50 x Rs 61 = Rs 3,050 aur 50 x Rs 63 = Rs 3,150. Kul Rs 9,200 ÷ 150 = lagbhag Rs 61.33, yaani Rs 60 wale andaaze ke Rs 9,000 se Rs 200 zyada. Yahi extra slippage hai. Rs 60 ka limit buy hota, toh 50 shares fill ho jaate aur baaki 100 queue mein wait karte.",
-        "dv": "मार्केट ऑर्डर क़तार को तब तक खाता जाता है जब तक पूरा न भर जाए: 50 x Rs 60 = Rs 3,000, 50 x Rs 61 = Rs 3,050 और 50 x Rs 63 = Rs 3,150। कुल Rs 9,200 ÷ 150 = लगभग Rs 61.33, यानी Rs 60 वाले अंदाज़े के Rs 9,000 से Rs 200 ज़्यादा। यही एक्स्ट्रा स्लिपेज है। Rs 60 का लिमिट बाय होता, तो 50 शेयर फ़िल हो जाते और बाक़ी 100 क़तार में इंतज़ार करते।"
-      }
-    },
-    {
-      "stem": {
-        "en": "Aman sells 20 shares of Kiran Foods Ltd from his demat on a Tuesday. Wednesday is an exchange holiday. Under T+1, on which day is this sale normally settled?",
-        "hi": "Aman Tuesday ko apne demat se Kiran Foods Ltd ke 20 shares bechta hai. Wednesday ko exchange holiday hai. T+1 ke hisaab se yeh sale aam taur par kis din settle hogi?",
-        "dv": "अमन मंगलवार को अपने डीमैट से Kiran Foods Ltd के 20 शेयर बेचता है। बुधवार को एक्सचेंज की छुट्टी है। T+1 के हिसाब से यह बिक्री आम तौर पर किस दिन सेटल होगी?"
-      },
-      "options": [
-        { "text": { "en": "Thursday; the holiday is skipped", "hi": "Thursday ko; holiday bas skip ho jaata hai", "dv": "गुरुवार को; छुट्टी बस छोड़ दी जाती है" }, "correct": true },
-        { "text": { "en": "Wednesday, since settlement runs on holidays too", "hi": "Wednesday ko, kyunki settlement holiday par bhi chalta hai", "dv": "बुधवार को, क्योंकि सेटलमेंट छुट्टी पर भी चलता है" }, "correct": false },
-        { "text": { "en": "Friday, since a holiday adds a day", "hi": "Friday ko, kyunki holiday ek din badha deta hai", "dv": "शुक्रवार को, क्योंकि छुट्टी एक दिन बढ़ा देती है" }, "correct": false },
-        { "text": { "en": "Tuesday itself, as the shares were already his", "hi": "Tuesday ko hi, kyunki shares pehle se uske the", "dv": "मंगलवार को ही, क्योंकि शेयर पहले से उसके थे" }, "correct": false }
-      ],
-      "explanation": {
-        "en": "T+1 counts trading days, not calendar days. The first trading day after Tuesday is Thursday: the Wednesday holiday is simply skipped, and it does not add an extra day on top. A sale follows the same T+1 cycle as a purchase, even though the shares were already in his demat. The exchange announces its holiday list in advance.",
-        "hi": "T+1 trading days ginta hai, calendar days nahi. Tuesday ke baad pehla trading day Thursday hai: Wednesday ki holiday bas skip ho jaati hai, woh upar se ek extra din nahi jodti. Sale bhi usi T+1 cycle par settle hoti hai jis par khareed, chahe shares pehle se demat mein hon. Exchange apni holiday list pehle se announce kar deta hai.",
-        "dv": "T+1 ट्रेडिंग दिन गिनता है, कैलेंडर दिन नहीं। मंगलवार के बाद पहला ट्रेडिंग दिन गुरुवार है: बुधवार की छुट्टी बस छोड़ दी जाती है, वह ऊपर से एक दिन और नहीं जोड़ती। बिक्री भी उसी T+1 चक्र पर सेटल होती है जिस पर ख़रीद, चाहे शेयर पहले से डीमैट में हों। एक्सचेंज अपनी छुट्टियों की लिस्ट पहले से बता देता है।"
-      }
-    },
-    {
-      "stem": {
         "en": "Aman risks 5% of his current capital on every trade. Starting from his peak, he hits a streak of 5 losses in a row. Roughly how far below his peak is he now, and what gain does he need to get back?",
         "hi": "Aman har trade par apni current capital ka 5% risk karta hai. Apne peak se shuru hokar usse lagatar 5 losses ki streak lagti hai. Ab woh peak se lagbhag kitna neeche hai, aur wapas pahunchne ke liye kitna gain chahiye?",
         "dv": "अमन हर ट्रेड पर अपनी मौजूदा कैपिटल का 5% रिस्क लेता है। अपने पीक से शुरू होकर उसे लगातार 5 लॉस की स्ट्रीक लगती है। अब वह पीक से लगभग कितना नीचे है, और वापस पहुँचने के लिए कितना गेन चाहिए?"
@@ -197,6 +125,78 @@
         "en": "Each loss takes 5% of what is left, so the losses multiply: 0.95 x 0.95 x 0.95 x 0.95 x 0.95 = about 0.774, or about 23% below the peak. Adding 5% five times to get 25% slightly overstates it. The climb back is steeper than the fall: 1 ÷ 0.774 = about 1.29, so he needs about 29% just to get back. At 1% risk, the same streak would leave him only about 5% down, which is why Day 9 sets the 1% rule.",
         "hi": "Har loss bache hue paise ka 5% le jaata hai, isliye losses guna hote hain: 0.95 x 0.95 x 0.95 x 0.95 x 0.95 = lagbhag 0.774, yaani peak se lagbhag 23% neeche. 5% ko paanch baar jodkar 25% maan lena thoda zyada bata deta hai. Wapsi ki chadhai girne se hamesha zyada khadi hoti hai: 1 ÷ 0.774 = lagbhag 1.29, yaani sirf wapas pahunchne ke liye lagbhag 29% chahiye. 1% risk par yahi streak use sirf lagbhag 5% neeche le jaati, isiliye Day 9 mein 1% rule aata hai.",
         "dv": "हर लॉस बचे हुए पैसे का 5% ले जाता है, इसलिए लॉस गुणा होते जाते हैं: 0.95 x 0.95 x 0.95 x 0.95 x 0.95 = लगभग 0.774, यानी पीक से लगभग 23% नीचे। 5% को पाँच बार जोड़कर 25% मान लेना थोड़ा ज़्यादा बता देता है। वापसी की चढ़ाई गिरने से हमेशा ज़्यादा खड़ी होती है: 1 ÷ 0.774 = लगभग 1.29, यानी सिर्फ़ वापस पहुँचने के लिए लगभग 29% चाहिए। 1% रिस्क पर यही स्ट्रीक उसे सिर्फ़ लगभग 5% नीचे ले जाती, इसीलिए दिन 9 में 1% का नियम आता है।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Priya asks an AI chat how long bought shares take to reach her demat. It replies, with full confidence, that Indian shares settle on T+2. What is the most likely reason, and what should she do?",
+        "hi": "Priya ek AI chat se poochhti hai ki khareede hue shares uske demat mein kitne din mein aate hain. AI poore confidence se jawab deta hai ki Indian shares T+2 par settle hote hain. Iski sabse sambhavit wajah kya hai, aur Priya ko kya karna chahiye?",
+        "dv": "प्रिया एक AI चैट से पूछती है कि ख़रीदे हुए शेयर उसके डीमैट में कितने दिन में आते हैं। AI पूरे भरोसे से जवाब देता है कि भारतीय शेयर T+2 पर सेटल होते हैं। इसकी सबसे संभावित वजह क्या है, और प्रिया को क्या करना चाहिए?"
+      },
+      "options": [
+        { "text": { "en": "Its training text may predate India's move to T+1; she checks NSE's site", "hi": "Uska training text shayad India ke T+1 par aane se pehle ka hai; woh NSE ki site par check kare", "dv": "उसका ट्रेनिंग टेक्स्ट शायद भारत के T+1 पर आने से पहले का है; वह NSE की साइट पर जाँचे" }, "correct": true },
+        { "text": { "en": "The AI has newer data than the course, so T+2 is the rule once again", "hi": "AI ke paas course se naya data hai, isliye ab phir se T+2 ka rule hai", "dv": "AI के पास कोर्स से नया डेटा है, इसलिए अब फिर से T+2 का नियम है" }, "correct": false },
+        { "text": { "en": "T+2 is right for delivery trades; T+1 applies only to intraday", "hi": "Delivery trades ke liye T+2 sahi hai; T+1 sirf intraday par lagta hai", "dv": "डिलीवरी ट्रेड के लिए T+2 सही है; T+1 सिर्फ़ इंट्राडे पर लागू होता है" }, "correct": false },
+        { "text": { "en": "Nothing: AI chats look up the rules live, so T+2 must be correct", "hi": "Kuch nahi: AI chats rules live dekh kar batate hain, toh T+2 hi sahi hoga", "dv": "कुछ नहीं: AI चैट नियम लाइव देखकर बताते हैं, तो T+2 ही सही होगा" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "This is the knowledge-cutoff trap from Day 4. An AI learns from text up to a certain date, so a model trained on old text may still say T+2, although the market moved fully to T+1 in January 2023. Delivery trades settle on T+1 (Day 1); an intraday position is closed the same day, so nothing reaches the demat. Some AI tools search the web, but web results can be old or wrong too. A confident tone is not a source: check the rule on the NSE or SEBI website.",
+        "hi": "Yeh Day 4 ka knowledge-cutoff wala jaal hai. AI ek tay date tak ke text se seekhta hai, isliye purane text par train hua model aaj bhi T+2 bol sakta hai, jabki market January 2023 mein hi poori tarah T+1 par aa chuka hai. Delivery trades T+1 par settle hote hain (Day 1); intraday position usi din band ho jaati hai, isliye demat tak kuch pahunchta hi nahi. Kuch AI tools web search karte hain, lekin web ke results bhi purane ya galat ho sakte hain. Confident tone koi source nahi hai: rule NSE ya SEBI ki website par check kijiye.",
+        "dv": "यह दिन 4 का नॉलेज कटऑफ़ वाला जाल है। AI एक तय तारीख़ तक के टेक्स्ट से सीखता है, इसलिए पुराने टेक्स्ट पर ट्रेन हुआ मॉडल आज भी T+2 कह सकता है, जबकि बाज़ार जनवरी 2023 में ही पूरी तरह T+1 पर आ चुका है। डिलीवरी ट्रेड T+1 पर सेटल होते हैं (दिन 1); इंट्राडे पोज़िशन उसी दिन बंद हो जाती है, इसलिए डीमैट तक कुछ पहुँचता ही नहीं। कुछ AI टूल वेब सर्च करते हैं, लेकिन वेब के नतीजे भी पुराने या ग़लत हो सकते हैं। भरोसे भरा लहजा कोई सोर्स नहीं है: नियम NSE या SEBI की वेबसाइट पर जाँचिए।"
+      }
+    },
+    {
+      "stem": {
+        "en": "In the journey of a trade, what does the clearing corporation do?",
+        "hi": "Ek trade ke safar mein clearing corporation ka kaam kya hai?",
+        "dv": "एक ट्रेड के सफ़र में क्लियरिंग कॉर्पोरेशन का काम क्या है?"
+      },
+      "options": [
+        { "text": { "en": "It stands between buyer and seller in every trade", "hi": "Har trade mein buyer aur seller ke beech khadi rehti hai", "dv": "हर ट्रेड में ख़रीदार और बेचने वाले के बीच खड़ी रहती है" }, "correct": true },
+        { "text": { "en": "It holds your shares in electronic form, in your name", "hi": "Aapke shares electronic form mein, aapke naam par rakhti hai", "dv": "आपके शेयर इलेक्ट्रॉनिक रूप में, आपके नाम पर रखती है" }, "correct": false },
+        { "text": { "en": "It checks you have enough money before sending your order", "hi": "Order bhejne se pehle check karti hai ki aapke paise poore hain", "dv": "ऑर्डर भेजने से पहले देखती है कि आपके पैसे पूरे हैं या नहीं" }, "correct": false },
+        { "text": { "en": "It matches buy and sell orders by best price, then time", "hi": "Buy aur sell orders ko pehle best price, phir time se milaati hai", "dv": "ख़रीद-बिक्री के ऑर्डर पहले बेस्ट भाव, फिर समय के हिसाब से मिलाती है" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "Each link in the chain has one job. The broker checks your money and sends the order, the exchange matches buyers and sellers, and the depository (NSDL or CDSL) holds shares in your demat. The clearing corporation becomes the buyer to every seller and the seller to every buyer, so neither side has to trust a stranger to pay or deliver.",
+        "hi": "Is chain mein har kadi ka apna kaam hai. Broker aapke paise check karke order aage bhejta hai, exchange buyers aur sellers ko milaata hai, aur depository (NSDL ya CDSL) shares ko aapke demat mein rakhti hai. Clearing corporation har seller ke liye buyer ban jaati hai aur har buyer ke liye seller, taaki paise ya shares ke liye kisi ko anjaan party par bharosa na karna pade.",
+        "dv": "इस चेन में हर कड़ी का अपना काम है। ब्रोकर आपके पैसे देखकर ऑर्डर आगे भेजता है, एक्सचेंज ख़रीदारों और बेचने वालों को मिलाता है, और डिपॉज़िटरी (NSDL या CDSL) शेयर आपके डीमैट में रखती है। क्लियरिंग कॉर्पोरेशन हर बेचने वाले के लिए ख़रीदार बन जाती है और हर ख़रीदार के लिए बेचने वाली, ताकि पैसे या शेयर के लिए किसी को अनजान पार्टी पर भरोसा न करना पड़े।"
+      }
+    },
+    {
+      "stem": {
+        "en": "Priya plans swing trades that she will hold for days or weeks. In which order should she read her charts?",
+        "hi": "Priya aise swing trades plan karti hai jinhe woh kuch din ya hafton tak hold karegi. Use charts kis order mein padhne chahiye?",
+        "dv": "प्रिया ऐसे स्विंग ट्रेड प्लान करती है जिन्हें वह कुछ दिन या हफ़्तों तक होल्ड करेगी। उसे चार्ट किस क्रम में पढ़ने चाहिए?"
+      },
+      "options": [
+        { "text": { "en": "Weekly for direction, then daily for timing", "hi": "Direction ke liye weekly, phir timing ke liye daily", "dv": "दिशा के लिए वीकली, फिर टाइमिंग के लिए डेली" }, "correct": true },
+        { "text": { "en": "Daily for direction, weekly for timing", "hi": "Direction ke liye daily, timing ke liye weekly", "dv": "दिशा के लिए डेली, टाइमिंग के लिए वीकली" }, "correct": false },
+        { "text": { "en": "15-minute for direction, then daily for timing", "hi": "Direction ke liye 15-minute, phir timing ke liye daily", "dv": "दिशा के लिए 15-मिनट, फिर टाइमिंग के लिए डेली" }, "correct": false },
+        { "text": { "en": "Only the 5-minute chart, since it shows the most detail", "hi": "Sirf 5-minute chart, kyunki usmein sabse zyada detail hai", "dv": "सिर्फ़ 5-मिनट चार्ट, क्योंकि उसमें सबसे ज़्यादा डिटेल है" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "Read the direction on the higher timeframe and the timing on the lower one, never the other way round. A swing trader holds for days or weeks, so the weekly chart gives the big picture and the daily chart gives the timing. Lower timeframes such as 5 or 15 minutes carry a lot of noise, meaning small random moves; they suit an intraday trader, not her.",
+        "hi": "Direction hamesha bade timeframe par padhiye aur timing chhote par, kabhi ulta nahi. Swing trader kuch din ya hafton tak hold karta hai, isliye weekly chart badi tasveer dikhata hai aur daily chart timing deta hai. 5 ya 15-minute jaise chhote timeframes mein bahut noise hota hai, yaani chhoti random moves; yeh intraday trader ke kaam ki cheez hai, Priya ke nahi.",
+        "dv": "दिशा हमेशा बड़े टाइमफ़्रेम पर पढ़ें और टाइमिंग छोटे पर, कभी उल्टा नहीं। स्विंग ट्रेडर कुछ दिन या हफ़्तों तक होल्ड करता है, इसलिए वीकली चार्ट बड़ी तस्वीर दिखाता है और डेली चार्ट टाइमिंग देता है। 5 या 15-मिनट जैसे छोटे टाइमफ़्रेम में बहुत नॉइज़ होता है, यानी छोटी-छोटी रैंडम चालें; यह इंट्राडे ट्रेडर के काम की चीज़ है, प्रिया के नहीं।"
+      }
+    },
+    {
+      "stem": {
+        "en": "On a daily bar chart, one bar of Sharma Textiles Ltd runs from Rs 236 up to Rs 252, with its left tick at Rs 249 and its right tick at Rs 240. The day before, it closed at Rs 238. Drawn as a candle, what does this day look like?",
+        "hi": "Daily bar chart par Sharma Textiles Ltd ka ek bar Rs 236 se Rs 252 tak jaata hai; uska left tick Rs 249 par hai aur right tick Rs 240 par. Usse pichhle din stock Rs 238 par close hua tha. Candle ki tarah banaya jaaye, toh yeh din kaisa dikhega?",
+        "dv": "डेली बार चार्ट पर Sharma Textiles Ltd का एक बार Rs 236 से Rs 252 तक जाता है; उसका बायाँ निशान Rs 249 पर है और दायाँ निशान Rs 240 पर। उससे पिछले दिन स्टॉक Rs 238 पर बंद हुआ था। कैंडल की तरह बनाया जाए, तो यह दिन कैसा दिखेगा?"
+      },
+      "options": [
+        { "text": { "en": "Red: open Rs 249, close Rs 240, though it is up Rs 2 on the day", "hi": "Laal candle: open Rs 249, close Rs 240, halaanki din mein stock Rs 2 upar hai", "dv": "लाल कैंडल: ओपन Rs 249, क्लोज़ Rs 240, हालाँकि दिन में स्टॉक Rs 2 ऊपर है" }, "correct": true },
+        { "text": { "en": "Green: it closed at Rs 240, above the previous close of Rs 238", "hi": "Hari candle: Rs 240 par close hua, jo pichhle Rs 238 ke close se upar hai", "dv": "हरी कैंडल: Rs 240 पर बंद हुआ, जो पिछले Rs 238 के क्लोज़ से ऊपर है" }, "correct": false },
+        { "text": { "en": "Green: open Rs 240, close Rs 249, since the left tick is the close", "hi": "Hari candle: open Rs 240, close Rs 249, kyunki left tick close hota hai", "dv": "हरी कैंडल: ओपन Rs 240, क्लोज़ Rs 249, क्योंकि बायाँ निशान क्लोज़ होता है" }, "correct": false },
+        { "text": { "en": "Red: open Rs 252, close Rs 236, the top and bottom of the bar", "hi": "Laal candle: open Rs 252, close Rs 236, yaani bar ka upar aur neeche ka sira", "dv": "लाल कैंडल: ओपन Rs 252, क्लोज़ Rs 236, यानी बार का ऊपरी और निचला सिरा" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "On a bar, the left tick is the open and the right tick is the close; the two ends are the high and the low (Day 5). So this day opened at Rs 249, touched Rs 252 and Rs 236, and closed at Rs 240. The close is below its own open, so the candle is red, with the open at the top of the body. Colour compares the close with the same candle's open; the day's change compares it with the previous close of Rs 238, so the stock is still up Rs 2. Both readings are true; they answer different questions.",
+        "hi": "Bar mein left tick open hota hai aur right tick close; dono sire high aur low hote hain (Day 5). Toh yeh din Rs 249 par khula, Rs 252 aur Rs 236 tak gaya, aur Rs 240 par close hua. Close apne hi open se neeche hai, isliye candle laal hai, aur open body ke upar wale sire par hai. Rang close ko usi candle ke open se milata hai; din ka badlaav use pichhle Rs 238 ke close se milata hai, isliye stock phir bhi Rs 2 upar hai. Dono readings sahi hain; bas alag-alag sawaalon ke jawab hain.",
+        "dv": "बार में बायाँ निशान ओपन होता है और दायाँ निशान क्लोज़; दोनों सिरे हाई और लो होते हैं (दिन 5)। तो यह दिन Rs 249 पर खुला, Rs 252 और Rs 236 तक गया, और Rs 240 पर बंद हुआ। क्लोज़ अपने ही ओपन से नीचे है, इसलिए कैंडल लाल है, और ओपन बॉडी के ऊपरी सिरे पर है। रंग क्लोज़ की तुलना उसी कैंडल के ओपन से करता है; दिन का बदलाव उसकी तुलना पिछले Rs 238 के क्लोज़ से करता है, इसलिए स्टॉक फिर भी Rs 2 ऊपर है। दोनों बातें सही हैं; बस अलग-अलग सवालों के जवाब हैं।"
       }
     },
     {
@@ -219,38 +219,20 @@
     },
     {
       "stem": {
-        "en": "On Gupta Cement Ltd's daily chart, the swing lows were Rs 310, 322 and 335, and the swing highs Rs 340, 356 and 371. Today it closes at Rs 331 on about twice its average volume. What is the most reasonable reading?",
-        "hi": "Gupta Cement Ltd ke daily chart par swing lows Rs 310, 322 aur 335 the, aur swing highs Rs 340, 356 aur 371. Aaj yeh apne average se lagbhag double volume par Rs 331 par close hota hai. Sabse samajhdaar reading kya hai?",
-        "dv": "Gupta Cement Ltd के डेली चार्ट पर स्विंग लो Rs 310, 322 और 335 थे, और स्विंग हाई Rs 340, 356 और 371। आज यह अपने एवरेज से लगभग दोगुने वॉल्यूम पर Rs 331 पर बंद होता है। सबसे समझदारी वाली रीडिंग क्या है?"
+        "en": "Gupta Cement Ltd had a resistance zone at Rs 410-420. Last week it closed at Rs 434 on about 2.5 times its average volume. Today it dips to Rs 418, back inside the old zone. How does Day 6 read this moment?",
+        "hi": "Gupta Cement Ltd ka resistance zone Rs 410-420 tha. Pichhle hafte yeh apne average volume ke lagbhag 2.5 guna volume par Rs 434 par close hua. Aaj yeh Rs 418 tak utarta hai, yaani wapas purane zone ke andar. Day 6 ke hisaab se is ghadi ko kaise padhein?",
+        "dv": "Gupta Cement Ltd का रेज़िस्टेंस ज़ोन Rs 410-420 था। पिछले हफ़्ते यह अपने एवरेज वॉल्यूम के लगभग 2.5 गुना वॉल्यूम पर Rs 434 पर बंद हुआ। आज यह Rs 418 तक उतरता है, यानी वापस पुराने ज़ोन के अंदर। दिन 6 के हिसाब से इस घड़ी को कैसे पढ़ें?"
       },
       "options": [
-        { "text": { "en": "The uptrend is in question; no downtrend yet", "hi": "Uptrend ab sawaal mein hai; downtrend abhi nahi", "dv": "अपट्रेंड अब सवाल में है; डाउनट्रेंड अभी नहीं" }, "correct": true },
-        { "text": { "en": "A downtrend is now confirmed, since volume backs the fall", "hi": "Downtrend confirm ho gaya, kyunki volume girawat ke saath hai", "dv": "डाउनट्रेंड कन्फ़र्म हो गया, क्योंकि वॉल्यूम गिरावट के साथ है" }, "correct": false },
-        { "text": { "en": "Nothing has changed, since the uptrend is still fully intact", "hi": "Kuch nahi badla, uptrend abhi bhi poori tarah salamat hai", "dv": "कुछ नहीं बदला, अपट्रेंड अभी भी पूरी तरह सलामत है" }, "correct": false },
-        { "text": { "en": "A sideways market, since price is back inside its old range", "hi": "Sideways market, kyunki price wapas purani range mein aa gaya", "dv": "साइडवेज़ मार्केट, क्योंकि प्राइस वापस पुरानी रेंज में आ गया" }, "correct": false }
+        { "text": { "en": "A retest: the old ceiling may act as a floor, a probability, not a rule", "hi": "Retest: purani chhat farsh ban sakti hai, par yeh probability hai, rule nahi", "dv": "रीटेस्ट: पुरानी छत फ़र्श बन सकती है, पर यह संभावना है, नियम नहीं" }, "correct": true },
+        { "text": { "en": "The breakout has failed, because price has touched the old zone again", "hi": "Breakout fail ho gaya, kyunki price ne purana zone phir chhoo liya", "dv": "ब्रेकआउट फ़ेल हो गया, क्योंकि प्राइस ने पुराना ज़ोन फिर छू लिया" }, "correct": false },
+        { "text": { "en": "The old resistance is now support for certain, so it cannot fall further", "hi": "Purana resistance ab pakka support hai, isliye yeh aur neeche nahi jaa sakta", "dv": "पुराना रेज़िस्टेंस अब पक्का सपोर्ट है, इसलिए यह और नीचे नहीं जा सकता" }, "correct": false },
+        { "text": { "en": "Nothing: a zone stops mattering once a close has gone beyond it", "hi": "Kuch nahi: ek baar close zone ke paar chala gaya, toh zone ka koi matlab nahi", "dv": "कुछ नहीं: एक बार क्लोज़ ज़ोन के पार चला गया, तो ज़ोन का कोई मतलब नहीं" }, "correct": false }
       ],
       "explanation": {
-        "en": "Higher lows (310, 322, 335) and higher highs (340, 356, 371) made an uptrend. A close at Rs 331, below the last higher low of Rs 335, breaks the staircase, and the heavy volume makes that break worth taking seriously. But a downtrend needs lower highs and lower lows, and none has formed yet. It is not sideways either: that needs highs and lows stalling near the same levels. So the honest label is 'uptrend in question'; if you held the stock, your written exit rule decides, not hope.",
-        "hi": "Higher lows (310, 322, 335) aur higher highs (340, 356, 371) se uptrend bana tha. Rs 331 ka close, yaani aakhri higher low Rs 335 ke neeche, yeh seedhi tod deta hai, aur bhaari volume is break ko serious bana deta hai. Lekin downtrend ke liye lower highs aur lower lows chahiye, jo abhi bane hi nahi. Yeh sideways bhi nahi hai: uske liye highs aur lows ko ek hi levels ke paas atakna chahiye. Toh sahi label hai 'uptrend sawaal mein'; agar aapke paas share hai, toh faisla aapka likha hua exit rule karega, ummeed nahi.",
-        "dv": "हायर लो (310, 322, 335) और हायर हाई (340, 356, 371) से अपट्रेंड बना था। Rs 331 का क्लोज़, यानी आख़िरी हायर लो Rs 335 के नीचे, यह सीढ़ी तोड़ देता है, और भारी वॉल्यूम इस टूट को गंभीर बना देता है। लेकिन डाउनट्रेंड के लिए लोअर हाई और लोअर लो चाहिए, जो अभी बने ही नहीं। यह साइडवेज़ भी नहीं है: उसके लिए हाई और लो को एक ही लेवल के पास अटकना चाहिए। तो सही लेबल है 'अपट्रेंड सवाल में'; अगर आपके पास शेयर है, तो फ़ैसला आपका लिखा हुआ एग्ज़िट नियम करेगा, उम्मीद नहीं।"
-      }
-    },
-    {
-      "stem": {
-        "en": "A polished, AI-written 'research note' in a Telegram group reads: 'Sharma Textiles Ltd: buy at Rs 400, target Rs 440. Our calls hit target 80% of the time.' It gives no stop-loss and no list of past calls. What is the key flaw?",
-        "hi": "Ek Telegram group mein AI se likha, chamakta hua 'research note' aata hai: 'Sharma Textiles Ltd: Rs 400 par buy, target Rs 440. Hamari calls 80% baar target hit karti hain.' Na koi stop-loss diya hai, na purani calls ki list. Sabse badi kami kya hai?",
-        "dv": "एक Telegram ग्रुप में AI से लिखा, चमकता हुआ 'रिसर्च नोट' आता है: 'Sharma Textiles Ltd: Rs 400 पर बाय, टारगेट Rs 440। हमारी कॉल 80% बार टारगेट हिट करती हैं।' न कोई स्टॉप-लॉस दिया है, न पुरानी कॉल की लिस्ट। सबसे बड़ी कमी क्या है?"
-      },
-      "options": [
-        { "text": { "en": "No stop means no R, so the claim cannot be measured", "hi": "Stop nahi, toh R nahi, isliye claim naapa hi nahi ja sakta", "dv": "स्टॉप नहीं, तो R नहीं, इसलिए दावा मापा ही नहीं जा सकता" }, "correct": true },
-        { "text": { "en": "The target is only 10% away, too small to be worth it", "hi": "Target sirf 10% door hai, itna chhota target lena bekaar hai", "dv": "टारगेट सिर्फ़ 10% दूर है, इतना छोटा टारगेट लेना बेकार है" }, "correct": false },
-        { "text": { "en": "Nothing, since an AI checked the numbers before posting", "hi": "Koi kami nahi, kyunki AI ne post se pehle numbers check kiye", "dv": "कोई कमी नहीं, क्योंकि AI ने पोस्ट से पहले नंबर जाँच लिए" }, "correct": false },
-        { "text": { "en": "An 80% hit-rate proves the method makes money overall", "hi": "80% hit-rate saabit karta hai ki method kul milakar kamata hai", "dv": "80% हिट-रेट साबित करता है कि तरीक़ा कुल मिलाकर कमाता है" }, "correct": false }
-      ],
-      "explanation": {
-        "en": "R is the gain or loss divided by the planned risk from entry to stop, so a call with no stop cannot be counted in R at all. With no stop and no full list of calls, the 80% cannot be checked, and even a true hit-rate means little without the average win and loss. A neat AI-written format is not proof: sort this as Kachra until every call is shown with its stop.",
-        "hi": "R ka matlab hai gain ya loss ÷ entry se stop tak ka planned risk, isliye bina stop wali call R mein gini hi nahi ja sakti. Na stop, na calls ki poori list, toh 80% check hi nahi ho sakta; aur sach ho bhi, toh average jeet aur average haar ke bina hit-rate ka matlab kam hai. AI ka saaf-suthra format saboot nahi hai: jab tak har call apne stop ke saath na dikhe, ise Kachra mein daaliye.",
-        "dv": "R का मतलब है गेन या लॉस ÷ एंट्री से स्टॉप तक का प्लान किया हुआ रिस्क, इसलिए बिना स्टॉप वाली कॉल R में गिनी ही नहीं जा सकती। न स्टॉप, न कॉल की पूरी लिस्ट, तो 80% जाँचा ही नहीं जा सकता; और सच हो भी, तो औसत जीत और औसत हार के बिना हिट-रेट का मतलब कम है। AI का साफ़-सुथरा फ़ॉर्मैट सबूत नहीं है: जब तक हर कॉल अपने स्टॉप के साथ न दिखे, इसे कचरे के डिब्बे में डालें।"
+        "en": "A close beyond the zone, on clearly above-average volume, passed two of Day 6's checks; the third is whether price holds when it comes back to test the zone. If the old ceiling now acts as a floor, that is role reversal: commonly seen, but a probability, not a rule. One dip into the zone does not mean the breakout has failed; closes back inside the zone, and staying there, would weaken it. No level makes a further fall impossible either. Your written plan decides what you do next, not a feeling about the level.",
+        "hi": "Zone ke bahar close, woh bhi average se saaf zyada volume par, Day 6 ke do checks paas kar chuka hai; teesra check yeh hai ki zone ko dobara test karne aane par price tikta hai ya nahi. Agar purani chhat ab farsh ka kaam kare, toh woh role reversal hai: aksar dikhta hai, lekin probability hai, rule nahi. Zone mein ek baar utarne se breakout fail nahi ho jaata; zone ke andar close hona, aur wahin tike rehna, use kamzor karega. Koi bhi level aage ki girawat ko naamumkin bhi nahi banata. Aage kya karna hai, yeh aapka likha hua plan tay karta hai, level ke liye aapki feeling nahi.",
+        "dv": "ज़ोन के बाहर क्लोज़, वह भी एवरेज से साफ़ ज़्यादा वॉल्यूम पर, दिन 6 की दो जाँचें पास कर चुका है; तीसरी जाँच यह है कि ज़ोन को दोबारा टेस्ट करने आने पर प्राइस टिकता है या नहीं। अगर पुरानी छत अब फ़र्श का काम करे, तो वह रोल रिवर्सल है: अक्सर दिखता है, लेकिन संभावना है, नियम नहीं। ज़ोन में एक बार उतरने से ब्रेकआउट फ़ेल नहीं हो जाता; ज़ोन के अंदर क्लोज़ होना, और वहीं टिके रहना, उसे कमज़ोर करेगा। कोई भी लेवल आगे की गिरावट को नामुमकिन भी नहीं बनाता। आगे क्या करना है, यह आपका लिखा हुआ प्लान तय करता है, लेवल के लिए आपकी भावना नहीं।"
       }
     },
     {
@@ -269,6 +251,24 @@
         "en": "Hit-rate counts every call that had a stop: 18 ÷ 25 = 72%. The banner's 18 of 20, or 90%, hides the 5 deleted losses; that is survivorship bias. Each win earns 3% ÷ 10% = +0.3R and each loss costs -1R, so over the 25 calls 18 x 0.3R - 7 x 1R = 5.4R - 7R = -1.6R. For a 1:0.3 payoff the breakeven win-rate is 1 ÷ 1.3, about 77%, so even 72% loses money before costs. +3.4R is the banner's view (18 wins, only 2 losses); +11R appears only if every win is counted as a full 1R.",
         "hi": "Hit-rate har us call par ginte hain jismein stop tha: 18 ÷ 25 = 72%. Banner ka 20 mein se 18, yaani 90%, delete ki gayi 5 losing calls ko chhupa leta hai; yahi survivorship bias hai. Har jeet 3% ÷ 10% = +0.3R deti hai aur har haar -1R le jaati hai, toh 25 calls mein 18 x 0.3R - 7 x 1R = 5.4R - 7R = -1.6R. 1:0.3 payoff ka breakeven win-rate 1 ÷ 1.3, yaani lagbhag 77% hai, isliye 72% par bhi costs se pehle hi paisa jaata hai. +3.4R banner wali tasveer hai (18 jeet, sirf 2 haar); +11R tabhi aata hai jab har jeet ko poora 1R gin lein.",
         "dv": "हिट-रेट हर उस कॉल पर गिनते हैं जिसमें स्टॉप था: 18 ÷ 25 = 72%। बैनर का 20 में से 18, यानी 90%, डिलीट की गई 5 घाटे वाली कॉल को छिपा लेता है; यही सर्वाइवरशिप बायस है। हर जीत 3% ÷ 10% = +0.3R देती है और हर हार -1R ले जाती है, तो 25 कॉल में 18 x 0.3R - 7 x 1R = 5.4R - 7R = -1.6R। 1:0.3 पेऑफ़ का ब्रेकईवन विन-रेट 1 ÷ 1.3, यानी लगभग 77% है, इसलिए 72% पर भी कॉस्ट से पहले ही पैसा जाता है। +3.4R बैनर वाली तस्वीर है (18 जीत, सिर्फ़ 2 हार); +11R तभी आता है जब हर जीत को पूरा 1R गिन लें।"
+      }
+    },
+    {
+      "stem": {
+        "en": "A 'professor' in a WhatsApp group asks Priya to install his 'VIP institutional' trading app from a link he has shared. The app's name looks like a well-known broker's. What is the right move?",
+        "hi": "Ek WhatsApp group mein ek 'professor' Priya se kehta hai ki woh uske bheje link se uska 'VIP institutional' trading app install kare. App ka naam kisi jaane-maane broker jaisa lagta hai. Sahi kadam kya hai?",
+        "dv": "एक WhatsApp ग्रुप में एक 'प्रोफ़ेसर' प्रिया से कहता है कि वह उसके भेजे लिंक से उसका 'VIP इंस्टीट्यूशनल' ट्रेडिंग ऐप इंस्टॉल करे। ऐप का नाम किसी जाने-माने ब्रोकर जैसा लगता है। सही क़दम क्या है?"
+      },
+      "options": [
+        { "text": { "en": "Skip the link: find the broker on SEBI's list, then its official store app", "hi": "Link chhod de: broker ko SEBI ki list mein dhoondhe, phir store par uska official app dekhe", "dv": "लिंक छोड़ दे: ब्रोकर को SEBI की लिस्ट में ढूँढे, फिर स्टोर पर उसका ऑफ़िशियल ऐप देखे" }, "correct": true },
+        { "text": { "en": "Install it, but move only a small amount of money in at first", "hi": "Install kar le, lekin shuru mein sirf thoda paisa daale", "dv": "इंस्टॉल कर ले, लेकिन शुरू में सिर्फ़ थोड़ा पैसा डाले" }, "correct": false },
+        { "text": { "en": "Install it if the download page shows good ratings and reviews", "hi": "Agar download page par achhi ratings aur reviews hon, toh install kar le", "dv": "अगर डाउनलोड पेज पर अच्छी रेटिंग और रिव्यू हों, तो इंस्टॉल कर ले" }, "correct": false },
+        { "text": { "en": "Install it once the 'professor' shares a photo of his SEBI certificate", "hi": "'Professor' apne SEBI certificate ki photo share kare, tab install kar le", "dv": "'प्रोफ़ेसर' अपने SEBI सर्टिफ़िकेट की फ़ोटो शेयर करे, तब इंस्टॉल कर ले" }, "correct": false }
+      ],
+      "explanation": {
+        "en": "A 'VIP institutional account' pushed inside a group, and an app sent as a link, are both red flags from Day 7, and fake apps copy real brokers' names and logos. The check: find the broker on SEBI's list of registered stock brokers (Recognised Intermediaries) or in the NSE or BSE member directory, then install only the official Google Play or App Store listing whose developer (publisher) is that same broker. Reviews on a download page can be faked, a certificate photo can be copied, and a 'small first deposit' is how the withdrawal-fee trap begins. Never install an app from an APK file or a link someone sent you.",
+        "hi": "Group ke andar dhakela gaya 'VIP institutional account' aur link se bheja gaya app, dono Day 7 ke red flags hain, aur fake apps asli brokers ka naam aur logo copy karte hain. Check yeh hai: broker ko SEBI ki registered stock brokers ki list (Recognised Intermediaries) mein, ya NSE ya BSE ki member directory mein dhoondhiye, phir sirf woh official Google Play ya App Store listing install kijiye jiska developer (publisher) wahi broker ho. Download page ke reviews nakli ho sakte hain, certificate ki photo copy ho sakti hai, aur 'pehle thoda paisa daalo' se hi withdrawal-fee wala jaal shuru hota hai. APK file se, ya kisi ke bheje link se, kabhi app install mat kijiye.",
+        "dv": "ग्रुप के अंदर धकेला गया 'VIP इंस्टीट्यूशनल अकाउंट' और लिंक से भेजा गया ऐप, दोनों दिन 7 के रेड फ़्लैग हैं, और नक़ली ऐप असली ब्रोकरों का नाम और लोगो कॉपी करते हैं। जाँच यह है: ब्रोकर को SEBI की रजिस्टर्ड स्टॉक ब्रोकर्स की लिस्ट (Recognised Intermediaries) में, या NSE या BSE की मेंबर डायरेक्टरी में ढूँढिए, फिर सिर्फ़ वही ऑफ़िशियल Google Play या App Store लिस्टिंग इंस्टॉल कीजिए जिसका डेवलपर (पब्लिशर) वही ब्रोकर हो। डाउनलोड पेज के रिव्यू नक़ली हो सकते हैं, सर्टिफ़िकेट की फ़ोटो कॉपी हो सकती है, और 'पहले थोड़ा पैसा डालो' से ही पैसा निकालने की फ़ीस वाला जाल शुरू होता है। APK फ़ाइल से, या किसी के भेजे लिंक से, कभी ऐप इंस्टॉल मत कीजिए।"
       }
     }
   ]

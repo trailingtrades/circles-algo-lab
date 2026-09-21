@@ -105,9 +105,9 @@
         "dv": "बैकटेस्ट का मतलब है अपने लिखे हुए रूल को पुराने चार्ट पर चलाना और देखना कि तब क्या होता। इसे बॉलिंग मशीन के सामने नेट्स की प्रैक्टिस समझिए: काम की चीज़ है, लेकिन असली मैच की सेंचुरी नहीं। दिन 12 की पेपर ट्रेडिंग आपके रूल को आगे आने वाले दिनों पर, एक-एक दिन करके परखती है; बैकटेस्ट वही रूल पिछले सालों पर चलाता है, तो 30 ट्रेड महीनों की जगह कुछ घंटों में दिख जाते हैं। पहला बैकटेस्ट हाथ से कीजिए, ताकि आपको पता हो कि हर नंबर कहाँ से आया। शुरुआत डेली चार्ट पर EMA Pullback Swing से कीजिए; ORB के टेस्ट के लिए महीनों का 5-मिनट डेटा चाहिए, क्योंकि उसमें एक स्टॉक पर दिन में ज़्यादा से ज़्यादा एक ट्रेड बनता है। और कोई भी चार्ट खोलने से पहले स्टॉक, तारीख़ें और रूल लिख लीजिए, ताकि भाव की चाल देखने के बाद उन्हें चुनने का मौक़ा ही न रहे।"
       },
       "example": {
-        "en": "Before she opens TradingView, Priya types her test plan at the top of a Google Sheet: 'EMA Pullback Swing, Day 11 Rule Card in its Day 16 yes/no form, saved as v1. Daily charts of Sharma Textiles Ltd, Gupta Cement Ltd and Kiran Foods Ltd (drawn at random from a list written before opening any chart), 1 Jan 2023 to 31 Dec 2025. Entry at the next day's open after the signal candle. Stop 1.5 x ATR(14) below entry. Exit at 2.5R or on the 15-day time exit. Costs 0.1R per trade (the Day 12 allowance). No rule changes until trade 30.' Aman's ten trades came from one stock he already knew had risen. Priya's plan leaves no room for that.",
-        "hi": "TradingView kholne se pehle Priya Google Sheet mein sabse upar apna test plan likh deti hai: 'EMA Pullback Swing, Day 11 ka Rule Card, Day 16 wale haan/na roop mein, v1 naam se save. Sharma Textiles Ltd, Gupta Cement Ltd aur Kiran Foods Ltd (chart kholne se pehle likhi list mein se random chune gaye) ke daily charts, 1 Jan 2023 se 31 Dec 2025 tak. Entry signal candle ke agle din ke open par. Stop entry se 1.5 x ATR(14) neeche. Exit 2.5R par ya 15 din ke time exit par. Costs har trade par 0.1R (Day 12 wala allowance). Trade 30 tak rules mein koi badlaav nahi.' Aman ke das trades ek aise stock se aaye the jiske baare mein use pehle se pata tha ki woh chadh chuka hai. Priya ke plan mein iski gunjaish hi nahi hai.",
-        "dv": "TradingView खोलने से पहले प्रिया Google Sheet में सबसे ऊपर अपना टेस्ट प्लान लिख देती है: 'EMA Pullback Swing, दिन 11 का रूल कार्ड, दिन 16 वाले हाँ/ना रूप में, v1 नाम से सेव। Sharma Textiles Ltd, Gupta Cement Ltd और Kiran Foods Ltd (चार्ट खोलने से पहले लिखी लिस्ट में से लॉटरी से चुने गए) के डेली चार्ट, 1 जनवरी 2023 से 31 दिसंबर 2025 तक। एंट्री सिग्नल कैंडल के अगले दिन के ओपन पर। स्टॉप एंट्री से 1.5 x ATR(14) नीचे। एग्ज़िट 2.5R पर या 15 दिन के टाइम एग्ज़िट पर। ख़र्च हर ट्रेड पर 0.1R (दिन 12 वाला अलाउंस)। ट्रेड 30 तक रूल में कोई बदलाव नहीं।' अमन के दस ट्रेड एक ऐसे स्टॉक से आए थे, जिसके बारे में उसे पहले से पता था कि वह चढ़ चुका है। प्रिया के प्लान में इसकी गुंजाइश ही नहीं है।"
+        "en": "Before she opens TradingView, Priya types her test plan at the top of a Google Sheet: 'EMA Pullback Swing, Day 11 Rule Card in its Day 16 yes/no form, saved as v1. Daily charts of Sharma Textiles Ltd, Gupta Cement Ltd and Kiran Foods Ltd (drawn at random from a list written before opening any chart, and every name drawn kept), 1 Jan 2023 to 31 Dec 2025. Entry at the next day's open after the signal candle. Stop 1.5 x ATR(14) below entry. Exit at 2.5R or on the 15-day time exit. Costs 0.1R per trade (the Day 12 allowance). No rule changes until trade 30.' Aman's ten trades came from one stock he already knew had risen. Priya's plan leaves no room for that. Her full plan is the model card under 'Your template' in Today's task.",
+        "hi": "TradingView kholne se pehle Priya Google Sheet ke sabse upar apna test plan type karti hai: 'EMA Pullback Swing, Day 11 ka Rule Card Day 16 wale yes/no roop mein, v1 naam se save. Sharma Textiles Ltd, Gupta Cement Ltd aur Kiran Foods Ltd ke daily charts (koi bhi chart kholne se pehle likhi gayi list se random chune gaye, aur jo naam nikle sab rakhe), 1 Jan 2023 se 31 Dec 2025 tak. Signal candle ke baad agle din ke open par entry. Stop entry se 1.5 x ATR(14) neeche. Exit 2.5R par ya 15 din ke time exit par. Costs har trade par 0.1R (Day 12 wala allowance). Trade 30 tak koi rule change nahi.' Aman ke das trades ek aise stock se aaye the jiske baare mein use pehle se pata tha ki woh chadh chuka hai. Priya ke plan mein iski koi gunjaish nahi. Uska poora plan Aaj Ka Kaam mein 'Aapka template' wala model card hai.",
+        "dv": "TradingView खोलने से पहले प्रिया Google Sheet में सबसे ऊपर अपना टेस्ट प्लान टाइप करती है: 'EMA पुलबैक स्विंग, दिन 11 का रूल कार्ड दिन 16 वाले हाँ/ना रूप में, v1 नाम से सेव। Sharma Textiles Ltd, Gupta Cement Ltd और Kiran Foods Ltd के डेली चार्ट (कोई भी चार्ट खोलने से पहले लिखी गई लिस्ट से रैंडम चुने गए, और जो नाम निकले सब रखे), 1 जनवरी 2023 से 31 दिसंबर 2025 तक। सिग्नल कैंडल के बाद अगले दिन के ओपन पर एंट्री। स्टॉप एंट्री से 1.5 x ATR(14) नीचे। एग्ज़िट 2.5R पर या 15 दिन के टाइम एग्ज़िट पर। ख़र्च हर ट्रेड पर 0.1R (दिन 12 वाला अलाउंस)। ट्रेड 30 तक कोई नियम नहीं बदलेगा।' अमन के दस ट्रेड एक ऐसे स्टॉक से आए थे जिसके बारे में उसे पहले से पता था कि वह चढ़ चुका है। प्रिया के प्लान में इसकी कोई गुंजाइश नहीं। उसका पूरा प्लान आज का काम में 'आपका टेम्पलेट' वाला मॉडल कार्ड है।"
       },
       "remember": {
         "en": "Stocks, dates and rules go on paper before the chart opens. Every result is hypothetical.",
@@ -436,9 +436,9 @@
         "dv": "30 ट्रेड लॉग हो जाएँ, तो चार नंबर पढ़िए। विन-रेट यानी जीते हुए ट्रेड को कुल ट्रेड से भाग दीजिए। एक्सपेक्टेंसी यानी हर ट्रेड का औसत नेट R, दिन 3 वाला आइडिया, अब आपके अपने रूल पर मापा हुआ। मैक्सिमम ड्रॉडाउन यानी आपके R के रनिंग टोटल का किसी पीक से बाद के लो तक सबसे बड़ा गिरना। लगातार घाटों की सबसे लंबी सीरीज़ (लूज़िंग स्ट्रीक) यानी लगातार सबसे ज़्यादा कितने घाटे आए। फिर इक्विटी कर्व बनाइए: हर ट्रेड के बाद आपके कुल नेट R की लाइन।"
       },
       "example": {
-        "en": "These are made-up practice numbers, not a real test of the strategy. Priya's 30 trades: 12 wins, so a 40% win-rate. Seven winners hit the 2.5R profit exit and five left on the time exit with smaller gains. Her net R adds up to +3.57R, so expectancy is +3.57 / 30, about +0.12R per trade; before costs it was +6.57R, so 0.1R a trade took almost half. Her running total peaked at +7.40R after trade 19 and fell to +1.17R after trade 27: a maximum drawdown of 6.23R, or up to Rs 62,300 on Rs 10 lakh if every trade was full size. By trade 30 the curve still had not climbed back to that peak. Inside that fall sat five losses in a row. That is normal. In a simple model where each trade has a 40% chance of winning, a run of five or more losses somewhere in 30 trades turns up roughly two times in three.",
-        "hi": "Yeh practice ke liye banaye gaye numbers hain, strategy ka asli test nahi. Priya ke 30 trades: 12 jeete, yaani 40% win-rate. Saat winners 2.5R wale profit exit tak pahunche, aur paanch time exit par chhote gain ke saath nikle. Net R ka jod +3.57R hai, toh expectancy +3.57 / 30, lagbhag +0.12R per trade; costs se pehle yeh +6.57R tha, yaani har trade ke 0.1R ne lagbhag aadha kha liya. Uska running total trade 19 ke baad +7.40R ke peak par tha, aur trade 27 ke baad +1.17R tak gir gaya: maximum drawdown 6.23R, yaani Rs 10 lakh par zyada se zyada Rs 62,300, agar har trade full size ka tha. Trade 30 tak curve wapas us peak tak nahi pahunchi thi. Isi giraavat ke andar lagaataar paanch loss the. Yeh normal hai. Ek simple model mein, jahan har trade ke jeetne ka chance 40% ho, 30 trades mein kahin na kahin paanch ya zyada loss lagaataar aana lagbhag teen mein se do baar hota hai.",
-        "dv": "ये प्रैक्टिस के लिए गढ़े गए नंबर हैं, स्ट्रैटेजी का असली टेस्ट नहीं। प्रिया के 30 ट्रेड: 12 जीते, यानी 40% विन-रेट। सात जीतने वाले ट्रेड 2.5R वाले प्रॉफ़िट एग्ज़िट तक पहुँचे, और पाँच टाइम एग्ज़िट पर छोटे फ़ायदे के साथ निकले। नेट R का जोड़ +3.57R है, तो एक्सपेक्टेंसी +3.57 / 30, लगभग +0.12R प्रति ट्रेड; ख़र्च से पहले यह +6.57R था, यानी हर ट्रेड के 0.1R ने लगभग आधा खा लिया। उसका रनिंग टोटल ट्रेड 19 के बाद +7.40R के पीक पर था, और ट्रेड 27 के बाद +1.17R तक गिर गया: मैक्सिमम ड्रॉडाउन 6.23R, यानी Rs 10 लाख पर ज़्यादा से ज़्यादा Rs 62,300, अगर हर ट्रेड पूरे साइज़ का था। ट्रेड 30 तक कर्व वापस उस पीक तक नहीं पहुँची थी। इसी गिरावट के अंदर लगातार पाँच घाटे थे। यह आम बात है। एक सीधे-सादे मॉडल में, जहाँ हर ट्रेड के जीतने का चांस 40% हो, 30 ट्रेड में कहीं न कहीं पाँच या ज़्यादा घाटे लगातार आना लगभग तीन में से दो बार होता है।"
+        "en": "These are made-up practice numbers, not a real test of the strategy. Priya's 30 trades: 12 wins, so a 40% win-rate. Seven winners hit the 2.5R profit exit and five left on the time exit with smaller gains. Her net R adds up to +3.57R, so expectancy is +3.57 / 30, about +0.12R per trade; before costs it was +6.57R, so 0.1R a trade took almost half. Her running total peaked at +7.40R after trade 19 and fell to +1.17R after trade 27: a maximum drawdown of 6.23R, or up to Rs 62,300 on Rs 10 lakh if every trade was full size. By trade 30 the curve still had not climbed back to that peak. Inside that fall sat five losses in a row. That is normal. In a simple model where each trade has a 40% chance of winning, a run of five or more losses somewhere in 30 trades turns up roughly two times in three. Her trades 18 to 30, from the peak through the fall, are the sample Backtest Log under 'Your template'.",
+        "hi": "Yeh practice ke liye banaye gaye numbers hain, strategy ka asli test nahi. Priya ke 30 trades: 12 jeete, yaani 40% win-rate. Saat winners 2.5R wale profit exit tak pahunche, aur paanch time exit par chhote gain ke saath nikle. Net R ka jod +3.57R hai, toh expectancy +3.57 / 30, lagbhag +0.12R per trade; costs se pehle yeh +6.57R tha, yaani har trade ke 0.1R ne lagbhag aadha kha liya. Uska running total trade 19 ke baad +7.40R ke peak par tha, aur trade 27 ke baad +1.17R tak gir gaya: maximum drawdown 6.23R, yaani Rs 10 lakh par zyada se zyada Rs 62,300, agar har trade full size ka tha. Trade 30 tak curve wapas us peak tak nahi pahunchi thi. Isi giraavat ke andar lagaataar paanch loss the. Yeh normal hai. Ek simple model mein, jahan har trade ke jeetne ka chance 40% ho, 30 trades mein kahin na kahin paanch ya zyada loss lagaataar aana lagbhag teen mein se do baar hota hai. Peak se giraavat tak ke uske trades 18 se 30 'Aapka template' mein sample Backtest Log ke roop mein diye hain.",
+        "dv": "ये प्रैक्टिस के लिए गढ़े गए नंबर हैं, स्ट्रैटेजी का असली टेस्ट नहीं। प्रिया के 30 ट्रेड: 12 जीते, यानी 40% विन-रेट। सात जीतने वाले ट्रेड 2.5R वाले प्रॉफ़िट एग्ज़िट तक पहुँचे, और पाँच टाइम एग्ज़िट पर छोटे फ़ायदे के साथ निकले। नेट R का जोड़ +3.57R है, तो एक्सपेक्टेंसी +3.57 / 30, लगभग +0.12R प्रति ट्रेड; ख़र्च से पहले यह +6.57R था, यानी हर ट्रेड के 0.1R ने लगभग आधा खा लिया। उसका रनिंग टोटल ट्रेड 19 के बाद +7.40R के पीक पर था, और ट्रेड 27 के बाद +1.17R तक गिर गया: मैक्सिमम ड्रॉडाउन 6.23R, यानी Rs 10 लाख पर ज़्यादा से ज़्यादा Rs 62,300, अगर हर ट्रेड पूरे साइज़ का था। ट्रेड 30 तक कर्व वापस उस पीक तक नहीं पहुँची थी। इसी गिरावट के अंदर लगातार पाँच घाटे थे। यह आम बात है। एक सीधे-सादे मॉडल में, जहाँ हर ट्रेड के जीतने का चांस 40% हो, 30 ट्रेड में कहीं न कहीं पाँच या ज़्यादा घाटे लगातार आना लगभग तीन में से दो बार होता है। पीक से गिरावट तक के उसके ट्रेड 18 से 30 'आपका टेम्पलेट' में सैंपल बैकटेस्ट लॉग के रूप में दिए हैं।"
       },
       "remember": {
         "en": "Expectancy says whether the rule had an edge in this sample; drawdown says whether you could have stayed with it.",
@@ -578,9 +578,9 @@
         "dv": "जब डेटा ही झूठ बोले: सर्वाइवरशिप और अनएडजस्टेड भाव"
       },
       "p": {
-        "en": "Survivorship bias means testing only on companies that survived to today. Take today's NIFTY 50 list and test it back to 2019, and the companies that dropped out of the index, often after long falls, are simply missing, so your test sees only the winners of the race. At Level 1 you can only reduce it: build your list from what was known on your start date, for example the index members in that year (NSE Indices publishes past index changes on its website), and write 'survivorship risk' in your report. The second trap is unadjusted data. A split or bonus issue (Day 15) cuts the share price overnight without anyone losing money, but an unadjusted chart shows it as a crash that fires fake stops and bends EMA, RSI and ATR for weeks. Use adjusted charts, and treat any sudden, neat drop, such as the price falling to exactly half or a fifth, as a question to check against the company's corporate actions.",
-        "hi": "Survivorship bias ka matlab hai sirf un companies par test karna jo aaj tak tiki rahin. Aaj ki NIFTY 50 list lekar 2019 tak peeche test kijiye, toh jo companies aksar lambi giraavat ke baad index se bahar ho gayin, woh list mein hain hi nahi; aapka test sirf race jeetne walon ko dekhta hai. Level 1 par ise sirf kam kar sakte hain: list us jaankari se banaiye jo aapki start date par thi, jaise us saal index mein kaun-kaun tha (NSE Indices apni website par purane index changes deta hai), aur report mein 'survivorship risk' likh dijiye. Doosra jaal hai unadjusted data. Split ya bonus issue (Day 15) raaton-raat share price kaat deta hai, kisi ka paisa doobe bina, lekin unadjusted chart ise crash ki tarah dikhata hai, jo nakli stops trigger kar deta hai aur hafton tak EMA, RSI aur ATR ko bigaad deta hai. Adjusted charts use kijiye, aur price achanak kisi saaf hisaab se gire, jaise theek aadha ya paanchwa hissa reh jaaye, toh company ke corporate actions se zaroor milaiye.",
-        "dv": "सर्वाइवरशिप बायस का मतलब है सिर्फ़ उन कंपनियों पर टेस्ट करना जो आज तक टिकी रहीं। आज की NIFTY 50 लिस्ट लेकर 2019 तक पीछे टेस्ट कीजिए, तो जो कंपनियाँ अक्सर लंबी गिरावट के बाद इंडेक्स से बाहर हो गईं, वे लिस्ट में हैं ही नहीं; आपका टेस्ट सिर्फ़ रेस जीतने वालों को देखता है। लेवल 1 पर इसे सिर्फ़ कम कर सकते हैं: लिस्ट उस जानकारी से बनाइए जो आपकी शुरुआती तारीख़ पर थी, जैसे उस साल इंडेक्स में कौन-कौन था (NSE Indices अपनी वेबसाइट पर पुराने इंडेक्स बदलाव देता है), और रिपोर्ट में 'सर्वाइवरशिप रिस्क' लिख दीजिए। दूसरा जाल है अनएडजस्टेड डेटा। स्प्लिट या बोनस इश्यू (दिन 15) रातों-रात शेयर का भाव काट देता है, किसी का पैसा डूबे बिना, लेकिन अनएडजस्टेड चार्ट इसे क्रैश की तरह दिखाता है, जो नक़ली स्टॉप ट्रिगर कर देता है और हफ़्तों तक EMA, RSI और ATR को बिगाड़ देता है। एडजस्टेड चार्ट इस्तेमाल कीजिए, और भाव अचानक किसी साफ़ हिसाब से गिरे, जैसे ठीक आधा या पाँचवाँ हिस्सा रह जाए, तो कंपनी के कॉर्पोरेट एक्शन से ज़रूर मिलाइए।"
+        "en": "Survivorship bias means testing only on companies that survived to today. Test today's NIFTY 50 list back to 2019, and the companies that dropped out, often after long falls, are simply missing, so your test sees only the winners of the race. The fix is a point-in-time list, the index members as they stood on your start date: NSE Indices Ltd, the NSE group company that runs the NIFTY indices, announces every change in a press release on niftyindices.com, so start from today's list, take out the names that joined after your start date and add back the ones that left. Then keep every name your random draw gives you; swapping out one you remember rising is hindsight too, only pointing the other way. If rebuilding the list is too much for now, use today's list and write 'survivorship risk' in your report. The second trap is unadjusted data: a split or bonus issue (Day 15) cuts the share price overnight without anyone losing money, but an unadjusted chart shows it as a crash that fires fake stops and bends EMA, RSI and ATR for weeks, so use adjusted charts and check any sudden, neat drop, such as exactly half or a fifth, against the company's corporate actions.",
+        "hi": "Survivorship bias ka matlab hai sirf un companies par test karna jo aaj tak tiki rahin. Aaj ki NIFTY 50 list lekar 2019 tak peeche test kijiye, toh jo companies aksar lambi giraavat ke baad index se bahar ho gayin, woh list mein hain hi nahi; aapka test sirf race jeetne walon ko dekhta hai. Iska ilaaj hai point-in-time list, yaani index ke woh members jo aapki start date par the: NSE Indices Ltd, NSE group ki woh company jo NIFTY indices chalati hai, har badlaav ka press release niftyindices.com par deti hai; toh aaj ki list se shuru kijiye, start date ke baad jude naam hataiye aur jo naam bahar gaye unhe wapas jodiye. Phir random draw jo bhi naam de, sab rakhiye; jo stock aapko yaad hai ki chadha tha, use badalna bhi hindsight hi hai, bas ulti disha mein. Abhi list dobara banana bhaari lage, toh aaj ki list lijiye aur report mein 'survivorship risk' likhiye. Doosra jaal hai unadjusted data: split ya bonus issue (Day 15) raaton-raat share price kaat deta hai, kisi ka paisa doobe bina, lekin unadjusted chart ise crash ki tarah dikhata hai, jo nakli stops trigger karta hai aur hafton tak EMA, RSI aur ATR bigaadta hai; isliye adjusted charts use kijiye, aur price achanak kisi saaf hisaab se gire, jaise theek aadha ya paanchwa hissa, toh company ke corporate actions se milaiye.",
+        "dv": "सर्वाइवरशिप बायस का मतलब है सिर्फ़ उन कंपनियों पर टेस्ट करना जो आज तक टिकी रहीं। आज की NIFTY 50 लिस्ट लेकर 2019 तक पीछे टेस्ट कीजिए, तो जो कंपनियाँ अक्सर लंबी गिरावट के बाद इंडेक्स से बाहर हो गईं, वे लिस्ट में हैं ही नहीं; आपका टेस्ट सिर्फ़ रेस जीतने वालों को देखता है। इसका इलाज है पॉइंट-इन-टाइम लिस्ट, यानी इंडेक्स के वे सदस्य जो आपकी शुरुआती तारीख़ पर थे: NSE Indices Ltd, NSE ग्रुप की वह कंपनी जो NIFTY इंडेक्स चलाती है, हर बदलाव की प्रेस रिलीज़ niftyindices.com पर देती है; तो आज की लिस्ट से शुरू कीजिए, शुरुआती तारीख़ के बाद जुड़े नाम हटाइए और जो नाम बाहर गए उन्हें वापस जोड़िए। फिर रैंडम ड्रॉ जो भी नाम दे, सब रखिए; जो स्टॉक आपको याद है कि चढ़ा था, उसे बदलना भी हिंडसाइट ही है, बस उल्टी दिशा में। अभी लिस्ट दोबारा बनाना भारी लगे, तो आज की लिस्ट लीजिए और रिपोर्ट में 'सर्वाइवरशिप रिस्क' लिखिए। दूसरा जाल है अनएडजस्टेड डेटा: स्प्लिट या बोनस इश्यू (दिन 15) रातों-रात शेयर का भाव काट देता है, किसी का पैसा डूबे बिना, लेकिन अनएडजस्टेड चार्ट इसे क्रैश की तरह दिखाता है, जो नक़ली स्टॉप ट्रिगर करता है और हफ़्तों तक EMA, RSI और ATR बिगाड़ता है; इसलिए एडजस्टेड चार्ट इस्तेमाल कीजिए, और भाव अचानक किसी साफ़ हिसाब से गिरे, जैसे ठीक आधा या पाँचवाँ हिस्सा, तो कंपनी के कॉर्पोरेट एक्शन से मिलाइए।"
       },
       "example": {
         "en": "Sharma Textiles Ltd trades at Rs 1,000 and splits each share into five (face value Rs 10 to Rs 2). On the ex-date the price opens near Rs 200, and a holder of 100 shares now holds 500 (the new shares reach the demat account soon after the record date; check the company's announcement), still worth about Rs 1,00,000. An unadjusted chart shows an 80% gap down. A backtest trade entered at Rs 1,000 with a Rs 21 stop would log (200 - 1,000) / 21, about -38R, a loss that never happened. An adjusted chart divides every earlier price by 5, so the line stays smooth and the test stays honest.",
@@ -615,13 +615,18 @@
             "points": [
               {
                 "en": "Today's index list tested on old years",
-                "hi": "Aaj ki index list purane saalon par",
-                "dv": "आज की इंडेक्स लिस्ट पुराने सालों पर"
+                "hi": "Aaj ki index list purane saalon par test",
+                "dv": "आज की इंडेक्स लिस्ट पुराने सालों पर टेस्ट"
               },
               {
                 "en": "Companies that dropped out are missing",
                 "hi": "Bahar hui companies gayab",
                 "dv": "बाहर हुई कंपनियाँ ग़ायब"
+              },
+              {
+                "en": "Names swapped after peeking at charts",
+                "hi": "Chart dekh kar naam badle gaye",
+                "dv": "चार्ट देखकर नाम बदले गए"
               },
               {
                 "en": "A bonus or split looks like a crash",
@@ -642,6 +647,11 @@
                 "en": "List as it stood on the start date",
                 "hi": "Start date wali list",
                 "dv": "शुरुआती तारीख़ वाली लिस्ट"
+              },
+              {
+                "en": "Every random draw kept",
+                "hi": "Random draw ka har naam rakha",
+                "dv": "रैंडम ड्रॉ का हर नाम रखा"
               },
               {
                 "en": "'Survivorship risk' noted in the report",
@@ -809,6 +819,30 @@
         "hi": "Rules ko tab tak tweak karna jab tak woh purane data par perfect fit na ho jaayein. Aksar yeh random noise par fit hota hai jo dobara nahi aata.",
         "dv": "रूल को तब तक बदलते रहना जब तक वे पुराने डेटा पर पूरी तरह फ़िट न हो जाएँ। अक्सर यह ऐसे बेतरतीब नॉइज़ पर फ़िट होता है जो दोबारा नहीं आता।"
       }
+    },
+    {
+      "term": {
+        "en": "Point-in-time list",
+        "hi": "Point-in-time list",
+        "dv": "पॉइंट-इन-टाइम लिस्ट"
+      },
+      "meaning": {
+        "en": "An index or stock list exactly as it stood on a past date, before later additions and removals. A backtest uses it to reduce survivorship bias.",
+        "hi": "Kisi index ya stocks ki list bilkul waisi jaisi woh kisi purani date par thi, baad mein jude aur hate naamon se pehle. Backtest survivorship bias kam karne ke liye yahi use karta hai.",
+        "dv": "किसी इंडेक्स या स्टॉक की लिस्ट ठीक वैसी, जैसी वह किसी पुरानी तारीख़ पर थी, बाद में जुड़े और हटे नामों से पहले। बैकटेस्ट सर्वाइवरशिप बायस कम करने के लिए यही इस्तेमाल करता है।"
+      }
+    },
+    {
+      "term": {
+        "en": "Equity curve",
+        "hi": "Equity curve",
+        "dv": "इक्विटी कर्व"
+      },
+      "meaning": {
+        "en": "A line of your running total of net R, trade after trade. Its falls from a peak are your drawdowns.",
+        "hi": "Aapke net R ke chalte total ki line, trade dar trade. Peak se iski har giraavat ek drawdown hai.",
+        "dv": "आपके नेट R के चलते कुल की लाइन, ट्रेड दर ट्रेड। पीक से इसकी हर गिरावट एक ड्रॉडाउन है।"
+      }
     }
   ],
   "mindmap": {
@@ -933,6 +967,11 @@
             "dv": "सर्वाइवरशिप बायस"
           },
           {
+            "en": "Point-in-time index list",
+            "hi": "Point-in-time index list",
+            "dv": "पॉइंट-इन-टाइम इंडेक्स लिस्ट"
+          },
+          {
             "en": "Unadjusted splits and bonuses",
             "hi": "Unadjusted split aur bonus",
             "dv": "अनएडजस्टेड स्प्लिट और बोनस"
@@ -967,15 +1006,15 @@
     ]
   },
   "kaam": {
-    "en": "Set up an honest backtest today and log your first 3 trades; finish all 30 over the next 7 days.",
-    "hi": "Aaj ek imaandar backtest set up kijiye aur pehle 3 trades log kijiye; poore 30 agle 7 din mein khatam kijiye.",
-    "dv": "आज एक ईमानदार बैकटेस्ट तैयार कीजिए और पहले 3 ट्रेड लॉग कीजिए; पूरे 30 अगले 7 दिन में ख़त्म कीजिए।"
+    "en": "Set up an honest backtest today and log your first 3 trades; finish all 30 within the next 7 days and add your four numbers to your Week 3 review (on Day 21, or in the catch-up week after it if trade 30 is not done yet).",
+    "hi": "Aaj ek imaandar backtest set up kijiye aur pehle 3 trades log kijiye; poore 30 agle 7 din mein khatam kijiye aur apne chaar numbers Week 3 review mein jodiye (Day 21 par, ya trade 30 baaki ho toh uske baad ke catch-up hafte mein).",
+    "dv": "आज एक ईमानदार बैकटेस्ट तैयार कीजिए और पहले 3 ट्रेड लॉग कीजिए; पूरे 30 अगले 7 दिन में ख़त्म कीजिए और अपने चार नंबर हफ़्ता 3 के रिव्यू में जोड़िए (दिन 21 पर, या ट्रेड 30 बाक़ी हो तो उसके बाद के कैच-अप हफ़्ते में)।"
   },
   "kaam_steps": [
     {
-      "en": "Run the AI Lab prompt 'Backtest stats sheet' and build the sheet it gives you in Google Sheets (easier on a laptop).",
-      "hi": "AI Lab ka 'Backtest stats sheet' prompt chalaiye aur jo sheet woh deta hai, use Google Sheets mein bana lijiye (laptop par aasaan rahega).",
-      "dv": "AI Lab का 'बैकटेस्ट स्टैट्स शीट' प्रॉम्प्ट चलाइए और जो शीट वह देता है, उसे Google Sheets में बना लीजिए (लैपटॉप पर आसान रहेगा)।"
+      "en": "Copy the test plan and the Backtest Log under 'Your template' into a Google Sheet or a notebook, fill every plan line except the stocks, and write 'v1, frozen until trade 30'. Optional: the AI Lab prompt 'Backtest stats sheet' adds formulas; test them on Priya's 14 sample rows first (they must show a 6.23R maximum drawdown and a 5-loss streak).",
+      "hi": "'Aapka template' mein diya test plan aur Backtest Log Google Sheet ya notebook mein copy kijiye, stocks chhod kar plan ki har line bhariye, aur likhiye 'v1, trade 30 tak freeze'. Chahein toh AI Lab ka 'Backtest stats sheet' prompt formulas jod dega; pehle unhe Priya ki 14 sample rows par test kijiye (6.23R ka maximum drawdown aur lagaataar 5 loss dikhne chahiye).",
+      "dv": "'आपका टेम्पलेट' में दिया टेस्ट प्लान और बैकटेस्ट लॉग Google Sheet या नोटबुक में कॉपी कीजिए, स्टॉक छोड़कर प्लान की हर लाइन भरिए, और लिखिए 'v1, ट्रेड 30 तक फ़्रीज़'। चाहें तो AI Lab का 'बैकटेस्ट स्टैट्स शीट' प्रॉम्प्ट फ़ॉर्मूले जोड़ देगा; पहले उन्हें प्रिया की 14 सैंपल लाइनों पर जाँचिए (6.23R का मैक्सिमम ड्रॉडाउन और लगातार 5 घाटे दिखने चाहिए)।"
     },
     {
       "en": "Check your cost number: on a broker's public brokerage calculator (no account needed), note the total charges for a delivery buy and sell of about Rs 2.5 lakh, your largest position under the 25% cap, add your slippage allowance and divide by Rs 10,000. If the total is above 0.1R (Rs 1,000), use your number; otherwise use the Day 12 allowance of 0.1R per trade.",
@@ -983,9 +1022,9 @@
       "dv": "अपना ख़र्च वाला नंबर जाँचिए: किसी ब्रोकर के पब्लिक ब्रोकरेज कैलकुलेटर पर (अकाउंट की ज़रूरत नहीं) लगभग Rs 2.5 लाख की डिलीवरी ख़रीद-बिक्री का कुल चार्ज नोट कीजिए, जो 25% की सीमा के हिसाब से आपकी सबसे बड़ी पोज़िशन है, स्लिपेज का अंदाज़ा जोड़िए और Rs 10,000 से भाग दीजिए। अगर कुल 0.1R (Rs 1,000) से ज़्यादा आए तो अपना नंबर लीजिए, वरना हर ट्रेड पर दिन 12 वाला 0.1R अलाउंस।"
     },
     {
-      "en": "Before opening any chart, type your test plan in the sheet's top rows: Rule Card version; 3-5 stocks picked by a rule you write before looking at any chart (for example, draw them with RAND() in Google Sheets from the NIFTY 50 list as it stood on your start date, and swap out any stock you already know rose); date range; entry at the next day's open with the Day 11 skip rules; stop 1.5 x ATR(14); exits (2.5R or the 15-day time exit); the Day 12 fill rules; cost in R; whether you applied the results-date and relative-strength checks; and the open-trade limit: if a fourth trade would open while 3 are open, write skipped: 3 open. These stocks are a testing drill, not a buy list; do not share them as tips.",
-      "hi": "Koi bhi chart kholne se pehle sheet ki upar wali rows mein test plan likhiye: Rule Card version; 3-5 stocks, jo koi bhi chart dekhe bina likhe gaye rule se chune gaye hon (jaise start date wali NIFTY 50 list mein se Google Sheets ke RAND() se chuniye, aur jis stock ke baare mein pehle se pata hai ki woh chadha tha, use badal dijiye); date range; Day 11 ke skip rules ke saath agle din ke open par entry; stop 1.5 x ATR(14); exits (2.5R ya 15 din ka time exit); Day 12 ke fill rules; cost R mein; results-date aur relative strength wale checks lagaye ya nahi; aur open trades ki limit: agar 3 trades pehle se khule hon aur chautha signal aaye, toh skipped: 3 open likhiye. Yeh stocks sirf test ki drill hain, buy list nahi; inhe tips ki tarah share mat kijiye.",
-      "dv": "कोई भी चार्ट खोलने से पहले शीट की ऊपर की लाइनों में टेस्ट प्लान लिखिए: रूल कार्ड का वर्ज़न; 3-5 स्टॉक, जो कोई भी चार्ट देखे बिना लिखे गए रूल से चुने गए हों (जैसे शुरुआती तारीख़ वाली NIFTY 50 लिस्ट में से Google Sheets के RAND() से चुनिए, और जिस स्टॉक के बारे में पहले से पता है कि वह चढ़ा था, उसे बदल दीजिए); तारीख़ों की रेंज; दिन 11 के स्किप रूल के साथ अगले दिन के ओपन पर एंट्री; स्टॉप 1.5 x ATR(14); एग्ज़िट (2.5R या 15 दिन का टाइम एग्ज़िट); दिन 12 के फ़िल रूल; ख़र्च R में; रिज़ल्ट-डेट और रिलेटिव स्ट्रेंथ वाले चेक लगाए या नहीं; और खुले ट्रेड की लिमिट: अगर 3 ट्रेड पहले से खुले हों और चौथा सिग्नल आए, तो स्किप्ड: 3 खुले लिखिए। ये स्टॉक सिर्फ़ टेस्ट की ड्रिल हैं, ख़रीदने की लिस्ट नहीं; इन्हें टिप की तरह शेयर मत कीजिए।"
+      "en": "Choose your stocks before any chart: on niftyindices.com, open the press releases on NIFTY 50 changes since your start date, rebuild the list as it stood that day, draw 3-5 names with RAND() in Google Sheets and keep every name drawn, even one you remember rising. Too much today? Use today's list and write 'survivorship risk' in your plan. These names are a testing drill, not a buy list; never share them as tips.",
+      "hi": "Koi bhi chart dekhne se pehle stocks chuniye: niftyindices.com par apni start date ke baad ke NIFTY 50 badlaav wale press releases kholiye, us din jaisi list dobara banaiye, Google Sheets mein RAND() se 3-5 naam nikaaliye aur jo naam nikle sab rakhiye, woh bhi jiske baare mein yaad hai ki chadha tha. Aaj itna bhaari lage? Aaj ki list lijiye aur plan mein 'survivorship risk' likhiye. Yeh naam sirf test ki drill hain, buy list nahi; inhe kabhi tips ki tarah share mat kijiye.",
+      "dv": "कोई भी चार्ट देखने से पहले स्टॉक चुनिए: niftyindices.com पर अपनी शुरुआती तारीख़ के बाद के NIFTY 50 बदलावों वाली प्रेस रिलीज़ खोलिए, उस दिन जैसी लिस्ट दोबारा बनाइए, Google Sheets में RAND() से 3-5 नाम निकालिए और जो नाम निकलें सब रखिए, वह भी जिसके बारे में याद है कि चढ़ा था। आज इतना भारी लगे? आज की लिस्ट लीजिए और प्लान में 'सर्वाइवरशिप रिस्क' लिखिए। ये नाम सिर्फ़ टेस्ट की ड्रिल हैं, ख़रीदने की लिस्ट नहीं; इन्हें कभी टिप की तरह शेयर मत कीजिए।"
     },
     {
       "en": "On a free TradingView daily chart with EMA 20, EMA 50, RSI 14 and ATR 14, turn on Bar Replay and pick your start date as the first candle (it may need a free sign-in, never a broker account), or scroll back and cover the right side of the screen. If the free plan caps your indicators, use one moving-average ribbon for both EMAs and check RSI and ATR in turn, as on Day 8.",
@@ -993,14 +1032,14 @@
       "dv": "TradingView के फ़्री डेली चार्ट पर EMA 20, EMA 50, RSI 14 और ATR 14 लगाइए, Bar Replay चालू कीजिए और अपनी शुरुआती तारीख़ को पहली कैंडल चुनिए (फ़्री साइन-इन लग सकता है, ब्रोकर अकाउंट कभी नहीं), या चार्ट पीछे स्क्रॉल करके स्क्रीन का दायाँ हिस्सा ढक दीजिए। अगर फ़्री प्लान इंडिकेटर की लिमिट लगा दे, तो दोनों EMA के लिए एक मूविंग-एवरेज रिबन लगाइए और RSI और ATR बारी-बारी से देखिए, जैसे दिन 8 में किया था।"
     },
     {
-      "en": "Log your first 3 trades that fit the card. Move one candle at a time; when a candle completes a signal, write the plan (max entry, skip-below price, stop) before revealing the next one, let that open decide entry or skipped: gap, and log any gap past the stop at the open.",
-      "hi": "Card par fit baithne wale pehle 3 trades log kijiye. Ek-ek candle aage badhiye; jab koi candle signal poora kare, toh agli candle kholne se pehle plan likhiye (max entry, kis price ke neeche skip, stop), phir uska open tay karega ki entry hai ya skipped: gap, aur stop ke paar gap ho toh exit open par likhiye.",
-      "dv": "कार्ड पर खरे उतरने वाले पहले 3 ट्रेड लॉग कीजिए। एक-एक कैंडल आगे बढ़िए; जब कोई कैंडल सिग्नल पूरा करे, तो अगली कैंडल खोलने से पहले प्लान लिखिए (मैक्स एंट्री, किस भाव के नीचे स्किप, स्टॉप), फिर उसका ओपन तय करेगा कि एंट्री है या स्किप्ड: गैप, और स्टॉप के पार गैप हो तो एग्ज़िट ओपन पर लिखिए।"
+      "en": "Log your first 3 trades that fit the card in your Backtest Log. Move one candle at a time; when a candle completes a signal, write the plan (max entry, skip-below price, stop) before revealing the next one, let that open decide entry or skipped: gap, and log any gap past the stop at the open.",
+      "hi": "Card par fit baithne wale pehle 3 trades apne Backtest Log mein likhiye. Ek-ek candle aage badhiye; jab koi candle signal poora kare, toh agli candle kholne se pehle plan likhiye (max entry, kis price ke neeche skip, stop), phir uska open tay karega ki entry hai ya skipped: gap, aur stop ke paar gap ho toh exit open par likhiye.",
+      "dv": "कार्ड पर खरे उतरने वाले पहले 3 ट्रेड अपने बैकटेस्ट लॉग में लिखिए। एक-एक कैंडल आगे बढ़िए; जब कोई कैंडल सिग्नल पूरा करे, तो अगली कैंडल खोलने से पहले प्लान लिखिए (मैक्स एंट्री, किस भाव के नीचे स्किप, स्टॉप), फिर उसका ओपन तय करेगा कि एंट्री है या स्किप्ड: गैप, और स्टॉप के पार गैप हो तो एग्ज़िट ओपन पर लिखिए।"
     },
     {
-      "en": "Stretch, about 3-5 hours over the next 7 days, in 30-minute sittings: finish 30 trades, read the four numbers, run Day 14's five checks on your own report, plot the equity curve and label it 'Hypothetical. Past performance is not indicative of future results.'",
-      "hi": "Stretch, agle 7 din mein kul 3-5 ghante, 30-30 minute ki baithak mein: 30 trades poore kijiye, chaar numbers padhiye, apni report par Day 14 ke paanch checks chalaiye, equity curve banaiye aur us par likhiye 'Hypothetical. Past performance is not indicative of future results.'",
-      "dv": "स्ट्रेच, अगले 7 दिन में कुल 3-5 घंटे, 30-30 मिनट की बैठकों में: 30 ट्रेड पूरे कीजिए, चार नंबर पढ़िए, अपनी रिपोर्ट पर दिन 14 के पाँच चेक चलाइए, इक्विटी कर्व बनाइए और उस पर लिखिए 'Hypothetical. Past performance is not indicative of future results.'"
+      "en": "Stretch, about 3-5 hours over the next 7 days, in 30-minute sittings: finish 30 trades, fill the 'Your four numbers' card, run Day 14's five checks on your own report, and label your equity curve 'Hypothetical. Past performance is not indicative of future results.' Keep the card: your Day 21 Week 3 review uses it.",
+      "hi": "Stretch, agle 7 din mein kul 3-5 ghante, 30-30 minute ki baithak mein: 30 trades poore kijiye, 'Aapke chaar numbers' card bhariye, apni report par Day 14 ke paanch checks chalaiye, aur equity curve par likhiye 'Hypothetical. Past performance is not indicative of future results.' Card sambhaal kar rakhiye: Day 21 ka Week 3 review isi se hoga.",
+      "dv": "स्ट्रेच, अगले 7 दिन में कुल 3-5 घंटे, 30-30 मिनट की बैठकों में: 30 ट्रेड पूरे कीजिए, 'आपके चार नंबर' कार्ड भरिए, अपनी रिपोर्ट पर दिन 14 के पाँच चेक चलाइए, और इक्विटी कर्व पर लिखिए 'Hypothetical. Past performance is not indicative of future results.' कार्ड सँभालकर रखिए: दिन 21 का हफ़्ता 3 वाला रिव्यू इसी से होगा।"
     }
   ],
   "kaam_min": 60,
@@ -1019,6 +1058,11 @@
       "en": "Google Sheets",
       "hi": "Google Sheets",
       "dv": "Google Sheets"
+    },
+    {
+      "en": "niftyindices.com press releases (index changes)",
+      "hi": "niftyindices.com ke press releases (index badlaav)",
+      "dv": "niftyindices.com की प्रेस रिलीज़ (इंडेक्स बदलाव)"
     },
     {
       "en": "A broker's public brokerage calculator (no account needed)",
@@ -1044,7 +1088,7 @@
         "hi": "Backtest stats sheet",
         "dv": "बैकटेस्ट स्टैट्स शीट"
       },
-      "body": "I am a beginner doing a manual backtest of a written, rule-based swing strategy on daily charts, for learning only. Give me a Google Sheets layout for a 30-trade log with these columns: trade number, signal date, instrument (a name I type), entry (the next day's open), stop, exit, exit reason (2.5R profit exit, 15-day time exit, stop, or gap through the stop), gross R computed per share as (exit - entry) / (entry - stop), even when a 25% exposure cap cut my quantity, cost in R (taken from one input cell that I fill once), net R, win (yes if net R is above zero), cumulative net R, running peak of cumulative R, drawdown from that peak, and market phase (up, down or sideways, which I type). Give the exact formula for every computed column, assuming row 2 holds the first trade. Then give summary cells with formulas for: number of trades, win-rate, expectancy (average net R), total net R, maximum drawdown in R, and longest losing streak (use a helper column if needed). Explain how to insert a line chart of cumulative net R. Add a cell with the text 'Hypothetical results. Past performance is not indicative of future results.' Keep it simple enough to build on a phone. Do not suggest any stock, entry, exit or change to my rules, and do not give buy or sell advice, targets or return expectations."
+      "body": "I am a beginner doing a manual backtest of a written, rule-based swing strategy on daily charts, for learning only. Give me a Google Sheets layout for a 30-trade log with these columns: trade number, signal date, instrument (a name I type), entry (the next day's open), stop, exit, exit reason (2.5R profit exit, 15-day time exit, stop, or gap through the stop), gross R computed per share as (exit - entry) / (entry - stop), even when a 25% exposure cap cut my quantity, cost in R (taken from one input cell that I fill once), net R, win (yes if net R is above zero), cumulative net R, running peak of cumulative R, drawdown from that peak, and market phase (up, down or sideways, which I type). Give the exact formula for every computed column, assuming row 2 holds the first trade. Then give summary cells with formulas for: number of trades, win-rate, expectancy (average net R), total net R, maximum drawdown in R, and longest losing streak (use a helper column if needed). Explain how to insert a line chart of cumulative net R. Add a cell with the text 'Hypothetical results. Past performance is not indicative of future results.' Then tell me to test the summary formulas on a copy of the sheet by typing these 14 practice values straight into the net R column, in order: +6.10, -1.10, +2.40, -1.10, -1.10, +1.90, -1.10, -1.10, -1.53, -1.10, -1.10, +2.40, -1.10, +1.10. A correct sheet shows a total of +3.57R, a maximum drawdown of 6.23R and a longest losing streak of 5; if mine does not, help me find the wrong formula. Keep it simple enough to build on a phone. Do not suggest any stock, entry, exit or change to my rules, and do not give buy or sell advice, targets or return expectations."
     },
     {
       "title": {
@@ -1069,9 +1113,9 @@
     "dv": "पहले ट्रेड लॉग करते वक़्त कितनी बार आपका मन हुआ कि अगली कैंडल झाँक लें, या कोई ऐसा ट्रेड गिन लें जो कार्ड से पूरा मेल नहीं खाता था? वह खिंचाव कैसा लगा, और आपने उसके साथ क्या किया?"
   },
   "motivation": {
-    "en": "An honest log with a modest number is worth more than a perfect curve built by peeking. Today you started the honest log.",
-    "hi": "Chhote number wala imaandar log, jhaank kar banayi gayi perfect curve se zyada keemti hai. Aaj aapne imaandar log shuru kiya.",
-    "dv": "छोटे नंबर वाला ईमानदार लॉग, झाँककर बनाई गई परफ़ेक्ट कर्व से ज़्यादा क़ीमती है। आज आपने ईमानदार लॉग शुरू किया।"
+    "en": "An honest log with a modest number is worth more than a perfect curve built by peeking. Today you started the honest log; on Day 21 it becomes part of your review.",
+    "hi": "Chhote number wala imaandar log, jhaank kar banayi gayi perfect curve se zyada keemti hai. Aaj aapne imaandar log shuru kiya; Day 21 par yahi aapke review ka hissa banega.",
+    "dv": "छोटे नंबर वाला ईमानदार लॉग, झाँककर बनाई गई परफ़ेक्ट कर्व से ज़्यादा क़ीमती है। आज आपने ईमानदार लॉग शुरू किया; दिन 21 पर यही आपके रिव्यू का हिस्सा बनेगा।"
   },
   "quiz": [
     {
@@ -1083,9 +1127,9 @@
       "options": [
         {
           "text": {
-            "en": "-1.70R: the loss to the Rs 376 open, plus costs",
-            "hi": "-1.70R: Rs 376 ke open tak ka loss, plus costs",
-            "dv": "-1.70R: Rs 376 के ओपन तक का घाटा, और ख़र्च"
+            "en": "-1.70R: the loss to the Rs 376 open, plus 0.1R of costs",
+            "hi": "-1.70R: Rs 376 ke open tak ka loss, plus 0.1R costs",
+            "dv": "-1.70R: Rs 376 के ओपन तक का घाटा, और 0.1R ख़र्च"
           },
           "correct": true
         },
@@ -1168,14 +1212,14 @@
     },
     {
       "stem": {
-        "en": "Aman's daily signal is confirmed only when the exchange sets the day's official close, just after 3:30 pm. In his backtest he logs every entry at that same candle's low. What is wrong?",
-        "hi": "Aman ka daily signal tabhi confirm hota hai jab exchange 3:30 ke thodi der baad din ka official close tay karta hai. Backtest mein woh har entry usi candle ke low par log karta hai. Galti kya hai?",
-        "dv": "अमन का डेली सिग्नल तभी कन्फ़र्म होता है जब एक्सचेंज 3:30 के थोड़ी देर बाद दिन का आधिकारिक क्लोज़ तय करता है। बैकटेस्ट में वह हर एंट्री उसी कैंडल के लो पर लॉग करता है। ग़लती क्या है?"
+        "en": "Aman's daily signal is confirmed only once the exchange sets the day's official closing price, after trading ends. In his backtest he logs every entry at that same candle's low. What is wrong?",
+        "hi": "Aman ka daily signal tabhi confirm hota hai jab trading khatam hone ke baad exchange din ka official closing price tay karta hai. Backtest mein woh har entry usi candle ke low par log karta hai. Galti kya hai?",
+        "dv": "अमन का डेली सिग्नल तभी कन्फ़र्म होता है जब ट्रेडिंग ख़त्म होने के बाद एक्सचेंज दिन का आधिकारिक क्लोज़िंग भाव तय करता है। बैकटेस्ट में वह हर एंट्री उसी कैंडल के लो पर लॉग करता है। ग़लती क्या है?"
       },
       "options": [
         {
           "text": {
-            "en": "He logs a price nobody knew until the day ended",
+            "en": "He logs a price nobody knew until the day was over",
             "hi": "Woh aisa price leta hai jo din khatam hone par hi pata chala",
             "dv": "वह ऐसा भाव लॉग करता है जो दिन ख़त्म होने पर ही पता चला"
           },
@@ -1192,16 +1236,16 @@
         {
           "text": {
             "en": "He should log the candle's high instead, to be safe",
-            "hi": "Safe rehne ke liye use usi candle ka high hi log karna chahiye",
+            "hi": "Safe rehne ke liye use usi candle ka high log karna chahiye",
             "dv": "सुरक्षित रहने के लिए उसे उसी कैंडल का हाई लॉग करना चाहिए"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "Daily charts are unfit for any backtesting",
+            "en": "Daily charts are unfit for any kind of backtest",
             "hi": "Daily charts kisi bhi tarah ke backtest ke laayak nahi hote",
-            "dv": "डेली चार्ट किसी भी बैकटेस्ट के लायक़ नहीं होते"
+            "dv": "डेली चार्ट किसी भी तरह के बैकटेस्ट के लायक़ नहीं होते"
           },
           "correct": false
         }
@@ -1221,25 +1265,25 @@
       "options": [
         {
           "text": {
-            "en": "Survivorship bias: dropped-out names are missing",
-            "hi": "Survivorship bias: index se bahar hui companies gayab",
-            "dv": "सर्वाइवरशिप बायस: इंडेक्स से बाहर हुई कंपनियाँ ग़ायब"
+            "en": "Survivorship bias: names that dropped out since 2019 are missing",
+            "hi": "Survivorship bias: 2019 ke baad index se bahar hui companies gayab",
+            "dv": "सर्वाइवरशिप बायस: 2019 के बाद इंडेक्स से बाहर हुई कंपनियाँ ग़ायब"
           },
           "correct": true
         },
         {
           "text": {
-            "en": "Curve-fitting: she has tuned her EMA settings",
-            "hi": "Curve-fitting: usne EMA settings tune ki hain",
-            "dv": "कर्व-फ़िटिंग: उसने EMA सेटिंग ट्यून की हैं"
+            "en": "Curve-fitting: she has tuned her EMA settings to this list",
+            "hi": "Curve-fitting: usne EMA settings is list ke hisaab se tune ki hain",
+            "dv": "कर्व-फ़िटिंग: उसने EMA सेटिंग इस लिस्ट के हिसाब से ट्यून की हैं"
           },
           "correct": false
         },
         {
           "text": {
-            "en": "Cost error: large companies carry no charges",
-            "hi": "Cost error: badi companies par charges nahi lagte",
-            "dv": "ख़र्च की ग़लती: बड़ी कंपनियों पर चार्ज नहीं लगते"
+            "en": "Cost error: large index companies carry no charges",
+            "hi": "Cost error: badi index companies par charges nahi lagte",
+            "dv": "ख़र्च की ग़लती: बड़ी इंडेक्स कंपनियों पर चार्ज नहीं लगते"
           },
           "correct": false
         },
@@ -1253,9 +1297,9 @@
         }
       ],
       "explanation": {
-        "en": "Today's NIFTY 50 list is made of companies that did well enough to be in the index now. Companies that dropped out since 2019, often after heavy falls, are missing, so the test sees only survivors and looks better than reality. At Level 1, build the list from the companies that were in the index in 2019, and note the survivorship risk in the report. Costs still apply to every stock, large or small.",
-        "hi": "Aaj ki NIFTY 50 list un companies se bani hai jo itna achha kar paayin ki aaj index mein hain. 2019 ke baad jo companies bahar ho gayin, aksar bhaari giraavat ke baad, woh list mein hain hi nahi, toh test sirf survivors ko dekhta hai aur asliyat se behtar dikhta hai. Level 1 par list un companies se banaiye jo 2019 mein index mein thi, aur report mein survivorship risk note kijiye. Costs har stock par lagti hain, bada ho ya chhota.",
-        "dv": "आज की NIFTY 50 लिस्ट उन कंपनियों से बनी है जो इतना अच्छा कर पाईं कि आज इंडेक्स में हैं। 2019 के बाद जो कंपनियाँ बाहर हो गईं, अक्सर भारी गिरावट के बाद, वे लिस्ट में हैं ही नहीं, तो टेस्ट सिर्फ़ बचे हुए नामों को देखता है और असलियत से बेहतर दिखता है। लेवल 1 पर लिस्ट उन कंपनियों से बनाइए जो 2019 में इंडेक्स में थीं, और रिपोर्ट में सर्वाइवरशिप रिस्क नोट कीजिए। ख़र्च हर स्टॉक पर लगता है, बड़ा हो या छोटा।"
+        "en": "Today's NIFTY 50 list is made of companies that did well enough to be in the index now. Companies that dropped out since 2019, often after heavy falls, are missing, so the test sees only survivors and looks better than reality. At Level 1, rebuild the list as it stood in 2019 from the index-change press releases on niftyindices.com, keep every name your random draw gives, and note any survivorship risk left in the report. Costs still apply to every stock, large or small.",
+        "hi": "Aaj ki NIFTY 50 list un companies se bani hai jo itna achha kar paayin ki aaj index mein hain. 2019 ke baad jo companies bahar ho gayin, aksar bhaari giraavat ke baad, woh list mein hain hi nahi, toh test sirf survivors ko dekhta hai aur asliyat se behtar dikhta hai. Level 1 par niftyindices.com ke index-badlaav wale press releases se 2019 jaisi list dobara banaiye, random draw ka har naam rakhiye, aur jo survivorship risk bacha ho use report mein note kijiye. Costs har stock par lagti hain, bada ho ya chhota.",
+        "dv": "आज की NIFTY 50 लिस्ट उन कंपनियों से बनी है जो इतना अच्छा कर पाईं कि आज इंडेक्स में हैं। 2019 के बाद जो कंपनियाँ बाहर हो गईं, अक्सर भारी गिरावट के बाद, वे लिस्ट में हैं ही नहीं, तो टेस्ट सिर्फ़ बचे हुए नामों को देखता है और असलियत से बेहतर दिखता है। लेवल 1 पर niftyindices.com की इंडेक्स-बदलाव वाली प्रेस रिलीज़ से 2019 जैसी लिस्ट दोबारा बनाइए, रैंडम ड्रॉ का हर नाम रखिए, और जो सर्वाइवरशिप रिस्क बचा हो उसे रिपोर्ट में नोट कीजिए। ख़र्च हर स्टॉक पर लगता है, बड़ा हो या छोटा।"
       }
     },
     {
@@ -1267,9 +1311,9 @@
       "options": [
         {
           "text": {
-            "en": "Test the new version on 30 fresh trades",
-            "hi": "Naya version 30 naye trades par parkhe",
-            "dv": "नया वर्ज़न 30 नए ट्रेड पर परखे"
+            "en": "Freeze it, then test it on 30 fresh trades",
+            "hi": "Ise freeze karke 30 naye trades par parkhe",
+            "dv": "इसे फ़्रीज़ करके 30 नए ट्रेड पर परखे"
           },
           "correct": true
         },
@@ -1283,9 +1327,9 @@
         },
         {
           "text": {
-            "en": "Keep tweaking until it reaches 90%",
-            "hi": "90% aane tak tweak karta rahe",
-            "dv": "90% आने तक बदलाव करता रहे"
+            "en": "Keep tweaking the settings until it reaches 90%",
+            "hi": "Settings tab tak tweak karta rahe jab tak 90% na aa jaaye",
+            "dv": "सेटिंग तब तक बदलता रहे जब तक 90% न आ जाए"
           },
           "correct": false
         },
@@ -1302,6 +1346,550 @@
         "en": "Tuning a rule on the same trades it is judged on is curve-fitting: the 75% mostly measures how well the settings fit those candles. A changed rule is a new rule. Freeze it and test it on 30 trades from dates it has never seen. Only that result tells you something, and even then it is hypothetical.",
         "hi": "Jin trades par rule ko judge karna hai, unhi par use tune karna curve-fitting hai: 75% zyadatar yeh naapta hai ki settings un candles par kitni fit baithin. Badla hua rule ek naya rule hai. Use freeze kijiye aur aisi dates ke 30 trades par test kijiye jo usne kabhi dekhi nahi. Sirf woh result kuch batata hai, aur woh bhi hypothetical hi hai.",
         "dv": "जिन ट्रेड पर रूल को परखना है, उन्हीं पर उसे ट्यून करना कर्व-फ़िटिंग है: 75% ज़्यादातर यह मापता है कि सेटिंग उन कैंडल पर कितनी फ़िट बैठीं। बदला हुआ रूल एक नया रूल है। उसे फ़्रीज़ कीजिए और ऐसी तारीख़ों के 30 ट्रेड पर टेस्ट कीजिए जो उसने कभी देखी नहीं। सिर्फ़ वही नतीजा कुछ बताता है, और वह भी काल्पनिक ही है।"
+      }
+    }
+  ],
+  "artefacts": [
+    {
+      "title": {
+        "en": "Test plan: Priya's model card",
+        "hi": "Test plan: Priya ka model card",
+        "dv": "टेस्ट प्लान: प्रिया का मॉडल कार्ड"
+      },
+      "note": {
+        "en": "Fill the 'Yours' column before you open any chart. Once it is filled, it stays frozen until trade 30.",
+        "hi": "'Aapka' column koi bhi chart kholne se pehle bhariye. Ek baar bhar gaya, toh trade 30 tak freeze rehta hai.",
+        "dv": "'आपका' कॉलम कोई भी चार्ट खोलने से पहले भरिए। एक बार भर गया, तो ट्रेड 30 तक फ़्रीज़ रहता है।"
+      },
+      "visual": {
+        "kind": "table",
+        "head": [
+          {
+            "en": "Plan line",
+            "hi": "Plan ki line",
+            "dv": "प्लान की लाइन"
+          },
+          {
+            "en": "Priya (made-up)",
+            "hi": "Priya (banawati)",
+            "dv": "प्रिया (काल्पनिक)"
+          },
+          {
+            "en": "Yours",
+            "hi": "Aapka",
+            "dv": "आपका"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "en": "Rule Card",
+              "hi": "Rule Card",
+              "dv": "रूल कार्ड"
+            },
+            {
+              "en": "EMA Pullback Swing v1: Day 11 card, Day 16 yes/no form",
+              "hi": "EMA Pullback Swing v1: Day 11 ka card, Day 16 ka yes/no roop",
+              "dv": "EMA पुलबैक स्विंग v1: दिन 11 का कार्ड, दिन 16 का हाँ/ना रूप"
+            },
+            ""
+          ],
+          [
+            {
+              "en": "Stocks, and how chosen",
+              "hi": "Stocks, aur kaise chune",
+              "dv": "स्टॉक, और कैसे चुने"
+            },
+            {
+              "en": "Sharma Textiles, Gupta Cement, Kiran Foods: drawn by RAND(), all kept",
+              "hi": "Sharma Textiles, Gupta Cement, Kiran Foods: RAND() se nikale, sab rakhe",
+              "dv": "Sharma Textiles, Gupta Cement, Kiran Foods: RAND() से निकाले, सब रखे"
+            },
+            ""
+          ],
+          [
+            {
+              "en": "Date range",
+              "hi": "Date range",
+              "dv": "तारीख़ों की रेंज"
+            },
+            {
+              "en": "1 Jan 2023 to 31 Dec 2025",
+              "hi": "1 Jan 2023 se 31 Dec 2025",
+              "dv": "1 जनवरी 2023 से 31 दिसंबर 2025"
+            },
+            ""
+          ],
+          [
+            {
+              "en": "Entry",
+              "hi": "Entry",
+              "dv": "एंट्री"
+            },
+            {
+              "en": "Next day's open; skip above signal close + 0.5 x ATR or below the signal-day low",
+              "hi": "Agle din ka open; signal close + 0.5 x ATR se upar ya signal-day low se neeche khule toh skip",
+              "dv": "अगले दिन का ओपन; सिग्नल क्लोज़ + 0.5 x ATR से ऊपर या सिग्नल वाले दिन के लो से नीचे खुले तो स्किप"
+            },
+            ""
+          ],
+          [
+            {
+              "en": "Stop",
+              "hi": "Stop",
+              "dv": "स्टॉप"
+            },
+            {
+              "en": "1.5 x ATR(14) below entry",
+              "hi": "Entry se 1.5 x ATR(14) neeche",
+              "dv": "एंट्री से 1.5 x ATR(14) नीचे"
+            },
+            ""
+          ],
+          [
+            {
+              "en": "Exits",
+              "hi": "Exits",
+              "dv": "एग्ज़िट"
+            },
+            {
+              "en": "2.5R profit exit, or the next open after day 15",
+              "hi": "2.5R profit exit, ya day 15 ke baad agla open",
+              "dv": "2.5R प्रॉफ़िट एग्ज़िट, या दिन 15 के बाद अगला ओपन"
+            },
+            ""
+          ],
+          [
+            {
+              "en": "Fill rules",
+              "hi": "Fill rules",
+              "dv": "फ़िल के नियम"
+            },
+            {
+              "en": "Day 12 rules; stop and profit exit in one candle = stop",
+              "hi": "Day 12 ke rules; ek candle mein stop aur profit exit dono = stop",
+              "dv": "दिन 12 के नियम; एक कैंडल में स्टॉप और प्रॉफ़िट एग्ज़िट दोनों = स्टॉप"
+            },
+            ""
+          ],
+          [
+            {
+              "en": "Cost per trade",
+              "hi": "Har trade ka cost",
+              "dv": "हर ट्रेड का ख़र्च"
+            },
+            "0.1R",
+            ""
+          ],
+          [
+            {
+              "en": "Open-trade limit",
+              "hi": "Open trades ki limit",
+              "dv": "खुले ट्रेड की लिमिट"
+            },
+            {
+              "en": "Max 3; a 4th signal = skipped: 3 open",
+              "hi": "Max 3; chautha signal = skipped: 3 open",
+              "dv": "अधिकतम 3; चौथा सिग्नल = स्किप्ड: 3 खुले"
+            },
+            ""
+          ],
+          [
+            {
+              "en": "Extra checks",
+              "hi": "Extra checks",
+              "dv": "अतिरिक्त चेक"
+            },
+            {
+              "en": "RS rule and results-date skip: both applied",
+              "hi": "RS rule aur results-date skip: dono lagaye",
+              "dv": "RS नियम और रिज़ल्ट-डेट स्किप: दोनों लगाए"
+            },
+            ""
+          ],
+          [
+            {
+              "en": "Market phase tag",
+              "hi": "Market phase tag",
+              "dv": "मार्केट फ़ेज़ टैग"
+            },
+            {
+              "en": "NIFTY 50 on each signal day: up, down or sideways",
+              "hi": "Har signal day par NIFTY 50: up, down ya sideways",
+              "dv": "हर सिग्नल वाले दिन NIFTY 50: अप, डाउन या साइडवेज़"
+            },
+            ""
+          ],
+          [
+            {
+              "en": "Frozen?",
+              "hi": "Freeze?",
+              "dv": "फ़्रीज़?"
+            },
+            {
+              "en": "Yes: no rule change until trade 30",
+              "hi": "Haan: trade 30 tak koi rule change nahi",
+              "dv": "हाँ: ट्रेड 30 तक कोई नियम नहीं बदलेगा"
+            },
+            ""
+          ]
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Backtest Log v1: Priya's trades 18-30",
+        "hi": "Backtest Log v1: Priya ke trades 18-30",
+        "dv": "बैकटेस्ट लॉग v1: प्रिया के ट्रेड 18-30"
+      },
+      "note": {
+        "en": "One row per trade, written the moment the trade closes. Priya's rows show the peak (trade 19), five losses in a row (23 to 27) and a gap past the stop (25). The empty rows are for your first 3 trades.",
+        "hi": "Har trade ki ek row, trade band hote hi likhi jaati hai. Priya ki rows mein peak (trade 19), lagaataar paanch loss (23 se 27) aur stop ke paar gap (25) dikhte hain. Khaali rows aapke pehle 3 trades ke liye hain.",
+        "dv": "हर ट्रेड की एक लाइन, ट्रेड बंद होते ही लिखी जाती है। प्रिया की लाइनों में पीक (ट्रेड 19), लगातार पाँच घाटे (23 से 27) और स्टॉप के पार गैप (25) दिखते हैं। ख़ाली लाइनें आपके पहले 3 ट्रेड के लिए हैं।"
+      },
+      "visual": {
+        "kind": "table",
+        "caption": {
+          "en": "Made-up practice numbers. Net R per share, after the 0.1R cost allowance. Hypothetical: past performance is not indicative of future results.",
+          "hi": "Practice ke liye banaye gaye numbers. Net R per share, 0.1R cost allowance ke baad. Hypothetical: pichhla performance aage ke results ka vada ya ishaara nahi hai.",
+          "dv": "प्रैक्टिस के लिए गढ़े गए नंबर। नेट R प्रति शेयर, 0.1R ख़र्च अलाउंस के बाद। काल्पनिक नतीजे: पिछला प्रदर्शन आगे के नतीजों का वादा या संकेत नहीं है।"
+        },
+        "head": [
+          {
+            "en": "#",
+            "hi": "#",
+            "dv": "#"
+          },
+          {
+            "en": "Stock",
+            "hi": "Stock",
+            "dv": "स्टॉक"
+          },
+          {
+            "en": "Entry / stop / exit",
+            "hi": "Entry / stop / exit",
+            "dv": "एंट्री / स्टॉप / एग्ज़िट"
+          },
+          {
+            "en": "Exit reason",
+            "hi": "Exit ka kaaran",
+            "dv": "एग्ज़िट की वजह"
+          },
+          {
+            "en": "Net R",
+            "hi": "Net R",
+            "dv": "नेट R"
+          },
+          {
+            "en": "Running total R",
+            "hi": "Running total R",
+            "dv": "अब तक का कुल R"
+          }
+        ],
+        "rows": [
+          [
+            "1-17",
+            {
+              "en": "Trades 1-17 together",
+              "hi": "Trades 1-17 ek saath",
+              "dv": "ट्रेड 1-17 एक साथ"
+            },
+            "",
+            "",
+            "+6.10",
+            "+6.10"
+          ],
+          [
+            "18",
+            "Gupta Cement Ltd",
+            "386 / 368 / 368",
+            {
+              "en": "Stop hit",
+              "hi": "Stop hit",
+              "dv": "स्टॉप लगा"
+            },
+            "-1.10",
+            "+5.00"
+          ],
+          [
+            "19",
+            "Sharma Textiles Ltd",
+            "236 / 224 / 266",
+            {
+              "en": "2.5R profit exit",
+              "hi": "2.5R profit exit",
+              "dv": "2.5R प्रॉफ़िट एग्ज़िट"
+            },
+            "+2.40",
+            "+7.40"
+          ],
+          [
+            "20",
+            "Kiran Foods Ltd",
+            "468 / 447 / 447",
+            {
+              "en": "Stop hit",
+              "hi": "Stop hit",
+              "dv": "स्टॉप लगा"
+            },
+            "-1.10",
+            "+6.30"
+          ],
+          [
+            "21",
+            "Gupta Cement Ltd",
+            "398 / 380 / 380",
+            {
+              "en": "Stop hit",
+              "hi": "Stop hit",
+              "dv": "स्टॉप लगा"
+            },
+            "-1.10",
+            "+5.20"
+          ],
+          [
+            "22",
+            "Kiran Foods Ltd",
+            "500 / 479 / 542",
+            {
+              "en": "Time exit (day 15)",
+              "hi": "Time exit (day 15)",
+              "dv": "टाइम एग्ज़िट (दिन 15)"
+            },
+            "+1.90",
+            "+7.10"
+          ],
+          [
+            "23",
+            "Sharma Textiles Ltd",
+            "248 / 236 / 236",
+            {
+              "en": "Stop hit",
+              "hi": "Stop hit",
+              "dv": "स्टॉप लगा"
+            },
+            "-1.10",
+            "+6.00"
+          ],
+          [
+            "24",
+            "Gupta Cement Ltd",
+            "412 / 394 / 394",
+            {
+              "en": "Stop hit",
+              "hi": "Stop hit",
+              "dv": "स्टॉप लगा"
+            },
+            "-1.10",
+            "+4.90"
+          ],
+          [
+            "25",
+            "Kiran Foods Ltd",
+            "500 / 479 / 470",
+            {
+              "en": "Gap past the stop",
+              "hi": "Gap, stop ke paar",
+              "dv": "गैप, स्टॉप के पार"
+            },
+            "-1.53",
+            "+3.37"
+          ],
+          [
+            "26",
+            "Sharma Textiles Ltd",
+            "242 / 230 / 230",
+            {
+              "en": "Stop hit",
+              "hi": "Stop hit",
+              "dv": "स्टॉप लगा"
+            },
+            "-1.10",
+            "+2.27"
+          ],
+          [
+            "27",
+            "Gupta Cement Ltd",
+            "404 / 386 / 386",
+            {
+              "en": "Stop hit",
+              "hi": "Stop hit",
+              "dv": "स्टॉप लगा"
+            },
+            "-1.10",
+            "+1.17"
+          ],
+          [
+            "28",
+            "Kiran Foods Ltd",
+            "490 / 469 / 542.50",
+            {
+              "en": "2.5R profit exit",
+              "hi": "2.5R profit exit",
+              "dv": "2.5R प्रॉफ़िट एग्ज़िट"
+            },
+            "+2.40",
+            "+3.57"
+          ],
+          [
+            "29",
+            "Sharma Textiles Ltd",
+            "230 / 218 / 218",
+            {
+              "en": "Stop hit",
+              "hi": "Stop hit",
+              "dv": "स्टॉप लगा"
+            },
+            "-1.10",
+            "+2.47"
+          ],
+          [
+            "30",
+            "Gupta Cement Ltd",
+            "396 / 378 / 417.60",
+            {
+              "en": "Time exit (day 15)",
+              "hi": "Time exit (day 15)",
+              "dv": "टाइम एग्ज़िट (दिन 15)"
+            },
+            "+1.10",
+            "+3.57"
+          ]
+        ],
+        "blank_rows": 3,
+        "note": {
+          "en": "Net R = (exit - entry) ÷ (entry - stop) - 0.1R. Your sheet also gets columns for signal date, gross R, running peak, drawdown and NIFTY phase.",
+          "hi": "Net R = (exit - entry) ÷ (entry - stop) - 0.1R. Aapki sheet mein signal date, gross R, running peak, drawdown aur NIFTY phase ke columns bhi hon.",
+          "dv": "नेट R = (एग्ज़िट - एंट्री) ÷ (एंट्री - स्टॉप) - 0.1R। आपकी शीट में सिग्नल की तारीख़, ग्रॉस R, रनिंग पीक, ड्रॉडाउन और NIFTY फ़ेज़ के कॉलम भी हों।"
+        }
+      }
+    },
+    {
+      "title": {
+        "en": "Your four numbers (keep for Day 21)",
+        "hi": "Aapke chaar numbers (Day 21 ke liye rakhiye)",
+        "dv": "आपके चार नंबर (दिन 21 के लिए रखिए)"
+      },
+      "note": {
+        "en": "Fill it after trade 30. Your Week 3 review on Day 21 uses these numbers (not done by then? write how many trades are logged, and add the numbers in the catch-up week), and these 30 trades count towards the 100 on the same frozen rules that real confidence needs.",
+        "hi": "Trade 30 ke baad bhariye. Day 21 ka Week 3 review inhi numbers se hoga (tab tak poora na ho toh likhiye ki kitne trades log hue, aur numbers catch-up hafte mein jodiye), aur yeh 30 trades unhi frozen rules par un 100 trades mein gine jaayenge jin se asli bharosa banta hai.",
+        "dv": "ट्रेड 30 के बाद भरिए। दिन 21 का हफ़्ता 3 वाला रिव्यू इन्हीं नंबरों से होगा (तब तक पूरा न हो तो लिखिए कि कितने ट्रेड लॉग हुए, और नंबर कैच-अप हफ़्ते में जोड़िए), और ये 30 ट्रेड उन्हीं फ़्रीज़ नियमों पर उन 100 ट्रेड में गिने जाएँगे जिनसे असली भरोसा बनता है।"
+      },
+      "visual": {
+        "kind": "table",
+        "head": [
+          {
+            "en": "Number",
+            "hi": "Number",
+            "dv": "नंबर"
+          },
+          {
+            "en": "How to work it out",
+            "hi": "Kaise nikaalein",
+            "dv": "कैसे निकालें"
+          },
+          {
+            "en": "Priya (made-up)",
+            "hi": "Priya (banawati)",
+            "dv": "प्रिया (काल्पनिक)"
+          },
+          {
+            "en": "Yours",
+            "hi": "Aapka",
+            "dv": "आपका"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "en": "Trades",
+              "hi": "Trades",
+              "dv": "ट्रेड"
+            },
+            {
+              "en": "Count the rows",
+              "hi": "Rows giniye",
+              "dv": "लाइनें गिनिए"
+            },
+            "30",
+            ""
+          ],
+          [
+            {
+              "en": "Win-rate",
+              "hi": "Win-rate",
+              "dv": "विन-रेट"
+            },
+            {
+              "en": "Wins ÷ trades (a win = net R above 0)",
+              "hi": "Wins ÷ trades (win = net R 0 se upar)",
+              "dv": "जीत ÷ ट्रेड (जीत = नेट R 0 से ऊपर)"
+            },
+            "12 ÷ 30 = 40%",
+            ""
+          ],
+          [
+            {
+              "en": "Expectancy",
+              "hi": "Expectancy",
+              "dv": "एक्सपेक्टेंसी"
+            },
+            {
+              "en": "Total net R ÷ trades",
+              "hi": "Total net R ÷ trades",
+              "dv": "कुल नेट R ÷ ट्रेड"
+            },
+            "+3.57 ÷ 30 = +0.12R",
+            ""
+          ],
+          [
+            {
+              "en": "Maximum drawdown",
+              "hi": "Maximum drawdown",
+              "dv": "मैक्सिमम ड्रॉडाउन"
+            },
+            {
+              "en": "Biggest fall from a peak to a later low",
+              "hi": "Peak se baad ke low tak sabse badi giraavat",
+              "dv": "पीक से बाद के लो तक सबसे बड़ी गिरावट"
+            },
+            "7.40 - 1.17 = 6.23R",
+            ""
+          ],
+          [
+            {
+              "en": "Longest losing streak",
+              "hi": "Longest losing streak",
+              "dv": "सबसे लंबी लूज़िंग स्ट्रीक"
+            },
+            {
+              "en": "Most losses in a row",
+              "hi": "Lagaataar sabse zyada loss",
+              "dv": "लगातार सबसे ज़्यादा घाटे"
+            },
+            "5",
+            ""
+          ],
+          [
+            {
+              "en": "Before costs (check)",
+              "hi": "Costs se pehle (check)",
+              "dv": "ख़र्च से पहले (जाँच)"
+            },
+            {
+              "en": "Total net R + 0.1R x trades",
+              "hi": "Total net R + 0.1R x trades",
+              "dv": "कुल नेट R + 0.1R x ट्रेड"
+            },
+            "+3.57 + 3.00 = +6.57R",
+            ""
+          ]
+        ],
+        "note": {
+          "en": "Label the report: 'Hypothetical. Past performance is not indicative of future results.'",
+          "hi": "Report par likhiye: 'Hypothetical. Past performance is not indicative of future results.'",
+          "dv": "रिपोर्ट पर लिखिए: 'Hypothetical. Past performance is not indicative of future results.'"
+        }
       }
     }
   ]

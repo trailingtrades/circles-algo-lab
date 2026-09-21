@@ -119,36 +119,46 @@ exams = [
 ]
 
 # ---- Resources ----
-# Drive course-pack audit, 16 Sep 2026. The v1 packs are 4 weeks per tier; Curriculum v2 is 3/10/20 weeks.
-# Newest version of each file is linked; drafts and older deck versions skipped. Left out on purpose
-# (19 Sep 2026): the printed exam papers and the question bank (they carry the answers, and students
-# sit every exam in the app) and the Tier 1 v1 Week-4 deck and handout (Stage 1 has 3 weeks).
+# Row shape (content/resources.json; the app reads it through apps/learn/src/lib/content/resources.ts):
+#   {"level": "foundation" | "intermediate" | "advanced" | None, "week": int | None, "day": int | None (optional),
+#    "lang": "en" | "hi" | None (optional), "kind": "deck" | "handout" | "workbook" | "excel" | "link" | "exam",
+#    "file_name": str, "note": str, "storage_path": "https://..." | "/learn/..." (a file this app serves) | None}
+# `lang` marks one language copy of a file: English readers get "en"; Hinglish AND Hindi readers get "hi" (no
+# Devanagari edition); a reader falls back to whichever copy exists. `day` (Stage 1 course day 1-21) pins a file
+# to one day instead of the whole week; its week is filled in from the day. A session lists the decks and
+# handouts of its week (and of its day); attendance asks for "handout opened" only while one is listed.
 def drive(file_id):
   return f"https://drive.google.com/file/d/{file_id}/view"
 
 resources = [
   {"level": "foundation", "week": None, "kind": "excel", "file_name": "5C_AITC_Foundation_MockPortfolio_Template_v1.xlsx", "note": "virtual Rs 10 lakh mock portfolio", "storage_path": drive("1D03lWibwVrePE_iQHc_ae4LPnXI-y7HM")},
-  {"level": "foundation", "week": None, "kind": "workbook", "file_name": "Stage 1 Rule Card + Journal + Sizing templates (Google Sheets)", "note": "coming soon", "storage_path": None},
   {"level": "intermediate", "week": None, "kind": "workbook", "file_name": "Level 2 Capstone deck template", "note": "coming soon", "storage_path": None},
   {"level": "advanced", "week": None, "kind": "workbook", "file_name": "Level 3 Strategy factory starter repo", "note": "coming soon", "storage_path": None},
   {"level": None, "week": None, "kind": "link", "file_name": "Circles Algo Lab — AI Trading Command Centre", "note": "opens in a new tab", "storage_path": "https://algo.circleoptionlab.com"},
   {"level": None, "week": None, "kind": "link", "file_name": "AI Trading Course — Master Curriculum v2 (PDF)", "note": "the full curriculum, 23 strategies", "storage_path": "https://drive.google.com/file/d/1MJsyuDyzMdXUTBBjojRQoA_G3_Z-pgWL/view"},
-  # Drive audit, 16 Sep 2026: files found in trailingtrades@gmail.com Drive and wired in.
-  # Newest copy of each is linked; older duplicates left untouched in Drive.
-  {"level": "foundation", "week": 1, "kind": "deck", "file_name": "5Circles_Candlestick_Basics (Google Slides)", "note": "candles, trend, S/R — pairs with Session 5", "storage_path": "https://docs.google.com/presentation/d/1XUH2eezNFWBp_3UebzPCo4O6zdOMbes6Q2XKL1Q_P-0/edit"},
-  {"level": "foundation", "week": 1, "kind": "deck", "file_name": "5Circles_Chart_Patterns (Google Slides)", "note": "price structure and patterns — pairs with Sessions 5-6", "storage_path": "https://docs.google.com/presentation/d/1OCWV7Yr-8n-UU5VyJrTJyIaMy7Qlt5iEzmKRpiqPDXE/edit"},
   {"level": None, "week": None, "kind": "link", "file_name": "AI Trading Course — Curriculum Index (Google Sheet)", "note": "week and session index of the curriculum", "storage_path": "https://docs.google.com/spreadsheets/d/1ZzMybEjVJpPpG6DFqsJyd5RceOJHgrCwNkYT1f8vIh4/edit"},
 ]
 
-# Foundation (Tier 1 Basic) — Week 1 deck: v1_1 is the newest of the three versions in the pack.
-FOUNDATION_PACK = [
-  (1, "deck", "5C_AITC_Foundation_Week1_Deck_v1_1.pptx", "Week 1 class deck", "1NDaZPAPzi5qGpku0QaNMXywM6-pjj0Ne"),
-  (1, "handout", "5C_AITC_Foundation_Handout1_v1.pdf", "Week 1 handout", "1KXPGM1iyOqSWpsXqdTWcUsl3brMgfF2z"),
-  (2, "deck", "5C_AITC_Foundation_Week2_Deck_v1.pptx", "Week 2 class deck", "1TP7OgK3eG19wg__qh_W6AYQCbmj9lMXd"),
-  (2, "handout", "5C_AITC_Foundation_Handout2_v1.pdf", "Week 2 handout", "1NNnlWCRMH6JhkAWRHOE5U0B1bsGdHrq8"),
-  (3, "deck", "5C_AITC_Foundation_Week3_Deck_v1.pptx", "Week 3 class deck", "1zAmk7chCNGzUt_DWJpL13AH8JpZwUZfp"),
-  (3, "handout", "5C_AITC_Foundation_Handout3_v1.pdf", "Week 3 handout", "1S0oIzQuv_TsHp6n_uSnGdLQ4AkQcLrfu"),
-  (None, "workbook", "5C_AITC_Foundation_Workbook_v1.pdf", "Stage 1 workbook", "1cThjak0q4GXy_DXPXDSjzLOXZdjyX0Z-"),
+# Stage 1 (foundation) class files, v3. Removed 21 Sep 2026 (owner decision): the v1 FOUNDATION_PACK (4-week
+# decks, handouts and workbook that teach a different sequence; v1 Handout 3 section 11.3 gives a cause for the
+# SEBI FY26 87.7% figure, a compliance breach), the two private Google Slides (5Circles_Candlestick_Basics,
+# 5Circles_Chart_Patterns: a sign-in wall for students) and the "Rule Card + Journal + Sizing templates" row
+# (nothing to link; the templates now live in each day's Today's task, content.artefacts). Until the v3 week
+# files ship, Stage 1 days list no class material and attendance is the finished session alone.
+# The v3 per-week decks and handouts, one row per language copy (en = English, hi = Hinglish; Hindi readers get
+# the Hinglish copy). The app serves them itself to signed-in learners from apps/learn/files/stage1/
+# (route app/learn/(app)/files/stage1/[file]); handout PDFs are written by apps/learn/scripts/export-stage1.mjs,
+# decks by the deck builder. The rows are always listed here, but a row whose file is not on disk yet stays hidden
+# from students at runtime (lib/content/resources.ts hiddenBecause -> lib/content/stage1-files.ts), so a week's
+# handout counts for attendance ("handout opened") only once that file ships; until then it is the finished session.
+STAGE1_V3_FILES = [
+  {"level": "foundation", "week": wk, "lang": lang, "kind": kind,
+   "file_name": f"CIRCLE-SMART_Week{wk}_{part}_{edition}.{ext}",
+   "note": f"Week {wk} {note} ({'English' if lang == 'en' else 'Hinglish'})",
+   "storage_path": f"/learn/files/stage1/CIRCLE-SMART_Week{wk}_{part}_{edition}.{ext}"}
+  for wk in (1, 2, 3)
+  for kind, part, ext, note in (("handout", "Handout", "pdf", "handout"), ("deck", "Deck", "pptx", "class deck"))
+  for lang, edition in (("en", "EN"), ("hi", "HINGLISH"))
 ]
 # Intermediate (Tier 2 Advanced) — v1 pack is 4 weeks; Curriculum v2 spreads Tier 2 over 10 weeks.
 INTERMEDIATE_PACK = [
@@ -174,9 +184,39 @@ ADVANCED_PACK = [
   (4, "handout", "5C_AITC_Advanced_Handout4_v1.pdf", "v1 pack Week 4 handout", "130sqldaMef9F9GYCvSBTYtSEJpWn8RRr"),
   (None, "workbook", "5C_AITC_Advanced_Workbook_v1.pdf", "Level 3 workbook", "1JwSxWTXH-rnXMvXeP1-3ztRekVhxB_gI"),
 ]
-for level, pack in (("foundation", FOUNDATION_PACK), ("intermediate", INTERMEDIATE_PACK), ("advanced", ADVANCED_PACK)):
+# Level 2 / Level 3 v1 packs: kept as data, hidden from students by the app (21 Sep 2026: Stage 2 is CIRCLE W.I.N.N.E.R.S).
+for level, pack in (("intermediate", INTERMEDIATE_PACK), ("advanced", ADVANCED_PACK)):
   for wk, kind, fname, note, fid in pack:
     resources.append({"level": level, "week": wk, "kind": kind, "file_name": fname, "note": note, "storage_path": drive(fid)})
+resources += STAGE1_V3_FILES
+
+RES_KINDS = {"deck", "handout", "workbook", "excel", "link", "exam"}
+def resource_row(r, i):
+  """Checks one resource row and fills the defaults: file_name from the path, week from a Stage 1 day, note ""."""
+  where = f"resources[{i}] ({r.get('file_name') or r.get('storage_path')})"
+  bad = lambda msg: sys.exit(f"CONTENT ERROR: {where}: {msg}")
+  r = dict(r)
+  if r.get("level") not in ("foundation", "intermediate", "advanced", None): bad("level must be foundation, intermediate, advanced or None")
+  if r.get("kind") not in RES_KINDS: bad(f"kind must be one of {sorted(RES_KINDS)}")
+  if "lang" in r and r["lang"] not in ("en", "hi", None): bad('lang must be "en" (English) or "hi" (Hinglish; Hindi readers get it too)')
+  sp = r.get("storage_path")
+  if sp is not None and not (isinstance(sp, str) and (sp.startswith("https://") or (sp.startswith("/") and not sp.startswith("//")))):
+    bad('storage_path must be an https:// link, an in-app path starting with "/", or None')
+  if r.get("day") is not None:
+    d = r["day"]
+    if r.get("level") != "foundation" or isinstance(d, bool) or not isinstance(d, int) or not 1 <= d <= 21: bad("day is a Stage 1 course day, 1-21, on a foundation row")
+    wk = (d - 1) // 7 + 1
+    if r.get("week") not in (None, wk): bad(f"day {d} is in week {wk}, not week {r['week']}")
+    r["week"] = wk
+  if not r.get("file_name"):
+    if not sp: bad("needs a file_name (or a storage_path to take it from)")
+    r["file_name"] = sp.rstrip("/").rsplit("/", 1)[-1]
+  r.setdefault("week", None); r.setdefault("note", ""); r.setdefault("storage_path", None)
+  # Optional keys only when set, so rows that do not use them stay as they were.
+  for k in ("lang", "day"):
+    if r.get(k) is None: r.pop(k, None)
+  return r
+resources = [resource_row(r, i) for i, r in enumerate(resources)]
 
 vocab = {
   "foundation": ["expectancy", "R-multiple", "risk-of-ruin", "verify-before-trust", "AI = analyst, human = trigger", "HH/HL", "S/R zones", "EMA 20/50", "VWAP", "RSI 40-50 pullback", "ATR stop", "Rule Card", "ORB", "EMA Pullback Swing", "1% rule", "position size formula", "5-check health filter", "Style Fit", "flowchart", "alerts are not orders", "30-trade backtest", "F&O = samjho, khelo mat", "no-trade days", "kill-switch for humans", "Daily Routine Card"],

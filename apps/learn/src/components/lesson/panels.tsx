@@ -5,6 +5,7 @@ import { t3, tr, type Lang } from "@/lib/i18n/lang";
 import { T } from "@/lib/i18n/strings";
 import type { SessionContentV2 } from "@/lib/content/session-v2";
 import type { Prompt, Resource } from "@/lib/content/course";
+import { resourceHref } from "@/lib/content/resources";
 import { Visual } from "@/components/visuals/Visual";
 import { PromptBlock } from "@/components/ui/PromptBlock";
 import { KaamSteps, type ResItem } from "./interactive";
@@ -17,6 +18,7 @@ const S = {
   preparing: t3("This lesson is being prepared.", "Ye lesson abhi taiyaar ho raha hai.", "यह लेसन अभी तैयार हो रहा है।"),
   material: t3("Class material", "Class material", "क्लास मटीरियल"),
   kaam: t3("Today's task", "Aaj Ka Kaam", "आज का काम"),
+  template: t3("Your template", "Aapka template", "आपका टेम्पलेट"),
   outcome: t3("Outcome", "Outcome", "नतीजा"),
   tools: t3("Tools", "Tools", "टूल"),
   noTools: t3("No tools needed, just a notebook and your attention.", "Koi tool nahi chahiye, bas notebook aur dhyaan.", "कोई टूल नहीं चाहिए, बस नोटबुक और ध्यान।"),
@@ -28,6 +30,10 @@ const S = {
   noPrompt: t3("No AI Lab prompt for this session.", "Is session mein AI Lab prompt nahi hai.", "इस सेशन में AI लैब प्रॉम्प्ट नहीं है।"),
   handout: (w: number) => t3(`Week ${w} handout`, `Week ${w} handout`, `हफ़्ता ${w} हैंडआउट`),
   deck: (w: number) => t3(`Week ${w} class deck`, `Week ${w} class deck`, `हफ़्ता ${w} क्लास डेक`),
+  dayHandout: (d: number) => t3(`Day ${d} handout`, `Day ${d} handout`, `दिन ${d} हैंडआउट`),
+  dayDeck: (d: number) => t3(`Day ${d} class deck`, `Day ${d} class deck`, `दिन ${d} क्लास डेक`),
+  langEn: t3("English", "English", "अंग्रेज़ी"),
+  langHi: t3("Hinglish", "Hinglish", "हिंग्लिश"),
 };
 
 /** Text with blank-line paragraphs; a single newline stays a line break (the CSS uses pre-line). */
@@ -52,7 +58,7 @@ export function LearnPanel({ c, lang, video, resources }: { c: SessionContentV2;
                 <span className={css.num} aria-hidden>{String(i + 1).padStart(2, "0")}</span>
                 <h2 className={css.h}>{tr(t.h, lang)}</h2>
                 <Paras text={tr(t.p, lang)} className={css.p} />
-                <Visual v={t.visual} lang={lang} />
+                <Visual v={t.visual} lang={lang} label={tr(t.h, lang)} />
                 {ex && <div className={css.example}><span className={css.label}>{tr(S.example, lang)}</span><Paras text={ex} className={css.exP} /></div>}
                 {rem && <p className={css.remember}><strong>{tr(S.remember, lang)}:</strong> {rem}</p>}
               </li>
@@ -78,10 +84,12 @@ export function LearnPanel({ c, lang, video, resources }: { c: SessionContentV2;
   );
 }
 
-/** Aaj Ka Kaam tab: the brief, a numbered checklist with real minutes, outcome, tools, the batch activity (with a
- *  solo way to do it) and the compliance note, which stays English and verbatim. */
+/** Aaj Ka Kaam tab: the brief, a numbered checklist with real minutes, the templates / model cards the task builds
+ *  ("Your template"), outcome, tools, the batch activity (with a solo way to do it) and the compliance note, which
+ *  stays English and verbatim. */
 export function KaamPanel({ n, c, lang }: { n: number; c: SessionContentV2; lang: Lang }) {
   const steps = (c.kaam_steps ?? []).map((x) => tr(x, lang)).filter(Boolean);
+  const artefacts = c.artefacts ?? [];
   const tools = c.tools.map((x) => tr(x, lang)).filter(Boolean);
   const kaam = tr(c.kaam, lang), outcome = tr(c.outcome, lang), fun = tr(c.fun, lang);
   return (
@@ -94,6 +102,23 @@ export function KaamPanel({ n, c, lang }: { n: number; c: SessionContentV2; lang
         {kaam && <Paras text={kaam} className={css.kaamBrief} />}
         {steps.length > 0 && <KaamSteps n={n} steps={steps} />}
       </section>
+      {artefacts.length > 0 && (
+        <section aria-labelledby="tpl-h">
+          <h2 id="tpl-h" className={css.sectionH}>{tr(S.template, lang)}</h2>
+          <div className={css.stack}>
+            {artefacts.map((a, i) => {
+              const note = tr(a.note, lang);
+              return (
+                <article key={i} className={`col-card ${css.artefact}`} aria-labelledby={`tpl-${i}`}>
+                  <h3 id={`tpl-${i}`} className={css.artefactH}>{tr(a.title, lang)}</h3>
+                  {note && <Paras text={note} className={css.artefactNote} />}
+                  <Visual v={a.visual} lang={lang} label={tr(a.title, lang)} />
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
       <div className={css.kaamGrid}>
         {outcome && <section className={css.box}><h3 className={css.boxH}>{tr(S.outcome, lang)}</h3><p>{outcome}</p></section>}
         <section className={css.box}>
@@ -120,13 +145,20 @@ export function AiPanel({ prompts, lang }: { prompts: Prompt[]; lang: Lang }) {
 
 const FORMAT: [RegExp, string][] = [[/\.pdf$/i, "PDF"], [/\.pptx?$/i, "PPT"], [/google slides/i, "Slides"], [/google sheets?/i, "Sheet"], [/google doc/i, "Doc"], [/\.xlsx?$/i, "Excel"]];
 
-/** Learner-facing names for decks and handouts: file names like "5C_AITC_Foundation_Week1_Deck_v1_1.pptx" become
- *  "Week 1 class deck"; the handout of the week is listed first. */
+/** Learner-facing names for decks and handouts: "Day 5 handout", "Week 1 class deck" (a file name like
+ *  "5C_AITC_Foundation_Week1_Deck_v1_1.pptx" also becomes "Week 1 class deck"); handouts are listed first.
+ *  The meta line names the format and, for a language copy, its language (a Hindi reader gets the Hinglish copy). */
 export function resourceItems(list: Resource[], lang: Lang): ResItem[] {
   return [...list].sort((a, b) => Number(b.kind === "handout") - Number(a.kind === "handout")).map((r, i) => {
-    const name = r.file_name.replace(/\s*\([^)]*\)\s*$/, "").replace(/\.[a-z0-9]{2,4}$/i, "").replace(/^5C(ircles)?_(AITC_)?(Foundation_|Intermediate_|Advanced_)?/i, "").replace(/_v\d+(_\d+)*$/i, "").replace(/_/g, " ").trim();
+    const file = r.file_name ?? "";
+    const name = file.replace(/\s*\([^)]*\)\s*$/, "").replace(/\.[a-z0-9]{2,4}$/i, "").replace(/^5C(ircles)?_(AITC_)?(Foundation_|Intermediate_|Advanced_)?/i, "").replace(/_v\d+(_\d+)*$/i, "").replace(/_/g, " ").trim();
     const wk = name.match(/^Week\s?(\d+)\s+Deck$/i);
-    const label = r.kind === "handout" && r.week ? tr(S.handout(r.week), lang) : wk ? tr(S.deck(Number(wk[1])), lang) : name;
-    return { id: `${r.kind}-${i}`, label, meta: FORMAT.find(([re]) => re.test(r.file_name))?.[1] ?? "", href: r.storage_path?.startsWith("http") ? r.storage_path : null, handout: r.kind === "handout" };
+    const label = r.day != null ? tr(r.kind === "handout" ? S.dayHandout(r.day) : S.dayDeck(r.day), lang)
+      : r.kind === "handout" && r.week ? tr(S.handout(r.week), lang)
+      : r.kind === "deck" && r.week && (r.lang || !name) ? tr(S.deck(r.week), lang)
+      : wk ? tr(S.deck(Number(wk[1])), lang) : name;
+    const format = FORMAT.find(([re]) => re.test(file) || re.test(r.storage_path ?? ""))?.[1] ?? "";
+    const language = r.lang === "en" ? tr(S.langEn, lang) : r.lang === "hi" ? tr(S.langHi, lang) : "";
+    return { id: `${r.kind}-${i}`, label, meta: [format, language].filter(Boolean).join(" · "), href: resourceHref(r), handout: r.kind === "handout" };
   });
 }

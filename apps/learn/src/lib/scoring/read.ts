@@ -3,7 +3,8 @@ import { createClient, getViewer } from "@/lib/supabase/server";
 import { supabaseConfigured } from "@/lib/supabase/env";
 import { computeScore, nextActions, type NextAction } from "./rules";
 import { currentLevel, dueExam, dueReview, examTitle, examTitles } from "./next";
-import { EXAMS, RESOURCES, examKey, SESSIONS, levelOf, pick3, youtubeEmbed, type ExamMeta, type LevelSlug, type Session } from "@/lib/content/course";
+import { EXAMS, examKey, SESSIONS, levelOf, pick3, youtubeEmbed, type ExamMeta, type LevelSlug } from "@/lib/content/course";
+import { sessionHasHandout } from "@/lib/content/resources";
 import type { EventRow } from "@/components/ui/ScoreBreakdown";
 import { loadLearnerState } from "@/lib/progress/load";
 import { nextSession, stateOf, isComplete, type LearnerState } from "@/lib/progress/gating";
@@ -18,7 +19,7 @@ const E = {
   quiz: t3("quiz", "quiz", "क्विज़"),
   attempt: t3("attempt", "attempt", "अटेम्प्ट"),
   onTime: t3("submitted on time", "time par submit kiya", "समय पर सबमिट किया"),
-  review: t3("Weekly review", "Weekly review", "हफ़्ते का रिव्यू"),
+  review: t3("Weekly review", "Weekly review", "साप्ताहिक रिव्यू"),
   galti: t3("Galti-log entry", "Galti-log entry", "गलती-लॉग एंट्री"),
   streak: t3("Journal streak: a full week", "Journal streak: poora hafta", "जर्नल स्ट्रीक: पूरा हफ़्ता"),
   practice: t3("Practice work graded", "Practice ka kaam grade hua", "प्रैक्टिस के काम की ग्रेडिंग"),
@@ -54,8 +55,8 @@ const view = ({ ref_id, ...e }: Raw, lang: Lang, k: Lookups): EventRow => ({ ...
 function actionsFor(state: LearnerState, level: LevelSlug, components: ReturnType<typeof computeScore>, doneExams: Set<string>, reviewed: Set<number>, portfolioRowsComplete: number) {
   const open = nextSession(state);
   // Same rule as maybeAttendance in session/actions.ts: 80% of the class video only where there is one
-  // (Tier 1 has none: finishing the session is the class), and the handout only when the week has one.
-  const hasHandout = (s: Session) => RESOURCES.some((r) => r.level === s.level && r.week === s.week && r.kind === "handout" && !!r.storage_path?.startsWith("http"));
+  // (Tier 1 has none: finishing the session is the class), and the handout only when the session has one.
+  const hasHandout = sessionHasHandout;
   const missingAtt = SESSIONS.filter((s) => {
     const st = stateOf(state, s.number);
     return s.level === level && isComplete(st) && ((!!youtubeEmbed(s.video_url) && st.watched_pct < 80) || (hasHandout(s) && !st.handout_opened));

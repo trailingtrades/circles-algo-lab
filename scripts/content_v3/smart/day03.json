@@ -102,7 +102,7 @@
    "p": {
     "en": "A trader and a gambler both put money on a result nobody knows in advance; the difference is maths. A gambler bets on a feeling and never knows what an average bet makes or loses. A trader follows written rules, records every win and loss, and keeps each loss small enough to survive the next one. F&O means futures and options; we study them only on Day 18, and Stage 1 places no F&O trades: samjho, khelo mat. Separately, one official number is worth knowing now: SEBI FY26 study (Aug 2026): 87.7% of individual F&O traders were in net loss, aggregate Rs 91,685 crore, average Rs 1.17 lakh per loss-making trader. The study reports outcomes; it does not say why each trader lost.",
     "hi": "Trader aur gambler, dono aise nateeje par paisa lagate hain jo pehle se kisi ko pata nahi hota; fark sirf maths ka hai. Gambler feeling par daav lagata hai, aur use kabhi pata nahi hota ki ek average daav mein kitna aata ya jaata hai. Trader likhe hue rules follow karta hai, har jeet aur haar record karta hai, aur har loss itna chhota rakhta hai ki agle trade ke liye capital bacha rahe. F&O yaani futures aur options; inhe hum sirf Day 18 par samjhenge, aur Stage 1 mein koi F&O trade nahi hota: samjho, khelo mat. Ek alag baat: ek official number abhi jaan lijiye: SEBI FY26 study (Aug 2026): 87.7% individual F&O traders net loss mein the, aggregate Rs 91,685 crore, average Rs 1.17 lakh per loss-making trader. Yeh study batati hai ki kya hua; har loss ki wajah nahi batati.",
-    "dv": "ट्रेडर और जुआरी, दोनों ऐसे नतीजे पर पैसा लगाते हैं जो पहले से किसी को पता नहीं होता; फ़र्क़ सिर्फ़ हिसाब का है। जुआरी मन के भरोसे दाँव लगाता है, और उसे कभी पता नहीं होता कि एक औसत दाँव में कितना आता या जाता है। ट्रेडर लिखे हुए नियम मानता है, हर जीत और हार दर्ज करता है, और हर लॉस इतना छोटा रखता है कि अगले ट्रेड के लिए कैपिटल बचा रहे। F&O यानी फ़्यूचर्स और ऑप्शन; इन्हें हम सिर्फ़ दिन 18 पर समझेंगे, और Stage 1 में कोई F&O ट्रेड नहीं होता: समझो, खेलो मत। एक अलग बात: एक आधिकारिक नंबर अभी जान लीजिए: SEBI FY26 स्टडी (Aug 2026): 87.7% इंडिविजुअल F&O ट्रेडर नेट लॉस में थे, कुल Rs 91,685 करोड़, और घाटे वाले हर ट्रेडर पर औसतन Rs 1.17 लाख। यह स्टडी बताती है कि क्या हुआ; हर लॉस की वजह नहीं बताती।"
+    "dv": "ट्रेडर और जुआरी, दोनों ऐसे नतीजे पर पैसा लगाते हैं जो पहले से किसी को पता नहीं होता; फ़र्क़ सिर्फ़ हिसाब का है। जुआरी मन के भरोसे दाँव लगाता है, और उसे कभी पता नहीं होता कि एक औसत दाँव में कितना आता या जाता है। ट्रेडर लिखे हुए नियम मानता है, हर जीत और हार दर्ज करता है, और हर लॉस इतना छोटा रखता है कि अगले ट्रेड के लिए कैपिटल बचा रहे। F&O यानी फ़्यूचर्स और ऑप्शन; इन्हें हम सिर्फ़ दिन 18 पर समझेंगे, और चरण 1 में कोई F&O ट्रेड नहीं होता: समझो, खेलो मत। एक अलग बात: एक आधिकारिक नंबर अभी जान लीजिए: SEBI FY26 स्टडी (Aug 2026): 87.7% इंडिविजुअल F&O ट्रेडर नेट लॉस में थे, कुल Rs 91,685 करोड़, और घाटे वाले हर ट्रेडर पर औसतन Rs 1.17 लाख। यह स्टडी बताती है कि क्या हुआ; हर लॉस की वजह नहीं बताती।"
    },
    "example": {
     "en": "Think of a family card game. Ramesh uncle wins 6 hands out of 10 and tells everyone he is in form. But his wins are small, about Rs 200 a hand, because he settles for a small win the moment he is ahead, and his losses are big, about Rs 500 a hand, because he keeps raising his bet even on weak cards. Six wins bring in Rs 1,200; four losses cost Rs 2,000. He goes home Rs 800 poorer, still talking about his form. A trader would have written the numbers down and seen the problem on the first night.",
@@ -537,9 +537,9 @@
     "dv": "लगातार हार, ड्रॉडाउन और वापसी की लंबी चढ़ाई"
    },
    "p": {
-    "en": "Even a good method loses several times in a row. At a 55% win-rate, the chance of at least one run of 5 losses in 100 trades is about 65%, and of 7 losses about 18%. Drawdown is how far your capital falls from its last high before it makes a new one. Risk of ruin is the chance that losses become so deep that you cannot, or will not, carry on. The climb back is always steeper than the fall: a 10% loss needs 11% to recover, 25% needs 33%, and 50% needs 100%. The size of each bet decides whether a normal streak is a dent or the end of the game; Day 9 turns this into the 1% rule.",
-    "hi": "Achha method bhi lagataar kai baar haar jaata hai. 55% win-rate par, 100 trades mein kam se kam ek baar lagataar 5 haar aane ka chance lagbhag 65% hai, aur lagataar 7 haar ka lagbhag 18%. Drawdown ka matlab hai aapka capital apne pichhle high se kitna neeche aaya, naya high banne se pehle. Risk of ruin woh chance hai ki loss itna gehra ho jaye ki aap aage khel hi na payein, ya khelne ki himmat hi na bache. Wapas upar chadhna hamesha girne se mushkil hota hai: 10% loss ke baad 11% chahiye, 25% ke baad 33%, aur 50% ke baad poore 100%. Har daav ka size hi tay karta hai ki normal streak sirf ek chot banegi ya khel hi khatam kar degi; Day 9 mein isi se 1% rule banega.",
-    "dv": "अच्छा तरीक़ा भी लगातार कई बार हार जाता है। 55% विन-रेट पर, 100 ट्रेड में कम से कम एक बार लगातार 5 हार आने का चांस लगभग 65% है, और लगातार 7 हार का लगभग 18%। ड्रॉडाउन का मतलब है आपका कैपिटल अपने पिछले हाई से कितना नीचे आया, नया हाई बनने से पहले। रिस्क ऑफ़ रुइन वो चांस है कि लॉस इतना गहरा हो जाए कि आप आगे खेल ही न पाएँ, या खेलने की हिम्मत ही न बचे। वापस ऊपर चढ़ना हमेशा गिरने से मुश्किल होता है: 10% लॉस के बाद 11% चाहिए, 25% के बाद 33%, और 50% के बाद पूरे 100%। हर दाँव का साइज़ ही तय करता है कि नॉर्मल स्ट्रीक सिर्फ़ एक चोट बनेगी या खेल ही ख़त्म कर देगी; दिन 9 में इसी से 1% रूल बनेगा।"
+    "en": "Even a good method loses several times in a row: at a 55% win-rate, the chance of at least one run of 5 losses in 100 trades is about 65%, and of 7 losses about 18%. Drawdown is how far your capital falls from its last high before it makes a new one. Risk of ruin is the chance that losses become so deep that you cannot, or will not, carry on. Bet size drives it, because bet size sets how deep a normal streak cuts: after 7 losses in a row, 1% risk a trade leaves you 6.8% down, 2% leaves 13.2%, 5% leaves 30.2% and 10% leaves 52.2%. The climb back is always steeper than the fall: -10% needs +11.1% to recover, -25% needs +33.3%, and -50% needs +100%. That is why this course risks 1% a trade (Day 9), stops for the day at -2R and pauses to review after -5R in a week: a streak should be a dent, never the end of the game.",
+    "hi": "Achha method bhi lagataar kai baar haar jaata hai: 55% win-rate par, 100 trades mein kam se kam ek baar lagataar 5 haar aane ka chance lagbhag 65% hai, aur lagataar 7 haar ka lagbhag 18%. Drawdown ka matlab hai aapka capital apne pichhle high se kitna neeche aaya, naya high banne se pehle. Risk of ruin woh chance hai ki loss itna gehra ho jaye ki aap aage khel hi na payein, ya khelne ki himmat hi na bache. Ise daav ka size chalata hai, kyunki wahi tay karta hai ki normal streak kitna gehra kaategi: lagataar 7 haar ke baad, har trade par 1% risk se aap 6.8% neeche hote hain, 2% se 13.2%, 5% se 30.2% aur 10% se 52.2%. Wapas upar chadhna hamesha girne se mushkil hota hai: -10% ke baad +11.1% chahiye, -25% ke baad +33.3%, aur -50% ke baad poore +100%. Isiliye yeh course har trade par 1% risk rakhta hai (Day 9), -2R par us din ki trading band karta hai, aur hafte mein -5R par ruk kar review karta hai: streak sirf ek chot honi chahiye, khel ka ant kabhi nahi.",
+    "dv": "अच्छा तरीक़ा भी लगातार कई बार हार जाता है: 55% विन-रेट पर, 100 ट्रेड में कम से कम एक बार लगातार 5 हार आने का चांस लगभग 65% है, और लगातार 7 हार का लगभग 18%। ड्रॉडाउन का मतलब है आपका कैपिटल अपने पिछले हाई से कितना नीचे आया, नया हाई बनने से पहले। रिस्क ऑफ़ रुइन वो चांस है कि लॉस इतना गहरा हो जाए कि आप आगे खेल ही न पाएँ, या खेलने की हिम्मत ही न बचे। इसे दाँव का साइज़ चलाता है, क्योंकि वही तय करता है कि नॉर्मल स्ट्रीक कितना गहरा काटेगी: लगातार 7 हार के बाद, हर ट्रेड पर 1% रिस्क से आप 6.8% नीचे होते हैं, 2% से 13.2%, 5% से 30.2% और 10% से 52.2%। वापस ऊपर चढ़ना हमेशा गिरने से मुश्किल होता है: -10% के बाद +11.1% चाहिए, -25% के बाद +33.3%, और -50% के बाद पूरे +100%। इसीलिए ये कोर्स हर ट्रेड पर 1% रिस्क रखता है (दिन 9), -2R पर उस दिन की ट्रेडिंग बंद करता है, और हफ़्ते में -5R पर रुककर रिव्यू करता है: स्ट्रीक सिर्फ़ एक चोट होनी चाहिए, खेल का अंत कभी नहीं।"
    },
    "example": {
     "en": "Aman and Priya follow the same 20 practice trades: each win +1.5R, each loss -1R, with 7 losses in a row in the middle. Priya risks 1% of her capital on each trade, Aman 10%. After the streak Priya is about 7% below her peak, because seven 0.99s multiplied together leave 0.932. Aman is about 52% below his, because seven 0.9s multiplied together leave 0.478. To get back to his peak he now needs a gain of about 109%. Same trades, same luck; only the bet size was different.",
@@ -799,6 +799,18 @@
   },
   {
    "term": {
+    "en": "Edge",
+    "hi": "Edge",
+    "dv": "एज (edge)"
+   },
+   "meaning": {
+    "en": "A positive expectancy after costs, shown over enough trades: 30 to judge a rule, 100 for confidence. A hunch, or one good week, is not an edge.",
+    "hi": "Costs ke baad positive expectancy, jo kaafi trades par dikhe: rule judge karne ke liye 30, bharose ke liye 100. Koi hunch, ya ek achha hafta, edge nahi hota.",
+    "dv": "कॉस्ट के बाद पॉज़िटिव एक्सपेक्टेंसी, जो काफ़ी ट्रेड पर दिखे: नियम परखने के लिए 30, भरोसे के लिए 100। कोई अंदाज़ा, या एक अच्छा हफ़्ता, एज नहीं होता।"
+   }
+  },
+  {
+   "term": {
     "en": "Breakeven win-rate",
     "hi": "Breakeven win-rate",
     "dv": "ब्रेकईवन विन-रेट"
@@ -828,9 +840,21 @@
     "dv": "रिस्क ऑफ़ रुइन"
    },
    "meaning": {
-    "en": "The chance that losses grow so deep that you cannot, or will not, carry on.",
-    "hi": "Woh chance ki loss itna gehra ho jaye ki aap aage khel hi na payein, ya khelna chhod dein.",
-    "dv": "वो चांस कि लॉस इतना गहरा हो जाए कि आप आगे खेल ही न पाएँ, या खेलना छोड़ दें।"
+    "en": "The chance that losses grow so deep that you cannot, or will not, carry on. Bet size drives it: 7 losses in a row cost 6.8% of capital at 1% risk a trade, but 52.2% at 10%.",
+    "hi": "Woh chance ki loss itna gehra ho jaye ki aap aage khel hi na payein, ya khelna chhod dein. Ise daav ka size chalata hai: lagataar 7 haar 1% risk par capital ka 6.8% le jaati hain, lekin 10% risk par 52.2%.",
+    "dv": "वो चांस कि लॉस इतना गहरा हो जाए कि आप आगे खेल ही न पाएँ, या खेलना छोड़ दें। इसे दाँव का साइज़ चलाता है: लगातार 7 हार 1% रिस्क पर कैपिटल का 6.8% ले जाती हैं, लेकिन 10% रिस्क पर 52.2%।"
+   }
+  },
+  {
+   "term": {
+    "en": "Loss recovery (the climb back)",
+    "hi": "Loss recovery (wapas upar ki chadhai)",
+    "dv": "लॉस रिकवरी (वापसी की चढ़ाई)"
+   },
+   "meaning": {
+    "en": "The gain you need to get back to your old high after a fall. It is always bigger than the fall, because it is earned on what is left: -10% needs +11.1%, -25% needs +33.3%, -50% needs +100%.",
+    "hi": "Girawat ke baad purane high tak wapas aane ke liye jitna gain chahiye. Yeh hamesha girawat se bada hota hai, kyunki yeh bache hue paise par kamana padta hai: -10% ke baad +11.1%, -25% ke baad +33.3%, -50% ke baad +100%.",
+    "dv": "गिरावट के बाद पुराने हाई तक वापस आने के लिए जितना गेन चाहिए। ये हमेशा गिरावट से बड़ा होता है, क्योंकि ये बचे हुए पैसे पर कमाना पड़ता है: -10% के बाद +11.1%, -25% के बाद +33.3%, -50% के बाद +100%।"
    }
   }
  ],
@@ -931,14 +955,19 @@
       "dv": "लगातार 5 हार आम बात है"
      },
      {
+      "en": "7 losses: -6.8% at 1%, -52% at 10%",
+      "hi": "7 haar: 1% par -6.8%, 10% par -52%",
+      "dv": "7 हार: 1% पर -6.8%, 10% पर -52%"
+     },
+     {
       "en": "-50% needs +100%",
       "hi": "-50% ke baad +100% chahiye",
       "dv": "-50% के बाद +100% चाहिए"
      },
      {
-      "en": "Bet size decides survival",
-      "hi": "Daav ka size tay karta hai kaun bachega",
-      "dv": "दाँव का साइज़ तय करता है कौन बचेगा"
+      "en": "Day 9: -2R day stop, -5R pause",
+      "hi": "Day 9: -2R par din band, -5R par pause",
+      "dv": "दिन 9: -2R पर दिन बंद, -5R पर रुकें"
      }
     ]
    },
@@ -1021,17 +1050,341 @@
    "dv": "फ़ोन के कैलकुलेटर पर 1:0.5 पेऑफ़ का ब्रेकईवन विन-रेट निकालिए (1 ÷ 1.5), और नोटबुक में लिखिए कि उस पेऑफ़ के साथ '60% एक्यूरेसी' वाला दावा उसे पार करता है या नहीं (जाँच: लगभग 67%, यानी 60% पार नहीं करता)।"
   },
   {
-   "en": "On the calculator, multiply 0.9 x 0.9 x ... until 0.9 appears seven times, then do the same with 0.99, and write how much of Rs 10,00,000 is left after 7 straight losses at 10% risk and at 1% risk (check: about Rs 4.78 lakh and Rs 9.32 lakh).",
-   "hi": "Calculator par saat baar 0.9 ko aapas mein guna kijiye (0.9 x 0.9 x ...), phir saat baar 0.99 ko, aur likhiye ki 10% aur 1% risk par lagataar 7 haar ke baad Rs 10,00,000 mein se kitna bachta hai (check: lagbhag Rs 4.78 lakh aur Rs 9.32 lakh).",
-   "dv": "कैलकुलेटर पर सात बार 0.9 को आपस में गुणा कीजिए (0.9 x 0.9 x ...), फिर सात बार 0.99 को, और लिखिए कि 10% और 1% रिस्क पर लगातार 7 हार के बाद Rs 10,00,000 में से कितना बचता है (जाँच: लगभग Rs 4.78 लाख और Rs 9.32 लाख)।"
+   "en": "On the calculator, multiply 0.9 x 0.9 x ... until 0.9 appears seven times, then do the same with 0.99, and write how much of Rs 10,00,000 is left after 7 straight losses at 10% risk and at 1% risk; check both against the Streak damage card under 'Your template' (about Rs 4.78 lakh and Rs 9.32 lakh).",
+   "hi": "Calculator par saat baar 0.9 ko aapas mein guna kijiye (0.9 x 0.9 x ...), phir saat baar 0.99 ko, aur likhiye ki 10% aur 1% risk par lagataar 7 haar ke baad Rs 10,00,000 mein se kitna bachta hai; dono ko 'Aapka template' ke Streak damage card se milaiye (lagbhag Rs 4.78 lakh aur Rs 9.32 lakh).",
+   "dv": "कैलकुलेटर पर सात बार 0.9 को आपस में गुणा कीजिए (0.9 x 0.9 x ...), फिर सात बार 0.99 को, और लिखिए कि 10% और 1% रिस्क पर लगातार 7 हार के बाद Rs 10,00,000 में से कितना बचता है; दोनों को 'आपका टेम्पलेट' के स्ट्रीक डैमेज कार्ड से मिलाइए (लगभग Rs 4.78 लाख और Rs 9.32 लाख)।"
   },
   {
-   "en": "Stretch, optional (about 20 more minutes; easier on a laptop): use the AI Lab prompt 'Streak simulator' to build a 100-trade sheet, and write down the longest losing streak it shows.",
-   "hi": "Stretch, optional (lagbhag 20 minute aur; laptop ho toh aasaan): AI Lab ke 'Streak simulator' prompt se 100 trades ki sheet banaiye, aur usmein dikhne wali sabse lambi losing streak likh lijiye.",
-   "dv": "स्ट्रेच, ऑप्शनल (लगभग 20 मिनट और; लैपटॉप हो तो आसान): AI Lab के 'स्ट्रीक सिम्युलेटर' प्रॉम्प्ट से 100 ट्रेड की शीट बनाइए, और उसमें दिखने वाली लगातार हार की सबसे लंबी स्ट्रीक लिख लीजिए।"
+   "en": "Stretch, optional (about 20 more minutes; easier on a laptop): build the 100-trade streak simulator in Google Sheets from the layout under 'Your template', then write down the longest losing streak and the deepest drawdown it shows. Stuck on a formula? The AI Lab prompt 'Streak simulator' explains each one.",
+   "hi": "Stretch, optional (lagbhag 20 minute aur; laptop ho toh aasaan): 'Aapka template' ke layout se Google Sheets mein 100 trades ka streak simulator banaiye, phir usmein dikhne wali sabse lambi losing streak aur sabse gehra drawdown likh lijiye. Kisi formula par atak gaye? AI Lab ka 'Streak simulator' prompt har formula samjha deta hai.",
+   "dv": "स्ट्रेच, ऑप्शनल (लगभग 20 मिनट और; लैपटॉप हो तो आसान): 'आपका टेम्पलेट' के लेआउट से Google Sheets में 100 ट्रेड का स्ट्रीक सिम्युलेटर बनाइए, फिर उसमें दिखने वाली लगातार हार की सबसे लंबी स्ट्रीक और सबसे गहरा ड्रॉडाउन लिख लीजिए। किसी फ़ॉर्मूले पर अटक गए? AI Lab का 'स्ट्रीक सिम्युलेटर' प्रॉम्प्ट हर फ़ॉर्मूला समझा देता है।"
   }
  ],
  "kaam_min": 25,
+ "artefacts": [
+  {
+   "title": {
+    "en": "Your 10-trade expectancy sheet",
+    "hi": "Aapki 10-trade expectancy sheet",
+    "dv": "आपकी 10-ट्रेड एक्सपेक्टेंसी शीट"
+   },
+   "note": {
+    "en": "A1-A10, B1 and B2 come from today's steps; B3, B4 and column C are optional extras. Then change one number in column A and watch B1 and B2 move.",
+    "hi": "A1-A10, B1 aur B2 aaj ke steps se aate hain; B3, B4 aur column C optional extra hain. Phir column A ka ek number badaliye aur dekhiye B1 aur B2 kaise badalte hain.",
+    "dv": "A1-A10, B1 और B2 आज के स्टेप्स से आते हैं; B3, B4 और कॉलम C ऑप्शनल एक्स्ट्रा हैं। फिर कॉलम A का एक नंबर बदलिए और देखिए B1 और B2 कैसे बदलते हैं।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Cell",
+      "hi": "Cell",
+      "dv": "सेल"
+     },
+     {
+      "en": "Type this",
+      "hi": "Yeh type kijiye",
+      "dv": "ये टाइप कीजिए"
+     },
+     {
+      "en": "It should show",
+      "hi": "Kya dikhna chahiye",
+      "dv": "क्या दिखना चाहिए"
+     }
+    ],
+    "rows": [
+     [
+      "A1 to A10",
+      {
+       "en": "2, -1, -1, 1.5, -1, 2, -1, -1, 3, -1",
+       "hi": "2, -1, -1, 1.5, -1, 2, -1, -1, 3, -1",
+       "dv": "2, -1, -1, 1.5, -1, 2, -1, -1, 3, -1"
+      },
+      {
+       "en": "One practice result per cell, in R",
+       "hi": "Har cell mein ek practice result, R mein",
+       "dv": "हर सेल में एक प्रैक्टिस नतीजा, R में"
+      }
+     ],
+     [
+      "B1",
+      "=AVERAGE(A1:A10)",
+      {
+       "en": "0.25: expectancy +0.25R a trade, before costs",
+       "hi": "0.25: costs se pehle har trade +0.25R expectancy",
+       "dv": "0.25: कॉस्ट से पहले हर ट्रेड +0.25R एक्सपेक्टेंसी"
+      }
+     ],
+     [
+      "B2",
+      "=COUNTIF(A1:A10,\">0\")/10",
+      {
+       "en": "0.4: a 40% win-rate",
+       "hi": "0.4: yaani 40% win-rate",
+       "dv": "0.4: यानी 40% विन-रेट"
+      }
+     ],
+     [
+      "B3",
+      "=SUM(A1:A10)",
+      {
+       "en": "2.5: total +2.5R over 10 trades",
+       "hi": "2.5: 10 trades mein kul +2.5R",
+       "dv": "2.5: 10 ट्रेड में कुल +2.5R"
+      }
+     ],
+     [
+      "B4",
+      "=B1-0.1",
+      {
+       "en": "0.15: still positive after about 0.1R of costs a trade",
+       "hi": "0.15: har trade lagbhag 0.1R cost ke baad bhi positive",
+       "dv": "0.15: हर ट्रेड लगभग 0.1R कॉस्ट के बाद भी पॉज़िटिव"
+      }
+     ],
+     [
+      "C1 to C10",
+      "=SUM($A$1:A1)",
+      {
+       "en": "Optional: type it in C1 and copy it down. Running total 2, 1, 0, 1.5, 0.5, 2.5, 1.5, 0.5, 3.5, 2.5: it falls 2R from a high twice, even in a winning sheet.",
+       "hi": "Optional: C1 mein type karke neeche tak copy kijiye. Running total 2, 1, 0, 1.5, 0.5, 2.5, 1.5, 0.5, 3.5, 2.5: jeetne wali sheet mein bhi yeh do baar apne high se 2R girta hai.",
+       "dv": "ऑप्शनल: C1 में टाइप करके नीचे तक कॉपी कीजिए। रनिंग टोटल 2, 1, 0, 1.5, 0.5, 2.5, 1.5, 0.5, 3.5, 2.5: जीतने वाली शीट में भी ये दो बार अपने हाई से 2R गिरता है।"
+      }
+     ]
+    ],
+    "note": {
+     "en": "Ten trades are far too few to judge a rule: 30 to judge, 100 for confidence.",
+     "hi": "Rule judge karne ke liye 10 trades bahut kam hain: judge karne ke liye 30, bharose ke liye 100.",
+     "dv": "नियम परखने के लिए 10 ट्रेड बहुत कम हैं: परखने के लिए 30, भरोसे के लिए 100।"
+    }
+   }
+  },
+  {
+   "title": {
+    "en": "Streak damage card: 7 losses in a row",
+    "hi": "Streak damage card: lagataar 7 haar",
+    "dv": "स्ट्रीक डैमेज कार्ड: लगातार 7 हार"
+   },
+   "note": {
+    "en": "Virtual Rs 10,00,000; each loss takes the risk % of what is left. For any other risk % that tempts you, fill a blank row: multiply (1 - risk) by itself seven times, then by the capital (3% leaves about Rs 8.08 lakh).",
+    "hi": "Virtual Rs 10,00,000; har loss bache hue capital ka risk % le jaata hai. Jo bhi doosra risk % aapko lubhaaye, uske liye khaali row bhariye: (1 - risk) ko saat baar aapas mein guna kijiye, phir capital se (3% par lagbhag Rs 8.08 lakh bachte hain).",
+    "dv": "वर्चुअल Rs 10,00,000; हर लॉस बचे हुए कैपिटल का रिस्क % ले जाता है। जो भी दूसरा रिस्क % आपको लुभाए, उसके लिए ख़ाली रो भरिए: (1 - रिस्क) को सात बार आपस में गुणा कीजिए, फिर कैपिटल से (3% पर लगभग Rs 8.08 लाख बचते हैं)।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Risk per trade",
+      "hi": "Har trade risk",
+      "dv": "हर ट्रेड रिस्क"
+     },
+     {
+      "en": "Left after 7 losses",
+      "hi": "7 haar ke baad bacha",
+      "dv": "7 हार के बाद बचा"
+     },
+     {
+      "en": "Fall from the high",
+      "hi": "High se girawat",
+      "dv": "हाई से गिरावट"
+     },
+     {
+      "en": "Gain to get back",
+      "hi": "Wapsi ke liye gain",
+      "dv": "वापसी के लिए गेन"
+     }
+    ],
+    "rows": [
+     [
+      "1%",
+      "Rs 9,32,065",
+      "-6.8%",
+      "+7.3%"
+     ],
+     [
+      "2%",
+      "Rs 8,68,126",
+      "-13.2%",
+      "+15.2%"
+     ],
+     [
+      "5%",
+      "Rs 6,98,337",
+      "-30.2%",
+      "+43.2%"
+     ],
+     [
+      "10%",
+      "Rs 4,78,297",
+      "-52.2%",
+      "+109.1%"
+     ]
+    ],
+    "blank_rows": 2,
+    "note": {
+     "en": "The house rule is the first row: 1% a trade, with a day stop at -2R and a pause at -5R in a week.",
+     "hi": "House rule pehli row hai: har trade 1%, -2R par din band aur hafte mein -5R par pause.",
+     "dv": "हाउस रूल पहली रो है: हर ट्रेड 1%, -2R पर दिन बंद और हफ़्ते में -5R पर रुकना।"
+    }
+   }
+  },
+  {
+   "title": {
+    "en": "Streak simulator: build it without AI",
+    "hi": "Streak simulator: bina AI ke banaiye",
+    "dv": "स्ट्रीक सिम्युलेटर: बिना AI के बनाइए"
+   },
+   "note": {
+    "en": "Build it in a new tab (the + at the bottom left), so your 10-trade sheet stays safe. Type the inputs, row 1 and the row-2 formulas (A2 to F2), then select A2:F2 and drag it down to row 101. Every edit re-rolls RAND(): to freeze one run, copy column B and paste values only, then set H3 to 0.1 to see 10% risk on the same trades.",
+    "hi": "Ise nayi tab mein banaiye (neeche left mein +), taaki aapki 10-trade sheet surakshit rahe. Inputs, row 1 aur row 2 ke formulas (A2 se F2) type kijiye, phir A2:F2 select karke row 101 tak neeche drag kijiye. Har edit par RAND() naye numbers nikaalta hai: ek run freeze karne ke liye column B copy karke 'paste values only' kijiye, phir H3 mein 0.1 daal kar same trades par 10% risk dekhiye.",
+    "dv": "इसे नई टैब में बनाइए (नीचे बाईं ओर +), ताकि आपकी 10 ट्रेड वाली शीट सुरक्षित रहे। इनपुट, रो 1 और रो 2 के फ़ॉर्मूले (A2 से F2) टाइप कीजिए, फिर A2:F2 सेलेक्ट करके रो 101 तक नीचे ड्रैग कीजिए। हर बदलाव पर RAND() नए नंबर निकालता है: एक रन फ़्रीज़ करने के लिए कॉलम B कॉपी करके 'paste values only' कीजिए, फिर H3 में 0.1 डालकर उन्हीं ट्रेड पर 10% रिस्क देखिए।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Cell",
+      "hi": "Cell",
+      "dv": "सेल"
+     },
+     {
+      "en": "What it holds",
+      "hi": "Ismein kya hai",
+      "dv": "इसमें क्या है"
+     },
+     {
+      "en": "Type this",
+      "hi": "Yeh type kijiye",
+      "dv": "ये टाइप कीजिए"
+     }
+    ],
+    "rows": [
+     [
+      "H1",
+      {
+       "en": "Win-rate: 55%",
+       "hi": "Win-rate: 55%",
+       "dv": "विन-रेट: 55%"
+      },
+      "0.55"
+     ],
+     [
+      "H2",
+      {
+       "en": "Average win, in R",
+       "hi": "Average jeet, R mein",
+       "dv": "औसत जीत, R में"
+      },
+      "1.5"
+     ],
+     [
+      "H3",
+      {
+       "en": "Risk per trade: 1%",
+       "hi": "Har trade risk: 1%",
+       "dv": "हर ट्रेड रिस्क: 1%"
+      },
+      "0.01"
+     ],
+     [
+      "C1, D1",
+      {
+       "en": "Start capital, and the first high",
+       "hi": "Shuruaati capital, aur pehla high",
+       "dv": "शुरुआती कैपिटल, और पहला हाई"
+      },
+      "100"
+     ],
+     [
+      "E1, F1",
+      {
+       "en": "Start: no drawdown, no streak",
+       "hi": "Shuruaat: na drawdown, na streak",
+       "dv": "शुरुआत: न ड्रॉडाउन, न स्ट्रीक"
+      },
+      "0"
+     ],
+     [
+      "A2",
+      {
+       "en": "Trade number",
+       "hi": "Trade number",
+       "dv": "ट्रेड नंबर"
+      },
+      "=ROW()-1"
+     ],
+     [
+      "B2",
+      {
+       "en": "Result: +1.5R win or -1R loss",
+       "hi": "Result: +1.5R jeet ya -1R haar",
+       "dv": "नतीजा: +1.5R जीत या -1R हार"
+      },
+      "=IF(RAND()<$H$1,$H$2,-1)"
+     ],
+     [
+      "C2",
+      {
+       "en": "Capital after this trade",
+       "hi": "Is trade ke baad capital",
+       "dv": "इस ट्रेड के बाद कैपिटल"
+      },
+      "=C1*(1+$H$3*B2)"
+     ],
+     [
+      "D2",
+      {
+       "en": "Highest capital so far",
+       "hi": "Ab tak ka sabse ooncha capital",
+       "dv": "अब तक का सबसे ऊँचा कैपिटल"
+      },
+      "=MAX(D1,C2)"
+     ],
+     [
+      "E2",
+      {
+       "en": "Drawdown from that high",
+       "hi": "Us high se drawdown",
+       "dv": "उस हाई से ड्रॉडाउन"
+      },
+      "=C2/D2-1"
+     ],
+     [
+      "F2",
+      {
+       "en": "Current losing streak",
+       "hi": "Abhi ki losing streak",
+       "dv": "अभी की लगातार हार"
+      },
+      "=IF(B2<0,F1+1,0)"
+     ],
+     [
+      "H5",
+      {
+       "en": "Longest losing streak",
+       "hi": "Sabse lambi losing streak",
+       "dv": "लगातार हार की सबसे लंबी स्ट्रीक"
+      },
+      "=MAX(F2:F101)"
+     ],
+     [
+      "H6",
+      {
+       "en": "Deepest drawdown",
+       "hi": "Sabse gehra drawdown",
+       "dv": "सबसे गहरा ड्रॉडाउन"
+      },
+      "=MIN(E2:E101)"
+     ]
+    ],
+    "note": {
+     "en": "Format column E and H6 as %. Made-up numbers: real markets rarely hand you so clean an edge, so judge each run by its deepest drawdown, not its final capital.",
+     "hi": "Column E aur H6 ko % format mein rakhiye. Yeh made-up numbers hain: asli market itna saaf edge shayad hi deta hai, isliye har run ko uske sabse gehre drawdown se parakhiye, aakhri capital se nahi.",
+     "dv": "कॉलम E और H6 को % फ़ॉर्मेट में रखिए। ये काल्पनिक नंबर हैं: असली बाज़ार इतना साफ़ एज शायद ही देता है, इसलिए हर रन को उसके सबसे गहरे ड्रॉडाउन से परखिए, आख़िरी कैपिटल से नहीं।"
+    }
+   }
+  }
+ ],
  "outcome": {
   "en": "By the end you can measure any trade in R, work out a method's expectancy and breakeven win-rate, explain why losing streaks and drawdowns must be survivable, and question any accuracy claim before it tempts you.",
   "hi": "Aaj ke baad aap kisi bhi trade ko R mein naap payenge, kisi method ki expectancy aur breakeven win-rate nikaal payenge, samjha payenge ki losing streak aur drawdown jhelne laayak kyun hone chahiye, aur kisi bhi accuracy claim ke lalach mein aane se pehle us par sawaal utha payenge.",
@@ -1072,7 +1425,7 @@
     "hi": "Streak simulator",
     "dv": "स्ट्रीक सिम्युलेटर"
    },
-   "body": "Act as a patient spreadsheet tutor for a complete beginner in India. Give me step-by-step Google Sheets formulas for a 100-row trading simulation using made-up numbers. Put the inputs in their own cells: win-rate (default 55%), average win in R (default 1.5), average loss in R (1), risk per trade as a percentage of capital (default 1%) and starting capital (100). Each row should show: a random win or loss using RAND(), the result in R, running capital, the running peak, the drawdown from that peak in %, and the current losing streak. Add summary cells for the longest losing streak and the deepest drawdown. Then explain how to freeze one random sequence (copy the win/loss column and paste it as values only) so I can compare 1% and 10% risk on exactly the same trades, and how any edit to the sheet makes RAND() draw a fresh sequence, so I can see how much luck alone changes the picture. End with 5 plain lines on how to read the results. This is a teaching simulation: do not suggest any real strategy or stock, do not give buy or sell advice, and do not mention targets or expected returns."
+   "body": "Act as a patient spreadsheet tutor for a complete beginner in India. I am building a 100-trade streak simulator in Google Sheets from my course template, using made-up numbers. Inputs: H1 win-rate 0.55, H2 average win 1.5 (in R; every loss is -1R), H3 risk per trade 0.01 (1% of capital). Row 1 is the start: C1 and D1 = 100, E1 and F1 = 0. Row 2, copied down to row 101: A2 =ROW()-1 (trade number), B2 =IF(RAND()<$H$1,$H$2,-1) (result in R), C2 =C1*(1+$H$3*B2) (capital), D2 =MAX(D1,C2) (highest capital so far), E2 =C2/D2-1 (drawdown from that high), F2 =IF(B2<0,F1+1,0) (current losing streak). Summary: H5 =MAX(F2:F101) (longest losing streak), H6 =MIN(E2:E101) (deepest drawdown). First explain, one plain line each, what every formula does. If I paste a formula that shows an error or a strange value, find my mistake. Then explain how to freeze one random sequence (copy column B and paste it as values only) so I can compare 1% and 10% risk on exactly the same trades, and why any edit makes RAND() draw a fresh sequence, so I can see how much luck alone changes the picture. End with 5 plain lines on how to read the results. This is a teaching simulation: do not suggest any real strategy or stock, do not give buy or sell advice, and do not mention targets or expected returns."
   },
   {
    "title": {
@@ -1295,17 +1648,17 @@
    "options": [
     {
      "text": {
-      "en": "Pause, and check she followed her rules; such streaks are common",
-      "hi": "Ruk kar check kare ki rules follow hue; aisi streak aam hai",
-      "dv": "रुककर जाँचे कि नियम माने गए; ऐसी स्ट्रीक आम है"
+      "en": "Pause and check she followed her rules; 5 losses in a row are common here",
+      "hi": "Ruk kar check kare ki rules follow hue; lagataar 5 haar yahan aam baat hai",
+      "dv": "रुककर जाँचे कि नियम माने गए; लगातार 5 हार यहाँ आम बात है"
      },
      "correct": true
     },
     {
      "text": {
-      "en": "Drop the rule at once, since five losses prove it has stopped working",
-      "hi": "Rule turant chhod de, kyunki paanch haar saabit karti hain ki woh kaam karna band kar chuka hai",
-      "dv": "नियम तुरंत छोड़ दे, क्योंकि पाँच हार साबित करती हैं कि वो काम करना बंद कर चुका है"
+      "en": "Drop the rule, since five losses in a row prove it no longer works",
+      "hi": "Rule chhod de, kyunki lagataar paanch haar saabit karti hain ki woh ab kaam nahi karta",
+      "dv": "नियम छोड़ दे, क्योंकि लगातार पाँच हार साबित करती हैं कि वो अब काम नहीं करता"
      },
      "correct": false
     },
@@ -1327,9 +1680,9 @@
     }
    ],
    "explanation": {
-    "en": "At a 55% win-rate, at least one run of 5 losses in 100 trades happens about 65% of the time, so a streak alone does not prove the rule is broken. First check whether she followed her rules and whether costs or market conditions have changed. Doubling up turns a normal streak into a deep drawdown, and no win is ever 'due': the market does not remember her last five trades. Later in the course you will learn a house rule to pause and review after a run like this.",
-    "hi": "55% win-rate par, 100 trades mein kam se kam ek baar lagataar 5 haar lagbhag 65% baar aati hai, isliye sirf streak se yeh saabit nahi hota ki rule toot gaya. Pehle check kijiye ki rules follow hue ya nahi, aur costs ya market ke halaat badle ya nahi. Size double karne se normal streak gehra drawdown ban jaati hai, aur koi jeet kabhi 'banti' nahi: market ko uske pichhle paanch trades yaad nahi rehte. Aage course mein aap aisi streak ke baad rukne aur review karne ka ek house rule seekhenge.",
-    "dv": "55% विन-रेट पर, 100 ट्रेड में कम से कम एक बार लगातार 5 हार लगभग 65% बार आती है, इसलिए सिर्फ़ स्ट्रीक से ये साबित नहीं होता कि नियम टूट गया। पहले जाँचिए कि नियम माने गए या नहीं, और कॉस्ट या बाज़ार के हालात बदले या नहीं। साइज़ डबल करने से नॉर्मल स्ट्रीक गहरा ड्रॉडाउन बन जाती है, और कोई जीत कभी 'बनती' नहीं: बाज़ार को उसके पिछले पाँच ट्रेड याद नहीं रहते। आगे कोर्स में आप ऐसी स्ट्रीक के बाद रुकने और रिव्यू करने का एक हाउस रूल सीखेंगे।"
+    "en": "At a 55% win-rate, at least one run of 5 losses in 100 trades happens about 65% of the time, so a streak alone does not prove the rule is broken. First check whether she followed her rules and whether costs or market conditions have changed. Doubling up turns a normal streak into a deep drawdown, and no win is ever 'due': the market does not remember her last five trades. From Day 9 the house rules make this automatic: stop for the day after -2R, and pause to review after -5R in a week.",
+    "hi": "55% win-rate par, 100 trades mein kam se kam ek baar lagataar 5 haar lagbhag 65% baar aati hai, isliye sirf streak se yeh saabit nahi hota ki rule toot gaya. Pehle check kijiye ki rules follow hue ya nahi, aur costs ya market ke halaat badle ya nahi. Size double karne se normal streak gehra drawdown ban jaati hai, aur koi jeet kabhi 'banti' nahi: market ko uske pichhle paanch trades yaad nahi rehte. Day 9 se house rules yeh kaam apne aap karwayenge: -2R ke baad us din trading band, aur hafte mein -5R ke baad ruk kar review.",
+    "dv": "55% विन-रेट पर, 100 ट्रेड में कम से कम एक बार लगातार 5 हार लगभग 65% बार आती है, इसलिए सिर्फ़ स्ट्रीक से ये साबित नहीं होता कि नियम टूट गया। पहले जाँचिए कि नियम माने गए या नहीं, और कॉस्ट या बाज़ार के हालात बदले या नहीं। साइज़ डबल करने से नॉर्मल स्ट्रीक गहरा ड्रॉडाउन बन जाती है, और कोई जीत कभी 'बनती' नहीं: बाज़ार को उसके पिछले पाँच ट्रेड याद नहीं रहते। दिन 9 से हाउस रूल ये काम अपने-आप करवाएँगे: -2R के बाद उस दिन ट्रेडिंग बंद, और हफ़्ते में -5R के बाद रुककर रिव्यू।"
    }
   }
  ]

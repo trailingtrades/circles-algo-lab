@@ -100,19 +100,19 @@
     "dv": "दूसरा हफ़्ता, एक ट्रेड में"
    },
    "p": {
-    "en": "This week you built a full toolkit. Here it is in the order you use it; the example then runs one paper trade through it. Style comes first (Day 10): with a day job, swing trading fits, so the default is the EMA Pullback Swing (Day 11). The chart check uses the four tools from Day 8: EMA 20 and 50 for trend, RSI 14 for momentum, ATR 14 for normal movement, and VWAP only on intraday charts. Then risk (Day 9): 1% per trade, size from the formula, and no position above 25% of capital. Keep at most 3 open trades, stop for the day after -2R, and pause to review after -5R in a week. Last, the trade goes into your Day 12 journal; ORB (Day 13) stays optional, only for those who can watch 9:15 to 11:00.",
-    "hi": "Is hafte aapne poora toolkit bana liya. Neeche yeh usi order mein hai jismein aap ise use karte hain; example mein ek paper trade isse guzarta hai. Sabse pehle style (Day 10): naukri ke saath swing trading fit baithti hai, isliye default strategy EMA Pullback Swing hai (Day 11). Chart check Day 8 ke chaar tools se hota hai: trend ke liye EMA 20 aur 50, momentum ke liye RSI 14, normal movement ke liye ATR 14, aur VWAP sirf intraday charts par. Phir risk (Day 9): har trade par 1%, size formula se, aur koi position capital ke 25% se upar nahi. Ek saath zyada se zyada 3 open trades rakhiye, -2R ke baad us din trading band, aur hafte mein -5R ho jaaye toh ruk kar review. Aakhir mein trade Day 12 ke journal mein jaata hai; ORB (Day 13) optional hi rehta hai, sirf unke liye jo 9:15 se 11:00 tak screen dekh sakte hain.",
-    "dv": "इस हफ़्ते आपने पूरा टूलकिट तैयार कर लिया। नीचे यह उसी क्रम में है जिसमें आप इसे इस्तेमाल करते हैं; उदाहरण में एक पेपर ट्रेड इससे गुज़रता है। सबसे पहले स्टाइल (दिन 10): नौकरी के साथ स्विंग ट्रेडिंग ठीक बैठती है, इसलिए डिफ़ॉल्ट स्ट्रैटेजी EMA Pullback Swing है (दिन 11)। चार्ट की जाँच दिन 8 के चार टूल से होती है: ट्रेंड के लिए EMA 20 और 50, मोमेंटम के लिए RSI 14, आम उतार-चढ़ाव के लिए ATR 14, और VWAP सिर्फ़ इंट्राडे चार्ट पर। फिर रिस्क (दिन 9): हर ट्रेड पर 1%, साइज़ फ़ॉर्मूले से, और कोई पोज़ीशन कैपिटल के 25% से ऊपर नहीं। एक साथ ज़्यादा से ज़्यादा 3 खुले ट्रेड रखिए, -2R के बाद उस दिन ट्रेडिंग बंद, और हफ़्ते में -5R हो जाए तो रुककर रिव्यू। आख़िर में ट्रेड दिन 12 वाले जर्नल में जाता है; ORB (दिन 13) ऑप्शनल ही रहता है, सिर्फ़ उनके लिए जो 9:15 से 11:00 तक स्क्रीन देख सकते हैं।"
+    "en": "This week you built a full toolkit. Here it is in the order you use it; the example then runs one paper trade through it. Style comes first (Day 10): with a day job, swing trading fits, so the default is the EMA Pullback Swing (Day 11). The chart check uses the four tools from Day 8: EMA 20 and 50 for trend, RSI 14 for momentum, ATR 14 for normal movement, and VWAP only on intraday charts. Then risk (Day 9): 1% per trade, size from the formula, and no position above 25% of capital, checked at your maximum entry the evening before. Keep at most 3 open trades, each in a different sector, stop for the day after -2R, and pause to review after -5R in a week. Last, the trade goes into your Day 12 journal; ORB (Day 13) stays optional, only for those who can watch 9:15 to 11:00.",
+    "hi": "Is hafte aapne poora toolkit bana liya. Neeche yeh usi order mein hai jismein aap ise use karte hain; example mein ek paper trade isse guzarta hai. Sabse pehle style (Day 10): naukri ke saath swing trading fit baithti hai, isliye default strategy EMA Pullback Swing hai (Day 11). Chart check Day 8 ke chaar tools se hota hai: trend ke liye EMA 20 aur 50, momentum ke liye RSI 14, normal movement ke liye ATR 14, aur VWAP sirf intraday charts par. Phir risk (Day 9): har trade par 1%, size formula se, aur koi position capital ke 25% se upar nahi, jo pichhli shaam maximum entry par check hota hai. Ek saath zyada se zyada 3 open trades rakhiye, har ek alag sector mein, -2R ke baad us din trading band, aur hafte mein -5R ho jaaye toh ruk kar review. Aakhir mein trade Day 12 ke journal mein jaata hai; ORB (Day 13) optional hi rehta hai, sirf unke liye jo 9:15 se 11:00 tak screen dekh sakte hain.",
+    "dv": "इस हफ़्ते आपने पूरा टूलकिट तैयार कर लिया। नीचे यह उसी क्रम में है जिसमें आप इसे इस्तेमाल करते हैं; उदाहरण में एक पेपर ट्रेड इससे गुज़रता है। सबसे पहले स्टाइल (दिन 10): नौकरी के साथ स्विंग ट्रेडिंग ठीक बैठती है, इसलिए डिफ़ॉल्ट स्ट्रैटेजी EMA Pullback Swing है (दिन 11)। चार्ट की जाँच दिन 8 के चार टूल से होती है: ट्रेंड के लिए EMA 20 और 50, मोमेंटम के लिए RSI 14, आम उतार-चढ़ाव के लिए ATR 14, और VWAP सिर्फ़ इंट्राडे चार्ट पर। फिर रिस्क (दिन 9): हर ट्रेड पर 1%, साइज़ फ़ॉर्मूले से, और कोई पोज़ीशन कैपिटल के 25% से ऊपर नहीं, जिसे पिछली शाम मैक्सिमम एंट्री पर जाँचा जाता है। एक साथ ज़्यादा से ज़्यादा 3 खुले ट्रेड रखिए, हर एक अलग सेक्टर में, -2R के बाद उस दिन ट्रेडिंग बंद, और हफ़्ते में -5R हो जाए तो रुककर रिव्यू। आख़िर में ट्रेड दिन 12 वाले जर्नल में जाता है; ORB (दिन 13) ऑप्शनल ही रहता है, सिर्फ़ उनके लिए जो 9:15 से 11:00 तक स्क्रीन देख सकते हैं।"
    },
    "example": {
-    "en": "Bharat Pumps Ltd passes all four Day 11 rules: EMA 20 is above a rising EMA 50, the close is near EMA 20, RSI 14 has cooled to 46, and it has beaten NIFTY 50 over 3 months. Its signal candle closes at Rs 500, above the previous day's high. ATR 14 is Rs 12, so your plan says: enter at the next open, but skip if it opens above Rs 506 (Rs 500 + 0.5 x 12) or below the signal day's low. Next morning it opens at Rs 500, inside both limits, so the stop goes 1.5 x 12 = Rs 18 below, at Rs 482. On Rs 10 lakh, 1R is Rs 10,000, and 10,000 ÷ 18 = 555.6, rounded down to 555 shares. But 555 x Rs 500 is Rs 2,77,500, above the 25% cap of Rs 2,50,000. So you take 500 shares, and your real risk is 500 x Rs 18 = Rs 9,000, 0.9% of capital instead of 1% (0.9R). If the stop is hit, your journal logs -0.9R, its real size, before the Day 12 cost allowance. The same card fixes both exits before entry: a profit exit at Rs 500 + 2.5 x Rs 18 = Rs 545, and a time exit after trading day 15. The cap trims the win too: 500 x Rs 45 = Rs 22,500, +2.25R before the allowance.",
-    "hi": "Bharat Pumps Ltd Day 11 ke chaaron rules pass karta hai: EMA 20 badhte hue EMA 50 ke upar hai, close EMA 20 ke paas hai, RSI 14 thanda hokar 46 par aa gaya hai, aur 3 mahine mein yeh NIFTY 50 se aage hai. Uski signal candle Rs 500 par, pichhle din ke high ke upar close hoti hai. ATR 14 Rs 12 hai, toh plan kehta hai: agle din ke open par entry, lekin agar open Rs 506 (Rs 500 + 0.5 x 12) se upar ho ya signal day ke low se neeche, toh skip. Agli subah stock Rs 500 par khulta hai, dono limits ke andar, toh stop 1.5 x 12 = Rs 18 neeche, yaani Rs 482 par lagta hai. Rs 10 lakh par 1R = Rs 10,000, aur 10,000 ÷ 18 = 555.6, neeche round karke 555 shares. Lekin 555 x Rs 500 = Rs 2,77,500, jo 25% cap yaani Rs 2,50,000 se zyada hai. Isliye aap 500 shares lete hain, aur asli risk 500 x Rs 18 = Rs 9,000, yaani capital ka 1% nahi, 0.9% (0.9R). Stop hit hua toh journal mein iska asli size, -0.9R, likha jaayega, Day 12 ke cost allowance se pehle. Isi card par entry se pehle dono exits bhi likhe jaate hain: profit exit Rs 500 + 2.5 x Rs 18 = Rs 545 par, aur 15ve trading day ke baad time exit. Cap jeet ko bhi chhota karta hai: 500 x Rs 45 = Rs 22,500, yaani allowance se pehle +2.25R.",
-    "dv": "Bharat Pumps Ltd दिन 11 के चारों नियम पास करता है: EMA 20 चढ़ते हुए EMA 50 के ऊपर है, क्लोज़ EMA 20 के पास है, RSI 14 ठंडा होकर 46 पर आ गया है, और 3 महीने में यह NIFTY 50 से आगे है। उसकी सिग्नल कैंडल Rs 500 पर, पिछले दिन के हाई के ऊपर क्लोज़ होती है। ATR 14 Rs 12 है, तो प्लान कहता है: अगले दिन के ओपन पर एंट्री, लेकिन अगर ओपन Rs 506 (Rs 500 + 0.5 x 12) से ऊपर हो या सिग्नल वाले दिन के लो से नीचे, तो छोड़ दीजिए। अगली सुबह स्टॉक Rs 500 पर खुलता है, दोनों सीमाओं के अंदर, तो स्टॉप 1.5 x 12 = Rs 18 नीचे, यानी Rs 482 पर लगता है। Rs 10 लाख पर 1R = Rs 10,000, और 10,000 ÷ 18 = 555.6, नीचे राउंड करके 555 शेयर। लेकिन 555 x Rs 500 = Rs 2,77,500, जो 25% की सीमा यानी Rs 2,50,000 से ज़्यादा है। इसलिए आप 500 शेयर लेते हैं, और असली रिस्क 500 x Rs 18 = Rs 9,000, यानी कैपिटल का 1% नहीं, 0.9% (0.9R)। स्टॉप हिट हुआ तो जर्नल में इसका असली साइज़, -0.9R, लिखा जाएगा, दिन 12 वाले ख़र्च के अलाउंस से पहले। इसी कार्ड पर एंट्री से पहले दोनों एग्ज़िट भी लिखे जाते हैं: प्रॉफ़िट एग्ज़िट Rs 500 + 2.5 x Rs 18 = Rs 545 पर, और 15वें ट्रेडिंग दिन के बाद टाइम एग्ज़िट। सीमा जीत को भी छोटा करती है: 500 x Rs 45 = Rs 22,500, यानी अलाउंस से पहले +2.25R।"
+    "en": "Bharat Pumps Ltd passes all four Day 11 rules: EMA 20 is above a rising EMA 50, the close is near EMA 20, RSI 14 has cooled to 46, and it has beaten NIFTY 50 over 3 months. Its signal candle closes at Rs 494, above the previous day's high, and that day's low is Rs 486. ATR 14 is Rs 12, so that evening you write the plan: enter at the next open, but skip if it opens above Rs 500 (Rs 494 + 0.5 x 12) or below Rs 486. The stop will sit 1.5 x 12 = Rs 18 below the entry, so the size is fixed the same evening: on Rs 10 lakh, 1R is Rs 10,000, and 10,000 ÷ 18 = 555.6, rounded down to 555 shares. The 25% cap is checked at the highest price you might pay, the Rs 500 maximum entry: 555 x Rs 500 = Rs 2,77,500, above the Rs 2,50,000 cap, so the plan says 500 shares. Next morning it opens at Rs 496, inside both limits: entry Rs 496, stop Rs 478, and the position is Rs 2,48,000, under the cap whatever the open. Your real risk is 500 x Rs 18 = Rs 9,000, 0.9% of capital (0.9R); if the stop is hit, your journal logs -0.9R, before the Day 12 allowance. The same card fixes both exits before entry: a profit exit at Rs 496 + 2.5 x Rs 18 = Rs 541, and a time exit after trading day 15. The cap trims the win too: 500 x Rs 45 = Rs 22,500, +2.25R before the allowance.",
+    "hi": "Bharat Pumps Ltd Day 11 ke chaaron rules pass karta hai: EMA 20 badhte hue EMA 50 ke upar hai, close EMA 20 ke paas hai, RSI 14 thanda hokar 46 par aa gaya hai, aur 3 mahine mein yeh NIFTY 50 se aage hai. Uski signal candle Rs 494 par, pichhle din ke high ke upar close hoti hai, aur us din ka low Rs 486 hai. ATR 14 Rs 12 hai, toh usi shaam plan likhiye: agle din ke open par entry, lekin open Rs 500 (Rs 494 + 0.5 x 12) se upar ho ya Rs 486 se neeche, toh skip. Stop entry se 1.5 x 12 = Rs 18 neeche hoga, isliye size bhi usi shaam tay ho jaata hai: Rs 10 lakh par 1R = Rs 10,000, aur 10,000 ÷ 18 = 555.6, neeche round karke 555 shares. 25% cap us sabse unche price par check hota hai jo aap de sakte hain, yaani Rs 500 ki maximum entry: 555 x Rs 500 = Rs 2,77,500, jo Rs 2,50,000 ke cap se zyada hai, isliye plan 500 shares kehta hai. Agli subah stock Rs 496 par khulta hai, dono limits ke andar: entry Rs 496, stop Rs 478, aur position Rs 2,48,000 ki, yaani open kuch bhi ho, cap ke andar. Asli risk 500 x Rs 18 = Rs 9,000, capital ka 0.9% (0.9R); stop hit hua toh journal mein -0.9R likha jaayega, Day 12 ke allowance se pehle. Isi card par entry se pehle dono exits bhi likhe jaate hain: profit exit Rs 496 + 2.5 x Rs 18 = Rs 541 par, aur 15ve trading day ke baad time exit. Cap jeet ko bhi chhota karta hai: 500 x Rs 45 = Rs 22,500, yaani allowance se pehle +2.25R.",
+    "dv": "Bharat Pumps Ltd दिन 11 के चारों नियम पास करता है: EMA 20 चढ़ते हुए EMA 50 के ऊपर है, क्लोज़ EMA 20 के पास है, RSI 14 ठंडा होकर 46 पर आ गया है, और 3 महीने में यह NIFTY 50 से आगे है। उसकी सिग्नल कैंडल Rs 494 पर, पिछले दिन के हाई के ऊपर क्लोज़ होती है, और उस दिन का लो Rs 486 है। ATR 14 Rs 12 है, तो उसी शाम प्लान लिखिए: अगले दिन के ओपन पर एंट्री, लेकिन ओपन Rs 500 (Rs 494 + 0.5 x 12) से ऊपर हो या Rs 486 से नीचे, तो छोड़ दीजिए। स्टॉप एंट्री से 1.5 x 12 = Rs 18 नीचे होगा, इसलिए साइज़ भी उसी शाम तय हो जाता है: Rs 10 लाख पर 1R = Rs 10,000, और 10,000 ÷ 18 = 555.6, नीचे राउंड करके 555 शेयर। 25% कैप उस सबसे ऊँचे भाव पर जाँचा जाता है जो आप दे सकते हैं, यानी Rs 500 की मैक्सिमम एंट्री: 555 x Rs 500 = Rs 2,77,500, जो Rs 2,50,000 के कैप से ज़्यादा है, इसलिए प्लान 500 शेयर कहता है। अगली सुबह स्टॉक Rs 496 पर खुलता है, दोनों सीमाओं के अंदर: एंट्री Rs 496, स्टॉप Rs 478, और पोज़ीशन Rs 2,48,000 की, यानी ओपन कुछ भी हो, कैप के अंदर। असली रिस्क 500 x Rs 18 = Rs 9,000, कैपिटल का 0.9% (0.9R); स्टॉप हिट हुआ तो जर्नल में -0.9R लिखा जाएगा, दिन 12 वाले ख़र्च के अलाउंस से पहले। इसी कार्ड पर एंट्री से पहले दोनों एग्ज़िट भी लिखे जाते हैं: प्रॉफ़िट एग्ज़िट Rs 496 + 2.5 x Rs 18 = Rs 541 पर, और 15वें ट्रेडिंग दिन के बाद टाइम एग्ज़िट। कैप जीत को भी छोटा करता है: 500 x Rs 45 = Rs 22,500, यानी अलाउंस से पहले +2.25R।"
    },
    "remember": {
     "en": "Size comes from the stop and the cap, never from how sure you feel.",
     "hi": "Size stop aur cap se tay hota hai, is baat se nahi ki aap kitna sure feel kar rahe hain.",
-    "dv": "साइज़ स्टॉप और सीमा से तय होता है, इससे नहीं कि आपको कितना भरोसा महसूस हो रहा है।"
+    "dv": "साइज़ स्टॉप और कैप से तय होता है, इससे नहीं कि आपको कितना भरोसा महसूस हो रहा है।"
    },
    "visual": {
     "kind": "calc",
@@ -122,9 +122,9 @@
      "dv": "एक ट्रेड का साइज़, दूसरे हफ़्ते के तरीक़े से"
     },
     "caption": {
-     "en": "Risk gives the first number, and the 25% cap can cut it. Real risk then drops below 1R, which is fine.",
-     "hi": "Pehla number risk se aata hai, aur 25% cap use kaat sakta hai. Tab asli risk 1R se kam ho jaata hai, aur yeh bilkul theek hai.",
-     "dv": "पहला नंबर रिस्क से आता है, और 25% की सीमा उसे काट सकती है। तब असली रिस्क 1R से कम हो जाता है, और यह बिल्कुल ठीक है।"
+     "en": "Size is fixed the evening before: risk gives the first number, and the 25% cap, checked at the maximum entry, can cut it. Real risk then drops below 1R, which is fine.",
+     "hi": "Size pichhli shaam hi tay hota hai: pehla number risk se aata hai, aur maximum entry par check hua 25% cap use kaat sakta hai. Tab asli risk 1R se kam ho jaata hai, aur yeh bilkul theek hai.",
+     "dv": "साइज़ पिछली शाम ही तय होता है: पहला नंबर रिस्क से आता है, और मैक्सिमम एंट्री पर जाँचा गया 25% कैप उसे काट सकता है। तब असली रिस्क 1R से कम हो जाता है, और यह बिल्कुल ठीक है।"
     },
     "rows": [
      {
@@ -155,17 +155,17 @@
      },
      {
       "label": {
-       "en": "Check: 555 x Rs 500, over the Rs 2,50,000 cap",
-       "hi": "Check: 555 x Rs 500, Rs 2,50,000 cap se zyada",
-       "dv": "जाँच: 555 x Rs 500, Rs 2,50,000 की सीमा से ज़्यादा"
+       "en": "Check at the max entry: 555 x Rs 500, over the Rs 2,50,000 cap",
+       "hi": "Maximum entry par check: 555 x Rs 500, Rs 2,50,000 cap se zyada",
+       "dv": "मैक्सिमम एंट्री पर जाँच: 555 x Rs 500, Rs 2,50,000 के कैप से ज़्यादा"
       },
       "value": "Rs 2,77,500"
      },
      {
       "label": {
-       "en": "Cap: Rs 2,50,000 ÷ Rs 500, in shares",
-       "hi": "Cap: Rs 2,50,000 ÷ Rs 500, shares mein",
-       "dv": "सीमा: Rs 2,50,000 ÷ Rs 500, शेयर में"
+       "en": "Cap: Rs 2,50,000 ÷ Rs 500 max entry, in shares",
+       "hi": "Cap: Rs 2,50,000 ÷ Rs 500 maximum entry, shares mein",
+       "dv": "कैप: Rs 2,50,000 ÷ Rs 500 मैक्सिमम एंट्री, शेयर में"
       },
       "value": "500"
      }
@@ -187,9 +187,9 @@
     "dv": "अपने पेपर हफ़्ते का रिव्यू, एक कोच की तरह"
    },
    "p": {
-    "en": "A good review grades how you traded, not how much you made. Open your Day 12 journal and ask four questions of every trade: did a written rule give the entry, was the size from the formula, did the stop stay where you planned it, and which emotion did you tag? A loss that followed every rule is a correct trade, the normal cost of doing business. A win that broke a rule is the most dangerous trade of the week, because it teaches you that breaking rules pays. A day with no setup and no trade also counts as following your rules. Your Day 12 adherence score turns all this into one number: points ÷ decisions.",
-    "hi": "Achha review yeh dekhta hai ki aapne trade kaise kiya, yeh nahi ki kitna kamaya. Apna Day 12 wala journal kholiye aur har trade se chaar sawaal poochhiye: kya entry kisi likhe hue rule se aayi, kya size formula se tha, kya stop wahin raha jahan plan kiya tha, aur aapne kaunsa emotion tag likha? Jo loss har rule follow karke hua, woh sahi trade hai, business ka normal kharcha. Jo jeet rule todkar aayi, woh hafte ka sabse khatarnak trade hai, kyunki woh sikhati hai ki rule todna faayde ka sauda hai. Jis din koi setup nahi bana aur aapne trade nahi kiya, woh din bhi rule follow karne mein hi gina jaata hai. Aapka Day 12 wala adherence score yeh sab ek number mein bata deta hai: points ÷ decisions.",
-    "dv": "अच्छा रिव्यू यह देखता है कि आपने ट्रेड कैसे किया, यह नहीं कि कितना कमाया। अपना दिन 12 वाला जर्नल खोलिए और हर ट्रेड से चार सवाल पूछिए: क्या एंट्री किसी लिखे हुए नियम से आई, क्या साइज़ फ़ॉर्मूले से था, क्या स्टॉप वहीं रहा जहाँ प्लान किया था, और आपने कौन-सा इमोशन टैग लिखा? जो लॉस हर नियम मानकर हुआ, वह सही ट्रेड है, कारोबार का आम ख़र्चा। जो जीत नियम तोड़कर आई, वह हफ़्ते का सबसे ख़तरनाक ट्रेड है, क्योंकि वह सिखाती है कि नियम तोड़ना फ़ायदे का सौदा है। जिस दिन कोई सेटअप नहीं बना और आपने ट्रेड नहीं किया, वह दिन भी नियम मानने में ही गिना जाता है। आपका दिन 12 वाला एडहेरेंस स्कोर यह सब एक नंबर में बता देता है: पॉइंट ÷ फ़ैसले।"
+    "en": "A good review grades how you traded, not how much you made. Open your Day 12 journal and ask four questions of every trade: did a written rule give the entry, was the size from the formula, did the stop stay where you planned it, and which emotion did you tag? A loss that followed every rule is a correct trade, the normal cost of doing business. A win that broke a rule is the most dangerous trade of the week, because it teaches you that breaking rules pays. A day with no setup and no trade also counts as following your rules. Your Day 12 adherence score turns all this into one number: points ÷ decisions. Practise first on the mentor's 10-row practice journal in Today's task, which comes with a key, then ask the same questions of your own rows, however few. Save the result in this lesson's Journal tab as a 'Weekly review': reviews for two of the three weeks are one of the six certificate checks (Day 21).",
+    "hi": "Achha review yeh dekhta hai ki aapne trade kaise kiya, yeh nahi ki kitna kamaya. Apna Day 12 wala journal kholiye aur har trade se chaar sawaal poochhiye: kya entry kisi likhe hue rule se aayi, kya size formula se tha, kya stop wahin raha jahan plan kiya tha, aur aapne kaunsa emotion tag likha? Jo loss har rule follow karke hua, woh sahi trade hai, business ka normal kharcha. Jo jeet rule todkar aayi, woh hafte ka sabse khatarnak trade hai, kyunki woh sikhati hai ki rule todna faayde ka sauda hai. Jis din koi setup nahi bana aur aapne trade nahi kiya, woh din bhi rule follow karne mein hi gina jaata hai. Aapka Day 12 wala adherence score yeh sab ek number mein bata deta hai: points ÷ decisions. Pehle Aaj Ka Kaam mein diye mentor ke 10 rows wale practice journal par abhyaas kijiye, jiski key saath hai, phir wahi sawaal apni rows se poochhiye, chahe woh kitni bhi kam hon. Nateeja is lesson ke Journal tab mein 'Weekly review' ki tarah save kijiye: teen mein se do hafton ke review certificate ke chhe checks mein se ek hain (Day 21).",
+    "dv": "अच्छा रिव्यू यह देखता है कि आपने ट्रेड कैसे किया, यह नहीं कि कितना कमाया। अपना दिन 12 वाला जर्नल खोलिए और हर ट्रेड से चार सवाल पूछिए: क्या एंट्री किसी लिखे हुए नियम से आई, क्या साइज़ फ़ॉर्मूले से था, क्या स्टॉप वहीं रहा जहाँ प्लान किया था, और आपने कौन-सा इमोशन टैग लिखा? जो लॉस हर नियम मानकर हुआ, वह सही ट्रेड है, कारोबार का आम ख़र्चा। जो जीत नियम तोड़कर आई, वह हफ़्ते का सबसे ख़तरनाक ट्रेड है, क्योंकि वह सिखाती है कि नियम तोड़ना फ़ायदे का सौदा है। जिस दिन कोई सेटअप नहीं बना और आपने ट्रेड नहीं किया, वह दिन भी नियम मानने में ही गिना जाता है। आपका दिन 12 वाला एडहेरेंस स्कोर यह सब एक नंबर में बता देता है: पॉइंट ÷ फ़ैसले। पहले 'आज का काम' में दिए मेंटर के 10 रो वाले प्रैक्टिस जर्नल पर अभ्यास कीजिए, जिसके सही जवाब साथ हैं, फिर वही सवाल अपनी रो से पूछिए, चाहे वे कितनी भी कम हों। नतीजा इस लेसन के जर्नल टैब में 'साप्ताहिक रिव्यू' की तरह सेव कीजिए: तीन में से दो हफ़्तों के रिव्यू सर्टिफ़िकेट की छह शर्तों में से एक हैं (दिन 21)।"
    },
    "example": {
     "en": "Picture seven decisions from Priya's journal a few weeks from now; yours may have only two or three rows so far. Five are closed trades and two are no-setup days. Three trades kept every rule: -1.1R, +2.4R and -1.1R after the Day 12 allowance, a net +0.2R. Even careful Priya broke a rule twice. In one trade she moved her stop lower and lost 1.7R instead of 1.1R. In the other she jumped in before her signal, tagged it 'FOMO', and it closed at its day-15 time exit for +1.1R. Together these rows total -0.4R, but her review says more: 5 of 7 decisions on-rule, an adherence score of 71%, and one fix for next week, 'my stop never moves down'.",
@@ -617,9 +617,9 @@
     "dv": "दिन 10 में हमने देखा था कि असली IPO एप्लिकेशन कैसे होती है। आप ASBA के ज़रिए अप्लाई करते हैं, नेट बैंकिंग से या बैंक/ब्रोकर ऐप में UPI मैंडेट से, और पैसा सिर्फ़ आपके अपने बैंक अकाउंट में ब्लॉक होता है। अगर रिटेल में जितने लॉट बाँटने हैं उससे ज़्यादा लोग अप्लाई करें, तो SEBI के नियमों के तहत अलॉटमेंट कंप्यूटर की लॉटरी से होता है, इसलिए कोई भी आपसे शेयर का वादा नहीं कर सकता। GMP यानी ग्रे मार्केट प्रीमियम एक अनऑफ़िशियल, बिना रेगुलेशन वाला नंबर है, जो एक्सचेंज के बाहर बोला जाता है; यह तेज़ी से बदलता है और आसानी से फ़र्ज़ी बनाया जा सकता है। स्कैम ग्रुप ऊँचा GMP दिखाकर जोश पैदा करते हैं, फिर 'स्पेशल कोटे' से 'पक्का अलॉटमेंट' बेचते हैं और पैसा अपने अकाउंट में मँगवाते हैं।"
    },
    "example": {
-    "en": "Mehta Solar Ltd's IPO is in the news with a 'GMP of Rs 80'. A Telegram group offers Aman '2 lots, assured' if he transfers Rs 30,000 to their account by tonight. Check it against the real path: a real application never moves money out of your own account before allotment, and allotment comes from a lottery. The offer fails on both points. If money has already gone, call the cybercrime helpline 1930, report it on cybercrime.gov.in, and inform the bank at once.",
-    "hi": "Mehta Solar Ltd ka IPO khabron mein hai, 'GMP Rs 80' ke saath. Ek Telegram group Aman ko offer deta hai: 'aaj raat tak Rs 30,000 humare account mein bhejo, 2 lots assured'. Ise asli raaste se milaiye: asli application mein allotment se pehle paisa aapke account se bahar jaata hi nahi, aur allotment lottery se hota hai. Offer dono baaton par fail hai. Agar paisa chala gaya ho, toh turant cybercrime helpline 1930 par call kijiye, cybercrime.gov.in par report kijiye, aur bank ko bataiye.",
-    "dv": "Mehta Solar Ltd का IPO ख़बरों में है, 'GMP Rs 80' के साथ। एक Telegram ग्रुप अमन को ऑफ़र देता है: 'आज रात तक Rs 30,000 हमारे अकाउंट में भेजो, 2 लॉट पक्के'। इसे असली रास्ते से मिलाइए: असली एप्लिकेशन में अलॉटमेंट से पहले पैसा आपके अकाउंट से बाहर जाता ही नहीं, और अलॉटमेंट लॉटरी से होता है। ऑफ़र दोनों बातों पर फ़ेल है। अगर पैसा चला गया हो, तो तुरंत साइबर क्राइम हेल्पलाइन 1930 पर कॉल कीजिए, cybercrime.gov.in पर रिपोर्ट कीजिए, और बैंक को बताइए।"
+    "en": "A made-up company's IPO is in the news with a 'GMP of Rs 80'. A Telegram group offers Aman '2 lots, assured' if he transfers Rs 30,000 to their account by tonight. Check it against the real path: a real application never moves money out of your own account before allotment, and allotment comes from a lottery. The offer fails on both points. If money has already gone, call the cybercrime helpline 1930, report it on cybercrime.gov.in, and inform the bank at once.",
+    "hi": "Ek made-up company ka IPO khabron mein hai, 'GMP Rs 80' ke saath. Ek Telegram group Aman ko offer deta hai: 'aaj raat tak Rs 30,000 humare account mein bhejo, 2 lots assured'. Ise asli raaste se milaiye: asli application mein allotment se pehle paisa aapke account se bahar jaata hi nahi, aur allotment lottery se hota hai. Offer dono baaton par fail hai. Agar paisa chala gaya ho, toh turant cybercrime helpline 1930 par call kijiye, cybercrime.gov.in par report kijiye, aur bank ko bataiye.",
+    "dv": "एक काल्पनिक कंपनी का IPO ख़बरों में है, 'GMP Rs 80' के साथ। एक Telegram ग्रुप अमन को ऑफ़र देता है: 'आज रात तक Rs 30,000 हमारे अकाउंट में भेजो, 2 लॉट पक्के'। इसे असली रास्ते से मिलाइए: असली एप्लिकेशन में अलॉटमेंट से पहले पैसा आपके अकाउंट से बाहर जाता ही नहीं, और अलॉटमेंट लॉटरी से होता है। ऑफ़र दोनों बातों पर फ़ेल है। अगर पैसा चला गया हो, तो तुरंत साइबर क्राइम हेल्पलाइन 1930 पर कॉल कीजिए, cybercrime.gov.in पर रिपोर्ट कीजिए, और बैंक को बताइए।"
    },
    "remember": {
     "en": "Three questions for any shortcut: Is the seller on sebi.gov.in? Where are the losses and costs? Why must my money leave my own account?",
@@ -800,6 +800,18 @@
     "hi": "Listing se pehle IPO ke baare mein unofficial, unregulated price ki baat. Exchange ka price nahi, aur aasaani se fake.",
     "dv": "लिस्टिंग से पहले IPO के बारे में अनऑफ़िशियल, बिना रेगुलेशन वाली प्राइस की बात। एक्सचेंज का प्राइस नहीं, और आसानी से फ़र्ज़ी।"
    }
+  },
+  {
+   "term": {
+    "en": "Weekly review",
+    "hi": "Weekly review",
+    "dv": "साप्ताहिक रिव्यू"
+   },
+   "meaning": {
+    "en": "Your weekend look back at the week's rows, graded on process, not profit. Saved in the Journal tab with Entry type 'Weekly review', it counts toward the certificate (2 of the 3 weeks).",
+    "hi": "Weekend par hafte ki rows ko process par parakhna, profit par nahi. Journal tab mein Entry type 'Weekly review' chun kar save kiya review certificate mein ginta hai (3 mein se 2 hafte).",
+    "dv": "वीकेंड पर हफ़्ते की रो को प्रोसेस पर परखना, मुनाफ़े पर नहीं। जर्नल टैब में एंट्री का टाइप 'साप्ताहिक रिव्यू' चुनकर सेव किया रिव्यू सर्टिफ़िकेट में गिना जाता है (3 में से 2 हफ़्ते)।"
+   }
   }
  ],
  "mindmap": {
@@ -831,7 +843,7 @@
      {
       "en": "1% risk, 25% cap, 3 trades",
       "hi": "1% risk, 25% cap, 3 trades",
-      "dv": "1% रिस्क, 25% सीमा, 3 ट्रेड"
+      "dv": "1% रिस्क, 25% कैप, 3 ट्रेड"
      },
      {
       "en": "-2R day stop, -5R week pause",
@@ -864,9 +876,9 @@
       "dv": "नो-ट्रेड दिन भी गिने जाते हैं"
      },
      {
-      "en": "Next: Quiz Game 2",
-      "hi": "Agla: Quiz Game 2",
-      "dv": "अगला: Quiz Game 2"
+      "en": "Save it as 'Weekly review'",
+      "hi": "'Weekly review' ki tarah save",
+      "dv": "'साप्ताहिक रिव्यू' की तरह सेव"
      }
     ]
    },
@@ -973,53 +985,518 @@
   ]
  },
  "kaam": {
-  "en": "Review your paper week on process, audit one made-up backtest page, check one name on sebi.gov.in, and play Quiz Game 2.",
-  "hi": "Apne paper week ka process review kijiye, ek made-up backtest page ka audit kijiye, sebi.gov.in par ek naam check kijiye, aur Quiz Game 2 kheliye.",
-  "dv": "अपने पेपर हफ़्ते का प्रोसेस रिव्यू कीजिए, एक काल्पनिक बैकटेस्ट पेज की जाँच कीजिए, sebi.gov.in पर एक नाम जाँचिए, और Quiz Game 2 खेलिए।"
+  "en": "Practise a process review on the mentor's 10-row journal, review your own rows and save it as your Weekly review, audit one made-up backtest page, check one name on sebi.gov.in, and play Quiz Game 2.",
+  "hi": "Mentor ke 10 rows wale journal par process review ka abhyaas kijiye, apni rows ka review karke use Weekly review ki tarah save kijiye, ek made-up backtest page ka audit kijiye, sebi.gov.in par ek naam check kijiye, aur Quiz Game 2 kheliye.",
+  "dv": "मेंटर के 10 रो वाले जर्नल पर प्रोसेस रिव्यू का अभ्यास कीजिए, अपनी रो का रिव्यू करके उसे साप्ताहिक रिव्यू की तरह सेव कीजिए, एक काल्पनिक बैकटेस्ट पेज की जाँच कीजिए, sebi.gov.in पर एक नाम जाँचिए, और Quiz Game 2 खेलिए।"
  },
  "kaam_steps": [
   {
-   "en": "Open your Day 12 journal sheet and write your adherence score: points ÷ decisions, counting 'No setup' rows and grading open trades on plan, size and stop.",
-   "hi": "Apni Day 12 wali journal sheet kholiye aur adherence score likhiye: points ÷ decisions, 'No setup' rows ko gin kar, aur open trades ko plan, size aur stop par grade karke.",
-   "dv": "अपनी दिन 12 वाली जर्नल शीट खोलिए और एडहेरेंस स्कोर लिखिए: पॉइंट ÷ फ़ैसले, 'No setup' वाली रो गिनकर, और खुले ट्रेड को प्लान, साइज़ और स्टॉप पर परखकर।"
+   "en": "Practise first: fill the Point column of the 10-row practice journal below, work out the adherence score and name each broken rule, then check yourself against the key in the Weekly review card.",
+   "hi": "Pehle abhyaas: neeche diye 10 rows ke practice journal ka Point column bhariye, adherence score nikaaliye aur har toota rule pehchaaniye, phir Weekly review card ki key se khud ko check kijiye.",
+   "dv": "पहले अभ्यास: नीचे दिए 10 रो वाले प्रैक्टिस जर्नल का पॉइंट कॉलम भरिए, एडहेरेंस स्कोर निकालिए और हर टूटा नियम पहचानिए, फिर साप्ताहिक रिव्यू कार्ड के सही जवाबों से ख़ुद को जाँचिए।"
   },
   {
-   "en": "For each row where a rule broke, write which rule and a one-line fix for next week. Then add up your week in R; at -5R or worse, pause and review before the next trade.",
-   "hi": "Jis bhi row mein rule toota, wahan likhiye kaunsa rule toota aur agle hafte ke liye ek line ka fix. Phir hafte ka total R jodiye; -5R ya usse bura ho toh agle trade se pehle ruk kar review kijiye.",
-   "dv": "जिस भी रो में नियम टूटा, वहाँ लिखिए कौन-सा नियम टूटा और अगले हफ़्ते के लिए एक लाइन का सुधार। फिर हफ़्ते का कुल R जोड़िए; -5R या उससे बुरा हो तो अगले ट्रेड से पहले रुककर रिव्यू कीजिए।"
+   "en": "Now your own rows: open your Day 12 journal and fill the 'Your week' column of the review card: points ÷ decisions (count 'No setup' rows; grade open trades on plan, size and stop), each broken rule with a one-line fix, and your week in R. At -5R or worse, pause and review before the next trade.",
+   "hi": "Ab apni rows: apna Day 12 journal kholiye aur review card ka 'Aapka hafta' column bhariye: points ÷ decisions ('No setup' rows giniye; open trades ko plan, size aur stop par grade kijiye), har toota rule aur uska ek line ka fix, aur hafte ka total R. -5R ya usse bura ho toh agle trade se pehle ruk kar review kijiye.",
+   "dv": "अब अपनी रो: अपना दिन 12 वाला जर्नल खोलिए और रिव्यू कार्ड का 'आपका हफ़्ता' कॉलम भरिए: पॉइंट ÷ फ़ैसले ('No setup' वाली रो गिनिए; खुले ट्रेड को प्लान, साइज़ और स्टॉप पर परखिए), हर टूटा नियम और उसका एक लाइन का सुधार, और हफ़्ते का कुल R। -5R या उससे बुरा हो तो अगले ट्रेड से पहले रुककर रिव्यू कीजिए।"
   },
   {
-   "en": "Read this practice page, made up by your mentor: 'TrendRider Bot. 88% winning trades. 34 trades from 1 Jan to 31 Dec of one strong year. Brokerage included. Settings optimised for the best result on this data.' Do not open real bot or tips pages for this.",
-   "hi": "Mentor ka banaya yeh practice page padhiye: 'TrendRider Bot. 88% winning trades. Ek strong saal ki 1 Jan se 31 Dec tak ke 34 trades. Brokerage included. Settings is data par best result ke liye optimised.' Iske liye asli bot ya tips pages mat kholiye.",
-   "dv": "मेंटर का बनाया यह प्रैक्टिस पेज पढ़िए: 'TrendRider Bot। 88% जीतने वाले ट्रेड। एक तेज़ी वाले साल में 1 जनवरी से 31 दिसंबर तक के 34 ट्रेड। ब्रोकरेज शामिल। सेटिंग्स इसी डेटा पर सबसे अच्छे नतीजे के लिए ऑप्टिमाइज़्ड।' इसके लिए असली बॉट या टिप्स वाले पेज मत खोलिए।"
+   "en": "In this lesson's Journal tab, keep Entry type on 'Weekly review' and write your review in three lines: your score, the rule you broke most (or 'none') and one fix. This entry counts toward the certificate, which needs weekly reviews for 2 of the 3 weeks.",
+   "hi": "Is lesson ke Journal tab mein Entry type 'Weekly review' hi rehne dijiye aur teen lines mein review likhiye: aapka score, sabse zyada toota rule (ya 'none') aur ek fix. Yeh entry certificate mein ginti hai, jise 3 mein se 2 hafton ke weekly review chahiye.",
+   "dv": "इस लेसन के जर्नल टैब में एंट्री का टाइप 'साप्ताहिक रिव्यू' ही रहने दीजिए और तीन लाइनों में रिव्यू लिखिए: आपका स्कोर, सबसे ज़्यादा टूटा नियम (या 'none') और एक सुधार। यह एंट्री सर्टिफ़िकेट में गिनी जाती है, जिसके लिए 3 में से 2 हफ़्तों के साप्ताहिक रिव्यू चाहिए।"
   },
   {
-   "en": "Write Present, Missing or Unclear for each of the five checks, then compare with the key: costs Unclear (brokerage only), drawdown Missing, trade count Present (34 is only a start), falling market Missing, out-of-sample Missing. Optional: make a fresh page with the 'Practice brochure' prompt, reply in that chat with your list, and let it grade you.",
-   "hi": "Paanchon checks ke aage Present, Missing ya Unclear likhiye, phir key se milaiye: costs Unclear (sirf brokerage), drawdown Missing, trade count Present (34 bas shuruaat hai), girta market Missing, out-of-sample Missing. Optional: 'Practice brochure' prompt se naya page banwaiye, usi chat mein apni list bhejiye aur grade karwaiye.",
-   "dv": "पाँचों चेक के आगे Present, Missing या Unclear लिखिए, फिर सही जवाबों से मिलाइए: ख़र्चे Unclear (सिर्फ़ ब्रोकरेज), ड्रॉडाउन Missing, ट्रेड की गिनती Present (34 बस शुरुआत है), गिरता बाज़ार Missing, आउट-ऑफ़-सैंपल Missing। चाहें तो: 'Practice brochure' प्रॉम्प्ट से नया पेज बनवाइए, उसी चैट में अपनी लिस्ट भेजिए और ग्रेड करवाइए।"
+   "en": "Audit this practice page, made up by your mentor (do not open real bot or tips pages): 'TrendRider Bot. 88% winning trades. 34 trades from 1 Jan to 31 Dec of one strong year. Brokerage included. Settings optimised for the best result on this data.' Write Present, Missing or Unclear for each of the five checks, then compare with the key: costs Unclear (brokerage only), drawdown Missing, trade count Present (34 is only a start), falling market Missing, out-of-sample Missing.",
+   "hi": "Mentor ke banaye is practice page ka audit kijiye (asli bot ya tips pages mat kholiye): 'TrendRider Bot. 88% winning trades. Ek strong saal ki 1 Jan se 31 Dec tak ke 34 trades. Brokerage included. Settings is data par best result ke liye optimised.' Paanchon checks ke aage Present, Missing ya Unclear likhiye, phir key se milaiye: costs Unclear (sirf brokerage), drawdown Missing, trade count Present (34 bas shuruaat hai), girta market Missing, out-of-sample Missing.",
+   "dv": "मेंटर के बनाए इस प्रैक्टिस पेज की जाँच कीजिए (असली बॉट या टिप्स वाले पेज मत खोलिए): 'TrendRider Bot। 88% जीतने वाले ट्रेड। एक तेज़ी वाले साल में 1 जनवरी से 31 दिसंबर तक के 34 ट्रेड। ब्रोकरेज शामिल। सेटिंग्स इसी डेटा पर सबसे अच्छे नतीजे के लिए ऑप्टिमाइज़्ड।' पाँचों चेक के आगे Present, Missing या Unclear लिखिए, फिर सही जवाबों से मिलाइए: ख़र्चे Unclear (सिर्फ़ ब्रोकरेज), ड्रॉडाउन Missing, ट्रेड की गिनती Present (34 बस शुरुआत है), गिरता बाज़ार Missing, आउट-ऑफ़-सैंपल Missing।"
   },
   {
-   "en": "On sebi.gov.in, check one finfluencer or paid group you have seen (or INH000020004, printed at the end of this lesson, if you have none): search the INH or INA number they show in the Research Analyst or Investment Adviser list, and note whether the name and number match. If they show no INH or INA number, search their name; if nothing matches, treat them as unregistered. Do not join, pay or message them.",
-   "hi": "sebi.gov.in par kisi ek finfluencer ya paid group ko check kijiye jo aapne dekha ho (koi na ho toh is lesson ke end mein chhapa INH000020004): unka dikhaya hua INH ya INA number Research Analyst ya Investment Adviser list mein search kijiye, aur note kijiye ki naam aur number match karte hain ya nahi. Agar koi INH ya INA number dikhaya hi nahi, toh naam se search kijiye; kuch match na ho toh unhe unregistered maaniye. Unhe join mat kijiye, paisa mat dijiye, message bhi mat kijiye.",
-   "dv": "sebi.gov.in पर किसी एक फ़िनफ़्लुएंसर या पेड ग्रुप की जाँच कीजिए जो आपने देखा हो (कोई न हो तो इस लेसन के आख़िर में छपा INH000020004): उनका दिखाया INH या INA नंबर Research Analyst या Investment Adviser की लिस्ट में सर्च कीजिए, और नोट कीजिए कि नाम और नंबर मेल खाते हैं या नहीं। अगर कोई INH या INA नंबर दिखाया ही नहीं, तो नाम से सर्च कीजिए; कुछ मेल न खाए तो उन्हें बिना रजिस्ट्रेशन वाला मानिए। उन्हें जॉइन मत कीजिए, पैसे मत दीजिए, मैसेज भी मत कीजिए।"
+   "en": "On sebi.gov.in, check one finfluencer or paid group you have seen (or INH000020004, printed at the end of this lesson, if you have none): search the INH or INA number they show in the Research Analyst or Investment Adviser list, and note whether the name, the number and the contact details on SEBI's record (email, phone) match their page. If they show no INH or INA number, search their name; if nothing matches, treat them as unregistered. Do not join, pay or message them.",
+   "hi": "sebi.gov.in par kisi ek finfluencer ya paid group ko check kijiye jo aapne dekha ho (koi na ho toh is lesson ke end mein chhapa INH000020004): unka dikhaya hua INH ya INA number Research Analyst ya Investment Adviser list mein search kijiye, aur note kijiye ki naam, number aur SEBI record ke contact details (email, phone) unke page se match karte hain ya nahi. Agar koi INH ya INA number dikhaya hi nahi, toh naam se search kijiye; kuch match na ho toh unhe unregistered maaniye. Unhe join mat kijiye, paisa mat dijiye, message bhi mat kijiye.",
+   "dv": "sebi.gov.in पर किसी एक फ़िनफ़्लुएंसर या पेड ग्रुप की जाँच कीजिए जो आपने देखा हो (कोई न हो तो इस लेसन के आख़िर में छपा INH000020004): उनका दिखाया INH या INA नंबर Research Analyst या Investment Adviser की लिस्ट में सर्च कीजिए, और नोट कीजिए कि नाम, नंबर और SEBI रिकॉर्ड के कॉन्टैक्ट डिटेल (ईमेल, फ़ोन) उनके पेज से मेल खाते हैं या नहीं। अगर कोई INH या INA नंबर दिखाया ही नहीं, तो नाम से सर्च कीजिए; कुछ मेल न खाए तो उन्हें बिना रजिस्ट्रेशन वाला मानिए। उन्हें जॉइन मत कीजिए, पैसे मत दीजिए, मैसेज भी मत कीजिए।"
   },
   {
-   "en": "Finish with Quiz Game 2, the 15-question Week 2 exam; it is not part of the 45 minutes above. Note every topic you got wrong.",
-   "hi": "Aakhir mein Quiz Game 2 dijiye, Week 2 ka 15 sawaalon wala exam; yeh upar ke 45 minute mein shaamil nahi hai. Jin topics mein galti hui unhe note kijiye.",
-   "dv": "आख़िर में Quiz Game 2 दीजिए, दूसरे हफ़्ते का 15 सवालों वाला टेस्ट; यह ऊपर के 45 मिनट में शामिल नहीं है। जिन टॉपिक में ग़लती हुई उन्हें नोट कीजिए।"
+   "en": "Finish with Quiz Game 2, the 15-question Week 2 exam; it is not part of the 55 minutes above. Note every topic you got wrong. Attempting all three weekly Quiz Games is one of the six certificate checks (Day 21).",
+   "hi": "Aakhir mein Quiz Game 2 dijiye, Week 2 ka 15 sawaalon wala exam; yeh upar ke 55 minute mein shaamil nahi hai. Jin topics mein galti hui unhe note kijiye. Teenon weekly Quiz Games dena certificate ke chhe checks mein se ek hai (Day 21).",
+   "dv": "आख़िर में Quiz Game 2 दीजिए, दूसरे हफ़्ते का 15 सवालों वाला टेस्ट; यह ऊपर के 55 मिनट में शामिल नहीं है। जिन टॉपिक में ग़लती हुई उन्हें नोट कीजिए। तीनों साप्ताहिक Quiz Game देना सर्टिफ़िकेट की छह शर्तों में से एक है (दिन 21)।"
   }
  ],
- "kaam_min": 45,
+ "kaam_min": 55,
+ "artefacts": [
+  {
+   "title": {
+    "en": "Practice journal: 10 decisions to review",
+    "hi": "Practice journal: review ke liye 10 decisions",
+    "dv": "प्रैक्टिस जर्नल: रिव्यू के लिए 10 फ़ैसले"
+   },
+   "note": {
+    "en": "Made up by your mentor for practice; the stock names are not tips. Fill the Point column (1 or 0), then check yourself against the key in the Weekly review card below.",
+    "hi": "Mentor ne practice ke liye banaya hai; stock names tips nahi hain. Point column (1 ya 0) bhariye, phir neeche Weekly review card ki key se khud ko check kijiye.",
+    "dv": "मेंटर ने प्रैक्टिस के लिए बनाया है; स्टॉक के नाम टिप नहीं हैं। पॉइंट कॉलम (1 या 0) भरिए, फिर नीचे साप्ताहिक रिव्यू कार्ड के सही जवाबों से ख़ुद को जाँचिए।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "#",
+      "hi": "#",
+      "dv": "#"
+     },
+     {
+      "en": "Stock and setup",
+      "hi": "Stock aur setup",
+      "dv": "स्टॉक और सेटअप"
+     },
+     {
+      "en": "R result",
+      "hi": "R result",
+      "dv": "R नतीजा"
+     },
+     {
+      "en": "Rule broken?",
+      "hi": "Rule broken?",
+      "dv": "नियम टूटा?"
+     },
+     {
+      "en": "Emotion",
+      "hi": "Emotion",
+      "dv": "इमोशन"
+     },
+     {
+      "en": "Point (you fill)",
+      "hi": "Point (aap bhariye)",
+      "dv": "पॉइंट (आप भरिए)"
+     }
+    ],
+    "rows": [
+     [
+      "1",
+      {
+       "en": "No setup",
+       "hi": "No setup",
+       "dv": "No setup"
+      },
+      "-",
+      {
+       "en": "none",
+       "hi": "none",
+       "dv": "none"
+      },
+      {
+       "en": "bored",
+       "hi": "bore",
+       "dv": "बोरियत"
+      },
+      ""
+     ],
+     [
+      "2",
+      {
+       "en": "Gupta Cement Ltd, EMA Pullback",
+       "hi": "Gupta Cement Ltd, EMA Pullback",
+       "dv": "Gupta Cement Ltd, EMA Pullback"
+      },
+      "-1.1R",
+      {
+       "en": "none",
+       "hi": "none",
+       "dv": "none"
+      },
+      {
+       "en": "calm",
+       "hi": "calm",
+       "dv": "शांत"
+      },
+      ""
+     ],
+     [
+      "3",
+      {
+       "en": "Kiran Foods Ltd, bought on a tip, no written plan",
+       "hi": "Kiran Foods Ltd, tip par khareeda, likha plan nahi",
+       "dv": "Kiran Foods Ltd, टिप पर ख़रीदा, लिखा प्लान नहीं"
+      },
+      "+1.4R",
+      {
+       "en": "No written plan",
+       "hi": "Likha plan nahi",
+       "dv": "लिखा प्लान नहीं"
+      },
+      {
+       "en": "FOMO",
+       "hi": "FOMO",
+       "dv": "FOMO"
+      },
+      ""
+     ],
+     [
+      "4",
+      {
+       "en": "Bharat Pumps Ltd, Skipped: gap past max entry",
+       "hi": "Bharat Pumps Ltd, Skipped: max entry se upar gap",
+       "dv": "Bharat Pumps Ltd, Skipped: मैक्स एंट्री से ऊपर गैप"
+      },
+      "-",
+      {
+       "en": "none",
+       "hi": "none",
+       "dv": "none"
+      },
+      {
+       "en": "calm",
+       "hi": "calm",
+       "dv": "शांत"
+      },
+      ""
+     ],
+     [
+      "5",
+      {
+       "en": "Desai Power Ltd, EMA Pullback, gap through the stop",
+       "hi": "Desai Power Ltd, EMA Pullback, stop ke paar gap",
+       "dv": "Desai Power Ltd, EMA Pullback, स्टॉप के पार गैप"
+      },
+      "-1.6R",
+      {
+       "en": "none",
+       "hi": "none",
+       "dv": "none"
+      },
+      {
+       "en": "calm",
+       "hi": "calm",
+       "dv": "शांत"
+      },
+      ""
+     ],
+     [
+      "6",
+      {
+       "en": "Anand Snacks Ltd, EMA Pullback",
+       "hi": "Anand Snacks Ltd, EMA Pullback",
+       "dv": "Anand Snacks Ltd, EMA Pullback"
+      },
+      "-1.7R",
+      {
+       "en": "Stop moved lower",
+       "hi": "Stop neeche khiskaya",
+       "dv": "स्टॉप नीचे खिसकाया"
+      },
+      {
+       "en": "fear",
+       "hi": "darr",
+       "dv": "डर"
+      },
+      ""
+     ],
+     [
+      "7",
+      {
+       "en": "No setup",
+       "hi": "No setup",
+       "dv": "No setup"
+      },
+      "-",
+      {
+       "en": "none",
+       "hi": "none",
+       "dv": "none"
+      },
+      {
+       "en": "bored",
+       "hi": "bore",
+       "dv": "बोरियत"
+      },
+      ""
+     ],
+     [
+      "8",
+      {
+       "en": "Sharma Textiles Ltd, EMA Pullback",
+       "hi": "Sharma Textiles Ltd, EMA Pullback",
+       "dv": "Sharma Textiles Ltd, EMA Pullback"
+      },
+      "+2.4R",
+      {
+       "en": "none",
+       "hi": "none",
+       "dv": "none"
+      },
+      {
+       "en": "calm",
+       "hi": "calm",
+       "dv": "शांत"
+      },
+      ""
+     ],
+     [
+      "9",
+      {
+       "en": "Bharat Pumps Ltd, a fourth open trade",
+       "hi": "Bharat Pumps Ltd, chautha khula trade",
+       "dv": "Bharat Pumps Ltd, चौथा खुला ट्रेड"
+      },
+      "-1.1R",
+      {
+       "en": "4th open trade",
+       "hi": "4th open trade",
+       "dv": "चौथा खुला ट्रेड"
+      },
+      {
+       "en": "overconfident",
+       "hi": "over-confident",
+       "dv": "ओवर-कॉन्फ़िडेंट"
+      },
+      ""
+     ],
+     [
+      "10",
+      {
+       "en": "Kiran Foods Ltd, EMA Pullback, time exit",
+       "hi": "Kiran Foods Ltd, EMA Pullback, time exit",
+       "dv": "Kiran Foods Ltd, EMA Pullback, टाइम एग्ज़िट"
+      },
+      "+0.6R",
+      {
+       "en": "none",
+       "hi": "none",
+       "dv": "none"
+      },
+      {
+       "en": "calm",
+       "hi": "calm",
+       "dv": "शांत"
+      },
+      ""
+     ]
+    ]
+   }
+  },
+  {
+   "title": {
+    "en": "Weekly review card: the key, then your week",
+    "hi": "Weekly review card: pehle key, phir aapka hafta",
+    "dv": "साप्ताहिक रिव्यू कार्ड: पहले सही जवाब, फिर आपका हफ़्ता"
+   },
+   "note": {
+    "en": "Fill the right-hand column from your own rows, even if you have only two or three, then write it up in the Journal tab with Entry type 'Weekly review'.",
+    "hi": "Daayan column apni rows se bhariye, chahe do-teen hi hon, phir Journal tab mein Entry type 'Weekly review' chun kar likhiye.",
+    "dv": "दायाँ कॉलम अपनी रो से भरिए, चाहे दो-तीन ही हों, फिर जर्नल टैब में एंट्री का टाइप 'साप्ताहिक रिव्यू' चुनकर लिखिए।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Question",
+      "hi": "Sawaal",
+      "dv": "सवाल"
+     },
+     {
+      "en": "Practice journal (key)",
+      "hi": "Practice journal (key)",
+      "dv": "प्रैक्टिस जर्नल (सही जवाब)"
+     },
+     {
+      "en": "Your week",
+      "hi": "Aapka hafta",
+      "dv": "आपका हफ़्ता"
+     }
+    ],
+    "rows": [
+     [
+      {
+       "en": "Points ÷ decisions",
+       "hi": "Points ÷ decisions",
+       "dv": "पॉइंट ÷ फ़ैसले"
+      },
+      {
+       "en": "7 ÷ 10 = 70% (points 1,1,0,1,1,0,1,1,0,1)",
+       "hi": "7 ÷ 10 = 70% (points 1,1,0,1,1,0,1,1,0,1)",
+       "dv": "7 ÷ 10 = 70% (पॉइंट 1,1,0,1,1,0,1,1,0,1)"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "Which rules broke?",
+       "hi": "Kaunse rules toote?",
+       "dv": "कौन-से नियम टूटे?"
+      },
+      {
+       "en": "No written plan (row 3), stop moved lower (row 6), a 4th open trade (row 9)",
+       "hi": "Likha plan nahi (row 3), stop neeche khiskaya (row 6), chautha khula trade (row 9)",
+       "dv": "लिखा प्लान नहीं (रो 3), स्टॉप नीचे खिसकाया (रो 6), चौथा खुला ट्रेड (रो 9)"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "Any rule-breaking win?",
+       "hi": "Rule todkar koi jeet?",
+       "dv": "नियम तोड़कर कोई जीत?"
+      },
+      {
+       "en": "Row 3, +1.4R: the most dangerous row of the ten",
+       "hi": "Row 3, +1.4R: dason mein sabse khatarnak row",
+       "dv": "रो 3, +1.4R: दसों में सबसे ख़तरनाक रो"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "Emotion on the broken rows",
+       "hi": "Toote rows par emotion",
+       "dv": "टूटी रो पर इमोशन"
+      },
+      {
+       "en": "FOMO, fear, overconfident; never calm. Row 9 came right after the +2.4R win",
+       "hi": "FOMO, darr, over-confident; calm kabhi nahi. Row 9 +2.4R ki jeet ke theek baad aayi",
+       "dv": "FOMO, डर, ओवर-कॉन्फ़िडेंट; शांत कभी नहीं। रो 9, +2.4R की जीत के ठीक बाद आई"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "Losses that kept every rule",
+       "hi": "Har rule ke saath hue loss",
+       "dv": "हर नियम मानकर हुए लॉस"
+      },
+      {
+       "en": "Rows 2 and 5: correct trades. Row 5 lost 1.6R to a gap, not to a broken rule",
+       "hi": "Row 2 aur 5: sahi trades. Row 5 ka 1.6R loss gap se hua, rule todne se nahi",
+       "dv": "रो 2 और 5: सही ट्रेड। रो 5 का 1.6R लॉस गैप से हुआ, नियम तोड़ने से नहीं"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "Total in R; is a -5R pause due?",
+       "hi": "Total R; -5R wala pause?",
+       "dv": "कुल R; -5R वाला पॉज़?"
+      },
+      {
+       "en": "-1.1R: rule-keeping trades +0.3R, rule breaks -1.4R; no pause",
+       "hi": "-1.1R: rule wale trades +0.3R, toote rules -1.4R; pause nahi",
+       "dv": "-1.1R: नियम वाले ट्रेड +0.3R, टूटे नियम -1.4R; पॉज़ नहीं"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "One fix for next week",
+       "hi": "Agle hafte ka ek fix",
+       "dv": "अगले हफ़्ते का एक सुधार"
+      },
+      {
+       "en": "No entry without a plan written the evening before",
+       "hi": "Pichhli shaam likhe plan ke bina koi entry nahi",
+       "dv": "पिछली शाम लिखे प्लान के बिना कोई एंट्री नहीं"
+      },
+      ""
+     ]
+    ]
+   }
+  },
+  {
+   "title": {
+    "en": "Fun-round practice page: 'SteadyLine Bot' (made up)",
+    "hi": "Fun round ka practice page: 'SteadyLine Bot' (made-up)",
+    "dv": "फ़न राउंड का प्रैक्टिस पेज: 'SteadyLine Bot' (काल्पनिक)"
+   },
+   "note": {
+    "en": "Cover the last row, start a two-minute timer and mark all five checks: quote the line, or write 'not on the page'. Then uncover the key.",
+    "hi": "Aakhri row dhak dijiye, do minute ka timer lagaiye aur paanchon checks mark kijiye: line quote kijiye, ya 'page par nahi hai' likhiye. Phir key kholiye.",
+    "dv": "आख़िरी रो ढक दीजिए, दो मिनट का टाइमर लगाइए और पाँचों चेक मार्क कीजिए: लाइन बताइए, या 'पेज पर नहीं है' लिखिए। फिर सही जवाब खोलिए।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Line",
+      "hi": "Line",
+      "dv": "लाइन"
+     },
+     {
+      "en": "What the page says",
+      "hi": "Page kya kehta hai",
+      "dv": "पेज क्या कहता है"
+     }
+    ],
+    "rows": [
+     [
+      "1",
+      {
+       "en": "SteadyLine Bot: 71% winning trades, 180 trades from 2019 to 2023.",
+       "hi": "SteadyLine Bot: 71% winning trades, 2019 se 2023 tak 180 trades.",
+       "dv": "SteadyLine Bot: 71% जीतने वाले ट्रेड, 2019 से 2023 तक 180 ट्रेड।"
+      }
+     ],
+     [
+      "2",
+      {
+       "en": "Tested through the 2020 crash and two sideways years.",
+       "hi": "2020 ke crash aur do sideways saalon mein bhi test kiya gaya.",
+       "dv": "2020 की भारी गिरावट और दो साइडवेज़ सालों में भी टेस्ट किया गया।"
+      }
+     ],
+     [
+      "3",
+      {
+       "en": "All results shown before brokerage, taxes and other charges.",
+       "hi": "Saare results brokerage, taxes aur baaki charges se pehle ke hain.",
+       "dv": "सारे नतीजे ब्रोकरेज, टैक्स और बाक़ी चार्ज से पहले के हैं।"
+      }
+     ],
+     [
+      "4",
+      {
+       "en": "Worst single month: -3%.",
+       "hi": "Sabse bura ek mahina: -3%.",
+       "dv": "सबसे बुरा एक महीना: -3%।"
+      }
+     ],
+     [
+      "5",
+      {
+       "en": "Settings fine-tuned on 2019-2023 for the smoothest curve. Live results coming soon.",
+       "hi": "Settings 2019-2023 par sabse smooth curve ke liye fine-tune ki gayi. Live results jald aa rahe hain.",
+       "dv": "सेटिंग्स 2019-2023 पर सबसे स्मूद कर्व के लिए फ़ाइन-ट्यून की गईं। लाइव नतीजे जल्द आ रहे हैं।"
+      }
+     ],
+     [
+      "6",
+      {
+       "en": "Join 5,000 happy members. Rs 1,999 a month.",
+       "hi": "5,000 khush members se judiye. Rs 1,999 mahina.",
+       "dv": "5,000 ख़ुश मेंबर से जुड़िए। Rs 1,999 महीना।"
+      }
+     ],
+     [
+      {
+       "en": "Key",
+       "hi": "Key",
+       "dv": "सही जवाब"
+      },
+      {
+       "en": "Costs Missing (line 3 is before charges), drawdown Unclear (a worst month is not the deepest fall), trade count Present (180), falling market Present (line 2), out-of-sample Missing (line 5). Still an advertisement.",
+       "hi": "Costs Missing (line 3 charges se pehle ki hai), drawdown Unclear (sabse bura mahina sabse gehri girawat nahi hai), trade count Present (180), girta market Present (line 2), out-of-sample Missing (line 5). Ab bhi advertisement hi hai.",
+       "dv": "ख़र्चे Missing (लाइन 3 चार्ज से पहले की है), ड्रॉडाउन Unclear (सबसे बुरा महीना सबसे गहरी गिरावट नहीं है), ट्रेड की गिनती Present (180), गिरता बाज़ार Present (लाइन 2), आउट-ऑफ़-सैंपल Missing (लाइन 5)। अब भी विज्ञापन ही है।"
+      }
+     ]
+    ]
+   }
+  }
+ ],
  "outcome": {
-  "en": "By the end you can run one paper trade through all of Week 2, grade your trades on process instead of profit, test any backtest page with five checks, explain the perfect-record trick some tip groups use, and spot an IPO 'GMP / assured allotment' scam.",
-  "hi": "Aaj ke baad aap ek paper trade ko poore Week 2 ke toolkit se guzaar payenge, apne trades ko profit ki jagah process par grade kar payenge, kisi bhi backtest page ko paanch checks se parakh payenge, kuch tip groups ki perfect-record wali chaal samjha payenge, aur IPO ke 'GMP / assured allotment' scam ko pehchaan payenge.",
-  "dv": "आज के बाद आप एक पेपर ट्रेड को पूरे दूसरे हफ़्ते के टूलकिट से गुज़ार पाएँगे, अपने ट्रेड को मुनाफ़े की जगह प्रोसेस पर परख पाएँगे, किसी भी बैकटेस्ट पेज को पाँच चेक से जाँच पाएँगे, कुछ टिप ग्रुप की परफ़ेक्ट-रिकॉर्ड वाली चाल समझा पाएँगे, और IPO के 'GMP / पक्का अलॉटमेंट' स्कैम को पहचान पाएँगे।"
+  "en": "By the end you can run one paper trade through all of Week 2, grade trades on process instead of profit and save a weekly review of your own rows, test any backtest page with five checks, explain the perfect-record trick some tip groups use, and spot an IPO 'GMP / assured allotment' scam.",
+  "hi": "Aaj ke baad aap ek paper trade ko poore Week 2 ke toolkit se guzaar payenge, trades ko profit ki jagah process par grade karke apni rows ka weekly review save kar payenge, kisi bhi backtest page ko paanch checks se parakh payenge, kuch tip groups ki perfect-record wali chaal samjha payenge, aur IPO ke 'GMP / assured allotment' scam ko pehchaan payenge.",
+  "dv": "आज के बाद आप एक पेपर ट्रेड को पूरे दूसरे हफ़्ते के टूलकिट से गुज़ार पाएँगे, ट्रेड को मुनाफ़े की जगह प्रोसेस पर परखकर अपनी रो का साप्ताहिक रिव्यू सेव कर पाएँगे, किसी भी बैकटेस्ट पेज को पाँच चेक से जाँच पाएँगे, कुछ टिप ग्रुप की परफ़ेक्ट-रिकॉर्ड वाली चाल समझा पाएँगे, और IPO के 'GMP / पक्का अलॉटमेंट' स्कैम को पहचान पाएँगे।"
  },
  "tools": [
   {
-   "en": "Your Day 12 journal in Google Sheets, plus the app's Portfolio page for open paper trades",
-   "hi": "Aapka Day 12 wala journal (Google Sheets), aur open paper trades ke liye app ka Portfolio page",
-   "dv": "आपका दिन 12 वाला जर्नल (Google Sheets), और खुले पेपर ट्रेड के लिए ऐप का Portfolio पेज"
+   "en": "Your Day 12 journal in Google Sheets, plus your Portfolio rows in the app",
+   "hi": "Aapka Day 12 wala journal (Google Sheets), aur app mein aapki Portfolio rows",
+   "dv": "आपका दिन 12 वाला जर्नल (Google Sheets), और ऐप में आपकी Portfolio रो"
   },
   {
    "en": "Any AI chat",
@@ -1038,9 +1515,9 @@
   }
  ],
  "fun": {
-  "en": "Swap-and-audit, opt-in only: swap this week's journal with a classmate, names removed, and grade each other only on process: rule followed, size from the formula, stop kept in place. Stock names in a journal are a record, not tips: never act on them or forward them. Then the mentor shares one new made-up practice page; the first to mark all five checks correctly, quoting the line or writing 'not on the page', wins.",
-  "hi": "Swap-and-audit, sirf apni marzi se: is hafte ka journal kisi classmate ke saath badliye, naam hata kar, aur ek-doosre ko sirf process par grade kijiye: rule follow hua, size formula se tha, stop apni jagah raha. Journal mein likhe stock names record hain, tips nahi: na un par trade kijiye, na unhe aage forward kijiye. Phir mentor ek naya made-up practice page share karenge; jo sabse pehle paanchon checks sahi mark kare, line quote karke ya 'page par nahi hai' likh kar, woh jeeta.",
-  "dv": "Swap-and-audit, सिर्फ़ अपनी मर्ज़ी से: इस हफ़्ते का जर्नल किसी साथी के साथ बदलिए, नाम हटाकर, और एक-दूसरे को सिर्फ़ प्रोसेस पर नंबर दीजिए: नियम माना गया, साइज़ फ़ॉर्मूले से था, स्टॉप अपनी जगह रहा। जर्नल में लिखे स्टॉक के नाम रिकॉर्ड हैं, टिप नहीं: न उन पर ट्रेड कीजिए, न उन्हें आगे फ़ॉरवर्ड कीजिए। फिर मेंटर एक नया काल्पनिक प्रैक्टिस पेज शेयर करेंगे; जो सबसे पहले पाँचों चेक सही मार्क करे, लाइन बताकर या 'पेज पर नहीं है' लिखकर, वह जीता।"
+  "en": "Swap-and-audit, opt-in only: swap this week's journal with a classmate, names removed, and grade each other only on process: rule followed, size from the formula, stop kept in place. Stock names in a journal are a record, not tips: never act on them or forward them. Then race on the 'SteadyLine Bot' practice page in Today's task: cover the key, start a two-minute timer, and mark all five checks, quoting the line or writing 'not on the page'. The first fully correct sheet wins. Studying alone? Beat the timer, then make a fresh page with the 'Practice brochure' prompt and race it again.",
+  "hi": "Swap-and-audit, sirf apni marzi se: is hafte ka journal kisi classmate ke saath badliye, naam hata kar, aur ek-doosre ko sirf process par grade kijiye: rule follow hua, size formula se tha, stop apni jagah raha. Journal mein likhe stock names record hain, tips nahi: na un par trade kijiye, na unhe aage forward kijiye. Phir Aaj Ka Kaam mein diye 'SteadyLine Bot' practice page par race lagaiye: key dhak dijiye, do minute ka timer lagaiye, aur paanchon checks mark kijiye, line quote karke ya 'page par nahi hai' likh kar. Sabse pehle poori sahi sheet wala jeeta. Akele padh rahe hain? Timer ko haraiye, phir 'Practice brochure' prompt se naya page banwa kar dobara race lagaiye.",
+  "dv": "Swap-and-audit, सिर्फ़ अपनी मर्ज़ी से: इस हफ़्ते का जर्नल किसी साथी के साथ बदलिए, नाम हटाकर, और एक-दूसरे को सिर्फ़ प्रोसेस पर नंबर दीजिए: नियम माना गया, साइज़ फ़ॉर्मूले से था, स्टॉप अपनी जगह रहा। जर्नल में लिखे स्टॉक के नाम रिकॉर्ड हैं, टिप नहीं: न उन पर ट्रेड कीजिए, न उन्हें आगे फ़ॉरवर्ड कीजिए। फिर 'आज का काम' में दिए 'SteadyLine Bot' प्रैक्टिस पेज पर रेस लगाइए: सही जवाब ढक दीजिए, दो मिनट का टाइमर लगाइए, और पाँचों चेक मार्क कीजिए, लाइन बताकर या 'पेज पर नहीं है' लिखकर। सबसे पहले पूरी सही शीट वाला जीता। अकेले पढ़ रहे हैं? टाइमर को हराइए, फिर 'Practice brochure' प्रॉम्प्ट से नया पेज बनवाकर दोबारा रेस लगाइए।"
  },
  "compliance": "Educational content only, not investment advice. Company names, the bot advert, group offers, scam messages, journal results and example figures in this lesson are made up for illustration and training; paper results are hypothetical, and past performance is not indicative of future results. Stage 1 uses virtual money only. No affiliation with any tool or platform named. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
  "prompts": [
@@ -1070,9 +1547,9 @@
   }
  ],
  "journal_prompt": {
-  "en": "Which trade from this week would you most like to hide from a reviewer, and why? And think of one result you believed this month, online or offline, that never showed its losses. Which question would have exposed it?",
-  "hi": "Is hafte ka kaunsa trade aap reviewer se sabse zyada chhupana chahenge, aur kyun? Aur is mahine ka koi ek result yaad kijiye jis par aapne bharosa kiya, online ya offline, jisne apne losses kabhi nahi dikhaye. Kaunsa sawaal uski pol khol deta?",
-  "dv": "इस हफ़्ते का कौन-सा ट्रेड आप रिव्यू करने वाले से सबसे ज़्यादा छिपाना चाहेंगे, और क्यों? और इस महीने का कोई एक नतीजा याद कीजिए जिस पर आपने भरोसा किया, ऑनलाइन या ऑफ़लाइन, जिसने अपने लॉस कभी नहीं दिखाए। कौन-सा सवाल उसकी पोल खोल देता?"
+  "en": "Choose 'Weekly review' as the entry type. Write your adherence score, the rule you broke most (or 'none') and one fix for next week. Then: which trade from this week would you most like to hide from a reviewer, and why? Last, think of one result you believed this month that never showed its losses: which question would have exposed it?",
+  "hi": "Entry type mein 'Weekly review' chuniye. Apna adherence score, sabse zyada toota rule (ya 'none') aur agle hafte ka ek fix likhiye. Phir: is hafte ka kaunsa trade aap reviewer se sabse zyada chhupana chahenge, aur kyun? Aakhir mein, is mahine ka koi ek result yaad kijiye jis par aapne bharosa kiya aur jisne apne losses kabhi nahi dikhaye: kaunsa sawaal uski pol khol deta?",
+  "dv": "एंट्री के टाइप में 'साप्ताहिक रिव्यू' चुनिए। अपना एडहेरेंस स्कोर, सबसे ज़्यादा टूटा नियम (या 'none') और अगले हफ़्ते का एक सुधार लिखिए। फिर: इस हफ़्ते का कौन-सा ट्रेड आप रिव्यू करने वाले से सबसे ज़्यादा छिपाना चाहेंगे, और क्यों? आख़िर में, इस महीने का कोई एक नतीजा याद कीजिए जिस पर आपने भरोसा किया और जिसने अपने लॉस कभी नहीं दिखाए: कौन-सा सवाल उसकी पोल खोल देता?"
  },
  "motivation": {
   "en": "This week you kept a record that shows its losses. Most of what you will be sold never does.",
@@ -1082,48 +1559,48 @@
  "quiz": [
   {
    "stem": {
-    "en": "Virtual capital is Rs 10,00,000. You risk 1% per trade, and no position may exceed 25% of capital. Entry is Rs 400 and the stop is Rs 390. How many shares do you buy?",
-    "hi": "Virtual capital Rs 10,00,000 hai. Har trade par 1% risk, aur koi position capital ke 25% se zyada nahi ho sakti. Entry Rs 400 hai aur stop Rs 390. Aap kitne shares khareedenge?",
-    "dv": "वर्चुअल कैपिटल Rs 10,00,000 है। हर ट्रेड पर 1% रिस्क, और कोई पोज़ीशन कैपिटल के 25% से ज़्यादा नहीं हो सकती। एंट्री Rs 400 है और स्टॉप Rs 390। आप कितने शेयर ख़रीदेंगे?"
+    "en": "A bot page says: '220 trades from 2018 to 2023, results after all charges, tested through the 2020 crash, re-tested on 2024 data the settings never saw, worst single month -4%.' Which of the five checks is still open?",
+    "hi": "Ek bot page kehta hai: '2018 se 2023 tak 220 trades, saare charges ke baad ke results, 2020 ke crash mein bhi test kiya, 2024 ke us data par dobara test kiya jo settings ne kabhi dekha nahi, sabse bura ek mahina -4%.' Paanch checks mein se kaunsa abhi bhi khula hai?",
+    "dv": "एक बॉट पेज कहता है: '2018 से 2023 तक 220 ट्रेड, सारे चार्ज के बाद के नतीजे, 2020 की भारी गिरावट में भी टेस्ट किया, 2024 के उस डेटा पर दोबारा टेस्ट किया जो सेटिंग्स ने कभी देखा नहीं, सबसे बुरा एक महीना -4%।' पाँच चेक में से कौन-सा अब भी खुला है?"
    },
    "options": [
     {
      "text": {
-      "en": "625 shares",
-      "hi": "625 shares",
-      "dv": "625 शेयर"
+      "en": "Drawdown: a worst month is not the deepest fall from a peak",
+      "hi": "Drawdown: sabse bura mahina, peak se sabse gehri girawat nahi hai",
+      "dv": "ड्रॉडाउन: सबसे बुरा महीना, पीक से सबसे गहरी गिरावट नहीं है"
      },
      "correct": true
     },
     {
      "text": {
-      "en": "1,000 shares",
-      "hi": "1,000 shares",
-      "dv": "1,000 शेयर"
+      "en": "Trade count: 220 trades over six years is too thin to trust",
+      "hi": "Trade count: chhe saal mein 220 trades bharose ke liye bahut kam hain",
+      "dv": "ट्रेड की गिनती: छह साल में 220 ट्रेड भरोसे के लिए बहुत कम हैं"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "25 shares",
-      "hi": "25 shares",
-      "dv": "25 शेयर"
+      "en": "Out-of-sample: one year of new data proves nothing at all",
+      "hi": "Out-of-sample: ek saal ka naya data kuch bhi saabit nahi karta",
+      "dv": "आउट-ऑफ़-सैंपल: एक साल का नया डेटा कुछ भी साबित नहीं करता"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "2,500 shares",
-      "hi": "2,500 shares",
-      "dv": "2,500 शेयर"
+      "en": "None: every check is answered, so the page is real evidence",
+      "hi": "Koi nahi: har check ka jawab hai, isliye page asli saboot hai",
+      "dv": "कोई नहीं: हर चेक का जवाब है, इसलिए पेज असली सबूत है"
      },
      "correct": false
     }
    ],
    "explanation": {
-    "en": "Risk first: 1% of Rs 10,00,000 is Rs 10,000, and the stop is Rs 10 away, so 10,000 ÷ 10 = 1,000 shares. But 1,000 x Rs 400 = Rs 4,00,000, which is 40% of capital. The 25% cap allows Rs 2,50,000 ÷ Rs 400 = 625 shares, so the real risk is 625 x Rs 10 = Rs 6,250. Dividing Rs 10,000 by the price (25 shares) or putting in all the capital (2,500 shares) are the two common mistakes.",
-    "hi": "Pehle risk: Rs 10,00,000 ka 1% = Rs 10,000, aur stop Rs 10 door hai, toh 10,000 ÷ 10 = 1,000 shares. Lekin 1,000 x Rs 400 = Rs 4,00,000, jo capital ka 40% hai. 25% cap sirf Rs 2,50,000 ÷ Rs 400 = 625 shares ki ijaazat deta hai, toh asli risk 625 x Rs 10 = Rs 6,250. Rs 10,000 ko price se divide karna (25 shares) ya poora capital laga dena (2,500 shares), yeh do aam galtiyan hain.",
-    "dv": "पहले रिस्क: Rs 10,00,000 का 1% = Rs 10,000, और स्टॉप Rs 10 दूर है, तो 10,000 ÷ 10 = 1,000 शेयर। लेकिन 1,000 x Rs 400 = Rs 4,00,000, जो कैपिटल का 40% है। 25% की सीमा सिर्फ़ Rs 2,50,000 ÷ Rs 400 = 625 शेयर की इजाज़त देती है, तो असली रिस्क 625 x Rs 10 = Rs 6,250। Rs 10,000 को प्राइस से भाग देना (25 शेयर) या पूरा कैपिटल लगा देना (2,500 शेयर), ये दो आम ग़लतियाँ हैं।"
+    "en": "Four checks are answered: costs (after all charges), trade count (220, more than the 100 this course wants for confidence), a falling market (the 2020 crash) and out-of-sample (2024 data the settings never saw). Drawdown is not. A worst month says how bad one calendar month was; drawdown is how far the curve fell from a high before it made a new one, and a fall can run across months: -4%, -3% and -4% in a row is a fall of about 11%, with no month worse than -4%. Until the page shows its maximum drawdown and how long it lasted, mark it Unclear, and the page stays an advertisement.",
+    "hi": "Chaar checks ka jawab hai: costs (saare charges ke baad), trade count (220, is course ke confidence wale 100 se zyada), girta market (2020 ka crash) aur out-of-sample (2024 ka data jo settings ne kabhi dekha nahi). Drawdown ka jawab nahi hai. Sabse bura mahina sirf ek calendar mahine ka haal batata hai; drawdown batata hai ki curve kisi high se naya high banane se pehle kitna gira, aur yeh girawat kai mahinon tak chal sakti hai: lagatar -4%, -3% aur -4% matlab lagbhag 11% ki girawat, jabki koi bhi mahina -4% se bura nahi tha. Jab tak page maximum drawdown aur woh kitne samay chala, yeh na dikhaye, ise Unclear likhiye, aur page advertisement hi rehta hai.",
+    "dv": "चार चेक का जवाब है: ख़र्चे (सारे चार्ज के बाद), ट्रेड की गिनती (220, इस कोर्स के भरोसे वाले 100 से ज़्यादा), गिरता बाज़ार (2020 की भारी गिरावट) और आउट-ऑफ़-सैंपल (2024 का डेटा जो सेटिंग्स ने कभी देखा नहीं)। ड्रॉडाउन का जवाब नहीं है। सबसे बुरा महीना सिर्फ़ एक कैलेंडर महीने का हाल बताता है; ड्रॉडाउन बताता है कि कर्व किसी हाई से नया हाई बनाने से पहले कितना गिरा, और यह गिरावट कई महीनों तक चल सकती है: लगातार -4%, -3% और -4% यानी लगभग 11% की गिरावट, जबकि कोई भी महीना -4% से बुरा नहीं था। जब तक पेज मैक्सिमम ड्रॉडाउन और वह कितने समय चला, यह न दिखाए, इसे Unclear लिखिए, और पेज विज्ञापन ही रहता है।"
    }
   },
   {
@@ -1273,9 +1750,9 @@
    "options": [
     {
      "text": {
-      "en": "A real IPO only blocks money in your account",
-      "hi": "Asli IPO mein paisa aapke hi account mein block hota hai",
-      "dv": "असली IPO में पैसा सिर्फ़ आपके अकाउंट में ब्लॉक होता है"
+      "en": "A real IPO only blocks money in your own bank account",
+      "hi": "Asli IPO mein paisa sirf aapke apne bank account mein block hota hai",
+      "dv": "असली IPO में पैसा सिर्फ़ आपके अपने बैंक अकाउंट में ब्लॉक होता है"
      },
      "correct": true
     },

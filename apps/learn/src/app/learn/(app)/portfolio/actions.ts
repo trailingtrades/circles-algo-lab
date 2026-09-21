@@ -12,11 +12,11 @@ export type RowState = { error?: L; ok?: L; field?: string; saved?: number };
 const S = {
   preview: t3("Preview only: rows are not saved here.", "Ye sirf preview hai: yahan rows save nahi hoti.", "यह सिर्फ़ प्रीव्यू है: यहाँ रो सेव नहीं होतीं।"),
   signIn: t3("Please sign in again to save.", "Save karne ke liye dobara sign in kijiye.", "सेव करने के लिए फिर से साइन इन करें।"),
-  symbol: t3("Symbol: use the NSE ticker, for example TCS or M&M.", "Symbol: NSE ticker likhiye, jaise TCS ya M&M.", "सिंबल: NSE टिकर लिखिए, जैसे TCS या M&M।"),
+  symbol: t3("Symbol: use the NSE ticker exactly as its NSE quote page shows it (capital letters, no spaces).", "Symbol: NSE ticker waise hi likhiye jaise stock ke NSE quote page par dikhta hai (capital letters, bina space).", "सिंबल: NSE टिकर वैसे ही लिखिए जैसे स्टॉक के NSE क्वोट पेज पर दिखता है (कैपिटल अक्षर, बिना स्पेस)।"),
   date: t3("Entry date: pick a real date from the calendar.", "Entry date: calendar se sahi date chuniye.", "एंट्री डेट: कैलेंडर से सही तारीख़ चुनिए।"),
   qty: t3("Qty: a whole number from 1 to 10,00,000.", "Qty: 1 se 10,00,000 tak ka poora number likhiye.", "मात्रा: 1 से 10,00,000 तक की पूरी संख्या लिखिए।"),
   price: t3("Price: a number above 0 and up to 10,00,000, with at most 2 decimals (e.g. 1520.50).", "Price: 0 se zyada aur 10,00,000 tak, zyada se zyada 2 decimal (jaise 1520.50).", "कीमत: 0 से ज़्यादा और 10,00,000 तक, ज़्यादा से ज़्यादा 2 दशमलव (जैसे 1520.50)।"),
-  full: t3("Your watchlist already has 5 rows. Review one and remove it before adding another.", "Watchlist mein pehle se 5 rows hain. Nayi jodne se pehle ek row review karke hataiye.", "वॉचलिस्ट में पहले से 5 रो हैं। नई जोड़ने से पहले एक रो रिव्यू करके हटाइए।"),
+  full: t3("You already have 5 Portfolio rows. Review one and remove it before adding another.", "Aapki 5 Portfolio rows pehle se bani hui hain. Nayi jodne se pehle ek row review karke hataiye.", "आपकी 5 Portfolio रो पहले से बनी हुई हैं। नई जोड़ने से पहले एक रो रिव्यू करके हटाइए।"),
   failed: t3("Could not save. Please check the fields and try again.", "Save nahi ho paya. Fields check karke dobara try kijiye.", "सेव नहीं हो पाया। फ़ील्ड जाँचकर फिर से कोशिश करें।"),
   saved: t3("Saved.", "Save ho gaya.", "सेव हो गया।"),
   removed: t3("Row removed.", "Row hata di gayi.", "रो हटा दी गई।"),

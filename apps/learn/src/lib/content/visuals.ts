@@ -36,6 +36,12 @@ export type Character = "mentor" | "aman" | "priya" | "tipster" | "narrator";
 export type Mood = "neutral" | "happy" | "worried" | "thinking" | "sad" | "excited";
 export interface StoryV { kind: "story"; title?: L; panels: { who: Character; say: L; mood?: Mood }[]; moral?: L }
 
-export type Visual = FlowV | StepsV | CompareV | CalcV | BarsV | LineV | CandlesV | MindmapV | StoryV;
+/** A cell of a table: text in three languages, or a short plain string for numbers and symbols ("Rs 1,250", "-", "1.5R"). */
+export type Cell = L | string;
+/** A ruled table: a sample journal, a Risk Card, a backtest log. head = 2-6 columns; rows = 0-14 filled rows, one cell
+ *  per column; blank_rows = 0-12 empty ruled rows for the learner to fill in (templates). Scrolls sideways on a phone. */
+export interface TableV { kind: "table"; title?: L; caption?: L; head: L[]; rows: Cell[][]; blank_rows?: number; note?: L }
+
+export type Visual = FlowV | StepsV | CompareV | CalcV | BarsV | LineV | CandlesV | MindmapV | StoryV | TableV;
 export type VisualKind = Visual["kind"];
-export const VISUAL_KINDS: readonly VisualKind[] = ["flow", "steps", "compare", "calc", "bars", "line", "candles", "mindmap", "story"];
+export const VISUAL_KINDS: readonly VisualKind[] = ["flow", "steps", "compare", "calc", "bars", "line", "candles", "mindmap", "story", "table"];

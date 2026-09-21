@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
   // /content/*.json lives at the monorepo root (source of truth for course content); let Turbopack resolve it.
   turbopack: { root: path.join(__dirname, "..", "..") },
   outputFileTracingRoot: path.join(__dirname, "..", ".."),
+  // Stage 1 class files (week handout PDFs, decks) are served to signed-in learners by /learn/files/stage1/[file]
+  // from apps/learn/files/stage1/, not public/. The standalone VPS bundle must carry that folder, and every page that
+  // lists a file first checks it is on disk (lib/content/stage1-files.ts), so it is traced for every route.
+  outputFileTracingIncludes: { "/**/*": ["./files/stage1/**/*"] },
   // No "X-Powered-By: Next.js": it only tells a scanner which exploits to try.
   poweredByHeader: false,
   // Stops `next dev` from writing AGENTS.md / CLAUDE.md into this folder on every start.

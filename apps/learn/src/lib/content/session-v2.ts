@@ -5,6 +5,10 @@
 import type { Text } from "@/lib/i18n/lang";
 import type { Visual, StoryV, MindmapV } from "./visuals";
 
+/** A model card or template the day's task asks the learner to build (Risk Card, rule card, journal, backtest log ...),
+ *  shown under "Your template" in Today's task. Any visual kind except story and mindmap; usually a table. */
+export interface Artefact { title: Text; note?: Text; visual: Visual }
+
 export interface TopicV2 {
   h: Text;
   p: Text;
@@ -26,6 +30,8 @@ export interface SessionContentV2 {
   kaam: Text;
   kaam_steps?: Text[];
   kaam_min?: number;
+  /** 0-3 templates / model cards for today's task. */
+  artefacts?: Artefact[];
   outcome: Text;
   tools: Text[];
   fun: Text | null;
@@ -54,6 +60,7 @@ export function normalizeContent(raw: unknown): SessionContentV2 {
     kaam: (c.kaam as Text) ?? "",
     kaam_steps: arr<Text>(c.kaam_steps),
     kaam_min: typeof c.kaam_min === "number" ? c.kaam_min : undefined,
+    artefacts: arr<Artefact>(c.artefacts).filter((a) => isObj(a) && a.title != null && isObj(a.visual) && a.visual.kind !== "story" && a.visual.kind !== "mindmap"),
     outcome: (c.outcome as Text) ?? "",
     tools: arr<Text>(c.tools),
     fun: (c.fun as Text | null) ?? null,
@@ -70,5 +77,6 @@ export function visualsOf(c: SessionContentV2): Visual[] {
   if (c.story) out.push(c.story);
   for (const t of c.topics) if (t.visual) out.push(t.visual);
   if (c.mindmap) out.push(c.mindmap);
+  for (const a of c.artefacts ?? []) out.push(a.visual);
   return out;
 }

@@ -100,9 +100,9 @@
     "dv": "चार स्टाइल, चार घड़ियाँ"
    },
    "p": {
-    "en": "A trading style is mostly about how long you hold a position; this is called the holding period. There are four: intraday (same day), swing (a few days to a few weeks), positional (weeks to months) and investing (years). Scalping is the fastest kind of intraday, where a trade lasts minutes, and the optional Opening Range Breakout (ORB) strategy (Day 13) needs you at the screen from 9:15 to 11:00 am, and again at 2:30 pm to close anything still open. Any intraday position still open near the close is squared off by the broker (Day 2). The shorter the holding period, the more screen time you need in market hours, and the more often you pay charges. Tax differs too (intraday profit is speculative business income; delivery gains are usually capital gains, Day 2), so keep your contract notes and ask a CA.",
-    "hi": "Trading style zyadatar is baat par tika hai ki aap position kitni der hold karte hain; ise holding period kehte hain. Styles chaar hain: intraday (usi din), swing (kuch din se kuch hafte), positional (hafton se mahinon tak) aur investing (saalon tak). Scalping intraday ka sabse tez roop hai, jismein trade bas kuch minute chalta hai, aur optional Opening Range Breakout yaani ORB strategy (Day 13) ke liye aapko subah 9:15 se 11:00 tak screen ke saamne rehna padta hai, aur dopahar 2:30 baje phir se, taaki khula trade band kar sakein. Close ke paas jo intraday position khuli reh jaaye, use broker khud square off kar deta hai (Day 2). Holding period jitna chhota, market hours mein utna zyada screen time chahiye, aur utni hi baar charges lagte hain. Tax bhi alag lagta hai (intraday ka profit speculative business income hai, delivery ka gain aam taur par capital gains, Day 2), isliye contract notes sambhal kar rakhiye aur CA se poochiye.",
-    "dv": "ट्रेडिंग स्टाइल ज़्यादातर इस बात पर टिका है कि आप पोज़िशन कितनी देर होल्ड करते हैं; इसे होल्डिंग पीरियड कहते हैं। स्टाइल चार हैं: इंट्राडे (उसी दिन), स्विंग (कुछ दिन से कुछ हफ़्ते), पोज़िशनल (हफ़्तों से महीनों तक) और इन्वेस्टिंग (सालों तक)। स्कैल्पिंग इंट्राडे का सबसे तेज़ रूप है, जिसमें ट्रेड बस कुछ मिनट चलता है, और वैकल्पिक Opening Range Breakout यानी ORB स्ट्रैटेजी (दिन 13) के लिए आपको सुबह 9:15 से 11:00 तक स्क्रीन के सामने रहना पड़ता है, और दोपहर 2:30 बजे फिर से, ताकि खुला ट्रेड बंद कर सकें। बाज़ार बंद होने के पास जो इंट्राडे पोज़िशन खुली रह जाए, उसे ब्रोकर ख़ुद स्क्वेयर ऑफ़ कर देता है (दिन 2)। होल्डिंग पीरियड जितना छोटा, बाज़ार के घंटों में उतना ज़्यादा स्क्रीन टाइम चाहिए, और उतनी ही बार चार्ज लगते हैं। टैक्स भी अलग लगता है (इंट्राडे का प्रॉफ़िट स्पेक्युलेटिव बिज़नेस इनकम है, डिलीवरी का गेन आम तौर पर कैपिटल गेन, दिन 2), इसलिए कॉन्ट्रैक्ट नोट सँभालकर रखिए और CA से पूछिए।"
+    "en": "A trading style is mostly about how long you hold a position; this is called the holding period. There are four: intraday (same day), swing (a few days to a few weeks), positional (weeks to months) and investing (years). Scalping is the fastest kind of intraday, where a trade lasts minutes, and the optional Opening Range Breakout (ORB) strategy (Day 13) needs you at the screen from 9:15 to 11:00 am, and again at 2:30 pm to close anything still open. Any intraday position still open near the close is squared off by the broker at a cut-off time the broker sets (check your broker's cut-off; Day 2). The shorter the holding period, the more screen time you need in market hours, and the more often you pay charges. Tax differs too (intraday profit is speculative business income; delivery gains are usually capital gains, Day 2), so keep your contract notes and ask a CA.",
+    "hi": "Trading style zyadatar is baat par tika hai ki aap position kitni der hold karte hain; ise holding period kehte hain. Styles chaar hain: intraday (usi din), swing (kuch din se kuch hafte), positional (hafton se mahinon tak) aur investing (saalon tak). Scalping intraday ka sabse tez roop hai, jismein trade bas kuch minute chalta hai, aur optional Opening Range Breakout yaani ORB strategy (Day 13) ke liye aapko subah 9:15 se 11:00 tak screen ke saamne rehna padta hai, aur dopahar 2:30 baje phir se, taaki khula trade band kar sakein. Close ke paas jo intraday position khuli reh jaaye, use broker apne tay kiye cut-off time par khud square off kar deta hai (apne broker ka cut-off check kijiye; Day 2). Holding period jitna chhota, market hours mein utna zyada screen time chahiye, aur utni hi baar charges lagte hain. Tax bhi alag lagta hai (intraday ka profit speculative business income hai, delivery ka gain aam taur par capital gains, Day 2), isliye contract notes sambhal kar rakhiye aur CA se poochiye.",
+    "dv": "ट्रेडिंग स्टाइल ज़्यादातर इस बात पर टिका है कि आप पोज़िशन कितनी देर होल्ड करते हैं; इसे होल्डिंग पीरियड कहते हैं। स्टाइल चार हैं: इंट्राडे (उसी दिन), स्विंग (कुछ दिन से कुछ हफ़्ते), पोज़िशनल (हफ़्तों से महीनों तक) और इन्वेस्टिंग (सालों तक)। स्कैल्पिंग इंट्राडे का सबसे तेज़ रूप है, जिसमें ट्रेड बस कुछ मिनट चलता है, और वैकल्पिक Opening Range Breakout यानी ORB स्ट्रैटेजी (दिन 13) के लिए आपको सुबह 9:15 से 11:00 तक स्क्रीन के सामने रहना पड़ता है, और दोपहर 2:30 बजे फिर से, ताकि खुला ट्रेड बंद कर सकें। बाज़ार बंद होने के पास जो इंट्राडे पोज़िशन खुली रह जाए, उसे ब्रोकर अपने तय किए कट-ऑफ़ टाइम पर ख़ुद स्क्वेयर ऑफ़ कर देता है (अपने ब्रोकर का कट-ऑफ़ देख लीजिए; दिन 2)। होल्डिंग पीरियड जितना छोटा, बाज़ार के घंटों में उतना ज़्यादा स्क्रीन टाइम चाहिए, और उतनी ही बार चार्ज लगते हैं। टैक्स भी अलग लगता है (इंट्राडे का प्रॉफ़िट स्पेक्युलेटिव बिज़नेस इनकम है, डिलीवरी का गेन आम तौर पर कैपिटल गेन, दिन 2), इसलिए कॉन्ट्रैक्ट नोट सँभालकर रखिए और CA से पूछिए।"
    },
    "example": {
     "en": "Think of each round trip, one buy plus one sell, as crossing a toll booth: charges and slippage are paid whether the trade wins or loses. Some charges apply on every order and some only on the buy or the sell side; your contract note shows which. A scalper doing 20 round trips a day crosses about 400 booths in 20 trading days. The EMA Pullback swing trader you will meet on Day 11 may cross about 5 in the same month, after roughly 20 minutes of chart work each evening. So the scalper crosses about 80 times as many booths, and every toll has to be earned back before a single rupee of profit. The tolls are not all the same size, because delivery and intraday are charged differently, but 80 times the crossings is a heavy load; your contract note shows the amounts.",
@@ -122,9 +122,9 @@
      "dv": "एक ट्रेडिंग दिन का स्क्रीन टाइम"
     },
     "caption": {
-     "en": "Illustrative minutes per trading day. Scalping fills the whole 9:15 am-3:30 pm session and ORB needs 9:15-11:00 am; swing checks happen after 3:30 pm. Positional is about 30 minutes a week, an investor about an hour a month. Scalping and ORB are both intraday.",
-     "hi": "Sirf samjhane ke liye: ek trading day mein kitne minute. Scalping poora 9:15 am-3:30 pm session le leta hai aur ORB ko 9:15-11:00 am chahiye; swing ka kaam 3:30 pm ke baad hota hai. Positional mein hafte ke lagbhag 30 minute lagte hain, investor ko mahine mein lagbhag ek ghanta. Scalping aur ORB, dono intraday hi hain.",
-     "dv": "सिर्फ़ समझाने के लिए: एक ट्रेडिंग दिन में कितने मिनट। स्कैल्पिंग सुबह 9:15 से दोपहर 3:30 तक का पूरा सेशन ले लेती है और ORB को सुबह 9:15-11:00 चाहिए; स्विंग का काम 3:30 के बाद होता है। पोज़िशनल में हफ़्ते के लगभग 30 मिनट लगते हैं, इन्वेस्टर को महीने में लगभग एक घंटा। स्कैल्पिंग और ORB, दोनों इंट्राडे ही हैं।"
+     "en": "Illustrative minutes per trading day. Scalping fills the whole 9:15 am-3:30 pm session; ORB needs 9:15-11:00 am plus a short check at 2:30 pm to close anything still open, about 110 minutes; swing checks happen in the evening, after the close. Positional is about 30 minutes a week, an investor about an hour a month. Scalping and ORB are both intraday.",
+     "hi": "Sirf samjhane ke liye: ek trading day mein kitne minute. Scalping poora 9:15 am-3:30 pm session le leta hai; ORB ko 9:15-11:00 am chahiye, plus dopahar 2:30 baje ek chhota check taaki khula trade band ho sake, kul lagbhag 110 minute; swing ka kaam shaam ko, close ke baad hota hai. Positional mein hafte ke lagbhag 30 minute lagte hain, investor ko mahine mein lagbhag ek ghanta. Scalping aur ORB, dono intraday hi hain.",
+     "dv": "सिर्फ़ समझाने के लिए: एक ट्रेडिंग दिन में कितने मिनट। स्कैल्पिंग सुबह 9:15 से दोपहर 3:30 तक का पूरा सेशन ले लेती है; ORB को सुबह 9:15-11:00 चाहिए, और दोपहर 2:30 बजे एक छोटी जाँच ताकि खुला ट्रेड बंद हो सके, कुल लगभग 110 मिनट; स्विंग का काम शाम को, क्लोज़ के बाद होता है। पोज़िशनल में हफ़्ते के लगभग 30 मिनट लगते हैं, इन्वेस्टर को महीने में लगभग एक घंटा। स्कैल्पिंग और ORB, दोनों इंट्राडे ही हैं।"
     },
     "unit": " min",
     "items": [
@@ -143,7 +143,7 @@
        "hi": "ORB intraday",
        "dv": "ORB इंट्राडे"
       },
-      "value": 105,
+      "value": 110,
       "tone": "gold"
      },
      {
@@ -183,14 +183,14 @@
     "dv": "स्टाइल फ़िट चेक: आपका दिन, उनका नहीं"
    },
    "p": {
-    "en": "Most beginners do not choose a style; they borrow one from a friend, a relative or a trader on YouTube. You see their screen, but not their free hours, their capital or their bad months, and you mostly hear from the ones who are still winning. A borrowed style breaks on the first busy morning, and then you break your own rules trying to keep up. So answer five honest Yes/No questions and let the answers choose. The rule is simple: a No on Q1 to Q4 removes the styles it names, a No on Q5 keeps real money out, and whatever survives is your fit.",
-    "hi": "Zyadatar beginners style chunte nahi, udhaar le lete hain: kisi dost se, kisi rishtedaar se, ya YouTube ke kisi trader se. Aapko unki screen toh dikhti hai, lekin unke free ghante, unka capital aur unke bure mahine nahi dikhte; aur awaaz bhi aksar unhi ki aati hai jo abhi jeet rahe hain. Udhaar ka style pehli busy subah hi toot jaata hai, aur phir uske peeche bhaagte hue aap apne hi rules tod dete hain. Isliye paanch imaandaar Yes/No sawaalon ke jawab dijiye aur faisla jawabon ko karne dijiye. Rule seedha hai: Q1 se Q4 tak koi bhi No apne likhe styles ko bahar kar deta hai, Q5 ka No asli paise ko bahar rakhta hai, aur jo bach jaaye wahi aapka fit hai.",
-    "dv": "ज़्यादातर नए ट्रेडर स्टाइल चुनते नहीं, उधार ले लेते हैं: किसी दोस्त से, किसी रिश्तेदार से, या YouTube के किसी ट्रेडर से। आपको उनकी स्क्रीन तो दिखती है, लेकिन उनके ख़ाली घंटे, उनका कैपिटल और उनके बुरे महीने नहीं दिखते; और आवाज़ भी अक्सर उन्हीं की आती है जो अभी जीत रहे हैं। उधार का स्टाइल पहली व्यस्त सुबह ही टूट जाता है, और फिर उसके पीछे भागते हुए आप अपने ही नियम तोड़ देते हैं। इसलिए पाँच ईमानदार हाँ/ना वाले सवालों के जवाब दीजिए और फ़ैसला जवाबों को करने दीजिए। नियम सीधा है: Q1 से Q4 तक कोई भी 'ना' अपने लिखे स्टाइल बाहर कर देता है, Q5 का 'ना' असली पैसे को बाहर रखता है, और जो बच जाए वही आपका फ़िट है।"
+    "en": "Most beginners do not choose a style; they borrow one from a friend, a relative or a trader on YouTube. You see their screen, but not their free hours, their capital or their bad months, and you mostly hear from the ones who are still winning. A borrowed style breaks on the first busy morning, and then you break your own rules trying to keep up. So answer five honest Yes/No questions: a No on Q1 to Q4 removes the styles it names, a No on Q5 keeps real money out, and whatever survives is your fit. The check is about real money later; in Stage 1 everyone paper-trades the EMA Pullback Swing, which needs only an evening check, whatever the answers say.",
+    "hi": "Zyadatar beginners style chunte nahi, udhaar le lete hain: kisi dost se, kisi rishtedaar se, ya YouTube ke kisi trader se. Aapko unki screen toh dikhti hai, lekin unke free ghante, unka capital aur unke bure mahine nahi dikhte; aur awaaz bhi aksar unhi ki aati hai jo abhi jeet rahe hain. Udhaar ka style pehli busy subah hi toot jaata hai, aur phir uske peeche bhaagte hue aap apne hi rules tod dete hain. Isliye paanch imaandaar Yes/No sawaalon ke jawab dijiye: Q1 se Q4 tak koi bhi No apne likhe styles ko bahar kar deta hai, Q5 ka No asli paise ko bahar rakhta hai, aur jo bach jaaye wahi aapka fit hai. Yeh check aage ke asli paise ke liye hai; Stage 1 mein jawab kuch bhi hon, sab log EMA Pullback Swing hi paper par chalate hain, jismein sirf shaam ka ek check lagta hai.",
+    "dv": "ज़्यादातर नए ट्रेडर स्टाइल चुनते नहीं, उधार ले लेते हैं: किसी दोस्त से, किसी रिश्तेदार से, या YouTube के किसी ट्रेडर से। आपको उनकी स्क्रीन तो दिखती है, लेकिन उनके ख़ाली घंटे, उनका कैपिटल और उनके बुरे महीने नहीं दिखते; और आवाज़ भी अक्सर उन्हीं की आती है जो अभी जीत रहे हैं। उधार का स्टाइल पहली व्यस्त सुबह ही टूट जाता है, और फिर उसके पीछे भागते हुए आप अपने ही नियम तोड़ देते हैं। इसलिए पाँच ईमानदार हाँ/ना वाले सवालों के जवाब दीजिए: Q1 से Q4 तक कोई भी 'ना' अपने लिखे स्टाइल बाहर कर देता है, Q5 का 'ना' असली पैसे को बाहर रखता है, और जो बच जाए वही आपका फ़िट है। यह जाँच आगे के असली पैसे के लिए है; चरण 1 में जवाब कुछ भी हों, सब लोग EMA पुलबैक स्विंग ही पेपर पर चलाते हैं, जिसमें सिर्फ़ शाम की एक जाँच लगती है।"
    },
    "example": {
-    "en": "Aman's answers: office from 9:30 to 6:30, so Q1 is No and intraday and ORB are out. He has 20 free minutes after dinner (Q2 Yes), sleeps fine with an overnight position (Q3 Yes) and likes a written plan (Q4 Yes), but his emergency fund covers only two months so far (Q5 No). Swing, positional and the investor path survive; he picks swing, the course's default challenge strategy, because it uses his evenings. Stage 1 is paper for everyone, and even after it, no real money until the fund covers at least 3 months. Priya answers No to Q1 and Yes to the rest, so swing, positional and the investor path survive. Her father's SIP and her paper practice are not rivals: in the money order below, long-term investing comes before risk capital. Whatever you pick, stay with it for the rest of Stage 1; a style changed every week teaches nothing.",
-    "hi": "Aman ke jawab: office 9:30 se 6:30 tak, toh Q1 No, yaani intraday aur ORB bahar. Dinner ke baad 20 minute free hain (Q2 Yes), overnight position rakh kar bhi chain se so leta hai (Q3 Yes), aur likha hua plan pasand hai (Q4 Yes); lekin emergency fund abhi sirf do mahine ka hai (Q5 No). Swing, positional aur investor ka raasta bachte hain; woh swing chunta hai, jo course ki default challenge strategy hai, kyunki usmein uski shaam kaam aati hai. Stage 1 mein sab paper par hi hain, aur uske baad bhi jab tak fund kam se kam 3 mahine ka na ho jaaye, asli paisa nahi. Priya Q1 par No aur baaki sab par Yes kehti hai, toh swing, positional aur investor ka raasta, teeno bachte hain. Papa ka SIP aur uski paper practice aapas mein takraate nahi: neeche wale paise ke order mein long-term investing risk capital se pehle aati hai. Jo bhi style chunein, Stage 1 ke baaki din usi ke saath rahiye; har hafte badla hua style kuch nahi sikhata.",
-    "dv": "अमन के जवाब: ऑफ़िस 9:30 से 6:30 तक, तो Q1 'ना', यानी इंट्राडे और ORB बाहर। डिनर के बाद 20 मिनट ख़ाली हैं (Q2 'हाँ'), ओवरनाइट पोज़िशन रखकर भी चैन से सो लेता है (Q3 'हाँ'), और लिखा हुआ प्लान पसंद है (Q4 'हाँ'); लेकिन इमरजेंसी फ़ंड अभी सिर्फ़ दो महीने का है (Q5 'ना')। स्विंग, पोज़िशनल और इन्वेस्टर का रास्ता बचते हैं; वह स्विंग चुनता है, जो कोर्स की डिफ़ॉल्ट चैलेंज स्ट्रैटेजी है, क्योंकि उसमें उसकी शाम काम आती है। Stage 1 में सब पेपर पर ही हैं, और उसके बाद भी जब तक फ़ंड कम से कम 3 महीने का न हो जाए, असली पैसा नहीं। प्रिया Q1 पर 'ना' और बाक़ी सब पर 'हाँ' कहती है, तो स्विंग, पोज़िशनल और इन्वेस्टर का रास्ता, तीनों बचते हैं। पापा का SIP और उसकी पेपर प्रैक्टिस आपस में टकराते नहीं: नीचे दिए पैसे के क्रम में लंबे लक्ष्यों की इन्वेस्टिंग रिस्क कैपिटल से पहले आती है। जो भी स्टाइल चुनें, Stage 1 के बाक़ी दिन उसी के साथ रहिए; हर हफ़्ते बदला हुआ स्टाइल कुछ नहीं सिखाता।"
+    "en": "Aman's answers: office from 9:30 to 6:30, so Q1 is No and intraday and ORB are out. He has 20 free minutes after dinner (Q2 Yes), sleeps fine with an overnight position (Q3 Yes) and likes a written plan (Q4 Yes), but his emergency fund covers only two months so far (Q5 No). Swing, positional and the investor path survive; he picks swing, the course's default challenge strategy, because it uses his evenings. Stage 1 is paper for everyone, and even after it, no real money until the fund covers at least 3 months. Priya answers No to Q1 and Yes to the rest, so swing, positional and the investor path survive. Her father's SIP and her paper practice are not rivals: in the money order below, long-term investing comes before risk capital. Once you pick, stay with it; a style changed every week teaches nothing.",
+    "hi": "Aman ke jawab: office 9:30 se 6:30 tak, toh Q1 No, yaani intraday aur ORB bahar. Dinner ke baad 20 minute free hain (Q2 Yes), overnight position rakh kar bhi chain se so leta hai (Q3 Yes), aur likha hua plan pasand hai (Q4 Yes); lekin emergency fund abhi sirf do mahine ka hai (Q5 No). Swing, positional aur investor ka raasta bachte hain; woh swing chunta hai, jo course ki default challenge strategy hai, kyunki usmein uski shaam kaam aati hai. Stage 1 mein sab paper par hi hain, aur uske baad bhi jab tak fund kam se kam 3 mahine ka na ho jaaye, asli paisa nahi. Priya Q1 par No aur baaki sab par Yes kehti hai, toh swing, positional aur investor ka raasta, teeno bachte hain. Papa ka SIP aur uski paper practice aapas mein takraate nahi: neeche wale paise ke order mein long-term investing risk capital se pehle aati hai. Ek baar style chun liya, toh usi par tike rahiye; har hafte badla hua style kuch nahi sikhata.",
+    "dv": "अमन के जवाब: ऑफ़िस 9:30 से 6:30 तक, तो Q1 'ना', यानी इंट्राडे और ORB बाहर। डिनर के बाद 20 मिनट ख़ाली हैं (Q2 'हाँ'), ओवरनाइट पोज़िशन रखकर भी चैन से सो लेता है (Q3 'हाँ'), और लिखा हुआ प्लान पसंद है (Q4 'हाँ'); लेकिन इमरजेंसी फ़ंड अभी सिर्फ़ दो महीने का है (Q5 'ना')। स्विंग, पोज़िशनल और इन्वेस्टर का रास्ता बचते हैं; वह स्विंग चुनता है, जो कोर्स की डिफ़ॉल्ट चैलेंज स्ट्रैटेजी है, क्योंकि उसमें उसकी शाम काम आती है। चरण 1 में सब पेपर पर ही हैं, और उसके बाद भी जब तक फ़ंड कम से कम 3 महीने का न हो जाए, असली पैसा नहीं। प्रिया Q1 पर 'ना' और बाक़ी सब पर 'हाँ' कहती है, तो स्विंग, पोज़िशनल और इन्वेस्टर का रास्ता, तीनों बचते हैं। पापा का SIP और उसकी पेपर प्रैक्टिस आपस में टकराते नहीं: नीचे दिए पैसे के क्रम में लंबे लक्ष्यों की इन्वेस्टिंग रिस्क कैपिटल से पहले आती है। एक बार स्टाइल चुन लिया, तो उसी पर टिके रहिए; हर हफ़्ते बदला हुआ स्टाइल कुछ नहीं सिखाता।"
    },
    "remember": {
     "en": "Your timetable chooses the style. Someone else's highlights do not.",
@@ -205,9 +205,9 @@
      "dv": "स्टाइल फ़िट चेक: पाँच सवाल"
     },
     "caption": {
-     "en": "A No on Q1 to Q4 removes the styles named; a No on Q5 keeps real money out. If every trading style drops out, the investor path is a complete answer, not a consolation prize.",
-     "hi": "Q1 se Q4 tak koi bhi No apne likhe styles ko bahar kar deta hai; Q5 ka No asli paise ko bahar rakhta hai. Agar saare trading styles bahar ho jaayein, toh investor ka raasta apne aap mein poora jawab hai, majboori ka raasta nahi.",
-     "dv": "Q1 से Q4 तक कोई भी 'ना' अपने लिखे स्टाइल बाहर कर देता है; Q5 का 'ना' असली पैसे को बाहर रखता है। अगर सारे ट्रेडिंग स्टाइल बाहर हो जाएँ, तो इन्वेस्टर का रास्ता अपने आप में पूरा जवाब है, मजबूरी का रास्ता नहीं।"
+     "en": "A No on Q1 to Q4 removes the styles named; a No on Q5 keeps real money out. If every trading style drops out, the investor path is a complete answer, not a consolation prize. Either way, Stage 1's paper challenge is the EMA Pullback Swing for everyone.",
+     "hi": "Q1 se Q4 tak koi bhi No apne likhe styles ko bahar kar deta hai; Q5 ka No asli paise ko bahar rakhta hai. Agar saare trading styles bahar ho jaayein, toh investor ka raasta apne aap mein poora jawab hai, majboori ka raasta nahi. Jo bhi nikle, Stage 1 ka paper challenge sabke liye EMA Pullback Swing hi hai.",
+     "dv": "Q1 से Q4 तक कोई भी 'ना' अपने लिखे स्टाइल बाहर कर देता है; Q5 का 'ना' असली पैसे को बाहर रखता है। अगर सारे ट्रेडिंग स्टाइल बाहर हो जाएँ, तो इन्वेस्टर का रास्ता अपने आप में पूरा जवाब है, मजबूरी का रास्ता नहीं। जो भी निकले, चरण 1 का पेपर चैलेंज सबके लिए EMA पुलबैक स्विंग ही है।"
     },
     "items": [
      {
@@ -226,9 +226,9 @@
      {
       "tag": "Q2",
       "label": {
-       "en": "About 20 minutes after 3:30 on most days?",
-       "hi": "Zyadatar din 3:30 ke baad lagbhag 20 minute nikal paate hain?",
-       "dv": "ज़्यादातर दिन 3:30 के बाद लगभग 20 मिनट निकाल पाते हैं?"
+       "en": "About 20 minutes on most evenings, after the market closes?",
+       "hi": "Zyadatar shaam ko, market band hone ke baad, lagbhag 20 minute nikal paate hain?",
+       "dv": "ज़्यादातर शाम को, बाज़ार बंद होने के बाद, लगभग 20 मिनट निकाल पाते हैं?"
       },
       "sub": {
        "en": "No: swing is out",
@@ -272,7 +272,7 @@
       "sub": {
        "en": "No: no real money, even after Stage 1",
        "hi": "No: Stage 1 ke baad bhi asli paisa nahi",
-       "dv": "'ना': Stage 1 के बाद भी असली पैसा नहीं"
+       "dv": "'ना': चरण 1 के बाद भी असली पैसा नहीं"
       }
      }
     ]
@@ -292,7 +292,7 @@
    "example": {
     "en": "Aman spends Rs 30,000 a month on essentials, so 3 to 6 months means an emergency fund of Rs 90,000 to Rs 1,80,000; he has Rs 60,000 so far, only two months' worth. A colleague suggests a Rs 2 lakh personal loan 'to trade and repay from profits'. If one bad month costs 15% of it, that is Rs 30,000: Aman now holds Rs 1,70,000 but still owes the full Rs 2,00,000 plus interest, with an EMI every month. The loss is his, and so is the loan. In Stage 1 your trading money is the Rs 10 lakh virtual account, so none of this is at stake while you learn.",
     "hi": "Aman ka zaroori kharcha Rs 30,000 mahina hai, toh 3 se 6 mahine ka emergency fund Rs 90,000 se Rs 1,80,000 banta hai; abhi uske paas Rs 60,000 hain, yaani sirf do mahine ka. Office ka ek saathi salaah deta hai: 'Rs 2 lakh ka personal loan le lo, trade karo aur profit se chuka dena.' Agar ek bura mahina uska 15% kha jaaye, yaani Rs 30,000, toh Aman ke paas Rs 1,70,000 bachte hain, lekin karz poore Rs 2,00,000 aur byaaj ka hai, aur EMI har mahine aayegi. Loss bhi uska, loan bhi uska. Stage 1 mein aapka trading ka paisa Rs 10 lakh ka virtual account hai, isliye seekhte waqt inmein se kuch bhi daav par nahi hai.",
-    "dv": "अमन का ज़रूरी ख़र्च Rs 30,000 महीना है, तो 3 से 6 महीने का इमरजेंसी फ़ंड Rs 90,000 से Rs 1,80,000 बनता है; अभी उसके पास Rs 60,000 हैं, यानी सिर्फ़ दो महीने का। ऑफ़िस का एक साथी सलाह देता है: 'Rs 2 लाख का पर्सनल लोन ले लो, ट्रेड करो और प्रॉफ़िट से चुका देना।' अगर एक बुरा महीना उसका 15% खा जाए, यानी Rs 30,000, तो अमन के पास Rs 1,70,000 बचते हैं, लेकिन क़र्ज़ पूरे Rs 2,00,000 और ब्याज का है, और EMI हर महीने आएगी। लॉस भी उसका, लोन भी उसका। Stage 1 में आपका ट्रेडिंग का पैसा Rs 10 लाख का वर्चुअल अकाउंट है, इसलिए सीखते वक़्त इनमें से कुछ भी दाँव पर नहीं है।"
+    "dv": "अमन का ज़रूरी ख़र्च Rs 30,000 महीना है, तो 3 से 6 महीने का इमरजेंसी फ़ंड Rs 90,000 से Rs 1,80,000 बनता है; अभी उसके पास Rs 60,000 हैं, यानी सिर्फ़ दो महीने का। ऑफ़िस का एक साथी सलाह देता है: 'Rs 2 लाख का पर्सनल लोन ले लो, ट्रेड करो और प्रॉफ़िट से चुका देना।' अगर एक बुरा महीना उसका 15% खा जाए, यानी Rs 30,000, तो अमन के पास Rs 1,70,000 बचते हैं, लेकिन क़र्ज़ पूरे Rs 2,00,000 और ब्याज का है, और EMI हर महीने आएगी। लॉस भी उसका, लोन भी उसका। चरण 1 में आपका ट्रेडिंग का पैसा Rs 10 लाख का वर्चुअल अकाउंट है, इसलिए सीखते वक़्त इनमें से कुछ भी दाँव पर नहीं है।"
    },
    "remember": {
     "en": "Emergency fund first, risk capital last, borrowed money never.",
@@ -309,7 +309,7 @@
     "caption": {
      "en": "Borrowed money never enters this chain. In Stage 1, your trading money is the Rs 10 lakh virtual account.",
      "hi": "Udhaar ka paisa is chain mein kabhi nahi aata. Stage 1 mein aapka trading ka paisa Rs 10 lakh ka virtual account hai.",
-     "dv": "उधार का पैसा इस चेन में कभी नहीं आता। Stage 1 में आपका ट्रेडिंग का पैसा Rs 10 लाख का वर्चुअल अकाउंट है।"
+     "dv": "उधार का पैसा इस चेन में कभी नहीं आता। चरण 1 में आपका ट्रेडिंग का पैसा Rs 10 लाख का वर्चुअल अकाउंट है।"
     },
     "nodes": [
      {
@@ -407,9 +407,9 @@
     "dv": "इन्वेस्टर का रास्ता: म्यूचुअल फ़ंड, इंडेक्स फ़ंड और ETF"
    },
    "p": {
-    "en": "A mutual fund pools money from many people, and a fund house, called an AMC (asset management company), invests it under SEBI rules. You own units of the fund, and the NAV (net asset value) is the value of one unit, worked out once a day after the market closes. In an active fund a manager picks stocks and tries to beat an index; an index fund simply copies an index such as NIFTY 50. An ETF (exchange traded fund) usually copies an index too, but it trades on the exchange like a share, at live prices, through a broker and a demat account. Every fund charges a yearly fee called the expense ratio; it is taken out of the fund a little every day, so the NAV you see is already after the fee. Which fund suits your own goals is a question for a SEBI-registered Investment Adviser, not for a tip, a friend or this course.",
-    "hi": "Mutual fund bahut saare logon ka paisa ek jagah jodta hai, aur ek fund house, jise AMC (asset management company) kehte hain, use SEBI ke rules ke andar invest karta hai. Aapke paas fund ke units hote hain, aur NAV (net asset value) ek unit ki keemat hai, jo roz market band hone ke baad ek baar nikali jaati hai. Active fund mein ek manager stocks chunta hai aur index se aage nikalne ki koshish karta hai; index fund bas kisi index ko copy kar leta hai, jaise NIFTY 50. ETF (exchange traded fund) bhi aam taur par index hi copy karta hai, lekin woh exchange par share ki tarah trade hota hai, live price par, broker aur demat account ke through. Har fund ek saalana fee leta hai jise expense ratio kehte hain; yeh fee fund mein se roz thodi-thodi kat jaati hai, isliye jo NAV aap dekhte hain woh fee katne ke baad ka hi hota hai. Aapke apne goals ke liye kaunsa fund theek hai, yeh sawaal SEBI-registered Investment Adviser se poochne ka hai, kisi tip, dost ya is course se nahi.",
-    "dv": "म्यूचुअल फ़ंड बहुत सारे लोगों का पैसा एक जगह जोड़ता है, और एक फ़ंड हाउस, जिसे AMC (एसेट मैनेजमेंट कंपनी) कहते हैं, उसे SEBI के नियमों के अंदर इन्वेस्ट करता है। आपके पास फ़ंड की यूनिट होती हैं, और NAV (नेट एसेट वैल्यू) एक यूनिट की क़ीमत है, जो रोज़ बाज़ार बंद होने के बाद एक बार निकाली जाती है। एक्टिव फ़ंड में एक मैनेजर स्टॉक चुनता है और इंडेक्स से आगे निकलने की कोशिश करता है; इंडेक्स फ़ंड बस किसी इंडेक्स को कॉपी कर लेता है, जैसे NIFTY 50। ETF (एक्सचेंज ट्रेडेड फ़ंड) भी आम तौर पर इंडेक्स ही कॉपी करता है, लेकिन वह एक्सचेंज पर शेयर की तरह ट्रेड होता है, लाइव भाव पर, ब्रोकर और डीमैट अकाउंट के ज़रिए। हर फ़ंड एक सालाना फ़ीस लेता है जिसे एक्सपेंस रेशियो कहते हैं; यह फ़ीस फ़ंड में से रोज़ थोड़ी-थोड़ी कट जाती है, इसलिए जो NAV आप देखते हैं वह फ़ीस कटने के बाद का ही होता है। आपके अपने लक्ष्यों के लिए कौन-सा फ़ंड ठीक है, यह सवाल SEBI-रजिस्टर्ड इन्वेस्टमेंट एडवाइज़र से पूछने का है, किसी टिप, दोस्त या इस कोर्स से नहीं।"
+    "en": "A mutual fund pools money from many people, and a fund house, called an AMC (asset management company), invests it under SEBI rules. You own units of the fund, and the NAV (net asset value) is the value of one unit, worked out once a day after the market closes. In an active fund a manager picks stocks and tries to beat an index; an index fund simply copies an index such as NIFTY 50. No copy is perfect: fees, cash kept for withdrawals and trading costs make its return wander a little from the index, and that wobble is measured as tracking error; the smaller it is, the closer the copy. An ETF (exchange traded fund) usually copies an index too, but it trades on the exchange like a share, at live prices, through a broker and a demat account. Every fund charges a yearly fee called the expense ratio; it is taken out of the fund a little every day, so the NAV you see is already after the fee. Which fund suits your own goals is a question for a SEBI-registered Investment Adviser, not for a tip, a friend or this course.",
+    "hi": "Mutual fund bahut saare logon ka paisa ek jagah jodta hai, aur ek fund house, jise AMC (asset management company) kehte hain, use SEBI ke rules ke andar invest karta hai. Aapke paas fund ke units hote hain, aur NAV (net asset value) ek unit ki keemat hai, jo roz market band hone ke baad ek baar nikali jaati hai. Active fund mein ek manager stocks chunta hai aur index se aage nikalne ki koshish karta hai; index fund bas kisi index ko copy kar leta hai, jaise NIFTY 50. Koi copy perfect nahi hoti: fees, withdrawals ke liye rakha cash aur trading costs uske return ko index se thoda idhar-udhar kar dete hain, aur is hil-dul ko tracking error se naapte hain; yeh jitna chhota, copy utni kareebi. ETF (exchange traded fund) bhi aam taur par index hi copy karta hai, lekin woh exchange par share ki tarah trade hota hai, live price par, broker aur demat account ke through. Har fund ek saalana fee leta hai jise expense ratio kehte hain; yeh fee fund mein se roz thodi-thodi kat jaati hai, isliye jo NAV aap dekhte hain woh fee katne ke baad ka hi hota hai. Aapke apne goals ke liye kaunsa fund theek hai, yeh sawaal SEBI-registered Investment Adviser se poochne ka hai, kisi tip, dost ya is course se nahi.",
+    "dv": "म्यूचुअल फ़ंड बहुत सारे लोगों का पैसा एक जगह जोड़ता है, और एक फ़ंड हाउस, जिसे AMC (एसेट मैनेजमेंट कंपनी) कहते हैं, उसे SEBI के नियमों के अंदर इन्वेस्ट करता है। आपके पास फ़ंड की यूनिट होती हैं, और NAV (नेट एसेट वैल्यू) एक यूनिट की क़ीमत है, जो रोज़ बाज़ार बंद होने के बाद एक बार निकाली जाती है। एक्टिव फ़ंड में एक मैनेजर स्टॉक चुनता है और इंडेक्स से आगे निकलने की कोशिश करता है; इंडेक्स फ़ंड बस किसी इंडेक्स को कॉपी कर लेता है, जैसे NIFTY 50। कोई कॉपी परफ़ेक्ट नहीं होती: फ़ीस, पैसे निकालने वालों के लिए रखा कैश और ट्रेडिंग का ख़र्च उसके रिटर्न को इंडेक्स से थोड़ा इधर-उधर कर देते हैं, और इस हिलने-डुलने को ट्रैकिंग एरर से नापते हैं; यह जितना छोटा, कॉपी उतनी क़रीबी। ETF (एक्सचेंज ट्रेडेड फ़ंड) भी आम तौर पर इंडेक्स ही कॉपी करता है, लेकिन वह एक्सचेंज पर शेयर की तरह ट्रेड होता है, लाइव भाव पर, ब्रोकर और डीमैट अकाउंट के ज़रिए। हर फ़ंड एक सालाना फ़ीस लेता है जिसे एक्सपेंस रेशियो कहते हैं; यह फ़ीस फ़ंड में से रोज़ थोड़ी-थोड़ी कट जाती है, इसलिए जो NAV आप देखते हैं वह फ़ीस कटने के बाद का ही होता है। आपके अपने लक्ष्यों के लिए कौन-सा फ़ंड ठीक है, यह सवाल SEBI-रजिस्टर्ड इन्वेस्टमेंट एडवाइज़र से पूछने का है, किसी टिप, दोस्त या इस कोर्स से नहीं।"
    },
    "example": {
     "en": "Priya works out, on paper, two ways to follow NIFTY 50 with Rs 5,000. Through a NIFTY 50 index fund, she would buy from the fund house or a fund app at that day's NAV; at a NAV of Rs 50 that is about 100 units (a tiny stamp duty comes off first, and which day's NAV she gets depends on the fund's cut-off time; her statement shows the exact figures), and no demat account is needed. Through a NIFTY 50 ETF, she would need a broker and a demat account, would buy during market hours at the live price, and would pay the bid-ask spread and the usual contract-note charges, like any share (Day 2). She also learns that each fund has a direct plan and a regular plan; the regular plan pays a distributor, so its expense ratio is higher.",
@@ -616,12 +616,12 @@
    "p": {
     "en": "An IPO (initial public offering) is a company's first sale of shares to the public, after which the shares list on the exchange. The offer document, called the RHP (red herring prospectus), explains the business, the risks, and how much money goes to the company versus existing owners who sell. Before the issue opens, the company announces a lot size and a price band, the range you may bid in (not the daily circuit band of Day 1). You apply in lots through ASBA (application supported by blocked amount): your bank blocks the money, through net banking or a UPI mandate you approve, and debits it only if you get shares. If more small investors apply than there are lots for them, a computerised lottery picks who gets one lot, so many get nothing. The listing-day price can open above or below the issue price; an IPO needs a demat account, so in Stage 1 you only learn the process.",
     "hi": "IPO (initial public offering) ka matlab hai kisi company ke shares ki public ko pehli sale, jiske baad shares exchange par list hote hain. Offer document, jise RHP (red herring prospectus) kehte hain, business aur risks batata hai, aur yeh bhi ki kitna paisa company ko jaayega aur kitna bechne wale purane maalikon ko. Issue khulne se pehle company lot size aur price band bata deti hai, yaani woh range jismein aap bid kar sakte hain (yeh Day 1 wala daily circuit band nahi hai). Aap ASBA (application supported by blocked amount) ke through lots mein apply karte hain: aapka bank paisa block kar deta hai, net banking se ya aapke approve kiye UPI mandate se, aur debit tabhi hota hai jab shares mil jaayein. Agar chhote investors ke liye jitne lots hain usse zyada log apply kar dein, toh computer lottery se tay hota hai ki kise ek lot milega, isliye bahut se logon ko kuch nahi milta. Listing day par price issue price se upar ya neeche khul sakta hai; IPO ke liye demat account chahiye, isliye Stage 1 mein aap sirf process samajhte hain.",
-    "dv": "IPO (इनिशियल पब्लिक ऑफ़रिंग) का मतलब है किसी कंपनी के शेयरों की आम लोगों को पहली बिक्री, जिसके बाद शेयर एक्सचेंज पर लिस्ट होते हैं। ऑफ़र डॉक्यूमेंट, जिसे RHP (रेड हेरिंग प्रॉस्पेक्टस) कहते हैं, बिज़नेस और रिस्क बताता है, और यह भी कि कितना पैसा कंपनी को जाएगा और कितना बेचने वाले पुराने मालिकों को। इश्यू खुलने से पहले कंपनी लॉट साइज़ और प्राइस बैंड बता देती है, यानी वह रेंज जिसमें आप बोली लगा सकते हैं (यह दिन 1 वाला रोज़ का सर्किट बैंड नहीं है)। आप ASBA (एप्लिकेशन सपोर्टेड बाय ब्लॉक्ड अमाउंट) के ज़रिए लॉट में अप्लाई करते हैं: आपका बैंक पैसा ब्लॉक कर देता है, नेट बैंकिंग से या आपके मंज़ूर किए UPI मैंडेट से, और डेबिट तभी होता है जब शेयर मिल जाएँ। अगर छोटे इन्वेस्टरों के लिए जितने लॉट हैं उससे ज़्यादा लोग अप्लाई कर दें, तो कंप्यूटर लॉटरी से तय होता है कि किसे एक लॉट मिलेगा, इसलिए बहुत-से लोगों को कुछ नहीं मिलता। लिस्टिंग के दिन भाव इश्यू प्राइस से ऊपर या नीचे खुल सकता है; IPO के लिए डीमैट अकाउंट चाहिए, इसलिए Stage 1 में आप सिर्फ़ प्रोसेस समझते हैं।"
+    "dv": "IPO (इनिशियल पब्लिक ऑफ़रिंग) का मतलब है किसी कंपनी के शेयरों की आम लोगों को पहली बिक्री, जिसके बाद शेयर एक्सचेंज पर लिस्ट होते हैं। ऑफ़र डॉक्यूमेंट, जिसे RHP (रेड हेरिंग प्रॉस्पेक्टस) कहते हैं, बिज़नेस और रिस्क बताता है, और यह भी कि कितना पैसा कंपनी को जाएगा और कितना बेचने वाले पुराने मालिकों को। इश्यू खुलने से पहले कंपनी लॉट साइज़ और प्राइस बैंड बता देती है, यानी वह रेंज जिसमें आप बोली लगा सकते हैं (यह दिन 1 वाला रोज़ का सर्किट बैंड नहीं है)। आप ASBA (एप्लिकेशन सपोर्टेड बाय ब्लॉक्ड अमाउंट) के ज़रिए लॉट में अप्लाई करते हैं: आपका बैंक पैसा ब्लॉक कर देता है, नेट बैंकिंग से या आपके मंज़ूर किए UPI मैंडेट से, और डेबिट तभी होता है जब शेयर मिल जाएँ। अगर छोटे इन्वेस्टरों के लिए जितने लॉट हैं उससे ज़्यादा लोग अप्लाई कर दें, तो कंप्यूटर लॉटरी से तय होता है कि किसे एक लॉट मिलेगा, इसलिए बहुत-से लोगों को कुछ नहीं मिलता। लिस्टिंग के दिन भाव इश्यू प्राइस से ऊपर या नीचे खुल सकता है; IPO के लिए डीमैट अकाउंट चाहिए, इसलिए चरण 1 में आप सिर्फ़ प्रोसेस समझते हैं।"
    },
    "example": {
-    "en": "Walk through a made-up issue. Mehta Solar Ltd, a made-up company that is not yet listed, sets an IPO price band of Rs 95 to Rs 100 and a lot of 150 shares, so one lot at the top of the band costs Rs 15,000. Suppose Priya applies: Rs 15,000 is blocked in her bank account, and nothing is debited yet. Far more retail investors apply than there are lots, the lottery does not pick her, and the block is released. Had she been picked, she would have got one lot, and its price could have opened above or below Rs 100. Grey-market premium (GMP) is an unofficial, unregulated number, not a price, and offers that promise you an allotment are scams; we take both apart on Day 14.",
-    "hi": "Ek made-up issue se samjhiye. Mehta Solar Ltd, ek made-up company jo abhi listed nahi hai, apne IPO ka price band Rs 95 se Rs 100 rakhti hai aur lot 150 shares ka, yaani band ke upar wale sire par ek lot Rs 15,000 ka. Maan lijiye Priya apply karti hai: uske bank account mein Rs 15,000 block ho jaate hain, abhi kuch debit nahi hua. Retail mein lots se kahin zyada log apply karte hain, lottery mein uska naam nahi aata, aur block hat jaata hai. Agar naam aa jaata, toh use ek lot milta, aur uska price Rs 100 se upar bhi khul sakta tha aur neeche bhi. Grey market premium yaani GMP ek unofficial, unregulated number hai, koi price nahi; aur allotment dilane ka vada karne wale offers scam hain. Dono ki cheer-phaad hum Day 14 mein karenge.",
-    "dv": "एक काल्पनिक इश्यू से समझिए। Mehta Solar Ltd, एक काल्पनिक कंपनी जो अभी लिस्टेड नहीं है, अपने IPO का प्राइस बैंड Rs 95 से Rs 100 रखती है और लॉट 150 शेयर का, यानी बैंड के ऊपरी सिरे पर एक लॉट Rs 15,000 का। मान लीजिए प्रिया अप्लाई करती है: उसके बैंक अकाउंट में Rs 15,000 ब्लॉक हो जाते हैं, अभी कुछ डेबिट नहीं हुआ। रिटेल में लॉट से कहीं ज़्यादा लोग अप्लाई करते हैं, लॉटरी में उसका नाम नहीं आता, और ब्लॉक हट जाता है। अगर नाम आ जाता, तो उसे एक लॉट मिलता, और उसका भाव Rs 100 से ऊपर भी खुल सकता था और नीचे भी। ग्रे मार्केट प्रीमियम यानी GMP एक अनऑफ़िशियल, बिना किसी नियम वाला आँकड़ा है, कोई भाव नहीं; और अलॉटमेंट दिलाने का वादा करने वाले ऑफ़र स्कैम हैं। दोनों की चीर-फाड़ हम दिन 14 में करेंगे।"
+    "en": "Walk through a made-up issue. A made-up company that is not yet listed sets an IPO price band of Rs 95 to Rs 100 and a lot of 150 shares, so one lot at the top of the band costs Rs 15,000. Suppose Priya applies: Rs 15,000 is blocked in her bank account, and nothing is debited yet. Far more retail investors apply than there are lots, the lottery does not pick her, and the block is released. Had she been picked, she would have got one lot, and its price could have opened above or below Rs 100. Grey-market premium (GMP) is an unofficial, unregulated number, not a price, and offers that promise you an allotment are scams; we take both apart on Day 14.",
+    "hi": "Ek made-up issue se samjhiye. Ek made-up company, jo abhi listed nahi hai, apne IPO ka price band Rs 95 se Rs 100 rakhti hai aur lot 150 shares ka, yaani band ke upar wale sire par ek lot Rs 15,000 ka. Maan lijiye Priya apply karti hai: uske bank account mein Rs 15,000 block ho jaate hain, abhi kuch debit nahi hua. Retail mein lots se kahin zyada log apply karte hain, lottery mein uska naam nahi aata, aur block hat jaata hai. Agar naam aa jaata, toh use ek lot milta, aur uska price Rs 100 se upar bhi khul sakta tha aur neeche bhi. Grey market premium yaani GMP ek unofficial, unregulated number hai, koi price nahi; aur allotment dilane ka vada karne wale offers scam hain. Dono ki cheer-phaad hum Day 14 mein karenge.",
+    "dv": "एक काल्पनिक इश्यू से समझिए। एक काल्पनिक कंपनी, जो अभी लिस्टेड नहीं है, अपने IPO का प्राइस बैंड Rs 95 से Rs 100 रखती है और लॉट 150 शेयर का, यानी बैंड के ऊपरी सिरे पर एक लॉट Rs 15,000 का। मान लीजिए प्रिया अप्लाई करती है: उसके बैंक अकाउंट में Rs 15,000 ब्लॉक हो जाते हैं, अभी कुछ डेबिट नहीं हुआ। रिटेल में लॉट से कहीं ज़्यादा लोग अप्लाई करते हैं, लॉटरी में उसका नाम नहीं आता, और ब्लॉक हट जाता है। अगर नाम आ जाता, तो उसे एक लॉट मिलता, और उसका भाव Rs 100 से ऊपर भी खुल सकता था और नीचे भी। ग्रे मार्केट प्रीमियम यानी GMP एक अनऑफ़िशियल, बिना किसी नियम वाला आँकड़ा है, कोई भाव नहीं; और अलॉटमेंट दिलाने का वादा करने वाले ऑफ़र स्कैम हैं। दोनों की चीर-फाड़ हम दिन 14 में करेंगे।"
    },
    "remember": {
     "en": "In an IPO your money is blocked, not spent, until allotment. Listing day can go either way.",
@@ -773,6 +773,18 @@
   },
   {
    "term": {
+    "en": "Tracking error",
+    "hi": "Tracking error",
+    "dv": "ट्रैकिंग एरर"
+   },
+   "meaning": {
+    "en": "How closely an index fund or ETF follows its index. Fees, cash kept for withdrawals and trading costs make its return wander a little; the smaller the tracking error, the closer the copy. The fund house website shows it.",
+    "hi": "Index fund ya ETF apne index ko kitni kareebi se follow karta hai. Fees, withdrawals ke liye rakha cash aur trading costs uske return ko thoda idhar-udhar kar dete hain; tracking error jitna chhota, copy utni kareebi. Fund house ki website par yeh number milta hai.",
+    "dv": "इंडेक्स फ़ंड या ETF अपने इंडेक्स को कितनी क़रीबी से फ़ॉलो करता है। फ़ीस, पैसे निकालने वालों के लिए रखा कैश और ट्रेडिंग का ख़र्च उसके रिटर्न को थोड़ा इधर-उधर कर देते हैं; ट्रैकिंग एरर जितना छोटा, कॉपी उतनी क़रीबी। फ़ंड हाउस की वेबसाइट पर यह आँकड़ा मिलता है।"
+   }
+  },
+  {
+   "term": {
     "en": "SIP",
     "hi": "SIP",
     "dv": "SIP"
@@ -781,6 +793,18 @@
     "en": "Systematic investment plan: a fixed amount put into a mutual fund on a fixed date, usually monthly, at that day's NAV. A habit, not a promise of profit.",
     "hi": "Systematic investment plan: ek fix amount, fix date par, aam taur par har mahine, us din ke NAV par mutual fund mein. Yeh ek aadat hai, profit ka vada nahi.",
     "dv": "सिस्टमैटिक इन्वेस्टमेंट प्लान: एक तय रक़म, तय तारीख़ पर, आम तौर पर हर महीने, उस दिन के NAV पर म्यूचुअल फ़ंड में। यह एक आदत है, मुनाफ़े का वादा नहीं।"
+   }
+  },
+  {
+   "term": {
+    "en": "ASBA",
+    "hi": "ASBA",
+    "dv": "ASBA"
+   },
+   "meaning": {
+    "en": "Application supported by blocked amount: how you apply for an IPO. Your bank blocks the money, through net banking or a UPI mandate you approve, and debits it only if you get shares; otherwise the block is released.",
+    "hi": "Application supported by blocked amount: IPO mein apply karne ka tareeka. Aapka bank paisa block karta hai, net banking se ya aapke approve kiye UPI mandate se, aur debit tabhi karta hai jab shares milein; warna block hat jaata hai.",
+    "dv": "एप्लिकेशन सपोर्टेड बाय ब्लॉक्ड अमाउंट: IPO में अप्लाई करने का तरीक़ा। आपका बैंक पैसा ब्लॉक करता है, नेट बैंकिंग से या आपके मंज़ूर किए UPI मैंडेट से, और डेबिट तभी करता है जब शेयर मिलें; वरना ब्लॉक हट जाता है।"
    }
   }
  ],
@@ -966,14 +990,14 @@
    "dv": "Google Sheets में या काग़ज़ पर अपने असली कामकाजी दिन का टाइमटेबल लिखिए, सुबह उठने से रात सोने तक, घंटे-घंटे का, आने-जाने, मीटिंग और खाने समेत।"
   },
   {
-   "en": "Answer the five Style Fit questions with Yes or No, and write in one line the style that survives.",
-   "hi": "Style Fit ke paanch sawaalon ke jawab Yes ya No mein dijiye, aur jo style bach jaaye use ek line mein likh lijiye.",
-   "dv": "स्टाइल फ़िट के पाँच सवालों के जवाब 'हाँ' या 'ना' में दीजिए, और जो स्टाइल बच जाए उसे एक लाइन में लिख लीजिए।"
+   "en": "Answer the five Style Fit questions with Yes or No in the 'Style Fit card' under Your template, and write in one line the style that survives.",
+   "hi": "'Aapka template' mein diye 'Style Fit card' mein paanch sawaalon ke jawab Yes ya No mein bhariye, aur jo style bach jaaye use ek line mein likh lijiye.",
+   "dv": "'आपका टेम्पलेट' में दिए 'स्टाइल फ़िट कार्ड' में पाँच सवालों के जवाब 'हाँ' या 'ना' में भरिए, और जो स्टाइल बच जाए उसे एक लाइन में लिख लीजिए।"
   },
   {
-   "en": "Add up your essential monthly expenses, multiply by 3 and by 6, and note how much of that emergency-fund range you already have.",
-   "hi": "Apne zaroori mahine ke kharche jodiye, unhe 3 aur 6 se guna kijiye, aur note kijiye ki is emergency-fund range mein se kitna aapke paas pehle se hai.",
-   "dv": "अपने महीने के ज़रूरी ख़र्च जोड़िए, उन्हें 3 और 6 से गुणा कीजिए, और नोट कीजिए कि इस इमरजेंसी-फ़ंड रेंज में से कितना आपके पास पहले से है।"
+   "en": "Fill the 'Emergency-fund worksheet': add up your essential monthly expenses, multiply by 3 and by 6, and note how much of that range you already have.",
+   "hi": "'Emergency-fund worksheet' bhariye: apne zaroori mahine ke kharche jodiye, unhe 3 aur 6 se guna kijiye, aur note kijiye ki is range mein se kitna aapke paas pehle se hai.",
+   "dv": "'इमरजेंसी-फ़ंड वर्कशीट' भरिए: अपने महीने के ज़रूरी ख़र्च जोड़िए, उन्हें 3 और 6 से गुणा कीजिए, और नोट कीजिए कि इस रेंज में से कितना आपके पास पहले से है।"
   },
   {
    "en": "On amfiindia.com, the website of AMFI (the mutual fund industry body), open the NAV section, pick a fund house and then its NIFTY 50 index fund, and note the latest NAV and its date.",
@@ -981,9 +1005,9 @@
    "dv": "amfiindia.com, यानी AMFI (म्यूचुअल फ़ंड इंडस्ट्री की संस्था) की वेबसाइट पर NAV सेक्शन खोलिए, एक फ़ंड हाउस और फिर उसका NIFTY 50 इंडेक्स फ़ंड चुनिए, और ताज़ा NAV और उसकी तारीख़ नोट कीजिए।"
   },
   {
-   "en": "On the fund house website, open that fund's page or its latest factsheet and find the TER (total expense ratio, the same thing as the expense ratio); note it for the direct plan and the regular plan.",
-   "hi": "Fund house ki website par us fund ka page ya uski latest factsheet kholiye aur TER (total expense ratio, yaani wahi expense ratio) dhoondhiye; direct plan aur regular plan, dono ka note kar lijiye.",
-   "dv": "फ़ंड हाउस की वेबसाइट पर उस फ़ंड का पेज या उसकी ताज़ा फ़ैक्टशीट खोलिए और TER (टोटल एक्सपेंस रेशियो, यानी वही एक्सपेंस रेशियो) ढूँढिए; डायरेक्ट प्लान और रेगुलर प्लान, दोनों का नोट कर लीजिए।"
+   "en": "On the fund house website, open that fund's page or its latest factsheet and note the TER (total expense ratio) for the direct plan and the regular plan, and its tracking error if shown, in the 'Fund reading notes'.",
+   "hi": "Fund house ki website par us fund ka page ya uski latest factsheet kholiye, aur direct plan aur regular plan ka TER (total expense ratio), aur agar diya ho toh tracking error, 'Fund reading notes' mein likhiye.",
+   "dv": "फ़ंड हाउस की वेबसाइट पर उस फ़ंड का पेज या उसकी ताज़ा फ़ैक्टशीट खोलिए, और डायरेक्ट प्लान और रेगुलर प्लान का TER (टोटल एक्सपेंस रेशियो), और अगर दिया हो तो ट्रैकिंग एरर, 'फ़ंड रीडिंग नोट्स' में लिखिए।"
   },
   {
    "en": "Run the AI Lab prompt 'Style Fit interview' and compare its answer with yours; where they differ, your timetable decides.",
@@ -992,10 +1016,392 @@
   }
  ],
  "kaam_min": 45,
+ "artefacts": [
+  {
+   "title": {
+    "en": "Style Fit card",
+    "hi": "Style Fit card",
+    "dv": "स्टाइल फ़िट कार्ड"
+   },
+   "note": {
+    "en": "Answer for the weekday you really have. Where the AI's answer differs from yours, your timetable decides.",
+    "hi": "Us weekday ke hisaab se jawab dijiye jo sach mein aapka hai. Jahan AI ka jawab aapse alag ho, wahan faisla aapka timetable karega.",
+    "dv": "उस कामकाजी दिन के हिसाब से जवाब दीजिए जो सच में आपका है। जहाँ AI का जवाब आपसे अलग हो, वहाँ फ़ैसला आपका टाइमटेबल करेगा।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Q",
+      "hi": "Q",
+      "dv": "Q"
+     },
+     {
+      "en": "Question",
+      "hi": "Sawaal",
+      "dv": "सवाल"
+     },
+     {
+      "en": "Aman",
+      "hi": "Aman",
+      "dv": "अमन"
+     },
+     {
+      "en": "You",
+      "hi": "Aap",
+      "dv": "आप"
+     }
+    ],
+    "rows": [
+     [
+      "Q1",
+      {
+       "en": "Free 9:15-11:00 am, and at 2:30 pm, on weekdays?",
+       "hi": "Weekdays mein 9:15-11:00 am aur 2:30 pm par free?",
+       "dv": "कामकाजी दिनों में 9:15-11:00 और दोपहर 2:30 बजे ख़ाली?"
+      },
+      {
+       "en": "No: intraday and ORB out",
+       "hi": "No: intraday aur ORB bahar",
+       "dv": "ना: इंट्राडे और ORB बाहर"
+      },
+      ""
+     ],
+     [
+      "Q2",
+      {
+       "en": "About 20 minutes most evenings, after the close?",
+       "hi": "Zyadatar shaam, close ke baad, lagbhag 20 minute?",
+       "dv": "ज़्यादातर शाम, क्लोज़ के बाद, लगभग 20 मिनट?"
+      },
+      {
+       "en": "Yes",
+       "hi": "Yes",
+       "dv": "हाँ"
+      },
+      ""
+     ],
+     [
+      "Q3",
+      {
+       "en": "Calm holding a position overnight and over weekends?",
+       "hi": "Overnight aur weekend par position rakh kar chain?",
+       "dv": "रात भर और वीकेंड पर पोज़िशन रखकर भी चैन?"
+      },
+      {
+       "en": "Yes",
+       "hi": "Yes",
+       "dv": "हाँ"
+      },
+      ""
+     ],
+     [
+      "Q4",
+      {
+       "en": "Happy to follow written rules and a journal?",
+       "hi": "Likhe rules aur journal follow karna pasand?",
+       "dv": "लिखे नियम और जर्नल फ़ॉलो करना पसंद?"
+      },
+      {
+       "en": "Yes",
+       "hi": "Yes",
+       "dv": "हाँ"
+      },
+      ""
+     ],
+     [
+      "Q5",
+      {
+       "en": "3 months' emergency fund, and no borrowed money?",
+       "hi": "3 mahine ka emergency fund, aur udhaar bilkul nahi?",
+       "dv": "3 महीने का इमरजेंसी फ़ंड, और उधार बिल्कुल नहीं?"
+      },
+      {
+       "en": "No: only 2 months so far",
+       "hi": "No: abhi sirf 2 mahine",
+       "dv": "ना: अभी सिर्फ़ 2 महीने"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "Result",
+       "hi": "Result",
+       "dv": "नतीजा"
+      },
+      {
+       "en": "Styles that survive",
+       "hi": "Jo styles bache",
+       "dv": "जो स्टाइल बचे"
+      },
+      {
+       "en": "Swing, positional, investor",
+       "hi": "Swing, positional, investor",
+       "dv": "स्विंग, पोज़िशनल, इन्वेस्टर"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "Money",
+       "hi": "Paisa",
+       "dv": "पैसा"
+      },
+      {
+       "en": "Real money after Stage 1?",
+       "hi": "Stage 1 ke baad asli paisa?",
+       "dv": "चरण 1 के बाद असली पैसा?"
+      },
+      {
+       "en": "Not until the fund covers 3 months",
+       "hi": "Jab tak fund 3 mahine ka na ho, nahi",
+       "dv": "जब तक फ़ंड 3 महीने का न हो, नहीं"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "Now",
+       "hi": "Abhi",
+       "dv": "अभी"
+      },
+      {
+       "en": "Stage 1 paper challenge",
+       "hi": "Stage 1 paper challenge",
+       "dv": "चरण 1 का पेपर चैलेंज"
+      },
+      {
+       "en": "EMA Pullback Swing",
+       "hi": "EMA Pullback Swing",
+       "dv": "EMA पुलबैक स्विंग"
+      },
+      {
+       "en": "EMA Pullback Swing",
+       "hi": "EMA Pullback Swing",
+       "dv": "EMA पुलबैक स्विंग"
+      }
+     ]
+    ]
+   }
+  },
+  {
+   "title": {
+    "en": "Emergency-fund worksheet",
+    "hi": "Emergency-fund worksheet",
+    "dv": "इमरजेंसी-फ़ंड वर्कशीट"
+   },
+   "note": {
+    "en": "Keep this fund somewhere safe and quick to withdraw, such as a savings account. Stage 1 needs none of it: your trading money is the Rs 10 lakh virtual account.",
+    "hi": "Yeh fund kisi safe jagah rakhiye jahan se turant nikal sake, jaise savings account. Stage 1 mein iski zaroorat nahi: aapka trading ka paisa Rs 10 lakh ka virtual account hai.",
+    "dv": "यह फ़ंड किसी सुरक्षित जगह रखिए जहाँ से तुरंत निकल सके, जैसे सेविंग्स अकाउंट। चरण 1 में इसकी ज़रूरत नहीं: आपका ट्रेडिंग का पैसा Rs 10 लाख का वर्चुअल अकाउंट है।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Line",
+      "hi": "Line",
+      "dv": "लाइन"
+     },
+     {
+      "en": "Aman",
+      "hi": "Aman",
+      "dv": "अमन"
+     },
+     {
+      "en": "You",
+      "hi": "Aap",
+      "dv": "आप"
+     }
+    ],
+    "rows": [
+     [
+      {
+       "en": "Essential expenses a month",
+       "hi": "Mahine ke zaroori kharche",
+       "dv": "महीने के ज़रूरी ख़र्च"
+      },
+      "Rs 30,000",
+      ""
+     ],
+     [
+      {
+       "en": "x 3 months (lower end)",
+       "hi": "x 3 mahine (kam se kam)",
+       "dv": "x 3 महीने (कम से कम)"
+      },
+      "Rs 90,000",
+      ""
+     ],
+     [
+      {
+       "en": "x 6 months (upper end)",
+       "hi": "x 6 mahine (upar ki had)",
+       "dv": "x 6 महीने (ऊपरी सीमा)"
+      },
+      "Rs 1,80,000",
+      ""
+     ],
+     [
+      {
+       "en": "Saved so far",
+       "hi": "Abhi tak jama",
+       "dv": "अब तक जमा"
+      },
+      "Rs 60,000",
+      ""
+     ],
+     [
+      {
+       "en": "Months covered (saved ÷ monthly essentials)",
+       "hi": "Kitne mahine cover (jama ÷ mahine ka kharcha)",
+       "dv": "कितने महीने कवर (जमा ÷ महीने का ख़र्च)"
+      },
+      "2",
+      ""
+     ],
+     [
+      {
+       "en": "Still needed for 3 months",
+       "hi": "3 mahine ke liye aur chahiye",
+       "dv": "3 महीने के लिए और चाहिए"
+      },
+      "Rs 30,000",
+      ""
+     ],
+     [
+      {
+       "en": "Borrowed money for trading",
+       "hi": "Trading ke liye udhaar",
+       "dv": "ट्रेडिंग के लिए उधार"
+      },
+      {
+       "en": "None",
+       "hi": "Bilkul nahi",
+       "dv": "बिल्कुल नहीं"
+      },
+      ""
+     ]
+    ]
+   }
+  },
+  {
+   "title": {
+    "en": "Fund reading notes",
+    "hi": "Fund reading notes",
+    "dv": "फ़ंड रीडिंग नोट्स"
+   },
+   "note": {
+    "en": "Reading one fund's numbers is practice, not a recommendation. Which fund suits you is a question for a SEBI-registered Investment Adviser.",
+    "hi": "Ek fund ke numbers padhna sirf practice hai, recommendation nahi. Aapke liye kaunsa fund theek hai, yeh SEBI-registered Investment Adviser se poochne ka sawaal hai.",
+    "dv": "एक फ़ंड के आँकड़े पढ़ना सिर्फ़ अभ्यास है, सिफ़ारिश नहीं। आपके लिए कौन-सा फ़ंड ठीक है, यह SEBI-रजिस्टर्ड इन्वेस्टमेंट एडवाइज़र से पूछने का सवाल है।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "What to find",
+      "hi": "Kya dhoondhna hai",
+      "dv": "क्या ढूँढना है"
+     },
+     {
+      "en": "Where",
+      "hi": "Kahan",
+      "dv": "कहाँ"
+     },
+     {
+      "en": "Your note",
+      "hi": "Aapka note",
+      "dv": "आपका नोट"
+     }
+    ],
+    "rows": [
+     [
+      {
+       "en": "Fund house and its NIFTY 50 index fund",
+       "hi": "Fund house aur uska NIFTY 50 index fund",
+       "dv": "फ़ंड हाउस और उसका NIFTY 50 इंडेक्स फ़ंड"
+      },
+      {
+       "en": "amfiindia.com, NAV section",
+       "hi": "amfiindia.com, NAV section",
+       "dv": "amfiindia.com, NAV सेक्शन"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "Latest NAV and its date",
+       "hi": "Latest NAV aur uski date",
+       "dv": "ताज़ा NAV और उसकी तारीख़"
+      },
+      {
+       "en": "amfiindia.com, NAV section",
+       "hi": "amfiindia.com, NAV section",
+       "dv": "amfiindia.com, NAV सेक्शन"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "TER, direct plan",
+       "hi": "TER, direct plan",
+       "dv": "TER, डायरेक्ट प्लान"
+      },
+      {
+       "en": "Fund page or factsheet",
+       "hi": "Fund page ya factsheet",
+       "dv": "फ़ंड पेज या फ़ैक्टशीट"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "TER, regular plan",
+       "hi": "TER, regular plan",
+       "dv": "TER, रेगुलर प्लान"
+      },
+      {
+       "en": "Fund page or factsheet",
+       "hi": "Fund page ya factsheet",
+       "dv": "फ़ंड पेज या फ़ैक्टशीट"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "Regular minus direct",
+       "hi": "Regular minus direct",
+       "dv": "रेगुलर माइनस डायरेक्ट"
+      },
+      {
+       "en": "Your own maths",
+       "hi": "Aapka apna hisaab",
+       "dv": "आपका अपना हिसाब"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "Tracking error, if shown",
+       "hi": "Tracking error, agar diya ho",
+       "dv": "ट्रैकिंग एरर, अगर दिया हो"
+      },
+      {
+       "en": "Fund house website",
+       "hi": "Fund house ki website",
+       "dv": "फ़ंड हाउस की वेबसाइट"
+      },
+      ""
+     ]
+    ]
+   }
+  }
+ ],
  "outcome": {
-  "en": "By the end you can name the four styles (intraday, swing, positional, investing) by holding period and screen time, pick the one your real day allows with the Style Fit check, put your money in the right order (emergency fund, then goals, then risk capital), and explain index funds, ETFs, NAV, expense ratio, SIP and how an IPO works.",
-  "hi": "Aaj ke baad aap chaaron styles (intraday, swing, positional, investing) ko holding period aur screen time se pehchaan payenge, Style Fit check se woh style chun payenge jo aapka asli din allow karta hai, apna paisa sahi order mein rakh payenge (pehle emergency fund, phir goals, phir risk capital), aur index fund, ETF, NAV, expense ratio, SIP aur IPO ka process samjha payenge.",
-  "dv": "आज के बाद आप चारों स्टाइल (इंट्राडे, स्विंग, पोज़िशनल, इन्वेस्टिंग) को होल्डिंग पीरियड और स्क्रीन टाइम से पहचान पाएँगे, स्टाइल फ़िट चेक से वह स्टाइल चुन पाएँगे जो आपके असली दिन में फ़िट बैठता है, अपना पैसा सही क्रम में रख पाएँगे (पहले इमरजेंसी फ़ंड, फिर लक्ष्य, फिर रिस्क कैपिटल), और इंडेक्स फ़ंड, ETF, NAV, एक्सपेंस रेशियो, SIP और IPO का प्रोसेस समझा पाएँगे।"
+  "en": "By the end you can name the four styles (intraday, swing, positional, investing) by holding period and screen time, pick the one your real day allows with the Style Fit check, put your money in the right order (emergency fund, then goals, then risk capital), and explain index funds, ETFs, NAV, expense ratio, tracking error, SIP and how an IPO works.",
+  "hi": "Aaj ke baad aap chaaron styles (intraday, swing, positional, investing) ko holding period aur screen time se pehchaan payenge, Style Fit check se woh style chun payenge jo aapka asli din allow karta hai, apna paisa sahi order mein rakh payenge (pehle emergency fund, phir goals, phir risk capital), aur index fund, ETF, NAV, expense ratio, tracking error, SIP aur IPO ka process samjha payenge.",
+  "dv": "आज के बाद आप चारों स्टाइल (इंट्राडे, स्विंग, पोज़िशनल, इन्वेस्टिंग) को होल्डिंग पीरियड और स्क्रीन टाइम से पहचान पाएँगे, स्टाइल फ़िट चेक से वह स्टाइल चुन पाएँगे जो आपके असली दिन में फ़िट बैठता है, अपना पैसा सही क्रम में रख पाएँगे (पहले इमरजेंसी फ़ंड, फिर लक्ष्य, फिर रिस्क कैपिटल), और इंडेक्स फ़ंड, ETF, NAV, एक्सपेंस रेशियो, ट्रैकिंग एरर, SIP और IPO का प्रोसेस समझा पाएँगे।"
  },
  "tools": [
   {
@@ -1037,7 +1443,7 @@
     "hi": "Style Fit interview",
     "dv": "स्टाइल फ़िट इंटरव्यू"
    },
-   "body": "Act as a calm trading coach for a complete beginner in India. Interview me with 6 short questions, one at a time, to find a trading style that fits my real life: my weekday timetable from waking up to bedtime, my commute and meetings, how many minutes I can give after 3:30 pm, how I feel holding a position overnight or over a weekend, whether I enjoy following written rules and keeping a journal, and whether my emergency fund covers at least 3 months and I have no borrowed money for trading; for this one I will answer only Yes or No, so do not ask for amounts. Use this rule: No to being free 9:15 to 11:00 am removes intraday and Opening Range Breakout; No to 20 minutes after 3:30 pm removes swing; No to holding overnight removes swing and positional; No to following written rules removes all trading styles; No to the emergency-fund question removes no style but means no real money until the fund covers at least 3 months. Then list which of these styles survive: intraday (including Opening Range Breakout, which needs me free from 9:15 to 11:00 am), swing (such as an EMA pullback checked after the close), positional and the investor path. Tell me which answer ruled out each style, and leave the final choice to me. Do not ask for my income, savings amount, PAN, account details or any personal identifiers. Do not recommend any stock, fund or broker, do not give buy or sell advice, and do not mention targets or expected returns."
+   "body": "Act as a calm trading coach for a complete beginner in India. Interview me with 6 short questions, one at a time, to find a trading style that fits my real life: my weekday timetable from waking up to bedtime, my commute and meetings, how many minutes I can give in the evening after the market closes, how I feel holding a position overnight or over a weekend, whether I enjoy following written rules and keeping a journal, and whether my emergency fund covers at least 3 months and I have no borrowed money for trading; for this one I will answer only Yes or No, so do not ask for amounts. Use this rule: No to being free 9:15 to 11:00 am and briefly at 2:30 pm removes intraday and Opening Range Breakout; No to 20 minutes in the evening after the close removes swing; No to holding overnight removes swing and positional; No to following written rules removes all trading styles; No to the emergency-fund question removes no style but means no real money until the fund covers at least 3 months. Then list which of these styles survive: intraday (including Opening Range Breakout, which needs me free from 9:15 to 11:00 am and again at 2:30 pm), swing (such as an EMA pullback checked after the close), positional and the investor path. Tell me which answer ruled out each style, and leave the final choice to me. Remind me that this check is about real money later: in my course everyone paper-trades the EMA Pullback Swing on virtual money for now, whatever the result. Do not ask for my income, savings amount, PAN, account details or any personal identifiers. Do not recommend any stock, fund or broker, do not give buy or sell advice, and do not mention targets or expected returns."
   },
   {
    "title": {
@@ -1076,33 +1482,33 @@
    "options": [
     {
      "text": {
-      "en": "Swing trading, checked after the close",
-      "hi": "Swing trading, close ke baad check karke",
-      "dv": "स्विंग ट्रेडिंग, क्लोज़ के बाद चेक करके"
+      "en": "Swing trading, planned in the evening after the close",
+      "hi": "Swing trading, shaam ko close ke baad plan karke",
+      "dv": "स्विंग ट्रेडिंग, शाम को क्लोज़ के बाद प्लान करके"
      },
      "correct": true
     },
     {
      "text": {
-      "en": "Scalping like the YouTuber, from office",
-      "hi": "YouTuber jaisi scalping, office se hi",
-      "dv": "YouTuber जैसी स्कैल्पिंग, ऑफ़िस से ही"
+      "en": "Scalping like the YouTuber, done from his office desk",
+      "hi": "YouTuber jaisi scalping, office ki desk se hi",
+      "dv": "YouTuber जैसी स्कैल्पिंग, ऑफ़िस की डेस्क से ही"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "Opening Range Breakout from 9:15 to 11:00",
-      "hi": "Opening Range Breakout, 9:15 se 11:00 tak",
-      "dv": "Opening Range Breakout, 9:15 से 11:00 तक"
+      "en": "Opening Range Breakout from 9:15 to 11:00 each morning",
+      "hi": "Opening Range Breakout, roz subah 9:15 se 11:00 tak",
+      "dv": "Opening Range Breakout, रोज़ सुबह 9:15 से 11:00 तक"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "Intraday trades squeezed between meetings",
-      "hi": "Meetings ke beech-beech mein kiye intraday trades",
-      "dv": "मीटिंग के बीच-बीच में ठूँसे हुए इंट्राडे ट्रेड"
+      "en": "Intraday trades squeezed in between his office meetings",
+      "hi": "Office meetings ke beech-beech mein kiye intraday trades",
+      "dv": "ऑफ़िस मीटिंग के बीच-बीच में ठूँसे हुए इंट्राडे ट्रेड"
      },
      "correct": false
     }
@@ -1122,17 +1528,17 @@
    "options": [
     {
      "text": {
-      "en": "370 units: 100 + 150 + 120",
-      "hi": "370 units: 100 + 150 + 120",
-      "dv": "370 यूनिट: 100 + 150 + 120"
+      "en": "370 units: 100, then 150, then 120",
+      "hi": "370 units: 100, phir 150, phir 120",
+      "dv": "370 यूनिट: 100, फिर 150, फिर 120"
      },
      "correct": true
     },
     {
      "text": {
-      "en": "360 units: Rs 18,000 ÷ Rs 50",
-      "hi": "360 units: Rs 18,000 ÷ Rs 50",
-      "dv": "360 यूनिट: Rs 18,000 ÷ Rs 50"
+      "en": "360 units: Rs 18,000 ÷ the Rs 50 average NAV",
+      "hi": "360 units: Rs 18,000 ÷ Rs 50 ka average NAV",
+      "dv": "360 यूनिट: Rs 18,000 ÷ Rs 50 का एवरेज NAV"
      },
      "correct": false
     },
@@ -1168,9 +1574,9 @@
    "options": [
     {
      "text": {
-      "en": "Finish the emergency fund; take no loan",
-      "hi": "Emergency fund poora karo; loan nahi",
-      "dv": "इमरजेंसी फ़ंड पूरा करो; लोन नहीं"
+      "en": "Finish the emergency fund first and take no loan of any kind",
+      "hi": "Pehle emergency fund poora karo, aur kisi bhi tarah ka loan nahi",
+      "dv": "पहले इमरजेंसी फ़ंड पूरा करो, और किसी भी तरह का लोन नहीं"
      },
      "correct": true
     },
@@ -1184,7 +1590,7 @@
     },
     {
      "text": {
-      "en": "Skip the loan and trade with his Rs 60,000 savings",
+      "en": "Skip the loan and trade his Rs 60,000 of savings",
       "hi": "Loan chhodo, apni Rs 60,000 ki savings se trade karo",
       "dv": "लोन छोड़ो, अपनी Rs 60,000 की बचत से ट्रेड करो"
      },
@@ -1192,7 +1598,7 @@
     },
     {
      "text": {
-      "en": "Borrow from family, since it has no interest",
+      "en": "Borrow from family instead, since it has no interest",
       "hi": "Family se le lo, usmein byaaj toh lagta nahi",
       "dv": "परिवार से ले लो, उसमें ब्याज तो लगता नहीं"
      },
@@ -1246,9 +1652,9 @@
     }
    ],
    "explanation": {
-    "en": "An ETF is listed on the exchange, so you buy it through a broker and a demat account at live prices, paying the bid-ask spread. An index fund is bought from the fund house at that day's NAV, with no demat needed. Both aim to copy the index, not beat it; after the expense ratio, the fund's return is usually a little below the index.",
-    "hi": "ETF exchange par listed hota hai, isliye use broker aur demat account ke through live price par khareedte hain, aur bid-ask spread bhi dena padta hai. Index fund fund house se us din ke NAV par milta hai, demat ki zaroorat nahi. Dono ka kaam index ko copy karna hai, use beat karna nahi; expense ratio katne ke baad fund ka return aam taur par index se thoda kam hi rehta hai.",
-    "dv": "ETF एक्सचेंज पर लिस्टेड होता है, इसलिए उसे ब्रोकर और डीमैट अकाउंट के ज़रिए लाइव भाव पर ख़रीदते हैं, और बिड-आस्क स्प्रेड भी देना पड़ता है। इंडेक्स फ़ंड फ़ंड हाउस से उस दिन के NAV पर मिलता है, डीमैट की ज़रूरत नहीं। दोनों का काम इंडेक्स को कॉपी करना है, उससे आगे निकलना नहीं; एक्सपेंस रेशियो कटने के बाद फ़ंड का रिटर्न आम तौर पर इंडेक्स से थोड़ा कम ही रहता है।"
+    "en": "An ETF is listed on the exchange, so you buy it through a broker and a demat account at live prices, paying the bid-ask spread. An index fund is bought from the fund house at that day's NAV, with no demat needed. Both aim to copy the index, not beat it; after the expense ratio, the fund's return is usually a little below the index. How closely it follows is measured as tracking error.",
+    "hi": "ETF exchange par listed hota hai, isliye use broker aur demat account ke through live price par khareedte hain, aur bid-ask spread bhi dena padta hai. Index fund fund house se us din ke NAV par milta hai, demat ki zaroorat nahi. Dono ka kaam index ko copy karna hai, use beat karna nahi; expense ratio katne ke baad fund ka return aam taur par index se thoda kam hi rehta hai. Woh index ko kitni kareebi se follow karta hai, yeh tracking error batata hai.",
+    "dv": "ETF एक्सचेंज पर लिस्टेड होता है, इसलिए उसे ब्रोकर और डीमैट अकाउंट के ज़रिए लाइव भाव पर ख़रीदते हैं, और बिड-आस्क स्प्रेड भी देना पड़ता है। इंडेक्स फ़ंड फ़ंड हाउस से उस दिन के NAV पर मिलता है, डीमैट की ज़रूरत नहीं। दोनों का काम इंडेक्स को कॉपी करना है, उससे आगे निकलना नहीं; एक्सपेंस रेशियो कटने के बाद फ़ंड का रिटर्न आम तौर पर इंडेक्स से थोड़ा कम ही रहता है। वह इंडेक्स को कितनी क़रीबी से फ़ॉलो करता है, यह ट्रैकिंग एरर बताता है।"
    }
   },
   {

@@ -100,14 +100,14 @@
     "dv": "AI एनालिस्ट है, ट्रिगर आप हैं"
    },
    "p": {
-    "en": "An AI chat such as ChatGPT, Claude or Gemini runs on a large language model (LLM): software trained on huge amounts of text to write replies. It is very good at summarising a long document, explaining a term in simple words, turning messy notes into a checklist and asking you useful questions. It does not know tomorrow's price, and it can be wrong while sounding completely sure. So this course has one rule: AI = analyst, human = trigger. The AI prepares a draft; you check it, and only you decide whether anything happens.",
-    "hi": "ChatGPT, Claude ya Gemini jaisa AI chat ek large language model (LLM) par chalta hai: aisa software jise bahut saare text par train kiya gaya hai, taaki woh jawab likh sake. Lambe document ka summary banana, kisi term ko aasaan shabdon mein samjhana, bikhre notes ko checklist mein badalna aur aapse kaam ke sawaal poochna — ismein yeh bahut achha hai. Kal ka price ise nahi pata, aur yeh poore confidence ke saath galat bhi ho sakta hai. Isliye is course ka ek rule hai: AI = analyst, insaan = trigger. AI draft taiyaar karta hai; check aap karte hain, aur kuch hoga ya nahi, yeh faisla sirf aapka hai.",
-    "dv": "ChatGPT, Claude या Gemini जैसा AI चैट एक लार्ज लैंग्वेज मॉडल (LLM) पर चलता है: ऐसा सॉफ़्टवेयर जिसे ढेर सारे टेक्स्ट पर ट्रेन किया गया है, ताकि वो जवाब लिख सके। लंबे डॉक्यूमेंट का सार बनाना, किसी शब्द को आसान भाषा में समझाना, बिखरे नोट्स को चेकलिस्ट में बदलना और आपसे काम के सवाल पूछना — इसमें ये बहुत अच्छा है। कल का भाव इसे नहीं पता, और ये पूरे भरोसे के साथ ग़लत भी हो सकता है। इसलिए इस कोर्स का एक नियम है: AI = एनालिस्ट, इंसान = ट्रिगर। AI ड्राफ़्ट तैयार करता है; जाँचते आप हैं, और कुछ होगा या नहीं, ये फ़ैसला सिर्फ़ आपका है।"
+    "en": "An AI chat such as ChatGPT, Claude or Gemini runs on a large language model (LLM): software trained on huge amounts of text to write replies. It is very good at summarising a long document, explaining a term in simple words, turning messy notes into a checklist and asking you useful questions. It does not know tomorrow's price, and it can be wrong while sounding completely sure. So this course has one rule: AI = analyst, human = trigger. The AI prepares a draft; you check it, and only you decide whether anything happens. You steer this analyst with a prompt in four parts: context (the source you paste), task (one clear job), format (how the answer must look) and guardrails (what the AI must not do).",
+    "hi": "ChatGPT, Claude ya Gemini jaisa AI chat ek large language model (LLM) par chalta hai: aisa software jise bahut saare text par train kiya gaya hai, taaki woh jawab likh sake. Lambe document ka summary banana, kisi term ko aasaan shabdon mein samjhana, bikhre notes ko checklist mein badalna aur aapse kaam ke sawaal poochna — ismein yeh bahut achha hai. Kal ka price ise nahi pata, aur yeh poore confidence ke saath galat bhi ho sakta hai. Isliye is course ka ek rule hai: AI = analyst, insaan = trigger. AI draft taiyaar karta hai; check aap karte hain, aur kuch hoga ya nahi, yeh faisla sirf aapka hai. Is analyst ko aap prompt se chalaate hain, jiske chaar hisse hain: context (jo source aap paste karte hain), task (ek saaf kaam), format (jawab kaisa dikhe) aur guardrails (AI kya nahi karega).",
+    "dv": "ChatGPT, Claude या Gemini जैसा AI चैट एक लार्ज लैंग्वेज मॉडल (LLM) पर चलता है: ऐसा सॉफ़्टवेयर जिसे ढेर सारे टेक्स्ट पर ट्रेन किया गया है, ताकि वो जवाब लिख सके। लंबे डॉक्यूमेंट का सार बनाना, किसी शब्द को आसान भाषा में समझाना, बिखरे नोट्स को चेकलिस्ट में बदलना और आपसे काम के सवाल पूछना — इसमें ये बहुत अच्छा है। कल का भाव इसे नहीं पता, और ये पूरे भरोसे के साथ ग़लत भी हो सकता है। इसलिए इस कोर्स का एक नियम है: AI = एनालिस्ट, इंसान = ट्रिगर। AI ड्राफ़्ट तैयार करता है; जाँचते आप हैं, और कुछ होगा या नहीं, ये फ़ैसला सिर्फ़ आपका है। इस एनालिस्ट को आप प्रॉम्प्ट से चलाते हैं, जिसके चार हिस्से हैं: कॉन्टेक्स्ट (जो सोर्स आप पेस्ट करते हैं), टास्क (एक साफ़ काम), फ़ॉर्मेट (जवाब कैसा दिखे) और गार्डरेल (AI क्या नहीं करेगा)।"
    },
    "example": {
-    "en": "Listed companies publish their results every quarter (every 3 months) and file them on the NSE and BSE websites, usually with a short press release. Revenue means total sales; profit is what is left after all costs. Aman typed: 'What do you think of Bharat Pumps?' He got a long, confident opinion he could not check. Priya pasted the company's results press release and wrote: 'Using only this text, give me up to 3 facts with the sentence each one comes from, up to 2 forecasts from the text marked Guess, and write missing for anything not in the text. No buy or sell view.' Her prompt has three parts: context (the pasted text), task (up to 3 facts, up to 2 forecasts) and format (quote, label, 'missing'). When the reply said 'profit Rs 26 crore', the quoted sentence sat right beside it, so she checked it in seconds.",
-    "hi": "Listed companies har quarter (har 3 mahine) apne results NSE aur BSE ki website par file karti hain, aksar ek chhoti press release ke saath. Revenue yaani kul bikri; profit yaani saare kharche nikaalne ke baad jo bacha. Aman ne type kiya: 'Bharat Pumps ka kya lagta hai?' Jawab mein ek lamba, confident opinion aa gaya, jise woh check hi nahi kar sakta tha. Priya ne company ki results press release paste ki aur likha: 'Sirf is text se zyada se zyada 3 facts do, har fact ke saath woh sentence jahan se liya; text mein forecasts hon toh zyada se zyada 2, Guess likhkar do; aur jo text mein nahi hai, wahan missing likho. Koi buy ya sell view nahi.' Uske prompt ke teen hisse hain: context (paste kiya hua text), task (zyada se zyada 3 facts, 2 forecasts) aur format (sentence, label, 'missing'). Jab jawab mein 'profit Rs 26 crore' aaya, toh uska sentence bhi saath mein tha, isliye usne kuch hi second mein check kar liya.",
-    "dv": "लिस्टेड कंपनियाँ हर क्वार्टर (हर 3 महीने) अपने रिज़ल्ट NSE और BSE की वेबसाइट पर फ़ाइल करती हैं, अक्सर एक छोटी प्रेस रिलीज़ के साथ। रेवेन्यू यानी कुल बिक्री; प्रॉफ़िट यानी सारे ख़र्च निकालने के बाद जो बचा। अमन ने टाइप किया: 'Bharat Pumps के बारे में क्या लगता है?' जवाब में एक लंबी, कॉन्फ़िडेंट राय आ गई, जिसे वो जाँच ही नहीं सकता था। प्रिया ने कंपनी की रिज़ल्ट प्रेस रिलीज़ पेस्ट की और लिखा: 'सिर्फ़ इस टेक्स्ट से ज़्यादा से ज़्यादा 3 फ़ैक्ट दो, हर फ़ैक्ट के साथ वो वाक्य जहाँ से लिया; टेक्स्ट में अनुमान हों तो ज़्यादा से ज़्यादा 2, गेस लिखकर दो; और जो टेक्स्ट में नहीं है, वहाँ missing लिखो। कोई बाय या सेल राय नहीं।' उसके प्रॉम्प्ट के तीन हिस्से हैं: कॉन्टेक्स्ट (पेस्ट किया हुआ टेक्स्ट), टास्क (ज़्यादा से ज़्यादा 3 फ़ैक्ट, 2 अनुमान) और फ़ॉर्मेट (वाक्य, लेबल, 'missing')। जब जवाब में 'प्रॉफ़िट Rs 26 करोड़' आया, तो उसका वाक्य भी साथ में था, इसलिए उसने कुछ ही सेकंड में जाँच लिया।"
+    "en": "Listed companies publish their results every quarter (every 3 months) and file them on the NSE and BSE websites, usually with a short press release. Revenue means total sales; profit is what is left after all costs. Aman typed: 'What do you think of Bharat Pumps?' He got a long, confident opinion he could not check. Priya pasted the company's results press release and wrote: 'Using only this text, give me up to 3 facts with the sentence each one comes from, up to 2 forecasts from the text marked Guess, and write missing for anything not in the text. No buy or sell view.' Her prompt has all four parts: context (the pasted text), task (up to 3 facts, up to 2 forecasts), format (quote, label, 'missing') and guardrails (only this text, no buy or sell view). When the reply said 'profit Rs 26 crore', the quoted sentence sat right beside it, so she checked it in seconds.",
+    "hi": "Listed companies har quarter (har 3 mahine) apne results NSE aur BSE ki website par file karti hain, aksar ek chhoti press release ke saath. Revenue yaani kul bikri; profit yaani saare kharche nikaalne ke baad jo bacha. Aman ne type kiya: 'Bharat Pumps ka kya lagta hai?' Jawab mein ek lamba, confident opinion aa gaya, jise woh check hi nahi kar sakta tha. Priya ne company ki results press release paste ki aur likha: 'Sirf is text se zyada se zyada 3 facts do, har fact ke saath woh sentence jahan se liya; text mein forecasts hon toh zyada se zyada 2, Guess likhkar do; aur jo text mein nahi hai, wahan missing likho. Koi buy ya sell view nahi.' Uske prompt mein chaaron hisse hain: context (paste kiya hua text), task (zyada se zyada 3 facts, 2 forecasts), format (sentence, label, 'missing') aur guardrails (sirf yahi text, koi buy ya sell view nahi). Jab jawab mein 'profit Rs 26 crore' aaya, toh uska sentence bhi saath mein tha, isliye usne kuch hi second mein check kar liya.",
+    "dv": "लिस्टेड कंपनियाँ हर क्वार्टर (हर 3 महीने) अपने रिज़ल्ट NSE और BSE की वेबसाइट पर फ़ाइल करती हैं, अक्सर एक छोटी प्रेस रिलीज़ के साथ। रेवेन्यू यानी कुल बिक्री; प्रॉफ़िट यानी सारे ख़र्च निकालने के बाद जो बचा। अमन ने टाइप किया: 'Bharat Pumps के बारे में क्या लगता है?' जवाब में एक लंबी, कॉन्फ़िडेंट राय आ गई, जिसे वो जाँच ही नहीं सकता था। प्रिया ने कंपनी की रिज़ल्ट प्रेस रिलीज़ पेस्ट की और लिखा: 'सिर्फ़ इस टेक्स्ट से ज़्यादा से ज़्यादा 3 फ़ैक्ट दो, हर फ़ैक्ट के साथ वो वाक्य जहाँ से लिया; टेक्स्ट में अनुमान हों तो ज़्यादा से ज़्यादा 2, गेस लिखकर दो; और जो टेक्स्ट में नहीं है, वहाँ missing लिखो। कोई बाय या सेल राय नहीं।' उसके प्रॉम्प्ट में चारों हिस्से हैं: कॉन्टेक्स्ट (पेस्ट किया हुआ टेक्स्ट), टास्क (ज़्यादा से ज़्यादा 3 फ़ैक्ट, 2 अनुमान), फ़ॉर्मेट (वाक्य, लेबल, 'missing') और गार्डरेल (सिर्फ़ यही टेक्स्ट, कोई बाय या सेल राय नहीं)। जब जवाब में 'प्रॉफ़िट Rs 26 करोड़' आया, तो उसका वाक्य भी साथ में था, इसलिए उसने कुछ ही सेकंड में जाँच लिया।"
    },
    "remember": {
     "en": "The AI drafts. You check. You decide. No AI answer ever goes straight into an order.",
@@ -500,9 +500,9 @@
     "dv": "डेटा हाइजीन: AI में क्या कभी नहीं डालना"
    },
    "p": {
-    "en": "Data hygiene means keeping your personal and financial details out of places they do not need to go. Whatever you type or upload into an AI chat may be stored on the company's servers, used to improve the product, or exposed in a leak. Never paste your PAN, Aadhaar, bank account number, client ID (your login ID with the broker), passwords, OTPs, TPIN or API keys (secret codes that let an app act on your account), and never upload a contract note or screenshot that shows them. Public text is fine: a company's press release, an index level, a made-up practice trade. If you need help with a personal document, type only the part you need and leave your identity out.",
-    "hi": "Data hygiene ka matlab hai apni personal aur financial details ko wahan na jaane dena jahan unki zaroorat hi nahi. AI chat mein aap jo bhi type ya upload karte hain, woh company ke servers par store ho sakta hai, product sudhaarne mein use ho sakta hai, ya kisi leak mein bahar aa sakta hai. PAN, Aadhaar, bank account number, client ID (broker ke saath aapki login ID), passwords, OTP, TPIN ya API keys (woh secret code jinse koi app aapke account par kaam kar sakta hai) kabhi paste mat kijiye, aur aisa contract note ya screenshot bhi upload mat kijiye jismein yeh dikhte hon. Public text theek hai: company ki press release, index ka level, ek made-up practice trade. Kisi personal document mein madad chahiye, toh sirf zaroori hissa type kijiye aur apni pehchaan bahar rakhiye.",
-    "dv": "डेटा हाइजीन का मतलब है अपनी निजी और पैसों से जुड़ी जानकारी को वहाँ न जाने देना, जहाँ उसकी ज़रूरत ही नहीं। AI चैट में आप जो भी टाइप या अपलोड करते हैं, वो कंपनी के सर्वर पर सेव हो सकता है, प्रोडक्ट सुधारने में इस्तेमाल हो सकता है, या किसी लीक में बाहर आ सकता है। PAN, आधार, बैंक अकाउंट नंबर, क्लाइंट ID (ब्रोकर के साथ आपकी लॉगिन ID), पासवर्ड, OTP, TPIN या API key (वो सीक्रेट कोड जिससे कोई ऐप आपके अकाउंट पर काम कर सकता है) कभी पेस्ट मत कीजिए, और ऐसा कॉन्ट्रैक्ट नोट या स्क्रीनशॉट भी अपलोड मत कीजिए जिसमें ये दिखते हों। पब्लिक टेक्स्ट ठीक है: कंपनी की प्रेस रिलीज़, इंडेक्स का लेवल, एक काल्पनिक प्रैक्टिस ट्रेड। किसी निजी डॉक्यूमेंट में मदद चाहिए, तो सिर्फ़ ज़रूरी हिस्सा टाइप कीजिए और अपनी पहचान बाहर रखिए।"
+    "en": "Data hygiene means keeping your personal and financial details out of places they do not need to go. Whatever you type or upload into an AI chat may be stored on the company's servers, used to improve the product, or exposed in a leak. Where your AI app allows it, use a temporary chat or switch off training on your chats; that still does not make a PAN, OTP or password safe to paste. Never paste your PAN, Aadhaar, bank account number, client ID (your login ID with the broker), passwords, OTPs, TPIN or API keys (secret codes that let an app act on your account), and never upload a contract note or screenshot that shows them. Public text is fine: a company's press release, an index level, a made-up practice trade. If you need help with a personal document, type only the part you need and leave your identity out.",
+    "hi": "Data hygiene ka matlab hai apni personal aur financial details ko wahan na jaane dena jahan unki zaroorat hi nahi. AI chat mein aap jo bhi type ya upload karte hain, woh company ke servers par store ho sakta hai, product sudhaarne mein use ho sakta hai, ya kisi leak mein bahar aa sakta hai. Jahan aapka AI app allow kare, temporary chat use kijiye ya apni chats par training off kar dijiye; lekin isse bhi PAN, OTP ya password paste karna safe nahi ho jaata. PAN, Aadhaar, bank account number, client ID (broker ke saath aapki login ID), passwords, OTP, TPIN ya API keys (woh secret code jinse koi app aapke account par kaam kar sakta hai) kabhi paste mat kijiye, aur aisa contract note ya screenshot bhi upload mat kijiye jismein yeh dikhte hon. Public text theek hai: company ki press release, index ka level, ek made-up practice trade. Kisi personal document mein madad chahiye, toh sirf zaroori hissa type kijiye aur apni pehchaan bahar rakhiye.",
+    "dv": "डेटा हाइजीन का मतलब है अपनी निजी और पैसों से जुड़ी जानकारी को वहाँ न जाने देना, जहाँ उसकी ज़रूरत ही नहीं। AI चैट में आप जो भी टाइप या अपलोड करते हैं, वो कंपनी के सर्वर पर सेव हो सकता है, प्रोडक्ट सुधारने में इस्तेमाल हो सकता है, या किसी लीक में बाहर आ सकता है। जहाँ आपका AI ऐप इजाज़त दे, टेम्परेरी चैट इस्तेमाल कीजिए या अपनी चैट पर ट्रेनिंग बंद कर दीजिए; लेकिन इससे भी PAN, OTP या पासवर्ड पेस्ट करना सुरक्षित नहीं हो जाता। PAN, आधार, बैंक अकाउंट नंबर, क्लाइंट ID (ब्रोकर के साथ आपकी लॉगिन ID), पासवर्ड, OTP, TPIN या API key (वो सीक्रेट कोड जिससे कोई ऐप आपके अकाउंट पर काम कर सकता है) कभी पेस्ट मत कीजिए, और ऐसा कॉन्ट्रैक्ट नोट या स्क्रीनशॉट भी अपलोड मत कीजिए जिसमें ये दिखते हों। पब्लिक टेक्स्ट ठीक है: कंपनी की प्रेस रिलीज़, इंडेक्स का लेवल, एक काल्पनिक प्रैक्टिस ट्रेड। किसी निजी डॉक्यूमेंट में मदद चाहिए, तो सिर्फ़ ज़रूरी हिस्सा टाइप कीजिए और अपनी पहचान बाहर रखिए।"
    },
    "example": {
     "en": "Priya's uncle bought Rs 25,000 worth of Gupta Cement shares and asks her to 'put the contract note in AI' so he can understand the charges. The PDF shows his name, PAN, client code and address. Priya does not upload it. She types only the names of the charge lines (brokerage, STT, exchange charges, GST, stamp duty) and asks what each one pays for. The AI's explanation needed none of his identity; a fraudster would have wanted all of it.",
@@ -610,6 +610,91 @@
     "en": "Never forward an AI answer as a buy or sell call. Any accuracy promise goes in the Kachra bin.",
     "hi": "AI ka jawab kabhi buy ya sell call bana kar forward mat kijiye. Accuracy ka har vada Kachra ke dabbe mein.",
     "dv": "AI का जवाब कभी बाय या सेल कॉल बनाकर फ़ॉरवर्ड मत कीजिए। एक्यूरेसी का हर वादा कचरे के डिब्बे में।"
+   },
+   "visual": {
+    "kind": "compare",
+    "title": {
+     "en": "Registered research vs an AI-costume scam",
+     "hi": "Registered research vs AI ke bhes mein scam",
+     "dv": "रजिस्टर्ड रिसर्च बनाम AI के भेस में स्कैम"
+    },
+    "caption": {
+     "en": "A number on the page is only a start: check it yourself on SEBI's website (Day 7). Fakes copy real names and numbers too.",
+     "hi": "Page par likha number sirf shuruaat hai: use khud SEBI ki website par check kijiye (Day 7). Nakli log asli naam aur number bhi copy kar lete hain.",
+     "dv": "पेज पर लिखा नंबर सिर्फ़ शुरुआत है: उसे ख़ुद SEBI की वेबसाइट पर जाँचिए (दिन 7)। नक़ली लोग असली नाम और नंबर भी कॉपी कर लेते हैं।"
+    },
+    "cols": [
+     {
+      "head": {
+       "en": "Registered research report",
+       "hi": "Registered research report",
+       "dv": "रजिस्टर्ड रिसर्च रिपोर्ट"
+      },
+      "tone": "up",
+      "points": [
+       {
+        "en": "SEBI number (INH or INA) you can check",
+        "hi": "SEBI number (INH ya INA) jo check ho sake",
+        "dv": "SEBI नंबर (INH या INA) जो जाँचा जा सके"
+       },
+       {
+        "en": "Analyst's name and firm stated",
+        "hi": "Analyst ka naam aur firm likhi hoti hai",
+        "dv": "एनालिस्ट का नाम और फ़र्म लिखी होती है"
+       },
+       {
+        "en": "Disclosures and risk warnings",
+        "hi": "Disclosures aur risk ki chetavni",
+        "dv": "डिस्क्लोज़र और रिस्क की चेतावनी"
+       },
+       {
+        "en": "No promise of accuracy or profit",
+        "hi": "Accuracy ya profit ka koi vada nahi",
+        "dv": "एक्यूरेसी या मुनाफ़े का कोई वादा नहीं"
+       },
+       {
+        "en": "Fee to an account in the registered name",
+        "hi": "Fees registered naam wale account mein",
+        "dv": "फ़ीस रजिस्टर्ड नाम वाले अकाउंट में"
+       }
+      ]
+     },
+     {
+      "head": {
+       "en": "AI-costume scam",
+       "hi": "AI ke bhes mein scam",
+       "dv": "AI के भेस में स्कैम"
+      },
+      "tone": "down",
+      "points": [
+       {
+        "en": "'95% accurate AI bot'",
+        "hi": "'95% accurate AI bot'",
+        "dv": "'95% सही AI बॉट'"
+       },
+       {
+        "en": "Glossy report, no number you can check",
+        "hi": "Chamakdaar report, check karne layak number nahi",
+        "dv": "चमकदार रिपोर्ट, जाँचने लायक़ नंबर नहीं"
+       },
+       {
+        "en": "Deepfake video of a famous face",
+        "hi": "Mashhoor chehre ka deepfake video",
+        "dv": "मशहूर चेहरे का डीपफ़ेक वीडियो"
+       },
+       {
+        "en": "Countdown: 'join before midnight'",
+        "hi": "Ulti ginti: 'raat 12 se pehle join karo'",
+        "dv": "उल्टी गिनती: 'रात 12 बजे से पहले जॉइन करो'"
+       },
+       {
+        "en": "Pay to a personal UPI ID",
+        "hi": "Personal UPI ID par payment",
+        "dv": "पर्सनल UPI ID पर पेमेंट"
+       }
+      ]
+     }
+    ]
    }
   }
  ],
@@ -624,6 +709,18 @@
     "en": "Large language model: software trained on huge amounts of text to write replies; AI chats such as ChatGPT, Claude or Gemini run on one. Strong with language, blind to the future.",
     "hi": "Large language model: bahut saare text par train hua software jo jawab likhta hai; ChatGPT, Claude ya Gemini jaise AI chat isi par chalte hain. Bhasha mein tez, future ke baare mein andha.",
     "dv": "लार्ज लैंग्वेज मॉडल: ढेर सारे टेक्स्ट पर ट्रेन हुआ सॉफ़्टवेयर जो जवाब लिखता है; ChatGPT, Claude या Gemini जैसे AI चैट इसी पर चलते हैं। भाषा में तेज़, भविष्य के बारे में अंधा।"
+   }
+  },
+  {
+   "term": {
+    "en": "Prompt (4 parts)",
+    "hi": "Prompt (4 hisse)",
+    "dv": "प्रॉम्प्ट (4 हिस्से)"
+   },
+   "meaning": {
+    "en": "Your instruction to an AI: context (paste the source), task (one clear job), format (quote each number, label it Fact, Guess or Kachra, write 'missing') and guardrails (no buy or sell view, no targets, nothing from outside the text).",
+    "hi": "AI ko diya gaya aapka instruction: context (source paste kijiye), task (ek saaf kaam), format (har number ka quote, Fact, Guess ya Kachra ka label, 'missing') aur guardrails (koi buy ya sell view nahi, koi target nahi, text ke bahar se kuch nahi).",
+    "dv": "AI को दिया गया आपका निर्देश: कॉन्टेक्स्ट (सोर्स पेस्ट कीजिए), टास्क (एक साफ़ काम), फ़ॉर्मेट (हर नंबर का कोट, फ़ैक्ट, गेस या कचरा का लेबल, 'missing') और गार्डरेल (कोई बाय या सेल राय नहीं, कोई टारगेट नहीं, टेक्स्ट के बाहर से कुछ नहीं)।"
    }
   },
   {
@@ -685,6 +782,18 @@
     "hi": "PAN, Aadhaar, OTP, passwords, client ID aur API keys ko har AI tool aur chat se door rakhna.",
     "dv": "PAN, आधार, OTP, पासवर्ड, क्लाइंट ID और API key को हर AI टूल और चैट से दूर रखना।"
    }
+  },
+  {
+   "term": {
+    "en": "Deepfake",
+    "hi": "Deepfake",
+    "dv": "डीपफ़ेक"
+   },
+   "meaning": {
+    "en": "An AI-made video, photo or voice that copies a real person. Scammers use famous faces to pull people into 'investment groups'; treat any such invite as Kachra until you have checked it.",
+    "hi": "AI se bana video, photo ya awaaz jo kisi asli insaan ki nakal kare. Scammers mashhoor chehron se logon ko 'investment groups' mein kheenchte hain; aisa har invite check karne tak Kachra hi maaniye.",
+    "dv": "AI से बना वीडियो, फ़ोटो या आवाज़ जो किसी असली इंसान की नक़ल करे। धोखेबाज़ मशहूर चेहरों से लोगों को 'इन्वेस्टमेंट ग्रुप' में खींचते हैं; ऐसा हर न्योता जाँचने तक कचरा ही मानिए।"
+   }
   }
  ],
  "mindmap": {
@@ -709,9 +818,9 @@
       "dv": "AI ड्राफ़्ट करे, फ़ैसला आप"
      },
      {
-      "en": "Context, task, format",
-      "hi": "Context, task, format",
-      "dv": "कॉन्टेक्स्ट, टास्क, फ़ॉर्मेट"
+      "en": "Prompt: context, task, format, guardrails",
+      "hi": "Prompt: context, task, format, guardrails",
+      "dv": "प्रॉम्प्ट: कॉन्टेक्स्ट, टास्क, फ़ॉर्मेट, गार्डरेल"
      },
      {
       "en": "No arrow to the order",
@@ -817,6 +926,11 @@
       "en": "Public text yes, identity no",
       "hi": "Public text haan, pehchaan nahi",
       "dv": "पब्लिक टेक्स्ट हाँ, पहचान नहीं"
+     },
+     {
+      "en": "Temporary chat helps; PAN still never",
+      "hi": "Temporary chat theek; PAN phir bhi nahi",
+      "dv": "टेम्परेरी चैट ठीक; PAN फिर भी नहीं"
      }
     ]
    },
@@ -839,6 +953,11 @@
       "dv": "एक्यूरेसी का वादा = कचरा"
      },
      {
+      "en": "Deepfake invite = Kachra till checked",
+      "hi": "Deepfake invite = check tak Kachra",
+      "dv": "डीपफ़ेक न्योता = जाँच तक कचरा"
+     },
+     {
       "en": "Day 7: full scam audit",
       "hi": "Day 7: poora scam audit",
       "dv": "दिन 7: पूरा स्कैम ऑडिट"
@@ -848,9 +967,9 @@
   ]
  },
  "kaam": {
-  "en": "Sort one real results press release into Fact, Guess and Kachra with an AI, check its numbers yourself, set a hallucination trap, and make your 3-gate card.",
-  "hi": "AI ke saath ek asli results press release ko Fact, Guess aur Kachra mein chhaantiye, uske numbers khud check kijiye, ek hallucination trap lagaiye, aur apna 3-gate card banaiye.",
-  "dv": "AI के साथ एक असली रिज़ल्ट प्रेस रिलीज़ को फ़ैक्ट, गेस और कचरा में छाँटिए, उसके नंबर ख़ुद जाँचिए, एक हैलुसिनेशन ट्रैप लगाइए, और अपना 3-गेट कार्ड बनाइए।"
+  "en": "Sort one real results press release into Fact, Guess and Kachra with an AI, check its numbers yourself in a 3-gate log, set a hallucination trap, and write your first 4-part prompt.",
+  "hi": "AI ke saath ek asli results press release ko Fact, Guess aur Kachra mein chhaantiye, uske numbers khud check karke 3-gate log mein likhiye, ek hallucination trap lagaiye, aur apna pehla 4-hisson wala prompt likhiye.",
+  "dv": "AI के साथ एक असली रिज़ल्ट प्रेस रिलीज़ को फ़ैक्ट, गेस और कचरा में छाँटिए, उसके नंबर ख़ुद जाँचकर 3-गेट लॉग में लिखिए, एक हैलुसिनेशन ट्रैप लगाइए, और अपना पहला 4 हिस्सों वाला प्रॉम्प्ट लिखिए।"
  },
  "kaam_steps": [
   {
@@ -864,9 +983,9 @@
    "dv": "उसे किसी भी AI चैट में AI Lab के 'फ़ैक्ट, गेस या कचरा सॉर्टर' प्रॉम्प्ट के साथ पेस्ट कीजिए, और जो तीन लिस्ट आएँ, उन्हें पढ़िए।"
   },
   {
-   "en": "Pick two numbers the AI labelled Fact, find each one in the original release, and write down whether both matched.",
-   "hi": "AI ne jin numbers ko Fact kaha, unmein se do chuniye, dono ko original release mein dhoondhiye, aur likhiye ki dono match hue ya nahi.",
-   "dv": "AI ने जिन नंबरों को फ़ैक्ट कहा, उनमें से दो चुनिए, दोनों को असली रिलीज़ में ढूँढिए, और लिखिए कि दोनों मेल खाए या नहीं।"
+   "en": "Pick two numbers the AI labelled Fact, find each one in the original release, and write both into the 3-gate check log under 'Your template', with whether they matched.",
+   "hi": "AI ne jin numbers ko Fact kaha, unmein se do chuniye, dono ko original release mein dhoondhiye, aur dono ko 'Aapka template' ke 3-gate check log mein likhiye, saath mein yeh bhi ki match hue ya nahi.",
+   "dv": "AI ने जिन नंबरों को फ़ैक्ट कहा, उनमें से दो चुनिए, दोनों को असली रिलीज़ में ढूँढिए, और दोनों को 'आपका टेम्पलेट' के 3-गेट जाँच लॉग में लिखिए, साथ में ये भी कि मेल खाए या नहीं।"
   },
   {
    "en": "If the release gives this year's and last year's profit, work out the growth on your phone calculator: (new - old) ÷ old x 100. Does it match the % the AI gave?",
@@ -879,16 +998,292 @@
    "dv": "'हैलुसिनेशन ट्रैप' प्रॉम्प्ट चलाइए; उसमें जो सर्कुलर है, वो है ही नहीं। जर्नल में लिखिए कि AI ने उसके लिए नियम गढ़ दिए या नहीं।"
   },
   {
-   "en": "On a small card or in your phone notes, write the 3 gates (Source? Check in 30 seconds? Cost if wrong?) and keep it beside your screen.",
-   "hi": "Ek chhote card par ya phone notes mein 3 gates likhiye (Source? 30 second mein check? Galat hua toh nuksaan?) aur use screen ke paas rakhiye.",
-   "dv": "एक छोटे कार्ड पर या फ़ोन नोट्स में 3 गेट लिखिए (सोर्स? 30 सेकंड में जाँच? ग़लत हुआ तो नुक़सान?) और उसे स्क्रीन के पास रखिए।"
+   "en": "In the 'Your version' column of the Safe prompt card, write your own 4-part prompt for one question you still have about the release, then tick that it has context, task, format and guardrails.",
+   "hi": "Safe prompt card ke 'Aapka version' column mein, release ke baare mein apne kisi ek bache hue sawaal ke liye apna 4-hisson wala prompt likhiye, phir tick kijiye ki usmein context, task, format aur guardrails chaaron hain.",
+   "dv": "सुरक्षित प्रॉम्प्ट कार्ड के 'आपका वर्ज़न' कॉलम में, रिलीज़ के बारे में अपने किसी एक बचे हुए सवाल के लिए अपना 4 हिस्सों वाला प्रॉम्प्ट लिखिए, फिर टिक कीजिए कि उसमें कॉन्टेक्स्ट, टास्क, फ़ॉर्मेट और गार्डरेल चारों हैं।"
   }
  ],
- "kaam_min": 30,
+ "kaam_min": 35,
+ "artefacts": [
+  {
+   "title": {
+    "en": "Safe prompt card: 4 parts",
+    "hi": "Safe prompt card: 4 hisse",
+    "dv": "सुरक्षित प्रॉम्प्ट कार्ड: 4 हिस्से"
+   },
+   "note": {
+    "en": "Use all four parts in every prompt in this course. Guardrails are never optional.",
+    "hi": "Is course ke har prompt mein chaaron hisse rakhiye. Guardrails kabhi optional nahi.",
+    "dv": "इस कोर्स के हर प्रॉम्प्ट में चारों हिस्से रखिए। गार्डरेल कभी ऑप्शनल नहीं।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Part",
+      "hi": "Hissa",
+      "dv": "हिस्सा"
+     },
+     {
+      "en": "What it does",
+      "hi": "Kya karta hai",
+      "dv": "क्या करता है"
+     },
+     {
+      "en": "Priya's prompt",
+      "hi": "Priya ka prompt",
+      "dv": "प्रिया का प्रॉम्प्ट"
+     },
+     {
+      "en": "Your version",
+      "hi": "Aapka version",
+      "dv": "आपका वर्ज़न"
+     }
+    ],
+    "rows": [
+     [
+      {
+       "en": "Context",
+       "hi": "Context",
+       "dv": "कॉन्टेक्स्ट"
+      },
+      {
+       "en": "Hands the AI your source, so it need not guess",
+       "hi": "AI ko aapka source deta hai, taaki use guess na karna pade",
+       "dv": "AI को आपका सोर्स देता है, ताकि उसे अंदाज़ा न लगाना पड़े"
+      },
+      {
+       "en": "The full results press release, pasted",
+       "hi": "Poori results press release, paste ki hui",
+       "dv": "पूरी रिज़ल्ट प्रेस रिलीज़, पेस्ट की हुई"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "Task",
+       "hi": "Task",
+       "dv": "टास्क"
+      },
+      {
+       "en": "One clear job, with a limit",
+       "hi": "Ek saaf kaam, ek limit ke saath",
+       "dv": "एक साफ़ काम, एक सीमा के साथ"
+      },
+      {
+       "en": "Up to 3 facts and up to 2 forecasts",
+       "hi": "Zyada se zyada 3 facts aur 2 forecasts",
+       "dv": "ज़्यादा से ज़्यादा 3 फ़ैक्ट और 2 अनुमान"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "Format",
+       "hi": "Format",
+       "dv": "फ़ॉर्मेट"
+      },
+      {
+       "en": "How the answer must look, so you can check it fast",
+       "hi": "Jawab kaisa dikhe, taaki aap jaldi check kar sakein",
+       "dv": "जवाब कैसा दिखे, ताकि आप जल्दी जाँच सकें"
+      },
+      {
+       "en": "Quote each sentence; label Guess; write 'missing'",
+       "hi": "Har sentence ka quote; Guess ka label; 'missing' likho",
+       "dv": "हर वाक्य का कोट; गेस का लेबल; 'missing' लिखो"
+      },
+      ""
+     ],
+     [
+      {
+       "en": "Guardrails",
+       "hi": "Guardrails",
+       "dv": "गार्डरेल"
+      },
+      {
+       "en": "What the AI must not do",
+       "hi": "AI ko kya nahi karna hai",
+       "dv": "AI को क्या नहीं करना है"
+      },
+      {
+       "en": "Only this text; no buy or sell view",
+       "hi": "Sirf yahi text; koi buy ya sell view nahi",
+       "dv": "सिर्फ़ यही टेक्स्ट; कोई बाय या सेल राय नहीं"
+      },
+      ""
+     ]
+    ],
+    "note": {
+     "en": "Never put your PAN, OTP, password or client ID into the context.",
+     "hi": "Context mein apna PAN, OTP, password ya client ID kabhi mat daaliye.",
+     "dv": "कॉन्टेक्स्ट में अपना PAN, OTP, पासवर्ड या क्लाइंट ID कभी मत डालिए।"
+    }
+   }
+  },
+  {
+   "title": {
+    "en": "3-gate check log",
+    "hi": "3-gate check log",
+    "dv": "3-गेट जाँच लॉग"
+   },
+   "note": {
+    "en": "Log every AI number here before it goes into your notes. The first four rows come from today's lesson, already sorted.",
+    "hi": "Har AI number notes mein jaane se pehle yahan log kijiye. Pehli chaar rows aaj ke lesson se hain, pehle se chhaanti hui.",
+    "dv": "हर AI नंबर नोट्स में जाने से पहले यहाँ लॉग कीजिए। पहली चार रो आज के पाठ से हैं, पहले से छाँटी हुई।"
+   },
+   "visual": {
+    "kind": "table",
+    "head": [
+     {
+      "en": "Claim",
+      "hi": "Claim",
+      "dv": "दावा"
+     },
+     {
+      "en": "1. Source?",
+      "hi": "1. Source?",
+      "dv": "1. सोर्स?"
+     },
+     {
+      "en": "2. Matches source?",
+      "hi": "2. Source se match?",
+      "dv": "2. सोर्स से मेल?"
+     },
+     {
+      "en": "3. Cost if wrong",
+      "hi": "3. Galat hua toh nuksaan",
+      "dv": "3. ग़लत हुआ तो नुक़सान"
+     },
+     {
+      "en": "Bin",
+      "hi": "Dabba",
+      "dv": "डिब्बा"
+     }
+    ],
+    "rows": [
+     [
+      {
+       "en": "AI: Bharat Pumps profit up 40%",
+       "hi": "AI: Bharat Pumps profit 40% upar",
+       "dv": "AI: Bharat Pumps प्रॉफ़िट 40% ऊपर"
+      },
+      {
+       "en": "None given",
+       "hi": "Koi nahi diya",
+       "dv": "कोई नहीं दिया"
+      },
+      {
+       "en": "No: release says Rs 26 cr vs Rs 25 cr, so 4%",
+       "hi": "Nahi: release mein Rs 26 cr vs Rs 25 cr, yaani 4%",
+       "dv": "नहीं: रिलीज़ में Rs 26 करोड़ बनाम Rs 25 करोड़, यानी 4%"
+      },
+      {
+       "en": "High, if a trade is built on it",
+       "hi": "Zyada, agar iske bharose trade ho",
+       "dv": "ज़्यादा, अगर इसके भरोसे ट्रेड हो"
+      },
+      {
+       "en": "Kachra",
+       "hi": "Kachra",
+       "dv": "कचरा"
+      }
+     ],
+     [
+      {
+       "en": "Kiran Foods revenue Rs 420 cr vs Rs 380 cr",
+       "hi": "Kiran Foods revenue Rs 420 cr vs Rs 380 cr",
+       "dv": "Kiran Foods रेवेन्यू Rs 420 करोड़ बनाम Rs 380 करोड़"
+      },
+      {
+       "en": "Results filing on NSE",
+       "hi": "NSE par results filing",
+       "dv": "NSE पर रिज़ल्ट फ़ाइलिंग"
+      },
+      {
+       "en": "Yes: matches; growth 10.5%",
+       "hi": "Haan: match; growth 10.5%",
+       "dv": "हाँ: मेल खाया; ग्रोथ 10.5%"
+      },
+      {
+       "en": "Low: it is only a note",
+       "hi": "Kam: sirf ek note hai",
+       "dv": "कम: सिर्फ़ एक नोट है"
+      },
+      {
+       "en": "Fact",
+       "hi": "Fact",
+       "dv": "फ़ैक्ट"
+      }
+     ],
+     [
+      {
+       "en": "'Strong festive demand expected'",
+       "hi": "'Festive demand achhi rehne ki umeed'",
+       "dv": "'त्योहारों में अच्छी डिमांड की उम्मीद'"
+      },
+      {
+       "en": "Same filing",
+       "hi": "Wahi filing",
+       "dv": "वही फ़ाइलिंग"
+      },
+      {
+       "en": "Said, yes; cannot be checked today",
+       "hi": "Kaha zaroor; aaj check nahi ho sakta",
+       "dv": "कहा ज़रूर; आज जाँचा नहीं जा सकता"
+      },
+      {
+       "en": "Medium, if you bet on it",
+       "hi": "Medium, agar iske bharose daav lagayein",
+       "dv": "बीच का, अगर इसके भरोसे दाँव लगाएँ"
+      },
+      {
+       "en": "Guess",
+       "hi": "Guess",
+       "dv": "गेस"
+      }
+     ],
+     [
+      {
+       "en": "'AI bot, 95% accurate'",
+       "hi": "'AI bot, 95% accurate'",
+       "dv": "'AI बॉट, 95% सही'"
+      },
+      {
+       "en": "Telegram ad",
+       "hi": "Telegram ad",
+       "dv": "Telegram विज्ञापन"
+      },
+      {
+       "en": "No record of losses, no SEBI number",
+       "hi": "Losses ka record nahi, SEBI number nahi",
+       "dv": "लॉस का रिकॉर्ड नहीं, SEBI नंबर नहीं"
+      },
+      {
+       "en": "Rs 4,999 a month, then your trades",
+       "hi": "Rs 4,999 mahina, phir aapke trades",
+       "dv": "Rs 4,999 महीना, फिर आपके ट्रेड"
+      },
+      {
+       "en": "Kachra",
+       "hi": "Kachra",
+       "dv": "कचरा"
+      }
+     ]
+    ],
+    "blank_rows": 4,
+    "note": {
+     "en": "No source, or not checked yet? It stays out of your decisions.",
+     "hi": "Source nahi, ya abhi check nahi hua? Toh woh aapke faislon se bahar.",
+     "dv": "सोर्स नहीं, या अभी जाँचा नहीं? तो वो आपके फ़ैसलों से बाहर।"
+    }
+   }
+  }
+ ],
  "outcome": {
-  "en": "By the end you can use an AI chat as your analyst while you stay the decision-maker, sort any claim into Fact, Guess or Kachra, catch a hallucination by checking the source, keep personal data out of AI tools, and explain why forwarding an AI 'call' turns you into a tipster.",
-  "hi": "Aaj ke baad aap AI chat ko apna analyst bana kar use kar payenge aur faisla khud lenge, kisi bhi claim ko Fact, Guess ya Kachra mein baant payenge, source check karke hallucination pakad payenge, apna personal data AI tools se door rakhenge, aur samjha payenge ki AI ki 'call' forward karna aapko tipster kyun bana deta hai.",
-  "dv": "आज के बाद आप AI चैट को अपना एनालिस्ट बनाकर इस्तेमाल कर पाएँगे और फ़ैसला ख़ुद लेंगे, किसी भी दावे को फ़ैक्ट, गेस या कचरा में बाँट पाएँगे, सोर्स जाँचकर हैलुसिनेशन पकड़ पाएँगे, अपना निजी डेटा AI टूल से दूर रखेंगे, और समझा पाएँगे कि AI की 'कॉल' फ़ॉरवर्ड करना आपको टिपस्टर क्यों बना देता है।"
+  "en": "By the end you can write a safe 4-part prompt, use an AI chat as your analyst while you stay the decision-maker, sort any claim into Fact, Guess or Kachra, catch a hallucination by checking the source, keep personal data out of AI tools, and explain why forwarding an AI 'call' turns you into a tipster.",
+  "hi": "Aaj ke baad aap ek safe 4-hisson wala prompt likh payenge, AI chat ko apna analyst bana kar use kar payenge aur faisla khud lenge, kisi bhi claim ko Fact, Guess ya Kachra mein baant payenge, source check karke hallucination pakad payenge, apna personal data AI tools se door rakhenge, aur samjha payenge ki AI ki 'call' forward karna aapko tipster kyun bana deta hai.",
+  "dv": "आज के बाद आप एक सुरक्षित 4 हिस्सों वाला प्रॉम्प्ट लिख पाएँगे, AI चैट को अपना एनालिस्ट बनाकर इस्तेमाल कर पाएँगे और फ़ैसला ख़ुद लेंगे, किसी भी दावे को फ़ैक्ट, गेस या कचरा में बाँट पाएँगे, सोर्स जाँचकर हैलुसिनेशन पकड़ पाएँगे, अपना निजी डेटा AI टूल से दूर रखेंगे, और समझा पाएँगे कि AI की 'कॉल' फ़ॉरवर्ड करना आपको टिपस्टर क्यों बना देता है।"
  },
  "tools": [
   {
@@ -913,9 +1308,9 @@
   }
  ],
  "fun": {
-  "en": "'Do sach, ek jhooth' (two truths, one lie): one person writes a tiny made-up results note (this year's profit, last year's profit, revenue), then three statements about it, one of them false. The other finds the false one using only the note and a calculator, and shows the working that proves it. Solo version: ask an AI to write the note and the three statements, and play against it.",
-  "hi": "'Do sach, ek jhooth': ek insaan ek made-up company ka chhota sa results note likhe (is saal ka profit, pichhle saal ka profit, revenue), phir us par teen baatein, jinmein ek jhoothi ho. Doosra sirf note aur calculator se jhoothi baat pakde, aur woh hisaab dikhaye jisse woh jhoothi saabit hoti hai. Akele hain toh AI se note aur teen baatein likhwaiye aur uske khilaaf kheliye.",
-  "dv": "'दो सच, एक झूठ': एक इंसान किसी काल्पनिक कंपनी का छोटा-सा रिज़ल्ट नोट लिखे (इस साल का प्रॉफ़िट, पिछले साल का प्रॉफ़िट, रेवेन्यू), फिर उस पर तीन बातें, जिनमें एक झूठी हो। दूसरा सिर्फ़ नोट और कैलकुलेटर से झूठी बात पकड़े, और वो हिसाब दिखाए जिससे वो झूठी साबित होती है। अकेले हैं तो AI से नोट और तीन बातें लिखवाइए और उसके ख़िलाफ़ खेलिए।"
+  "en": "'Do sach, ek jhooth' (two truths, one lie): one person writes a tiny made-up results note (this year's profit, last year's profit, revenue), then three statements about it, one of them false. The other finds the false one using only the note and a calculator, and shows the working that proves it. Sample round: Anand Snacks Ltd made a profit of Rs 18 crore this year against Rs 15 crore last year, on revenue of Rs 240 crore. (a) Profit grew 20%. (b) Profit is 7.5% of revenue. (c) Profit grew 16.7%. The lie is (c): it divides the Rs 3 crore rise by this year's Rs 18 crore instead of last year's Rs 15 crore. Solo version: ask an AI to write the note and the three statements, and play against it.",
+  "hi": "'Do sach, ek jhooth': ek insaan ek made-up company ka chhota sa results note likhe (is saal ka profit, pichhle saal ka profit, revenue), phir us par teen baatein, jinmein ek jhoothi ho. Doosra sirf note aur calculator se jhoothi baat pakde, aur woh hisaab dikhaye jisse woh jhoothi saabit hoti hai. Sample round: Anand Snacks Ltd ka profit is saal Rs 18 crore, pichhle saal Rs 15 crore, aur revenue Rs 240 crore. (a) Profit 20% badha. (b) Profit revenue ka 7.5% hai. (c) Profit 16.7% badha. Jhooth (c) hai: usne Rs 3 crore ki badhat ko pichhle saal ke Rs 15 crore ki jagah is saal ke Rs 18 crore se bhaag de diya. Akele hain toh AI se note aur teen baatein likhwaiye aur uske khilaaf kheliye.",
+  "dv": "'दो सच, एक झूठ': एक इंसान किसी काल्पनिक कंपनी का छोटा-सा रिज़ल्ट नोट लिखे (इस साल का प्रॉफ़िट, पिछले साल का प्रॉफ़िट, रेवेन्यू), फिर उस पर तीन बातें, जिनमें एक झूठी हो। दूसरा सिर्फ़ नोट और कैलकुलेटर से झूठी बात पकड़े, और वो हिसाब दिखाए जिससे वो झूठी साबित होती है। नमूने का राउंड: Anand Snacks Ltd का प्रॉफ़िट इस साल Rs 18 करोड़, पिछले साल Rs 15 करोड़, और रेवेन्यू Rs 240 करोड़। (a) प्रॉफ़िट 20% बढ़ा। (b) प्रॉफ़िट रेवेन्यू का 7.5% है। (c) प्रॉफ़िट 16.7% बढ़ा। झूठ (c) है: उसने Rs 3 करोड़ की बढ़त को पिछले साल के Rs 15 करोड़ की जगह इस साल के Rs 18 करोड़ से भाग दे दिया। अकेले हैं तो AI से नोट और तीन बातें लिखवाइए और उसके ख़िलाफ़ खेलिए।"
  },
  "compliance": "Educational content only, not investment advice. Company names, the Telegram group and the SEBI circular number in this lesson are made up for training. AI output is analysis for learning, never a buy or sell call. No affiliation with any AI tool named. Stage 1 uses virtual money only. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004",
  "prompts": [
@@ -1056,41 +1451,41 @@
    "options": [
     {
      "text": {
-      "en": "Type only the charge names into the chat",
-      "hi": "Sirf charges ke naam chat mein type karein",
-      "dv": "सिर्फ़ चार्ज के नाम चैट में टाइप करें"
+      "en": "Type only the charge names into the chat, and leave his identity out",
+      "hi": "Chat mein sirf charges ke naam type karein, unki pehchaan bahar rakhein",
+      "dv": "चैट में सिर्फ़ चार्ज के नाम टाइप करें, उनकी पहचान बाहर रखें"
      },
      "correct": true
     },
     {
      "text": {
-      "en": "Upload the PDF; AI chats keep all data private",
-      "hi": "PDF upload karein; AI chat sab private rakhta hai",
-      "dv": "PDF अपलोड करें; AI चैट सब प्राइवेट रखता है"
+      "en": "Upload the PDF as it is; AI chats keep all uploaded data private",
+      "hi": "PDF waise hi upload kar dein; AI chats saara upload kiya data private rakhte hain",
+      "dv": "PDF वैसे ही अपलोड कर दें; AI चैट सारा अपलोड किया डेटा प्राइवेट रखते हैं"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "Upload it, but only to a paid AI subscription",
-      "hi": "Upload karein, par sirf paid AI subscription mein",
-      "dv": "अपलोड करें, पर सिर्फ़ पेड AI सब्सक्रिप्शन में"
+      "en": "Upload it, but only on a paid AI plan, where files stay private",
+      "hi": "Upload karein, par sirf paid AI plan par, jahan files private rehti hain",
+      "dv": "अपलोड करें, पर सिर्फ़ पेड AI प्लान पर, जहाँ फ़ाइलें प्राइवेट रहती हैं"
      },
      "correct": false
     },
     {
      "text": {
-      "en": "Upload it, then delete the chat",
-      "hi": "Upload karein, phir chat delete kar dein",
-      "dv": "अपलोड करें, फिर चैट डिलीट कर दें"
+      "en": "Upload it in a temporary chat, so nothing is kept once he closes it",
+      "hi": "Temporary chat mein upload karein, taaki band karte hi kuch save na rahe",
+      "dv": "टेम्परेरी चैट में अपलोड करें, ताकि बंद करते ही कुछ सेव न रहे"
      },
      "correct": false
     }
    ],
    "explanation": {
-    "en": "An AI does not need anyone's identity to explain what brokerage, STT or stamp duty pay for. Whatever you upload may be stored or leaked, even on a paid plan, and a name, PAN and client code are exactly what a fraudster wants. Deleting the chat later does not undo what was already sent. Describe the part you need; never upload a document that identifies a person.",
-    "hi": "Brokerage, STT ya stamp duty kis cheez ka paisa hai, yeh samjhane ke liye AI ko kisi ki pehchaan nahi chahiye. Jo bhi upload hota hai, woh store ya leak ho sakta hai, paid plan mein bhi; aur naam, PAN, client code hi toh fraudster ko chahiye. Baad mein chat delete karne se bheja hua data wapas nahi aata. Jo hissa chahiye, bas uske baare mein likhiye; kisi ki pehchaan wala document kabhi upload mat kijiye.",
-    "dv": "ब्रोकरेज, STT या स्टांप ड्यूटी किस चीज़ का पैसा है, ये समझाने के लिए AI को किसी की पहचान नहीं चाहिए। जो भी अपलोड होता है, वो सेव या लीक हो सकता है, पेड प्लान में भी; और नाम, PAN, क्लाइंट कोड ही तो धोखेबाज़ को चाहिए। बाद में चैट डिलीट करने से भेजा हुआ डेटा वापस नहीं आता। जो हिस्सा चाहिए, बस उसके बारे में लिखिए; किसी की पहचान वाला डॉक्यूमेंट कभी अपलोड मत कीजिए।"
+    "en": "An AI does not need anyone's identity to explain what brokerage, STT or stamp duty pay for. Whatever you upload may be stored or leaked, even on a paid plan, and a name, PAN and client code are exactly what a fraudster wants. A temporary chat, or deleting the chat later, still sends the file to the company's servers first, so it does not make a PAN safe to share. Describe the part you need; never upload a document that identifies a person.",
+    "hi": "Brokerage, STT ya stamp duty kis cheez ka paisa hai, yeh samjhane ke liye AI ko kisi ki pehchaan nahi chahiye. Jo bhi upload hota hai, woh store ya leak ho sakta hai, paid plan mein bhi; aur naam, PAN, client code hi toh fraudster ko chahiye. Temporary chat, ya baad mein chat delete karna, file ko pehle company ke servers tak bhej hi deta hai; isliye isse PAN share karna safe nahi ho jaata. Jo hissa chahiye, bas uske baare mein likhiye; kisi ki pehchaan wala document kabhi upload mat kijiye.",
+    "dv": "ब्रोकरेज, STT या स्टांप ड्यूटी किस चीज़ का पैसा है, ये समझाने के लिए AI को किसी की पहचान नहीं चाहिए। जो भी अपलोड होता है, वो सेव या लीक हो सकता है, पेड प्लान में भी; और नाम, PAN, क्लाइंट कोड ही तो धोखेबाज़ को चाहिए। टेम्परेरी चैट, या बाद में चैट डिलीट करना, फ़ाइल को पहले कंपनी के सर्वर तक भेज ही देता है; इसलिए इससे PAN शेयर करना सुरक्षित नहीं हो जाता। जो हिस्सा चाहिए, बस उसके बारे में लिखिए; किसी की पहचान वाला डॉक्यूमेंट कभी अपलोड मत कीजिए।"
    }
   },
   {
