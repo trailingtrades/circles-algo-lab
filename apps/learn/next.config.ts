@@ -24,9 +24,13 @@ const nextConfig: NextConfig = {
   ...(process.env.NEXT_OUTPUT_STANDALONE ? { output: "standalone" as const } : {}),
   // Under /smart the VPS's own static landing is the front door; the app root (Academy ladder
   // duplicate) is skipped so /smart/ opens the programme itself.
-  ...(basePath
-    ? { redirects: async () => [{ source: "/", destination: "/learn", permanent: false }] }
-    : {}),
+  redirects: async () => [
+    ...(basePath ? [{ source: "/", destination: "/learn", permanent: false }] : []),
+    // Stage 0 (Bazaar Ki Kahani) is a static bundle in public/stage0/ whose pages use relative
+    // URLs, so /stage0 (prod: /smart/stage0) must LAND on /stage0/index.html: a rewrite would
+    // serve the HTML at /stage0 itself and the browser would resolve cast/… against /smart/.
+    { source: "/stage0", destination: "/stage0/index.html", permanent: false },
+  ],
 };
 
 export default nextConfig;
