@@ -35,14 +35,16 @@ export function safeAppPath(raw: unknown, fallback = "/learn/home"): string {
 }
 
 /** Stage page outside basePath (/winners/…, /one/…): nginx's gate sends signed-out students to the
- *  sign-in page with ?next=$request_uri, and they go back there once signed in. */
+ *  sign-in page with ?next=$request_uri, and they go back there once signed in.
+ *  /smart/stage0/ sits inside the basePath but is a static, nginx-gated stage page, so the absolute
+ *  siteOrigin redirect is correct for it too. */
 export function safeStagePath(raw: unknown): string | null {
   const p = tidy(raw);
-  return p && /^\/(winners|one)(\/|\?|$)/.test(p) ? p : null;
+  return p && /^\/(winners|one|smart\/stage0)(\/|\?|$)/.test(p) ? p : null;
 }
 
 /** Which Academy stage a ?next= points at, for the sign-in heading. */
-export function stageOf(raw: unknown): "winners" | "one" | null {
+export function stageOf(raw: unknown): "winners" | "one" | "stage0" | null {
   const p = safeStagePath(raw);
-  return p ? (p.startsWith("/winners") ? "winners" : "one") : null;
+  return p ? (p.startsWith("/winners") ? "winners" : p.startsWith("/one") ? "one" : "stage0") : null;
 }

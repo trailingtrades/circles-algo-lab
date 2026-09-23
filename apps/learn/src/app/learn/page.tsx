@@ -12,6 +12,7 @@ import { LangSelect } from "./LangSelect";
 /* Server-rendered on purpose: the form, the SEBI number and the Tier-1 disclaimer are in the HTML
    itself (the old client-only page served an empty shell until JavaScript ran). */
 const S = {
+  kicker0: t3("Stage 0 · 5 Circles Academy", "Stage 0 · 5 Circles Academy", "चरण 0 · 5 Circles Academy"),
   kicker1: t3("Stage 1 · 5 Circles Academy", "Stage 1 · 5 Circles Academy", "चरण 1 · 5 Circles Academy"),
   kicker2: t3("Stage 2 · 5 Circles Academy", "Stage 2 · 5 Circles Academy", "चरण 2 · 5 Circles Academy"),
   kicker3: t3("Stage 3 · 5 Circles Academy", "Stage 3 · 5 Circles Academy", "चरण 3 · 5 Circles Academy"),
@@ -48,8 +49,8 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
   const next = typeof sp.next === "string" ? sp.next : "";
   // One Academy login for every stage: when the stage gate sent the student here, name the programme they are opening.
   const stage = stageOf(next);
-  const title = stage === "winners" ? "CIRCLE W.I.N.N.E.R.S" : stage === "one" ? "CIRCLE O.N.E" : "CIRCLE S.M.A.R.T";
-  const kicker = stage === "winners" ? S.kicker2 : stage === "one" ? S.kicker3 : S.kicker1;
+  const title = stage === "winners" ? "CIRCLE W.I.N.N.E.R.S" : stage === "one" ? "CIRCLE O.N.E" : stage === "stage0" ? "CIRCLE S.T.A.R.T" : "CIRCLE S.M.A.R.T";
+  const kicker = stage === "winners" ? S.kicker2 : stage === "one" ? S.kicker3 : stage === "stage0" ? S.kicker0 : S.kicker1;
   return (
     <div className="lrn-shell lrn-gate">
       <AcademyStrip />
