@@ -5,7 +5,7 @@ import { createAdminClient } from "@/lib/supabase/admin";
 
 export const dynamic = "force-dynamic";
 
-const STAGES = new Set(["winners", "one"]);
+const STAGES = new Set(["winners", "one", "stage0"]);
 // Per-student answer (name, expiry): never cacheable by nginx or anything in between.
 const NO_STORE = { "Cache-Control": "private, no-store" };
 // X-Gate-Reason lets nginx pass WHY to the page it redirects to (auth_request_set $gate_reason
@@ -24,7 +24,8 @@ export async function GET(_req: Request, ctx: { params: Promise<{ stage: string 
   const v = await getViewer();
   if (!v || v.status !== "active") return deny(401, v ? "inactive" : "signed_out");
   let expiresAt: string | null = null;
-  if (v.role === "student") {
+  // stage0 needs sign-in only (any active account passes: student/mentor/admin), never a stage_access grant.
+  if (v.role === "student" && stage !== "stage0") {
     const sb = await createClient();
     const { data } = await sb.from("stage_access").select("expires_at,starts_at").eq("user_id", v.id).eq("stage", stage).maybeSingle();
     if (!data) return deny(403, "no_access");
