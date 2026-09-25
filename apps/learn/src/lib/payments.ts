@@ -4,6 +4,7 @@
    Leave a stage empty ("") while its page does not exist yet: every CTA then falls back to the
    WhatsApp enrolment line. URLs look like https://rzp.io/l/<slug> or https://pages.razorpay.com/<slug>. */
 export const PAY_URLS = {
+  funda: "",
   winners: "",
   one: "",
 } as const;
