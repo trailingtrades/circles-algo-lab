@@ -6,7 +6,7 @@ import { isUuid } from "@/components/admin/format";
 
 export type StageState = { error?: string; ok?: string };
 
-const STAGES = new Set(["winners", "one", "pro_options"]);
+const STAGES = new Set(["winners", "one", "pro_options", "funda"]);
 const DAY = /^\d{4}-\d{2}-\d{2}$/;
 
 /** yyyy-mm-dd (IST) -> ISO instant. Start = 00:00 IST that day; end = 23:59:59 IST, so a grant "till 30 Sep" covers all of 30 Sep. */
@@ -34,7 +34,7 @@ export async function setStageAccess(_: StageState, form: FormData): Promise<Sta
     const cohort = target.cohorts as unknown as { mentor_id: string | null } | null;
     if (!cohort || cohort.mentor_id !== v.id) return { error: "Not your cohort." };
   }
-  const label = stage === "one" ? "O.N.E" : stage === "pro_options" ? "PRO · Options 117" : "WINNERS";
+  const label = stage === "one" ? "O.N.E" : stage === "pro_options" ? "PRO · Options 117" : stage === "funda" ? "F.U.N.D.A" : "WINNERS";
   const { data: before } = await admin.from("stage_access").select("*").eq("user_id", userId).eq("stage", stage).maybeSingle();
   const log = (action: string, after: unknown) => admin.rpc("log_audit", { p_actor: v.id, p_action: action, p_target_type: "stage_access", p_target_id: userId, p_before: before ? { stage, ...before } : null, p_after: after });
 

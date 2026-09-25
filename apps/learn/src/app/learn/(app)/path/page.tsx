@@ -19,7 +19,7 @@ const S = {
   attempted: t3("Attempted", "Attempt ho gaya", "अटेम्प्ट हो गया"),
   passed: t3("Passed", "Pass", "पास"),
   nextTitle: t3("After this stage", "Is stage ke baad", "इस चरण के बाद"),
-  nextName: t3("Stage 2 · CIRCLE W.I.N.N.E.R.S", "Stage 2 · CIRCLE W.I.N.N.E.R.S", "चरण 2 · CIRCLE W.I.N.N.E.R.S"),
+  nextName: t3("Stage 2 · CIRCLE F.U.N.D.A", "Stage 2 · CIRCLE F.U.N.D.A", "चरण 2 · CIRCLE F.U.N.D.A"),
   nextBody: t3("The next stage of the 5 Circles Academy. It builds on these 21 days, and your mentor opens it for you once Stage 1 is complete.", "5 Circles Academy ka agla stage. Ye inhi 21 dinon par aage banta hai, aur Stage 1 poora hone ke baad aapke mentor ise aapke liye kholte hain.", "5 Circles Academy का अगला चरण। यह इन्हीं 21 दिनों पर आगे बनता है, और चरण 1 पूरा होने के बाद आपके मेंटर इसे आपके लिए खोलते हैं।"),
   nextOpen: t3("Your Stage 2 access is active.", "Aapka Stage 2 access active hai.", "आपका चरण 2 एक्सेस चालू है।"),
   goStage2: t3("Go to Stage 2", "Stage 2 par jaiye", "चरण 2 पर जाइए"),
@@ -39,7 +39,7 @@ export default async function PathPage() {
   const levels = [...LEVELS].sort((a, b) => a.sequence - b.sequence).filter((lv) => stageSessions(state, lv.slug).length > 0);
   const all = levels.flatMap((lv) => stageSessions(state, lv.slug));
   const nWeeks = new Set(all.map((s) => `${s.level}-${s.week}`)).size;
-  const stage2 = state.stages?.includes("winners");
+  const stage2 = state.stages?.includes("funda");
   // One exam row: a link to its rules page once the work before it is done, otherwise when it opens.
   const examRow = (e: ExamMeta, ready: boolean) => {
     const res = state.exams?.[examKey(e)];
@@ -105,8 +105,8 @@ export default async function PathPage() {
         <p className="lrn-session__sub">{tx(stage2 ? S.nextOpen : S.nextBody)}</p>
         <p style={{ margin: "12px 0 0" }}>
           {stage2
-            ? <a href="/winners/" className="col-btn col-btn--primary col-btn--sm">{tx(S.goStage2)} <ArrowUpRight size={14} aria-hidden /></a>
-            : <a href="/winners/about/" className="col-btn col-btn--ghost col-btn--sm">{tx(S.aboutStage2)} <ArrowUpRight size={14} aria-hidden /></a>}
+            ? <a href="/funda/" className="col-btn col-btn--primary col-btn--sm">{tx(S.goStage2)} <ArrowUpRight size={14} aria-hidden /></a>
+            : <a href="/funda/about/" className="col-btn col-btn--ghost col-btn--sm">{tx(S.aboutStage2)} <ArrowUpRight size={14} aria-hidden /></a>}
         </p>
       </section>
     </>
