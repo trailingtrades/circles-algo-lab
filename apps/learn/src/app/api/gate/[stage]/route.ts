@@ -5,7 +5,7 @@ import { createAdminClient } from "@/lib/supabase/admin";
 
 export const dynamic = "force-dynamic";
 
-const STAGES = new Set(["winners", "one", "stage0"]);
+const STAGES = new Set(["winners", "one", "stage0", "pro_options"]);
 // Per-student answer (name, expiry): never cacheable by nginx or anything in between.
 const NO_STORE = { "Cache-Control": "private, no-store" };
 // X-Gate-Reason lets nginx pass WHY to the page it redirects to (auth_request_set $gate_reason

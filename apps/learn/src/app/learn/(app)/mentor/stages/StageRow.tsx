@@ -16,14 +16,14 @@ export function StageRow({ userId, name, grants }: { userId: string; name: strin
   return (
     <tr>
       <td className="col-text"><strong>{name}</strong>{state.error && <span className="lrn-error" role="alert" style={{ display: "block" }}><AlertCircle size={14} aria-hidden /> {state.error}</span>}{state.ok && <span className="lrn-muted" role="status" style={{ display: "block", fontSize: "var(--col-text-dense)" }}>{state.ok}</span>}</td>
-      {(["winners", "one"] as const).map((stage) => <StageCell key={stage} userId={userId} stage={stage} g={grants.find((x) => x.stage === stage)} action={action} pending={pending} />)}
+      {(["winners", "one", "pro_options"] as const).map((stage) => <StageCell key={stage} userId={userId} stage={stage} g={grants.find((x) => x.stage === stage)} action={action} pending={pending} />)}
     </tr>
   );
 }
 
-function StageCell({ userId, stage, g, action, pending }: { userId: string; stage: "winners" | "one"; g?: GrantView; action: (fd: FormData) => void; pending: boolean }) {
+function StageCell({ userId, stage, g, action, pending }: { userId: string; stage: "winners" | "one" | "pro_options"; g?: GrantView; action: (fd: FormData) => void; pending: boolean }) {
   const { ref, onSubmit } = useKeepForm(action);
-  const label = stage === "one" ? "O.N.E" : "WINNERS";
+  const label = stage === "one" ? "O.N.E" : stage === "pro_options" ? "PRO · Options 117" : "WINNERS";
   const dates = (
     <>
       <input name="starts_at" type="date" className="col-input" style={{ width: 140, padding: "2px 6px" }} defaultValue={g?.startsDay ?? ""} aria-label={`${label} start date (optional)`} title="Start date (blank = from today)" />
