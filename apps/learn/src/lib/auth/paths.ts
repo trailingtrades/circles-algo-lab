@@ -40,11 +40,11 @@ export function safeAppPath(raw: unknown, fallback = "/learn/home"): string {
  *  siteOrigin redirect is correct for it too. */
 export function safeStagePath(raw: unknown): string | null {
   const p = tidy(raw);
-  return p && /^\/(winners|one|smart\/stage0)(\/|\?|$)/.test(p) ? p : null;
+  return p && /^\/(winners|one|pro\/options|smart\/stage0)(\/|\?|$)/.test(p) ? p : null;
 }
 
 /** Which Academy stage a ?next= points at, for the sign-in heading. */
-export function stageOf(raw: unknown): "winners" | "one" | "stage0" | null {
+export function stageOf(raw: unknown): "winners" | "one" | "stage0" | "pro_options" | null {
   const p = safeStagePath(raw);
-  return p ? (p.startsWith("/winners") ? "winners" : p.startsWith("/one") ? "one" : "stage0") : null;
+  return p ? (p.startsWith("/winners") ? "winners" : p.startsWith("/one") ? "one" : p.startsWith("/pro/options") ? "pro_options" : "stage0") : null;
 }
