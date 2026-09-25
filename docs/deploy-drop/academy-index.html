@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Circles Academy — Zero to Top 1% trader, one stage at a time</title>
+<meta name="description" content="5 Circles Academy by 5 Circles Pvt Ltd (SEBI RA INH000020004): a four-stage stock-market learning ladder — CIRCLE S.M.A.R.T (21-day AI Trading Course), CIRCLE W.I.N.N.E.R.S (13-module foundations), CIRCLE O.N.E (76-chapter technical study) and CIRCLE PRO (coming soon). English, Hinglish and हिंदी.">
+<meta name="theme-color" content="#050608">
+<link rel="canonical" href="https://learn.optionlab.co.in/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/og-5circles.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="5 Circles Academy">
+<meta property="og:title" content="5 Circles Academy — Zero to Top 1% trader, one stage at a time">
+<meta property="og:description" content="5 Circles Academy by 5 Circles Pvt Ltd (SEBI RA INH000020004): a four-stage stock-market learning ladder — CIRCLE S.M.A.R.T (21-day AI Trading Course), CIRCLE W.I.N.N.E.R.S (13-module foundations), CIRCLE O.N.E (76-chapter technical study) and CIRCLE PRO (coming soon). English, Hinglish and हिंदी.">
+<meta property="og:url" content="https://learn.optionlab.co.in/">
+<meta property="og:image" content="https://learn.optionlab.co.in/og-5circles.png">
+<meta property="og:image:width" content="500">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="5 Circles logo">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="5 Circles Academy — Zero to Top 1% trader, one stage at a time">
+<meta name="twitter:description" content="5 Circles Academy by 5 Circles Pvt Ltd (SEBI RA INH000020004): a four-stage stock-market learning ladder — CIRCLE S.M.A.R.T (21-day AI Trading Course), CIRCLE W.I.N.N.E.R.S (13-module foundations), CIRCLE O.N.E (76-chapter technical study) and CIRCLE PRO (coming soon). English, Hinglish and हिंदी.">
+<meta name="twitter:image" content="https://learn.optionlab.co.in/og-5circles.png">
+<link rel="preload" href="/fonts/IBMPlexSans-var.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:100 700;font-display:swap;src:url("/fonts/IBMPlexSans-var.woff2") format("woff2")}
+:root{
+  --bg:#050608; --panel:#0f1520; --panel-2:#151d2b; --line:#1c2433; --line-2:#243044;
+  --ink:#f1f5f9; --ink-2:#cbd5e1; --ink-3:#93a4b5;
+  --brand:#22b8f5; --brand-600:#0b74b8; --brand-ink:#0b1b33;
+  --card:linear-gradient(to bottom right,#16233f,#0f1520 50%,#0c1322);
+  --r:16px; --r-sm:12px; --maxw:1180px; --sp:clamp(16px,4vw,28px);
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:#050608 linear-gradient(180deg,#0d0f13 0,#08090c 45%,#050608 100%) no-repeat;min-height:100%;scroll-behavior:smooth}
+body{background:transparent;color:var(--ink);font-family:"IBM Plex Sans","Segoe UI",system-ui,-apple-system,"Nirmala UI","Noto Sans Devanagari",sans-serif;
+  line-height:1.6;-webkit-font-smoothing:antialiased;font-variant-numeric:lining-nums tabular-nums;overflow-x:hidden}
+html[lang=hi] body{font-family:"Nirmala UI","Noto Sans Devanagari","IBM Plex Sans","Segoe UI",system-ui,sans-serif}
+a{color:var(--brand);text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--sp)}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em;font-weight:700}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.08em;color:var(--brand)}
+.muted{color:var(--ink-3)}
+.ic{flex:none;vertical-align:-3px}
+[hidden]{display:none!important}
+.skip{position:absolute;left:-9999px;top:8px;z-index:200;background:var(--brand);color:var(--brand-ink);padding:8px 14px;border-radius:8px;font-weight:600}
+.skip:focus{left:8px}
+
+/* top bar: opaque, one hairline */
+.top{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);background:#111927}
+.top-in{display:flex;align-items:center;gap:10px;height:72px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--ink)}
+.brand img{width:44px;height:44px;display:block}
+.brand .bt{display:flex;flex-direction:column;line-height:1.1}
+.brand .kick{font-size:11px;font-weight:600;letter-spacing:.04em;color:var(--ink-3);margin-bottom:3px}
+.brand b{font-size:18px;font-weight:700;letter-spacing:-.01em}
+.sp{flex:1}
+.nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 13px;border:1px solid var(--line-2);border-radius:99px;background:var(--panel);
+  font-size:13px;font-weight:600;color:var(--ink-2);white-space:nowrap;transition:border-color .18s var(--ease),color .18s var(--ease)}
+.chip:hover{border-color:var(--brand);color:var(--ink)}
+.chip.primary{background:var(--brand-600);border-color:var(--brand-600);color:#fff}
+.chip.primary:hover{background:#0d84d0}
+
+/* hero — left-aligned, rings on the right (approved composition) */
+.hero{padding:clamp(56px,9vw,112px) 0 clamp(40px,6vw,72px);position:relative}
+.hero h1{font-size:clamp(34px,5.6vw,70px);font-weight:700;letter-spacing:-.035em;margin-top:14px}
+.hero h1>span{display:block;text-wrap:balance}
+.hero h1 .nw{white-space:nowrap}
+html[lang=hi] .hero h1{font-size:clamp(32px,5.2vw,64px);line-height:1.3}
+/* Text column stops short of the rings (same offsets as .rings below), so no headline or lede
+   line runs under them at any desktop width. */
+@media(min-width:961px){.hero h1,.hero .lede{max-width:calc(100vw - clamp(60px,13vw,240px) - min(38vw,460px) - max(0px,(100vw - var(--maxw))/2) - var(--sp) - 20px)}}
+.hero h1 .g{background:linear-gradient(to right,#22b8f5,#00aeef 45%,#7ccdf9);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lede{font-size:clamp(16px,2.2vw,20px);color:var(--ink-2);max-width:60ch;margin:22px 0 30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:99px;font-weight:600;font-size:16px;
+  border:1px solid transparent;transition:background-color .2s var(--ease),border-color .2s var(--ease)}
+.btn.sm{min-height:42px;padding:0 18px;font-size:14px}
+.btn.primary{background:var(--brand-600);color:#fff}
+.btn.primary:hover{background:#0d84d0}
+.btn.ghost{border-color:var(--line-2);color:var(--ink);background:rgba(15,21,32,.7)}
+.btn.ghost:hover{border-color:var(--brand)}
+.hero .cta .btn{min-height:56px;padding:0 28px;font-size:18px}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:44px;justify-content:space-between}
+@media(max-width:960px){.stats{justify-content:flex-start}}
+.stat b{display:block;font-size:clamp(24px,3.6vw,44px);font-weight:700;letter-spacing:-.02em;line-height:1.2}
+.stat span{font-size:14px;font-weight:500;color:var(--ink-3)}
+.rings{position:absolute;right:clamp(60px,13vw,240px);top:clamp(40px,8vw,100px);width:min(38vw,460px);aspect-ratio:1;pointer-events:none;opacity:.9}
+@media(max-width:960px){.rings{display:none}}
+
+/* sections */
+.section{padding:clamp(40px,6vw,80px) 0;scroll-margin-top:84px}
+.section-h{margin-bottom:28px;max-width:70ch}
+.section-h h2{font-size:clamp(24px,3.6vw,36px);margin-top:6px}
+.section-h p{color:var(--ink-2);margin-top:10px;font-size:16px}
+
+/* the ladder — four stage cards (approved) */
+.ladder{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+@media(max-width:900px){.ladder{grid-template-columns:1fr}}
+.stage{border:1px solid var(--line);border-radius:var(--r);background:var(--card);padding:24px;display:flex;flex-direction:column;gap:14px}
+.stage .num{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.08em;color:var(--brand)}
+.stage .num i{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--brand);color:var(--brand-ink);font-style:normal;font-size:13px;font-weight:700}
+.stage h3{font-size:clamp(20px,2.4vw,24px)}
+.stage h3 small{display:block;font-size:13px;font-weight:500;color:var(--ink-3);letter-spacing:0;margin-top:4px}
+.stage p{color:var(--ink-2);font-size:14px}
+.stage ul{list-style:none;display:flex;flex-direction:column;gap:7px;font-size:14px;color:var(--ink-2)}
+.stage li{display:flex;gap:8px;align-items:flex-start}
+.stage li .ic{color:var(--brand);margin-top:4px}
+.stage .acts{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding-top:6px}
+.stage .hint{font-size:13px;color:var(--ink-3);display:inline-flex;gap:5px;align-items:center}
+.stage.soon{border-style:dashed}
+.stage.soon .num{color:var(--ink-3)}
+.stage.soon .num i{background:var(--panel-2);color:var(--ink-3);border:1px solid var(--line-2)}
+.tag{display:inline-block;white-space:nowrap;font-size:11px;font-weight:600;letter-spacing:.06em;padding:3px 10px;border-radius:99px;border:1px solid var(--line-2);color:var(--ink-3);background:var(--panel-2)}
+.tag.open{background:rgba(34,184,245,.12);color:var(--brand);border-color:rgba(34,184,245,.35)}
+
+/* how to join */
+.path{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:900px){.path{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.path{grid-template-columns:1fr}}
+.step{border:1px solid var(--line);border-radius:var(--r-sm);background:var(--panel);padding:16px;font-size:14px;color:var(--ink-2)}
+.step b{display:block;font-size:14px;color:var(--ink);margin-bottom:4px}
+.step b span{color:var(--brand);margin-right:6px}
+
+/* CIRCLE PRO tracks */
+.tracks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:1000px){.tracks{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.tracks{grid-template-columns:1fr}}
+.pro-track{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);padding:20px;display:flex;flex-direction:column;gap:8px}
+.pro-track .ic{width:40px;height:40px;border-radius:var(--r-sm);padding:9px;background:rgba(34,184,245,.12);color:var(--brand)}
+.pro-track h3{font-size:16px;letter-spacing:-.01em}
+.pro-track p{font-size:14px;color:var(--ink-3);flex:1}
+.pro-track .lk{font-size:13px;color:var(--ink-2)}
+
+/* live sessions */
+.livegrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:16px}
+.ls{border:1px solid var(--line);border-radius:var(--r);background:var(--card);padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.ls.past{opacity:.8}
+.ls .top-r{display:flex;gap:12px;align-items:flex-start}
+.ls .date{flex:none;width:58px;border-radius:var(--r-sm);background:var(--panel-2);border:1px solid var(--line-2);text-align:center;padding:6px 0}
+.ls .date b{display:block;font-size:24px;line-height:1.1}
+.ls .date span{font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--brand)}
+.ls h3{font-size:16px;line-height:1.3;letter-spacing:-.01em;overflow-wrap:anywhere}
+.ls .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.ls .tg{font-size:11px;font-weight:600;letter-spacing:.04em;padding:2px 8px;border-radius:99px;background:var(--panel-2);border:1px solid var(--line);color:var(--ink-3)}
+.ls .tg.on{color:var(--brand);border-color:rgba(34,184,245,.35)}
+.ls .tg.now{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+.ls p{font-size:14px;color:var(--ink-2)}
+.ls .meta{font-size:13px;color:var(--ink-3);display:flex;gap:6px;align-items:flex-start;overflow-wrap:anywhere}
+.ls .meta .ic{margin-top:3px}
+.ls .price-row{font-size:14px;color:var(--ink-2)}
+.ls .price-row b{color:var(--ink)}
+.ls .seat{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink-3)}
+.ls .seat b{color:var(--ink)}
+.ls .bar{flex:1;height:5px;border-radius:99px;background:var(--line);overflow:hidden}
+.ls .bar i{display:block;height:100%;background:var(--brand);border-radius:99px}
+.ls .cd{font-size:13px;color:var(--ink-2)}
+.ls .cd span{font-weight:600;color:var(--ink)}
+.ls .btn{align-self:flex-start}
+.ls-note{border:1px dashed var(--line-2);border-radius:var(--r);padding:24px;color:var(--ink-3);font-size:14px}
+.ls-note b{display:block;color:var(--ink);font-size:16px;margin-bottom:4px}
+.ls-note .cta{margin-top:14px}
+.ls-empty{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;border:1px dashed var(--line-2);border-radius:var(--r);padding:24px}
+@media(max-width:760px){.ls-empty{grid-template-columns:1fr}}
+.ls-empty b{display:block;color:var(--ink);font-size:18px;margin-bottom:6px}
+.ls-empty p{color:var(--ink-2);font-size:14px}
+.ls-empty .cta{margin-top:16px}
+.ls-what h3{font-size:14px;color:var(--ink);margin-bottom:8px}
+.ls-what ul{list-style:none;display:grid;gap:8px;font-size:14px;color:var(--ink-2)}
+.ls-what li{display:flex;gap:8px}
+.ls-what li .ic{color:var(--brand);margin-top:4px}
+.segtabs{display:inline-flex;border:1px solid var(--line-2);border-radius:99px;background:var(--panel);overflow:hidden;margin-bottom:18px}
+.segtabs button{padding:0 16px;height:36px;font-size:13px;font-weight:600;color:var(--ink-3)}
+.segtabs button.on{background:var(--brand);color:var(--brand-ink)}
+/* booking dialog */
+.overlay{position:fixed;inset:0;background:rgba(2,4,8,.78);display:grid;place-items:center;z-index:100;padding:16px;overflow-y:auto}
+.modal{position:relative;width:min(560px,100%);border:1px solid var(--line-2);border-radius:var(--r);background:var(--panel);padding:24px;box-shadow:0 24px 48px -24px #000}
+.modal h3{font-size:20px;margin:6px 40px 4px 0}
+.modal>p{font-size:14px;margin-bottom:16px}
+.modal .x{position:absolute;right:12px;top:12px;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;color:var(--ink-2);border:1px solid var(--line-2)}
+.bk{display:grid;gap:12px}
+.bk label{display:grid;gap:5px;font-size:13px;font-weight:600;color:var(--ink-2)}
+.bk input,.bk select{height:46px;border-radius:var(--r-sm);border:1px solid var(--line-2);background:var(--panel-2);color:var(--ink);padding:0 14px;font:inherit;font-size:16px}
+.bk input:focus,.bk select:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(34,184,245,.2)}
+.bk .btn{width:100%}
+.bk .fine{font-size:12px;color:var(--ink-3)}
+.bk .fine a{color:var(--ink-2);text-decoration:underline}
+.err{color:#fca5a5;font-size:13px;min-height:18px}
+.ticket{border:1px dashed var(--brand);border-radius:var(--r-sm);padding:18px;text-align:center;background:rgba(34,184,245,.06)}
+.ticket .lbl{font-size:12px;color:var(--ink-3)}
+.ticket b{display:block;font-size:30px;letter-spacing:-.02em;color:var(--brand)}
+.ticket .cta{justify-content:center;margin-top:12px}
+.ticket .fine{font-size:12px;color:var(--ink-3);margin-top:10px}
+
+/* championship */
+.champ{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:18px;align-items:start}
+@media(max-width:900px){.champ{grid-template-columns:1fr}}
+.board{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:var(--r);background:var(--panel);overflow:hidden;font-size:14px}
+.board th,.board td{padding:10px 14px;border-top:1px solid var(--line);text-align:left}
+.board thead th{border-top:0;font-size:12px;font-weight:600;color:var(--ink-3);background:var(--panel-2)}
+.board .n{text-align:right;width:70px}
+.board td.rk{width:44px;font-weight:700;color:var(--ink-3)}
+.board tr.top3 td.rk{color:var(--brand)}
+.board td.pt{font-weight:700;color:var(--ink)}
+.rules{border:1px solid var(--line);border-radius:var(--r);background:var(--card);padding:20px}
+.rules h3{font-size:16px;margin-bottom:10px}
+.rule{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+.rule:first-of-type{border-top:0}
+.rule .ic{color:var(--brand)}
+.rule b{color:var(--ink);font-size:14px;white-space:nowrap}
+.rules .cta{margin-top:14px}
+
+@media(max-width:640px){
+  .top{position:relative}
+  .top-in{height:auto;padding-block:10px;gap:8px;flex-wrap:wrap}
+  .brand{flex:1 0 100%}
+  .nav{width:100%}
+  .nav .chip .t{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .stats{gap:18px}
+  .hero .cta .btn{min-height:52px;padding:0 22px;font-size:16px}
+}
+/* floating WhatsApp enquiry button — WhatsApp green, white glyph; rebuilt by render() so the
+   prefilled message and label follow the language toggle */
+.wa-fab{position:fixed;right:18px;bottom:18px;z-index:90;display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;box-shadow:0 6px 16px -6px rgba(0,0,0,.7);transition:transform .15s ease,background .15s ease}
+.wa-fab:hover{background:#1ebe5d;transform:scale(1.06)}
+.wa-fab svg{width:28px;height:28px}
+@media print{.wa-fab{display:none}}
+
+.site-foot{border-top:1px solid var(--line);margin-top:24px;padding:40px 0 96px;font-size:13px;line-height:1.6;color:var(--ink-3)}
+.fgrid{display:grid;grid-template-columns:1.25fr 1.35fr 1fr 1fr 1fr 1fr;gap:28px 24px}
+@media(max-width:1100px){.fgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.fgrid{grid-template-columns:1fr}}
+.site-foot h2{font-size:13px;font-weight:700;letter-spacing:0;color:var(--ink);margin-bottom:10px}
+.site-foot p{margin-bottom:10px}
+.site-foot ul{list-style:none;display:grid;gap:6px}
+.site-foot a{color:var(--ink-2)}
+.site-foot a:hover{color:var(--ink);text-decoration:underline}
+.site-foot b{color:var(--ink-2);font-weight:600}
+.site-foot .fnote{margin-top:10px;font-size:12px}
+.fbar{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:28px;padding-top:20px;border-top:1px solid var(--line);color:var(--ink-2)}
+.site-foot .disc{font-size:12px;line-height:1.7;margin:16px 0 8px}
+.site-foot .copy{font-size:12px;margin:0}
+.seg{display:inline-flex;border:1px solid var(--line-2);border-radius:99px;background:var(--panel);overflow:hidden}
+.seg button{padding:0 12px;height:34px;font-size:13px;font-weight:600;color:var(--ink-3)}
+.seg button.on{background:var(--brand);color:var(--brand-ink)}
+.seg button:focus-visible{outline:2px solid var(--brand);outline-offset:-2px}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<noscript><div class="wrap" style="padding:40px var(--sp)"><p class="eyebrow">5 Circles Pvt Ltd · SEBI RA INH000020004</p><h1 style="font-size:32px;margin:10px 0">5 Circles Academy</h1><p style="max-width:60ch;color:var(--ink-2)">A four-stage stock-market learning ladder: CIRCLE S.M.A.R.T, CIRCLE W.I.N.N.E.R.S, CIRCLE O.N.E and CIRCLE PRO. This page needs JavaScript to show the stages, live sessions and championship; the course pages below work the same way.</p><ul style="list-style:none;display:grid;gap:6px;margin:14px 0 0"><li><a href="/">5 Circles Academy</a></li><li><a href="/smart/about/">Stage 1 · CIRCLE S.M.A.R.T</a></li><li><a href="/winners/about/">Stage 2 · CIRCLE W.I.N.N.E.R.S</a></li><li><a href="/one/about/">Stage 3 · CIRCLE O.N.E</a></li><li><a href="https://wa.me/916387497277">WhatsApp +91 638 749 7277</a></li></ul></div><footer class="site-foot"><div class="wrap"><div class="fgrid"><section class="fco"><h2>5 Circles Private Limited</h2><p>SEBI Registered Research Analyst (Non-Individual)<br>Reg. No. INH000020004<br>Registration granted 06 March 2025</p><p>Principal Officer: Rahul Sarawgi<br>Compliance Officer: Suchita Sarawgi</p><p><a href="mailto:info@5circles.co">info@5circles.co</a><br><a href="tel:+916387497277">+91 638 749 7277</a></p></section><section class="fco"><h2>Offices</h2><p><b>Kanpur</b><br>First Floor, Premises No. 124/244 C Block, Plot No. 245, Govind Nagar, Kanpur, Uttar Pradesh 208006</p><p><b>Mumbai</b><br>A Wing, G-022, Express Zone Mall, W E Highway, Next to Patel Vanika, Malad East, Mumbai, Maharashtra 400063</p></section><section><h2>Investor protection</h2><ul><li><a href="https://circleoptionlab.com/legal/investor-charter/" target="_blank" rel="noopener">Investor Charter</a></li><li><a href="https://circleoptionlab.com/legal/grievance/" target="_blank" rel="noopener">Grievance Redressal</a></li><li><a href="https://scores.sebi.gov.in/" target="_blank" rel="noopener">SEBI SCORES</a></li><li><a href="https://smartodr.in/login" target="_blank" rel="noopener">SMART ODR</a></li></ul><p class="fnote">Complaints go to the Compliance Officer at info@5circles.co or +91 638 749 7277. If a complaint is not resolved, you can escalate it on SEBI SCORES or SMART ODR.</p></section><section><h2>Policies</h2><ul><li><a href="https://circleoptionlab.com/legal/terms/" target="_blank" rel="noopener">Terms of Use</a></li><li><a href="https://circleoptionlab.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a></li><li><a href="https://circleoptionlab.com/legal/refund/" target="_blank" rel="noopener">Refund &amp; Cancellation</a></li><li><a href="https://circleoptionlab.com/legal/disclaimer/" target="_blank" rel="noopener">Disclaimer</a></li><li><a href="https://circleoptionlab.com/legal/disclosure/" target="_blank" rel="noopener">Disclosure</a></li></ul></section><section><h2>Our sites</h2><ul><li><a href="https://5circles.co" target="_blank" rel="noopener">5 Circles (company)</a></li><li><a href="https://circleoptionlab.com" target="_blank" rel="noopener">CircleOptionLab</a></li><li><a href="/">5 Circles Academy</a></li><li><a href="https://mentor.optionlab.co.in" target="_blank" rel="noopener">Mentor Academy</a></li><li><a href="https://www.youtube.com/@tradewithrahulsaraoge" target="_blank" rel="noopener">YouTube</a></li><li><a href="https://x.com/Rahul_Saraoge" target="_blank" rel="noopener">X</a></li><li><a href="https://www.instagram.com/rahul_saraoge" target="_blank" rel="noopener">Instagram</a></li></ul></section><section><h2>Academy</h2><ul><li><a href="/smart/about/">Stage 1 · CIRCLE S.M.A.R.T</a></li><li><a href="/winners/about/">Stage 2 · CIRCLE W.I.N.N.E.R.S</a></li><li><a href="/one/about/">Stage 3 · CIRCLE O.N.E</a></li><li><a href="/#live">Live sessions</a></li><li><a href="/#champ">Championship</a></li><li><a href="/smart/learn">Sign in</a></li></ul></section></div><div class="fbar"><span>Educational content only. No stock tips, trade calls or investment advice.</span></div><p class="disc" lang="en">Investment in securities market is subject to market risks. Read all related documents carefully before investing. Registration granted by SEBI and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors. Past performance is not indicative of future results. The analyst or dependents may hold positions in the securities discussed. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004</p><p class="copy">© 2026 5 Circles Private Limited. All rights reserved.</p></div></footer></noscript>
+<div id="app"></div>
+<script>
+"use strict";
+var ICO = {
+  home: '<path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/>',
+  library: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 4v16M3 9h5"/><path d="M12 9h5M12 13h5"/>',
+  atlas: '<path d="M3 12h4l3-7 4 14 3-7h4"/>',
+  bolt: '<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',
+  flame: '<path d="M12 22c4 0 7-3 7-7 0-3-2-5-3-7-1 3-2 4-3 4 0-3-1-6-4-9 0 4-4 6-4 12 0 4 3 7 7 7z"/>',
+  book: '<path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4z"/><path d="M20 4h-6a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h7z"/>',
+  target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/>',
+  award: '<circle cx="12" cy="9" r="6"/><path d="m8.5 14-2 8 5.5-3 5.5 3-2-8"/>',
+  hourglass: '<path d="M6 2h12M6 22h12M7 2c0 5 5 6 5 10s-5 5-5 10M17 2c0 5-5 6-5 10s5 5 5 10"/>',
+  flag: '<path d="M5 22V4"/><path d="M5 4h12l-2 4 2 4H5"/>',
+  crown: '<path d="m3 18 2-11 5 5 2-8 2 8 5-5 2 11z"/><path d="M3 21h18"/>',
+  lock: '<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+  check: '<path d="m5 12 5 5L20 7"/>',
+  key: '<circle cx="8" cy="15" r="4"/><path d="m11 12 9-9M17 6l2 2M14 9l2 2"/>',
+  chat: '<path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12z"/>',
+  play: '<circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4z"/>',
+  trophy: '<path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/><path d="M12 14v4M8 21h8M9 18h6"/>',
+  arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+  spark: '<path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/>',
+  bank: '<path d="M3 10 12 4l9 6"/><path d="M5 10v8M9 10v8M15 10v8M19 10v8"/><path d="M3 18h18v3H3z"/>',
+  receipt: '<path d="M6 3h12v18l-2-1.5L14 21l-2-1.5L10 21l-2-1.5L6 21z"/><path d="M9 8h6M9 12h6M9 16h4"/>',
+  candle: '<path d="M8 3v3M8 17v4M16 5v2M16 15v4"/><rect x="5.5" y="6" width="5" height="11" rx="1"/><rect x="13.5" y="7" width="5" height="8" rx="1"/>',
+  shapes: '<path d="m3 20 6-12 6 12z"/><rect x="13" y="4" width="8" height="8" rx="1.5"/>',
+  chart: '<path d="M3 20h18"/><path d="m4 15 5-5 4 3 7-8"/><path d="M16 5h4v4"/>',
+  wave: '<path d="M2 12c2.5 0 2.5-6 5-6s2.5 12 5 12 2.5-12 5-12 2.5 6 5 6"/>',
+  briefcase: '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/>',
+  bookopen: '<path d="M12 6a5 5 0 0 0-4-2H3v15h5a4 4 0 0 1 4 2 4 4 0 0 1 4-2h5V4h-5a5 5 0 0 0-4 2z"/><path d="M12 6v15"/>',
+  strategy: '<circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M6 9v3a3 3 0 0 0 3 3h6"/><path d="M18 15v-3a3 3 0 0 0-3-3h-2"/>',
+  scroll: '<path d="M6 3h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path d="M6 3a2 2 0 0 0-2 2v2h4"/><path d="M10 9h6M10 13h6"/>',
+  cog: '<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/>',
+  shield: '<path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/>',
+  layers: '<path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/>',
+  calc: '<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8"/><path d="M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h8"/>',
+  brain: '<path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 3 3h3V4z"/><path d="M15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-3 3h-3V4z"/>',
+  mic: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/>',
+  calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+  users: '<circle cx="9" cy="8" r="3.5"/><path d="M2 20a7 7 0 0 1 14 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 6 5.5"/>',
+  medal: '<circle cx="12" cy="14" r="6"/><path d="m8.5 9-3-7h5l1.5 4M15.5 9l3-7h-5l-1.5 4"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  map: '<path d="m3 6 6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/>',
+  door: '<path d="M4 21V3h12v18"/><path d="M16 7h4v14H4"/><circle cx="13" cy="12" r="1"/>',
+  star: '<path d="m12 3 2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 3 1.1-6.2L3 9.7l6.2-.9z"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  moon: '<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/>',
+  lang: '<path d="M4 5h10M9 3v2c0 5-3 9-6 11"/><path d="M6 9c1 3 4 6 7 7"/><path d="m13 21 4-10 4 10M14.5 17h5"/>',
+  search: '<circle cx="11" cy="11" r="6"/><path d="m20 20-4.5-4.5"/>',
+  back: '<path d="M19 12H5M11 6l-6 6 6 6"/>',
+  print: '<path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M6 14h12v7H6z"/>',
+  grid: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+  compass: '<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/>',
+  timer: '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 1.5M9 2h6"/>',
+  trend: '<path d="m3 17 6-6 4 4 8-8"/><path d="M14 7h7v7"/>',
+  building: '<rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M10 21v-3h4v3"/>',
+  eye: '<path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+  cube: '<path d="m12 2 8 4.5v11L12 22l-8-4.5v-11z"/><path d="m4 6.5 8 4.5 8-4.5M12 11v11"/>',
+  close: '<path d="M6 6l12 12M18 6 6 18"/>',
+  down: '<path d="M12 5v14M6 13l6 6 6-6"/>',
+  ext: '<path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M18 14v6H4V6h6"/>',
+  pin: '<path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/>',
+  refresh: '<path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/>'
+};
+function ico(n, sz, cls) {
+  return '<svg class="ic' + (cls ? ' ' + cls : '') + '" width="' + (sz || 18) + '" height="' + (sz || 18) + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (ICO[n] || ICO.spark) + '</svg>';
+}
+
+var WA = "916387497277";
+var LANGS = [{k:"en",l:"EN",html:"en"},{k:"hg",l:"Hinglish",html:"hi-Latn"},{k:"hi",l:"हिंदी",html:"hi"}];
+/* One language choice for every 5 Circles surface: localStorage 5cd.lang, JSON-encoded
+   ("en" | "hg" | "hi", with the quotes). Builds before 19 Sep 2026 wrote the bare value, so both
+   forms are read. The S.M.A.R.T server reads the 5cd_lang cookie, which uses its own codes. */
+var APP_CODE = {en:"en", hg:"hi", hi:"dv"};
+function isLangK(v){ return v==="en"||v==="hg"||v==="hi"; }
+function readLang(){
+  try { var v = localStorage.getItem("5cd.lang"); if (v != null) { try { v = JSON.parse(v); } catch(e){} if (isLangK(v)) return v; } } catch(e){}
+  try { var m = document.cookie.match(/(?:^|; )5cd_lang=(en|hi|dv)(?:;|$)/); if (m) return {en:"en", hi:"hg", dv:"hi"}[m[1]]; } catch(e){}
+  return "en";
+}
+function saveLang(k){
+  try { localStorage.setItem("5cd.lang", JSON.stringify(k)); } catch(e){}
+  try { document.cookie = "5cd_lang=" + APP_CODE[k] + "; path=/; max-age=31536000; samesite=lax" + (location.protocol === "https:" ? "; secure" : ""); } catch(e){}
+}
+function htmlLang(k){ for (var i = 0; i < LANGS.length; i++) if (LANGS[i].k === k) return LANGS[i].html; return "en"; }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];}); }
+function wa(msg){ return "https://wa.me/" + WA + "?text=" + encodeURIComponent(msg); }
+/* Links that arrive from the live-sessions API are only ever rendered if they are plain https. */
+function safeUrl(u){ return /^https:\/\/[^\s"'<>]+$/i.test(String(u||"")) ? String(u) : ""; }
+function langSeg(cur){
+  return '<div class="seg" role="group" aria-label="' + esc(FOOT[cur].lang) + '">' + LANGS.map(function(L){
+    return '<button type="button" lang="' + L.html + '" aria-pressed="' + (L.k===cur) + '" class="' + (L.k===cur?'on':'') + '" onclick="setLang(\'' + L.k + '\')">' + esc(L.l) + '</button>'; }).join("") + '</div>';
+}
+
+var FOOT = {
+en:{ lang:"Language", regType:"SEBI Registered Research Analyst (Non-Individual)", granted:"Registration granted 06 March 2025", po:"Principal Officer", co:"Compliance Officer",
+  offices:"Offices", kanpur:"Kanpur", mumbai:"Mumbai", investor:"Investor protection", charter:"Investor Charter", grievance:"Grievance Redressal",
+  griev:"Complaints go to the Compliance Officer at info@5circles.co or +91 638 749 7277. If a complaint is not resolved, you can escalate it on SEBI SCORES or SMART ODR.",
+  policies:"Policies", terms:"Terms of Use", privacy:"Privacy Policy", refund:"Refund & Cancellation", disclaimer:"Disclaimer", disclosure:"Disclosure",
+  sites:"Our sites", s5c:"5 Circles (company)", sAcad:"5 Circles Academy", sMentor:"Mentor Academy",
+  academy:"Academy", st:"Stage", live:"Live sessions", champ:"Championship", signin:"Sign in",
+  edu:"Educational content only. No stock tips, trade calls or investment advice.", rights:"All rights reserved." },
+hg:{ lang:"Bhasha", regType:"SEBI Registered Research Analyst (Non-Individual)", granted:"Registration 06 March 2025 ko mila", po:"Principal Officer", co:"Compliance Officer",
+  offices:"Offices", kanpur:"Kanpur", mumbai:"Mumbai", investor:"Investor protection", charter:"Investor Charter", grievance:"Shikayat nivaran",
+  griev:"Shikayat Compliance Officer ko bhejiye: info@5circles.co ya +91 638 749 7277. Shikayat hal na ho to aap use SEBI SCORES ya SMART ODR par le ja sakte hain.",
+  policies:"Policies", terms:"Terms of Use", privacy:"Privacy Policy", refund:"Refund aur cancellation", disclaimer:"Disclaimer", disclosure:"Disclosure",
+  sites:"Hamari sites", s5c:"5 Circles (company)", sAcad:"5 Circles Academy", sMentor:"Mentor Academy",
+  academy:"Academy", st:"Stage", live:"Live sessions", champ:"Championship", signin:"Sign in",
+  edu:"Sirf padhai ke liye. Koi stock tip, trade call ya investment advice nahi.", rights:"All rights reserved." },
+hi:{ lang:"भाषा", regType:"SEBI पंजीकृत रिसर्च एनालिस्ट (नॉन-इंडिविजुअल)", granted:"पंजीकरण 06 मार्च 2025 को मिला", po:"प्रिंसिपल ऑफ़िसर", co:"कंप्लायंस ऑफ़िसर",
+  offices:"ऑफ़िस", kanpur:"कानपुर", mumbai:"मुंबई", investor:"निवेशक सुरक्षा", charter:"इन्वेस्टर चार्टर", grievance:"शिकायत निवारण",
+  griev:"शिकायत कंप्लायंस ऑफ़िसर को भेजिए: info@5circles.co या +91 638 749 7277। शिकायत हल न हो तो आप उसे SEBI SCORES या SMART ODR पर ले जा सकते हैं।",
+  policies:"नीतियाँ", terms:"उपयोग की शर्तें", privacy:"गोपनीयता नीति", refund:"रिफ़ंड और कैंसलेशन", disclaimer:"डिस्क्लेमर", disclosure:"डिस्क्लोज़र",
+  sites:"हमारी साइटें", s5c:"5 Circles (कंपनी)", sAcad:"5 Circles अकादमी", sMentor:"मेंटर अकादमी",
+  academy:"अकादमी", st:"चरण", live:"लाइव सेशन", champ:"चैंपियनशिप", signin:"साइन इन",
+  edu:"सिर्फ़ शिक्षा के लिए। कोई स्टॉक टिप, ट्रेड कॉल या निवेश सलाह नहीं।", rights:"सर्वाधिकार सुरक्षित।" }
+};
+/* Tier-1, verbatim. build.js byte-checks it against the canonical text; never edit or translate. */
+var DISC = "Investment in securities market is subject to market risks. Read all related documents carefully before investing. Registration granted by SEBI and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors. Past performance is not indicative of future results. The analyst or dependents may hold positions in the securities discussed. 5 Circles Pvt Ltd · SEBI Registered Research Analyst · Reg. No. INH000020004";
+
+function footerHTML(k, seg){
+  var f = FOOT[k] || FOOT.en, L = "https://circleoptionlab.com/legal/";
+  function x(href, t){ return '<li><a href="' + href + '" target="_blank" rel="noopener">' + esc(t) + '</a></li>'; }
+  function i(href, t){ return '<li><a href="' + href + '">' + esc(t) + '</a></li>'; }
+  return '<footer class="site-foot"><div class="wrap"><div class="fgrid">' +
+    '<section class="fco"><h2>5 Circles Private Limited</h2><p>' + esc(f.regType) + '<br>Reg. No. INH000020004<br>' + esc(f.granted) + '</p>' +
+      '<p>' + esc(f.po) + ': Rahul Sarawgi<br>' + esc(f.co) + ': Suchita Sarawgi</p>' +
+      '<p><a href="mailto:info@5circles.co">info@5circles.co</a><br><a href="tel:+916387497277">+91 638 749 7277</a></p></section>' +
+    '<section class="fco"><h2>' + esc(f.offices) + '</h2>' +
+      '<p><b>' + esc(f.kanpur) + '</b><br>First Floor, Premises No. 124/244 C Block, Plot No. 245, Govind Nagar, Kanpur, Uttar Pradesh 208006</p>' +
+      '<p><b>' + esc(f.mumbai) + '</b><br>A Wing, G-022, Express Zone Mall, W E Highway, Next to Patel Vanika, Malad East, Mumbai, Maharashtra 400063</p></section>' +
+    '<section><h2>' + esc(f.investor) + '</h2><ul>' + x(L + 'investor-charter/', f.charter) + x(L + 'grievance/', f.grievance) +
+      x('https://scores.sebi.gov.in/', 'SEBI SCORES') + x('https://smartodr.in/login', 'SMART ODR') + '</ul><p class="fnote">' + esc(f.griev) + '</p></section>' +
+    '<section><h2>' + esc(f.policies) + '</h2><ul>' + x(L + 'terms/', f.terms) + x(L + 'privacy/', f.privacy) + x(L + 'refund/', f.refund) +
+      x(L + 'disclaimer/', f.disclaimer) + x(L + 'disclosure/', f.disclosure) + '</ul></section>' +
+    '<section><h2>' + esc(f.sites) + '</h2><ul>' + x('https://5circles.co', f.s5c) + x('https://circleoptionlab.com', 'CircleOptionLab') + i('/', f.sAcad) +
+      x('https://mentor.optionlab.co.in', f.sMentor) + x('https://www.youtube.com/@tradewithrahulsaraoge', 'YouTube') + x('https://x.com/Rahul_Saraoge', 'X') +
+      x('https://www.instagram.com/rahul_saraoge', 'Instagram') + '</ul></section>' +
+    '<section><h2>' + esc(f.academy) + '</h2><ul>' + i('/smart/about/', f.st + ' 1 · CIRCLE S.M.A.R.T') + i('/winners/about/', f.st + ' 2 · CIRCLE W.I.N.N.E.R.S') +
+      i('/one/about/', f.st + ' 3 · CIRCLE O.N.E') + i('/#live', f.live) + i('/#champ', f.champ) + i('/smart/learn', f.signin) + '</ul></section>' +
+  '</div><div class="fbar">' + (seg || '') + '<span>' + esc(f.edu) + '</span></div>' +
+  '<p class="disc" lang="en">' + esc(DISC) + '</p><p class="copy">© 2026 5 Circles Private Limited. ' + esc(f.rights) + '</p></div></footer>';
+}
+
+var LOGO = "data:image/webp;base64,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";
+var COUNTS = {"smart":21,"winners":13,"one":76};
+var API = "https://circleoptionlab.com";
+var lang = readLang();
+
+var UI = {
+en:{
+  skip:"Skip to content", docTitle:"5 Circles Academy — Zero to Top 1% trader, one stage at a time",
+  brand:"5 Circles Academy", signin:"Sign in", wa:"Talk on WhatsApp", navLabel:"Sections", langBtn:"Change language",
+  h1a:"Zero to ", h1b:"Top 1%", h1c:" trader.", h1d:"One stage at a time.",
+  lede:"The complete stock-market learning ladder from 5 Circles — the 21-day AI Trading Course first, then trading foundations, then a full 76-chapter technical study, then the professional tracks: options, F&O data, fundamentals and psychology. In English, Hinglish and हिंदी.",
+  startCta:"See the four stages", s1:"stages", s2:"sessions, modules and chapters", s3:"languages", s4:"SEBI-registered RA",
+  ladderH:"The four stages", ladderP:"Start where you are. Each stage is its own programme, opened on your one 5 Circles login, so you pay only for the stage you are on.",
+  st:"Stage", live:"Open", next:"Coming soon", part:"1 of 4 open",
+  s0t:"CIRCLE S.M.A.R.T", s0s:"AI Trading Course · 21-day guided foundation",
+  s0p:"Learn to trade with an AI co-pilot — 21 guided sessions in three weeks: markets, charts, one risk rule and your first rule-based routine. Virtual money only; AI = analyst, human = trigger.",
+  s0l:["21 sessions · English, Hinglish, हिंदी","AI co-pilot lab and a quiz in every session","Weekend Quiz Games and a final exam","Mock portfolio (virtual money) · process-score leaderboard"],
+  s1t:"CIRCLE W.I.N.N.E.R.S", s1s:"Foundations · 13 modules + 90-pattern library",
+  s1p:"The trading foundations in thirteen modules: charts, candlesticks, patterns, basic options, risk and psychology, markets and taxation — with live sessions and a monthly championship.",
+  s1l:["13 guided modules · English, Hinglish, हिंदी","Live mentor sessions and a monthly championship","Candlestick and chart-pattern library (90)","Slide decks, key notes and quizzes"],
+  s2t:"CIRCLE O.N.E", s2s:"A Complete Technical Study That Completes Your Journey",
+  s2p:"76 chapters across Level 1 and Level 2 — theory, charting, classical and advanced patterns, cycles, Elliott, volatility, systems and quant. A 28-week guided batch with study plan, classroom and leaderboard.",
+  s2l:["76 chapters · 28-week guided batch","The Level 1 exam unlocks Level 2","Practice MCQs and a 10-question quiz per chapter","Daily record, XP ladder, mentor mode"],
+  s3t:"CIRCLE PRO", s3s:"Professional tracks · pick your specialisation",
+  s3p:"The top of the ladder: four professional specialisations, each a programme of its own, built on the CircleOptionLab platform's tools.",
+  s3l:["Options Trading Mastery","Futures & F&O Data Crunching","Fundamental Analysis & Record Reading","Trading Psychology Pro"],
+  open:"Open programme", signHint:"Sign-in needed", learnMore:"Course details", notify:"Tell me when it opens",
+  proKick:"Stage 4 · first track open", proH:"CIRCLE PRO tracks", proP:"Each track will be a full programme on the same 5 Circles login, built around a CircleOptionLab tool you keep using afterwards.",
+  t1:"Options Trading Mastery", t1p:"Greeks, strategy selection, adjustments and payoff thinking — from the Strategy Finder to your own trade plan.", t1l:"Uses: Strategy Finder, payoff charts",
+  t2:"Futures & F&O Data Crunching", t2p:"OI, PCR, rollover, MWPL and delta data — reading what market positioning is actually saying.", t2l:"Uses: Futures Dashboard, Rollover History",
+  t3:"Fundamental Analysis & Record Reading", t3p:"Balance sheet, annual report, cash flow and valuation zones — reading the record the way an analyst does.", t3l:"Uses: Fundamental Analyzer and Screener",
+  t4:"Trading Psychology Pro", t4p:"Journaling, discipline systems, behavioural traps and position sizing under stress.", t4l:"Uses: Championship, journal templates",
+  howH:"How to join",
+  p:[["Choose a stage","New to markets? Start at Stage 1. Already read charts? Stage 3 may suit you."],["Enrol on WhatsApp","One message. We create your 5 Circles account and unlock your stage."],["Sign in","One email and password for every stage, on phone or laptop."],["Learn and clear the quizzes","Each lesson ends in a quiz; passing it opens the next. Switch language any time."]],
+  navLive:"Live sessions", navChamp:"Championship",
+  liveH:"Live sessions", liveP:"Small online and offline batches with the mentor, in Hindi and English.",
+  upcoming:"Upcoming", archive:"Past", liveLoading:"Loading sessions…", liveFail:"The session list could not load just now.", liveFailP:"Please try again, or ask on WhatsApp for the next date.", retry:"Try again",
+  liveEmpty:"No session is open for booking right now.", liveEmptyP:"New dates are announced here and on WhatsApp first. Message us and we will tell you as soon as the next date is fixed.",
+  notifyLive:"Notify me on WhatsApp", seePast:"See past sessions", pastEmpty:"No past sessions yet.",
+  whatH:"What happens in a live session", whatL:["The mentor takes one topic and works through it with examples.","You ask questions as you go; batches stay small so everyone can.","Online sessions run on a video call; offline ones at a named venue.","Stage 2 students earn {pts} championship points for attending."],
+  book:"Book a seat", full:"Join the waitlist on WhatsApp", closed:"Booking closed", liveNow:"Live now", enquire:"Enquire on WhatsApp", seatsLeft:"seats left", startsIn:"Starts in",
+  online:"Online", offline:"In person", free:"Free", members:"Members only", membersFree:"free for members", mentor:"Mentor", rec:"Watch the recording", ended:"Ended", map:"Map",
+  ebLine:"Early bird {eb} till {d}, then {full}", beginner:"Beginner", intermediate:"Intermediate", advanced:"Advanced", langHi:"Hindi", langEn:"English", units:["d","h","m"],
+  bkName:"Your name", bkPhone:"WhatsApp number", bkEmail:"Email (optional)", bkExp:"How long have you been trading?", bkExp1:"Just starting", bkExp2:"Under a year", bkExp3:"A year or more",
+  bkGo:"Confirm seat", bkWait:"Booking…", bkNeedName:"Please enter your name.", bkNeedPhone:"Please enter a valid phone number.", bkNeedEmail:"That email address does not look right.",
+  bkFail:"Could not book just now. Please try WhatsApp.", bk404:"This session is no longer open for booking.", bk409:"The released seats have just filled. Join the waitlist on WhatsApp.",
+  bk403:"This session is for enrolled members. Please ask on WhatsApp.", bk422:"Please check your phone number and email.",
+  bkDone:"Seat confirmed", bkSeat:"Your seat", bkJoin:"Open the joining link", bkKeep:"Save this link now; you will need it to join.",
+  bkPrivacy:"We use these details only for this session: to confirm your seat and contact you about it.", privacy:"Privacy policy", close:"Close",
+  champH:"Monthly championship", champP:"A leaderboard for Stage 2 students that resets every month. It scores the learning process — live sessions attended, modules finished, quiz scores and days of practice — never trading profit or money. Recognition only; there are no cash prizes.",
+  board:"This month's leaderboard", name:"Student", sessions:"Live", points:"Points", champLoading:"Loading this month's board…", champFail:"The leaderboard could not load just now.",
+  boardEmpty:"No scores yet for {month}.", boardEmptyP:"The board fills as Stage 2 students attend sessions, finish modules and clear quizzes this month.",
+  howPts:"How points are earned", pLive:"Attend a live session", pMod:"Finish a module", pQuiz:"Quiz best score ÷ 2", pDay:"Each day you practise (up to {cap})", joinChamp:"Stage 2 course details",
+  waMsg:"Hi, I would like to know more about the 5 Circles Academy", waLive:"Hi, please tell me when the next 5 Circles live session is announced.",
+  waSeat:"Hi, I would like a seat in \"{t}\" on {d}.", waPro:"Hi, please tell me when CIRCLE PRO opens."
+},
+hg:{
+  skip:"Content par jaiye", docTitle:"5 Circles Academy — zero se Top 1% trader tak, ek-ek stage karke",
+  brand:"5 Circles Academy", signin:"Sign in", wa:"WhatsApp par baat kijiye", navLabel:"Sections", langBtn:"Bhasha badliye",
+  h1a:"Zero se ", h1b:"Top 1%", h1c:" trader tak.", h1d:"Ek-ek stage karke.",
+  lede:"5 Circles ki poori stock-market learning ladder — pehle 21 din ka AI Trading Course, phir trading ki neev, phir 76 chapters ki poori technical study, aur phir professional tracks: options, F&O data, fundamentals aur psychology. English, Hinglish aur हिंदी mein.",
+  startCta:"Chaaron stages dekhiye", s1:"stages", s2:"sessions, modules aur chapters", s3:"bhashayein", s4:"SEBI-registered RA",
+  ladderH:"Chaar stages", ladderP:"Jahan hain wahin se shuru kijiye. Har stage apna alag programme hai, jo aapke ek hi 5 Circles login par khulta hai — isliye aap sirf usi stage ka bhugtaan karte hain jis par aap hain.",
+  st:"Stage", live:"Khula hai", next:"Jald aa raha hai", part:"4 mein se 1 khula",
+  s0t:"CIRCLE S.M.A.R.T", s0s:"AI Trading Course · 21 din ki guided neev",
+  s0p:"AI co-pilot ke saath trading seekhiye — teen hafton mein 21 guided sessions: market, charts, ek risk rule aur aapki pehli rule-based routine. Sirf virtual money; AI analyst hai, trigger aap hain.",
+  s0l:["21 sessions · English, Hinglish, हिंदी","Har session mein AI co-pilot lab aur quiz","Weekend Quiz Games aur ek final exam","Mock portfolio (virtual money) · process-score leaderboard"],
+  s1t:"CIRCLE W.I.N.N.E.R.S", s1s:"Foundations · 13 modules aur 90 patterns ki library",
+  s1p:"Terah modules mein trading ki neev: charts, candlesticks, patterns, basic options, risk aur psychology, markets aur tax — live sessions aur monthly championship ke saath.",
+  s1l:["13 guided modules · English, Hinglish, हिंदी","Mentor ke saath live sessions aur monthly championship","Candlestick aur chart-pattern library (90)","Slide decks, key notes aur quizzes"],
+  s2t:"CIRCLE O.N.E", s2s:"Poori technical study, jo aapka safar poora karti hai",
+  s2p:"Level 1 aur Level 2 ke 76 chapters — theory, charting, classical aur advanced patterns, cycles, Elliott, volatility, systems aur quant. 28 hafte ka guided batch: study plan, classroom aur leaderboard.",
+  s2l:["76 chapters · 28 hafte ka guided batch","Level 1 exam se Level 2 khulta hai","Har chapter mein practice MCQs aur 10 sawaalon ka quiz","Daily record, XP ladder, mentor mode"],
+  s3t:"CIRCLE PRO", s3s:"Professional tracks · apni specialisation chuniye",
+  s3p:"Ladder ka sabse upar ka hissa: chaar professional specialisations, har ek apna programme, CircleOptionLab platform ke tools par bana.",
+  s3l:["Options Trading Mastery","Futures aur F&O Data Crunching","Fundamental Analysis aur Record Reading","Trading Psychology Pro"],
+  open:"Programme kholiye", signHint:"Sign in zaroori", learnMore:"Course ki jaankari", notify:"Khulne par bataiye",
+  proKick:"Stage 4 · pehla track khula", proH:"CIRCLE PRO tracks", proP:"Har track ek poora programme hoga, usi 5 Circles login par, aur ek aise CircleOptionLab tool ke aas-paas bana jo aap baad mein bhi use karte rahenge.",
+  t1:"Options Trading Mastery", t1p:"Greeks, strategy chunna, adjustments aur payoff ki soch — Strategy Finder se apne trade plan tak.", t1l:"Tools: Strategy Finder, payoff charts",
+  t2:"Futures aur F&O Data Crunching", t2p:"OI, PCR, rollover, MWPL aur delta data — market ki positioning asal mein kya keh rahi hai, yeh padhna.", t2l:"Tools: Futures Dashboard, Rollover History",
+  t3:"Fundamental Analysis aur Record Reading", t3p:"Balance sheet, annual report, cash flow aur valuation zones — record ko analyst ki tarah padhna.", t3l:"Tools: Fundamental Analyzer aur Screener",
+  t4:"Trading Psychology Pro", t4p:"Journaling, discipline ke systems, behavioural traps aur dabaav mein position sizing.", t4l:"Tools: Championship, journal templates",
+  howH:"Kaise judein",
+  p:[["Stage chuniye","Market mein naye hain? Stage 1 se shuru kijiye. Chart padhna aata hai? Stage 3 aapke liye ho sakta hai."],["WhatsApp par enrol kijiye","Bas ek message. Hum aapka 5 Circles account banakar aapka stage khol dete hain."],["Sign in kijiye","Har stage ke liye ek hi email aur password — phone ho ya laptop."],["Seekhiye aur quiz clear kijiye","Har lesson ek quiz par khatam hota hai; pass karne par agla khulta hai. Bhasha kabhi bhi badal sakte hain."]],
+  navLive:"Live sessions", navChamp:"Championship",
+  liveH:"Live sessions", liveP:"Mentor ke saath chhote online aur offline batches, Hindi aur English mein.",
+  upcoming:"Aane wale", archive:"Pichhle", liveLoading:"Sessions load ho rahe hain…", liveFail:"Session list abhi load nahi ho payi.", liveFailP:"Dobara koshish kijiye, ya agli date WhatsApp par poochh lijiye.", retry:"Dobara koshish kijiye",
+  liveEmpty:"Abhi koi session booking ke liye khula nahi hai.", liveEmptyP:"Nayi dates sabse pehle yahin aur WhatsApp par aati hain. Message kijiye — agli date tay hote hi hum aapko bata denge.",
+  notifyLive:"WhatsApp par bataiye", seePast:"Pichhle sessions dekhiye", pastEmpty:"Abhi koi pichhla session nahi.",
+  whatH:"Live session mein kya hota hai", whatL:["Mentor ek topic lete hain aur use misaalon ke saath samjhate hain.","Aap saath-saath sawaal poochhte hain; batch chhote rakhe jaate hain taaki sab pooch sakein.","Online sessions video call par hote hain; offline sessions ek tay jagah par.","Stage 2 ke students ko attend karne par {pts} championship points milte hain."],
+  book:"Seat book kijiye", full:"WhatsApp par waitlist mein judiye", closed:"Booking band hai", liveNow:"Abhi live", enquire:"WhatsApp par poochhiye", seatsLeft:"seats baaki", startsIn:"Shuru hone mein",
+  online:"Online", offline:"Aamne-saamne", free:"Free", members:"Sirf members", membersFree:"members ke liye free", mentor:"Mentor", rec:"Recording dekhiye", ended:"Ho chuka", map:"Map",
+  ebLine:"Early bird {eb} ({d} tak), phir {full}", beginner:"Beginner", intermediate:"Intermediate", advanced:"Advanced", langHi:"Hindi", langEn:"English", units:["d","h","m"],
+  bkName:"Aapka naam", bkPhone:"WhatsApp number", bkEmail:"Email (optional)", bkExp:"Aap kab se trade kar rahe hain?", bkExp1:"Abhi shuru kiya hai", bkExp2:"Ek saal se kam", bkExp3:"Ek saal ya zyada",
+  bkGo:"Seat confirm kijiye", bkWait:"Book ho raha hai…", bkNeedName:"Apna naam likhiye.", bkNeedPhone:"Sahi phone number daaliye.", bkNeedEmail:"Yeh email address sahi nahi lag raha.",
+  bkFail:"Abhi book nahi ho paya. WhatsApp par try kijiye.", bk404:"Yeh session ab booking ke liye khula nahi hai.", bk409:"Khuli hui seats abhi-abhi bhar gayi. WhatsApp par waitlist mein judiye.",
+  bk403:"Yeh session enrolled members ke liye hai. WhatsApp par poochhiye.", bk422:"Apna phone number aur email check kijiye.",
+  bkDone:"Seat confirm", bkSeat:"Aapki seat", bkJoin:"Joining link kholiye", bkKeep:"Yeh link abhi save kar lijiye; join karne ke liye yahi chahiye.",
+  bkPrivacy:"Yeh details sirf is session ke liye use hoti hain: aapki seat confirm karne aur isi session ke baare mein aapse baat karne ke liye.", privacy:"Privacy policy", close:"Band kijiye",
+  champH:"Monthly championship", champP:"Stage 2 ke students ka leaderboard, jo har mahine naye sire se shuru hota hai. Yeh seekhne ki process ko score karta hai — attend kiye live sessions, poore kiye modules, quiz scores aur practice ke din — trading profit ya paise ko kabhi nahi. Sirf pehchaan; koi cash prize nahi.",
+  board:"Is mahine ka leaderboard", name:"Student", sessions:"Live", points:"Points", champLoading:"Is mahine ka board load ho raha hai…", champFail:"Leaderboard abhi load nahi ho paya.",
+  boardEmpty:"{month} ke abhi koi scores nahi.", boardEmptyP:"Jaise-jaise Stage 2 ke students is mahine sessions attend karenge, modules poore karenge aur quizzes clear karenge, board bharta jayega.",
+  howPts:"Points kaise milte hain", pLive:"Live session attend kijiye", pMod:"Module poora kijiye", pQuiz:"Quiz ka best score ÷ 2", pDay:"Har din ki practice ({cap} tak)", joinChamp:"Stage 2 ki jaankari",
+  waMsg:"Namaste, mujhe 5 Circles Academy ke baare mein jaanna hai", waLive:"Namaste, agla 5 Circles live session announce ho to mujhe bataiye.",
+  waSeat:"Namaste, mujhe \"{t}\" ({d}) mein seat chahiye.", waPro:"Namaste, CIRCLE PRO khulne par mujhe bataiye."
+},
+hi:{
+  skip:"मुख्य सामग्री पर जाएँ", docTitle:"5 Circles अकादमी — शून्य से टॉप 1% ट्रेडर तक, एक-एक चरण करके",
+  brand:"5 Circles अकादमी", signin:"साइन इन", wa:"WhatsApp पर बात करें", navLabel:"हिस्से", langBtn:"भाषा बदलें",
+  h1a:"शून्य से ", h1b:"टॉप 1%", h1c:" ट्रेडर तक।", h1d:"एक-एक चरण करके।",
+  lede:"5 Circles की पूरी शेयर-बाज़ार सीखने की सीढ़ी — पहले 21 दिन का AI Trading Course, फिर ट्रेडिंग की नींव, फिर 76 अध्यायों की पूरी तकनीकी पढ़ाई, और फिर पेशेवर ट्रैक: ऑप्शंस, F&O डेटा, फ़ंडामेंटल और साइकोलॉजी। English, Hinglish और हिंदी में।",
+  startCta:"चारों चरण देखें", s1:"चरण", s2:"सेशन, मॉड्यूल और अध्याय", s3:"भाषाएँ", s4:"SEBI-पंजीकृत RA",
+  ladderH:"चार चरण", ladderP:"जहाँ हैं वहीं से शुरू कीजिए। हर चरण अपना अलग प्रोग्राम है, जो आपके एक ही 5 Circles लॉगिन पर खुलता है — इसलिए आप सिर्फ़ उसी चरण का भुगतान करते हैं जिस पर आप हैं।",
+  st:"चरण", live:"खुला है", next:"जल्द आ रहा है", part:"4 में से 1 खुला",
+  s0t:"CIRCLE S.M.A.R.T", s0s:"AI Trading Course · 21 दिन की गाइडेड नींव",
+  s0p:"AI को-पायलट के साथ ट्रेडिंग सीखिए — तीन हफ़्तों में 21 गाइडेड सेशन: बाज़ार, चार्ट, एक रिस्क नियम और आपकी पहली नियम-आधारित दिनचर्या। सिर्फ़ वर्चुअल पैसा; AI विश्लेषक है, फ़ैसला आपका।",
+  s0l:["21 सेशन · English, Hinglish, हिंदी","हर सेशन में AI को-पायलट लैब और क्विज़","वीकेंड Quiz Games और एक फ़ाइनल परीक्षा","मॉक पोर्टफ़ोलियो (वर्चुअल पैसा) · प्रोसेस-स्कोर लीडरबोर्ड"],
+  s1t:"CIRCLE W.I.N.N.E.R.S", s1s:"नींव · 13 मॉड्यूल और 90 पैटर्न की लाइब्रेरी",
+  s1p:"तेरह मॉड्यूल में ट्रेडिंग की नींव: चार्ट, कैंडलस्टिक, पैटर्न, बेसिक ऑप्शंस, रिस्क और साइकोलॉजी, बाज़ार और टैक्स — लाइव सेशन और मासिक चैंपियनशिप के साथ।",
+  s1l:["13 गाइडेड मॉड्यूल · English, Hinglish, हिंदी","मेंटर के साथ लाइव सेशन और मासिक चैंपियनशिप","कैंडलस्टिक और चार्ट-पैटर्न लाइब्रेरी (90)","स्लाइड डेक, मुख्य नोट्स और क्विज़"],
+  s2t:"CIRCLE O.N.E", s2s:"पूरी तकनीकी पढ़ाई, जो आपका सफ़र पूरा करती है",
+  s2p:"लेवल 1 और लेवल 2 के 76 अध्याय — थ्योरी, चार्टिंग, क्लासिकल और एडवांस्ड पैटर्न, साइकिल, इलियट, वोलैटिलिटी, सिस्टम और क्वांट। 28 हफ़्तों का गाइडेड बैच: स्टडी प्लान, क्लासरूम और लीडरबोर्ड।",
+  s2l:["76 अध्याय · 28 हफ़्तों का गाइडेड बैच","लेवल 1 परीक्षा से लेवल 2 खुलता है","हर अध्याय में अभ्यास MCQ और 10 प्रश्नों का क्विज़","रोज़ का रिकॉर्ड, XP सीढ़ी, मेंटर मोड"],
+  s3t:"CIRCLE PRO", s3s:"पेशेवर ट्रैक · अपनी विशेषज्ञता चुनें",
+  s3p:"सीढ़ी का सबसे ऊपरी हिस्सा: चार पेशेवर विशेषज्ञताएँ, हर एक अपना प्रोग्राम, CircleOptionLab प्लेटफ़ॉर्म के टूल्स पर बना।",
+  s3l:["ऑप्शंस ट्रेडिंग मास्टरी","फ़्यूचर्स और F&O डेटा क्रंचिंग","फ़ंडामेंटल एनालिसिस और रिकॉर्ड रीडिंग","ट्रेडिंग साइकोलॉजी प्रो"],
+  open:"प्रोग्राम खोलें", signHint:"साइन इन ज़रूरी", learnMore:"कोर्स की जानकारी", notify:"खुलने पर बताएँ",
+  proKick:"चरण 4 · पहला ट्रैक खुला", proH:"CIRCLE PRO ट्रैक", proP:"हर ट्रैक एक पूरा प्रोग्राम होगा, उसी 5 Circles लॉगिन पर, और CircleOptionLab के एक ऐसे टूल के इर्द-गिर्द बना जिसे आप बाद में भी इस्तेमाल करते रहेंगे।",
+  t1:"ऑप्शंस ट्रेडिंग मास्टरी", t1p:"ग्रीक्स, स्ट्रैटेजी चुनना, एडजस्टमेंट और पेऑफ़ की सोच — Strategy Finder से अपने ट्रेड प्लान तक।", t1l:"टूल: Strategy Finder, पेऑफ़ चार्ट",
+  t2:"फ़्यूचर्स और F&O डेटा क्रंचिंग", t2p:"OI, PCR, रोलओवर, MWPL और डेल्टा डेटा — बाज़ार की पोज़िशनिंग असल में क्या कह रही है, यह पढ़ना।", t2l:"टूल: Futures Dashboard, Rollover History",
+  t3:"फ़ंडामेंटल एनालिसिस और रिकॉर्ड रीडिंग", t3p:"बैलेंस शीट, सालाना रिपोर्ट, कैश फ़्लो और वैल्यूएशन ज़ोन — रिकॉर्ड को एनालिस्ट की तरह पढ़ना।", t3l:"टूल: Fundamental Analyzer और Screener",
+  t4:"ट्रेडिंग साइकोलॉजी प्रो", t4p:"जर्नलिंग, अनुशासन के सिस्टम, व्यवहार के जाल और दबाव में पोज़िशन साइज़िंग।", t4l:"टूल: चैंपियनशिप, जर्नल टेम्पलेट",
+  howH:"कैसे जुड़ें",
+  p:[["चरण चुनिए","बाज़ार में नए हैं? चरण 1 से शुरू कीजिए। चार्ट पढ़ना आता है? चरण 3 आपके लिए हो सकता है।"],["WhatsApp पर दाख़िला लीजिए","बस एक संदेश। हम आपका 5 Circles अकाउंट बनाकर आपका चरण खोल देते हैं।"],["साइन इन कीजिए","हर चरण के लिए एक ही ईमेल और पासवर्ड — फ़ोन हो या लैपटॉप।"],["सीखिए और क्विज़ पास कीजिए","हर पाठ एक क्विज़ पर ख़त्म होता है; पास करने पर अगला खुलता है। भाषा कभी भी बदल सकते हैं।"]],
+  navLive:"लाइव सेशन", navChamp:"चैंपियनशिप",
+  liveH:"लाइव सेशन", liveP:"मेंटर के साथ छोटे ऑनलाइन और ऑफ़लाइन बैच, हिंदी और अंग्रेज़ी में।",
+  upcoming:"आने वाले", archive:"पिछले", liveLoading:"सेशन लोड हो रहे हैं…", liveFail:"सेशन की सूची अभी लोड नहीं हो पाई।", liveFailP:"दोबारा कोशिश कीजिए, या अगली तारीख़ WhatsApp पर पूछ लीजिए।", retry:"दोबारा कोशिश करें",
+  liveEmpty:"अभी कोई सेशन बुकिंग के लिए खुला नहीं है।", liveEmptyP:"नई तारीख़ें सबसे पहले यहीं और WhatsApp पर आती हैं। संदेश भेजिए — अगली तारीख़ तय होते ही हम आपको बता देंगे।",
+  notifyLive:"WhatsApp पर बताएँ", seePast:"पिछले सेशन देखें", pastEmpty:"अभी कोई पिछला सेशन नहीं।",
+  whatH:"लाइव सेशन में क्या होता है", whatL:["मेंटर एक विषय लेते हैं और उसे मिसालों के साथ समझाते हैं।","आप साथ-साथ सवाल पूछते हैं; बैच छोटे रखे जाते हैं ताकि सब पूछ सकें।","ऑनलाइन सेशन वीडियो कॉल पर होते हैं; ऑफ़लाइन सेशन एक तय जगह पर।","चरण 2 के विद्यार्थियों को शामिल होने पर {pts} चैंपियनशिप अंक मिलते हैं।"],
+  book:"सीट बुक करें", full:"WhatsApp पर वेटलिस्ट में जुड़ें", closed:"बुकिंग बंद है", liveNow:"अभी लाइव", enquire:"WhatsApp पर पूछें", seatsLeft:"सीटें बाक़ी", startsIn:"शुरू होने में",
+  online:"ऑनलाइन", offline:"आमने-सामने", free:"फ़्री", members:"सिर्फ़ सदस्य", membersFree:"सदस्यों के लिए फ़्री", mentor:"मेंटर", rec:"रिकॉर्डिंग देखें", ended:"हो चुका", map:"नक्शा",
+  ebLine:"अर्ली बर्ड {eb} ({d} तक), फिर {full}", beginner:"शुरुआती", intermediate:"मध्यम", advanced:"एडवांस्ड", langHi:"हिंदी", langEn:"अंग्रेज़ी", units:[" दिन"," घंटे"," मिनट"],
+  bkName:"आपका नाम", bkPhone:"WhatsApp नंबर", bkEmail:"ईमेल (वैकल्पिक)", bkExp:"आप कब से ट्रेड कर रहे हैं?", bkExp1:"अभी शुरू किया है", bkExp2:"एक साल से कम", bkExp3:"एक साल या ज़्यादा",
+  bkGo:"सीट पक्की करें", bkWait:"बुक हो रहा है…", bkNeedName:"अपना नाम लिखिए।", bkNeedPhone:"सही फ़ोन नंबर डालिए।", bkNeedEmail:"यह ईमेल पता सही नहीं लग रहा।",
+  bkFail:"अभी बुक नहीं हो पाया। WhatsApp पर कोशिश कीजिए।", bk404:"यह सेशन अब बुकिंग के लिए खुला नहीं है।", bk409:"खुली हुई सीटें अभी-अभी भर गईं। WhatsApp पर वेटलिस्ट में जुड़िए।",
+  bk403:"यह सेशन दाख़िला ले चुके सदस्यों के लिए है। WhatsApp पर पूछिए।", bk422:"अपना फ़ोन नंबर और ईमेल जाँच लीजिए।",
+  bkDone:"सीट पक्की", bkSeat:"आपकी सीट", bkJoin:"जॉइनिंग लिंक खोलें", bkKeep:"यह लिंक अभी सेव कर लीजिए; जुड़ने के लिए यही चाहिए।",
+  bkPrivacy:"ये जानकारी सिर्फ़ इस सेशन के लिए इस्तेमाल होती है: आपकी सीट पक्की करने और इसी सेशन के बारे में आपसे बात करने के लिए।", privacy:"गोपनीयता नीति", close:"बंद करें",
+  champH:"मासिक चैंपियनशिप", champP:"चरण 2 के विद्यार्थियों का लीडरबोर्ड, जो हर महीने नए सिरे से शुरू होता है। यह सीखने की प्रक्रिया को अंक देता है — लाइव सेशन में हाज़िरी, पूरे किए मॉड्यूल, क्विज़ स्कोर और अभ्यास के दिन — ट्रेडिंग मुनाफ़े या पैसे को कभी नहीं। सिर्फ़ सम्मान; कोई नकद इनाम नहीं।",
+  board:"इस महीने का लीडरबोर्ड", name:"विद्यार्थी", sessions:"लाइव", points:"अंक", champLoading:"इस महीने का बोर्ड लोड हो रहा है…", champFail:"लीडरबोर्ड अभी लोड नहीं हो पाया।",
+  boardEmpty:"{month} के अभी कोई स्कोर नहीं।", boardEmptyP:"जैसे-जैसे चरण 2 के विद्यार्थी इस महीने सेशन में आएँगे, मॉड्यूल पूरे करेंगे और क्विज़ पास करेंगे, बोर्ड भरता जाएगा।",
+  howPts:"अंक कैसे मिलते हैं", pLive:"लाइव सेशन में शामिल हों", pMod:"मॉड्यूल पूरा करें", pQuiz:"क्विज़ का सबसे अच्छा स्कोर ÷ 2", pDay:"हर दिन का अभ्यास ({cap} तक)", joinChamp:"चरण 2 की जानकारी",
+  waMsg:"नमस्ते, मुझे 5 Circles Academy के बारे में जानना है", waLive:"नमस्ते, अगला 5 Circles लाइव सेशन घोषित हो तो मुझे बताइए।",
+  waSeat:"नमस्ते, मुझे \"{t}\" ({d}) में सीट चाहिए।", waPro:"नमस्ते, CIRCLE PRO खुलने पर मुझे बताइए।"
+}};
+var MON = { en:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"], hi:["जन","फ़र","मार्च","अप्रैल","मई","जून","जुलाई","अग","सित","अक्टू","नव","दिस"] };
+var MONTHS = { en:["January","February","March","April","May","June","July","August","September","October","November","December"], hi:["जनवरी","फ़रवरी","मार्च","अप्रैल","मई","जून","जुलाई","अगस्त","सितंबर","अक्टूबर","नवंबर","दिसंबर"] };
+function T(k){ return (UI[lang]&&UI[lang][k]!==undefined)?UI[lang][k]:UI.en[k]; }
+function F(k, v){ return String(T(k)).replace(/\{(\w+)\}/g, function(_, n){ return v[n]; }); }
+function mon(i, full){ var t = full ? MONTHS : MON; return (lang === "hi" ? t.hi : t.en)[i]; }
+/* API text may carry en / hg / hi; a हिंदी reader falls back to Hinglish before English. */
+function tl(o){ if(!o) return ""; if(typeof o==="string") return o; return lang==="hi"?(o.hi||o.hg||o.en||""):lang==="hg"?(o.hg||o.en||""):(o.en||o.hg||o.hi||""); }
+function setLang(k){ lang=k; saveLang(k); render(); }
+/* Hyphenated words in the headline never break at the hyphen ("rule-" / "based"). */
+function nw(s){ return esc(s).replace(/(\S+-\S+)/g,'<span class="nw">$1</span>'); }
+function li(x){ return '<li>'+ico('check',15)+'<span>'+esc(x)+'</span></li>'; }
+
+/* ---------- live sessions + championship (circleoptionlab.com/api/live) ---------- */
+var LIVE = { state:'idle', programs:[], points:null, tab:'up' };
+var CH = { state:'idle', month:'', rows:[] };
+var BOOKED = {}; try { BOOKED = JSON.parse(localStorage.getItem('5cd.booked') || '{}') || {}; } catch (e) {}
+function api(path, opts){
+  var ctl = new AbortController(), tm = setTimeout(function(){ ctl.abort(); }, 9000);
+  var init = { method:(opts && opts.method) || 'GET', signal:ctl.signal, headers:{} };
+  if (opts && opts.body) { init.headers['Content-Type'] = 'application/json'; init.body = JSON.stringify(opts.body); }
+  return fetch(API + path, init).then(function(r){
+    clearTimeout(tm);
+    return r.json().catch(function(){ return {}; }).then(function(j){ if (!r.ok) throw { status:r.status }; return j; });
+  });
+}
+function loadLive(){
+  if (LIVE.state === 'loading' || LIVE.state === 'ok') return; LIVE.state = 'loading';
+  api('/api/live/sessions').then(function(j){ LIVE.state = 'ok'; LIVE.programs = Array.isArray(j.programs) ? j.programs : []; LIVE.points = j.points || null; render(); },
+    function(){ LIVE.state = 'fail'; render(); });
+}
+/* The championship month is the IST month, whatever the viewer's clock says. */
+function istMonth(){ var d = new Date(Date.now() + 330 * 60000); return d.getUTCFullYear() + '-' + String(d.getUTCMonth() + 1).padStart(2, '0'); }
+function loadChamp(){
+  if (CH.state === 'loading' || CH.state === 'ok') return; CH.state = 'loading';
+  var month = istMonth();
+  api('/api/live/leaderboard?month=' + month).then(function(j){ CH.state = 'ok'; CH.month = j.month || month; CH.rows = Array.isArray(j.rows) ? j.rows : []; render(); },
+    function(){ CH.state = 'fail'; render(); });
+}
+/* Session dates and times are IST wall-clock strings; a `closes` / early-bird date without an
+   offset is read as IST too, never in the viewer's timezone. */
+function istTime(s){ if(!s) return 0; s=String(s).trim(); if(/^\d{4}-\d{2}-\d{2}$/.test(s)) s+='T23:59:59'; if(/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?$/.test(s)) s+='+05:30'; var t=new Date(s).getTime(); return isNaN(t)?0:t; }
+function lsStart(p){ var d=p.days[0]; return istTime(d.date+'T'+d.start); }
+function lsEnd(p){ var d=p.days[p.days.length-1]; return istTime(d.date+'T'+(d.end||d.start)); }
+function dayMon(date){ var a=date.split('-'); return (+a[2])+' '+mon(+a[1]-1); }
+function tsDayMon(t){ var d=new Date(t+330*60000); return d.getUTCDate()+' '+mon(d.getUTCMonth()); }
+function clock(hhmm){ var a=hhmm.split(':'), h=+a[0], h12=h%12||12, hm=h12+':'+a[1];
+  if(lang!=='hi') return hm+' '+(h>=12?'PM':'AM');
+  return (h<12?'सुबह':h<16?'दोपहर':h<19?'शाम':'रात')+' '+hm; }
+function whenLine(p){ return p.days.map(function(d){ return dayMon(d.date)+', '+clock(d.start)+(d.end?'–'+clock(d.end):''); }).join(' · ')+' IST'; }
+function seats(p){ var s=p.seats||0, rel=Math.max(0,Math.min(p.released==null?s:p.released,s)), bk=Math.max(0,Math.min(p.booked||0,rel)); return { rel:rel, left:rel-bk, pct:rel?Math.round(bk/rel*100):0 }; }
+function cd(t){ var s=Math.max(0,Math.floor((t-Date.now())/1000)), d=Math.floor(s/86400), h=Math.floor(s%86400/3600), m=Math.floor(s%3600/60), u=T('units'); return (d?d+u[0]+' ':'')+h+u[1]+' '+String(m).padStart(2,'0')+u[2]; }
+var cdTimer=null;
+function tick(){
+  if(cdTimer||!document.querySelector('[data-cd]')) return;
+  cdTimer=setInterval(function(){
+    var n=document.querySelectorAll('[data-cd]'), due=false;
+    if(!n.length){ clearInterval(cdTimer); cdTimer=null; return; }
+    [].forEach.call(n,function(x){ var t=+x.getAttribute('data-cd'); if(t<=Date.now()) due=true; else x.textContent=cd(t); });
+    if(due) render(); /* a session just started: its card switches to "Live now" */
+  },30000);
+}
+function inr(n){ return '₹'+Number(n).toLocaleString('en-IN'); }
+function priceLine(p, now){
+  var eb=p.earlyBird, until=eb&&istTime(eb.until);
+  return eb&&typeof eb.price==='number'&&until>now ? F('ebLine',{eb:inr(eb.price), d:tsDayMon(until), full:inr(p.price)}) : inr(p.price);
+}
+function venueLine(p){
+  var v=p.venue||{}, m=safeUrl(v.map); if(p.mode!=='offline'||!(v.name||v.city)) return '';
+  return '<div class="meta">'+ico('pin',14)+'<span>'+esc([v.name,v.city].filter(Boolean).join(', '))+(m?' · <a href="'+esc(m)+'" target="_blank" rel="noopener">'+esc(T('map'))+'</a>':'')+'</span></div>';
+}
+var LEVELS=['beginner','intermediate','advanced'];
+function lsWa(p){ return wa(F('waSeat',{t:tl(p.title), d:dayMon(p.days[0].date)})); }
+
+function liveCard(p){
+  var now=Date.now(), st=lsStart(p), past=lsEnd(p)<now, running=!past&&st<=now, info=seats(p), mine=BOOKED[p.id];
+  var closes=istTime(p.closes), shut=running||(closes&&closes<=now);
+  /* Only a session the API marks free (price 0) is booked here. A paid session, one with no
+     price, or a members-only one goes to WhatsApp: the register endpoint takes no payment. */
+  var price=typeof p.price==='number'?p.price:null, free=price===0&&!p.membersOnly;
+  var a=p.days[0].date.split('-');
+  var tags='<span class="tg on">'+esc(T(p.mode==='offline'?'offline':'online'))+'</span>'+(running?'<span class="tg now">'+esc(T('liveNow'))+'</span>':'')+
+    (free?'<span class="tg">'+esc(T('free'))+'</span>':'')+(p.membersOnly?'<span class="tg">'+esc(T('members'))+'</span>':'')+
+    (LEVELS.indexOf(p.level)>=0?'<span class="tg">'+esc(T(p.level))+'</span>':'')+(p.lang?'<span class="tg">'+esc(T(p.lang==='en'?'langEn':'langHi'))+'</span>':'');
+  var body='<div class="meta">'+ico('clock',14)+'<span>'+esc(whenLine(p))+'</span></div>'+
+    (p.mentor?'<div class="meta">'+ico('users',14)+'<span>'+esc(T('mentor'))+': '+esc(p.mentor)+'</span></div>':'')+venueLine(p)+
+    (price>0?'<div class="price-row"><b>'+esc(priceLine(p,now))+'</b>'+(p.membersFree?' · '+esc(T('membersFree')):'')+'</div>':'');
+  var foot;
+  if(past){ var rec=safeUrl(p.recording); foot='<div class="meta">'+esc(T('ended'))+'</div>'+(rec?'<a class="btn ghost sm" href="'+esc(rec)+'" target="_blank" rel="noopener">'+ico('play',15)+' '+esc(T('rec'))+'</a>':''); }
+  else {
+    var btn;
+    if(mine) btn='<button type="button" class="btn primary sm" onclick="book(\''+esc(p.id)+'\')">'+esc(T('bkDone'))+(mine.seat?' · '+esc(mine.seat):'')+'</button>';
+    else if(shut) btn='<div class="meta">'+esc(T(running?'liveNow':'closed'))+'</div>';
+    else if(free&&info.left>0&&LIVE.state==='ok') btn='<button type="button" class="btn primary sm" onclick="book(\''+esc(p.id)+'\')">'+esc(T('book'))+'</button>';
+    else btn='<a class="btn ghost sm" href="'+lsWa(p)+'" target="_blank" rel="noopener">'+ico('chat',15)+' '+esc(T(free?'full':'enquire'))+'</a>';
+    foot=(info.rel>0&&!shut?'<div class="seat"><span><b>'+info.left+'</b> '+esc(T('seatsLeft'))+'</span><div class="bar" aria-hidden="true"><i style="width:'+info.pct+'%"></i></div></div>':'')+
+      (shut?'':'<div class="cd">'+esc(T('startsIn'))+' <span data-cd="'+st+'">'+esc(cd(st))+'</span></div>')+btn;
+  }
+  return '<article class="ls'+(past?' past':'')+'"><div class="top-r"><div class="date" aria-hidden="true"><b>'+(+a[2])+'</b><span>'+esc(mon(+a[1]-1))+'</span></div>'+
+    '<div style="min-width:0"><h3>'+esc(tl(p.title))+'</h3><div class="tags">'+tags+'</div></div></div>'+
+    (tl(p.blurb)?'<p>'+esc(tl(p.blurb))+'</p>':'')+body+foot+'</article>';
+}
+function liveLists(){
+  var now=Date.now(), all=LIVE.programs.filter(function(p){ return p&&p.published!==false&&Array.isArray(p.days)&&p.days.length&&p.days[0].date; });
+  return { up:all.filter(function(p){ return lsEnd(p)>=now; }).sort(function(a,b){ return lsStart(a)-lsStart(b); }),
+           pa:all.filter(function(p){ return lsEnd(p)<now; }).sort(function(a,b){ return lsStart(b)-lsStart(a); }) };
+}
+function liveSection(lv){
+  var body, tabs='', pts=(LIVE.points&&LIVE.points.live)||100;
+  if(LIVE.state==='idle'||LIVE.state==='loading') body='<div class="ls-note" role="status">'+esc(T('liveLoading'))+'</div>';
+  else if(LIVE.state==='fail') body='<div class="ls-note" role="status"><b>'+esc(T('liveFail'))+'</b>'+esc(T('liveFailP'))+
+    '<div class="cta"><button type="button" class="btn ghost sm" onclick="LIVE.state=\'idle\';loadLive();render()">'+ico('refresh',15)+' '+esc(T('retry'))+'</button><a class="btn ghost sm" href="'+wa(T('waLive'))+'" target="_blank" rel="noopener">'+ico('chat',15)+' '+esc(T('notifyLive'))+'</a></div></div>';
+  else {
+    var list=LIVE.tab==='pa'?lv.pa:lv.up;
+    if(lv.pa.length) tabs='<div class="segtabs">'+[['up',T('upcoming'),lv.up.length],['pa',T('archive'),lv.pa.length]].map(function(t){
+      return '<button type="button" aria-pressed="'+(LIVE.tab===t[0])+'" class="'+(LIVE.tab===t[0]?'on':'')+'" onclick="LIVE.tab=\''+t[0]+'\';render()">'+esc(t[1])+(t[2]?' · '+t[2]:'')+'</button>'; }).join('')+'</div>';
+    body=list.length?'<div class="livegrid">'+list.map(liveCard).join('')+'</div>'
+      :LIVE.tab==='pa'?'<div class="ls-note">'+esc(T('pastEmpty'))+'</div>'
+      :'<div class="ls-empty"><div><b>'+esc(T('liveEmpty'))+'</b><p>'+esc(T('liveEmptyP'))+'</p><div class="cta"><a class="btn primary sm" href="'+wa(T('waLive'))+'" target="_blank" rel="noopener">'+ico('chat',15)+' '+esc(T('notifyLive'))+'</a>'+
+        (lv.pa.length?'<button type="button" class="btn ghost sm" onclick="LIVE.tab=\'pa\';render()">'+esc(T('seePast'))+'</button>':'')+'</div></div>'+
+        '<div class="ls-what"><h3>'+esc(T('whatH'))+'</h3><ul>'+T('whatL').map(function(x){ return li(x.replace('{pts}',pts)); }).join('')+'</ul></div></div>';
+  }
+  return '<section class="section" id="live" aria-labelledby="live-h"><div class="wrap"><div class="section-h"><h2 id="live-h">'+esc(T('liveH'))+'</h2><p>'+esc(T('liveP'))+'</p></div>'+tabs+body+'</div></section>';
+}
+function book(id){
+  var p=LIVE.programs.filter(function(x){ return x.id===id; })[0]; if(!p) return;
+  var prev=document.activeElement, d=document.createElement('div'); d.className='overlay'; d.id='bk';
+  function close(){ d.remove(); document.removeEventListener('keydown',onKey); if(prev&&prev.focus) prev.focus(); }
+  function onKey(e){
+    if(e.key==='Escape') return close();
+    if(e.key!=='Tab') return;
+    var f=d.querySelectorAll('button,input,select,a[href]'), first=f[0], last=f[f.length-1];
+    if(e.shiftKey&&document.activeElement===first){ last.focus(); e.preventDefault(); } else if(!e.shiftKey&&document.activeElement===last){ first.focus(); e.preventDefault(); }
+  }
+  function head(k){ return '<div class="modal" role="dialog" aria-modal="true" aria-labelledby="bk-h"><button type="button" class="x" aria-label="'+esc(T('close'))+'">'+ico('close',18)+'</button>'+
+    '<div class="eyebrow">'+esc(T(k))+'</div><h3 id="bk-h">'+esc(tl(p.title))+'</h3><p class="muted">'+esc(whenLine(p))+'</p>'; }
+  function form(){
+    d.innerHTML=head('book')+'<form class="bk" novalidate>'+
+      '<label>'+esc(T('bkName'))+'<input id="bk-n" maxlength="80" autocomplete="name" required></label>'+
+      '<label>'+esc(T('bkPhone'))+'<input id="bk-p" type="tel" inputmode="tel" maxlength="20" autocomplete="tel" required></label>'+
+      '<label>'+esc(T('bkEmail'))+'<input id="bk-e" type="email" maxlength="160" autocomplete="email"></label>'+
+      '<label>'+esc(T('bkExp'))+'<select id="bk-x"><option value="new">'+esc(T('bkExp1'))+'</option><option value="some">'+esc(T('bkExp2'))+'</option><option value="experienced">'+esc(T('bkExp3'))+'</option></select></label>'+
+      '<div class="err" id="bk-err" role="alert"></div><button type="submit" class="btn primary" id="bk-go">'+esc(T('bkGo'))+'</button>'+
+      '<p class="fine">'+esc(T('bkPrivacy'))+' <a href="https://circleoptionlab.com/legal/privacy/" target="_blank" rel="noopener">'+esc(T('privacy'))+'</a></p></form></div>';
+    d.querySelector('.x').onclick=close;
+    d.querySelector('form').onsubmit=function(ev){
+      ev.preventDefault();
+      var n=d.querySelector('#bk-n').value.trim(), ph=d.querySelector('#bk-p').value.trim(), em=d.querySelector('#bk-e').value.trim(), x=d.querySelector('#bk-x').value, err=d.querySelector('#bk-err'), go=d.querySelector('#bk-go');
+      err.textContent='';
+      if(n.length<2){ err.textContent=T('bkNeedName'); return; }
+      if(!/^\+?[0-9][0-9 -]{6,17}$/.test(ph)){ err.textContent=T('bkNeedPhone'); return; }
+      if(em&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){ err.textContent=T('bkNeedEmail'); return; }
+      go.disabled=true; go.textContent=T('bkWait');
+      api('/api/live/register',{ method:'POST', body:{ session_id:p.id, name:n, phone:ph, email:em, experience:x } }).then(function(r){
+        BOOKED[p.id]={ seat:r.seat||'', name:r.name||n, join:safeUrl(r.session&&r.session.join_url) };
+        try{ localStorage.setItem('5cd.booked',JSON.stringify(BOOKED)); }catch(e){}
+        LIVE.state='idle'; loadLive(); ticket();
+      },function(e){ /* backend detail is English and may be a validation array: never print it */
+        var s=e&&e.status; go.disabled=false; go.textContent=T('bkGo');
+        err.textContent=T(s===404?'bk404':s===409?'bk409':s===403?'bk403':s===422?'bk422':'bkFail');
+      });
+    };
+    d.querySelector('#bk-n').focus();
+  }
+  function ticket(){
+    var m=BOOKED[p.id], j=safeUrl(m.join);
+    d.innerHTML=head('bkDone')+'<div class="ticket"><div class="lbl">'+esc(T('bkSeat'))+'</div><b>'+(m.seat?esc(m.seat):ico('check',28))+'</b><div>'+esc(m.name||'')+'</div>'+
+      (j?'<div class="cta"><a class="btn primary sm" href="'+esc(j)+'" target="_blank" rel="noopener">'+esc(T('bkJoin'))+' '+ico('ext',15)+'</a></div><p class="fine">'+esc(T('bkKeep'))+'</p>':'')+'</div></div>';
+    d.querySelector('.x').onclick=close; d.querySelector('.x').focus();
+  }
+  d.addEventListener('click',function(e){ if(e.target===d) close(); });
+  document.addEventListener('keydown',onKey);
+  document.body.appendChild(d);
+  BOOKED[p.id]?ticket():form();
+}
+function shortName(n){ var w=String(n||'').trim().split(/\s+/); return w.length>1?w[0]+' '+w[w.length-1].charAt(0)+'.':(w[0]||''); }
+function champSection(){
+  var pts=LIVE.points||{ live:100, mod:50, day:5, dayCap:100, quizDiv:2 }, m=/^(\d{4})-(\d{2})$/.exec(CH.month||''), month=m?mon(+m[2]-1,true)+' '+m[1]:'';
+  var body;
+  if(CH.state==='idle'||CH.state==='loading') body='<div class="ls-note" role="status">'+esc(T('champLoading'))+'</div>';
+  else if(CH.state==='fail') body='<div class="ls-note" role="status"><b>'+esc(T('champFail'))+'</b><div class="cta"><button type="button" class="btn ghost sm" onclick="CH.state=\'idle\';loadChamp();render()">'+ico('refresh',15)+' '+esc(T('retry'))+'</button></div></div>';
+  else if(!CH.rows.length) body='<div class="ls-note"><b>'+esc(F('boardEmpty',{month:month}))+'</b>'+esc(T('boardEmptyP'))+'</div>';
+  else body='<table class="board" aria-label="'+esc(T('board'))+'"><thead><tr><th scope="col">#</th><th scope="col">'+esc(T('name'))+'</th><th scope="col" class="n">'+esc(T('sessions'))+'</th><th scope="col" class="n">'+esc(T('points'))+'</th></tr></thead><tbody>'+
+    CH.rows.slice(0,15).map(function(r,i){ return '<tr'+(i<3?' class="top3"':'')+'><td class="rk">'+(+r.rank||i+1)+'</td><td>'+esc(shortName(r.name))+'</td><td class="n">'+(+r.sessions||0)+'</td><td class="n pt">'+(+r.total||0)+'</td></tr>'; }).join('')+'</tbody></table>';
+  var rules='<div class="rules"><h3>'+esc(T('howPts'))+'</h3>'+
+    '<div class="rule">'+ico('mic',20)+'<span>'+esc(T('pLive'))+'</span><b>+'+pts.live+'</b></div>'+
+    '<div class="rule">'+ico('book',20)+'<span>'+esc(T('pMod'))+'</span><b>+'+pts.mod+'</b></div>'+
+    '<div class="rule">'+ico('target',20)+'<span>'+esc(T('pQuiz'))+'</span><b>≤ '+Math.round(100/(pts.quizDiv||2))+'</b></div>'+
+    '<div class="rule">'+ico('flame',20)+'<span>'+esc(F('pDay',{cap:pts.dayCap}))+'</span><b>+'+pts.day+'</b></div>'+
+    '<div class="cta"><a class="btn ghost sm" href="/winners/about/">'+esc(T('joinChamp'))+' '+ico('arrow',15)+'</a></div></div>';
+  return '<section class="section" id="champ" aria-labelledby="champ-h"><div class="wrap"><div class="section-h">'+(month&&CH.state==='ok'?'<div class="eyebrow">'+esc(month)+'</div>':'')+
+    '<h2 id="champ-h">'+esc(T('champH'))+'</h2><p>'+esc(T('champP'))+'</p></div><div class="champ"><div>'+body+'</div>'+rules+'</div></div></section>';
+}
+
+/* ---------- page ---------- */
+function ringsSVG(){
+  var c=["#22b8f5","#00aeef","#38bdf8","#0b74b8","#7ccdf9"], out="";
+  for(var i=0;i<5;i++){ var r=52+i*34; out+='<circle cx="230" cy="230" r="'+r+'" fill="none" stroke="'+c[i]+'" stroke-opacity="'+(0.55-i*0.08)+'" stroke-width="'+(10-i)+'" stroke-dasharray="'+(r*6.283*(0.35+i*0.12))+' '+(r*6.283)+'" transform="rotate('+(-90+i*37)+' 230 230)"/>'; }
+  return '<svg class="rings" viewBox="0 0 460 460" aria-hidden="true"><defs><radialGradient id="gl" cx="50%" cy="50%"><stop offset="0" stop-color="#00aeef" stop-opacity=".2"/><stop offset="1" stop-color="#00aeef" stop-opacity="0"/></radialGradient></defs><circle cx="230" cy="230" r="220" fill="url(#gl)"/>'+out+'<image href="'+LOGO+'" x="170" y="170" width="120" height="120"/></svg>';
+}
+/* Card titles break after "CIRCLE" so all four programme names line up. */
+function stage(n, k, acts, soon, tag){
+  var tw=String(T(k+'t')).split(' ');
+  return '<article class="stage'+(soon?' soon':'')+'"><div class="num"><i>'+n+'</i>'+esc(T('st'))+' '+n+'<span class="sp"></span><span class="tag'+(soon?'':' open')+'">'+esc(tag||T(soon?'next':'live'))+'</span></div>'+
+    '<h3>'+esc(tw[0])+'<br>'+esc(tw.slice(1).join(' '))+'<small>'+esc(T(k+'s'))+'</small></h3><p>'+esc(T(k+'p'))+'</p><ul>'+T(k+'l').map(li).join('')+'</ul><div class="acts">'+acts+'</div></article>';
+}
+function acts(open, about){
+  return '<a class="btn primary sm" href="'+open+'">'+esc(T('open'))+' '+ico('arrow',15)+'</a><a class="btn ghost sm" href="'+about+'">'+esc(T('learnMore'))+'</a>'+
+    '<span class="hint">'+ico('key',13)+' '+esc(T('signHint'))+'</span>';
+}
+var HASH = ''; try { HASH = decodeURIComponent(location.hash.slice(1)); } catch (e) {}
+/* The page is drawn by script, so a shared #live / #champ link has nothing to land on at load.
+   Scroll once the target exists — and for the two API sections, once their data has settled. */
+function jumpToHash(){
+  if(!HASH) return;
+  if((HASH==='live'&&(LIVE.state==='idle'||LIVE.state==='loading'))||(HASH==='champ'&&(CH.state==='idle'||CH.state==='loading'))) return;
+  var t=document.getElementById(HASH); HASH=''; if(t) t.scrollIntoView();
+}
+function render(){
+  var root=document.documentElement; root.lang=htmlLang(lang); root.setAttribute('data-lang',lang);
+  document.title=T('docTitle'); document.querySelector('.skip').textContent=T('skip');
+  var cur=LANGS.filter(function(L){ return L.k===lang; })[0], nx=LANGS[(LANGS.indexOf(cur)+1)%LANGS.length];
+  var lv=liveLists(), liveHot=LIVE.state==='ok'&&lv.up.length>0, champHot=CH.state==='ok'&&CH.rows.length>0;
+  var tracks=[["strategy","t1"],["calc","t2"],["bookopen","t3"],["brain","t4"]];
+  document.getElementById("app").innerHTML=
+  '<header class="top"><div class="wrap top-in">'+
+    '<a class="brand" href="/" aria-label="'+esc(T('brand'))+'"><img src="'+LOGO+'" alt="" width="44" height="44"><span class="bt"><span class="kick">5 Circles Pvt Ltd</span><b>'+esc(T('brand'))+'</b></span></a>'+
+    '<span class="sp"></span><nav class="nav" aria-label="'+esc(T('navLabel'))+'">'+
+    '<a class="chip" href="#live" aria-label="'+esc(T('navLive'))+'">'+ico('mic',15)+' <span class="t">'+esc(T('navLive'))+'</span></a>'+
+    '<a class="chip" href="#champ" aria-label="'+esc(T('navChamp'))+'">'+ico('trophy',15)+' <span class="t">'+esc(T('navChamp'))+'</span></a>'+
+    '<button type="button" class="chip" onclick="setLang(\''+nx.k+'\')" aria-label="'+esc(T('langBtn'))+' ('+esc(cur.l)+')" title="'+esc(T('langBtn'))+'">'+ico('lang',15)+' <span lang="'+cur.html+'">'+esc(cur.l)+'</span></button>'+
+    '<a class="chip primary" href="/smart/learn">'+ico('key',15)+' <span>'+esc(T('signin'))+'</span></a>'+
+  '</nav></div></header>'+
+  '<main id="main">'+
+  '<section class="hero"><div class="wrap">'+ringsSVG()+
+    '<div class="eyebrow">5 Circles Pvt Ltd · SEBI RA INH000020004</div>'+
+    '<h1><span>'+nw(T('h1a'))+'<span class="g">'+nw(T('h1b'))+'</span>'+nw(T('h1c'))+'</span><span>'+nw(T('h1d'))+'</span></h1>'+
+    '<p class="lede">'+esc(T('lede'))+'</p>'+
+    '<div class="cta"><a class="btn primary" href="#ladder">'+esc(T('startCta'))+' '+ico('down',18)+'</a>'+
+      '<a class="btn ghost" href="/smart/learn">'+ico('key',16)+' '+esc(T('signin'))+'</a>'+
+      '<a class="btn ghost" href="'+wa(T('waMsg'))+'" target="_blank" rel="noopener">'+ico('chat',16)+' '+esc(T('wa'))+'</a></div>'+
+    '<div class="stats"><div class="stat"><b>4</b><span>'+esc(T('s1'))+'</span></div><div class="stat"><b>'+(COUNTS.smart+COUNTS.winners+COUNTS.one)+'</b><span>'+esc(T('s2'))+'</span></div>'+
+      '<div class="stat"><b>3</b><span>'+esc(T('s3'))+'</span></div><div class="stat"><b>INH000020004</b><span>'+esc(T('s4'))+'</span></div></div>'+
+  '</div></section>'+
+  '<section class="section" id="ladder" aria-labelledby="ladder-h"><div class="wrap">'+
+    '<div class="section-h"><h2 id="ladder-h">'+esc(T('ladderH'))+'</h2><p>'+esc(T('ladderP'))+'</p></div>'+
+    '<div class="ladder">'+stage(1,'s0',acts('/smart/learn','/smart/about/'))+stage(2,'s1',acts('/winners/','/winners/about/'))+stage(3,'s2',acts('/one/','/one/about/'))+
+      stage(4,'s3','<a class="btn primary sm" href="/pro/options/">'+esc(T('open'))+' '+ico('arrow',15)+'</a>'+
+        '<a class="btn ghost sm" href="'+wa(T('waPro'))+'" target="_blank" rel="noopener">'+ico('chat',15)+' '+esc(T('notify'))+'</a>'+
+        '<span class="hint">'+ico('key',13)+' '+esc(T('signHint'))+'</span>',true,T('part'))+'</div>'+
+  '</div></section>'+
+  /* Live sessions and the championship sit right under the ladder only when they have something
+     to show; empty, loading or failed, they drop below "How to join" and the PRO tracks. */
+  (liveHot?liveSection(lv):'')+(champHot?champSection():'')+
+  '<section class="section" id="how" aria-labelledby="how-h"><div class="wrap">'+
+    '<div class="section-h"><h2 id="how-h">'+esc(T('howH'))+'</h2></div>'+
+    '<ol class="path">'+T('p').map(function(s,i){ return '<li class="step"><b><span>'+(i+1)+'</span>'+esc(s[0])+'</b>'+esc(s[1])+'</li>'; }).join('')+'</ol>'+
+    '<div class="cta" style="margin-top:24px"><a class="btn primary" href="'+wa(T('waMsg'))+'" target="_blank" rel="noopener">'+ico('chat',16)+' '+esc(T('wa'))+'</a><a class="btn ghost" href="/smart/learn">'+ico('key',16)+' '+esc(T('signin'))+'</a></div>'+
+  '</div></section>'+
+  '<section class="section" id="pro" aria-labelledby="pro-h"><div class="wrap">'+
+    '<div class="section-h"><div class="eyebrow">'+esc(T('proKick'))+'</div><h2 id="pro-h">'+esc(T('proH'))+'</h2><p>'+esc(T('proP'))+'</p></div>'+
+    '<div class="tracks">'+tracks.map(function(t){ return '<div class="pro-track">'+ico(t[0],40)+'<h3>'+esc(T(t[1]))+'</h3><p>'+esc(T(t[1]+'p'))+'</p><span class="lk">'+esc(T(t[1]+'l'))+'</span>'+(t[1]==='t1'?'<a class="btn primary sm" style="margin-top:8px;align-self:flex-start" href="/pro/options/">'+esc(T('open'))+' '+ico('arrow',15)+'</a>':'')+'</div>'; }).join('')+'</div>'+
+  '</div></section>'+
+  (liveHot?'':liveSection(lv))+(champHot?'':champSection())+
+  '</main>'+footerHTML(lang, langSeg(lang))+
+  /* WhatsApp glyph is a filled path, unlike the stroke icons in ICO, so it stays inline here. */
+  '<a class="wa-fab" href="'+wa(T('waMsg'))+'" target="_blank" rel="noopener" aria-label="'+esc(T('wa'))+'" title="'+esc(T('wa'))+'">'+
+    '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.04 2a9.9 9.9 0 0 0-8.57 14.86L2 22l5.27-1.38A9.9 9.9 0 1 0 12.04 2Zm0 1.67a8.23 8.23 0 1 1-4.2 15.31l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1 7-12.6Zm-3.35 3.6c-.18 0-.47.07-.72.34-.25.27-.94.92-.94 2.24s.97 2.6 1.1 2.78c.14.18 1.9 2.9 4.6 4.06.64.28 1.14.44 1.53.57.64.2 1.23.17 1.69.1.52-.07 1.59-.65 1.81-1.27.23-.63.23-1.16.16-1.27-.07-.12-.25-.18-.52-.32-.27-.13-1.59-.78-1.83-.87-.25-.09-.43-.14-.61.13-.18.27-.7.88-.85 1.06-.16.18-.32.2-.58.07a7.33 7.33 0 0 1-2.16-1.33 8.1 8.1 0 0 1-1.49-1.86c-.16-.27-.02-.42.12-.55.12-.12.27-.32.4-.47.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.47-.07-.13-.6-1.45-.83-1.98-.21-.52-.44-.5-.61-.5h-.52Z"/></svg></a>';
+  tick(); jumpToHash();
+}
+render();
+loadLive(); loadChamp();
+</script>
+</body>
+</html>
