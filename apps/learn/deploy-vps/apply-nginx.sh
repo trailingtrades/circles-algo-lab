@@ -1,5 +1,6 @@
 #!/bin/bash
-# Installs the 19 Sep 2026 nginx changes for learn.optionlab.co.in (see APPLY-2026-09-19.md).
+# Installs the nginx changes for learn.optionlab.co.in (19 Sep 2026 set, APPLY-2026-09-19.md;
+# extended 25 Sep 2026 with learn-botguard.conf + learn-perf.conf, APPLY-2026-09-25.md).
 # Runs ON the VPS as root, from the folder the deploy-vps files were copied to. Order: check the
 # box looks like the reference -> back up everything it will touch and write rollback.sh beside
 # the backup -> edit the server block -> install files -> nginx -t -> reload. Any failure before
@@ -10,8 +11,8 @@ LINK=/etc/nginx/sites-enabled/learn.optionlab.co.in
 SITE=$(readlink -f "$LINK")   # the file nginx really loads: an old `sed -i` on the link may have turned it into a plain copy
 SNIP=/etc/nginx/snippets; CONFD=/etc/nginx/conf.d; WEB=/var/www/learn-5circles
 BK=/root/nginx-backup-$(date +%Y%m%d-%H%M%S)
-NAMES="learn-static-headers.conf academy-site.conf academy-paths-gated.conf smart-app.conf legacy-app-paths.conf learn-ratelimit.conf 404.html"
-dest() { case "$1" in learn-ratelimit.conf) echo "$CONFD/$1" ;; 404.html) echo "$WEB/$1" ;; *) echo "$SNIP/$1" ;; esac; }
+NAMES="learn-static-headers.conf academy-site.conf academy-paths-gated.conf smart-app.conf legacy-app-paths.conf learn-ratelimit.conf learn-botguard.conf learn-perf.conf 404.html"
+dest() { case "$1" in learn-ratelimit.conf|learn-botguard.conf|learn-perf.conf) echo "$CONFD/$1" ;; 404.html) echo "$WEB/$1" ;; *) echo "$SNIP/$1" ;; esac; }
 
 echo "→ preflight"
 [ -f "$SITE" ] || { echo "FAIL: no server block at $LINK" >&2; exit 1; }
@@ -70,6 +71,10 @@ else:
     print("   include academy-site.conf: added after the academy-paths include")
 open(p, "w", encoding="utf-8").write(s)
 PY
+
+# learn-perf.conf's proxy_cache_path stores the app's static assets here; www-data (the worker
+# user) must own it or every cache write fails silently and Node keeps serving the assets.
+install -d -o www-data -g www-data /var/cache/nginx-smart
 
 echo "→ installing files"
 for n in $NAMES; do

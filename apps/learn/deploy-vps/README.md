@@ -13,6 +13,8 @@ reaches the box only by hand — the latest change set and its exact commands ar
 | `learn-static-headers.conf` | `/etc/nginx/snippets/` | HSTS, CSP, Permissions-Policy etc. for every static location |
 | `legacy-app-paths.conf` | `/etc/nginx/snippets/` | Vercel-era `/learn` `/verify` `/api` → `/smart` 301s |
 | `learn-ratelimit.conf` | `/etc/nginx/conf.d/` | `limit_req_zone` for the sign-in/invite/reset POSTs (http context) |
+| `learn-botguard.conf` | `/etc/nginx/conf.d/` | bad-bot User-Agent map + app flood zone + per-IP connection zone (25 Sep 2026; enforcement in academy-site.conf and smart-app.conf) |
+| `learn-perf.conf` | `/etc/nginx/conf.d/` | `upstream smart_node` keepalive pool + `proxy_cache_path` for `/smart/_next/static/` (25 Sep 2026) |
 | `404.html` | `/var/www/learn-5circles/` | fallback branded not-found page; the Academy deploy's own `dist/404.html` wins (`apply-nginx.sh` never overwrites it) |
 | `learn-smart.service`, `smart-pull.sh`, `smart-pull.timer` | `/etc/systemd/system/`, `/usr/local/bin/` | app unit and pull deploy |
 | `apply-nginx.sh` | run from a copy in `/root/` | installs the nginx files with backup, `nginx -t` and auto-rollback |
