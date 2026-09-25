@@ -35,18 +35,18 @@ const WA = "https://wa.me/916387497277";
    /smart basePath, and each href is the final URL (trailing slash, no redirect hop). `unlocked` comes
    from stage_access in the app layout; when it is unknown (sign-in page) the stages stay plain links
    and nginx's gate decides. A locked stage is shown as locked instead of silently bouncing home. */
-export function AcademyStrip({ unlocked, current = "smart" }: { unlocked?: { winners: boolean; one: boolean }; current?: "start" | "smart" | "winners" | "one" }) {
+export function AcademyStrip({ unlocked, current = "smart" }: { unlocked?: { winners: boolean; winners_plus: boolean; one: boolean }; current?: "start" | "smart" | "winners" | "winners_plus" | "one" }) {
   const { tx, lang } = useLang();
   const dlg = useRef<HTMLDialogElement>(null);
-  const [ask, setAsk] = useState<{ n: number; key: string; name: string; about: string } | null>(null);
+  const [ask, setAsk] = useState<{ n: number | string; key: string; name: string; about: string } | null>(null);
   const sep = <ChevronRight size={12} strokeWidth={1.75} className="sep" aria-hidden />;
-  const stage = (n: number) => `${tx(S.stage)} ${n}`;
-  const open = (n: number, key: string, name: string, about: string) => { setAsk({ n, key, name, about }); dlg.current?.showModal(); };
+  const stage = (n: number | string) => `${tx(S.stage)} ${n}`;
+  const open = (n: number | string, key: string, name: string, about: string) => { setAsk({ n, key, name, about }); dlg.current?.showModal(); };
   // `current` marks the stage being viewed (the sign-in gate passes the stage the learner is
   // heading to via ?next=, so the strip highlight matches the hero); a lock always wins over it.
   // A locked stage is a button that opens the unlock dialog (course details + WhatsApp enrolment),
   // so the ladder shows the way up instead of a dead end.
-  const sib = (n: number, key: "start" | "smart" | "winners" | "one", href: string, name: string, open_: boolean | undefined) => open_ === false
+  const sib = (n: number | string, key: "start" | "smart" | "winners" | "winners_plus" | "one", href: string, name: string, open_: boolean | undefined) => open_ === false
     ? <button type="button" className="sib lock" title={tx(S.lockedWhy)} onClick={() => open(n, key, name, `${href}about/`)}><Lock size={11} strokeWidth={1.75} aria-hidden />{stage(n)} · {name}<span className="sr-only"> ({tx(S.locked)})</span></button>
     : current === key
       ? <span className="on" aria-current="true">{stage(n)} · {name}</span>
@@ -60,6 +60,7 @@ export function AcademyStrip({ unlocked, current = "smart" }: { unlocked?: { win
         {sib(0, "start", "/smart/stage0/", "Circle S.T.A.R.T", undefined)}{sep}
         {sib(1, "smart", "/smart/learn", "Circle S.M.A.R.T", undefined)}{sep}
         {sib(2, "winners", "/winners/", "Circle W.I.N.N.E.R.S", unlocked?.winners)}{sep}
+        {sib("2+", "winners_plus", "/winners-plus/", "Circle W.I.N.N.E.R.S +", unlocked?.winners_plus)}{sep}
         {sib(3, "one", "/one/", "Circle O.N.E", unlocked?.one)}{sep}
         <span className="soon">{stage(4)} · Circle Pro — {tx(S.soon)}</span>
       </nav>

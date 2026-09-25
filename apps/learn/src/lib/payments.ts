@@ -5,6 +5,7 @@
    WhatsApp enrolment line. URLs look like https://rzp.io/l/<slug> or https://pages.razorpay.com/<slug>. */
 export const PAY_URLS = {
   winners: "",
+  winners_plus: "",
   one: "",
 } as const;
 
