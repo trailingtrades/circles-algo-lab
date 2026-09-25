@@ -1,0 +1,35 @@
+<!-- ============================================================
+  5 Circles Academy landing (learn.optionlab.co.in) — floating
+  WhatsApp enquiry button. Self-contained: no CSS/JS files needed.
+
+  HOW TO SHIP (Rahul's machine, Git Bash):
+    1. Open  C:\dev\ctc-tools\tools\5circles-academy\src\index.html
+       (and course.html template if you want it on course pages too)
+    2. Paste EVERYTHING between the START/END markers below just
+       before the closing </body> tag.
+    3. cd C:\dev\ctc-tools\tools\5circles-academy
+       node src/build.js
+       bash deploy/deploy-academy.sh
+    4. Check https://learn.optionlab.co.in/ — green button, bottom-right.
+
+  Number is the canonical enrolment line (+91 638 749 7277), same as
+  the SMART app FAB and the landing's existing WA buttons.
+============================================================ -->
+
+<!-- START: WhatsApp floating button -->
+<style>
+  .wa-fab{position:fixed;right:18px;bottom:18px;z-index:9999;display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:9999px;background:#25d366;color:#fff;box-shadow:0 4px 14px rgba(0,0,0,.35);text-decoration:none;transition:transform .15s ease,background .15s ease}
+  .wa-fab:hover{background:#1ebe5d;transform:scale(1.06)}
+  .wa-fab:focus-visible{outline:3px solid #00AEEF;outline-offset:3px}
+  .wa-fab svg{width:28px;height:28px}
+  @media print{.wa-fab{display:none}}
+</style>
+<a class="wa-fab"
+   href="https://wa.me/916387497277?text=Namaste%2C%20mujhe%205%20Circles%20Academy%20ke%20courses%20ke%20baare%20mein%20jaankari%20chahiye."
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Chat with us on WhatsApp (opens in a new tab)" title="WhatsApp par baat kijiye">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    <path d="M12.04 2a9.9 9.9 0 0 0-8.57 14.86L2 22l5.27-1.38A9.9 9.9 0 1 0 12.04 2Zm0 1.67a8.23 8.23 0 1 1-4.2 15.31l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1 7-12.6Zm-3.35 3.6c-.18 0-.47.07-.72.34-.25.27-.94.92-.94 2.24s.97 2.6 1.1 2.78c.14.18 1.9 2.9 4.6 4.06.64.28 1.14.44 1.53.57.64.2 1.23.17 1.69.1.52-.07 1.59-.65 1.81-1.27.23-.63.23-1.16.16-1.27-.07-.12-.25-.18-.52-.32-.27-.13-1.59-.78-1.83-.87-.25-.09-.43-.14-.61.13-.18.27-.7.88-.85 1.06-.16.18-.32.2-.58.07a7.33 7.33 0 0 1-2.16-1.33 8.1 8.1 0 0 1-1.49-1.86c-.16-.27-.02-.42.12-.55.12-.12.27-.32.4-.47.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.47-.07-.13-.6-1.45-.83-1.98-.21-.52-.44-.5-.61-.5h-.52Z"/>
+  </svg>
+</a>
+<!-- END: WhatsApp floating button -->
