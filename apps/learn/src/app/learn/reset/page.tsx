@@ -7,6 +7,7 @@ import { AlertCircle } from "@/components/ui/Icon";
 import { requestReset } from "../actions";
 import { AuthLinks } from "../AuthLinks";
 import { LangSelect } from "../LangSelect";
+import { WhatsAppFab } from "@/components/ui/WhatsAppFab";
 
 const S = {
   title: t3("Reset your password", "Password reset kijiye", "पासवर्ड रीसेट कीजिए"),
@@ -40,6 +41,7 @@ export default function ResetPage() {
         </div>
       </main>
       <ComplianceFooter tier={1} />
+      <WhatsAppFab />
     </div>
   );
 }

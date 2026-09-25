@@ -10,6 +10,7 @@ import { AlertCircle } from "@/components/ui/Icon";
 import { adoptRecovery, confirmReset } from "../../actions";
 import { AuthLinks } from "../../AuthLinks";
 import { LangSelect } from "../../LangSelect";
+import { WhatsAppFab } from "@/components/ui/WhatsAppFab";
 
 const S = {
   title: t3("Choose a new password", "Naya password chuniye", "नया पासवर्ड चुनिए"),
@@ -76,6 +77,7 @@ export default function ResetConfirmPage() {
         </div>
       </main>
       <ComplianceFooter tier={1} />
+      <WhatsAppFab />
     </div>
   );
 }

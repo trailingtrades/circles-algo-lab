@@ -6,6 +6,7 @@ import { InviteForm } from "./InviteForm";
 import { AuthLinks } from "../../AuthLinks";
 import { LangSelect } from "../../LangSelect";
 import { Lock } from "@/components/ui/Icon";
+import { WhatsAppFab } from "@/components/ui/WhatsAppFab";
 
 const S = {
   expired: t3("This invite link has expired", "Ye invite link expire ho gaya hai", "यह इनवाइट लिंक एक्सपायर हो गया है"),
@@ -34,6 +35,7 @@ export default async function InvitePage({ params }: { params: Promise<{ token: 
         </div>
       </main>
       <ComplianceFooter tier={1} />
+      <WhatsAppFab />
     </div>
   );
 }
