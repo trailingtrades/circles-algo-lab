@@ -33,7 +33,7 @@ const S = {
   certSub: t3("The final exam is behind you. See which certificate steps are still open.", "Final exam ho gaya. Dekhiye certificate ke kaun se steps abhi baaki hain.", "फ़ाइनल एग्ज़ाम हो गया। देखिए सर्टिफ़िकेट के कौन-से स्टेप अभी बाकी हैं।"),
   openCert: t3("Open certificate", "Certificate kholiye", "सर्टिफ़िकेट खोलिए"),
   stageDone: t3("Stage 1 complete", "Stage 1 poora", "चरण 1 पूरा"),
-  nextStage: t3("Next: Stage 2 · CIRCLE W.I.N.N.E.R.S", "Agla: Stage 2 · CIRCLE W.I.N.N.E.R.S", "अगला: चरण 2 · CIRCLE W.I.N.N.E.R.S"),
+  nextStage: t3("Next: Stage 2 · CIRCLE F.U.N.D.A", "Agla: Stage 2 · CIRCLE F.U.N.D.A", "अगला: चरण 2 · CIRCLE F.U.N.D.A"),
   stage2Open: t3("Your Stage 2 access is active. Start when you are ready.", "Aapka Stage 2 access active hai. Jab taiyaar hon, shuru kijiye.", "आपका चरण 2 एक्सेस चालू है। जब तैयार हों, शुरू कीजिए।"),
   stage2Ask: t3("Stage 2 opens when your mentor enrols you. Have a look at what it covers.", "Stage 2 tab khulta hai jab aapke mentor aapko enrol karte hain. Tab tak dekh lijiye usmein kya hai.", "चरण 2 तब खुलता है जब आपके मेंटर आपको एनरोल करते हैं। तब तक देख लीजिए उसमें क्या है।"),
   goStage2: t3("Go to Stage 2", "Stage 2 par jaiye", "चरण 2 पर जाइए"),
@@ -54,11 +54,7 @@ const DENIED = {
 };
 // One tap from the denied banner to the Academy's enrolment line (same number everywhere).
 const DENIED_CTA = t3("Unlock on WhatsApp", "WhatsApp par unlock kijiye", "WhatsApp पर अनलॉक कीजिए");
-const DENIED_WA = t3(
-  "Hi, I want to enrol in the next stage at the 5 Circles Academy. Please share the details.",
-  "Namaste, mujhe 5 Circles Academy ka agla stage join karna hai. Details bata dijiye.",
-  "नमस्ते, मुझे 5 Circles Academy का अगला चरण जॉइन करना है। डिटेल्स बता दीजिए।",
-);
+const DENIED_WA = t3("Hi, I want to enrol in the next stage at the 5 Circles Academy. Please share the details.", "Namaste, mujhe 5 Circles Academy ka agla stage join karna hai. Details bata dijiye.", "नमस्ते, मुझे 5 Circles Academy का अगला चरण जॉइन करना है। डिटेल्स बता दीजिए।");
 const dayOf = (d: number, n: number) => t3(`Day ${d} of ${n}`, `${n} din mein se Day ${d}`, `${n} दिनों में से दिन ${d}`);
 const sessionsOf = (d: number, n: number) => t3(`${d} of ${n} sessions done`, `${n} mein se ${d} sessions poore`, `${n} में से ${d} सेशन पूरे`);
 const allDaysDone = (n: number) => t3(`All ${n} days done`, `Saare ${n} din poore`, `सभी ${n} दिन पूरे`);
@@ -122,12 +118,12 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
       : !certified
         ? { kick: tx(S.certKick), title: tx(S.certTitle), sub: tx(S.certSub),
             cta: <Link href="/learn/certificate" className="col-btn col-btn--primary">{tx(S.openCert)} <ArrowRight size={16} aria-hidden /></Link> }
-        : { kick: tx(S.stageDone), title: tx(S.nextStage), sub: tx(state.stages?.includes("winners") ? S.stage2Open : S.stage2Ask),
+        : { kick: tx(S.stageDone), title: tx(S.nextStage), sub: tx(state.stages?.includes("funda") ? S.stage2Open : S.stage2Ask),
             // Stage 2 lives outside the /smart app, so a plain <a> (next/link would prefix the basePath).
             cta: <span className="flex items-center gap-2 flex-wrap">
-              {state.stages?.includes("winners")
-                ? <a href="/winners/" className="col-btn col-btn--primary">{tx(S.goStage2)} <ArrowUpRight size={16} aria-hidden /></a>
-                : <a href="/winners/about/" className="col-btn col-btn--primary">{tx(S.aboutStage2)} <ArrowUpRight size={16} aria-hidden /></a>}
+              {state.stages?.includes("funda")
+                ? <a href="/funda/" className="col-btn col-btn--primary">{tx(S.goStage2)} <ArrowUpRight size={16} aria-hidden /></a>
+                : <a href="/funda/about/" className="col-btn col-btn--primary">{tx(S.aboutStage2)} <ArrowUpRight size={16} aria-hidden /></a>}
               <Link href="/learn/certificate" className="col-btn col-btn--ghost col-btn--sm">{tx(S.viewCert)}</Link>
             </span> };
 
