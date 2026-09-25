@@ -11,6 +11,7 @@ for M in $(curl -s "https://generativelanguage.googleapis.com/v1beta/models?key=
   if echo "$R" | grep -q '"text"'; then
     echo "WORKS: $M"
     sed -i "s|^ASK_MODEL=.*|ASK_MODEL=$M|" /opt/optionlab/backend.env
+    grep -q ^ASK_MODEL= /opt/optionlab/backend.env || echo "ASK_MODEL=$M" >> /opt/optionlab/backend.env
     cd /opt/optionlab && docker compose -f compose.prod.yml up -d --force-recreate optionlab
     sleep 10
     curl -s -X POST http://127.0.0.1:8000/api/live/ask -H 'Content-Type: application/json' -d '{"question":"What is an option?","context":"","lang":"en","prog":"smart"}' | head -c 300
