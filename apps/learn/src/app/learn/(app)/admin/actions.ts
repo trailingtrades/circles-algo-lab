@@ -45,7 +45,7 @@ export async function createCohort(_: AdminState, form: FormData): Promise<Admin
   const { data, error } = await admin.from("cohorts").insert({ name, level, starts_on, ends_on, mentor_id }).select("id").single();
   if (error) return { error: error.message.includes("duplicate") ? "A cohort with this name already exists." : error.message };
   await audit(v.id, "cohort.create", "cohorts", data.id, null, { name, level, starts_on, ends_on, mentor_id });
-  revalidatePath("/learn/admin"); revalidatePath("/learn/mentor");
+  revalidatePath("/learn/admin"); revalidatePath("/learn/admin/cohorts"); revalidatePath("/learn/mentor");
   return { ok: `Cohort ${name} created.` };
 }
 
@@ -82,7 +82,7 @@ export async function setCohortMentor(_: AdminState, form: FormData): Promise<Ad
   const { error } = await admin.from("cohorts").update({ mentor_id: mentorId }).eq("id", cohortId);
   if (error) return { error: error.message };
   await audit(v.id, "cohort.mentor", "cohorts", cohortId, { mentor_id: before.mentor_id ?? null }, { mentor_id: mentorId });
-  revalidatePath(`/learn/admin/cohorts/${cohortId}`); revalidatePath("/learn/admin"); revalidatePath("/learn/mentor"); revalidatePath("/learn/mentor/stages");
+  revalidatePath(`/learn/admin/cohorts/${cohortId}`); revalidatePath("/learn/admin"); revalidatePath("/learn/admin/cohorts"); revalidatePath("/learn/mentor"); revalidatePath("/learn/mentor/stages");
   return { ok: mentorId ? `${who} now mentors ${before.name}.` : `${before.name} has no mentor now.` };
 }
 

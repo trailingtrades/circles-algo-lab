@@ -19,6 +19,7 @@ export const levelLabel = (slug: string | null | undefined) => (slug ? LEVEL_LAB
 export const isPast = (d: D) => ok(d) && new Date(d).getTime() < Date.now();
 export const isFuture = (d: D) => ok(d) && new Date(d).getTime() > Date.now();
 export const daysAgoIso = (n: number) => new Date(Date.now() - n * 86400e3).toISOString();
+export const daysAheadIso = (n: number) => new Date(Date.now() + n * 86400e3).toISOString();
 
 export const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 export const isUuid = (s: unknown): s is string => typeof s === "string" && UUID_RE.test(s);
