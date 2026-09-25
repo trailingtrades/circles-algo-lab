@@ -52,6 +52,13 @@ const DENIED = {
   not_started: t3("Your access to that stage has not started yet. It opens on the start date your mentor set.", "Us stage ka access abhi shuru nahi hua. Mentor ki rakhi start date par khulega.", "उस चरण का एक्सेस अभी शुरू नहीं हुआ है। मेंटर की तय की हुई शुरुआत की तारीख़ पर खुलेगा।"),
   expired: t3("Your access to that stage has ended. Please talk to your mentor to extend it.", "Us stage ka access khatam ho gaya hai. Badhwane ke liye mentor se baat kijiye.", "उस चरण का एक्सेस ख़त्म हो गया है। बढ़वाने के लिए मेंटर से बात कीजिए।"),
 };
+// One tap from the denied banner to the Academy's enrolment line (same number everywhere).
+const DENIED_CTA = t3("Unlock on WhatsApp", "WhatsApp par unlock kijiye", "WhatsApp पर अनलॉक कीजिए");
+const DENIED_WA = t3(
+  "Hi, I want to enrol in the next stage at the 5 Circles Academy. Please share the details.",
+  "Namaste, mujhe 5 Circles Academy ka agla stage join karna hai. Details bata dijiye.",
+  "नमस्ते, मुझे 5 Circles Academy का अगला चरण जॉइन करना है। डिटेल्स बता दीजिए।",
+);
 const dayOf = (d: number, n: number) => t3(`Day ${d} of ${n}`, `${n} din mein se Day ${d}`, `${n} दिनों में से दिन ${d}`);
 const sessionsOf = (d: number, n: number) => t3(`${d} of ${n} sessions done`, `${n} mein se ${d} sessions poore`, `${n} में से ${d} सेशन पूरे`);
 const allDaysDone = (n: number) => t3(`All ${n} days done`, `Saare ${n} din poore`, `सभी ${n} दिन पूरे`);
@@ -138,7 +145,12 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
 
   return (
     <>
-      {denied && <p className="lrn-notice mb-4" role="status">{tx(denied)}</p>}
+      {denied && (
+        <p className="lrn-notice mb-4" role="status">
+          {tx(denied)}{" "}
+          <a className="lrn-link" href={`https://wa.me/916387497277?text=${encodeURIComponent(tx(DENIED_WA))}`} target="_blank" rel="noopener noreferrer">{tx(DENIED_CTA)}</a>
+        </p>
+      )}
       <section className="lrn-hero mb-4">
         <div className="lrn-hero__txt">
           <p className="lrn-kicker">{tx(T.week)} {week.number} · {pick3(week, "title", lang)}{demo && ` · ${tx(S.sample)}`}</p>

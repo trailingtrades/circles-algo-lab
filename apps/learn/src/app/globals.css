@@ -239,3 +239,15 @@ html[data-lang="dv"] .lrn-title, html[data-lang="dv"] h1, html[data-lang="dv"] h
 .lrn-wa-fab:focus-visible { outline: 2px solid var(--col-brand); outline-offset: 3px; }
 @media (min-width: 768px) { .lrn-wa-fab { right: 24px; bottom: 24px; } }
 @media print { .lrn-wa-fab { display: none; } }
+
+/* Locked-stage unlock dialog (AcademyStrip): course name, one line, WhatsApp enrolment CTA. */
+.acad button.lock { appearance: none; background: transparent; font: inherit; text-transform: inherit; letter-spacing: inherit; cursor: pointer; }
+.acad button.lock:hover { border-color: var(--brand); color: var(--ink); }
+.lrn-unlock { margin: auto; width: min(420px, calc(100% - 32px)); border: 1px solid var(--line-2); border-radius: var(--r-md, 12px); background: var(--panel); color: var(--ink); padding: 0; }
+.lrn-unlock::backdrop { background: rgb(5 6 8 / .6); }
+.lrn-unlock__in { position: relative; padding: 22px; display: grid; gap: 8px; }
+.lrn-unlock__x { position: absolute; right: 10px; top: 10px; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--line-2); background: transparent; color: var(--ink-2); cursor: pointer; }
+.lrn-unlock__kick { display: inline-flex; align-items: center; gap: 6px; margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
+.lrn-unlock__h { margin: 0; font-size: 20px; font-weight: 700; }
+.lrn-unlock__p { margin: 0 0 6px; font-size: 14px; color: var(--ink-2); }
+.lrn-unlock__cta { display: flex; flex-wrap: wrap; gap: 10px; }
