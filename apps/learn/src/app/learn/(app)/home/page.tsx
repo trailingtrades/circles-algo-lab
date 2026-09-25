@@ -54,11 +54,8 @@ const DENIED = {
 };
 // One tap from the denied banner to the Academy's enrolment line (same number everywhere).
 const DENIED_CTA = t3("Unlock on WhatsApp", "WhatsApp par unlock kijiye", "WhatsApp पर अनलॉक कीजिए");
-const DENIED_WA = t3(
-  "Hi, I want to enrol in the next stage at the 5 Circles Academy. Please share the details.",
-  "Namaste, mujhe 5 Circles Academy ka agla stage join karna hai. Details bata dijiye.",
-  "नमस्ते, मुझे 5 Circles Academy का अगला चरण जॉइन करना है। डिटेल्स बता दीजिए।",
-);
+// Single line: check_compliance.py allows Devanagari only on a line that carries the t3( call.
+const DENIED_WA = t3("Hi, I want to enrol in the next stage at the 5 Circles Academy. Please share the details.", "Namaste, mujhe 5 Circles Academy ka agla stage join karna hai. Details bata dijiye.", "नमस्ते, मुझे 5 Circles Academy का अगला चरण जॉइन करना है। डिटेल्स बता दीजिए।");
 const dayOf = (d: number, n: number) => t3(`Day ${d} of ${n}`, `${n} din mein se Day ${d}`, `${n} दिनों में से दिन ${d}`);
 const sessionsOf = (d: number, n: number) => t3(`${d} of ${n} sessions done`, `${n} mein se ${d} sessions poore`, `${n} में से ${d} सेशन पूरे`);
 const allDaysDone = (n: number) => t3(`All ${n} days done`, `Saare ${n} din poore`, `सभी ${n} दिन पूरे`);

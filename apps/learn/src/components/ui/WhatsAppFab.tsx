@@ -9,11 +9,8 @@ const WA = "https://wa.me/916387497277";
 const S = {
   label: t3("Chat with us on WhatsApp", "WhatsApp par baat kijiye", "WhatsApp पर बात कीजिए"),
   newTab: t3("(opens in a new tab)", "(naye tab mein khulega)", "(नए टैब में खुलेगा)"),
-  text: t3(
-    "Hi, I have a question about the 5 Circles Academy.",
-    "Namaste, mujhe 5 Circles Academy ke baare mein kuch poochhna hai.",
-    "नमस्ते, मुझे 5 Circles Academy के बारे में कुछ पूछना है।",
-  ),
+  // Single line: check_compliance.py allows Devanagari only on a line that carries the t3( call.
+  text: t3("Hi, I have a question about the 5 Circles Academy.", "Namaste, mujhe 5 Circles Academy ke baare mein kuch poochhna hai.", "नमस्ते, मुझे 5 Circles Academy के बारे में कुछ पूछना है।"),
 };
 
 export function WhatsAppFab() {

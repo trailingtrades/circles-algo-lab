@@ -12,20 +12,13 @@ const S = {
   soon: t3("soon", "jald", "जल्द"),
   locked: t3("locked", "band", "बंद"),
   lockedWhy: t3("Opens when this stage is unlocked for you", "Ye stage aapke liye unlock hone par khulega", "यह चरण आपके लिए अनलॉक होने पर खुलेगा"),
-  lockedBody: t3(
-    "This stage is not part of your enrolment yet. Message us on WhatsApp to enrol, and it unlocks on this same login.",
-    "Ye stage abhi aapke enrolment mein nahi hai. WhatsApp par message kijiye — enrol hote hi isi login par unlock ho jayega.",
-    "यह चरण अभी आपके एनरोलमेंट में नहीं है। WhatsApp पर मैसेज कीजिए — एनरोल होते ही इसी लॉगिन पर अनलॉक हो जाएगा।",
-  ),
+  // Single line: check_compliance.py allows Devanagari only on a line that carries the t3( call.
+  lockedBody: t3("This stage is not part of your enrolment yet. Message us on WhatsApp to enrol, and it unlocks on this same login.", "Ye stage abhi aapke enrolment mein nahi hai. WhatsApp par message kijiye — enrol hote hi isi login par unlock ho jayega.", "यह चरण अभी आपके एनरोलमेंट में नहीं है। WhatsApp पर मैसेज कीजिए — एनरोल होते ही इसी लॉगिन पर अनलॉक हो जाएगा।"),
   unlockWa: t3("Unlock on WhatsApp", "WhatsApp par unlock kijiye", "WhatsApp पर अनलॉक कीजिए"),
   enrolPay: t3("Enrol and pay", "Enrol karke pay kijiye", "एनरोल करके पेमेंट कीजिए"),
   details: t3("Course details", "Course details", "कोर्स की जानकारी"),
   close: t3("Close", "Band kijiye", "बंद कीजिए"),
-  waText: (name: string) => t3(
-    `Hi, I want to enrol in ${name} at the 5 Circles Academy. Please share the details.`,
-    `Namaste, mujhe 5 Circles Academy ka ${name} join karna hai. Details bata dijiye.`,
-    `नमस्ते, मुझे 5 Circles Academy का ${name} जॉइन करना है। डिटेल्स बता दीजिए।`,
-  ),
+  waText: (name: string) => t3(`Hi, I want to enrol in ${name} at the 5 Circles Academy. Please share the details.`, `Namaste, mujhe 5 Circles Academy ka ${name} join karna hai. Details bata dijiye.`, `नमस्ते, मुझे 5 Circles Academy का ${name} जॉइन करना है। डिटेल्स बता दीजिए।`),
 };
 // The Academy's enrolment line — same number as AuthLinks, the landing and the WhatsApp FAB.
 const WA = "https://wa.me/916387497277";
