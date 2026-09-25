@@ -39,7 +39,11 @@ export function safeAppPath(raw: unknown, fallback = "/learn/home"): string {
  *  /smart/stage0/ sits inside the basePath but is a static, nginx-gated stage page, so the absolute
  *  siteOrigin redirect is correct for it too. */
 export function safeStagePath(raw: unknown): string | null {
-  const p = tidy(raw);
+  let p = tidy(raw);
+  // The app's own proxy strips the basePath, so when IT bounces a signed-out hit on the static
+  // Stage 0 pages the sign-in link carries ?next=/stage0/…, while nginx's gate sends the full
+  // /smart/stage0/…. Normalise to the public path so both name the stage and return to it.
+  if (p && /^\/stage0(\/|\?|$)/.test(p)) p = "/smart" + p;
   return p && /^\/(winners|one|pro\/options|smart\/stage0)(\/|\?|$)/.test(p) ? p : null;
 }
 
