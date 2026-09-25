@@ -55,7 +55,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
   const kicker = stage === "winners" ? S.kicker2 : stage === "one" ? S.kicker3 : stage === "stage0" ? S.kicker0 : stage === "pro_options" ? S.kicker4 : S.kicker1;
   return (
     <div className="lrn-shell lrn-gate">
-      <AcademyStrip current={stage === "winners" ? "winners" : stage === "one" ? "one" : "smart"} />
+      <AcademyStrip current={stage === "winners" ? "winners" : stage === "one" ? "one" : stage === "stage0" ? "start" : "smart"} />
       <main className="lrn-main flex flex-col items-center justify-center" style={{ paddingTop: 32 }}>
         {/* Inside <main>, not the shell: the rings centre on the form, never behind the compliance footer. */}
         <div className="lrn-gate__rings" aria-hidden><RingsArt /></div>
