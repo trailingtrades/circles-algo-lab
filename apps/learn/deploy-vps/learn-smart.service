@@ -9,6 +9,9 @@ Environment=NODE_ENV=production PORT=3001 HOSTNAME=127.0.0.1
 ExecStart=/usr/bin/node server.js
 Restart=always
 RestartSec=3
+# Each open socket is a file descriptor; the distro default of 1024 caps concurrent users far
+# below what one Node process handles. Applied via systemctl daemon-reload + restart.
+LimitNOFILE=65536
 User=www-data
 Group=www-data
 
