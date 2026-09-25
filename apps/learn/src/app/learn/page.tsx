@@ -8,6 +8,7 @@ import { AUTH } from "@/lib/auth/messages";
 import { stageOf } from "@/lib/auth/paths";
 import { SignInForm, type Notice } from "./SignInForm";
 import { LangSelect } from "./LangSelect";
+import { WhatsAppFab } from "@/components/ui/WhatsAppFab";
 
 /* Server-rendered on purpose: the form, the SEBI number and the Tier-1 disclaimer are in the HTML
    itself (the old client-only page served an empty shell until JavaScript ran). */
@@ -74,6 +75,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
         </div>
       </main>
       <ComplianceFooter tier={1} />
+      <WhatsAppFab />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import { getViewer } from "@/lib/supabase/server";
 import { supabaseConfigured } from "@/lib/supabase/env";
 import { t3, tr } from "@/lib/i18n/lang";
 import { AuthLinks } from "@/app/learn/AuthLinks";
+import { WhatsAppFab } from "@/components/ui/WhatsAppFab";
 
 const S = {
   title: t3("Page not found", "Page nahi mila", "पेज नहीं मिला"),
@@ -30,6 +31,7 @@ export default async function NotFound() {
         </div>
       </main>
       <ComplianceFooter tier={1} />
+      <WhatsAppFab />
     </div>
   );
 }
