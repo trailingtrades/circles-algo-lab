@@ -32,7 +32,7 @@ export default async function StageAccessPage() {
     <>
       <p className="col-eyebrow">Mentor · Stage access</p>
       <h1 className="lrn-title">WINNERS, O.N.E &amp; PRO access</h1>
-      <p className="lrn-muted">One sign-in, unlocked stage by stage. Once granted, the student opens learn.optionlab.co.in/winners/, /one/ or /pro/options/ with the same SMART email and password. Dates are IST; leave the end date blank for no expiry. Every grant, date change and revoke is logged.</p>
+      <p className="lrn-muted">One sign-in, unlocked stage by stage. Once granted, the student opens learn.optionlab.co.in/funda/, /winners/, /one/ or /pro/options/ with the same SMART email and password. Dates are IST; leave the end date blank for no expiry. Every grant, date change and revoke is logged.</p>
       <div className="col-card mt-4">
         <div className="lrn-table-wrap"><table className="col-table">
           <thead><tr><th className="col-text">Student</th><th className="col-text">CIRCLE W.I.N.N.E.R.S</th><th className="col-text">CIRCLE O.N.E</th><th className="col-text">CIRCLE PRO · Options 117</th></tr></thead>
@@ -49,7 +49,7 @@ export default async function StageAccessPage() {
           <span className="col-eyebrow">Recent stage visits (IST)</span>
           <ul className="lrn-list mt-2">
             {(visits ?? []).slice(0, 20).map((x, i) => (
-              <li key={i}><strong>{nameOf.get(x.user_id) ?? "—"}</strong> · {x.stage === "one" ? "O.N.E" : x.stage === "pro_options" ? "PRO · Options 117" : "WINNERS"} · <span className="lrn-muted">{fmtDateTime(x.at)}</span></li>
+              <li key={i}><strong>{nameOf.get(x.user_id) ?? "—"}</strong> · {x.stage === "one" ? "O.N.E" : x.stage === "pro_options" ? "PRO · Options 117" : x.stage === "funda" ? "F.U.N.D.A" : "WINNERS"} · <span className="lrn-muted">{fmtDateTime(x.at)}</span></li>
             ))}
           </ul>
         </div>
