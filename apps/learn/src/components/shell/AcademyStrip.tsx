@@ -35,7 +35,7 @@ const WA = "https://wa.me/916387497277";
    /smart basePath, and each href is the final URL (trailing slash, no redirect hop). `unlocked` comes
    from stage_access in the app layout; when it is unknown (sign-in page) the stages stay plain links
    and nginx's gate decides. A locked stage is shown as locked instead of silently bouncing home. */
-export function AcademyStrip({ unlocked, current = "smart" }: { unlocked?: { winners: boolean; one: boolean }; current?: "smart" | "winners" | "one" }) {
+export function AcademyStrip({ unlocked, current = "smart" }: { unlocked?: { winners: boolean; one: boolean }; current?: "start" | "smart" | "winners" | "one" }) {
   const { tx, lang } = useLang();
   const dlg = useRef<HTMLDialogElement>(null);
   const [ask, setAsk] = useState<{ n: number; key: string; name: string; about: string } | null>(null);
@@ -46,7 +46,7 @@ export function AcademyStrip({ unlocked, current = "smart" }: { unlocked?: { win
   // heading to via ?next=, so the strip highlight matches the hero); a lock always wins over it.
   // A locked stage is a button that opens the unlock dialog (course details + WhatsApp enrolment),
   // so the ladder shows the way up instead of a dead end.
-  const sib = (n: number, key: "smart" | "winners" | "one", href: string, name: string, open_: boolean | undefined) => open_ === false
+  const sib = (n: number, key: "start" | "smart" | "winners" | "one", href: string, name: string, open_: boolean | undefined) => open_ === false
     ? <button type="button" className="sib lock" title={tx(S.lockedWhy)} onClick={() => open(n, key, name, `${href}about/`)}><Lock size={11} strokeWidth={1.75} aria-hidden />{stage(n)} · {name}<span className="sr-only"> ({tx(S.locked)})</span></button>
     : current === key
       ? <span className="on" aria-current="true">{stage(n)} · {name}</span>
@@ -56,6 +56,8 @@ export function AcademyStrip({ unlocked, current = "smart" }: { unlocked?: { win
       <nav className="acad" aria-label={tx(S.nav)}>
         {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- the Academy landing is a separate static site at "/", not an app route */}
         <a className="home" href="/"><Home size={12} strokeWidth={1.75} aria-hidden />5 Circles Academy</a>{sep}
+        {/* Stage 0 is free with every account (sign-in only, no grant), so it is always a plain link. */}
+        {sib(0, "start", "/smart/stage0/", "Circle S.T.A.R.T", undefined)}{sep}
         {sib(1, "smart", "/smart/learn", "Circle S.M.A.R.T", undefined)}{sep}
         {sib(2, "winners", "/winners/", "Circle W.I.N.N.E.R.S", unlocked?.winners)}{sep}
         {sib(3, "one", "/one/", "Circle O.N.E", unlocked?.one)}{sep}
