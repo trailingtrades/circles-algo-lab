@@ -44,6 +44,9 @@ export function safeStagePath(raw: unknown): string | null {
   // Stage 0 pages the sign-in link carries ?next=/stage0/…, while nginx's gate sends the full
   // /smart/stage0/…. Normalise to the public path so both name the stage and return to it.
   if (p && /^\/stage0(\/|\?|$)/.test(p)) p = "/smart" + p;
+  // The /stage0 -> /stage0/index.html redirect fires before the bounce, so tidy the internal
+  // file name back to the directory URL the links use.
+  if (p) p = p.replace(/^(\/smart\/stage0)\/index\.html(\?|$)/, "$1/$2");
   return p && /^\/(winners|one|pro\/options|smart\/stage0)(\/|\?|$)/.test(p) ? p : null;
 }
 
