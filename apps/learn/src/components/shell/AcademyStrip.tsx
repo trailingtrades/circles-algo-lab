@@ -12,6 +12,7 @@ const S = {
   soon: t3("soon", "jald", "जल्द"),
   locked: t3("locked", "band", "बंद"),
   lockedWhy: t3("Opens when this stage is unlocked for you", "Ye stage aapke liye unlock hone par khulega", "यह चरण आपके लिए अनलॉक होने पर खुलेगा"),
+  // Single line: check_compliance.py allows Devanagari only on a line that carries the t3( call.
   lockedBody: t3("This stage is not part of your enrolment yet. Message us on WhatsApp to enrol, and it unlocks on this same login.", "Ye stage abhi aapke enrolment mein nahi hai. WhatsApp par message kijiye — enrol hote hi isi login par unlock ho jayega.", "यह चरण अभी आपके एनरोलमेंट में नहीं है। WhatsApp पर मैसेज कीजिए — एनरोल होते ही इसी लॉगिन पर अनलॉक हो जाएगा।"),
   unlockWa: t3("Unlock on WhatsApp", "WhatsApp par unlock kijiye", "WhatsApp पर अनलॉक कीजिए"),
   enrolPay: t3("Enrol and pay", "Enrol karke pay kijiye", "एनरोल करके पेमेंट कीजिए"),
