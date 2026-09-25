@@ -1,7 +1,8 @@
 "use client";
+import { useRef, useState } from "react";
 import { useLang } from "@/lib/i18n/LangProvider";
-import { t3 } from "@/lib/i18n/lang";
-import { Home, ChevronRight, Lock } from "@/components/ui/Icon";
+import { t3, tr } from "@/lib/i18n/lang";
+import { Home, ChevronRight, Lock, X } from "@/components/ui/Icon";
 
 const S = {
   nav: t3("5 Circles Academy stages", "5 Circles Academy ke stages", "5 Circles Academy के चरण"),
@@ -10,7 +11,22 @@ const S = {
   soon: t3("soon", "jald", "जल्द"),
   locked: t3("locked", "band", "बंद"),
   lockedWhy: t3("Opens when this stage is unlocked for you", "Ye stage aapke liye unlock hone par khulega", "यह चरण आपके लिए अनलॉक होने पर खुलेगा"),
+  lockedBody: t3(
+    "This stage is not part of your enrolment yet. Message us on WhatsApp to enrol, and it unlocks on this same login.",
+    "Ye stage abhi aapke enrolment mein nahi hai. WhatsApp par message kijiye — enrol hote hi isi login par unlock ho jayega.",
+    "यह चरण अभी आपके एनरोलमेंट में नहीं है। WhatsApp पर मैसेज कीजिए — एनरोल होते ही इसी लॉगिन पर अनलॉक हो जाएगा।",
+  ),
+  unlockWa: t3("Unlock on WhatsApp", "WhatsApp par unlock kijiye", "WhatsApp पर अनलॉक कीजिए"),
+  details: t3("Course details", "Course details", "कोर्स की जानकारी"),
+  close: t3("Close", "Band kijiye", "बंद कीजिए"),
+  waText: (name: string) => t3(
+    `Hi, I want to enrol in ${name} at the 5 Circles Academy. Please share the details.`,
+    `Namaste, mujhe 5 Circles Academy ka ${name} join karna hai. Details bata dijiye.`,
+    `नमस्ते, मुझे 5 Circles Academy का ${name} जॉइन करना है। डिटेल्स बता दीजिए।`,
+  ),
 };
+// The Academy's enrolment line — same number as AuthLinks, the landing and the WhatsApp FAB.
+const WA = "https://wa.me/916387497277";
 
 /* Academy strip — where this programme sits on the 5 Circles ladder, and the way back.
    Same recipe as the CIRCLE O.N.E header strip. Plain <a> on purpose: every target lives outside the
@@ -18,13 +34,18 @@ const S = {
    from stage_access in the app layout; when it is unknown (sign-in page) the stages stay plain links
    and nginx's gate decides. A locked stage is shown as locked instead of silently bouncing home. */
 export function AcademyStrip({ unlocked, current = "smart" }: { unlocked?: { winners: boolean; one: boolean }; current?: "smart" | "winners" | "one" }) {
-  const { tx } = useLang();
+  const { tx, lang } = useLang();
+  const dlg = useRef<HTMLDialogElement>(null);
+  const [ask, setAsk] = useState<{ n: number; name: string; about: string } | null>(null);
   const sep = <ChevronRight size={12} strokeWidth={1.75} className="sep" aria-hidden />;
   const stage = (n: number) => `${tx(S.stage)} ${n}`;
+  const open = (n: number, name: string, about: string) => { setAsk({ n, name, about }); dlg.current?.showModal(); };
   // `current` marks the stage being viewed (the sign-in gate passes the stage the learner is
   // heading to via ?next=, so the strip highlight matches the hero); a lock always wins over it.
-  const sib = (n: number, key: "smart" | "winners" | "one", href: string, name: string, open: boolean | undefined) => open === false
-    ? <span className="sib lock" title={tx(S.lockedWhy)}><Lock size={11} strokeWidth={1.75} aria-hidden />{stage(n)} · {name}<span className="sr-only"> ({tx(S.locked)})</span></span>
+  // A locked stage is a button that opens the unlock dialog (course details + WhatsApp enrolment),
+  // so the ladder shows the way up instead of a dead end.
+  const sib = (n: number, key: "smart" | "winners" | "one", href: string, name: string, open_: boolean | undefined) => open_ === false
+    ? <button type="button" className="sib lock" title={tx(S.lockedWhy)} onClick={() => open(n, name, `${href}about/`)}><Lock size={11} strokeWidth={1.75} aria-hidden />{stage(n)} · {name}<span className="sr-only"> ({tx(S.locked)})</span></button>
     : current === key
       ? <span className="on" aria-current="true">{stage(n)} · {name}</span>
       : <a className="sib" href={href}>{stage(n)} · {name}</a>;
@@ -38,6 +59,20 @@ export function AcademyStrip({ unlocked, current = "smart" }: { unlocked?: { win
         {sib(3, "one", "/one/", "Circle O.N.E", unlocked?.one)}{sep}
         <span className="soon">{stage(4)} · Circle Pro — {tx(S.soon)}</span>
       </nav>
+      <dialog ref={dlg} className="lrn-unlock" aria-label={ask ? `${stage(ask.n)} · ${ask.name}` : undefined} onClick={(e) => { if (e.target === dlg.current) dlg.current?.close(); }}>
+        {ask && (
+          <div className="lrn-unlock__in">
+            <button type="button" className="lrn-unlock__x" onClick={() => dlg.current?.close()} aria-label={tx(S.close)}><X size={16} strokeWidth={1.75} aria-hidden /></button>
+            <p className="lrn-unlock__kick"><Lock size={13} strokeWidth={1.75} aria-hidden /> {stage(ask.n)} · {tx(S.locked)}</p>
+            <h2 className="lrn-unlock__h">{ask.name}</h2>
+            <p className="lrn-unlock__p">{tx(S.lockedBody)}</p>
+            <div className="lrn-unlock__cta">
+              <a className="col-btn col-btn--primary" href={`${WA}?text=${encodeURIComponent(tr(S.waText(ask.name), lang))}`} target="_blank" rel="noopener noreferrer">{tx(S.unlockWa)}</a>
+              <a className="col-btn" href={ask.about}>{tx(S.details)}</a>
+            </div>
+          </div>
+        )}
+      </dialog>
     </div>
   );
 }
