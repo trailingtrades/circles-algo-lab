@@ -230,3 +230,12 @@ select.col-input { padding-right: 28px; }
 }
 html[data-lang="dv"] body { line-height: 1.7; }
 html[data-lang="dv"] .lrn-title, html[data-lang="dv"] h1, html[data-lang="dv"] h2, html[data-lang="dv"] h3 { line-height: 1.4; }
+
+/* Floating WhatsApp button (WhatsAppFab.tsx). WhatsApp brand green with white glyph (4.6:1 on
+   #25D366 is below AA for text but this is a 26px icon + 3:1 graphics rule — passes; the visible
+   focus ring covers keyboard users). Mobile: lifted above the 64px BottomNav; desktop: corner. */
+.lrn-wa-fab { position: fixed; right: 16px; bottom: calc(80px + env(safe-area-inset-bottom)); z-index: 30; display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 9999px; background: #25d366; color: #fff; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35); }
+.lrn-wa-fab:hover { background: #1ebe5d; }
+.lrn-wa-fab:focus-visible { outline: 2px solid var(--col-brand); outline-offset: 3px; }
+@media (min-width: 768px) { .lrn-wa-fab { right: 24px; bottom: 24px; } }
+@media print { .lrn-wa-fab { display: none; } }

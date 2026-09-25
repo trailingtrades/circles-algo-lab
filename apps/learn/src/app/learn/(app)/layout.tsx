@@ -3,6 +3,7 @@ import { AcademyStrip } from "@/components/shell/AcademyStrip";
 import { BottomNav } from "@/components/shell/Nav";
 import { ComplianceFooter } from "@/components/ui/ComplianceFooter";
 import { OfflineBanner } from "@/components/ui/OfflineBanner";
+import { WhatsAppFab } from "@/components/ui/WhatsAppFab";
 import { AlertCircle } from "@/components/ui/Icon";
 import { createClient, getViewer, type Viewer } from "@/lib/supabase/server";
 import { supabaseConfigured } from "@/lib/supabase/env";
@@ -72,6 +73,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
         <main className="lrn-main" id="main"><div className="lrn-max">{children}</div></main>
       </div>
       <ComplianceFooter tier={1} />
+      <WhatsAppFab />
       <BottomNav role={v?.role} />
     </div>
   );
