@@ -1,0 +1,68 @@
+name: Uptime monitor (learn.optionlab.co.in)
+# Free, in-repo uptime check — no third-party account. Every ~10 minutes a runner asks
+# /smart/api/health for "ok":true. Six tries 20 s apart before declaring DOWN, because the VPS
+# provider's firewall has been seen dropping individual GitHub runner addresses (run 37,
+# 25 Sep 2026) — one failed request is not an outage. On a real failure the run goes red
+# (GitHub emails the workflow's author) and a "site-down" issue is opened, or commented on if
+# one is already open; the next green run closes it, so the issue's lifetime = the outage.
+#
+# Limits to know: GitHub cron is best-effort (a tick can land minutes late or be skipped under
+# load), and GitHub auto-disables scheduled workflows after 60 days without a repo push —
+# this repo sees regular pushes, but after a long quiet spell check the Actions tab.
+# An external monitor (e.g. UptimeRobot, free) with a phone app remains the stronger option
+# for paging; this workflow is the zero-setup baseline and the two can run side by side.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+concurrency: { group: uptime-monitor, cancel-in-progress: false }
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe /smart/api/health (6 tries, 20 s apart)
+        id: probe
+        run: |
+          URL=https://learn.optionlab.co.in/smart/api/health
+          for i in $(seq 1 6); do
+            body=$(curl -s -m 25 "$URL" || true)
+            if echo "$body" | grep -q '"ok":true'; then
+              echo "up after try $i"; echo "up=1" >> "$GITHUB_OUTPUT"; exit 0
+            fi
+            echo "try $i: not ok (${body:0:120})"; sleep 20
+          done
+          echo "up=0" >> "$GITHUB_OUTPUT"
+          echo "::error::learn.optionlab.co.in/smart/api/health did not answer \"ok\":true in 6 tries over ~2 min"
+          exit 1
+      - name: Open or update the site-down issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(gh issue list -R "$GITHUB_REPOSITORY" --label site-down --state open --json number --jq '.[0].number // empty')
+          when=$(date -u '+%d %b %Y %H:%M UTC')
+          if [ -n "$n" ]; then
+            gh issue comment "$n" -R "$GITHUB_REPOSITORY" --body "Still down at $when (run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)"
+          else
+            gh label create site-down -R "$GITHUB_REPOSITORY" --color B60205 --description "Uptime monitor: health check failing" 2>/dev/null || true
+            body=$(printf '%s\n\n%s\n\n%s' \
+              "The uptime monitor could not get \`\"ok\":true\` from https://learn.optionlab.co.in/smart/api/health (6 tries over ~2 min, first seen $when)." \
+              "Check on the VPS: \`journalctl -u learn-smart -n 50\`, \`tail /var/log/smart-pull.log\`, \`systemctl status nginx\`. Runbook: docs/5C_SCALE_UPTIME_BOTGUARD_25Sep2026.md." \
+              "This issue closes automatically when the check goes green again. Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID")
+            gh issue create -R "$GITHUB_REPOSITORY" --label site-down \
+              --title "SITE DOWN: learn.optionlab.co.in health check failing" \
+              --body "$body"
+          fi
+      - name: Close the site-down issue on recovery
+        if: steps.probe.outputs.up == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(gh issue list -R "$GITHUB_REPOSITORY" --label site-down --state open --json number --jq '.[0].number // empty')
+          [ -z "$n" ] || gh issue close "$n" -R "$GITHUB_REPOSITORY" --comment "Recovered: health answered \"ok\":true at $(date -u '+%d %b %Y %H:%M UTC')."
