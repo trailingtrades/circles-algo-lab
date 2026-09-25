@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import { useLang } from "@/lib/i18n/LangProvider";
 import { t3, tr } from "@/lib/i18n/lang";
 import { Home, ChevronRight, Lock, X } from "@/components/ui/Icon";
+import { payUrl } from "@/lib/payments";
 
 const S = {
   nav: t3("5 Circles Academy stages", "5 Circles Academy ke stages", "5 Circles Academy के चरण"),
@@ -17,6 +18,7 @@ const S = {
     "यह चरण अभी आपके एनरोलमेंट में नहीं है। WhatsApp पर मैसेज कीजिए — एनरोल होते ही इसी लॉगिन पर अनलॉक हो जाएगा।",
   ),
   unlockWa: t3("Unlock on WhatsApp", "WhatsApp par unlock kijiye", "WhatsApp पर अनलॉक कीजिए"),
+  enrolPay: t3("Enrol and pay", "Enrol karke pay kijiye", "एनरोल करके पेमेंट कीजिए"),
   details: t3("Course details", "Course details", "कोर्स की जानकारी"),
   close: t3("Close", "Band kijiye", "बंद कीजिए"),
   waText: (name: string) => t3(
@@ -36,16 +38,16 @@ const WA = "https://wa.me/916387497277";
 export function AcademyStrip({ unlocked, current = "smart" }: { unlocked?: { winners: boolean; one: boolean }; current?: "smart" | "winners" | "one" }) {
   const { tx, lang } = useLang();
   const dlg = useRef<HTMLDialogElement>(null);
-  const [ask, setAsk] = useState<{ n: number; name: string; about: string } | null>(null);
+  const [ask, setAsk] = useState<{ n: number; key: string; name: string; about: string } | null>(null);
   const sep = <ChevronRight size={12} strokeWidth={1.75} className="sep" aria-hidden />;
   const stage = (n: number) => `${tx(S.stage)} ${n}`;
-  const open = (n: number, name: string, about: string) => { setAsk({ n, name, about }); dlg.current?.showModal(); };
+  const open = (n: number, key: string, name: string, about: string) => { setAsk({ n, key, name, about }); dlg.current?.showModal(); };
   // `current` marks the stage being viewed (the sign-in gate passes the stage the learner is
   // heading to via ?next=, so the strip highlight matches the hero); a lock always wins over it.
   // A locked stage is a button that opens the unlock dialog (course details + WhatsApp enrolment),
   // so the ladder shows the way up instead of a dead end.
   const sib = (n: number, key: "smart" | "winners" | "one", href: string, name: string, open_: boolean | undefined) => open_ === false
-    ? <button type="button" className="sib lock" title={tx(S.lockedWhy)} onClick={() => open(n, name, `${href}about/`)}><Lock size={11} strokeWidth={1.75} aria-hidden />{stage(n)} · {name}<span className="sr-only"> ({tx(S.locked)})</span></button>
+    ? <button type="button" className="sib lock" title={tx(S.lockedWhy)} onClick={() => open(n, key, name, `${href}about/`)}><Lock size={11} strokeWidth={1.75} aria-hidden />{stage(n)} · {name}<span className="sr-only"> ({tx(S.locked)})</span></button>
     : current === key
       ? <span className="on" aria-current="true">{stage(n)} · {name}</span>
       : <a className="sib" href={href}>{stage(n)} · {name}</a>;
@@ -67,7 +69,12 @@ export function AcademyStrip({ unlocked, current = "smart" }: { unlocked?: { win
             <h2 className="lrn-unlock__h">{ask.name}</h2>
             <p className="lrn-unlock__p">{tx(S.lockedBody)}</p>
             <div className="lrn-unlock__cta">
-              <a className="col-btn col-btn--primary" href={`${WA}?text=${encodeURIComponent(tr(S.waText(ask.name), lang))}`} target="_blank" rel="noopener noreferrer">{tx(S.unlockWa)}</a>
+              {/* A configured Razorpay Payment Page (details + payment in one) leads; without one,
+                  WhatsApp enrolment is the primary and only route. */}
+              {payUrl(ask.key)
+                ? <a className="col-btn col-btn--primary" href={payUrl(ask.key)!} target="_blank" rel="noopener noreferrer">{tx(S.enrolPay)}</a>
+                : <a className="col-btn col-btn--primary" href={`${WA}?text=${encodeURIComponent(tr(S.waText(ask.name), lang))}`} target="_blank" rel="noopener noreferrer">{tx(S.unlockWa)}</a>}
+              {payUrl(ask.key) && <a className="col-btn" href={`${WA}?text=${encodeURIComponent(tr(S.waText(ask.name), lang))}`} target="_blank" rel="noopener noreferrer">{tx(S.unlockWa)}</a>}
               <a className="col-btn" href={ask.about}>{tx(S.details)}</a>
             </div>
           </div>
