@@ -8,6 +8,7 @@ export const PAY_URLS = {
   winners: "",
   winners_plus: "",
   one: "",
+  pro_plus: "",
 } as const;
 
 export type PayableStage = keyof typeof PAY_URLS;

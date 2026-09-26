@@ -20,6 +20,7 @@ const S = {
   kicker3p: t3("Stage 3+ · 5 Circles Academy", "Stage 3+ · 5 Circles Academy", "चरण 3+ · 5 Circles Academy"),
   kicker4: t3("Stage 4 · 5 Circles Academy", "Stage 4 · 5 Circles Academy", "चरण 4 · 5 Circles Academy"),
   kicker5: t3("Stage 5 · 5 Circles Academy", "Stage 5 · 5 Circles Academy", "चरण 5 · 5 Circles Academy"),
+  kicker5p: t3("Stage 5+ · 5 Circles Academy", "Stage 5+ · 5 Circles Academy", "चरण 5+ · 5 Circles Academy"),
   welcome: t3("Welcome back. Sign in to continue your course.", "Phir se swagat hai. Sign in karke course aage badhaiye.", "फिर से स्वागत है। साइन इन करके कोर्स आगे बढ़ाइए।"),
   // One quiet course rule, the same every day. No rotating slogans above a password field.
   rule: t3("One session a day. Risk first, entry later.", "Roz ek session. Pehle risk, entry baad mein.", "रोज़ एक सेशन। पहले रिस्क, एंट्री बाद में।"),
@@ -53,11 +54,11 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
   const next = typeof sp.next === "string" ? sp.next : "";
   // One Academy login for every stage: when the stage gate sent the student here, name the programme they are opening.
   const stage = stageOf(next);
-  const title = stage === "funda" ? "CIRCLE F.U.N.D.A" : stage === "winners" ? "CIRCLE W.I.N.N.E.R.S" : stage === "winners_plus" ? "CIRCLE W.I.N.N.E.R.S +" : stage === "one" ? "CIRCLE O.N.E" : stage === "stage0" ? "CIRCLE S.T.A.R.T" : stage === "pro_options" ? "CIRCLE PRO · Options 117" : "CIRCLE S.M.A.R.T";
-  const kicker = stage === "funda" ? S.kicker2 : stage === "winners" ? S.kicker3 : stage === "winners_plus" ? S.kicker3p : stage === "one" ? S.kicker4 : stage === "stage0" ? S.kicker0 : stage === "pro_options" ? S.kicker5 : S.kicker1;
+  const title = stage === "funda" ? "CIRCLE F.U.N.D.A" : stage === "winners" ? "CIRCLE W.I.N.N.E.R.S" : stage === "winners_plus" ? "CIRCLE W.I.N.N.E.R.S +" : stage === "one" ? "CIRCLE O.N.E" : stage === "stage0" ? "CIRCLE S.T.A.R.T" : stage === "pro_options" ? "CIRCLE PRO · Options 117" : stage === "pro_plus" ? "CIRCLE PRO+" : "CIRCLE S.M.A.R.T";
+  const kicker = stage === "funda" ? S.kicker2 : stage === "winners" ? S.kicker3 : stage === "winners_plus" ? S.kicker3p : stage === "one" ? S.kicker4 : stage === "stage0" ? S.kicker0 : stage === "pro_options" ? S.kicker5 : stage === "pro_plus" ? S.kicker5p : S.kicker1;
   return (
     <div className="lrn-shell lrn-gate">
-      <AcademyStrip current={stage === "funda" ? "funda" : stage === "winners" ? "winners" : stage === "winners_plus" ? "winners_plus" : stage === "one" ? "one" : stage === "stage0" ? "start" : "smart"} />
+      <AcademyStrip current={stage === "funda" ? "funda" : stage === "winners" ? "winners" : stage === "winners_plus" ? "winners_plus" : stage === "one" ? "one" : stage === "pro_plus" ? "pro_plus" : stage === "stage0" ? "start" : "smart"} />
       <main className="lrn-main flex flex-col items-center justify-center" style={{ paddingTop: 32 }}>
         {/* Inside <main>, not the shell: the rings centre on the form, never behind the compliance footer. */}
         <div className="lrn-gate__rings" aria-hidden><RingsArt /></div>

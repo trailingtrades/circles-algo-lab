@@ -28,7 +28,7 @@ const WA = "https://wa.me/916387497277";
    /smart basePath, and each href is the final URL (trailing slash, no redirect hop). `unlocked` comes
    from stage_access in the app layout; when it is unknown (sign-in page) the stages stay plain links
    and nginx's gate decides. A locked stage is shown as locked instead of silently bouncing home. */
-export function AcademyStrip({ unlocked, current = "smart" }: { unlocked?: { funda: boolean; winners: boolean; winners_plus: boolean; one: boolean }; current?: "start" | "smart" | "funda" | "winners" | "winners_plus" | "one" }) {
+export function AcademyStrip({ unlocked, current = "smart" }: { unlocked?: { funda: boolean; winners: boolean; winners_plus: boolean; one: boolean; pro_plus: boolean }; current?: "start" | "smart" | "funda" | "winners" | "winners_plus" | "one" | "pro_plus" }) {
   const { tx, lang } = useLang();
   const dlg = useRef<HTMLDialogElement>(null);
   const [ask, setAsk] = useState<{ n: number | string; key: string; name: string; about: string } | null>(null);
@@ -39,7 +39,7 @@ export function AcademyStrip({ unlocked, current = "smart" }: { unlocked?: { fun
   // heading to via ?next=, so the strip highlight matches the hero); a lock always wins over it.
   // A locked stage is a button that opens the unlock dialog (course details + WhatsApp enrolment),
   // so the ladder shows the way up instead of a dead end.
-  const sib = (n: number | string, key: "start" | "smart" | "funda" | "winners" | "winners_plus" | "one", href: string, name: string, open_: boolean | undefined) => open_ === false
+  const sib = (n: number | string, key: "start" | "smart" | "funda" | "winners" | "winners_plus" | "one" | "pro_plus", href: string, name: string, open_: boolean | undefined) => open_ === false
     ? <button type="button" className="sib lock" title={tx(S.lockedWhy)} onClick={() => open(n, key, name, `${href}about/`)}><Lock size={11} strokeWidth={1.75} aria-hidden />{stage(n)} · {name}<span className="sr-only"> ({tx(S.locked)})</span></button>
     : current === key
       ? <span className="on" aria-current="true">{stage(n)} · {name}</span>
@@ -56,7 +56,8 @@ export function AcademyStrip({ unlocked, current = "smart" }: { unlocked?: { fun
         {sib(3, "winners", "/winners/", "Circle W.I.N.N.E.R.S", unlocked?.winners)}{sep}
         {sib("3+", "winners_plus", "/winners-plus/", "Circle W.I.N.N.E.R.S +", unlocked?.winners_plus)}{sep}
         {sib(4, "one", "/one/", "Circle O.N.E", unlocked?.one)}{sep}
-        <span className="soon">{stage(5)} · Circle Pro — {tx(S.soon)}</span>
+        <span className="soon">{stage(5)} · Circle Pro — {tx(S.soon)}</span>{sep}
+        {sib("5+", "pro_plus", "/pro-plus/", "Circle PRO+", unlocked?.pro_plus)}
       </nav>
       <dialog ref={dlg} className="lrn-unlock" aria-label={ask ? `${stage(ask.n)} · ${ask.name}` : undefined} onClick={(e) => { if (e.target === dlg.current) dlg.current?.close(); }}>
         {ask && (
