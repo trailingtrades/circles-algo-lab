@@ -6,6 +6,7 @@
 export const PAY_URLS = {
   funda: "",
   winners: "",
+  winners_plus: "",
   one: "",
 } as const;
 

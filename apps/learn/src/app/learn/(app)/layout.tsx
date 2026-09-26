@@ -21,14 +21,14 @@ const S = {
 
 /** Which later stages this learner may open, for the Academy strip. Staff see every stage; a failed
  *  read leaves it unknown (plain links, nginx's gate still decides) rather than falsely locking. */
-async function stageAccess(v: Viewer): Promise<{ funda: boolean; winners: boolean; one: boolean } | undefined> {
-  if (v.role !== "student") return { funda: true, winners: true, one: true };
+async function stageAccess(v: Viewer): Promise<{ funda: boolean; winners: boolean; winners_plus: boolean; one: boolean } | undefined> {
+  if (v.role !== "student") return { funda: true, winners: true, winners_plus: true, one: true };
   const sb = await createClient();
   const { data, error } = await sb.from("stage_access").select("stage,starts_at,expires_at").eq("user_id", v.id);
   if (error || !data) return undefined;
   const now = Date.now();
   const open = (s: string) => data.some((r) => r.stage === s && (!r.starts_at || new Date(r.starts_at).getTime() <= now) && (!r.expires_at || new Date(r.expires_at).getTime() >= now));
-  return { funda: open("funda"), winners: open("winners"), one: open("one") };
+  return { funda: open("funda"), winners: open("winners"), winners_plus: open("winners_plus"), one: open("one") };
 }
 
 export default async function AppLayout({ children }: { children: React.ReactNode }) {
