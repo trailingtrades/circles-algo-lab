@@ -47,12 +47,12 @@ export function safeStagePath(raw: unknown): string | null {
   // The /stage0 -> /stage0/index.html redirect fires before the bounce, so tidy the internal
   // file name back to the directory URL the links use.
   if (p) p = p.replace(/^(\/smart\/stage0)\/index\.html(\?|$)/, "$1/$2");
-  return p && /^\/(funda|winners|winners-plus|one|pro\/options|smart\/stage0)(\/|\?|$)/.test(p) ? p : null;
+  return p && /^\/(funda|winners|winners-plus|one|pro\/options|pro-plus|smart\/stage0)(\/|\?|$)/.test(p) ? p : null;
 }
 
 /** Which Academy stage a ?next= points at, for the sign-in heading.
  *  /winners-plus is tested before /winners: startsWith("/winners") would swallow it. */
-export function stageOf(raw: unknown): "funda" | "winners" | "winners_plus" | "one" | "stage0" | "pro_options" | null {
+export function stageOf(raw: unknown): "funda" | "winners" | "winners_plus" | "one" | "stage0" | "pro_options" | "pro_plus" | null {
   const p = safeStagePath(raw);
-  return p ? (p.startsWith("/funda") ? "funda" : p.startsWith("/winners-plus") ? "winners_plus" : p.startsWith("/winners") ? "winners" : p.startsWith("/one") ? "one" : p.startsWith("/pro/options") ? "pro_options" : "stage0") : null;
+  return p ? (p.startsWith("/funda") ? "funda" : p.startsWith("/winners-plus") ? "winners_plus" : p.startsWith("/winners") ? "winners" : p.startsWith("/one") ? "one" : p.startsWith("/pro/options") ? "pro_options" : p.startsWith("/pro-plus") ? "pro_plus" : "stage0") : null;
 }

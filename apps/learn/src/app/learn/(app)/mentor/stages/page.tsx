@@ -31,16 +31,16 @@ export default async function StageAccessPage() {
   return (
     <>
       <p className="col-eyebrow">Mentor · Stage access</p>
-      <h1 className="lrn-title">FUNDA, WINNERS, W.I.N.N.E.R.S +, O.N.E &amp; PRO access</h1>
-      <p className="lrn-muted">One sign-in, unlocked stage by stage. Once granted, the student opens learn.optionlab.co.in/funda/, /winners/, /winners-plus/, /one/ or /pro/options/ with the same SMART email and password. Dates are IST; leave the end date blank for no expiry. Every grant, date change and revoke is logged.</p>
+      <h1 className="lrn-title">FUNDA, WINNERS, W.I.N.N.E.R.S +, O.N.E, PRO &amp; PRO+ access</h1>
+      <p className="lrn-muted">One sign-in, unlocked stage by stage. Once granted, the student opens learn.optionlab.co.in/funda/, /winners/, /winners-plus/, /one/, /pro/options/ or /pro-plus/ with the same SMART email and password. Dates are IST; leave the end date blank for no expiry. Every grant, date change and revoke is logged.</p>
       <div className="col-card mt-4">
         <div className="lrn-table-wrap"><table className="col-table">
-          <thead><tr><th className="col-text">Student</th><th className="col-text">CIRCLE F.U.N.D.A</th><th className="col-text">CIRCLE W.I.N.N.E.R.S</th><th className="col-text">CIRCLE W.I.N.N.E.R.S +</th><th className="col-text">CIRCLE O.N.E</th><th className="col-text">CIRCLE PRO · Options 117</th></tr></thead>
+          <thead><tr><th className="col-text">Student</th><th className="col-text">CIRCLE F.U.N.D.A</th><th className="col-text">CIRCLE W.I.N.N.E.R.S</th><th className="col-text">CIRCLE W.I.N.N.E.R.S +</th><th className="col-text">CIRCLE O.N.E</th><th className="col-text">CIRCLE PRO · Options 117</th><th className="col-text">CIRCLE PRO+</th></tr></thead>
           <tbody>
             {(students ?? []).map((s) => (
               <StageRow key={s.id} userId={s.id} name={s.full_name} grants={(grants ?? []).filter((g) => g.user_id === s.id).map(view)} />
             ))}
-            {(students ?? []).length === 0 && <tr><td className="col-text lrn-muted" colSpan={6}>No students visible. If you are a mentor, ask an admin to assign you to the cohort.</td></tr>}
+            {(students ?? []).length === 0 && <tr><td className="col-text lrn-muted" colSpan={7}>No students visible. If you are a mentor, ask an admin to assign you to the cohort.</td></tr>}
           </tbody>
         </table></div>
       </div>
@@ -49,7 +49,7 @@ export default async function StageAccessPage() {
           <span className="col-eyebrow">Recent stage visits (IST)</span>
           <ul className="lrn-list mt-2">
             {(visits ?? []).slice(0, 20).map((x, i) => (
-              <li key={i}><strong>{nameOf.get(x.user_id) ?? "—"}</strong> · {x.stage === "one" ? "O.N.E" : x.stage === "pro_options" ? "PRO · Options 117" : x.stage === "funda" ? "F.U.N.D.A" : x.stage === "winners_plus" ? "W.I.N.N.E.R.S +" : "WINNERS"} · <span className="lrn-muted">{fmtDateTime(x.at)}</span></li>
+              <li key={i}><strong>{nameOf.get(x.user_id) ?? "—"}</strong> · {x.stage === "one" ? "O.N.E" : x.stage === "pro_options" ? "PRO · Options 117" : x.stage === "funda" ? "F.U.N.D.A" : x.stage === "winners_plus" ? "W.I.N.N.E.R.S +" : x.stage === "pro_plus" ? "PRO+" : "WINNERS"} · <span className="lrn-muted">{fmtDateTime(x.at)}</span></li>
             ))}
           </ul>
         </div>

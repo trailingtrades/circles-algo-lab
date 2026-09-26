@@ -16,8 +16,10 @@ import { Shield } from "@/components/ui/Icon";
 const PAID_STAGES = [
   { key: "funda", label: "CIRCLE F.U.N.D.A", stageNo: "Stage 2" },
   { key: "winners", label: "CIRCLE W.I.N.N.E.R.S", stageNo: "Stage 3" },
+  { key: "winners_plus", label: "CIRCLE W.I.N.N.E.R.S +", stageNo: "Stage 3+" },
   { key: "one", label: "CIRCLE O.N.E", stageNo: "Stage 4" },
   { key: "pro_options", label: "CIRCLE PRO · Options 117", stageNo: "Stage 5" },
+  { key: "pro_plus", label: "CIRCLE PRO+", stageNo: "Stage 5+" },
 ] as const;
 
 export default async function AdminOverviewPage() {
